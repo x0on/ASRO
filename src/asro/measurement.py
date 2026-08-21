@@ -14,8 +14,11 @@ EVENT_VARIABLE_MAP: dict[str, tuple[str, float, str]] = {
     "REFINANCES": ("refinancing_stress", 1.0, "risk"),
     "INVESTS_IN": ("ai_capital_commitments", 1.0, "risk"),
     "CAPEX_COMMITMENT": ("ai_capital_commitments", 1.0, "risk"),
-    "COMPLETES_IPO": ("public_market_transmission_stage", 3.0, "risk"),
-    "ENTERS_INDEX": ("public_market_transmission_stage", 5.0, "risk"),
+    # These are stages in a broader transmission channel, not 0/100 verdicts.
+    # 1 = public trading begins; 2 = a major index begins distributing exposure.
+    # Higher stages require measured index weight and retirement-fund exposure.
+    "COMPLETES_IPO": ("public_market_transmission_stage", 1.0, "risk"),
+    "ENTERS_INDEX": ("public_market_transmission_stage", 2.0, "risk"),
     "ALLOCATES_TO": ("retirement_exposure", 1.0, "risk"),
     "PRICE_CUT": ("model_price_pressure", 1.0, "risk"),
     "DOWNGRADE": ("refinancing_stress", 2.0, "risk"),

@@ -68,8 +68,8 @@ VARIABLES: dict[str, VariableDefinition] = {
         label="Verified public-market transmission stage",
         dimension=Dimension.TRANSMISSION,
         description=(
-            "Confirmed milestones moving a company from private ownership into public "
-            "trading and major market indexes."
+            "Confirmed milestones showing how far private-company risk has moved into "
+            "public trading, major indexes and ordinary investment products."
         ),
         unit="score",
         direction="higher_is_riskier",

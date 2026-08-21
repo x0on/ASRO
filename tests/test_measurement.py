@@ -58,7 +58,7 @@ def test_score_event_uses_severity_not_transaction_amount() -> None:
     assert observation.unit == "score"
 
 
-def test_confirmed_index_entry_becomes_a_public_market_trigger() -> None:
+def test_confirmed_index_entry_advances_but_does_not_complete_transmission() -> None:
     event = FinancialEvent(
         event_id="e4",
         document_id="d4",
@@ -73,5 +73,5 @@ def test_confirmed_index_entry_becomes_a_public_market_trigger() -> None:
     observation = event_to_observation(event)
     assert observation is not None
     assert observation.variable_key == "public_market_transmission_stage"
-    assert observation.value == 5.0
+    assert observation.value == 2.0
     assert observation.unit == "score"

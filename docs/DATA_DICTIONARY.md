@@ -123,6 +123,16 @@ Causality labels are mandatory: `observed`, `company-attributed`, `model-inferre
 
 **Important:** 13F measures institutional manager positions, not household retirement ownership. ASRO must not equate the two.
 
+Public-market transmission is a staged pathway, not a binary 0-or-100 result:
+
+1. **Public trading begins (~20):** exposure is available to investors who deliberately buy it.
+2. **Major-index entry (~40):** passive index products begin distributing exposure more broadly.
+3. **Material passive weight (~60):** measured index and fund weights show meaningful exposure across multiple products.
+4. **Retirement exposure (~80):** filings or holdings document material pension, target-date, or retirement-fund exposure.
+5. **Broad transmission (~100):** exposure is both widespread and concentrated enough to transmit company-specific losses across ordinary portfolios.
+
+One company entering one major index cannot by itself justify a near-100 transmission score. Later stages require measured index weight and documented fund, pension, or retirement exposure.
+
 ### D7 — Market & Funding Stress
 **Question:** Are cracks appearing now?
 

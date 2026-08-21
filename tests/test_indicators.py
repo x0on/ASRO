@@ -168,19 +168,19 @@ def test_thin_directional_evidence_is_shrunk_until_five_numeric_points_exist() -
     assert dimension_evidence_counts(five, as_of=as_of)["fragility"] == 5
 
 
-def test_authoritative_binary_trigger_does_not_require_five_estimates() -> None:
+def test_authoritative_market_stage_does_not_require_five_estimates() -> None:
     as_of = datetime(2026, 8, 21, tzinfo=UTC)
     observation = {
         "variable_key": "public_market_transmission_stage",
         "entity": "SpaceX",
-        "value": 5.0,
+        "value": 2.0,
         "unit": "score",
         "confidence": 0.99,
         "observed_at": "2026-08-20T00:00:00+00:00",
     }
 
     scores = compute_dimension_scores([observation], as_of=as_of)
-    assert scores["transmission"] == 99.0
+    assert scores["transmission"] == 39.6
     assert dimension_evidence_basis([observation], as_of=as_of) == {
         "transmission": "confirmed_trigger"
     }

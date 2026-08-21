@@ -15,6 +15,7 @@ from asro.indicators import (
     dimension_directional_readings,
     dimension_evidence_basis,
     dimension_evidence_counts,
+    latest_observations,
     overall_evidence_direction,
 )
 from asro.settings import Settings, load_project_config
@@ -160,6 +161,46 @@ def _build_timeline(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return timeline
 
 
+def _build_dimension_evidence(
+    observations: list[dict[str, Any]], events: list[dict[str, Any]]
+) -> dict[str, list[dict[str, Any]]]:
+    """Expose the exact reviewed records eligible for each current dimension score."""
+    event_by_id = {str(event.get("event_id")): event for event in events}
+    result: dict[str, list[dict[str, Any]]] = {}
+    for observation in latest_observations(observations, datetime.now(UTC)):
+        definition = VARIABLES.get(str(observation.get("variable_key")))
+        if definition is None:
+            continue
+        event = event_by_id.get(str(observation.get("event_id")), {})
+        unit = str(observation.get("unit") or "")
+        role = "directional signal" if unit == "signal" else "measured value"
+        dimension = definition.dimension.value
+        result.setdefault(dimension, []).append(
+            {
+                "variable": definition.label,
+                "entity": canonicalize(observation.get("entity")),
+                "value": observation.get("value"),
+                "unit": unit,
+                "role": role,
+                "effect": (
+                    "raises the warning"
+                    if observation.get("polarity") == "risk"
+                    else "lowers the warning"
+                ),
+                "confidence": observation.get("confidence"),
+                "date": event.get("effective_date") or event.get("published_at"),
+                "event_type": event.get("event_type"),
+                "title": event.get("title") or observation.get("evidence_text"),
+                "source": event.get("source"),
+                "url": event.get("url"),
+                "evidence": observation.get("evidence_text"),
+            }
+        )
+    for evidence in result.values():
+        evidence.sort(key=lambda item: str(item.get("date") or ""), reverse=True)
+    return result
+
+
 def build_static_site(output_dir: Path = Path("site"), database_path: Path | None = None) -> Path:
     settings = Settings()
     config = load_project_config(settings.config_path)
@@ -194,6 +235,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         "dimension_evidence": dimension_evidence,
         "dimension_basis": dimension_basis,
         "dimension_direction": dimension_direction,
+        "dimension_evidence_items": _build_dimension_evidence(observations, events),
         "tracked_entities": canonicalize_many(config["entities"]["companies"]),
         "measurements": [
             {

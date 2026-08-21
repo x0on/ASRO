@@ -53,6 +53,8 @@ jobs:
         run: pip install -e .
       - name: Seed verified ownership and liability lineage
         run: asro seed-lineage
+      - name: Rebuild derived measurements from reviewed source events
+        run: asro rebuild-observations
       - name: Collect and extract
         if: inputs.backfill != true && !contains(github.event.head_commit.message, '[backfill]')
         env:

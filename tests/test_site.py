@@ -90,4 +90,5 @@ def test_build_static_site_on_empty_db_reports_insufficient_evidence(tmp_path: P
     assert "DeepSeek" in payload["tracked_entities"]
     assert "Alibaba" in payload["tracked_entities"]
     assert payload["dimension_evidence"] == {}
+    assert payload["dimension_evidence_items"] == {}
     assert all(value is None for value in payload["dimensions"].values())
