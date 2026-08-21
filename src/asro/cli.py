@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 import json
+import re
 import time
+from datetime import UTC, datetime
+from pathlib import Path
 
 import typer
 
@@ -14,6 +17,27 @@ app = typer.Typer(
     help="AI Systemic Risk Observatory command-line interface.",
     no_args_is_help=True,
 )
+REVIEW_STATUS_PATH = Path("data/reviewer-status.json")
+
+
+def _write_review_status(status: str, reviewed: int = 0, error: Exception | None = None) -> None:
+    REVIEW_STATUS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    message = ""
+    if error is not None:
+        message = re.sub(r"sk-[A-Za-z0-9_-]+", "[redacted]", str(error))[:500]
+    REVIEW_STATUS_PATH.write_text(
+        json.dumps(
+            {
+                "status": status,
+                "reviewed": reviewed,
+                "error_type": type(error).__name__ if error else None,
+                "message": message,
+                "updated_at": datetime.now(UTC).isoformat(),
+            },
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
 
 
 def _report_health(summary: RunSummary) -> None:
@@ -136,6 +160,8 @@ def review(limit: int = 100) -> None:
     try:
         reviewed = EvidenceReviewer(Settings()).run(limit=limit)
     except (ValueError, OSError) as exc:
+        _write_review_status("error", error=exc)
         typer.echo(f"Evidence review failed: {exc}", err=True)
         raise typer.Exit(code=1) from exc
+    _write_review_status("ok", reviewed=reviewed)
     typer.echo(f"Reviewed {reviewed} provisional economic events.")
