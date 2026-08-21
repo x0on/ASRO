@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T22:03:30.458620+00:00",
+  "generated_at": "2026-08-21T22:07:23.762766+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "cannibalization": 54.2,
     "monetization": 42.9,
-    "external_pressure": 61.1,
-    "counter_evidence": 45.8,
-    "fragility": 61.1,
     "circularity": 57.1,
+    "capital": 52.15125962813687,
+    "fragility": 61.1,
+    "external_pressure": 61.1,
     "stress": 57.1,
     "transmission": 39.6,
-    "capital": 52.15125962813687
+    "cannibalization": 54.2,
+    "counter_evidence": 45.8
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "cannibalization": "directional_estimate",
     "monetization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
+    "external_pressure": "directional_estimate",
     "stress": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
     "capital": "aggregate",
     "fragility": "directional_estimate",
-    "circularity": "directional_estimate",
-    "external_pressure": "directional_estimate",
-    "transmission": "confirmed_trigger"
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -623,6 +623,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T22:04:51.870747+00:00",
+      "score": 52.1,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"cannibalization\": 54.2, \"stress\": 57.1, \"transmission\": 39.6, \"external_pressure\": 61.1, \"fragility\": 61.1, \"counter_evidence\": 45.8}"
+    },
     {
       "captured_at": "2026-08-21T21:43:02.856003+00:00",
       "score": 52.1,
@@ -4542,6 +4548,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:31cbbd42458870f03a2d172e4a1bff590691009645ee07be88348fbe62f843e7",
+        "label": "Anthropic IPO filing will show AI backlash as a risk factor, sources say - CNBC",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeXdwbzNJcERVMTFvY2JtSkNBMUVaWGpSNlRqYXM1MndRT0lFOWw0NFpURjU4aVFZeTZvdjNRRWs0VWNaWXhzTXQ1QlJ4eUEwR2FXdl9Ca2xIQzVwQmgteVVLRkZneTlHMUt1dXJWNGk3UWladzNVQWZRc3ZpRFlQR2xTbGZLdGlRZzF2RWRvTk5CcVJQM19ZZlA1U2tCN1lkRkHSAacBQVVfeXFMTXQtbkxtMGJVQ0lSUjgwcG1EUFZkb1pWRjY4czE4M3NlQ1RsVWtWOVBESjM2SllMby1jN2haVy1wMWYxR2FnSFpwOUhKT180bVpRTzlETERmYjVQdE1SYjBiYXc0VzRRQnVSUC10Z2lpc0FqZlJibF8waTdOSndRa091YXZwUkRSWnlxbEI3NTYyeW55a1NkZ2NGVTc4YUM3UHZtQ056aGM?oc=5",
+        "date": "Fri, 21 Aug 2026 21:44:30 GMT",
+        "summary": "Anthropic IPO filing will show AI backlash as a risk factor, sources say CNBC",
+        "score": 4,
         "weight": 1
       },
       {
@@ -10531,18 +10549,6 @@
         "summary": "Inference Providers Leverage NVIDIA Blackwell to Drive 10x Reduction in Token Costs StorageReview.com",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:49a85931a9c3da3ab4833219afd65e5ee6fa774100e07955cd498913f357c2f0",
-        "label": "AI inference costs dropped up to 10x on Nvidia's Blackwell \u2014 but hardware is only half the equation - Venturebeat",
-        "kind": "evidence",
-        "category": "Cannibalization / economics",
-        "source": "Venturebeat",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTRSRC1xZ0htcy12X3RuWUdoR29OcFZyNXdwSTQ2ZDZ3WGJybWhhSkVabU5uWUVPVzRkVVlFS1IyNmtBTmExb04tTDF1ZVdpUXhBUnBib29FOTgwV3ZkMTE4eFNIcHI2WnEtY0c3OXBwUktEQ0hXYWgySkVHZXRIWWhFeHNnenhkOXFIenl0eVVSMklzV3UwaHFWZ2tnNnJjUW5ycWpmcDZsT2dWWjBxT2Nn?oc=5",
-        "date": "Thu, 12 Feb 2026 08:00:00 GMT",
-        "summary": "AI inference costs dropped up to 10x on Nvidia's Blackwell \u2014 but hardware is only half the equation Venturebeat",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -13272,6 +13278,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:31cbbd42458870f03a2d172e4a1bff590691009645ee07be88348fbe62f843e7",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17213,13 +17226,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:f165b9d2ae79e99803c332e4ca74c4e319ff77393116fdc5d596662ba1a7528b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:49a85931a9c3da3ab4833219afd65e5ee6fa774100e07955cd498913f357c2f0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -27646,7 +27652,7 @@
       "currency": null,
       "confidence": 0.86,
       "mentions": 1,
-      "review_status": "flagged",
+      "review_status": "confirmed",
       "evidence_text": "Valuation of Inventories - Provisions for Excess or Obsolete Inventories and Excess Product Purchase Commitments As described in Notes 1, 9, and 12 to the consolidated financial statements, the Company charges cost of sales for inventory provisions to write-down inventory for excess or obsolete inventory and for excess product purchase commitments.",
       "title": "NVIDIA SEC filing: 10-K (2026-02-25)",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
@@ -30631,7 +30637,7 @@
       "currency": null,
       "confidence": 0.88,
       "mentions": 9,
-      "review_status": "flagged",
+      "review_status": "confirmed",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-08-17)",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
@@ -31450,20 +31456,20 @@
   ],
   "collector_runs": [
     {
-      "id": 87,
+      "id": 91,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T21:42:44.223250+00:00",
-      "completed_at": "2026-08-21T21:42:59.191495+00:00",
+      "started_at": "2026-08-21T22:04:32.817152+00:00",
+      "completed_at": "2026-08-21T22:04:48.146163+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 88,
+      "id": 92,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T21:42:59.594076+00:00",
-      "completed_at": "2026-08-21T21:43:00.020346+00:00",
+      "started_at": "2026-08-21T22:04:48.547112+00:00",
+      "completed_at": "2026-08-21T22:04:48.940631+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -31480,20 +31486,20 @@
       "error": null
     },
     {
-      "id": 86,
+      "id": 90,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T21:42:43.321958+00:00",
-      "completed_at": "2026-08-21T21:42:43.821833+00:00",
+      "started_at": "2026-08-21T22:04:31.789822+00:00",
+      "completed_at": "2026-08-21T22:04:32.415732+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 89,
+      "id": 93,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T21:43:00.421626+00:00",
-      "completed_at": "2026-08-21T21:43:02.216822+00:00",
+      "started_at": "2026-08-21T22:04:49.341837+00:00",
+      "completed_at": "2026-08-21T22:04:51.455556+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31510,13 +31516,13 @@
       "error": null
     }
   ],
-  "document_count": 994,
+  "document_count": 995,
   "event_count": 948,
   "mention_count": 2342,
   "review_counts": {
     "provisional": 0,
-    "confirmed": 257,
-    "flagged": 691,
-    "flagged_retry_pending": 691
+    "confirmed": 259,
+    "flagged": 689,
+    "flagged_retry_pending": 584
   }
 }
