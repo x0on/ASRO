@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T18:53:23.854078+00:00",
+  "generated_at": "2026-08-21T18:56:05.444578+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,16 +12,22 @@
   },
   "dimensions": {
     "stress": 77.52,
-    "capital": 46.85454041759518,
-    "counter_evidence": 100.0,
     "external_pressure": 43.75428571428572,
-    "transmission": 1.2000000992884452e-08,
-    "cannibalization": 0.82,
+    "capital": 46.85454041759518,
     "circularity": 1.232000101936137e-08,
-    "monetization": 100.0,
-    "fragility": 22.61212121594788
+    "fragility": 22.61212121594788,
+    "transmission": 1.2000000992884452e-08,
+    "counter_evidence": 100.0,
+    "cannibalization": 0.82,
+    "monetization": 100.0
   },
   "history": [
+    {
+      "captured_at": "2026-08-21T18:56:05.051522+00:00",
+      "score": 36.4,
+      "label": "FORMING",
+      "dimensions": "{\"cannibalization\": 0.82, \"external_pressure\": 43.75428571428572, \"monetization\": 100.0, \"stress\": 77.52, \"counter_evidence\": 100.0, \"transmission\": 1.2000000992884452e-08, \"circularity\": 1.232000101936137e-08, \"capital\": 46.85454041759518, \"fragility\": 22.61212121594788}"
+    },
     {
       "captured_at": "2026-08-21T18:52:27.643469+00:00",
       "score": 36.4,
@@ -2789,6 +2795,16 @@
         "source": "Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTklyTzRDdzJzX2RvU3FtZUFCcThTN0dmaERRa1RydmM4UGJFeGgzMEIwVmVqZl9BRzl5WTMtdXVRODVJeHlheWJndWdqRGJiU05DZFpPdjREbkRnekNwVC1PQ0lGNmFZejZNYW5rN0E2SG5jM3VqdGNlbW1QdmtVNU5VeTRFNE5pNGI5dFpucVc4SGw1ejYwblgtOUlvLW9qbHc?oc=5",
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "OpenAI CFO Says 2027 IPO Could Come Sooner If Revenue Stays Hot - TipRanks",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TipRanks",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQcDBPZjhYcUIwYzY5TGx5SENzbktaazF1TmViYklfNEEwZHM1YWFjRjhDSU5ZZFFGUU1zQnljNkQ2Z3R4SEZ2Z3liZm1KQzlwUTNHcGhyZE9KYnpkQ2VlT2kzVkk5Wm00cGlQcUdfNy1zWHVNVVZOaGdyUFcyRTdYa19OR05zdkp0QzFHUEJtdnM2bHhuUFpueA?oc=5",
+        "date": "Fri, 21 Aug 2026 18:52:51 GMT",
         "weight": 1
       },
       {
@@ -9310,6 +9326,13 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -25992,20 +26015,20 @@
   ],
   "collector_runs": [
     {
-      "id": 21,
+      "id": 25,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T18:52:12.598113+00:00",
-      "completed_at": "2026-08-21T18:52:22.687292+00:00",
+      "started_at": "2026-08-21T18:55:53.474143+00:00",
+      "completed_at": "2026-08-21T18:56:01.478621+00:00",
       "status": "ok",
       "items_seen": 35,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 22,
+      "id": 26,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T18:52:23.106994+00:00",
-      "completed_at": "2026-08-21T18:52:23.625463+00:00",
+      "started_at": "2026-08-21T18:56:01.880151+00:00",
+      "completed_at": "2026-08-21T18:56:02.272639+00:00",
       "status": "ok",
       "items_seen": 8,
       "items_new": 0,
@@ -26022,20 +26045,20 @@
       "error": null
     },
     {
-      "id": 20,
+      "id": 24,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T18:52:11.346560+00:00",
-      "completed_at": "2026-08-21T18:52:12.131168+00:00",
+      "started_at": "2026-08-21T18:55:52.331442+00:00",
+      "completed_at": "2026-08-21T18:55:53.073000+00:00",
       "status": "ok",
       "items_seen": 12,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 23,
+      "id": 27,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T18:52:24.225647+00:00",
-      "completed_at": "2026-08-21T18:52:26.982698+00:00",
+      "started_at": "2026-08-21T18:56:02.673999+00:00",
+      "completed_at": "2026-08-21T18:56:04.639117+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -26052,7 +26075,7 @@
       "error": null
     }
   ],
-  "document_count": 706,
+  "document_count": 707,
   "event_count": 928,
   "mention_count": 2311,
   "review_counts": {
