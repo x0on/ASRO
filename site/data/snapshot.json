@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T18:49:03.775127+00:00",
+  "generated_at": "2026-08-21T18:51:42.385136+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -11,14 +11,14 @@
     "gate_reason": "material evidence in stress and monetization"
   },
   "dimensions": {
+    "circularity": 1.232000101936137e-08,
     "counter_evidence": 100.0,
+    "stress": 77.52,
     "fragility": 22.61212121594788,
     "cannibalization": 0.82,
-    "external_pressure": 43.75428571428572,
-    "circularity": 1.232000101936137e-08,
     "monetization": 100.0,
     "transmission": 1.2000000992884452e-08,
-    "stress": 77.52,
+    "external_pressure": 43.75428571428572,
     "capital": 46.85454041759518
   },
   "history": [
@@ -140,6 +140,42 @@
         "weight": 1
       },
       {
+        "id": "Meta",
+        "label": "Meta",
+        "kind": "company",
+        "weight": 0
+      },
+      {
+        "id": "BlackRock",
+        "label": "BlackRock",
+        "kind": "company",
+        "weight": 0
+      },
+      {
+        "id": "Google",
+        "label": "Google",
+        "kind": "company",
+        "weight": 0
+      },
+      {
+        "id": "AWS",
+        "label": "AWS",
+        "kind": "company",
+        "weight": 0
+      },
+      {
+        "id": "Broadcom",
+        "label": "Broadcom",
+        "kind": "company",
+        "weight": 0
+      },
+      {
+        "id": "AMD",
+        "label": "AMD",
+        "kind": "company",
+        "weight": 0
+      },
+      {
         "id": "evidence:None",
         "label": "Microsoft SEC filing: 8-K (2025-01-29)",
         "kind": "evidence",
@@ -217,6 +253,76 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000062/crwv-20250930.htm",
         "date": "2025-11-13",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-Q (2023-10-26)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000103/meta-20230930.htm",
+        "date": "2023-10-26",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-K (2024-02-02)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm",
+        "date": "2024-02-02",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-Q (2024-04-25)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000049/meta-20240331.htm",
+        "date": "2024-04-25",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-Q (2024-08-01)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000069/meta-20240630.htm",
+        "date": "2024-08-01",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-Q (2024-10-31)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000081/meta-20240930.htm",
+        "date": "2024-10-31",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-K (2025-01-30)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+        "date": "2025-01-30",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-Q (2025-05-01)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000054/meta-20250331.htm",
+        "date": "2025-05-01",
         "weight": 1
       },
       {
@@ -737,6 +843,156 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000291/crwv-20260618.htm",
         "date": "2026-06-18",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2025-05-30)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000090/meta-20250528.htm",
+        "date": "2025-05-30",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2025-07-30)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036719/meta-20250730.htm",
+        "date": "2025-07-30",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-Q (2025-07-31)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/meta-20250630.htm",
+        "date": "2025-07-31",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2025-10-29)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047114/meta-20251029.htm",
+        "date": "2025-10-29",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-Q (2025-10-30)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm",
+        "date": "2025-10-30",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2025-11-03)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312525262593/d75422d8k.htm",
+        "date": "2025-11-03",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2025-12-12)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025056768/meta-20251205.htm",
+        "date": "2025-12-12",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2025-12-19)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025058337/meta-20251219.htm",
+        "date": "2025-12-19",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2026-01-16)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026002429/meta-20260112.htm",
+        "date": "2026-01-16",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2026-01-28)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003832/meta-20260128.htm",
+        "date": "2026-01-28",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-K (2026-01-29)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+        "date": "2026-01-29",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2026-04-14)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026025108/meta-20260408.htm",
+        "date": "2026-04-14",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2026-04-29)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028364/meta-20260429.htm",
+        "date": "2026-04-29",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-Q (2026-04-30)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/meta-20260331.htm",
+        "date": "2026-04-30",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2026-05-04)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526204128/d134616d8k.htm",
+        "date": "2026-05-04",
         "weight": 1
       },
       {
@@ -1521,6 +1777,36 @@
       },
       {
         "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2026-05-29)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026039193/meta-20260527.htm",
+        "date": "2026-05-29",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 8-K (2026-07-29)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-20260729.htm",
+        "date": "2026-07-29",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta SEC filing: 10-Q (2026-07-30)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "date": "2026-07-30",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "Oracle SEC filing: 8-K (2026-05-12)",
         "kind": "evidence",
         "category": "Credit / infrastructure",
@@ -1681,6 +1967,76 @@
       },
       {
         "id": "evidence:None",
+        "label": "Korea's Memory Chip Giants Bet $177 Billion on Expansion as Analysts Call AI Overcapacity a Structural Mismatch - finance.biggo.com",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAtUHpsU19EY3JjRWtCbHhVYTB5SHBSel9pM2paOWxRS1RIRk8zLWwwdXpjZjhRbm56UnlhTDhIZlQ2M2QwRTE5OFQ5ZXQ1YjZVTjlXdnIzWENjTGFVM2l4QXJhNHFWS1pYTWJsS0VVRUhwSmJvNFE?oc=5",
+        "date": "Fri, 03 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Moody's Marc Pinto: SaaS bonds face 2028 refinancing test as data center private credit booms - Blockspace Media",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Blockspace Media",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTHVZUUZ1OXRMeUtiSy1JblM1b3NYTjNPN2RRMjhUSENkd1ljbjc0dTkySFZpWHRXdkNXT0RRaVRLZTV2Qk1lOUZCaVpyQnlGRWxpaUVkV3BmWl9qc3U5QTN4TG8wVkZDVGFDUGVRcU9rUG5qNDRZdkhSNW1qcWFtaGVvQ24?oc=5",
+        "date": "Wed, 17 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "MSFT Stock Soars After Results: CFO Dismisses AI Overcapacity Narrative, Says Can Rein In Spending If Demand Changes - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQd1lQbGU0c282cjFCRk01WFd5M1MtUkoxRjVNMi1BOW1MZWVfTUhldUlTNkdVZFFHSmduVTlVb3FiSEpGNmt6RUNwRm1PZXh0UmJWS3gyUGF5TXoydWF2RDFTazA1clRkWDRtR2ZDdEdVUUNFREpmRXNXcWNJd0QwdGZyTDZRTE5QQ0JDaXhNQXZ1eU90RDVOUw?oc=5",
+        "date": "Wed, 29 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI Infrastructure Overcapacity Concerns: Chip Stocks Selloff Analysis 2026 - Intellectia AI",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Intellectia AI",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBhOUh3ajZIR0ZBeEZYSEpwcG5TLS00b1BzamRyRWxfWW9YclhhSHMzRmp5SWpTN3BOYWxhSWJkM2lrUG5JNHAyMEhtMkFpWVlCb29YU1dYcC0yRlM0VFNUQ21RV3FTcUszdVFJcHVkamFYQnduaHhxQW5Xd0o?oc=5",
+        "date": "Mon, 13 Jul 2026 18:16:33 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "The Risk of AI Overcapacity Is Real and Growing - Centre for International Governance Innovation",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Centre for International Governance Innovation",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOVDdNOVFROHp4cV9LTzM2WTFPRWJ4ckFLVlRJelQ2Nmx4WDJkeFZ3MC16MmVDRkVwbUhXU0VpaXFhV1ZYTjVuZ2lWRnVnUGhlRWRHVVZCYXlTdEFnSGx1VUdjOXdRbHNON0QtSTVMOHhibE44MFhkUDlDZUJSajJvVVowa3JtRWFtQXp2cQ?oc=5",
+        "date": "Wed, 31 Jul 2024 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private credit is Wall Street's hottest trade. Now it's coming for your 401(k) - Business Insider",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Business Insider",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOR1l6dmhMLXNxOU8taW5fSW1xRHNtdFlMc1BJVHIzSHc4ZHNxN3U5bk10RFBiWTlOTDlXVUJTeTdvSzhzcmlxWnItX3lYajJLWFYxREx2eHlOVjQ4ZWYzYURUMXRfNUJZSDQtR2xta0l4emlXcWtqV1ZianNULXlmNUZMelltWUtENE1HVElGdTZJdHdWUjItUUpDaUVWMVJJZTJESlpsYw?oc=5",
+        "date": "Tue, 20 Jan 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "IPOs: mega cap AI companies, ETFs, Index inclusion - BlackRock",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "BlackRock",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNNjVqNzVSTUdqaF8wekNsY0pKVTIyaVJQNVBzVjVocXRXbHREQUN3dlJRSDhQWHdfengwOEhOckp3VWlWUi1lU3RIazJ1UVV2dXpLbWthb1puOTF1bTJBRTVzYllkWnRwWEJuSWdTVTZvSmNGdkh3ekRtMEdQQUcxRWlpSEV1V013ay1nWkc3MGFpZG55Q1h1VER3?oc=5",
+        "date": "Fri, 12 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "Nvidia weighs $250 billion guarantee so OpenAI can lease SoftBank's 10-gigawatt Ohio campus, report claims \u2014 Nvidia also said to be discussing $350 billion deal to finance chips for the site - Tom's Hardware",
         "kind": "evidence",
         "category": "Credit / infrastructure",
@@ -1791,12 +2147,42 @@
       },
       {
         "id": "evidence:None",
+        "label": "Google is cannibalizing the web to feed AI - The Register",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "The Register",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNV2tIZ1hsaDNlU0kwZnZKM2ZRZ05wN2doNjc3WUpvdDk4R2lCVFBIQU4yTmZHSUlJUS1kNTdxLXN2YnN1VWxmR054TWRnVUt6dmpsZDNHSEdEaXN2QlZ3VE5fVXdpbW1iMWkyQnZ0U0xpSUVRMWpwUGhFSFhTSHRKZHVlU3Z4bFFGSkRhc29FM0gwNWpVUU90Z2xRYw?oc=5",
+        "date": "Mon, 25 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "Nvidia\u2019s Jensen Huang pushes back on AI cannibalization fears in software sector (NVDA:NASDAQ) - Seeking Alpha",
         "kind": "evidence",
         "category": "Cannibalization / economics",
         "source": "Seeking Alpha",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ19LVFhHZVA1ZTVpVDh6MU5CLTNUd045ZXVLWmpGYlJfVTRBY3M3WGRndC0zZHN1ZDhHU2RubU1TbDQwc2toZm4zdU9pNURncERNQ2Nweno5NU1oWGRrMTFySm9EZ2lEWjZBV0tWZzludDJ0RVBmX0pFYWg3dndncktJNDVjZHc5TDhHZkVtX2hMN0RkOWM2S09lUEJ1OWRfRGloNnd6ZFFZblg0OGd0VUpXNzhMSEEz?oc=5",
         "date": "Thu, 26 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Google's AI Overview: 'They might be cannibalizing their own revenue stream,' expert says - Tech Xplore",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Tech Xplore",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOOG11WVlQY1pRQXdsbkctMUY4YldHSjRvQzZxWTQ0V3dHUzVITU5JQVU5UG5yN2YtVTh0VGlhWXN5d0dGdEJpYnlxT1N2Q180TjNYVWZwWGY4Zm5qbU5ObHFzOTl6bmNyMEIwQ2dkWDI4QWhlX3RaaEd3Nmh1eEtMU3daVHZ1M3oy?oc=5",
+        "date": "Wed, 29 May 2024 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Coming soon to your 401(k)? BlackRock's new private equity target date fund - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSmZ0aTEzQjByWXd2OUxvVW1XaWZRWk5ySF9Ka2JfUHZUU0pWbEZLaVN1UElaaXRRRWxfTmMweEp1dEJhSm9TbVNnSXNuX2hESUpEUlF1emR0a0dpRjR4emlNZzNKNzhXelZaV3JoVjN3UUQtSjJTYmNJengzRGtxYjdxYUZCNzBWSWRzX1ZybHZ1M0t2cFRUQ2JMa2tOeXBieW1KUGdLWFRwa0RyWlh3TnZiR2NzOE5O?oc=5",
+        "date": "Sat, 05 Jul 2025 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -1941,12 +2327,112 @@
       },
       {
         "id": "evidence:None",
+        "label": "Can WPP\u2019s self-serve AI offer Open Pro win without cannibalizing the agency market? - The Drum",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "The Drum",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQN29oRHlQQklJdlpScVhNMEdjWmhjSy1xdUhXTkJkbDBOY3ZXa2R3bzZ2dld0a0lGUFlYX3hIbVJMSU5rQjJtelVMYzBRQmxfang4WmpzazRvR3ZyX3lHeWpGWmNJZmNMcEFXZ2dkekMtZWVVQXBvOEpkZ1ZVa2tDWTk4VjRfVTNnRm9INzZmOVVPaG9fM0FKUGw2QXdyRVBhSHRLTFJtek5FUzhRZ3Y3WA?oc=5",
+        "date": "Fri, 24 Oct 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Buy the Chip Stocks Dip but Beware These \u2018AI Cannibalization\u2019 Trades, J.P. Morgan Says - Barron's",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Barron's",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9DRk9yTkxpRVVqVzA1UVE4LUEtaWgxSGhpZm4ycGg4MTU0c01yY0NWc2hHZUh3cUQzcXpsbmlMdGRqaUUzN3Zmbnk1TE5qbEtUcl9ST28xSGg5cFVNXzZ4T3JDeWtORmJ2ZUhXZTdWbmdTeGk1WTVOcDV3?oc=5",
+        "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Former Genpact CEO: Don\u2019t Be Afraid to Cannibalize Revenue With AI - Newsweek",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Newsweek",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcy1jbms2Y2xlaDVjNFlvNmlBWF81M3pxR0c2WFQ0OTVRMlZjWFlqTkJUdVA1XzdoWXBobU1vMDhxYmc1MkFFX2c5Q3Y1TFNaeTRlUjJUa1VFd3kxNjJVTXBzc3doWnZ2T1VjeF9DMVkwV2NXSkxneWp1TGc2bGF6dndOYjljbk1rQW5obw?oc=5",
+        "date": "Sat, 02 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "UX Roundup: GPT 5 | AI in Education | UXR Repositories | AI Cannibalization | Map vs. Territory | Patients and AI vs. Doctors | AI Speed | User Test Methodology - Jakob Nielsen on UX",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Jakob Nielsen on UX",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE11X3hlX0FnT2FWLU1nc05jd0hKRGlTQkctX2R0eTJQODkydEl5YnpHODFGOUp6TjB3MjQ3X0tIS3pfQkswNWc1T1U1UTRfOXFoY0NGZTRCeWZCRWdQQzNWTWhfT2NhT2JuM3c?oc=5",
+        "date": "Mon, 11 Aug 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "Canadian pension giant turns to Blackstone and KKR to seal infrastructure megadeals - Financial Times",
         "kind": "evidence",
         "category": "Risk distribution",
         "source": "Financial Times",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPX1R5ZWdfa1ZoeDB2Qlg2VDU0Qi1Dc3NXaFotYWctbTVKQlVPR1BScEgtMDVUV251azU5dDdqWUhsY3g4aWVTNk9rbm1feE1QLXh6S0xhUWhxM2NVZW9MSFN0My1TWjNRZ0QwS0QzUzczOWh6VG41VzVGQzIyTU1ZSzFOQ08?oc=5",
         "date": "Wed, 19 Aug 2026 04:00:22 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Is Private Equity Coming to Your 401(k)? - Morningstar",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNR2JvOVpwd2pFNWowS05kd2ZZRXkxVnVlaEtwemU0ZTJtbnlhcDZVN0g1TDlqWVBFRC1HbW1oWWg0MlhvczNkc1VRY3ZPejRMTkdnRjVJRjFNYXlNbWdmNW9GQkNFa1d5eFJVd1pDLTlwWUlwM2xPRzdZRHRrU3daUVktdlVzU0wtRm5IU0hfTQ?oc=5",
+        "date": "Thu, 24 Apr 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Franklin Templeton Sees Target Date Funds as Private Assets\u2019 Path to 401(k)s - WSJ",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOOVBzR0QxMTJoTGdiREVGa2hRblZTTG1XbGJuQ25sSmJQb2RiaHR1N3hjbE02UmVUMTM5VzJ4TmdqWU5LU0NwZDlFZ1VfYmdMMEpocUxEMXVka0FDbmlEeEJPNnc5RFp3V0JSeFZQeFhEVVBMWUgwN3BjX3EwYUFRQVJobXpmLXR5T0p6ZEZyb3hJd0RHNUdXNkszZW4tZERadk92VV9zWlVLZVlRbTFWNTdYbjRjVjRjT1pSTEJnZzI?oc=5",
+        "date": "Wed, 15 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Commentary: Trump wants you to invest your 401(k) in crypto and private equity. Should you bite? - Los Angeles Times",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Los Angeles Times",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPY25mN0VVUWJWY2dKd0pnUmFpZWI3ZUx0ZS1UbXlySHpYY2czVFNveWxZa0IzdEdqQldBQ2tUSEp3cDZRUmRHRmlBVm4zOVJkamgwS2ZrS251bGhhU1FHbkRHWmdEZU1FWS1xNThnS1JLOHZRX2VreXo2R0xrdE45V3NUTjV2LUFIbGg3bWxmNWZWc1dCU1V2dE1FaHpFSkE0eU9Hd0FRTF95b1dRQjg2OGFMd3dJbEt3NGlVQXJDeDh4OWVq?oc=5",
+        "date": "Fri, 10 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Why Employers May Be Wary of Adding Crypto or Private Equity to 401(k)s - The New York Times",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQRlh2WlBBQ013NDVXWlh4NFJIOUc5SXlaYlJSTmg1QnhnNVBHZTl0RXJZUTdXOHlpYUJMR3liVmNKU01lQ3BpVEx1SjlkVTBIUnl3OVZTS2NmVjNuQW5kVmoySWFsS0tzMkJGQlZGRkFCOXdYZ0NXWF94Sm5QYV9CTWwzbXVQd1lLbE4tUkRR?oc=5",
+        "date": "Sat, 11 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "401(k) alternative asset rule proposed by Labor Department - CNBC",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBKMFJjSlgwM0tRUXNIVzV6T1F1N0IxYmt4bTV6ZVcwZUxzTVdjODRoX2xMZmZMWjlibjVyQlV2ektlbXVoaEdibUNfYjhvbWtjX2taWEJpQUxONXdxRld0clZ2bFI1a1kzZklHb1pYajdKN0hW0gF6QVVfeXFMTWQ1Rjd4WDVlU3c0QXB1UF9GeGJfQkF6bks0czlJUWdRZHhtSGhwUHJhQmdLSHkyU2R5NXJCZU5Va0NFclhiVGFtRFd6Uk1wS1pfU1U5WTFrQW5UZF9rczJ6WGl1bFdUV3c2M0xELTdZZlRGTHJrQ00yTGc?oc=5",
+        "date": "Mon, 30 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Watch Goldman\u2019s Minnis on AI Investing, Credit Spreads, M&A - Bloomberg.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS3FySmRtSWZtdElqVVRvRG53dGVFVWlHaEpLV1hISG82TnlqVlVhRlJDQ1pLZjlRR0hiR25yU1hKNk9yNTNmbXRjbGdUUE05VUhFNXFTaGRxamFLbVdYUUVMci1RRVNGVWE2bWtWemNBWXlFNVdqaTBFSEVwam1GOU9DbFRJTmcyNHAyeGt1R05lVm9TQTV4Vm1fVzY0WXFCc3Y0eXlHU1RGUQ?oc=5",
+        "date": "Wed, 01 Oct 2025 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -1967,6 +2453,16 @@
         "source": "MonitorDaily",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOX0VRU3lkaXBHUFRIbFNXRmF5U1c3YTZKbFdBZlVlcnR6dVp4MGRFU2dqRTc5TFBjWV8xbms3UlcxMGRadXBWdWJTYkRfb01ZbFd1U2tMY1Jsb3NqU21QOThPYVZpNnkzN2hlZ0M1ZzYzdjM0TDlxaTBBRThrdGY2XzZ0ZExSeGJ4UEt2Zm1yZUozam1xUXZtbjN0dmRSSVdJNGN4M0txZFBDeUt3Z2JtejZGRUVoY2RxRnRSc0tKSUV0b0luYnpmelVXZ2lhVmVlNE9zTTJWcw?oc=5",
         "date": "Fri, 21 Aug 2026 13:30:17 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Cache flow \u2014 How GPU-backed financings are breaking ground - 9fin",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "9fin",
+        "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1wc2poTWpkWHRGNGlUY3U2Zm9Ldkc0S2ozNlI4V3NTZXJhVXU1SnNST2o4anFRVnlOenhSODFFeEFXS2JHYmMzb2d6dHlpekNLWDQxWFR6OWdtVm5iQ3pFN1Y5ZXlTdw?oc=5",
+        "date": "Mon, 06 Jul 2026 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -2097,6 +2593,86 @@
         "source": "Business Insider",
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1VQW9naXdkdFo5RHQxYXNLMHBKMmVEY0lGX1JxZ0tNVDQzVW9LTlU1d3RINkROVjZ1RXlZOEZFcEZRZjZERWdBRnlZbFBJR2JKT0lmZlFIeXdSRXh3b1dtckp1OHAzajhpVUgxZVY2UjQ5LUNJWlNhT25aRQ?oc=5",
         "date": "Thu, 30 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI is cannibalizing itself. And creating more AI. - The Week",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "The Week",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBlc1JrZnJWOWFPNjhEdHdsLWE1c01tVVBwTTV2R2Jqa1R4MzJUX3BOU2xialV5ZnhGc3ZzZjFtQ0VtSlN0aW81ZTF4VGg3c1hxNEFWTG9hYWtvWkZtZnB3UU1Tc3pJU3hrYnc?oc=5",
+        "date": "Thu, 29 Aug 2024 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "BlackRock CEO Larry Fink Proposed Using Americans\u2019 Pension Savings to Build Data Centers and AI Infrastructure - SFG Media",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "SFG Media",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qUVMyWmlVdnA0Q19wSDBablNtU1FhTFRUb1NwSnFNeVZubmlYeGtBTGpvbHcxeWNnWFk3VmdQWEl1UERYVzBjUVJab3IwXzcwcHpLR2pVTW1BQkZYQ3R5cklHTFF4dW5WYnI2dGJVb00wdEo0RjQ4?oc=5",
+        "date": "Mon, 25 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "BlackRock\u2019s Key Retirement Funds to Get Private Assets in 2026 - AdvisorHub",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "AdvisorHub",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNN1lid1VCSDRDV2IyRnE1eVhSRGlteC1FM2FmN2x3REdUdFJ1dzhHby1QVlc0SExlakZQalh2U0pYV2oyRjJMTU5lcjlKZnQ0dW14LXFRN3Voa0E1cHI5N2NPMUhZeTRSRmFuUUxpRG5TOXVSRl9acDhrQTdYM1FqQjlGY20yVzRzQ3BzOXlfOVhNeU0?oc=5",
+        "date": "Tue, 15 Jul 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Trump Signs Executive Order on Private Equity in 401(k) Plans - planadviser",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "planadviser",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWkl6YXkxbE5LcjhmMVZYWWpmX096OFFWakxuQVpVamItOHhYdUM4Z0trcFdyYXRqVGQ2Qy1IQ3NnbTZMMzdzb2szUHpQQV94UlpURkNrZlNGOC1XR1JmRWQ1emt2QjRVb0s0V0g0ZDB2dUw3ZnhMcFNhUmNULVJqXzE3ekJyc0VVYzluTkNQNTdmQQ?oc=5",
+        "date": "Thu, 07 Aug 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private Equity Wants Government Help for a Final Push Into 401(k) Plans - WSJ",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdzlvQlpvSHZyUVJtT04zMkU3YzFSN3AySlMyR3Qtck9FbjlMUGMzRVNpUE1ldXhfMXFKVkZ0LVVmMi0tSFVBR2VhWXBLZmJia0pLcDhId2NzWnhUVjI4Zks0dUVoWnVPcXhKTzY3RlpFU0tCdVZ1bnZMUEI3ZWtQYkdXRm11ckFrU0hvbGVHWUkyX1ZyajEwYTNOMmVFRzB6cTJNUXhWYXN6YlpX?oc=5",
+        "date": "Wed, 09 Jul 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Trump Signs Order Easing Path for Private Assets in 401(k)s - Bloomberg.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNTlFUVdoSkFHU1hoVm5yYUk4T3ZWdDZSTjhKMVpqQ0NwTERRWnA2dlJyLVR0V1MwN2x3QjRWMkJhVS03OGNOMTdscjkxZUUzUjd4dDgzckRwXzZTZ21BNzhGMnY3TGd5UlVNNlFhcnpCNHZ6a1REenBaMGgxMG8tNWVqTEswdVB2V3NWYWNSNVlmVGV2dDVaZVFQODA4OGM2MEp4eDc1UlVSX3hRckl0bDVn?oc=5",
+        "date": "Thu, 07 Aug 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private Equity Wants Your 401(k). What Are the Pros and Cons? - Knowledge at Wharton",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Knowledge at Wharton",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYnA4eEtRekY2dTJSZGU3ZmRXTDkwV1RSbTR6R214ODE0MnpNcEF6Q3dZVXpic1dReldsVVdVYnQ2SklQWFFEQmJOck1vcXZiTzN3cV9kdEpGUldKczdLMXhsZi1qQlJtbXNWUUgyQzBDakNLeGQwMEtkRlhrenloQ1BGajRTdnRkbXhzSUtueFRUTm01RGtyZ1RVV2VEbGJkaTVHUg?oc=5",
+        "date": "Wed, 13 Aug 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Expect a 5-to-10-year wait for 401(k) plans to enter private markets - Top1000funds.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Top1000funds.com",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdnZnRkRCYzJFakIybmp1Z3k0OVQtWFRpemtDdlRySF91Tnhvbkt1c1o4a1lhV25mUFFBM00tTnJhdDJELWdDS2hHaDl1NzhsTURZX0ktbnM5Z2JDZ3dYWUdKeWZWemRaMzk3VHVVMXhxTVpBZGJBaVNXaWJFZjBqRG9wdHJqMmhhMUV6NUhNeEpNam9fLUpsREMwSFlKanZMNEluWW1PY3FNZDN5X2hlSUxueklneUhmUm5iYlRFaVpTTFROWXhnTEZBaw?oc=5",
+        "date": "Thu, 06 Nov 2025 08:00:00 GMT",
         "weight": 1
       },
       {
@@ -2301,6 +2877,16 @@
       },
       {
         "id": "evidence:None",
+        "label": "After-Tax IPO Strategies for Early Investors - BlackRock",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "BlackRock",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVXRLcDJTNnp5eF90RXhDRTRsQjk1Y2hLSFlLNlZzOEJ0MTRjRDR6blRZOUpIYnpjemluYU9GOGU5ODRkZE40aFZtSjg2WVB5S0ZxckNnYkhyUWQ5WTNkZU93bm9UdGFqOVByaUwyRUszOFBuSHVpVUVybE5tQktabi13NDlLV0l5NmNnaDRway10U0pLTEp2aGRYYUduWXpFNml0ZW0tRUE?oc=5",
+        "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "How Blackstone Put Jersey Mike\u2019s on a Fast Track to This Week\u2019s IPO - WSJ",
         "kind": "evidence",
         "category": "IPO / public markets",
@@ -2381,6 +2967,116 @@
       },
       {
         "id": "evidence:None",
+        "label": "DeepSeek\u2019s steep V4-Pro price cut escalates AI pricing war - InfoWorld",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "InfoWorld",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRXhPbVpqN2w4RkExZjdzME1mVDJTOVkwVDJCWXkyWkVXakFJT0czeTluaG0xZXl5ZHhFR0dfZjM3c0dQTkxNUHQ2el9lUi1QRjFpUVdiLXhKcXFJWlQzMVlPRTZJcWk1c0lfSGM2UnlBd3ZpeXBQLW1yRTJUMTNiQVZWNEtkSldhQUNvRFBQTE1NMVBaOURNTGVvSi1jWldSTUg1elpSOA?oc=5",
+        "date": "Mon, 25 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Software as a Shock: The Software Liquidity Signal in Private Credit - Substack",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Substack",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5KYWJtS2VlNnJ0SWRqRnk1bXE1NXpkeFZIcFNua0xRUUR2X3hZZWpfaWQzbFpod1lDNFRUcDRSQkNNaW0wRV9FekxVVWFucC1pdjJYSFR4VHdJT0tIMVZ4STlyTFhlOWNIeDhnN3lGUXFMOHo5T2Q0QzMxT2Q?oc=5",
+        "date": "Tue, 03 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "While Retail Investors Flee Private Credit, Institutional Investors Stay Put - ai-cio.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "ai-cio.com",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOZ3VEY0w5MFRqMF9DY18xZzVER05lMER1RmZobVpHNlJtQkRsaUc0eEM2R2VhYnZoTmVlNklLRUNaSDVaY0FydFJUdTJfZkhvd1pSVHhXVkt0MG5EcC10Ym1nU25FQ1d2VVNwN0RHX0FnOWZMc2tvS1FiNDViZExzQndSbVNJVmdpeVhqRUJ3amZrNHZ5V0N3NFJkZll2RE10c2U4SGFLOA?oc=5",
+        "date": "Wed, 10 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Ares Says AI, Private Credit And Secondaries Are Emerging As Key Growth Drivers - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRWZ5SXFYTVNiMmEzdmpJNW9ZcDFkOHkzMXVNQ2FlWW1xMXlSTXFtUFVrMW1RUXJvY0dpZkhLNW16SUlBMjBiamFHc1p2Tk5saENockNobFY1U0x0ckZjbHctM2l5S2NpcV9meWpRU0hLOFJST2I5OVg3b1M2cTV5Y2tacXlNSUFMV0dhZ1FxRUkwc1dSbHc?oc=5",
+        "date": "Mon, 03 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Ontario Pension Launches Investment Venture With Arjun Infrastructure Partners - ai-cio.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "ai-cio.com",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNl9XdkIyQ1o2eGl2clBpMWJHZlA5Z0tKWm1ZX0R5dGhKWDBFUVdaY2VDdmhIc1NaeFpQRmE3N1IxdkRKbnE5d09zQlUtdXJkRFRfRHpWR1BQYXZCMlFNMUR2TEd2U0QyN2RFSy1ZV2cweVlYNHp1Z1kxOXByZ2JLSUNUSjJiUXg5VXdTV0ZqYjM0aDFybmN2U0ZzNmdPWDVVNnlhdTJnTldGRHM?oc=5",
+        "date": "Wed, 27 Mar 2024 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Canadian pension giant joins race to fund India\u2019s AI-fueled data center boom - TechCrunch",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZ01nNkZ5alRYMzlhZUJQMm02Nk40MV9LUWNnd0pMT0wtRk9fdHJZS3U0VTNPNERsdmhFZ2YtcFFyalo2ajN2RzI2b01ZTl9yU0J4X3ZhMjl6dWQxWGhnUHplT0JpV1I4dERWZFVYQ1BpdDdwcnkzZkQ1LTNReHRkeTJkQm9mcExzV0U1WDRRQ3BsNkg3UWc3VVBFZG5Ga0RFNko0TnFsTV9Iank1b2pR?oc=5",
+        "date": "Wed, 17 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Larry Fink warns Americans\u2019 pensions, savings will fund the trillions required for AI data centers. Protect your wealth - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNNXpOdkZLSC1QOXR4MU13cjYtR0pIdVdZVHJiVC1vTGhEeFQ1OERnT2JsR1lmby1iWWdLa2NkbS1nY0tkbVFMTGJDVk85a2tCa1k5c1Bad0pNQXVSaGVPMGlaYUF0QVlmdzE4S2xoY0cwMmI5a241WTdmd05zZDMyakpiZG9UUEd6THd5cnRya0lfamRDYlJXN1FEMXhGYVNpQ0E?oc=5",
+        "date": "Sat, 30 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "State Street Global Advisors Announces State Street Target Retirement IndexPlus, Providing Defined Contribution Investors Access to Both Public and Private Markets Exposures - Business Wire",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Business Wire",
+        "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxQSWdqYl93LVg3V29vTXpzZ1FYbzJZMkQ5cW1kUmxaQmJyYkRKYXB3SE5lekhvODRXdzBZT2ZVV2M3cXJEc2J2dDhHWEhFeGpaT0FDdUxjQ3BBYUx2TGxRMnNBeWF4czhJcXVVRU1VTktqcHFLRkhkN3gzV2lHVTBPWFVqbG8wWDBtNjdRWWRwQlJEZW5uRVEtY0x6TXdlaXF5UXVtcl8yZVVGVzlEaUwxQUNYYWRDVDBXZDVydmhWYXNhazY0c1N2VmgxMElNTExJallTNTlmOWJTNFBobXpUMk4yUGktaTY0RWdnQ1NId0JhUElaY0JEMjVGbnY2R2M3Mk9pZEk2TjhxdGZCeFFzZWlpQWJ2aUpEUzZXTkI5UDR1ekNraldOUjlTVnBZT1RJZGl0RjlYdUJUanFmWDExcWpmajVtSlVIT0czMlBn?oc=5",
+        "date": "Thu, 10 Apr 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Opinion | Countless Americans face a scary retirement. This rule could change that. - The Washington Post",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "The Washington Post",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOU25uUVB3M0ZDNlhmc080blVSR2lHNy16N28tdjlrR1ZodDFWRVpXTnVmM2ZrTnJuekFXNVY2LWhwa0h6cFlmaUl0b1NudTBWTlljME9DM05jVXlkVEM1Q3FhbUpZYXRzNllNbnhZemVDYXF1UkZUZTBmeHRYOXptTWpETDFYNHdIWGZqYTJHRFpOZkdQaGNvUDZ0OA?oc=5",
+        "date": "Thu, 09 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private Markets Investing Access for Retirement: Fink - 401k Specialist",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "401k Specialist",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOEFKcFFoY2d4WUdoWVAwZm0xS01YcGFNNjQ0a3ZyTENNbW9UQlNGMDNkdG5ldktnMXRFX25aX1dzNEp0ekFRQ0lnRHdHQmxSZmRmb2RMUHBNaVhwLUt5d2J2azUzM1ZFZU1DS3ZseThHOWEtRV9UQ3RJQU9qdlBLZ2pGLVVJb0pKV3RXYlA3X1RZZ1lWNE5lUDA5NkIzRVAwc3VHc3Fja2lJNTQ?oc=5",
+        "date": "Mon, 31 Mar 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private Equity Gets the Green Light to Tap Workers\u2019 Retirement Accounts - cepr.net",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "cepr.net",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQNkJDWFNrZk1kWTFjSGFjNnFvX0NjdDh6dW85dGxfc1VKZkxWU3l2QllnSGdBQVhWc3dkV2xUT3IzQWlRczBPc2NENkxSdUFyUHFoMng0UUVDamk0cGdtd0hWU2RSWnlmV2hXR242U1NpMlFtSlJsc3BfOUd0QjNzakd6ak01eEExQkl5RVU1MWt1U1MwcXcwRnYxVEdiSFNncmFF?oc=5",
+        "date": "Tue, 07 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "SpaceX is set to join major indexes after its IPO as inclusion rules evolve to accommodate the mega IPO - Business Insider",
         "kind": "evidence",
         "category": "IPO / public markets",
@@ -2441,12 +3137,132 @@
       },
       {
         "id": "evidence:None",
+        "label": "It's called 'private credit' \u2014 and it could lead to big trouble on Wall Street - NPR",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "NPR",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSmxqYkQ5YTBYZDlmT0ZQQkhjbW5OX2oxX0h0Vy10VXYtXzZhWGVMZ05pRjRJb1liVzFYS3VBT2lFajFlX1pvak1GUnlldHZfdUltaGlSaEQtNnBDLUFEOFNxQ2ZKc29oWWNxc0REQkNUWFNOclhVWHVwb2JhSUE1TTNURTg1bzZab3otMFh1N0t3azNP?oc=5",
+        "date": "Thu, 19 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "Early Anthropic Backer Defends $2 Trillion IPO Target\u2014But There\u2019s a Catch - 24/7 Wall St.",
         "kind": "evidence",
         "category": "IPO / public markets",
         "source": "24/7 Wall St.",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbHVrYTVoQzZ4aHI1LTM2czdrLXVVX1VPU1hNeHhDdERYZDNVQ01PR1g1ZnF0eUNzQjI4NW5ZTDRpM0RnSzZUd2c1M2RCamVwU1c1NFI2SzhoNjB1Z3lVSWNwRWExeGxjWXo4UmNOSTZweG5TSmdRZkdiUGJyRUJ4V2dSeldSRVFja1Z5d3Awb0thZFZpT0JWYzRoM0hWeTFWc2VLRmxzSVhiMFVPOElGeGZCT0tldw?oc=5",
         "date": "Tue, 18 Aug 2026 15:50:21 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "China's DeepSeek to make permanent 75% price cut on flagship V4\u2011Pro AI model - Reuters",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNM3Q5LUNUSDdncjRsXzJUaDFubjZGRm1SVDh5bkx0Z0pGNUVfZzZOdGQ1UThpTFFQdGg4d1ZaMFpGZ2Jxb0xuUmxMY0NQQkZBOTAtTjdxRnEtNmNMdXBWc3YwLWVfendsczJINk5jeEE0M21IWjdpMFRtbkFwU1B5ZkdDenhoMmhZVVpjU3VsZWtHWVJSR05zLVQ3dW9xU0Z0aDJEX3YtdkVWUTdkMVRzTEJnVUlfdw?oc=5",
+        "date": "Sat, 23 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Think Tech Has Taken Over Your Portfolio? You Should See What\u2019s in Your Pension - WSJ",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTUNOOUxjN3VYNl9LRWZZN2pvd3d5MUgxU2xueWlkTW4tUnFSOU5aemhuSnNHS0VSd3ZiYlJYMFFneDRDVkZkTjlzQkwtcEhuMmUzelRsWDRVUmZlNWZleEMwczNBdklfTTBaVlpzdVZDdDd2dkM2VXNkZlM3LVdwQVJjT2x2NWhEQzRtTnBybWZkb3hFWFlzQldMUzZXWklSeldZY25KY0VoMmxNZkNBcXRzV3RHNUlMVGV6b3hFSEVYUQ?oc=5",
+        "date": "Mon, 02 Mar 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "When it comes to private credit, 'some caution is reasonable,' advisor says. What to know - CNBC",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10TVczaEFnbTRsSEQyWlJ5aVFHdVJuSkQ0cEdZY0FlU0hDOWRXaDVHTlpmVnZhUTlHRkNQTlI4cFJTd0hVZ0hKTE9qWWQ1UFo4ZFFPMFBVYUVkZllxVGduZdIBZkFVX3lxTFBZUTdWQU9RTzFsWEpBWGNyeGtha1ZVYlYwUVNkdHhtTTNMYnVtbG5SN04xSXBOMjduZmNzbVhIeVFXc3dtZ09lbkctN2FRaUJsVzhGTVpna0l6TVlJaGpIMjdKdEZJdw?oc=5",
+        "date": "Sun, 22 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private Credit Firms Push New Funds in Bid to Tap Retiree Money - Bloomberg.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQZDdWdEZaMUJUNE8yZU1mdG1uTmg0OXJFWEZkckpEazJUMzB2bTN0SmYtN1AxdmFXZU9TZDRYOU1uRVFkb0ZiOUxSTERhSTNaSXdZcXRLR295TFRvRktfRUlCT0d6TjhueklPZmNVdnhwejRRRWtDWmNjOFRONVJYVmVUMUlHTmNncFFub2lVN1JwUld0aFQ0YUpweFZNSWlfOTZ6cjVPTndoRVM2WlVOVHBQbUs?oc=5",
+        "date": "Thu, 22 Jan 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private Credit, AI Investments Emerge as Key Mid-Year Investments - planadviser",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "planadviser",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQb3d0ZGhoWTdSemd0QU51ODFneTJsLUhUeW1uVUVjVG1FUWp3NjNZRXVoOWlfSkZhRFB1T0g4YzNIb1ZWTFFrMUNMSDJjc0lmUGZGXzlDNldZUm5JMGRRVjhrQXRyRTlJZUJ4blBRZVhrcE0zclI1a1JBUmtfOTNmMjFOaXVmX2hvVjMzQ2NuRVNtanNpVHRCSg?oc=5",
+        "date": "Mon, 13 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Canadian pension fund invests $225m in expansion of Canadian data center - Data Center Dynamics",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Data Center Dynamics",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOWnFZT2c2N21PTWNnd3YyVE1xdm9NUDFfMUQwOFhETU9EcmVPeTVzdU11MENGQzc2MUlSMjF5bFNfbE9abjlRRFZYem9lQkNNN3F4LUVRcnlmTGxsN0NxbGpIb2dXbVNEQTVZS1JYQjJoVmpVNXk2UkZEWlZRQkNNVXRPMEotX1NzZHF1ZHpwMF9LRzdLTFBrR2std0psajM0QUgxV1AxdDBMLVJ3U3RJaFN2em13QQ?oc=5",
+        "date": "Fri, 01 Aug 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Infrastructure at the heart of Canada-Australia pension fund pact - Top1000funds.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Top1000funds.com",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQQVZOSmdYTG9YMy1KcmNzcElyVTZrZFFVNVFjM3VvVnpKb2VScFlJN1I1dkNFTjlkbXgtbmQ4cnhDZVdhcmEtN1E1aFhnMHdMMWR2SkoxYUNQcVhRcmJSMDFsUi1SdDlQeE8wRnFiMDdaMmxxRm55TU5tY3NPZmFTcTd3ODlodWdPZ3YyUU01VmgwYlZ3T2k0YWZxT1RlSlBIX1E?oc=5",
+        "date": "Wed, 04 Mar 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Pension giant pours US$1.75 billion into global AI infrastructure - Benefits and Pensions Monitor",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Benefits and Pensions Monitor",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWU54LWpGdWtWOHE0eG1MY2ZnTUd0cEhUR0xhVzhoVlF0TlQ5MlAtMzdCWVk0SUlfai1DRXJZN2dFUUdXdEdxUWdzdjQtcXk4Wmt3X3FHZVlFQ2tnZXdUc1BEWmtiSWxNTG91MU0zckl3NnYyS09GZkxmc1VOWEs1Q2wxY1lIb0F3SWVhLWxSR25PZzZtTkhGdkZ1cUctZmxxTVVYVXJWNXNvNHllM3lYY0NJUnpORkF3cHZuWWNWMGIycGxPaXFwclVhaGE?oc=5",
+        "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private Credit, Tech Issuance fuelled by AI, and Increasing Leverage Among Key Driving Factors Impacting Credit Market Liquidity in 2026 according to S&P Global Ratings - S&P Global",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "S&P Global",
+        "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOd08zb2JqSmJqVEFBMms1VXRFNFRKNV9pd2s5MExwTkFHV3NBZ2luM0pEYkF2czI1TnlOdXVKcDRTb0lkYnNRZjBGZlQ2ZjFmczk2NkRKenY3LWZraVhPQmFJQ3lsOTM1S1UwYlJMZllSUzBGWTFfYVcyTVo4eWxlMVJlaXNDY3lzcnJCak4yMEp0cFV5ZHYwN01tQ3BpSXlrbGxDc2JNU1I3Z1pmcUpaUjRSUGh4X1prc1pJOUpuTUdreENpdXlnc1JONUN1ZE94R2ZJU3lrQWYwZ2dvTTU4dTB4cHlkUEhxT1NYd0h5ZHdUR2NtUHFEOTBYMzdaaUNfSXh5dEd0SVYyb2ZkWFE5WjlaV25pRFVXZjFCVkhHdGZ3cVRIMHpSbTIzeFFiVk0?oc=5",
+        "date": "Tue, 17 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Swedish private credit firm Optio eyes move into GPU financing - ION Analytics",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "ION Analytics",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdGp5M3ZycktuMmN0RzNkYmtVNmlRcjl1NWpSY2NIaEVOQTViS1QzaEN3VjE2WEtmeEpXMUlsa1A5a3NHZmZDMXgxMS1kSGdRU0RFRVFyVVVxakN5dHlLNkNVRWxxcW55YUhxOHp3RWoxS3YwaTlvQUtReUVrN1BqVXI3WmVsZUhwTXQzbEl5aTVOMm4yVGZhTGdHZ0hiUmVsS016S0JCZ0Y4Zw?oc=5",
+        "date": "Wed, 06 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private credit woes could become data center difficulties - Axios",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Axios",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB4QTNQMlFLSXFINEtpNGxIb3Fsb29Vcm5yWERvcEVRcmd6WnduYVE2R3RsQWVuZXJLLTc5SzhkdkFnQlloOG5aWUFCSjROOEdMYUY1ZHpNS3p5eXVrQUJfRXJtMG1SUW5YWjdsUGpTcw?oc=5",
+        "date": "Mon, 09 Mar 2026 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -2461,12 +3277,32 @@
       },
       {
         "id": "evidence:None",
+        "label": "Elon Musk Is About to Make Saving for Retirement Even Harder - The American Prospect",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "The American Prospect",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMEFPTHNxWWFzSTZrQzdlbHlsekt0ZFBBa1JXc2NmZmpyX2p4Z0RIbVVRUlRfV3RLQUNrZmtRNlg5NHBGT0FRZXpDZkc4V2lXZGpYVUY5VHd0bnlqR3ZjZDlxYkQzWko5QmhhTGJheTBaVG1EeFRXV2N6ZXo1V3lQR25oYnpCSFgtcWxxeW5xUmNyOFh3V25YV1NqMTAzUQ?oc=5",
+        "date": "Wed, 10 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "CIO Weekly: To Infinity and Beyond\u2026SpaceX\u2019s IPO - Neuberger Berman",
         "kind": "evidence",
         "category": "IPO / public markets",
         "source": "Neuberger Berman",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVVRPQmdYWUxfS2dhS1puTjNhZTFpQ0hxLWdsM1Y4dFFHX1c2SjBjSGxCNHRyZEo4WUxYalhHNEREaVdzaGZ5NU5uT1ljM25DS08taXdETm9NY1E4X3Z2d0N4S2xtckg1R3hPUmtqVXpYVXVtczlrckNndUlHYURnNnZCdDJlY1Zq?oc=5",
         "date": "Mon, 08 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Nasdaq-100 Index methodology updates - invesco.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "invesco.com",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVWEySnRmdmxXV1Npa2ROLWMwdE5HTnQzSzVRSW0ycFJxaUdOM1RsTS1YUzVxQjYtaTNDbkJoUlNNQm81QUdONjFBdVYweldKZlJEX1hFN05qS243ZDgxZkJZeENGNUJYU0dlYUhwX0tzS1lyNE5fSzdnSnZkTkNhUjFmRDBXQ1hGbU1qbVY0R2RfdHFHVWdUU2R2NlRMWkszU3c?oc=5",
+        "date": "Thu, 18 Jun 2026 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -2631,6 +3467,26 @@
       },
       {
         "id": "evidence:None",
+        "label": "Google increases capex forecast again after cloud-driven quarterly beat - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNTZyTWZjRUFlVHJzZlUxbjIzNFI4OUt5WG1WR1ZtV0U0OHlBSVpJQm10VFJiYy1zcjhHUGpYTlVRWWduUjJHd19OYW1aaTZ4ZE81V3FOU1AwQVFmVzJaeEFHYkJJNUJxQzRVZFF1dDVjLTdpNjR2bTBIN1BrVTZXMUNUaWxBVkQ3VEZBNThMeWNxRnk1RnMtLTlUS0UtNGJNNkQ4?oc=5",
+        "date": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Google falls more than 6% on capex growth expectations despite earnings beat - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWEt0UXR4Vjl6UDN6YThSVC1nbE5KOFBHcUdjLW1mRVdmSEFOdi04WV9oSF9iVTJ3Y2F5YWNDM1FVWTM3eW5pX1Fjdi1mQXZ1b3hPQ0RnTnBkTUFkR1NsNUdMLWxqeENHYlFoTVJpemhIVVVLeVlPZDBIanFxdlc5RWdHZ00zd3Ytd2EzQmozczQ3eUFCbHc0TlBzZ05JM2JpNkV1RUtuRU9hVG8wZjNLN2RwTjJ6Y2stNlVJcmN1cmxnSmg2aVlISW1iVUZ2ZUd4?oc=5",
+        "date": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "Amazon\u2019s AWS Earnings Preview: 5 Big AI Sales, Anthropic And Nova Things To Know - crn.com",
         "kind": "evidence",
         "category": "General AI capital",
@@ -2657,6 +3513,56 @@
         "source": "Benzinga",
         "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQaE5uTE9scEdkbk1zUW0tdXItMVh0aHVXZHFxN1BuQjBvRkNfVjJSWG53RWhCQkk1aURiNU5YcXZfemtjdEk5R1NkWlY4bW1Gc0tfOG9TSUZRYVhOTmxWX0VkVkVWczZzVHlDdW8wQnZDdWU2ZklyZFYzSzlGLWJlMnE2eXpuRE0wRmViak5ycnVTaXFGMGdhRlVIMERZalFyQlFDdlV5RXVPNVRWbG1lY0MtUlIzSVhuZ3FYLTFNUi1VZDM0cDBZZHpWeTJtckk2TmxpaXRuZ2lJRVM2VFNHeXkzZG9ucWFk?oc=5",
         "date": "Thu, 04 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Mega-IPOs 2026: what they mean for your portfolio - RankiaPro",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "RankiaPro",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQOGJERWZyWWtwYlBCN0RKWGpISDhUVTFaMjJITHJOQ2MtUFRRbG9VcEpyd2xNRU05NnlCdVBrVXktcU9XcGNYZWNnS3RTeWp1X1YxZWFDTlZuV2Q4X0tVOGNvVExsWElpbU9JZGxxZWliWndjNk9KQi1RX1ExWURBOUdyYlQtb1hfem9TcWpXYnE5SEc3ZDlrdXpPTDBZdzV1cjdsbVl3d1d6cVU?oc=5",
+        "date": "Fri, 05 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Trillion-Dollar IPOs Are Coming \u2013 But the Rules Just Changed - InvestorPlace",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "InvestorPlace",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVl9GRGlQdDVIZHFYS29Ha3ZDNjlOelVqZHdDVHpXMDlodjllYWQzcGdsZlJpMTcyX2xqc1BHT05CbllVVE02UG82cW84UEwwcXVQZUJPVnZXMXc5VDZ3SXNYZlAxeGszWGIzaFA2c29MR0Nyckk4NUJEVmlsaElhaGNOOGtBZndWbDV0SjByaVpVZWtYX253ajF3M3BDY3I4a2hVNExIS2hqTUJ4dVRTSnZmUTg?oc=5",
+        "date": "Wed, 08 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Tech and AI IPOs and their implications for index investors - Lombard Odier",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Lombard Odier",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd0tpSzNjcmV4T1VrYmF3cHduM2JKQlhxMkhnYm92LWtVUUhNcnFFTmtDX1BZVVVVQXFlUG53MUhMNjhzT0xjOFBjTzhxZHBDbzNwZVNJa2hBOUxkZDEwT3prQnRFTmxGa3hxTlcxQTZnQVJQYmJWWVdqdWtIMFJzVzJ1Nmo?oc=5",
+        "date": "Wed, 10 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "New Nasdaq Index Rules Are a Gift for IPO Flippers. Here\u2019s Why. - Barron's",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Barron's",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVkpNc3NGTTBub1A3V21tckMyN0lRUS1KbXFsRmhSSEhGRnl2Mi0zY0lkSzA1YmJldjhRU0tQVHJhMl9Wb3JlQ01GcHpzX0ZJUG9QUVN6VnJYUHhkUUJFaDhxU1hlUWtSQncwT3hHME96RUJHOEZDWXY5TjFtRkdXOHhkb2FRN0dPRDZlSUFSQ1pQQnd3YlpJSHotN1I?oc=5",
+        "date": "Wed, 01 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Mega-Cap IPOs Make Major Waves for Index Investors - Global Finance Magazine",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Global Finance Magazine",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9iTzRxWXdfRmwxNXZWcXVtUXJPektOa0FRemdzWlgwRzBiVXVpZHlPMlhBTWh6dEFlMWhzTU02YTI3TzF3MjZjTEd0Qjl4cWVQVkRMZm05ak1nZFN6M1N0dFBR?oc=5",
+        "date": "Tue, 02 Jun 2026 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -2707,6 +3613,26 @@
         "source": "Yahoo Finance",
         "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRnE4T2tmX0F2RDcwVXh5WU9vMjRqNHlmMjdRUXYxNUhHOGtOeXJjd0hWZTd5aGhnSEtFblpPTUZhQ1hvRXo4V1RYNVNuRkxLa2N2dVVsXzJUYlhnQWFuVU0yNlUyc2ZXR0YzYnRFSk9fT1pnOUh0SDFUcVVmMW1RTlkxUDdiV25NVzhXcEtHdS1ITk91WDdmSVZ3VHhxaERYUG1KUjFCdmRVM1E?oc=5",
         "date": "Sat, 06 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "How Megacap IPOs in 2026 Could Reshape Global Benchmarks - MSCI",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "MSCI",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQVlhDNHJVd2xOY0pXTjU1dElmYUs2bGdfczl6Y05TRENBdDZOYi0tSlRoMnprMkhSYXVjV1pRbld1OUdtWEw5TW5sS0l1aEVMUjJCZjBkZl80N25ORXJ2bE1BcE5LSzZnQzNXS3AyYnZsTXpsSjNWUE9SQzBGZndOYzlibS1kSlJUZW80QVZBbldRWTdYRmtkX040dEpRbkVmdzVvbS1GZGQ1YnJ4TWc?oc=5",
+        "date": "Wed, 11 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Beyond the IPO frenzy: what Nasdaq\u2019s new \u2018Fast Entry\u2019 rules could mean for ETF investors - Bitpanda",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Bitpanda",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWGYyZ0VCZFRlTnYwdUNHNkRhZFUyS0RtNHA4TlFRM0lwWmp1MmdCN1pNVk9ZXzBfcXJmTnB1a3ktSUh5aWVSSTZoSlEwdlo1VHJ3ZnFPMkRReW5DTzRDSTBYdE5iWU5sRDQ0RXlFZVlYY0U4ZWhXb3p4SUYzRUl3WDhBMW41dGRURkpoeHEySGs?oc=5",
+        "date": "Thu, 28 May 2026 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -2771,12 +3697,42 @@
       },
       {
         "id": "evidence:None",
+        "label": "Meta used AI to tag workers who took leave to be laid off, lawsuit claims | Technology - The Guardian",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNenpoTkh5ZFJ1OW13VUdZRWFmQWE5MHlMQVBieFV5TTR5ZG9CWTMzcWwyaW95UjNWNmo2aEhISUxZV2Y3eDNhc2pKc0NFeHJ1TjcySExnQUs4QUlwZGhUUjdQQnZlMm9Yck9aZmhhSkVoZGJPOHBnWDVjNUtSZTBwOGVwR01SUQ?oc=5",
+        "date": "Tue, 14 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta used AI to target workers with medical conditions for layoffs, lawsuit claims - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeXpzajJiQVM5dEtfLWVGbEE5MFhvaThhd1UtRmZ1aUFmejRaRUZDcVlMR21rLXVsS0c5R2p3SFlSX1RJYjhBejhmSFI2NXo3bFN1TXNqdUFfdGI5aHZreEtadnlHZzBsdVpFak1QVDRPSUFKdTR1UncwVUp0Y0hWT2FMMkU4dEZZUHowY2p3LWFPNm9vRXpWbWpDNjB0QVdxQlFQX1FNVTF2cURnOWpid3NXUTBGM1B1ZHc?oc=5",
+        "date": "Tue, 14 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "BlackRock\u2019s GIP, Microsoft-backed AI group buy Aligned Data Centers for $40B - ESG Dive",
         "kind": "evidence",
         "category": "General AI capital",
         "source": "ESG Dive",
         "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSkVpVWh3MXVDc1ViZHZzUFNJM25HdEI5WTRuR1RYOU9IRkVvUTNiNU5HMHIxbC1DN3lmaVFYaWxfMEpGb0RHRWZUR0F2aEhad2RpaUc5SENQZ09ZN3NJT1Vab2ZMY3FkY05heThQUGpMX3gxX1BmUUVJTi03bEVwcU5ETGhMSTNCaHZ0LWROVjZBN0lBTmtBX0FUVlFFTHJ5OE9tQjdRcnBrSXVtYXc?oc=5",
         "date": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta Announces New Strategic Venture with BlackRock to Develop Data Center in El Paso - Meta Investor Relations",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Meta Investor Relations",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOMUVfYWxjWVFnZkkxREZUSjl2NG1YaGkwR1FUelRQall3MExWQkdhQTFoY25TUjhaRnY2dUUyeTFMR3lDN3VieVFKaEZsVkxTY2hTVVVWNWJUVGRqN3cyRFN4Tmk0elBINEx2SmprenNmVUpCZlFlZHRNbTdWbmdLeG5EejJDbEdLT0t4YkU3M2pMZlBYbHhnQ3hJc2ZUb1BVYlNza0NNNnVaVWNJNmpKSDlDQ3c5V054UDR1NnQwQ0ZpRkNmbkR6UUpJbmdNMXNaaUlvRHJuOGxQa0NNbnpfbEowVGZIaDBGenh0X3Rpc0t6eDhOQm93c1owQQ?oc=5",
+        "date": "Tue, 28 Jul 2026 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -2877,6 +3833,16 @@
         "source": "OpenAI",
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZFNRY2dtUHc2VXR6Q1c2SUZjMzhDWEFyVkZpNldYZmNRQ0xzb1lDZTIxWTFFN1dTUUJ4eWY0dk10MzJiRm45MDhUVkxObUNvcVBkRkE1czBWYURPRllPODdIX1c5SURDNmMzM1RJRmRfSlU0a3hadVpGYkpIRUg5djBQb2U?oc=5",
         "date": "Mon, 13 Oct 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta Partners With Broadcom to Co-Develop Custom AI Silicon - Meta Store",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Meta Store",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQbkJRVzdfRWNmZ3NIYXd4anc0NkxadlVhb09qVEtYVFNsS09TMnpZWEpycmJIQUgzVFcybUpTWmwyUjlMTzljcU9UY3RRZmlLMDBnN1hYeXdiaklRMkVSeHVmY3REbHlmdm4xb0JGYWVrT2FKQ01pSV9jLWdwamc5NU51SlFvWEJiTTk0ZDl3U1JMYUhHNEV1aEln0gGfAUFVX3lxTE9OVXhrbzBtRUFnYXZlamJLeE00VFVUdVpRVGcwQVgwNlFCQWpJTldqQVJLWXduWGFDTXgzUDhZVWlVZ3RlOEdNdVhGRkktYzMxdXRnc2k4T2JWeXFmNThqQ0Q4WTVaNXZEQXF1ZWhmbUNxVlc4WkZSU01COFF6WndQVEFZTzFUaXlKaXZDTnBfN1lRdWxTSWFzbVVBeUpVSQ?oc=5",
+        "date": "Tue, 14 Apr 2026 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -3051,6 +4017,36 @@
       },
       {
         "id": "evidence:None",
+        "label": "Big Tech AI Spending: 00B Capex Race in 2026 - tech-insider.org",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "tech-insider.org",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE15N1VJNU0wMzFMSlBOVXA5UDBMTXhaYWYwREQ4a282VFZzMzZzOU14RmtEcHlIYllZdndldVo3Z2E1dHBaUjFZSTdRS2NsZkdmUWUySzhFbGZ1RHdjMjA4UUJ1Y2JmNFVrNjU5encwS3RqVEg5?oc=5",
+        "date": "Tue, 17 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Big Tech AI Capex Spending Surge Threatens Market Stability - Wealth Management",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Wealth Management",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOZ1JGWVpuMG9SZzVGQ2JFcHlTdVBEX1p6YWJ3VTBiRG41alRMYW5MMnJkRm83ZFZCbXVqV0FfQ2JyWTZPbGl5WHBjNXBrblVDN3pYSmdDX1NLYWFhb0sxdW9rLXh6amxDcm5IbDRjQnVSQ1QzQUpmVDkwQUNwaXUwR3ZFT19rX25tbVZwV0d2R1ZJcG8?oc=5",
+        "date": "Tue, 10 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tQ3M3Vk8tM1haT2Y0Y0dIU2VNOVRmQ2dVUkl1czcxYmFYcnlQQnQ2WmszSmJKNFhxdXp2OHFGZFluRVpJN1Z2TWgxaWk2TndIX0ZYZXY5OUxUVnBjMmpDN1BtYmlSZl94bGlYMHNJYTZndmFXdmc?oc=5",
+        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "Amazon Could Pay More For Claude as Anthropic Shifts AI Billing - WinBuzzer",
         "kind": "evidence",
         "category": "General AI capital",
@@ -3117,6 +4113,26 @@
         "source": "IO Fund",
         "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQMnQta2pyWXZwT2VMUm0xak5vR0x1WjNmUElOMEVweVdYTXBqQ3Y1MzZqY1hLb1FydEtOX3dyYXZnT3h5bElKSE9vX0h0NTFPclM3R21tay1LajhhemRrM2pDNFI1bWhRYTM3QWNraVZwWld3bGVSR3BrSEx2WGlTa1hIU0tBN2s0?oc=5",
         "date": "Thu, 11 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI capex cycle: war-proof for now - Allianz Trade",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Allianz Trade",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQ1oxYmNPaGZ3MEJEN1dMUVJ1MEJWNVNBM0dhcUZKRVVRQWtNY1hMWE5LR256SmVSRlEwNTdROWlvbE8zMzN0QkE1aEZyTGRvclZuajhBcnNVMlRPOVNhZ2haV1ZJdU5CU1BBSDdXTng4cHRXcFBkYmZiNlVBSk05cjdyTTlPa05qZzc0czJlX1hvU2h4SXBtbndfYXF0MUlFYnNIY3ZuQVk?oc=5",
+        "date": "Wed, 25 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI Capex 2026: The $690B Infrastructure Sprint - The Futurum Group",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Futurum Group",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdGRGVnNsZk5JbzE4OGItMmEtSGkzX0ttS0Vud25lbkl6NUpwLWRQYmk5V2Q4SlR2MlNuaDc0YzluSThiVHBrc1pnb1M4aTlCMnQ1U2dTcEpuazV4eTh5NF9KZ3pabzRma2FLYVhIcVUyd2dwYVZqc2lkN0VIOVlrTnZBdUhnQQ?oc=5",
+        "date": "Thu, 12 Feb 2026 08:00:00 GMT",
         "weight": 1
       },
       {
@@ -3191,6 +4207,36 @@
       },
       {
         "id": "evidence:None",
+        "label": "Meta Platforms Stock Drops 17% YTD: Should You Buy, Sell or Hold it? - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZjZ3RTNHOEpxU293cUJQUjJkcW5IYjU0bGhtckFsRGEwa1pGSmlwajA4TEx3WEVNQmk1WUZfR052WG80M2cwbEdJQlk0RHFBOVhfc0gxeXR1ZWMyNTNRVmhyelJwSDUwUkM2U2lycG5yVmYtZ3IzM24wVlI1VV9pTzBSTkZaa3AxLTdBWlJCSnd4Ujlrdm5wZXVOUDk3OXl2Skh0UXlLQnUzMWlKV3I0RE5hcHczaUFYX2RqMQ?oc=5",
+        "date": "Fri, 21 Aug 2026 15:46:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta (META) Quietly Became A Major AI Customer While Building Its Own API Business - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRzJoaGxkdnZHMGV5Z1p2NTV4SlpMT1ljNGpueG9WSlhYbFZQN2k2MVpxQUw2MnVNQnN4OTJqWDZmUmdxSnJZX2ltd0NqejZaUVM3UEFWVC1hWUR4Ty1tdHlmYTZZQzZqdTZUQ2VobTd2QmFZSmlzRmtRNVBubC1WUUtnOE15cGJDN1ZCelJzRFU5ZGZMaE8tYVFR?oc=5",
+        "date": "Fri, 21 Aug 2026 13:12:35 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "BlackRock Greater Europe Investment Trust Plc - Transaction in Own Shares - Yahoo Finance UK",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance UK",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNY1Y5MlRmYVU5QnNfUXhOYnI5NkpLaTQ4UVAyMmVUSl9YMkRpZVlMblBsU1dXbzdpVG16ejlMMTBxTUpMeWZMZ0ozVjJkTDlDN0FUQkxFUjFNNFlTMmFCVElQMEJ6UXVOWVZlTWlfTVgtUWVOTFZDWWp3dnNpcDJyeXExYmZFM01PQkJIVUlvYVZqdzky?oc=5",
+        "date": "Fri, 21 Aug 2026 17:01:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "Loan Note: Eagle Point\u2019s milestone AI deal; Blackstone builds Kuwait presence - pei-privatecredit.com",
         "kind": "evidence",
         "category": "Credit / infrastructure",
@@ -3241,6 +4287,36 @@
       },
       {
         "id": "evidence:None",
+        "label": "AMD Has More Than Tripled Off Its Low and Still Trades 20% Below Its High - The Motley Fool",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTXJHejQyQU4tVnNmbFdUSU9XeWZrZVRsVXpxTi1kVlNBTC04VXA4N0NhZE5vSFJTZEFzd2hHWWZHMFRQOWRMY2UxRlFUMFgwSV9uOU9PS2t3V243VV96SGRXUTJ0VHh1UkpueDgyaHFYMHdkWVF1cFlRcmdaZUs4dFFvdGlTd2l0cmpuT0NDcF9mLWhHZF9QaFU4eGxiU1RiWlZYS2FUNzhMeDRrMklBUi05QzVpQQ?oc=5",
+        "date": "Fri, 21 Aug 2026 16:49:27 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom\u2019s (AVGO) Massive New Debt Deal Points To Where AI Is Headed - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObWVwYkhLQVYzVFdQa09NWVZvd2hILWdzd0VXY0dTWmllWkoxQzZQd29jUUFnYV83UFBySThWSWlDUnlXMlU1TkhNZjRjMGpEUk1WRk9wNXlPOEg2d0FIQmZOY1RqTmtnQ2RBamxkbTN1YVB4czdXZjhJUE1aTC12TER1YmtGckUxQ0g3TE5BVDZfemFYTk5MbFI1QQ?oc=5",
+        "date": "Fri, 21 Aug 2026 09:45:28 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom debt deal expected to reach upwards of $70 billion, sources say - CNBC",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdHdTRkJtbmdWdUNiV1NVeHNybVJfaGo4WnJIcWhfcmxGVkE4dE5ILTlUM2dLNnBOREQ0eXBLMFdsdHBaX3N4QlZVblNTRGdUWnczR0dlUVVFdWJDN0lKVE5TZXFRR1ZLcnIyWXBEbWxyelJIYmozSTdMUW9YQ0FLem9ab1ZrUHY4MkpteWtnSjIyTjZOT0lPdkVJNlFWdGhndTNUbXJn0gGrAUFVX3lxTE9oNGVBMHU1VGxMRjlEMmZITmJUMHdDc184VnhTSVpRYVZ6dUphOFN3aWthQ2RIYVlVQmticXNiVmFjN0luQ1ZlZF9UbzdEd1dsY25NbWhDclVnXzBSRnNlZDZ1c3hlSW02eWxxMHZrbkcwbjRVbVVjSEs3R3JqVHAzd2EyWXEwRnlGaHZLUkhWOEM2UUtvWTJFOWVUMHdhbnpYQUVfQnl0UkZiRQ?oc=5",
+        "date": "Fri, 21 Aug 2026 15:58:29 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "CoreWeave Has $104 Billion of Contracted Revenue and a $59 Billion Market Value - AOL.com",
         "kind": "evidence",
         "category": "General AI capital",
@@ -3267,6 +4343,16 @@
         "source": "Austin American-Statesman",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOd2E2Q1VaTE94eWxIb3FZNTE1U245RHZZVjNxVkk3Zm54em10cm9INnRyWkVEVE5xdlJ2MlRwMUdfdEpTVXhHT0dmYnpMN2N0WVdoVkhSU2FrUy1zdUlrSkItSHJUWUxXU1hoZGthWm1BeS1KQWlEd3lwbm9RMDQ3MGoxWThTTTF4b1NpTVI3czRRT0dhTm5ydVFiR3BoX1B3ZDBHY1h6Z0w?oc=5",
         "date": "Fri, 21 Aug 2026 15:09:54 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Tulsa schools and business leaders excited about new Google operation - Oklahoma Energy Today",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Oklahoma Energy Today",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQekJoQXF1R3J1Zk95YldCY3hfNlJOTWFLcHF0emNBeW1pYnlmMFVFTXZhUHh2aG91WTZlSmE1OUpkYXVGaktxWFRqYTlKUHlXeV94TkI4RmJObDhQaU5BdVhPd2hyS0NZNVhCX2NKM3RPM3lLN1RYRXNFc2JEdi05MEZ5eHJCdG1DU1BxMUJKX3pTbUV4cE5kaVB5LUozODl1Q3pERXVUQQ?oc=5",
+        "date": "Fri, 21 Aug 2026 15:19:31 GMT",
         "weight": 1
       },
       {
@@ -3387,6 +4473,146 @@
         "source": "Morningstar",
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOb2JZc0x5UmZuNk5FOF9kZ096RjBRMHU1SmxMa3duSEpRRVNmUkxBYjBJd3luZll3S3FGa3NsQ1Y1aDN6ZkNMQjJXSmhGbXZUUXZOcjBhVjNvMDlUdGlmTjBxd0RQWkgybHpBMTUyeVlxLWhTV3Y5VUJlRTlEajNKM0x0dzhGbFNBNXYxNzg0QkZTekpwZGxuWjhSbVFVMnVj?oc=5",
         "date": "Fri, 24 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta Partnership Ads Hit $10 Billion As Creators Outperform Brand Messages - Forbes",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNajhpUlJWTUtrUUptOTJ3Y001aUNXWXpPaS1uYjRGRVFoY3FaSjB4SkVYOTFSQjhwSENlRWNYd3pKM0pYODE2OHcyQmptNENTQ3FtcG83cmRwS0FrQy1XLUF5RDZqY2k0VnpLazBZRmZobFpERjFad2RQY3RadS1rUHR2Smg5MTA2SWNoOXFnUHpET3NycG94QWdmWXZTU185LVF6QWh6cjJ0QWNsU3FWYkgtdkFpa3dfaUxSZVdqQmNkRWF4X2s2LQ?oc=5",
+        "date": "Wed, 12 Aug 2026 15:45:42 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Ahead of Earnings, Is Meta Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxON2lub1N5OUlRTFJ4ZmR4ZzBJVjNBamlDR1dNX2NZMTdXek0xU3JYb1NOMWVNNmpadEVaV080UnhHa1E0NGxxVnp5Q1FXQWFuVmxIVVQ0SXFRV0VzYUF2b3V5VGRJWmFRdlZaeURWODQ1REZ5RDJWM0NMRXNjMDRDZ0ZNbjNLWmdSRFY5Yml4UG5Iak90SjFkUEp6ODFuUEk?oc=5",
+        "date": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Here\u2019s how Meta decides who to lay off\u2014and it claims to not use AI - Fast Company",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Fast Company",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM2diaEFIZ3ZTUnZVYnZscmVjWnpxa2hKOEx4Zml0dE00OGdyVl8yT2dTSWlEMnBmOERnaU9oRVBUZHFGc0dOcUtRdUxCUVRqWVE0T0JBRUNUZGtQbE0wUTV1WXVER0Z3QkFKYTAzaUVvWUZNWWllSVR4eWMxVUN1dmZtcDJoTmZGTm52UWpKdndrQU9IRXkwRHNZR24xcXlBellEQkpqYTJKTHZXZmZ2MQ?oc=5",
+        "date": "Fri, 24 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Arm and Meta Deepen Strategic Partnership to Power the Next Era of AI, from Megawatts to Milliwatts, for Billions Worldwide - Arm Newsroom",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Arm Newsroom",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0wUGQ3UTJyUU1NY2dZZExaeEl1bmNnNGU0b1NXZnpTaklrMkZYMThwaGc1QlVIbXJrYjAwN1ppT1BqaFpJXzFnMkJhcFpRNncybTlVWWxNR3RmNkJUWkY3WGMtSWs4WE9aWG1iTA?oc=5",
+        "date": "Wed, 15 Oct 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta will lay off 10% of its staff - NPR",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "NPR",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBEV0laZkxjS0U4b2oxbnlDeDVWQzJyMndBeWRBbThJME9PY2VQUGRWQVQxMXNJWS1yVWhRa0kxVURCWXlfUl9aRHp1bG1lZzAyOWlMUGJTYjlOOUtYcjZSOXg0ZkQ0dWVEZC1yU2dxYnJXZFFHNkpVcUg3S1hZd0k?oc=5",
+        "date": "Thu, 23 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta Workers Sue Over How the Company Carried Out Layoffs - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeUNfRFRNZ0JheGxHQWVqV3pVdkJENU12QnFVNWxaRkQ0MUhMQnBIUEN5ZFg0ZDNtdVRqOUExN0lrems5RjFKbkdmYzJaTGVtSXdIREVxd01ycldncXJTRm44aVlEREU2aFYxNlJiRk9SazFoRk9JZmw0VWg4QTU0cUMyak54a20xTHlycFo2X2FNTkdmOW1qTzBKUE1FMmxjeHRfN3ZNMA?oc=5",
+        "date": "Wed, 15 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Meta Reports Second Quarter 2026 Results - Meta Investor Relations",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Meta Investor Relations",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdng4QXNhRWdnc3ZqNjNLZFBoZFFZS0Q4MTA0ZEZoYUpPYnFNT1J1REQzRDlJVkdZZERQVjk5TkNDcmh5SElKdmpQUndFc3dpc0o2NFNtWjBhODROdlc0UzVfQTY3UjUxeVQtQTVNRHRtb3BsZklzUkJWdDUwcF9sdHdtRkxHT1RScnFxa2x2elRYcUZ4ZFN2RUw3UkhaNERnNGdxdjllOEVWVFBONzU1TUZfVldWYnQ5OS1hSTF0WQ?oc=5",
+        "date": "Wed, 29 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Energy security in a world shaped by supply - BlackRock",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "BlackRock",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTjFjdWxndWFWUFN6dUcxMUd1WUkwRDlXOF8yblQ3NXN4ZWgtcjNRQVg2VlRsWVE1QzJIRkZtVFlPMnpCRFdVX2J2RkVUaE5YN290a0lDbGVLN3VHV3NuWFJBSGdsWE9zU1RkSDZ4MUhtWFdGS2xnbVl0WjZpVDVXWGQzcUlpN0ppOTk2enB6aHBQSGoyek5YNWlEMXJod3ZESFVWYll4cnZkVkozQWpyVXNKSEIwUkc5MDJmVA?oc=5",
+        "date": "Sun, 21 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "New stock market stories from Q2 2026 earnings - BlackRock",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "BlackRock",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWjhOV0ZubDltMl94dWl1bWtLM0IyNUp6T1pmbmd0UTdZMERpeHpXcnRDUGpEWDgyQVpDaDBrTzZGaFhQNzRMM05tWEdCdEt6VXhLOFA2UlBaZHd5d1RWT1hqZlFKcTgtU1RVNWNueUZLNHNZbVZOTE5ETFJBTG81VE1kUU9VdDFFRjd1WDlLY1ZGUHF1?oc=5",
+        "date": "Thu, 20 Aug 2026 17:59:57 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "What Tariffs May Mean for the Economy and Portfolios - BlackRock",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "BlackRock",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPby1nelB5Uk1aZ1dMUXkwZmZMaHg1WUZBNnVNaWdjM0lfLUdKdVlmbXEwVFEwenBjSzltTU9nNkRudGZKRkJ6ZEF0UFFzS2xIQjVVaGlnMnl6MzJTZWpsWll6NFBiUjdIYTVoSzAybDZvTGg0NWR1SUpaREJZTWNZNjZ1cWo2ZFE3TjlyZ2tKdHRXakhRZkE?oc=5",
+        "date": "Wed, 12 Nov 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Rethinking neutral - BlackRock",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "BlackRock",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNemdFOTNObmFNQnE2R3dmaGZrckh1YTB0MTJNenpERVpNZjQtWVl2Wm8xYWd0MmRKNVJKMDd3ZTFpWlZzejFuQVE0dElacDVSa1pVQXloM3NSRUEyOGtUcmRrYWpQdlBkdVdHamhqVTFfT0RucHlOY1NqcDBEYTlUTlJXMDVGbUQ4cGthbk02NzZzX1liSll3RklkTHZ1cWVGSllqTEhrelpRMWFNVE9yQXlKbFdGOEhzRlJBbDM4SUVMNWlh?oc=5",
+        "date": "Thu, 26 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Mega forces: An investment opportunity - BlackRock",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "BlackRock",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVDdiQ09tMVNsMjFHck1LQUFZQjBIajVVMUlVdDMxd1d2M285T3h3VkgyS3ZiNWd3dmlvVXVubEFPTnNnRm5ib3ZvV3B4S0tWa3VtRUp4X016a1lGOUdqc2tXbDVGMWdLN0ZGOXlSSUlYUEFMVF9jVS1BRXdkZTNFaFNLVjhpYnFQWHZzcUxXYzE?oc=5",
+        "date": "Fri, 31 Jul 2026 11:14:33 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "California Federal Court Halts Allegedly Deceptive Debt Collection Practices by Blackrock Services, Inc. and Affiliates - Consumer Financial Services Law Monitor",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Consumer Financial Services Law Monitor",
+        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPQTdhVlU0cEZ4NGhnYzk4RTM3ZDFSQTh0Qkg4TmJfVVI0UGJhZjA1WlVTWlhod3NTcUpjaC1PUmpOTmNkYWNqYllwMk0wVE5Hd0xfQ2J4cXpHVjFYdXRIRmFOYzlyWDlVeVlOY2k5M3pISVNScU82dHhwTEtMOFJydjFUTk5sYzBTNVF6azltczRoNXd1YWI4MGZXLVhwazczdGlqekIwT1N5SkJLSFgtdG5nOFl0SXM1ZjFteEdIbV9xd0pHUXlZVWJ6dmNpczcwb2lSVzFhU3RveldCZ2tBSUlaZU1BaVZqU0dGRVRhSlhEZm5JcTVQQTFhQWFYaVg1NmlqTnNCaUpFdw?oc=5",
+        "date": "Wed, 12 Mar 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "BlackRock, EQT Lead $33 Billion Acquisition of AES - ESG Today",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "ESG Today",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIS0s5RDRwU1Jmc2pFN3d2UU9OUXFzZEVIVk5yNWphLVRuRTZjTFlKdzhJdXVhZGUyZGs1U1liSk5RLXpMa3FPTjMtN3pwcWdsZFJCVi00TnlINkxXXzc1THJ6TVlmdV92OXNZT2VBX0R0dXhfb01UdlNXR25CR28?oc=5",
+        "date": "Mon, 02 Mar 2026 08:00:00 GMT",
         "weight": 1
       },
       {
@@ -3571,6 +4797,136 @@
       },
       {
         "id": "evidence:None",
+        "label": "AMD Stock Falls Sharply After Earnings but the Chip Maker Has a Bigger Problem - Barron's",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Barron's",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9FOHlEd3VXbGg2UElsMlhTMWNKUERnbkdzZ3lIdHdIZ3VuYnJTSHZiVjZvMWFBVDNhYTVCbEFHWWd6QmpGcHhKY3EwU1JEUDRSNDJSQ0l4aEFrUVBZNFlQbVZURmJVQkxmbzZwOEtZLUxaQXVa?oc=5",
+        "date": "Wed, 05 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AMD and Cerebras Launch AI Inference Solution - Cerebras",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Cerebras",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSGxfRjlGZUZfR1hack0zbEdZcVJXY1JCaWw4dl9fMFZnQnJHVnVfU3NsZkpVd2hPbjh5Q0dHTVcxYTByelU2b3lMUzVDNk54ZFN4OG1VSko2MXEzV0d3bDdHSTJiRHlrMFZtallYSllLUzdSQ2lVdDVra2ZqY0xPaEV2cmxRaXRIWnhRd19obk82eFBGQXQ1YnpYc2hLY0poOGVsdS1yZ19mVGs0RlFVZ1diV0luRktiNV9Uc05vSHpEbmViQ1NjX1h1UQ?oc=5",
+        "date": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Here\u2019s How Much Traders See AMD Stock Moving After Earnings - Investopedia",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investopedia",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaDJpR25PX2FpeFlvMHhRV3NqRVhVcFNhS2plRWktT3U0Q2hRellLd1o2cGsxbDNhb05VeXRUY2Nta2l3QkFjeUlsMzZvbXdvZ3U4OXktU0hVSTJ6eUhhcjlMX0VuemtyQVBfSFljYzJXQjJ6UkxyR3hLRGxTRHFzam5YcHh6WW9XWHRjS1BTeUQ4SkY0UkxSWEhYVENFUUU0dHp6LWlQdE1fZTZf?oc=5",
+        "date": "Fri, 31 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Should You Buy AMD Stock Ahead of Q2 Earnings? Here's What to Know - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOa0ozTVFjS2pIV1hnY1FROE1GcHJGckx5TU5UZWJpQWJSWnFObm13c3cyUVdoa0l5bTY2d1VGaFA0RGUybHRuSlZrNXVXc3JuNXpHS3A3S2J3NDBDUDNVenJnQjNSbXJoS0J3cFVZZWlTWmJIOEdhUUhrQ0U0VENzQWZSVHVDSE54TTE4czhFMkc?oc=5",
+        "date": "Fri, 31 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Core Scientific and AMD Announce Infrastructure Partnership - Core Scientific",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Core Scientific",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTEstWlVPenBxdWx3WkxBUVI0N3BXbDZSWGtkZ3IwcjFianBmWERSWGJOUXRrblpXZG5NVnF1QXozLVZrRzY3MTFKVW9tXzMyX3o0OHB1cERDQXRhSzQ0RnRKN3NoaENMbGhxbXc4akNKVmtiREFWSnBkSVBXczZTejJrblRkelNsZW9fVl9PMTRuVDY4UXV1Ui1vV1kxSVl4eF9tZjN6enF0QjllSnI0TkMzakZfaXFiS2wyMVU0LTN1dUhMVXpmTFdmcDRldDg?oc=5",
+        "date": "Tue, 28 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AMD's revenue climbs 50% and data center sales doubled, but the stock is down - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1FSkxiYWZwZ3B4SElFOWl3R0tlcUowc0ktU3JLN3lBTG9iSFBoMllXVExVMjR2bHY1NjhkSzZzRE5hdzZjcVBkM2NoMkl1Y3YyT09xd2NSVEx0ODA1NkZSbnh3aGl0ZTJJRVdkS1NLVWl6Z9IBd0FVX3lxTE5DZjZ1S0J3SURPUW8tNlIwbG1CeDIwRDlPY1lRQmN1YW9GQjZ4RjEtMmtQS0tvS0RMS2UxQW5Bc0UxU0hnbUxuYk10MlFxNXFVSWJ5MUc1YWVHRG4zSWEyY3dTS2k1RFA5dW1sWVBCdkNZLTFMRjgw?oc=5",
+        "date": "Tue, 04 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AMD Acquires MEXT to Advance Memory Optimization for Compute Infrastructure - AMD",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "AMD",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWTExMXRhejMzdlV3VENMeDNaMnBGbkNmajNqLXFQS3Z2ZE9DV3FOOEh6ZGE1a2Z2ZG1pTVRWeTdjUmM3WWM1MEZUVTFkM21tNVltYnlnWTdObmJvVm9Iay1VcnV2dTYxLTFlM1Z6UmRqOS0yVjR6bkxENk5Wd0I0b1YtcHoyVTg?oc=5",
+        "date": "Mon, 15 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom revenue miss stuns Wall Street, and its stock sinks after-hours - SiliconANGLE",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "SiliconANGLE",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeGpfY1VXRXNLcW42YnFJRWxuN1RtQkNhRk8xWDZpaXFmNUtibjhlTGx2Q2dkYXVjUlFqOW1Oem0tYVlYV1YzQkJ0cHc1MG1tdzFBM1pVTE1JaXNvSFQzQVV5dWRaV3pUY0VpWGNBN0lRSERjV1hZZDRiRFRhV1h0Yi1uRWxnTzlYMno2SXZiX0ZfQUhNNHNIWVR3?oc=5",
+        "date": "Wed, 03 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom stock plunges on weak software sales, unchanged AI chip forecast for the year - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MUWNtalczVVl2UEVtVFhSUF9QVnZVd2ZuU01aaFZaTGZuOWpNWW1Wc1Y3Q050V1ZiRWs3MVE0R3ZUd196Sno4LUZkWUJadnRHaWI5VHpLVGRwQTBTZkJuY2JZelp1VWQyUTlpYVJrVTd2YkdSblQwNzV6dmk0aknSAYQBQVVfeXFMTTBfUHNDN2g0eG9Gc3VON0cwRFlFRUhLcDBMbmNZUXVPcTFVWFNwWTZibW51MkFuS1BON0xTTXVHbFd6N21LekpLZVF5NFBobnJTTnJxa0VhdGxzV3hDS3RYc2RIWHJlMG1LR2xXUlYtSGhsbGx1Y3JsTm8wbk5UUXhOZGJU?oc=5",
+        "date": "Wed, 03 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom announces successful acquisition of VMware - Broadcom",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Broadcom",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRm5feUtJN2dDU2MxT09iWi1HeTZfMlNIM0w3LWp6cEl3bTRHbEtrLU9IRjlCbk1yT1NVdklFczl0NzVaZ0ZwLVNzZ0I3VFF3b1dJVHM2a3ZIb25ZdFVPalRHRGU0RWkwU0cxQXRzdzJicmJBWklrNXFvd180ZDZ3OVJCR20zU2E4MVhDM1ZBTHVZdTJOV1ZPaXBCQnpGaWVTcTVZdVRKNkE5bkxjZ1E?oc=5",
+        "date": "Tue, 21 Nov 2023 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom seeks more than $60 billion in latest AI debt deal, Bloomberg News reports - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaHZkUTAtM3paRXlXV050ekJBQS1CZTZMTVNWRUNVVEFJRlhyQ1BMaVppbTFJaWdFTThSN0VlZVl5dTRJeE5vanhVdXJjWmNDWGZldGFpTEJPQVdzREhObnJMcWhaTVV0NnRSUjZySEpjczBPNE9OaGw1bkM4Nnl4aWhTQWg2Zk4zX2s4TU1MWEd0c0tSOVE2elhB?oc=5",
+        "date": "Thu, 20 Aug 2026 20:38:18 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom Seeks More Than $60 Billion in Latest AI Debt Deal - Bloomberg.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaW1JdkM5Si1JUXF0SjF4aWw5SXlicHI4NmV0SndDZHc2ejdMY3ZnVjJaRG5lQ0w4YVUtejhYT1lYR0NJR3BORnFhUi1neE4yOGJHRGVNMjZFUXZxSHRXa0tHcmw4M0M2ekYxYTdSWFJJb2loaDU5MEEzYzZweF9paUdBWEVNN0ltWS00X2NWNEhmeFpvZ3U3S2N3ZTZBSGdORGo3d1lHc3o2MzhSY2c?oc=5",
+        "date": "Thu, 20 Aug 2026 20:17:02 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom Earnings: Stock Decline Is an Overreaction to Conservative Guidance - Morningstar",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVkdNcEFBdk9ONmVxQ042UmUzdG0zVWlud3dJa1F3MzZVYmZrSnN0UEVYTkNRdUFOWGZVOFRXOXF5aE9zbGlPUkJBNzdHa1g0anZxVUZnaFRod2tfUVhyMjc2UGtXVU8zNVM3bnZlR0pQcXpXbHNZUFRPNDI0TVZiOXJ3Z0hWYlNrLUJHVVNqc0c1WGQ4bm42VHd0Z0xCaEYxWFgwN2lFZkFpelE?oc=5",
+        "date": "Thu, 04 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "CoreWeave Shares Jump as Revenue Doubles From Year Earlier - WSJ",
         "kind": "evidence",
         "category": "General AI capital",
@@ -3741,12 +5097,102 @@
       },
       {
         "id": "evidence:None",
+        "label": "Salesforce, Google Expand Partnership with Agentforce 360, Gemini - Salesforce",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Salesforce",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRXpWUERzaEh0ajRYRGdRbEYtOTZuMXI0cC02aVVjc0M4dElkang5aXkzZ2NFM0pnT1h5VnFNWWVYRkJubjduX2swdDdRQ2VoNERNOVhEcEVNOVVMNVFrUXl1bXFSN3VwbmFscERPanlwdDJyM2Z1MU5iVl90OGktSWMwMWdRSFpJa1hjaE9CbjZQOERna09na2E3ZkhLX2RLc3lyMkhuVm9VQ2xLWDJjMHRySlppWEk2X2c?oc=5",
+        "date": "Thu, 16 Oct 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Adobe and Google Cloud Expand Strategic Partnership to Advance the Future of Creative AI - Adobe Newsroom",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Adobe Newsroom",
+        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5PUXA3cUJELXRQSWpnZDNMeVkxWEIteUQwT0hwTTJLMDNqQnp5dEhfX0pGRzk0VHNSSU5CRGFCa1hqOGFKblZ0bTh6a3djSGxKMHh2VDRXTWt2OWdORV84UXZLdUR6Ml90Nm9yNzhWNFI?oc=5",
+        "date": "Tue, 28 Oct 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Abbott and Google launch first-of-its-kind partnership to transform everyday health through glucose insights and AI - Abbott MediaRoom",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Abbott MediaRoom",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNOUM4ckwyZHFVWnR6NXQzaEhSS3ZwM25lRGhPTGZBSUNqTlRuWnRJOXcwbnk0UXFHeFpValNtLTZ4YXlFOWNwRjFUalpaRlk4WEd6RngxeDNGVU8zaG9VQURCbjZaUWtOelFRWmhhTU5xOUZIZVdkdlhvRDQ2OHJpdk1VSHA3czE2Zk05R2djOVBVaDFZVGcwWWV0YkhINkYxV1BjWnJhVl9rVEMyZEE3RFhkZ2VIS2gzN2xaUUM4ekFLeVBNQjdsWkFxempfNExIYzhjeWE5STZUM3JPNThQcmVvLVpSMzVSUGdN?oc=5",
+        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Google Cloud collab pioneers next-gen consumer goods tech - Unilever Global",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Unilever Global",
+        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPX044Rm10MlNjTkswYU5yU3NPS0VkWDVlQk5RTjRPUkgwRnBLTUE2aTg0Y01hQlRFZVgtZU1WLW51SWxBV0tzYlJyRlVmeEZwR09kZjBpbG5JaU1VdmRGNzluNWJfN3piZkpiUFhENm5KYUU1Z3B4MGlXZlYyYlNqX0xjd0pMakhjRU9GRVVIaTdtNjNENE1Nckd0c0lMOGxNbDFlNFB4cjZWckdSSUFyeHVrbC1mbkVub1FzZ01MUzhKSnZxRmo0NXVJMVZyeVRrMXJ4S2x2dWR5WGxOc2FDNw?oc=5",
+        "date": "Tue, 17 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "IBM and Google Cloud Announce Strategic Partnership to Scale AI with Human Expertise and AI\u2011Powered Delivery - IBM Newsroom",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "IBM Newsroom",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVUJnY1hNV2l4WUVRbVFFbG5ZVUlnQWtZYjZJcGFUd19SZW5Ob2dHM2pHUVJKVU1uLW13dVhkWUFWaVdxZmRZNTN0bWJqZ3NReGp1dHJjOERxbTU0bTdyeWpvQkQtLTdRRHNYNjNoQ0pEMGgtWE93NG9fV2FmNkFWUHozS0liODNETmJ5bHpNVjJJcDU3RFRKeEtrXzQ1dEc2WDlVZTlRSEZOcmluMFNGbVkyX3Q1QWYyWnBabmJJUkxZUU1iRFBjUkJFRkhpanZKYzF5bWx6cVpLSmlT?oc=5",
+        "date": "Thu, 04 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Google to cut 52 employees in Washington state - GeekWire",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "GeekWire",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWXpzMmlIZ3ZDMFNEeDhsLWZsS3lxTUwtRTJiempDamtXTkNLMlFwdUFsOEpZSTZURFVwbUJ6c095OTNZMWhUdWVPd3NkZnFMckptbFJ4ekJicXR1WlBCOTZ6bEtlcXNNSW4tdDlaMm9EWnBZNTVPbDFscmFwYks3cWhPUQ?oc=5",
+        "date": "Wed, 05 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "4,500 Google Employees Demand Job Security Amid Big Tech Layoffs - KQED",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "KQED",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZVBVZm5oeEdFMHExYW04TkRBY1ZWQ3Nocnc5RU5ZcGZJSm5HTUVFdTQ2TGlUZzdTMWZqVjNtUTJwS0VWVVNfQVJNekhEbzREQkdpOWJ3WGpwdVNMMW01d25iZjdvdTRzc3dHVGtxWEJkSWU5NUNRRXRCWEJDZ2pCMElyV1BMQzZMcGpNN0FwUmpLRTJLMmFHelVndGZlejg?oc=5",
+        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Q1 2026 earnings call: Remarks from our CEO - blog.google",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "blog.google",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdXNtN3pKTExWYVpPM0dRbjJFSHMzdnF6T2w1RTc0RXYtMzBoOFV0TXpBOWdYWEg5ZU90VTRkLWNUX1dwNjc2ODVXcTJlT3Y4ZFNSRmJ2VWtGSkc0WS04N1RvNVUyYXFSSWx6T00zX0lvbEtVZEszdlgwQ09ybXhVS3l3YUI3Wk82NGlTZEx3?oc=5",
+        "date": "Wed, 29 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "2024 Q3 Earnings Call - Alphabet Inc.",
         "kind": "evidence",
         "category": "General AI capital",
         "source": "Alphabet Inc.",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1lZzVDZFhmVGt0dEg5eEN2MTRzaDU3WlJVbkZMTmxkRjFRWXZBVUdqWHIyak84Ykt5OEg2bkVLT1YzZVItTVpuZV8yTlZCUEVyblJrVTNlSDg0NWFtVmV6dW9TMzMxdGkzakdreU54Q2dIU0hhT1RRWnljcTNUZw?oc=5",
         "date": "Tue, 29 Oct 2024 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Q4 earnings call: Remarks from our CEO - blog.google",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "blog.google",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbXRUR25GSWJtc1FxZl9KRHM2cUtVMHVMRmJFMmtWQzFyLUlHZExvMXp5N0EzVE9BZnBsTVJYR1BBcnJ0V3BBUzlJWWxMUHdSazJHSDRZczJPRUF4NHVWQkNNVjNlRkRqY2FFbUhESXFFZzl1WDA3MDlQUzB4Z3U4VnpwVlc4aTl4Vl95VWd3?oc=5",
+        "date": "Wed, 04 Feb 2026 08:00:00 GMT",
         "weight": 1
       },
       {
@@ -3767,6 +5213,16 @@
         "source": "Alphabet Inc.",
         "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1JS3V4TTZ2bS1YZ2l4R0h4Q0VhZW40dUtBUFE3S0d2Tk1nTW1lVEhzMjZ1QWpmWGJ4VmhkdWZlSmhfM1Z5QmRmVlNsTVdWNEhsbEpjUUtjeHRZT0RKRVdzX3ZnQnJWR3N0dWxzV18zbXVQNkY2VFlqSEptd2xNdw?oc=5",
         "date": "Wed, 23 Jul 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Q2 2026 earnings call: Remarks from our CEO - blog.google",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "blog.google",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcUdvdmFHb1pYVURUWHFocGdtMVBwQThkSnk5LUtBSVlsZ0ZiQ3VMWUhjc2xLWUxvRzVNNjJlSHdXWVYtcTh5UmpMUHVpLWxFczVXTmxNVUVpZTRCdDhHU2JkS1dhcXV1aXZZTGxUVTkzYVNObDFPUnc4eWJSWlFydXY3bkE3Q0ZjY094M0Nn?oc=5",
+        "date": "Wed, 22 Jul 2026 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -3817,6 +5273,16 @@
         "source": "CNBC",
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE95cUUwZlFfYUh5OWNrRFlBSVE2ZklGTjcyVVRFRTdlZVVNa1Y1MzFMb1lpY0tQeUVPa3BieUEtRDV2RWJQM0NsSVNlVFlWeTRaOEtsMkZLckoxWEpIQjNXenhwQV9hRmlI0gFuQVVfeXFMUE5nOVUxNnBUYVhkdHhIWTF0elkzblFDWWFqeERHaHd5LXQzR2hEakF2N3RURVhSVHdCTHNlR2ZET01mLTlLd2VJYmlOTGhQMnUtRFZNNXFvNUZJX0tURm5lMERROEZpdHlrZHNLREE?oc=5",
         "date": "Wed, 29 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "NBA and AWS announce new multi-year partnership to power the next era of basketball innovation - NBA.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "NBA.com",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE8yZ3VsSUhXY2g0VzZJb3hZMl9HNnBoaGxpTkdCZVFNeGtWX0dYMVljajZDMGdXa25Ha2FyY1lFV05vaDNhUkdsN0dKeTF1ZGlWMDN2Vlc1RQ?oc=5",
+        "date": "Wed, 01 Oct 2025 07:00:00 GMT",
         "weight": 1
       },
       {
@@ -4301,6 +5767,16 @@
       },
       {
         "id": "evidence:None",
+        "label": "Lawsuit Against Lockheed Martin Criticizes Firm for Using In-House TDFs - plansponsor",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "plansponsor",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSDVqbTFkanFLb0xOR1RoZkdPOWd4Vnk5aUJWZDVEWFo2WXNIbmNqNnY1NXI4RHNVYjlKRzFHM0JWb3JOSVpPT0pvUlZWbmp2dmhvdEFGcVNJUm9aY1BNaVVTM2NaWDFmTnBNRXgxaFdNNUhxU1I3OVJjbjlHX0h2Z1JuSXBRc3BpZEMxSXMzd1puSHNyUHRFQnh6cGRiS0puTXc?oc=5",
+        "date": "Thu, 20 Mar 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "Nvidia\u2019s $500 Billion AI Push Is Starting to Show Up in Credit - Investing.com",
         "kind": "evidence",
         "category": "Credit / infrastructure",
@@ -4427,6 +5903,26 @@
         "source": "Deep Quarry",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1jbDdDZEFIWUFfVHNqNk8wZkVmdkhqdnpzX0hKXzZ3WmUtNWxtRjRyY3A5emc0WTN6RUpwMFJOaW1vLUZ5M1pQSXVJS0txSEk2X1F1VVBrQ09kLV9OVVBGMkE5WHA0UlItaG04SjJ6MlI4VXhs?oc=5",
         "date": "Tue, 27 Jan 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom seeks up to $80 billion in debt for AI chip deal - qz.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "qz.com",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE41cVFYeWJYb0ZzSEVjSEJYMjd2cmczYU15dXlMZDJ5MUc1MnpBR0JMeUd1X1Z3LW9GbkNXRTRtSlBiZE03eDIzVklWUjVTWXQtQzZrYnk4YXctdVd2d2lYU3NnVmpZRm9ZRDR0aWVUZHU1Zw?oc=5",
+        "date": "Fri, 21 Aug 2026 17:20:50 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Broadcom seeks more than $60 billion in latest AI debt deal, Bloomberg News reports - Reuters",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNWjl6el9aTXd3V2hKVng5WF9iUUJpOG9zdXBWZzJhQkt1aUtVWE5wWi1MRGVXX0hCU25sR0NXTE9ocGU5SVZqYUJlZmZFRF81MmdxLU1xcEtLaVZnMGg2ejluTjgyN0Fyb2I2bWxFZzlSM3N6N3VDbXpFR09FMGthQXFBSF9rNzRDTkxJbjk2aGsxQ3Nxb2JIcFhZTFozaExoVm50a1FBSnl2TEhoWXhreG1kWTFrRld1eEs2X0haTXA5aFU?oc=5",
+        "date": "Thu, 20 Aug 2026 23:24:10 GMT",
         "weight": 1
       },
       {
@@ -4621,6 +6117,16 @@
       },
       {
         "id": "evidence:None",
+        "label": "Private Markets in Target Date Funds - BlackRock",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "BlackRock",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNM1NYRWxkVTR6a05rTFBRclRrZlBsU18xTHc5QTJIOUVzRTJmLVJMSmRKNWcxLTJ6R0JOR1EzU0tyT3NLRi11ZUVoYktKNjlZdUNTcnBOWXBEU3lwdVRtbGl1YTV6Q2pQWjZQUU1tM0ZxeEw3NHhtVzRrblkxMERVcWhRUC1nRDFuWDFRTWZxb21pcjg2ZnZITlRNRnY3ZHMzVnlOdHZDZXJHdHY2NGFUR0R6QXM?oc=5",
+        "date": "Thu, 26 Jun 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "How SpaceX and AI Spending Are Reshaping Investment Grade Credit - Neuberger Berman",
         "kind": "evidence",
         "category": "Credit / infrastructure",
@@ -4761,6 +6267,16 @@
       },
       {
         "id": "evidence:None",
+        "label": "The Price to Finance the AI Data Center Boom Is Rising, Just Ask Meta - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTlY2LTE2cDVxQlUxNGdnbjlYLTJ5ajg3WHZWYnFweGpiOHBmTVhoYnBlWF9oX2FmMDRIMWhZOTZNMDlTYlp2UEdnVW54eTRvbHFCVTRDeUNmcVliZTR5dlhjMHhiY3NVWDVXZXBBU1Y0UE1jU3haZXVtTk9neFlKQWdURjJVdkVRNDJJdDVMdVRnRkNDNWROV2lldzJxWVBSMlg1V3dNc3g?oc=5",
+        "date": "Tue, 28 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
         "label": "SpaceX is joining the Nasdaq 100. Here\u2019s what to know | CNN Business - CNN",
         "kind": "evidence",
         "category": "General AI capital",
@@ -4797,6 +6313,916 @@
         "source": "CNBC",
         "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjVnJGYzVGcWt5c0F3WTY3elk5SkRrSUV3U3Y2OFdIV1dCRm4wVU5PZF8wV1VXT2Q4cVZZU3NZWlRFRTVhZTNYNTZNbEh2bmZ1aDJEWnFINFR6dlVqdGVsQ1RRSmhBV0dKYkFwcTZpQk56MGlZ0gF6QVVfeXFMTnhrRVAzUVl4M3FxY3gxcjdrZFhGODd4X2sxYzRpS1JTaHNJaXNxVEFuSExkOWlNVkYwZnJKX0xXV1hCOUxORnVjLWM1UEszb3BLa1gxMmZVa3dDQ2JNc3hyMERhMXFibThXczd5Y05BRFo5QlRONXdxQ3c?oc=5",
         "date": "Wed, 19 Aug 2026 19:23:36 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "CRWV Stock Quote Price and Forecast - CNN",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNN",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5iRXpHc0tvWFhYT0hwWElXV3lzT2Q5blVPMkdmdVBFZzlRTnRQVHgxT2pZODN6QXpVTEdDTFhtNXcyazduT09NWEhBWWE0UkNF?oc=5",
+        "date": "Thu, 20 Aug 2026 13:54:12 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "New Mexico utility regulators rule PNM, private equity firm must undo controversial $400M stock sale - Source New Mexico",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Source New Mexico",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxObGlKcFNBVUZfb050ejlIZzJMektpTjdYaS1lejBTVXFYRTgtSV9NYWhQNFp1akljR083R0lLRzAzd05SLWpvUVNoeDRyaTU1M1dkNTZUNTZ2S2ZNNWNIY2dTbTFrck55ZDBiYTRZeVlSQ0hiNDdOeGh0bXg1aGtiMkZCeEk2VndraFM0R0FRc09TMjBjbElWcmxxZUdXcFlBRW5VM0xvT2o4NEZYcnhfanRXTC1mdFFIdWJCc0lrdkZaMzJVV3pna0NlRQ?oc=5",
+        "date": "Thu, 02 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "(ROL) Forecast \u2014 Price Target & Prediction for 2026 - Intellectia AI",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Intellectia AI",
+        "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE11R3YxQVd6RkNXQ2V6U3VZRS1IaGlxYkZDeDdhazJybEh5MHNjdl9zZmRUclJqR2lkZnhoY2VQNEtPQWpTYnFkc0pNUi1OLThXMVVLOA?oc=5",
+        "date": "Sat, 11 Oct 2025 18:38:18 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "The Stock Market Must Decide If the Tech Selloff Is a Bubble Popping or Just Fatigue - Barron's",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Barron's",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNGZhWXR0dUR4VU1iblB4cndtWC1VWHcweFN2YjRUaXVBLTh4c2R1dENNVTNPZXN5MVl2VlBmNEloWjhyNUZ4TV9VcWpjc0I0RmIxRXhyQ3R2U09iTE8xTE5vZFFlclppckNTV2FySFRXa0xoZ1dFOVgxdjF6cXNqU3oxNA?oc=5",
+        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Tech layoffs accelerate as industry retools for AI and efficiency - capacityglobal.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "capacityglobal.com",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5YaF82eDBWM3JUeGZBbjdZbHpJTDI1bWRvQ21KR2FiOE9DTlFWMWdfSW9CaTA2dkl4bU1Relhfd2g0Ukk3b0ZqWTR4elRwb296MmoxaDlQR25TODluTmZtTnpabTFkVDlWc1kwdi1qdzdqdw?oc=5",
+        "date": "Wed, 17 Sep 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "CIO trims 2025 earnings growth forecast for global tech companies - UBS",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "UBS",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNR0wzSk9uV1A3YTlmRmdralFCdWl4eGF5c2NPdjZBYkJxYlE4eWFVSVVNaGR0WnF2a0E5eWUtRVRfMGYzeldxZ0xTZGNDUElnSDVob0l6NXZHenhQS1lQWXpIdEhWc1B0QU1aRFFZRHpsMk5tRkJCUzA2WjNiR0N2U1l0bkNzVHlFdnE0X1YtZUY?oc=5",
+        "date": "Fri, 02 May 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "\ud83d\udd2e Everyone\u2019s looking for a bubble. No one sees the stampede. - exponentialview.co",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "exponentialview.co",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9vVXVKV2VoSXpVUkc4dUstNFFMelpUUlBPRTdyeGR3SVU1V29ma215NWxHQXV3WWxBV3VZMU9EMXloN194blRiaW4waWl0eHF4WW93ZGthTTFCTXB1VldZOA?oc=5",
+        "date": "Wed, 11 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "The Kiplinger Letter Says Almost None of the GDP Growth Washington Is Celebrating Actually Came From AI and for Investors the Implications Are Uncomfortable - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPZlZub3RtQWFrZERVM19mWTk4V0txbnlOLWdEbl9PYU9qcWpicWhnM3h1UFM0aGxwc2JNak5DTWFqbHRhMTM0TnhWakJ2RGRoOG1pcGNHMkNWaVgtcy1fTWZZaFpUVmZXTDlLaVRGZ3hvMG0wX2pRbVZRNThidTR3cGJnd3A4S25ibloxdzZTdWcwaGQzOTZVSkZYMUZ3OU5EczQwS3NKMTVTQjh1Uklsd1MzWTRlaks0bkhPSzNwS0dydVNIVk5scGFDTVNmWnhMcUpxcVNfM28xTW1aQVlESE9icVc4Mm9jcWM2WV9NbnN1RFU2OXU1T1BWOHZxMnpFd2txdGVYNUM2VXh5Z3RWYTc0SUh4b2NoamZzeVRBTUtJQmFFVU9R?oc=5",
+        "date": "Mon, 18 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "The next wave of AI: Demand and adoption - Barclays Investment Bank",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Barclays Investment Bank",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWVpFMHRQWmlwb0hPb2J4WXdFbExZMUV5Y2hlQkpDYWdxb1RJLW5qN2JtMjl0OGFGcjBJczNhZVczU2pyWVQxLVQ3OHFiaTdWZzBXY1ktb1FhNWFER0FtYWxTQUJtTnR6cFpWN0R3NTRYSnd5Rk1aTVJCd1hKaTgwUkhNU0tJX2hzU2t1dHE3TDdHUlpjaW94ODRvLWUwRndlRkZn?oc=5",
+        "date": "Mon, 09 Dec 2024 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "The State Of AI Infrastructure: Demand, Costs, And Custom Silicon - Ark Invest",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Ark Invest",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVjB1MXNUZTNlbUNreVJmUm5ZODF2bmdzUXVFcjJFRUlHQXQ4dUsweG9PTVFTNVJfTG0yNW5JTHNuVzVzX2dUUFhqZlV0cTdDa1d6dkZJVWh4RDFINVhGMHNrLXV5OEp6ZS0xLUlOdlNTSTZ3TGxINHBYLUJiT0UyOUhZNkkzdmk3ajFYTnBOTWQyMnMtYlN1SUhzcmpFTFNDMjhBUWlqLWdBc0ZoTHlwVA?oc=5",
+        "date": "Wed, 25 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI\u2019s great compression: 20 charts show vanishing gaps but still-soaring costs - R&D World",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "R&D World",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQMl9ObU5jUTlCZ2FWSUN0a0J6MTJkaERHTlFNdllHbkIzQ3ZFYjZLOFRacTJjVl9CdmtIQy1fSHFxcnE0Yloya2pYWnFmVElhSnNYMV9NVFN4Y203a3M3ZFNzY0QyODBpUlhxZFp6N2Z3dVdfanUyNEx2R3pSTnQ3RmZHOTd4aVdkRU5lUkw3c2UySVlqZjh1ZXN4Qkt6SXhIcUhlWHVJbjJOQQ?oc=5",
+        "date": "Sat, 12 Apr 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI inference costs set to plunge: Gartner - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYjc5ZVBxS0VmSGNtNk9VeG85cVpzWUItQVM5VnJIR1J5RnZ3QzAtZVZIcWJoU2xaNUFaTGJ0TUF4a3hiaGhVUHpKQlEzTkJTMzRlWmd5cEFnai0tZjR4OFFmbWxmS3Y1NkVDYmREY1JVQnVnWl9SRHRVWDZtME02cnRmaVFzZGhudHpLT2hQR2xBMnpyNzc2WjhSRTZrTlE?oc=5",
+        "date": "Wed, 25 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "DeepSeek's new bargain model accelerates AI's race to zero - Axios",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Axios",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE04emlXWXpVQXhNcjJsU1d5ZmhnU1J2TFRyeFlxM2hqUUNUNVR2UmxFQUNBanYwWnd5ZUpTRnptVEh2TXU2NU5aa0FRbFV6ejVPd2wxWFNXa3RoaTZPQ0dQSHc0Tkk4WE93Q1JwV0tIWGNBaGNG?oc=5",
+        "date": "Sat, 01 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "DeepSeek, Xiaomi Just Made Frontier AI 99% Cheaper. American Labs Went the Other Way - Decrypt",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Decrypt",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcHlzS042YzJYQTBDMTU2RDUyYXlYeTZ3OGVrcnVqWkpMV1JQVlZONzBySHJ6alUzZUMxT25RbjdkZEd2SGh2MlRIZDl0RUxZdUZZYnZtTF9hVkx1U0hWYXB3T25HU2d5ODFtbTJySTB1c2d2aWx6VVE2RG5EM3BYNjVxazdlbGxpYTRFczln0gGWAUFVX3lxTE9hblNkMEZud2RtQTl2VVkwa1gycnAxYWpkZFYteDcwR1JhYXFTYUh6aEo5dnJHbDc4czEyV0xyR2VYTEdIVElPcjVPRml5ZFJ5SVdtU2ZjWUhlTEpNU3Q1TFZpLWxGRy1lRk94dm0waFY2VERRMzNqd2NadG1uN29FbzJPaEc0VkkzbFp1bDRaMWU2ZFBPZw?oc=5",
+        "date": "Wed, 27 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Will Agentic AI Disrupt SaaS? - Bain",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bain",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNam5NdVNxbXc0N1lvdHFaVURQT1hWRFhUNUZaZkEtZlZSbWN0THdWanJCTENaVjBFRG04Uk02WEJ6TUJzelE5NG9oWTRISXBfRUFFZjlkbWMtNU9wOUxXNmo0V1c2MU1IZ2JqQW4tOVE1ZU1iQXpxek1IdmIwSnVtZzdTV0pMYV9wbHc?oc=5",
+        "date": "Tue, 23 Sep 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Is there an AI bubble and what happens if it bursts? - Penn Today",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Penn Today",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSDNBT3JkbTBVSDI4UEtNU3dPTzVQdmJzelo5MlZfMlNKcWdid0drdjg0MVFXWlVFYUFBWW9SNU8xd0x0ZXlnSHBXcmdzQVFHTmtsU3pTeVk3dGNjejlXeHhQMEdaQVN1aEFlRTgtVzFwbkoxa1Z4OGxhUWxuUjhoaUp1Q1E?oc=5",
+        "date": "Tue, 16 Dec 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Fears of a credit crisis, AI bubble overshadow positive indicators - invesco.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "invesco.com",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQmE3bll2dUVURG9ScW92a2NVRS10ZFpGWkg2RHl2ek81N1NidWZmbFdNVWN2ckg0UVNYZVBMSGJvTkl0QTBTbE5TWUxacHlXajAzdFV4NUNnZGhSR3ZoLVBtanpKazRiN280cUp1ZWNnWlNVNEhtRVAzMnlnT0EyX2RPcFl6eEFSczQyWVpycXE?oc=5",
+        "date": "Mon, 20 Oct 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Inside Partners Group\u2019s 2.5x multiple of data centre platform atNorth - Infrastructure Investor",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Infrastructure Investor",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOR292STE5bGJSem9uLWFkci1HNHNDVlNzSDVZeUxFLWVzWEZRZUVmWTBDVkFwVFVFaDdGLXZTblpIZmpsQkxmbTB2U1otdEJfTk1zQ19rNHF6LVROeVk4SXYydnVUZ0NISWZMZ0FYYll6OEcyMkI1UHVQVlJKS2xqMFlRTm5QQ00yVVpmNV8xY3ZFeGVra3VPbmVKR084azJGdUFCUklnMWJOMHlU?oc=5",
+        "date": "Wed, 04 Mar 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "UPP Inks Another Co-Investment Deal, Making Sustainability Progress - Institutional Investor",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Institutional Investor",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNOW9UV25OOE1ReEV3MUx3b3JmcW1sZ1o0Zkx0M2o2Rk4tNjhWTUg2bElpSVVpcjVITmR1cVBNdV9COFllbUVYT0d4RElPUTJmT0dsaGVlT1NQZWxfQktQSzc3TDdOeDl3YXNfbERfdTFZRnNhbmVkQjY0Y1IxelpxUzdEaklLTGhZZlVwUXBwSmVuU3RnQVlEcjYtVXRTMVF0YVBvdnQ4YWRleU1jUFpQUk9lQnRYMlVWdkJGUGdYSTQ3ZjZadVBmQ2pBdHEtT3pPQ1FRNG5pV0tKY2l6?oc=5",
+        "date": "Tue, 13 Aug 2024 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Rest backs US data centre investment linked to $3bn Net Zero Fund - Net Zero Investor",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Net Zero Investor",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWDZOSzJyNVpIV0ItQWxzRmdwc0VkNGZKNUJjcVZtQ0thaUpYSlBvcEVoVkxGdHZVVVlqSUNhSXhGTG13UjNUb1BSenJkb0ZsVkxDRlJTN3FtYTduTmVtU1ktYnhxb3l6eFpCejY5WW5jUkdKeVVFTXNMMG1vaFhFSVptbldDSlhaam1zUFRYT3VmcG9SU1RzbWxCSTJrM0o1STB1THI3ZXhOZTdHTGJuNA?oc=5",
+        "date": "Tue, 26 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "CalSTRS backs emerging data center firm amid $1.2bn allocation spree - pei-privaterealestate.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "pei-privaterealestate.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd2l3MXRxdHpzbWJiVUlPRVVvdzZjZDFSVGt6OTRvamRBWTMzcmhVU3RDWkRpclFZSVZxVm0xaFBjU0lJQk9YNEFaZF9CbXZmQ2YtSVJjU0RVNkxYc0pJbkx4R0tOa0VzX2xVc3RxZE1rSVRjYmxaS095dVI1bUtmSmZNN2w3X1FtaW9MaGwteUl0NXNBVWF2VlVvZDVqblkwd3hwZFZ3OS11YXJlTm96eUFURQ?oc=5",
+        "date": "Tue, 25 Mar 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Why Canada\u2019s AI Infrastructure Boom Could Carry A Heavy Carbon Cost - AZoCleantech",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "AZoCleantech",
+        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HLTdPdDBMbWNyZlNIN2g2U1UyWFY3eENiMmZtd3VsQ0VRclpXWWRpNzlBUXdKZHpJOXhJOTMwbmoyUXluVW1SOGdYM1hiNjFUOGlnNElod3NHN2dlcXBnSg?oc=5",
+        "date": "Thu, 16 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Private equity powering AI boom at public cost - Private Equity Stakeholder Project PESP",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Private Equity Stakeholder Project PESP",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLThhUk9yOTdoTHJHY0VJZVQtN2VjWlN6ZHlybm1IWU45U1JkLXVodnAwakRXa1hQajNJTW51b3cwaFJ2SzVVUDNPWV9aYlp3SnhxUTNLREVsakRQWUktUVYyOFNpTmw4Tmk4Ykh2SE1KNjV6WjA5N3IzNlJ4X1Vlcnc2UmE?oc=5",
+        "date": "Tue, 04 Nov 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "SEC Policy Change for Closed-End Funds Will Enhance Individual Access to Private Markets Investments - Faegre Drinker Biddle & Reath LLP",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Faegre Drinker Biddle & Reath LLP",
+        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQWW9lanh4bGRnbXdoM0FKX0ZKSzhodGhsWU5kcHlqUjdkQlBmY3JYRU8zdWE2VFZyTDJNMHN5SHVtRUNhTmU3ekFDLUVLa2FscS1Cc2xBTVlBdEp6R3k0LWhzYTFIWkV3UjRRT0hxbG9vVTRQZzFtb2Q1RTJISURFWFVSc21rd0gtcUdOekV2Y3FHRkdvTnpteVdtS0VOY2g3XzJ4WjIwWW1QWGZHcTJVaE10SF8xYThCUlhJZ0V4dDFxTmQwcW9RWWFUSHpFcVIxaFAwRUFJQ181SjQzZGZBem5vWl93Z3dPMlBza1ljV2NjM0d2?oc=5",
+        "date": "Mon, 16 Jun 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AB, Brookfield and Carlyle Launch Private Markets DC Solution - 401k Specialist",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "401k Specialist",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdjBtSTc3MDdvSm5vRFdQcGVXNnVhbXFLSzNXaEtBYjRWTHNQeVVvZ2did1JBU0hyaUU4a0w1S3hLYnFSVWZ1N0pPei04ODkzWkk3a0JBWWE3d2FEdVM0UjBpVWM5QzY5MDVEdzdOaklycFBsTEhXdm1tdjl3S1hQS1lTSXVTNF9pcDVYZm9iVjZrZEMxdVE?oc=5",
+        "date": "Wed, 20 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI Bonds Could Devour Credit Markets. Let Stock Investors Take the Risk. - Barron's",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Barron's",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HS2doSU9iTGFyOG1NM21HYzYyWHRRVEotXzdqV0pkSnVtNmtrdFl1eF96cmlKSDNxZ0hqc0EyT2FubERLWU54M0pEdVVFWi01bGp2cE9KWnhsZlBVYWZwTHh3MVdVLTZGeUp5SmpFYVpYWUFqbnFINGZUUkE?oc=5",
+        "date": "Thu, 15 Jan 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Is AI a bubble? Here are 5 ways to find out - J.P. Morgan Private Bank",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "J.P. Morgan Private Bank",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdmtGQnFPbXQyNXNsREswZFBYaEIzMFBEQjFWbWZteDQ0dkV0V1ZCRTVHSnBRUFdTQW9YeWl2N1ZiZlVKdEliWjlNaHAybmJYRHlaaU95NHA1MldGQmtReUp6VG1Fa3pFZmp5dUtHb1dWcHc3ZDhUYXdDWGNzMDBrQnFSaHhTbFhuT19VTXQ4bTNvSGhOZWx5OGVBS3hiSkY1TVRZR3B2cVVaaUkxMmg3V0RCN3JtQnJXNGllM1l2dDZsNldjWXZGOFg4azk?oc=5",
+        "date": "Fri, 12 Dec 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI Dispersion in Credit - Morgan Stanley",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Morgan Stanley",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObjYwdWFZRTFpTnNlbllPcmNyU0Z1TThmQWpXb0tHaTI3TmRabllRLXFhczljR29yaTU5TFV1Wll6VWhZY2hwaVdyNXBRZzVMX2FyTE53OXByYnNtM0ZNVUJSSG1PVl9seUFGRS1jYmxaYURXVWp5TUtaamhoS3dfcjAtR08ybE9GTUZ2XzB4eEhxVjFBRW9WMk4waHZ1c3FDRUFPdVhCbGo?oc=5",
+        "date": "Tue, 24 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI Credit Boom Brings New Risks for Bond Investors - ETF Trends",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "ETF Trends",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNejA2SGlNbnlOYVpiN0tJY2tBVll5M1ZZSjFjSHRnZzNSV0xrdU5mdE9ndnZ2aFFpazM2NWJySE0tY1VFZVJyd0JFdjlOZFViYk5xQmI4dldCU0ZOei1pSW9ialBuUm1SNXR5OVlkTGMyazJIUDBuVHlNaDVfZWp2ZWd2eFYyeERWT290WGZBUWlQckROTDZKWXVGMlbSAaIBQVVfeXFMT0otQWxKZFQxN2N2dTZJQ3dxb3hoUXE3aWpaaENPZmQ5TWdIZGtCc18taXNOMmFSSlhUQVAtaTEwWloxWGsxaWdsN1dOU0VoTWV1Ry0zc2o1ZHJVcTY3c2gtb0hVejh4REdJY0xvTzRBeDg0aTFyLTNLTEVER1hONkMyMFpydU54anplN1k3T01CY2dNeVAxYXF5Q0YtZ1hIbklR?oc=5",
+        "date": "Mon, 16 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Inside Infrastructure: Beyond the Building: The New Frontier of Data Centre Finance - Freshfields",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Freshfields",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPZjljTUR0S3BzZy1TMFoxSG94MVNkZ1ZQRGZDQndWQ2F5NDBxYU4yUWxIYnoyRGlraXVOLXlJcjAwVzRDUDNZVUtGMVF4SWRsamdsRHp2Z2VtNUdneEtia1Q2a3hYaXA1Y2d2bnZUZEM2cEQ5Z0tGR0lrNjB3LWMxckpoblNaT3Z6WUhsdUExbHVlbTBmcVE3MW54MW1FQ2hOMnRtZEdaaHotYWZyUTh3bTFkT2RNQmhDYklOd1ctSGhqZmZIWnYxaXU1X085Z3k4WldqUmluaFVLSlJJMFprSGgzZG0?oc=5",
+        "date": "Thu, 14 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "PaleBlueDot AI Closes US$255 Million Credit Financing to Accelerate Agentic AI Infra Expansion - Morningstar",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPY3NYRGZvWW5kQ1YyZXhDbUlTQm5VekVQa3pJN0Z3WlhEaExJY0NzTUphMVpaNkx5NThUV1otZXlYa1hSdUZTcGEycFUxLV9GTERnQV9YWFJJNVBYMVZMREJNR3JSbURkUVFKbkc2TDV3ZnhxUlZUNnRhdkE4OWRLMndEM3FlY3ZVQjBZeUZQTGFLemo4SzUyaWlDQTAwd0E2cy15ckVSWnhHQ1NKekVfZlhnOTJDUngwQi0wU09IZW5sNnRFY3ZuZW5nVFg0bGxtSWhmUWZqRGJieGZpMkNtcjBNekdDZzc1Snc?oc=5",
+        "date": "Tue, 21 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Applied Digital Completes $1.59 Billion 7.00% Senior Secured Notes to Fund North Dakota AI Campus - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQYnlCSFRoVXlBS1RrcTN4TEtoeUxkbk9NX3JERkNHeGNWMlpGSTl2X0JFSXpsZTlYQmJvTXNHYWhMVkEwaDgydk5JT2xySWJtVzBnMEtsNGRsY3ZQbW56RXFmT24ycnBlVTE0Q1lLZGxKN3czNm91V1B5V0R2SGNnRHdHZ3hQWnh0N0N0M2NSVWR2dmpRVG1LRkg5QlEtYnd1TVJrMkppNUVSWHUxT0xyU21aUGpqQlNUX2VSUk0tNkZhZUdya1l6d204U1d2bHBmdXQ2cDR2WFZ1UjFyb3NBV3c2RlYtaUZUMjhDbWJR?oc=5",
+        "date": "Tue, 16 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "What Are Circular AI Chip Deals, and Should Investors Be Worried? - Morningstar",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQLXJDSnRmVW9zVk5tT1pvSUNyS2d4RGhCWWJKVXVMdGxYWm5zR0Y3a0ZzRjFldVd1ZWN1b3dKZmdabTlnQ2I5ajhoM1EyOHotY0d2d2llaEtyVXVYNDdFVGkwc0lxV09rTnU4cHROOFFVMC10WkVVM2x6RlJpYlNlcU5qYWFtWW9Iam11VFJIbGl1dEFsdUZiX2NR?oc=5",
+        "date": "Mon, 06 Oct 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Is A.I. Investment Getting Too Circular? - The New York Times",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeXlZSnVpYU1qWW5SYU1tbzZuenlxYWpJUU12ZnE1bktGeExXNkQ1RUJjbC1HTDR1alRnYlYyU0RxdHdQeGt3TmxtVC1BTVhqdEtPTmkxZGhpSUo4THlyek81UTU2cERUa2d2ZjBxVUF4RUttVkRuN2JoT2hQWC00SDlxZXBkVGRuazJOYUY0cFRsa2lBZ3lBZ1l6dzc?oc=5",
+        "date": "Tue, 07 Oct 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Should we worry about AI's circular deals? - by Noah Smith - Noahpinion",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Noahpinion",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBhZU1Ydm1oX1k2QVowQWJwb1BJNDI3MUVZcGdVbFNyN2l1elpiQTdJMlY0blQyQkd3VTdfUVQ3Qngzc2ZldWVrNV9icEIyWEVzTnF0RWVxY1dGNHZqbUVYZ1RCZHlVVlBta0xnOE1ETFBDQQ?oc=5",
+        "date": "Wed, 22 Oct 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI Infrastructure Financing Enters a New Era: What Execs Need to Know - Data Center Knowledge",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Data Center Knowledge",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPR2RzYWRFSDBFVmFmRjFiRUpEUVNyREtkSHQ1b1M2VS1BWnhRMzFVRklzR28ycDlhbGlTY29odE8zcEdmZ0QwZG12dE5DR2NrcG9MbUw0OXRqbGt0RF8tZXV3WWRKT1Y0X0tHdjBKZXRxYkdSTzdHQkZEUzJ6TjdrXy1SMENJMGFIaFhodEVRTk93aFBVRzFoU0VTSjFfUG9GODJfSXc5Yl9aX3lwUzNMSE94WVg0SFNBZDJZNFVpci1YZkVGczlTeg?oc=5",
+        "date": "Thu, 05 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Fluidstack and Macquarie Group announce European GPU financing deal - Data Center Dynamics",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Data Center Dynamics",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU0JZcDNuenBLOXRBNE5naTc3VUJ6NnNRY05XOFJjZThibEx5amZ1YUlRT3d6NnUwLW0yVE5NMzV2X2xSSGE5U0dwbE84V0ZWbGRKQXROZjdXcTFkbDRNUnJJdWRHMzFVWWl3MzhGXzhXVVRVQjNOWmR4d1NJUVgyRVoyOFhWVmZsT25mQTB3NDBHd0lHa0xOOGU0dktUa1RrNkNUMXpjemJrSHgxYjJCZA?oc=5",
+        "date": "Wed, 02 Apr 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "USD.AI & Barker launch insured GPU loan coverage backed by Munich Re - Reinsurance News",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Reinsurance News",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNnRRTWxPT2RhS2wxdkw5WGNKOGNSOUVwMV9pdTNZVGM5UW5mVF95RERORGpJeERFUUZnTF9ocVd3Q0lSNGVzSEdiRTVTREZDenFTQVdDbWU5SUUxUnlxM2hHUm5YRTlGcTFiSGo1dkdBNlhxQ0Z1cEk1aldKdEFmR2tuZlJVajlabXoweGdlbGJ0cDV1ZklXbU43LUw?oc=5",
+        "date": "Wed, 04 Mar 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Data Center Risk if AI Promises Fade - S&P Global",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "S&P Global",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPalFiamRDd24xRzBjU1RqVlU0c29OVzZPX0xKd0JHaVJUQ043YUxqbS1jOS1MdDB3SjhmUU54VG5wWlRIQlNfdDJNeElmbGF5cmdwTy13MEhGcXdzanFFXy16SUgxOFJ1QTNfRERjN2s4NmRfSHYxeTVBX29YTDJTV2ljNVdxbzZaNktpMVA1ZHhfSVRCYUpGUm5ibXRjQzBpQy1ZUGstaTIxMU5lbWJ0TUpqckxJS2NnVTlUai1MeDRKdEZzdHpaTXplTlAwQQ?oc=5",
+        "date": "Tue, 02 Dec 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Data Center Investment in 2026: AI Demand, Power Constraints, and Private Equity Trends - Ropes & Gray LLP",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Ropes & Gray LLP",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTF9OaThNQ2VtSEhXOXVmdzJSRDBfMzVLSHJlclUwTF8xTHNmdEdEaXpuenpsS0d5UnJYeWM2ZXdJYWM1MGNmT1ZVRm1BRFNoMXlkOXVKVUtsWGFPRGtXeUdFZ0NKUEh3VzlsbFZzQ1R6SURfajZMT0NNa1VoS3Q1MWR3d2dpSmdERndlZTRFb21kMXJybEdBS3B6RjVYZk1HQWM5NzdVQU9sUVNXeVM4U1BBaEU5dDFMLWIxSkpweV9MNTZKV0R3RW5wQjJaeEE?oc=5",
+        "date": "Thu, 21 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "If the AI bubble were to burst, these terms will be oft heard - marketplace.org",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "marketplace.org",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPLXkwankyTVRfN0kxQVAyVjV6Z2szN2x0aU02ZmV3QmRxQktxMGtMTEFkaklUclZOTTd6c1ZvRWt1MUpfUS1YTEhZTHhlMFZHZnJtc0FFMFNMY0pOV3k1c1ZLLVBvU1FRV0wzdWZ3OElXZFBRakQ5X1VBNVBvdnI5TGZWWXIzTkhPMEVFeVd4ZUtkdW9oQ3FtcTc5c3RRQUE2UUNQdw?oc=5",
+        "date": "Tue, 09 Dec 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "How Private and Public Markets Are Combining to Fund the AI Buildout - AllianceBernstein",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "AllianceBernstein",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQcDU3c0pmRVpIUGxkeVpxM3ZlM3hPT05lYXlaWG5LNlJUU2RjQWRCSW9FNG9oMmhaTF9rd3BLNzI1VlNMNGYxNlJBNjBMYmxlSnlmWkU1a0pUU2QxU0pOeUZJZ2R5dmFNdUl1UEN4OFZpMjBGNlFxMGF1Y0ZoVVhyamNuTURGbFdTSXVYYThJYlRCLW9LX1QxLU4xMUtpVDhrbjQ3N09hRGY5UzJTT25yTENWckNpdnIzUjJJZF9nWERXaEl1SVNGd3c0ek14LU1tMWFwYWtTMjM3SVg3SWwwRHl0amFPaEpKZHJmcVJ3?oc=5",
+        "date": "Thu, 04 Dec 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "When the AI Bubble Bursts, Who Will Be Left Holding the Bag? - cepr.net",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "cepr.net",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNkxJTzNxTUU1dDUzUmIzR0thcjBWRVIwRFdiVkQzTjdOX3o0bFppVUxKOThHMzRzM050eFhqSXN4dFU3aXNZZURaVk02SV9SM0RIcnctMWc3N1FTcmJ0N0hYaENoTjlxUnhteWdCZm9fTmRneUZiMnVCcm1yMUY3d3V6SFpna0NqZUl3bnNEOU02V28?oc=5",
+        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI data center debt climbs Wall Street credit risk lists - qz.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "qz.com",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE52VTZiTnNQR1lzaElnWkZrdzczYlVieFZfM2hwZHlTUGtrVWJNZFd2eGxaRmhjUDdxcVhNNTluRTR4YTZGVFgwQnVndHJ4ZU8xTmhMdl8yNGdQdERTMUFELTRjTDlYVXRnM2tlYjBmRWlPZXM?oc=5",
+        "date": "Tue, 19 May 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Mistral AI raises $830m in debt financing for data center in Paris, France - Data Center Dynamics",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Data Center Dynamics",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNS2I0Sl94YVFpTk9rV2xYZmp6VjhTdGZaNGxkWlRfZjZFYW5mMklsNklHaVhHUkhVSkZvSUFXVERFWkRNZkRfQTlqUWpzbUpQNmE2QWs4eDdLX0FpZzctT2czQlFHamtKWHZYVjBJZzZzX2VPM2RMY0pmRmhJTDJzQXRYdDYybDJyMjBfSHBjQks4eXFjMFB5azg4a3cwVUlTck16cGE0S3BfLTZPZ3g2bk03djNEdGc?oc=5",
+        "date": "Mon, 30 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Tech stocks fall over concerns about data center debt - marketplace.org",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "marketplace.org",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNc0ZSa2JES3BFcldBWlU5cDROb3hYeGxCazJrVUFaVEdpcUV5Q010X0Zwci16b2xoVms3VW9GVWJNTEVZY0hWZ2NNeWlWYUdzc3djX0JrQWZ6RUh1TmNYZFBoRENVUGlUUUhOejItT0pQRjFGRVkxLXBwcERWZkYycHNxQmlxdHI2bm5tRUpldlBHZDZnM215OHMtMERVdWpKTXc?oc=5",
+        "date": "Thu, 18 Dec 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Big Tech piles on $350 billion in debt to fuel AI data center race - Los Angeles Times",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Los Angeles Times",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOb0VQbVEtdXdFS0xJTUEza29TYmVzQV9hdzRIM05wb3Awd1JTTWJiYndVUlRKYUVhM2M1NW4wYUg2aGlndnVjdnR1Rkx4QUVEYWtxVVBxOW5CYlo2N3ltZW5DMDY0UGdyMm1jUElOdnVPbWJJUTZjekItcG05dFVTdTVJRVl2LWtReFZfR0dudlBJU3JRTlZSTDFJOG43TjcyaEp1MlV4QzVfdmRjNW1WYU1OZThvZw?oc=5",
+        "date": "Fri, 10 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Is the AI Data Center Boom Creating a Debt Bubble? Here's What Investors Need to Know. - The Motley Fool",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObG1vWHZvZ1RhamNDX2VhdU1Sbm4tRFlFc2hnNVU4NzBYOC1wQndHWDhENnZINTEwVWUxX3pTcXRLRFpqdU5vMy1fNHJhbHN0eEtsWElFV21MU3lEY0tyT1lPa05MQjNlMy1BRlM0Z00yTXFrZC1VMkgxaUFONHZHaXh0UHB6aUlwVEhKWHBKWG9hTmdmV19J?oc=5",
+        "date": "Sat, 11 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Why the AI Spending Spree Could Spell Trouble for Investors - Morningstar",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNU2pFNDExVlNKZkg3NGVpVWJybWh4Tk5rX0JtY3BNdjZJcE1SVEM3ekZIOGxjWHJfTVI5ZVhpX3Z6am9aWGg4eWwzZWcwcHZnYmpIeUJhYUdTaEhxZmI5STktdkdEOG5nWS05SVpLYnA1U0NhVkwxbVBDeFNVLXA1RlNnc0UySlpTY1BZY1FHYUlab25VckZ1YmJKOA?oc=5",
+        "date": "Mon, 03 Nov 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Why AI Companies May Invest More than $500 Billion in 2026 - Goldman Sachs",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Goldman Sachs",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQd29oazNKaWdPR0E5dTRQemlBLWxHVVRCbm1YSkFJRTVkaG1zUHlWdHFDOXVQWHZjbU1VZ09JbGVFN3RBQVlZOW1ZdW4ya1BCNkdfMXdfajN4dUd4RTRyVUlPY0xjRkEtZmZGMzkxYWpienNDR2pwS2Z6UkRsX2RUMTdrQnQybFZYRDdHaFk2MEUzWjUxN0VNcXZUWkVFVi1YZU1LY0pFQQ?oc=5",
+        "date": "Thu, 18 Dec 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI Spending Is Surging Faster Than Revenue And Markets Are Repricing - Forbes",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYnU2WEhkM1FJSVBMT2ItU3hNcGhxalhWU29mS01INm02Vlp1SnF5SWM1M1V3Z2NrTWItV3F6V0JRQTMxamFSTnNENzlma2ZwSVQ1LTdsU2RiN1V4bFNxajVOc1NDMFVKSzFhbVBfbTlKZ2xETlJ5al9jNU94WTJaWW9EaHQwOFVjNXQzS0NMeDVGLWxvMXItRERkdzVUbWRuTXd3VERYTWp3alJlT1NlY0ZleEtJYlhnUUVXZWh1OVFHNExpRXNnaQ?oc=5",
+        "date": "Tue, 02 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "DeepSeek Drops New Bombshell on AI Stocks - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMF8zUW03SVhXWEV2amxIb1BsQU1CSzdkTzBwc05Na2JJdjlZektoTV90ZDRTWHdlV2RDN3NNcEVjaTk4aFlCVWJYWkx5NUhqelNYU0tXb1hTb1RST0kteTBPRE14d1hUVmJtX1NORWwtSUtOMG9veEZUdUgwYjRzR2I4anRNSFdrVE9ERHRKcnd2d05ReHpHSzJKcWtiWnNscnhZ?oc=5",
+        "date": "Mon, 03 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Gartner Predicts That by 2030, Performing Inference on an LLM With 1 Trillion Parameters Will Cost GenAI Providers Over 90% Less Than in 2025 - Gartner",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Gartner",
+        "url": "https://news.google.com/rss/articles/CBMiswJBVV95cUxPRVFDdFQyQjFONHBWSHdzQW1uanBiWTVsaWlwaldtTDdWUUdId1lLSWVXVktvV0Y2aWNqdXlMR3o2OU0tbG1EMVExWFM4NTJLWDJ6Z2tWaGlXYndwYkpSRHpuY2lSekRnZW41a1ZyY19fUXhTUFlEZ2dXVW1FZGlYT1lDUzFRNXBrZW44TERTUHkwUVRDOU9UUHB2WGp0aGlQVmMybnV0NVNZb3VXZkFxZ1BnQ0g3OEl1SnE1c2FMLVNvbml4a2t4dEpRNnVlVUFYejRvcGtGcXkyZTlOLUlDR3Vpb0MzTnJ0V2Z4U0tqUVNwX0pubWNBV2prQ04wYUZsbmRmV0ZkRjdSYUl4UEZkVnVOMjhkQXJCV3BOZWJOWl82V1g2WkkyUmpQRmtFdlp6MDJN?oc=5",
+        "date": "Wed, 25 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "'Let chaos reign': AI inference costs are about to plummet - Business Insider",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "Business Insider",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMDFmcXVfaURTV3BYVkNCT0FoTUJKZUtURWpuc0VmLXE2b1ZlVXd6SGFpbk5oSm5Cc2pxODBsRlR6OUR4cTlMdjR2VF9NbjlJYlplX1JmdU96Mkh0am9Qb2kyTEJqUGJwTkpDNXZ4d1g5VW84dVFQYmR2d29qRWE4S002Q0hFX1M5Vl9laUxOSl9BSHJNMjZ1S1F2YzVEdXNWX0REZ0FONV9aVUVj?oc=5",
+        "date": "Mon, 14 Oct 2024 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Counting The Cost Of AI Inference \u2013 And Projecting It Far Out - IT Jungle",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "IT Jungle",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRVNESzBxLXVLZ1l3NzdmMWkzTms4Ny1LdFJTZFB4aXRoYWM5bHZzRGkySUc3bi1OeGFvVDZRYUlJenNnandvSFJXcGZLd2E4RWZaSzh3aTNrZUp4VUtfa3NKSk9vYzYtcVVjSW9aODJtQmlXd08wTGFJMDFDSmpDVmxIeWE0U1ZqTHBpMnlRT2IzdlhUdV9nQ0xzbzU?oc=5",
+        "date": "Mon, 30 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Frontiers of compute: The technologies to reduce AI inference costs - McKinsey & Company",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "McKinsey & Company",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNDhDNzlMSU9sZDRCLWRhcTR3cHEyQlNORG1NdXRMWUN5NDV4cmFZZmRiQkdPWVZodUFDY21rWWI5YW5zYjhDTnZZMUtMZHBXa1BWMWhTLWl2clZPaGRSZzViWkd2Y25ycFF1Ylk2Tld0LTBVRWhRQXNXWVZNZTd6ejVMb2lIRjdRbW1Wejh2M0h4QmRBM0tnZEZxUWpGVkI5eXRTelVQV0hzNzl6WFBob2FyRmZJLWx5WkZ5RUx6czdwTU0tb0ZucHdR?oc=5",
+        "date": "Thu, 25 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI for less: price war in China deepens amid \u2018intense\u2019 competition - South China Morning Post",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZWtVWW90U2djOXRqSkxGQnQ3aThOamxUclpETE05NGRZOUxzbHZ2bWpqZkFNMExpRVp2Wk9XOGFUeWd6VEs1dnlRV0QtcUFSUVRpMVVLNWlUa1BUNXc5ZzlXczJQQ0VxbVNnRW9VNU12YzZGTWw5S29tSUNiQ0lBd1o3aUZQaE01TWJqMmlkRzROY1BwS2REWHVCRzR5VkpkVnlEV1NtUGs5eDTSAasBQVVfeXFMTm9JV1J2SGhQOV9CUkhjMGxxajFJREN0UUMzUnNxOWZyakItUXNoN0FSS05UaFlsODI3RUJBaUdzM2dXWWxjTERXejhXSjZyZXo0WnoxRkVOdzBMcHlIVHJqZ1M5aEh0bHZjM1FZR2IxLVJsQ2c2WmgxMkxZYkFWQS1HNlFZbHk3VFN5YVRXa3VKeEN0UVJSbDVsaF9CbnprQ3FieFFMYVlKV1FF?oc=5",
+        "date": "Tue, 16 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Exclusive | Data-Center Builders Are Racing to Offload Stakes Worth Billions - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRWFCZWw4Rkp4Y1BYNm1OSGlfajJJZ1dKRHVQcW55bDItdHo4M1lpdEVJSThCM2NXZmpPZTQ0bXFFT1NnWF9lSmIyNlBZVHdCUElrLXk4MWFUU2pZYjNzMm0xM0VGM2NQalVuN19udW12Z1FjUGVlU3VBRE13XzJMcmtxT0tqWXBHY254RXBVZXd2UDJlYzg4c3hRb01WbWNJYnJIVmszZmFGU0VRaEdhdw?oc=5",
+        "date": "Mon, 13 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "2024 Global Data Center Investor Intentions Survey - CBRE",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CBRE",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOUFpxckNiMXF0SlRzeDZHSExoWWhNdWkweEJ2RlJmZ01raVhPLVRvX3BsVUlSTXc2S1d2YVprd180NnRtMlBfcGMtQ09LTU1oN00tNFpUN0EyUlEtWXZib0xGelBMU3o2bk54REw3WVJlMUxPVWp4SXNVdjVQZzVBS2J6aTVINWJYaXVydlpNbG5DZw?oc=5",
+        "date": "Mon, 03 Jun 2024 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Why data centers powered by off-grid gas flunk a new climate investor test - Latitude Media",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Latitude Media",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNT2Y1cDJ3d0V1ems1RWdSWjA4OVJDZmdEaDlvaFFpRks5WWNZODh1ajVhakttQ1JfTEl0eWFiOVV4UEh6bUNmWTFyUDJJQTNRTmt6aWZtYlJzOXpVQmtwWW9oYWJrWlRZOHNxdnJwT1NWRlJ5QVBaTUlpeENUUjhObkxsSnB5SldBeGVwbk5kRGVHaVNaOU1ZdzB5RmlzUnlZRzBUc3l3NW1SMHJq?oc=5",
+        "date": "Thu, 09 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "CPP Investments Ramps Up Data Center Investments - ai-cio.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "ai-cio.com",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVDk1VThqSlluQ3B5MWlWSWdRWXZEX0Eza3k1azZwOWkwLW95bHgyMWMzNk8xbVZxSFRDTVVqeVh3TkFTNG9uc2FqcnhpMlg5Wmo4Nm5OQ3pNQzl3b1JWd1FkcWJ4UG10TEN5Q0FmNk9IR055M3A1ZjZtZ28tbV9LTHU1VQ?oc=5",
+        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "UN tells Africa borrow, boost revenue, to fund AI push - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOd0NtZlRfWndfZFM2ZUlXTXNPcWJYOERXUXpTQ3pnY3RNYnJRVUZVbVRiZm9TbENNbmx2SkgzclpTZTVSUEwzaVlYM29GbjhrTE5BeXpYZzR4VHQ2RVktajRENDYyeDI5MmlwQzE5Q0hjRzA1ZHVscU0xU2lxVDVfR1lzZWtTWnByRXFXT2Y2S3c1ZjRKdm9heGRuQ21KLUk?oc=5",
+        "date": "Thu, 02 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI\u2019s infrastructure boom is getting more leveraged \u2014 and harder to track - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0xdURYc09ib3VQcWFfZEFWblJBZ1hmelBmZWxsWXJidXUweGNoeF9qeWxWSjV3UHRkMVJzNzVCYlROY09hUDZjWVhhYVFzU3daYW9UUUNGcWd5bFlKUXFXRTItMS0xNjlSNXNsel9IaDRpVVFYZnBaZTlld3c3Y0XSAYQBQVVfeXFMUE15aWZacXpmUnRVenYxc2VCM1QxWXl6QnlidEdUTGQ3U01YOERwRENrcUNycUl3d2QzLUhUeER0Y1ZNeXNwbjMtLWJIYkxZQXNPV2h1ejZJeW04NGZHZW5LRTF2N1FseE5iWjBWNGRfOU1QR2ZtaDFsdDF2Ym1rU2ZIei0z?oc=5",
+        "date": "Fri, 14 Aug 2026 08:29:50 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Agentic AI Widens Tech Spreads, but Hardware Holds Firm - MSCI",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "MSCI",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaGt4VEI1RFBrTHRzM3B1SlRvTGQ0c1Q1bV9zQjllWjdKSGRHbEViT1BGNHpJOF9WYkhUNzRCQi1BS0ZUdUY0OHFSVmpfSEpxdGRjVTY3Y3lWSE51dnFHalk4T25xN2U4VWQ3V1A3MEZsem5fbzV0TDdSanlZVWlrc2lIMGVhUnJ5djNDc25sT2YtQ21QMmkxX1ljQlo3TTlDZmZ3VEx3THJkR0di?oc=5",
+        "date": "Tue, 14 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI Infrastructure Bonds: A Full Picture of Spreads - Penn Mutual Asset Management",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Penn Mutual Asset Management",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPX3VLVDVZSmtfd3FKOVVuQ1RxWERVcXFLZ1ZCWUVUQUQxSVd5ZXdmMkxaVFdNeFNOUWFLcFNJZGo4ZURPbTdxbmhDWlkwbDFvamJxcjgwS1hKUWt2NVR2LV9LYVV3akQzamJDaVJTcjRTTnYxS3AyUFlQNi1uZVNBUzF6U0pPbTQwTk8yZ0VLWXFISHItWUxHbUN0SzByeGhEXzg1SS1VZkZWYndKNlRWVkdBTVlaeG1lWDhYLS1hYW05WmhoZGVyeDJDcmRpNG8?oc=5",
+        "date": "Thu, 06 Aug 2026 11:05:27 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "2026 Credit Outlook: Growing Divergence Amid AI\u2019s Big Build-Out - AllianceBernstein",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "AllianceBernstein",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPMGZfdnJlRkYtOUxHUlZ2WkVWQlNlQW1BNjZYcGU1WTdSRlh1U1M2RFlhbWFnMFpUX2VCX0JKVE43cWlOZXZVTDNscEpSN1REU2ZRVnNIYTVYSjhwRFBRaExjWlpZNjRoSU02SHBoMGlPekFfdUFkMUlFQlpuc2MyMm84aVZFY2NsbV8zQjFYOGlPV2Joai1FWkhUWkstZmljaUEwUkROc1Z4TkpSc2Q5SGpwRHoyODJCZlVzcHdJQk9RQWNhZjNDYVdOTDlEUWF1UnoxX1EyNGlyVDJoanREYXFBMUU?oc=5",
+        "date": "Fri, 09 Jan 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Core Scientific Rebuilds Story Around AI Infrastructure Growth And Debt Risks - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYXBicjdScy12UWZDUVUyMF9NLWNlY3ExYXFSbThpYXVWOGtUMGhSZUNRMXd0Zm1Oc2tjTGF6OUhteVZZS0VXOTBRalE0QTVRWTBYM0xrelhhV2dibUduSmNycFFMaGU3V1V4T3lCVlpJVzFXS09vQjE5Ymc2alQzX1RqR1lOUl8ycDdIU2NjblFZWnpHOHp1MjAzZWdvbkN3NEl5Ug?oc=5",
+        "date": "Tue, 28 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Debt Has Entered the A.I. Boom - The New York Times",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWEhBS1FHcEVpV2lnSEVsc0dMMXNPNVBGNGZMT3M1MDRCRFZpdF8yV3RHWWtlRHFTcDU2RXhFbVNUUHg0aTNmRzh3MGdJT19rdXhjWWg2b24tZmJiT01xWWh1aS1CeDVuNVVRYTRlYTFkdWFpbTJmamxkeXdRVFlnd0VVRzNaSkVhVUxNSENBMA?oc=5",
+        "date": "Sat, 08 Nov 2025 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI\u2019s Spark for the Mortgage Market - Morgan Stanley",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Morgan Stanley",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5XRkhKX2N4WFpYOTZhVnZRZ3pzeG9XclJnOUZQbmRxOFpoOUJTblN1eWxtR3JHNWhUeU02UHU4d1VTaUNTbkNPNlE0RDRKaDJpMm0tbk42d1UwNzRBVm03MFRIVWQ4aGhJS3o4dk1UV3RtTjQxN3pfbUVIUQ?oc=5",
+        "date": "Fri, 07 Aug 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "How data center financing rewrites the rulebook - A&O Shearman",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "A&O Shearman",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSnhmQ3VkM19CQTB2R25LSzlLMkYyVWpvbTM2STFVd1dzanlRZkU4UVo5Q0tFOEt3TUdWRVZRWWNEeUx1RjhmVEdhUi1zZVI0ZnhZVXN4djAyQk1hU05qZnBPYTAyUFUzRWJVeFVxczhTbmtCSklIb0dsT1pmOG9ZVFhZRHFaYTAwSFl2NENyS3ZiVmU5c3R6LXcyVjRhSnVGcHFCeDN2cGFKd1E?oc=5",
+        "date": "Thu, 16 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "A.I. Is Running on Borrowed Money - The New York Times",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The New York Times",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPckFkRlhlWjFRTTRweHNMZjc0d2RWR01wcWF5dUVEMmc4aDNuSHdRWTBmclhmRTJlSTdCNEJxc3VtVWlWNUhwN1VORWFUYnBfZXZacklFWHJLUmFQX3FMX1VJUmtoTGNMRzdFZjhWNDdwcVYxWUlXMFlzU0dmYlh5V3g5YlctOW8?oc=5",
+        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "A Guide to the Circular Deals Underpinning the AI Boom - Bloomberg.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8zdHpiekFCLW5Rb216RERxWVNfcVcxaUlzanNVVDdzU1VZNHpNR18zR0ppQXZsNjc5ajZPY0tTWkVaZDVoOFlTYlZzZFZ2N0pQTTh1VXFWWXI2bnc2clFqTmRvWkdwT1ptdUE?oc=5",
+        "date": "Thu, 22 Jan 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Asian lenders eye up to $4bn for landmark bank-backed GPU financing - 9fin",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "9fin",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMTlIXy1EeDVtc1NFc0ZzbmgtM2VWdFRoYThOaWJrTmpLVWpJSlJwOTBmWmxyNm1wQVJkZkZDSzRCaFBGaWZMbllTYjJ5UWJMNjZ1RmgxQXBfMEJGb0pvOWFUcWI3cDNfWER4S1RfOXpPRGI3WUV0bmR1VDdLNEdZdEdn?oc=5",
+        "date": "Tue, 02 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Latham Advises on Nscale\u2019s US$1.4 Billion GPU Financing - Latham & Watkins LLP",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Latham & Watkins LLP",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1wNjRIYXJSQUJEWDYxU2tMc1h4TjlmUWE5aENpVGV1dWtZYThzTGpYX2Zhc3dYaXVzSEp6aGNZbU9qVlpqVmJzOWw1bW83SGd0Ql90V3ZsUlFnSDlfN0swSjR4X19aTmlNTFA1YXdfSW15RTNqaTJYcU1vQ09aQQ?oc=5",
+        "date": "Fri, 13 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Watkins Represents Macquarie in US$500 Million Financing for Lambda - Latham & Watkins LLP",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Latham & Watkins LLP",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQlRCa1BVN2dXVkFnUkJCWng5QnhYdERiX2prQTUyR1lzTm5uclR6cjVwU2p5MDZKOGFuVXBpYlRhT1Z6ZFVqSXFXSWhOdmVoUnc0Y040QmJwRVVJTDBITlBhbW5yekh2OVJkTl9xMnRTWVk4elhYYlpzN1VsMjBEanQ2ckYxV08xN3ZGTjNRemtHdEdEZzQ4QjRJdEZKMTRjNFVqVVFGSjV1Ny1n?oc=5",
+        "date": "Tue, 09 Apr 2024 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Tech groups turn to more chip-backed loans to fund AI arms race - Financial Times",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYTQxaWpMb2Iya095ZlNyLWdvT2dvZFJKNklMdG1NbEYyUnNnbEtvTnhuZGR3Qk5LNFhOZ0ktc0RsX0ZpNXQwRThhcmZTUHBDa01od2l0WTNtaENPa1JXY1hRODZwU1pzaEVCeGpJUi1KemdCdEhBbDd3alJoMkxiMnFrUWM?oc=5",
+        "date": "Wed, 25 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "GPU Debt Has Gone Investment Grade. Here's Who Holds The Risk - Forbes",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOX2R1OEZJblFzZG5CSHlWNmF0ei13UTBuLTNxdDBHOVFON21zeEpqN0JwNkt6MHRWU1M4YzFpRnNNUEIzWUo5M1pVRkVjbHlzeFFDamtwUmhqdmhicF8yckFWa1FKOVEtVElUUU9xTWV4SVdOd3ROMzMyaDNtSEVtS01raWxxQ3FZdkEtV2tIZWRwQ1FSaEhFRzItNnJQeDlyZTJLU2gwVXU0Z3E2NVRwbkRmaw?oc=5",
+        "date": "Tue, 09 Jun 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "As venture debt gambles on GPUs, not all are sold on silicon-backed loans - PitchBook",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "PitchBook",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBheXJLNklaUUxfUXVpQnN6MmVzR0UzQkMzUmZuNGxsY3BtNUZXRm1md0dRRFZrX00yZEJJYmdJQnNTWE5tZHlFN1NCZmZzMW5NcXU2Tnd5cXRUMzNxaklyUF92YmNBbndQbWdpblZWRGNwb0ZuZjlsdnA1QWU4Zw?oc=5",
+        "date": "Wed, 27 Aug 2025 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "How AI debt financing impacts duration supply and interest rates - Federal Reserve Bank of Dallas",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Federal Reserve Bank of Dallas",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5GbktsaFo4Nl81dFJfUVZVbUQ4ZmRyRkhKVXVscFdUME1EOHdpSUp4Zm4yRU9oOGhlcXFXeUNkYnh0UldsVkg5V2xfZkQ0VkxfWVY2MUJCcEo2T1dYd1NRRlpNMkJoeUJqNFhiSkN3UHI1ZXVhQW9QU2c1NklZdw?oc=5",
+        "date": "Tue, 10 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "AI data center boom \u2018stress tests\u2019 insurers as private capital floods in - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUHZrWE51VEc2bGNsOERycnhpSXJRRHlQX0dDUDh1ZkxuNUx6Rzc0ODZIeEhKQkg4R2JmdUlBZzRVVWZlQ3pHVGlmTVlFa1ZVU0x2U2h0Mi1rWktUMXQ2T1NnbVNJcklhdjM0UkNkN09ieVAzbE1OUzA5cmlZWFJGcUV3OVdzSjdxR3I5Vy1uLWo?oc=5",
+        "date": "Fri, 10 Apr 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "The $3 Trillion AI Data Center Build-Out Becomes All-Consuming For Debt Markets - Bloomberg.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRVkzQjNJMzJBSUhOcHVXWnJPRXFCa01Xam9TSXJ2NXJzellyLWVtdHlmT2FSSk9mU3lIakJUVXltNzdMaFdaa0Vjc0h5VGFYaS1iMFlsaVU0eFQxS2xzRkNBV3RIcF94X3hPRlktRzJEVm1iOU15aGlwWWZjekg4S19IOThUOUNSUWx4ckpYY3hCNUhYZHo1b2FuZEo1bzNrTnFXSGpEazNlVWZmQm9HbjJJbDJrUQ?oc=5",
+        "date": "Mon, 02 Feb 2026 08:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "The AI build-out rests on hidden debt - GIS Reports",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "GIS Reports",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5LYXQzc1RHTXI1emZ4WkhHalVsTllRRWd3QlBDR0R5NTZIbnB2ekpCNl83Yk0yU0xqcmwwU1pPaTRrSkxxVjNDYU1qcmN2eE1LOUs4ZjJXbHBoNmdTaVEwUnQ2cmhGZHpMd2w4?oc=5",
+        "date": "Tue, 18 Aug 2026 06:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Big AI Data Center Owners Are Massively Expanding Their Debt - Forbes",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZHdmYUtvbXExLXlyMzNjN3lENmxSRlEyUEF0U2ZGc1BDT3lsU1Rjb2hBU1hJSmU2aXIxUXBtZWR4OXJHa2RkQVVNQmJMYlNVQmpidUZSWTk2aUpHZUl1S2Z0RkNmYUkzdlM3Rzg5UDUwM1VNaUJOYTdQb1pPU1JYSDAwakczX25PNlJ2TEhhaW45YWRDbUhYLTVCaHFSVTE5dktxN0RDVlQzLTZWcTB1VFQ1MA?oc=5",
+        "date": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "New Nasdaq rules to include 'fast entry' for new listings on benchmark index - Reuters",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTmlWT1BCMW1qWXZFY3hPNXYxMk92dGV2UTNrVFpjRG9GejZ5SVc3cWc5U3B5WUw2cmxEN1padDNtbDNZeVR4TVBPbnQ2YWt6R0pSblhma1dzRDVLcDZPN2J3bkR4dWtSTEtGa3A1cF9ReWktQUFUcWhFU0NSSE8tUHNsZFBDM1hjWUlGaGlUd1F1SkxpMnFHdXo5eVpXdUR6TTdPYUVNMWYtLWxxS2c?oc=5",
+        "date": "Mon, 30 Mar 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Perplexity Fine-Tuned a Chinese AI Model to Match Claude Opus 4.8 at One-Third the Cost - Decrypt",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Decrypt",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYzc1bFM3bEdMbWs0UU9rSkpDUGxMQ3AwUGFNSC1nUFdoSzRTczVDbEJaZnZpOEJRNThndk5SR05YX2FfamdEZUZWQ081OUNwRE9razhkYzJMMU5UbWw4OGcwbzROM1dVMGVTRFpZVWhCMXBMcnNRakd1aUdkanowdEZsUDVNMDTSAY8BQVVfeXFMUEtPRHJ2YTNSazh6bEFPdkh2bjBwNW1qZkg2V1NHMC14d3BSSVppUWh2U0FCQmRqUFRFbGtGTFhaQzdnRjcyQl9kcnJSanlzQy1nd1kyUHpKbTJaSF93b0hJRW5kYnczS0hBNkItTTQ0SGphdlNVVzROWlBlTXp6bVpvQkhtUGh6M2xoNlBIX3M?oc=5",
+        "date": "Thu, 09 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Why Some Coders Now Reach for GLM 5.2 Before Frontier AI Models - IEEE Spectrum",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "IEEE Spectrum",
+        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9MOFY4LVM4bzNpdFJjU2ZXNTlvaGJUWG1kOWg0VEw1UUdmYlpsR2x5OUVpdTdNaEs5LTNPdXVjUUhtdTFNRDluRGdOMzlXNVN1d3BzUnJHaUNGRTlOUUk4TVBfVlpSaTRpdkcxVll3?oc=5",
+        "date": "Tue, 21 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "How China Re-Priced the AI Market - UK Investor Magazine",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "UK Investor Magazine",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9KNXNQSURRNmRpYk0tem9tbktFcG95ekctaHVZV3dua01kYUMyVld6b19jQ2tqd0NWMTEycmxKUkkwTW5NdVMxRkdOckY0S1VXdS1rLWhnM2hpY3VSZlVNS0NLN3phVllPcTQ4MEFOcnhKQWFkclE?oc=5",
+        "date": "Mon, 17 Aug 2026 08:32:51 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Opinion | China should lean into its defining AI advantage \u2013 accessibility - South China Morning Post",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUTlFcmlVSkd2ZFRfdVJ3Vzd0Uk9XOE5IX1hzUUdXNTR2M01GcV9TeW1mRGVTbE90ZmtYTndVUFZWR1VGUS1XODQ4dlJ4T1g5aS03Sm1PcWlNX3hXWjFJRklkaFBaV1JObW9FUHB4NnNKU21CSkZVNk5PQzQ0YUxVUHo5NDdoZnkwWFBxMDBWSUNsTkNLYXZqcTFaZVcxUXRMM1A1T0NVMzYzWkwxdmhaZjRobERrYjDSAbcBQVVfeXFMTlNTcURFVUlpOU5LU3hBXzk4SjlmZkx4MXdabkF5U09NMmZiVllTYXJfWXpVNTc1SjNwTk1XZkZ1NUkzWUVueDQ2emI0djJKWXdzNjJqODJUbnd2ZnkzdGJnZm9tdFpNZzNOdUFoS3RweGpzOVk0TUFOcHdwSV9Cck9HcEd2V2daZkE2V0gxUUhEX2hJTFpNUFpwUDBKdUpaSm9zUUNBQjdnRUlHUEdNUEllOE05Q0tJ?oc=5",
+        "date": "Wed, 29 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "China\u2019s Kimi K3 comes close to Fable benchmarks at one-third the token price - R&D World",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "R&D World",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZnd3SmZpZ2hBczctdDNQUW8zbS13SVQxUC1mVlYtVklTempKV2RiYXQxTTNzX0hwNlhYMzc1bEs4czVZeVVYcVJhSDVlVzZHZ0EwWEo0YXdUMTc4cFdJRHRyMXp3NjUyY3ZKRlBXMzVzSTBZd1F0R1VCN1VmVDlLTWh1VHNaMkxobUpLcWNQa09hNHk0cVYwZEVlbGc4RGVCQmc?oc=5",
+        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "Alibaba's Qwen3.8-27B Squeezes Frontier AI Benchmarks Onto One Gaming GPU - Startup Fortune",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Startup Fortune",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeHh5d25BVW5ldmVmbmMwR3l6OVJoSjg5akl3Q1d4V29kM0tab1BfYURJOHJ3MzdhSXctbFlKdTEwNllsNlg4aFk3YnJHM3FwcHZXUU53OHVBUjdQaDVsVVRINEFTNWRTZU0yVHdfQW02VDlXMElIWEtXb185bWhuTU5LTm9pR0RDYndNQ01faVVYNGc1cEE2TEprekJMUUpY?oc=5",
+        "date": "Fri, 14 Aug 2026 21:16:34 GMT",
+        "weight": 1
+      },
+      {
+        "id": "evidence:None",
+        "label": "US Lead in the AI Race With China Is Rapidly Narrowing - Bloomberg.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBidzZzbzRJcEtnaUtHR3lrUjdkWTRLenFWR0lrUS1wb0F5VEcySTBsQURrclVQUTlsUWtCWDZTUzZuTktXcUFwcVFYQlExSWh4czRtUUZocXlGSVU4U0g5Q3Q4SEluU1BT?oc=5",
+        "date": "Wed, 19 Aug 2026 21:00:00 GMT",
         "weight": 1
       }
     ],
@@ -5005,6 +7431,55 @@
         "mentions": 1
       },
       {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Oracle",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -5369,6 +7844,111 @@
         "mentions": 1
       },
       {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Oracle",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -5909,6 +8489,27 @@
       },
       {
         "source": "CoreWeave",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -6021,6 +8622,13 @@
       },
       {
         "source": "SpaceX",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -6062,6 +8670,13 @@
         "mentions": 1
       },
       {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Microsoft",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -6174,7 +8789,28 @@
         "mentions": 1
       },
       {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -6259,6 +8895,13 @@
       },
       {
         "source": "SpaceX",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -6315,6 +8958,13 @@
       },
       {
         "source": "SoftBank",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -6370,7 +9020,119 @@
         "mentions": 1
       },
       {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -6398,62 +9160,6 @@
         "mentions": 1
       },
       {
-        "source": "SpaceX",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
         "source": "OpenAI",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -6461,49 +9167,14 @@
         "mentions": 1
       },
       {
-        "source": "Anthropic",
+        "source": "BlackRock",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "OpenAI",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:None",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
+        "source": "BlackRock",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -6630,6 +9301,13 @@
       },
       {
         "source": "OpenAI",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -6699,6 +9377,13 @@
         "mentions": 1
       },
       {
+        "source": "BlackRock",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Blackstone",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -6728,6 +9413,13 @@
       },
       {
         "source": "Apollo",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -6965,6 +9657,13 @@
         "mentions": 1
       },
       {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "CoreWeave",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -6972,6 +9671,27 @@
         "mentions": 1
       },
       {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -6994,6 +9714,13 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7063,7 +9790,7 @@
         "mentions": 1
       },
       {
-        "source": "Anthropic",
+        "source": "Broadcom",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7071,6 +9798,34 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7084,7 +9839,21 @@
         "mentions": 1
       },
       {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7126,7 +9895,7 @@
         "mentions": 1
       },
       {
-        "source": "Nvidia",
+        "source": "Meta",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7134,6 +9903,55 @@
       },
       {
         "source": "Nvidia",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7141,6 +9959,20 @@
       },
       {
         "source": "Microsoft",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7217,7 +10049,21 @@
         "mentions": 1
       },
       {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AMD",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7231,7 +10077,21 @@
         "mentions": 1
       },
       {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AMD",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7245,6 +10105,13 @@
         "mentions": 1
       },
       {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -7252,7 +10119,28 @@
         "mentions": 1
       },
       {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "CoreWeave",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7294,7 +10182,28 @@
         "mentions": 1
       },
       {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7308,7 +10217,7 @@
         "mentions": 1
       },
       {
-        "source": "Amazon",
+        "source": "AWS",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7316,6 +10225,27 @@
       },
       {
         "source": "Amazon",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7329,7 +10259,21 @@
         "mentions": 1
       },
       {
+        "source": "AWS",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7442,6 +10386,13 @@
       },
       {
         "source": "CoreWeave",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7463,6 +10414,13 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7574,6 +10532,13 @@
         "mentions": 1
       },
       {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -7581,7 +10546,42 @@
         "mentions": 1
       },
       {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7623,6 +10623,27 @@
         "mentions": 1
       },
       {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "CoreWeave",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -7638,6 +10659,13 @@
       },
       {
         "source": "Oracle",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7722,6 +10750,104 @@
       },
       {
         "source": "SpaceX",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "BlackRock",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7854,7 +10980,91 @@
         "mentions": 1
       },
       {
-        "source": "CoreWeave",
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AMD",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7903,7 +11113,7 @@
         "mentions": 1
       },
       {
-        "source": "Oracle",
+        "source": "CoreWeave",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7967,6 +11177,83 @@
       },
       {
         "source": "Oracle",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Oracle",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Google",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -7987,7 +11274,7 @@
         "mentions": 1
       },
       {
-        "source": "Alphabet",
+        "source": "Google",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -8023,6 +11310,13 @@
       },
       {
         "source": "Amazon",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "AWS",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -8365,6 +11659,13 @@
         "mentions": 1
       },
       {
+        "source": "AWS",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -8450,6 +11751,20 @@
       },
       {
         "source": "CoreWeave",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,
@@ -8589,6 +11904,13 @@
         "mentions": 1
       },
       {
+        "source": "BlackRock",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "SpaceX",
         "target": "evidence:None",
         "type": "EVIDENCE",
@@ -8681,6 +12003,13 @@
       },
       {
         "source": "Oracle",
+        "target": "evidence:None",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
         "target": "evidence:None",
         "type": "EVIDENCE",
         "weight": 1,

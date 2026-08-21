@@ -55,6 +55,16 @@ def _build_network(
             edge_counts[(source, target, event_type)] += 1
             edge_mentions[(source, target, event_type)] += int(event.get("mention_count") or 1)
 
+    prepared_items: list[tuple[dict[str, Any], list[str]]] = []
+    for item in items or []:
+        try:
+            companies = json.loads(item.get("companies") or "[]")
+        except (json.JSONDecodeError, TypeError):
+            companies = []
+        prepared_items.append((item, companies))
+        for company in companies:
+            node_counts[company] += 0
+
     nodes = [
         {"id": name, "label": name, "kind": "company", "weight": count}
         for name, count in node_counts.most_common(40)
@@ -72,14 +82,8 @@ def _build_network(
         if s in allowed and t in allowed
     ]
 
-    for item in items or []:
-        try:
-            companies = json.loads(item.get("companies") or "[]")
-        except (json.JSONDecodeError, TypeError):
-            continue
+    for item, companies in prepared_items:
         linked = [company for company in companies if company in allowed]
-        if not linked:
-            continue
         evidence_id = f"evidence:{item.get('item_id')}"
         nodes.append(
             {

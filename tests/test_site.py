@@ -38,13 +38,22 @@ def test_network_includes_company_news_as_evidence_nodes() -> None:
             "source": "Example",
             "url": "https://example.com/news",
             "published_at": "2026-08-21",
-        }
+        },
+        {
+            "item_id": "unresolved",
+            "title": "Economic evidence awaiting entity resolution",
+            "companies": "[]",
+            "category": "General AI capital",
+        },
     ]
 
     network = _build_network(events, items)
 
-    evidence = next(node for node in network["nodes"] if node["kind"] == "evidence")
-    assert evidence["label"] == "Nvidia reports earnings"
+    evidence = [node for node in network["nodes"] if node["kind"] == "evidence"]
+    assert {node["label"] for node in evidence} == {
+        "Nvidia reports earnings",
+        "Economic evidence awaiting entity resolution",
+    }
     assert any(edge["type"] == "EVIDENCE" for edge in network["edges"])
 
 
