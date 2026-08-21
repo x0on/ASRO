@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T19:35:53.825248+00:00",
+  "generated_at": "2026-08-21T19:37:33.121373+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -11,15 +11,15 @@
     "gate_reason": "material evidence in stress and monetization"
   },
   "dimensions": {
-    "monetization": 100.0,
-    "circularity": 1.232000101936137e-08,
     "counter_evidence": 100.0,
-    "cannibalization": 0.82,
-    "fragility": 22.61212121594788,
+    "capital": 46.85454041759518,
+    "external_pressure": 43.75428571428572,
+    "monetization": 100.0,
     "stress": 77.52,
     "transmission": 1.2000000992884452e-08,
-    "capital": 46.85454041759518,
-    "external_pressure": 43.75428571428572
+    "cannibalization": 0.82,
+    "circularity": 1.232000101936137e-08,
+    "fragility": 22.61212121594788
   },
   "dimension_evidence": {
     "capital": 416,
@@ -143,6 +143,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T19:37:32.729395+00:00",
+      "score": 36.4,
+      "label": "FORMING",
+      "dimensions": "{\"external_pressure\": 43.75428571428572, \"capital\": 46.85454041759518, \"cannibalization\": 0.82, \"circularity\": 1.232000101936137e-08, \"counter_evidence\": 100.0, \"fragility\": 22.61212121594788, \"stress\": 77.52, \"transmission\": 1.2000000992884452e-08, \"monetization\": 100.0}"
+    },
     {
       "captured_at": "2026-08-21T19:34:29.466596+00:00",
       "score": 36.4,
@@ -5193,6 +5199,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:7f73139795e18219ba2c7c85074f74b25cc1253e5583920fce570b592c5b1ecf",
+        "label": "Alphabet raises $3.9 billion in inaugural Australian dollar bond - Reuters",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSWowTDhsUGNUOXVDQ1Q0STlaemFrQ2tRQUFsUVo0Z3VaYURVQnV3U1VhUV9oTmthdm9PM2xFaUhzRlhGQ2JyNGJYMjVIX1FrT0Z5R0RjXzhsWUVSMXRGWGg4eHd5VlhRQjUtTS1id0YzTXhpdE9GN2hCVHFVQi0wNkFsd3NBUFEyc0pyRVBZcnB1OTZBQ0RDdlpQSzk3NHVTdHRRVjB4T1FpeVJ0ODBQbjZn?oc=5",
+        "date": "Wed, 19 Aug 2026 20:25:43 GMT",
+        "summary": "Alphabet raises $3.9 billion in inaugural Australian dollar bond Reuters",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:db3da78adc5782edf0c2140841b63952e3b8dab0b6f44ca65b67be793bcf67d0",
         "label": "Apollo Hybrid Capital Summit: A New Playbook for Changing Markets - Apollo Global Management",
         "kind": "evidence",
@@ -7758,6 +7776,18 @@
         "date": "Wed, 19 Aug 2026 19:23:36 GMT",
         "summary": "OpenAI 'will be a public company in 2027' or sooner, CFO Friar tells employees CNBC",
         "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2dff35d784c095c6a47004791fd4d557c42739f37b08457beba1cfa9c9fa081f",
+        "label": "Marvell stock forecast: valuation concerns persist ahead of earnings - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOFlGT0owU0NWZkZGSmlfVk5KWFBWMFJ1Z1VBUXh0dzd3RUM0WFczLVRJQV9lZnc2UUlyTk02MzIxZkRybHhWdWRhZ0xVX3FOQmdOQmpUM0pxR0NibDBuYWNiZl9CdWFyNzgtTkFLdEstWFkyT01haGM1a0ZKd3ZnaVhQOWpxdDUyb2hEcXl5bk04M0FKYVRSOVMzNlJMR3dld2xNdFcyWXUwblNFaTI1c0Z3Vk5rWkw5VDN0ZUhwMkRpdw?oc=5",
+        "date": "Fri, 21 Aug 2026 15:22:36 GMT",
+        "summary": "Marvell stock forecast: valuation concerns persist ahead of earnings TradingView",
+        "score": 0,
         "weight": 1
       },
       {
@@ -12222,6 +12252,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:88724e1f94b43ef9dbf0f7ad1e3cc74a48bf0ee01004a1bfd190ddc08fae32d4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:7f73139795e18219ba2c7c85074f74b25cc1253e5583920fce570b592c5b1ecf",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -27620,20 +27657,20 @@
   ],
   "collector_runs": [
     {
-      "id": 41,
+      "id": 45,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T19:34:17.967318+00:00",
-      "completed_at": "2026-08-21T19:34:26.082822+00:00",
+      "started_at": "2026-08-21T19:37:20.575290+00:00",
+      "completed_at": "2026-08-21T19:37:28.646228+00:00",
       "status": "ok",
       "items_seen": 35,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 42,
+      "id": 46,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T19:34:26.483762+00:00",
-      "completed_at": "2026-08-21T19:34:26.857528+00:00",
+      "started_at": "2026-08-21T19:37:29.047311+00:00",
+      "completed_at": "2026-08-21T19:37:29.407654+00:00",
       "status": "ok",
       "items_seen": 8,
       "items_new": 0,
@@ -27650,20 +27687,20 @@
       "error": null
     },
     {
-      "id": 40,
+      "id": 44,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T19:34:17.020755+00:00",
-      "completed_at": "2026-08-21T19:34:17.566054+00:00",
+      "started_at": "2026-08-21T19:37:19.621688+00:00",
+      "completed_at": "2026-08-21T19:37:20.173795+00:00",
       "status": "ok",
       "items_seen": 12,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 43,
+      "id": 47,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T19:34:27.258771+00:00",
-      "completed_at": "2026-08-21T19:34:29.053947+00:00",
+      "started_at": "2026-08-21T19:37:29.808979+00:00",
+      "completed_at": "2026-08-21T19:37:32.317348+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -27680,7 +27717,7 @@
       "error": null
     }
   ],
-  "document_count": 711,
+  "document_count": 713,
   "event_count": 926,
   "mention_count": 2311,
   "review_counts": {
