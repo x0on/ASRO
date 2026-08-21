@@ -87,8 +87,8 @@ class EvidenceReviewer:
         self._settings = settings
         self._repository = repository or SqliteRepository(settings.database_path)
 
-    def run(self, limit: int = 100, batch_size: int = 5) -> int:
-        if limit < 1 or batch_size < 1:
+    def run(self, limit: int = 100, batch_size: int = 5, retry_flagged_limit: int = 0) -> int:
+        if (limit < 1 and retry_flagged_limit < 1) or batch_size < 1:
             return 0
         reviewed = 0
         with self._repository.connect() as connection:
@@ -126,6 +126,22 @@ class EvidenceReviewer:
                     raise ValueError("Reviewer returned no valid decisions")
                 connection.commit()
                 reviewed += applied
+            retried = 0
+            while retried < retry_flagged_limit:
+                rows = [
+                    dict(row)
+                    for row in self._repository.flagged_events(
+                        connection, min(batch_size, retry_flagged_limit - retried)
+                    )
+                ]
+                if not rows:
+                    break
+                applied = self._review_batch(connection, rows)
+                if applied == 0:
+                    raise ValueError("Reviewer returned no valid flagged-evidence decisions")
+                connection.commit()
+                retried += applied
+            reviewed += retried
         return reviewed
 
     def _review_batch(self, connection: Any, rows: list[dict[str, Any]]) -> int:
@@ -181,10 +197,14 @@ class EvidenceReviewer:
                     "and amounts that are not clearly supported by the excerpt. Also detect "
                     "duplicate economic facts: merge only when two inputs describe the same "
                     "transaction and point to the strongest confirmed fingerprint in this batch. "
+                    "Some inputs are quarantined retries and include previous_flag_reason plus "
+                    "source_context. Reconsider the earlier decision against that broader source "
+                    "text; confirm only if the event is now directly supported, otherwise flag it "
+                    "again with a precise final reason. "
                     "Never infer or invent facts. Every input fingerprint must receive exactly one "
                     "decision. Keep reasoning specific and concise."
                 ),
-                "input": json.dumps(rows, default=str),
+                "input": json.dumps([_review_payload(row) for row in rows], default=str),
                 "text": {
                     "format": {
                         "type": "json_schema",
@@ -209,3 +229,19 @@ def _output_text(payload: dict[str, Any]) -> str:
                 if content.get("type") == "output_text":
                     return str(content["text"])
     raise ValueError("Reviewer response contained no structured output")
+
+
+def _review_payload(row: dict[str, Any]) -> dict[str, Any]:
+    """Bound source context while preserving the excerpt and prior adjudication."""
+    payload = dict(row)
+    source_text = re.sub(r"\s+", " ", str(payload.pop("source_text", "") or "")).strip()
+    evidence = re.sub(r"\s+", " ", str(payload.get("evidence_text") or "")).strip()
+    if source_text:
+        location = source_text.lower().find(evidence.lower()) if evidence else -1
+        if location >= 0:
+            start = max(0, location - 1_250)
+            end = min(len(source_text), location + len(evidence) + 1_250)
+            payload["source_context"] = source_text[start:end]
+        else:
+            payload["source_context"] = source_text[:2_500]
+    return payload

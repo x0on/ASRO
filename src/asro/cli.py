@@ -169,13 +169,17 @@ def rebuild_observations() -> None:
 
 
 @app.command()
-def review(limit: int = 100, batch_size: int = 10) -> None:
-    """Review provisional economic events with the configured evidence-review model."""
+def review(limit: int = 100, batch_size: int = 10, retry_flagged_limit: int = 0) -> None:
+    """Review new evidence and optionally retry quarantined events with source context."""
     try:
-        reviewed = EvidenceReviewer(Settings()).run(limit=limit, batch_size=batch_size)
+        reviewed = EvidenceReviewer(Settings()).run(
+            limit=limit,
+            batch_size=batch_size,
+            retry_flagged_limit=retry_flagged_limit,
+        )
     except (ValueError, OSError) as exc:
         _write_review_status("error", error=exc)
         typer.echo(f"Evidence review failed: {exc}", err=True)
         raise typer.Exit(code=1) from exc
     _write_review_status("ok", reviewed=reviewed)
-    typer.echo(f"Reviewed {reviewed} provisional economic events.")
+    typer.echo(f"Reviewed or re-reviewed {reviewed} economic events.")

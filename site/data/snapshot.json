@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T21:43:03.495479+00:00",
+  "generated_at": "2026-08-21T22:03:30.458620+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "transmission": 39.6,
-    "capital": 52.15125962813687,
     "cannibalization": 54.2,
     "monetization": 42.9,
-    "stress": 57.1,
-    "fragility": 61.1,
-    "counter_evidence": 45.8,
     "external_pressure": 61.1,
-    "circularity": 57.1
+    "counter_evidence": 45.8,
+    "fragility": 61.1,
+    "circularity": 57.1,
+    "stress": 57.1,
+    "transmission": 39.6,
+    "capital": 52.15125962813687
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "transmission": "confirmed_trigger",
-    "capital": "aggregate",
     "cannibalization": "directional_estimate",
     "monetization": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "external_pressure": "directional_estimate",
     "stress": "directional_estimate",
+    "capital": "aggregate",
     "fragility": "directional_estimate",
-    "circularity": "directional_estimate"
+    "circularity": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "transmission": "confirmed_trigger"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -31516,6 +31516,7 @@
   "review_counts": {
     "provisional": 0,
     "confirmed": 257,
-    "flagged": 691
+    "flagged": 691,
+    "flagged_retry_pending": 691
   }
 }

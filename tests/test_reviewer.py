@@ -4,7 +4,13 @@ from asro.dedupe import economic_fingerprint
 from asro.extraction.deterministic import DeterministicEventExtractor
 from asro.measurement import event_to_observation
 from asro.models import SourceItem
-from asro.reviewer import EvidenceReviewer, ReviewBatch, ReviewDecision, preflight_reason
+from asro.reviewer import (
+    EvidenceReviewer,
+    ReviewBatch,
+    ReviewDecision,
+    _review_payload,
+    preflight_reason,
+)
 from asro.scoring import score
 from asro.settings import Settings
 from asro.storage import SqliteRepository
@@ -110,6 +116,46 @@ def test_reviewer_commits_small_batches(tmp_path: Path) -> None:
     assert reviewer.calls == 2
     with repo.connect() as connection:
         assert repo.review_counts(connection)["confirmed"] == 3
+
+
+def test_flagged_event_receives_one_source_aware_retry(tmp_path: Path) -> None:
+    repo = SqliteRepository(tmp_path / "test.db")
+    with repo.connect() as connection:
+        fingerprint = _event(repo, connection, 1, "2026-08-31")
+        repo.apply_review(
+            connection,
+            fingerprint,
+            "flag",
+            None,
+            0.8,
+            "The first review could not verify the event from the short excerpt.",
+            "first-review",
+            "2026-09-01T00:00:00+00:00",
+        )
+        connection.commit()
+    settings = Settings(database_path=tmp_path / "test.db", openai_api_key="test")
+    reviewer = ConfirmingReviewer(settings, repo)
+
+    assert reviewer.run(limit=0, retry_flagged_limit=1) == 1
+    assert reviewer.run(limit=0, retry_flagged_limit=1) == 0
+    with repo.connect() as connection:
+        assert repo.review_counts(connection)["confirmed"] == 1
+        assert connection.execute("SELECT COUNT(*) FROM evidence_reviews").fetchone()[0] == 2
+
+
+def test_review_payload_bounds_full_source_around_evidence() -> None:
+    evidence = "Nvidia guaranteed $30 billion for OpenAI."
+    payload = _review_payload(
+        {
+            "fingerprint": "event",
+            "evidence_text": evidence,
+            "source_text": f"{'before ' * 500}{evidence}{' after' * 500}",
+        }
+    )
+
+    assert "source_text" not in payload
+    assert evidence in payload["source_context"]
+    assert len(payload["source_context"]) < 3_000
 
 
 def test_preflight_flags_placeholder_hypothetical_and_implausible_evidence() -> None:

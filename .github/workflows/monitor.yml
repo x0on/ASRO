@@ -70,7 +70,7 @@ jobs:
         env:
           ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
         run: asro backfill --years 3 --news-limit 500 --sec-per-company 24
-      - name: Daily evidence review
+      - name: Daily evidence review and flagged repair
         if: github.event_name == 'push' || github.event.schedule == '47 3 * * *' || inputs.review || inputs.backfill
         # Review enriches provisional evidence but must never take the observatory offline.
         continue-on-error: true
@@ -78,7 +78,8 @@ jobs:
           ASRO_OPENAI_API_KEY: ${{ secrets.ASRO_OPENAI_API_KEY }}
           ASRO_REVIEW_MODEL: ${{ vars.ASRO_REVIEW_MODEL || 'gpt-4.1-mini' }}
           REVIEW_LIMIT: ${{ (inputs.backfill == true || contains(github.event.head_commit.message, '[backfill]')) && 600 || 100 }}
-        run: asro review --limit "$REVIEW_LIMIT" --batch-size 10
+          RETRY_FLAGGED_LIMIT: 700
+        run: asro review --limit "$REVIEW_LIMIT" --retry-flagged-limit "$RETRY_FLAGGED_LIMIT" --batch-size 10
       - name: Build static site
         run: asro build-site
       - name: Commit updated observatory data

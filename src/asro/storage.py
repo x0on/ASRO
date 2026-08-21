@@ -382,15 +382,51 @@ class SqliteRepository:
                 SELECT ec.fingerprint, ec.canonical_event_id, ec.first_seen, ec.last_seen,
                        ec.mention_count, e.event_type, e.source_entity, e.target_entity,
                        e.amount, e.currency, e.effective_date, e.evidence_text,
-                       i.title, i.url, i.source, i.published_at
+                       i.title, i.url, i.source, i.published_at, d.text AS source_text
                 FROM economic_events ec
                 JOIN financial_events e ON e.event_id = ec.canonical_event_id
                 JOIN items i ON i.id = e.document_id
+                LEFT JOIN documents d ON d.item_id = i.id
                 WHERE ec.review_status = 'provisional'
                 ORDER BY ec.first_seen
                 LIMIT ?
                 """,
                 (limit,),
+            )
+        )
+
+    @staticmethod
+    def flagged_events(
+        connection: sqlite3.Connection, limit: int = 100, max_reviews: int = 2
+    ) -> list[sqlite3.Row]:
+        """Return quarantined events that have not yet received a second source-aware review."""
+        return list(
+            connection.execute(
+                """
+                SELECT ec.fingerprint, ec.canonical_event_id, ec.first_seen, ec.last_seen,
+                       ec.mention_count, e.event_type, e.source_entity, e.target_entity,
+                       e.amount, e.currency, e.effective_date, e.evidence_text,
+                       i.title, i.url, i.source, i.published_at, d.text AS source_text,
+                       COUNT(r.review_id) AS review_count,
+                       (
+                           SELECT prior.reasoning
+                           FROM evidence_reviews prior
+                           WHERE prior.fingerprint = ec.fingerprint
+                           ORDER BY prior.review_id DESC
+                           LIMIT 1
+                       ) AS previous_flag_reason
+                FROM economic_events ec
+                JOIN financial_events e ON e.event_id = ec.canonical_event_id
+                JOIN items i ON i.id = e.document_id
+                LEFT JOIN documents d ON d.item_id = i.id
+                LEFT JOIN evidence_reviews r ON r.fingerprint = ec.fingerprint
+                WHERE ec.review_status = 'flagged'
+                GROUP BY ec.fingerprint
+                HAVING COUNT(r.review_id) < ?
+                ORDER BY ec.reviewed_at, ec.first_seen
+                LIMIT ?
+                """,
+                (max_reviews, limit),
             )
         )
 
@@ -467,12 +503,24 @@ class SqliteRepository:
 
     @staticmethod
     def review_counts(connection: sqlite3.Connection) -> dict[str, int]:
-        counts = {"provisional": 0, "confirmed": 0, "flagged": 0}
+        counts = {"provisional": 0, "confirmed": 0, "flagged": 0, "flagged_retry_pending": 0}
         for row in connection.execute(
             "SELECT review_status, COUNT(*) count FROM economic_events GROUP BY review_status"
         ):
             if row["review_status"] in counts:
                 counts[row["review_status"]] = int(row["count"])
+        retry_row = connection.execute(
+            """
+            SELECT COUNT(*) AS count
+            FROM economic_events ec
+            WHERE ec.review_status = 'flagged'
+              AND (
+                  SELECT COUNT(*) FROM evidence_reviews r
+                  WHERE r.fingerprint = ec.fingerprint
+              ) < 2
+            """
+        ).fetchone()
+        counts["flagged_retry_pending"] = int(retry_row["count"])
         return counts
 
     @staticmethod
