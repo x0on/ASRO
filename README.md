@@ -1,6 +1,18 @@
 # AI Systemic Risk Observatory
 
-An open-source research project for monitoring how financial risk moves through the AI economy.
+**ASRO is a live early-warning system for financial risks created by the AI boom.**
+
+It reads economic news and official company filings, verifies the evidence, and tracks whether financial risks are becoming more connected—and more likely to reach markets, pensions, and ordinary investors.
+
+In simple terms, ASRO does three things:
+
+1. **Collect** — Read economic news and official company filings.
+2. **Verify** — Separate confirmed facts from rumors and duplicate reporting.
+3. **Measure** — Update nine warning signals and the overall systemic-risk reading.
+
+ASRO does not predict that a crash will happen. It measures whether the conditions that could produce one are strengthening or weakening.
+
+**[Explore the live observatory](https://x0on.github.io/ASRO/)**
 
 The project tracks signals across:
 
