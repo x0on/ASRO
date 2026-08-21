@@ -3,6 +3,7 @@ from __future__ import annotations
 from urllib.parse import quote_plus
 
 import feedparser
+import requests
 from bs4 import BeautifulSoup
 from pydantic import HttpUrl
 
@@ -17,18 +18,23 @@ def _clean_html(value: str) -> str:
 class GoogleNewsCollector:
     name = "google-news-rss"
 
-    def __init__(self, queries: list[str]) -> None:
+    def __init__(self, queries: list[str], max_items: int = 12) -> None:
         self._queries = queries
+        self._max_items = max_items
 
     def collect(self) -> list[SourceItem]:
         items: list[SourceItem] = []
 
         for query in self._queries:
+            if len(items) >= self._max_items:
+                break
             url = (
                 "https://news.google.com/rss/search?"
                 f"q={quote_plus(query)}&hl=en-US&gl=US&ceid=US:en"
             )
-            feed = feedparser.parse(url)
+            response = requests.get(url, timeout=10)
+            response.raise_for_status()
+            feed = feedparser.parse(response.content)
 
             for entry in feed.entries:
                 source_name = "Google News"
@@ -45,5 +51,7 @@ class GoogleNewsCollector:
                         source=source_name,
                     )
                 )
+                if len(items) >= self._max_items:
+                    break
 
         return items

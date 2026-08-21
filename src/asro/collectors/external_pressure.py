@@ -18,7 +18,8 @@ class ExternalPressureCollector:
                 '"open source" AI model beats benchmark',
                 '"DeepSeek" model pricing benchmark',
                 '"Qwen" model pricing benchmark',
-            ]
+            ],
+            max_items=8,
         )
 
     def collect(self) -> list[SourceItem]:

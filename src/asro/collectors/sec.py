@@ -79,4 +79,4 @@ class SecCollector:
                 )
             )
 
-        return items[:30]
+        return items[:3]
