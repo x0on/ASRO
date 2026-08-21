@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T21:02:16.826779+00:00",
+  "generated_at": "2026-08-21T21:05:04.085949+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
-    "capital": 52.15125962813687,
-    "external_pressure": 61.1,
-    "fragility": 61.1,
-    "transmission": 39.6,
-    "counter_evidence": 45.8,
     "circularity": 57.1,
+    "counter_evidence": 45.8,
+    "stress": 57.1,
+    "fragility": 61.1,
+    "capital": 52.15125962813687,
+    "transmission": 39.6,
+    "monetization": 42.9,
     "cannibalization": 54.2,
-    "stress": 57.1
+    "external_pressure": 61.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
-    "external_pressure": "directional_estimate",
-    "stress": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "monetization": "directional_estimate",
-    "capital": "aggregate",
     "fragility": "directional_estimate",
-    "transmission": "confirmed_trigger"
+    "transmission": "confirmed_trigger",
+    "external_pressure": "directional_estimate",
+    "circularity": "directional_estimate",
+    "stress": "directional_estimate",
+    "capital": "aggregate",
+    "monetization": "directional_estimate",
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -623,6 +623,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T21:05:03.337891+00:00",
+      "score": 52.1,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"counter_evidence\": 45.8, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"circularity\": 57.1}"
+    },
     {
       "captured_at": "2026-08-21T20:54:28.102734+00:00",
       "score": 59.3,
@@ -7323,6 +7329,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:2bab3ffbd2b781cc1b27cc5a6b2db621969e7e524c09ce66f89ced91a6584bc1",
+        "label": "Alibaba Q1 Earnings Fall Short of Estimates, Revenues Rise Y/Y - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRGxsQ0N4Qkh5dUZGYkFFSmpzNVBjU0hEaGh1Vnh1VVBvaVdKWlBwU1NrV09rdXNhWGhSaUdtcFdMbXJyOEVwX1lydTVaZ3NfdjZ4dXBQWGQ4ODNDUm12UnRGY0VYb3lvMXNMejhlakJpR043Ul9GbDhQUmM2Y0ZHUmoya3VCQjA3WmJkdV95S3lPcG1pSGplaHZQMA?oc=5",
+        "date": "Fri, 21 Aug 2026 14:46:00 GMT",
+        "summary": "Alibaba Q1 Earnings Fall Short of Estimates, Revenues Rise Y/Y Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:23d440300594ef1ce7b65dfaf78c5226297e7c370be887b9b01b06e4ac7a9690",
         "label": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost - VentureBeat",
         "kind": "evidence",
@@ -10499,18 +10517,6 @@
         "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSDVqbTFkanFLb0xOR1RoZkdPOWd4Vnk5aUJWZDVEWFo2WXNIbmNqNnY1NXI4RHNVYjlKRzFHM0JWb3JOSVpPT0pvUlZWbmp2dmhvdEFGcVNJUm9aY1BNaVVTM2NaWDFmTnBNRXgxaFdNNUhxU1I3OVJjbjlHX0h2Z1JuSXBRc3BpZEMxSXMzd1puSHNyUHRFQnh6cGRiS0puTXc?oc=5",
         "date": "Thu, 20 Mar 2025 07:00:00 GMT",
         "summary": "Lawsuit Against Lockheed Martin Criticizes Firm for Using In-House TDFs plansponsor",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4fe7de11dceddbb0036c1609e8d6be004b69f43b7e98744f7c5f455771adc19d",
-        "label": "Nvidia\u2019s $500 Billion AI Push Is Starting to Show Up in Credit - Investing.com",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Investing.com",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOXzNPUUJKekg1dlE5UHhQOHRITkU5YjAwclJDLVJhUUZfQ2NkZ09kVWpleHk3V1J1MTJoVGxKMXlZOVlWb3M5S0laMTBzMFRlYXZjYnM2RFlnUDRQVUtmTkNxQjNLQWk3OVY2WGRsSkRHblFQV213dnY5UVBVVEY5WTFzVWlZVWgteVk2dEhTTFYxcm9ScFV6b09qT0NwWURpeTBodXhwTzg?oc=5",
-        "date": "Tue, 11 Aug 2026 07:05:15 GMT",
-        "summary": "Nvidia\u2019s $500 Billion AI Push Is Starting to Show Up in Credit Investing.com",
         "score": 1,
         "weight": 1
       }
@@ -15326,6 +15332,13 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:2bab3ffbd2b781cc1b27cc5a6b2db621969e7e524c09ce66f89ced91a6584bc1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "MiniMax",
         "target": "evidence:23d440300594ef1ce7b65dfaf78c5226297e7c370be887b9b01b06e4ac7a9690",
         "type": "EVIDENCE",
@@ -17176,13 +17189,6 @@
       {
         "source": "Amazon",
         "target": "evidence:69c72b20915e37ea98b1426873e480a091c685cbc8518d5411e8f6b2b1f8172f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:4fe7de11dceddbb0036c1609e8d6be004b69f43b7e98744f7c5f455771adc19d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31413,23 +31419,23 @@
   ],
   "collector_runs": [
     {
-      "id": 67,
+      "id": 71,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T20:54:08.641303+00:00",
-      "completed_at": "2026-08-21T20:54:23.988358+00:00",
+      "started_at": "2026-08-21T21:04:44.570814+00:00",
+      "completed_at": "2026-08-21T21:04:59.970569+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 3,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 68,
+      "id": 72,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T20:54:24.389549+00:00",
-      "completed_at": "2026-08-21T20:54:25.270833+00:00",
+      "started_at": "2026-08-21T21:05:00.371548+00:00",
+      "completed_at": "2026-08-21T21:05:00.804430+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 2,
+      "items_new": 0,
       "error": null
     },
     {
@@ -31443,20 +31449,20 @@
       "error": null
     },
     {
-      "id": 66,
+      "id": 70,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T20:54:07.244315+00:00",
-      "completed_at": "2026-08-21T20:54:08.240130+00:00",
+      "started_at": "2026-08-21T21:04:43.547981+00:00",
+      "completed_at": "2026-08-21T21:04:44.169324+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 69,
+      "id": 73,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T20:54:25.672448+00:00",
-      "completed_at": "2026-08-21T20:54:27.683017+00:00",
+      "started_at": "2026-08-21T21:05:01.205588+00:00",
+      "completed_at": "2026-08-21T21:05:02.922885+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31473,7 +31479,7 @@
       "error": null
     }
   ],
-  "document_count": 989,
+  "document_count": 990,
   "event_count": 948,
   "mention_count": 2342,
   "review_counts": {
