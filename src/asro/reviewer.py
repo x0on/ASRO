@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import UTC, datetime
 from typing import Any, Literal
 
@@ -9,6 +10,54 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from asro.settings import Settings
 from asro.storage import SqliteRepository
+
+_PLACEHOLDER_PREFIXES = (
+    "review for debt, guarantees, capital expenditure",
+    "review this filing for debt, guarantees, capital expenditure",
+)
+_HYPOTHETICAL_MARKERS = (
+    "may adversely",
+    "may not be able",
+    "may not produce",
+    "might adversely",
+    "could adversely",
+    "could result in",
+    "would adversely",
+    "we may incur",
+)
+_TRANSACTION_TYPES = {
+    "ALLOCATES_TO",
+    "CAPEX_COMMITMENT",
+    "CANCELS_PROJECT",
+    "ENTERS_INDEX",
+    "FILES_FOR_IPO",
+    "GUARANTEES",
+    "IMPAIRMENT",
+    "INVESTS_IN",
+    "ISSUES_DEBT",
+    "LEASES_FROM",
+    "LENDS_TO",
+    "PURCHASES_FROM",
+    "REFINANCES",
+    "SUPPLIES",
+}
+
+
+def preflight_reason(row: dict[str, Any]) -> str | None:
+    """Return a conservative reason to quarantine clearly unsupported evidence."""
+    evidence = re.sub(r"\s+", " ", str(row.get("evidence_text") or "")).strip().lower()
+    if not evidence:
+        return "The extracted event has no quoted source evidence."
+    if evidence.startswith(_PLACEHOLDER_PREFIXES):
+        return "The text is a filing-review placeholder, not evidence that an event occurred."
+    amount = row.get("amount")
+    if amount is not None and abs(float(amount)) > 5_000_000_000_000:
+        return "The extracted amount exceeds the plausibility threshold and needs source checking."
+    if str(row.get("event_type")) in _TRANSACTION_TYPES and any(
+        marker in evidence for marker in _HYPOTHETICAL_MARKERS
+    ):
+        return "The excerpt is hypothetical risk language, not evidence of a completed event."
+    return None
 
 
 class ReviewDecision(BaseModel):
@@ -40,6 +89,26 @@ class EvidenceReviewer:
             return 0
         reviewed = 0
         with self._repository.connect() as connection:
+            preflight_rows = [
+                dict(row) for row in self._repository.provisional_events(connection, limit)
+            ]
+            now = datetime.now(UTC).isoformat()
+            for row in preflight_rows:
+                reason = preflight_reason(row)
+                if reason is None:
+                    continue
+                self._repository.apply_review(
+                    connection,
+                    str(row["fingerprint"]),
+                    "flag",
+                    None,
+                    0.99,
+                    reason,
+                    "deterministic-preflight-v1",
+                    now,
+                )
+                reviewed += 1
+            connection.commit()
             while reviewed < limit:
                 rows = [
                     dict(row)

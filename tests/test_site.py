@@ -55,6 +55,22 @@ def test_network_includes_company_news_as_evidence_nodes() -> None:
         "Economic evidence awaiting entity resolution",
     }
     assert any(edge["type"] == "EVIDENCE" for edge in network["edges"])
+    assert {node["id"] for node in evidence} == {"evidence:abc", "evidence:unresolved"}
+
+
+def test_network_uses_storage_item_id_for_unique_evidence_nodes() -> None:
+    network = _build_network(
+        [],
+        [
+            {"id": "first", "title": "First source", "companies": "[]"},
+            {"id": "second", "title": "Second source", "companies": "[]"},
+        ],
+    )
+
+    assert {node["id"] for node in network["nodes"]} == {
+        "evidence:first",
+        "evidence:second",
+    }
 
 
 def test_build_static_site_on_empty_db_reports_insufficient_evidence(tmp_path: Path) -> None:

@@ -4,7 +4,7 @@ from asro.dedupe import economic_fingerprint
 from asro.extraction.deterministic import DeterministicEventExtractor
 from asro.measurement import event_to_observation
 from asro.models import SourceItem
-from asro.reviewer import EvidenceReviewer, ReviewBatch, ReviewDecision
+from asro.reviewer import EvidenceReviewer, ReviewBatch, ReviewDecision, preflight_reason
 from asro.scoring import score
 from asro.settings import Settings
 from asro.storage import SqliteRepository
@@ -110,3 +110,22 @@ def test_reviewer_commits_small_batches(tmp_path: Path) -> None:
     assert reviewer.calls == 2
     with repo.connect() as connection:
         assert repo.review_counts(connection)["confirmed"] == 3
+
+
+def test_preflight_flags_placeholder_hypothetical_and_implausible_evidence() -> None:
+    base = {"event_type": "GUARANTEES", "amount": None}
+    assert preflight_reason(
+        {**base, "evidence_text": "Review for debt, guarantees, capital expenditure and leases."}
+    )
+    assert preflight_reason(
+        {**base, "evidence_text": "These obligations could adversely affect our business."}
+    )
+    assert preflight_reason(
+        {**base, "amount": 8_000_000_000_000, "evidence_text": "A guarantee was reported."}
+    )
+    assert (
+        preflight_reason(
+            {**base, "amount": 30_000_000_000, "evidence_text": "Nvidia guaranteed $30 billion."}
+        )
+        is None
+    )

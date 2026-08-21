@@ -85,7 +85,10 @@ def _build_network(
 
     for item, companies in prepared_items:
         linked = [company for company in companies if company in allowed]
-        evidence_id = f"evidence:{item.get('item_id')}"
+        item_id = item.get("item_id") or item.get("id")
+        if not item_id:
+            continue
+        evidence_id = f"evidence:{item_id}"
         nodes.append(
             {
                 "id": evidence_id,
