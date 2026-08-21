@@ -3,9 +3,11 @@ from pathlib import Path
 
 import pytest
 
+from asro.collectors.google_news import HistoricalGoogleNewsCollector
+from asro.collectors.sec import HistoricalSecCollector
 from asro.documents import FetchedDocument
 from asro.models import SourceItem
-from asro.service import MonitorService
+from asro.service import MonitorService, RunSummary
 from asro.settings import Settings
 
 
@@ -79,3 +81,22 @@ def test_fetch_failures_mark_run_degraded(tmp_path: Path, monkeypatch: pytest.Mo
     run = service.freshness()[0]
     assert run["status"] == "degraded"
     assert run["error"] == "2 of 2 document fetches failed"
+
+
+def test_backfill_uses_separate_bounded_collectors(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    service = _service(tmp_path, monkeypatch, [])
+    captured: list[object] = []
+
+    def capture(collectors: list[object] | None = None) -> RunSummary:
+        captured.extend(collectors or [])
+        return RunSummary()
+
+    monkeypatch.setattr(service, "run", capture)
+
+    summary = service.backfill(years=3, news_limit=70, sec_per_company=9)
+
+    assert summary.ok is True
+    assert isinstance(captured[0], HistoricalGoogleNewsCollector)
+    assert isinstance(captured[1], HistoricalSecCollector)

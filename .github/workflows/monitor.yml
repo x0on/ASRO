@@ -20,6 +20,11 @@ on:
         required: false
         type: boolean
         default: false
+      backfill:
+        description: "Build the one-time three-year news and SEC baseline"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -34,7 +39,7 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 45
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -47,11 +52,17 @@ jobs:
       - name: Install
         run: pip install -e .
       - name: Collect and extract
+        if: inputs.backfill != true
         env:
           ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
         run: asro run
+      - name: Historical news and SEC baseline
+        if: inputs.backfill == true
+        env:
+          ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
+        run: asro backfill --years 3 --news-limit 140 --sec-per-company 18
       - name: Daily evidence review
-        if: github.event_name == 'push' || github.event.schedule == '47 3 * * *' || inputs.review
+        if: github.event_name == 'push' || github.event.schedule == '47 3 * * *' || inputs.review || inputs.backfill
         # Review enriches provisional evidence but must never take the observatory offline.
         continue-on-error: true
         env:

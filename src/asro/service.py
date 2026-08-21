@@ -3,13 +3,13 @@ from __future__ import annotations
 import sqlite3
 import time
 from dataclasses import dataclass, field
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 from asro.collectors.base import Collector
 from asro.collectors.external_pressure import ExternalPressureCollector
-from asro.collectors.google_news import GoogleNewsCollector
-from asro.collectors.sec import SecCollector
+from asro.collectors.google_news import GoogleNewsCollector, HistoricalGoogleNewsCollector
+from asro.collectors.sec import HistoricalSecCollector, SecCollector
 from asro.dedupe import economic_fingerprint
 from asro.documents import DocumentFetcher
 from asro.extraction.deterministic import DeterministicEventExtractor
@@ -65,7 +65,7 @@ class MonitorService:
             ),
         ]
 
-    def run(self) -> RunSummary:
+    def run(self, collectors: list[Collector] | None = None) -> RunSummary:
         """Run every collector once. Each collector is atomic: its items, documents, events
         and observations are committed together or rolled back together. The run record
         itself is committed separately so a failed collector still leaves an audit row.
@@ -75,7 +75,7 @@ class MonitorService:
         summary = RunSummary()
 
         with self._repository.connect() as connection:
-            for collector in self._collectors():
+            for collector in self._collectors() if collectors is None else collectors:
                 # Commits: nothing else is pending, so only the run row is persisted here.
                 run_id = self._repository.start_collector_run(connection, collector.name, _now())
                 stats = _CollectorStats()
@@ -122,6 +122,32 @@ class MonitorService:
             self._write_reports(connection)
 
         return summary
+
+    def backfill(
+        self,
+        years: int = 3,
+        news_limit: int = 140,
+        sec_per_company: int = 18,
+    ) -> RunSummary:
+        """Build a bounded historical baseline without changing the hourly collectors."""
+        today = datetime.now(UTC).date()
+        since = today - timedelta(days=365 * years)
+        config = self._config
+        collectors: list[Collector] = [
+            HistoricalGoogleNewsCollector(
+                config["news"]["queries"],
+                since=since,
+                until=today + timedelta(days=1),
+                max_items=news_limit,
+            ),
+            HistoricalSecCollector(
+                config["sec"]["companies"],
+                user_agent=self._settings.sec_user_agent,
+                since=since,
+                max_per_company=sec_per_company,
+            ),
+        ]
+        return self.run(collectors)
 
     def _ingest(
         self, connection: sqlite3.Connection, scored: ScoredItem, stats: _CollectorStats

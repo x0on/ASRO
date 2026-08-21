@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import math
+from datetime import date
 from urllib.parse import quote_plus
 
 import feedparser
@@ -55,3 +57,42 @@ class GoogleNewsCollector:
                     break
 
         return items
+
+
+class HistoricalGoogleNewsCollector:
+    """Bounded, one-time news baseline distributed across every configured query."""
+
+    name = "google-news-history"
+
+    def __init__(
+        self,
+        queries: list[str],
+        since: date,
+        until: date,
+        max_items: int = 140,
+    ) -> None:
+        self._queries = queries
+        self._since = since
+        self._until = until
+        self._max_items = max_items
+
+    def collect(self) -> list[SourceItem]:
+        if not self._queries or self._max_items <= 0:
+            return []
+
+        per_query = max(1, math.ceil(self._max_items / len(self._queries)))
+        items: list[SourceItem] = []
+        seen_urls: set[str] = set()
+
+        for query in self._queries:
+            dated_query = (
+                f"{query} after:{self._since.isoformat()} before:{self._until.isoformat()}"
+            )
+            for item in GoogleNewsCollector([dated_query], max_items=per_query).collect():
+                url = str(item.url)
+                if url in seen_urls:
+                    continue
+                seen_urls.add(url)
+                items.append(item)
+
+        return items[: self._max_items]

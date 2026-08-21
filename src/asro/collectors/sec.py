@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import time
+from datetime import date
 from typing import Any
 
 import requests
@@ -19,6 +20,8 @@ class SecCollector:
         companies: list[dict[str, Any]],
         user_agent: str,
         request_delay_seconds: float = 0.2,
+        since: date | None = None,
+        max_per_company: int = 3,
     ) -> None:
         self._companies = companies
         self._headers = {
@@ -26,6 +29,8 @@ class SecCollector:
             "Accept-Encoding": "gzip, deflate",
         }
         self._delay = request_delay_seconds
+        self._since = since
+        self._max_per_company = max_per_company
 
     def collect(self) -> list[SourceItem]:
         items: list[SourceItem] = []
@@ -59,6 +64,8 @@ class SecCollector:
         ):
             if form not in INTERESTING_FORMS:
                 continue
+            if self._since is not None and filing_date < self._since.isoformat():
+                continue
 
             accession_no_dash = accession.replace("-", "")
             filing_url = (
@@ -79,4 +86,10 @@ class SecCollector:
                 )
             )
 
-        return items[:3]
+        return items[: self._max_per_company]
+
+
+class HistoricalSecCollector(SecCollector):
+    """Key SEC filings for a bounded historical baseline."""
+
+    name = "sec-edgar-history"

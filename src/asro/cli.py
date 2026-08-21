@@ -38,6 +38,28 @@ def run() -> None:
 
 
 @app.command()
+def backfill(
+    years: int = typer.Option(3, min=1, max=10),
+    news_limit: int = typer.Option(140, min=1, max=500),
+    sec_per_company: int = typer.Option(18, min=1, max=100),
+) -> None:
+    """Collect a bounded historical news and SEC baseline once."""
+    service = MonitorService(Settings())
+    summary = service.backfill(
+        years=years,
+        news_limit=news_limit,
+        sec_per_company=sec_per_company,
+    )
+    typer.echo(
+        f"Historical baseline added {summary.new_items} documents. "
+        f"Database now contains {service.event_count()} economic events."
+    )
+    _report_health(summary)
+    if not summary.ok:
+        raise typer.Exit(code=1)
+
+
+@app.command()
 def watch() -> None:
     """Continuously poll collectors at the configured interval."""
     settings = Settings()

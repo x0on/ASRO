@@ -270,6 +270,12 @@ The reviewer never deletes source reports or silently rewrites evidence. Its dec
 confidence, reasoning, model and timestamp are stored in `evidence_reviews`. The public
 dashboard shows how many events are awaiting review and labels provisional timeline entries.
 
+For a new installation, a maintainer can manually run the **Hourly monitor** workflow with
+**backfill** enabled. This creates a bounded three-year baseline across the configured news
+queries and key SEC filings. It is deliberately separate from hourly collection so historical
+research cannot delay the live monitor. Re-running it is safe because documents and economic
+events are deduplicated.
+
 The OpenAI API key must be stored as the GitHub Actions secret `ASRO_OPENAI_API_KEY`; it must
 never appear in this repository or in browser-side code. The static site receives generated
 JSON only. Set `ASRO_REVIEW_MODEL` to override the default reviewer model.
