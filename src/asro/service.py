@@ -18,6 +18,7 @@ from asro.dedupe import economic_fingerprint
 from asro.documents import DocumentFetcher
 from asro.extraction.deterministic import DeterministicEventExtractor
 from asro.indicators import compute_convergence, compute_dimension_scores
+from asro.lineage import seed_verified_lineage
 from asro.measurement import event_to_observation
 from asro.models import ScoredItem
 from asro.reporting import write_csv, write_html
@@ -193,6 +194,9 @@ class MonitorService:
     def db_count(self) -> int:
         with self._repository.connect() as connection:
             return self._repository.count(connection)
+
+    def seed_lineage(self) -> int:
+        return seed_verified_lineage(self._repository)
 
     def event_count(self) -> int:
         """Canonical economic events (deduplicated facts)."""

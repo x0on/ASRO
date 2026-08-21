@@ -6,6 +6,7 @@ from asro.models import FinancialEvent
 from asro.observations import Observation
 
 EVENT_VARIABLE_MAP: dict[str, tuple[str, float, str]] = {
+    "ASSUMES_DEBT": ("ai_related_debt", 1.0, "risk"),
     "GUARANTEES": ("vendor_financing", 1.0, "risk"),
     "LENDS_TO": ("ai_related_debt", 1.0, "risk"),
     "ISSUES_DEBT": ("ai_related_debt", 1.0, "risk"),

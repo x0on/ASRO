@@ -51,6 +51,8 @@ jobs:
           cache: pip
       - name: Install
         run: pip install -e .
+      - name: Seed verified ownership and liability lineage
+        run: asro seed-lineage
       - name: Collect and extract
         if: inputs.backfill != true && !contains(github.event.head_commit.message, '[backfill]')
         env:

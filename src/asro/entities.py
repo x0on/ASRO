@@ -18,6 +18,13 @@ ALIASES = {
     "BlackRock, Inc.": "BlackRock",
     "OpenAI Global": "OpenAI",
     "OpenAI Group": "OpenAI",
+    "Twitter": "X (Twitter)",
+    "Twitter, Inc.": "X (Twitter)",
+    "X Corp.": "X (Twitter)",
+    "X Holdings": "X (Twitter)",
+    "X Holdings Corp.": "X (Twitter)",
+    "X.AI Holdings Corp.": "xAI",
+    "X.AI Corp.": "xAI",
 }
 
 

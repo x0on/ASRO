@@ -154,6 +154,13 @@ def build_site() -> None:
     typer.echo(f"Static site built at: {path}")
 
 
+@app.command("seed-lineage")
+def seed_lineage() -> None:
+    """Add primary-source ownership and liability lineage to the evidence base."""
+    added = MonitorService(Settings()).seed_lineage()
+    typer.echo(f"Added {added} verified lineage facts.")
+
+
 @app.command()
 def review(limit: int = 100) -> None:
     """Review provisional economic events with the configured evidence-review model."""

@@ -19,6 +19,8 @@ class Category(StrEnum):
 
 
 class EventType(StrEnum):
+    ACQUIRES = "ACQUIRES"
+    ASSUMES_DEBT = "ASSUMES_DEBT"
     INVESTS_IN = "INVESTS_IN"
     LENDS_TO = "LENDS_TO"
     GUARANTEES = "GUARANTEES"

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-21T19:37:33.121373+00:00",
+  "generated_at": "2026-08-21T19:39:32.658292+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 36.4,
+    "score": 40.1,
     "label": "FORMING",
     "direction": "unknown",
     "known_dimensions": 8,
@@ -12,24 +12,24 @@
   },
   "dimensions": {
     "counter_evidence": 100.0,
-    "capital": 46.85454041759518,
-    "external_pressure": 43.75428571428572,
-    "monetization": 100.0,
-    "stress": 77.52,
+    "fragility": 29.235098819297246,
+    "stress": 100.0,
     "transmission": 1.2000000992884452e-08,
-    "cannibalization": 0.82,
+    "monetization": 100.0,
+    "capital": 46.85454041759518,
     "circularity": 1.232000101936137e-08,
-    "fragility": 22.61212121594788
+    "external_pressure": 43.75428571428572,
+    "cannibalization": 0.82
   },
   "dimension_evidence": {
+    "stress": 122,
+    "fragility": 142,
     "capital": 416,
     "monetization": 6,
     "external_pressure": 40,
     "counter_evidence": 65,
     "cannibalization": 4,
-    "stress": 121,
     "circularity": 64,
-    "fragility": 140,
     "transmission": 12
   },
   "measurements": [
@@ -273,10 +273,34 @@
         "weight": 9
       },
       {
+        "id": "xAI",
+        "label": "xAI",
+        "kind": "company",
+        "weight": 4
+      },
+      {
+        "id": "SpaceX",
+        "label": "SpaceX",
+        "kind": "company",
+        "weight": 4
+      },
+      {
         "id": "SoftBank",
         "label": "SoftBank",
         "kind": "company",
         "weight": 4
+      },
+      {
+        "id": "X (Twitter)",
+        "label": "X (Twitter)",
+        "kind": "company",
+        "weight": 3
+      },
+      {
+        "id": "X Holdings",
+        "label": "X Holdings",
+        "kind": "company",
+        "weight": 2
       },
       {
         "id": "Blackstone",
@@ -293,12 +317,6 @@
       {
         "id": "Microsoft",
         "label": "Microsoft",
-        "kind": "company",
-        "weight": 1
-      },
-      {
-        "id": "SpaceX",
-        "label": "SpaceX",
         "kind": "company",
         "weight": 1
       },
@@ -337,6 +355,78 @@
         "label": "AMD",
         "kind": "company",
         "weight": 0
+      },
+      {
+        "id": "evidence:38beef696ac6d027194ef139f6ff83daafad87ecf1eadbfcc2e480e606e5197d",
+        "label": "SpaceX uses $20 billion bridge loan to refinance X and xAI debt",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SpaceX 2026 prospectus",
+        "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
+        "date": "2026-03-02",
+        "summary": "SpaceX entered a $20 billion bridge loan whose proceeds repaid X term loans and xAI loans and secured notes.",
+        "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:118aa6d5004ab52bf8a9b615683f85ef90327df9fe443729e3f2c609a646a365",
+        "label": "SpaceX assumes debt through the xAI acquisition",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SpaceX 2026 prospectus",
+        "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
+        "date": "2026-02-02",
+        "summary": "SpaceX's prospectus states that the company had a technical default when it acquired xAI because of the amount of debt assumed at the subsidiary level.",
+        "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6773b3058f8e14f16d26a82a260673c302e88759144ece620b27b041ee97e5b8",
+        "label": "SpaceX acquires xAI, including X",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "SpaceX 2026 prospectus",
+        "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
+        "date": "2026-02-02",
+        "summary": "SpaceX's prospectus states that SpaceX acquired xAI, including X, effective February 2, 2026 and recast its financial statements to include their historical results.",
+        "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:949649eff4bf9d6559e20863a115030ff1de3e6513f3da97d9536efec6e83607",
+        "label": "xAI acquires X Holdings in a share exchange",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "SpaceX 2026 prospectus",
+        "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
+        "date": "2025-03-28",
+        "summary": "SpaceX's prospectus states that xAI acquired X Holdings effective March 28, 2025 and X became a wholly owned subsidiary of xAI.",
+        "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:202f348a2edf5535f8354aad0cda399fa9874b9b8408340201e9a24a2ed8eb8d",
+        "label": "Twitter acquisition financed with $13 billion of company debt",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Twitter SEC proxy",
+        "url": "https://www.sec.gov/Archives/edgar/data/1418091/000119312522195126/d283119dprer14a.htm",
+        "date": "2022-10-27",
+        "summary": "Twitter's proxy disclosed $13 billion in secured and unsecured debt financing commitments for the acquisition.",
+        "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "label": "X Holdings completes $44 billion acquisition of Twitter",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Twitter SEC filing",
+        "url": "https://www.sec.gov/Archives/edgar/data/1418091/000119312522272772/d411753d8k.htm",
+        "date": "2022-10-27",
+        "summary": "Twitter reported that the merger was completed on October 27, 2022 and Twitter became a wholly owned subsidiary of X Holdings. The transaction valued Twitter at approximately $44 billion.",
+        "score": 20,
+        "weight": 1
       },
       {
         "id": "evidence:a7d0fb128bb8126b999ff6b5bfbade0a20df5bbbb640d5f511764019e60a86e8",
@@ -8897,6 +8987,48 @@
     ],
     "edges": [
       {
+        "source": "X Holdings",
+        "target": "X (Twitter)",
+        "type": "ACQUIRES",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "X (Twitter)",
+        "target": "X Holdings",
+        "type": "ASSUMES_DEBT",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "xAI",
+        "target": "X (Twitter)",
+        "type": "ACQUIRES",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "xAI",
+        "type": "ACQUIRES",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "xAI",
+        "type": "ASSUMES_DEBT",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "xAI",
+        "type": "REFINANCES",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "OpenAI",
         "type": "REVENUE_REPORT",
@@ -9040,6 +9172,90 @@
         "source": "OpenAI",
         "target": "Alphabet",
         "type": "REVENUE_REPORT",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:38beef696ac6d027194ef139f6ff83daafad87ecf1eadbfcc2e480e606e5197d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "xAI",
+        "target": "evidence:38beef696ac6d027194ef139f6ff83daafad87ecf1eadbfcc2e480e606e5197d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:118aa6d5004ab52bf8a9b615683f85ef90327df9fe443729e3f2c609a646a365",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "xAI",
+        "target": "evidence:118aa6d5004ab52bf8a9b615683f85ef90327df9fe443729e3f2c609a646a365",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:6773b3058f8e14f16d26a82a260673c302e88759144ece620b27b041ee97e5b8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "xAI",
+        "target": "evidence:6773b3058f8e14f16d26a82a260673c302e88759144ece620b27b041ee97e5b8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "xAI",
+        "target": "evidence:949649eff4bf9d6559e20863a115030ff1de3e6513f3da97d9536efec6e83607",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "X (Twitter)",
+        "target": "evidence:949649eff4bf9d6559e20863a115030ff1de3e6513f3da97d9536efec6e83607",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "X (Twitter)",
+        "target": "evidence:202f348a2edf5535f8354aad0cda399fa9874b9b8408340201e9a24a2ed8eb8d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "X Holdings",
+        "target": "evidence:202f348a2edf5535f8354aad0cda399fa9874b9b8408340201e9a24a2ed8eb8d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "X Holdings",
+        "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "X (Twitter)",
+        "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
@@ -13764,6 +13980,36 @@
     ]
   },
   "timeline": [
+    {
+      "date": "2022-10-27",
+      "event_type": "ACQUIRES",
+      "source_entity": "X Holdings",
+      "target_entity": "X (Twitter)",
+      "amount": 44000000000.0,
+      "currency": "USD",
+      "confidence": 0.99,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "Twitter reported that the merger was completed on October 27, 2022 and Twitter became a wholly owned subsidiary of X Holdings. The transaction valued Twitter at approximately $44 billion.",
+      "title": "X Holdings completes $44 billion acquisition of Twitter",
+      "url": "https://www.sec.gov/Archives/edgar/data/1418091/000119312522272772/d411753d8k.htm",
+      "source": "Twitter SEC filing"
+    },
+    {
+      "date": "2022-10-27",
+      "event_type": "ASSUMES_DEBT",
+      "source_entity": "X (Twitter)",
+      "target_entity": "X Holdings",
+      "amount": 13000000000.0,
+      "currency": "USD",
+      "confidence": 0.99,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "Twitter's proxy disclosed $13 billion in secured and unsecured debt financing commitments for the acquisition.",
+      "title": "Twitter acquisition financed with $13 billion of company debt",
+      "url": "https://www.sec.gov/Archives/edgar/data/1418091/000119312522195126/d283119dprer14a.htm",
+      "source": "Twitter SEC proxy"
+    },
     {
       "date": "2023-08-28",
       "event_type": "IMPAIRMENT",
@@ -19765,6 +20011,21 @@
       "source": "SEC EDGAR"
     },
     {
+      "date": "2025-03-28",
+      "event_type": "ACQUIRES",
+      "source_entity": "xAI",
+      "target_entity": "X (Twitter)",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.99,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "SpaceX's prospectus states that xAI acquired X Holdings effective March 28, 2025 and X became a wholly owned subsidiary of xAI.",
+      "title": "xAI acquires X Holdings in a share exchange",
+      "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
+      "source": "SpaceX 2026 prospectus"
+    },
+    {
       "date": "2025-03-31",
       "event_type": "LENDS_TO",
       "source_entity": null,
@@ -23875,6 +24136,36 @@
       "source": "SEC EDGAR"
     },
     {
+      "date": "2026-02-02",
+      "event_type": "ACQUIRES",
+      "source_entity": "SpaceX",
+      "target_entity": "xAI",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.99,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "SpaceX's prospectus states that SpaceX acquired xAI, including X, effective February 2, 2026 and recast its financial statements to include their historical results.",
+      "title": "SpaceX acquires xAI, including X",
+      "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
+      "source": "SpaceX 2026 prospectus"
+    },
+    {
+      "date": "2026-02-02",
+      "event_type": "ASSUMES_DEBT",
+      "source_entity": "SpaceX",
+      "target_entity": "xAI",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.99,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "SpaceX's prospectus states that the company had a technical default when it acquired xAI because of the amount of debt assumed at the subsidiary level.",
+      "title": "SpaceX assumes debt through the xAI acquisition",
+      "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
+      "source": "SpaceX 2026 prospectus"
+    },
+    {
       "date": "2026-02-05",
       "event_type": "LENDS_TO",
       "source_entity": null,
@@ -24413,6 +24704,21 @@
       "title": "NVIDIA SEC filing: 10-K (2026-02-25)",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
       "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-03-02",
+      "event_type": "REFINANCES",
+      "source_entity": "SpaceX",
+      "target_entity": "xAI",
+      "amount": 20000000000.0,
+      "currency": "USD",
+      "confidence": 0.99,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "SpaceX entered a $20 billion bridge loan whose proceeds repaid X term loans and xAI loans and secured notes.",
+      "title": "SpaceX uses $20 billion bridge loan to refinance X and xAI debt",
+      "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
+      "source": "SpaceX 2026 prospectus"
     },
     {
       "date": "2026-03-02",
@@ -27717,12 +28023,12 @@
       "error": null
     }
   ],
-  "document_count": 713,
-  "event_count": 926,
-  "mention_count": 2311,
+  "document_count": 719,
+  "event_count": 932,
+  "mention_count": 2317,
   "review_counts": {
     "provisional": 728,
-    "confirmed": 35,
+    "confirmed": 41,
     "flagged": 163
   }
 }
