@@ -27,6 +27,27 @@ def test_network_weights_distinct_facts_and_carries_mentions() -> None:
     assert by_type["LENDS_TO"]["weight"] == 1
 
 
+def test_network_includes_company_news_as_evidence_nodes() -> None:
+    events = [{"source_entity": "Nvidia", "event_type": "REVENUE_REPORT"}]
+    items = [
+        {
+            "item_id": "abc",
+            "title": "Nvidia reports earnings",
+            "companies": '["Nvidia"]',
+            "category": "General AI capital",
+            "source": "Example",
+            "url": "https://example.com/news",
+            "published_at": "2026-08-21",
+        }
+    ]
+
+    network = _build_network(events, items)
+
+    evidence = next(node for node in network["nodes"] if node["kind"] == "evidence")
+    assert evidence["label"] == "Nvidia reports earnings"
+    assert any(edge["type"] == "EVIDENCE" for edge in network["edges"])
+
+
 def test_build_static_site_on_empty_db_reports_insufficient_evidence(tmp_path: Path) -> None:
     out = build_static_site(output_dir=tmp_path / "site", database_path=tmp_path / "empty.db")
 

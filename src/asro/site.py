@@ -35,7 +35,9 @@ def _safe_rows(rows: list[Any]) -> list[dict[str, Any]]:
     return [dict(row) for row in rows]
 
 
-def _build_network(events: list[dict[str, Any]]) -> dict[str, Any]:
+def _build_network(
+    events: list[dict[str, Any]], items: list[dict[str, Any]] | None = None
+) -> dict[str, Any]:
     edge_counts: Counter[tuple[str, str, str]] = Counter()
     edge_mentions: Counter[tuple[str, str, str]] = Counter()
     node_counts: Counter[str] = Counter()
@@ -53,7 +55,10 @@ def _build_network(events: list[dict[str, Any]]) -> dict[str, Any]:
             edge_counts[(source, target, event_type)] += 1
             edge_mentions[(source, target, event_type)] += int(event.get("mention_count") or 1)
 
-    nodes = [{"id": name, "weight": count} for name, count in node_counts.most_common(40)]
+    nodes = [
+        {"id": name, "label": name, "kind": "company", "weight": count}
+        for name, count in node_counts.most_common(40)
+    ]
     allowed = {node["id"] for node in nodes}
     edges = [
         {
@@ -66,6 +71,38 @@ def _build_network(events: list[dict[str, Any]]) -> dict[str, Any]:
         for (s, t, typ), count in edge_counts.items()
         if s in allowed and t in allowed
     ]
+
+    for item in items or []:
+        try:
+            companies = json.loads(item.get("companies") or "[]")
+        except (json.JSONDecodeError, TypeError):
+            continue
+        linked = [company for company in companies if company in allowed]
+        if not linked:
+            continue
+        evidence_id = f"evidence:{item.get('item_id')}"
+        nodes.append(
+            {
+                "id": evidence_id,
+                "label": item.get("title"),
+                "kind": "evidence",
+                "category": item.get("category"),
+                "source": item.get("source"),
+                "url": item.get("url"),
+                "date": item.get("published_at"),
+                "weight": 1,
+            }
+        )
+        edges.extend(
+            {
+                "source": company,
+                "target": evidence_id,
+                "type": "EVIDENCE",
+                "weight": 1,
+                "mentions": 1,
+            }
+            for company in linked
+        )
     return {"nodes": nodes, "edges": edges}
 
 
@@ -122,7 +159,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         "signal": convergence.model_dump(),
         "dimensions": dimensions,
         "history": history,
-        "network": _build_network(events),
+        "network": _build_network(events, items[:350]),
         "timeline": _build_timeline(events),
         "collector_runs": runs,
         "document_count": len(items),

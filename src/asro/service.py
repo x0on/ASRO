@@ -8,7 +8,11 @@ from pathlib import Path
 
 from asro.collectors.base import Collector
 from asro.collectors.external_pressure import ExternalPressureCollector
-from asro.collectors.google_news import GoogleNewsCollector, HistoricalGoogleNewsCollector
+from asro.collectors.google_news import (
+    CompanyEconomicNewsCollector,
+    GoogleNewsCollector,
+    HistoricalGoogleNewsCollector,
+)
 from asro.collectors.sec import HistoricalSecCollector, SecCollector
 from asro.dedupe import economic_fingerprint
 from asro.documents import DocumentFetcher
@@ -55,15 +59,30 @@ class MonitorService:
     def _collectors(self) -> list[Collector]:
         news_cfg = self._config["news"]
         sec_cfg = self._config["sec"]
+        today = datetime.now(UTC).date()
 
         return [
             GoogleNewsCollector(news_cfg["queries"]),
+            CompanyEconomicNewsCollector(
+                self._company_news_queries(),
+                since=today - timedelta(days=2),
+                until=today + timedelta(days=1),
+                max_items=36,
+            ),
             ExternalPressureCollector(),
             SecCollector(
                 sec_cfg["companies"],
                 user_agent=self._settings.sec_user_agent,
             ),
         ]
+
+    def _company_news_queries(self) -> list[str]:
+        companies = dict.fromkeys(self._config["entities"]["companies"])
+        economic_terms = (
+            "earnings OR revenue OR debt OR financing OR investment OR capex OR "
+            "acquisition OR valuation OR IPO OR layoffs OR partnership"
+        )
+        return [f'"{company}" ({economic_terms})' for company in companies]
 
     def run(self, collectors: list[Collector] | None = None) -> RunSummary:
         """Run every collector once. Each collector is atomic: its items, documents, events
@@ -126,8 +145,8 @@ class MonitorService:
     def backfill(
         self,
         years: int = 3,
-        news_limit: int = 140,
-        sec_per_company: int = 18,
+        news_limit: int = 500,
+        sec_per_company: int = 24,
     ) -> RunSummary:
         """Build a bounded historical baseline without changing the hourly collectors."""
         today = datetime.now(UTC).date()
@@ -135,7 +154,7 @@ class MonitorService:
         config = self._config
         collectors: list[Collector] = [
             HistoricalGoogleNewsCollector(
-                config["news"]["queries"],
+                [*config["news"]["queries"], *self._company_news_queries()],
                 since=since,
                 until=today + timedelta(days=1),
                 max_items=news_limit,

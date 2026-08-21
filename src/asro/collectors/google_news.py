@@ -96,3 +96,9 @@ class HistoricalGoogleNewsCollector:
                 items.append(item)
 
         return items[: self._max_items]
+
+
+class CompanyEconomicNewsCollector(HistoricalGoogleNewsCollector):
+    """Recent company-level economic news, separate from narrow risk-signal queries."""
+
+    name = "company-economic-news"

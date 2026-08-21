@@ -40,8 +40,8 @@ def run() -> None:
 @app.command()
 def backfill(
     years: int = typer.Option(3, min=1, max=10),
-    news_limit: int = typer.Option(140, min=1, max=500),
-    sec_per_company: int = typer.Option(18, min=1, max=100),
+    news_limit: int = typer.Option(500, min=1, max=1000),
+    sec_per_company: int = typer.Option(24, min=1, max=100),
 ) -> None:
     """Collect a bounded historical news and SEC baseline once."""
     service = MonitorService(Settings())
