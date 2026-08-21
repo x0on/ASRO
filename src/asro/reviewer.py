@@ -35,41 +35,56 @@ class EvidenceReviewer:
         self._settings = settings
         self._repository = repository or SqliteRepository(settings.database_path)
 
-    def run(self, limit: int = 100) -> int:
+    def run(self, limit: int = 100, batch_size: int = 20) -> int:
+        if limit < 1 or batch_size < 1:
+            return 0
+        reviewed = 0
         with self._repository.connect() as connection:
-            rows = [dict(row) for row in self._repository.provisional_events(connection, limit)]
-            if not rows:
-                return 0
-            batch = self._request(rows)
-            allowed = {str(row["fingerprint"]) for row in rows}
-            by_fingerprint = {decision.fingerprint: decision for decision in batch.decisions}
-            for decision in batch.decisions:
-                if decision.decision == "merge":
-                    target = by_fingerprint.get(str(decision.canonical_fingerprint))
-                    if target is None or target.decision != "confirm":
-                        raise ValueError("Every merge target must be confirmed in the same review")
-            seen: set[str] = set()
-            now = datetime.now(UTC).isoformat()
-            for decision in batch.decisions:
-                if decision.fingerprint not in allowed or decision.fingerprint in seen:
-                    raise ValueError("Reviewer returned an unknown or repeated fingerprint")
-                if decision.decision == "merge" and decision.canonical_fingerprint not in allowed:
-                    raise ValueError("Reviewer merge target must be in the reviewed batch")
-                self._repository.apply_review(
-                    connection,
-                    decision.fingerprint,
-                    decision.decision,
-                    decision.canonical_fingerprint,
-                    decision.confidence,
-                    decision.reasoning,
-                    self._settings.review_model,
-                    now,
-                )
-                seen.add(decision.fingerprint)
-            if seen != allowed:
-                raise ValueError("Reviewer omitted one or more provisional events")
-            connection.commit()
-            return len(seen)
+            while reviewed < limit:
+                rows = [
+                    dict(row)
+                    for row in self._repository.provisional_events(
+                        connection, min(batch_size, limit - reviewed)
+                    )
+                ]
+                if not rows:
+                    break
+                self._review_batch(connection, rows)
+                connection.commit()
+                reviewed += len(rows)
+        return reviewed
+
+    def _review_batch(self, connection: Any, rows: list[dict[str, Any]]) -> None:
+        if not rows:
+            return
+        batch = self._request(rows)
+        allowed = {str(row["fingerprint"]) for row in rows}
+        by_fingerprint = {decision.fingerprint: decision for decision in batch.decisions}
+        for decision in batch.decisions:
+            if decision.decision == "merge":
+                target = by_fingerprint.get(str(decision.canonical_fingerprint))
+                if target is None or target.decision != "confirm":
+                    raise ValueError("Every merge target must be confirmed in the same review")
+        seen: set[str] = set()
+        now = datetime.now(UTC).isoformat()
+        for decision in batch.decisions:
+            if decision.fingerprint not in allowed or decision.fingerprint in seen:
+                raise ValueError("Reviewer returned an unknown or repeated fingerprint")
+            if decision.decision == "merge" and decision.canonical_fingerprint not in allowed:
+                raise ValueError("Reviewer merge target must be in the reviewed batch")
+            self._repository.apply_review(
+                connection,
+                decision.fingerprint,
+                decision.decision,
+                decision.canonical_fingerprint,
+                decision.confidence,
+                decision.reasoning,
+                self._settings.review_model,
+                now,
+            )
+            seen.add(decision.fingerprint)
+        if seen != allowed:
+            raise ValueError("Reviewer omitted one or more provisional events")
 
     def _request(self, rows: list[dict[str, Any]]) -> ReviewBatch:
         schema = ReviewBatch.model_json_schema()
@@ -83,11 +98,15 @@ class EvidenceReviewer:
                 "model": self._settings.review_model,
                 "store": False,
                 "instructions": (
-                    "Review extracted financial events for duplicate economic facts. "
-                    "Confirm distinct events, merge only when the evidence describes the same "
-                    "transaction, and flag conflicts or uncertainty. Never invent facts. Every "
-                    "input fingerprint must receive exactly one decision. For merge, point to the "
-                    "strongest canonical fingerprint in this batch. Keep reasoning concise."
+                    "Act as a skeptical financial-evidence editor. Confirm an event only when the "
+                    "quoted source evidence actually states that the event occurred or reports a "
+                    "specific measured result. Flag generic risk-factor language, hypothetical or "
+                    "forward-looking possibilities, unsupported entities, incorrect event types, "
+                    "and amounts that are not clearly supported by the excerpt. Also detect "
+                    "duplicate economic facts: merge only when two inputs describe the same "
+                    "transaction and point to the strongest confirmed fingerprint in this batch. "
+                    "Never infer or invent facts. Every input fingerprint must receive exactly one "
+                    "decision. Keep reasoning specific and concise."
                 ),
                 "input": json.dumps(rows, default=str),
                 "text": {

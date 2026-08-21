@@ -21,10 +21,29 @@ class FakeReviewer(EvidenceReviewer):
         return self.batch
 
 
-def _event(repo: SqliteRepository, connection, n: int, date: str) -> str:
+class ConfirmingReviewer(EvidenceReviewer):
+    calls = 0
+
+    def _request(self, rows: list[dict]) -> ReviewBatch:
+        self.calls += 1
+        return ReviewBatch(
+            decisions=[
+                ReviewDecision(
+                    fingerprint=row["fingerprint"],
+                    decision="confirm",
+                    canonical_fingerprint=None,
+                    confidence=0.95,
+                    reasoning="The excerpt directly supports the event.",
+                )
+                for row in rows
+            ]
+        )
+
+
+def _event(repo: SqliteRepository, connection, n: int, date: str, amount_billions: int = 30) -> str:
     item = score(
         SourceItem(
-            title="Nvidia guarantees $30 billion financing for OpenAI.",
+            title=f"Nvidia guarantees ${amount_billions} billion financing for OpenAI.",
             url=f"https://example.com/{n}",
             source="Example",
             published_at=date,
@@ -76,3 +95,18 @@ def test_reviewer_merges_provisional_events_without_deleting_provenance(tmp_path
         assert canonical["review_status"] == "confirmed"
         assert len(repo.recent_observations(connection)) == 1
         assert connection.execute("SELECT COUNT(*) FROM evidence_reviews").fetchone()[0] == 2
+
+
+def test_reviewer_commits_small_batches(tmp_path: Path) -> None:
+    repo = SqliteRepository(tmp_path / "test.db")
+    with repo.connect() as connection:
+        for n in range(3):
+            _event(repo, connection, n, f"2026-08-{20 + n}", amount_billions=30 + n)
+        connection.commit()
+    settings = Settings(database_path=tmp_path / "test.db", openai_api_key="test")
+    reviewer = ConfirmingReviewer(settings, repo)
+
+    assert reviewer.run(limit=3, batch_size=2) == 3
+    assert reviewer.calls == 2
+    with repo.connect() as connection:
+        assert repo.review_counts(connection)["confirmed"] == 3

@@ -7,6 +7,7 @@ from importlib.resources import files
 from pathlib import Path
 from typing import Any
 
+from asro.dictionary.registry import VARIABLES
 from asro.indicators import compute_convergence, compute_dimension_scores
 from asro.settings import Settings
 from asro.storage import SqliteRepository
@@ -94,6 +95,8 @@ def _build_network(
                 "source": item.get("source"),
                 "url": item.get("url"),
                 "date": item.get("published_at"),
+                "summary": item.get("summary"),
+                "score": item.get("score"),
                 "weight": 1,
             }
         )
@@ -155,6 +158,10 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
 
     dimensions = compute_dimension_scores(observations)
     convergence = compute_convergence(dimensions)
+    dimension_evidence: Counter[str] = Counter()
+    for observation in observations:
+        if definition := VARIABLES.get(str(observation.get("variable_key"))):
+            dimension_evidence[definition.dimension.value] += 1
 
     payload = {
         "generated_at": datetime.now(UTC).isoformat(),
@@ -162,6 +169,19 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         "thesis_explanation": THESIS_EXPLANATION,
         "signal": convergence.model_dump(),
         "dimensions": dimensions,
+        "dimension_evidence": dict(dimension_evidence),
+        "measurements": [
+            {
+                "key": definition.key,
+                "label": definition.label,
+                "dimension": definition.dimension.value,
+                "description": definition.description,
+                "unit": definition.unit,
+                "direction": definition.direction,
+                "weight": definition.weight,
+            }
+            for definition in VARIABLES.values()
+        ],
         "history": history,
         "network": _build_network(events, items[:800]),
         "timeline": _build_timeline(events),
