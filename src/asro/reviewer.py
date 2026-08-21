@@ -15,7 +15,8 @@ class ReviewDecision(BaseModel):
     model_config = ConfigDict(extra="forbid")
     fingerprint: str
     decision: Literal["confirm", "merge", "flag"]
-    canonical_fingerprint: str | None = None
+    # Required by Structured Outputs; confirm/flag decisions return JSON null.
+    canonical_fingerprint: str | None
     confidence: float = Field(ge=0.0, le=1.0)
     reasoning: str
 

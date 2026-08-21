@@ -53,6 +53,7 @@ def test_reviewer_merges_provisional_events_without_deleting_provenance(tmp_path
             ReviewDecision(
                 fingerprint=first,
                 decision="confirm",
+                canonical_fingerprint=None,
                 confidence=0.98,
                 reasoning="First account is canonical.",
             ),
