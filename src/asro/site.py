@@ -130,7 +130,7 @@ def _build_timeline(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
             }
         )
     timeline.sort(key=lambda e: str(e["date"]))
-    return timeline[-500:]
+    return timeline
 
 
 def build_static_site(output_dir: Path = Path("site"), database_path: Path | None = None) -> Path:
@@ -141,8 +141,8 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
     data_dir.mkdir(parents=True, exist_ok=True)
 
     with repository.connect() as connection:
-        items = _safe_rows(repository.top_items(connection, limit=600))
-        events = _safe_rows(repository.canonical_events(connection, limit=1200))
+        items = _safe_rows(repository.top_items(connection, limit=1500))
+        events = _safe_rows(repository.canonical_events(connection, limit=5000))
         mention_count = repository.event_count(connection)
         runs = _safe_rows(repository.latest_runs(connection))
         observations = _safe_rows(repository.recent_observations(connection, limit=2000))
@@ -159,7 +159,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         "signal": convergence.model_dump(),
         "dimensions": dimensions,
         "history": history,
-        "network": _build_network(events, items[:350]),
+        "network": _build_network(events, items[:800]),
         "timeline": _build_timeline(events),
         "collector_runs": runs,
         "document_count": len(items),
