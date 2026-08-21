@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T18:25:16.098216+00:00",
+  "generated_at": "2026-08-21T18:27:58.014610+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -11,17 +11,23 @@
     "gate_reason": "material evidence in stress and monetization"
   },
   "dimensions": {
-    "fragility": 12.300000000000006,
     "cannibalization": null,
-    "monetization": 100.0,
-    "transmission": 1.2000000992884452e-08,
     "counter_evidence": 100.0,
+    "transmission": 1.2000000992884452e-08,
+    "capital": 93.4405547944364,
+    "external_pressure": 16.12,
+    "fragility": 12.300000000000006,
     "circularity": 0.38646195307052716,
     "stress": 58.48,
-    "external_pressure": 16.12,
-    "capital": 93.4405547944364
+    "monetization": 100.0
   },
   "history": [
+    {
+      "captured_at": "2026-08-21T18:26:19.970245+00:00",
+      "score": 40.1,
+      "label": "FORMING",
+      "dimensions": "{\"counter_evidence\": 100.0, \"circularity\": 0.38646195307052716, \"monetization\": 100.0, \"cannibalization\": null, \"transmission\": 1.2000000992884452e-08, \"capital\": 93.4405547944364, \"external_pressure\": 16.12, \"fragility\": 12.300000000000006, \"stress\": 58.48}"
+    },
     {
       "captured_at": "2026-08-21T17:49:46.756969+00:00",
       "score": 40.1,
@@ -1508,37 +1514,37 @@
   ],
   "collector_runs": [
     {
-      "id": 5,
+      "id": 8,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T17:49:43.766798+00:00",
-      "completed_at": "2026-08-21T17:49:44.239274+00:00",
+      "started_at": "2026-08-21T18:26:17.058551+00:00",
+      "completed_at": "2026-08-21T18:26:17.416302+00:00",
       "status": "ok",
       "items_seen": 8,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 4,
+      "id": 7,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T17:49:42.842520+00:00",
-      "completed_at": "2026-08-21T17:49:43.365026+00:00",
+      "started_at": "2026-08-21T18:26:15.815616+00:00",
+      "completed_at": "2026-08-21T18:26:16.657516+00:00",
       "status": "ok",
       "items_seen": 12,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 6,
+      "id": 9,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T17:49:44.640873+00:00",
-      "completed_at": "2026-08-21T17:49:46.354141+00:00",
+      "started_at": "2026-08-21T18:26:17.824634+00:00",
+      "completed_at": "2026-08-21T18:26:19.567621+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
       "error": null
     }
   ],
-  "document_count": 41,
+  "document_count": 42,
   "event_count": 95,
   "mention_count": 237,
   "review_counts": {
