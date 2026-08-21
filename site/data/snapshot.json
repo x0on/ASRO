@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T21:05:04.085949+00:00",
+  "generated_at": "2026-08-21T21:09:24.199603+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "transmission": 39.6,
     "circularity": 57.1,
     "counter_evidence": 45.8,
-    "stress": 57.1,
-    "fragility": 61.1,
     "capital": 52.15125962813687,
-    "transmission": 39.6,
-    "monetization": 42.9,
+    "external_pressure": 61.1,
+    "fragility": 61.1,
     "cannibalization": 54.2,
-    "external_pressure": 61.1
+    "monetization": 42.9,
+    "stress": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "counter_evidence": "directional_estimate",
-    "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
+    "monetization": "directional_estimate",
     "transmission": "confirmed_trigger",
     "external_pressure": "directional_estimate",
-    "circularity": "directional_estimate",
-    "stress": "directional_estimate",
     "capital": "aggregate",
-    "monetization": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "fragility": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -623,6 +623,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T21:09:23.483041+00:00",
+      "score": 52.1,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"stress\": 57.1, \"counter_evidence\": 45.8, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"circularity\": 57.1}"
+    },
     {
       "captured_at": "2026-08-21T21:05:03.337891+00:00",
       "score": 52.1,
@@ -31419,20 +31425,20 @@
   ],
   "collector_runs": [
     {
-      "id": 71,
+      "id": 75,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T21:04:44.570814+00:00",
-      "completed_at": "2026-08-21T21:04:59.970569+00:00",
+      "started_at": "2026-08-21T21:09:05.211276+00:00",
+      "completed_at": "2026-08-21T21:09:19.853643+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 72,
+      "id": 76,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T21:05:00.371548+00:00",
-      "completed_at": "2026-08-21T21:05:00.804430+00:00",
+      "started_at": "2026-08-21T21:09:20.256207+00:00",
+      "completed_at": "2026-08-21T21:09:20.646789+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -31449,20 +31455,20 @@
       "error": null
     },
     {
-      "id": 70,
+      "id": 74,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T21:04:43.547981+00:00",
-      "completed_at": "2026-08-21T21:04:44.169324+00:00",
+      "started_at": "2026-08-21T21:09:04.133307+00:00",
+      "completed_at": "2026-08-21T21:09:04.809458+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 73,
+      "id": 77,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T21:05:01.205588+00:00",
-      "completed_at": "2026-08-21T21:05:02.922885+00:00",
+      "started_at": "2026-08-21T21:09:21.048475+00:00",
+      "completed_at": "2026-08-21T21:09:23.069155+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
