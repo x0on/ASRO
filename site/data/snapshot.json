@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T22:41:44.368444+00:00",
+  "generated_at": "2026-08-21T22:51:31.950944+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "cannibalization": 54.2,
-    "counter_evidence": 42.9,
-    "stress": 57.1,
     "external_pressure": 61.1,
-    "monetization": 42.9,
-    "capital": 52.15125962813687,
+    "transmission": 39.6,
     "fragility": 61.1,
+    "stress": 57.1,
+    "capital": 52.15125962813687,
+    "counter_evidence": 42.9,
     "circularity": 57.1,
-    "transmission": 39.6
+    "cannibalization": 54.2,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
-    "stress": "directional_estimate",
-    "monetization": "directional_estimate",
-    "fragility": "directional_estimate",
-    "circularity": "directional_estimate",
     "external_pressure": "directional_estimate",
-    "cannibalization": "directional_estimate",
+    "stress": "directional_estimate",
     "capital": "aggregate",
-    "transmission": "confirmed_trigger"
+    "fragility": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
+    "monetization": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T22:51:31.043529+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"stress\": 57.1, \"capital\": 52.15125962813687, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-21T22:41:43.894811+00:00",
       "score": 51.4,
@@ -3657,6 +3663,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:70446dd256c4ff09adc8be564d150a8d656b9b75cabe5b53fce35e81a91a4e29",
+        "label": "Anthropic Aims for SpaceX\u2019s IPO Record - Bloomberg",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZkhNQk9nWkkzOHB2bzFsMzdneDJ1Y1ZjRUFpM3gtTzdVZGFMOEhhTlpSS0VKQWpvREdrT01NUVl2ZXYwQ19aa0JkWVdhOFNncTc3RHR4bE1URGRESWEyXzZuLVNPbWYxb0dhRkpRU0t4MlJuUXFfZ2VteHpUZ0E3Y3pCdmNSVlpnYkpiUUZ3UjNfNzM0OXlj?oc=5",
+        "date": "Fri, 21 Aug 2026 21:34:46 GMT",
+        "summary": "Anthropic Aims for SpaceX\u2019s IPO Record Bloomberg",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:48185ae335bb0dfb7d7319119fef2de1026b99551382528203e6d44510e3b33c",
+        "label": "Watch Open Machine CEO on Anthropic, OpenAI IPO Potential - Bloomberg",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWDVfd1FtbllVTWE3ZnZEVEdVY2FvZDlyaGFhRmNWMnhJVTVFWE4wdW9UTklURi04ZElScXFJWnpPay1ETHlybVVpS3BuVGs5ajkwZjRweEFfN3lDNXVHcFd6NzFLdjJHcF9DYWs4WnpVU0pzZndULWY5SU5nWmZhVzk5Y2VHYlMydUdFNC1QdjdOWVFxVy1CTm9PNm50V2RVdTQxS2tCRk8?oc=5",
+        "date": "Thu, 20 Aug 2026 00:00:00 GMT",
+        "summary": "Watch Open Machine CEO on Anthropic, OpenAI IPO Potential Bloomberg",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:0f5826fff3454c3b4bb094aed4d0ea7938a498ef5f75f95538cfe0a86b531dbd",
         "label": "Anthropic's IPO could come sooner than you think \u2014 likely beating OpenAI to the punch - Yahoo Finance",
         "kind": "evidence",
@@ -4590,6 +4620,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7a4db14b670e183b3d106f8d4811f35e630c189b6885bbd968b69d5ef3a926e3",
+        "label": "OpenAI\u2019s Annualized Revenue Tops $40 Billion Ahead of IPO - Bloomberg",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRFBTR1VKWUlRMkNjY2g4YUU1M2Ruc0lIQWdEUklmb2x0VmhPbEgweWdweDBwWGNPX0FDZFhHcEtuWW41NnQ2cDRVV0lUX3JtS0FmV3NoTVZuQW5BN2ZSMGViVG9Xd0JJN3pScHA3b0UzSzBFUUVBWDZRV2lVMVpwU1ozUlRrMkNadTNKVTg3SGl2MGduajJnakVLb2hkQWlxSG9xaW1Cc18?oc=5",
+        "date": "Thu, 13 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI\u2019s Annualized Revenue Tops $40 Billion Ahead of IPO Bloomberg",
+        "score": 4,
         "weight": 1
       },
       {
@@ -7470,6 +7512,18 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:13bd8f48e9b73c33abbb9a659fbbbf9577526a9b29904f0ff2c494cde9401b1a",
+        "label": "Chart Master: Charting Nvidia ahead of earnings - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZEdQeFlGWEh2NWtUam5BaEt0Um9mX1dIeHdJc3ZVbjcyRjNrcnR6OGhWNi1GRkc3d015aXVZVTJRdzQycFZkdFRmT2ZVNENHTHpMaEYxTmk5clpuM0QwdndrQWVyeFZUV1dONjlHVXYxcFFDMVdSSDNhVkl3RFpydF96Z2pTRGF4RE9Ua3RRckNvSTA?oc=5",
+        "date": "Fri, 21 Aug 2026 21:55:10 GMT",
+        "summary": "Chart Master: Charting Nvidia ahead of earnings CNBC",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10543,54 +10597,6 @@
         "summary": "Microsoft scraps some data center leases as Apple, Alibaba double down on AI SiliconANGLE",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:479ca9b8d4d50235e7d3ea27c61fb2c8d599777402dda5b2a28e43a00fa736c5",
-        "label": "Amazon has paused some data center lease commitments, Wells Fargo says - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNck8tcDRYc2VKU2FZaUhwNlE2V3Z5TDF4UVNNQUNsVWdsdWRHNWxtYUR1RWRLNUNtNUlFTldCX2FHOTdPeUVPLUNMTy1jRkpHSTRHaTdnZE5UYnRWdWJZZEJodV84WmtvTmZ3WHlITlJIVTZVTmFtLUdCeHRUZlVOUm05Z0ptZHBiYkVjR2xMQzhjWjNTQUFGdVUyamlYcXBPVzBj0gGoAUFVX3lxTE1OYlVPYUc1OHBqU2lQbHFuZWF6WHdpaTZCeGhmNkFJUGJlelp0eURybHlVTk50SGIzd0tNampocUZXYzNMOGhxU3FncFZhZm9GUXQ1QUh6dEl0ZGI3a19iLTJGYkxJZGtVZ0VhQWVRMkNqS1doRmVONmlMeEFmcnZ0eER0QjJLSnVzdVljMy1FZm10czV0TzlmeWxtVHJ2WGprejVrLWVJVg?oc=5",
-        "date": "Mon, 21 Apr 2025 07:00:00 GMT",
-        "summary": "Amazon has paused some data center lease commitments, Wells Fargo says CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b10b2aeeb54a23cb858cce1a57b563512bcf737344ad42b39adfb3b8f29a0c85",
-        "label": "Analysts Notice Microsoft Quietly Cancelling Data Center Leases - Gizmodo",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Gizmodo",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWkR5WmdOWGk3MnN5bmNMZThDb0EySENrUHo4cTNRVml0MVpFRW8yY3FaR2lfQ1NkRVcxM1V6WUFtMWQtWC1kd2VRRVJhX0xGRDdkdXEtZzdiNU53Q2ZUVXpMSmFSMXdBajFFcERJLWpzNjRpUXBqdFpWNTBLQzhnRXF5QnRhcHhHcWwxRjVZYnFOZ2FDTGxoTEpR?oc=5",
-        "date": "Mon, 24 Feb 2025 08:00:00 GMT",
-        "summary": "Analysts Notice Microsoft Quietly Cancelling Data Center Leases Gizmodo",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:43c3ca17f897bd65849aecec3b5741f4ad48244a3f9efe637822d65243e11fb9",
-        "label": "Microsoft cancels data center lease plans, raising questions - Network World",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Network World",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNamtJYTF3UWNmaVNFMlNXN3Y2dGZvcHJramk1czcwNkI5NG1yaDQxQ085dkFFNUNoYWVZWGdqdkJZU1JtSTRnQThjN1RSOHlIVXRNaTI3cUs4WFY2di1ydExMNUVoQVJyLUFBRFZmbUx6UkR6OTZXQXJLQ2xKbGVlVHgwM05JZTlWUVhUTlVYSW5BTER3OGdhV0ZhZ0trcnJGT1hRbkpLQXpuOG5ELVdZb2lMZ2oycFJ2end5bG5xRDZmLWhESFpTbnV6RQ?oc=5",
-        "date": "Mon, 24 Feb 2025 08:00:00 GMT",
-        "summary": "Microsoft cancels data center lease plans, raising questions Network World",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3c976d7721f735ca066174ffba30bd7e72d3fdd35f17ce1054d83d285a4c9a9c",
-        "label": "Microsoft Scraps Multiple Data Center Leases: TD Cowen - Broadband Breakfast",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Broadband Breakfast",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZ0JFalB4a29LX3hnNFRlSXVuV05IZ1Qycl9ET0V3ZHZUeDBXY0hBYlpkMjhTaS1CcWJJaHp4V1RJeC0teDhUclptdFNaMEh3NlU3czdkVFpuV0kyYzAzUHZuUWxPdGtibTU2eFhvNUJieGpjN0tyc2hibFc3Rko5WmF6MHRUdHVXOERacW5B?oc=5",
-        "date": "Mon, 24 Feb 2025 08:00:00 GMT",
-        "summary": "Microsoft Scraps Multiple Data Center Leases: TD Cowen Broadband Breakfast",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12577,6 +12583,34 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:70446dd256c4ff09adc8be564d150a8d656b9b75cabe5b53fce35e81a91a4e29",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:70446dd256c4ff09adc8be564d150a8d656b9b75cabe5b53fce35e81a91a4e29",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:48185ae335bb0dfb7d7319119fef2de1026b99551382528203e6d44510e3b33c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:48185ae335bb0dfb7d7319119fef2de1026b99551382528203e6d44510e3b33c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:0f5826fff3454c3b4bb094aed4d0ea7938a498ef5f75f95538cfe0a86b531dbd",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13320,6 +13354,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:7a4db14b670e183b3d106f8d4811f35e630c189b6885bbd968b69d5ef3a926e3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15453,6 +15494,13 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:13bd8f48e9b73c33abbb9a659fbbbf9577526a9b29904f0ff2c494cde9401b1a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alibaba",
         "target": "evidence:1f599b7d61cbc2b61864b35fb0ad6e320e45fba00b0330e4f0a490d6921053d0",
         "type": "EVIDENCE",
@@ -17240,34 +17288,6 @@
       {
         "source": "Microsoft",
         "target": "evidence:3f9a2b103b1136ad198d32c8d136a2a37421c81be07b253997488292978a89c8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:479ca9b8d4d50235e7d3ea27c61fb2c8d599777402dda5b2a28e43a00fa736c5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:b10b2aeeb54a23cb858cce1a57b563512bcf737344ad42b39adfb3b8f29a0c85",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:43c3ca17f897bd65849aecec3b5741f4ad48244a3f9efe637822d65243e11fb9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:3c976d7721f735ca066174ffba30bd7e72d3fdd35f17ce1054d83d285a4c9a9c",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31498,23 +31518,23 @@
   ],
   "collector_runs": [
     {
-      "id": 99,
+      "id": 103,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T22:41:26.517909+00:00",
-      "completed_at": "2026-08-21T22:41:40.534855+00:00",
+      "started_at": "2026-08-21T22:51:12.606058+00:00",
+      "completed_at": "2026-08-21T22:51:26.756285+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 1,
+      "items_new": 3,
       "error": null
     },
     {
-      "id": 100,
+      "id": 104,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T22:41:40.935644+00:00",
-      "completed_at": "2026-08-21T22:41:41.329981+00:00",
+      "started_at": "2026-08-21T22:51:27.158481+00:00",
+      "completed_at": "2026-08-21T22:51:27.717292+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
@@ -31528,20 +31548,20 @@
       "error": null
     },
     {
-      "id": 98,
+      "id": 102,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T22:41:25.246608+00:00",
-      "completed_at": "2026-08-21T22:41:26.116921+00:00",
+      "started_at": "2026-08-21T22:51:11.294393+00:00",
+      "completed_at": "2026-08-21T22:51:12.205014+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 2,
       "error": null
     },
     {
-      "id": 101,
+      "id": 105,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T22:41:41.731086+00:00",
-      "completed_at": "2026-08-21T22:41:43.479213+00:00",
+      "started_at": "2026-08-21T22:51:28.118423+00:00",
+      "completed_at": "2026-08-21T22:51:30.628124+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31558,7 +31578,7 @@
       "error": null
     }
   ],
-  "document_count": 999,
+  "document_count": 1005,
   "event_count": 948,
   "mention_count": 2342,
   "review_counts": {
