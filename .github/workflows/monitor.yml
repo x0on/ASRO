@@ -28,7 +28,8 @@ permissions:
 
 concurrency:
   group: hourly-monitor
-  cancel-in-progress: false
+  # New source or release runs supersede stale work; only the freshest snapshot matters.
+  cancel-in-progress: true
 
 jobs:
   monitor:
