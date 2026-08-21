@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-21T20:52:54.850961+00:00",
+  "generated_at": "2026-08-21T20:54:32.517084+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 59.3,
+    "score": 59.5,
     "label": "BUILDING PRESSURE",
     "direction": "unknown",
     "known_dimensions": 8,
@@ -13,36 +13,40 @@
   },
   "dimensions": {
     "circularity": 57.1,
-    "external_pressure": 59.4,
     "stress": 57.1,
-    "counter_evidence": 45.8,
-    "monetization": 42.9,
-    "transmission": 99.0,
-    "fragility": 61.1,
+    "external_pressure": 61.1,
+    "capital": 52.15125962813687,
     "cannibalization": 54.2,
-    "capital": 52.15125962813687
+    "monetization": 42.9,
+    "counter_evidence": 45.8,
+    "fragility": 61.1,
+    "transmission": 99.0
   },
   "dimension_evidence": {
+    "external_pressure": 4,
     "transmission": 1,
     "stress": 2,
     "fragility": 3,
     "capital": 7,
-    "external_pressure": 3,
     "counter_evidence": 1,
     "circularity": 1
   },
   "dimension_basis": {
-    "external_pressure": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "fragility": "directional_estimate",
-    "capital": "aggregate",
     "circularity": "directional_estimate",
-    "stress": "directional_estimate",
-    "monetization": "directional_estimate",
+    "external_pressure": "directional_estimate",
     "cannibalization": "directional_estimate",
+    "monetization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate",
+    "capital": "aggregate",
     "counter_evidence": "directional_estimate"
   },
   "dimension_direction": {
+    "external_pressure": {
+      "direction": "higher_pressure",
+      "evidence_count": 4
+    },
     "cannibalization": {
       "direction": "higher_pressure",
       "evidence_count": 1
@@ -66,10 +70,6 @@
     "circularity": {
       "direction": "higher_pressure",
       "evidence_count": 2
-    },
-    "external_pressure": {
-      "direction": "higher_pressure",
-      "evidence_count": 3
     },
     "counter_evidence": {
       "direction": "lower_pressure",
@@ -228,6 +228,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T20:54:28.102734+00:00",
+      "score": 59.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"circularity\": 57.1, \"fragility\": 61.1, \"external_pressure\": 59.4, \"stress\": 57.1, \"monetization\": 42.9, \"counter_evidence\": 45.8, \"capital\": 52.15125962813687, \"transmission\": 99.0, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-21T20:40:52.111687+00:00",
       "score": 59.3,
@@ -427,7 +433,7 @@
         "id": "MiniMax",
         "label": "MiniMax",
         "kind": "company",
-        "weight": 2
+        "weight": 3
       },
       {
         "id": "Zhipu AI",
@@ -3178,6 +3184,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:8ef93dd4174ac96f19b5aea124fa9f2314d39e17a7ac21a95d11939072941ec1",
+        "label": "Anthropic Emerges as IPO Frontrunner as OpenAI Stalls [Global Morning Briefing] - Seoul Economic Daily",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Seoul Economic Daily",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNmdBUDg1MFVQd3dCQmlxX2hhVUtmQmpuRjlKdnNkUnNwc3VncXRwTUFhVlR2b3EybmNiSUdBelliUFZkVFAxYktYQmtQMy1DUWxROWtUdHAwdk8ybEg4bExoWjJ6ZnFXczVpN3owTjZQY2VkLWh3bW9JOFJsd280VTlOTExMR3dLdTBzd0Q2d2xfcjdfMjF1U3RkN0Z1N25BYlVz?oc=5",
+        "date": "Fri, 21 Aug 2026 20:30:05 GMT",
+        "summary": "Anthropic Emerges as IPO Frontrunner as OpenAI Stalls [Global Morning Briefing] Seoul Economic Daily",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:ef879942acf0c37ff9e7e361e4a622ef14fd4f0a707ee086d62120a2911c8766",
         "label": "Cheap AI could derail OpenAI and Anthropic's IPOs - CNBC",
         "kind": "evidence",
@@ -5818,6 +5836,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:2c703a1d7300a54d01ba497217a89d1fa2e56ad7cef81c982700000a12c4e5eb",
+        "label": "Anthropic to SpaceX: You ain\u2019t bigger - Fortune",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Fortune",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4yMEE0VmFiTFJreFBETjdKeEY4NjJ2bUpub3dRWWRYaGtGbUlxaE1IUDNwSnBCN0VjTVJLS2JmNnFqV29mT1dOZHQ1eFNYWXBDUWs3LTltTVlCQkR5bzQ1bmhSWHdWX1V4b21sRlZTMExFdWFtelE?oc=5",
+        "date": "Fri, 21 Aug 2026 10:50:00 GMT",
+        "summary": "Anthropic to SpaceX: You ain\u2019t bigger Fortune",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:a04172804a3d74fba41d18a933d9cb188ac5429187b73f9a855fe2ed85edd0a4",
         "label": "China\u2019s DeepSeek launches V4 Pro model, on par with Anthropic\u2019s Claude Fable 5 - Global Times",
         "kind": "evidence",
@@ -6895,6 +6925,30 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:23d440300594ef1ce7b65dfaf78c5226297e7c370be887b9b01b06e4ac7a9690",
+        "label": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost - VentureBeat",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "VentureBeat",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVjJnVDMxM3Q1RWdaV3VBLWJPV2VwaTJEcEZxMER4UUtxV0tMSlNzMVRITUpUM0VhYm04Wko3UDhyMjQwU01YWmlDaFNJamtaRkhOZ0FQNjZmNkFvYldmTDRhRVFPWW91OHY0dUtiSXhQSXpIZXlXbV9mMVdzVC1Db3JUWjdLWjRpb1hkSnk5dFFfWEE3SEZCOGNnRE5rN2gzVGRqZkxJaFZ6RmpvOTB4N3dBX2hBdnJtZkNucDVKdGt5cFpKMDdHbTJKU2pvem1zbnFYVnpZSExGSjlm?oc=5",
+        "date": "Mon, 01 Jun 2026 07:00:00 GMT",
+        "summary": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost VentureBeat",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ef89b7fc6cd4e745bd0cbc80ccc337ae768ac93ec3edba0147c5c9f01c202444",
+        "label": "Nvidia Earnings Preview: What's Needed To Drive Nvidia Stock Higher? - Investor's Business Daily",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investor's Business Daily",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQYUdyb2hwN1RNYi1VY3JTMmZucFVkUkQ2aDY1eTFyRXNIa29DaXd1R1l4TkpXcnoyNWdOU2NBQzU2dFJneVQxbWZxR2JPSU15Y2NJNE4yeF8wdXdGNXFDY09Jd1pHcVhTWnFwdlBLVVRIeFVPLTk4S3VGaWZfVUxEQkVyMTJGcEhDMUtiZlJyRHBvV25qNnZR?oc=5",
+        "date": "Fri, 21 Aug 2026 20:05:00 GMT",
+        "summary": "Nvidia Earnings Preview: What's Needed To Drive Nvidia Stock Higher? Investor's Business Daily",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10064,54 +10118,6 @@
         "summary": "Nvidia\u2019s $500 Billion AI Push Is Starting to Show Up in Credit Investing.com",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:1e9791c125ac6615e127103813b8aa8c910943d39080f762a30a5643ae8b38b5",
-        "label": "Nvidia is also turning to bonds, aiming to raise $20 billion - Techzine Global",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Techzine Global",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNWDVWYThvTlNhR1VTRlNIS2hzNU5VaUlJZG8xWGktN044dHRZZ0pTczVfSzgwMWhScWNmQkppTzZVSW82eWxFTDdmTzBsRVAtRWtyVDdfUHFKZDhZM1ZUZVJsMDBiengwRFpORVN2THFsUVY5V3NTb2lxTjBZenkzcnV1R2pka0hiUHByVXJVT1FWSjgzWUs1dkhkTGpZSXliMS1VOEZIckliQlB4MFNR?oc=5",
-        "date": "Mon, 15 Jun 2026 07:00:00 GMT",
-        "summary": "Nvidia is also turning to bonds, aiming to raise $20 billion Techzine Global",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ec057c9f4ed041a8968150ea30f06e220d78120e21f40173338652a759f8947a",
-        "label": "Alphabet seeks up to $25 billion in latest AI-driven bond sale - The American Bazaar",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "The American Bazaar",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSzFxQm54ZWtRNTJiOUJuLVdsdnpZaTEwSVJuaVlUUDN5UjJYR1lRUm5EOWt5YlNxVWtPNFNrdUJSb1JPaS1CVC1iVHFlU1pZS2Z6WF90aVpGSXhvNWo1TVBJS1ZONmV1Z3dmT05idXFVb3dqMnNKRURtVEJkVFhqb0lnaTlWZDhfQ3Vad3ZLMnZnV3BYV1NjOE05SHk?oc=5",
-        "date": "Thu, 06 Aug 2026 07:00:00 GMT",
-        "summary": "Alphabet seeks up to $25 billion in latest AI-driven bond sale The American Bazaar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:06a90bb72e8dd143cfbfcda06f1412cfd993c78548c16838498c5bdfed369fdf",
-        "label": "Oracle Upsets the Market With Even More AI Spending and Debt Issuance - Gizmodo",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Gizmodo",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcnBycFZkQlh0WHk3ZmtLVUpwRzNFb2l1QkNmcUtyaE13Vm4wN2NOeTk4STVNYnhJSjhvMkxaODFkdTAyb1FFd2ZPQXBjZnNmWW0xWllPM2Zua2xXOF81U3BKeUhYMW9ES1I0WEtMd2Z1aGtDX0JtTWNtRnZPVnhabHdUNFJiQkhEbEVNalN4OEV0cVdueWhGWFRXODJON3N6YVE?oc=5",
-        "date": "Wed, 10 Jun 2026 07:00:00 GMT",
-        "summary": "Oracle Upsets the Market With Even More AI Spending and Debt Issuance Gizmodo",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:754ab2a2134d5940f4144f8ec73f616392b0165b44e5125a338e7ecdde58135a",
-        "label": "Oracle Has Taken on Serious Debt to Fund Its AI Ambitions. Can the Gamble Pay Off? - The Motley Fool",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "The Motley Fool",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWXFRR0hUY0phVmFrOFJxckR5bC1Qc1pQMjdsQXlyeC1jZVBmZkNIaWVRWmdROGVNVVlVTnVJWU9hdjV1WDdzTURmMjZWdFF5WVVYS1htcmtyVlI4UWJNbXpVcWFjNm1qaWQ4bFNuSkpFbUV4QjZXdG5VelFvTzd2bUFKNXhrc2JLcHBobmd2bHVXb1NwVGhfYQ?oc=5",
-        "date": "Tue, 07 Apr 2026 07:00:00 GMT",
-        "summary": "Oracle Has Taken on Serious Debt to Fund Its AI Ambitions. Can the Gamble Pay Off? The Motley Fool",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12098,6 +12104,20 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:8ef93dd4174ac96f19b5aea124fa9f2314d39e17a7ac21a95d11939072941ec1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:8ef93dd4174ac96f19b5aea124fa9f2314d39e17a7ac21a95d11939072941ec1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:ef879942acf0c37ff9e7e361e4a622ef14fd4f0a707ee086d62120a2911c8766",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13764,6 +13784,20 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:2c703a1d7300a54d01ba497217a89d1fa2e56ad7cef81c982700000a12c4e5eb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:2c703a1d7300a54d01ba497217a89d1fa2e56ad7cef81c982700000a12c4e5eb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:a04172804a3d74fba41d18a933d9cb188ac5429187b73f9a855fe2ed85edd0a4",
         "type": "EVIDENCE",
         "weight": 1,
@@ -14892,6 +14926,20 @@
       {
         "source": "OpenAI",
         "target": "evidence:88724e1f94b43ef9dbf0f7ad1e3cc74a48bf0ee01004a1bfd190ddc08fae32d4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "MiniMax",
+        "target": "evidence:23d440300594ef1ce7b65dfaf78c5226297e7c370be887b9b01b06e4ac7a9690",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:ef89b7fc6cd4e745bd0cbc80ccc337ae768ac93ec3edba0147c5c9f01c202444",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16740,34 +16788,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:4fe7de11dceddbb0036c1609e8d6be004b69f43b7e98744f7c5f455771adc19d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:1e9791c125ac6615e127103813b8aa8c910943d39080f762a30a5643ae8b38b5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:ec057c9f4ed041a8968150ea30f06e220d78120e21f40173338652a759f8947a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:06a90bb72e8dd143cfbfcda06f1412cfd993c78548c16838498c5bdfed369fdf",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:754ab2a2134d5940f4144f8ec73f616392b0165b44e5125a338e7ecdde58135a",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -30339,6 +30359,21 @@
       "date": "Mon, 01 Jun 2026 07:00:00 GMT",
       "event_type": "BENCHMARK_GAIN",
       "source_entity": "MiniMax",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost - VentureBeat MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost VentureBeat Google News",
+      "title": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost - VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVjJnVDMxM3Q1RWdaV3VBLWJPV2VwaTJEcEZxMER4UUtxV0tMSlNzMVRITUpUM0VhYm04Wko3UDhyMjQwU01YWmlDaFNJamtaRkhOZ0FQNjZmNkFvYldmTDRhRVFPWW91OHY0dUtiSXhQSXpIZXlXbV9mMVdzVC1Db3JUWjdLWjRpb1hkSnk5dFFfWEE3SEZCOGNnRE5rN2gzVGRqZkxJaFZ6RmpvOTB4N3dBX2hBdnJtZkNucDVKdGt5cFpKMDdHbTJKU2pvem1zbnFYVnpZSExGSjlm?oc=5",
+      "source": "VentureBeat"
+    },
+    {
+      "date": "Mon, 01 Jun 2026 07:00:00 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": "MiniMax",
       "target_entity": "Alphabet",
       "amount": null,
       "currency": null,
@@ -30983,23 +31018,23 @@
   ],
   "collector_runs": [
     {
-      "id": 63,
+      "id": 67,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T20:40:31.225833+00:00",
-      "completed_at": "2026-08-21T20:40:48.576765+00:00",
+      "started_at": "2026-08-21T20:54:08.641303+00:00",
+      "completed_at": "2026-08-21T20:54:23.988358+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 3,
       "error": null
     },
     {
-      "id": 64,
+      "id": 68,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T20:40:48.978140+00:00",
-      "completed_at": "2026-08-21T20:40:49.413564+00:00",
+      "started_at": "2026-08-21T20:54:24.389549+00:00",
+      "completed_at": "2026-08-21T20:54:25.270833+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
@@ -31013,20 +31048,20 @@
       "error": null
     },
     {
-      "id": 62,
+      "id": 66,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T20:40:30.067673+00:00",
-      "completed_at": "2026-08-21T20:40:30.824822+00:00",
+      "started_at": "2026-08-21T20:54:07.244315+00:00",
+      "completed_at": "2026-08-21T20:54:08.240130+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 65,
+      "id": 69,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T20:40:49.814927+00:00",
-      "completed_at": "2026-08-21T20:40:51.693927+00:00",
+      "started_at": "2026-08-21T20:54:25.672448+00:00",
+      "completed_at": "2026-08-21T20:54:27.683017+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31043,12 +31078,12 @@
       "error": null
     }
   ],
-  "document_count": 983,
-  "event_count": 947,
-  "mention_count": 2341,
+  "document_count": 989,
+  "event_count": 948,
+  "mention_count": 2342,
   "review_counts": {
     "provisional": 0,
-    "confirmed": 256,
+    "confirmed": 257,
     "flagged": 691
   }
 }
