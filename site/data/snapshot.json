@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T20:39:49.914118+00:00",
+  "generated_at": "2026-08-21T20:40:52.885454+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "external_pressure": 59.4,
     "monetization": 42.9,
-    "counter_evidence": 45.8,
     "cannibalization": 54.2,
     "capital": 52.15125962813687,
-    "stress": 57.1,
     "transmission": 99.0,
+    "stress": 57.1,
     "fragility": 61.1,
+    "counter_evidence": 45.8,
+    "external_pressure": 59.4,
     "circularity": 57.1
   },
   "dimension_evidence": {
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
+    "cannibalization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate",
     "external_pressure": "directional_estimate",
     "monetization": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "fragility": "directional_estimate",
-    "circularity": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "cannibalization": "directional_estimate",
     "capital": "aggregate",
-    "stress": "directional_estimate"
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "cannibalization": {
@@ -228,6 +228,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T20:40:52.111687+00:00",
+      "score": 59.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 59.4, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"counter_evidence\": 45.8, \"fragility\": 61.1, \"monetization\": 42.9, \"transmission\": 99.0}"
+    },
     {
       "captured_at": "2026-08-21T20:26:00.620943+00:00",
       "score": null,
@@ -4084,6 +4090,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:724eb17f6822639fa48e06d348d5845f29c3ad219aa9688a142db8de3bca783d",
+        "label": "Anthropic Races Toward an IPO While Open Source Models Close In on Claude - Startup Fortune",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Startup Fortune",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcjNPNVpnRHplczBWeVdZQkxiWXJpNmtBT3pTZEZ2SkZfVnFsNDZRQUJpeHhaQnVLX0cxQ28wRzIwRkxmak8xYXdidjFUR3MtV0VCWWY3YzJCZzlWaDBSa0g3UFE4TXBCeEVwZlZEYzZnREQ3MVJjY0pfNV9UbjFFMTAweEVuMTVYNTVvdUJ1UEozYWJZUFV0bE5ZcXEwM2tjOGRN?oc=5",
+        "date": "Thu, 20 Aug 2026 16:47:51 GMT",
+        "summary": "Anthropic Races Toward an IPO While Open Source Models Close In on Claude Startup Fortune",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f3892d1870cc63ab42415bd12c0155b743536a926104e8c24581ea17ca03689d",
+        "label": "Exclusive | OpenAI Is Adding Two Independent Board Members Ahead of IPO - WSJ",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOLU50TVpjZUJUNXdPOGwtRVIzbUkxd0FqSEdYRVFKMkZYZ25XWFQycHQ3bC12dS1taDlENG12X21LcGtTYnlSVmxSa0FJcnYzS3hUWkdCaXI4eFZXeHFjYWtESmtaSlBCQTlud2gwSDdjQ0wzTE8zNGJmZVRUNTl1X2F5eFluLUMyQXB0OVQ5cjNXQ1o0RkxTSkdiRF8?oc=5",
+        "date": "Tue, 21 Jul 2026 07:00:00 GMT",
+        "summary": "Exclusive | OpenAI Is Adding Two Independent Board Members Ahead of IPO WSJ",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:769fe35694d014acc082d021e3dfa7b9d8b449833a9bd44399f6c71729f39a96",
         "label": "Moonshot AI\u2019s IPO needs a new story after Kimi K3 - KrASIA",
         "kind": "evidence",
@@ -6865,6 +6895,18 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9ff1ef2267959520b8a8a0da849d672eb0c19fcbf247a3dcd297972eb22d6f84",
+        "label": "Nvidia earnings are on deck next week. These 3 themes will be mission-critical. - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxObm5CZC1GZVc1czJSdzg0S3p4b3FBT3lxQ1hXc1dtYk9RTFJuTUd6N294YmJVOXZ1enR1TG1rWktKREFncXlxazJGNGwzaFptVC1aSFF2QVo5ak5sQS05TlNkVEhqT25UYUYtbVVfRUVXV0R1aXFvT2I4UXdVU25PWGNWMA?oc=5",
+        "date": "Fri, 21 Aug 2026 20:02:51 GMT",
+        "summary": "Nvidia earnings are on deck next week. These 3 themes will be mission-critical. Yahoo Finance",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10070,42 +10112,6 @@
         "summary": "Oracle Has Taken on Serious Debt to Fund Its AI Ambitions. Can the Gamble Pay Off? The Motley Fool",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:d87cb4138b6ee12c7102ddc959502a5f4bd04919db3669ea61291d5495069447",
-        "label": "Oracle stock has worst week since 2001 dot-com bust as AI financing concerns escalate - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQb1RFMEVwRFhxS2VQTy1ZcEpaUVFHNTVpVlp5QXJJWHRuc0xrbi12Qnh5MEdGazg1QUN3TWFXaGgzTl9DRmRaWjVSM0J2anJIdHFmdmlBVHF0MkNNSGNwYU1xWlQ0c19DTUs4ZzE0SFZlLWlhMmxqVGljNlBxT3FZY1ktMi1OeEJRUnd2LXlWYUFzVXlZbE12a2tzaWctV2ppZjFiN2wzMUlSTmM?oc=5",
-        "date": "Fri, 26 Jun 2026 07:00:00 GMT",
-        "summary": "Oracle stock has worst week since 2001 dot-com bust as AI financing concerns escalate CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3226b6d7dac34638a50ba5ac1caf029f245c5c28bc6cffffe73e9f4f31e8da8f",
-        "label": "Oracle Data Center Nears $16 Billion Financing After Twisty Path - Bloomberg.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQX3ZmVWNnM3cycXF2UWtzZ2swelYyRTJ5R2VzOGZ0aUVHdkdsVTRLMENXTFlWVHNzOWVLY29mdmRYUkdsZ09McU9lWXhkZzQycTZNOGRQQXdzLVI0QUIzdzhac2EzcWsxWXJUejhaQVJNNml4eVY1akd1dzlNN1cyOFFlN1NzSHpLUmVMX2RFemlWaHh4eFl6VFdESEpVWTRWMmxGcThfWVRfSEU4QllCcXpaWDc?oc=5",
-        "date": "Wed, 01 Apr 2026 07:00:00 GMT",
-        "summary": "Oracle Data Center Nears $16 Billion Financing After Twisty Path Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:69bbbae3266f2523f0428c924735042a381971d67ac95194a77920268c8a91b3",
-        "label": "Oracle shares slide as hefty AI spending, debt plans spook investors - Reuters",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQekM2Q3NTcXNIXzZTUmkzejlGRTB6S1hoNHIyc3NIYXIwY0VnT200RGRCZ3R3Z01IUHFBSGhYRmhWNXlpNDNjbU45VzZrdEprQnZ4a2RXVzJTSmM0RjQzNWFqSlVadjJLb2J3dkFEQkYtUlV6WGpNLTlaRnUwUWI4bmZjSVI2dXZGeDdqeFJYaDR3NUIzcXZZTTc1UHVPcy01bE40Z2ZVc3RkemJiX0MyOVB6UFEwYTNxNVQ4a1pHTGx3MEE?oc=5",
-        "date": "Thu, 11 Jun 2026 07:00:00 GMT",
-        "summary": "Oracle shares slide as hefty AI spending, debt plans spook investors Reuters",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12812,6 +12818,20 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:724eb17f6822639fa48e06d348d5845f29c3ad219aa9688a142db8de3bca783d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:f3892d1870cc63ab42415bd12c0155b743536a926104e8c24581ea17ca03689d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Moonshot AI",
         "target": "evidence:769fe35694d014acc082d021e3dfa7b9d8b449833a9bd44399f6c71729f39a96",
         "type": "EVIDENCE",
@@ -14878,6 +14898,13 @@
       },
       {
         "source": "Nvidia",
+        "target": "evidence:9ff1ef2267959520b8a8a0da849d672eb0c19fcbf247a3dcd297972eb22d6f84",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
         "target": "evidence:398924fe047fe80ce0e0abaa73bbb006033d6cd0c57a4cfda99f63f243eb17e3",
         "type": "EVIDENCE",
         "weight": 1,
@@ -16741,27 +16768,6 @@
       {
         "source": "Oracle",
         "target": "evidence:754ab2a2134d5940f4144f8ec73f616392b0165b44e5125a338e7ecdde58135a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:d87cb4138b6ee12c7102ddc959502a5f4bd04919db3669ea61291d5495069447",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:3226b6d7dac34638a50ba5ac1caf029f245c5c28bc6cffffe73e9f4f31e8da8f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:69bbbae3266f2523f0428c924735042a381971d67ac95194a77920268c8a91b3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -30977,23 +30983,23 @@
   ],
   "collector_runs": [
     {
-      "id": 59,
+      "id": 63,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T20:25:31.025496+00:00",
-      "completed_at": "2026-08-21T20:25:50.243137+00:00",
+      "started_at": "2026-08-21T20:40:31.225833+00:00",
+      "completed_at": "2026-08-21T20:40:48.576765+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 22,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 60,
+      "id": 64,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T20:25:50.644522+00:00",
-      "completed_at": "2026-08-21T20:25:57.888073+00:00",
+      "started_at": "2026-08-21T20:40:48.978140+00:00",
+      "completed_at": "2026-08-21T20:40:49.413564+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 32,
+      "items_new": 0,
       "error": null
     },
     {
@@ -31007,20 +31013,20 @@
       "error": null
     },
     {
-      "id": 58,
+      "id": 62,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T20:25:20.788934+00:00",
-      "completed_at": "2026-08-21T20:25:30.624433+00:00",
+      "started_at": "2026-08-21T20:40:30.067673+00:00",
+      "completed_at": "2026-08-21T20:40:30.824822+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 41,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 61,
+      "id": 65,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T20:25:58.288984+00:00",
-      "completed_at": "2026-08-21T20:26:00.206462+00:00",
+      "started_at": "2026-08-21T20:40:49.814927+00:00",
+      "completed_at": "2026-08-21T20:40:51.693927+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31037,7 +31043,7 @@
       "error": null
     }
   ],
-  "document_count": 980,
+  "document_count": 983,
   "event_count": 947,
   "mention_count": 2341,
   "review_counts": {
