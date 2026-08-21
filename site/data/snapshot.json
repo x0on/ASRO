@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T22:22:40.844131+00:00",
+  "generated_at": "2026-08-21T22:41:44.368444+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "circularity": 57.1,
-    "monetization": 42.9,
-    "transmission": 39.6,
-    "capital": 52.15125962813687,
-    "counter_evidence": 42.9,
-    "external_pressure": 61.1,
-    "stress": 57.1,
     "cannibalization": 54.2,
-    "fragility": 61.1
+    "counter_evidence": 42.9,
+    "stress": 57.1,
+    "external_pressure": 61.1,
+    "monetization": 42.9,
+    "capital": 52.15125962813687,
+    "fragility": 61.1,
+    "circularity": 57.1,
+    "transmission": 39.6
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "circularity": "directional_estimate",
-    "monetization": "directional_estimate",
-    "capital": "aggregate",
-    "external_pressure": "directional_estimate",
-    "stress": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate",
+    "monetization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
+    "external_pressure": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "fragility": "directional_estimate"
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T22:41:43.894811+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"monetization\": 42.9, \"stress\": 57.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687}"
+    },
     {
       "captured_at": "2026-08-21T22:10:27.136792+00:00",
       "score": 52.1,
@@ -4584,6 +4590,42 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:8613f6c22183abaa04e0001efed26573a26371bd4177bb7e50ca5d978d75ba23",
+        "label": "What retail investors need to know before jumping into Anthropic\u2019s IPO - Financial Times",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTTZEUzJKWjRsSnV4S1cwYzdnYWpjbmJ3VkZzTXJqRV94VHBFOHRhbGgxMWFGSGF4Y3FkR3Fkb1RCUENZbjVidTdKZlR1YUJGUUZVT0dhNnZ0S01RbUMzLVE0Q2NSOWNTbmJVV1Z3TG1PS3B6ZVFtR2dDNE1UemsxNFMyN00?oc=5",
+        "date": "Fri, 21 Aug 2026 11:00:06 GMT",
+        "summary": "What retail investors need to know before jumping into Anthropic\u2019s IPO Financial Times",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c9c7780f66575cdbb619ffe6423c908e062d034c3eac49bba92e762e3554f22d",
+        "label": "OpenAI Barrels Toward IPO, U.S. Readies Iran Econ Attack - Center for a New American Security | CNAS",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Center for a New American Security | CNAS",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdzV0QVBjMVJka1ltMW11WTF6ZjN2eUlqNmFPUG15dHpNQ2U4X29NZFNqQXA5ajN1MXJEcmV0TjZ4Vnh5VXpfTGR2ci1BU1M5cVZYdWJEYXdRMjJhcDgwSWxZb1RwUHJBRVpxWjF1WWdJTzdPUDJxczVWZEpKc2ZDRG9UMmhkaEUxZTREOGYyTTRndk9rQWY1ZQ?oc=5",
+        "date": "Fri, 14 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI Barrels Toward IPO, U.S. Readies Iran Econ Attack Center for a New American Security | CNAS",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:53c905befd7b8405eb143add66319c148f9cf67dcd963f0b75ecbb7747781dbc",
+        "label": "OpenAI: The $1 Trillion 'Monster' Racing Toward an IPO, Exposing Massive Losses and a Non-Profit Dilemma - finance.biggo.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YNWRfT29YYlJWQXBVUkVkWWVleUxBdHNKcUpCczJIMkxtUFZMcEUzbFpyUnpES2ttanBlT2gtNVJOY1RnbjU3THdfa3VXQ1paYjY5a3ZMOXExaEl5VmVBMl9WNWNrREhXRjZOdUtHS0RJSWFaOGc?oc=5",
+        "date": "Sat, 25 Jul 2026 07:00:00 GMT",
+        "summary": "OpenAI: The $1 Trillion 'Monster' Racing Toward an IPO, Exposing Massive Losses and a Non-Profit Dilemma finance.biggo.com",
+        "score": 4,
         "weight": 1
       },
       {
@@ -10549,42 +10591,6 @@
         "summary": "Microsoft Scraps Multiple Data Center Leases: TD Cowen Broadband Breakfast",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:62f4d43d2ad90eedee8057b0095975542a1366f19c530d5af7b29094bc0368a7",
-        "label": "Microsoft Cancels Leases for AI Data Centers, Analyst Says - Bloomberg.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOUmtLaG9IVFhTdTZ0THJmTGlNZXN6bmJzWVVSeVJyX3pmMW5zMldkSFVST1NGTXhycG5FdzhpSkMwMFNtWjVFU0VYVzRmZ2h3RDhMLTZBcExzRTNwT0dQc200XzhqRmxSandxSlVEM2VhUno2UTZOTGszbjlYd293Wk9CbVRKWHdqaHRuN3FGN3lqM0RXOTFjZ1ZGM25ob2h4VF9zRVY4T2ZnQUJW?oc=5",
-        "date": "Mon, 24 Feb 2025 08:00:00 GMT",
-        "summary": "Microsoft Cancels Leases for AI Data Centers, Analyst Says Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:391bbd2fdd833b7a6dc470eca3127e1aea56781f89ad9fe19fb41431177e26ec",
-        "label": "Microsoft cancels leases for AI data centers, analyst says - The Malaysian Reserve",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Malaysian Reserve",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeGxaYjMxaTV4Q3EtbnNwR19HMHVSSHpjQ1RQd1NweHJ2SFVNZzc0YURKc2xJXy1aUkw3SjBQVm1xbFBvNVFYcm1naHFRak5CUlRhazNoWXdTWlhsLWQtR2g1cHI2R2FhMERLUk9LeTE0ZlFvRlFuRTM5SmxSMVJORVBzcEx5anNwbkp5QzVjUlVYd2JrLWFvSFJkWThJaEh6NzdJ?oc=5",
-        "date": "Mon, 24 Feb 2025 08:00:00 GMT",
-        "summary": "Microsoft cancels leases for AI data centers, analyst says The Malaysian Reserve",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:dd93c5b0c8c5ad9e722ccd9fd11bc79f9274d0c6ec98615f6cebfe418f1d4aa0",
-        "label": "Anthropic\u2019s Revenue Has Soared. Is It Enough for Investors? - AOL.ca",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "AOL.ca",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQOGdabjhOc0U4ZFFTeDI5bG96OVFNMGYxSUtkckZHMlBPdUlqTGM0ZnpZZTJpVXVXRGtqRWhjXzZGbXVyaGlFWllJWnlROXd6NF80d0JyMnppMnhTSmNfR1ZnZzZ0WG82eElLVlRMVG5YeEt3ZGtxNEU0N1pHWk9jN0x6ZEZTWG5pY05WZg?oc=5",
-        "date": "Wed, 19 Aug 2026 17:37:00 GMT",
-        "summary": "Anthropic\u2019s Revenue Has Soared. Is It Enough for Investors? AOL.ca",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -13314,6 +13320,27 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:8613f6c22183abaa04e0001efed26573a26371bd4177bb7e50ca5d978d75ba23",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c9c7780f66575cdbb619ffe6423c908e062d034c3eac49bba92e762e3554f22d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:53c905befd7b8405eb143add66319c148f9cf67dcd963f0b75ecbb7747781dbc",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17241,27 +17268,6 @@
       {
         "source": "Microsoft",
         "target": "evidence:3c976d7721f735ca066174ffba30bd7e72d3fdd35f17ce1054d83d285a4c9a9c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:62f4d43d2ad90eedee8057b0095975542a1366f19c530d5af7b29094bc0368a7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:391bbd2fdd833b7a6dc470eca3127e1aea56781f89ad9fe19fb41431177e26ec",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:dd93c5b0c8c5ad9e722ccd9fd11bc79f9274d0c6ec98615f6cebfe418f1d4aa0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31492,20 +31498,20 @@
   ],
   "collector_runs": [
     {
-      "id": 95,
+      "id": 99,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T22:10:08.556092+00:00",
-      "completed_at": "2026-08-21T22:10:23.465161+00:00",
+      "started_at": "2026-08-21T22:41:26.517909+00:00",
+      "completed_at": "2026-08-21T22:41:40.534855+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 96,
+      "id": 100,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T22:10:24.144719+00:00",
-      "completed_at": "2026-08-21T22:10:24.592683+00:00",
+      "started_at": "2026-08-21T22:41:40.935644+00:00",
+      "completed_at": "2026-08-21T22:41:41.329981+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -31522,20 +31528,20 @@
       "error": null
     },
     {
-      "id": 94,
+      "id": 98,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T22:10:07.289676+00:00",
-      "completed_at": "2026-08-21T22:10:08.154939+00:00",
+      "started_at": "2026-08-21T22:41:25.246608+00:00",
+      "completed_at": "2026-08-21T22:41:26.116921+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 97,
+      "id": 101,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T22:10:24.994473+00:00",
-      "completed_at": "2026-08-21T22:10:26.716147+00:00",
+      "started_at": "2026-08-21T22:41:41.731086+00:00",
+      "completed_at": "2026-08-21T22:41:43.479213+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31552,7 +31558,7 @@
       "error": null
     }
   ],
-  "document_count": 996,
+  "document_count": 999,
   "event_count": 948,
   "mention_count": 2342,
   "review_counts": {
