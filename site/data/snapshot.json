@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T21:38:57.835333+00:00",
+  "generated_at": "2026-08-21T21:43:03.495479+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "external_pressure": 61.1,
-    "circularity": 57.1,
-    "capital": 52.15125962813687,
-    "stress": 57.1,
-    "cannibalization": 54.2,
     "transmission": 39.6,
-    "counter_evidence": 45.8,
+    "capital": 52.15125962813687,
+    "cannibalization": 54.2,
+    "monetization": 42.9,
+    "stress": 57.1,
     "fragility": 61.1,
-    "monetization": 42.9
+    "counter_evidence": 45.8,
+    "external_pressure": 61.1,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "circularity": "directional_estimate",
-    "capital": "aggregate",
     "transmission": "confirmed_trigger",
-    "counter_evidence": "directional_estimate",
-    "fragility": "directional_estimate",
+    "capital": "aggregate",
+    "cannibalization": "directional_estimate",
     "monetization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
     "external_pressure": "directional_estimate",
     "stress": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -623,6 +623,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T21:43:02.856003+00:00",
+      "score": 52.1,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 45.8, \"circularity\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"monetization\": 42.9, \"fragility\": 61.1, \"stress\": 57.1}"
+    },
     {
       "captured_at": "2026-08-21T21:38:57.433895+00:00",
       "score": 52.1,
@@ -7359,6 +7365,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:1f599b7d61cbc2b61864b35fb0ad6e320e45fba00b0330e4f0a490d6921053d0",
+        "label": "Alibaba Q1 Earnings Fall Short of Estimates, Revenues Rise Y/Y - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYjRaRjkwUVZ0dUo2Z3k3emtRRFVOb2h2cFRPMDFQODlocDFtdTliRGVjSC14TnhtTXZzSk9hZFFvNmhtbFN2b3dyTVh0RzJtTl9pQWlSUVFOVGxlS2NXYlh1YUpNbXF4RkFKYlloRGFwVDU3SUhnVjBhdWItbEJ0VDJBM19iV0xqQXFQMHVodVphbmlGS1Z4dUlGaUk1RW1rdTJtWlJmZFZfQkZjdDJGMllpUFVhR1Vj?oc=5",
+        "date": "Fri, 21 Aug 2026 14:46:00 GMT",
+        "summary": "Alibaba Q1 Earnings Fall Short of Estimates, Revenues Rise Y/Y TradingView",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:f453ef2bef236cce48d90cf70a34ed1a49e7a636102dacd52da97cf2e12ad37d",
         "label": "DeepSeek Creates New Headache for AI Stocks - TradingView",
         "kind": "evidence",
@@ -10523,18 +10541,6 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQTRSRC1xZ0htcy12X3RuWUdoR29OcFZyNXdwSTQ2ZDZ3WGJybWhhSkVabU5uWUVPVzRkVVlFS1IyNmtBTmExb04tTDF1ZVdpUXhBUnBib29FOTgwV3ZkMTE4eFNIcHI2WnEtY0c3OXBwUktEQ0hXYWgySkVHZXRIWWhFeHNnenhkOXFIenl0eVVSMklzV3UwaHFWZ2tnNnJjUW5ycWpmcDZsT2dWWjBxT2Nn?oc=5",
         "date": "Thu, 12 Feb 2026 08:00:00 GMT",
         "summary": "AI inference costs dropped up to 10x on Nvidia's Blackwell \u2014 but hardware is only half the equation Venturebeat",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6b23b6d8e9a2709d1fbabd42386c1455be5375c1ffc6a6a3612858a33176e443",
-        "label": "OpenAI surpasses 1 billion users after cutting GPT-5.6 prices - qz.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "qz.com",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0wb2dpSHNMdmhvTmhsY3VYRmJhOHZ2VDM1S2NCcHFsWUljOGRCRDQwNnVybFBTMUc4VVNkTUhEdTd5T2QzN2Vqbkd5MzVWM0VsaXR4TTVVMkFMbEtpN1NneUR5RFZHYng4?oc=5",
-        "date": "Fri, 31 Jul 2026 07:00:00 GMT",
-        "summary": "OpenAI surpasses 1 billion users after cutting GPT-5.6 prices qz.com",
         "score": 1,
         "weight": 1
       }
@@ -15364,6 +15370,13 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:1f599b7d61cbc2b61864b35fb0ad6e320e45fba00b0330e4f0a490d6921053d0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "DeepSeek",
         "target": "evidence:f453ef2bef236cce48d90cf70a34ed1a49e7a636102dacd52da97cf2e12ad37d",
         "type": "EVIDENCE",
@@ -17207,13 +17220,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:49a85931a9c3da3ab4833219afd65e5ee6fa774100e07955cd498913f357c2f0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:6b23b6d8e9a2709d1fbabd42386c1455be5375c1ffc6a6a3612858a33176e443",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31444,20 +31450,20 @@
   ],
   "collector_runs": [
     {
-      "id": 83,
+      "id": 87,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T21:38:40.248376+00:00",
-      "completed_at": "2026-08-21T21:38:53.943394+00:00",
+      "started_at": "2026-08-21T21:42:44.223250+00:00",
+      "completed_at": "2026-08-21T21:42:59.191495+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 84,
+      "id": 88,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T21:38:54.344621+00:00",
-      "completed_at": "2026-08-21T21:38:54.737902+00:00",
+      "started_at": "2026-08-21T21:42:59.594076+00:00",
+      "completed_at": "2026-08-21T21:43:00.020346+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -31474,20 +31480,20 @@
       "error": null
     },
     {
-      "id": 82,
+      "id": 86,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T21:38:38.976034+00:00",
-      "completed_at": "2026-08-21T21:38:39.847372+00:00",
+      "started_at": "2026-08-21T21:42:43.321958+00:00",
+      "completed_at": "2026-08-21T21:42:43.821833+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 85,
+      "id": 89,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T21:38:55.139251+00:00",
-      "completed_at": "2026-08-21T21:38:57.018729+00:00",
+      "started_at": "2026-08-21T21:43:00.421626+00:00",
+      "completed_at": "2026-08-21T21:43:02.216822+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31504,7 +31510,7 @@
       "error": null
     }
   ],
-  "document_count": 993,
+  "document_count": 994,
   "event_count": 948,
   "mention_count": 2342,
   "review_counts": {
