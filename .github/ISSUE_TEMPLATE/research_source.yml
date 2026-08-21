@@ -1,0 +1,30 @@
+name: New research source
+description: Suggest a public data source or filing source
+title: "[source] "
+labels: ["data-source"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source name
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Public URL
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: What signal could this source add?
+    validations:
+      required: true
+
+  - type: textarea
+    id: access
+    attributes:
+      label: API / RSS / crawling considerations

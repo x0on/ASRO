@@ -1,0 +1,410 @@
+from __future__ import annotations
+
+import json
+import sqlite3
+from pathlib import Path
+
+from asro.models import FinancialEvent, ScoredItem
+from asro.observations import Observation
+
+
+class SqliteRepository:
+    def __init__(self, path: Path) -> None:
+        self._path = path
+        self._path.parent.mkdir(parents=True, exist_ok=True)
+
+    def connect(self) -> sqlite3.Connection:
+        connection = sqlite3.connect(self._path)
+        connection.row_factory = sqlite3.Row
+        self._initialize(connection)
+        return connection
+
+    @staticmethod
+    def _initialize(connection: sqlite3.Connection) -> None:
+        connection.executescript(
+            """
+            CREATE TABLE IF NOT EXISTS items (
+                id TEXT PRIMARY KEY,
+                discovered_at TEXT NOT NULL,
+                published_at TEXT,
+                source TEXT NOT NULL,
+                title TEXT NOT NULL,
+                url TEXT NOT NULL,
+                summary TEXT NOT NULL,
+                score INTEGER NOT NULL,
+                category TEXT NOT NULL,
+                companies TEXT NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS documents (
+                item_id TEXT PRIMARY KEY,
+                fetched_at TEXT NOT NULL,
+                content_type TEXT,
+                fetch_status TEXT NOT NULL,
+                text TEXT NOT NULL,
+                FOREIGN KEY(item_id) REFERENCES items(id)
+            );
+
+            CREATE TABLE IF NOT EXISTS economic_events (
+                fingerprint TEXT PRIMARY KEY,
+                canonical_event_id TEXT NOT NULL,
+                first_seen TEXT NOT NULL,
+                last_seen TEXT NOT NULL,
+                mention_count INTEGER NOT NULL DEFAULT 1
+            );
+
+            CREATE TABLE IF NOT EXISTS system_snapshots (
+                captured_at TEXT PRIMARY KEY,
+                score REAL,
+                label TEXT NOT NULL,
+                dimensions TEXT NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS financial_events (
+                event_id TEXT PRIMARY KEY,
+                document_id TEXT NOT NULL,
+                event_type TEXT NOT NULL,
+                source_entity TEXT,
+                target_entity TEXT,
+                amount REAL,
+                currency TEXT,
+                instrument TEXT,
+                effective_date TEXT,
+                confidence REAL NOT NULL,
+                evidence_text TEXT NOT NULL,
+                extractor TEXT NOT NULL,
+                processed_at TEXT NOT NULL,
+                FOREIGN KEY(document_id) REFERENCES items(id)
+            );
+
+            CREATE INDEX IF NOT EXISTS idx_events_type
+                ON financial_events(event_type);
+
+            CREATE INDEX IF NOT EXISTS idx_events_source_target
+                ON financial_events(source_entity, target_entity);
+
+            CREATE INDEX IF NOT EXISTS idx_items_published
+                ON items(published_at);
+
+            CREATE TABLE IF NOT EXISTS observations (
+                observation_id TEXT PRIMARY KEY,
+                variable_key TEXT NOT NULL,
+                entity TEXT,
+                value REAL NOT NULL,
+                unit TEXT,
+                observed_at TEXT NOT NULL,
+                effective_date TEXT,
+                confidence REAL NOT NULL,
+                source_document_id TEXT NOT NULL,
+                evidence_text TEXT NOT NULL,
+                extractor TEXT NOT NULL,
+                polarity TEXT NOT NULL,
+                FOREIGN KEY(source_document_id) REFERENCES items(id)
+            );
+
+            CREATE INDEX IF NOT EXISTS idx_observations_variable
+                ON observations(variable_key);
+
+            CREATE INDEX IF NOT EXISTS idx_observations_date
+                ON observations(effective_date);
+
+            CREATE TABLE IF NOT EXISTS collector_runs (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                collector TEXT NOT NULL,
+                started_at TEXT NOT NULL,
+                completed_at TEXT,
+                status TEXT NOT NULL,
+                items_seen INTEGER NOT NULL DEFAULT 0,
+                items_new INTEGER NOT NULL DEFAULT 0,
+                error TEXT
+            );
+            """
+        )
+        connection.commit()
+
+    @staticmethod
+    def insert(connection: sqlite3.Connection, item: ScoredItem) -> bool:
+        """Insert a source item. Returns False if it was already stored."""
+        cursor = connection.execute(
+            """
+            INSERT OR IGNORE INTO items (
+                id, discovered_at, published_at, source, title, url,
+                summary, score, category, companies
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                item.item_id,
+                item.discovered_at.isoformat(),
+                item.published_at,
+                item.source,
+                item.title,
+                str(item.url),
+                item.summary,
+                item.score,
+                item.category.value,
+                json.dumps(item.companies),
+            ),
+        )
+        return cursor.rowcount == 1
+
+    @staticmethod
+    def upsert_document(
+        connection: sqlite3.Connection,
+        item_id: str,
+        fetched_at: str,
+        content_type: str,
+        status: str,
+        text: str,
+    ) -> None:
+        connection.execute(
+            """
+            INSERT INTO documents (item_id, fetched_at, content_type, fetch_status, text)
+            VALUES (?, ?, ?, ?, ?)
+            ON CONFLICT(item_id) DO UPDATE SET
+                fetched_at = excluded.fetched_at,
+                content_type = excluded.content_type,
+                fetch_status = excluded.fetch_status,
+                text = excluded.text
+            """,
+            (item_id, fetched_at, content_type, status, text),
+        )
+
+    @staticmethod
+    def register_economic_event(
+        connection: sqlite3.Connection, fingerprint: str, event_id: str, seen_at: str
+    ) -> bool:
+        """Register a mention of an economic fact. Returns True the first time it is seen."""
+        cursor = connection.execute(
+            """
+            INSERT OR IGNORE INTO economic_events (
+                fingerprint, canonical_event_id, first_seen, last_seen, mention_count
+            )
+            VALUES (?, ?, ?, ?, 1)
+            """,
+            (fingerprint, event_id, seen_at, seen_at),
+        )
+        if cursor.rowcount == 1:
+            return True
+        connection.execute(
+            """
+            UPDATE economic_events
+            SET last_seen = ?, mention_count = mention_count + 1
+            WHERE fingerprint = ?
+            """,
+            (seen_at, fingerprint),
+        )
+        return False
+
+    @staticmethod
+    def insert_snapshot(
+        connection: sqlite3.Connection,
+        captured_at: str,
+        score: float | None,
+        label: str,
+        dimensions: dict[str, float | None],
+    ) -> None:
+        connection.execute(
+            """
+            INSERT OR REPLACE INTO system_snapshots (captured_at, score, label, dimensions)
+            VALUES (?, ?, ?, ?)
+            """,
+            (captured_at, score, label, json.dumps(dimensions)),
+        )
+
+    @staticmethod
+    def recent_snapshots(connection: sqlite3.Connection, limit: int = 365) -> list[sqlite3.Row]:
+        return list(
+            connection.execute(
+                "SELECT * FROM system_snapshots ORDER BY captured_at DESC LIMIT ?", (limit,)
+            )
+        )
+
+    @staticmethod
+    def insert_event(connection: sqlite3.Connection, event: FinancialEvent) -> bool:
+        """Insert an extracted event. Returns False if it was already stored."""
+        cursor = connection.execute(
+            """
+            INSERT OR IGNORE INTO financial_events (
+                event_id, document_id, event_type, source_entity, target_entity,
+                amount, currency, instrument, effective_date, confidence,
+                evidence_text, extractor, processed_at
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                event.event_id,
+                event.document_id,
+                event.event_type.value,
+                event.source_entity,
+                event.target_entity,
+                event.amount,
+                event.currency,
+                event.instrument,
+                event.effective_date,
+                event.confidence,
+                event.evidence_text,
+                event.extractor,
+                event.processed_at.isoformat(),
+            ),
+        )
+        return cursor.rowcount == 1
+
+    @staticmethod
+    def top_items(connection: sqlite3.Connection, limit: int = 500) -> list[sqlite3.Row]:
+        return list(
+            connection.execute(
+                """
+                SELECT *
+                FROM items
+                ORDER BY score DESC, discovered_at DESC
+                LIMIT ?
+                """,
+                (limit,),
+            )
+        )
+
+    @staticmethod
+    def recent_events(connection: sqlite3.Connection, limit: int = 500) -> list[sqlite3.Row]:
+        return list(
+            connection.execute(
+                """
+                SELECT e.*, i.title, i.url, i.source, i.discovered_at, i.published_at
+                FROM financial_events e
+                JOIN items i ON i.id = e.document_id
+                ORDER BY e.processed_at DESC
+                LIMIT ?
+                """,
+                (limit,),
+            )
+        )
+
+    @staticmethod
+    def canonical_events(connection: sqlite3.Connection, limit: int = 500) -> list[sqlite3.Row]:
+        """One row per economic fact (first mention wins), with how many sources reported it.
+
+        Duplicate articles about the same transaction stay in `financial_events` as
+        provenance, but never reach the graph, timeline, or counts.
+        """
+        return list(
+            connection.execute(
+                """
+                SELECT e.*, ec.mention_count, ec.first_seen, ec.last_seen,
+                       i.title, i.url, i.source, i.discovered_at, i.published_at
+                FROM economic_events ec
+                JOIN financial_events e ON e.event_id = ec.canonical_event_id
+                JOIN items i ON i.id = e.document_id
+                ORDER BY ec.first_seen DESC
+                LIMIT ?
+                """,
+                (limit,),
+            )
+        )
+
+    @staticmethod
+    def canonical_event_count(connection: sqlite3.Connection) -> int:
+        row = connection.execute("SELECT COUNT(*) AS count FROM economic_events").fetchone()
+        return int(row["count"])
+
+    @staticmethod
+    def insert_observation(connection: sqlite3.Connection, observation: Observation) -> bool:
+        """Insert a measured observation. Returns False if it was already stored."""
+        cursor = connection.execute(
+            """
+            INSERT OR IGNORE INTO observations (
+                observation_id, variable_key, entity, value, unit, observed_at,
+                effective_date, confidence, source_document_id, evidence_text,
+                extractor, polarity
+            )
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                observation.observation_id,
+                observation.variable_key,
+                observation.entity,
+                observation.value,
+                observation.unit,
+                observation.observed_at.isoformat(),
+                observation.effective_date,
+                observation.confidence,
+                observation.source_document_id,
+                observation.evidence_text,
+                observation.extractor,
+                observation.polarity,
+            ),
+        )
+        return cursor.rowcount == 1
+
+    @staticmethod
+    def recent_observations(connection: sqlite3.Connection, limit: int = 1000) -> list[sqlite3.Row]:
+        return list(
+            connection.execute(
+                """
+            SELECT *
+            FROM observations
+            ORDER BY observed_at DESC
+            LIMIT ?
+            """,
+                (limit,),
+            )
+        )
+
+    @staticmethod
+    def count(connection: sqlite3.Connection) -> int:
+        row = connection.execute("SELECT COUNT(*) AS count FROM items").fetchone()
+        return int(row["count"])
+
+    @staticmethod
+    def event_count(connection: sqlite3.Connection) -> int:
+        row = connection.execute("SELECT COUNT(*) AS count FROM financial_events").fetchone()
+        return int(row["count"])
+
+    @staticmethod
+    def start_collector_run(connection: sqlite3.Connection, collector: str, started_at: str) -> int:
+        cur = connection.execute(
+            """
+            INSERT INTO collector_runs (collector, started_at, status)
+            VALUES (?, ?, 'running')
+            """,
+            (collector, started_at),
+        )
+        connection.commit()
+        assert cur.lastrowid is not None
+        return int(cur.lastrowid)
+
+    @staticmethod
+    def finish_collector_run(
+        connection: sqlite3.Connection,
+        run_id: int,
+        completed_at: str,
+        status: str,
+        items_seen: int,
+        items_new: int,
+        error: str | None = None,
+    ) -> None:
+        connection.execute(
+            """
+            UPDATE collector_runs
+            SET completed_at = ?, status = ?, items_seen = ?, items_new = ?, error = ?
+            WHERE id = ?
+            """,
+            (completed_at, status, items_seen, items_new, error, run_id),
+        )
+        connection.commit()
+
+    @staticmethod
+    def latest_runs(connection: sqlite3.Connection) -> list[sqlite3.Row]:
+        return list(
+            connection.execute(
+                """
+                SELECT cr.*
+                FROM collector_runs cr
+                INNER JOIN (
+                    SELECT collector, MAX(id) AS max_id
+                    FROM collector_runs
+                    GROUP BY collector
+                ) latest ON latest.max_id = cr.id
+                ORDER BY collector
+                """
+            )
+        )

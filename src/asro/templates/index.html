@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ASRO — AI Systemic Risk Observatory</title>
+<style>
+:root{color-scheme:dark;--bg:#05090d;--text:#ecf6f7;--muted:#81949d;--cool:#39d6c7;--warm:#ffd35a;--hot:#ff7a45;--danger:#ff425f}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,sans-serif}
+body{min-height:100vh;overflow-x:hidden}.shell{min-height:100vh;display:flex;flex-direction:column}
+.topbar{display:flex;justify-content:space-between;padding:20px 24px}.brand{display:flex;gap:10px;align-items:center;font-weight:800}.mark{color:var(--cool)}
+.meta{font-size:12px;color:var(--muted)}.hero{width:min(1180px,100%);margin:auto;flex:1;display:flex;flex-direction:column;padding:0 18px 20px}
+.thesis{text-align:center;max-width:820px;margin:12px auto 0}.thesis button{background:none;border:0;color:var(--text);font-size:clamp(19px,2.7vw,30px);line-height:1.25;font-weight:520;cursor:pointer}
+.hint{font-size:11px;color:var(--muted);margin-top:5px}.stage{position:relative;min-height:520px;flex:1;display:grid;place-items:center}
+#nebula{width:100%;height:100%;min-height:520px}.status{position:absolute;left:50%;top:49%;transform:translate(-50%,-50%);text-align:center;pointer-events:none;width:min(420px,75vw)}
+.status .kicker{font-size:11px;letter-spacing:.18em;color:var(--muted)}.status .state{font-size:clamp(25px,4vw,48px);font-weight:750;margin-top:6px}.status .dir{font-size:13px;margin-top:9px}.up{color:var(--warm)}.down{color:var(--cool)}.flat{color:var(--muted)}
+.score{font-size:11px;color:#607680;margin-top:7px}.timeline-wrap{width:min(1000px,96%);margin:0 auto}.timeline-head{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:7px}
+.track{position:relative;height:58px}.line{position:absolute;left:0;right:0;top:29px;height:1px;background:#263944}.tick{position:absolute;top:20px;width:18px;height:18px;border-radius:50%;border:2px solid var(--bg);background:var(--cool);cursor:pointer;transform:translateX(-50%)}
+.tick.high{background:var(--warm)}.tick.critical{background:var(--hot)}.tick:hover,.tick.active{scale:1.4}.labels{display:flex;justify-content:space-between;color:#536873;font-size:10px;margin-top:-5px}
+.detail{min-height:56px;width:min(850px,95%);margin:7px auto 0;text-align:center;color:var(--muted);font-size:13px;line-height:1.45}.detail strong{color:var(--text)}.detail a{color:var(--cool);text-decoration:none}
+.footer{display:flex;justify-content:space-between;gap:20px;width:min(1000px,95%);margin:12px auto 0;padding-top:12px;border-top:1px solid #102029;color:#607680;font-size:11px}
+.modal{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;padding:22px}.modal.open{display:flex}.card{width:min(700px,100%);background:#091118;border:1px solid #1c3340;border-radius:20px;padding:24px}.card p{color:#b6c5ca;line-height:1.65}.card button{border:1px solid #28434e;background:#0e1b23;color:var(--text);padding:9px 13px;border-radius:10px}
+@media(max-width:640px){.topbar{padding:16px}.meta{display:none}.hero{padding:0 8px 14px}.stage,#nebula{min-height:440px}.footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header class="topbar"><div class="brand"><span class="mark">✣</span> ASRO</div><div id="freshness" class="meta">Loading…</div></header>
+<main class="hero">
+<section class="thesis"><button id="thesisButton"></button><div class="hint">Click to understand what ASRO is testing</div></section>
+<section class="stage"><canvas id="nebula"></canvas><div class="status"><div class="kicker">THE HYPOTHESIS</div><div id="state" class="state">OBSERVING</div><div id="direction" class="dir flat">collecting evidence</div><div id="score" class="score"></div></div></section>
+<section class="timeline-wrap"><div class="timeline-head"><span>HOW THE SYSTEM GOT HERE</span><span id="range"></span></div><div id="track" class="track"><div class="line"></div></div><div class="labels"><span id="start"></span><span id="mid"></span><span id="end"></span></div></section>
+<div id="detail" class="detail">Select a point in the timeline to inspect what shifted the system.</div>
+<footer class="footer"><span>We don’t predict collapse. We track the conditions that make collapse possible.</span><span id="health"></span></footer>
+</main></div>
+<div id="modal" class="modal"><div class="card"><h2>What ASRO is testing</h2><p id="explain"></p><button id="close">Close</button></div></div>
+<script>
+const canvas=document.getElementById('nebula'),ctx=canvas.getContext('2d');let data,nodes=[],edges=[],particles=[];
+const sigColor=s=>s<25?'#39d6c7':s<45?'#7fd98d':s<65?'#ffd35a':s<80?'#ff7a45':'#ff425f';
+const edgeColor=t=>['GUARANTEES','LENDS_TO','ISSUES_DEBT','REFINANCES'].includes(t)?'#ffb84d':(['ENTERS_INDEX','ALLOCATES_TO','FILES_FOR_IPO'].includes(t)?'#9a72ff':(t==='INVESTS_IN'?'#65df86':'#52bdf7'));
+function hash(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}
+function rnd(s,a,b){return a+(hash(s)%10000)/10000*(b-a)}
+function layout(){const r=canvas.getBoundingClientRect(),w=r.width,h=r.height,m=Math.max(1,...(data.network.nodes||[]).map(n=>n.weight||1));nodes=(data.network.nodes||[]).map(n=>{const a=rnd(n.id+'a',0,Math.PI*2),rad=Math.pow(rnd(n.id+'r',.12,1),.72)*Math.min(w,h)*.39;return {...n,x:w/2+Math.cos(a)*rad,y:h/2+Math.sin(a)*rad*.73,r:3+11*Math.sqrt((n.weight||1)/m),p:rnd(n.id+'p',0,6.28)}});const map=Object.fromEntries(nodes.map(n=>[n.id,n]));edges=(data.network.edges||[]).map(e=>({...e,a:map[e.source],b:map[e.target]})).filter(e=>e.a&&e.b);particles=edges.slice(0,70).map((e,i)=>({e,t:rnd(e.source+e.target+i,0,1),v:.0005+rnd(e.type+i,.00025,.0011)}))}
+function resize(){const r=canvas.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);canvas.width=r.width*d;canvas.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);if(data)layout()}
+function draw(){const r=canvas.getBoundingClientRect(),w=r.width,h=r.height,col=data.signal.score==null?'#81949d':sigColor(data.signal.score);ctx.clearRect(0,0,w,h);const g=ctx.createRadialGradient(w/2,h/2,20,w/2,h/2,Math.min(w,h)*.46);g.addColorStop(0,col+'22');g.addColorStop(.38,col+'10');g.addColorStop(1,'#00000000');ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+for(let i=0;i<85;i++){ctx.fillStyle=`rgba(200,230,235,${.08+rnd('a'+i,0,.22)})`;ctx.beginPath();ctx.arc(rnd('x'+i,0,w),rnd('y'+i,0,h),rnd('z'+i,.3,1.1),0,6.28);ctx.fill()}
+edges.forEach(e=>{ctx.strokeStyle=edgeColor(e.type)+'45';ctx.lineWidth=Math.min(2.6,.5+(e.weight||1)*.35);ctx.beginPath();ctx.moveTo(e.a.x,e.a.y);ctx.lineTo(e.b.x,e.b.y);ctx.stroke()});
+const t=performance.now()/1000;nodes.forEach(n=>{const rr=n.r*(1+Math.sin(t+n.p)*.06),gg=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,rr*3.2);gg.addColorStop(0,col+'bb');gg.addColorStop(.3,col+'45');gg.addColorStop(1,'#00000000');ctx.fillStyle=gg;ctx.beginPath();ctx.arc(n.x,n.y,rr*3.2,0,6.28);ctx.fill();ctx.fillStyle='#e8ffff';ctx.beginPath();ctx.arc(n.x,n.y,Math.max(1.4,rr*.32),0,6.28);ctx.fill()});
+particles.forEach(p=>{p.t=(p.t+p.v*16)%1;const x=p.e.a.x+(p.e.b.x-p.e.a.x)*p.t,y=p.e.a.y+(p.e.b.y-p.e.a.y)*p.t;ctx.fillStyle=edgeColor(p.e.type);ctx.beginPath();ctx.arc(x,y,1.2,0,6.28);ctx.fill()});requestAnimationFrame(draw)}
+function date(s){const d=new Date(s);return isNaN(d)?null:d}
+function timeline(){const ev=(data.timeline||[]).filter(e=>date(e.date)),track=document.getElementById('track');if(!ev.length)return;const ds=ev.map(e=>date(e.date).getTime()),min=Math.min(...ds),max0=Math.max(...ds),max=max0===min?min+86400000:max0,mid=new Date((min+max)/2);document.getElementById('start').textContent=new Date(min).getFullYear();document.getElementById('mid').textContent=mid.getFullYear();document.getElementById('end').textContent=new Date(max).getFullYear();document.getElementById('range').textContent=`${new Date(min).toLocaleDateString()} → ${new Date(max).toLocaleDateString()}`;const stride=Math.max(1,Math.ceil(ev.length/80));ev.filter((_,i)=>i%stride===0||i===ev.length-1).forEach(e=>{const b=document.createElement('button');b.className='tick';if(['ENTERS_INDEX','GUARANTEES','ISSUES_DEBT'].includes(e.event_type))b.classList.add('critical');else if(Number(e.confidence||0)>.84)b.classList.add('high');b.style.left=`${(date(e.date).getTime()-min)/(max-min)*100}%`;b.addEventListener('click',()=>show(e,b));track.appendChild(b)})}
+function money(a,c){if(!a)return'';try{return new Intl.NumberFormat('en-US',{style:'currency',currency:c||'USD',notation:'compact',maximumFractionDigits:1}).format(a)}catch{return Number(a).toLocaleString()}}
+function show(e,b){document.querySelectorAll('.tick.active').forEach(x=>x.classList.remove('active'));b.classList.add('active');const rel=[e.source_entity,e.event_type?.replaceAll('_',' '),e.target_entity].filter(Boolean).join(' → ');document.getElementById('detail').innerHTML=`<strong>${date(e.date).toLocaleDateString()}</strong> · ${rel}${e.amount?' · '+money(e.amount,e.currency):''}<br>${e.evidence_text||e.title||''}${e.url?`<br><a href="${e.url}" target="_blank">Open source ↗</a>`:''}`}
+async function init(){const res=await fetch('./data/snapshot.json',{cache:'no-store'});data=await res.json();document.getElementById('thesisButton').textContent=data.thesis;document.getElementById('explain').textContent=data.thesis_explanation;document.getElementById('state').textContent=data.signal.label;const d=document.getElementById('direction'),sig=data.signal;d.textContent=sig.direction==='strengthening'?'THE HYPOTHESIS IS STRENGTHENING ↑':sig.direction==='weakening'?'THE HYPOTHESIS IS WEAKENING ↓':sig.direction==='stable'?'THE HYPOTHESIS IS STABLE →':'TREND NOT YET MEASURED';d.className='dir '+(sig.direction==='strengthening'?'up':sig.direction==='weakening'?'down':'flat');document.getElementById('score').textContent=sig.score==null?`${sig.gate_reason} · no index published`:`Convergence index ${sig.score}/100 · not a probability · ${sig.gate_reason}`;document.getElementById('freshness').textContent=`Updated ${new Date(data.generated_at).toLocaleString()}`;const runs=data.collector_runs||[],ok=runs.filter(r=>r.status==='ok').length;document.getElementById('health').textContent=`Sources healthy ${ok}/${runs.length} · ${data.event_count} economic events from ${data.mention_count} reports`;timeline();resize();draw()}
+document.getElementById('thesisButton').addEventListener('click',()=>document.getElementById('modal').classList.add('open'));document.getElementById('close').addEventListener('click',()=>document.getElementById('modal').classList.remove('open'));document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')e.currentTarget.classList.remove('open')});addEventListener('resize',resize);init();
+</script>
+</body></html>

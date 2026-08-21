@@ -1,0 +1,86 @@
+[monitor]
+request_delay_seconds = 0.4
+high_signal_threshold = 7
+report_limit = 500
+
+[news]
+queries = [
+  "\"OpenAI\" IPO",
+  "\"Anthropic\" IPO",
+  "\"SpaceX\" Nasdaq 100",
+  "\"Nasdaq-100\" \"fast entry\"",
+  "\"index inclusion\" AI IPO",
+  "\"AI data center\" debt",
+  "\"data center\" private credit AI",
+  "\"GPU-backed\" loan",
+  "\"GPU financing\"",
+  "\"vendor financing\" Nvidia AI",
+  "\"Nvidia\" guarantee OpenAI",
+  "\"Broadcom\" financing Anthropic",
+  "\"CoreWeave\" debt",
+  "\"Oracle\" AI debt financing",
+  "\"AI infrastructure\" refinancing",
+  "\"AI infrastructure\" credit spreads",
+  "\"401(k)\" private markets AI",
+  "\"target-date fund\" private markets",
+  "\"pension\" AI infrastructure",
+  "\"pension fund\" data center investment",
+  "\"retirement\" private credit AI",
+  "\"AI\" software cannibalization",
+  "\"AI model\" price cuts",
+  "\"AI inference\" price decline",
+  "\"AI margins\" OpenAI Anthropic",
+  "\"AI capex\" revenue gap",
+  "\"AI overcapacity\" data center",
+  "\"data center\" lease cancellation AI",
+]
+
+[entities]
+companies = [
+  "OpenAI",
+  "Anthropic",
+  "Nvidia",
+  "Microsoft",
+  "Amazon",
+  "AWS",
+  "Alphabet",
+  "Google",
+  "Oracle",
+  "CoreWeave",
+  "Broadcom",
+  "AMD",
+  "SoftBank",
+  "Apollo",
+  "Blackstone",
+  "BlackRock",
+  "Meta",
+  "SpaceX",
+]
+
+[[sec.companies]]
+name = "NVIDIA"
+cik = 1045810
+
+[[sec.companies]]
+name = "Microsoft"
+cik = 789019
+
+[[sec.companies]]
+name = "Amazon"
+cik = 1018724
+
+[[sec.companies]]
+name = "Alphabet"
+cik = 1652044
+
+[[sec.companies]]
+name = "Oracle"
+cik = 1341439
+
+[[sec.companies]]
+name = "Meta"
+cik = 1326801
+
+[[sec.companies]]
+name = "CoreWeave"
+cik = 1769628

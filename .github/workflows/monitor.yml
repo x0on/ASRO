@@ -1,0 +1,59 @@
+name: Hourly monitor
+
+# Collects, builds the static dashboard, commits the data, and deploys Pages —
+# all in one workflow. A push made with GITHUB_TOKEN does not trigger other
+# workflows, so the deploy cannot live in a separate push-triggered job.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: hourly-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: pip install -e .
+      - name: Collect and extract
+        env:
+          ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
+        run: asro run
+      - name: Build static site
+        run: asro build-site
+      - name: Commit updated observatory data
+        run: |
+          git config user.name "asro-bot"
+          git config user.email "asro-bot@users.noreply.github.com"
+          git add data/ site/
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: hourly observatory update"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
