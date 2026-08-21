@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T23:16:13.412397+00:00",
+  "generated_at": "2026-08-21T23:38:21.211146+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
-    "counter_evidence": 42.9,
-    "circularity": 57.1,
-    "capital": 52.15125962813687,
     "external_pressure": 61.1,
+    "counter_evidence": 42.9,
+    "transmission": 39.6,
     "stress": 57.1,
-    "cannibalization": 54.2,
+    "circularity": 57.1,
     "fragility": 61.1,
-    "transmission": 39.6
+    "capital": 52.15125962813687,
+    "cannibalization": 54.2,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "monetization": "directional_estimate",
-    "capital": "aggregate",
-    "stress": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
     "external_pressure": "directional_estimate",
     "fragility": "directional_estimate",
-    "transmission": "confirmed_trigger"
+    "circularity": "directional_estimate",
+    "capital": "aggregate",
+    "cannibalization": "directional_estimate",
+    "monetization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T23:38:20.849125+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"circularity\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"stress\": 57.1}"
+    },
     {
       "captured_at": "2026-08-21T23:16:12.784254+00:00",
       "score": 51.4,
@@ -3669,6 +3675,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:e57e9c32d2214d14dc88a22433dff0fe383e3b9f4433c3bd0e0464996f7b3bf8",
+        "label": "Anthropic Surpasses OpenAI in Revenue: Sprinting Toward the Largest IPO in History - 36 Kr",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fa1c4Z0ZBR2xyXzJtQTZadjRub2EtcXZNWDNVUWtwNUo1NmRfUDg0a0EtUGk3azFoMVhDczB0TlBULUU4TmdxSWFZWHVrRXZWLVNN?oc=5",
+        "date": "Thu, 20 Aug 2026 08:54:51 GMT",
+        "summary": "Anthropic Surpasses OpenAI in Revenue: Sprinting Toward the Largest IPO in History 36 Kr",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:123775f1cf076f7e92e4f36976e28cc1d1b8d9a7e0fd5004197a9f55b10638af",
         "label": "Tech stocks today: Nvidia earnings on the horizon, as Anthropic prepares IPO plans - Yahoo Finance",
         "kind": "evidence",
@@ -6057,6 +6075,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:ba161bf059915cd8b3e30de82b0dc26a7fc82b45fbd812feb5e84b0670a322b6",
+        "label": "SpaceXAI debuts Grok 4.6, overtaking Kimi K3's performance and vaulting to the world's fourth best on Artificial Analysis - VentureBeat",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "VentureBeat",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUWtpRDZFQVo3VzJ0OVNFZ0R6RE15ZURGaXV1cmJHYjdiSUhKQVpSWlNxaFdJYmxHeFNXNkVhRjlEZVdjX1Y4OVpwMXppSy15bElCOU1WX3FmdmtRZWJFZ2ViVkhraS1PLUNacWVGbXlPakxYSVRCLXVycnc5TnY3THQzWlNHeFF5aHdNRENVLW5EbExIRDdMTzcwaVU2OS16RWl5ZWJDMlMtcWtpWEVRNlUtNHFQOFRGMHBPZE1XM2ROU1F1bHp5NUxwVXppazFwQUVaMWhpV1Fyenk0M3hpeHc5TzRXWm1CZk41Rk5jQS1nVjA?oc=5",
+        "date": "Wed, 12 Aug 2026 07:00:00 GMT",
+        "summary": "SpaceXAI debuts Grok 4.6, overtaking Kimi K3's performance and vaulting to the world's fourth best on Artificial Analysis VentureBeat",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:81205d6f9f9ab0b63517611862a7fe136e4ff115eaa0a0bbd484b22ffbd9aa59",
         "label": "\ud83d\udea8 BABA EARNINGS DIP VS. $50B MOONSHOT IPO: Short-Term Trap or the Catalyst for a Massive Tech Rerating? \ud83d\ude80\ud83d\udca5 - Moomoo",
         "kind": "evidence",
@@ -6450,6 +6480,30 @@
         "date": "Thu, 28 May 2026 07:00:00 GMT",
         "summary": "Beyond the IPO frenzy: what Nasdaq\u2019s new \u2018Fast Entry\u2019 rules could mean for ETF investors Bitpanda",
         "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9ca6dd028903590c050666c2162f99f931bb0bb5c023eb8a88dd5beb9d631652",
+        "label": "OpenAI's New Revenue Officer Comes From Alphabet's Wiz 08/14/2026 - MediaPost",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "MediaPost",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRUFVNlpaMEtad1JYb25xUU11NjRqVmhWSXU4eFZNeGo3cmxmRUFqbHVyelJKM0phMFVrSHN3Z2p4YVhqTE5kYTIyS1FucTk2OXFxbllrNXNSaTlwcklZN3RSUUJQNm4zSklidWNYdDJ6b0dSci0xX3M5VG12VjQxa2otVUxOMW1lZDVLaFBMSFJUSmZzeU9FRXRpbEc0VzdiT2NjMmlrV1Y1dkU?oc=5",
+        "date": "Fri, 21 Aug 2026 17:16:55 GMT",
+        "summary": "OpenAI's New Revenue Officer Comes From Alphabet's Wiz 08/14/2026 MediaPost",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5bd65aa41df21939ec5d923790913195349b55ad1cfc79b988507ba409a73a3d",
+        "label": "IREN (IREN) On Microsoft And NVIDIA Validation With Valuation Still In Focus - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUFYyOE1HTTNQWUpJazBqOE5ZZFJlZEwwTTk1YVhTRTFlSGQ3S3dUYnhVeGxEbnpkTHFOTkJ3MFo5a0RpVzdTTGNRazJMYnA4bTYwbDJoT3RTandkcXFMd1BHMHJHTElyYU9FVnpRM1Y1VmpGR2FXWHNaTFJBcmtsNUIwWnlfUUYzQlJUTUxFOTd6bnMtUXlUWHNUYmgtNWRfd0JFOTFuY1FJblZfUGdEOWtNTDd1TWpicnYzNXg2a9IBxAFBVV95cUxNMW40Nk9hN3RiUzBDc256WnRkSXZfTWh5bXZyZGdCbG0zcXpkX3NJMWhzSkNadzJtY3E4N0tMbGlCRjFrREp3Q3BULUtlLUF1SWpfWTBwSXhZU2JiOFQ2MG95VjJoU1gzWEpWOThIaFI1bkxDaFhqUlhSZFlRS2FNOTRMcTRqSnBIUk5sRUY0SDFaZlRYVHpIQUhabXZQWVpFVDI4bDNsdkVsVWFXcGlkU3lFVHRDMk1Sb1VObDJfX1B6NE1X?oc=5",
+        "date": "Fri, 21 Aug 2026 22:38:31 GMT",
+        "summary": "IREN (IREN) On Microsoft And NVIDIA Validation With Valuation Still In Focus simplywall.st",
+        "score": 2,
         "weight": 1
       },
       {
@@ -7554,6 +7608,42 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f79a1cda3758a9a940be28094e1bd908f23c70c3d2262adc163c02ca02f8c670",
+        "label": "Marvell Technology (MRVL) Stock Fair Value Edges Higher After Google AI Partnership Expansion - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTDRaem5IYVhYOElFekVzbzAzWFZ5RHpySUU1TjY2MmIwd0Jjb1otLWIzLTg3VTBucWxmRXlqeXloVkdMME1hRE94SUdMZUVYMDY4dGhvRDJqS2NQTnlDSmVld1lSV016OTBoQXdldEs5OUxaQUlNaU9LbDBaMnN1QkJJbFpCUDhCUzNmSWdjR21zSmx0aW9DUzRldHFCRG9P?oc=5",
+        "date": "Fri, 21 Aug 2026 21:10:42 GMT",
+        "summary": "Marvell Technology (MRVL) Stock Fair Value Edges Higher After Google AI Partnership Expansion Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:cf3e51cbde17509ec5a68a3b41ad0ebe7352fb5243d295a402551db77d61b562",
+        "label": "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWVRTd2NDRG9waUtVV1RMLUdrQkxFSVlwV2JyRmNGekxnZUJvQkMyel9haUdfck5hdloySDBNRlFGVlVLM1E4a2lQQTlablJycE9WVUN6Uy1kTVRTWnR2MlV3TGVmQVZpZ09sa25jWld3WmR2R1BmRzdqN0E0WkpTaWRqRXctRWNJSEJiRE9tdU4?oc=5",
+        "date": "Fri, 21 Aug 2026 15:30:04 GMT",
+        "summary": "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:470632160c7a4ed8aff3380ee691f22599941df91ea36599770ef89fdfe853c8",
+        "label": "Nvidia in Talks With Chip Startup Rebellions for Potential Deal - Bloomberg.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYVdKT3RrZ2R6RXppSndKZ1E2NFRCUHp2Y0pHUkpxMFphcGJhWkxHZlgxTUd5cGt2Y3ZwLTFTbXBEeGlMWnJhX2ZnMW8yc2Myck5wU2pRaFdFUzJOQWYwdzFDS3F4UXJ1Qjg2MWpWOE9qaEpHTUtCS1FwLUJ3cVM3S1g2a2NoREUtWUFKLTBTelB1SWJicVFMcDZ0amR4NldhS1FGRkxKMllTX25hdE83SUF1N1o?oc=5",
+        "date": "Fri, 21 Aug 2026 07:45:43 GMT",
+        "summary": "Nvidia in Talks With Chip Startup Rebellions for Potential Deal Bloomberg.com",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10519,90 +10609,6 @@
         "summary": "Adobe and NVIDIA Announce Strategic Partnership to Deliver the Next Generation of Firefly Models and Creative, Marketing and Agentic Workflows Adobe Newsroom",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:5d6480794fc78d10d4464a47508d2f9b4744f6db2d5f4842567eced49e586c70",
-        "label": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026 - NVIDIA Newsroom",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "NVIDIA Newsroom",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTlZ3eURLTmdvaFlhVjRTR3d3TE5qSzBTSlhEN0tnRjJNQm9YSF9jOXpfaldkTzZ0OEpxV2JfY3NMZzE2ZWowcVFERk9RMzJucWJqbS01YmJlb0Q5Z0V6TXhKdXFUZHB1aFRvQ2pjdERKTUI5bXFYbGI3YkNiRDFkUHNjQnhjeXRuazVVUEVsUW9tOXUwTHVaNWtTVjcxdExYRGJQU093?oc=5",
-        "date": "Wed, 25 Feb 2026 08:00:00 GMT",
-        "summary": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026 NVIDIA Newsroom",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d7581b038aaa8a80210c295c0a10fb8719bfc6b6e5523ab0f3513163180b233c",
-        "label": "Intuit and Anthropic Partner to Bring Trusted Financial Intelligence and Custom AI Agents to Consumers and Businesses - Intuit",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Intuit",
-        "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNRmxKU2pTRnRHS0xxWDhYeWtXSW53aVZmaF92cUFFLUxJNUotdkVha2VERWJqVHdpNHR2bVAybV91ZHU5RVFBZ2syZnVWb0dZVEIwRWpWel9FSk52OE9tdW5OQ3pPRTFFcUdjbFhVV1BWRXJ5WWdWVUFyQkpkSDU5TnFOWUJkVGkxcW43ZWFDQ3FhbVJWWlBWSElpQ3BvdFpENFJKMjhWV2wzRU1UODRTNzE1Vk1fSXlPR3E1NTZ3MHdIUDEzR2I0TW50Zzd0MUVybWgtNHpYX210eWdhVWFFTmxGTEtDSGNzQjM0MHRZMGVWeGkySzRlMlBrNElBRjJkOE1pblNrWV9EVjg5dXF0SmpVSQ?oc=5",
-        "date": "Tue, 24 Feb 2026 08:00:00 GMT",
-        "summary": "Intuit and Anthropic Partner to Bring Trusted Financial Intelligence and Custom AI Agents to Consumers and Businesses Intuit",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:64f5792850fddb2a1d4747313dacb135bc9c372207eaca32a2b0d5715ef35fb3",
-        "label": "Anthropic, AI and The \u201cNumbers\u201d Problem - On my Om",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "On my Om",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBaZU1lODZrWDNqZlZjMXpqVmZfMUY3NFVXbE9HaXlVU2hCMzJCbUIzN0FXNkpCRmtfUWtzVDFYejgtTENxeW9UME1zUDJZbTJkQnRCUG96TXFscC1GWHhTMkNqejhaYmk5SGtKSjFyMA?oc=5",
-        "date": "Fri, 29 May 2026 07:00:00 GMT",
-        "summary": "Anthropic, AI and The \u201cNumbers\u201d Problem On my Om",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:63d255b604635e13f8dd05352cbf5cc32bdf334059a6fe723b5c16f94e66f7e2",
-        "label": "Introducing the Services Track and Partner Hub of the Claude Partner Network - Anthropic",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Anthropic",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5OSHlhS1hiNk9fQmJqWTJpQVpvRHFqNFNnSmVQemlpX0xBZWkxS0tGNVFxelhxTG1jR0NZRG9aNERIN3liMXZNdV9jRkJqRUw4b0pIUDdPX0psSlRtbFhNV21LeVJ4MjRP?oc=5",
-        "date": "Wed, 03 Jun 2026 07:00:00 GMT",
-        "summary": "Introducing the Services Track and Partner Hub of the Claude Partner Network Anthropic",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a84dedabb100d7a6a39bbf76bf53710da63e0e657c89cb5bdfc68ecf42289e8c",
-        "label": "Governor Newsom announces a first-of-its-kind partnership, providing Anthropic tools to state agencies and improving services for Californians - California State Portal | CA.gov",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "California State Portal | CA.gov",
-        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNNVdrb0JtdWt6OU1tU2FicENIa0R3SFBPaHVPYjJHQThPX1ZQR0dZNndHeEI1Nlo1eDVJMDJNQlJUOEcxZldnUUtGQVUyWEhrV29SMGhFMmpubEt6MWxUai0zdmluM1k4YTBNUVBkUmsyZUFwVXRpWVhpcDJKRnpBR1ppNjBMZXhoX0RNUTlOUERKenlyQkc4Tjd3aXh1ZHpzSV9wWGdvWlRDNHpsWUEwVE1BVS1ZVHYwVnNackQ0ejl4NElKVHpXS1NkX2VaMDA3TFRjX3kzVEloS3Q2S1Yzc1phekx0UjE1clFzQVN1NkZRb3VfMGZETWV3cXV6ZnNMQWUwSzNkOA?oc=5",
-        "date": "Mon, 29 Jun 2026 07:00:00 GMT",
-        "summary": "Governor Newsom announces a first-of-its-kind partnership, providing Anthropic tools to state agencies and improving services for Californians California State Portal | CA.gov",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4313d103f73a959daebe60711923af8e1b9e4489a867c36140be08c1a85b4e46",
-        "label": "Intuit and OpenAI Join Forces to Revolutionize Financial Intelligence, Powering Every Person, Business, and Dream with Personalized Experiences - Intuit",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Intuit",
-        "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxOWUZpclRRbG9uWHBoM0hZajFhUnhwRXJkN3VaZmdVcFc1SEVYRFhYelhRYzREbkNtTlFEODd1b0lZYzVIVk9FcjJjekV4eEoxWnpFbThwcDdaVy1EWE5uSWtHTjVzem5ab0JJemZIdlVJZW1JUmNmc2xCZU0tWDJpSWQwX2lTblloQmtpajg1TTl3R1ROa1N3WFNpcmkxUXJxd0ZPR2lRTFhIX3VYbGZCVUhVR1hGdk5ua0RzZ0hWbnE5WmZ1RlY1cWRLUTVwT25UQ2UyNzZJVGF5b2tqQm9jZV9oTVo1WU9yUWpralk2MTctRXNmWXVXNzhnQS1YNlg5VHl2akVoTWw1Y0ZVYjZ0eVhzSm5tNFg0MllSMVl2SUFhSGsyQS02QVYyMzMwT2FIbXc?oc=5",
-        "date": "Tue, 18 Nov 2025 08:00:00 GMT",
-        "summary": "Intuit and OpenAI Join Forces to Revolutionize Financial Intelligence, Powering Every Person, Business, and Dream with Personalized Experiences Intuit",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a31d0de4c9cba87f09243d2af17c6092ffbf27b602911321cafd74558911069d",
-        "label": "Getty Images Announces Display Partnership with OpenAI - Getty Images Newsroom",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Getty Images Newsroom",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2pGbG1LaXRfY2toamx1UTBUclNTLS1NczJ3TkRXQnVoM25yeHVlWVhqOUNyY195UTVXVk9PMm1PT2tSc3hrZW52LWRqbUdudzYxNTRGWU9Md0dONUhrOUxPSWJHZXFzb0JxOURjamthMFRwU2VSUWRmUnhabEJtRXFNdndSc19ham9TN0Rvdjd3eFV0WFNqZXVoc3dLYVpuUkpjdzBB?oc=5",
-        "date": "Sun, 21 Jun 2026 07:00:00 GMT",
-        "summary": "Getty Images Announces Display Partnership with OpenAI Getty Images Newsroom",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12589,6 +12595,20 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:e57e9c32d2214d14dc88a22433dff0fe383e3b9f4433c3bd0e0464996f7b3bf8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:e57e9c32d2214d14dc88a22433dff0fe383e3b9f4433c3bd0e0464996f7b3bf8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:123775f1cf076f7e92e4f36976e28cc1d1b8d9a7e0fd5004197a9f55b10638af",
         "type": "EVIDENCE",
         "weight": 1,
@@ -14058,6 +14078,27 @@
         "mentions": 1
       },
       {
+        "source": "Moonshot AI",
+        "target": "evidence:ba161bf059915cd8b3e30de82b0dc26a7fc82b45fbd812feb5e84b0670a322b6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:ba161bf059915cd8b3e30de82b0dc26a7fc82b45fbd812feb5e84b0670a322b6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "xAI",
+        "target": "evidence:ba161bf059915cd8b3e30de82b0dc26a7fc82b45fbd812feb5e84b0670a322b6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:1889a63fb9a6c98306e407011b8856141f3fe5b02020d7b738964976ee2d6dd9",
         "type": "EVIDENCE",
@@ -14368,6 +14409,34 @@
       {
         "source": "OpenAI",
         "target": "evidence:06600c95c2f5d695294bccb3ff4287570861bf67cd81eb6bf97b9687a284e151",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:9ca6dd028903590c050666c2162f99f931bb0bb5c023eb8a88dd5beb9d631652",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:9ca6dd028903590c050666c2162f99f931bb0bb5c023eb8a88dd5beb9d631652",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:5bd65aa41df21939ec5d923790913195349b55ad1cfc79b988507ba409a73a3d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:5bd65aa41df21939ec5d923790913195349b55ad1cfc79b988507ba409a73a3d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15530,6 +15599,27 @@
       {
         "source": "OpenAI",
         "target": "evidence:88724e1f94b43ef9dbf0f7ad1e3cc74a48bf0ee01004a1bfd190ddc08fae32d4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:f79a1cda3758a9a940be28094e1bd908f23c70c3d2262adc163c02ca02f8c670",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:cf3e51cbde17509ec5a68a3b41ad0ebe7352fb5243d295a402551db77d61b562",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:470632160c7a4ed8aff3380ee691f22599941df91ea36599770ef89fdfe853c8",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17259,55 +17349,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:71222a6958a6754c0e5a98abf13858424fd16506ad54fe592f43af97b3b712ae",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:5d6480794fc78d10d4464a47508d2f9b4744f6db2d5f4842567eced49e586c70",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:d7581b038aaa8a80210c295c0a10fb8719bfc6b6e5523ab0f3513163180b233c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:64f5792850fddb2a1d4747313dacb135bc9c372207eaca32a2b0d5715ef35fb3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:63d255b604635e13f8dd05352cbf5cc32bdf334059a6fe723b5c16f94e66f7e2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:a84dedabb100d7a6a39bbf76bf53710da63e0e657c89cb5bdfc68ecf42289e8c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:4313d103f73a959daebe60711923af8e1b9e4489a867c36140be08c1a85b4e46",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:a31d0de4c9cba87f09243d2af17c6092ffbf27b602911321cafd74558911069d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31538,23 +31579,23 @@
   ],
   "collector_runs": [
     {
-      "id": 107,
+      "id": 111,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T23:15:54.957619+00:00",
-      "completed_at": "2026-08-21T23:16:08.715821+00:00",
+      "started_at": "2026-08-21T23:37:47.776507+00:00",
+      "completed_at": "2026-08-21T23:38:16.757674+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 3,
+      "items_new": 5,
       "error": null
     },
     {
-      "id": 108,
+      "id": 112,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T23:16:09.117008+00:00",
-      "completed_at": "2026-08-21T23:16:09.477180+00:00",
+      "started_at": "2026-08-21T23:38:17.158815+00:00",
+      "completed_at": "2026-08-21T23:38:17.943765+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
@@ -31568,20 +31609,20 @@
       "error": null
     },
     {
-      "id": 106,
+      "id": 110,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T23:15:53.710758+00:00",
-      "completed_at": "2026-08-21T23:15:54.556582+00:00",
+      "started_at": "2026-08-21T23:37:46.321606+00:00",
+      "completed_at": "2026-08-21T23:37:47.375357+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 2,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 109,
+      "id": 113,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T23:16:09.878649+00:00",
-      "completed_at": "2026-08-21T23:16:12.373316+00:00",
+      "started_at": "2026-08-21T23:38:18.344853+00:00",
+      "completed_at": "2026-08-21T23:38:20.436679+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31598,7 +31639,7 @@
       "error": null
     }
   ],
-  "document_count": 1010,
+  "document_count": 1017,
   "event_count": 948,
   "mention_count": 2342,
   "review_counts": {
