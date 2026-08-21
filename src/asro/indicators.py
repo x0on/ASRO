@@ -21,6 +21,9 @@ def _normalize(value: float, scale: float) -> float:
 # more articles about the same condition accumulate.
 WINDOW_DAYS = 90
 MIN_DIMENSION_POINTS = 5
+MIN_DIRECTIONAL_POINTS = 1
+DIRECTIONAL_PRIOR_STRENGTH = 5
+DIRECTIONAL_MAX_DEVIATION = 25.0
 MAX_PLAUSIBLE_USD = 5_000_000_000_000.0
 
 
@@ -56,18 +59,25 @@ def compute_dimension_scores(
     window_days: int = WINDOW_DAYS,
 ) -> dict[str, float | None]:
     as_of = as_of or datetime.now(UTC)
-    buckets = _dimension_buckets(observations, as_of, window_days)
+    rows = list(observations)
+    buckets = _dimension_buckets(rows, as_of, window_days)
+    directional = _direction_buckets(rows, as_of, window_days)
 
     dimensions = {v.dimension.value for v in VARIABLES.values()}
     scores: dict[str, float | None] = {}
     for dimension in dimensions:
         points = buckets.get(dimension, [])
         required = min((point[1] for point in points), default=MIN_DIMENSION_POINTS)
-        scores[dimension] = (
-            None
-            if len(points) < required
-            else min(100.0, sum(point[0] for point in points) / len(points))
-        )
+        if len(points) >= required:
+            scores[dimension] = min(100.0, sum(point[0] for point in points) / len(points))
+            continue
+        direction_points = directional.get(dimension, [])
+        if len(direction_points) < MIN_DIRECTIONAL_POINTS:
+            scores[dimension] = None
+            continue
+        balance = sum(direction_points) / sum(abs(value) for value in direction_points)
+        support = len(direction_points) / (len(direction_points) + DIRECTIONAL_PRIOR_STRENGTH)
+        scores[dimension] = round(50.0 + DIRECTIONAL_MAX_DEVIATION * balance * support, 1)
     return scores
 
 
@@ -87,15 +97,23 @@ def dimension_evidence_basis(
     window_days: int = WINDOW_DAYS,
 ) -> dict[str, str]:
     """Explain whether a score is an aggregate estimate or an authoritative trigger."""
-    buckets = _dimension_buckets(observations, as_of or datetime.now(UTC), window_days)
-    return {
-        dimension: (
-            "confirmed_trigger"
-            if any(point[2] == "confirmed_trigger" for point in points)
-            else "aggregate"
-        )
-        for dimension, points in buckets.items()
-    }
+    rows = list(observations)
+    moment = as_of or datetime.now(UTC)
+    buckets = _dimension_buckets(rows, moment, window_days)
+    directional = _direction_buckets(rows, moment, window_days)
+    result: dict[str, str] = {}
+    for dimension in set(buckets) | set(directional):
+        points = buckets.get(dimension, [])
+        required = min((point[1] for point in points), default=MIN_DIMENSION_POINTS)
+        if any(point[2] == "confirmed_trigger" for point in points):
+            result[dimension] = "confirmed_trigger"
+        elif len(points) >= required:
+            result[dimension] = "aggregate"
+        elif len(directional.get(dimension, [])) >= MIN_DIRECTIONAL_POINTS:
+            result[dimension] = "directional_estimate"
+        else:
+            result[dimension] = "aggregate"
+    return result
 
 
 def dimension_directional_readings(
@@ -104,18 +122,7 @@ def dimension_directional_readings(
     window_days: int = WINDOW_DAYS,
 ) -> dict[str, dict[str, int | str]]:
     """Direction from confirmed evidence, without promoting it to a numeric score."""
-    readings: dict[str, list[float]] = defaultdict(list)
-    for obs in latest_observations(observations, as_of or datetime.now(UTC), window_days):
-        definition = VARIABLES.get(str(obs.get("variable_key")))
-        if definition is None:
-            continue
-        confidence = float(obs.get("confidence") or 0.0)
-        if confidence <= 0:
-            continue
-        polarity = str(obs.get("polarity") or "risk")
-        readings[definition.dimension.value].append(
-            -confidence if polarity == "safety" else confidence
-        )
+    readings = _direction_buckets(observations, as_of or datetime.now(UTC), window_days)
 
     result: dict[str, dict[str, int | str]] = {}
     for dimension, values in readings.items():
@@ -128,6 +135,24 @@ def dimension_directional_readings(
             direction = "mixed"
         result[dimension] = {"direction": direction, "evidence_count": len(values)}
     return result
+
+
+def _direction_buckets(
+    observations: Iterable[dict[str, Any]], as_of: datetime, window_days: int
+) -> dict[str, list[float]]:
+    readings: dict[str, list[float]] = defaultdict(list)
+    for obs in latest_observations(observations, as_of, window_days):
+        definition = VARIABLES.get(str(obs.get("variable_key")))
+        if definition is None:
+            continue
+        confidence = float(obs.get("confidence") or 0.0)
+        if confidence <= 0:
+            continue
+        polarity = str(obs.get("polarity") or "risk")
+        readings[definition.dimension.value].append(
+            -confidence if polarity == "safety" else confidence
+        )
+    return readings
 
 
 def overall_evidence_direction(readings: dict[str, dict[str, int | str]]) -> str:
@@ -232,7 +257,11 @@ def compute_convergence(dimensions: dict[str, float | None]) -> ConvergenceResul
     base = sum(known) / len(known)
     counter = dimensions.get("counter_evidence")
     if counter is not None:
-        base = max(0.0, base - (100.0 - counter) * COUNTER_EVIDENCE_WEIGHT)
+        # Counter-evidence uses the same risk-oriented scale as every other
+        # dimension: 50 is neutral and lower values are reassuring. Only the
+        # reassuring distance below neutral should reduce the headline score.
+        reassurance = max(0.0, 50.0 - counter)
+        base = max(0.0, base - reassurance * COUNTER_EVIDENCE_WEIGHT)
 
     propagation = _material(dimensions, PROPAGATION_GROUP)
     economics = _material(dimensions, ECONOMICS_GROUP)

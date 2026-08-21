@@ -52,6 +52,14 @@ def test_counter_evidence_reduces_convergence():
     assert b < a
 
 
+def test_neutral_counter_evidence_does_not_reduce_convergence() -> None:
+    dimensions = _all(70.0)
+    without_counter = compute_convergence(dimensions).score
+    dimensions["counter_evidence"] = 50.0
+
+    assert compute_convergence(dimensions).score == without_counter
+
+
 def _all(value: float | None) -> dict[str, float | None]:
     return {
         "capital": value,
@@ -123,7 +131,7 @@ def test_stale_observations_are_ignored() -> None:
     assert compute_dimension_scores([stale], as_of=as_of)["fragility"] is None
 
 
-def test_unquantified_money_is_evidence_but_not_a_numeric_score() -> None:
+def test_unquantified_money_creates_a_shrunk_directional_estimate() -> None:
     as_of = datetime(2026, 8, 21, tzinfo=UTC)
     observations = [
         {
@@ -132,16 +140,17 @@ def test_unquantified_money_is_evidence_but_not_a_numeric_score() -> None:
             "value": 1.0,
             "unit": "signal",
             "confidence": 0.72,
+            "polarity": "safety",
             "observed_at": "2026-08-20T00:00:00+00:00",
         }
         for entity in ("OpenAI", "Anthropic", "Nvidia")
     ]
 
-    assert compute_dimension_scores(observations, as_of=as_of)["monetization"] is None
+    assert compute_dimension_scores(observations, as_of=as_of)["monetization"] == 40.6
     assert dimension_evidence_counts(observations, as_of=as_of) == {}
 
 
-def test_dimension_requires_five_independent_eligible_points() -> None:
+def test_thin_directional_evidence_is_shrunk_until_five_numeric_points_exist() -> None:
     as_of = datetime(2026, 8, 21, tzinfo=UTC)
     two = [
         _obs(10_000_000_000, "2026-08-20T00:00:00+00:00", "Nvidia"),
@@ -154,7 +163,7 @@ def test_dimension_requires_five_independent_eligible_points() -> None:
         _obs(50_000_000_000, "2026-08-20T00:00:00+00:00", "Alphabet"),
     ]
 
-    assert compute_dimension_scores(two, as_of=as_of)["fragility"] is None
+    assert compute_dimension_scores(two, as_of=as_of)["fragility"] == 57.1
     assert compute_dimension_scores(five, as_of=as_of)["fragility"] is not None
     assert dimension_evidence_counts(five, as_of=as_of)["fragility"] == 5
 
@@ -177,7 +186,7 @@ def test_authoritative_binary_trigger_does_not_require_five_estimates() -> None:
     }
 
 
-def test_qualitative_evidence_sets_direction_without_creating_a_score() -> None:
+def test_qualitative_evidence_sets_direction_and_a_conservative_estimate() -> None:
     as_of = datetime(2026, 8, 21, tzinfo=UTC)
     observations = [
         {
@@ -192,10 +201,28 @@ def test_qualitative_evidence_sets_direction_without_creating_a_score() -> None:
         for entity in ("SpaceX", "CoreWeave")
     ]
 
-    assert compute_dimension_scores(observations, as_of=as_of)["stress"] is None
+    assert compute_dimension_scores(observations, as_of=as_of)["stress"] == 57.1
     assert dimension_directional_readings(observations, as_of=as_of)["stress"] == {
         "direction": "higher_pressure",
         "evidence_count": 2,
+    }
+
+
+def test_one_confirmed_directional_event_publishes_a_heavily_shrunk_estimate() -> None:
+    as_of = datetime(2026, 8, 21, tzinfo=UTC)
+    observation = {
+        "variable_key": "model_price_pressure",
+        "entity": "OpenAI",
+        "value": 1.0,
+        "unit": "signal",
+        "confidence": 0.99,
+        "polarity": "risk",
+        "observed_at": "2026-08-20T00:00:00+00:00",
+    }
+
+    assert compute_dimension_scores([observation], as_of=as_of)["cannibalization"] == 54.2
+    assert dimension_evidence_basis([observation], as_of=as_of) == {
+        "cannibalization": "directional_estimate"
     }
 
 

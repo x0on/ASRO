@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-21T20:26:14.765585+00:00",
+  "generated_at": "2026-08-21T20:39:49.914118+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": null,
-    "label": "INSUFFICIENT EVIDENCE",
+    "score": 59.3,
+    "label": "BUILDING PRESSURE",
     "direction": "unknown",
-    "known_dimensions": 2,
-    "gate_passed": false,
-    "gate_reason": "2 of 3 required dimensions measured",
+    "known_dimensions": 8,
+    "gate_passed": true,
+    "gate_reason": "material evidence in fragility and circularity",
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "fragility": null,
-    "cannibalization": null,
-    "external_pressure": null,
-    "monetization": null,
-    "stress": null,
-    "circularity": null,
-    "transmission": 99.0,
+    "external_pressure": 59.4,
+    "monetization": 42.9,
+    "counter_evidence": 45.8,
+    "cannibalization": 54.2,
     "capital": 52.15125962813687,
-    "counter_evidence": null
+    "stress": 57.1,
+    "transmission": 99.0,
+    "fragility": 61.1,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "transmission": 1,
@@ -32,15 +32,21 @@
     "circularity": 1
   },
   "dimension_basis": {
+    "external_pressure": "directional_estimate",
+    "monetization": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "stress": "aggregate",
-    "fragility": "aggregate",
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "cannibalization": "directional_estimate",
     "capital": "aggregate",
-    "external_pressure": "aggregate",
-    "counter_evidence": "aggregate",
-    "circularity": "aggregate"
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
+    "cannibalization": {
+      "direction": "higher_pressure",
+      "evidence_count": 1
+    },
     "transmission": {
       "direction": "higher_pressure",
       "evidence_count": 1
@@ -352,16 +358,16 @@
         "weight": 27
       },
       {
-        "id": "Anthropic",
-        "label": "Anthropic",
+        "id": "OpenAI",
+        "label": "OpenAI",
         "kind": "company",
         "weight": 19
       },
       {
-        "id": "OpenAI",
-        "label": "OpenAI",
+        "id": "Anthropic",
+        "label": "Anthropic",
         "kind": "company",
-        "weight": 18
+        "weight": 19
       },
       {
         "id": "CoreWeave",
@@ -500,6 +506,18 @@
         "label": "AMD",
         "kind": "company",
         "weight": 0
+      },
+      {
+        "id": "evidence:a72afac8ab77ad88fbb0da722993fc221616ecc4da1784385e1b7db1b57473b1",
+        "label": "OpenAI cuts GPT-5.6 Luna and Terra API prices",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "OpenAI pricing announcement",
+        "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+        "date": "2026-07-30",
+        "summary": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026.",
+        "score": 20,
+        "weight": 1
       },
       {
         "id": "evidence:457de413aa1d94ec83ba0fa120e3c749242f5b688d4598ab67f9a6a04a5443f1",
@@ -10088,18 +10106,6 @@
         "summary": "Oracle shares slide as hefty AI spending, debt plans spook investors Reuters",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:f3df4cbc3ac05b4bce5ffd8d82febfb311a66171e06b0bfd257768d6cb7241cf",
-        "label": "CoreWeave's new debt facility: beyond lower interest rate and $8.5 billion capacity - Deep Quarry",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Deep Quarry",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4yemc2ekEzWUJ2V21aWWdjOGdRb196NWR4RWxGNDFqejdndzhwRTFqOUdmUVNEeU5mMkQyUUJTWEliWkJYSDRaUE1zYmlxVDhpRUNlbjlERkEtM3luZEJMTzFCTk5NS3FqeDM2QU54MXlWUG5oRWNTVA?oc=5",
-        "date": "Sat, 04 Apr 2026 07:00:00 GMT",
-        "summary": "CoreWeave's new debt facility: beyond lower interest rate and $8.5 billion capacity Deep Quarry",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -10359,6 +10365,13 @@
         "source": "OpenAI",
         "target": "Alphabet",
         "type": "REVENUE_REPORT",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:a72afac8ab77ad88fbb0da722993fc221616ecc4da1784385e1b7db1b57473b1",
+        "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
@@ -16749,13 +16762,6 @@
       {
         "source": "Oracle",
         "target": "evidence:69bbbae3266f2523f0428c924735042a381971d67ac95194a77920268c8a91b3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:f3df4cbc3ac05b4bce5ffd8d82febfb311a66171e06b0bfd257768d6cb7241cf",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -29455,6 +29461,21 @@
     },
     {
       "date": "2026-07-30",
+      "event_type": "PRICE_CUT",
+      "source_entity": "OpenAI",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.99,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026.",
+      "title": "OpenAI cuts GPT-5.6 Luna and Terra API prices",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "source": "OpenAI pricing announcement"
+    },
+    {
+      "date": "2026-07-30",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": "Alphabet",
       "target_entity": "Amazon",
@@ -31016,12 +31037,12 @@
       "error": null
     }
   ],
-  "document_count": 979,
-  "event_count": 946,
-  "mention_count": 2340,
+  "document_count": 980,
+  "event_count": 947,
+  "mention_count": 2341,
   "review_counts": {
     "provisional": 0,
-    "confirmed": 255,
+    "confirmed": 256,
     "flagged": 691
   }
 }

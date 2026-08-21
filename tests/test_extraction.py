@@ -41,3 +41,15 @@ def test_no_event_without_rule_match() -> None:
     extractor = DeterministicEventExtractor(["Nvidia"])
     document = make_document("Nvidia announced a new product.")
     assert extractor.extract(document) == []
+
+
+def test_google_news_metadata_is_not_treated_as_alphabet() -> None:
+    extractor = DeterministicEventExtractor(["DeepSeek", "Google", "Alphabet"])
+    document = make_document("DeepSeek cuts prices for its flagship model - Reuters Google News")
+
+    events = extractor.extract(document)
+
+    assert len(events) == 1
+    assert events[0].event_type == EventType.PRICE_CUT
+    assert events[0].source_entity == "DeepSeek"
+    assert events[0].target_entity is None

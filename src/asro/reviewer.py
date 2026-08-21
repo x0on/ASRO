@@ -173,7 +173,10 @@ class EvidenceReviewer:
                 "instructions": (
                     "Act as a skeptical financial-evidence editor. Confirm an event only when the "
                     "quoted source evidence actually states that the event occurred or reports a "
-                    "specific measured result. Flag generic risk-factor language, hypothetical or "
+                    "specific measured result. A definite announcement that prices changed or will "
+                    "change on a stated schedule is evidence of a confirmed pricing decision; "
+                    "language such as considers, weighs, may, or could is not. Flag generic "
+                    "risk-factor language, hypothetical or "
                     "forward-looking possibilities, unsupported entities, incorrect event types, "
                     "and amounts that are not clearly supported by the excerpt. Also detect "
                     "duplicate economic facts: merge only when two inputs describe the same "

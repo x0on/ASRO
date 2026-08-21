@@ -20,7 +20,7 @@ class VerifiedFact:
     date: str
     event_type: EventType
     source_entity: str
-    target_entity: str
+    target_entity: str | None
     evidence: str
     amount: float | None = None
     currency: str | None = None
@@ -130,6 +130,17 @@ VERIFIED_LINEAGE: tuple[VerifiedFact, ...] = (
         "before market open on July 7, 2026. Nasdaq states that more than 200 "
         "investment products with over $800 billion in assets track the index.",
     ),
+    VerifiedFact(
+        "OpenAI cuts GPT-5.6 Luna and Terra API prices",
+        "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+        "OpenAI pricing announcement",
+        "2026-07-30",
+        EventType.PRICE_CUT,
+        "OpenAI",
+        None,
+        "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 "
+        "Terra would cost 20 percent less starting July 30, 2026.",
+    ),
 )
 
 
@@ -151,12 +162,18 @@ def seed_verified_lineage(repository: SqliteRepository) -> int:
                 category=(
                     Category.IPO
                     if fact.event_type in {EventType.COMPLETES_IPO, EventType.ENTERS_INDEX}
+                    else Category.CANNIBALIZATION
+                    if fact.event_type is EventType.PRICE_CUT
                     else Category.CREDIT
                     if fact.event_type
                     in {EventType.ASSUMES_DEBT, EventType.ISSUES_DEBT, EventType.REFINANCES}
                     else Category.GENERAL
                 ),
-                companies=[fact.source_entity, fact.target_entity],
+                companies=[
+                    company
+                    for company in (fact.source_entity, fact.target_entity)
+                    if company is not None
+                ],
             )
             if not repository.insert(connection, item):
                 continue
