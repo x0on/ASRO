@@ -45,6 +45,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          # Scheduled events keep the SHA that existed when they were queued.
+          # Always begin from the latest published main branch instead.
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
@@ -85,7 +90,11 @@ jobs:
             echo "No data changes."
           else
             git commit -m "data: hourly observatory update"
-            git push
+            # A source-only commit can land while collection is running. Replay
+            # the generated data commit on top of it instead of rejecting the
+            # monitor's push as non-fast-forward.
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
