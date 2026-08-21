@@ -118,6 +118,44 @@ def test_reviewer_commits_small_batches(tmp_path: Path) -> None:
         assert repo.review_counts(connection)["confirmed"] == 3
 
 
+def test_reviewer_ignores_unknown_ids_and_uses_one_decision_per_input(tmp_path: Path) -> None:
+    repo = SqliteRepository(tmp_path / "test.db")
+    with repo.connect() as connection:
+        fingerprint = _event(repo, connection, 1, "2026-08-31")
+        connection.commit()
+    batch = ReviewBatch(
+        decisions=[
+            ReviewDecision(
+                fingerprint="invented",
+                decision="flag",
+                canonical_fingerprint=None,
+                confidence=0.2,
+                reasoning="Unknown identifier.",
+            ),
+            ReviewDecision(
+                fingerprint=fingerprint,
+                decision="flag",
+                canonical_fingerprint=None,
+                confidence=0.6,
+                reasoning="First repeated decision.",
+            ),
+            ReviewDecision(
+                fingerprint=fingerprint,
+                decision="confirm",
+                canonical_fingerprint=None,
+                confidence=0.95,
+                reasoning="Final decision is directly supported.",
+            ),
+        ]
+    )
+    settings = Settings(database_path=tmp_path / "test.db", openai_api_key="test")
+
+    assert FakeReviewer(settings, repo, batch).run(limit=1) == 1
+    with repo.connect() as connection:
+        assert repo.review_counts(connection)["confirmed"] == 1
+        assert connection.execute("SELECT COUNT(*) FROM evidence_reviews").fetchone()[0] == 1
+
+
 def test_flagged_event_receives_one_source_aware_retry(tmp_path: Path) -> None:
     repo = SqliteRepository(tmp_path / "test.db")
     with repo.connect() as connection:

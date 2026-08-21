@@ -149,19 +149,24 @@ class EvidenceReviewer:
             return 0
         batch = self._request(rows)
         allowed = {str(row["fingerprint"]) for row in rows}
+        # Structured output guarantees shape, not that identifiers are unique or
+        # copied perfectly. Keep the final decision for each requested record and
+        # ignore invented identifiers; any omitted record remains queued.
         by_fingerprint = {decision.fingerprint: decision for decision in batch.decisions}
-        for decision in batch.decisions:
+        applied = 0
+        now = datetime.now(UTC).isoformat()
+        for row in rows:
+            decision = by_fingerprint.get(str(row["fingerprint"]))
+            if decision is None or decision.fingerprint not in allowed:
+                continue
             if decision.decision == "merge":
                 target = by_fingerprint.get(str(decision.canonical_fingerprint))
-                if target is None or target.decision != "confirm":
-                    raise ValueError("Every merge target must be confirmed in the same review")
-        seen: set[str] = set()
-        now = datetime.now(UTC).isoformat()
-        for decision in batch.decisions:
-            if decision.fingerprint not in allowed or decision.fingerprint in seen:
-                raise ValueError("Reviewer returned an unknown or repeated fingerprint")
-            if decision.decision == "merge" and decision.canonical_fingerprint not in allowed:
-                raise ValueError("Reviewer merge target must be in the reviewed batch")
+                if (
+                    decision.canonical_fingerprint not in allowed
+                    or target is None
+                    or target.decision != "confirm"
+                ):
+                    continue
             self._repository.apply_review(
                 connection,
                 decision.fingerprint,
@@ -172,8 +177,8 @@ class EvidenceReviewer:
                 self._settings.review_model,
                 now,
             )
-            seen.add(decision.fingerprint)
-        return len(seen)
+            applied += 1
+        return applied
 
     def _request(self, rows: list[dict[str, Any]]) -> ReviewBatch:
         schema = ReviewBatch.model_json_schema()
