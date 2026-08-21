@@ -35,7 +35,7 @@ class EvidenceReviewer:
         self._settings = settings
         self._repository = repository or SqliteRepository(settings.database_path)
 
-    def run(self, limit: int = 100, batch_size: int = 20) -> int:
+    def run(self, limit: int = 100, batch_size: int = 5) -> int:
         if limit < 1 or batch_size < 1:
             return 0
         reviewed = 0
@@ -49,14 +49,16 @@ class EvidenceReviewer:
                 ]
                 if not rows:
                     break
-                self._review_batch(connection, rows)
+                applied = self._review_batch(connection, rows)
+                if applied == 0:
+                    raise ValueError("Reviewer returned no valid decisions")
                 connection.commit()
-                reviewed += len(rows)
+                reviewed += applied
         return reviewed
 
-    def _review_batch(self, connection: Any, rows: list[dict[str, Any]]) -> None:
+    def _review_batch(self, connection: Any, rows: list[dict[str, Any]]) -> int:
         if not rows:
-            return
+            return 0
         batch = self._request(rows)
         allowed = {str(row["fingerprint"]) for row in rows}
         by_fingerprint = {decision.fingerprint: decision for decision in batch.decisions}
@@ -83,8 +85,7 @@ class EvidenceReviewer:
                 now,
             )
             seen.add(decision.fingerprint)
-        if seen != allowed:
-            raise ValueError("Reviewer omitted one or more provisional events")
+        return len(seen)
 
     def _request(self, rows: list[dict[str, Any]]) -> ReviewBatch:
         schema = ReviewBatch.model_json_schema()
