@@ -5,6 +5,7 @@ import time
 
 import typer
 
+from asro.reviewer import EvidenceReviewer
 from asro.service import MonitorService, RunSummary
 from asro.settings import Settings
 from asro.site import build_static_site
@@ -105,3 +106,14 @@ def build_site() -> None:
     """Build the zero-server static dashboard into ./site."""
     path = build_static_site()
     typer.echo(f"Static site built at: {path}")
+
+
+@app.command()
+def review(limit: int = 100) -> None:
+    """Review provisional economic events with the configured evidence-review model."""
+    try:
+        reviewed = EvidenceReviewer(Settings()).run(limit=limit)
+    except (ValueError, OSError) as exc:
+        typer.echo(f"Evidence review failed: {exc}", err=True)
+        raise typer.Exit(code=1) from exc
+    typer.echo(f"Reviewed {reviewed} provisional economic events.")

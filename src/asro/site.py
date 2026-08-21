@@ -85,6 +85,7 @@ def _build_timeline(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 "currency": event.get("currency"),
                 "confidence": event.get("confidence"),
                 "mentions": event.get("mention_count") or 1,
+                "review_status": event.get("review_status") or "provisional",
                 "evidence_text": event.get("evidence_text"),
                 "title": event.get("title"),
                 "url": event.get("url"),
@@ -109,6 +110,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         runs = _safe_rows(repository.latest_runs(connection))
         observations = _safe_rows(repository.recent_observations(connection, limit=2000))
         history = _safe_rows(repository.recent_snapshots(connection, limit=365))
+        review_counts = repository.review_counts(connection)
 
     dimensions = compute_dimension_scores(observations)
     convergence = compute_convergence(dimensions)
@@ -126,6 +128,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         "document_count": len(items),
         "event_count": len(events),
         "mention_count": mention_count,
+        "review_counts": review_counts,
     }
 
     (data_dir / "snapshot.json").write_text(

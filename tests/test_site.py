@@ -34,6 +34,7 @@ def test_build_static_site_on_empty_db_reports_insufficient_evidence(tmp_path: P
     assert (out / ".nojekyll").exists()
     payload = json.loads((out / "data" / "snapshot.json").read_text())
     assert payload["event_count"] == 0
+    assert payload["review_counts"] == {"provisional": 0, "confirmed": 0, "flagged": 0}
     assert payload["signal"]["score"] is None
     assert payload["signal"]["label"] == "INSUFFICIENT EVIDENCE"
     assert payload["signal"]["direction"] == "unknown"

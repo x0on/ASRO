@@ -7,6 +7,7 @@ from pydantic import BaseModel, Field
 
 class Observation(BaseModel):
     observation_id: str
+    event_id: str
     variable_key: str
     entity: str | None = None
     value: float

@@ -205,6 +205,7 @@ asro report
 asro db-stats
 asro freshness
 asro watch
+asro review
 ```
 
 ## Configuration
@@ -254,6 +255,24 @@ Collectors should:
 6. Make every relationship auditable back to source material.
 7. Prefer APIs / feeds / filings over HTML scraping.
 8. Use browser automation only when necessary.
+
+## Provisional evidence and daily review
+
+New economic events appear immediately as **provisional**, so the public observatory can
+show developing activity without pretending every first report is final. A daily evidence
+reviewer compares provisional events and records one of three auditable decisions:
+
+- **confirmed** — this is a distinct economic event
+- **merged** — another report describes an existing event
+- **flagged** — conflicting or uncertain evidence needs human review
+
+The reviewer never deletes source reports or silently rewrites evidence. Its decision,
+confidence, reasoning, model and timestamp are stored in `evidence_reviews`. The public
+dashboard shows how many events are awaiting review and labels provisional timeline entries.
+
+The OpenAI API key must be stored as the GitHub Actions secret `ASRO_OPENAI_API_KEY`; it must
+never appear in this repository or in browser-side code. The static site receives generated
+JSON only. Set `ASRO_REVIEW_MODEL` to override the default reviewer model.
 
 ## Responsible crawling
 

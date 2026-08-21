@@ -35,6 +35,7 @@ def event_to_observation(event: FinancialEvent) -> Observation | None:
     fingerprint = "|".join([event.event_id, variable_key, event.source_entity or "", str(value)])
     return Observation(
         observation_id=hashlib.sha256(fingerprint.encode()).hexdigest(),
+        event_id=event.event_id,
         variable_key=variable_key,
         entity=event.source_entity,
         value=float(value),

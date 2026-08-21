@@ -7,7 +7,14 @@ name: Hourly monitor
 on:
   schedule:
     - cron: "17 * * * *"
+    - cron: "47 3 * * *"
   workflow_dispatch:
+    inputs:
+      review:
+        description: "Run the private evidence reviewer after collection"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -37,6 +44,12 @@ jobs:
         env:
           ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
         run: asro run
+      - name: Daily evidence review
+        if: github.event.schedule == '47 3 * * *' || inputs.review
+        env:
+          ASRO_OPENAI_API_KEY: ${{ secrets.ASRO_OPENAI_API_KEY }}
+          ASRO_REVIEW_MODEL: ${{ vars.ASRO_REVIEW_MODEL || 'gpt-4.1-mini' }}
+        run: asro review
       - name: Build static site
         run: asro build-site
       - name: Commit updated observatory data

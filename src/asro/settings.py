@@ -14,6 +14,8 @@ class Settings(BaseSettings):
     # The packaged default; point ASRO_CONFIG_PATH at your own copy to customise.
     config_path: Path = Path(str(files("asro") / "default.toml"))
     poll_interval_minutes: int = 60
+    openai_api_key: str = ""
+    review_model: str = "gpt-4.1-mini"
 
     model_config = SettingsConfigDict(
         env_prefix="ASRO_",

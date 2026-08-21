@@ -17,5 +17,6 @@ def test_event_maps_to_observation():
     )
     obs = event_to_observation(event)
     assert obs is not None
+    assert obs.event_id == "e1"
     assert obs.variable_key == "vendor_financing"
     assert obs.value == 30_000_000_000

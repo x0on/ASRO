@@ -50,7 +50,11 @@ class SqliteRepository:
                 canonical_event_id TEXT NOT NULL,
                 first_seen TEXT NOT NULL,
                 last_seen TEXT NOT NULL,
-                mention_count INTEGER NOT NULL DEFAULT 1
+                mention_count INTEGER NOT NULL DEFAULT 1,
+                review_status TEXT NOT NULL DEFAULT 'provisional',
+                reviewed_at TEXT,
+                reviewer_model TEXT,
+                merged_into TEXT
             );
 
             CREATE TABLE IF NOT EXISTS system_snapshots (
@@ -88,6 +92,7 @@ class SqliteRepository:
 
             CREATE TABLE IF NOT EXISTS observations (
                 observation_id TEXT PRIMARY KEY,
+                event_id TEXT,
                 variable_key TEXT NOT NULL,
                 entity TEXT,
                 value REAL NOT NULL,
@@ -118,8 +123,33 @@ class SqliteRepository:
                 items_new INTEGER NOT NULL DEFAULT 0,
                 error TEXT
             );
+
+            CREATE TABLE IF NOT EXISTS evidence_reviews (
+                review_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                fingerprint TEXT NOT NULL,
+                decision TEXT NOT NULL,
+                canonical_fingerprint TEXT,
+                confidence REAL NOT NULL,
+                reasoning TEXT NOT NULL,
+                model TEXT NOT NULL,
+                reviewed_at TEXT NOT NULL
+            );
             """
         )
+        columns = {row[1] for row in connection.execute("PRAGMA table_info(economic_events)")}
+        for name, declaration in {
+            "review_status": "TEXT NOT NULL DEFAULT 'provisional'",
+            "reviewed_at": "TEXT",
+            "reviewer_model": "TEXT",
+            "merged_into": "TEXT",
+        }.items():
+            if name not in columns:
+                connection.execute(f"ALTER TABLE economic_events ADD COLUMN {name} {declaration}")
+        observation_columns = {
+            row[1] for row in connection.execute("PRAGMA table_info(observations)")
+        }
+        if "event_id" not in observation_columns:
+            connection.execute("ALTER TABLE observations ADD COLUMN event_id TEXT")
         connection.commit()
 
     @staticmethod
@@ -289,11 +319,13 @@ class SqliteRepository:
         return list(
             connection.execute(
                 """
-                SELECT e.*, ec.mention_count, ec.first_seen, ec.last_seen,
+                SELECT e.*, ec.fingerprint, ec.mention_count, ec.first_seen, ec.last_seen,
+                       ec.review_status, ec.reviewed_at,
                        i.title, i.url, i.source, i.discovered_at, i.published_at
                 FROM economic_events ec
                 JOIN financial_events e ON e.event_id = ec.canonical_event_id
                 JOIN items i ON i.id = e.document_id
+                WHERE ec.review_status != 'merged'
                 ORDER BY ec.first_seen DESC
                 LIMIT ?
                 """,
@@ -303,7 +335,9 @@ class SqliteRepository:
 
     @staticmethod
     def canonical_event_count(connection: sqlite3.Connection) -> int:
-        row = connection.execute("SELECT COUNT(*) AS count FROM economic_events").fetchone()
+        row = connection.execute(
+            "SELECT COUNT(*) AS count FROM economic_events WHERE review_status != 'merged'"
+        ).fetchone()
         return int(row["count"])
 
     @staticmethod
@@ -312,14 +346,15 @@ class SqliteRepository:
         cursor = connection.execute(
             """
             INSERT OR IGNORE INTO observations (
-                observation_id, variable_key, entity, value, unit, observed_at,
+                observation_id, event_id, variable_key, entity, value, unit, observed_at,
                 effective_date, confidence, source_document_id, evidence_text,
                 extractor, polarity
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 observation.observation_id,
+                observation.event_id,
                 observation.variable_key,
                 observation.entity,
                 observation.value,
@@ -334,6 +369,107 @@ class SqliteRepository:
             ),
         )
         return cursor.rowcount == 1
+
+    @staticmethod
+    def provisional_events(connection: sqlite3.Connection, limit: int = 100) -> list[sqlite3.Row]:
+        return list(
+            connection.execute(
+                """
+                SELECT ec.fingerprint, ec.canonical_event_id, ec.first_seen, ec.last_seen,
+                       ec.mention_count, e.event_type, e.source_entity, e.target_entity,
+                       e.amount, e.currency, e.effective_date, e.evidence_text,
+                       i.title, i.url, i.source, i.published_at
+                FROM economic_events ec
+                JOIN financial_events e ON e.event_id = ec.canonical_event_id
+                JOIN items i ON i.id = e.document_id
+                WHERE ec.review_status = 'provisional'
+                ORDER BY ec.first_seen
+                LIMIT ?
+                """,
+                (limit,),
+            )
+        )
+
+    @staticmethod
+    def apply_review(
+        connection: sqlite3.Connection,
+        fingerprint: str,
+        decision: str,
+        canonical_fingerprint: str | None,
+        confidence: float,
+        reasoning: str,
+        model: str,
+        reviewed_at: str,
+    ) -> None:
+        connection.execute(
+            """
+            INSERT INTO evidence_reviews (
+                fingerprint, decision, canonical_fingerprint, confidence,
+                reasoning, model, reviewed_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                fingerprint,
+                decision,
+                canonical_fingerprint,
+                confidence,
+                reasoning,
+                model,
+                reviewed_at,
+            ),
+        )
+        if decision == "merge" and canonical_fingerprint and canonical_fingerprint != fingerprint:
+            source = connection.execute(
+                """
+                SELECT canonical_event_id, mention_count
+                FROM economic_events WHERE fingerprint = ?
+                """,
+                (fingerprint,),
+            ).fetchone()
+            target = connection.execute(
+                "SELECT 1 FROM economic_events WHERE fingerprint = ? AND review_status != 'merged'",
+                (canonical_fingerprint,),
+            ).fetchone()
+            if source is None or target is None:
+                raise ValueError("Reviewer referenced an unknown or merged canonical event")
+            connection.execute(
+                """
+                UPDATE economic_events SET mention_count = mention_count + ?
+                WHERE fingerprint = ?
+                """,
+                (source["mention_count"], canonical_fingerprint),
+            )
+            connection.execute(
+                "DELETE FROM observations WHERE event_id = ?", (source["canonical_event_id"],)
+            )
+            connection.execute(
+                """
+                UPDATE economic_events
+                SET review_status = 'merged', reviewed_at = ?, reviewer_model = ?, merged_into = ?
+                WHERE fingerprint = ?
+                """,
+                (reviewed_at, model, canonical_fingerprint, fingerprint),
+            )
+        else:
+            status = "confirmed" if decision == "confirm" else "flagged"
+            connection.execute(
+                """
+                UPDATE economic_events
+                SET review_status = ?, reviewed_at = ?, reviewer_model = ?
+                WHERE fingerprint = ?
+                """,
+                (status, reviewed_at, model, fingerprint),
+            )
+
+    @staticmethod
+    def review_counts(connection: sqlite3.Connection) -> dict[str, int]:
+        counts = {"provisional": 0, "confirmed": 0, "flagged": 0}
+        for row in connection.execute(
+            "SELECT review_status, COUNT(*) count FROM economic_events GROUP BY review_status"
+        ):
+            if row["review_status"] in counts:
+                counts[row["review_status"]] = int(row["count"])
+        return counts
 
     @staticmethod
     def recent_observations(connection: sqlite3.Connection, limit: int = 1000) -> list[sqlite3.Row]:
