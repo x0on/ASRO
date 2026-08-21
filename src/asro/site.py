@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from asro.dictionary.registry import VARIABLES
-from asro.entities import canonicalize_many
+from asro.entities import canonicalize, canonicalize_many
 from asro.indicators import (
     compute_convergence,
     compute_dimension_scores,
@@ -52,8 +52,10 @@ def _build_network(
     node_counts: Counter[str] = Counter()
 
     for event in events:
-        source = event.get("source_entity")
-        target = event.get("target_entity")
+        raw_source = event.get("source_entity")
+        raw_target = event.get("target_entity")
+        source = canonicalize(str(raw_source)) if raw_source else None
+        target = canonicalize(str(raw_target)) if raw_target else None
         event_type = event.get("event_type") or "RELATIONSHIP"
 
         if source:
@@ -67,7 +69,8 @@ def _build_network(
     prepared_items: list[tuple[dict[str, Any], list[str]]] = []
     for item in items or []:
         try:
-            companies = json.loads(item.get("companies") or "[]")
+            raw_companies = json.loads(item.get("companies") or "[]")
+            companies = canonicalize_many([str(value) for value in raw_companies if value])
         except (json.JSONDecodeError, TypeError):
             companies = []
         prepared_items.append((item, companies))
@@ -140,8 +143,8 @@ def _build_timeline(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
             {
                 "date": str(when),
                 "event_type": event.get("event_type"),
-                "source_entity": event.get("source_entity"),
-                "target_entity": event.get("target_entity"),
+                "source_entity": canonicalize(event.get("source_entity")),
+                "target_entity": canonicalize(event.get("target_entity")),
                 "amount": event.get("amount"),
                 "currency": event.get("currency"),
                 "confidence": event.get("confidence"),

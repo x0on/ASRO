@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T20:23:11.033419+00:00",
+  "generated_at": "2026-08-21T20:24:38.904937+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": null,
-    "circularity": null,
-    "external_pressure": null,
-    "cannibalization": null,
     "counter_evidence": null,
-    "fragility": null,
-    "capital": 52.15125962813687,
+    "external_pressure": null,
     "stress": null,
+    "circularity": null,
+    "capital": 52.15125962813687,
+    "monetization": null,
+    "fragility": null,
+    "cannibalization": null,
     "transmission": 99.0
   },
   "dimension_evidence": {
@@ -382,6 +382,12 @@
         "weight": 5
       },
       {
+        "id": "X (Twitter)",
+        "label": "X (Twitter)",
+        "kind": "company",
+        "weight": 5
+      },
+      {
         "id": "xAI",
         "label": "xAI",
         "kind": "company",
@@ -398,18 +404,6 @@
         "label": "Alibaba",
         "kind": "company",
         "weight": 3
-      },
-      {
-        "id": "X (Twitter)",
-        "label": "X (Twitter)",
-        "kind": "company",
-        "weight": 3
-      },
-      {
-        "id": "X Holdings",
-        "label": "X Holdings",
-        "kind": "company",
-        "weight": 2
       },
       {
         "id": "Blackstone",
@@ -466,12 +460,6 @@
         "weight": 0
       },
       {
-        "id": "Google",
-        "label": "Google",
-        "kind": "company",
-        "weight": 0
-      },
-      {
         "id": "Baidu",
         "label": "Baidu",
         "kind": "company",
@@ -480,12 +468,6 @@
       {
         "id": "Moonshot AI",
         "label": "Moonshot AI",
-        "kind": "company",
-        "weight": 0
-      },
-      {
-        "id": "AWS",
-        "label": "AWS",
         "kind": "company",
         "weight": 0
       },
@@ -10179,20 +10161,6 @@
         "mentions": 1
       },
       {
-        "source": "X Holdings",
-        "target": "X (Twitter)",
-        "type": "ACQUIRES",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "X (Twitter)",
-        "target": "X Holdings",
-        "type": "ASSUMES_DEBT",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
         "source": "xAI",
         "target": "X (Twitter)",
         "type": "ACQUIRES",
@@ -10447,20 +10415,6 @@
       {
         "source": "X (Twitter)",
         "target": "evidence:202f348a2edf5535f8354aad0cda399fa9874b9b8408340201e9a24a2ed8eb8d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "X Holdings",
-        "target": "evidence:202f348a2edf5535f8354aad0cda399fa9874b9b8408340201e9a24a2ed8eb8d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "X Holdings",
-        "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -11768,7 +11722,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:7e3204b9b49eb2feff33ce7cee1bd409b7e9308913b15e81b28aaf9a5cafa76a",
         "type": "EVIDENCE",
         "weight": 1,
@@ -11922,7 +11876,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:a2db3f0c03c84d251dbc995e57e6d9947fe160682c37d27b4f42b52aed32f349",
         "type": "EVIDENCE",
         "weight": 1,
@@ -11936,7 +11890,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:3cc558e1b9e4a83a11be8b439b33b607d983103c542604e092ee527e540f6239",
         "type": "EVIDENCE",
         "weight": 1,
@@ -12104,7 +12058,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:4b0cb0e903058f6009903152c0bff2115cce201ca3f841b2b08c77f29b1ec80d",
         "type": "EVIDENCE",
         "weight": 1,
@@ -12162,13 +12116,6 @@
       {
         "source": "SoftBank",
         "target": "evidence:146eb572ae35beda4ca5a07736f26a3fa2c3fe94bc054c3824ea15d0c4114263",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AWS",
-        "target": "evidence:6996ccbd6b623f3a8d1fde769d3d2bbea960a8b532241416e025ea060bbfe1fb",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -12692,13 +12639,6 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
-        "target": "evidence:307abd332ce0cf0f8675e9e92b220ab1abf1a0f39f1756126123c7f3fc1422ae",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
         "source": "Amazon",
         "target": "evidence:307abd332ce0cf0f8675e9e92b220ab1abf1a0f39f1756126123c7f3fc1422ae",
         "type": "EVIDENCE",
@@ -13161,22 +13101,15 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:6393536a7b3b884d80593cb4153c8864a75aabc29ed255daf2d5450934a06ad6",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:11f155fe00212aed3c02dc4cd90ace3b5933b08d82657508566f1766ac023567",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AWS",
-        "target": "evidence:1d44447a71454b88d84761b581a7d81a72fdcf49776d4b5fbfd9862c6c5f3c52",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -13301,7 +13234,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:771715fee138a1a08ecde7478753dc01730a3da07ce60d9b8739abfe5f971dbb",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13637,13 +13570,6 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
-        "target": "evidence:abebd2f77830976ca1ffe1c26ad5fe8a97da8bfa13962079d2342fe83c1019f2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
         "source": "Amazon",
         "target": "evidence:abebd2f77830976ca1ffe1c26ad5fe8a97da8bfa13962079d2342fe83c1019f2",
         "type": "EVIDENCE",
@@ -13707,7 +13633,7 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
+        "source": "Amazon",
         "target": "evidence:e22039d47a81fc54a88f2d85fef10367af62546ca61f9f7cb44ab94b70b1c1b5",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13721,7 +13647,7 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
+        "source": "Amazon",
         "target": "evidence:790437c0d9f2af939a5bf78e369f3afaf89d9bcac6223d86dcd67ff43624b3f8",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13966,14 +13892,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
-        "target": "evidence:1c6b0f9ded7bd621ac2ab785d1a871bd41d685f636e464447570dfe9447234d1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AWS",
+        "source": "Amazon",
         "target": "evidence:91ec9416460005f99ebcab91ef849dc44725f3f2bcf7ec9dd28beadc42b01377",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13987,7 +13906,7 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
+        "source": "Amazon",
         "target": "evidence:216463457caf5e075f1f8b999a48c0d5ca9f52eb85800df75712b4e35126fb52",
         "type": "EVIDENCE",
         "weight": 1,
@@ -14001,22 +13920,8 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
-        "target": "evidence:45f65534a2e3a4a079cd3a61fec1947f713f547d2fb13fa18a5ffb717f328ee9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
         "source": "Amazon",
         "target": "evidence:45f65534a2e3a4a079cd3a61fec1947f713f547d2fb13fa18a5ffb717f328ee9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AWS",
-        "target": "evidence:4f23011421d2a7f688af6928d8ca9d86463ab21435138689b52924431e920c1d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -14029,7 +13934,7 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
+        "source": "Amazon",
         "target": "evidence:543400e629cab0b57f7f64165d7d6c2e3edce434190d3dbfa7084b5f83b9e7d6",
         "type": "EVIDENCE",
         "weight": 1,
@@ -14043,22 +13948,8 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
-        "target": "evidence:7abc9085f6d5002dec280933737228a34fe8a130fbfd648c739f22528303a523",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
         "source": "Amazon",
         "target": "evidence:7abc9085f6d5002dec280933737228a34fe8a130fbfd648c739f22528303a523",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AWS",
-        "target": "evidence:6a0375a648fe82c7d22ae73094989105112a21ef7729bfe4e0f6da1fbf3abffd",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -14337,7 +14228,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:88724e1f94b43ef9dbf0f7ad1e3cc74a48bf0ee01004a1bfd190ddc08fae32d4",
         "type": "EVIDENCE",
         "weight": 1,
@@ -15009,7 +14900,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:49aed8baaffbc075eda0759699c9c6f4b09c16670679eaeedfb01e19e59ffbc2",
         "type": "EVIDENCE",
         "weight": 1,
@@ -15534,56 +15425,56 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:f10eafa2bd3f5525677891dd98c5270576587154f6f6059be73813abecf9908c",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:6a831d2c7c53f10fa713fd75fa48e2871abbe4c1158d8c2fca7d1031f046b732",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:e4d4349d66c1cfb1cf2ac8fd7bb58fbe6d3dd3e8f14d980a9bb3530218ca158d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:5ec1a4e3d9c9c4f5d9575f1e8af285457e61828470de5064946ddc57537e7206",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:f90ab8d1b56756116452fd36efd7d9e943783e78bc2397bf0714fe885886248a",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:08c33f8c761977cb15b82e8225f08ed090be538277869ef1c3f757f52706fb38",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:07821b53efca5f78d5868d26059238cfb81abda058e3615382d9ea65cce5b1e1",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:574b2379ec9bdf6e013e35335022be683445366d646b58720209029b025de72b",
         "type": "EVIDENCE",
         "weight": 1,
@@ -15597,7 +15488,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:d0d88d83c2eedea81338eace2e37cdb7a0ee6faafd6ef9dab7761318b757d662",
         "type": "EVIDENCE",
         "weight": 1,
@@ -15618,7 +15509,7 @@
         "mentions": 1
       },
       {
-        "source": "Google",
+        "source": "Alphabet",
         "target": "evidence:26b37c1d7cdb905cd345105769e73af5fac85ef150a0f6dd654e42135265ebcf",
         "type": "EVIDENCE",
         "weight": 1,
@@ -15660,7 +15551,7 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
+        "source": "Amazon",
         "target": "evidence:a435f638c959b545faef1376b0c427d9b54d21720d198f8eeb0802beefd57b1a",
         "type": "EVIDENCE",
         "weight": 1,
@@ -16003,7 +15894,7 @@
         "mentions": 1
       },
       {
-        "source": "AWS",
+        "source": "Amazon",
         "target": "evidence:69c72b20915e37ea98b1426873e480a091c685cbc8518d5411e8f6b2b1f8172f",
         "type": "EVIDENCE",
         "weight": 1,
@@ -16393,7 +16284,7 @@
     {
       "date": "2022-10-27",
       "event_type": "ACQUIRES",
-      "source_entity": "X Holdings",
+      "source_entity": "X (Twitter)",
       "target_entity": "X (Twitter)",
       "amount": 44000000000.0,
       "currency": "USD",
@@ -16409,7 +16300,7 @@
       "date": "2022-10-27",
       "event_type": "ASSUMES_DEBT",
       "source_entity": "X (Twitter)",
-      "target_entity": "X Holdings",
+      "target_entity": "X (Twitter)",
       "amount": 13000000000.0,
       "currency": "USD",
       "confidence": 0.99,
