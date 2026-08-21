@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T21:19:09.375732+00:00",
+  "generated_at": "2026-08-21T21:38:57.835333+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
-    "stress": 57.1,
-    "fragility": 61.1,
-    "capital": 52.15125962813687,
     "external_pressure": 61.1,
     "circularity": 57.1,
-    "transmission": 39.6,
+    "capital": 52.15125962813687,
+    "stress": 57.1,
     "cannibalization": 54.2,
-    "counter_evidence": 45.8
+    "transmission": 39.6,
+    "counter_evidence": 45.8,
+    "fragility": 61.1,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,14 +32,14 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "stress": "directional_estimate",
-    "fragility": "directional_estimate",
-    "external_pressure": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "monetization": "directional_estimate",
-    "capital": "aggregate",
     "circularity": "directional_estimate",
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
     "counter_evidence": "directional_estimate",
+    "fragility": "directional_estimate",
+    "monetization": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "stress": "directional_estimate",
     "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
@@ -623,6 +623,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-21T21:38:57.433895+00:00",
+      "score": 52.1,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"stress\": 57.1, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"counter_evidence\": 45.8, \"monetization\": 42.9, \"fragility\": 61.1, \"external_pressure\": 61.1, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-21T21:19:08.894366+00:00",
       "score": 52.1,
@@ -3594,6 +3600,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0f5826fff3454c3b4bb094aed4d0ea7938a498ef5f75f95538cfe0a86b531dbd",
+        "label": "Anthropic's IPO could come sooner than you think \u2014 likely beating OpenAI to the punch - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNQ2MzTTlXQnRNTDcyekp5VDREUVJkcnZ3ZWJ2RVN3aENpZ2YxZFlhTnUzNy1EbllvM25xcUsxaWZ0YTN4MmFvZVZqbk1UZ1B5M2g3OTc4Z200bElvajlERlZfdmFzdkcxa3ZrRm4zWkp2QXg4MWVtUVF4V3Yzd0lRZjRCdTYtdw?oc=5",
+        "date": "Fri, 21 Aug 2026 19:51:10 GMT",
+        "summary": "Anthropic's IPO could come sooner than you think \u2014 likely beating OpenAI to the punch Yahoo Finance",
+        "score": 5,
         "weight": 1
       },
       {
@@ -7341,6 +7359,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:f453ef2bef236cce48d90cf70a34ed1a49e7a636102dacd52da97cf2e12ad37d",
+        "label": "DeepSeek Creates New Headache for AI Stocks - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQzNBR3NObnh0dWFlYWxoTVJsTTFtUmhhOFYzb0xXMld1THl2VnprdnJ3YTNsUmpmQ0x4WTdTRjdJOHVJMVVUR2pCWGM4cklFWXF3YnJqd0ZTai1tMkZodThjUkwwMm1MZmVJTFM5UHA3dmhnLUZSQVEyOWs4dXFnSnF4YTRBQzJQY0xsM2RVY00tU1ZzTndTTGNCV1E3ZHVOVDR3Q1Rn?oc=5",
+        "date": "Fri, 21 Aug 2026 20:17:11 GMT",
+        "summary": "DeepSeek Creates New Headache for AI Stocks TradingView",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:53b7c3ed8de3ba2ed9e4eb38bd52281b571e596fadb68e4b36d10658da20b2ff",
         "label": "Baidu: GPU Cloud Revenue Jumps 283% As AI-Powered Business Reaches 50% Of General Business Revenue - Pulse 2.0",
         "kind": "evidence",
@@ -10507,30 +10537,6 @@
         "summary": "OpenAI surpasses 1 billion users after cutting GPT-5.6 prices qz.com",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:4739823449358e167efc40ed9f9b7351c94f8abd51e9dd183c2041a39ed944d1",
-        "label": "China\u2019s DeepSeek prices new V4 AI model at 97% below OpenAI\u2019s GPT-5.5 - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdm4yR2dnZUFELXBZeHFJN2xkdm1sRFBZMTVFLTl3eU9RdVQ3UGlZbG5HNTlhZDlpOElXaXVLZmlYc2dheU9TLVc3bGs5WWFsMlB2SEJhbHJuc3ZLeXMtN3ZSVE15NDJXU0RWMlpKd1ZfMERzdXZDOVlWeXJqMmdZRFRqZWtsSEJPS1AxUHVndENmbGwzSHVDZlA2eG05TlB2cW1NZVN1UlE2cTVsbWxpbDZOSzJ2ZE0?oc=5",
-        "date": "Tue, 28 Apr 2026 07:00:00 GMT",
-        "summary": "China\u2019s DeepSeek prices new V4 AI model at 97% below OpenAI\u2019s GPT-5.5 South China Morning Post",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d8045c256005627a1c9421858077968ecab632a72c0dd495ef97225ea3cee8f9",
-        "label": "AI price wars: OpenAI cuts GPT-5.6 Luna prices by 80% as model competition shifts toward cost - Venturebeat",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Venturebeat",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZ2hVQW43d3QzOWlhMnMta2dhbDFTSDFSWC1Ua01fb09wcGFvR1d4M2dPcWlnTlRTdFBqVzVZT202dVpfV2FOYkpncmxlSnRhSUVZZ0Z0TDBiYXhmejBTVkRPRmhENHlMME1HOHQ3NU5BeTV1OVR3d2E4amRjRnZ6VV9TQXotcjRXVUpSTWU3UWxJTlVOZFNLWGUzY0dMVnhGZUNVakFPTFBwY1ZiU2wwNDVoSDk0dG9LR1NpZDdndEFsbWVW?oc=5",
-        "date": "Thu, 30 Jul 2026 07:00:00 GMT",
-        "summary": "AI price wars: OpenAI cuts GPT-5.6 Luna prices by 80% as model competition shifts toward cost Venturebeat",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12511,6 +12517,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:0f5826fff3454c3b4bb094aed4d0ea7938a498ef5f75f95538cfe0a86b531dbd",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:0f5826fff3454c3b4bb094aed4d0ea7938a498ef5f75f95538cfe0a86b531dbd",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15344,6 +15364,13 @@
         "mentions": 1
       },
       {
+        "source": "DeepSeek",
+        "target": "evidence:f453ef2bef236cce48d90cf70a34ed1a49e7a636102dacd52da97cf2e12ad37d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Baidu",
         "target": "evidence:53b7c3ed8de3ba2ed9e4eb38bd52281b571e596fadb68e4b36d10658da20b2ff",
         "type": "EVIDENCE",
@@ -17187,20 +17214,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:6b23b6d8e9a2709d1fbabd42386c1455be5375c1ffc6a6a3612858a33176e443",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:4739823449358e167efc40ed9f9b7351c94f8abd51e9dd183c2041a39ed944d1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:d8045c256005627a1c9421858077968ecab632a72c0dd495ef97225ea3cee8f9",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31431,20 +31444,20 @@
   ],
   "collector_runs": [
     {
-      "id": 79,
+      "id": 83,
       "collector": "company-economic-news",
-      "started_at": "2026-08-21T21:18:51.432900+00:00",
-      "completed_at": "2026-08-21T21:19:04.766325+00:00",
+      "started_at": "2026-08-21T21:38:40.248376+00:00",
+      "completed_at": "2026-08-21T21:38:53.943394+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 80,
+      "id": 84,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-21T21:19:05.167303+00:00",
-      "completed_at": "2026-08-21T21:19:05.492961+00:00",
+      "started_at": "2026-08-21T21:38:54.344621+00:00",
+      "completed_at": "2026-08-21T21:38:54.737902+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -31461,20 +31474,20 @@
       "error": null
     },
     {
-      "id": 78,
+      "id": 82,
       "collector": "google-news-rss",
-      "started_at": "2026-08-21T21:18:50.073320+00:00",
-      "completed_at": "2026-08-21T21:18:50.854459+00:00",
+      "started_at": "2026-08-21T21:38:38.976034+00:00",
+      "completed_at": "2026-08-21T21:38:39.847372+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 81,
+      "id": 85,
       "collector": "sec-edgar",
-      "started_at": "2026-08-21T21:19:05.913932+00:00",
-      "completed_at": "2026-08-21T21:19:08.485145+00:00",
+      "started_at": "2026-08-21T21:38:55.139251+00:00",
+      "completed_at": "2026-08-21T21:38:57.018729+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31491,7 +31504,7 @@
       "error": null
     }
   ],
-  "document_count": 991,
+  "document_count": 993,
   "event_count": 948,
   "mention_count": 2342,
   "review_counts": {
