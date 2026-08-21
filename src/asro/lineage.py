@@ -105,6 +105,31 @@ VERIFIED_LINEAGE: tuple[VerifiedFact, ...] = (
         20_000_000_000,
         "USD",
     ),
+    VerifiedFact(
+        "SpaceX completes initial public offering and begins trading as SPCX",
+        "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX_PricingAnnouncement.pdf?embed=true",
+        "SpaceX pricing announcement",
+        "2026-06-12",
+        EventType.COMPLETES_IPO,
+        "SpaceX",
+        "Nasdaq",
+        "SpaceX announced that 555,555,555 Class A shares were priced at $135 per "
+        "share and would begin trading on Nasdaq on June 12, 2026 under SPCX.",
+        75_000_000_000,
+        "USD",
+    ),
+    VerifiedFact(
+        "SpaceX joins the Nasdaq-100 Index",
+        "https://ir.nasdaq.com/news-releases/news-release-details/space-exploration-technologies-corporation-join-nasdaq-100",
+        "Nasdaq index announcement",
+        "2026-07-07",
+        EventType.ENTERS_INDEX,
+        "SpaceX",
+        "Nasdaq-100",
+        "Nasdaq announced that SpaceX (SPCX) would become a Nasdaq-100 component "
+        "before market open on July 7, 2026. Nasdaq states that more than 200 "
+        "investment products with over $800 billion in assets track the index.",
+    ),
 )
 
 
@@ -123,7 +148,14 @@ def seed_verified_lineage(repository: SqliteRepository) -> int:
                 summary=fact.evidence,
                 published_at=fact.date,
                 score=20,
-                category=Category.CREDIT if "debt" in fact.title.lower() else Category.GENERAL,
+                category=(
+                    Category.IPO
+                    if fact.event_type in {EventType.COMPLETES_IPO, EventType.ENTERS_INDEX}
+                    else Category.CREDIT
+                    if fact.event_type
+                    in {EventType.ASSUMES_DEBT, EventType.ISSUES_DEBT, EventType.REFINANCES}
+                    else Category.GENERAL
+                ),
                 companies=[fact.source_entity, fact.target_entity],
             )
             if not repository.insert(connection, item):

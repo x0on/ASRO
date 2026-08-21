@@ -33,13 +33,13 @@ permissions:
 
 concurrency:
   group: hourly-monitor
-  # New source or release runs supersede stale work; only the freshest snapshot matters.
-  cancel-in-progress: true
+  # Never interrupt a review or historical baseline halfway through.
+  cancel-in-progress: false
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 120
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -70,7 +70,8 @@ jobs:
         env:
           ASRO_OPENAI_API_KEY: ${{ secrets.ASRO_OPENAI_API_KEY }}
           ASRO_REVIEW_MODEL: ${{ vars.ASRO_REVIEW_MODEL || 'gpt-4.1-mini' }}
-        run: asro review
+          REVIEW_LIMIT: ${{ (inputs.backfill == true || contains(github.event.head_commit.message, '[backfill]')) && 600 || 100 }}
+        run: asro review --limit "$REVIEW_LIMIT" --batch-size 10
       - name: Build static site
         run: asro build-site
       - name: Commit updated observatory data

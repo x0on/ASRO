@@ -20,6 +20,8 @@ def _normalize(value: float, scale: float) -> float:
 # (variable, entity) counts. The score therefore moves when a condition changes, not when
 # more articles about the same condition accumulate.
 WINDOW_DAYS = 90
+MIN_DIMENSION_POINTS = 5
+MAX_PLAUSIBLE_USD = 5_000_000_000_000.0
 
 
 def _parse(ts: object) -> datetime | None:
@@ -54,7 +56,101 @@ def compute_dimension_scores(
     window_days: int = WINDOW_DAYS,
 ) -> dict[str, float | None]:
     as_of = as_of or datetime.now(UTC)
-    buckets: dict[str, list[float]] = defaultdict(list)
+    buckets = _dimension_buckets(observations, as_of, window_days)
+
+    dimensions = {v.dimension.value for v in VARIABLES.values()}
+    scores: dict[str, float | None] = {}
+    for dimension in dimensions:
+        points = buckets.get(dimension, [])
+        required = min((point[1] for point in points), default=MIN_DIMENSION_POINTS)
+        scores[dimension] = (
+            None
+            if len(points) < required
+            else min(100.0, sum(point[0] for point in points) / len(points))
+        )
+    return scores
+
+
+def dimension_evidence_counts(
+    observations: Iterable[dict[str, Any]],
+    as_of: datetime | None = None,
+    window_days: int = WINDOW_DAYS,
+) -> dict[str, int]:
+    """Evidence points that are recent, independent, and eligible for scoring."""
+    buckets = _dimension_buckets(observations, as_of or datetime.now(UTC), window_days)
+    return {dimension: len(values) for dimension, values in buckets.items()}
+
+
+def dimension_evidence_basis(
+    observations: Iterable[dict[str, Any]],
+    as_of: datetime | None = None,
+    window_days: int = WINDOW_DAYS,
+) -> dict[str, str]:
+    """Explain whether a score is an aggregate estimate or an authoritative trigger."""
+    buckets = _dimension_buckets(observations, as_of or datetime.now(UTC), window_days)
+    return {
+        dimension: (
+            "confirmed_trigger"
+            if any(point[2] == "confirmed_trigger" for point in points)
+            else "aggregate"
+        )
+        for dimension, points in buckets.items()
+    }
+
+
+def dimension_directional_readings(
+    observations: Iterable[dict[str, Any]],
+    as_of: datetime | None = None,
+    window_days: int = WINDOW_DAYS,
+) -> dict[str, dict[str, int | str]]:
+    """Direction from confirmed evidence, without promoting it to a numeric score."""
+    readings: dict[str, list[float]] = defaultdict(list)
+    for obs in latest_observations(observations, as_of or datetime.now(UTC), window_days):
+        definition = VARIABLES.get(str(obs.get("variable_key")))
+        if definition is None:
+            continue
+        confidence = float(obs.get("confidence") or 0.0)
+        if confidence <= 0:
+            continue
+        polarity = str(obs.get("polarity") or "risk")
+        readings[definition.dimension.value].append(
+            -confidence if polarity == "safety" else confidence
+        )
+
+    result: dict[str, dict[str, int | str]] = {}
+    for dimension, values in readings.items():
+        balance = sum(values) / len(values)
+        if balance > 0.2:
+            direction = "higher_pressure"
+        elif balance < -0.2:
+            direction = "lower_pressure"
+        else:
+            direction = "mixed"
+        result[dimension] = {"direction": direction, "evidence_count": len(values)}
+    return result
+
+
+def overall_evidence_direction(readings: dict[str, dict[str, int | str]]) -> str:
+    """Summarize the balance of directional evidence without calling it a trend."""
+    balance = 0
+    for reading in readings.values():
+        count = int(reading.get("evidence_count") or 0)
+        direction = reading.get("direction")
+        if direction == "higher_pressure":
+            balance += count
+        elif direction == "lower_pressure":
+            balance -= count
+    if balance > 0:
+        return "higher_pressure"
+    if balance < 0:
+        return "lower_pressure"
+    return "mixed" if readings else "unknown"
+
+
+def _dimension_buckets(
+    observations: Iterable[dict[str, Any]], as_of: datetime, window_days: int
+) -> dict[str, list[tuple[float, int, str]]]:
+    buckets: dict[str, list[tuple[float, int, str]]] = defaultdict(list)
     for obs in latest_observations(observations, as_of, window_days):
         key = obs.get("variable_key")
         definition = VARIABLES.get(str(key))
@@ -63,22 +159,27 @@ def compute_dimension_scores(
         raw = float(obs.get("value") or 0.0)
         confidence = float(obs.get("confidence") or 0.0)
         if definition.unit == "USD":
+            if obs.get("unit") != "USD" or raw <= 0 or raw > MAX_PLAUSIBLE_USD:
+                continue
             normalized = _normalize(raw, 10_000_000_000.0)
         elif definition.unit == "percent":
+            if obs.get("unit") != "percent":
+                continue
             normalized = min(100.0, max(0.0, raw))
         else:
+            if obs.get("unit") not in {"score", "signal"}:
+                continue
             normalized = min(100.0, max(0.0, raw * 20.0 if raw <= 5 else raw))
         if definition.direction == "higher_is_safer":
             normalized = 100.0 - normalized
-        buckets[definition.dimension.value].append(normalized * confidence * definition.weight)
-
-    dimensions = {v.dimension.value for v in VARIABLES.values()}
-    return {
-        dimension: None
-        if not buckets.get(dimension)
-        else min(100.0, sum(buckets[dimension]) / len(buckets[dimension]))
-        for dimension in dimensions
-    }
+        buckets[definition.dimension.value].append(
+            (
+                normalized * confidence * definition.weight,
+                definition.minimum_points,
+                definition.evidence_basis,
+            )
+        )
+    return buckets
 
 
 # Warning-gate policy, from docs/DATA_DICTIONARY.md "Interaction triggers":

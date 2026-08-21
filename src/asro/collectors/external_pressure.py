@@ -18,8 +18,15 @@ class ExternalPressureCollector:
                 '"open source" AI model beats benchmark',
                 '"DeepSeek" model pricing benchmark',
                 '"Qwen" model pricing benchmark',
+                '"Claude" model pricing benchmark',
+                '"ERNIE" model pricing benchmark',
+                '"Doubao" model pricing benchmark',
+                '"Hunyuan" model pricing benchmark',
+                '"Kimi" model pricing benchmark',
+                '"GLM" model pricing benchmark',
+                '"MiniMax" model pricing benchmark',
             ],
-            max_items=8,
+            max_items=40,
         )
 
     def collect(self) -> list[SourceItem]:

@@ -310,6 +310,10 @@ class SqliteRepository:
         )
 
     @staticmethod
+    def all_financial_events(connection: sqlite3.Connection) -> list[sqlite3.Row]:
+        return list(connection.execute("SELECT * FROM financial_events ORDER BY processed_at"))
+
+    @staticmethod
     def canonical_events(connection: sqlite3.Connection, limit: int = 500) -> list[sqlite3.Row]:
         """One row per economic fact (first mention wins), with how many sources reported it.
 
@@ -476,11 +480,13 @@ class SqliteRepository:
         return list(
             connection.execute(
                 """
-            SELECT *
-            FROM observations
-            ORDER BY observed_at DESC
-            LIMIT ?
-            """,
+                SELECT o.*
+                FROM observations o
+                JOIN economic_events ec ON ec.canonical_event_id = o.event_id
+                WHERE ec.review_status = 'confirmed'
+                ORDER BY o.observed_at DESC
+                LIMIT ?
+                """,
                 (limit,),
             )
         )

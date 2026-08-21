@@ -85,6 +85,9 @@ def test_build_static_site_on_empty_db_reports_insufficient_evidence(tmp_path: P
     assert payload["signal"]["label"] == "INSUFFICIENT EVIDENCE"
     assert payload["signal"]["direction"] == "unknown"
     assert payload["network"] == {"nodes": [], "edges": []}
-    assert len(payload["measurements"]) == 12
+    assert len(payload["measurements"]) == 13
+    assert "Anthropic" in payload["tracked_entities"]
+    assert "DeepSeek" in payload["tracked_entities"]
+    assert "Alibaba" in payload["tracked_entities"]
     assert payload["dimension_evidence"] == {}
     assert all(value is None for value in payload["dimensions"].values())

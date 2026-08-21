@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 
+from asro.dictionary.registry import VARIABLES
 from asro.models import FinancialEvent
 from asro.observations import Observation
 
@@ -13,7 +14,8 @@ EVENT_VARIABLE_MAP: dict[str, tuple[str, float, str]] = {
     "REFINANCES": ("refinancing_stress", 1.0, "risk"),
     "INVESTS_IN": ("ai_capital_commitments", 1.0, "risk"),
     "CAPEX_COMMITMENT": ("ai_capital_commitments", 1.0, "risk"),
-    "ENTERS_INDEX": ("public_index_exposure", 1.0, "risk"),
+    "COMPLETES_IPO": ("public_market_transmission_stage", 3.0, "risk"),
+    "ENTERS_INDEX": ("public_market_transmission_stage", 5.0, "risk"),
     "ALLOCATES_TO": ("retirement_exposure", 1.0, "risk"),
     "PRICE_CUT": ("model_price_pressure", 1.0, "risk"),
     "DOWNGRADE": ("refinancing_stress", 2.0, "risk"),
@@ -31,8 +33,22 @@ def event_to_observation(event: FinancialEvent) -> Observation | None:
     if not mapped:
         return None
     variable_key, fallback_value, polarity = mapped
-    value = event.amount if event.amount is not None else fallback_value
-    unit = event.currency if event.amount is not None else "signal"
+    definition = VARIABLES[variable_key]
+    value: float
+    unit: str | None
+    if definition.unit == "USD":
+        if event.amount is None or event.currency != "USD":
+            value, unit = fallback_value, "signal"
+        else:
+            value, unit = event.amount, "USD"
+    elif definition.unit == "percent":
+        # Preserve a confirmed qualitative direction without pretending the keyword
+        # hit is a measured percentage. Numeric scoring rejects this signal unit.
+        value, unit = fallback_value, "signal"
+    else:
+        # Score variables describe event severity; a transaction's dollar amount is
+        # not itself a 0-100 stress or capability score.
+        value, unit = fallback_value, definition.unit
     fingerprint = "|".join([event.event_id, variable_key, event.source_entity or "", str(value)])
     return Observation(
         observation_id=hashlib.sha256(fingerprint.encode()).hexdigest(),

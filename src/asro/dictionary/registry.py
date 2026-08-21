@@ -63,6 +63,20 @@ VARIABLES: dict[str, VariableDefinition] = {
         direction="higher_is_riskier",
         weight=1.2,
     ),
+    "public_market_transmission_stage": VariableDefinition(
+        key="public_market_transmission_stage",
+        label="Verified public-market transmission stage",
+        dimension=Dimension.TRANSMISSION,
+        description=(
+            "Confirmed milestones moving a company from private ownership into public "
+            "trading and major market indexes."
+        ),
+        unit="score",
+        direction="higher_is_riskier",
+        weight=1.0,
+        minimum_points=1,
+        evidence_basis="confirmed_trigger",
+    ),
     "retirement_exposure": VariableDefinition(
         key="retirement_exposure",
         label="Retirement exposure",

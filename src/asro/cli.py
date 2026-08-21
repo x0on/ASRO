@@ -161,11 +161,18 @@ def seed_lineage() -> None:
     typer.echo(f"Added {added} verified lineage facts.")
 
 
+@app.command("rebuild-observations")
+def rebuild_observations() -> None:
+    """Recompute measurements after extraction or scoring-policy changes."""
+    rebuilt = MonitorService(Settings()).rebuild_observations()
+    typer.echo(f"Rebuilt {rebuilt} derived observations.")
+
+
 @app.command()
-def review(limit: int = 100) -> None:
+def review(limit: int = 100, batch_size: int = 10) -> None:
     """Review provisional economic events with the configured evidence-review model."""
     try:
-        reviewed = EvidenceReviewer(Settings()).run(limit=limit)
+        reviewed = EvidenceReviewer(Settings()).run(limit=limit, batch_size=batch_size)
     except (ValueError, OSError) as exc:
         _write_review_status("error", error=exc)
         typer.echo(f"Evidence review failed: {exc}", err=True)

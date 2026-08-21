@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 
+from asro.entities import canonicalize_many
 from asro.models import Category, ScoredItem, SourceItem
 
 HIGH_SIGNAL_TERMS: dict[str, int] = {
@@ -123,7 +124,9 @@ def score(source_item: SourceItem, companies: list[str]) -> ScoredItem:
         if term.lower() in text:
             result += weight
 
-    matched_companies = sorted(company for company in companies if company.lower() in text)
+    matched_companies = canonicalize_many(
+        sorted(company for company in companies if company.lower() in text)
+    )
     result += len(matched_companies)
 
     if any(term in text for term in STRESS_TERMS):

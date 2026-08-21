@@ -8,8 +8,16 @@ from pathlib import Path
 from typing import Any
 
 from asro.dictionary.registry import VARIABLES
-from asro.indicators import compute_convergence, compute_dimension_scores
-from asro.settings import Settings
+from asro.entities import canonicalize_many
+from asro.indicators import (
+    compute_convergence,
+    compute_dimension_scores,
+    dimension_directional_readings,
+    dimension_evidence_basis,
+    dimension_evidence_counts,
+    overall_evidence_direction,
+)
+from asro.settings import Settings, load_project_config
 from asro.storage import SqliteRepository
 
 THESIS = (
@@ -66,8 +74,14 @@ def _build_network(
         for company in companies:
             node_counts[company] += 0
 
-    nodes = [
-        {"id": name, "label": name, "kind": "company", "weight": count}
+    index_entities = {"Nasdaq", "Nasdaq-100"}
+    nodes: list[dict[str, Any]] = [
+        {
+            "id": name,
+            "label": name,
+            "kind": "index" if name in index_entities else "company",
+            "weight": count,
+        }
         for name, count in node_counts.most_common(40)
     ]
     allowed = {node["id"] for node in nodes}
@@ -145,6 +159,7 @@ def _build_timeline(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 def build_static_site(output_dir: Path = Path("site"), database_path: Path | None = None) -> Path:
     settings = Settings()
+    config = load_project_config(settings.config_path)
     repository = SqliteRepository(database_path or settings.database_path)
     output_dir.mkdir(parents=True, exist_ok=True)
     data_dir = output_dir / "data"
@@ -161,18 +176,22 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
 
     dimensions = compute_dimension_scores(observations)
     convergence = compute_convergence(dimensions)
-    dimension_evidence: Counter[str] = Counter()
-    for observation in observations:
-        if definition := VARIABLES.get(str(observation.get("variable_key"))):
-            dimension_evidence[definition.dimension.value] += 1
+    dimension_evidence = dimension_evidence_counts(observations)
+    dimension_basis = dimension_evidence_basis(observations)
+    dimension_direction = dimension_directional_readings(observations)
+    signal = convergence.model_dump()
+    signal["evidence_direction"] = overall_evidence_direction(dimension_direction)
 
     payload = {
         "generated_at": datetime.now(UTC).isoformat(),
         "thesis": THESIS,
         "thesis_explanation": THESIS_EXPLANATION,
-        "signal": convergence.model_dump(),
+        "signal": signal,
         "dimensions": dimensions,
-        "dimension_evidence": dict(dimension_evidence),
+        "dimension_evidence": dimension_evidence,
+        "dimension_basis": dimension_basis,
+        "dimension_direction": dimension_direction,
+        "tracked_entities": canonicalize_many(config["entities"]["companies"]),
         "measurements": [
             {
                 "key": definition.key,

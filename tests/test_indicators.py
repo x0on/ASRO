@@ -1,6 +1,13 @@
 from datetime import UTC, datetime
 
-from asro.indicators import compute_convergence, compute_dimension_scores
+from asro.indicators import (
+    compute_convergence,
+    compute_dimension_scores,
+    dimension_directional_readings,
+    dimension_evidence_basis,
+    dimension_evidence_counts,
+    overall_evidence_direction,
+)
 
 
 def test_unknown_is_not_zero():
@@ -85,6 +92,7 @@ def _obs(value: float, observed_at: str, entity: str = "Nvidia") -> dict[str, ob
         "variable_key": "ai_related_debt",
         "entity": entity,
         "value": value,
+        "unit": "USD",
         "confidence": 1.0,
         "observed_at": observed_at,
     }
@@ -95,9 +103,15 @@ def test_only_latest_value_per_variable_and_entity_counts() -> None:
     old_high = _obs(50_000_000_000, "2026-08-01T00:00:00+00:00")
     new_low = _obs(1_000_000_000, "2026-08-20T00:00:00+00:00")
 
-    only_new = compute_dimension_scores([new_low], as_of=as_of)["fragility"]
-    superseded = compute_dimension_scores([old_high, new_low], as_of=as_of)["fragility"]
-    repeated = compute_dimension_scores([new_low] * 20, as_of=as_of)["fragility"]
+    companions = [
+        _obs(2_000_000_000, "2026-08-20T00:00:00+00:00", "Microsoft"),
+        _obs(3_000_000_000, "2026-08-20T00:00:00+00:00", "OpenAI"),
+    ]
+    only_new = compute_dimension_scores([new_low, *companions], as_of=as_of)["fragility"]
+    superseded = compute_dimension_scores([old_high, new_low, *companions], as_of=as_of)[
+        "fragility"
+    ]
+    repeated = compute_dimension_scores([new_low] * 20 + companions, as_of=as_of)["fragility"]
 
     assert superseded == only_new  # the older value no longer contributes
     assert repeated == only_new  # twenty copies do not move the needle
@@ -107,3 +121,87 @@ def test_stale_observations_are_ignored() -> None:
     as_of = datetime(2026, 8, 21, tzinfo=UTC)
     stale = _obs(50_000_000_000, "2026-01-01T00:00:00+00:00")
     assert compute_dimension_scores([stale], as_of=as_of)["fragility"] is None
+
+
+def test_unquantified_money_is_evidence_but_not_a_numeric_score() -> None:
+    as_of = datetime(2026, 8, 21, tzinfo=UTC)
+    observations = [
+        {
+            "variable_key": "ai_external_revenue",
+            "entity": entity,
+            "value": 1.0,
+            "unit": "signal",
+            "confidence": 0.72,
+            "observed_at": "2026-08-20T00:00:00+00:00",
+        }
+        for entity in ("OpenAI", "Anthropic", "Nvidia")
+    ]
+
+    assert compute_dimension_scores(observations, as_of=as_of)["monetization"] is None
+    assert dimension_evidence_counts(observations, as_of=as_of) == {}
+
+
+def test_dimension_requires_five_independent_eligible_points() -> None:
+    as_of = datetime(2026, 8, 21, tzinfo=UTC)
+    two = [
+        _obs(10_000_000_000, "2026-08-20T00:00:00+00:00", "Nvidia"),
+        _obs(20_000_000_000, "2026-08-20T00:00:00+00:00", "Microsoft"),
+    ]
+    five = [
+        *two,
+        _obs(30_000_000_000, "2026-08-20T00:00:00+00:00", "OpenAI"),
+        _obs(40_000_000_000, "2026-08-20T00:00:00+00:00", "Amazon"),
+        _obs(50_000_000_000, "2026-08-20T00:00:00+00:00", "Alphabet"),
+    ]
+
+    assert compute_dimension_scores(two, as_of=as_of)["fragility"] is None
+    assert compute_dimension_scores(five, as_of=as_of)["fragility"] is not None
+    assert dimension_evidence_counts(five, as_of=as_of)["fragility"] == 5
+
+
+def test_authoritative_binary_trigger_does_not_require_five_estimates() -> None:
+    as_of = datetime(2026, 8, 21, tzinfo=UTC)
+    observation = {
+        "variable_key": "public_market_transmission_stage",
+        "entity": "SpaceX",
+        "value": 5.0,
+        "unit": "score",
+        "confidence": 0.99,
+        "observed_at": "2026-08-20T00:00:00+00:00",
+    }
+
+    scores = compute_dimension_scores([observation], as_of=as_of)
+    assert scores["transmission"] == 99.0
+    assert dimension_evidence_basis([observation], as_of=as_of) == {
+        "transmission": "confirmed_trigger"
+    }
+
+
+def test_qualitative_evidence_sets_direction_without_creating_a_score() -> None:
+    as_of = datetime(2026, 8, 21, tzinfo=UTC)
+    observations = [
+        {
+            "variable_key": "refinancing_stress",
+            "entity": entity,
+            "value": 1.0,
+            "unit": "signal",
+            "confidence": 0.9,
+            "polarity": "risk",
+            "observed_at": "2026-08-20T00:00:00+00:00",
+        }
+        for entity in ("SpaceX", "CoreWeave")
+    ]
+
+    assert compute_dimension_scores(observations, as_of=as_of)["stress"] is None
+    assert dimension_directional_readings(observations, as_of=as_of)["stress"] == {
+        "direction": "higher_pressure",
+        "evidence_count": 2,
+    }
+
+
+def test_overall_direction_uses_the_balance_of_confirmed_evidence() -> None:
+    readings = {
+        "capital": {"direction": "higher_pressure", "evidence_count": 6},
+        "monetization": {"direction": "lower_pressure", "evidence_count": 2},
+    }
+    assert overall_evidence_direction(readings) == "higher_pressure"

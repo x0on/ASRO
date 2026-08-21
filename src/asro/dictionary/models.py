@@ -25,3 +25,5 @@ class VariableDefinition(BaseModel):
     unit: str | None = None
     direction: str
     weight: float = 1.0
+    minimum_points: int = 5
+    evidence_basis: str = "aggregate"

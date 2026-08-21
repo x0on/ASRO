@@ -20,7 +20,7 @@ from asro.extraction.deterministic import DeterministicEventExtractor
 from asro.indicators import compute_convergence, compute_dimension_scores
 from asro.lineage import seed_verified_lineage
 from asro.measurement import event_to_observation
-from asro.models import ScoredItem
+from asro.models import FinancialEvent, ScoredItem
 from asro.reporting import write_csv, write_html
 from asro.scoring import score
 from asro.settings import Settings, load_project_config
@@ -63,7 +63,7 @@ class MonitorService:
         today = datetime.now(UTC).date()
 
         return [
-            GoogleNewsCollector(news_cfg["queries"]),
+            GoogleNewsCollector(news_cfg["queries"], max_items=len(news_cfg["queries"]) * 2),
             CompanyEconomicNewsCollector(
                 self._company_news_queries(),
                 since=today - timedelta(days=2),
@@ -197,6 +197,19 @@ class MonitorService:
 
     def seed_lineage(self) -> int:
         return seed_verified_lineage(self._repository)
+
+    def rebuild_observations(self) -> int:
+        """Recompute the derived measurement layer from stored source events."""
+        inserted = 0
+        with self._repository.connect() as connection:
+            events = self._repository.all_financial_events(connection)
+            connection.execute("DELETE FROM observations")
+            for row in events:
+                event = FinancialEvent.model_validate(dict(row))
+                if observation := event_to_observation(event):
+                    inserted += int(self._repository.insert_observation(connection, observation))
+            connection.commit()
+        return inserted
 
     def event_count(self) -> int:
         """Canonical economic events (deduplicated facts)."""

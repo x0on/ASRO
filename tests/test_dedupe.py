@@ -6,6 +6,9 @@ from asro.models import EventType, FinancialEvent
 def test_entity_aliases():
     assert canonicalize("AWS") == "Amazon"
     assert canonicalize("Google") == "Alphabet"
+    assert canonicalize("Claude") == "Anthropic"
+    assert canonicalize("Qwen") == "Alibaba"
+    assert canonicalize("Kimi") == "Moonshot AI"
 
 
 def test_economic_fingerprint_ignores_document_id():
