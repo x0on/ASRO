@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T17:35:52.776451+00:00",
+  "generated_at": "2026-08-22T18:49:22.778544+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
-    "external_pressure": 61.1,
-    "transmission": 39.6,
-    "capital": 52.15125962813687,
     "monetization": 42.9,
-    "stress": 57.1,
+    "transmission": 39.6,
     "cannibalization": 54.2,
     "circularity": 57.1,
-    "fragility": 61.1
+    "capital": 52.15125962813687,
+    "counter_evidence": 42.9,
+    "fragility": 61.1,
+    "stress": 57.1,
+    "external_pressure": 61.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "transmission": "confirmed_trigger",
     "monetization": "directional_estimate",
-    "stress": "directional_estimate",
     "circularity": "directional_estimate",
-    "fragility": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "external_pressure": "directional_estimate",
+    "fragility": "directional_estimate",
+    "stress": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
     "capital": "aggregate",
-    "cannibalization": "directional_estimate"
+    "external_pressure": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T18:49:22.456034+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"monetization\": 42.9}"
+    },
     {
       "captured_at": "2026-08-22T17:35:52.290418+00:00",
       "score": 51.4,
@@ -6441,6 +6447,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
+        "label": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom\u2019s Hidden Ledger - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTVhfOFVXUGRDVlZUajN1Tjk5V3lJMmJLSVpsR2J0b1JfbTduYXBLZlpDWUtjNjNKdXJwTTQtVUV3bG03UDdjX2xPc2ppT1llMXk4RG4yLWVEY1NLZTkydGl0SjZwZTVrSjc3OWNKYVVRbjJsR3VHcXp1VE1LVkdLTHBtbEpEOWs4QkxhSnIwZWFXN3N0c0hmLS1MRHdEZw?oc=5",
+        "date": "Sat, 22 Aug 2026 15:52:40 GMT",
+        "summary": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom\u2019s Hidden Ledger Yahoo Finance",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
         "label": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom's Hidden Ledger - 24/7 Wall St.",
         "kind": "evidence",
@@ -6930,6 +6948,30 @@
         "date": "Thu, 28 May 2026 07:00:00 GMT",
         "summary": "Beyond the IPO frenzy: what Nasdaq\u2019s new \u2018Fast Entry\u2019 rules could mean for ETF investors Bitpanda",
         "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e1470c3a5052f5faf3aa2f8b950c19f6fea2424f9f28c80e1a66e137ced6281c",
+        "label": "Is Anthropic-Driven Windfall Reshaping the Investment Case for Amazon.com (AMZN) and Its AI Ambitions? - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcW9QcGZiX2NMeHZ6SVRjcjctTGZiNndHMVRCV1ZCc2dsM1djN1lUYTJyR0l6OXd3X1Y4ajN3clhFWDRUY1ZveHV5Z2R5Qkd6cVNVbThjMUZyWjlsTmdOdERrSnVFdTFqUkFHYXlzY3VWdHJDb3J6dlhrcExvR0FHVEJDQjB6V0l3WEZ0NTg4ZGJONmZwOWktSHA4Q25BVGVkVDQ1MS1sZVpXOXRvQ3JNdEFqYnhNWDNzNUd3YURWMjJOY1dz0gHKAUFVX3lxTE1lZlpWTlZLNHNqT3FrUkE4Y1djX01FUXF6UGowNy14RXU3dVFXRUZMMG9tX1ZtMVB3NHdXRUF1ckZwM3ctanR5d2dKODhIOXVLTW0tLXN1LTFrSVA3LUpHd3NxU3daQ0EtTWdiVkZXNVVxM25INHBwM1RjbkVfWGFmTmxPWVRXS1UyaXIzdmVfUzdLbkFWYjBBSzVMNVcyXzlWbklqWVotbG9SN0oyZ0VoN0xBclVwSkxVNGZxRU1JRmZ0aTNNdnF1T3c?oc=5",
+        "date": "Sat, 22 Aug 2026 16:24:08 GMT",
+        "summary": "Is Anthropic-Driven Windfall Reshaping the Investment Case for Amazon.com (AMZN) and Its AI Ambitions? simplywall.st",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:568369a03ee61cc9015906b8db57088aae3c0984a2c83cd0fb56de792794a048",
+        "label": "2Q26 Datacenter Supply/Demand: DeepSeek to Claude - CreditSights",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "CreditSights",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeUJaV3RwOU9ZQ1BIUDZrZm5jamk2LXNIRWQ5SnlZajhTQ3pHZWJZa0dWemt4MExEQjBrQnl6ZTFiOTlSWjF6aER2d3Z4MldJa0Q0YmtaaHEtMmZjbEpOWldaWTUtU3ZtaHk1R0Z4MkNxMlpDV0U3RXRxczFudWo0S2IyUGdqOFpPSEtXYjR5NDk0QQ?oc=5",
+        "date": "Thu, 20 Aug 2026 12:45:38 GMT",
+        "summary": "2Q26 Datacenter Supply/Demand: DeepSeek to Claude CreditSights",
+        "score": 2,
         "weight": 1
       },
       {
@@ -8142,6 +8184,18 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:511bb7af8791d3740e702ff323ffa89ff9ba3702666e937a962ed4f4f5133501",
+        "label": "Stock Market Week Ahead: A Choppy Market Heads For Nvidia Earnings, Jackson Hole - Investor's Business Daily",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investor's Business Daily",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcW5QRE12ZEV3TUE2ZnFjdGljdFJhV3JGay1NRHBUa0pCSWhuNy00bkh1NDVScGVuazFZVFZwWnAzcDhMc0luWkRNeG90MWM1LUc4SXFwMmlPT2t3dVQ4a2pLbUc4NzJaS19LT1Brd01oYXUxcFNBTGVKaHJTNkRPcnRjbll3UzNNN0hOU3lub0FhU2hBeU9fSWF0NXpIRDRJb2dyN1IySVVKbTV6cm9tNzZqdlZqeTVkZnBrbFA0cFkzQ29qMmVhOFJ0V05jMGtXUnc?oc=5",
+        "date": "Sat, 22 Aug 2026 17:05:00 GMT",
+        "summary": "Stock Market Week Ahead: A Choppy Market Heads For Nvidia Earnings, Jackson Hole Investor's Business Daily",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10649,54 +10703,6 @@
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaDJpR25PX2FpeFlvMHhRV3NqRVhVcFNhS2plRWktT3U0Q2hRellLd1o2cGsxbDNhb05VeXRUY2Nta2l3QkFjeUlsMzZvbXdvZ3U4OXktU0hVSTJ6eUhhcjlMX0VuemtyQVBfSFljYzJXQjJ6UkxyR3hLRGxTRHFzam5YcHh6WW9XWHRjS1BTeUQ4SkY0UkxSWEhYVENFUUU0dHp6LWlQdE1fZTZf?oc=5",
         "date": "Fri, 31 Jul 2026 07:00:00 GMT",
         "summary": "Here\u2019s How Much Traders See AMD Stock Moving After Earnings Investopedia",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:58e48062ea2eccaf50ca2fdced6a46938266e11a4fe7f8931ef749be5057beec",
-        "label": "Should You Buy AMD Stock Ahead of Q2 Earnings? Here's What to Know - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOa0ozTVFjS2pIV1hnY1FROE1GcHJGckx5TU5UZWJpQWJSWnFObm13c3cyUVdoa0l5bTY2d1VGaFA0RGUybHRuSlZrNXVXc3JuNXpHS3A3S2J3NDBDUDNVenJnQjNSbXJoS0J3cFVZZWlTWmJIOEdhUUhrQ0U0VENzQWZSVHVDSE54TTE4czhFMkc?oc=5",
-        "date": "Fri, 31 Jul 2026 07:00:00 GMT",
-        "summary": "Should You Buy AMD Stock Ahead of Q2 Earnings? Here's What to Know Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f7e153cc6e76f3e576691c8f8855a8cf48e6a2213bb2c9975982617d76fd390f",
-        "label": "Core Scientific and AMD Announce Infrastructure Partnership - Core Scientific",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Core Scientific",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTEstWlVPenBxdWx3WkxBUVI0N3BXbDZSWGtkZ3IwcjFianBmWERSWGJOUXRrblpXZG5NVnF1QXozLVZrRzY3MTFKVW9tXzMyX3o0OHB1cERDQXRhSzQ0RnRKN3NoaENMbGhxbXc4akNKVmtiREFWSnBkSVBXczZTejJrblRkelNsZW9fVl9PMTRuVDY4UXV1Ui1vV1kxSVl4eF9tZjN6enF0QjllSnI0TkMzakZfaXFiS2wyMVU0LTN1dUhMVXpmTFdmcDRldDg?oc=5",
-        "date": "Tue, 28 Jul 2026 07:00:00 GMT",
-        "summary": "Core Scientific and AMD Announce Infrastructure Partnership Core Scientific",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d58e78039a105415cf3faa2ce4cda82f330cde5838660bc6b2a5a60ab9054cb4",
-        "label": "AMD's revenue climbs 50% and data center sales doubled, but the stock is down - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1FSkxiYWZwZ3B4SElFOWl3R0tlcUowc0ktU3JLN3lBTG9iSFBoMllXVExVMjR2bHY1NjhkSzZzRE5hdzZjcVBkM2NoMkl1Y3YyT09xd2NSVEx0ODA1NkZSbnh3aGl0ZTJJRVdkS1NLVWl6Z9IBd0FVX3lxTE5DZjZ1S0J3SURPUW8tNlIwbG1CeDIwRDlPY1lRQmN1YW9GQjZ4RjEtMmtQS0tvS0RMS2UxQW5Bc0UxU0hnbUxuYk10MlFxNXFVSWJ5MUc1YWVHRG4zSWEyY3dTS2k1RFA5dW1sWVBCdkNZLTFMRjgw?oc=5",
-        "date": "Tue, 04 Aug 2026 07:00:00 GMT",
-        "summary": "AMD's revenue climbs 50% and data center sales doubled, but the stock is down CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9aca25bda625e820e18e3d9fddf9189467d19ba7035139bc191fe52ee1c062b3",
-        "label": "AMD Acquires MEXT to Advance Memory Optimization for Compute Infrastructure - AMD",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "AMD",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWTExMXRhejMzdlV3VENMeDNaMnBGbkNmajNqLXFQS3Z2ZE9DV3FOOEh6ZGE1a2Z2ZG1pTVRWeTdjUmM3WWM1MEZUVTFkM21tNVltYnlnWTdObmJvVm9Iay1VcnV2dTYxLTFlM1Z6UmRqOS0yVjR6bkxENk5Wd0I0b1YtcHoyVTg?oc=5",
-        "date": "Mon, 15 Jun 2026 07:00:00 GMT",
-        "summary": "AMD Acquires MEXT to Advance Memory Optimization for Compute Infrastructure AMD",
         "score": 1,
         "weight": 1
       }
@@ -14407,6 +14413,27 @@
       },
       {
         "source": "Alphabet",
+        "target": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
         "target": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
         "type": "EVIDENCE",
         "weight": 1,
@@ -14814,6 +14841,34 @@
       {
         "source": "OpenAI",
         "target": "evidence:06600c95c2f5d695294bccb3ff4287570861bf67cd81eb6bf97b9687a284e151",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:e1470c3a5052f5faf3aa2f8b950c19f6fea2424f9f28c80e1a66e137ced6281c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:e1470c3a5052f5faf3aa2f8b950c19f6fea2424f9f28c80e1a66e137ced6281c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:568369a03ee61cc9015906b8db57088aae3c0984a2c83cd0fb56de792794a048",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:568369a03ee61cc9015906b8db57088aae3c0984a2c83cd0fb56de792794a048",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16102,6 +16157,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:88724e1f94b43ef9dbf0f7ad1e3cc74a48bf0ee01004a1bfd190ddc08fae32d4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:511bb7af8791d3740e702ff323ffa89ff9ba3702666e937a962ed4f4f5133501",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17565,34 +17627,6 @@
       {
         "source": "AMD",
         "target": "evidence:98ea31e90b79259a34d12ba62200b4ae24f614bff59e3e31e76ef7a2b3fe1c99",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AMD",
-        "target": "evidence:58e48062ea2eccaf50ca2fdced6a46938266e11a4fe7f8931ef749be5057beec",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AMD",
-        "target": "evidence:f7e153cc6e76f3e576691c8f8855a8cf48e6a2213bb2c9975982617d76fd390f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AMD",
-        "target": "evidence:d58e78039a105415cf3faa2ce4cda82f330cde5838660bc6b2a5a60ab9054cb4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AMD",
-        "target": "evidence:9aca25bda625e820e18e3d9fddf9189467d19ba7035139bc191fe52ee1c062b3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32033,20 +32067,20 @@
   ],
   "collector_runs": [
     {
-      "id": 171,
+      "id": 175,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T17:35:34.380470+00:00",
-      "completed_at": "2026-08-22T17:35:48.859590+00:00",
+      "started_at": "2026-08-22T18:49:00.801223+00:00",
+      "completed_at": "2026-08-22T18:49:18.563581+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 0,
+      "items_new": 6,
       "error": null
     },
     {
-      "id": 172,
+      "id": 176,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T17:35:49.264337+00:00",
-      "completed_at": "2026-08-22T17:35:49.663762+00:00",
+      "started_at": "2026-08-22T18:49:18.965198+00:00",
+      "completed_at": "2026-08-22T18:49:19.393493+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32063,20 +32097,20 @@
       "error": null
     },
     {
-      "id": 170,
+      "id": 174,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T17:35:33.288985+00:00",
-      "completed_at": "2026-08-22T17:35:33.979082+00:00",
+      "started_at": "2026-08-22T18:48:59.777343+00:00",
+      "completed_at": "2026-08-22T18:49:00.369679+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 173,
+      "id": 177,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T17:35:50.065122+00:00",
-      "completed_at": "2026-08-22T17:35:51.874439+00:00",
+      "started_at": "2026-08-22T18:49:19.807849+00:00",
+      "completed_at": "2026-08-22T18:49:22.043239+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32093,7 +32127,7 @@
       "error": null
     }
   ],
-  "document_count": 1110,
+  "document_count": 1116,
   "event_count": 962,
   "mention_count": 2358,
   "review_counts": {
