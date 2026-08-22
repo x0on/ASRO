@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T09:42:42.424750+00:00",
+  "generated_at": "2026-08-22T10:40:31.317228+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "fragility": 61.1,
-    "cannibalization": 54.2,
-    "monetization": 42.9,
-    "transmission": 39.6,
-    "counter_evidence": 42.9,
-    "circularity": 57.1,
     "capital": 52.15125962813687,
+    "counter_evidence": 42.9,
+    "transmission": 39.6,
+    "cannibalization": 54.2,
+    "stress": 57.1,
+    "circularity": 57.1,
     "external_pressure": 61.1,
-    "stress": 57.1
+    "fragility": 61.1,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
+    "stress": "directional_estimate",
     "circularity": "directional_estimate",
+    "monetization": "directional_estimate",
     "capital": "aggregate",
     "external_pressure": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "monetization": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "counter_evidence": "directional_estimate",
-    "stress": "directional_estimate"
+    "fragility": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T10:40:30.891707+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-22T09:42:41.935668+00:00",
       "score": 51.4,
@@ -3435,6 +3441,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:08b33994022b6bdaf4e8bfe7915caf430ab1b145400fa21c522b4d1c85f07a0e",
+        "label": "Sam Altman Is Pushing for a $1 Trillion IPO Valuation for OpenAI, Even as SoftBank Faces a $40 Billion Loan Deadline in 2027. Here's What That Tension Means for Microsoft and Nvidia Shareholders. - The Motley Fool",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNckp6MU9KekdwWEpGMS1BVjdPQmVUQTY4SFFiWHRCYnU1ZXM0Umxic2xySkNuQTVJOFNYM0Zla0M2REhfTkgwV0lGNmg1RUI1b0t5MTZmbWNvUThqcEY2TUhKQXluQzdwTE15NUJEMnkzU1VkRWNXZXc5bDF1OUhkM09PSl9SS3dWd2IyR0F3Mkt4TzR1WERNRg?oc=5",
+        "date": "Thu, 13 Aug 2026 07:00:00 GMT",
+        "summary": "Sam Altman Is Pushing for a $1 Trillion IPO Valuation for OpenAI, Even as SoftBank Faces a $40 Billion Loan Deadline in 2027. Here's What That Tension Means for Microsoft and Nvidia Shareholders. The Motley Fool",
+        "score": 7,
+        "weight": 1
+      },
+      {
         "id": "evidence:18f369e2106636f48fbf669e96fc37e41645a73839521cd1252f20bc843a5ac0",
         "label": "Sam Altman Is Pushing for a $1 Trillion IPO Valuation for OpenAI, Even as SoftBank Faces a $40 Billion Loan Deadline in 2027. Here's What That Tension Means for Microsoft and Nvidia Shareholders. - Yahoo Finance",
         "kind": "evidence",
@@ -4764,6 +4782,30 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:1f454deb70ce3d791279d43bffaf40f625d7976bb39e4752356ef418222e9f0f",
+        "label": "OpenAI Confidentially Files For US IPO - Stocktwits",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSWdfYnIwY0ljSHZqd2xXeVNEWlpPMUZFZ3ItQVdyYll5N1p0cHJ0MGV4c0J4bDBnZENKY1JkQUtjSkI1R21seEJyRWhGelVrdWN4LWpJcEMyd282TnV0ZGxZQktDYTZkWUdQaGxKZG1SQUFkSkRUaW5QVUxZeFVIXzR2S0taYlFSMjBiNzdhUnFiT1lsYXlaQUZaZU9rYTlXOFFMSlln?oc=5",
+        "date": "Sat, 22 Aug 2026 08:20:16 GMT",
+        "summary": "OpenAI Confidentially Files For US IPO Stocktwits",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5f33867478f7a12001157df37a894d15191b0aa0c2b1f2803a00323c0c01369d",
+        "label": "Watch OpenAI on Track to Double Revenue Ahead of IPO - Bloomberg",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaTIxcHpHNnU5REVxeElwbEVHMmF6NHpQTWVEY3poMURDTDItUFdWcDJfVkItbjBPTjFKS3lyYmVfNjFkenA5Ukg1bENMc3lScGNGbGZBbVNrQnBGeFlPSlZJczliNWR1TjNTYzBxN2wyNkItWWJabFA1RE5EMnRRVTdrM212a2UyYkVXMWxhTjdfM05icUJfVVVzbFVoLWV5TUxv?oc=5",
+        "date": "Fri, 14 Aug 2026 00:00:00 GMT",
+        "summary": "Watch OpenAI on Track to Double Revenue Ahead of IPO Bloomberg",
+        "score": 4,
         "weight": 1
       },
       {
@@ -7995,6 +8037,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:7b9f0a889b10bfcfb807c1690c5b2b9c8b18261a1bd87a4aa893c2b70bdc588e",
+        "label": "OpenAI Buys Back $7 Billion of Employee Shares in Tender Offer - Bloomberg",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSFBlWjR5WnAwR2pnVnBzWEFTY3doNTJGc2pVN1pLcWU2RzZUQjBGdVBsaXkyRWpIQ29CUFJxd3Z2Umw0ZjZ6SFdBbmxtVlhkazYtWU03OUNWdkRjdmJuZzRvRUc4YlRhejNQX2M3Z1BkYzBCNUtQWk5RVmhjX2U3aVMwUFN3dzlMajZtX0w1YXBrSGN3MXVOOVJUY0F4ZzFhWXF0Y2FTTXJDSkJsRFgyOUZR?oc=5",
+        "date": "Mon, 10 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI Buys Back $7 Billion of Employee Shares in Tender Offer Bloomberg",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:1bacd9f7f983ca6fed8ff8f9f7210e73101801571dab7d3bf67183bd2d4436d1",
         "label": "How Tencent Music\u2019s Q2 Beat and Completed Buyback Will Impact Tencent Music Entertainment Group (TME) Investors - simplywall.st",
         "kind": "evidence",
@@ -10609,54 +10663,6 @@
         "summary": "Wall Street Expects CoreWeave's Revenue to Double in 2026 and 2027. Is the Stock a Buy? Yahoo Finance",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:dbb031a54530633df29691c66daf37b70dddd2353760762ed2e8a87f6740f529",
-        "label": "Oracle Announces Fiscal Year 2026 Third Quarter Financial Results - Oracle - Investor Relations",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Oracle - Investor Relations",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPa3ZiRXh0VnVoSm50UXJBNnFmZk9wNVRTTjNqNUNERF9PLUQxMUlZaGpJODVldHdyMzNDRDF5ZU1Lbnh6LWVWSmMwWDdOeVd0UGt0MmVUSTM0eWtrRGRjZElycGswdzhQcEt4RW1GbDlmcWxkenZycU9uQkMyd0hRbndTaUJNaTA2MzV3M2d0QjR6ME1iY3VyX05MXzZLNFVHTTNBTDkxU2dxejlvMFBPTmo2akZXdFRFZHlFXzhPeTVYNHB4UVlha0I1Z1hRMDZ5cVhyYg?oc=5",
-        "date": "Tue, 10 Mar 2026 07:00:00 GMT",
-        "summary": "Oracle Announces Fiscal Year 2026 Third Quarter Financial Results Oracle - Investor Relations",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2838a579073ee273c1ea9abb346bf7fc1f3cb5f7f30851bbaa4e1ce25cebc1af",
-        "label": "IBM and Oracle Expand Partnership to Help Organizations Modernize with AI and Cloud - IBM Newsroom",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "IBM Newsroom",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdTVZUHpEby1yakxHOS12bXVFZXlFZHU4QlZTWDZfSURoTkk5c19wOXNqQ2tpeGhTVDdDXzRham1ZeFlBUWhkcVdxZ1k2blh1VzQxa3JBMFVRZ1htQkF0UldVR2x4Y240OXRSRWw0NTh3YXRQenVqRXNOeUJzb3Zjd0pndFFyRjVCQkJNbU9ZRkFuc1IyZ2NUd2QxNTNGd2dHSGNEWkhQeDRvSjFzR1ZGTS1yZw?oc=5",
-        "date": "Mon, 04 May 2026 07:00:00 GMT",
-        "summary": "IBM and Oracle Expand Partnership to Help Organizations Modernize with AI and Cloud IBM Newsroom",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:39a9c852249cbcffed8c3fb59c8d6cd89fe648719f53c3df06441cab096081f8",
-        "label": "Oracle plans more layoffs before its next fiscal quarter: Report - HR Executive",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "HR Executive",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNV0RZUm9YaWduNTE0UFgtekFRRTk2UXJsdXNLZ1RpYVpFSkxnd2RWN1VHS3A3bHgyNTBHNDRFRGYwd29kVUVzZGVfNkhsa19XcVpLdnJjWWhPalIzQnNHVDhOSnVGeGJZSEVOOXpWa0lkX29CVFp0dm5xenhlSHQyZ3FrSEJqNlQ2b0ZyOWRsbm93QQ?oc=5",
-        "date": "Thu, 13 Aug 2026 11:30:40 GMT",
-        "summary": "Oracle plans more layoffs before its next fiscal quarter: Report HR Executive",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5a5b0541d7f24c5540de02889b90dbfee6ffcb68253c2f8c95889241967be848",
-        "label": "After Earnings, Is Oracle Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Morningstar",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRTIyYkNSZGwzbWV0WUxvVVRyZXZCSkhzcUZhS0kxdjBEcWtkT0NCOFdPTDAwQVdWbHQ0ODBZSzBvbTFGX2ZsWUZ6ODNMQ2U1Rk1xbzl6VGJ6dkFNXzZmT1FFSld1M0g4WHJwNVlnc1NVTVN0SEhEenFsbzZ6WG9GOFBFVDFZSmEwT1dpQms0V243ZV94N1pLMTFqbFRlNlBNdWc?oc=5",
-        "date": "Thu, 18 Jun 2026 07:00:00 GMT",
-        "summary": "After Earnings, Is Oracle Stock a Buy, a Sell, or Fairly Valued? Morningstar",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12328,6 +12334,34 @@
       },
       {
         "source": "Microsoft",
+        "target": "evidence:08b33994022b6bdaf4e8bfe7915caf430ab1b145400fa21c522b4d1c85f07a0e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:08b33994022b6bdaf4e8bfe7915caf430ab1b145400fa21c522b4d1c85f07a0e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:08b33994022b6bdaf4e8bfe7915caf430ab1b145400fa21c522b4d1c85f07a0e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SoftBank",
+        "target": "evidence:08b33994022b6bdaf4e8bfe7915caf430ab1b145400fa21c522b4d1c85f07a0e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
         "target": "evidence:18f369e2106636f48fbf669e96fc37e41645a73839521cd1252f20bc843a5ac0",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13519,6 +13553,20 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:1f454deb70ce3d791279d43bffaf40f625d7976bb39e4752356ef418222e9f0f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:5f33867478f7a12001157df37a894d15191b0aa0c2b1f2803a00323c0c01369d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15953,6 +16001,13 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:7b9f0a889b10bfcfb807c1690c5b2b9c8b18261a1bd87a4aa893c2b70bdc588e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Tencent",
         "target": "evidence:1bacd9f7f983ca6fed8ff8f9f7210e73101801571dab7d3bf67183bd2d4436d1",
         "type": "EVIDENCE",
@@ -17474,34 +17529,6 @@
       {
         "source": "CoreWeave",
         "target": "evidence:fe6cc2a4f0af1d9418110af793f9603411f6df1aa5d701840491589624cdf38f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:dbb031a54530633df29691c66daf37b70dddd2353760762ed2e8a87f6740f529",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:2838a579073ee273c1ea9abb346bf7fc1f3cb5f7f30851bbaa4e1ce25cebc1af",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:39a9c852249cbcffed8c3fb59c8d6cd89fe648719f53c3df06441cab096081f8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:5a5b0541d7f24c5540de02889b90dbfee6ffcb68253c2f8c95889241967be848",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31912,20 +31939,20 @@
   ],
   "collector_runs": [
     {
-      "id": 143,
+      "id": 147,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T09:42:26.197549+00:00",
-      "completed_at": "2026-08-22T09:42:38.674778+00:00",
+      "started_at": "2026-08-22T10:40:12.331236+00:00",
+      "completed_at": "2026-08-22T10:40:27.461234+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 144,
+      "id": 148,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T09:42:39.077104+00:00",
-      "completed_at": "2026-08-22T09:42:39.404058+00:00",
+      "started_at": "2026-08-22T10:40:27.862066+00:00",
+      "completed_at": "2026-08-22T10:40:28.271063+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -31942,20 +31969,20 @@
       "error": null
     },
     {
-      "id": 142,
+      "id": 146,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T09:42:25.066102+00:00",
-      "completed_at": "2026-08-22T09:42:25.796433+00:00",
+      "started_at": "2026-08-22T10:40:09.630732+00:00",
+      "completed_at": "2026-08-22T10:40:11.930276+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 3,
       "error": null
     },
     {
-      "id": 145,
+      "id": 149,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T09:42:39.805392+00:00",
-      "completed_at": "2026-08-22T09:42:41.520284+00:00",
+      "started_at": "2026-08-22T10:40:28.672813+00:00",
+      "completed_at": "2026-08-22T10:40:30.477983+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31972,7 +31999,7 @@
       "error": null
     }
   ],
-  "document_count": 1092,
+  "document_count": 1096,
   "event_count": 960,
   "mention_count": 2356,
   "review_counts": {
