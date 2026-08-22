@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T22:38:51.319368+00:00",
+  "generated_at": "2026-08-22T23:35:28.001915+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
     "transmission": 39.6,
-    "stress": 57.1,
     "external_pressure": 61.1,
-    "circularity": 57.1,
+    "monetization": 42.9,
+    "cannibalization": 54.2,
+    "stress": 57.1,
     "capital": 52.15125962813687,
+    "circularity": 57.1,
     "fragility": 61.1,
-    "counter_evidence": 42.9,
-    "cannibalization": 54.2
+    "counter_evidence": 42.9
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "stress": "directional_estimate",
-    "circularity": "directional_estimate",
-    "capital": "aggregate",
-    "fragility": "directional_estimate",
-    "monetization": "directional_estimate",
     "cannibalization": "directional_estimate",
+    "stress": "directional_estimate",
+    "capital": "aggregate",
+    "counter_evidence": "directional_estimate",
     "transmission": "confirmed_trigger",
     "external_pressure": "directional_estimate",
-    "counter_evidence": "directional_estimate"
+    "monetization": "directional_estimate",
+    "circularity": "directional_estimate",
+    "fragility": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T23:35:27.522121+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"capital\": 52.15125962813687}"
+    },
     {
       "captured_at": "2026-08-22T22:38:50.887015+00:00",
       "score": 51.4,
@@ -8247,6 +8253,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:5d4126cb01e59eae9621f251e6b0e25a29d7d9a724aeada615ccd632b46b4b79",
+        "label": "Destiny-Altering Decision: How 500B-Valued Zhipu AI Defies Headwinds to Rewrite Its Fate | DeepKr - 36Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA1UE5RdXJ6N1lfTWwzcktackNmZUtXcVlkM0J2WTFieTI4Zm1kVUN2enV5ck05RFo5UlduSW93THAtOFp5eEpQTHVnT1pKNTcxUHZF?oc=5",
+        "date": "Thu, 20 Aug 2026 07:54:46 GMT",
+        "summary": "Destiny-Altering Decision: How 500B-Valued Zhipu AI Defies Headwinds to Rewrite Its Fate | DeepKr 36Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c2bdda760cac8b6f02683c802e0c0895e7efb01f5dbef48626a1c7abca82552e",
+        "label": "Qwen 3.8 Closes the Reasoning Gap, but Agentic Coding Remains a US Stronghold - CryptoRank",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CryptoRank",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbEctRUp6dkY3YTBnWDZmUTFqa2VsUjNQelBwWWsxQWdfNTJRNk4yMEp1V0lqRUFiWlFNS0dEeWllTUp5VUVCenNubmRsX0FfQXNmcWU0WXhaUnpiV0s2THZsREZCVEU1azEyLUZDRXN6ZGRzNFFQSG1mZEVuZXFCRXE3V3lBRzM1OWNuZzlSWW5vQThqNThnLVJtRjZyUDVLUkNzZXBESENRaW1TRmZKSnNCX1I?oc=5",
+        "date": "Sat, 22 Aug 2026 23:09:43 GMT",
+        "summary": "Qwen 3.8 Closes the Reasoning Gap, but Agentic Coding Remains a US Stronghold CryptoRank",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:b9dc0d0d67d15a7d6a1179fd9a58e114c9100bfc71fa3fc02df3e5fa5f19ec33",
         "label": "MiniMax H3: The Open-Weight AI Video Model Reshaping the Industry - Intelligent Living",
         "kind": "evidence",
@@ -10703,30 +10733,6 @@
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVXdVQ3poZF80clozVnRCOHNrcjFqVlpNRHJnejRiV3pCWk0tRklMbGJEQXBQSjktSkw5VVJ4NW9TdHRwZi1OUFJCZU01QWJOWll1S01qam93ZFJYclU5VGExOXdlU0ZPYnVrVkVQZlAtSDBEMkJjUGtnNWJoN3pZOS1UQ0t0aDlCbEFITnVwSXNucXR4eDJ5TzFiTkJQZWV5M05oWWRVYWF0SnR0RHpMb1k2SmVrLVhO?oc=5",
         "date": "Mon, 23 Mar 2026 07:00:00 GMT",
         "summary": "Apollo Funds Announce Strategic Investment in NSG Group, a Global Leader in Glass Manufacturing Apollo Global Management",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c3ae8d68df851f9b65827569ff008c94a7774e8887553187633cb37d81d1a69e",
-        "label": "SoftBank to build up AI data centres in France with major investment - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOc3FocElicm56R1ZsVzhRVHpFYmRiaEFUaTctSGVaRS1JdTgzVDQtaWtLeUp4WVlwdVdEcUtHdU1UUHJhZDh0U0U3eGhNMlc1TC0wdzlNcHJCZWphVTRqTzE2Wm1EamtOd0g1SDFCQ0JKRTZpYmdnVGc0WVJwb2hsaTBtQlZMVGpfNDVpdEl5dkY3UElFbkRDak91SkwxUG4z?oc=5",
-        "date": "Sat, 30 May 2026 07:00:00 GMT",
-        "summary": "SoftBank to build up AI data centres in France with major investment Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b17afa6b0a42f23dae646bcf51242db73cc6b0856398330a69ade25f7de7b8d3",
-        "label": "SoftBank Is Exceeding Its Own Debt Limits to Bet Everything on AI. Someone Else With a SoftBank Address Sent Us a Different Kind of Declaration. - FinTech Weekly",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "FinTech Weekly",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbm5WV1J1TC1HREx6NVpiRnJveUZxMGRzZm4tbHBadjFaMWlLYlN6LWZIMTlmdkE1VUtSTkJlRmRRdm5yM3pTTkpqVFFEZFU2NW9HM3pQYXk3d2h2MUhzRGhCcjdKVzIxci0xdzdyNGN2ZDRFS3J2Q0VlcURhUEw1a29RaFdTUWFoTkJpdVBZVQ?oc=5",
-        "date": "Tue, 24 Mar 2026 07:00:00 GMT",
-        "summary": "SoftBank Is Exceeding Its Own Debt Limits to Bet Everything on AI. Someone Else With a SoftBank Address Sent Us a Different Kind of Declaration. FinTech Weekly",
         "score": 1,
         "weight": 1
       }
@@ -16221,6 +16227,20 @@
         "mentions": 1
       },
       {
+        "source": "Zhipu AI",
+        "target": "evidence:5d4126cb01e59eae9621f251e6b0e25a29d7d9a724aeada615ccd632b46b4b79",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:c2bdda760cac8b6f02683c802e0c0895e7efb01f5dbef48626a1c7abca82552e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "MiniMax",
         "target": "evidence:b9dc0d0d67d15a7d6a1179fd9a58e114c9100bfc71fa3fc02df3e5fa5f19ec33",
         "type": "EVIDENCE",
@@ -17651,20 +17671,6 @@
       {
         "source": "Apollo",
         "target": "evidence:6ad05c0cbe5c443e87b02d20f7f8dbeba04c66cd6676401d806e43b696d21ced",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SoftBank",
-        "target": "evidence:c3ae8d68df851f9b65827569ff008c94a7774e8887553187633cb37d81d1a69e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SoftBank",
-        "target": "evidence:b17afa6b0a42f23dae646bcf51242db73cc6b0856398330a69ade25f7de7b8d3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32105,20 +32111,20 @@
   ],
   "collector_runs": [
     {
-      "id": 191,
+      "id": 195,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T22:38:30.160095+00:00",
-      "completed_at": "2026-08-22T22:38:47.077848+00:00",
+      "started_at": "2026-08-22T23:35:09.550098+00:00",
+      "completed_at": "2026-08-22T23:35:24.219601+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 192,
+      "id": 196,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T22:38:47.479862+00:00",
-      "completed_at": "2026-08-22T22:38:47.867903+00:00",
+      "started_at": "2026-08-22T23:35:24.621030+00:00",
+      "completed_at": "2026-08-22T23:35:24.958199+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32135,20 +32141,20 @@
       "error": null
     },
     {
-      "id": 190,
+      "id": 194,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T22:38:29.140110+00:00",
-      "completed_at": "2026-08-22T22:38:29.758222+00:00",
+      "started_at": "2026-08-22T23:35:08.622063+00:00",
+      "completed_at": "2026-08-22T23:35:09.148687+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 193,
+      "id": 197,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T22:38:48.270038+00:00",
-      "completed_at": "2026-08-22T22:38:50.473079+00:00",
+      "started_at": "2026-08-22T23:35:25.359696+00:00",
+      "completed_at": "2026-08-22T23:35:27.107237+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32165,7 +32171,7 @@
       "error": null
     }
   ],
-  "document_count": 1122,
+  "document_count": 1124,
   "event_count": 962,
   "mention_count": 2358,
   "review_counts": {
