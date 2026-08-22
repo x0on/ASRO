@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T10:40:31.317228+00:00",
+  "generated_at": "2026-08-22T13:01:03.035346+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "capital": 52.15125962813687,
-    "counter_evidence": 42.9,
-    "transmission": 39.6,
-    "cannibalization": 54.2,
-    "stress": 57.1,
-    "circularity": 57.1,
     "external_pressure": 61.1,
+    "capital": 52.15125962813687,
+    "stress": 57.1,
+    "transmission": 39.6,
+    "circularity": 57.1,
+    "cannibalization": 54.2,
     "fragility": 61.1,
+    "counter_evidence": 42.9,
     "monetization": 42.9
   },
   "dimension_evidence": {
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "cannibalization": "directional_estimate",
     "stress": "directional_estimate",
     "circularity": "directional_estimate",
+    "cannibalization": "directional_estimate",
     "monetization": "directional_estimate",
-    "capital": "aggregate",
     "external_pressure": "directional_estimate",
-    "fragility": "directional_estimate"
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -654,6 +654,12 @@
   ],
   "history": [
     {
+      "captured_at": "2026-08-22T13:01:02.647076+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"external_pressure\": 61.1, \"capital\": 52.15125962813687}"
+    },
+    {
       "captured_at": "2026-08-22T10:40:30.891707+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
@@ -987,6 +993,18 @@
         "weight": 3
       },
       {
+        "id": "DeepSeek",
+        "label": "DeepSeek",
+        "kind": "company",
+        "weight": 2
+      },
+      {
+        "id": "Microsoft",
+        "label": "Microsoft",
+        "kind": "company",
+        "weight": 2
+      },
+      {
         "id": "Moonshot AI",
         "label": "Moonshot AI",
         "kind": "company",
@@ -997,12 +1015,6 @@
         "label": "Blackstone",
         "kind": "company",
         "weight": 2
-      },
-      {
-        "id": "DeepSeek",
-        "label": "DeepSeek",
-        "kind": "company",
-        "weight": 1
       },
       {
         "id": "Baidu",
@@ -1031,12 +1043,6 @@
       {
         "id": "Apollo",
         "label": "Apollo",
-        "kind": "company",
-        "weight": 1
-      },
-      {
-        "id": "Microsoft",
-        "label": "Microsoft",
         "kind": "company",
         "weight": 1
       },
@@ -3753,6 +3759,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:c697a0954e8c0fd1997d6533f6b1b2718ecbd381accc258cc91626ef97cd837f",
+        "label": "Anthropic market debut could break SpaceX IPO record: media - Yahoo Finance UK",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance UK",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZXFISUFweFFSSFFBQlAwQjR3WUJLT2RBT2pVV0Fna3JzOEpLWWdCbVN3VWJIMHV5M090QmZzUkVENU5ZRkJqZFoxTTczVlhxSE5ZTkJSeU9sYjBxbDVjUmpZVlc0TGxuV2dkZ3lzWWRobHJVTWl4WkE0UmlvUmExSTc1bC0wR3BsMVVj?oc=5",
+        "date": "Sat, 22 Aug 2026 12:47:22 GMT",
+        "summary": "Anthropic market debut could break SpaceX IPO record: media Yahoo Finance UK",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:c862e056f0b780aa43a1db8619ca3151f563a68f3b1bb500138b5a6ee0b7d126",
         "label": "OpenAI Vs Anthropic IPO: How They Compare And What We Know | August 2026 - Forbes",
         "kind": "evidence",
@@ -4782,6 +4800,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:25c8c5e4acb6d6fae169ebe3288b195179060a64f323e08a4acb49beea839549",
+        "label": "OpenAI IPO: Sam Altman Reportedly Reveals Timeline, Hints At Major AI Upgrade - Stocktwits",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWUdTX1ZYX0k0eTRldC04NTdKTFVyaDRNblF4eDRSaDdEbXNXTkRBME1QWjQwRFZqX3RaM21SX1dENHp0eDY2ZjkxTVlFRkNOZXFzZ2NHc0NWZndQSXJaSlBkNDZlQkpOVi05dGVlVHhZWUU2TnJnU2J2Y0JwdUxydFZFS1JUbzJIZkNkd1F3dGxrdGhvNnJDVkhWa3hHLXVYYk12aUFGa3dYUHdvYW54NU9HTWozTmNfY0Q0MmQzRDgtY2doWHZpMUpPSk9YSXA4?oc=5",
+        "date": "Sat, 22 Aug 2026 07:18:06 GMT",
+        "summary": "OpenAI IPO: Sam Altman Reportedly Reveals Timeline, Hints At Major AI Upgrade Stocktwits",
+        "score": 4,
         "weight": 1
       },
       {
@@ -6354,6 +6384,18 @@
         "date": "Thu, 20 Aug 2026 04:32:35 GMT",
         "summary": "OpenAI CFO Reveals How Soon the IPO Could Actually Land Yahoo Finance",
         "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9fdcf5696b2268ac4344ef56ecb4c0768cffee1f45bb9aa6f64f6f6e71cb2d92",
+        "label": "Microsoft: Higher Revenue Visibility Met Measured Capex - Seeking Alpha",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeUZOWS1uV1VWbjVFajNNZGVDU2FtTElpWW80UURZU1JIZ3diOV9lYUU3M3FINXBST1lTc3lkZjladVlFRDBPWmQwV1Z5VnlwdVprUUJSWEotLUJxdFBBOWZXMHA4SkxhdlZEUUVvV3lqM3lIU3RobVZUTHVXZXp6dlc1LUZCdDBvVnpXdjNjSzR5YlBDX25QQThGWQ?oc=5",
+        "date": "Sat, 22 Aug 2026 10:49:08 GMT",
+        "summary": "Microsoft: Higher Revenue Visibility Met Measured Capex Seeking Alpha",
+        "score": 3,
         "weight": 1
       },
       {
@@ -8034,6 +8076,66 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2bdc628179d896a0a8d8c0cbbe3cb9de7088b3c8688e975561246ccce9fae6e2",
+        "label": "DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof - Tech Times",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Tech Times",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQU1ZGaFBNTnlLV3pTcFc3VXJDR0VPS3BZdllIV21zMWY4dmxOWHpmZHoxekZjQXVKVmM3VTRuekt3V1E2SEx5NFNxQV9vRnpfVUthX2RKMnZMSTMtS1NlaXBlLXRnVWxYTThnS0xjUWJVcFZNNGFBenpmT3JEUWZvMXRvM1pZVUNoS2IzYUU1MFpHQktxZllZbWJSaVpNYTFacC1mTWxnMGd0cEwzRC1BQnNCQl9Qa0FFUWNGMDBfa2FLUQ?oc=5",
+        "date": "Thu, 13 Aug 2026 12:26:58 GMT",
+        "summary": "DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof Tech Times",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c1a1196149642889154d21e67d1381d89a132f39cdf315f592de1e26136ceb3e",
+        "label": "Smart Investor: Picking Winning Stocks, Behind the Bond Yield Surge, and Nvidia Earnings Outlook - Morningstar",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTk9FNG9yUDB3SkQyR3Vwdlh5MnRnWjJiazZOOFlFTlFlejNTSUdoS3ZhVDJPVEFLY1I3cXlGbmI5V1FWbUVMOHJYMFNXVFRIY0x0NDBEcWdPbWVzYWhxdUtMc3JfaENIX21kSWQ5ekExVk5XR25KS2dnbFRpTllxSU9WZ0JzNktJOGk0dHl2MGloYjBodm1zZ191QXNIcHhnXzVqb0hfMlE4V2NZaVdOZ3ZrNFYybFJINnRvR1Jn?oc=5",
+        "date": "Sat, 22 Aug 2026 12:13:25 GMT",
+        "summary": "Smart Investor: Picking Winning Stocks, Behind the Bond Yield Surge, and Nvidia Earnings Outlook Morningstar",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:4ab078d93a594c0d054ba3e23087a8c404abe95408cabb59bff8761779add7ec",
+        "label": "After Market Losses, Nvidia Earnings Key; New Canada Tariffs - Investor's Business Daily",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investor's Business Daily",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkR0Mk1hdnJPQVZHWEJYWXQ2UENlazJ1OG1EWTVtNFVYLTdMVHpfbVRIQ09zMmtMRnlLT1dnd0VyVzh1cTQzVm1jMS1keHR1TUNXOXBPSXEwWE10bFNoTi1Sd1ptX1lDcHhzaG5OaTFwTzE0UlBvTzgzTHpGVkVQeUoyY2szcks3RkFENTdPbmRVUVFWMjZaWF93cFpXcnZEUEM3d21BTGpKcWZJblEtcEhJVjA?oc=5",
+        "date": "Sat, 22 Aug 2026 12:08:00 GMT",
+        "summary": "After Market Losses, Nvidia Earnings Key; New Canada Tariffs Investor's Business Daily",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2545d1f887c15202c2a0a2a8c0949f09dc0913e3a02f7a60d02a09da6aee8d1b",
+        "label": "Our Favourite IWC Models In The Luxury Watch Collection Of F1 Sensation Kimi Antonelli - AugustMan Singapore",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "AugustMan Singapore",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMXhiYjJoZzlSUUMyTmhHN212MjE4NDZSSjlVZEdUZWxsODB0ZnFKTlNRVEF6aWhpdDhuc25vNGx6Qk9WTHZxNF9rRXR5LURyMDg2enFMMFNFblhlSDAtdXJFaU8xYk9TTGpTX1loTnJZa0p5NFNxekNXNUhVSmJ4bVhKY00xS2fSAYwBQVVfeXFMTW96UGsybFprMmRwMlMwV3NPa1Rzb1Q0UXh5aERweU14WmRwbXpmbmtGQnRnSmVDYTdtTGZaVW54UVowM3Fkd2FnbVlETFVXQ1BITFg2QjRaZ3dsRzJ0eW40OF9TdEFDeUttMnBFTUxCTjRCSVFNaTZ0aHlmSFU1X25iV2pzTncyUVZGWWI?oc=5",
+        "date": "Sat, 22 Aug 2026 03:01:49 GMT",
+        "summary": "Our Favourite IWC Models In The Luxury Watch Collection Of F1 Sensation Kimi Antonelli AugustMan Singapore",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:74943c87332f3cc4afcc53d2203dc16ad97b470c90c5c40d63b4f539c62d2db8",
+        "label": "How Tencent Music\u2019s Q2 Beat and Completed Buyback Will Impact Tencent Music Entertainment Group (TME) Investors - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQcXR1SmNoRzBvYnpqN29NZ054Vkg3SV9wcmQwelJhcVJtcmdZOGlZWllIRVFBV2JqREJod21vNGhCNnd2VDJHWHN4YWZSZkZYeER2dmdxNmJJb2RKMEZ0aWUwMEtyb3JPeHM5bUZaSV9sMVhaT2d1bDVuZ1FmcXNsWWdzcXcwd0dZU1EwWHAyUllVX1QyTF8wc2oxWTg4NFd2M0hDZ1NGVXllaHRFNThCVWt3c0NOcU8wajJVVDBRZ0RIb0p2NC1aNjJFTTdRQ3RmTVpXMlhMYlVyU2N5Znd1bGZ4a2nSAeQBQVVfeXFMUHF0dUpjaEcwb2J6ajdvTWdOeFZIN0lfcHJkMHpSYXFSbXJnWThpWVpZSEVRQVdiakRCaHdtbzRoQjZ3dlQyR1hzeGFmUmZGWHhEdnZncTZiSW9kSjBGdGllMDBLcm9yT3hzOW1GWklfbDFYWk9ndWw1bmdRZnFzbFlnc3F3MHdHWVNRMFhwMlJZVV9UMkxfMHNqMVk4ODRXdjNIQ2dTRlV5ZWh0RTU4QlVrd3NDTnFPMGoyVVQwUWdESG9KdjQtWjYyRU03UUN0Zk1aVzJYTGJVclNjeWZ3dWxmeGtp?oc=5",
+        "date": "Sat, 22 Aug 2026 09:32:04 GMT",
+        "summary": "How Tencent Music\u2019s Q2 Beat and Completed Buyback Will Impact Tencent Music Entertainment Group (TME) Investors simplywall.st",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10567,102 +10669,6 @@
         "summary": "Broadcom Seeks More Than $60 Billion in Latest AI Debt Deal Bloomberg.com",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:4f65431a9cb1ecf04f00daeca3ca219672446700a3edfe3f416865e3d90da09a",
-        "label": "Broadcom Earnings: Stock Decline Is an Overreaction to Conservative Guidance - Morningstar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Morningstar",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVkdNcEFBdk9ONmVxQ042UmUzdG0zVWlud3dJa1F3MzZVYmZrSnN0UEVYTkNRdUFOWGZVOFRXOXF5aE9zbGlPUkJBNzdHa1g0anZxVUZnaFRod2tfUVhyMjc2UGtXVU8zNVM3bnZlR0pQcXpXbHNZUFRPNDI0TVZiOXJ3Z0hWYlNrLUJHVVNqc0c1WGQ4bm42VHd0Z0xCaEYxWFgwN2lFZkFpelE?oc=5",
-        "date": "Thu, 04 Jun 2026 07:00:00 GMT",
-        "summary": "Broadcom Earnings: Stock Decline Is an Overreaction to Conservative Guidance Morningstar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2f10976406639b55aec0f2c97900d238c6882d0ef57c6f07e179f0689d9f5285",
-        "label": "CoreWeave Shares Jump as Revenue Doubles From Year Earlier - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE04SGRISzdlWlUwMF9UYWc0VURaWkczN085SnlRN2xLczlrZUdqVVktXzlNaWFiY0dmNms4V2dpakZHRy1lQU1DOVpkVFdTaHU2dWRfbEdTYWx3NkFmNTlHLW9mdkZWaGFpUDNCeEVJMGFCM2wzUl9kYlhxaUxJZnM?oc=5",
-        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
-        "summary": "CoreWeave Shares Jump as Revenue Doubles From Year Earlier WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:bc0b38b82073b473068ea8327a1ff32519f6ba8dc6586d737255d2fde182e5b7",
-        "label": "CoreWeave boosts 2026 spending plan, beats quarterly estimates on AI demand surge - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQQVJvWFV5SDAtNEhEZmZINXZ6TGs5ZXd3bkh1NEJCNi03OWFMYzJtY2psZWowOEtsMHNHazdOMUdybnc3S01vUjdVX1duN3E2bUxvZXFPZDNVR29Obm9jR1JIU2xWR1ZhWGh5WnI5ZWxabVA5dXphWk1OTVc2UEV1UjZpMmpZWHg5dVpEaVFkUjd6dV9HaUxTQldpMA?oc=5",
-        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
-        "summary": "CoreWeave boosts 2026 spending plan, beats quarterly estimates on AI demand surge Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:35bda45413796cf3707173efce65858b088a1980390ddca898942be053b912c0",
-        "label": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPQkdDTF9HeWdONW9oOUtBbGhBcXlvZk1LOVN0dHl5VXYwNnd4S1hld2NoUE5HRWlMQkxkWnFEcGdFcjR2Xy1wVXA0WXRDb1pkalExNnZ4eS11cnNOa2RBcVFpempGS3cwUWVKNUFqdHZUbGZLX2l3bWF6NEVJeHNmU9IBhgFBVV95cUxPUGRoVGhTa1JKQWpWQ3FVZGxKck9nQ1l5U21oek1jc1lWTXE0dWpHblZrbURuMXFzbnp6eUg3QURHNFpyMWdDeXhKNjlQeDJteFRrMkxMLTdXbnlhelRvclhzVUhTbmoxUzZ4YjVIWm1RVG01OHUwNFhUTnNfT29POVpwek45Zw?oc=5",
-        "date": "Thu, 07 May 2026 07:00:00 GMT",
-        "summary": "CoreWeave stock sinks 10% on weak revenue guidance, increased spending forecast CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a14d2a1595efb067525a04a9e096bff6be5c6290c3f7cf78acbf5fa2015b0dcd",
-        "label": "Earnings Preview: CoreWeave (CRWV) Q2 Earnings Expected to Decline - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxORVJKU3hjbS1lNVZoY0FWTEN3TWhTcnF1eEZkZmpnSjV4blFmRmVkYjI5VlVpcC1UV2ZObGNrclN0THNnbS1RaGpiX0gwMWJjSm5oRHROSHJTS2x2QXg0RjExLV9mVm9INkN4Y2t4Z2p0Z19WVTRkVnlWU1ZxQzNFa3FROC11eXZZRDhYREFoNmhmVDVaYm1Zemd3dDRNdUVW?oc=5",
-        "date": "Tue, 04 Aug 2026 07:00:00 GMT",
-        "summary": "Earnings Preview: CoreWeave (CRWV) Q2 Earnings Expected to Decline Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c709fce3e6b0dbb9fecd034e3366650ba88d3c29f62948a8554a822c2f6e6805",
-        "label": "CoreWeave stock pops 14% as revenue doubles on accelerating AI infrastructure demand - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPclpXaXMyMThmdzRpVzZvNlpmNEVBLUMtOGlDTXEtdGxxTnJHQkttQl9RanRkOXZBS1VqTnNOS2ktTTdGZXI1YzliTDFQYU5rekpWaUtEUmpCMG5PcFc3RFE4Z0JLaHhHeUZPbWIySVZiZUJHc0pkRXc0ekpsME9HddIBhgFBVV95cUxQZ3p0QWgxUlZWaFVJM21SenVENE1QT0NWSUhKZVM0Zzd5QVhnblI5SWVqUHZwM0JWYnRId2FfSk9kUVpHbWlhYkIzczQ3RFNhdGZGMHFFZXVqaE5HVWdTNUZic2ZROW1HYlZIdk13YXBaalRwUXlzTmcyMEdxZnpJRGNzd2xmdw?oc=5",
-        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
-        "summary": "CoreWeave stock pops 14% as revenue doubles on accelerating AI infrastructure demand CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c16982e40787176c4d4f3a25cf6c7a2da4534eb9d784e77b3a98ed4b7fbf62bb",
-        "label": "Watkins Advises on CoreWeave\u2019s Landmark US$8.5 Billion Financing Facility - Latham & Watkins LLP",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Latham & Watkins LLP",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQ1pvU2luUDdiTzk2OEx3MWladGdCNDdBLXZya0RVOWVMMEVhNUxHNXptVDdWd1ZXU2Z0aTY5eHhxMlBSWmpJRElsdWxPcHN5czNxN210TUZ3VG1HVVhSQ3dqQVNZQXVTU19Dc3RBWG84NG5kZndXRXF4VXg5dmxaT1AyVDRsRjJ4N1BETnNjSlQ4VlI1?oc=5",
-        "date": "Tue, 31 Mar 2026 07:00:00 GMT",
-        "summary": "Watkins Advises on CoreWeave\u2019s Landmark US$8.5 Billion Financing Facility Latham & Watkins LLP",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:fe6cc2a4f0af1d9418110af793f9603411f6df1aa5d701840491589624cdf38f",
-        "label": "Wall Street Expects CoreWeave's Revenue to Double in 2026 and 2027. Is the Stock a Buy? - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQb0p1bWNyc0F4NHhCU3l1WjhyVUZUcFd2Mms2NmJEUlNRVXd5RFozcDhtYkVhU2FmTERZLW12NlZ5cjBUZ1NmOS1XZTVSQ2IzSFRFZ09XRnM1d2dXUWdCMU53WUp5NXNodnJwMFBCODV3R05LMEFrSy1ySGxCcWJiSUhJdzgxTGV3d1MwRFN1akFOZkMxLXQ4UzZkekZoMU5pblNuVXRR?oc=5",
-        "date": "Fri, 12 Jun 2026 07:00:00 GMT",
-        "summary": "Wall Street Expects CoreWeave's Revenue to Double in 2026 and 2027. Is the Stock a Buy? Yahoo Finance",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12698,6 +12704,20 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:c697a0954e8c0fd1997d6533f6b1b2718ecbd381accc258cc91626ef97cd837f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:c697a0954e8c0fd1997d6533f6b1b2718ecbd381accc258cc91626ef97cd837f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:c862e056f0b780aa43a1db8619ca3151f563a68f3b1bb500138b5a6ee0b7d126",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13559,6 +13579,13 @@
       },
       {
         "source": "OpenAI",
+        "target": "evidence:25c8c5e4acb6d6fae169ebe3288b195179060a64f323e08a4acb49beea839549",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
         "target": "evidence:1f454deb70ce3d791279d43bffaf40f625d7976bb39e4752356ef418222e9f0f",
         "type": "EVIDENCE",
         "weight": 1,
@@ -14323,6 +14350,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:4d2c5a1ea037299f5beef2350486d461ad7d13eb64e7babaea111d19d8f4386e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:9fdcf5696b2268ac4344ef56ecb4c0768cffee1f45bb9aa6f64f6f6e71cb2d92",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16001,6 +16035,41 @@
         "mentions": 1
       },
       {
+        "source": "DeepSeek",
+        "target": "evidence:2bdc628179d896a0a8d8c0cbbe3cb9de7088b3c8688e975561246ccce9fae6e2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:c1a1196149642889154d21e67d1381d89a132f39cdf315f592de1e26136ceb3e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:4ab078d93a594c0d054ba3e23087a8c404abe95408cabb59bff8761779add7ec",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:2545d1f887c15202c2a0a2a8c0949f09dc0913e3a02f7a60d02a09da6aee8d1b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:74943c87332f3cc4afcc53d2203dc16ad97b470c90c5c40d63b4f539c62d2db8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
         "target": "evidence:7b9f0a889b10bfcfb807c1690c5b2b9c8b18261a1bd87a4aa893c2b70bdc588e",
         "type": "EVIDENCE",
@@ -17473,62 +17542,6 @@
       {
         "source": "Broadcom",
         "target": "evidence:f27756d9e7aa4c1a87af2262d06f85d15c9f1192adfef4d3a4caaa122031c78b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:4f65431a9cb1ecf04f00daeca3ca219672446700a3edfe3f416865e3d90da09a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:2f10976406639b55aec0f2c97900d238c6882d0ef57c6f07e179f0689d9f5285",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:bc0b38b82073b473068ea8327a1ff32519f6ba8dc6586d737255d2fde182e5b7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:35bda45413796cf3707173efce65858b088a1980390ddca898942be053b912c0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:a14d2a1595efb067525a04a9e096bff6be5c6290c3f7cf78acbf5fa2015b0dcd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:c709fce3e6b0dbb9fecd034e3366650ba88d3c29f62948a8554a822c2f6e6805",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:c16982e40787176c4d4f3a25cf6c7a2da4534eb9d784e77b3a98ed4b7fbf62bb",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:fe6cc2a4f0af1d9418110af793f9603411f6df1aa5d701840491589624cdf38f",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31292,6 +31305,21 @@
       "source": "TradingView"
     },
     {
+      "date": "Sat, 22 Aug 2026 10:49:08 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Microsoft",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Microsoft: Higher Revenue Visibility Met Measured Capex - Seeking Alpha Microsoft: Higher Revenue Visibility Met Measured Capex Seeking Alpha Google News",
+      "title": "Microsoft: Higher Revenue Visibility Met Measured Capex - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeUZOWS1uV1VWbjVFajNNZGVDU2FtTElpWW80UURZU1JIZ3diOV9lYUU3M3FINXBST1lTc3lkZjladVlFRDBPWmQwV1Z5VnlwdVprUUJSWEotLUJxdFBBOWZXMHA4SkxhdlZEUUVvV3lqM3lIU3RobVZUTHVXZXp6dlc1LUZCdDBvVnpXdjNjSzR5YlBDX25QQThGWQ?oc=5",
+      "source": "Seeking Alpha"
+    },
+    {
       "date": "Sat, 23 May 2026 07:00:00 GMT",
       "event_type": "PRICE_CUT",
       "source_entity": "Alphabet",
@@ -31380,6 +31408,21 @@
       "title": "OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO - New York Post",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd25memJGdXMzVjI2QS1lT0ZsQ3luR0ZQU3FJTXlST1drQTRmdFB5RU5JZ0txOEo4TkI1TUJDWG8zc1NWMGRDdG5KbzZqdDBOeWs2V1UzNUFoWWtkd2NNcU1GXzdEYWxCMXYycVpzQWwwQ0E0QjJEX0U1YVBSSzFFcG9mYy1KYjloUHlNMUt6YkYzYXVDS3NoNXJKNjBoTkFLTHJUdEFn?oc=5",
       "source": "New York Post"
+    },
+    {
+      "date": "Thu, 13 Aug 2026 12:26:58 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": "DeepSeek",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof - Tech Times DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof Tech Times Google News",
+      "title": "DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQU1ZGaFBNTnlLV3pTcFc3VXJDR0VPS3BZdllIV21zMWY4dmxOWHpmZHoxekZjQXVKVmM3VTRuekt3V1E2SEx5NFNxQV9vRnpfVUthX2RKMnZMSTMtS1NlaXBlLXRnVWxYTThnS0xjUWJVcFZNNGFBenpmT3JEUWZvMXRvM1pZVUNoS2IzYUU1MFpHQktxZllZbWJSaVpNYTFacC1mTWxnMGd0cEwzRC1BQnNCQl9Qa0FFUWNGMDBfa2FLUQ?oc=5",
+      "source": "Tech Times"
     },
     {
       "date": "Thu, 16 Jul 2026 07:00:00 GMT",
@@ -31939,23 +31982,23 @@
   ],
   "collector_runs": [
     {
-      "id": 147,
+      "id": 151,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T10:40:12.331236+00:00",
-      "completed_at": "2026-08-22T10:40:27.461234+00:00",
+      "started_at": "2026-08-22T13:00:33.503044+00:00",
+      "completed_at": "2026-08-22T13:00:58.174058+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 1,
+      "items_new": 6,
       "error": null
     },
     {
-      "id": 148,
+      "id": 152,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T10:40:27.862066+00:00",
-      "completed_at": "2026-08-22T10:40:28.271063+00:00",
+      "started_at": "2026-08-22T13:00:58.575044+00:00",
+      "completed_at": "2026-08-22T13:00:59.760211+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
@@ -31969,20 +32012,20 @@
       "error": null
     },
     {
-      "id": 146,
+      "id": 150,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T10:40:09.630732+00:00",
-      "completed_at": "2026-08-22T10:40:11.930276+00:00",
+      "started_at": "2026-08-22T13:00:31.450215+00:00",
+      "completed_at": "2026-08-22T13:00:33.101976+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 3,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 149,
+      "id": 153,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T10:40:28.672813+00:00",
-      "completed_at": "2026-08-22T10:40:30.477983+00:00",
+      "started_at": "2026-08-22T13:01:00.161250+00:00",
+      "completed_at": "2026-08-22T13:01:02.233686+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31999,11 +32042,11 @@
       "error": null
     }
   ],
-  "document_count": 1096,
-  "event_count": 960,
-  "mention_count": 2356,
+  "document_count": 1104,
+  "event_count": 962,
+  "mention_count": 2358,
   "review_counts": {
-    "provisional": 11,
+    "provisional": 13,
     "confirmed": 271,
     "flagged": 678,
     "flagged_retry_pending": 0
