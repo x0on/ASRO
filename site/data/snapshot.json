@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T07:46:46.527069+00:00",
+  "generated_at": "2026-08-22T08:48:14.388217+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "transmission": 39.6,
     "fragility": 61.1,
-    "stress": 57.1,
-    "capital": 52.15125962813687,
     "circularity": 57.1,
+    "monetization": 42.9,
+    "capital": 52.15125962813687,
     "cannibalization": 54.2,
     "counter_evidence": 42.9,
-    "monetization": 42.9,
-    "external_pressure": 61.1
+    "external_pressure": 61.1,
+    "transmission": 39.6,
+    "stress": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
-    "stress": "directional_estimate",
-    "capital": "aggregate",
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
     "monetization": "directional_estimate",
+    "capital": "aggregate",
+    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "external_pressure": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "external_pressure": "directional_estimate"
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T08:48:13.914432+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"monetization\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-22T07:46:46.035165+00:00",
       "score": 51.4,
@@ -7971,6 +7977,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:b2fa18dd1975f47b503dbef4d9f5b0e02f679621ecfffe77cc9d8a9812442dc6",
+        "label": "OpenAI Buys Back $7 Billion of Employee Shares in Tender Offer - Bloomberg.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSFBlWjR5WnAwR2pnVnBzWEFTY3doNTJGc2pVN1pLcWU2RzZUQjBGdVBsaXkyRWpIQ29CUFJxd3Z2Umw0ZjZ6SFdBbmxtVlhkazYtWU03OUNWdkRjdmJuZzRvRUc4YlRhejNQX2M3Z1BkYzBCNUtQWk5RVmhjX2U3aVMwUFN3dzlMajZtX0w1YXBrSGN3MXVOOVJUY0F4ZzFhWXF0Y2FTTXJDSkJsRFgyOUZR?oc=5",
+        "date": "Mon, 10 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI Buys Back $7 Billion of Employee Shares in Tender Offer Bloomberg.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:30dc5dcc506b641aa7bddb15165a30fcdf63ad56998b002f7497d91b420e5abd",
         "label": "Kimi K3 rocks the AI industry as Moonshot AI undercuts closed-source American competitors on price \u2014 but the huge 2.8T open-weight model still needs serious hardware to deploy at scale - Tom's Hardware",
         "kind": "evidence",
@@ -10631,18 +10649,6 @@
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUURUUzJjVHdCQ1dJYkplVzlQUVVVN1VLU2hvNHlkZFNTeW5Ib3otN0xXaGJtY3liR0NDM0htdEFfZWQtS1ZicjVvb19vRFRucjN1MVowSnVUMXJ0S1lUWFJfb1hFajJ3RFplWG1SWGd3WVFrcWlUX0EzSlRzQm9CMUp1ZVlWbFpzLVRQUWpONV9aU2tUamlmNlpIcjBLejFtdC1zcHlVLTh5UDN0Rlp5WmtET256aW1xamhhY2ZocjVDWVpK?oc=5",
         "date": "Sun, 01 Feb 2026 08:00:00 GMT",
         "summary": "Oracle announces Equity and Debt Financing Plan for Calendar Year 2026 PR Newswire",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:01afb9e75ba8eaf6b04311f70eca05e0a927864d254e64cb06109e74624fb86a",
-        "label": "Bloom Energy and Oracle Expand Strategic Partnership to Deploy up to 2.8 GW to Accelerate AI Infrastructure Build-Out - Bloom Energy",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloom Energy",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTUx6SlBHSHZIbkRqTW9FRjl3ZHRSeVZIbzA3RVJHYkx4NnhERXhYSFpWTVNkZ2dadmtHY0NIOXJxblowV25Wckh0dl9VRENXWS1Hdy1vRjNCejh0LVhsM1QtYjY5U1d1WnhKVHI3dzZxZF9JQjlTUmVOTUg5YTMzazZwYy1IdktjeU9STjlPcVhEcGZiUjEyRnBiMUFGM1lpMjFtbXp1UWRrUDJZYzBUTVJvc1padTVNTDBkUmhqa1duZElXQUpYdXlGTllSUG5iVXh2QnpEeWtTSFE0SGgxQlhIcHZDdw?oc=5",
-        "date": "Mon, 13 Apr 2026 07:00:00 GMT",
-        "summary": "Bloom Energy and Oracle Expand Strategic Partnership to Deploy up to 2.8 GW to Accelerate AI Infrastructure Build-Out Bloom Energy",
         "score": 1,
         "weight": 1
       }
@@ -15934,6 +15940,13 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:b2fa18dd1975f47b503dbef4d9f5b0e02f679621ecfffe77cc9d8a9812442dc6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Moonshot AI",
         "target": "evidence:30dc5dcc506b641aa7bddb15165a30fcdf63ad56998b002f7497d91b420e5abd",
         "type": "EVIDENCE",
@@ -17483,13 +17496,6 @@
       {
         "source": "Oracle",
         "target": "evidence:d9b82a476b233a2d133810ffe242aa63722a8bab2d98da39346fbf5b609dbbb3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:01afb9e75ba8eaf6b04311f70eca05e0a927864d254e64cb06109e74624fb86a",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31870,23 +31876,23 @@
   ],
   "collector_runs": [
     {
-      "id": 135,
+      "id": 139,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T07:46:22.011045+00:00",
-      "completed_at": "2026-08-22T07:46:36.117564+00:00",
+      "started_at": "2026-08-22T08:47:56.423143+00:00",
+      "completed_at": "2026-08-22T08:48:10.612152+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 136,
+      "id": 140,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T07:46:36.518573+00:00",
-      "completed_at": "2026-08-22T07:46:43.147851+00:00",
+      "started_at": "2026-08-22T08:48:11.013213+00:00",
+      "completed_at": "2026-08-22T08:48:11.388182+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 32,
+      "items_new": 0,
       "error": null
     },
     {
@@ -31900,20 +31906,20 @@
       "error": null
     },
     {
-      "id": 134,
+      "id": 138,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T07:46:20.886755+00:00",
-      "completed_at": "2026-08-22T07:46:21.610013+00:00",
+      "started_at": "2026-08-22T08:47:55.278308+00:00",
+      "completed_at": "2026-08-22T08:47:56.021457+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 137,
+      "id": 141,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T07:46:43.548960+00:00",
-      "completed_at": "2026-08-22T07:46:45.619307+00:00",
+      "started_at": "2026-08-22T08:48:11.789659+00:00",
+      "completed_at": "2026-08-22T08:48:13.499163+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31930,7 +31936,7 @@
       "error": null
     }
   ],
-  "document_count": 1088,
+  "document_count": 1090,
   "event_count": 958,
   "mention_count": 2354,
   "review_counts": {
