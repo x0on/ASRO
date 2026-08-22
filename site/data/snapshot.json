@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T13:44:55.610025+00:00",
+  "generated_at": "2026-08-22T14:38:09.584690+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "stress": 57.1,
-    "fragility": 61.1,
+    "transmission": 39.6,
     "external_pressure": 61.1,
-    "cannibalization": 54.2,
+    "monetization": 42.9,
+    "fragility": 61.1,
+    "stress": 57.1,
     "capital": 52.15125962813687,
     "counter_evidence": 42.9,
-    "transmission": 39.6,
-    "monetization": 42.9,
+    "cannibalization": 54.2,
     "circularity": 57.1
   },
   "dimension_evidence": {
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "stress": "directional_estimate",
-    "external_pressure": "directional_estimate",
-    "fragility": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "capital": "aggregate",
-    "counter_evidence": "directional_estimate",
     "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
+    "capital": "aggregate",
+    "circularity": "directional_estimate",
+    "external_pressure": "directional_estimate",
     "monetization": "directional_estimate",
-    "circularity": "directional_estimate"
+    "stress": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T14:38:09.100765+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"stress\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-22T13:44:55.128205+00:00",
       "score": 51.4,
@@ -4818,6 +4824,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f5646e0d89536d5ace1ac0181e0cde201bae27797ef0f4d95e73758c86763a31",
+        "label": "Key Information You Need to Know About the OpenAI IPO - TradingKey",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPODZJLUZGUzIyN2c5R3dVMlFKcDVjbEU5endLV0NMaXBObnI4S0EyYllXbXowbHliSi1JVGhKLTdWeFd4cFFtOGJkNkxUdzZBTE4wWVNlZ0hYNTd3Qms1VHlqd2p3Snpnc01WWlNEREwwWDB6ZUZ2SUJKS3lleFhsc2JTRVlNV0o4aldmUnJhZl9YX3dvUS1lbFVCMzFhTU5QYkk1aQ?oc=5",
+        "date": "Sat, 22 Aug 2026 08:09:09 GMT",
+        "summary": "Key Information You Need to Know About the OpenAI IPO TradingKey",
+        "score": 4,
         "weight": 1
       },
       {
@@ -10663,18 +10681,6 @@
         "summary": "Broadcom stock plunges on weak software sales, unchanged AI chip forecast for the year CNBC",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:f74eecec1aee915a4395b82aad80054a8da9dea8d7ec89368b8d404de57ab512",
-        "label": "Broadcom announces successful acquisition of VMware - Broadcom",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Broadcom",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRm5feUtJN2dDU2MxT09iWi1HeTZfMlNIM0w3LWp6cEl3bTRHbEtrLU9IRjlCbk1yT1NVdklFczl0NzVaZ0ZwLVNzZ0I3VFF3b1dJVHM2a3ZIb25ZdFVPalRHRGU0RWkwU0cxQXRzdzJicmJBWklrNXFvd180ZDZ3OVJCR20zU2E4MVhDM1ZBTHVZdTJOV1ZPaXBCQnpGaWVTcTVZdVRKNkE5bkxjZ1E?oc=5",
-        "date": "Tue, 21 Nov 2023 08:00:00 GMT",
-        "summary": "Broadcom announces successful acquisition of VMware Broadcom",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -13593,6 +13599,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:f5646e0d89536d5ace1ac0181e0cde201bae27797ef0f4d95e73758c86763a31",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17548,13 +17561,6 @@
       {
         "source": "Broadcom",
         "target": "evidence:35af6e0c2994cbd4ced7d6f25f6a2888e9c00a31aa70d785c675edcd9ca1e89b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:f74eecec1aee915a4395b82aad80054a8da9dea8d7ec89368b8d404de57ab512",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31995,20 +32001,20 @@
   ],
   "collector_runs": [
     {
-      "id": 155,
+      "id": 159,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T13:44:36.984107+00:00",
-      "completed_at": "2026-08-22T13:44:51.564367+00:00",
+      "started_at": "2026-08-22T14:37:51.278019+00:00",
+      "completed_at": "2026-08-22T14:38:05.448772+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 156,
+      "id": 160,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T13:44:51.965304+00:00",
-      "completed_at": "2026-08-22T13:44:52.360571+00:00",
+      "started_at": "2026-08-22T14:38:05.849760+00:00",
+      "completed_at": "2026-08-22T14:38:06.285059+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32025,20 +32031,20 @@
       "error": null
     },
     {
-      "id": 154,
+      "id": 158,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T13:44:35.825292+00:00",
-      "completed_at": "2026-08-22T13:44:36.582996+00:00",
+      "started_at": "2026-08-22T14:37:49.528700+00:00",
+      "completed_at": "2026-08-22T14:37:50.876982+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 157,
+      "id": 161,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T13:44:52.761935+00:00",
-      "completed_at": "2026-08-22T13:44:54.712779+00:00",
+      "started_at": "2026-08-22T14:38:06.686222+00:00",
+      "completed_at": "2026-08-22T14:38:08.685706+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32055,7 +32061,7 @@
       "error": null
     }
   ],
-  "document_count": 1106,
+  "document_count": 1108,
   "event_count": 962,
   "mention_count": 2358,
   "review_counts": {
