@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T18:49:22.778544+00:00",
+  "generated_at": "2026-08-22T19:35:11.192652+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
-    "transmission": 39.6,
-    "cannibalization": 54.2,
-    "circularity": 57.1,
     "capital": 52.15125962813687,
-    "counter_evidence": 42.9,
+    "cannibalization": 54.2,
     "fragility": 61.1,
-    "stress": 57.1,
-    "external_pressure": 61.1
+    "counter_evidence": 42.9,
+    "monetization": 42.9,
+    "circularity": 57.1,
+    "external_pressure": 61.1,
+    "transmission": 39.6,
+    "stress": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "monetization": "directional_estimate",
-    "circularity": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "fragility": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "monetization": "directional_estimate",
     "stress": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "cannibalization": "directional_estimate",
     "capital": "aggregate",
-    "external_pressure": "directional_estimate"
+    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
+    "transmission": "confirmed_trigger"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T19:35:10.710583+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"stress\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1, \"capital\": 52.15125962813687}"
+    },
     {
       "captured_at": "2026-08-22T18:49:22.456034+00:00",
       "score": 51.4,
@@ -8187,6 +8193,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:edac4ecdac4c9bcd3a40b54da292f23ff1c69bd59e689526e48d390a01e64417",
+        "label": "Is Microsoft (MSFT) Stock Reasonable If AI Spending Pays Off? - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdzFueHV2QVY3UElhS3pObUN2VUJ5aTRVSnpaZFoyREQ1QVBYcW9ad2gycEhtNUZzRmtyU0RweWlaRkh3OURjOWRBbVRmYmxWQlR5MWxBSl9IalJESXIxUTgtMkFjM0o2dXJSeTdMV19BSU9Za09pM1ZNU2VLa1k1MnU4N1Fzc2tNQnJPdnlVdldoQmQ5V2Rqem9aQ0ZBZDBnOXJ3em5SLV9VODNJR1NfWXQyd0F5VHdXS1FLTXVYVFQ5TUR60gHKAUFVX3lxTFBHNW9MY1c4MEhwd1ktTVNyLV9wckZzSzdpVlY2VEV2ZG9zamVRN3FNQ1pmN1ZITzNtdFdsN1lJcWQ5eUNBaXRGcjVBRm1PdTA4cnBOMlpyYW01MTduRWEyMW41WXV4Z0tEYUJNNGd1UWlCcHlBUUNqLUJiRXdWdnc4UHlNQVB0X3gyd0NFbWU2N3pHazZMMTh6blg0cXJyYzNGUnZYOGhuU3prejJQTnRYTVVudEVsckJVVlB6bFoyWHZqcjZHLXhFdEE?oc=5",
+        "date": "Sat, 22 Aug 2026 19:21:13 GMT",
+        "summary": "Is Microsoft (MSFT) Stock Reasonable If AI Spending Pays Off? simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:511bb7af8791d3740e702ff323ffa89ff9ba3702666e937a962ed4f4f5133501",
         "label": "Stock Market Week Ahead: A Choppy Market Heads For Nvidia Earnings, Jackson Hole - Investor's Business Daily",
         "kind": "evidence",
@@ -10691,18 +10709,6 @@
         "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSGxfRjlGZUZfR1hack0zbEdZcVJXY1JCaWw4dl9fMFZnQnJHVnVfU3NsZkpVd2hPbjh5Q0dHTVcxYTByelU2b3lMUzVDNk54ZFN4OG1VSko2MXEzV0d3bDdHSTJiRHlrMFZtallYSllLUzdSQ2lVdDVra2ZqY0xPaEV2cmxRaXRIWnhRd19obk82eFBGQXQ1YnpYc2hLY0poOGVsdS1yZ19mVGs0RlFVZ1diV0luRktiNV9Uc05vSHpEbmViQ1NjX1h1UQ?oc=5",
         "date": "Thu, 23 Jul 2026 07:00:00 GMT",
         "summary": "AMD and Cerebras Launch AI Inference Solution Cerebras",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:98ea31e90b79259a34d12ba62200b4ae24f614bff59e3e31e76ef7a2b3fe1c99",
-        "label": "Here\u2019s How Much Traders See AMD Stock Moving After Earnings - Investopedia",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Investopedia",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaDJpR25PX2FpeFlvMHhRV3NqRVhVcFNhS2plRWktT3U0Q2hRellLd1o2cGsxbDNhb05VeXRUY2Nta2l3QkFjeUlsMzZvbXdvZ3U4OXktU0hVSTJ6eUhhcjlMX0VuemtyQVBfSFljYzJXQjJ6UkxyR3hLRGxTRHFzam5YcHh6WW9XWHRjS1BTeUQ4SkY0UkxSWEhYVENFUUU0dHp6LWlQdE1fZTZf?oc=5",
-        "date": "Fri, 31 Jul 2026 07:00:00 GMT",
-        "summary": "Here\u2019s How Much Traders See AMD Stock Moving After Earnings Investopedia",
         "score": 1,
         "weight": 1
       }
@@ -16162,6 +16168,13 @@
         "mentions": 1
       },
       {
+        "source": "Microsoft",
+        "target": "evidence:edac4ecdac4c9bcd3a40b54da292f23ff1c69bd59e689526e48d390a01e64417",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:511bb7af8791d3740e702ff323ffa89ff9ba3702666e937a962ed4f4f5133501",
         "type": "EVIDENCE",
@@ -17620,13 +17633,6 @@
       {
         "source": "AMD",
         "target": "evidence:dbf2c2bba2fafd50151905b4ad520c3da3cbbbcc9d78989f4713f21e0d9161b4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "AMD",
-        "target": "evidence:98ea31e90b79259a34d12ba62200b4ae24f614bff59e3e31e76ef7a2b3fe1c99",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32067,20 +32073,20 @@
   ],
   "collector_runs": [
     {
-      "id": 175,
+      "id": 179,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T18:49:00.801223+00:00",
-      "completed_at": "2026-08-22T18:49:18.563581+00:00",
+      "started_at": "2026-08-22T19:34:52.693488+00:00",
+      "completed_at": "2026-08-22T19:35:07.113738+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 176,
+      "id": 180,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T18:49:18.965198+00:00",
-      "completed_at": "2026-08-22T18:49:19.393493+00:00",
+      "started_at": "2026-08-22T19:35:07.514655+00:00",
+      "completed_at": "2026-08-22T19:35:07.991889+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32097,20 +32103,20 @@
       "error": null
     },
     {
-      "id": 174,
+      "id": 178,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T18:48:59.777343+00:00",
-      "completed_at": "2026-08-22T18:49:00.369679+00:00",
+      "started_at": "2026-08-22T19:34:51.759260+00:00",
+      "completed_at": "2026-08-22T19:34:52.292223+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 177,
+      "id": 181,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T18:49:19.807849+00:00",
-      "completed_at": "2026-08-22T18:49:22.043239+00:00",
+      "started_at": "2026-08-22T19:35:08.393001+00:00",
+      "completed_at": "2026-08-22T19:35:10.294812+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32127,7 +32133,7 @@
       "error": null
     }
   ],
-  "document_count": 1116,
+  "document_count": 1118,
   "event_count": 962,
   "mention_count": 2358,
   "review_counts": {
