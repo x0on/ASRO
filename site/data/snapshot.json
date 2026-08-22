@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T05:43:11.224006+00:00",
+  "generated_at": "2026-08-22T07:46:46.527069+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "stress": 57.1,
     "transmission": 39.6,
     "fragility": 61.1,
-    "counter_evidence": 42.9,
+    "stress": 57.1,
     "capital": 52.15125962813687,
-    "cannibalization": 54.2,
-    "external_pressure": 61.1,
     "circularity": 57.1,
-    "monetization": 42.9
+    "cannibalization": 54.2,
+    "counter_evidence": 42.9,
+    "monetization": 42.9,
+    "external_pressure": 61.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,14 +32,14 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "transmission": "confirmed_trigger",
-    "counter_evidence": "directional_estimate",
+    "fragility": "directional_estimate",
+    "stress": "directional_estimate",
     "capital": "aggregate",
     "circularity": "directional_estimate",
-    "monetization": "directional_estimate",
-    "stress": "directional_estimate",
-    "fragility": "directional_estimate",
     "cannibalization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "monetization": "directional_estimate",
+    "transmission": "confirmed_trigger",
     "external_pressure": "directional_estimate"
   },
   "dimension_direction": {
@@ -654,6 +654,12 @@
   ],
   "history": [
     {
+      "captured_at": "2026-08-22T07:46:46.035165+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1}"
+    },
+    {
       "captured_at": "2026-08-22T05:43:10.792488+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
@@ -882,7 +888,7 @@
         "id": "Amazon",
         "label": "Amazon",
         "kind": "company",
-        "weight": 54
+        "weight": 55
       },
       {
         "id": "Oracle",
@@ -891,16 +897,16 @@
         "weight": 27
       },
       {
+        "id": "Anthropic",
+        "label": "Anthropic",
+        "kind": "company",
+        "weight": 21
+      },
+      {
         "id": "OpenAI",
         "label": "OpenAI",
         "kind": "company",
         "weight": 20
-      },
-      {
-        "id": "Anthropic",
-        "label": "Anthropic",
-        "kind": "company",
-        "weight": 19
       },
       {
         "id": "CoreWeave",
@@ -951,14 +957,20 @@
         "weight": 4
       },
       {
+        "id": "Zhipu AI",
+        "label": "Zhipu AI",
+        "kind": "company",
+        "weight": 3
+      },
+      {
         "id": "MiniMax",
         "label": "MiniMax",
         "kind": "company",
         "weight": 3
       },
       {
-        "id": "Zhipu AI",
-        "label": "Zhipu AI",
+        "id": "Moonshot AI",
+        "label": "Moonshot AI",
         "kind": "company",
         "weight": 2
       },
@@ -1019,12 +1031,6 @@
       {
         "id": "BlackRock",
         "label": "BlackRock",
-        "kind": "company",
-        "weight": 0
-      },
-      {
-        "id": "Moonshot AI",
-        "label": "Moonshot AI",
         "kind": "company",
         "weight": 0
       },
@@ -6285,6 +6291,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:32aac18aece344fe366f54f9ab0b94bc180d460e12e5cea51051338824b38a7d",
+        "label": "GLM-5.2 vs DeepSeek V4 vs Kimi K2.6: 62% SWE Pro [2026] - tech-insider.org",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "tech-insider.org",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE82T2xLQlpHLTJNUUhMZ3czM2VVc3VvUXRnY0hlalliWjRPb0JsbDJjQ3czb1lkNGsteFdUaVNKTVp4Rk1uLWt0Z3hYbFNtaGtZZ0pZdWp1dnEyYy16ZTQydUFLeGNYOW5qYnRhQTV6NmhtZw?oc=5",
+        "date": "Sun, 05 Jul 2026 07:00:00 GMT",
+        "summary": "GLM-5.2 vs DeepSeek V4 vs Kimi K2.6: 62% SWE Pro [2026] tech-insider.org",
+        "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c3c84e0ee6fdfcb18bcba2e38c4ef1ad9891659b6aaa88612fcca031b5bb423f",
+        "label": "Moonshot AI releases weights for Kimi-K3, firing a shot across the bow of OpenAI and Anthropic \u2014 open-weight model performs almost as well as frontier models while being 2-3x easier to run - Tom's Hardware",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Tom's Hardware",
+        "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQUXpwUEpYUTc0OHFCYVpwa182MWt5VFp1WTZfaVhGM2hnT1ctYTNuUDlYc2xqMGRmeElNRHJkWjBTNUNWUEQyR3l4WmN5dFc5ZjRSay03T2xVbDlGd1BDLVFCcUw1YUlWc3B1bE1TaGVxWnAxYUt6dXdlNGdaNkMxUnJmYzExdzBKbml5RElIcFlyQ29KOVVEdjcwYTRsakVBLTZ4c3oxdlZ6OWNieUt1ZExYekV1c2phWEk5SEpUWWVXekl0Q2ZwMGl2WTRfVkplSEx4YzFoZmlSemdHWFZ6bk9xNHhhTVVUd0hzQXRqeUM4cDFOQmZfSEd0NVduLVFiek5yVlJyVzN3SzQ2Z3B6eUR3UU9YbHFuQ2k4dDY1RDBoUTlzVHNWbjNmMkZ1UjBiUjlERWtpd3phN3NlUnFIME53Q1JzYW1CUU5FWDI5OW5OTnF2NFJJNHhFQkdHR0tmSGtrT1UtV01oMlcy?oc=5",
+        "date": "Mon, 27 Jul 2026 07:00:00 GMT",
+        "summary": "Moonshot AI releases weights for Kimi-K3, firing a shot across the bow of OpenAI and Anthropic \u2014 open-weight model performs almost as well as frontier models while being 2-3x easier to run Tom's Hardware",
+        "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6189801a864ca81224efa3049d6080c2edb1338c797aea310b04915341afbf7a",
+        "label": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXl3SlNrdnVqZGdqS2QyOXpwREFKbUV6WEp1QXhNLU9rVkZkYTB0UmdaSFFVLU9nWUZsMTdSam5RcEE0RXNpdm4yd0V3T0ZIbnV6WUV4VTlwd2JfQmdFTUVCR0FEOHFBMmtVM3hKRndPOUVDLTl4dmxPenh4cHJ1QlZ3RGQ4cjFEVjQ5Q3psWnRuZDFBMjBndHBSNnMzM0l6czNkZTBLQmM1VmRRVWN3ZGlvODZFV1IwellmZUhHcHlMX1VSYjlFUWVVRk9SUTBlWEVaQg?oc=5",
+        "date": "Sat, 22 Aug 2026 07:13:48 GMT",
+        "summary": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds TradingView",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:d099ef6bb43dafb86878da9b874ba665201f799c7cafd86f4115ce897a4b5dca",
         "label": "AI: Mega-IPO Preps, Stripe M&A, Open Source Steam, & More. AI-RTZ #1186 - AI: Reset to Zero",
         "kind": "evidence",
@@ -6714,6 +6756,54 @@
         "date": "Thu, 28 May 2026 07:00:00 GMT",
         "summary": "Beyond the IPO frenzy: what Nasdaq\u2019s new \u2018Fast Entry\u2019 rules could mean for ETF investors Bitpanda",
         "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ac54671616d08714980543c04a35168b033bdf2735aaece78b8541141bc6fb0f",
+        "label": "Z.ai GLM-5.2 Brings Open-Weight Pressure to Anthropic Mythos Territory - Tech My Money",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Tech My Money",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNFlIZjNDM28wU0lQNnJ5UE9mMTI5cGJjcnNUNE9kRmtOMGpxUFJlYnhuTGFvSVZjazduclpZWUExU2tvMzlEOXd0d2FNV0ZHdFo3QzRndWtab1IyOTlyZGp6dGRiM3pVZGxsTjhhbVdncjdKMXhpRnpvalVUU0VvemFTUdIBgwFBVV95cUxQNFlIZjNDM28wU0lQNnJ5UE9mMTI5cGJjcnNUNE9kRmtOMGpxUFJlYnhuTGFvSVZjazduclpZWUExU2tvMzlEOXd0d2FNV0ZHdFo3QzRndWtab1IyOTlyZGp6dGRiM3pVZGxsTjhhbVdncjdKMXhpRnpvalVUU0VvemFTUQ?oc=5",
+        "date": "Sun, 05 Jul 2026 07:00:00 GMT",
+        "summary": "Z.ai GLM-5.2 Brings Open-Weight Pressure to Anthropic Mythos Territory Tech My Money",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c9b085a4970a6f10d32f47c97b94dcf4be4ca7e2bbf2bdbbe6dae6091028c30d",
+        "label": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S. compute limits - Tom's Hardware",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Tom's Hardware",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT25TNFlXeVFQMmVqWFYtSS1oSkpEUl9WeExTZUpmZEtFb1RpQ3dRbGxGV1hVWjNpMkRxTlpaQk5NSXNfdzlmYmg1cW5MUGlmR3FpeHV2bmpzMDBXQW1mV1B0N3QzUmZOOFU5T0w1QWFqYldjWnZER0t0UmNzcGZBQll1dWZBNEYyWTV3dnZvMkRzTkhqNHBDak5TTXd4b080eUJGbExOSUVCeU5Cd1ZmUWVXUG1SUQ?oc=5",
+        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
+        "summary": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S. compute limits Tom's Hardware",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f7f08884adea6b114e485ebf93915fafc32439456012181bb7e5f83376126283",
+        "label": "Kimi K3 vs Qwen 3.8: Which Open Weight Chinese AI is Better? - Memeburn",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Memeburn",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ZVFhaZy15aUNMRmNEMnR2LXE0WmgzVG9sLXF0TWh6d05hY3lhQy01UnllZ0xiT1RHaE1YazlteVFNYnRHNFN2SENULWZDcTFKdVJJ?oc=5",
+        "date": "Sun, 09 Aug 2026 07:00:00 GMT",
+        "summary": "Kimi K3 vs Qwen 3.8: Which Open Weight Chinese AI is Better? Memeburn",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:cfcc3f49d7734c2118289b42e53060bf8edc8e831f62b4f37a85ee958a1b0bdc",
+        "label": "New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable - Yellow.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yellow.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41c1FiZnozQWlzSm5YWFRSdUphM0tQbkZRNFpSbHQ0YjFqdFIyVkt2dGZtejBPU2RDblpzUlBLdDdtcDlYd0FvY1RnUnpwTk9leFZqSjg0T3B4Yi1mRmN4SjZ0Z1hmZFRnWHYxS0hQQUxGa0d3bEE?oc=5",
+        "date": "Wed, 19 Aug 2026 18:06:09 GMT",
+        "summary": "New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable Yellow.com",
+        "score": 2,
         "weight": 1
       },
       {
@@ -7878,6 +7968,150 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:30dc5dcc506b641aa7bddb15165a30fcdf63ad56998b002f7497d91b420e5abd",
+        "label": "Kimi K3 rocks the AI industry as Moonshot AI undercuts closed-source American competitors on price \u2014 but the huge 2.8T open-weight model still needs serious hardware to deploy at scale - Tom's Hardware",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Tom's Hardware",
+        "url": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxQelZvNlVaR1lzLUJQYU9LZ19XY2txVHNrNXIyYTc1R1FObGw3MVFmNFJhc2VjYW5qRno3SGZnUjRuVUVmX3V4NTlBR25yREFKSVIySWtFLThjVHZjMTJmcFdqQUd6eWxjTTNIMnlxamZ2T2NfR1RzVHRmTGdvTVROZzJiV1k3U2VxWHV5ZWdPNDhnQUJBTEFZNHV1WVM4VzJNR0k2aTVQYngxOHZad3ZNTzd0TG5zbElXSnFCNVFtWXpaVWN3bmxSdVhFRlJ5QzVMQUppdnlIU0VOaWRxZTRtMjJuRS1GQ2VVUUZSdFF4SlA0cXBWUGJjTmNhSVdpYlAzZktQaC1uQVhGWEhSNXRHTGFUQjRLX0FpekNLdmU1OFo0aU5SQ1dCZ3BWWFFVa3ZycnB2cGtoT0dwa2RqUGl5YWlXSlJsMGloTkNQMDFSUWVoYXZaMmlOWkRPWmZ3OEZJM2ZEbFJ0ZFg?oc=5",
+        "date": "Tue, 21 Jul 2026 07:00:00 GMT",
+        "summary": "Kimi K3 rocks the AI industry as Moonshot AI undercuts closed-source American competitors on price \u2014 but the huge 2.8T open-weight model still needs serious hardware to deploy at scale Tom's Hardware",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:bc665642ee091e7efa12e2531d84e9bf30544e838b7f7fbe0308278324ae834e",
+        "label": "Kimi K3 Is the China Shocker That Lifts Open-Weight Models to Frontier Level - trendingtopics.eu",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "trendingtopics.eu",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5kZ2dfTWVmaFV3aVpNTDlRbWExamF4ajhaRl82V01WLUxic3lzWTF4Rl9NNDlfaW5GdUJnSHdZdlpjRTdBMXVMVm5xdVlxQ0RkMk9Femp4U0FUaVhUc1FMc0p3?oc=5",
+        "date": "Thu, 16 Jul 2026 07:00:00 GMT",
+        "summary": "Kimi K3 Is the China Shocker That Lifts Open-Weight Models to Frontier Level trendingtopics.eu",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:083c7c07d10f5fc7ed41c7c8319df41f54676185d14d209898b36ecbf4319905",
+        "label": "Llama 4 vs Qwen 3.5 vs Mistral: Best Open LLM [2026] - tech-insider.org",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "tech-insider.org",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1taWNsWFpVeXJGNWgxT3ZkRGs5Uk1MY1BCaW9nWE1KWFlqSG9DUS1yWEtTNjh3bEdpdWJQM3JSU003T2JVMkF2Vm9BS1ctbnVfbzBWdnhWWXVCV0xrald6RWtRaV9RZmtx?oc=5",
+        "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "summary": "Llama 4 vs Qwen 3.5 vs Mistral: Best Open LLM [2026] tech-insider.org",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3f1f9777f23ffa2b44e48e67d5fe39ddc00d2fd225c760f8bfe043a921a2c223",
+        "label": "MiniMax M3 Open-Weight Coding Model: Frontier Claims, Unverified Benchmarks - Tech Times",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Tech Times",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTGNfaDZXenlqbDZ5RGtsbGdGN1h5bjdHbUYybXdMOHJYRDR0a3drQWx0a0NhUXRKYkFzaGRGZWhEdTB5dGRKSlp3M1hxemJfWFRiX1Q3Z0ZuMElSYzMxLW1DMlZGVFUzN2k3Sm1WSFJ6WEh2TjBqUVpRMjRLMlowdUtucDBIWV9tUzhYTkN0OXkyT2pySmNiRzkyRWNIRTE5NTRjOFRabTA4eXR2c2lqbldVUlRMZllLTFVSRmRCV3Z1VzBYR3Qw?oc=5",
+        "date": "Mon, 01 Jun 2026 07:00:00 GMT",
+        "summary": "MiniMax M3 Open-Weight Coding Model: Frontier Claims, Unverified Benchmarks Tech Times",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:afb0d330c5b7406a7b5667c4151334b8151e910aefb8586e353dd992e03585f2",
+        "label": "Kimi K3\u2019s 2.8 Trillion Parameters Ignite A Fight Over Banning Chinese AI - Yellow.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yellow.com",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE10b0JhS0RzZ2hZWVA0QU1nUk9GVDQ1QWpVWjN1VXFHamJkTUpfMXNiZ2tVcXVQbE9XVGJhQUxLSnJ0eFVWRXE5QWdVZ0ZYRjdjZXZMYmhtWkdoSlB2LU9XOWZjOXk1SzlubVVkOGdydkhsZlgzS1FN?oc=5",
+        "date": "Mon, 10 Aug 2026 20:42:18 GMT",
+        "summary": "Kimi K3\u2019s 2.8 Trillion Parameters Ignite A Fight Over Banning Chinese AI Yellow.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:4baac4410a3305e05467df7496657609952c25424a5a484730dae7dac0d04bdb",
+        "label": "UK AISI / CAISI Preliminary Assessment of Kimi K3's Cyber Capabilities - National Institute of Standards and Technology (.gov)",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "National Institute of Standards and Technology (.gov)",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY1RDRlk4T0ZDd1k3UkNjdjJvZThOaFhQOGc0TEZjWlA0WDB5T3c4R1l2djZQdERNM1F1NHQzU3ZqcjFDb2UxQzViQVE4b210NnJtUGdmQjlKTGxKQUVTZEdIbkJtNjhqNU1GYWk1QnV4bnpCaENoYkUweTN4SHpOQ3lCUmVKcUI5OXBtUVdiNHNqSElUYl9pR3EwNGRPR2JoZVpCNGFUemhqSEt1dUpz?oc=5",
+        "date": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "summary": "UK AISI / CAISI Preliminary Assessment of Kimi K3's Cyber Capabilities National Institute of Standards and Technology (.gov)",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e944b547b24f90fe01f011e285a07d086083c3ec1400c9c47ccfbe4348dca093",
+        "label": "Kimi K3: The open-weights escalation - by Nathan Lambert - Interconnects AI",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Interconnects AI",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE40ZjFTeUotV2U0eXVkcGx1N0xESXoxQWVnRUE5Qm1vX21nS2l4aENEMTd2QmNwc2hVSUpQM3ROeEJQZ1U5a3RhMWhLbS1id2V6U25jaDZnZk9zTWR0Q3BaNVV6TWtLemk0NGtNRUNVNUtqZEs4?oc=5",
+        "date": "Mon, 20 Jul 2026 07:00:00 GMT",
+        "summary": "Kimi K3: The open-weights escalation - by Nathan Lambert Interconnects AI",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:fc8dde98e7b2fddde7e49fa1fb0ffdddc67e45230eb794bbdee47b09794b35aa",
+        "label": "Kimi's open model K3 nears GPT-5.6 Sol and Fable 5 while signaling the end of super cheap Chinese AI - the-decoder.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "the-decoder.com",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNb2pNX3c4ejNOYnh4UjZoUHpoTzFSVFVhcDNsajJIRlFDeGE1dkVPNEtuVGpIcDdlYzhsYzhiRGZDeGhjN2JYel9kb3hsV1JjaGZORVJZYl9hQWgwWWRJaVVJS2lwUnRNTl9VdWVqM1hCRUNMNnNnS3pTRE4zTTcxUWh3alRvRWZQX2RKUU5mcU1FTngta3JfWTVhMlNSLTRKTXVrRXVSZUVkTmlwQWxQczRGX2VaSzFtX2hDMGlmTF9Idw?oc=5",
+        "date": "Thu, 16 Jul 2026 07:00:00 GMT",
+        "summary": "Kimi's open model K3 nears GPT-5.6 Sol and Fable 5 while signaling the end of super cheap Chinese AI the-decoder.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:aabc3d4ec4d4464d661db945da7785bb10749ac7440ff2d52f3c4e4276cfdb52",
+        "label": "GLM-5.2 is the step change for open agents - Interconnects AI",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Interconnects AI",
+        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFAxZFVHYUwyLU9kZ0JZMUhnYkw2M0xwNVRPX1ZSNWp1LTBCOUtZMU42M3B1SXJzVHQ0WEFHUnl6WHdoTEV6SFJ5U0FOTFl3Z0U2OHBUTXo0RWhwQ3JuTzhCR0RYQWUxa2RRZVF3UnQ5ZkVpXzg?oc=5",
+        "date": "Mon, 22 Jun 2026 07:00:00 GMT",
+        "summary": "GLM-5.2 is the step change for open agents Interconnects AI",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7aad0d802d135449fe9f7989b6d9be1cd2bb99d3734668221413281746f67fcf",
+        "label": "Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark - The Motley Fool",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVXJBb2EzZWZtYjJnOGFWOGU2ZEZQZnlQNzFnMTVGbDlmVFBublo0dVNpVGZzd05adVFaN3BWUUotVVRLOTVBRWdMb0tMY3FHRGJxa1REMndmVE5CZE1CbG12ZTRSc05TWHYtb25wejR5c2UzS2ltSXVpUlpna04xUmZFb3F6X2RqSEFBWVh1RE9NYktyeHNWWA?oc=5",
+        "date": "Sun, 09 Aug 2026 07:00:00 GMT",
+        "summary": "Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark The Motley Fool",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f5f2ffbcf57920e5a0ed8a9886a6abed4b2910795677e9f478a6df9c6b121e13",
+        "label": "China's Z.AI Ships GLM-5.3, Calling It the Top Open-Weight Coding Model - Decrypt",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Decrypt",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5udE5QOGtFNjF6cWZ3aS16VlhsRXI2RkhoVW5mcXdGeUtHREJRQW96MzFrdlh2MXBrWWFSMXBtbjh6SEtSdElCbzh1X3RtTk1hWHNfektFX1ZWQnJUZ0MxRzcwb1VfRlpQdUFyRXRDdVp2WnNYT3lXY2ZEMC1HUdIBhgFBVV95cUxNMGJPTzBha3djVW4xX0VIMktYWVRFb3p0ZGpydm1ZR05zNE82elRQai1kLWdTbFdpd3A2MVRreUVfYUJaVXpVVkw2MnNxbFJUYWg3eng1VnY0UW5CczF0R2tKZ3RIYklMa1pYbFV4WWZfbXZuZFBzUWJEWjUzN05PMVpueW5GUQ?oc=5",
+        "date": "Fri, 14 Aug 2026 20:01:13 GMT",
+        "summary": "China's Z.AI Ships GLM-5.3, Calling It the Top Open-Weight Coding Model Decrypt",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:de6dec44ae74d4d132a9075cf4a37306fd3dd3e5752aa10b8516a416eb8eca98",
+        "label": "Qwen 3.8 Closes the Reasoning Gap, but Agentic Coding Remains a US Stronghold - forkast.news",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "forkast.news",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZjh4T2ktbGhlTHhNRThtci1wRkEwZDR2Um5fdGcycDdQNGJCcDllWVRMd3F1M3JnLWZuRUxBOTFsR2c4cGVQZDRWWTdad3JIT1pNdENGOVJQNjZDOFdlRkV4czV1b041N3dNWlZZZUlPckVMTFZjTVhOdzhnNHlTR3Q0YTRFLXVBYlNGbnBYOWlwZXB0eERSUThkSGpYZzQ?oc=5",
+        "date": "Sat, 22 Aug 2026 05:46:00 GMT",
+        "summary": "Qwen 3.8 Closes the Reasoning Gap, but Agentic Coding Remains a US Stronghold forkast.news",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10411,237 +10645,23 @@
         "summary": "Bloom Energy and Oracle Expand Strategic Partnership to Deploy up to 2.8 GW to Accelerate AI Infrastructure Build-Out Bloom Energy",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:1e284b61f36622fb126f9683b1011a125c368c40bf4fa7508980df27482081b9",
-        "label": "Oracle\u2019s $1.8b layoffs are an example of the age-old saying, \u2018you have to spend money to make money\u2019 - HR Brew",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "HR Brew",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9mb0ZZRmFBRGZQWENaSFB0WWlJbnFwNDJiVzd6NFJRYlpKb0Jyay1DSDVlVWNIdHF1UzQwaFp1UnBxZ1h5dDFjdmV4WWJGY0laUDlDbHZVR3pxbWU5V0ZsaWRuY3ZPeldoLTZoY2w3YWh6ejVjbUE?oc=5",
-        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
-        "summary": "Oracle\u2019s $1.8b layoffs are an example of the age-old saying, \u2018you have to spend money to make money\u2019 HR Brew",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d9b1166280319f035c263b039e47cb6d19181f1a6b1a6cf93fa4d8f97a89a39b",
-        "label": "Oracle Cut 21,000 Jobs as Big Tech\u2019s $600B AI Buildout Grinds On - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQc0VkLXBWMmtJdkZqbkJGTkV1a3ZUZE1zcnNKTFJIN0pvclBpR0lTeGxYSlp0ZmQ5ZVREWlZOTHBGOXFvOXQzWEoxenMxbEJoWnhNa0p5VE5FZ3k4MjhNYmdxeVdncDQ3SHdnTFhlRWtGWjdVdnZZME1CWmZtbEd3OEVtS282Ui1yam5ldWZzOA?oc=5",
-        "date": "Fri, 24 Jul 2026 07:00:00 GMT",
-        "summary": "Oracle Cut 21,000 Jobs as Big Tech\u2019s $600B AI Buildout Grinds On Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cb8b6eec25dbd4ce667441bab7d349101d5a43869fe3e494e240c61343fdc66b",
-        "label": "Oracle Corp goes for high-stakes ratings gamble in AI strategy - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUTZDLU9YVTRMN1NqaS1WSGh6Tk54VnBycmlfZ0pQVnA5R2p1VTc0YWFkbTMyZF9uRldPYTRnNmY5X2tRaW9iY0prV082RU9yLUo3WFFGc1h6emd1b3JtN1BscG1qX3ZZdG0zenptenZWV0xOWXY0WWZUSFpUTUg3UE9nWE5MR1NpSlZUWHJqTW4yRXE1emxKWnRGS0xqZ0pyZUE?oc=5",
-        "date": "Tue, 04 Aug 2026 07:00:00 GMT",
-        "summary": "Oracle Corp goes for high-stakes ratings gamble in AI strategy Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f10eafa2bd3f5525677891dd98c5270576587154f6f6059be73813abecf9908c",
-        "label": "Salesforce, Google Expand Partnership with Agentforce 360, Gemini - Salesforce",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Salesforce",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRXpWUERzaEh0ajRYRGdRbEYtOTZuMXI0cC02aVVjc0M4dElkang5aXkzZ2NFM0pnT1h5VnFNWWVYRkJubjduX2swdDdRQ2VoNERNOVhEcEVNOVVMNVFrUXl1bXFSN3VwbmFscERPanlwdDJyM2Z1MU5iVl90OGktSWMwMWdRSFpJa1hjaE9CbjZQOERna09na2E3ZkhLX2RLc3lyMkhuVm9VQ2xLWDJjMHRySlppWEk2X2c?oc=5",
-        "date": "Thu, 16 Oct 2025 07:00:00 GMT",
-        "summary": "Salesforce, Google Expand Partnership with Agentforce 360, Gemini Salesforce",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6a831d2c7c53f10fa713fd75fa48e2871abbe4c1158d8c2fca7d1031f046b732",
-        "label": "Adobe and Google Cloud Expand Strategic Partnership to Advance the Future of Creative AI - Adobe Newsroom",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Adobe Newsroom",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5PUXA3cUJELXRQSWpnZDNMeVkxWEIteUQwT0hwTTJLMDNqQnp5dEhfX0pGRzk0VHNSSU5CRGFCa1hqOGFKblZ0bTh6a3djSGxKMHh2VDRXTWt2OWdORV84UXZLdUR6Ml90Nm9yNzhWNFI?oc=5",
-        "date": "Tue, 28 Oct 2025 07:00:00 GMT",
-        "summary": "Adobe and Google Cloud Expand Strategic Partnership to Advance the Future of Creative AI Adobe Newsroom",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e4d4349d66c1cfb1cf2ac8fd7bb58fbe6d3dd3e8f14d980a9bb3530218ca158d",
-        "label": "Abbott and Google launch first-of-its-kind partnership to transform everyday health through glucose insights and AI - Abbott MediaRoom",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Abbott MediaRoom",
-        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNOUM4ckwyZHFVWnR6NXQzaEhSS3ZwM25lRGhPTGZBSUNqTlRuWnRJOXcwbnk0UXFHeFpValNtLTZ4YXlFOWNwRjFUalpaRlk4WEd6RngxeDNGVU8zaG9VQURCbjZaUWtOelFRWmhhTU5xOUZIZVdkdlhvRDQ2OHJpdk1VSHA3czE2Zk05R2djOVBVaDFZVGcwWWV0YkhINkYxV1BjWnJhVl9rVEMyZEE3RFhkZ2VIS2gzN2xaUUM4ekFLeVBNQjdsWkFxempfNExIYzhjeWE5STZUM3JPNThQcmVvLVpSMzVSUGdN?oc=5",
-        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
-        "summary": "Abbott and Google launch first-of-its-kind partnership to transform everyday health through glucose insights and AI Abbott MediaRoom",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5ec1a4e3d9c9c4f5d9575f1e8af285457e61828470de5064946ddc57537e7206",
-        "label": "Google Cloud collab pioneers next-gen consumer goods tech - Unilever Global",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Unilever Global",
-        "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPX044Rm10MlNjTkswYU5yU3NPS0VkWDVlQk5RTjRPUkgwRnBLTUE2aTg0Y01hQlRFZVgtZU1WLW51SWxBV0tzYlJyRlVmeEZwR09kZjBpbG5JaU1VdmRGNzluNWJfN3piZkpiUFhENm5KYUU1Z3B4MGlXZlYyYlNqX0xjd0pMakhjRU9GRVVIaTdtNjNENE1Nckd0c0lMOGxNbDFlNFB4cjZWckdSSUFyeHVrbC1mbkVub1FzZ01MUzhKSnZxRmo0NXVJMVZyeVRrMXJ4S2x2dWR5WGxOc2FDNw?oc=5",
-        "date": "Tue, 17 Feb 2026 08:00:00 GMT",
-        "summary": "Google Cloud collab pioneers next-gen consumer goods tech Unilever Global",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f90ab8d1b56756116452fd36efd7d9e943783e78bc2397bf0714fe885886248a",
-        "label": "IBM and Google Cloud Announce Strategic Partnership to Scale AI with Human Expertise and AI\u2011Powered Delivery - IBM Newsroom",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "IBM Newsroom",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOVUJnY1hNV2l4WUVRbVFFbG5ZVUlnQWtZYjZJcGFUd19SZW5Ob2dHM2pHUVJKVU1uLW13dVhkWUFWaVdxZmRZNTN0bWJqZ3NReGp1dHJjOERxbTU0bTdyeWpvQkQtLTdRRHNYNjNoQ0pEMGgtWE93NG9fV2FmNkFWUHozS0liODNETmJ5bHpNVjJJcDU3RFRKeEtrXzQ1dEc2WDlVZTlRSEZOcmluMFNGbVkyX3Q1QWYyWnBabmJJUkxZUU1iRFBjUkJFRkhpanZKYzF5bWx6cVpLSmlT?oc=5",
-        "date": "Thu, 04 Jun 2026 07:00:00 GMT",
-        "summary": "IBM and Google Cloud Announce Strategic Partnership to Scale AI with Human Expertise and AI\u2011Powered Delivery IBM Newsroom",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:08c33f8c761977cb15b82e8225f08ed090be538277869ef1c3f757f52706fb38",
-        "label": "Google to cut 52 employees in Washington state - GeekWire",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "GeekWire",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNWXpzMmlIZ3ZDMFNEeDhsLWZsS3lxTUwtRTJiempDamtXTkNLMlFwdUFsOEpZSTZURFVwbUJ6c095OTNZMWhUdWVPd3NkZnFMckptbFJ4ekJicXR1WlBCOTZ6bEtlcXNNSW4tdDlaMm9EWnBZNTVPbDFscmFwYks3cWhPUQ?oc=5",
-        "date": "Wed, 05 Aug 2026 07:00:00 GMT",
-        "summary": "Google to cut 52 employees in Washington state GeekWire",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:07821b53efca5f78d5868d26059238cfb81abda058e3615382d9ea65cce5b1e1",
-        "label": "4,500 Google Employees Demand Job Security Amid Big Tech Layoffs - KQED",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "KQED",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZVBVZm5oeEdFMHExYW04TkRBY1ZWQ3Nocnc5RU5ZcGZJSm5HTUVFdTQ2TGlUZzdTMWZqVjNtUTJwS0VWVVNfQVJNekhEbzREQkdpOWJ3WGpwdVNMMW01d25iZjdvdTRzc3dHVGtxWEJkSWU5NUNRRXRCWEJDZ2pCMElyV1BMQzZMcGpNN0FwUmpLRTJLMmFHelVndGZlejg?oc=5",
-        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
-        "summary": "4,500 Google Employees Demand Job Security Amid Big Tech Layoffs KQED",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:574b2379ec9bdf6e013e35335022be683445366d646b58720209029b025de72b",
-        "label": "Q1 2026 earnings call: Remarks from our CEO - blog.google",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "blog.google",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdXNtN3pKTExWYVpPM0dRbjJFSHMzdnF6T2w1RTc0RXYtMzBoOFV0TXpBOWdYWEg5ZU90VTRkLWNUX1dwNjc2ODVXcTJlT3Y4ZFNSRmJ2VWtGSkc0WS04N1RvNVUyYXFSSWx6T00zX0lvbEtVZEszdlgwQ09ybXhVS3l3YUI3Wk82NGlTZEx3?oc=5",
-        "date": "Wed, 29 Apr 2026 07:00:00 GMT",
-        "summary": "Q1 2026 earnings call: Remarks from our CEO blog.google",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1a35220213a5f0a459631116111333c6db06b07aaf09c35e1c6a432858f2123f",
-        "label": "2024 Q3 Earnings Call - Alphabet Inc.",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Alphabet Inc.",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1lZzVDZFhmVGt0dEg5eEN2MTRzaDU3WlJVbkZMTmxkRjFRWXZBVUdqWHIyak84Ykt5OEg2bkVLT1YzZVItTVpuZV8yTlZCUEVyblJrVTNlSDg0NWFtVmV6dW9TMzMxdGkzakdreU54Q2dIU0hhT1RRWnljcTNUZw?oc=5",
-        "date": "Tue, 29 Oct 2024 07:00:00 GMT",
-        "summary": "2024 Q3 Earnings Call Alphabet Inc.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d0d88d83c2eedea81338eace2e37cdb7a0ee6faafd6ef9dab7761318b757d662",
-        "label": "Q4 earnings call: Remarks from our CEO - blog.google",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "blog.google",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbXRUR25GSWJtc1FxZl9KRHM2cUtVMHVMRmJFMmtWQzFyLUlHZExvMXp5N0EzVE9BZnBsTVJYR1BBcnJ0V3BBUzlJWWxMUHdSazJHSDRZczJPRUF4NHVWQkNNVjNlRkRqY2FFbUhESXFFZzl1WDA3MDlQUzB4Z3U4VnpwVlc4aTl4Vl95VWd3?oc=5",
-        "date": "Wed, 04 Feb 2026 08:00:00 GMT",
-        "summary": "Q4 earnings call: Remarks from our CEO blog.google",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:07c958ebac175599e2b8c32a44ed2575e86b7d47173074d7f31927918f42bfd4",
-        "label": "After Earnings, Is Alphabet Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Morningstar",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOcU5wZDBReEdfVHpvZjFKZmQweDlydlFIR2txV0JYV2RscEFFWlZjWldQalg2MF9xWUNFbHNzSmNRaC1PN2JFNDh1OWE4U2lFRkVpbmQzLWhVelJqOUVQdFdLc2hKem5DUUpTdUNGVE5ZUXJQN3dSclIzcnA3X0RPOXhzME4xLXgyUGZFRzdJbkN6TzdJbVI3WUVCbzFTdWZUcjMtM3lGQQ?oc=5",
-        "date": "Tue, 04 Aug 2026 07:00:00 GMT",
-        "summary": "After Earnings, Is Alphabet Stock a Buy, a Sell, or Fairly Valued? Morningstar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cf34f01bcc400ae5b3317c4624f77555479e14bb6805d9ce622233074b14f3e9",
-        "label": "2025 Q2 Earnings Call - Alphabet Inc.",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Alphabet Inc.",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1JS3V4TTZ2bS1YZ2l4R0h4Q0VhZW40dUtBUFE3S0d2Tk1nTW1lVEhzMjZ1QWpmWGJ4VmhkdWZlSmhfM1Z5QmRmVlNsTVdWNEhsbEpjUUtjeHRZT0RKRVdzX3ZnQnJWR3N0dWxzV18zbXVQNkY2VFlqSEptd2xNdw?oc=5",
-        "date": "Wed, 23 Jul 2025 07:00:00 GMT",
-        "summary": "2025 Q2 Earnings Call Alphabet Inc.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:26b37c1d7cdb905cd345105769e73af5fac85ef150a0f6dd654e42135265ebcf",
-        "label": "Q2 2026 earnings call: Remarks from our CEO - blog.google",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "blog.google",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcUdvdmFHb1pYVURUWHFocGdtMVBwQThkSnk5LUtBSVlsZ0ZiQ3VMWUhjc2xLWUxvRzVNNjJlSHdXWVYtcTh5UmpMUHVpLWxFczVXTmxNVUVpZTRCdDhHU2JkS1dhcXV1aXZZTGxUVTkzYVNObDFPUnc4eWJSWlFydXY3bkE3Q0ZjY094M0Nn?oc=5",
-        "date": "Wed, 22 Jul 2026 07:00:00 GMT",
-        "summary": "Q2 2026 earnings call: Remarks from our CEO blog.google",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8b57c4d462ac757bad436f4fe4df4b5e8dac093fb52b3cb2565a740a6cffd90f",
-        "label": "What worried investors about Alphabet - Axios",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Axios",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tTXVIYll2bFpjV2NzR0tITE5WNkdEcGV1c3pfTVVfcEkzemg5WTZqdml3eDYtOVUxME1FTk1EZU5sZ0pVdHVmQVV2TE9Ca2RrY3VYU1BnSU1JMURuUTZrMEhQSGc4ZHB4X3ZvcA?oc=5",
-        "date": "Thu, 23 Jul 2026 07:00:00 GMT",
-        "summary": "What worried investors about Alphabet Axios",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:868467d59638f8d7364b1b6c4b34e9cd95bcd041adf032acf9a87c7daa61cc02",
-        "label": "Ahead of Earnings, Is Alphabet Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Morningstar",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM25LRGphY0xTTkhJeXoyN2Qtb004Uld1aFpRbEtxWVR0b1Ria0dLcXZhRUV3SXczQThUTzYzNDlKSHJIdGViN3RwVjhoaGtuSjBXZ1hsS1kzeEY0aXhLaXBtM20tdnhwY1daMjNhbXBrdHZUSG5NcE1KcGc0bG1HdEJZTzQwNTdfanR3b1ZNZFQ5VnBBVUR3bzJwbnRJN0xyYXIzdw?oc=5",
-        "date": "Mon, 20 Jul 2026 07:00:00 GMT",
-        "summary": "Ahead of Earnings, Is Alphabet Stock a Buy, a Sell, or Fairly Valued? Morningstar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:fcb192cdfcb752a168938c35a1f6a104cba2a1841cce337cdd4cc390a6d21d9e",
-        "label": "Alphabet acquires clean energy developer Intersect for $4.75B - ESG Dive",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "ESG Dive",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdWpHZ2lhNzBTOXkydEZkX1pTS3NqU3RRWWd4NnEzMm9pYTRNRldhQmNVNmtfX2hLNnRYTF83WHA0ODVwMjN2SENsb2dwNWlPNFhXOW9BVm82VElwWjNfRHd3WWM0WGhScnVuSjJZM1JCWFliZjhYYzRzRlZiNmc3QXFKTUZSSnhCa05QT05lblpoOUhPUGFKWEkzWFhMWC1CX0dhSGlBaklFd3hZT3pLbmlUbUg2clExU0ZNOWRTOGI?oc=5",
-        "date": "Mon, 05 Jan 2026 08:00:00 GMT",
-        "summary": "Alphabet acquires clean energy developer Intersect for $4.75B ESG Dive",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
+      {
+        "source": "Moonshot AI",
+        "target": "Anthropic",
+        "type": "BENCHMARK_GAIN",
+        "weight": 1,
+        "mentions": 2
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "Anthropic",
+        "type": "BENCHMARK_GAIN",
+        "weight": 1,
+        "mentions": 1
+      },
       {
         "source": "MiniMax",
         "target": "Alphabet",
@@ -14241,6 +14261,55 @@
         "mentions": 1
       },
       {
+        "source": "DeepSeek",
+        "target": "evidence:32aac18aece344fe366f54f9ab0b94bc180d460e12e5cea51051338824b38a7d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:32aac18aece344fe366f54f9ab0b94bc180d460e12e5cea51051338824b38a7d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:32aac18aece344fe366f54f9ab0b94bc180d460e12e5cea51051338824b38a7d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:c3c84e0ee6fdfcb18bcba2e38c4ef1ad9891659b6aaa88612fcca031b5bb423f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:c3c84e0ee6fdfcb18bcba2e38c4ef1ad9891659b6aaa88612fcca031b5bb423f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c3c84e0ee6fdfcb18bcba2e38c4ef1ad9891659b6aaa88612fcca031b5bb423f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:6189801a864ca81224efa3049d6080c2edb1338c797aea310b04915341afbf7a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Moonshot AI",
         "target": "evidence:ba161bf059915cd8b3e30de82b0dc26a7fc82b45fbd812feb5e84b0670a322b6",
         "type": "EVIDENCE",
@@ -14572,6 +14641,62 @@
       {
         "source": "OpenAI",
         "target": "evidence:06600c95c2f5d695294bccb3ff4287570861bf67cd81eb6bf97b9687a284e151",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:ac54671616d08714980543c04a35168b033bdf2735aaece78b8541141bc6fb0f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:ac54671616d08714980543c04a35168b033bdf2735aaece78b8541141bc6fb0f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:c9b085a4970a6f10d32f47c97b94dcf4be4ca7e2bbf2bdbbe6dae6091028c30d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:c9b085a4970a6f10d32f47c97b94dcf4be4ca7e2bbf2bdbbe6dae6091028c30d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:f7f08884adea6b114e485ebf93915fafc32439456012181bb7e5f83376126283",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:f7f08884adea6b114e485ebf93915fafc32439456012181bb7e5f83376126283",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:cfcc3f49d7734c2118289b42e53060bf8edc8e831f62b4f37a85ee958a1b0bdc",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:cfcc3f49d7734c2118289b42e53060bf8edc8e831f62b4f37a85ee958a1b0bdc",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15804,6 +15929,90 @@
       {
         "source": "OpenAI",
         "target": "evidence:88724e1f94b43ef9dbf0f7ad1e3cc74a48bf0ee01004a1bfd190ddc08fae32d4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:30dc5dcc506b641aa7bddb15165a30fcdf63ad56998b002f7497d91b420e5abd",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:bc665642ee091e7efa12e2531d84e9bf30544e838b7f7fbe0308278324ae834e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:083c7c07d10f5fc7ed41c7c8319df41f54676185d14d209898b36ecbf4319905",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "MiniMax",
+        "target": "evidence:3f1f9777f23ffa2b44e48e67d5fe39ddc00d2fd225c760f8bfe043a921a2c223",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:afb0d330c5b7406a7b5667c4151334b8151e910aefb8586e353dd992e03585f2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:4baac4410a3305e05467df7496657609952c25424a5a484730dae7dac0d04bdb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:e944b547b24f90fe01f011e285a07d086083c3ec1400c9c47ccfbe4348dca093",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:fc8dde98e7b2fddde7e49fa1fb0ffdddc67e45230eb794bbdee47b09794b35aa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:aabc3d4ec4d4464d661db945da7785bb10749ac7440ff2d52f3c4e4276cfdb52",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:7aad0d802d135449fe9f7989b6d9be1cd2bb99d3734668221413281746f67fcf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:f5f2ffbcf57920e5a0ed8a9886a6abed4b2910795677e9f478a6df9c6b121e13",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:de6dec44ae74d4d132a9075cf4a37306fd3dd3e5752aa10b8516a416eb8eca98",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17281,139 +17490,6 @@
       {
         "source": "Oracle",
         "target": "evidence:01afb9e75ba8eaf6b04311f70eca05e0a927864d254e64cb06109e74624fb86a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:1e284b61f36622fb126f9683b1011a125c368c40bf4fa7508980df27482081b9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:d9b1166280319f035c263b039e47cb6d19181f1a6b1a6cf93fa4d8f97a89a39b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:cb8b6eec25dbd4ce667441bab7d349101d5a43869fe3e494e240c61343fdc66b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:f10eafa2bd3f5525677891dd98c5270576587154f6f6059be73813abecf9908c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:6a831d2c7c53f10fa713fd75fa48e2871abbe4c1158d8c2fca7d1031f046b732",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:e4d4349d66c1cfb1cf2ac8fd7bb58fbe6d3dd3e8f14d980a9bb3530218ca158d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:5ec1a4e3d9c9c4f5d9575f1e8af285457e61828470de5064946ddc57537e7206",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:f90ab8d1b56756116452fd36efd7d9e943783e78bc2397bf0714fe885886248a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:08c33f8c761977cb15b82e8225f08ed090be538277869ef1c3f757f52706fb38",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:07821b53efca5f78d5868d26059238cfb81abda058e3615382d9ea65cce5b1e1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:574b2379ec9bdf6e013e35335022be683445366d646b58720209029b025de72b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:1a35220213a5f0a459631116111333c6db06b07aaf09c35e1c6a432858f2123f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:d0d88d83c2eedea81338eace2e37cdb7a0ee6faafd6ef9dab7761318b757d662",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:07c958ebac175599e2b8c32a44ed2575e86b7d47173074d7f31927918f42bfd4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:cf34f01bcc400ae5b3317c4624f77555479e14bb6805d9ce622233074b14f3e9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:26b37c1d7cdb905cd345105769e73af5fac85ef150a0f6dd654e42135265ebcf",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:8b57c4d462ac757bad436f4fe4df4b5e8dac093fb52b3cb2565a740a6cffd90f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:868467d59638f8d7364b1b6c4b34e9cd95bcd041adf032acf9a87c7daa61cc02",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:fcb192cdfcb752a168938c35a1f6a104cba2a1841cce337cdd4cc390a6d21d9e",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -30849,6 +30925,36 @@
     {
       "date": "Fri, 17 Jul 2026 07:00:00 GMT",
       "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Chinese AI models achieve Mythos-level performance in cybersecurity benchmark - Friends of Socialist China Chinese AI models achieve Mythos-level performance in cybersecurity benchmark Friends of Socialist China Google News",
+      "title": "Chinese AI models achieve Mythos-level performance in cybersecurity benchmark - Friends of Socialist China",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSU82XzQza0JQOWpJdUJUbE40REJ1T09IN2xGN2hOSUpyMWNtU1NOS0VuMm96a2lFRzBTcFVKQmVxZEx3bDhEcUwwWTJsMm9DdWRFZGRZX09FTTFuQW9CNW1oT2lPcXgtVE5hQkJEdUxFMU1JbDJERXNvT2hpeDYzVmxFMTNhelc4WTZUSFZTLWxGcVNSMnR6VVF5cGxLZXdZcjU1WE0tdGNwWU14RzhwTl8wdGZxWDA?oc=5",
+      "source": "Friends of Socialist China"
+    },
+    {
+      "date": "Fri, 17 Jul 2026 07:00:00 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": "Moonshot AI",
+      "target_entity": "Anthropic",
+      "amount": 3000000000.0,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S.",
+      "title": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S. compute limits - Tom's Hardware",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT25TNFlXeVFQMmVqWFYtSS1oSkpEUl9WeExTZUpmZEtFb1RpQ3dRbGxGV1hVWjNpMkRxTlpaQk5NSXNfdzlmYmg1cW5MUGlmR3FpeHV2bmpzMDBXQW1mV1B0N3QzUmZOOFU5T0w1QWFqYldjWnZER0t0UmNzcGZBQll1dWZBNEYyWTV3dnZvMkRzTkhqNHBDak5TTXd4b080eUJGbExOSUVCeU5Cd1ZmUWVXUG1SUQ?oc=5",
+      "source": "Tom's Hardware"
+    },
+    {
+      "date": "Fri, 17 Jul 2026 07:00:00 GMT",
+      "event_type": "BENCHMARK_GAIN",
       "source_entity": "Alphabet",
       "target_entity": null,
       "amount": null,
@@ -30982,6 +31088,21 @@
       "source": "Startup Fortune"
     },
     {
+      "date": "Fri, 26 Jun 2026 07:00:00 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 30000000000.0,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Cohere North Mini Code: 30B Beats 120B Models [2026] - tech-insider.org Cohere North Mini Code: 30B Beats 120B Models [2026] tech-insider.org Google News",
+      "title": "Cohere North Mini Code: 30B Beats 120B Models [2026] - tech-insider.org",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1YWdyaFM3WFdrQlFucVdQNlhlSGR2QUNiYkoyQktTTVQ2ZDFyNlhlNTA2ckxkYVpGdVplNkM3dVZPVkVsTUREejlsSmhXSzJ2N3VSdDBMallHbHJOQlJWQXVOSXNWYUU?oc=5",
+      "source": "tech-insider.org"
+    },
+    {
       "date": "Mon, 01 Jun 2026 07:00:00 GMT",
       "event_type": "BENCHMARK_GAIN",
       "source_entity": "MiniMax",
@@ -30989,7 +31110,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.62,
-      "mentions": 1,
+      "mentions": 2,
       "review_status": "confirmed",
       "evidence_text": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost - VentureBeat MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost VentureBeat Google News",
       "title": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost - VentureBeat",
@@ -31117,6 +31238,21 @@
       "source": "Yahoo Finance"
     },
     {
+      "date": "Sat, 22 Aug 2026 07:13:48 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Amazon",
+      "target_entity": null,
+      "amount": 25000000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds TradingView Google News",
+      "title": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXl3SlNrdnVqZGdqS2QyOXpwREFKbUV6WEp1QXhNLU9rVkZkYTB0UmdaSFFVLU9nWUZsMTdSam5RcEE0RXNpdm4yd0V3T0ZIbnV6WUV4VTlwd2JfQmdFTUVCR0FEOHFBMmtVM3hKRndPOUVDLTl4dmxPenh4cHJ1QlZ3RGQ4cjFEVjQ5Q3psWnRuZDFBMjBndHBSNnMzM0l6czNkZTBLQmM1VmRRVWN3ZGlvODZFV1IwellmZUhHcHlMX1VSYjlFUWVVRk9SUTBlWEVaQg?oc=5",
+      "source": "TradingView"
+    },
+    {
       "date": "Sat, 23 May 2026 07:00:00 GMT",
       "event_type": "PRICE_CUT",
       "source_entity": "Alphabet",
@@ -31130,6 +31266,21 @@
       "title": "China's DeepSeek to make permanent 75% price cut on flagship V4\u2011Pro AI model - Reuters",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNM3Q5LUNUSDdncjRsXzJUaDFubjZGRm1SVDh5bkx0Z0pGNUVfZzZOdGQ1UThpTFFQdGg4d1ZaMFpGZ2Jxb0xuUmxMY0NQQkZBOTAtTjdxRnEtNmNMdXBWc3YwLWVfendsczJINk5jeEE0M21IWjdpMFRtbkFwU1B5ZkdDenhoMmhZVVpjU3VsZWtHWVJSR05zLVQ3dW9xU0Z0aDJEX3YtdkVWUTdkMVRzTEJnVUlfdw?oc=5",
       "source": "Reuters"
+    },
+    {
+      "date": "Sun, 09 Aug 2026 07:00:00 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": "Moonshot AI",
+      "target_entity": null,
+      "amount": 2800000000000.0,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark - The Motley Fool Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark The Motley Fool Google News",
+      "title": "Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark - The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVXJBb2EzZWZtYjJnOGFWOGU2ZEZQZnlQNzFnMTVGbDlmVFBublo0dVNpVGZzd05adVFaN3BWUUotVVRLOTVBRWdMb0tMY3FHRGJxa1REMndmVE5CZE1CbG12ZTRSc05TWHYtb25wejR5c2UzS2ltSXVpUlpna04xUmZFb3F6X2RqSEFBWVh1RE9NYktyeHNWWA?oc=5",
+      "source": "The Motley Fool"
     },
     {
       "date": "Thu, 07 May 2026 07:00:00 GMT",
@@ -31190,6 +31341,21 @@
       "title": "OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO - New York Post",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd25memJGdXMzVjI2QS1lT0ZsQ3luR0ZQU3FJTXlST1drQTRmdFB5RU5JZ0txOEo4TkI1TUJDWG8zc1NWMGRDdG5KbzZqdDBOeWs2V1UzNUFoWWtkd2NNcU1GXzdEYWxCMXYycVpzQWwwQ0E0QjJEX0U1YVBSSzFFcG9mYy1KYjloUHlNMUt6YkYzYXVDS3NoNXJKNjBoTkFLTHJUdEFn?oc=5",
       "source": "New York Post"
+    },
+    {
+      "date": "Thu, 16 Jul 2026 07:00:00 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Benchmarking 13 AI models on rediscovering known CVEs - Aikido Security Benchmarking 13 AI models on rediscovering known CVEs Aikido Security Google News",
+      "title": "Benchmarking 13 AI models on rediscovering known CVEs - Aikido Security",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ZdVlzTmc5X1hERjJtc3N1WmRuLUFvZUtJbGlvM1B1Vy1zZWNQcklpaHV3SElGcnNOSmdIQktEbzBtUmlZU1BfeHA4dlkyVHBhZXMzeVh4X2EtNHZ2cGY1MDYwblNvU1loeGZLRlpR?oc=5",
+      "source": "Aikido Security"
     },
     {
       "date": "Thu, 21 May 2026 07:00:00 GMT",
@@ -31265,6 +31431,21 @@
       "title": "OpenAI CEO Sam Altman announces 'major' price cuts as the company signals a focus on cost efficiency - Business Insider",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1VQW9naXdkdFo5RHQxYXNLMHBKMmVEY0lGX1JxZ0tNVDQzVW9LTlU1d3RINkROVjZ1RXlZOEZFcEZRZjZERWdBRnlZbFBJR2JKT0lmZlFIeXdSRXh3b1dtckp1OHAzajhpVUgxZVY2UjQ5LUNJWlNhT25aRQ?oc=5",
       "source": "Business Insider"
+    },
+    {
+      "date": "Tue, 04 Aug 2026 07:00:00 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Palantir Reports 93% Revenue Growth, Pushes \u2018Benchmarking\u2019 Over AI Leaderboards - analyticsindiamag.com Palantir Reports 93% Revenue Growth, Pushes \u2018Benchmarking\u2019 Over AI Leaderboards analyticsindiamag.com Google News",
+      "title": "Palantir Reports 93% Revenue Growth, Pushes \u2018Benchmarking\u2019 Over AI Leaderboards - analyticsindiamag.com",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNDU5RUJ5X04wUEhyOUlWM2N1ZEpJak9ORS1CaGtwQ25iMTcyS05OdHBfZElYYVE0UEFZZUFBYW1CZ2lLUkxodEp4WW9iN2t1VFdjYTQ3QkFrSDg1MnctTTJtakJnb1hSUXIwaC1Qd1pPTHYxdWhRZ0RjMW90Uk9SZXJOdnk0THVVckw4MEZfU0FZZTRSOUdHQ1MzY3RCVTZvWExSRDJ5b0dhckdsV2dfWnBpcw?oc=5",
+      "source": "analyticsindiamag.com"
     },
     {
       "date": "Tue, 07 Jul 2026 07:00:00 GMT",
@@ -31385,6 +31566,21 @@
       "title": "Big Tech AI Spending: 00B Capex Race in 2026 - tech-insider.org",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE15N1VJNU0wMzFMSlBOVXA5UDBMTXhaYWYwREQ4a282VFZzMzZzOU14RmtEcHlIYllZdndldVo3Z2E1dHBaUjFZSTdRS2NsZkdmUWUySzhFbGZ1RHdjMjA4UUJ1Y2JmNFVrNjU5encwS3RqVEg5?oc=5",
       "source": "tech-insider.org"
+    },
+    {
+      "date": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Poolside drops Laguna S 2.1, an open-weight coding model that beats rivals 10x its size - VentureBeat Poolside drops Laguna S 2.1, an open-weight coding model that beats rivals 10x its size VentureBeat Google News",
+      "title": "Poolside drops Laguna S 2.1, an open-weight coding model that beats rivals 10x its size - VentureBeat",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM3pndGR2c19oMnA3T0V6TEFjbXdFM0dKLUppQjJYQ3ZObG5UNktrX01Ga0J1R3pDMm5nMUJfY1docXRqaFVVWGsyeFBuYzlteHROR2N1WmtERkNqenZHSDI2R2dEdnlqeFdnQWJKZmtNeUdkMmxkWFdXOHY1bDlWTzZwcjBTMEd4QkRJZXVSSjlIMGdBUVIwWndaUnFZSldWZFI4YXk5cUNSOVFKYnR5UkVFNWkxQ0hLUXQxMzBHRmtoTWc?oc=5",
+      "source": "VentureBeat"
     },
     {
       "date": "Tue, 30 Jun 2026 07:00:00 GMT",
@@ -31582,6 +31778,21 @@
       "source": "Reuters"
     },
     {
+      "date": "Wed, 19 Aug 2026 18:06:09 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": "Zhipu AI",
+      "target_entity": "Anthropic",
+      "amount": 5200000000.0,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable - Yellow.com New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable Yellow.com Google News",
+      "title": "New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable - Yellow.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41c1FiZnozQWlzSm5YWFRSdUphM0tQbkZRNFpSbHQ0YjFqdFIyVkt2dGZtejBPU2RDblpzUlBLdDdtcDlYd0FvY1RnUnpwTk9leFZqSjg0T3B4Yi1mRmN4SjZ0Z1hmZFRnWHYxS0hQQUxGa0d3bEE?oc=5",
+      "source": "Yellow.com"
+    },
+    {
       "date": "Wed, 19 Aug 2026 23:16:35 GMT",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": "Amazon",
@@ -31659,23 +31870,23 @@
   ],
   "collector_runs": [
     {
-      "id": 131,
+      "id": 135,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T05:42:49.919848+00:00",
-      "completed_at": "2026-08-22T05:43:06.914421+00:00",
+      "started_at": "2026-08-22T07:46:22.011045+00:00",
+      "completed_at": "2026-08-22T07:46:36.117564+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 2,
       "error": null
     },
     {
-      "id": 132,
+      "id": 136,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T05:43:07.315452+00:00",
-      "completed_at": "2026-08-22T05:43:07.767382+00:00",
+      "started_at": "2026-08-22T07:46:36.518573+00:00",
+      "completed_at": "2026-08-22T07:46:43.147851+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 32,
       "error": null
     },
     {
@@ -31689,20 +31900,20 @@
       "error": null
     },
     {
-      "id": 130,
+      "id": 134,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T05:42:48.741044+00:00",
-      "completed_at": "2026-08-22T05:42:49.518032+00:00",
+      "started_at": "2026-08-22T07:46:20.886755+00:00",
+      "completed_at": "2026-08-22T07:46:21.610013+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 133,
+      "id": 137,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T05:43:08.168480+00:00",
-      "completed_at": "2026-08-22T05:43:10.378375+00:00",
+      "started_at": "2026-08-22T07:46:43.548960+00:00",
+      "completed_at": "2026-08-22T07:46:45.619307+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31719,11 +31930,11 @@
       "error": null
     }
   ],
-  "document_count": 1053,
-  "event_count": 949,
-  "mention_count": 2343,
+  "document_count": 1088,
+  "event_count": 958,
+  "mention_count": 2354,
   "review_counts": {
-    "provisional": 0,
+    "provisional": 9,
     "confirmed": 271,
     "flagged": 678,
     "flagged_retry_pending": 0
