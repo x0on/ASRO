@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T01:51:09.545669+00:00",
+  "generated_at": "2026-08-22T03:56:19.214667+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "transmission": 39.6,
-    "external_pressure": 61.1,
-    "cannibalization": 54.2,
     "circularity": 57.1,
-    "stress": 57.1,
-    "capital": 52.15125962813687,
-    "counter_evidence": 42.9,
+    "transmission": 39.6,
+    "cannibalization": 54.2,
+    "fragility": 61.1,
     "monetization": 42.9,
-    "fragility": 61.1
+    "external_pressure": 61.1,
+    "counter_evidence": 42.9,
+    "capital": 52.15125962813687,
+    "stress": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "external_pressure": "directional_estimate",
-    "circularity": "directional_estimate",
-    "capital": "aggregate",
     "monetization": "directional_estimate",
-    "fragility": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
     "transmission": "confirmed_trigger",
     "cannibalization": "directional_estimate",
-    "stress": "directional_estimate",
-    "counter_evidence": "directional_estimate"
+    "fragility": "directional_estimate",
+    "capital": "aggregate",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T03:56:18.734206+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"circularity\": 57.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"stress\": 57.1}"
+    },
     {
       "captured_at": "2026-08-22T01:51:09.104932+00:00",
       "score": 51.4,
@@ -3681,6 +3687,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:c862e056f0b780aa43a1db8619ca3151f563a68f3b1bb500138b5a6ee0b7d126",
+        "label": "OpenAI Vs Anthropic IPO: How They Compare And What We Know | August 2026 - Forbes",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUUt4VEJ2TW1WeWZaUlNIYWR4OE1xVUhQY0NDeVppOWNwVGF0TEpQdGUtT3JGT1hrMFJlcWJ6ck5TbllTdERMb2ZQamstcnZFVkFjTkxkbGQwZmM5Zmg1bnNaMlRZeWI2aEhraVFhX3MzRkRWdXQ5MHNJd3EtTlc0SU5IYk5DSTJGSU9tdWJ3?oc=5",
+        "date": "Thu, 09 Jul 2026 07:00:00 GMT",
+        "summary": "OpenAI Vs Anthropic IPO: How They Compare And What We Know | August 2026 Forbes",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:818a6949d58ac1d7eb0d99cac9b8eabd15a5cd7defd79ac48224586fbac0df5b",
+        "label": "Report: Anthropic hopes to surpass SpaceX\u2019s record IPO raise when it finally floats - SiliconANGLE",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "SiliconANGLE",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPcjQ1Vlo4VWpnX1hwUktnenlPZkVDaEdRQlFzcm9ua1FoY1B4U0E5bmdFd0RIOEw0VzVPLW9ZSEV2eXcwamM3UElNNnlNQlNHdGFzb0t6bzI3OW9aYXJFckk5dDQ1MEFVZkE1WW5zZF9Venc1UERoalRQZ2MyLVRuTms4Wm5LY3dsUjhGREpfOGRMVnUwdlJEX1pMRUhiaWRYWUlxT2pkYTNMWXFrS3E1LWl5dF9BSFdidEVnbG5td00?oc=5",
+        "date": "Thu, 20 Aug 2026 23:41:00 GMT",
+        "summary": "Report: Anthropic hopes to surpass SpaceX\u2019s record IPO raise when it finally floats SiliconANGLE",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:ec8083348cd8aef30b4f7f61fb812b77bb23b3d32b2bc19a1a02022e8f040007",
         "label": "Anthropic Aims for Largest IPO Ever, Surpassing SpaceX \u2014 Filing Expected by Month-End - finance.biggo.com",
         "kind": "evidence",
@@ -4686,6 +4716,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3ee882a15fcb301480a7093f23ecc90df831e867c29f3c838f82206757325d97",
+        "label": "OpenAI's CFO just said something IPO investors should hear - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSUhYNDNNeXJ1bnliM0EtMEMxZ2thdjZpdVlQdFVZSXBrSm9uMWZ6a1BMSHhiN1p1aUFnSWR6dmprUVRNVzJadHNpWnRkUnlLbDQ3YUFDZ1R2N3g3NnFDaENNblpvcUlmVjZaV0pxZHZXVlF0dEJRWklpVmFrdDdvRnVjdzJKaENocTVDdnJaaUI3aXVNbllXVzQzcGM?oc=5",
+        "date": "Sat, 22 Aug 2026 01:03:00 GMT",
+        "summary": "OpenAI's CFO just said something IPO investors should hear Yahoo Finance",
+        "score": 4,
         "weight": 1
       },
       {
@@ -7797,6 +7839,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:d2c182219db517a8aa2a65b7595f9f85e40b610b03747cc43f03928aa97fc95c",
+        "label": "Dow Jones Futures: Market Rally Repairs Some Damage; Nvidia Earnings Loom - Investor's Business Daily",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investor's Business Daily",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkR0Mk1hdnJPQVZHWEJYWXQ2UENlazJ1OG1EWTVtNFVYLTdMVHpfbVRIQ09zMmtMRnlLT1dnd0VyVzh1cTQzVm1jMS1keHR1TUNXOXBPSXEwWE10bFNoTi1Sd1ptX1lDcHhzaG5OaTFwTzE0UlBvTzgzTHpGVkVQeUoyY2szcks3RkFENTdPbmRVUVFWMjZaWF93cFpXcnZEUEM3d21BTGpKcWZJblEtcEhJVjA?oc=5",
+        "date": "Sat, 22 Aug 2026 02:36:00 GMT",
+        "summary": "Dow Jones Futures: Market Rally Repairs Some Damage; Nvidia Earnings Loom Investor's Business Daily",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:876c5f5af1539a665ae1b67223d37f0e5f79397d66dd3733590991a1eaea0e84",
+        "label": "Former Qwen Tech Chief Lin Junyang Launches Pragmatik Labs with a Two-Billion-Dollar Valuation \u2014 and Pivots from Foundation Models to Agents - Pandaily",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Pandaily",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSzctODBHN1loZGM0T2ZUdEZaRUxZcGpaUkZaMmVISFhwdFJBbmljbXlWNjBRaGZkZm5LU1JVRHIybkNRQnZsOXBwTzdrRXFEM0txa1lGV24xNlFzaTM3aFJwUWhycmluYmg3TDVfcnk5WW82UWN6WFlGRUJfLU5BcDV6UFZoa3dXNEx2YzhZTTFoQlB5QW5rNUVfc1FuVENmWkZZQQ?oc=5",
+        "date": "Fri, 21 Aug 2026 09:34:48 GMT",
+        "summary": "Former Qwen Tech Chief Lin Junyang Launches Pragmatik Labs with a Two-Billion-Dollar Valuation \u2014 and Pivots from Foundation Models to Agents Pandaily",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:0c3083f78fffd626e37ec3b6fb29e6a9bf8c92a02cf8473562bcdf9badafa223",
         "label": "Japan's defense buildup draws small, midsize manufacturers into surging demand - \u6bce\u65e5\u65b0\u805e",
         "kind": "evidence",
@@ -10555,66 +10621,6 @@
         "summary": "Amazon earnings preview: Q2 2026 S&P Global",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:1fd9a2b9618e88f7e2dbe6866e20854d15064037dabbfb0b359ae66cf0fbbed2",
-        "label": "Going Into Earnings, Is Amazon Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Morningstar",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVlFbTBxQWlpODNmTTFUVW45SkhraDdJSUpIeE1RTURfWEZzNlk1cmY2V296NkxkNVM5WE5PX29mdWdxTXJvQ3dkYUtDb2RqdVpsNGZzbm5FSFhRYUlQdndUdTU1Q2tkeUU1ODVzSEMxN2praGZad0RULVIyZThOOEhhYnRSZWRybmdUWDNCczRiZ3VVTU1FdGNuZjZYVXBw?oc=5",
-        "date": "Thu, 23 Jul 2026 07:00:00 GMT",
-        "summary": "Going Into Earnings, Is Amazon Stock a Buy, a Sell, or Fairly Valued? Morningstar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6d2376802dab6b07c8667ed542ff42bec394177d62dfeaf40f4cb34055dc127d",
-        "label": "Amazon revenue soars as AI investments pay off - Axios",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Axios",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBpQzEyajBlR2xJR0RIWXlQLTJsMXZwN2dhMWw3QjRldDZzenVPdEltTkwzMUZfb3VXUnVqck5lQVRhYUx6S3hBdW5wM2U2T056WWJqSDA3QkZGb200ZmhscU5wSnlDOTZQa0Nz?oc=5",
-        "date": "Thu, 30 Jul 2026 07:00:00 GMT",
-        "summary": "Amazon revenue soars as AI investments pay off Axios",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f4a6581e1fd70d2fe004898c1bfb320700214c1e96bf7c8e55d21bf8b307c6e5",
-        "label": "Amazon Invests in X-energy to Support Advanced Small Modular Nuclear Reactors and Expand Carbon-Free Power - X-energy",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "X-energy",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPckNjRnpISW1ybzBmMzRZVFZJcWprUGlzVFpVcW1BQ0pGOFdDbExtSGFxNDNPbUFzc0dVM2Z1TnBKbG5MQVdsaF9rYWJXd3NXeXlrZ19MdkVJeENQMWdvY2FRWU5CWHQ2Nm9qcnQwMTEzcXljaDFROHVEaDdEM1lybkYtNWV0T3V4RERVMU1WYzU3MzJQX0RBVHEwN0ZzN1h6Z1FObV93Ql8wU3g5Sk1LRWlKSHNTWktjTVNkbGFXYWZBVVNwbmZKcDVXX3BsUQ?oc=5",
-        "date": "Wed, 16 Oct 2024 07:00:00 GMT",
-        "summary": "Amazon Invests in X-energy to Support Advanced Small Modular Nuclear Reactors and Expand Carbon-Free Power X-energy",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c86163695cb70cbf678d45c98114c7696d5a2ac8bfee8607b2553fc58221d574",
-        "label": "Amazon confirms new AI-related layoffs focused on tech giant's own AI division - KOMO",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "KOMO",
-        "url": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxOalpRQkNtZjFObXk5SEsyN3o4ZG40LVNqbnFfekJUcjYtWWY4WWxBeUZDZ0lKM2hNTHVCVWR1SElrRDR2dHFoOFdpTGd2Nmgxcm9LNlJvMXowYkVmOWdGazVyc0QwQ21EZ3dhUXBYUGJtaW03bWgzbzBHZ2VGZWs4NF9qc0dIVTJnZVJQRVZuRG0zSjhXWmxlcXk5ZXFCVEQ1bVBUOUN0WUxaajlyTGdVdEhfY3FiSXQxcW5UeHM3V2VQTFlvZk9xX3BmZC1sQzhXTkxGbUxrU21BZXpPMVhxR3NtQW41NkRhZjh1Q21wN2ZJNHNrRllFVGpCQXY5WndJdlJZczktcHpXcF9ScHFzYVFnajZUc3BxNUVlb0VJSlYyWkZBRG5VVldDUEZLRFgxOUg3ZEQ2ZlRLaEpEeHNWQ2NYSEhwbkVReGR1Y1hsbE5seEY4aWN0NlZ4RFRLZHJoTExFOVNiOA?oc=5",
-        "date": "Thu, 23 Jul 2026 07:00:00 GMT",
-        "summary": "Amazon confirms new AI-related layoffs focused on tech giant's own AI division KOMO",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a8a9de163af5cdfab307fae2ae057eba09f23575ab11c1e78b2d8c9f0cfc307d",
-        "label": "Amazon tops $3 trillion market cap as stock continues post-earnings surge - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5qVDNrbTdTYVBLTUV3RXFZZkVrT21nWE9DRXJwcFQtYmtYTTlZSlAxNGM3aUxBTVVSTVVrY3hIdkpIeWcyMENiWUExbEdhR1BtRXNJb3lsZlFJdWZNcEdaaW11Wk9rdk51aUZmSTd2Sl9ZakZILWlpWUNHS2lmYVnSAYQBQVVfeXFMUERiZ2wtdTI0YjRhUDl6RnVkNmhtYWFKYUVEWkRXR1FySll6Y0czZ2FuUm5ITjZGUFF2UFZxSlU3Yk10Y2tiRnlBNmpBR09KQmNuVmZfMXA2b0p6U0kwcmxsSThUUWVHUWQ3ekJOV1l6RTYtU2xfODhFb0kwRlAxT2EtOXFr?oc=5",
-        "date": "Mon, 03 Aug 2026 07:00:00 GMT",
-        "summary": "Amazon tops $3 trillion market cap as stock continues post-earnings surge CNBC",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12601,6 +12607,34 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:c862e056f0b780aa43a1db8619ca3151f563a68f3b1bb500138b5a6ee0b7d126",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c862e056f0b780aa43a1db8619ca3151f563a68f3b1bb500138b5a6ee0b7d126",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:818a6949d58ac1d7eb0d99cac9b8eabd15a5cd7defd79ac48224586fbac0df5b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:818a6949d58ac1d7eb0d99cac9b8eabd15a5cd7defd79ac48224586fbac0df5b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:ec8083348cd8aef30b4f7f61fb812b77bb23b3d32b2bc19a1a02022e8f040007",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13428,6 +13462,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:3ee882a15fcb301480a7093f23ecc90df831e867c29f3c838f82206757325d97",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15743,6 +15784,20 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:d2c182219db517a8aa2a65b7595f9f85e40b610b03747cc43f03928aa97fc95c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:876c5f5af1539a665ae1b67223d37f0e5f79397d66dd3733590991a1eaea0e84",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:0c3083f78fffd626e37ec3b6fb29e6a9bf8c92a02cf8473562bcdf9badafa223",
         "type": "EVIDENCE",
@@ -17348,41 +17403,6 @@
       {
         "source": "Amazon",
         "target": "evidence:702765371d849988e2c7ab3430964b6c234f741bc9c1435209cc7c634a748fcc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:1fd9a2b9618e88f7e2dbe6866e20854d15064037dabbfb0b359ae66cf0fbbed2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:6d2376802dab6b07c8667ed542ff42bec394177d62dfeaf40f4cb34055dc127d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:f4a6581e1fd70d2fe004898c1bfb320700214c1e96bf7c8e55d21bf8b307c6e5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:c86163695cb70cbf678d45c98114c7696d5a2ac8bfee8607b2553fc58221d574",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:a8a9de163af5cdfab307fae2ae057eba09f23575ab11c1e78b2d8c9f0cfc307d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31628,20 +31648,20 @@
   ],
   "collector_runs": [
     {
-      "id": 115,
+      "id": 119,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T01:50:46.678422+00:00",
-      "completed_at": "2026-08-22T01:51:05.158477+00:00",
+      "started_at": "2026-08-22T03:55:59.337766+00:00",
+      "completed_at": "2026-08-22T03:56:14.170671+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 8,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 116,
+      "id": 120,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T01:51:05.559286+00:00",
-      "completed_at": "2026-08-22T01:51:06.031467+00:00",
+      "started_at": "2026-08-22T03:56:14.571691+00:00",
+      "completed_at": "2026-08-22T03:56:14.963236+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -31658,20 +31678,20 @@
       "error": null
     },
     {
-      "id": 114,
+      "id": 118,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T01:50:41.349768+00:00",
-      "completed_at": "2026-08-22T01:50:46.277550+00:00",
+      "started_at": "2026-08-22T03:55:57.750782+00:00",
+      "completed_at": "2026-08-22T03:55:58.936784+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 15,
+      "items_new": 3,
       "error": null
     },
     {
-      "id": 117,
+      "id": 121,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T01:51:06.433138+00:00",
-      "completed_at": "2026-08-22T01:51:08.668923+00:00",
+      "started_at": "2026-08-22T03:56:15.364471+00:00",
+      "completed_at": "2026-08-22T03:56:18.318796+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31688,7 +31708,7 @@
       "error": null
     }
   ],
-  "document_count": 1040,
+  "document_count": 1047,
   "event_count": 949,
   "mention_count": 2343,
   "review_counts": {
