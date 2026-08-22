@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T15:35:24.373450+00:00",
+  "generated_at": "2026-08-22T16:40:40.979118+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "fragility": 61.1,
-    "circularity": 57.1,
-    "cannibalization": 54.2,
-    "capital": 52.15125962813687,
-    "stress": 57.1,
     "transmission": 39.6,
-    "counter_evidence": 42.9,
     "monetization": 42.9,
+    "stress": 57.1,
+    "counter_evidence": 42.9,
+    "fragility": 61.1,
+    "capital": 52.15125962813687,
+    "cannibalization": 54.2,
+    "circularity": 57.1,
     "external_pressure": 61.1
   },
   "dimension_evidence": {
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "monetization": "directional_estimate",
+    "cannibalization": "directional_estimate",
     "circularity": "directional_estimate",
     "stress": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "monetization": "directional_estimate",
-    "external_pressure": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "capital": "aggregate"
+    "fragility": "directional_estimate",
+    "capital": "aggregate",
+    "external_pressure": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T16:40:40.494720+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-22T15:35:23.887157+00:00",
       "score": 51.4,
@@ -6429,6 +6435,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
+        "label": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom's Hidden Ledger - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNXy1vOWNCV2ViRDdzMXRELS1kNWJzeTZVLWpDWDVmbjdqRUwtWTFEWkQxbTRyQjE3ejJfWVlQRUFrbTNTWmdQdVdMdU12VmdJZ0N3WmVRZVdpdHFfWHdNTEUzUjdLak94MlUxa1R4LTlFM042RER0NUhGS21TM1ltcGJsMHBWUTJiVkxrOWtLblJPRThtWjUzOVZYeXBFMHZfNjRFU3YtR0RLM3FlRXVYOTd6aDRRMzRtN0VuTkxsc1c0X3hUck44U3hQYw?oc=5",
+        "date": "Sat, 22 Aug 2026 15:52:40 GMT",
+        "summary": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom's Hidden Ledger 24/7 Wall St.",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:9fdcf5696b2268ac4344ef56ecb4c0768cffee1f45bb9aa6f64f6f6e71cb2d92",
         "label": "Microsoft: Higher Revenue Visibility Met Measured Capex - Seeking Alpha",
         "kind": "evidence",
@@ -8118,6 +8136,18 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f0f9cf0f25546e941ada0eeaac92d8cd2c70c3088ce3044537cb3c3a7f264488",
+        "label": "Dow Jones Futures: Market Rally Repairs Some Damage As Nvidia Looms; New Trump Tariffs On Canada - Investor's Business Daily",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investor's Business Daily",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkR0Mk1hdnJPQVZHWEJYWXQ2UENlazJ1OG1EWTVtNFVYLTdMVHpfbVRIQ09zMmtMRnlLT1dnd0VyVzh1cTQzVm1jMS1keHR1TUNXOXBPSXEwWE10bFNoTi1Sd1ptX1lDcHhzaG5OaTFwTzE0UlBvTzgzTHpGVkVQeUoyY2szcks3RkFENTdPbmRVUVFWMjZaWF93cFpXcnZEUEM3d21BTGpKcWZJblEtcEhJVjA?oc=5",
+        "date": "Sat, 22 Aug 2026 15:25:00 GMT",
+        "summary": "Dow Jones Futures: Market Rally Repairs Some Damage As Nvidia Looms; New Trump Tariffs On Canada Investor's Business Daily",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10661,30 +10691,6 @@
         "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWTExMXRhejMzdlV3VENMeDNaMnBGbkNmajNqLXFQS3Z2ZE9DV3FOOEh6ZGE1a2Z2ZG1pTVRWeTdjUmM3WWM1MEZUVTFkM21tNVltYnlnWTdObmJvVm9Iay1VcnV2dTYxLTFlM1Z6UmRqOS0yVjR6bkxENk5Wd0I0b1YtcHoyVTg?oc=5",
         "date": "Mon, 15 Jun 2026 07:00:00 GMT",
         "summary": "AMD Acquires MEXT to Advance Memory Optimization for Compute Infrastructure AMD",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:294b0f07ccc10915e2847b2108d3150a9f5a69375da8adb24aa3b9d9525909ab",
-        "label": "Broadcom revenue miss stuns Wall Street, and its stock sinks after-hours - SiliconANGLE",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "SiliconANGLE",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeGpfY1VXRXNLcW42YnFJRWxuN1RtQkNhRk8xWDZpaXFmNUtibjhlTGx2Q2dkYXVjUlFqOW1Oem0tYVlYV1YzQkJ0cHc1MG1tdzFBM1pVTE1JaXNvSFQzQVV5dWRaV3pUY0VpWGNBN0lRSERjV1hZZDRiRFRhV1h0Yi1uRWxnTzlYMno2SXZiX0ZfQUhNNHNIWVR3?oc=5",
-        "date": "Wed, 03 Jun 2026 07:00:00 GMT",
-        "summary": "Broadcom revenue miss stuns Wall Street, and its stock sinks after-hours SiliconANGLE",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:35af6e0c2994cbd4ced7d6f25f6a2888e9c00a31aa70d785c675edcd9ca1e89b",
-        "label": "Broadcom stock plunges on weak software sales, unchanged AI chip forecast for the year - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MUWNtalczVVl2UEVtVFhSUF9QVnZVd2ZuU01aaFZaTGZuOWpNWW1Wc1Y3Q050V1ZiRWs3MVE0R3ZUd196Sno4LUZkWUJadnRHaWI5VHpLVGRwQTBTZkJuY2JZelp1VWQyUTlpYVJrVTd2YkdSblQwNzV6dmk0aknSAYQBQVVfeXFMTTBfUHNDN2g0eG9Gc3VON0cwRFlFRUhLcDBMbmNZUXVPcTFVWFNwWTZibW51MkFuS1BON0xTTXVHbFd6N21LekpLZVF5NFBobnJTTnJxa0VhdGxzV3hDS3RYc2RIWHJlMG1LR2xXUlYtSGhsbGx1Y3JsTm8wbk5UUXhOZGJU?oc=5",
-        "date": "Wed, 03 Jun 2026 07:00:00 GMT",
-        "summary": "Broadcom stock plunges on weak software sales, unchanged AI chip forecast for the year CNBC",
         "score": 1,
         "weight": 1
       }
@@ -14394,6 +14400,27 @@
         "mentions": 1
       },
       {
+        "source": "Alphabet",
+        "target": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Microsoft",
         "target": "evidence:9fdcf5696b2268ac4344ef56ecb4c0768cffee1f45bb9aa6f64f6f6e71cb2d92",
         "type": "EVIDENCE",
@@ -16074,6 +16101,13 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:f0f9cf0f25546e941ada0eeaac92d8cd2c70c3088ce3044537cb3c3a7f264488",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "ByteDance",
         "target": "evidence:26ff0ff5d2e72bc86f99dadff2b2cfcb510ceb204a5aed8ef14793205338ba2f",
         "type": "EVIDENCE",
@@ -17553,20 +17587,6 @@
       {
         "source": "AMD",
         "target": "evidence:9aca25bda625e820e18e3d9fddf9189467d19ba7035139bc191fe52ee1c062b3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:294b0f07ccc10915e2847b2108d3150a9f5a69375da8adb24aa3b9d9525909ab",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:35af6e0c2994cbd4ced7d6f25f6a2888e9c00a31aa70d785c675edcd9ca1e89b",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32007,20 +32027,20 @@
   ],
   "collector_runs": [
     {
-      "id": 163,
+      "id": 167,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T15:35:06.327576+00:00",
-      "completed_at": "2026-08-22T15:35:20.452937+00:00",
+      "started_at": "2026-08-22T16:40:22.296620+00:00",
+      "completed_at": "2026-08-22T16:40:37.020725+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 164,
+      "id": 168,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T15:35:20.854038+00:00",
-      "completed_at": "2026-08-22T15:35:21.297232+00:00",
+      "started_at": "2026-08-22T16:40:37.421436+00:00",
+      "completed_at": "2026-08-22T16:40:37.824442+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32037,20 +32057,20 @@
       "error": null
     },
     {
-      "id": 162,
+      "id": 166,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T15:35:05.442245+00:00",
-      "completed_at": "2026-08-22T15:35:05.926395+00:00",
+      "started_at": "2026-08-22T16:40:21.272783+00:00",
+      "completed_at": "2026-08-22T16:40:21.895319+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 165,
+      "id": 169,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T15:35:21.698657+00:00",
-      "completed_at": "2026-08-22T15:35:23.471472+00:00",
+      "started_at": "2026-08-22T16:40:38.225687+00:00",
+      "completed_at": "2026-08-22T16:40:40.078326+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32067,7 +32087,7 @@
       "error": null
     }
   ],
-  "document_count": 1108,
+  "document_count": 1110,
   "event_count": 962,
   "mention_count": 2358,
   "review_counts": {
