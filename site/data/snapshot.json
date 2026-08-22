@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T04:49:19.645061+00:00",
+  "generated_at": "2026-08-22T05:43:11.224006+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "circularity": 57.1,
-    "monetization": 42.9,
+    "stress": 57.1,
+    "transmission": 39.6,
+    "fragility": 61.1,
+    "counter_evidence": 42.9,
     "capital": 52.15125962813687,
     "cannibalization": 54.2,
-    "transmission": 39.6,
     "external_pressure": 61.1,
-    "counter_evidence": 42.9,
-    "stress": 57.1,
-    "fragility": 61.1
+    "circularity": 57.1,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
+    "transmission": "confirmed_trigger",
+    "counter_evidence": "directional_estimate",
     "capital": "aggregate",
-    "cannibalization": "directional_estimate",
-    "stress": "directional_estimate",
     "circularity": "directional_estimate",
     "monetization": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "external_pressure": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "fragility": "directional_estimate"
+    "stress": "directional_estimate",
+    "fragility": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "external_pressure": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T05:43:10.792488+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"external_pressure\": 61.1, \"monetization\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-22T04:49:19.150968+00:00",
       "score": 51.4,
@@ -6279,6 +6285,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:d099ef6bb43dafb86878da9b874ba665201f799c7cafd86f4115ce897a4b5dca",
+        "label": "AI: Mega-IPO Preps, Stripe M&A, Open Source Steam, & More. AI-RTZ #1186 - AI: Reset to Zero",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "AI: Reset to Zero",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1xRUVla0RHaks5TmJLNVNzM25mSHlibXlZOVFUemgyQVdQZGZSVjdyYUNxaGFvUnJWbjJURklwS1Q2VFhHZXBHYVNQbFdKVVZkTUxKalYxUTZ4RUdueUVMTzRsZllOeFNEd3hBXzVoMkU4eUpGeTZwMw?oc=5",
+        "date": "Sat, 22 Aug 2026 05:02:36 GMT",
+        "summary": "AI: Mega-IPO Preps, Stripe M&A, Open Source Steam, & More. AI-RTZ #1186 AI: Reset to Zero",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:da1374711664339a172e87aa5a708cb04d8d90b5ce8354cdd13429a9e067a4dc",
         "label": "AI IPOs and Mars Bets Dominate Prediction Markets - StartupHub.ai",
         "kind": "evidence",
@@ -7860,6 +7878,18 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5f23370d7807c0701c99f8d77dd13c35f49fe1ec58dabcd12248c44772340214",
+        "label": "Shares have surged more than 11% in consecutive sessions! MiniMax launches AI creation tool Design, benefiting from the resonance of bullish institutional sentiment and positive inclusion prospects. - Moomoo",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTkRPa1hDT2xmMllQOE04NG56dEU0NVNmRWFpSU5GUG9IV2NkUUlNY3VBUERZNGlvSE9ldUg0RU1aV0pTNDJOU0w3dDFzUGZ5SXJLOERUd3h5cnpWSFJtTVdXaGstOGVhSExLVDJmYmVzaHh6elkyUmd0SGxFV0kxcEJtMEw0ZHZhOWRSWWp2dloxbXJNcjEta0lNbXdDMk9mU2x4TENMb0o?oc=5",
+        "date": "Fri, 21 Aug 2026 03:31:42 GMT",
+        "summary": "Shares have surged more than 11% in consecutive sessions! MiniMax launches AI creation tool Design, benefiting from the resonance of bullish institutional sentiment and positive inclusion prospects. Moomoo",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10607,30 +10637,6 @@
         "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdWpHZ2lhNzBTOXkydEZkX1pTS3NqU3RRWWd4NnEzMm9pYTRNRldhQmNVNmtfX2hLNnRYTF83WHA0ODVwMjN2SENsb2dwNWlPNFhXOW9BVm82VElwWjNfRHd3WWM0WGhScnVuSjJZM1JCWFliZjhYYzRzRlZiNmc3QXFKTUZSSnhCa05QT05lblpoOUhPUGFKWEkzWFhMWC1CX0dhSGlBaklFd3hZT3pLbmlUbUg2clExU0ZNOWRTOGI?oc=5",
         "date": "Mon, 05 Jan 2026 08:00:00 GMT",
         "summary": "Alphabet acquires clean energy developer Intersect for $4.75B ESG Dive",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4fcae618c23f646c59a693d4cbbc7e1a022aa4713d5d88b4d2872e153871ee57",
-        "label": "2026 Q2 Earnings Call - Alphabet Inc.",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Alphabet Inc.",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaXEteXFHZG5kWEZmN2pDUGtHQUx3cHNjYnIxU0FBVTJUTUd0REZpQnNuZ1BYUkJPUkVUNS1zMERYZzh1Q0lMbGlhLWFOYUV5MDJrSVdrc3AzckR1SlpibjNQdEpFMExXSkNLZC1tNExua3h5MHAwNnE1TU52LW1zMnRTZXMxUmNEeU9lOGw5RllVQmFvM2ZONUl0SFFIYXVnWUR3?oc=5",
-        "date": "Wed, 22 Jul 2026 07:00:00 GMT",
-        "summary": "2026 Q2 Earnings Call Alphabet Inc.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cf5538a23fc0d9d69a6bd3a0ddda1b3bcc759b3d2e36ce4a9974ab11482681f2",
-        "label": "Amazon's cloud unit reports 28% sales growth, topping estimates - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE95cUUwZlFfYUh5OWNrRFlBSVE2ZklGTjcyVVRFRTdlZVVNa1Y1MzFMb1lpY0tQeUVPa3BieUEtRDV2RWJQM0NsSVNlVFlWeTRaOEtsMkZLckoxWEpIQjNXenhwQV9hRmlI0gFuQVVfeXFMUE5nOVUxNnBUYVhkdHhIWTF0elkzblFDWWFqeERHaHd5LXQzR2hEakF2N3RURVhSVHdCTHNlR2ZET01mLTlLd2VJYmlOTGhQMnUtRFZNNXFvNUZJX0tURm5lMERROEZpdHlrZHNLREE?oc=5",
-        "date": "Wed, 29 Apr 2026 07:00:00 GMT",
-        "summary": "Amazon's cloud unit reports 28% sales growth, topping estimates CNBC",
         "score": 1,
         "weight": 1
       }
@@ -15803,6 +15809,13 @@
         "mentions": 1
       },
       {
+        "source": "MiniMax",
+        "target": "evidence:5f23370d7807c0701c99f8d77dd13c35f49fe1ec58dabcd12248c44772340214",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Tencent",
         "target": "evidence:6e64f93b0e4ce951ad2e385dba6e6305b1db4f479fca62793d48bec0d6bb3c9e",
         "type": "EVIDENCE",
@@ -17401,20 +17414,6 @@
       {
         "source": "Alphabet",
         "target": "evidence:fcb192cdfcb752a168938c35a1f6a104cba2a1841cce337cdd4cc390a6d21d9e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:4fcae618c23f646c59a693d4cbbc7e1a022aa4713d5d88b4d2872e153871ee57",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:cf5538a23fc0d9d69a6bd3a0ddda1b3bcc759b3d2e36ce4a9974ab11482681f2",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31660,20 +31659,20 @@
   ],
   "collector_runs": [
     {
-      "id": 127,
+      "id": 131,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T04:49:01.441346+00:00",
-      "completed_at": "2026-08-22T04:49:15.645734+00:00",
+      "started_at": "2026-08-22T05:42:49.919848+00:00",
+      "completed_at": "2026-08-22T05:43:06.914421+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 2,
       "error": null
     },
     {
-      "id": 128,
+      "id": 132,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T04:49:16.047003+00:00",
-      "completed_at": "2026-08-22T04:49:16.423447+00:00",
+      "started_at": "2026-08-22T05:43:07.315452+00:00",
+      "completed_at": "2026-08-22T05:43:07.767382+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -31690,20 +31689,20 @@
       "error": null
     },
     {
-      "id": 126,
+      "id": 130,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T04:49:00.388234+00:00",
-      "completed_at": "2026-08-22T04:49:01.040142+00:00",
+      "started_at": "2026-08-22T05:42:48.741044+00:00",
+      "completed_at": "2026-08-22T05:42:49.518032+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 129,
+      "id": 133,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T04:49:16.824805+00:00",
-      "completed_at": "2026-08-22T04:49:18.735626+00:00",
+      "started_at": "2026-08-22T05:43:08.168480+00:00",
+      "completed_at": "2026-08-22T05:43:10.378375+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31720,7 +31719,7 @@
       "error": null
     }
   ],
-  "document_count": 1051,
+  "document_count": 1053,
   "event_count": 949,
   "mention_count": 2343,
   "review_counts": {
