@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T08:48:14.388217+00:00",
+  "generated_at": "2026-08-22T09:42:42.424750+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -13,13 +13,13 @@
   },
   "dimensions": {
     "fragility": 61.1,
-    "circularity": 57.1,
-    "monetization": 42.9,
-    "capital": 52.15125962813687,
     "cannibalization": 54.2,
-    "counter_evidence": 42.9,
-    "external_pressure": 61.1,
+    "monetization": 42.9,
     "transmission": 39.6,
+    "counter_evidence": 42.9,
+    "circularity": 57.1,
+    "capital": 52.15125962813687,
+    "external_pressure": 61.1,
     "stress": 57.1
   },
   "dimension_evidence": {
@@ -32,14 +32,14 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "monetization": "directional_estimate",
-    "capital": "aggregate",
-    "cannibalization": "directional_estimate",
     "fragility": "directional_estimate",
     "circularity": "directional_estimate",
-    "counter_evidence": "directional_estimate",
+    "capital": "aggregate",
     "external_pressure": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "monetization": "directional_estimate",
     "transmission": "confirmed_trigger",
+    "counter_evidence": "directional_estimate",
     "stress": "directional_estimate"
   },
   "dimension_direction": {
@@ -654,6 +654,12 @@
   ],
   "history": [
     {
+      "captured_at": "2026-08-22T09:42:41.935668+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"cannibalization\": 54.2}"
+    },
+    {
       "captured_at": "2026-08-22T08:48:13.914432+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
@@ -903,16 +909,16 @@
         "weight": 27
       },
       {
-        "id": "Anthropic",
-        "label": "Anthropic",
+        "id": "OpenAI",
+        "label": "OpenAI",
         "kind": "company",
         "weight": 21
       },
       {
-        "id": "OpenAI",
-        "label": "OpenAI",
+        "id": "Anthropic",
+        "label": "Anthropic",
         "kind": "company",
-        "weight": 20
+        "weight": 21
       },
       {
         "id": "CoreWeave",
@@ -3414,6 +3420,18 @@
         "date": "Fri, 12 Jun 2026 07:00:00 GMT",
         "summary": "IPOs: mega cap AI companies, ETFs, Index inclusion BlackRock",
         "score": 9,
+        "weight": 1
+      },
+      {
+        "id": "evidence:27d29d8241f5ea7bc2a990ce5b031b9c0b35c8dc5035dda9ad6161e1a8d6401d",
+        "label": "OpenAI IPO Delay: Just the Start? Price Cuts Hint It May Not Happen at All - MarketWise",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "MarketWise",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWGxGeXRmZ0hrWFo3cnBERWRBdFBZcGxxRU41OFJwc2N3Sk1xVXMyQ2pnMFdHbFl0THVMeGI4OE1SU2pIQzlBcHdXc1ZVSkdRVGt1aXBiMG5SR1VIM240TGU0TmFhSVlqVGF3ZmdfR19hM05jcm5ScW5PMkhCUkhWMDZB?oc=5",
+        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI IPO Delay: Just the Start? Price Cuts Hint It May Not Happen at All MarketWise",
+        "score": 8,
         "weight": 1
       },
       {
@@ -7977,6 +7995,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:1bacd9f7f983ca6fed8ff8f9f7210e73101801571dab7d3bf67183bd2d4436d1",
+        "label": "How Tencent Music\u2019s Q2 Beat and Completed Buyback Will Impact Tencent Music Entertainment Group (TME) Investors - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPU1hWWDNWUVlZU2lBdTJuazlQZzdpN2pUc0E1WEJqUHhqSElJQjhFeVAwWU53TC02SHJmWDA0ZW1RTFZiUklIYV83bm5Nc3djMW5iWU0wUi1YblgwdGZOVTlZdGo0QmZQSW9ZZ083S1ZTelZrMFdMV25wYVZjUnpoQ3pFREppNmRmclozY05GZDB0R2pmLUxyWGZzczgwNlhmUXBqd29yQy0xeEJiSFB2ZEdoTjBac0pqakYwWmlleDg1VzdZNFVTMHFqeG01WlE5OFZ1REdBM1I1SGtNMDV30gHkAUFVX3lxTFBxdHVKY2hHMG9iemo3b01nTnhWSDdJX3ByZDB6UmFxUm1yZ1k4aVlaWUhFUUFXYmpEQmh3bW80aEI2d3ZUMkdYc3hhZlJmRlh4RHZ2Z3E2YklvZEowRnRpZTAwS3Jvck94czltRlpJX2wxWFpPZ3VsNW5nUWZxc2xZZ3NxdzB3R1lTUTBYcDJSWVVfVDJMXzBzajFZODg0V3YzSENnU0ZVeWVodEU1OEJVa3dzQ05xTzBqMlVUMFFnREhvSnY0LVo2MkVNN1FDdGZNWlcyWExiVXJTY3lmd3VsZnhraQ?oc=5",
+        "date": "Sat, 22 Aug 2026 09:32:03 GMT",
+        "summary": "How Tencent Music\u2019s Q2 Beat and Completed Buyback Will Impact Tencent Music Entertainment Group (TME) Investors simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:b2fa18dd1975f47b503dbef4d9f5b0e02f679621ecfffe77cc9d8a9812442dc6",
         "label": "OpenAI Buys Back $7 Billion of Employee Shares in Tender Offer - Bloomberg.com",
         "kind": "evidence",
@@ -10627,30 +10657,6 @@
         "summary": "After Earnings, Is Oracle Stock a Buy, a Sell, or Fairly Valued? Morningstar",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:9c2a9f2245adc1b710fd6428eceea48ebf5ee05f2c80c8e7d065450bc36e417d",
-        "label": "Oracle sheds 21,000 roles over the past year amid wave of AI layoffs from tech giants - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XZkFBanpNc1VYRWlEZ0ZIaHNyTV9NTzNtZTF6a2FIUGRXRVJ0dTkyNW1GV09XV2tlLXFabU1MLVhnZi1WeXhnbGFhelA0RXJoQmdXcU0xWVpKUXpNdEFfSjk5NktMZFJyZkMxd0lIa09aaVE5TVZWZtIBfkFVX3lxTE91LWZXY0xSeDUzYWh3SFpvWnJqdG1PWXVTNHdLeERReU1SZ0xfZTQ1Q29EeGVSNlJQZUFCMnR2bG1GLV9lUkROR0R1VmVqaXZvOFRsLUNzcS1IS1dFM2RYX3pqdlppN1c4bHNIV281NXpvRU9ZWEc0Q3ZyVmJ3Zw?oc=5",
-        "date": "Tue, 23 Jun 2026 07:00:00 GMT",
-        "summary": "Oracle sheds 21,000 roles over the past year amid wave of AI layoffs from tech giants CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d9b82a476b233a2d133810ffe242aa63722a8bab2d98da39346fbf5b609dbbb3",
-        "label": "Oracle announces Equity and Debt Financing Plan for Calendar Year 2026 - PR Newswire",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "PR Newswire",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPUURUUzJjVHdCQ1dJYkplVzlQUVVVN1VLU2hvNHlkZFNTeW5Ib3otN0xXaGJtY3liR0NDM0htdEFfZWQtS1ZicjVvb19vRFRucjN1MVowSnVUMXJ0S1lUWFJfb1hFajJ3RFplWG1SWGd3WVFrcWlUX0EzSlRzQm9CMUp1ZVlWbFpzLVRQUWpONV9aU2tUamlmNlpIcjBLejFtdC1zcHlVLTh5UDN0Rlp5WmtET256aW1xamhhY2ZocjVDWVpK?oc=5",
-        "date": "Sun, 01 Feb 2026 08:00:00 GMT",
-        "summary": "Oracle announces Equity and Debt Financing Plan for Calendar Year 2026 PR Newswire",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12309,6 +12315,13 @@
       {
         "source": "BlackRock",
         "target": "evidence:aa41ea7064e2a42230603e57a86acc7aadf7253ff975451167f9238be35bd6e6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:27d29d8241f5ea7bc2a990ce5b031b9c0b35c8dc5035dda9ad6161e1a8d6401d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15940,6 +15953,13 @@
         "mentions": 1
       },
       {
+        "source": "Tencent",
+        "target": "evidence:1bacd9f7f983ca6fed8ff8f9f7210e73101801571dab7d3bf67183bd2d4436d1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
         "target": "evidence:b2fa18dd1975f47b503dbef4d9f5b0e02f679621ecfffe77cc9d8a9812442dc6",
         "type": "EVIDENCE",
@@ -17482,20 +17502,6 @@
       {
         "source": "Oracle",
         "target": "evidence:5a5b0541d7f24c5540de02889b90dbfee6ffcb68253c2f8c95889241967be848",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:9c2a9f2245adc1b710fd6428eceea48ebf5ee05f2c80c8e7d065450bc36e417d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:d9b82a476b233a2d133810ffe242aa63722a8bab2d98da39346fbf5b609dbbb3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31500,6 +31506,36 @@
     },
     {
       "date": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "event_type": "PRICE_CUT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Price Cuts Hint It May Not Happen at All MarketWise Google News",
+      "title": "OpenAI IPO Delay: Just the Start? Price Cuts Hint It May Not Happen at All - MarketWise",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWGxGeXRmZ0hrWFo3cnBERWRBdFBZcGxxRU41OFJwc2N3Sk1xVXMyQ2pnMFdHbFl0THVMeGI4OE1SU2pIQzlBcHdXc1ZVSkdRVGt1aXBiMG5SR1VIM240TGU0TmFhSVlqVGF3ZmdfR19hM05jcm5ScW5PMkhCUkhWMDZB?oc=5",
+      "source": "MarketWise"
+    },
+    {
+      "date": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "event_type": "PRICE_CUT",
+      "source_entity": "OpenAI",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Price Cuts Hint It May Not Happen at All - MarketWise OpenAI IPO Delay: Just the Start?",
+      "title": "OpenAI IPO Delay: Just the Start? Price Cuts Hint It May Not Happen at All - MarketWise",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWGxGeXRmZ0hrWFo3cnBERWRBdFBZcGxxRU41OFJwc2N3Sk1xVXMyQ2pnMFdHbFl0THVMeGI4OE1SU2pIQzlBcHdXc1ZVSkdRVGt1aXBiMG5SR1VIM240TGU0TmFhSVlqVGF3ZmdfR19hM05jcm5ScW5PMkhCUkhWMDZB?oc=5",
+      "source": "MarketWise"
+    },
+    {
+      "date": "Tue, 11 Aug 2026 07:00:00 GMT",
       "event_type": "BENCHMARK_GAIN",
       "source_entity": "CoreWeave",
       "target_entity": "Alphabet",
@@ -31876,20 +31912,20 @@
   ],
   "collector_runs": [
     {
-      "id": 139,
+      "id": 143,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T08:47:56.423143+00:00",
-      "completed_at": "2026-08-22T08:48:10.612152+00:00",
+      "started_at": "2026-08-22T09:42:26.197549+00:00",
+      "completed_at": "2026-08-22T09:42:38.674778+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 140,
+      "id": 144,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T08:48:11.013213+00:00",
-      "completed_at": "2026-08-22T08:48:11.388182+00:00",
+      "started_at": "2026-08-22T09:42:39.077104+00:00",
+      "completed_at": "2026-08-22T09:42:39.404058+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -31906,20 +31942,20 @@
       "error": null
     },
     {
-      "id": 138,
+      "id": 142,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T08:47:55.278308+00:00",
-      "completed_at": "2026-08-22T08:47:56.021457+00:00",
+      "started_at": "2026-08-22T09:42:25.066102+00:00",
+      "completed_at": "2026-08-22T09:42:25.796433+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 141,
+      "id": 145,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T08:48:11.789659+00:00",
-      "completed_at": "2026-08-22T08:48:13.499163+00:00",
+      "started_at": "2026-08-22T09:42:39.805392+00:00",
+      "completed_at": "2026-08-22T09:42:41.520284+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -31936,11 +31972,11 @@
       "error": null
     }
   ],
-  "document_count": 1090,
-  "event_count": 958,
-  "mention_count": 2354,
+  "document_count": 1092,
+  "event_count": 960,
+  "mention_count": 2356,
   "review_counts": {
-    "provisional": 9,
+    "provisional": 11,
     "confirmed": 271,
     "flagged": 678,
     "flagged_retry_pending": 0
