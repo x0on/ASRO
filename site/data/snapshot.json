@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T13:01:03.035346+00:00",
+  "generated_at": "2026-08-22T13:44:55.610025+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "external_pressure": 61.1,
-    "capital": 52.15125962813687,
     "stress": 57.1,
-    "transmission": 39.6,
-    "circularity": 57.1,
-    "cannibalization": 54.2,
     "fragility": 61.1,
+    "external_pressure": 61.1,
+    "cannibalization": 54.2,
+    "capital": 52.15125962813687,
     "counter_evidence": 42.9,
-    "monetization": 42.9
+    "transmission": 39.6,
+    "monetization": 42.9,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "stress": "directional_estimate",
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "monetization": "directional_estimate",
     "external_pressure": "directional_estimate",
-    "capital": "aggregate",
-    "transmission": "confirmed_trigger",
     "fragility": "directional_estimate",
-    "counter_evidence": "directional_estimate"
+    "cannibalization": "directional_estimate",
+    "capital": "aggregate",
+    "counter_evidence": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "monetization": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-22T13:44:55.128205+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"transmission\": 39.6, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1, \"capital\": 52.15125962813687}"
+    },
     {
       "captured_at": "2026-08-22T13:01:02.647076+00:00",
       "score": 51.4,
@@ -3756,6 +3762,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:dc9b2de1eee6823e79a207bf57ecb522eb7a05439d230d87b2e3ea5251ef5e36",
+        "label": "Anthropic market debut could break SpaceX IPO record: media - Yahoo Finance Singapore",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance Singapore",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMHhyV0Q2MFJnay12aVdieTlpS0JJU2xzMWY2U0ZUdTFoV1RzZ2VJWGxmR05URUhtOEZLSVFqNjFKd0pSeXVyd0xUazdmZHgxb1RhdFdocEQtd1dvbDlpY0RwVzNLd015MkpHWnd1MVRWb0pHRzFOSDZCODBpQkRWR1NISE1kZV9WYU5F?oc=5",
+        "date": "Sat, 22 Aug 2026 12:47:22 GMT",
+        "summary": "Anthropic market debut could break SpaceX IPO record: media Yahoo Finance Singapore",
+        "score": 5,
         "weight": 1
       },
       {
@@ -8079,6 +8097,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:26ff0ff5d2e72bc86f99dadff2b2cfcb510ceb204a5aed8ef14793205338ba2f",
+        "label": "Tesla integrates the Doubao large language model; updates are now being rolled out to Tesla vehicle infotainment systems. - Moomoo",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWDFyWjJBbjRMZEp5RkhfR2ttU1poTTFVeVc5RWhCNldBRUI5UkcyTEQ1MnBqUjlMWkFiYTVZcm1vYTJZQk1ocndYWkxVOEx1TEhDdW1McGhyeXN3VGhPeU9lT1NXaWZfNEhfQzFsM0JMTmVFWllmUGpWREZnd2ZjT3hGYjRyOTdDckpxcnRGaUQ2WGMxYUswX0FQYnlLQmxIUGNLRlNsN2V5Zw?oc=5",
+        "date": "Fri, 21 Aug 2026 08:14:41 GMT",
+        "summary": "Tesla integrates the Doubao large language model; updates are now being rolled out to Tesla vehicle infotainment systems. Moomoo",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:2bdc628179d896a0a8d8c0cbbe3cb9de7088b3c8688e975561246ccce9fae6e2",
         "label": "DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof - Tech Times",
         "kind": "evidence",
@@ -10645,30 +10675,6 @@
         "summary": "Broadcom announces successful acquisition of VMware Broadcom",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:1b6017ba28b7ec00995c23e74c6b5da45b0cc5533b958ffa3d93504079ab66d6",
-        "label": "Broadcom seeks more than $60 billion in latest AI debt deal, Bloomberg News reports - Yahoo Finance",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNaHZkUTAtM3paRXlXV050ekJBQS1CZTZMTVNWRUNVVEFJRlhyQ1BMaVppbTFJaWdFTThSN0VlZVl5dTRJeE5vanhVdXJjWmNDWGZldGFpTEJPQVdzREhObnJMcWhaTVV0NnRSUjZySEpjczBPNE9OaGw1bkM4Nnl4aWhTQWg2Zk4zX2s4TU1MWEd0c0tSOVE2elhB?oc=5",
-        "date": "Thu, 20 Aug 2026 20:38:18 GMT",
-        "summary": "Broadcom seeks more than $60 billion in latest AI debt deal, Bloomberg News reports Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f27756d9e7aa4c1a87af2262d06f85d15c9f1192adfef4d3a4caaa122031c78b",
-        "label": "Broadcom Seeks More Than $60 Billion in Latest AI Debt Deal - Bloomberg.com",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQaW1JdkM5Si1JUXF0SjF4aWw5SXlicHI4NmV0SndDZHc2ejdMY3ZnVjJaRG5lQ0w4YVUtejhYT1lYR0NJR3BORnFhUi1neE4yOGJHRGVNMjZFUXZxSHRXa0tHcmw4M0M2ekYxYTdSWFJJb2loaDU5MEEzYzZweF9paUdBWEVNN0ltWS00X2NWNEhmeFpvZ3U3S2N3ZTZBSGdORGo3d1lHc3o2MzhSY2c?oc=5",
-        "date": "Thu, 20 Aug 2026 20:17:02 GMT",
-        "summary": "Broadcom Seeks More Than $60 Billion in Latest AI Debt Deal Bloomberg.com",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12698,6 +12704,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:dc9b2de1eee6823e79a207bf57ecb522eb7a05439d230d87b2e3ea5251ef5e36",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:dc9b2de1eee6823e79a207bf57ecb522eb7a05439d230d87b2e3ea5251ef5e36",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16035,6 +16055,13 @@
         "mentions": 1
       },
       {
+        "source": "ByteDance",
+        "target": "evidence:26ff0ff5d2e72bc86f99dadff2b2cfcb510ceb204a5aed8ef14793205338ba2f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "DeepSeek",
         "target": "evidence:2bdc628179d896a0a8d8c0cbbe3cb9de7088b3c8688e975561246ccce9fae6e2",
         "type": "EVIDENCE",
@@ -17528,20 +17555,6 @@
       {
         "source": "Broadcom",
         "target": "evidence:f74eecec1aee915a4395b82aad80054a8da9dea8d7ec89368b8d404de57ab512",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:1b6017ba28b7ec00995c23e74c6b5da45b0cc5533b958ffa3d93504079ab66d6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:f27756d9e7aa4c1a87af2262d06f85d15c9f1192adfef4d3a4caaa122031c78b",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31982,23 +31995,23 @@
   ],
   "collector_runs": [
     {
-      "id": 151,
+      "id": 155,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T13:00:33.503044+00:00",
-      "completed_at": "2026-08-22T13:00:58.174058+00:00",
+      "started_at": "2026-08-22T13:44:36.984107+00:00",
+      "completed_at": "2026-08-22T13:44:51.564367+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 152,
+      "id": 156,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T13:00:58.575044+00:00",
-      "completed_at": "2026-08-22T13:00:59.760211+00:00",
+      "started_at": "2026-08-22T13:44:51.965304+00:00",
+      "completed_at": "2026-08-22T13:44:52.360571+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
@@ -32012,20 +32025,20 @@
       "error": null
     },
     {
-      "id": 150,
+      "id": 154,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T13:00:31.450215+00:00",
-      "completed_at": "2026-08-22T13:00:33.101976+00:00",
+      "started_at": "2026-08-22T13:44:35.825292+00:00",
+      "completed_at": "2026-08-22T13:44:36.582996+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 153,
+      "id": 157,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T13:01:00.161250+00:00",
-      "completed_at": "2026-08-22T13:01:02.233686+00:00",
+      "started_at": "2026-08-22T13:44:52.761935+00:00",
+      "completed_at": "2026-08-22T13:44:54.712779+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32042,7 +32055,7 @@
       "error": null
     }
   ],
-  "document_count": 1104,
+  "document_count": 1106,
   "event_count": 962,
   "mention_count": 2358,
   "review_counts": {
