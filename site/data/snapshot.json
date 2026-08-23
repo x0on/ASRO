@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T10:40:15.259167+00:00",
+  "generated_at": "2026-08-23T11:35:16.463807+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -13,14 +13,14 @@
   },
   "dimensions": {
     "capital": 52.15125962813687,
-    "cannibalization": 54.2,
-    "external_pressure": 61.1,
+    "counter_evidence": 42.9,
+    "stress": 57.1,
     "transmission": 39.6,
     "fragility": 61.1,
     "circularity": 57.1,
-    "stress": 57.1,
-    "counter_evidence": 42.9,
-    "monetization": 42.9
+    "cannibalization": 54.2,
+    "monetization": 42.9,
+    "external_pressure": 61.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -34,13 +34,13 @@
   "dimension_basis": {
     "cannibalization": "directional_estimate",
     "external_pressure": "directional_estimate",
-    "fragility": "directional_estimate",
-    "stress": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "monetization": "directional_estimate",
     "capital": "aggregate",
+    "counter_evidence": "directional_estimate",
+    "stress": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "circularity": "directional_estimate"
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
+    "monetization": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T11:35:16.079441+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-23T10:40:14.774304+00:00",
       "score": 51.4,
@@ -5043,6 +5049,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:bdb7486bd1bb8acb67d738459c87845faac888df4816cee6bd87010234ba74aa",
+        "label": "Anthropic, OpenAI Build Chips as NVIDIA, AMD Develop AI Models - \uc870\uc120\uc77c\ubcf4",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "\uc870\uc120\uc77c\ubcf4",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZC1Ja1dicnplRVVXV240ZUZUSjd4cjBESHhJLWI3ejI5UFVlWHl5S2FnM04ycXBYdjk3NUxvZm9QZFoxa2ZhM19FdFlWUHZyUmpMNl9aNFhyQzhhbmN1azBWVDdGZWotTkhMcXRIRTlHNzZ2cEFuOFc5WTIyZ21IUjRNc2pzWXk0?oc=5",
+        "date": "Sun, 23 Aug 2026 08:13:02 GMT",
+        "summary": "Anthropic, OpenAI Build Chips as NVIDIA, AMD Develop AI Models \uc870\uc120\uc77c\ubcf4",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:d23fb8e7a711bf7ad760470f5f14fca999d1a141638da7a523179078b3b276d1",
         "label": "Anthropic: the largest IPO ever? - The Week",
         "kind": "evidence",
@@ -6732,6 +6750,18 @@
         "date": "Thu, 20 Aug 2026 04:32:35 GMT",
         "summary": "OpenAI CFO Reveals How Soon the IPO Could Actually Land Yahoo Finance",
         "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5c86bf96e6f74ada5f224c7004eb3d33055e66c58e956020a0e7a5e6176daf22",
+        "label": "Tech Brief (Aug. 21): Memory-Chip Maker YMTC Moves Closer to Shanghai IPO - inkl",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "inkl",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTHVQUjFWek81eWpPTXR2Zmx2bElYazFfczVGdGZ0Q21VR2p5ZjFGVUdURWM0MTkzSVhIS2RHVnRMMjZCUTFkR0YtclVxelRhcWgxbjRud0t4a0RBeF9GclZZOWRiS1djRDdXYUxnSmZNQk14TFZhZGRKSkw4UnAydE1ad2sxUlBCSG9Tb1pyY3FRbERITUJqaEQ2UQ?oc=5",
+        "date": "Fri, 21 Aug 2026 07:51:25 GMT",
+        "summary": "Tech Brief (Aug. 21): Memory-Chip Maker YMTC Moves Closer to Shanghai IPO inkl",
+        "score": 3,
         "weight": 1
       },
       {
@@ -8556,6 +8586,54 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2c6f6bcb50f00ef5bcbabff45d4fede12a9f7360b3daca34882b801830f0819c",
+        "label": "What to Expect in Markets This Week: Nvidia Earnings; Software Firms, Discount Stores Also Report - Investopedia",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investopedia",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNazdaUFJSQzJ5ZVFlX0FKeXBiNms0UnppWEpVYW5nSk5vSEMweUdmVTNMTElTOUhSclQyYVhHQUZRdHVyYXdnWDhWS1V1SHN4MW1LOGx2TDFJbkdocVUwT29NSDYzei1RLVRwNERxTTNIRUlodXRHLVlyWmhwSzlKUjdOdi1FeWtFVmQxNkxRQ2tLMHR1b3RHejNEMGNjS1ZBcURmMFI2NC0ycVpZVzI4R0J0bVZERGt2V2IzYjlfazN0WFhySXNhOUZB?oc=5",
+        "date": "Sun, 23 Aug 2026 10:00:00 GMT",
+        "summary": "What to Expect in Markets This Week: Nvidia Earnings; Software Firms, Discount Stores Also Report Investopedia",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:fc2b3f73d27bda8fec3e5018e58e30eb845be834e5a3d63fa7051ef0eb8a3b03",
+        "label": "Tencent Music (TME) Q2 2026 Earnings Call Transcript - AOL.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9uSC0wM191SmVBaXdvV19fa2I3QjAzYVprc3pnZFFONzhKV1hFbWNOOU53MmZvVUFtWXpIb1VEcHlwNEUteTdEVEZrc0FJY1dQRkhyVmFQel9HRHNfYnV4bm85dEtqZGl2bVM2Ql96UFR0YncxNlZOVQ?oc=5",
+        "date": "Sun, 23 Aug 2026 09:28:38 GMT",
+        "summary": "Tencent Music (TME) Q2 2026 Earnings Call Transcript AOL.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:786c8e76fdc193c9c4ff96d72e8f16c393cb1a0070ed8f3e8702bb58e5741c32",
+        "label": "Does Synchrony\u2019s AI Pivot and OpenAI Partnership Reframe The Bull Case For Synchrony Financial (SYF)? - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQeXc4YzBLbURDcFlSQVRwckx4STMzcW90ZTMxeERTVlRtVDgxcElqcXNEczk2ZTdmS1JqbkdjejcxQ0QyaThXeWhpdmZlbUJjWEN3MmFleVdLNHRsZjhiOGlBbllTZkR4d3FFaERfNVFjaVRXV1FSTW04dEVwazFWZFc5YlFodVI0S0s1aVRDS3NmTWNpUEVGTFJjalQ5cFdDdklIaUdjUlhzTjBSVzJpSkV3VVNkcG0yZ0VNUXNWNlo3WE9JY3JjTGo4OWZXdTJ0Vl9jQTBtMTlNTXdLajdLeE130gHnAUFVX3lxTFBuTWRTcG5ucmxiMGhBN1J3OHlybll2Z19uM3NLTHp2YnpIWnZUcmc0ckhDRTJhS3IyWW1pZ25HZXhFSnJrSGM5Q0ZoS1FHVW9EdFJtU0J1UjN0RWRsTHRmdmxQTnc1VExoZEVZTUxuaUVSc1BqTGpnc01JMXUzRU8zRXU1ZVVtVWtzaE5DYW9mSWdrd0NHLU0wZ2xQbG1hYnYxZTd4MHNQRTEtem1aaTZVV3dIb2FWVXV1T1lnRGhXakhZczl1MWlwUTdTQnUtejY1N2FoeUVnOEk5WVpUNUdLajMwa2tjbw?oc=5",
+        "date": "Sun, 23 Aug 2026 11:24:50 GMT",
+        "summary": "Does Synchrony\u2019s AI Pivot and OpenAI Partnership Reframe The Bull Case For Synchrony Financial (SYF)? simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:71934cfe52e84a7ce81057d8a9b73fa771d6505067593f9dda8955442d675998",
+        "label": "News - OpenAI Partnership Gives Chip Ganassi Racing a New Tool in Pursuit of Speed - Chip Ganassi Racing",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Chip Ganassi Racing",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWmQtZlZ4cUp3amFqazNGUEF0UUc2bXJ1MUtETklNTmZmZU1OcGNWTmxNQzlIc1RXZThjV2xPU2VRX09INWhnTWRDODhCRVlsOEp4N1N5SkY5YUVHMlRvdGZVZ2Q5bEFiRTB6cllILVVzMGRwaE9xTk5sN1I5RnBkTG9JTVUwWGdYSGVCNHp4dG03MHFQYzhHdEZ4d3hGeTRROGVmN1FZT09la0ZvWTZn?oc=5",
+        "date": "Sun, 23 Aug 2026 11:32:53 GMT",
+        "summary": "News - OpenAI Partnership Gives Chip Ganassi Racing a New Tool in Pursuit of Speed Chip Ganassi Racing",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10727,78 +10805,6 @@
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQekJoQXF1R3J1Zk95YldCY3hfNlJOTWFLcHF0emNBeW1pYnlmMFVFTXZhUHh2aG91WTZlSmE1OUpkYXVGaktxWFRqYTlKUHlXeV94TkI4RmJObDhQaU5BdVhPd2hyS0NZNVhCX2NKM3RPM3lLN1RYRXNFc2JEdi05MEZ5eHJCdG1DU1BxMUJKX3pTbUV4cE5kaVB5LUozODl1Q3pERXVUQQ?oc=5",
         "date": "Fri, 21 Aug 2026 15:19:31 GMT",
         "summary": "Tulsa schools and business leaders excited about new Google operation Oklahoma Energy Today",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b12c45561ad88b4265ef58404678e5c4a5dd9b405066cb3a7d7528fa5e237749",
-        "label": "Alphabet Bond Buyer Warns on Australia\u2019s Capacity for AI Debt - Bloomberg.com",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaEtNN091dzV5WnF2dlU0aVBGT05UaFI1TXd2bkp6NlpTcWxBT2NrbDJYUjh4SW9MM3ZmZmtqVGtfWmczNUZuN1k3N2MtV2t3ZHNRLTFLcmc5RmE5bWd0UW5adDJXaDdQTTJNYjAyakhTOUJWTHBOT0V6WTk2U0EwYk56UWF2aF9sa2dTLTVYTFdPSE1pZHlMTDNRdDZ6aXdjY1JIZ285d3YtYXQ4WXFhOVpB?oc=5",
-        "date": "Fri, 21 Aug 2026 08:05:18 GMT",
-        "summary": "Alphabet Bond Buyer Warns on Australia\u2019s Capacity for AI Debt Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7e5486907e7ccdf49dd834c6e05820a6f9c469575ee939fcbd7f220c7767ba48",
-        "label": "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance Singapore",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance Singapore",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9OZkx4ZGp0Sklrb1JrOEhDcnhiN19Ram9LeTRCNjN3TXhPMnd5Yjl0UEZJY1V1cWhIcllKZWVMWXpCWHlzSmFSd1RWWjV2TC1mUklJazVNdlBqakZHYVA4T3MxYmdBeGwyTVpXaUhXTkVPS1cxTkVKVXU1aw?oc=5",
-        "date": "Fri, 21 Aug 2026 15:30:04 GMT",
-        "summary": "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? Yahoo Finance Singapore",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7e67835378b68f67a9074341118afb328eb5abd510e7e7f83e220462da95169b",
-        "label": "Amazon Stock: Cloud Takes The Spotlight While The Store Pays The Toll - Trefis",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Trefis",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNNHg2YjVOdVhlMVJxVkpOeF84bGpiaHhQb1dlWkhuQVZiRlZZUi1aMVdaNzhiOFNFU21ab1dEQlFuLTd5UUN4RjBTNzY3YW9MVkQwUFRfaUExUFI2M0FmVHkwUnVSYVNvY2tPWk1UU0NoMF9sUHJZUDNxZU1JOW5teEZyNXVjd3F6Ml9FX1dReEYweVRyWFlmM2pHOU1BejlYaU1mSEozVTdtam1CM2tyZVU1cHF6aEpkTzRmN3kzOUE2YXBSUGhGQw?oc=5",
-        "date": "Fri, 21 Aug 2026 18:19:47 GMT",
-        "summary": "Amazon Stock: Cloud Takes The Spotlight While The Store Pays The Toll Trefis",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b6f14bbc4c9968d84eefdcc090afc6cc07e98987b065af72aaae2a049537ed48",
-        "label": "Microsoft Stock Gets Cheaper Only If The Forecast Arrives - Trefis",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Trefis",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNR1kwb2lzYmxhUmF1Z3o2anloYl90QUYzN29HbFY3Skxpbm4zaDhFejJYMjIxQlJyaGlOS242T2REV3ZibUs3TUtBa05WMGlTQnFqbHQzaVEyUFpCcV9wNzdjYVl0eVNqaUltM2QxLU5tTVUxdnVTU25uYnNWdEN4R3ZiQmNFcUxXamFKT1Ywdm5ZRlFZcDhxTXpvalVwRGJ6Zl9ZT3NTUmJmN0RlSDZ3Z0xqVXlHcXFrWlE?oc=5",
-        "date": "Fri, 21 Aug 2026 18:30:04 GMT",
-        "summary": "Microsoft Stock Gets Cheaper Only If The Forecast Arrives Trefis",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:aa441639b27320091ee52480d1c927371af616540c59697fa448be24da8374c4",
-        "label": "Exclusive | Nvidia in Talks to Invest in Data-Center Power Developer Cloverleaf Infrastructure - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZDFTbmlITF9SbTZJcXNLUFhXbEJxVHZBSFlFSnJZbXJSczNUZ25COHQ4ejMzdGlycWJlX3M4UFVra2JQdlFhSm1FQmU4dy1BM1hNc3BfbmdNLTI1cG81RkxJX3RJMkhsbTBfVVlXODBCQTFQWG1mUXkyY0FZejBvY3ZwVFNibVFfLVBmUjVRTGp4NjMwaU9RdXpiVTBBZm1paWVVTFg4SmFuTkk5Yl9Rb1ZXQ3FVQ1dLY3hEN2hsbjBqNjhs?oc=5",
-        "date": "Fri, 21 Aug 2026 12:32:02 GMT",
-        "summary": "Exclusive | Nvidia in Talks to Invest in Data-Center Power Developer Cloverleaf Infrastructure WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3c5b2b7913066595730a68aad918cc4e38602567c5fdf7da3a632a7167a3a408",
-        "label": "Nvidia Reports Earnings Wednesday. Here\u2019s How Much the Stock Is Expected to Move - Investopedia",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Investopedia",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPcTBUUUJ3M2ZqLVRfUnFNMEh2cHZzSTdPOU53RElNcGctejByU3hMZ2g1REh6WVhCSEpCZVZ1aUNNNkVrV1BGUklpUDMtY2Vtb3hyTGRBcTJoTW5GcXA0TDZwMGhWT0tsMXEtX1JuZ20wM3FtQUtsYTM5dW9DVkxWMjNjSDVBNWw3RVYxZEZQbEZiVU9CczRoUzB0eGZnLWV1cF9lYXJwT0RtNDRHbVEyQ3JERGhZUU5rc0JKeUIwbU1kYVBWWlN0cE5Md3M1ZWRnNWc?oc=5",
-        "date": "Fri, 21 Aug 2026 11:15:00 GMT",
-        "summary": "Nvidia Reports Earnings Wednesday. Here\u2019s How Much the Stock Is Expected to Move Investopedia",
         "score": 1,
         "weight": 1
       }
@@ -13836,6 +13842,34 @@
         "mentions": 1
       },
       {
+        "source": "AMD",
+        "target": "evidence:bdb7486bd1bb8acb67d738459c87845faac888df4816cee6bd87010234ba74aa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:bdb7486bd1bb8acb67d738459c87845faac888df4816cee6bd87010234ba74aa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:bdb7486bd1bb8acb67d738459c87845faac888df4816cee6bd87010234ba74aa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:bdb7486bd1bb8acb67d738459c87845faac888df4816cee6bd87010234ba74aa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:d23fb8e7a711bf7ad760470f5f14fca999d1a141638da7a523179078b3b276d1",
         "type": "EVIDENCE",
@@ -16490,6 +16524,34 @@
       },
       {
         "source": "Nvidia",
+        "target": "evidence:2c6f6bcb50f00ef5bcbabff45d4fede12a9f7360b3daca34882b801830f0819c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:fc2b3f73d27bda8fec3e5018e58e30eb845be834e5a3d63fa7051ef0eb8a3b03",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:786c8e76fdc193c9c4ff96d72e8f16c393cb1a0070ed8f3e8702bb58e5741c32",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:71934cfe52e84a7ce81057d8a9b73fa771d6505067593f9dda8955442d675998",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
         "target": "evidence:9b7b5b52d3d642d7f4328d4325ba19c4ee058b140b704b906f2c9ee9f261ba76",
         "type": "EVIDENCE",
         "weight": 1,
@@ -17751,48 +17813,6 @@
       {
         "source": "Alphabet",
         "target": "evidence:49aed8baaffbc075eda0759699c9c6f4b09c16670679eaeedfb01e19e59ffbc2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:b12c45561ad88b4265ef58404678e5c4a5dd9b405066cb3a7d7528fa5e237749",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:7e5486907e7ccdf49dd834c6e05820a6f9c469575ee939fcbd7f220c7767ba48",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:7e67835378b68f67a9074341118afb328eb5abd510e7e7f83e220462da95169b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:b6f14bbc4c9968d84eefdcc090afc6cc07e98987b065af72aaae2a049537ed48",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:aa441639b27320091ee52480d1c927371af616540c59697fa448be24da8374c4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:3c5b2b7913066595730a68aad918cc4e38602567c5fdf7da3a632a7167a3a408",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32233,20 +32253,20 @@
   ],
   "collector_runs": [
     {
-      "id": 239,
+      "id": 243,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T10:39:59.820578+00:00",
-      "completed_at": "2026-08-23T10:40:11.512756+00:00",
+      "started_at": "2026-08-23T11:34:55.480385+00:00",
+      "completed_at": "2026-08-23T11:35:12.113506+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 1,
+      "items_new": 8,
       "error": null
     },
     {
-      "id": 240,
+      "id": 244,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T10:40:11.913697+00:00",
-      "completed_at": "2026-08-23T10:40:12.280439+00:00",
+      "started_at": "2026-08-23T11:35:12.515855+00:00",
+      "completed_at": "2026-08-23T11:35:13.060169+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32263,20 +32283,20 @@
       "error": null
     },
     {
-      "id": 238,
+      "id": 242,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T10:39:58.688538+00:00",
-      "completed_at": "2026-08-23T10:39:59.419602+00:00",
+      "started_at": "2026-08-23T11:34:54.372899+00:00",
+      "completed_at": "2026-08-23T11:34:55.077475+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 241,
+      "id": 245,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T10:40:12.681789+00:00",
-      "completed_at": "2026-08-23T10:40:14.358998+00:00",
+      "started_at": "2026-08-23T11:35:13.463663+00:00",
+      "completed_at": "2026-08-23T11:35:15.649526+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32293,7 +32313,7 @@
       "error": null
     }
   ],
-  "document_count": 1163,
+  "document_count": 1171,
   "event_count": 962,
   "mention_count": 2359,
   "review_counts": {
