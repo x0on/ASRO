@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T22:37:58.177768+00:00",
+  "generated_at": "2026-08-23T23:36:11.583610+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "fragility": 61.1,
     "capital": 52.15125962813687,
     "counter_evidence": 42.9,
-    "monetization": 42.9,
     "circularity": 57.1,
-    "external_pressure": 61.1,
-    "transmission": 39.6,
     "cannibalization": 54.2,
-    "stress": 57.1
+    "fragility": 61.1,
+    "stress": 57.1,
+    "external_pressure": 61.1,
+    "monetization": 42.9,
+    "transmission": 39.6
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -33,13 +33,13 @@
   },
   "dimension_basis": {
     "capital": "aggregate",
-    "monetization": "directional_estimate",
-    "external_pressure": "directional_estimate",
-    "fragility": "directional_estimate",
-    "counter_evidence": "directional_estimate",
     "circularity": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "monetization": "directional_estimate",
     "transmission": "confirmed_trigger",
+    "counter_evidence": "directional_estimate",
     "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
     "stress": "directional_estimate"
   },
   "dimension_direction": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T23:36:11.101924+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"external_pressure\": 61.1}"
+    },
     {
       "captured_at": "2026-08-23T22:37:57.684103+00:00",
       "score": 51.4,
@@ -5187,6 +5193,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:ec5347b6caa71e5e4742ca4ab63b155e23a4deffc8184285d7a7a0a8c3a5b995",
+        "label": "Amid Rising AI Costs and IPOs, OpenAI Slashes Prices for Customers - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNlZLUnJSNG81dzFjQ0xuSEQtYUJqdkJONFhyVkp1dGF0TXNKV1UxWlVveVVmdUpNWlhQZlhlUUxyR3drMFhoTGlBZ1JxdWxEMTNEV0FlQnRyUGZjaTU3RWY3Y1k3MFp4UVJyeE52RDRCNXMzRXRBcEJMUXhVcEFDV19md3F2aktNLWRVZVRIZy1nUjg?oc=5",
+        "date": "Thu, 30 Jul 2026 07:00:00 GMT",
+        "summary": "Amid Rising AI Costs and IPOs, OpenAI Slashes Prices for Customers Yahoo Finance",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:292e638a2cd314840315749d6d7917526a78bd147c63c7df1ae2a2f57b3b6e16",
         "label": "Is OpenAI\u2019s IPO Delay a Warning for AI Investors? - Yahoo Finance",
         "kind": "evidence",
@@ -8919,6 +8937,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:4eea100126f7b50ef64e191fb606eb7bf7fd99db4bee8ccf65fffea1467c6097",
+        "label": "Ahead of Nvidia Earnings, Here's What Barchart Data Says Comes Next for NVDA Stock - Barchart.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Barchart.com",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPU3RZWWUzSUtZbUtrREFQOUxyUVVObUVHb242N0U0aUo5dDhMcGxPX1lIblc2Rm5jTUxvd0ZicnAyQ2xoWnhjYXJaYWNFMnlHOE9jVkxOSGZld3BndnU2akVPcWs0czRMX2dyTjczYk92WDdrOTBObzBBT0VJd2ROR2JGd2tCWG9FZWhNVU1wMThOalhHYWh2ZWt3OE12Zl9Qck50Y1o4alppbG9CUlVnZ0QtV2trOW94dlZ0NEFZbHROVmM?oc=5",
+        "date": "Sun, 23 Aug 2026 19:00:02 GMT",
+        "summary": "Ahead of Nvidia Earnings, Here's What Barchart Data Says Comes Next for NVDA Stock Barchart.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:4f25f1bd05efea36111207617849499ca4d2276b1ed9cf7e14bacd07201351d9",
+        "label": "Kimi K3 Pushes Open-Weight AI to the Frontier, With a Catch - HackerNoon",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "HackerNoon",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZkoyZGFzWmxKM3YyOHBkcnloQTVnandXalBsTUVZdjdmdVFpb3VXZmlHT1ZsZ3Jxb3lSR3F5UHdEZWVHSkpGcjdZUHF6cXlCLTl2QUxsd1piQjc4WHBlMGx1Z3VrUFNyZE5PRHZEWE1qRVFDcU9YMnVkYUQxS1p4bVA4Y2xiVmNF?oc=5",
+        "date": "Sun, 23 Aug 2026 20:32:41 GMT",
+        "summary": "Kimi K3 Pushes Open-Weight AI to the Frontier, With a Catch HackerNoon",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:cb0ac31253459dbb3c2647b075b0baf27c8f807f53854206194eea1531630a1c",
         "label": "AppFolio (APPF) Is Up 9.9% After Naming AWS Preferred Cloud Partner For AI-Native Platform - simplywall.st",
         "kind": "evidence",
@@ -10835,42 +10877,6 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQd0dFa3prVThRdl9wNzc2LUR3eExka1JndWdxTG81NXhSQlZ5U3QwVXdENEFHTGRpNldOdDBEN2VfQkc2eFVYRlJHeENldzRmaHlWQmxUbHdJODJVNHBBMTdnS0xmbXhSdnRnb0ZzUDNmOWwzYWNrNmZjUHpRb2tnd25feVZsbFdhZS1mNWRCNzZhWGREQ19QV2NOUzZjdWtqWVZRSg?oc=5",
         "date": "Thu, 20 Aug 2026 12:05:00 GMT",
         "summary": "Alibaba Posts Weaker Earnings Amid Heavy AI Investments WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:de4db896b2dc0f71535807c775e3ef2215f2ee448cfdff0bc6e5921753bed54a",
-        "label": "DeepSeek could hit $45B valuation from its first investment round - TechCrunch",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYVlWZkZmMEhrUkpRcHBWckNuVEJva1gxeTd1QmNMNGNJWHJ0UzZld2w3TTRIMi1oSHVlcWFaeVRwM3Fxc3VFRHpOM3oweXRfZF9JSFVyUnBaNWpyelgzTTdJYWhGcmdOVWVVU1cyOExBNzJFaDV5RllTMVZHbm9nQWVza1dhcG45ZWYxVHZFLVFYSVhDM2RzWnhpdWtwNHJL?oc=5",
-        "date": "Wed, 06 May 2026 07:00:00 GMT",
-        "summary": "DeepSeek could hit $45B valuation from its first investment round TechCrunch",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:82c180a403ec1522f9b1aa4d23e5bd463cf782d0ec3a4527f407206b2d3ce1af",
-        "label": "How the AI boom shrugged off the DeepSeek shock and keeps gaining steam - Peterson Institute for International Economics",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Peterson Institute for International Economics",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM0RwTEVqSXZ6TWZzc0pDRFVTdUlTUmNmbFVoMDZTWEdFTWFsMXdYa0tYb05zQkw1R2pvZHlLSkdhT2M1VHdzRXRRUjlVUXh1M2NtcGtLU2Q2TFFGNUNSMVlMUDBlUTZsc053d0VLa2k3cEw3NDhHbUw4UlhOOUs0RnFwcDhTOWl3WkY1a1dRTFI4djVRNHQwUkdvWnVkOXE1TFpJeWlxNW55NzVmdTNv?oc=5",
-        "date": "Thu, 05 Feb 2026 08:00:00 GMT",
-        "summary": "How the AI boom shrugged off the DeepSeek shock and keeps gaining steam Peterson Institute for International Economics",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e22d3ad55678e719fb7bb8d54b05933edad6944ec7f77d77d40a04e6645f5084",
-        "label": "AI Wunderkind DeepSeek\u2019s Founder Debuts On China\u2019s 100 Richest List - Forbes",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Forbes",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVGkyX01YLWZ1cXJ0WDNLNFBvQ1BfbmpBWU1qYnJ4ZS1tMXhFV0J5NkFWczlaN1RaU3pYdGwtMEFzYWF6V1ZrSTNONjNaem9pcGcyOVhheVIxRElqRl80NzhRcGdWeEUtM1cxUXFlNTMxd3MwdVZhalZrZlBXU3ZlVmFiZ3JxUVFXNUQyNUpRZER6aFk1Vk1jbEREQUNEYWo4UHFrQW14SktOdXpoQ3B6ekFB?oc=5",
-        "date": "Wed, 05 Nov 2025 08:00:00 GMT",
-        "summary": "AI Wunderkind DeepSeek\u2019s Founder Debuts On China\u2019s 100 Richest List Forbes",
         "score": 1,
         "weight": 1
       }
@@ -13979,6 +13985,13 @@
       },
       {
         "source": "OpenAI",
+        "target": "evidence:ec5347b6caa71e5e4742ca4ab63b155e23a4deffc8184285d7a7a0a8c3a5b995",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
         "target": "evidence:292e638a2cd314840315749d6d7917526a78bd147c63c7df1ae2a2f57b3b6e16",
         "type": "EVIDENCE",
         "weight": 1,
@@ -16792,6 +16805,20 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:4eea100126f7b50ef64e191fb606eb7bf7fd99db4bee8ccf65fffea1467c6097",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:4f25f1bd05efea36111207617849499ca4d2276b1ed9cf7e14bacd07201351d9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:cb0ac31253459dbb3c2647b075b0baf27c8f807f53854206194eea1531630a1c",
         "type": "EVIDENCE",
@@ -17907,27 +17934,6 @@
       {
         "source": "Alibaba",
         "target": "evidence:5579710f27e443311e6c0568c5256c27a7d7709787b7ce476cffafb36ad6666f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:de4db896b2dc0f71535807c775e3ef2215f2ee448cfdff0bc6e5921753bed54a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:82c180a403ec1522f9b1aa4d23e5bd463cf782d0ec3a4527f407206b2d3ce1af",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:e22d3ad55678e719fb7bb8d54b05933edad6944ec7f77d77d40a04e6645f5084",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32413,20 +32419,20 @@
   ],
   "collector_runs": [
     {
-      "id": 287,
+      "id": 291,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T22:37:39.025587+00:00",
-      "completed_at": "2026-08-23T22:37:53.652448+00:00",
+      "started_at": "2026-08-23T23:35:52.407887+00:00",
+      "completed_at": "2026-08-23T23:36:07.676680+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 288,
+      "id": 292,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T22:37:54.053280+00:00",
-      "completed_at": "2026-08-23T22:37:54.444282+00:00",
+      "started_at": "2026-08-23T23:36:08.078001+00:00",
+      "completed_at": "2026-08-23T23:36:08.479534+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32443,20 +32449,20 @@
       "error": null
     },
     {
-      "id": 286,
+      "id": 290,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T22:37:38.102677+00:00",
-      "completed_at": "2026-08-23T22:37:38.623810+00:00",
+      "started_at": "2026-08-23T23:35:50.991820+00:00",
+      "completed_at": "2026-08-23T23:35:52.006425+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 289,
+      "id": 293,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T22:37:54.845590+00:00",
-      "completed_at": "2026-08-23T22:37:57.268457+00:00",
+      "started_at": "2026-08-23T23:36:08.881780+00:00",
+      "completed_at": "2026-08-23T23:36:10.688207+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32473,7 +32479,7 @@
       "error": null
     }
   ],
-  "document_count": 1212,
+  "document_count": 1215,
   "event_count": 965,
   "mention_count": 2364,
   "review_counts": {
