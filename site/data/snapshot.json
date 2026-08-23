@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T18:48:34.628338+00:00",
+  "generated_at": "2026-08-23T19:34:58.705969+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -13,14 +13,14 @@
   },
   "dimensions": {
     "transmission": 39.6,
-    "stress": 57.1,
+    "circularity": 57.1,
     "external_pressure": 61.1,
     "fragility": 61.1,
-    "circularity": 57.1,
-    "cannibalization": 54.2,
-    "capital": 52.15125962813687,
+    "stress": 57.1,
+    "counter_evidence": 42.9,
     "monetization": 42.9,
-    "counter_evidence": 42.9
+    "capital": 52.15125962813687,
+    "cannibalization": 54.2
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "transmission": "confirmed_trigger",
-    "fragility": "directional_estimate",
-    "capital": "aggregate",
-    "monetization": "directional_estimate",
-    "external_pressure": "directional_estimate",
     "stress": "directional_estimate",
+    "capital": "aggregate",
     "cannibalization": "directional_estimate",
+    "transmission": "confirmed_trigger",
     "circularity": "directional_estimate",
-    "counter_evidence": "directional_estimate"
+    "external_pressure": "directional_estimate",
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "monetization": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T19:34:58.315281+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-23T18:48:34.135633+00:00",
       "score": 51.4,
@@ -8895,6 +8901,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:fdd3066c6f9d97e8648b76d5106203893f058ca69f5157e7f4bab188362a01e6",
+        "label": "Dow Jones Futures Due With Market At Key Point; Nvidia, Tariffs, Warsh In Focus - Investor's Business Daily",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investor's Business Daily",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkR0Mk1hdnJPQVZHWEJYWXQ2UENlazJ1OG1EWTVtNFVYLTdMVHpfbVRIQ09zMmtMRnlLT1dnd0VyVzh1cTQzVm1jMS1keHR1TUNXOXBPSXEwWE10bFNoTi1Sd1ptX1lDcHhzaG5OaTFwTzE0UlBvTzgzTHpGVkVQeUoyY2szcks3RkFENTdPbmRVUVFWMjZaWF93cFpXcnZEUEM3d21BTGpKcWZJblEtcEhJVjA?oc=5",
+        "date": "Sun, 23 Aug 2026 18:36:00 GMT",
+        "summary": "Dow Jones Futures Due With Market At Key Point; Nvidia, Tariffs, Warsh In Focus Investor's Business Daily",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b1b7fc2e38c4cf954bcfd1adcfab593d29c20d1c9449faef6613042795709e04",
+        "label": "Burry exits Alibaba, builds large JD.com position over valuation concerns - Investing.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWTRkcFFoSTdaeWVvaldLdlRTNUdjRUZrSjd3X0lxVHNheHRERFFGaGtJVE53S2xrMkdndkFRUlRBRGVuY1c1anZQZ0N1THBjU2FIQV9leW9fMDdrMWQyMTJtMnFUN1BjbkVvVVhvUXVjVHRwWDlZV2ktbWwwSUF5UWw4Yk90VWJlX1RrV3dCZWV2ZTgzYVRONThraUtrZjBMTS1DMFdXdjMyVWtMMTE4eXdlYkNRd1ByX3hTaVJKWG1BQ3o2RG5z?oc=5",
+        "date": "Sun, 23 Aug 2026 18:26:45 GMT",
+        "summary": "Burry exits Alibaba, builds large JD.com position over valuation concerns Investing.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:a0a5ad8b84becb8451d4238f8c2e873d12bbc301649870713baee2720c2b512e",
         "label": "Nvidia's Q2 earnings to test resurgent AI trade - Yahoo Finance",
         "kind": "evidence",
@@ -10823,30 +10853,6 @@
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNLTV3NnBPbWx3R0puWGw4bnFQNEFQeUxrYUFKbzJobTVnRGI1bnd6NnBwUGM3QXJSTlk5VjVORnlCMTYzZjk0WXBSVEFRZnZ0bWZvdnFzSjEzY3Nsbl9meFFNd2JxZ0FyUWJIRS1faXRaTG1mMGs2aWpIUi00R3FpQk5wQVdUa21OZ3VwQmx0d2ZaUQ?oc=5",
         "date": "Mon, 17 Nov 2025 08:00:00 GMT",
         "summary": "Meet CoreWeave, the AI industry\u2019s ticking time bomb The Verge",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:09291a0998d56446646fba71ff87a0e2f7b24a8a12f2567dad177c04f64d8383",
-        "label": "CoreWeave's GPU Debt Treadmill Keeps Me Sidelined Ahead Of Earnings (Preview) - Seeking Alpha",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Seeking Alpha",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNbDhzTGlicGZBWWR0SkZLbWJ0VUFRaTl4NDNmT1QxVTZGWlBWbDEzRzA3dnpTa1FQVW1UQjd1Ym44M3BUS1pHczlqaHRvRnNKOWtSYUdSMjM1RnpzeGtFdHBpaTR6MndyYk9ETV84VktybUtzUHF0R1RDNk5peTljWS12bEdEZDZrejNEWVgwYk1OcVJUUVZvaUNDYWF0SnRTMzRuRzh4OXNudHVoMEVvdl9MUlczZw?oc=5",
-        "date": "Wed, 29 Jul 2026 07:00:00 GMT",
-        "summary": "CoreWeave's GPU Debt Treadmill Keeps Me Sidelined Ahead Of Earnings (Preview) Seeking Alpha",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:22d2f719190b4ac722390fe0734aac07a0360e778882fe577dbe90f9cfe6f499",
-        "label": "How Elon Musk Used SpaceX to Benefit Himself and His Businesses - The New York Times",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBxeGVwWkJBbFRGbDViajI0b1JyYm4zRDBKVkJKUllzZTB1S251b3RqbnVPczFaeEtyRC1sa1pocEo2NWRxdy1ZME91VlNaUG9yOHA2aDE2Y01lY1N4a2lYQlFpNVB2NDg3MjRzbUQtNEhvdC13cHA5c29JaDlWUQ?oc=5",
-        "date": "Fri, 24 Apr 2026 07:00:00 GMT",
-        "summary": "How Elon Musk Used SpaceX to Benefit Himself and His Businesses The New York Times",
         "score": 1,
         "weight": 1
       }
@@ -16769,6 +16775,20 @@
       },
       {
         "source": "Nvidia",
+        "target": "evidence:fdd3066c6f9d97e8648b76d5106203893f058ca69f5157e7f4bab188362a01e6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:b1b7fc2e38c4cf954bcfd1adcfab593d29c20d1c9449faef6613042795709e04",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
         "target": "evidence:a0a5ad8b84becb8451d4238f8c2e873d12bbc301649870713baee2720c2b512e",
         "type": "EVIDENCE",
         "weight": 1,
@@ -17890,20 +17910,6 @@
       {
         "source": "CoreWeave",
         "target": "evidence:3e99b5c6526297adeefc0d8301663cb2e3b050f7c7710dd2d0e3eaabf337f9d6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:09291a0998d56446646fba71ff87a0e2f7b24a8a12f2567dad177c04f64d8383",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:22d2f719190b4ac722390fe0734aac07a0360e778882fe577dbe90f9cfe6f499",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32374,20 +32380,20 @@
   ],
   "collector_runs": [
     {
-      "id": 271,
+      "id": 275,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T18:48:16.237016+00:00",
-      "completed_at": "2026-08-23T18:48:30.666342+00:00",
+      "started_at": "2026-08-23T19:34:38.584320+00:00",
+      "completed_at": "2026-08-23T19:34:54.048629+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 272,
+      "id": 276,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T18:48:31.067827+00:00",
-      "completed_at": "2026-08-23T18:48:31.553765+00:00",
+      "started_at": "2026-08-23T19:34:54.450819+00:00",
+      "completed_at": "2026-08-23T19:34:54.960217+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32404,20 +32410,20 @@
       "error": null
     },
     {
-      "id": 270,
+      "id": 274,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T18:48:15.115058+00:00",
-      "completed_at": "2026-08-23T18:48:15.835782+00:00",
+      "started_at": "2026-08-23T19:34:37.512312+00:00",
+      "completed_at": "2026-08-23T19:34:38.182978+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 273,
+      "id": 277,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T18:48:31.955163+00:00",
-      "completed_at": "2026-08-23T18:48:33.720141+00:00",
+      "started_at": "2026-08-23T19:34:55.372443+00:00",
+      "completed_at": "2026-08-23T19:34:57.902285+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32434,7 +32440,7 @@
       "error": null
     }
   ],
-  "document_count": 1204,
+  "document_count": 1206,
   "event_count": 964,
   "mention_count": 2363,
   "review_counts": {
