@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T04:23:38.992016+00:00",
+  "generated_at": "2026-08-23T04:53:00.127569+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
-    "external_pressure": 61.1,
-    "stress": 57.1,
+    "transmission": 39.6,
     "counter_evidence": 42.9,
     "circularity": 57.1,
     "fragility": 61.1,
-    "transmission": 39.6,
-    "capital": 52.15125962813687,
-    "cannibalization": 54.2
+    "external_pressure": 61.1,
+    "cannibalization": 54.2,
+    "monetization": 42.9,
+    "stress": 57.1,
+    "capital": 52.15125962813687
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,14 +32,14 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "cannibalization": "directional_estimate",
-    "external_pressure": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "stress": "directional_estimate",
-    "monetization": "directional_estimate",
     "circularity": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "monetization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
+    "stress": "directional_estimate",
     "capital": "aggregate"
   },
   "dimension_direction": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T04:52:59.798547+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"external_pressure\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-23T04:23:31.873113+00:00",
       "score": 51.4,
@@ -7125,6 +7131,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:66713c04ecabae8b6eda94656d2f8ae5854b135b938ee009ff1bf8bf4c3fa09d",
+        "label": "Amazon-Backed Anthropic Needs $1.2 Trillion in Revenue to Justify $2 Trillion Valuation, 'Dean of Valuation' Says - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSy1GSHhzQ3RhZnNlUXRGdUU0UXAzYUdjNm5leHBlR2lsQmtMeFhhTl83Qy0zcThqSVBWRTl2REM1dDVHVUpaRG1heUNGRTNicmc3OHctX0pOSm4xTFNTRFpGU0VOTklnMUxMaVRFcWJqLUlsRy1aUmV5b1lfTmpVOUdqaS12Mzcxa3F6RlJFTVdWZDZ4MWZvZWl2VQ?oc=5",
+        "date": "Sun, 23 Aug 2026 03:30:00 GMT",
+        "summary": "Amazon-Backed Anthropic Needs $1.2 Trillion in Revenue to Justify $2 Trillion Valuation, 'Dean of Valuation' Says Yahoo Finance",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:e30f064adeaa48cc92559414954cd69eab84946869e37599ceecdf7de550233e",
         "label": "OpenAI-backed legal tech firm pivots to Chinese Kimi K3 open-weight model - South China Morning Post",
         "kind": "evidence",
@@ -8394,6 +8412,18 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:bec5e3d97714b9cb80ac728f2d1fc3a45721bb3cb3cacdaedeb3ec6cadb585b0",
+        "label": "China\u2019s MiniMax releases AI model \u2018designed for real-world productivity\u2019 - South China Morning Post",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRU5hRUhRQ1JoalN2aDBTQTQ5MUNET0VnV2FqZTkyY0lBb0tSQmxvZVplVjAtZlIzUlQ2NC1XRHZjbmVzbWlxTWNfUEp2elVQRlVnZUZqNDFqY1UwcHBCUHk1cUNZeFFnb01XS2FNbXdQMHNSSWhsQTdEbUtYSTNWdXJaVmJXNy1rckEtdkt4WGJSMlZWc3VENHozQ3habHd2bDlMMFJYaDRjRDNVMDhZYmtMQdIBswFBVV95cUxOalRDS29lSlhwcTRPc2MxbnVsbENfck00R05GSG5KSW13eXQwUHVjNjBXNTZqMmRNUDUwUEdka3VPaXJWM09iZVRRR1pkaG9vSmZqNkpfRVZ4MFVMakwzQldmV2xDREZacEllcU5kSGN5SXR1STdrOENoNGdTdzJwZjFMU2dITGhhY0lpRmxQUHZzM2F6TElFZEMwcjNZckYzdmFNSE9mci14aFJZY3ZTNVJKUQ?oc=5",
+        "date": "Fri, 13 Feb 2026 08:00:00 GMT",
+        "summary": "China\u2019s MiniMax releases AI model \u2018designed for real-world productivity\u2019 South China Morning Post",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10733,30 +10763,6 @@
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPby1nelB5Uk1aZ1dMUXkwZmZMaHg1WUZBNnVNaWdjM0lfLUdKdVlmbXEwVFEwenBjSzltTU9nNkRudGZKRkJ6ZEF0UFFzS2xIQjVVaGlnMnl6MzJTZWpsWll6NFBiUjdIYTVoSzAybDZvTGg0NWR1SUpaREJZTWNZNjZ1cWo2ZFE3TjlyZ2tKdHRXakhRZkE?oc=5",
         "date": "Wed, 12 Nov 2025 08:00:00 GMT",
         "summary": "What Tariffs May Mean for the Economy and Portfolios BlackRock",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8570ef0045f40cdab0b321e841da7d9e25780c7d289231bd3e7f2700716329e0",
-        "label": "Rethinking neutral - BlackRock",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "BlackRock",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNemdFOTNObmFNQnE2R3dmaGZrckh1YTB0MTJNenpERVpNZjQtWVl2Wm8xYWd0MmRKNVJKMDd3ZTFpWlZzejFuQVE0dElacDVSa1pVQXloM3NSRUEyOGtUcmRrYWpQdlBkdVdHamhqVTFfT0RucHlOY1NqcDBEYTlUTlJXMDVGbUQ4cGthbk02NzZzX1liSll3RklkTHZ1cWVGSllqTEhrelpRMWFNVE9yQXlKbFdGOEhzRlJBbDM4SUVMNWlh?oc=5",
-        "date": "Thu, 26 Feb 2026 08:00:00 GMT",
-        "summary": "Rethinking neutral BlackRock",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:92e33d27a438dbe819a88135777d6f9e1f0e5f27154a4ae6663158ccf32371e5",
-        "label": "Mega forces: An investment opportunity - BlackRock",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "BlackRock",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVDdiQ09tMVNsMjFHck1LQUFZQjBIajVVMUlVdDMxd1d2M285T3h3VkgyS3ZiNWd3dmlvVXVubEFPTnNnRm5ib3ZvV3B4S0tWa3VtRUp4X016a1lGOUdqc2tXbDVGMWdLN0ZGOXlSSUlYUEFMVF9jVS1BRXdkZTNFaFNLVjhpYnFQWHZzcUxXYzE?oc=5",
-        "date": "Fri, 31 Jul 2026 11:14:33 GMT",
-        "summary": "Mega forces: An investment opportunity BlackRock",
         "score": 1,
         "weight": 1
       }
@@ -14991,6 +14997,20 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:66713c04ecabae8b6eda94656d2f8ae5854b135b938ee009ff1bf8bf4c3fa09d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:66713c04ecabae8b6eda94656d2f8ae5854b135b938ee009ff1bf8bf4c3fa09d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Moonshot AI",
         "target": "evidence:e30f064adeaa48cc92559414954cd69eab84946869e37599ceecdf7de550233e",
         "type": "EVIDENCE",
@@ -16344,6 +16364,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:88724e1f94b43ef9dbf0f7ad1e3cc74a48bf0ee01004a1bfd190ddc08fae32d4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "MiniMax",
+        "target": "evidence:bec5e3d97714b9cb80ac728f2d1fc3a45721bb3cb3cacdaedeb3ec6cadb585b0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17709,20 +17736,6 @@
       {
         "source": "BlackRock",
         "target": "evidence:53852a7ec4ca374f660fbe0467f26d8f4723476b435ae28960649d3075c0ebb9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "BlackRock",
-        "target": "evidence:8570ef0045f40cdab0b321e841da7d9e25780c7d289231bd3e7f2700716329e0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "BlackRock",
-        "target": "evidence:92e33d27a438dbe819a88135777d6f9e1f0e5f27154a4ae6663158ccf32371e5",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32163,23 +32176,23 @@
   ],
   "collector_runs": [
     {
-      "id": 211,
+      "id": 215,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T04:23:16.612384+00:00",
-      "completed_at": "2026-08-23T04:23:28.437309+00:00",
+      "started_at": "2026-08-23T04:52:41.205278+00:00",
+      "completed_at": "2026-08-23T04:52:55.093122+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 212,
+      "id": 216,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T04:23:28.838385+00:00",
-      "completed_at": "2026-08-23T04:23:29.276082+00:00",
+      "started_at": "2026-08-23T04:52:55.494974+00:00",
+      "completed_at": "2026-08-23T04:52:56.595559+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
@@ -32193,20 +32206,20 @@
       "error": null
     },
     {
-      "id": 210,
+      "id": 214,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T04:23:15.633135+00:00",
-      "completed_at": "2026-08-23T04:23:16.210987+00:00",
+      "started_at": "2026-08-23T04:52:39.913587+00:00",
+      "completed_at": "2026-08-23T04:52:40.802958+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 213,
+      "id": 217,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T04:23:29.677343+00:00",
-      "completed_at": "2026-08-23T04:23:31.458108+00:00",
+      "started_at": "2026-08-23T04:52:56.997450+00:00",
+      "completed_at": "2026-08-23T04:52:59.264307+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32223,7 +32236,7 @@
       "error": null
     }
   ],
-  "document_count": 1143,
+  "document_count": 1146,
   "event_count": 962,
   "mention_count": 2359,
   "review_counts": {
