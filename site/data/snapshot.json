@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T19:34:58.705969+00:00",
+  "generated_at": "2026-08-23T20:39:24.631279+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "stress": 57.1,
+    "fragility": 61.1,
     "transmission": 39.6,
     "circularity": 57.1,
-    "external_pressure": 61.1,
-    "fragility": 61.1,
-    "stress": 57.1,
     "counter_evidence": 42.9,
-    "monetization": 42.9,
     "capital": 52.15125962813687,
+    "external_pressure": 61.1,
+    "monetization": 42.9,
     "cannibalization": 54.2
   },
   "dimension_evidence": {
@@ -33,13 +33,13 @@
   },
   "dimension_basis": {
     "stress": "directional_estimate",
-    "capital": "aggregate",
-    "cannibalization": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "circularity": "directional_estimate",
-    "external_pressure": "directional_estimate",
     "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
     "counter_evidence": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
+    "capital": "aggregate",
+    "external_pressure": "directional_estimate",
     "monetization": "directional_estimate"
   },
   "dimension_direction": {
@@ -654,6 +654,12 @@
   ],
   "history": [
     {
+      "captured_at": "2026-08-23T20:39:24.133893+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1}"
+    },
+    {
       "captured_at": "2026-08-23T19:34:58.315281+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
@@ -1119,16 +1125,16 @@
         "weight": 21
       },
       {
-        "id": "CoreWeave",
-        "label": "CoreWeave",
+        "id": "Nvidia",
+        "label": "Nvidia",
         "kind": "company",
         "weight": 10
       },
       {
-        "id": "Nvidia",
-        "label": "Nvidia",
+        "id": "CoreWeave",
+        "label": "CoreWeave",
         "kind": "company",
-        "weight": 9
+        "weight": 10
       },
       {
         "id": "SpaceX",
@@ -8901,6 +8907,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:cb0ac31253459dbb3c2647b075b0baf27c8f807f53854206194eea1531630a1c",
+        "label": "AppFolio (APPF) Is Up 9.9% After Naming AWS Preferred Cloud Partner For AI-Native Platform - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWDZyVTFpMUdIMEloWTVKR2dwcHRQUUd6SFBhLUdhVk8wTTcxeDRRb2pfQTNHdjBnZUpUQkZtVE5BUlBwWHRJUDYzTUZ3WVM5TWtjdTVkNHA1dnFmOTYwUC1Ed211bzB4UXFSYkc3Q2pmX2VQdjJkRzQ5b1hrM2VyTlpuZjRXOHltRDVkdTloZ3N1UG9RNjd6S3l2Y2tmeC12dk5YX0JZRjRvUV9FWlRVQmd1dE1RU3VWMjAzSnBqOURwMS10bGfSAcsBQVVfeXFMUDVWalBjWmVBSzNrcE9VOEtHTFU0cHAwVjk2RGd2WFptTmJZQ1luMjctaVo2bzVvQkNBRE96SmFmek9ITlYzZFo5TU5wWS0wNi1XalgxQm56RXZFWUZjZi0tRXV0cTRIRnhBRkNPZWdQYl9vd3RlbUp5RGs4Q0dLS0Z6VnNjdHVkc1F0RFJBc2JZMlFpWWdxekxXNXYtNmllcE9la0tsSG04Q1lPUGJVSFNWT2lpemJwTmg2NE1QSjdNd21razdacjdGcHc?oc=5",
+        "date": "Sun, 23 Aug 2026 20:24:02 GMT",
+        "summary": "AppFolio (APPF) Is Up 9.9% After Naming AWS Preferred Cloud Partner For AI-Native Platform simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:720e63d707bdbceb04d640590eb9d36a251f95356eccc884abeafe1a9e07285b",
+        "label": "Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) - Seeking Alpha",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdDhDY0doSElNSFZmMFBMVnduNXhVN295UWp6VFMyVWpQOGhDenQ5OXlkTUx1X0xPSDBVOTlVT3prcFBLMEljMHRjcFpsR09yQVNPOEV3bGlyNDd0andzaVRFRjNreE96TmY2SzE1SElYeWxrOER4T1hlS3RhWjlhVzFDeUV6VFNIMDllUURhekZ6T2NkcTM0TnVNbW4?oc=5",
+        "date": "Sun, 23 Aug 2026 11:25:00 GMT",
+        "summary": "Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) Seeking Alpha",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:71bd699bf9585dd8e5f72827080a18236426a6b18c38d80afcd5ad20293124f7",
+        "label": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% - \uc544\uc2dc\uc544\uacbd\uc81c",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "\uc544\uc2dc\uc544\uacbd\uc81c",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5UNTJqM1ZSNHlGQ0Y3bS03T3JqclVhUnNPTFktYU9lTnJKSlo4VG85ZWxIUnYxbExCNm5NaUhGMDN3cnhycXJIVllTb1RESGgzbm9JZjZiWUlpOWFCSWEwdEZhRTg3ME5JSDVLQ052ZkUzOW9NbWZmSjVBNjM?oc=5",
+        "date": "Sun, 23 Aug 2026 19:44:24 GMT",
+        "summary": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% \uc544\uc2dc\uc544\uacbd\uc81c",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:fdd3066c6f9d97e8648b76d5106203893f058ca69f5157e7f4bab188362a01e6",
         "label": "Dow Jones Futures Due With Market At Key Point; Nvidia, Tariffs, Warsh In Focus - Investor's Business Daily",
         "kind": "evidence",
@@ -10817,42 +10859,6 @@
         "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVGkyX01YLWZ1cXJ0WDNLNFBvQ1BfbmpBWU1qYnJ4ZS1tMXhFV0J5NkFWczlaN1RaU3pYdGwtMEFzYWF6V1ZrSTNONjNaem9pcGcyOVhheVIxRElqRl80NzhRcGdWeEUtM1cxUXFlNTMxd3MwdVZhalZrZlBXU3ZlVmFiZ3JxUVFXNUQyNUpRZER6aFk1Vk1jbEREQUNEYWo4UHFrQW14SktOdXpoQ3B6ekFB?oc=5",
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "AI Wunderkind DeepSeek\u2019s Founder Debuts On China\u2019s 100 Richest List Forbes",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ad5098eaab00ec99e87b642aebfbce1cae5f82cf7fe7ad463b7bbeeb4186aeed",
-        "label": "DeepSeek Resumes $8 Billion Round With Monolith in the Running - Bloomberg.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNYTByZGc4UHpScW9fUEV0b2EyQm1JU3J6ajhZblJwODlQMTVNNzZHbkxUcktmUlVzNTY3WXM5cVZGZ0lmSjBITWlERy1DT1JTaDJ3Q3dnb3RTT203aW12dnctVnlnNnMzQm85LXhDdnUweGxVZ0NrNkN1UkVER2JBTFpqREl0dFh1SktWQ3JDazJRUXJ1THVab3MtLXZxVDFwY3FuSjlxbVgzRVNKdzh3ZUNR?oc=5",
-        "date": "Thu, 06 Aug 2026 07:00:00 GMT",
-        "summary": "DeepSeek Resumes $8 Billion Round With Monolith in the Running Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:972e7939356407b9a510236de0e3b13cc7362ca77836c1859be9d2f7f5b57289",
-        "label": "Claude for Financial Services - Anthropic",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Anthropic",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB5V1cxdWtMZ1AtdEtRdVpEUHFySzVXQXcweWpzeFZQSHl2cGt2UXUtRVcta01DYnUxaGstdk1Ra2N5UmRCeGFmNTRVU1F5S2QyYndMNTFSc0U0SkU5SGJESEJLZ0Y4aEtjM010OA?oc=5",
-        "date": "Tue, 15 Jul 2025 07:00:00 GMT",
-        "summary": "Claude for Financial Services Anthropic",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3e99b5c6526297adeefc0d8301663cb2e3b050f7c7710dd2d0e3eaabf337f9d6",
-        "label": "Meet CoreWeave, the AI industry\u2019s ticking time bomb - The Verge",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Verge",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNLTV3NnBPbWx3R0puWGw4bnFQNEFQeUxrYUFKbzJobTVnRGI1bnd6NnBwUGM3QXJSTlk5VjVORnlCMTYzZjk0WXBSVEFRZnZ0bWZvdnFzSjEzY3Nsbl9meFFNd2JxZ0FyUWJIRS1faXRaTG1mMGs2aWpIUi00R3FpQk5wQVdUa21OZ3VwQmx0d2ZaUQ?oc=5",
-        "date": "Mon, 17 Nov 2025 08:00:00 GMT",
-        "summary": "Meet CoreWeave, the AI industry\u2019s ticking time bomb The Verge",
         "score": 1,
         "weight": 1
       }
@@ -16774,6 +16780,27 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:cb0ac31253459dbb3c2647b075b0baf27c8f807f53854206194eea1531630a1c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:720e63d707bdbceb04d640590eb9d36a251f95356eccc884abeafe1a9e07285b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:71bd699bf9585dd8e5f72827080a18236426a6b18c38d80afcd5ad20293124f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:fdd3066c6f9d97e8648b76d5106203893f058ca69f5157e7f4bab188362a01e6",
         "type": "EVIDENCE",
@@ -17889,27 +17916,6 @@
       {
         "source": "DeepSeek",
         "target": "evidence:e22d3ad55678e719fb7bb8d54b05933edad6944ec7f77d77d40a04e6645f5084",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:ad5098eaab00ec99e87b642aebfbce1cae5f82cf7fe7ad463b7bbeeb4186aeed",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:972e7939356407b9a510236de0e3b13cc7362ca77836c1859be9d2f7f5b57289",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:3e99b5c6526297adeefc0d8301663cb2e3b050f7c7710dd2d0e3eaabf337f9d6",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31718,6 +31724,21 @@
       "source": "The Motley Fool"
     },
     {
+      "date": "Sun, 23 Aug 2026 11:25:00 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": "Nvidia",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) - Seeking Alpha Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) Seeking Alpha Google News",
+      "title": "Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdDhDY0doSElNSFZmMFBMVnduNXhVN295UWp6VFMyVWpQOGhDenQ5OXlkTUx1X0xPSDBVOTlVT3prcFBLMEljMHRjcFpsR09yQVNPOEV3bGlyNDd0andzaVRFRjNreE96TmY2SzE1SElYeWxrOER4T1hlS3RhWjlhVzFDeUV6VFNIMDllUURhekZ6T2NkcTM0TnVNbW4?oc=5",
+      "source": "Seeking Alpha"
+    },
+    {
       "date": "Sun, 23 Aug 2026 14:21:29 GMT",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": null,
@@ -32380,20 +32401,20 @@
   ],
   "collector_runs": [
     {
-      "id": 275,
+      "id": 279,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T19:34:38.584320+00:00",
-      "completed_at": "2026-08-23T19:34:54.048629+00:00",
+      "started_at": "2026-08-23T20:39:03.920564+00:00",
+      "completed_at": "2026-08-23T20:39:20.193917+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 3,
       "error": null
     },
     {
-      "id": 276,
+      "id": 280,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T19:34:54.450819+00:00",
-      "completed_at": "2026-08-23T19:34:54.960217+00:00",
+      "started_at": "2026-08-23T20:39:20.594728+00:00",
+      "completed_at": "2026-08-23T20:39:21.049465+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32410,20 +32431,20 @@
       "error": null
     },
     {
-      "id": 274,
+      "id": 278,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T19:34:37.512312+00:00",
-      "completed_at": "2026-08-23T19:34:38.182978+00:00",
+      "started_at": "2026-08-23T20:39:02.713385+00:00",
+      "completed_at": "2026-08-23T20:39:03.519312+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 277,
+      "id": 281,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T19:34:55.372443+00:00",
-      "completed_at": "2026-08-23T19:34:57.902285+00:00",
+      "started_at": "2026-08-23T20:39:21.450544+00:00",
+      "completed_at": "2026-08-23T20:39:23.718182+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32440,11 +32461,11 @@
       "error": null
     }
   ],
-  "document_count": 1206,
-  "event_count": 964,
-  "mention_count": 2363,
+  "document_count": 1209,
+  "event_count": 965,
+  "mention_count": 2364,
   "review_counts": {
-    "provisional": 15,
+    "provisional": 16,
     "confirmed": 271,
     "flagged": 678,
     "flagged_retry_pending": 0
