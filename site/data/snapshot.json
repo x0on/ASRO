@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T23:35:28.001915+00:00",
+  "generated_at": "2026-08-23T02:00:10.093433+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "transmission": 39.6,
-    "external_pressure": 61.1,
-    "monetization": 42.9,
-    "cannibalization": 54.2,
-    "stress": 57.1,
-    "capital": 52.15125962813687,
-    "circularity": 57.1,
     "fragility": 61.1,
-    "counter_evidence": 42.9
+    "cannibalization": 54.2,
+    "capital": 52.15125962813687,
+    "transmission": 39.6,
+    "circularity": 57.1,
+    "external_pressure": 61.1,
+    "counter_evidence": 42.9,
+    "stress": 57.1,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "external_pressure": "directional_estimate",
     "stress": "directional_estimate",
     "capital": "aggregate",
-    "counter_evidence": "directional_estimate",
+    "cannibalization": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "external_pressure": "directional_estimate",
-    "monetization": "directional_estimate",
     "circularity": "directional_estimate",
-    "fragility": "directional_estimate"
+    "counter_evidence": "directional_estimate",
+    "monetization": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T02:00:09.764178+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1, \"capital\": 52.15125962813687}"
+    },
     {
       "captured_at": "2026-08-22T23:35:27.522121+00:00",
       "score": 51.4,
@@ -3573,6 +3579,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:24fd2f6615194bb2f6d14d2975e48812188cf2cba4df6936a2883ccde68c76c4",
+        "label": "ETF Combines NVIDIA, Alphabet, Treasuries for Retirement Safety - \uc870\uc120\uc77c\ubcf4",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "\uc870\uc120\uc77c\ubcf4",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMi1CRlVRYjdOeDV2RUwxY1Yxc2tBY1lWSDBiQl9yLWZlamxReXBLNHRPY2VWYlV0a3dUVC1PT3I3VGRQZnlWNm1vS1U2b0NTTlZZYzlESFdpOVlvUkN6V3dNdkZ4Y3pJTmZJUE13aWNiOXV4TG90X1NiZmFwVXp3UGVWOHBxQVV0RVA0d1BR?oc=5",
+        "date": "Sun, 23 Aug 2026 00:42:14 GMT",
+        "summary": "ETF Combines NVIDIA, Alphabet, Treasuries for Retirement Safety \uc870\uc120\uc77c\ubcf4",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:9cf58652e1c8faae8d313dcde83b30240266ea4a2a2281aaa0cfbb307ef1ae3f",
         "label": "SpaceX IPO fallout and what OpenAI and Anthropic\u2019s debuts could mean for equity markets - Investing.com",
         "kind": "evidence",
@@ -4890,6 +4908,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:add41d0df38a287c23d56f100a6e0163c39240c1416cfe95f609dfc7f5fc397f",
+        "label": "Alibaba Sinks 7% as a 75% Capex Surge Swallows 45% Cloud Growth; Baidu Ticks Up - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRVprZUR6aGx3Uy1melVuOUJIOVFZWnJBZVIydzc4UnFsYm1sTy1OdTdybnJac1dOUkJQVlFGNzNKOW9WMUxZSVd1QWl5dDlEd0ZoWkViZFlyWi1MUkdXZGF2RkNrRDk2MEtOVk40RS1CM0FHYXF5LVB3X2YtbGNGbGtrc0dNd1I3RlpwS19DV2FXeDA?oc=5",
+        "date": "Fri, 21 Aug 2026 15:43:47 GMT",
+        "summary": "Alibaba Sinks 7% as a 75% Capex Surge Swallows 45% Cloud Growth; Baidu Ticks Up Yahoo Finance",
+        "score": 4,
         "weight": 1
       },
       {
@@ -6501,6 +6531,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:8637abcee05a32f63a66c4ca1e2a80e29c0d6c2a57dd263fd721e1abd3808f9b",
+        "label": "China\u2019s AI Labs Caught Up by Giving Their Research Away. Four IPOs Will End That - Business Model Analyst",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Business Model Analyst",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB5MmdqWGhITy12WUI1UlRCTWtxdllZeWFzVHh5aW5ZUUduYlh6OVQxVDlFTlExZ2ZqaFdXVzBNYUMyVHV5SE9TX2I4dzhHeXo0WVhLQ3dCYUVRaVVfZTQ1eDlQbDQ2UlRfR1dwTEhpZG9lN1JUNmc?oc=5",
+        "date": "Fri, 21 Aug 2026 12:07:03 GMT",
+        "summary": "China\u2019s AI Labs Caught Up by Giving Their Research Away. Four IPOs Will End That Business Model Analyst",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
         "label": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom\u2019s Hidden Ledger - Yahoo Finance",
         "kind": "evidence",
@@ -7002,6 +7044,30 @@
         "date": "Thu, 28 May 2026 07:00:00 GMT",
         "summary": "Beyond the IPO frenzy: what Nasdaq\u2019s new \u2018Fast Entry\u2019 rules could mean for ETF investors Bitpanda",
         "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e30f064adeaa48cc92559414954cd69eab84946869e37599ceecdf7de550233e",
+        "label": "OpenAI-backed legal tech firm pivots to Chinese Kimi K3 open-weight model - South China Morning Post",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPemJYVXlXZ3R5TUJYbkRkV2NmaWN2cUJ5SGxtaHlsSTV1UFJwdVd5R3hKck9hZkY5aXgySVczWldwM1dpS0taOW03OHAxaDE2clF5ZEJ3LXJEX3ljUzhKQ2lOUExNclVSbG5FQ3VmMndsWTE3anpnaG9fX3IyRFlaRms3VXkzS21mb3JjMXFaTE5rQ1h1Z3VzNC02cTNOSFhabTdiQkg0R0Q1RUNUTmNUZEhRcmprTl9MNmEyUHUzTkVfd9IBwgFBVV95cUxPemJYVXlXZ3R5TUJYbkRkV2NmaWN2cUJ5SGxtaHlsSTV1UFJwdVd5R3hKck9hZkY5aXgySVczWldwM1dpS0taOW03OHAxaDE2clF5ZEJ3LXJEX3ljUzhKQ2lOUExNclVSbG5FQ3VmMndsWTE3anpnaG9fX3IyRFlaRms3VXkzS21mb3JjMXFaTE5rQ1h1Z3VzNC02cTNOSFhabTdiQkg0R0Q1RUNUTmNUZEhRcmprTl9MNmEyUHUzTkVfdw?oc=5",
+        "date": "Fri, 21 Aug 2026 14:00:10 GMT",
+        "summary": "OpenAI-backed legal tech firm pivots to Chinese Kimi K3 open-weight model South China Morning Post",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7a7dbdf3e38f72272590af81ac820abd846853c07aac41d01522493b369cda55",
+        "label": "OpenAI Is Adding Business Users Faster Than Anthropic. That May Matter More Than Valuation - inc.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "inc.com",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZ2hVS3doNVlVVGdCeEQ0UnM1R0dhTGdXX2hxZ2xodVdONkk1TXZCNXVUUF9TRER1MFQ5RERTd0JNbHc5cnVXZ0tOUWx2Nlo2Y0duOVJQRVQ3WkQzWHRLUFdBMDFMNm5zTkJWVGRsQjh6NlQwbXlTTkFvUU9ZcW5kOGRudDZRU3luUUdPR3BaREpaQ3oxZzFrZ3dJWF81NVRRWjNLekhoS2s0TmI5VWFMcnpCemJwRUdSSkozeVNpcF8xcmhsbXZvM2tlTQ?oc=5",
+        "date": "Sun, 23 Aug 2026 01:28:29 GMT",
+        "summary": "OpenAI Is Adding Business Users Faster Than Anthropic. That May Matter More Than Valuation inc.com",
+        "score": 2,
         "weight": 1
       },
       {
@@ -8250,6 +8316,66 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:39ba83e5f6dc877ba9a1eab5f7e16bf5597be3af7257e6e16c93f38fdd4e0ebe",
+        "label": "Amazon Stock Is Historically Cheap. Is This a Once-in-a-Decade Buying Opportunity? - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOV85ci1UM3ZfQ0tDLXpTcXJlV0d0SjktUWZKMHdvQk12SjhsS1F1VGRqV21DcDM0UVo0Y0xqbDRGbnhKemI5ZEliNkowRGtuUHZOUmdDaWR5MEVjcDFLOGdYa3JTZkFQZTc1X1kxR0M4WVY3eTZVaTRMX3ZWOHI1aW1wRkFBOWwxU0FZc0h3czNtTEhfVXRTazJ5VGpFZzJoR016Zno5aDZRdUszV1pyYTBYWmtNUHI1MWdSZGhxTThUUQ?oc=5",
+        "date": "Sat, 22 Aug 2026 13:30:46 GMT",
+        "summary": "Amazon Stock Is Historically Cheap. Is This a Once-in-a-Decade Buying Opportunity? 24/7 Wall St.",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:52319d071419a414fd87e21bd01e1d30e9d37e6c3f9cbae6b1faca30faa99085",
+        "label": "Nvidia Is Spending $6 Billion to Build a Powerful U.S. Alternative to Chinese AI - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWHdVbW56NVZvU3ZwQTRIcmdRUVVZWjBVc1J4TFhhVUs2VE5RY21CNEpSdHA2NUJLa0daUVhYcGJwaGh6bERReE5fcFdFdHJ5bWpXa1dPTkFweDVVS3AycGxMa3VqS2JDS0VTZDNIb2RYLVVYcmdxT2xQUUpRSXNFbHhTTVozVjVyUkVYRmItTzc5SlIwS2M0NVZseUtUWFZDX3V6azMxTHJhdHJwYm5XU28yUmlzUQ?oc=5",
+        "date": "Sun, 23 Aug 2026 00:00:00 GMT",
+        "summary": "Nvidia Is Spending $6 Billion to Build a Powerful U.S. Alternative to Chinese AI WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:472c2c47fa3f65fcc62bcb39e5ab728d41460725cb74af5582c7f6d3df192a92",
+        "label": "MiniMax Launches Multimodal Creation Platform Design; Shares Surge Over 12% in Two Days - finance.biggo.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1PWjRtN2xmcmdZTUlQbjU0SFJLeS1icHBaZ1Z5YXlEcjZmX1RXOXVCejRDVF9rWFlObmlQMWI2NG5ZUVVYNnp4V0JUQkNpNm8xc3ZxQ3Q4Y2JfdWgxczItUHE4T042T0pkbmwyS3hyVWhyWnFfenc?oc=5",
+        "date": "Fri, 21 Aug 2026 07:05:00 GMT",
+        "summary": "MiniMax Launches Multimodal Creation Platform Design; Shares Surge Over 12% in Two Days finance.biggo.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:498c310e9016b2b9415eb120bbab3df485a27e6c80bbcf65c919d564f8bcaf88",
+        "label": "Netmarble chief to buy W374b Tencent stake to tighten control - The Korea Herald",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Korea Herald",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10YVRGU3h2QlRzQUt6TUhPbDFGY1VfMmFsMjNkODBQRjlHMUNRTE5NWUhJYXN4WlNnSHp5QUJqcDB3MmstWG83NFlKY0JZZ1JSUm1ZQnNmYw?oc=5",
+        "date": "Sun, 23 Aug 2026 01:54:38 GMT",
+        "summary": "Netmarble chief to buy W374b Tencent stake to tighten control The Korea Herald",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:403761c56b101641c3da7cd9a824280e8ad447cb8f252b55dd3597b945fff31a",
+        "label": "Alibaba\u2019s AI Spending Squeezes Margins Yet Deepens Cloud Strategy Could Be A Game Changer For Alibaba Group Holding (BABA) - simplywall.st",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRXpnQUJuQzllUTI4Uk1Za1E1b2JYajJzVmZMOWtYcjlNeGw3TlQ3YUVnVHdzcDN2Q1NaWGxTdkxLLUlCeXFfMGowZGxzcW1UNHpuR2g5U1pPb3N3Y1M3T2tqeUM4WG8zSFBuMktETlg5eksyb2xpWmhnNXRyRURzSmYtNHJ5T2tOTVRNdE5mdGVRWnNQcGFuSzRtTC1jRXpSSmdsbEdnX3dIVjNENWgxYzZiTkhrQ0ZIRHJURDdNLVR2b29SZ1RSbG8zM0wtaWRRY3fSAdcBQVVfeXFMT1RMNzUwRWdDUGpiWF8xb1hTaFU2S3FIVGhXdEJXbThQcENObDd5bVlYRHlKcGsyMnRnVDRXQkI2a050WTI4LXN1SHV6RWo2bXhiYncwVng5MERJQ0Z2YXl2RUpiWGtkSmxwS1gySm01LXZFa1FHelozQmZrV1NwUzN3d0ZxNlo5aGljTE9FRTkzVXVScElhVjRLTXo3SUtzeThoQWpzUDZROW9ZOF9Mb3lKb1Jjamh1WmFCQkowMEdabFg3d3l5NmhleE45U01NOUR4ZGdGWkk?oc=5",
+        "date": "Sat, 22 Aug 2026 23:27:11 GMT",
+        "summary": "Alibaba\u2019s AI Spending Squeezes Margins Yet Deepens Cloud Strategy Could Be A Game Changer For Alibaba Group Holding (BABA) simplywall.st",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10615,126 +10741,6 @@
         "summary": "Infrastructure Funds and Utility Ownership: Lessons from Blackstone\u2019s Acquisition of TXNM Energy Kleinman Center for Energy Policy",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:bee138da95cb7c070d0edb0cfe30803cd0b1f7ce5f8690755bd67ffa222e916d",
-        "label": "Blackstone and TPG Complete Acquisition of Hologic - TPG Inc.",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TPG Inc.",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOdFNoYkVnc3NiWWdwSXdNNFBZNXRIczB3ZXpvWmo1UEYwbkdPdFl0OTVTcURzcGNXT3U5U1RBalpiWnZqVGRTTGlYNlAza2lfNElRalJvUld6enJnbXZvZmdycVNuenRvb29jNnp0SXpkVlBzOWhvMEtYMjFTWWplT3I4VTJabnJFU3NBTlNPbVRnQQ?oc=5",
-        "date": "Tue, 07 Apr 2026 07:00:00 GMT",
-        "summary": "Blackstone and TPG Complete Acquisition of Hologic TPG Inc.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:22d48e59defc8d12aea65dda2b944ba09e0addd39ae15a9e86de16f098e9a2f0",
-        "label": "AI and the Next Phase of the Software Cycle - Apollo Global Management",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Apollo Global Management",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbjI5MW00djl0dFZoeWtORDlITi1PeS1lU0JiZW9GdGdOcnAwbmhURVdhbzNUOEJfd1JoeFBQQUpXcGJCeVNlZmF1bWlZTmxKUDdPZ1M1cWRyOU91SEdHLXRMN3NURGRnMHlpOXhwN2hTX3JMeWVXMmhsWWFHQnMwOUxuLUNNWnZkRVdIMDRtY09ONXByR0hSNDkyRDFEQQ?oc=5",
-        "date": "Fri, 13 Feb 2026 08:00:00 GMT",
-        "summary": "AI and the Next Phase of the Software Cycle Apollo Global Management",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:009a28f65dd4d6a187168eab74744561dd22d102e822bd18aa25f263b805a952",
-        "label": "Intel: Scale, Flexibility and Partnership in Action - Apollo Global Management",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Apollo Global Management",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQXhsck9xUS1fcldaRkZWc0cyRzR6RF9GQmlzVUNUWjRFbUt4TmY4enc2TklGYnp4RG5lUHRCdHoySEhvUV9GZThwTDB3LW5tc1Q1YkZ2S1NYX1QyNDhsV0NtV0MxN1pfZXpTTWR2V1IycXM2UTl2MDBHZ1UwaTdVemhqZ2FsUkVnYXVWNlhqUk42Y0xpRnB1U1VJN2Nwajd0d1lsOTVn?oc=5",
-        "date": "Wed, 10 Jun 2026 07:00:00 GMT",
-        "summary": "Intel: Scale, Flexibility and Partnership in Action Apollo Global Management",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9b8e3e25ca95974cba63650f0751cc1295b126f352019f17fe8be49792f5e3b6",
-        "label": "Apollo to Announce First Quarter 2026 Financial Results on May 6, 2026 - Apollo Global Management",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Apollo Global Management",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWlowT2d5R3FLTEV1M0p6akdsUF9wNjRlVGE4alF2bWliVW1tSFVwTmR3QWxiT1JJWExXUnJQOW9iMkN3eU9lQkQ2VmtLNU5NZzNmMVRyUWVQYlpNTUM3RXV6ak1iWDhRaVc0TTU1a1V0Zm5Nc3REOUJlNWFzT2x4YWREcHNNeldVNFcwei1ZdmFabFBESE5sdmhjeWNRN2FuN1pMbTBKdlcyU0FJaUtacFlPLVdWaGNKMlE?oc=5",
-        "date": "Wed, 01 Apr 2026 07:00:00 GMT",
-        "summary": "Apollo to Announce First Quarter 2026 Financial Results on May 6, 2026 Apollo Global Management",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cdcbd20b222e5b56c6b8d4d0329c6fd5395a1360d0624c97b395b4cd875f7a38",
-        "label": "The Financing Gap in Sports: Unlocking a $2.5 Trillion Opportunity - Apollo Global Management",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Apollo Global Management",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONFdLeGx5Z1VRWkRISFZ5ampDSFY4a0pCYkE3d3dnd19QaTIxRFV6TXZlcVlyODkzdlJpRHBzVmNsa2NGbDI5ZDRYdHBiNXdUS3VsQkYwX1J1bWlhY0JjZ3Q5R2F6bzFmRVNFMmZaS2UyTkpVMC1MaDFyNXpmTmVRdmdLTmJueDJYNzIzZUpMbmdSOEdNUmx6aV9lbEJtVlVUR21OQTgxMF9ieTZTSDUzeEdNcTNHamFlVC10ZWdwTkNxU1U?oc=5",
-        "date": "Mon, 15 Dec 2025 23:28:05 GMT",
-        "summary": "The Financing Gap in Sports: Unlocking a $2.5 Trillion Opportunity Apollo Global Management",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0815006a3f725193feb775008fc03901a8b908e2c297babbbde25d8388755ffe",
-        "label": "Apollo to Announce Second Quarter 2026 Financial Results on August 4, 2026 - Apollo Global Management",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Apollo Global Management",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTEU0aE4xWVItX0dYc2RZUnJCS0lIQ1NHaGpWSXQxMkdnOGNrSnNKUTk2T2FHODhMVUtxZEJqYUFIcFFYbjNYaTFsZk5CTUtYZzI2cHgwaHFRZ3c3aFpWZ1R5ZnZ6MVkycDZpcENGdC1jbGFiWEJyRU0xQk9OazgxanNrb01KdlYxV0xkNVhYTGxrZ2pERndoYXBnY3lvbjRoNVA5NEUwRjRjWnVfNEZ6bkRUdjR2aWF1NDRB?oc=5",
-        "date": "Thu, 25 Jun 2026 07:00:00 GMT",
-        "summary": "Apollo to Announce Second Quarter 2026 Financial Results on August 4, 2026 Apollo Global Management",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f1c2d7631637798229e6a244615a6922b35ff24dc4946c65fb333d452f478b19",
-        "label": "Latham Advises Apollo and Tega on US$1.45 Billion Acquisition of Molycop - Latham & Watkins LLP",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Latham & Watkins LLP",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMm5Edjd2YU5XVVJnSmN1bHp5N1p5eElnWlU4TEt3UTk2eEl0MTlVOF9TUnEwVHVpLUgtRExGZnh3cnpORW9zb3pVTHpUbl9MWndlSl9Oc3k0ekhZMzRlNlQ5Z1V1azJtV1AzLXgwUmtldC16TlhUdkFBSGVtSG5rdGt4Y2VuMWtQRXE2WWE0ZWJzV1VWRWdtLWxiX29heXFUZlNHZjJsenQ?oc=5",
-        "date": "Thu, 05 Feb 2026 08:00:00 GMT",
-        "summary": "Latham Advises Apollo and Tega on US$1.45 Billion Acquisition of Molycop Latham & Watkins LLP",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2b53b9a6362fa9c667e4e991f3e70fcb442ef732fb40baf665485b7cf9de8c45",
-        "label": "CVC welcomes Apollo as minority investor in Syntegon: partnership to accelerate next growth phase - cvc.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "cvc.com",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPY0JhaUxvcWJLSTdkUDUtY290VnZ3NERjZlFIeFRaVVcwU0tEWVRLWHVJbm5fY2d2YlBUdXZYMTdjQ0JDdGRoNG1XYXc4X3hHVllBOTlCNFh1WVRBTWtjaFcwM21jdXFtblBoaUp6b3ZOTlRiNXhkWHpiZzg3N1AycURyLUFKX3A4clpOdndVVlNtc1JaQTdFOEdfVkxCa2VEek8zNGcyOWJUMjV5dmFHc0p3d2FqSTVZZzZLSWlwc3RjS2NYX1lrUFdJajdoQQ?oc=5",
-        "date": "Mon, 23 Mar 2026 07:00:00 GMT",
-        "summary": "CVC welcomes Apollo as minority investor in Syntegon: partnership to accelerate next growth phase cvc.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:645303d400e6a9288557370994a93f3cbb859b0ef67a7f83506d57de7a5e0ccb",
-        "label": "Realty Income and Apollo to Establish Strategic Partnership - PR Newswire",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "PR Newswire",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPX1VqSlhJdlhseURsenpacm5HY25QT21lUmVNQlNPbXNpV0x4V25BOS1pM2ZWTkF6MXZOaE1LbnZ1cER0YlQxR2haQ0lZSi1saDNYTEJJdC1fdHNwWjB5X284ZUt6QVlPZnk1VGR0VExTX3dSaTRxelhFbVg1Nk05TmMzaTA5NXZJMVdsa0haR25OT0VfTFlMQlZKUWlfdjZRblNrc29WVHY4TEhidFRkTVBva0pzUQ?oc=5",
-        "date": "Thu, 19 Mar 2026 07:00:00 GMT",
-        "summary": "Realty Income and Apollo to Establish Strategic Partnership PR Newswire",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6ad05c0cbe5c443e87b02d20f7f8dbeba04c66cd6676401d806e43b696d21ced",
-        "label": "Apollo Funds Announce Strategic Investment in NSG Group, a Global Leader in Glass Manufacturing - Apollo Global Management",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Apollo Global Management",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVXdVQ3poZF80clozVnRCOHNrcjFqVlpNRHJnejRiV3pCWk0tRklMbGJEQXBQSjktSkw5VVJ4NW9TdHRwZi1OUFJCZU01QWJOWll1S01qam93ZFJYclU5VGExOXdlU0ZPYnVrVkVQZlAtSDBEMkJjUGtnNWJoN3pZOS1UQ0t0aDlCbEFITnVwSXNucXR4eDJ5TzFiTkJQZWV5M05oWWRVYWF0SnR0RHpMb1k2SmVrLVhO?oc=5",
-        "date": "Mon, 23 Mar 2026 07:00:00 GMT",
-        "summary": "Apollo Funds Announce Strategic Investment in NSG Group, a Global Leader in Glass Manufacturing Apollo Global Management",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -10778,7 +10784,7 @@
         "target": "Baidu",
         "type": "CAPEX_COMMITMENT",
         "weight": 1,
-        "mentions": 2
+        "mentions": 3
       },
       {
         "source": "Zhipu AI",
@@ -12510,6 +12516,20 @@
         "mentions": 1
       },
       {
+        "source": "Alphabet",
+        "target": "evidence:24fd2f6615194bb2f6d14d2975e48812188cf2cba4df6936a2883ccde68c76c4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:24fd2f6615194bb2f6d14d2975e48812188cf2cba4df6936a2883ccde68c76c4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:9cf58652e1c8faae8d313dcde83b30240266ea4a2a2281aaa0cfbb307ef1ae3f",
         "type": "EVIDENCE",
@@ -13667,6 +13687,20 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:add41d0df38a287c23d56f100a6e0163c39240c1416cfe95f609dfc7f5fc397f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Baidu",
+        "target": "evidence:add41d0df38a287c23d56f100a6e0163c39240c1416cfe95f609dfc7f5fc397f",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -14892,6 +14926,34 @@
       {
         "source": "OpenAI",
         "target": "evidence:06600c95c2f5d695294bccb3ff4287570861bf67cd81eb6bf97b9687a284e151",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:e30f064adeaa48cc92559414954cd69eab84946869e37599ceecdf7de550233e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:e30f064adeaa48cc92559414954cd69eab84946869e37599ceecdf7de550233e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:7a7dbdf3e38f72272590af81ac820abd846853c07aac41d01522493b369cda55",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:7a7dbdf3e38f72272590af81ac820abd846853c07aac41d01522493b369cda55",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16222,6 +16284,41 @@
       {
         "source": "OpenAI",
         "target": "evidence:88724e1f94b43ef9dbf0f7ad1e3cc74a48bf0ee01004a1bfd190ddc08fae32d4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:39ba83e5f6dc877ba9a1eab5f7e16bf5597be3af7257e6e16c93f38fdd4e0ebe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:52319d071419a414fd87e21bd01e1d30e9d37e6c3f9cbae6b1faca30faa99085",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "MiniMax",
+        "target": "evidence:472c2c47fa3f65fcc62bcb39e5ab728d41460725cb74af5582c7f6d3df192a92",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:498c310e9016b2b9415eb120bbab3df485a27e6c80bbcf65c919d564f8bcaf88",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:403761c56b101641c3da7cd9a824280e8ad447cb8f252b55dd3597b945fff31a",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17601,76 +17698,6 @@
       {
         "source": "Blackstone",
         "target": "evidence:dc2328804f681a62951e935d085255a31aa9bb110fabca1ed4bb94bf73ed9458",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Blackstone",
-        "target": "evidence:bee138da95cb7c070d0edb0cfe30803cd0b1f7ce5f8690755bd67ffa222e916d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:22d48e59defc8d12aea65dda2b944ba09e0addd39ae15a9e86de16f098e9a2f0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:009a28f65dd4d6a187168eab74744561dd22d102e822bd18aa25f263b805a952",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:9b8e3e25ca95974cba63650f0751cc1295b126f352019f17fe8be49792f5e3b6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:cdcbd20b222e5b56c6b8d4d0329c6fd5395a1360d0624c97b395b4cd875f7a38",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:0815006a3f725193feb775008fc03901a8b908e2c297babbbde25d8388755ffe",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:f1c2d7631637798229e6a244615a6922b35ff24dc4946c65fb333d452f478b19",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:2b53b9a6362fa9c667e4e991f3e70fcb442ef732fb40baf665485b7cf9de8c45",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:645303d400e6a9288557370994a93f3cbb859b0ef67a7f83506d57de7a5e0ccb",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:6ad05c0cbe5c443e87b02d20f7f8dbeba04c66cd6676401d806e43b696d21ced",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31231,7 +31258,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 2,
+      "mentions": 3,
       "review_status": "flagged",
       "evidence_text": "Alibaba Sinks 7% as a 75% Capex Surge Swallows 45% Cloud Growth; Baidu Ticks Up - 24/7 Wall St.",
       "title": "Alibaba Sinks 7% as a 75% Capex Surge Swallows 45% Cloud Growth; Baidu Ticks Up - 24/7 Wall St.",
@@ -32111,20 +32138,20 @@
   ],
   "collector_runs": [
     {
-      "id": 195,
+      "id": 199,
       "collector": "company-economic-news",
-      "started_at": "2026-08-22T23:35:09.550098+00:00",
-      "completed_at": "2026-08-22T23:35:24.219601+00:00",
+      "started_at": "2026-08-23T01:59:46.569049+00:00",
+      "completed_at": "2026-08-23T02:00:05.808151+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 12,
       "error": null
     },
     {
-      "id": 196,
+      "id": 200,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-22T23:35:24.621030+00:00",
-      "completed_at": "2026-08-22T23:35:24.958199+00:00",
+      "started_at": "2026-08-23T02:00:06.210557+00:00",
+      "completed_at": "2026-08-23T02:00:06.637044+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32141,20 +32168,20 @@
       "error": null
     },
     {
-      "id": 194,
+      "id": 198,
       "collector": "google-news-rss",
-      "started_at": "2026-08-22T23:35:08.622063+00:00",
-      "completed_at": "2026-08-22T23:35:09.148687+00:00",
+      "started_at": "2026-08-23T01:59:45.422115+00:00",
+      "completed_at": "2026-08-23T01:59:46.167061+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 197,
+      "id": 201,
       "collector": "sec-edgar",
-      "started_at": "2026-08-22T23:35:25.359696+00:00",
-      "completed_at": "2026-08-22T23:35:27.107237+00:00",
+      "started_at": "2026-08-23T02:00:07.039828+00:00",
+      "completed_at": "2026-08-23T02:00:09.351848+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32171,9 +32198,9 @@
       "error": null
     }
   ],
-  "document_count": 1124,
+  "document_count": 1136,
   "event_count": 962,
-  "mention_count": 2358,
+  "mention_count": 2359,
   "review_counts": {
     "provisional": 13,
     "confirmed": 271,
