@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T13:45:59.175074+00:00",
+  "generated_at": "2026-08-23T14:39:21.456306+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "capital": 52.15125962813687,
     "cannibalization": 54.2,
-    "monetization": 42.9,
-    "transmission": 39.6,
-    "external_pressure": 61.1,
-    "fragility": 61.1,
+    "capital": 52.15125962813687,
     "counter_evidence": 42.9,
+    "fragility": 61.1,
+    "monetization": 42.9,
     "stress": 57.1,
+    "external_pressure": 61.1,
+    "transmission": 39.6,
     "circularity": 57.1
   },
   "dimension_evidence": {
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "capital": "aggregate",
-    "external_pressure": "directional_estimate",
-    "fragility": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "stress": "directional_estimate",
-    "circularity": "directional_estimate",
+    "fragility": "directional_estimate",
     "monetization": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "external_pressure": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "stress": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -654,6 +654,12 @@
   ],
   "history": [
     {
+      "captured_at": "2026-08-23T14:39:20.968238+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"external_pressure\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"fragility\": 61.1}"
+    },
+    {
       "captured_at": "2026-08-23T13:45:58.656477+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
@@ -1062,7 +1068,7 @@
         "id": "Amazon",
         "label": "Amazon",
         "kind": "company",
-        "weight": 55
+        "weight": 56
       },
       {
         "id": "Oracle",
@@ -3654,6 +3660,18 @@
         "date": "Wed, 07 Jan 2026 08:00:00 GMT",
         "summary": "Google's 'Cannibalization' Risk Vs Microsoft's Azure Growth: Expert Explains How AI Answers Could Slash GOOG's Ad Revenue Yahoo Finance",
         "score": 7,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6900661a2e4fa506b33d5edae368e2b4c7ddd1330405c038b6d1d755f7cb538a",
+        "label": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
+        "date": "Sun, 23 Aug 2026 14:21:29 GMT",
+        "summary": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. The Motley Fool",
+        "score": 6,
         "weight": 1
       },
       {
@@ -6930,6 +6948,18 @@
         "date": "Thu, 20 Aug 2026 04:32:35 GMT",
         "summary": "OpenAI CFO Reveals How Soon the IPO Could Actually Land Yahoo Finance",
         "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:bd743f3e8da2b21759de2d550890a7c0a9928e02287892a81007c0e11817985b",
+        "label": "Tech layoffs tracker 2026: All the job losses across Apple, TikTok, Meta, Microsoft, Oracle and others - Yahoo Tech",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Tech",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPM3E4cFQ4NjVxamx5czRPOTdCMWxJQjFtVUlFOGFtdW1qVHBiQTZWRjhralN6aVh6b0NsQ1VaTHFmZ0ZMcUNSTUJ1UTN1VE1fTmxRamdWYWJFMTRJbWRLMy1Pem9GaWVuZzZoMnlkcEVOY0w0TTFRLWFQRUZJakdYSm9GUkFpN3FkZWhKVVNpQXRLZnVWRjAwcElmUTMwc0VxVWxwVDNTWVh3ZWlhS1BGU0RGMXRIY1VJeUZrQkZXbmNkanZfS0U4ZXZRMDhSZzd5Y1RlTHM2TllBNkFoLUZGNXYteXRodw?oc=5",
+        "date": "Fri, 21 Aug 2026 20:25:10 GMT",
+        "summary": "Tech layoffs tracker 2026: All the job losses across Apple, TikTok, Meta, Microsoft, Oracle and others Yahoo Tech",
+        "score": 3,
         "weight": 1
       },
       {
@@ -10795,30 +10825,6 @@
         "summary": "Musk\u2019s merger of X and xAI adds to history of opaque deals The Washington Post",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:7e056316b8ce2c9f24ed41a3efbe2049ecace049787687354522d54a1139895d",
-        "label": "Elon Musk says xAI has acquired X - Axios",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Axios",
-        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tUEhSbVdCdkxCN2ltWFR1SjJ6VV9KN3dsZUVfbk1DaEVJV2liTWpLTENUMjZsa1lXajlzVUFFLWlwWWFVWlhYeU9sQ1BmVXozdml1dXV3?oc=5",
-        "date": "Fri, 28 Mar 2025 07:00:00 GMT",
-        "summary": "Elon Musk says xAI has acquired X Axios",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a700cb53fc5d00e019d3820eb8c383a4abb6f47c248522b75dfbe5168e2321a9",
-        "label": "Elon Musk\u2019s xAI and X to pay off $17.5B debt in full: report - Teslarati",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Teslarati",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE44MUFzT24ybEdUNmQ4ZDhCc2xIZExwY09QYngzTVRLMzFmc0RvS3VlUmU0ZXEzM0xlMUVVb2J1UExQZXJkbFFrVllVcmU5NjIweEdfZGplcms5UU9nemZxT0xQVDhXZkxNQXI4ZDAtSU5adDBO?oc=5",
-        "date": "Tue, 03 Mar 2026 08:00:00 GMT",
-        "summary": "Elon Musk\u2019s xAI and X to pay off $17.5B debt in full: report Teslarati",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12589,6 +12595,13 @@
       {
         "source": "Microsoft",
         "target": "evidence:7e3204b9b49eb2feff33ce7cee1bd409b7e9308913b15e81b28aaf9a5cafa76a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:6900661a2e4fa506b33d5edae368e2b4c7ddd1330405c038b6d1d755f7cb538a",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -14836,6 +14849,27 @@
       {
         "source": "OpenAI",
         "target": "evidence:4d2c5a1ea037299f5beef2350486d461ad7d13eb64e7babaea111d19d8f4386e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:bd743f3e8da2b21759de2d550890a7c0a9928e02287892a81007c0e11817985b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:bd743f3e8da2b21759de2d550890a7c0a9928e02287892a81007c0e11817985b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Oracle",
+        "target": "evidence:bd743f3e8da2b21759de2d550890a7c0a9928e02287892a81007c0e11817985b",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17832,20 +17866,6 @@
       {
         "source": "xAI",
         "target": "evidence:9493d93a0a1cba256317363d98026699450ec5d54c555d0f07bff09b9a00c942",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:7e056316b8ce2c9f24ed41a3efbe2049ecace049787687354522d54a1139895d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:a700cb53fc5d00e019d3820eb8c383a4abb6f47c248522b75dfbe5168e2321a9",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31654,6 +31674,36 @@
       "source": "The Motley Fool"
     },
     {
+      "date": "Sun, 23 Aug 2026 14:21:29 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "Here's the Gap AI Capex Is Actually Creating.",
+      "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
+      "source": "The Motley Fool"
+    },
+    {
+      "date": "Sun, 23 Aug 2026 14:21:29 GMT",
+      "event_type": "FREE_CASH_FLOW",
+      "source_entity": "Amazon",
+      "target_entity": null,
+      "amount": 7600000000.0,
+      "currency": "USD",
+      "confidence": 0.8,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%.",
+      "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
+      "source": "The Motley Fool"
+    },
+    {
       "date": "Thu, 07 May 2026 07:00:00 GMT",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": "CoreWeave",
@@ -32286,23 +32336,23 @@
   ],
   "collector_runs": [
     {
-      "id": 251,
+      "id": 255,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T13:45:41.692341+00:00",
-      "completed_at": "2026-08-23T13:45:54.909316+00:00",
+      "started_at": "2026-08-23T14:39:03.091799+00:00",
+      "completed_at": "2026-08-23T14:39:17.203473+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 252,
+      "id": 256,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T13:45:55.310284+00:00",
-      "completed_at": "2026-08-23T13:45:55.873663+00:00",
+      "started_at": "2026-08-23T14:39:17.604602+00:00",
+      "completed_at": "2026-08-23T14:39:18.006798+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
@@ -32316,20 +32366,20 @@
       "error": null
     },
     {
-      "id": 250,
+      "id": 254,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T13:45:38.185465+00:00",
-      "completed_at": "2026-08-23T13:45:41.291234+00:00",
+      "started_at": "2026-08-23T14:39:02.100135+00:00",
+      "completed_at": "2026-08-23T14:39:02.690543+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 16,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 253,
+      "id": 257,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T13:45:56.274566+00:00",
-      "completed_at": "2026-08-23T13:45:58.240920+00:00",
+      "started_at": "2026-08-23T14:39:18.408174+00:00",
+      "completed_at": "2026-08-23T14:39:20.552852+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32346,11 +32396,11 @@
       "error": null
     }
   ],
-  "document_count": 1195,
-  "event_count": 962,
-  "mention_count": 2360,
+  "document_count": 1197,
+  "event_count": 964,
+  "mention_count": 2363,
   "review_counts": {
-    "provisional": 13,
+    "provisional": 15,
     "confirmed": 271,
     "flagged": 678,
     "flagged_retry_pending": 0
