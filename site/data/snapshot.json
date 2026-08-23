@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T02:00:10.093433+00:00",
+  "generated_at": "2026-08-23T03:15:40.326369+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "fragility": 61.1,
-    "cannibalization": 54.2,
-    "capital": 52.15125962813687,
-    "transmission": 39.6,
-    "circularity": 57.1,
-    "external_pressure": 61.1,
     "counter_evidence": 42.9,
+    "circularity": 57.1,
+    "cannibalization": 54.2,
     "stress": 57.1,
-    "monetization": 42.9
+    "transmission": 39.6,
+    "external_pressure": 61.1,
+    "monetization": 42.9,
+    "capital": 52.15125962813687,
+    "fragility": 61.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,13 +32,13 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
-    "external_pressure": "directional_estimate",
-    "stress": "directional_estimate",
-    "capital": "aggregate",
-    "cannibalization": "directional_estimate",
-    "transmission": "confirmed_trigger",
     "circularity": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "stress": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "external_pressure": "directional_estimate",
+    "capital": "aggregate",
+    "fragility": "directional_estimate",
     "counter_evidence": "directional_estimate",
     "monetization": "directional_estimate"
   },
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T03:15:39.830376+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-23T02:00:09.764178+00:00",
       "score": 51.4,
@@ -3843,6 +3849,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:35e87c7d68f1916aa0f95733ddd3bb684a209bffc122e76508dd444ecfd79191",
+        "label": "OpenAI Names Its IPO \"Another Fundraise\" \u2014 and Plans to Go Public After Anthropic - FourWeekMBA",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "FourWeekMBA",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZ1ZjbGRDdUtVQ3JfUjRTUkpYNGF2ekxiU1lFQjNzNEF4cjdLd1A5RjlNOWVPb0NmX0ozZnZBTGhYSnc2VmFTYnZ2MnV1V3Vvb0hXMGhWR3B0eVpXRU84WWV2MTVxZmFlYWdWS3pvT3FJdVdIbTdCRTF0aVE1SzVIUg?oc=5",
+        "date": "Thu, 20 Aug 2026 00:19:26 GMT",
+        "summary": "OpenAI Names Its IPO \"Another Fundraise\" \u2014 and Plans to Go Public After Anthropic FourWeekMBA",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:94ec15af636f97c4c91c5c0a3d4de599d1c8e10c98d45d81d7d497a6e38c3833",
+        "label": "IPO Fever Heats Up for OpenAI and Anthropic - The Motley Fool",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQUmFobjRZR2hxMGRKcEhsa3J0LS0xODg0c1BxUHpKTlh2VS1oZmJmVlZlWG5famo3OHl3QkFUeURTMUotX2ZjTmEtY2lodjFWUklNSW5jNERvZ1RpQ2FxQUlrTndtb2oxNXBDZzBIX3lqR1I2YktPODNWOFY3UjcxZkdzZ0h6a193SnAtejBiSQ?oc=5",
+        "date": "Sun, 23 Aug 2026 01:33:34 GMT",
+        "summary": "IPO Fever Heats Up for OpenAI and Anthropic The Motley Fool",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:cda89fe6d75d9b580dc1d56fc89aa3d0f30a940db790dcdcafa03c167b373e65",
         "label": "OpenAI, Anthropic artificial intelligence IPO boom set to transform San Francisco, starting with soaring real estate prices - ABC7 Bay Area",
         "kind": "evidence",
@@ -4908,6 +4938,30 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:fd5da97a13ea8b1c52f25473a5ffa41d156e8ad57d5c65c9ac3145fa737223c0",
+        "label": "OpenAI said to target 2027 IPO, 'maybe sooner' - Breakingthenews.net",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Breakingthenews.net",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdzNFQzBLSGlrU1FBM19jNGtRWHNScTV4VV9YQWNPM0xnLWpYWXNtYUpaeGdHU3Zvb2s0UE9vWmtrVGVtUkU5bFhISmNUTF9OT19ua1RkTThVcV9idW5QdG1kb2Q1S0p2RDBrZGRrZWVNUzNZZWM0VjlYRDFFZG8tYnNvc2J4c3V6b3RDR2tFZF9lWTZM?oc=5",
+        "date": "Wed, 19 Aug 2026 19:29:00 GMT",
+        "summary": "OpenAI said to target 2027 IPO, 'maybe sooner' Breakingthenews.net",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:260d8ae251c1e0a8041f3aa87f3703a60c14efa72025bd5f16b3ab757f73ebd9",
+        "label": "OpenAI lets employees cash out $7 billion as IPO plans remain uncertain - calcalistech.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "calcalistech.com",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBGWkVDdWxFd29uYk5QQ1N1Z2FZVXBEWWZyZHE5N0lxVUNfT1lJRUdTVVR1RTQ5M0Z0ckNZM2c2ZFJLWl9iMWJ4dnhFRmxXWWVfQ2dqdTkzeDB1b1FNQURnZjNWQnE4VVE?oc=5",
+        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI lets employees cash out $7 billion as IPO plans remain uncertain calcalistech.com",
+        "score": 4,
         "weight": 1
       },
       {
@@ -8319,6 +8373,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:0a92612c64eefe7446df85643020825047561b9da0ae5bff1c50e1ffd71a468e",
+        "label": "Alibaba: Pay 13x FWD Earnings For 45% AI Cloud Growth (NYSE:BABA) - Seeking Alpha",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQXzJldUNvLUJCZ0wxTDlERUFZZU1vNUJVMjAzMDUtd0pjQUQ2bUxfTDlFeExiSWJXV1ZFUEVZZm83SFk0ZGY2MTVXQjdCTV9XSlM0MWFLdlhxX2piUTB3d3NaYkJGbElIME5QYl9ZUmdaMk9ocnFXZ0ZTOVVOLUNXWkhydWtBSHdIcUtXN0hfblVCMmxvVUg3WFBTa0lXc1BIREE?oc=5",
+        "date": "Fri, 21 Aug 2026 17:00:25 GMT",
+        "summary": "Alibaba: Pay 13x FWD Earnings For 45% AI Cloud Growth (NYSE:BABA) Seeking Alpha",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:39ba83e5f6dc877ba9a1eab5f7e16bf5597be3af7257e6e16c93f38fdd4e0ebe",
         "label": "Amazon Stock Is Historically Cheap. Is This a Once-in-a-Decade Buying Opportunity? - 24/7 Wall St.",
         "kind": "evidence",
@@ -10681,66 +10747,6 @@
         "summary": "California Federal Court Halts Allegedly Deceptive Debt Collection Practices by Blackrock Services, Inc. and Affiliates Consumer Financial Services Law Monitor",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:3ff88d8ab95d2ebb4c698c6932a5e47902eaa146b122811eca62dbf6938d5449",
-        "label": "BlackRock, EQT Lead $33 Billion Acquisition of AES - ESG Today",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "ESG Today",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBIS0s5RDRwU1Jmc2pFN3d2UU9OUXFzZEVIVk5yNWphLVRuRTZjTFlKdzhJdXVhZGUyZGs1U1liSk5RLXpMa3FPTjMtN3pwcWdsZFJCVi00TnlINkxXXzc1THJ6TVlmdV92OXNZT2VBX0R0dXhfb01UdlNXR25CR28?oc=5",
-        "date": "Mon, 02 Mar 2026 08:00:00 GMT",
-        "summary": "BlackRock, EQT Lead $33 Billion Acquisition of AES ESG Today",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:69cf70f74c40f44649d68434e17b1de8411628a62007fe12416e95d71851dbf8",
-        "label": "New Mexico regulators scrutinize Blackstone-TXNM stock trade in merger review - Utility Dive",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Utility Dive",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPRmp6X2F5bHRsTXczb2VNQlhIUHBuSDFBbWRNaVdfdE95WDZJaUxyUVpJdGJBMk1jTnJpS0xockl1SHc4dTJmRjRyODhPbV9yVnNHZUk5SHoxeHc1MDB6RTI0TjdiSXdGc3JOb3RWS00wWEEwSnlRM1pvdDBYSEYzVEZJT1NoSTRoaVY2TFFFS29XYkhUa1gxTVZQOW9iUUlxRHRjZXNPakl5VWZjT2JxM0VUYlQ5STA?oc=5",
-        "date": "Thu, 21 May 2026 07:00:00 GMT",
-        "summary": "New Mexico regulators scrutinize Blackstone-TXNM stock trade in merger review Utility Dive",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8d78ade0332c0576730d7ad2652423d135daa9bdb75d8523c6a441bb6a66dc20",
-        "label": "Blackstone Reports First-Quarter 2026 Earnings - Blackstone",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Blackstone",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaUwxYmtnYnRndUwtN2l5RWdwazdCYUpiTFVGVldMNmxtUkR2a1U0Qmh3WElEdGFEY096dDVjQlVKcTc0djJDWHBnbWNxTEl2ZEhWVnl4Qk1tczF1ZGp2Y3hHQ1YtTjl1T2M5dnZrcG1fSVY2cHViekRfSzBDQ2xXbHFnNkRUd3RjamdnOGJn?oc=5",
-        "date": "Thu, 23 Apr 2026 07:00:00 GMT",
-        "summary": "Blackstone Reports First-Quarter 2026 Earnings Blackstone",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5ac6fd5857994dd30d05456a8ecad57f1f1afc86669a967aadf2ad4d2f31ae21",
-        "label": "Williams Announces $5.34 Billion Investment in Power Innovation Joint Venture from Blackstone - Williams Companies",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Williams Companies",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeDVQVlE4cVZEMjBxVEEwNlJjWTVJSUg1NTZFV0ZSSWxXeGFzeFdxX01kRzdQdnJacVFVVFVNajRhdXhTRDhvbTVwOXFPbjNuaC1zaUpPd1JHWWNMSGQxS0pOSnJxUzhndHBsRzFlbkRsSlFoMXFCTE54b1RuZXEtRXJtRU5LWkR2aVBVX0tSeUpJWVlEQ0VOSV9YRW95WXM1TXBYQ1ZKZzR0bHpxVzE5ZFk2UndxYW81NmthLUlCYWFiNkhON0gtSA?oc=5",
-        "date": "Mon, 13 Jul 2026 07:00:00 GMT",
-        "summary": "Williams Announces $5.34 Billion Investment in Power Innovation Joint Venture from Blackstone Williams Companies",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:dc2328804f681a62951e935d085255a31aa9bb110fabca1ed4bb94bf73ed9458",
-        "label": "Infrastructure Funds and Utility Ownership: Lessons from Blackstone\u2019s Acquisition of TXNM Energy - Kleinman Center for Energy Policy",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Kleinman Center for Energy Policy",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNa1dwT3VPM1RaaFlTbWdfTHJFYlJuNVVOTHVGRjlUQTdyYlg2bzFhZHZUNnVKM1phalhIV0U4cnlEQW9qRVg2V3gxZmJFM2ZQNzF5UjJXYXU1djNKeXJWZjlBWHRSYXlHYWZ6S0lTM0M1eTEyRFBQOEMzYmdSRjhIaW8xeHZvWDUxOVp3Rm93YWNrZlpMZDNnR244dVdNUUxyQ1ZrSzZ1VVFQcVpMZ2FFUE5fYWIxT3A5RXRzVW55LV91bzQ0RGFlZ0JNM1RrZ1BHMGF1VUR1RjhaTXlx?oc=5",
-        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
-        "summary": "Infrastructure Funds and Utility Ownership: Lessons from Blackstone\u2019s Acquisition of TXNM Energy Kleinman Center for Energy Policy",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12790,6 +12796,34 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:35e87c7d68f1916aa0f95733ddd3bb684a209bffc122e76508dd444ecfd79191",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:35e87c7d68f1916aa0f95733ddd3bb684a209bffc122e76508dd444ecfd79191",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:94ec15af636f97c4c91c5c0a3d4de599d1c8e10c98d45d81d7d497a6e38c3833",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:94ec15af636f97c4c91c5c0a3d4de599d1c8e10c98d45d81d7d497a6e38c3833",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:cda89fe6d75d9b580dc1d56fc89aa3d0f30a940db790dcdcafa03c167b373e65",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13687,6 +13721,20 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:fd5da97a13ea8b1c52f25473a5ffa41d156e8ad57d5c65c9ac3145fa737223c0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:260d8ae251c1e0a8041f3aa87f3703a60c14efa72025bd5f16b3ab757f73ebd9",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16289,6 +16337,13 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:0a92612c64eefe7446df85643020825047561b9da0ae5bff1c50e1ffd71a468e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:39ba83e5f6dc877ba9a1eab5f7e16bf5597be3af7257e6e16c93f38fdd4e0ebe",
         "type": "EVIDENCE",
@@ -17663,41 +17718,6 @@
       {
         "source": "BlackRock",
         "target": "evidence:561f56d790327d68eb5824d0fb48a8268068bd6c2e578efce009f74f2c3a0c80",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "BlackRock",
-        "target": "evidence:3ff88d8ab95d2ebb4c698c6932a5e47902eaa146b122811eca62dbf6938d5449",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Blackstone",
-        "target": "evidence:69cf70f74c40f44649d68434e17b1de8411628a62007fe12416e95d71851dbf8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Blackstone",
-        "target": "evidence:8d78ade0332c0576730d7ad2652423d135daa9bdb75d8523c6a441bb6a66dc20",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Blackstone",
-        "target": "evidence:5ac6fd5857994dd30d05456a8ecad57f1f1afc86669a967aadf2ad4d2f31ae21",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Blackstone",
-        "target": "evidence:dc2328804f681a62951e935d085255a31aa9bb110fabca1ed4bb94bf73ed9458",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32138,20 +32158,20 @@
   ],
   "collector_runs": [
     {
-      "id": 199,
+      "id": 203,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T01:59:46.569049+00:00",
-      "completed_at": "2026-08-23T02:00:05.808151+00:00",
+      "started_at": "2026-08-23T03:15:23.362407+00:00",
+      "completed_at": "2026-08-23T03:15:36.395923+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 12,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 200,
+      "id": 204,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T02:00:06.210557+00:00",
-      "completed_at": "2026-08-23T02:00:06.637044+00:00",
+      "started_at": "2026-08-23T03:15:36.796923+00:00",
+      "completed_at": "2026-08-23T03:15:37.212631+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32168,20 +32188,20 @@
       "error": null
     },
     {
-      "id": 198,
+      "id": 202,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T01:59:45.422115+00:00",
-      "completed_at": "2026-08-23T01:59:46.167061+00:00",
+      "started_at": "2026-08-23T03:15:21.659056+00:00",
+      "completed_at": "2026-08-23T03:15:22.961388+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 201,
+      "id": 205,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T02:00:07.039828+00:00",
-      "completed_at": "2026-08-23T02:00:09.351848+00:00",
+      "started_at": "2026-08-23T03:15:37.614292+00:00",
+      "completed_at": "2026-08-23T03:15:39.414793+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32198,7 +32218,7 @@
       "error": null
     }
   ],
-  "document_count": 1136,
+  "document_count": 1141,
   "event_count": 962,
   "mention_count": 2359,
   "review_counts": {
