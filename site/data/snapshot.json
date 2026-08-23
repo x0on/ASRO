@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T05:50:17.766520+00:00",
+  "generated_at": "2026-08-23T07:01:21.256605+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
+    "monetization": 42.9,
+    "transmission": 39.6,
     "capital": 52.15125962813687,
     "cannibalization": 54.2,
-    "fragility": 61.1,
-    "stress": 57.1,
-    "monetization": 42.9,
-    "circularity": 57.1,
     "external_pressure": 61.1,
-    "transmission": 39.6
+    "fragility": 61.1,
+    "counter_evidence": 42.9,
+    "stress": 57.1,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "cannibalization": "directional_estimate",
-    "fragility": "directional_estimate",
-    "stress": "directional_estimate",
+    "circularity": "directional_estimate",
+    "capital": "aggregate",
     "monetization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
     "external_pressure": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "capital": "aggregate",
-    "circularity": "directional_estimate",
-    "transmission": "confirmed_trigger"
+    "stress": "directional_estimate",
+    "fragility": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T07:01:20.767842+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 61.1, \"circularity\": 57.1, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-23T05:50:17.358982+00:00",
       "score": 51.4,
@@ -4965,6 +4971,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:cd2d4604dfebabf0786d0e20b812c5e0ddc70064b7ffc68f5475367d7b2df964",
+        "label": "Decart\u2019s $7 billion Anthropic deal could become far more valuable after the IPO - calcalistech.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "calcalistech.com",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9icVRMd3dSeFhQTWpObmNESTFpUlhLUjdiY3E1eW9YZlE1ZktBRDctX04tMkRjQ2FjTVFUS3ZRRUZRdFA2UjhkbEQ1R0RIUU5vVGhsZ3hWRktLeC14NWplbVFoeXZpQXdR?oc=5",
+        "date": "Sun, 23 Aug 2026 06:38:00 GMT",
+        "summary": "Decart\u2019s $7 billion Anthropic deal could become far more valuable after the IPO calcalistech.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c45268d37ba16c3a7505b552993ca1ebb6eae69745eb22c3e18703029a18631c",
+        "label": "OpenAI IPO Will Land In 2027, Finance Chief Sarah Friar Tells Staff - Yellow.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yellow.com",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE83U3ByWWU0czFvbW9JMGktR0E2NlNSUDF5RC1hTHMtbVN2WTRyODY1aGxQWi1YU0NON1ptMlFFMG13eTFqUXltM3M2QjNDSnFSWmhqYW9lLWlQZGFVTVZEQkN5Qi0?oc=5",
+        "date": "Thu, 20 Aug 2026 17:57:23 GMT",
+        "summary": "OpenAI IPO Will Land In 2027, Finance Chief Sarah Friar Tells Staff Yellow.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7a311407af92e4da2b8ca1c69cf272468dd0056947fe79ca52ded5809f60c9d0",
+        "label": "OpenAI IPO Odds: AI Panel Vs Kalshi Timeline - OddsShopper",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "OddsShopper",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE16bGhrVjJhTDhhUFFlODZoR1hlYTBmTHpHNVJhMFJLVGs5eW5wdVFzMXMxN0c4N1NhTXFBcjlTMWhNQWlWMWxQRVIyOGlwX0VJaHo3aTJ3N1N3TUNucXJ0X0tBbnpQVW8tZGJNd0JUN2RCa29lMEx1RUx5aw?oc=5",
+        "date": "Sun, 23 Aug 2026 05:53:34 GMT",
+        "summary": "OpenAI IPO Odds: AI Panel Vs Kalshi Timeline OddsShopper",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:fd5da97a13ea8b1c52f25473a5ffa41d156e8ad57d5c65c9ac3145fa737223c0",
         "label": "OpenAI said to target 2027 IPO, 'maybe sooner' - Breakingthenews.net",
         "kind": "evidence",
@@ -6606,6 +6648,18 @@
         "date": "Thu, 20 Aug 2026 04:32:35 GMT",
         "summary": "OpenAI CFO Reveals How Soon the IPO Could Actually Land Yahoo Finance",
         "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:150fe07f57db5ca82809ca016f0d61d1a9347252a3c08dfbfd12e60c6c16f8ae",
+        "label": "Future Bets: Mars, AI IPOs, Fusion - StartupHub.ai",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "StartupHub.ai",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMkpnbUtSOUlmN1dNX2xwaVhRelplY3ZZeTFILTdLQ0h2aVZydE51VUVHbGhUX25YaUo3RDhTdDlwZF9UUkpRaHktelE1VzRIYTNiN25lQ3Y1M3IxcFlqSFkzN2ZZckFNekN2Rms5bUZlczlvS0E0Z29iWnBhbWpsWU5vdUdYN3BSN2tSY05ydEotSE0?oc=5",
+        "date": "Sun, 23 Aug 2026 00:03:48 GMT",
+        "summary": "Future Bets: Mars, AI IPOs, Fusion StartupHub.ai",
+        "score": 3,
         "weight": 1
       },
       {
@@ -10723,54 +10777,6 @@
         "summary": "Meta will lay off 10% of its staff NPR",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:c860367f369c2f744d84542efd1850a46b35605f91b276551783a885810df229",
-        "label": "Meta Workers Sue Over How the Company Carried Out Layoffs - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOeUNfRFRNZ0JheGxHQWVqV3pVdkJENU12QnFVNWxaRkQ0MUhMQnBIUEN5ZFg0ZDNtdVRqOUExN0lrems5RjFKbkdmYzJaTGVtSXdIREVxd01ycldncXJTRm44aVlEREU2aFYxNlJiRk9SazFoRk9JZmw0VWg4QTU0cUMyak54a20xTHlycFo2X2FNTkdmOW1qTzBKUE1FMmxjeHRfN3ZNMA?oc=5",
-        "date": "Wed, 15 Jul 2026 07:00:00 GMT",
-        "summary": "Meta Workers Sue Over How the Company Carried Out Layoffs WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c4d71becec2aa59018e62a997e2ce432968f2107cf17fd27c632a605bdfc38f4",
-        "label": "Meta Reports Second Quarter 2026 Results - Meta Investor Relations",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Meta Investor Relations",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdng4QXNhRWdnc3ZqNjNLZFBoZFFZS0Q4MTA0ZEZoYUpPYnFNT1J1REQzRDlJVkdZZERQVjk5TkNDcmh5SElKdmpQUndFc3dpc0o2NFNtWjBhODROdlc0UzVfQTY3UjUxeVQtQTVNRHRtb3BsZklzUkJWdDUwcF9sdHdtRkxHT1RScnFxa2x2elRYcUZ4ZFN2RUw3UkhaNERnNGdxdjllOEVWVFBONzU1TUZfVldWYnQ5OS1hSTF0WQ?oc=5",
-        "date": "Wed, 29 Jul 2026 07:00:00 GMT",
-        "summary": "Meta Reports Second Quarter 2026 Results Meta Investor Relations",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9a26ab4ba4fddb305945f1bb8b37c587e09bc0ff7ead3237f89e1df6fd857db9",
-        "label": "Energy security in a world shaped by supply - BlackRock",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "BlackRock",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTjFjdWxndWFWUFN6dUcxMUd1WUkwRDlXOF8yblQ3NXN4ZWgtcjNRQVg2VlRsWVE1QzJIRkZtVFlPMnpCRFdVX2J2RkVUaE5YN290a0lDbGVLN3VHV3NuWFJBSGdsWE9zU1RkSDZ4MUhtWFdGS2xnbVl0WjZpVDVXWGQzcUlpN0ppOTk2enB6aHBQSGoyek5YNWlEMXJod3ZESFVWYll4cnZkVkozQWpyVXNKSEIwUkc5MDJmVA?oc=5",
-        "date": "Sun, 21 Jun 2026 07:00:00 GMT",
-        "summary": "Energy security in a world shaped by supply BlackRock",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1f71197662c4b18bce133292cc60b3744bf16843e70b13ffaeec00aca2cb4748",
-        "label": "New stock market stories from Q2 2026 earnings - BlackRock",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "BlackRock",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWjhOV0ZubDltMl94dWl1bWtLM0IyNUp6T1pmbmd0UTdZMERpeHpXcnRDUGpEWDgyQVpDaDBrTzZGaFhQNzRMM05tWEdCdEt6VXhLOFA2UlBaZHd5d1RWT1hqZlFKcTgtU1RVNWNueUZLNHNZbVZOTE5ETFJBTG81VE1kUU9VdDFFRjd1WDlLY1ZGUHF1?oc=5",
-        "date": "Thu, 20 Aug 2026 17:59:57 GMT",
-        "summary": "New stock market stories from Q2 2026 earnings BlackRock",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -13745,6 +13751,27 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:cd2d4604dfebabf0786d0e20b812c5e0ddc70064b7ffc68f5475367d7b2df964",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c45268d37ba16c3a7505b552993ca1ebb6eae69745eb22c3e18703029a18631c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:7a311407af92e4da2b8ca1c69cf272468dd0056947fe79ca52ded5809f60c9d0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17714,34 +17741,6 @@
       {
         "source": "Meta",
         "target": "evidence:228fc5ce0d61898e676b601fa66ea16998816419a85bf8e6c9fc8fe8d2a1d95a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Meta",
-        "target": "evidence:c860367f369c2f744d84542efd1850a46b35605f91b276551783a885810df229",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Meta",
-        "target": "evidence:c4d71becec2aa59018e62a997e2ce432968f2107cf17fd27c632a605bdfc38f4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "BlackRock",
-        "target": "evidence:9a26ab4ba4fddb305945f1bb8b37c587e09bc0ff7ead3237f89e1df6fd857db9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "BlackRock",
-        "target": "evidence:1f71197662c4b18bce133292cc60b3744bf16843e70b13ffaeec00aca2cb4748",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32182,20 +32181,20 @@
   ],
   "collector_runs": [
     {
-      "id": 219,
+      "id": 223,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T05:49:59.298149+00:00",
-      "completed_at": "2026-08-23T05:50:13.887385+00:00",
+      "started_at": "2026-08-23T07:01:04.863910+00:00",
+      "completed_at": "2026-08-23T07:01:17.468225+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 220,
+      "id": 224,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T05:50:14.300123+00:00",
-      "completed_at": "2026-08-23T05:50:14.660403+00:00",
+      "started_at": "2026-08-23T07:01:17.869117+00:00",
+      "completed_at": "2026-08-23T07:01:18.279174+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32212,20 +32211,20 @@
       "error": null
     },
     {
-      "id": 218,
+      "id": 222,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T05:49:58.344969+00:00",
-      "completed_at": "2026-08-23T05:49:58.896558+00:00",
+      "started_at": "2026-08-23T07:01:03.391045+00:00",
+      "completed_at": "2026-08-23T07:01:04.462998+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 3,
       "error": null
     },
     {
-      "id": 221,
+      "id": 225,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T05:50:15.061907+00:00",
-      "completed_at": "2026-08-23T05:50:16.945580+00:00",
+      "started_at": "2026-08-23T07:01:18.680626+00:00",
+      "completed_at": "2026-08-23T07:01:20.352874+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32242,7 +32241,7 @@
       "error": null
     }
   ],
-  "document_count": 1148,
+  "document_count": 1152,
   "event_count": 962,
   "mention_count": 2359,
   "review_counts": {
