@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T03:15:40.326369+00:00",
+  "generated_at": "2026-08-23T04:04:11.336307+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
-    "circularity": 57.1,
-    "cannibalization": 54.2,
-    "stress": 57.1,
-    "transmission": 39.6,
-    "external_pressure": 61.1,
     "monetization": 42.9,
+    "stress": 57.1,
+    "fragility": 61.1,
+    "transmission": 39.6,
     "capital": 52.15125962813687,
-    "fragility": 61.1
+    "counter_evidence": 42.9,
+    "cannibalization": 54.2,
+    "external_pressure": 61.1,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "stress": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "external_pressure": "directional_estimate",
-    "capital": "aggregate",
-    "fragility": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "monetization": "directional_estimate"
+    "capital": "aggregate",
+    "circularity": "directional_estimate",
+    "monetization": "directional_estimate",
+    "stress": "directional_estimate",
+    "fragility": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
+    "external_pressure": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T04:04:10.843333+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"fragility\": 61.1, \"cannibalization\": 54.2, \"external_pressure\": 61.1}"
+    },
     {
       "captured_at": "2026-08-23T03:15:39.830376+00:00",
       "score": 51.4,
@@ -6585,6 +6591,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:6528a3a90708055d463b7b4964a8cd79f06704d298f96b74c874cb9f45abc16e",
+        "label": "14 Trillion Valuation: Is the Largest IPO in History Making a Comeback? - 36 Kr",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NdjFxd1BjZXUtRl9OczNxTnB3bHo4cUd5NnNpSTlmTzN2aUlqX2tNYll0YUljQTBvdUZ0a1NlalF4UXEzS3BFWVRYZFFkQURaZVRr?oc=5",
+        "date": "Sun, 23 Aug 2026 03:41:48 GMT",
+        "summary": "14 Trillion Valuation: Is the Largest IPO in History Making a Comeback? 36 Kr",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:8637abcee05a32f63a66c4ca1e2a80e29c0d6c2a57dd263fd721e1abd3808f9b",
         "label": "China\u2019s AI Labs Caught Up by Giving Their Research Away. Four IPOs Will End That - Business Model Analyst",
         "kind": "evidence",
@@ -10733,18 +10751,6 @@
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVDdiQ09tMVNsMjFHck1LQUFZQjBIajVVMUlVdDMxd1d2M285T3h3VkgyS3ZiNWd3dmlvVXVubEFPTnNnRm5ib3ZvV3B4S0tWa3VtRUp4X016a1lGOUdqc2tXbDVGMWdLN0ZGOXlSSUlYUEFMVF9jVS1BRXdkZTNFaFNLVjhpYnFQWHZzcUxXYzE?oc=5",
         "date": "Fri, 31 Jul 2026 11:14:33 GMT",
         "summary": "Mega forces: An investment opportunity BlackRock",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:561f56d790327d68eb5824d0fb48a8268068bd6c2e578efce009f74f2c3a0c80",
-        "label": "California Federal Court Halts Allegedly Deceptive Debt Collection Practices by Blackrock Services, Inc. and Affiliates - Consumer Financial Services Law Monitor",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Consumer Financial Services Law Monitor",
-        "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPQTdhVlU0cEZ4NGhnYzk4RTM3ZDFSQTh0Qkg4TmJfVVI0UGJhZjA1WlVTWlhod3NTcUpjaC1PUmpOTmNkYWNqYllwMk0wVE5Hd0xfQ2J4cXpHVjFYdXRIRmFOYzlyWDlVeVlOY2k5M3pISVNScU82dHhwTEtMOFJydjFUTk5sYzBTNVF6azltczRoNXd1YWI4MGZXLVhwazczdGlqekIwT1N5SkJLSFgtdG5nOFl0SXM1ZjFteEdIbV9xd0pHUXlZVWJ6dmNpczcwb2lSVzFhU3RveldCZ2tBSUlaZU1BaVZqU0dGRVRhSlhEZm5JcTVQQTFhQWFYaVg1NmlqTnNCaUpFdw?oc=5",
-        "date": "Wed, 12 Mar 2025 07:00:00 GMT",
-        "summary": "California Federal Court Halts Allegedly Deceptive Debt Collection Practices by Blackrock Services, Inc. and Affiliates Consumer Financial Services Law Monitor",
         "score": 1,
         "weight": 1
       }
@@ -17711,13 +17717,6 @@
       {
         "source": "BlackRock",
         "target": "evidence:92e33d27a438dbe819a88135777d6f9e1f0e5f27154a4ae6663158ccf32371e5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "BlackRock",
-        "target": "evidence:561f56d790327d68eb5824d0fb48a8268068bd6c2e578efce009f74f2c3a0c80",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32158,20 +32157,20 @@
   ],
   "collector_runs": [
     {
-      "id": 203,
+      "id": 207,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T03:15:23.362407+00:00",
-      "completed_at": "2026-08-23T03:15:36.395923+00:00",
+      "started_at": "2026-08-23T04:03:54.928871+00:00",
+      "completed_at": "2026-08-23T04:04:07.515344+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 204,
+      "id": 208,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T03:15:36.796923+00:00",
-      "completed_at": "2026-08-23T03:15:37.212631+00:00",
+      "started_at": "2026-08-23T04:04:07.916301+00:00",
+      "completed_at": "2026-08-23T04:04:08.296615+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32188,20 +32187,20 @@
       "error": null
     },
     {
-      "id": 202,
+      "id": 206,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T03:15:21.659056+00:00",
-      "completed_at": "2026-08-23T03:15:22.961388+00:00",
+      "started_at": "2026-08-23T04:03:53.844642+00:00",
+      "completed_at": "2026-08-23T04:03:54.527305+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 4,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 205,
+      "id": 209,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T03:15:37.614292+00:00",
-      "completed_at": "2026-08-23T03:15:39.414793+00:00",
+      "started_at": "2026-08-23T04:04:08.697935+00:00",
+      "completed_at": "2026-08-23T04:04:10.428026+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32218,7 +32217,7 @@
       "error": null
     }
   ],
-  "document_count": 1141,
+  "document_count": 1142,
   "event_count": 962,
   "mention_count": 2359,
   "review_counts": {
