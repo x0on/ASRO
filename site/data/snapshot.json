@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T11:35:16.463807+00:00",
+  "generated_at": "2026-08-23T13:02:47.118877+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -13,14 +13,14 @@
   },
   "dimensions": {
     "capital": 52.15125962813687,
-    "counter_evidence": 42.9,
-    "stress": 57.1,
-    "transmission": 39.6,
-    "fragility": 61.1,
-    "circularity": 57.1,
-    "cannibalization": 54.2,
     "monetization": 42.9,
-    "external_pressure": 61.1
+    "cannibalization": 54.2,
+    "fragility": 61.1,
+    "external_pressure": 61.1,
+    "circularity": 57.1,
+    "counter_evidence": 42.9,
+    "transmission": 39.6,
+    "stress": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "cannibalization": "directional_estimate",
-    "external_pressure": "directional_estimate",
     "capital": "aggregate",
+    "monetization": "directional_estimate",
+    "external_pressure": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "stress": "directional_estimate",
-    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
     "fragility": "directional_estimate",
     "circularity": "directional_estimate",
-    "monetization": "directional_estimate"
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T13:02:46.629888+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"stress\": 57.1, \"circularity\": 57.1, \"external_pressure\": 61.1}"
+    },
     {
       "captured_at": "2026-08-23T11:35:16.079441+00:00",
       "score": 51.4,
@@ -3921,6 +3927,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:80c58f1af03a9dfd4c8f3c9e26edc82e9d664c63d7b2c0137bde8d81cd092a98",
+        "label": "If Amazon Is a Top Growth Stock, Then Why Does It Trade at Just 21.3x Forward Earnings While the S&P 500 Trades at 20.4x? This Is the Only Answer I Can Think Of. - The Motley Fool",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNHhhdU85U2NBa3lSN3BVVFh1YW8yNk55X2JPOUI5dHVIbjZkY2UybUhmYkFDTzBWaHdOSmN4S3NWNzF3U1dOMXJXdTVTRGFiZVYxY3BxeUZxaHlXWUtMYlI1RmlqdTRKcFM5LVh4S0tfQlVtX1JCWHY5QndRZUh4cVktZTltMTQyRnZiYlF6RzI5cll5Ry1yTw?oc=5",
+        "date": "Sun, 23 Aug 2026 11:53:32 GMT",
+        "summary": "If Amazon Is a Top Growth Stock, Then Why Does It Trade at Just 21.3x Forward Earnings While the S&P 500 Trades at 20.4x? This Is the Only Answer I Can Think Of. The Motley Fool",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:54847b68c448528ed6c4cc3f3ccbe16e5b5404c3774e14ad3002e96adf069241",
         "label": "Anthropic Eyes IPO Ahead of OpenAI \u2014 Can It Stick the Landing? - Moomoo",
         "kind": "evidence",
@@ -6753,6 +6771,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:870939f248c79bcddabf8ca6a61ba55c0e8b5d4bfb857145c9816d0331373670",
+        "label": "14 Trillion Valuation: Is the Largest IPO in History Making a Comeback? - 36Kr",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "36Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NdjFxd1BjZXUtRl9OczNxTnB3bHo4cUd5NnNpSTlmTzN2aUlqX2tNYll0YUljQTBvdUZ0a1NlalF4UXEzS3BFWVRYZFFkQURaZVRr?oc=5",
+        "date": "Sun, 23 Aug 2026 03:41:43 GMT",
+        "summary": "14 Trillion Valuation: Is the Largest IPO in History Making a Comeback? 36Kr",
+        "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e5157167938808c8ed1536e74512ba5cbcf0766a82b3f93622721ded35cfd208",
+        "label": "Nvidia Spends $7 Billion to Enter the Open-Weight Model Race, Taking Direct Aim at DeepSeek and OpenAI - finance.biggo.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5LNFJQNW5RbkFiQW1pcllJdXdOVkRPMmVxZW9QY0p3UUViYkdseXJNVVVCQlV0VjlkRnFMbW54dmdyLS1BNk42NDViV2wtUlo3TFd4UlR6OE9YS0FUZGVpMm01LU1BYzd5RnhrLVlzTHlYS2lmZlE?oc=5",
+        "date": "Sun, 23 Aug 2026 12:36:00 GMT",
+        "summary": "Nvidia Spends $7 Billion to Enter the Open-Weight Model Race, Taking Direct Aim at DeepSeek and OpenAI finance.biggo.com",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:5c86bf96e6f74ada5f224c7004eb3d33055e66c58e956020a0e7a5e6176daf22",
         "label": "Tech Brief (Aug. 21): Memory-Chip Maker YMTC Moves Closer to Shanghai IPO - inkl",
         "kind": "evidence",
@@ -7302,6 +7344,18 @@
         "date": "Thu, 28 May 2026 07:00:00 GMT",
         "summary": "Beyond the IPO frenzy: what Nasdaq\u2019s new \u2018Fast Entry\u2019 rules could mean for ETF investors Bitpanda",
         "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d89062e29f7d05794f3e0b89158f6faba300a6c34868a206e93969c7f514ad07",
+        "label": "NVIDIA\u2019s Earnings Report Draws Intense Scrutiny: The Rubin Cycle, Rollover Financing, and Forward Market Share - Moomoo",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYTNpVEUxWDhoSk5lcFNKTURrcC1OS25Ual9sQnRNX0lyVHRTcHgyeS00enE1MWp1SGRjSHlvVzRLSXNUbmtMd1FtdVg1MjFkUlB6VHRyTXZtekZnSnNrVS1MLXAwUUkzOWd4Y193aFlrTGJDY21NVnY0cFhPcFdpS3A4WkdwWnBRX3Zrd1FlSDI0RGJFdUFiQnNzVWx1SVFXX2JhRFZvdHM?oc=5",
+        "date": "Sun, 23 Aug 2026 10:56:46 GMT",
+        "summary": "NVIDIA\u2019s Earnings Report Draws Intense Scrutiny: The Rubin Cycle, Rollover Financing, and Forward Market Share Moomoo",
+        "score": 2,
         "weight": 1
       },
       {
@@ -8586,6 +8640,18 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2ccd216294a8a52e1b0ae8401825b5b2a36762293f9f13c781f393a26db46ef5",
+        "label": "Does Synchrony\u2019s AI Pivot and OpenAI Partnership Reframe The Bull Case For Synchrony Financial (SYF)? - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQbk1kU3BubnJsYjBoQTdSdzh5cm5ZdmdfbjNzS0x6dmJ6SFp2VHJnNHJIQ0UyYUtyMlltaWduR2V4RUpya0hjOUNGaEtRR1VvRHRSbVNCdVIzdEVkbEx0ZnZsUE53NVRMaGRFWU1MbmlFUnNQakxqZ3NNSTF1M0VPM0V1NWVVbVVrc2hOQ2FvZklna3dDRy1NMGdsUGxtYWJ2MWU3eDBzUEUxLXptWmk2VVd3SG9hVlV1dU9ZZ0RoV2pIWXM5dTFpcFE3U0J1LXo2NTdhaHlFZzhJOVlaVDVHS2ozMGtrY2_SAecBQVVfeXFMUG5NZFNwbm5ybGIwaEE3Unc4eXJuWXZnX24zc0tMenZiekhadlRyZzRySENFMmFLcjJZbWlnbkdleEVKcmtIYzlDRmhLUUdVb0R0Um1TQnVSM3RFZGxMdGZ2bFBOdzVUTGhkRVlNTG5pRVJzUGpMamdzTUkxdTNFTzNFdTVlVW1Va3NoTkNhb2ZJZ2t3Q0ctTTBnbFBsbWFidjFlN3gwc1BFMS16bVppNlVXd0hvYVZVdXVPWWdEaFdqSFlzOXUxaXBRN1NCdS16NjU3YWh5RWc4STlZWlQ1R0tqMzBra2Nv?oc=5",
+        "date": "Sun, 23 Aug 2026 11:24:51 GMT",
+        "summary": "Does Synchrony\u2019s AI Pivot and OpenAI Partnership Reframe The Bull Case For Synchrony Financial (SYF)? simplywall.st",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10747,66 +10813,6 @@
         "summary": "Broadcom\u2019s (AVGO) Massive New Debt Deal Points To Where AI Is Headed Yahoo Finance",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:6ee9591fe3a06aaf0f571550e50499f28aeeeb8b06f28feaaeb53fc3e597c76f",
-        "label": "Broadcom debt deal expected to reach upwards of $70 billion, sources say - CNBC",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdHdTRkJtbmdWdUNiV1NVeHNybVJfaGo4WnJIcWhfcmxGVkE4dE5ILTlUM2dLNnBOREQ0eXBLMFdsdHBaX3N4QlZVblNTRGdUWnczR0dlUVVFdWJDN0lKVE5TZXFRR1ZLcnIyWXBEbWxyelJIYmozSTdMUW9YQ0FLem9ab1ZrUHY4MkpteWtnSjIyTjZOT0lPdkVJNlFWdGhndTNUbXJn0gGrAUFVX3lxTE9oNGVBMHU1VGxMRjlEMmZITmJUMHdDc184VnhTSVpRYVZ6dUphOFN3aWthQ2RIYVlVQmticXNiVmFjN0luQ1ZlZF9UbzdEd1dsY25NbWhDclVnXzBSRnNlZDZ1c3hlSW02eWxxMHZrbkcwbjRVbVVjSEs3R3JqVHAzd2EyWXEwRnlGaHZLUkhWOEM2UUtvWTJFOWVUMHdhbnpYQUVfQnl0UkZiRQ?oc=5",
-        "date": "Fri, 21 Aug 2026 15:58:29 GMT",
-        "summary": "Broadcom debt deal expected to reach upwards of $70 billion, sources say CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2c9e10c66e0f865c8691b72a67da9507b30abb73a684c07764d14947d3045772",
-        "label": "CoreWeave Has $104 Billion of Contracted Revenue and a $59 Billion Market Value - AOL.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "AOL.com",
-        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ1N6R1Q3Y05SVzZlNkphTDZvMUJmUC02R0RXZkMwaWxZa2hrMEVpTWd4YTdBVkxWTXJ5N252U0MtWlk4TXNQRUNwZ2VNZVlnTWcybHluQ0xyNFY2VGkyZHZzTjkxcVpEMG10TG9zbFZ5RjdiU3JQU2ZKZnVqR01qOVlxMm9WTmMyVkJrSA?oc=5",
-        "date": "Fri, 21 Aug 2026 14:55:17 GMT",
-        "summary": "CoreWeave Has $104 Billion of Contracted Revenue and a $59 Billion Market Value AOL.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ef70565812792391290b3fa726070ecc09592db5baa80ea34845e6bb9a9b1e06",
-        "label": "Oracle layoffs August 2026 update: Which employees are at \u2018high risk\u2019 as fresh cuts loom and what could th - The Economic Times",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Economic Times",
-        "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPZHpZczVSb0hEd1NKaC1nNUZwT2l0YUowd0s3Wl9UdWNTRjRXRHhDZy1rUkwtbTlHVzNFeU1TWGFmb2h1RzVsQmNNY1A5LWFpdXFwM2lVY2Y1Q29Pd01qaVl1bk1kOV91UllpdU40bWxLVk50T2h5V3BFRnNNRnJXRk1TSUlLMVhCN0dneUZYX3ZXUWZyZUM1VlYxcmFxZk5uQWwtX2VHRnBWNWszWU0zTzFDc2JGeUJkWTBBUWdJT21sUFBfY1NhVkVOUk54M0ZxMHVZc1BTMU93M3FCOVhOLVkwMk05M1A0WlBJVjVrX2QxOE1rQXZJa3RZTkV1UUUwTEVSVnIyTllTU1lBV3JYeHNRX1gxSXBrWHhSWFBMRF85QWdZVGxaWE45c0xwR1oyd2Y3OEpZSWdOdFBNb1ZyVdIBxgJBVV95cUxQR0tpcXBNRmdiTXp1LThuWFlIdmtzR1NhdlZndEZielJpT05DZEV4ampiNm9pWlpZT1B4bEt6cWtvY2pYN0VIVnpMUXJYZzlOZ1hGcW9rUDZjRENtZ1ZYSnJjTjNKSUk0S1NVZUp1T0drX1g0UjBENjQ3eDdiQmxza185ekVyX1J5RDFCbDBValRxd3A1alE0ZDFhSDZiOVFlMGdKRGo1VmZ2Q1MwWjJmVnFyMXZpS2ZxUll1RXZxVUpjR2FzZWNkRjVlaUd6LTJINHB6TElnUFRBdU9HWlVYOFNUYjNEMzJNV1BjXzJYVzhPMm9DM3hmNWM3MTRsdThtck16akZDVUxoRkpLeWg4U2RjWFpkUG5GS1B1ZWFFcGdGd3lIYWZnV3RqMWNJY2pSZVo3Q0ktRWVhc2VwOEQ0bnBBX0hIQQ?oc=5",
-        "date": "Fri, 21 Aug 2026 13:12:00 GMT",
-        "summary": "Oracle layoffs August 2026 update: Which employees are at \u2018high risk\u2019 as fresh cuts loom and what could th The Economic Times",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:531337725c0432e565dd0d7b5105dcdb0afdec98b5ee11a29aef09040f5d290e",
-        "label": "Will Oracle have more layoffs this year? Cuts loom amid AI spending push. - Austin American-Statesman",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Austin American-Statesman",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOd2E2Q1VaTE94eWxIb3FZNTE1U245RHZZVjNxVkk3Zm54em10cm9INnRyWkVEVE5xdlJ2MlRwMUdfdEpTVXhHT0dmYnpMN2N0WVdoVkhSU2FrUy1zdUlrSkItSHJUWUxXU1hoZGthWm1BeS1KQWlEd3lwbm9RMDQ3MGoxWThTTTF4b1NpTVI3czRRT0dhTm5ydVFiR3BoX1B3ZDBHY1h6Z0w?oc=5",
-        "date": "Fri, 21 Aug 2026 15:09:54 GMT",
-        "summary": "Will Oracle have more layoffs this year? Cuts loom amid AI spending push. Austin American-Statesman",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:49aed8baaffbc075eda0759699c9c6f4b09c16670679eaeedfb01e19e59ffbc2",
-        "label": "Tulsa schools and business leaders excited about new Google operation - Oklahoma Energy Today",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Oklahoma Energy Today",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQekJoQXF1R3J1Zk95YldCY3hfNlJOTWFLcHF0emNBeW1pYnlmMFVFTXZhUHh2aG91WTZlSmE1OUpkYXVGaktxWFRqYTlKUHlXeV94TkI4RmJObDhQaU5BdVhPd2hyS0NZNVhCX2NKM3RPM3lLN1RYRXNFc2JEdi05MEZ5eHJCdG1DU1BxMUJKX3pTbUV4cE5kaVB5LUozODl1Q3pERXVUQQ?oc=5",
-        "date": "Fri, 21 Aug 2026 15:19:31 GMT",
-        "summary": "Tulsa schools and business leaders excited about new Google operation Oklahoma Energy Today",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12869,6 +12875,13 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:80c58f1af03a9dfd4c8f3c9e26edc82e9d664c63d7b2c0137bde8d81cd092a98",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:54847b68c448528ed6c4cc3f3ccbe16e5b5404c3774e14ad3002e96adf069241",
         "type": "EVIDENCE",
@@ -14717,6 +14730,27 @@
         "mentions": 1
       },
       {
+        "source": "DeepSeek",
+        "target": "evidence:e5157167938808c8ed1536e74512ba5cbcf0766a82b3f93622721ded35cfd208",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:e5157167938808c8ed1536e74512ba5cbcf0766a82b3f93622721ded35cfd208",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:e5157167938808c8ed1536e74512ba5cbcf0766a82b3f93622721ded35cfd208",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alphabet",
         "target": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
         "type": "EVIDENCE",
@@ -15146,6 +15180,20 @@
       {
         "source": "OpenAI",
         "target": "evidence:06600c95c2f5d695294bccb3ff4287570861bf67cd81eb6bf97b9687a284e151",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:d89062e29f7d05794f3e0b89158f6faba300a6c34868a206e93969c7f514ad07",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:d89062e29f7d05794f3e0b89158f6faba300a6c34868a206e93969c7f514ad07",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16523,6 +16571,13 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:2ccd216294a8a52e1b0ae8401825b5b2a36762293f9f13c781f393a26db46ef5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:2c6f6bcb50f00ef5bcbabff45d4fede12a9f7360b3daca34882b801830f0819c",
         "type": "EVIDENCE",
@@ -17778,41 +17833,6 @@
       {
         "source": "Broadcom",
         "target": "evidence:4734c008a2368f2e9135f4cb6226fb9880d1682a01f6c9052df184e91eca7788",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:6ee9591fe3a06aaf0f571550e50499f28aeeeb8b06f28feaaeb53fc3e597c76f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:2c9e10c66e0f865c8691b72a67da9507b30abb73a684c07764d14947d3045772",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:ef70565812792391290b3fa726070ecc09592db5baa80ea34845e6bb9a9b1e06",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:531337725c0432e565dd0d7b5105dcdb0afdec98b5ee11a29aef09040f5d290e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:49aed8baaffbc075eda0759699c9c6f4b09c16670679eaeedfb01e19e59ffbc2",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32253,20 +32273,20 @@
   ],
   "collector_runs": [
     {
-      "id": 243,
+      "id": 247,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T11:34:55.480385+00:00",
-      "completed_at": "2026-08-23T11:35:12.113506+00:00",
+      "started_at": "2026-08-23T13:02:29.258308+00:00",
+      "completed_at": "2026-08-23T13:02:43.373184+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 8,
+      "items_new": 6,
       "error": null
     },
     {
-      "id": 244,
+      "id": 248,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T11:35:12.515855+00:00",
-      "completed_at": "2026-08-23T11:35:13.060169+00:00",
+      "started_at": "2026-08-23T13:02:43.774160+00:00",
+      "completed_at": "2026-08-23T13:02:44.147932+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32283,20 +32303,20 @@
       "error": null
     },
     {
-      "id": 242,
+      "id": 246,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T11:34:54.372899+00:00",
-      "completed_at": "2026-08-23T11:34:55.077475+00:00",
+      "started_at": "2026-08-23T13:02:28.366134+00:00",
+      "completed_at": "2026-08-23T13:02:28.856949+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 245,
+      "id": 249,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T11:35:13.463663+00:00",
-      "completed_at": "2026-08-23T11:35:15.649526+00:00",
+      "started_at": "2026-08-23T13:02:44.549338+00:00",
+      "completed_at": "2026-08-23T13:02:46.214584+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32313,7 +32333,7 @@
       "error": null
     }
   ],
-  "document_count": 1171,
+  "document_count": 1177,
   "event_count": 962,
   "mention_count": 2359,
   "review_counts": {
