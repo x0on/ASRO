@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T07:47:41.576542+00:00",
+  "generated_at": "2026-08-23T08:49:09.194944+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "circularity": 57.1,
     "capital": 52.15125962813687,
+    "counter_evidence": 42.9,
     "fragility": 61.1,
     "external_pressure": 61.1,
-    "counter_evidence": 42.9,
+    "stress": 57.1,
     "monetization": 42.9,
-    "transmission": 39.6,
     "cannibalization": 54.2,
-    "circularity": 57.1,
-    "stress": 57.1
+    "transmission": 39.6
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "capital": "aggregate",
     "fragility": "directional_estimate",
-    "external_pressure": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "transmission": "confirmed_trigger",
     "circularity": "directional_estimate",
+    "capital": "aggregate",
     "counter_evidence": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "stress": "directional_estimate",
     "monetization": "directional_estimate",
-    "stress": "directional_estimate"
+    "transmission": "confirmed_trigger"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T08:49:08.698388+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"stress\": 57.1}"
+    },
     {
       "captured_at": "2026-08-23T07:47:41.068970+00:00",
       "score": 51.4,
@@ -3885,6 +3891,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:10b2ac6c2fa7ec7508bed9b639228551deb443470a933f670f7d6daba7a8cd06",
+        "label": "OpenAI Is Now Considering a 2027 IPO With a $1 Trillion Valuation. Should Investors Expect the Same Volatility as the SpaceX IPO? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaEFYQUNiUFU5YkJCRl9HZVhYVlVjSlVndy03azdReVpULU04X1cyY0sxQk05OGJmdTZQLTdxQnoxd2lfcm9wWGE0MG5qSjM4ckYwNzNZandBS1c1REU3WFBNLUFScDZKV2E4TmJjQUYtNkVxbE5tbnZDQ0ZKcWx6RWljbE9lWkMwSFJfcHctRlBzR2RHam91REhabE0?oc=5",
+        "date": "Thu, 02 Jul 2026 07:00:00 GMT",
+        "summary": "OpenAI Is Now Considering a 2027 IPO With a $1 Trillion Valuation. Should Investors Expect the Same Volatility as the SpaceX IPO? Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:990f3d171aa8554b66ecb3ed629a11106f55f835af512fa9667434c94f4f0e59",
         "label": "OpenAI Targets Public Market Debut By 2027 While Dismissing IPO Race Pressure With Anthropic - TradingView",
         "kind": "evidence",
@@ -4986,6 +5004,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d23fb8e7a711bf7ad760470f5f14fca999d1a141638da7a523179078b3b276d1",
+        "label": "Anthropic: the largest IPO ever? - The Week",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Week",
+        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54TlBvOFdMMi1lajBPcENVRGRKRmEtUTVkcnRzV2xNX0pEZTlKRWFIbVNQNldBV3lUUzl5djVUNTJGQy04eXVKcTcxT3dPM1dOWmlTZEtrMGhhWjRtbU9rVEtqY2NIckZGYm9EaUtKZXFhYV9ZQkd1WVdmTQ?oc=5",
+        "date": "Sun, 23 Aug 2026 06:18:35 GMT",
+        "summary": "Anthropic: the largest IPO ever? The Week",
+        "score": 4,
         "weight": 1
       },
       {
@@ -8493,6 +8523,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:7c181fe147919d8f0fb614c4eef773c518b2037df335baae31a9e26b2d28d901",
+        "label": "Alibaba announces $10.2bn share placement as Chinese companies expand AI investment - Financial Times",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Financial Times",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNEdNMFc2bXZIeDFtSUVHaURibi1oU1VRSFU0SzF0MlAxYUJheEt1U1d1djktaEtza1ZuVGJGS0U2LWZmQXlYYXJwR0V4WFJKWnRQMDJ0eVhseUlZNlA5Qzc2eFE1a3JzRGxaTEZvXzl2NTlWUS1BSFVCd1VsNzZBcTJ5ZnE?oc=5",
+        "date": "Sun, 23 Aug 2026 08:33:27 GMT",
+        "summary": "Alibaba announces $10.2bn share placement as Chinese companies expand AI investment Financial Times",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:afd0faa514a48df1af2992067f000053a3263ebe21698b4c3063566666e9cdf0",
+        "label": "Alibaba to issue US$10 billion in new shares for global AI push - South China Morning Post",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeGtocVNGQndkMUp5Q3RuWWlXNFVTZG5uYnhBZC03RnVlU1c2YTk4dXVsSVFTdXdFZC1kM3VTR2dzRnE1UjB0Y3lNcUZnSDBoeGJDXzNXcnZ0T0FoTC1EaFU5QTFnc3E3ZmJmZXNlRElQNWRoVGZKaTBVbklSZ0lCcWhyZm01MFFsLWFnenNvV2ZVVDM5dXM3MGJ1UmVPcEE3R1NVVi1R0gGmAUFVX3lxTE9mUmZkVFRpZGR5WkQ5MXFheDdzc215a0tyX0ZiUlM4U2dtWF9PR1J2VVo4UFNaN0g1amRZb0plQXNicmsxdFBfVXJWMmR6c0MybnFHYnJ5aFJ3OWxPUTVMMExqYndjVDNqY0xrYXl6MGVLTC1MVVM5RHd1ZkstRVNvLUJnaXh2OHhjTXdxTnNiLUFJZ0hBZHNDbXFOOC1KSWpjRDVudVE?oc=5",
+        "date": "Sun, 23 Aug 2026 05:18:31 GMT",
+        "summary": "Alibaba to issue US$10 billion in new shares for global AI push South China Morning Post",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:c6de9b249f5e59c16431875e5a7b33ef385831d0a50528b3ce9bd7a84f2687e6",
         "label": "Amazon Just Gave Investors a Big Reason to Be Bullish - AOL.com",
         "kind": "evidence",
@@ -10735,54 +10789,6 @@
         "summary": "SpaceX's $25 billion bond sale drives huge demand - and a potential headache for investors CNBC",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:a3fd1b9c1016f3a05946da39a8c7ea874522f9079093d1965a2a64aafefe2cfe",
-        "label": "Opinion | It\u2019s a World-Class Investment. It\u2019s a Junk Investment. What Is Going On With SpaceX? - The New York Times",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbDgyblVNYU9KWFNoZjZfMy1yTVUzaEg3OWdpVVFHTThYZk5USWoxWW1aS3pqa1B6ckZDMENmQXplNm1aVlE1RFhRNUZoenQ2RExaY3R0ZTlzd1U1SXhYMUxpbVotS0t0SDJUNDNxcFZFbkpIb241bFhTbjFIR2hHZmU1Z0JmLTE1dTBydjlORQ?oc=5",
-        "date": "Thu, 09 Jul 2026 07:00:00 GMT",
-        "summary": "Opinion | It\u2019s a World-Class Investment. It\u2019s a Junk Investment. What Is Going On With SpaceX? The New York Times",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:82f74202648b43759d2ecdd9008d8a9bd7299a7b8fb7e2420601cf7e0ab8bd15",
-        "label": "SpaceX\u2019s revenue rises as its once-soaring stock price drifts back to Earth - NPR",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "NPR",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQS1B0cEE4YVhlY01OXzg4SU9jZjYtWUlPWnk3ajd5dVRoM1g4bEVTaExGZ1k1MlRzWS03VFRYbVdneVNfQWVQNEJRNXNzbS1pTTNFaDZsSXNkN2ptOU51Qks4RXBjYmVpdTdNY01ESzhrd05CTTVWRUFDbDBva3c4LXlDTG51MFR1a3RF?oc=5",
-        "date": "Tue, 04 Aug 2026 07:00:00 GMT",
-        "summary": "SpaceX\u2019s revenue rises as its once-soaring stock price drifts back to Earth NPR",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:942edbf1919c25684925731c7388bc57ce0aa0a127dbf68236d5c0eabb9e8781",
-        "label": "Why SpaceX\u2019s Earnings Will Likely Be Followed by a Wave of Stock Sales - Morningstar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Morningstar",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOb2JZc0x5UmZuNk5FOF9kZ096RjBRMHU1SmxMa3duSEpRRVNmUkxBYjBJd3luZll3S3FGa3NsQ1Y1aDN6ZkNMQjJXSmhGbXZUUXZOcjBhVjNvMDlUdGlmTjBxd0RQWkgybHpBMTUyeVlxLWhTV3Y5VUJlRTlEajNKM0x0dzhGbFNBNXYxNzg0QkZTekpwZGxuWjhSbVFVMnVj?oc=5",
-        "date": "Fri, 24 Jul 2026 07:00:00 GMT",
-        "summary": "Why SpaceX\u2019s Earnings Will Likely Be Followed by a Wave of Stock Sales Morningstar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:18e7bdf6850b0a4fd086f1b7943d094bcae7c16626d124cef432fd3db2d399ee",
-        "label": "Meta Partnership Ads Hit $10 Billion As Creators Outperform Brand Messages - Forbes",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Forbes",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNajhpUlJWTUtrUUptOTJ3Y001aUNXWXpPaS1uYjRGRVFoY3FaSjB4SkVYOTFSQjhwSENlRWNYd3pKM0pYODE2OHcyQmptNENTQ3FtcG83cmRwS0FrQy1XLUF5RDZqY2k0VnpLazBZRmZobFpERjFad2RQY3RadS1rUHR2Smg5MTA2SWNoOXFnUHpET3NycG94QWdmWXZTU185LVF6QWh6cjJ0QWNsU3FWYkgtdkFpa3dfaUxSZVdqQmNkRWF4X2s2LQ?oc=5",
-        "date": "Wed, 12 Aug 2026 15:45:42 GMT",
-        "summary": "Meta Partnership Ads Hit $10 Billion As Creators Outperform Brand Messages Forbes",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12831,6 +12837,20 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:10b2ac6c2fa7ec7508bed9b639228551deb443470a933f670f7d6daba7a8cd06",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:10b2ac6c2fa7ec7508bed9b639228551deb443470a933f670f7d6daba7a8cd06",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:990f3d171aa8554b66ecb3ed629a11106f55f835af512fa9667434c94f4f0e59",
         "type": "EVIDENCE",
@@ -13771,6 +13791,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:d23fb8e7a711bf7ad760470f5f14fca999d1a141638da7a523179078b3b276d1",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16422,6 +16449,20 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:7c181fe147919d8f0fb614c4eef773c518b2037df335baae31a9e26b2d28d901",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:afd0faa514a48df1af2992067f000053a3263ebe21698b4c3063566666e9cdf0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:c6de9b249f5e59c16431875e5a7b33ef385831d0a50528b3ce9bd7a84f2687e6",
         "type": "EVIDENCE",
@@ -17726,34 +17767,6 @@
       {
         "source": "SpaceX",
         "target": "evidence:206bad03fe4673b469cf4a5024ee4911524a7a1e84682cd637c0749bf60ba228",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:a3fd1b9c1016f3a05946da39a8c7ea874522f9079093d1965a2a64aafefe2cfe",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:82f74202648b43759d2ecdd9008d8a9bd7299a7b8fb7e2420601cf7e0ab8bd15",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:942edbf1919c25684925731c7388bc57ce0aa0a127dbf68236d5c0eabb9e8781",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Meta",
-        "target": "evidence:18e7bdf6850b0a4fd086f1b7943d094bcae7c16626d124cef432fd3db2d399ee",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32194,20 +32207,20 @@
   ],
   "collector_runs": [
     {
-      "id": 227,
+      "id": 231,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T07:47:24.164118+00:00",
-      "completed_at": "2026-08-23T07:47:37.642477+00:00",
+      "started_at": "2026-08-23T08:48:53.234882+00:00",
+      "completed_at": "2026-08-23T08:49:05.261119+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 3,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 228,
+      "id": 232,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T07:47:38.043354+00:00",
-      "completed_at": "2026-08-23T07:47:38.415783+00:00",
+      "started_at": "2026-08-23T08:49:05.663441+00:00",
+      "completed_at": "2026-08-23T08:49:06.059037+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32224,20 +32237,20 @@
       "error": null
     },
     {
-      "id": 226,
+      "id": 230,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T07:47:23.105641+00:00",
-      "completed_at": "2026-08-23T07:47:23.763175+00:00",
+      "started_at": "2026-08-23T08:48:52.009617+00:00",
+      "completed_at": "2026-08-23T08:48:52.833567+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 229,
+      "id": 233,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T07:47:38.816959+00:00",
-      "completed_at": "2026-08-23T07:47:40.653051+00:00",
+      "started_at": "2026-08-23T08:49:06.460746+00:00",
+      "completed_at": "2026-08-23T08:49:08.282251+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32254,7 +32267,7 @@
       "error": null
     }
   ],
-  "document_count": 1156,
+  "document_count": 1160,
   "event_count": 962,
   "mention_count": 2359,
   "review_counts": {
