@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T16:43:31.518276+00:00",
+  "generated_at": "2026-08-23T17:34:53.928461+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "transmission": 39.6,
     "counter_evidence": 42.9,
-    "fragility": 61.1,
-    "monetization": 42.9,
-    "stress": 57.1,
+    "external_pressure": 61.1,
     "capital": 52.15125962813687,
+    "transmission": 39.6,
+    "stress": 57.1,
+    "monetization": 42.9,
     "circularity": 57.1,
     "cannibalization": 54.2,
-    "external_pressure": 61.1
+    "fragility": 61.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "transmission": "confirmed_trigger",
     "counter_evidence": "directional_estimate",
-    "fragility": "directional_estimate",
-    "monetization": "directional_estimate",
     "external_pressure": "directional_estimate",
-    "stress": "directional_estimate",
-    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
+    "monetization": "directional_estimate",
     "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "capital": "aggregate",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T17:34:53.494285+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"stress\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-23T16:43:31.030726+00:00",
       "score": 51.4,
@@ -3960,6 +3966,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:8399f8412e129717ed374275017c30053f5fab50f4ac86362db4f9cca3e1042f",
+        "label": "DW News. . OpenAI vs. Anthropic: the AI IPO race is on, and both are chasing public-market money. The difference is that one is selling mass adoption, the other is selling corporate margins. #dwbusiness - facebook.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "facebook.com",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQmtLX01nQ3hNejNhRi1OcGI3dHdSR3JuTWo0NTdUakgtcEJveENMN2J1SVZSU0xuQWtFX1ZHcU5DT1dqbVdadzFKNi14NUFiakZlZVBiczJ2N1Y1N21Ka2twcy1rdDFsTUtKNzl6c1pZYUFvNmxDRHBHWm04bDRtOG1FTk54ME5pWE9DSEhWR0ZhQnd1Umg3M0hoaFZWdHhWMTRLX2RXdTJ5emdMbjl2cUdhVndDU0E?oc=5",
+        "date": "Thu, 11 Jun 2026 07:00:00 GMT",
+        "summary": "DW News. . OpenAI vs. Anthropic: the AI IPO race is on, and both are chasing public-market money. The difference is that one is selling mass adoption, the other is selling corporate margins. #dwbusiness facebook.com",
+        "score": 5,
         "weight": 1
       },
       {
@@ -8859,6 +8877,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:a0a5ad8b84becb8451d4238f8c2e873d12bbc301649870713baee2720c2b512e",
+        "label": "Nvidia's Q2 earnings to test resurgent AI trade - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeG1sTG1ra3lPVXF0YVI1TlRmUEg2bGJ2cjlzNThjQWV2TFVERTZnQlVnWVVNT29JaDhhYUZ4bVRzVFpIemdvZmozOTZLS05pTW5Ob1BPS3phU2hNSUpoLTh2VkZUZ290Y2NIeEtQQ2IxNmZBRnhRQkpGelUzcldoS2ZHd19EX0gtQjFhT0g5QTdrTEdJc0Fj?oc=5",
+        "date": "Sun, 23 Aug 2026 11:25:02 GMT",
+        "summary": "Nvidia's Q2 earnings to test resurgent AI trade Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:0f2a3d9fd005f699dfc748be9cdffa0d2239015fc73ac5bc3c07196f78c66918",
         "label": "MiniMax Group (Derivatives) Price Today | Live MINIMAX Price, Chart & Market Data - Binance",
         "kind": "evidence",
@@ -10811,30 +10841,6 @@
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYzNiZEtVZGw5VGVyaWRYclA4VE1NV212QVpRSGF6YVgwNzFaakgwaDdzTXhZV1YtbDRDdUVCNTdKd3lpMk9YTVFCd0QyQWYxZ29RRlRoa3VoeWdWaWw4Y015MFBiTE1lSTdUUldnWUJmQnM0TU02WVZBNnozOFFCVGtfZDdua1ZMeVR4c05JZnBSdmh0ZnpFU3Roc05DckRBSkVvR0xn?oc=5",
         "date": "Wed, 06 Sep 2023 07:00:00 GMT",
         "summary": "Elon Musk Borrowed $1 Billion From SpaceX Around Twitter Purchase: WSJ Business Insider",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:398974e46389d09215eee73d0e3e7919c34bed617410afda6aee9429aa58167a",
-        "label": "Exclusive | Elon Musk Borrowed $1 Billion From SpaceX in Same Month of Twitter Acquisition - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1aQzh3QnpyNkkwa3FCWWhoRGx3VDc5dHRNdDk3aUljNXNCQ0dhb0ZjenAyVEc2RlpTNWp5QWFvYkdUSTNlM2tfcDdrX3hEbHZnaU0xTEY4MEVyNDk3WHlSTG95bTEyTEF2eWhF?oc=5",
-        "date": "Tue, 05 Sep 2023 07:00:00 GMT",
-        "summary": "Exclusive | Elon Musk Borrowed $1 Billion From SpaceX in Same Month of Twitter Acquisition WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9e6dd2c5a22e8399ca353b486836f2a91e76e6af027a5ac93aa3b6ea01b798e9",
-        "label": "Elon Musk's xAI to acquire his X social media platform - CBS News",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CBS News",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPLXFZZ2N5a0dIb1JtM2pfV1laQmpiMk4wN2l5WlFJWThqMkx2ZDFYMDVYeVlKb3hOQW02b3A5YTNpZ3UxVHFpc05kRy15MHpaQjlkeXUyYnF2S1dwM0g4djJ2SEFiMnNmYm4yV1JTbm9tLWdrRlAwYnJhd2ZfTzFnTXRlVUVQN2FucmfSAY8BQVVfeXFMT3dKYVFEOUdENUUyODNMNHNyd0hhUkRLTkR5aVRCcjhmYXNDMUNhOVl6eXlaRDI5U1lqbElNbjJTOTNiTkg0WkJVa0N0aVZVMEQyMEN6NUpfdWxUMDRWeDkyN0czc0RBMWNrNldxeDVZZHZscGdKLUhXRG1KRDhEbUJHSkFOTnNMZWM2YXhHWHM?oc=5",
-        "date": "Fri, 28 Mar 2025 07:00:00 GMT",
-        "summary": "Elon Musk's xAI to acquire his X social media platform CBS News",
         "score": 1,
         "weight": 1
       }
@@ -12901,6 +12907,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:8399f8412e129717ed374275017c30053f5fab50f4ac86362db4f9cca3e1042f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:8399f8412e129717ed374275017c30053f5fab50f4ac86362db4f9cca3e1042f",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16728,6 +16748,13 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:a0a5ad8b84becb8451d4238f8c2e873d12bbc301649870713baee2720c2b512e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "MiniMax",
         "target": "evidence:0f2a3d9fd005f699dfc748be9cdffa0d2239015fc73ac5bc3c07196f78c66918",
         "type": "EVIDENCE",
@@ -17864,20 +17891,6 @@
       {
         "source": "SpaceX",
         "target": "evidence:ae283ac649ffca136734c296c011f0df2269dd8cebe82dda8bb38dcf9c6bc0b7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:398974e46389d09215eee73d0e3e7919c34bed617410afda6aee9429aa58167a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:9e6dd2c5a22e8399ca353b486836f2a91e76e6af027a5ac93aa3b6ea01b798e9",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32348,20 +32361,20 @@
   ],
   "collector_runs": [
     {
-      "id": 263,
+      "id": 267,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T16:43:12.893354+00:00",
-      "completed_at": "2026-08-23T16:43:27.518103+00:00",
+      "started_at": "2026-08-23T17:34:35.316387+00:00",
+      "completed_at": "2026-08-23T17:34:49.810908+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 2,
       "error": null
     },
     {
-      "id": 264,
+      "id": 268,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T16:43:27.918937+00:00",
-      "completed_at": "2026-08-23T16:43:28.379273+00:00",
+      "started_at": "2026-08-23T17:34:50.212117+00:00",
+      "completed_at": "2026-08-23T17:34:50.639197+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32378,20 +32391,20 @@
       "error": null
     },
     {
-      "id": 262,
+      "id": 266,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T16:43:11.882355+00:00",
-      "completed_at": "2026-08-23T16:43:12.492197+00:00",
+      "started_at": "2026-08-23T17:34:34.042649+00:00",
+      "completed_at": "2026-08-23T17:34:34.915357+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 265,
+      "id": 269,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T16:43:28.780298+00:00",
-      "completed_at": "2026-08-23T16:43:30.615070+00:00",
+      "started_at": "2026-08-23T17:34:51.040536+00:00",
+      "completed_at": "2026-08-23T17:34:53.079708+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32408,7 +32421,7 @@
       "error": null
     }
   ],
-  "document_count": 1200,
+  "document_count": 1203,
   "event_count": 964,
   "mention_count": 2363,
   "review_counts": {
