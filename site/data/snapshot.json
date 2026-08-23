@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T15:36:19.630849+00:00",
+  "generated_at": "2026-08-23T16:43:31.518276+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "stress": 57.1,
-    "external_pressure": 61.1,
+    "transmission": 39.6,
+    "counter_evidence": 42.9,
     "fragility": 61.1,
+    "monetization": 42.9,
+    "stress": 57.1,
     "capital": 52.15125962813687,
     "circularity": 57.1,
-    "counter_evidence": 42.9,
-    "monetization": 42.9,
-    "transmission": 39.6,
-    "cannibalization": 54.2
+    "cannibalization": 54.2,
+    "external_pressure": 61.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,14 +32,14 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "stress": "directional_estimate",
-    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
     "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
+    "fragility": "directional_estimate",
     "monetization": "directional_estimate",
     "external_pressure": "directional_estimate",
-    "fragility": "directional_estimate",
-    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate",
+    "capital": "aggregate",
+    "circularity": "directional_estimate",
     "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-23T16:43:31.030726+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 61.1, \"monetization\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"transmission\": 39.6, \"capital\": 52.15125962813687}"
+    },
     {
       "captured_at": "2026-08-23T15:36:19.148401+00:00",
       "score": 51.4,
@@ -8853,6 +8859,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:0f2a3d9fd005f699dfc748be9cdffa0d2239015fc73ac5bc3c07196f78c66918",
+        "label": "MiniMax Group (Derivatives) Price Today | Live MINIMAX Price, Chart & Market Data - Binance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Binance",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9rOWxucm9QN2YxSnVtQXBnMHFVRFc4VElkOVJqS0lqWjU2RHVUUUY4ajZfS1hua0l6ckRsM0Q2czlfeVd2U2JfUFRacDhhWXVMaHlqSWZaMnplUG40M0VEMThLRnItLUwwNnc?oc=5",
+        "date": "Sun, 23 Aug 2026 08:15:00 GMT",
+        "summary": "MiniMax Group (Derivatives) Price Today | Live MINIMAX Price, Chart & Market Data Binance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:91d5c0ef70a9dcb1184f322376785e972616412cb62433c6e3668b3c0cdd418e",
+        "label": "Alibaba Proposes $10 Billion Share Placement to Fund Global AI Drive - The China-Global South Project",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The China-Global South Project",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ3dlRmZyazlOUG1lMkVGNHp3Y2VMTF9seWdwd0hfYkJxajlydldhTl85RWZxa21OWEU2Y25DNVAyazcybS00c1pHbVZQY184QjBVaUFaLXBwYVpZYjlOTmhMN3A2Q29ySVBpSU1HakZxRWNIV3hnci1RbDFhR0lwRG1CTEFIc00?oc=5",
+        "date": "Sun, 23 Aug 2026 11:08:33 GMT",
+        "summary": "Alibaba Proposes $10 Billion Share Placement to Fund Global AI Drive The China-Global South Project",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:9f1e5633c443560327264aa2b72e062cc5d0194abe80d46dceb72d0ac1ee5960",
         "label": "DeepSeek Ends Weekend Peak Pricing for API Users From Today - Bloomberg.com",
         "kind": "evidence",
@@ -10805,30 +10835,6 @@
         "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPLXFZZ2N5a0dIb1JtM2pfV1laQmpiMk4wN2l5WlFJWThqMkx2ZDFYMDVYeVlKb3hOQW02b3A5YTNpZ3UxVHFpc05kRy15MHpaQjlkeXUyYnF2S1dwM0g4djJ2SEFiMnNmYm4yV1JTbm9tLWdrRlAwYnJhd2ZfTzFnTXRlVUVQN2FucmfSAY8BQVVfeXFMT3dKYVFEOUdENUUyODNMNHNyd0hhUkRLTkR5aVRCcjhmYXNDMUNhOVl6eXlaRDI5U1lqbElNbjJTOTNiTkg0WkJVa0N0aVZVMEQyMEN6NUpfdWxUMDRWeDkyN0czc0RBMWNrNldxeDVZZHZscGdKLUhXRG1KRDhEbUJHSkFOTnNMZWM2YXhHWHM?oc=5",
         "date": "Fri, 28 Mar 2025 07:00:00 GMT",
         "summary": "Elon Musk's xAI to acquire his X social media platform CBS News",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:35badf9d68c4e3316144a220e9729e8a952461bcaa697ba1f512cb24414dc331",
-        "label": "Elon Musk says xAI acquired X - TechCrunch",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5SeW1Gdy1MalcxdjZkV2cyRTlwaWVkelY3S2NUQlJtejVRX2N6TU8tSTFKR1JobVpsOVc0WVNMNmhBQnd5SzI1b3JVSm5sMFFwQW9BQ09Ed2VoSGJRVDRYN3hDQWx2V0xqT1JZc2RDNzI2QQ?oc=5",
-        "date": "Sat, 29 Mar 2025 07:00:00 GMT",
-        "summary": "Elon Musk says xAI acquired X TechCrunch",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9493d93a0a1cba256317363d98026699450ec5d54c555d0f07bff09b9a00c942",
-        "label": "Musk\u2019s merger of X and xAI adds to history of opaque deals - The Washington Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Washington Post",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZW9SZEVxTU1DYVhDSUY2OXVackxTYlEwNGdSQnZmeDdXbFNOX1VGbm14Q0pCbWNCUkg0cGtwdm9nZV9tLVNDRHJOLUQ5bFlqdXRuTWVLNWtUNEhlcVVselRlS0xqSlpSamxkaEo0dmk0T1dZTTJkMktmd1NPNTRDRGRqOFFMelNK?oc=5",
-        "date": "Tue, 01 Apr 2025 07:00:00 GMT",
-        "summary": "Musk\u2019s merger of X and xAI adds to history of opaque deals The Washington Post",
         "score": 1,
         "weight": 1
       }
@@ -16722,6 +16728,20 @@
         "mentions": 1
       },
       {
+        "source": "MiniMax",
+        "target": "evidence:0f2a3d9fd005f699dfc748be9cdffa0d2239015fc73ac5bc3c07196f78c66918",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:91d5c0ef70a9dcb1184f322376785e972616412cb62433c6e3668b3c0cdd418e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "DeepSeek",
         "target": "evidence:9f1e5633c443560327264aa2b72e062cc5d0194abe80d46dceb72d0ac1ee5960",
         "type": "EVIDENCE",
@@ -17858,20 +17878,6 @@
       {
         "source": "xAI",
         "target": "evidence:9e6dd2c5a22e8399ca353b486836f2a91e76e6af027a5ac93aa3b6ea01b798e9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:35badf9d68c4e3316144a220e9729e8a952461bcaa697ba1f512cb24414dc331",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:9493d93a0a1cba256317363d98026699450ec5d54c555d0f07bff09b9a00c942",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32342,20 +32348,20 @@
   ],
   "collector_runs": [
     {
-      "id": 259,
+      "id": 263,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T15:36:03.007024+00:00",
-      "completed_at": "2026-08-23T15:36:15.629257+00:00",
+      "started_at": "2026-08-23T16:43:12.893354+00:00",
+      "completed_at": "2026-08-23T16:43:27.518103+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 260,
+      "id": 264,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T15:36:16.030264+00:00",
-      "completed_at": "2026-08-23T15:36:16.416900+00:00",
+      "started_at": "2026-08-23T16:43:27.918937+00:00",
+      "completed_at": "2026-08-23T16:43:28.379273+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32372,20 +32378,20 @@
       "error": null
     },
     {
-      "id": 258,
+      "id": 262,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T15:36:02.084993+00:00",
-      "completed_at": "2026-08-23T15:36:02.605602+00:00",
+      "started_at": "2026-08-23T16:43:11.882355+00:00",
+      "completed_at": "2026-08-23T16:43:12.492197+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 261,
+      "id": 265,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T15:36:16.818242+00:00",
-      "completed_at": "2026-08-23T15:36:18.733143+00:00",
+      "started_at": "2026-08-23T16:43:28.780298+00:00",
+      "completed_at": "2026-08-23T16:43:30.615070+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32402,7 +32408,7 @@
       "error": null
     }
   ],
-  "document_count": 1198,
+  "document_count": 1200,
   "event_count": 964,
   "mention_count": 2363,
   "review_counts": {
