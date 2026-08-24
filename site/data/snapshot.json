@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-24T04:09:53.131925+00:00",
+  "generated_at": "2026-08-24T04:31:12.180260+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 51.4,
+    "score": 45.3,
     "label": "BUILDING PRESSURE",
     "direction": "unknown",
     "known_dimensions": 8,
@@ -12,48 +12,52 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "stress": 57.1,
-    "external_pressure": 61.1,
-    "monetization": 42.9,
-    "circularity": 57.1,
     "fragility": 61.1,
+    "capital": 48.732271163185665,
     "transmission": 39.6,
+    "external_pressure": 16.12,
+    "circularity": 57.1,
     "counter_evidence": 42.9,
-    "cannibalization": 54.2,
-    "capital": 52.15125962813687
+    "stress": 57.1,
+    "monetization": 42.9,
+    "cannibalization": 54.2
   },
   "dimension_evidence": {
-    "external_pressure": 4,
+    "counter_evidence": 2,
+    "external_pressure": 5,
+    "capital": 7,
     "transmission": 1,
     "stress": 2,
     "fragility": 3,
-    "capital": 7,
-    "counter_evidence": 1,
     "circularity": 1
   },
   "dimension_basis": {
+    "external_pressure": "aggregate",
+    "circularity": "directional_estimate",
+    "stress": "directional_estimate",
     "fragility": "directional_estimate",
+    "capital": "aggregate",
     "transmission": "confirmed_trigger",
     "counter_evidence": "directional_estimate",
-    "capital": "aggregate",
-    "stress": "directional_estimate",
-    "external_pressure": "directional_estimate",
     "monetization": "directional_estimate",
-    "circularity": "directional_estimate",
     "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
+    "counter_evidence": {
+      "direction": "lower_pressure",
+      "evidence_count": 2
+    },
     "external_pressure": {
       "direction": "higher_pressure",
-      "evidence_count": 4
-    },
-    "cannibalization": {
-      "direction": "higher_pressure",
-      "evidence_count": 1
+      "evidence_count": 5
     },
     "capital": {
       "direction": "higher_pressure",
       "evidence_count": 9
+    },
+    "cannibalization": {
+      "direction": "higher_pressure",
+      "evidence_count": 1
     },
     "transmission": {
       "direction": "higher_pressure",
@@ -67,10 +71,6 @@
       "direction": "higher_pressure",
       "evidence_count": 4
     },
-    "counter_evidence": {
-      "direction": "lower_pressure",
-      "evidence_count": 2
-    },
     "circularity": {
       "direction": "higher_pressure",
       "evidence_count": 2
@@ -81,6 +81,38 @@
     }
   },
   "dimension_evidence_items": {
+    "counter_evidence": [
+      {
+        "variable": "Free cash flow strength",
+        "entity": "Amazon",
+        "value": 7600000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "lowers the warning",
+        "confidence": 0.8,
+        "date": "Sun, 23 Aug 2026 14:21:29 GMT",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
+        "evidence": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%."
+      },
+      {
+        "variable": "Free cash flow strength",
+        "entity": null,
+        "value": 91.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "lowers the warning",
+        "confidence": 0.8,
+        "date": "2025-01-30",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "Meta SEC filing: 10-K (2025-01-30)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+        "evidence": "The following is a reconciliation of FCF to the most comparable GAAP measure, net cash provided by operating activities (in millions): Year Ended December 31, 2024 2023 2022 Net cash provided by operating activities $ 91,328 $ 71,113 $ 50,475 Purchases of property and equipment (37,256) (27,045) (31,186) Principal payments on finance leases (1,969) (1,058) (850) Free cash flow $ 52,103 $ 43,010 $ 18,439 77 Table of Contents Material Cash Requirements We currently anticipate that our available funds and cash flow from operations and financing activities will be sufficient to meet our operational cash needs and fund our investments in infrastructure and AI initiatives, share repurchases and dividend payments for at least the next 12 months and thereafter for the foreseeable future."
+      }
+    ],
     "external_pressure": [
       {
         "variable": "External capability pressure",
@@ -114,6 +146,21 @@
       },
       {
         "variable": "External capability pressure",
+        "entity": "Moonshot AI",
+        "value": 1.0,
+        "unit": "score",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.62,
+        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
+        "event_type": "BENCHMARK_GAIN",
+        "title": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S. compute limits - Tom's Hardware",
+        "source": "Tom's Hardware",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT25TNFlXeVFQMmVqWFYtSS1oSkpEUl9WeExTZUpmZEtFb1RpQ3dRbGxGV1hVWjNpMkRxTlpaQk5NSXNfdzlmYmg1cW5MUGlmR3FpeHV2bmpzMDBXQW1mV1B0N3QzUmZOOFU5T0w1QWFqYldjWnZER0t0UmNzcGZBQll1dWZBNEYyWTV3dnZvMkRzTkhqNHBDak5TTXd4b080eUJGbExOSUVCeU5Cd1ZmUWVXUG1SUQ?oc=5",
+        "evidence": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S."
+      },
+      {
+        "variable": "External capability pressure",
         "entity": "CoreWeave",
         "value": 1.0,
         "unit": "score",
@@ -143,39 +190,7 @@
         "evidence": "1 Table of Contents benchmarks how quickly a system can train a model from scratch) in eleven minutes\u2014a record and 29 times faster than the next best competitor at the time of the benchmark test."
       }
     ],
-    "cannibalization": [
-      {
-        "variable": "Model price pressure",
-        "entity": "OpenAI",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.99,
-        "date": "2026-07-30",
-        "event_type": "PRICE_CUT",
-        "title": "OpenAI cuts GPT-5.6 Luna and Terra API prices",
-        "source": "OpenAI pricing announcement",
-        "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-        "evidence": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026."
-      }
-    ],
     "capital": [
-      {
-        "variable": "AI capital commitments",
-        "entity": "Amazon",
-        "value": 220000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.76,
-        "date": "Wed, 19 Aug 2026 23:16:35 GMT",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Will AWS\u2019s AI Surge and $220 Billion Capex Plan Change Amazon.com\u2019s (AMZN) Narrative - Yahoo Finance",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWGEzX2Jhdk4tcmx3NHBNUDk3YlZvOWw4UFZ6enUyZ3FTZ3BRTTRyU0p0b2tiNkRDYkZZNzY5TFNnc0tOVnI1cWNxTDdtaS1XT3JFemhERkJjam5FZDczUUdLcVFINFhsTGlEZ3BGalZuQkpGaF9SUjJOM3VFNWEyOTNuYXpSSHpTUkdacThKTUcyUQ?oc=5",
-        "evidence": "Will AWS\u2019s AI Surge and $220 Billion Capex Plan Change Amazon.com\u2019s (AMZN) Narrative - Yahoo Finance Will AWS\u2019s AI Surge and $220 Billion Capex Plan Change Amazon.com\u2019s (AMZN) Narrative Yahoo Finance Google News"
-      },
       {
         "variable": "AI capital commitments",
         "entity": "Tencent",
@@ -220,6 +235,21 @@
         "source": "Latham & Watkins LLP",
         "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMV9lQmJIRWp6aTg3Qjl3X0FZbXN6SUNhYmxQNlExZ0IxVGRqSi1Uc1BpY2ZrUDFyXzBwWng2ZW1OaW9zU2RWVFFFcFRtLUQzYmFkZGdydXlJdk5hTzVOVmlVcGxuNWJSUjVMWmlpUjBIV2FKZVk0RFJvaDN4X25mR3BldnUwZ055LXI4T2xCUUlqcmdtT0dpdzVrMlFyNmpjdlJHNE5aNA?oc=5",
         "evidence": "Watkins Advises Blackstone on Investment in Anthropic\u2019s US$65 Billion Series H at a US$965 Billion Valuation - Latham & Watkins LLP Watkins Advises Blackstone on Investment in Anthropic\u2019s US$65 Billion Series H at a US$965 Billion Valuation Latham & Watkins LLP Google News"
+      },
+      {
+        "variable": "AI capital commitments",
+        "entity": "Amazon",
+        "value": 25000000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.76,
+        "date": "Sat, 22 Aug 2026 07:13:48 GMT",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXl3SlNrdnVqZGdqS2QyOXpwREFKbUV6WEp1QXhNLU9rVkZkYTB0UmdaSFFVLU9nWUZsMTdSam5RcEE0RXNpdm4yd0V3T0ZIbnV6WUV4VTlwd2JfQmdFTUVCR0FEOHFBMmtVM3hKRndPOUVDLTl4dmxPenh4cHJ1QlZ3RGQ4cjFEVjQ5Q3psWnRuZDFBMjBndHBSNnMzM0l6czNkZTBLQmM1VmRRVWN3ZGlvODZFV1IwellmZUhHcHlMX1VSYjlFUWVVRk9SUTBlWEVaQg?oc=5",
+        "evidence": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds TradingView Google News"
       },
       {
         "variable": "AI capital commitments",
@@ -295,6 +325,23 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017023047713/orcl-20230831.htm",
         "evidence": "6 Table of Contents ORACLE CORPORATION CONDENSED CONSOLIDATED S TATEMENTS OF CASH FLOWS For the Three Months Ended August 31, 2023 and 2022 (Unaudited) Three Months Ended August 31, (in millions) 2023 2022 Cash flows from operating activities: Net income $ 2,420 $ 1,548 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation 712 547 Amortization of intangible assets 763 919 Deferred income taxes ( 517 ) ( 344 ) Stock-based compensation 849 750 Other, net 169 156 Changes in operating assets and liabilities, net of effects from acquisitions: Decrease in trade receivables, net 380 761 Decrease in prepaid expenses and other assets 269 44 Decrease in accounts payable and other liabilities ( 457 ) ( 166 ) Increase in income taxes payable 69 145 Increase in deferred revenues 2,317 2,034 Net cash provided by operating activities 6,974 6,394 Cash flows from investing activities: Purchases of marketable securities and other investments ( 333 ) ( 57 ) Proceeds from sales and maturities of marketable securities and other investments 85 138 Acquisitions, net of cash acquired \u2014 ( 27,798 ) Capital expenditures ( 1,314 ) ( 1,719 ) Net cash used for investing activities ( 1,562 ) ( 29,436 ) Cash flows from financing activities: Payments for repurchases of common stock ( 150 ) ( 552 ) Proceeds from issuances of common stock 308 515 Shares repurchased for tax withholdings upon vesting of restricted stock-based awards ( 1,060 ) ( 829 ) Payments of dividends to stockholders ( 1,091 ) ( 860 ) Repayments of commercial paper ( 562 ) \u2014 Proceeds from issuances of senior notes and other borrowings, net of issuance costs \u2014 20,046 Repayments of senior notes and other borrowings ( 1,000 ) ( 5,883 ) Other, net 27 ( 127 ) Net cash (used for) provided by financing activities ( 3,528 ) 12,310 Effect of exchange rate changes on cash and cash equivalents ( 36 ) ( 203 ) Net increase (decrease) in cash and cash equivalents 1,848 ( 10,935 ) Cash and cash equivalents at beginning of period 9,765 21,383 Cash and cash equivalents at end of period $ 11,613 $ 10,448 Non-cash financing activities: Fair values of stock awards assumed in connection with acquisitions $ \u2014 $ 55 See notes to condensed consolidated financial statements."
+      }
+    ],
+    "cannibalization": [
+      {
+        "variable": "Model price pressure",
+        "entity": "OpenAI",
+        "value": 1.0,
+        "unit": "signal",
+        "role": "directional signal",
+        "effect": "raises the warning",
+        "confidence": 0.99,
+        "date": "2026-07-30",
+        "event_type": "PRICE_CUT",
+        "title": "OpenAI cuts GPT-5.6 Luna and Terra API prices",
+        "source": "OpenAI pricing announcement",
+        "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+        "evidence": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026."
       }
     ],
     "transmission": [
@@ -406,38 +453,6 @@
         "source": "Twitter SEC proxy",
         "url": "https://www.sec.gov/Archives/edgar/data/1418091/000119312522195126/d283119dprer14a.htm",
         "evidence": "Twitter's proxy disclosed $13 billion in secured and unsecured debt financing commitments for the acquisition."
-      }
-    ],
-    "counter_evidence": [
-      {
-        "variable": "Free cash flow strength",
-        "entity": "Amazon",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "lowers the warning",
-        "confidence": 0.8,
-        "date": "Thu, 30 Jul 2026 07:00:00 GMT",
-        "event_type": "FREE_CASH_FLOW",
-        "title": "AWS is \u2018booming,\u2019 but Amazon\u2019s free cash flow turns negative on record AI spending - GeekWire",
-        "source": "GeekWire",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWW5BZ3pMMDVlX1p5WVl4RW9scXZGdk90X3hLb01SdGZmTkNMaE5PV2syajJiZ0hfb1hUQjh4Q1lxQWdtRmtGS2lpT2ttOW9ZRjY2eWJQdWVrQzV0d0U2bG9wNU1aMmxwVjVWUjNGOTN6ZW1MSW4xTXVjeHJpWVBuWTRmTF9GeGVKbTB5WElQUmdCdkFzN3d5Q2RFbHAtajVuaWVtMjZRV1JUc3pfUnc?oc=5",
-        "evidence": "AWS is \u2018booming,\u2019 but Amazon\u2019s free cash flow turns negative on record AI spending - GeekWire AWS is \u2018booming,\u2019 but Amazon\u2019s free cash flow turns negative on record AI spending GeekWire Google News"
-      },
-      {
-        "variable": "Free cash flow strength",
-        "entity": null,
-        "value": 91.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "lowers the warning",
-        "confidence": 0.8,
-        "date": "2025-01-30",
-        "event_type": "FREE_CASH_FLOW",
-        "title": "Meta SEC filing: 10-K (2025-01-30)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
-        "evidence": "The following is a reconciliation of FCF to the most comparable GAAP measure, net cash provided by operating activities (in millions): Year Ended December 31, 2024 2023 2022 Net cash provided by operating activities $ 91,328 $ 71,113 $ 50,475 Purchases of property and equipment (37,256) (27,045) (31,186) Principal payments on finance leases (1,969) (1,058) (850) Free cash flow $ 52,103 $ 43,010 $ 18,439 77 Table of Contents Material Cash Requirements We currently anticipate that our available funds and cash flow from operations and financing activities will be sufficient to meet our operational cash needs and fund our investments in infrastructure and AI initiatives, share repurchases and dividend payments for at least the next 12 months and thereafter for the foreseeable future."
       }
     ],
     "circularity": [
@@ -653,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T04:30:30.544410+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"circularity\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"monetization\": 42.9}"
+    },
     {
       "captured_at": "2026-08-24T04:09:52.619112+00:00",
       "score": 51.4,
@@ -7131,6 +7152,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:22b081476bc05e39cf170cb9051b8bbdba2831be4d8396f86fc5f0bf6956e8c8",
+        "label": "Nvidia Is Coming for OpenAI and DeepSeek With $6 Billion Poolside Deal to Build a Powerful Open-Weight AI - Benzinga",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNLVNLVjRGZ3lWZnlMdG1XbkVNLTFCcDZQY1RxVGFxX0NGYmd1UXdtN2lQX0RJT0l5c216bjhuUTJReXpsMF90Nmx2bFZVNG1sT2JWNTh4bGs2ek5KR1Q3eFZRLXJEVzZCb19YV0dqSmhVb3c3MUNxcWMwS0c2SzRGM00wbExmcE5taTllWU1CUFl5bmlMLTBEcUZZXzVRNU1NeF9ETHV3?oc=5",
+        "date": "Mon, 24 Aug 2026 04:21:55 GMT",
+        "summary": "Nvidia Is Coming for OpenAI and DeepSeek With $6 Billion Poolside Deal to Build a Powerful Open-Weight AI Benzinga",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
         "label": "WSJ: Nvidia to Invest $6 Billion to Compete with DeepSeek and Kimi K3 - ForkLog",
         "kind": "evidence",
@@ -9039,6 +9072,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:a2f02795eb0e3a9e55b4ef3915ae742411745fb5eb79aa043b34953100875239",
+        "label": "Nvidia discusses Perplexity investment at $30 billion-plus valuation, The Information reports - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcFhTZEFZTUhYaHB6bUtnVVg0Q2hMT19aV3MxMkJEX3IySC04dWlZaFlWYjJqdDJ0Y2s5RmZtTk9HNDluQ2tGT2cwRkpkYm5xQ2pmbDJBV1hRSkwtTE5zeDcxdEx3VThSV3cxcXM1RTAyUl9pcEw2OExWNm9oZkpwUWdvRXVCWUtNMkRDd2s2eXU3a3VMeDZua1UwYi1wbzljV2Zqd0tESlRjMzVjUUJVQnVfb2I1VUNHWWFWRTJtZWg?oc=5",
+        "date": "Mon, 24 Aug 2026 03:18:00 GMT",
+        "summary": "Nvidia discusses Perplexity investment at $30 billion-plus valuation, The Information reports Reuters",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:45d5500193d5e59bbff13ac25c9dbef7e50fd8551c3e751ba5f96fda63749b78",
+        "label": "SoftBank Plans Record $6.3 Billion Retail Bond Sale in Japan - Bloomberg",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOakgzWUJKSldHUFB3bWJzblhFSkVuc1NOdExfcExSeVRoVzJFaTFRd1BsMEYtLW1ibmxGOWlkVWkxUmlVYmZjdlZBbENNZE1yQXV1MTd6QmFLLW5uT1BlUUZzaEgzYW1vdWg2cHNmaVkwOVZxZEFIak1naDFoN2hhZTRFN2tyQUQ3R0g1WEZYZ0pNM3ZzaElJa2t3MHJGYURaMzd2eUR5OUNxT2tjQmZzbHJROA?oc=5",
+        "date": "Mon, 24 Aug 2026 01:53:00 GMT",
+        "summary": "SoftBank Plans Record $6.3 Billion Retail Bond Sale in Japan Bloomberg",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:09e9aa22a87606caaa300b3f815ab628c43d2088c4c41bd78423a20cc558e2d2",
         "label": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation - The Information",
         "kind": "evidence",
@@ -10859,42 +10916,6 @@
         "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVXcyRWI1eTdzeUtIMkJSTkJ6YlhUNGNhakNwY2Jmc2FrUVpNT2NKbHM3VmxxcEpTWERUSExkcmlPSVlCSVVvTExYQmxzZm1WWWx5dVRMc1BCZzBOcWJpVC1hckFwQUhNUXBKZV9MaXZpS2JwNWFSVDBMTmM5MW4wZlAwVDlNaTFzd3ctTDVEcm5jZTDSAZgBQVVfeXFMTkxxQkgyOE9Sb2lVeWJtTUY4bHlsbXM4V1M2b0JPU2c2eEFGOW44RGowR0x1Z0RUTVZQRTdSOWszNXJiMkZyRnlVRzFUU0tJd0QyNWJzUkpNakxsY3NBX1V5LXZsVjU5WVQ3eTFxT2doZHZxNkk4WVFpb21jemNHUWV4bmxxWENndlMxd1VjOTVIRU9lcllYdEs?oc=5",
         "date": "Wed, 12 Aug 2026 07:00:00 GMT",
         "summary": "Chinese tech giant Tencent sees spending surge, defends potential 'superior' AI returns CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:37e63fd4d0f99784cc4df47ee3cf2869530eb075d9c6b11c56a89b167cc866d3",
-        "label": "Is the next step for Doubao to undergo a spin-off? - 36 Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36 Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wQ2NTWFVmOWVqOC0yeWNITXdsTlB6Qk5iTXhnMnh3amFZV0VjVW9uVWE1akxNRzdYMU4zcG9OVWthOGR3OFRSc2dKc09fS2N1X05V?oc=5",
-        "date": "Mon, 22 Jun 2026 07:00:00 GMT",
-        "summary": "Is the next step for Doubao to undergo a spin-off? 36 Kr",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f51c30508bccc027d22397783a333c868dc8cdc8dc67e2c3ea4b4dadaacd9fca",
-        "label": "Tesla Adds ByteDance\u2019s Doubao to China Cars in First Third-Party AI Deal - eletric-vehicles.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "eletric-vehicles.com",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY1RNcTNQLXl1V2hZQTlHMDBfeTVDMWlDVktPMkJKb2x2WkNtU0pNdW1FUnItd0tSclBfVHhGQVRkbndCRjhUUDN6RnA5UnMxZS1HS1RkUmg3c0djU2JKZl8xS25kM0F1UG9pNG41LVAxT0VHLVY5R2UyUS1qTEVReGlPQkJZU1p3dnlqM1NxSnoyTldYSkowN19DMWtKamdDOVV2LVI0VkpfM28?oc=5",
-        "date": "Thu, 20 Aug 2026 12:09:16 GMT",
-        "summary": "Tesla Adds ByteDance\u2019s Doubao to China Cars in First Third-Party AI Deal eletric-vehicles.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:be8e1fbfd0d3d088d8398d030817627aeea9df3548f1080fa29b4ef4cececed5",
-        "label": "China's hottest AI bot? ByteDance's Doubao tops the charts with 51 million active users - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPeWtyMi01akttZUlWcWVxRGVWMVo3MllNOFk1MFo2NWdtQzdoLXJ6TGRjM1FjYm5XTkdob255S1ZGZGhCdUo5RmZjS1JWd1Bld2FrLUJaaTctblRaWG9nUGVxNXYzYnktclRHMC0tWUItenI5b1dYd25uOUhqamlmOGV5RnY?oc=5",
-        "date": "Wed, 13 Nov 2024 08:00:00 GMT",
-        "summary": "China's hottest AI bot? ByteDance's Doubao tops the charts with 51 million active users Yahoo Finance",
         "score": 1,
         "weight": 1
       }
@@ -15039,6 +15060,27 @@
       },
       {
         "source": "DeepSeek",
+        "target": "evidence:22b081476bc05e39cf170cb9051b8bbdba2831be4d8396f86fc5f0bf6956e8c8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:22b081476bc05e39cf170cb9051b8bbdba2831be4d8396f86fc5f0bf6956e8c8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:22b081476bc05e39cf170cb9051b8bbdba2831be4d8396f86fc5f0bf6956e8c8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
         "target": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
         "type": "EVIDENCE",
         "weight": 1,
@@ -16922,6 +16964,20 @@
       },
       {
         "source": "Nvidia",
+        "target": "evidence:a2f02795eb0e3a9e55b4ef3915ae742411745fb5eb79aa043b34953100875239",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SoftBank",
+        "target": "evidence:45d5500193d5e59bbff13ac25c9dbef7e50fd8551c3e751ba5f96fda63749b78",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
         "target": "evidence:09e9aa22a87606caaa300b3f815ab628c43d2088c4c41bd78423a20cc558e2d2",
         "type": "EVIDENCE",
         "weight": 1,
@@ -17980,27 +18036,6 @@
       {
         "source": "Tencent",
         "target": "evidence:0f41b84c0d70998b6a791e1b1be76e14a74aae0fbcce8b120e0b151818a9fec9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:37e63fd4d0f99784cc4df47ee3cf2869530eb075d9c6b11c56a89b167cc866d3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:f51c30508bccc027d22397783a333c868dc8cdc8dc67e2c3ea4b4dadaacd9fca",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:be8e1fbfd0d3d088d8398d030817627aeea9df3548f1080fa29b4ef4cececed5",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31442,7 +31477,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Chinese AI models achieve Mythos-level performance in cybersecurity benchmark - Friends of Socialist China Chinese AI models achieve Mythos-level performance in cybersecurity benchmark Friends of Socialist China Google News",
       "title": "Chinese AI models achieve Mythos-level performance in cybersecurity benchmark - Friends of Socialist China",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNSU82XzQza0JQOWpJdUJUbE40REJ1T09IN2xGN2hOSUpyMWNtU1NOS0VuMm96a2lFRzBTcFVKQmVxZEx3bDhEcUwwWTJsMm9DdWRFZGRZX09FTTFuQW9CNW1oT2lPcXgtVE5hQkJEdUxFMU1JbDJERXNvT2hpeDYzVmxFMTNhelc4WTZUSFZTLWxGcVNSMnR6VVF5cGxLZXdZcjU1WE0tdGNwWU14RzhwTl8wdGZxWDA?oc=5",
@@ -31457,7 +31492,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 2,
-      "review_status": "provisional",
+      "review_status": "confirmed",
       "evidence_text": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S.",
       "title": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S. compute limits - Tom's Hardware",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT25TNFlXeVFQMmVqWFYtSS1oSkpEUl9WeExTZUpmZEtFb1RpQ3dRbGxGV1hVWjNpMkRxTlpaQk5NSXNfdzlmYmg1cW5MUGlmR3FpeHV2bmpzMDBXQW1mV1B0N3QzUmZOOFU5T0w1QWFqYldjWnZER0t0UmNzcGZBQll1dWZBNEYyWTV3dnZvMkRzTkhqNHBDak5TTXd4b080eUJGbExOSUVCeU5Cd1ZmUWVXUG1SUQ?oc=5",
@@ -31607,7 +31642,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Cohere North Mini Code: 30B Beats 120B Models [2026] - tech-insider.org Cohere North Mini Code: 30B Beats 120B Models [2026] tech-insider.org Google News",
       "title": "Cohere North Mini Code: 30B Beats 120B Models [2026] - tech-insider.org",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA1YWdyaFM3WFdrQlFucVdQNlhlSGR2QUNiYkoyQktTTVQ2ZDFyNlhlNTA2ckxkYVpGdVplNkM3dVZPVkVsTUREejlsSmhXSzJ2N3VSdDBMallHbHJOQlJWQXVOSXNWYUU?oc=5",
@@ -31712,7 +31747,7 @@
       "currency": null,
       "confidence": 0.76,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Google, Amazon, Meta, and Microsoft Hiked AI Capex and It Benefits One Stock - AOL.com Google, Amazon, Meta, and Microsoft Hiked AI Capex and It Benefits One Stock AOL.com Google News",
       "title": "Google, Amazon, Meta, and Microsoft Hiked AI Capex and It Benefits One Stock - AOL.com",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX2tOS0x6LVZqR2NGNlh4UmIwSWpNYkFwVjZKR1g1dWtXdzNMaHJFbTZGTEVPT2JiTFExdF9RUm5hN250bkZ1b0lFTHV2RkhmVHdVTUxIVERWRm5NSk9xTzBxdldBblVMa0NKdy1BUS1VcmlkekVjTlZUOFZ1MkVkZmNnWFk?oc=5",
@@ -31772,7 +31807,7 @@
       "currency": "USD",
       "confidence": 0.76,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "confirmed",
       "evidence_text": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds TradingView Google News",
       "title": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView",
       "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXl3SlNrdnVqZGdqS2QyOXpwREFKbUV6WEp1QXhNLU9rVkZkYTB0UmdaSFFVLU9nWUZsMTdSam5RcEE0RXNpdm4yd0V3T0ZIbnV6WUV4VTlwd2JfQmdFTUVCR0FEOHFBMmtVM3hKRndPOUVDLTl4dmxPenh4cHJ1QlZ3RGQ4cjFEVjQ5Q3psWnRuZDFBMjBndHBSNnMzM0l6czNkZTBLQmM1VmRRVWN3ZGlvODZFV1IwellmZUhHcHlMX1VSYjlFUWVVRk9SUTBlWEVaQg?oc=5",
@@ -31787,7 +31822,7 @@
       "currency": null,
       "confidence": 0.76,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Microsoft: Higher Revenue Visibility Met Measured Capex - Seeking Alpha Microsoft: Higher Revenue Visibility Met Measured Capex Seeking Alpha Google News",
       "title": "Microsoft: Higher Revenue Visibility Met Measured Capex - Seeking Alpha",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeUZOWS1uV1VWbjVFajNNZGVDU2FtTElpWW80UURZU1JIZ3diOV9lYUU3M3FINXBST1lTc3lkZjladVlFRDBPWmQwV1Z5VnlwdVprUUJSWEotLUJxdFBBOWZXMHA4SkxhdlZEUUVvV3lqM3lIU3RobVZUTHVXZXp6dlc1LUZCdDBvVnpXdjNjSzR5YlBDX25QQThGWQ?oc=5",
@@ -31817,7 +31852,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "confirmed",
       "evidence_text": "Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark - The Motley Fool Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark The Motley Fool Google News",
       "title": "Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark - The Motley Fool",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVXJBb2EzZWZtYjJnOGFWOGU2ZEZQZnlQNzFnMTVGbDlmVFBublo0dVNpVGZzd05adVFaN3BWUUotVVRLOTVBRWdMb0tMY3FHRGJxa1REMndmVE5CZE1CbG12ZTRSc05TWHYtb25wejR5c2UzS2ltSXVpUlpna04xUmZFb3F6X2RqSEFBWVh1RE9NYktyeHNWWA?oc=5",
@@ -31832,7 +31867,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) - Seeking Alpha Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) Seeking Alpha Google News",
       "title": "Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) - Seeking Alpha",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdDhDY0doSElNSFZmMFBMVnduNXhVN295UWp6VFMyVWpQOGhDenQ5OXlkTUx1X0xPSDBVOTlVT3prcFBLMEljMHRjcFpsR09yQVNPOEV3bGlyNDd0andzaVRFRjNreE96TmY2SzE1SElYeWxrOER4T1hlS3RhWjlhVzFDeUV6VFNIMDllUURhekZ6T2NkcTM0TnVNbW4?oc=5",
@@ -31847,7 +31882,7 @@
       "currency": null,
       "confidence": 0.76,
       "mentions": 4,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Here's the Gap AI Capex Is Actually Creating.",
       "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
@@ -31862,7 +31897,7 @@
       "currency": "USD",
       "confidence": 0.8,
       "mentions": 4,
-      "review_status": "provisional",
+      "review_status": "confirmed",
       "evidence_text": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%.",
       "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
@@ -31937,7 +31972,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof - Tech Times DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof Tech Times Google News",
       "title": "DeepSeek V4 Pro 0813 Goes GA: Benchmark Claims Await Independent Proof - Tech Times",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQU1ZGaFBNTnlLV3pTcFc3VXJDR0VPS3BZdllIV21zMWY4dmxOWHpmZHoxekZjQXVKVmM3VTRuekt3V1E2SEx5NFNxQV9vRnpfVUthX2RKMnZMSTMtS1NlaXBlLXRnVWxYTThnS0xjUWJVcFZNNGFBenpmT3JEUWZvMXRvM1pZVUNoS2IzYUU1MFpHQktxZllZbWJSaVpNYTFacC1mTWxnMGd0cEwzRC1BQnNCQl9Qa0FFUWNGMDBfa2FLUQ?oc=5",
@@ -31952,7 +31987,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Benchmarking 13 AI models on rediscovering known CVEs - Aikido Security Benchmarking 13 AI models on rediscovering known CVEs Aikido Security Google News",
       "title": "Benchmarking 13 AI models on rediscovering known CVEs - Aikido Security",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5ZdVlzTmc5X1hERjJtc3N1WmRuLUFvZUtJbGlvM1B1Vy1zZWNQcklpaHV3SElGcnNOSmdIQktEbzBtUmlZU1BfeHA4dlkyVHBhZXMzeVh4X2EtNHZ2cGY1MDYwblNvU1loeGZLRlpR?oc=5",
@@ -32042,7 +32077,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Palantir Reports 93% Revenue Growth, Pushes \u2018Benchmarking\u2019 Over AI Leaderboards - analyticsindiamag.com Palantir Reports 93% Revenue Growth, Pushes \u2018Benchmarking\u2019 Over AI Leaderboards analyticsindiamag.com Google News",
       "title": "Palantir Reports 93% Revenue Growth, Pushes \u2018Benchmarking\u2019 Over AI Leaderboards - analyticsindiamag.com",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNDU5RUJ5X04wUEhyOUlWM2N1ZEpJak9ORS1CaGtwQ25iMTcyS05OdHBfZElYYVE0UEFZZUFBYW1CZ2lLUkxodEp4WW9iN2t1VFdjYTQ3QkFrSDg1MnctTTJtakJnb1hSUXIwaC1Qd1pPTHYxdWhRZ0RjMW90Uk9SZXJOdnk0THVVckw4MEZfU0FZZTRSOUdHQ1MzY3RCVTZvWExSRDJ5b0dhckdsV2dfWnBpcw?oc=5",
@@ -32102,7 +32137,7 @@
       "currency": null,
       "confidence": 0.82,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Price Cuts Hint It May Not Happen at All MarketWise Google News",
       "title": "OpenAI IPO Delay: Just the Start? Price Cuts Hint It May Not Happen at All - MarketWise",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWGxGeXRmZ0hrWFo3cnBERWRBdFBZcGxxRU41OFJwc2N3Sk1xVXMyQ2pnMFdHbFl0THVMeGI4OE1SU2pIQzlBcHdXc1ZVSkdRVGt1aXBiMG5SR1VIM240TGU0TmFhSVlqVGF3ZmdfR19hM05jcm5ScW5PMkhCUkhWMDZB?oc=5",
@@ -32117,7 +32152,7 @@
       "currency": null,
       "confidence": 0.82,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Price Cuts Hint It May Not Happen at All - MarketWise OpenAI IPO Delay: Just the Start?",
       "title": "OpenAI IPO Delay: Just the Start? Price Cuts Hint It May Not Happen at All - MarketWise",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWGxGeXRmZ0hrWFo3cnBERWRBdFBZcGxxRU41OFJwc2N3Sk1xVXMyQ2pnMFdHbFl0THVMeGI4OE1SU2pIQzlBcHdXc1ZVSkdRVGt1aXBiMG5SR1VIM240TGU0TmFhSVlqVGF3ZmdfR19hM05jcm5ScW5PMkhCUkhWMDZB?oc=5",
@@ -32207,7 +32242,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Poolside drops Laguna S 2.1, an open-weight coding model that beats rivals 10x its size - VentureBeat Poolside drops Laguna S 2.1, an open-weight coding model that beats rivals 10x its size VentureBeat Google News",
       "title": "Poolside drops Laguna S 2.1, an open-weight coding model that beats rivals 10x its size - VentureBeat",
       "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM3pndGR2c19oMnA3T0V6TEFjbXdFM0dKLUppQjJYQ3ZObG5UNktrX01Ga0J1R3pDMm5nMUJfY1docXRqaFVVWGsyeFBuYzlteHROR2N1WmtERkNqenZHSDI2R2dEdnlqeFdnQWJKZmtNeUdkMmxkWFdXOHY1bDlWTzZwcjBTMEd4QkRJZXVSSjlIMGdBUVIwWndaUnFZSldWZFI4YXk5cUNSOVFKYnR5UkVFNWkxQ0hLUXQxMzBHRmtoTWc?oc=5",
@@ -32417,7 +32452,7 @@
       "currency": null,
       "confidence": 0.62,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable - Yellow.com New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable Yellow.com Google News",
       "title": "New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable - Yellow.com",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41c1FiZnozQWlzSm5YWFRSdUphM0tQbkZRNFpSbHQ0YjFqdFIyVkt2dGZtejBPU2RDblpzUlBLdDdtcDlYd0FvY1RnUnpwTk9leFZqSjg0T3B4Yi1mRmN4SjZ0Z1hmZFRnWHYxS0hQQUxGa0d3bEE?oc=5",
@@ -32501,20 +32536,20 @@
   ],
   "collector_runs": [
     {
-      "id": 303,
+      "id": 307,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T04:09:35.746713+00:00",
-      "completed_at": "2026-08-24T04:09:49.206954+00:00",
+      "started_at": "2026-08-24T04:30:14.374926+00:00",
+      "completed_at": "2026-08-24T04:30:27.249191+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 7,
+      "items_new": 5,
       "error": null
     },
     {
-      "id": 304,
+      "id": 308,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T04:09:49.607718+00:00",
-      "completed_at": "2026-08-24T04:09:49.965942+00:00",
+      "started_at": "2026-08-24T04:30:27.650207+00:00",
+      "completed_at": "2026-08-24T04:30:28.027665+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32531,20 +32566,20 @@
       "error": null
     },
     {
-      "id": 302,
+      "id": 306,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T04:09:34.830350+00:00",
-      "completed_at": "2026-08-24T04:09:35.345206+00:00",
+      "started_at": "2026-08-24T04:30:13.302564+00:00",
+      "completed_at": "2026-08-24T04:30:13.973585+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 305,
+      "id": 309,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T04:09:50.366979+00:00",
-      "completed_at": "2026-08-24T04:09:52.203164+00:00",
+      "started_at": "2026-08-24T04:30:28.429387+00:00",
+      "completed_at": "2026-08-24T04:30:30.129421+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32561,13 +32596,13 @@
       "error": null
     }
   ],
-  "document_count": 1244,
+  "document_count": 1249,
   "event_count": 966,
   "mention_count": 2368,
   "review_counts": {
-    "provisional": 17,
-    "confirmed": 271,
-    "flagged": 678,
+    "provisional": 0,
+    "confirmed": 275,
+    "flagged": 691,
     "flagged_retry_pending": 0
   }
 }
