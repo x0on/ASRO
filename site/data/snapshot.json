@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T10:04:06.612699+00:00",
+  "generated_at": "2026-08-24T10:54:00.231963+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "external_pressure": 16.12,
+    "capital": 48.732271163185665,
+    "stress": 57.1,
+    "monetization": 42.9,
     "fragility": 61.1,
     "counter_evidence": 42.9,
-    "circularity": 57.1,
-    "monetization": 42.9,
-    "external_pressure": 16.12,
-    "cannibalization": 54.2,
     "transmission": 39.6,
-    "capital": 48.732271163185665,
-    "stress": 57.1
+    "cannibalization": 54.2,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
-    "monetization": "directional_estimate",
-    "external_pressure": "aggregate",
-    "transmission": "confirmed_trigger",
     "capital": "aggregate",
-    "stress": "directional_estimate"
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "external_pressure": "aggregate",
+    "stress": "directional_estimate",
+    "monetization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T10:53:59.728671+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"fragility\": 61.1, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"circularity\": 57.1}"
+    },
     {
       "captured_at": "2026-08-24T10:04:06.174393+00:00",
       "score": 45.3,
@@ -7242,6 +7248,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:eb0eb603925d699af126be9f507024ca33bea9717f3b5470cc9940d1de5cf66c",
+        "label": "Micron, Alphabet, Amazon and Nvidia are part of Zacks Earnings Preview - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTms3YUhHRFpCVEx1LWtHQWQtR3BXakxYQWNkS2VTWG9sbHpwODhnZjJnQWI4NVRSNURYR3ZVUzh3Mm5vanlZRTl5bTlQYk1KLTdLZjRLM0YzVHk3RUMtbmdhYjI1R0hvZksyTF94Y0NSSVRIOTB4dVJGdS1GQmN0RWd3UkZJOXJKMmFNZERyWUtTS3lVN2RJTXViU2VxbFJZ?oc=5",
+        "date": "Mon, 24 Aug 2026 10:32:00 GMT",
+        "summary": "Micron, Alphabet, Amazon and Nvidia are part of Zacks Earnings Preview Yahoo Finance",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:b79cbf2064c8055e01c671b32261fa7da9db1232b64d80e2bd347b3dcfdd63bf",
         "label": "Nvidia Is Coming for OpenAI and DeepSeek With $6 Billion Poolside Deal to Build a Powerful Open-Weight AI Model: Report - Yahoo Finance Singapore",
         "kind": "evidence",
@@ -7887,6 +7905,18 @@
         "date": "Thu, 28 May 2026 07:00:00 GMT",
         "summary": "Beyond the IPO frenzy: what Nasdaq\u2019s new \u2018Fast Entry\u2019 rules could mean for ETF investors Bitpanda",
         "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d95d242fe414d39d6f5a5931922dc5890ee8fa2f6584d27c398bc46841f0fbff",
+        "label": "ByteDance folds AI tools into Doubao super-app to fight Tencent - The Edge Malaysia",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Edge Malaysia",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE45YUZyR2pSRW1sRXhXTlUyanlGNmRXVlBXaTNKU3o5UDFFMFJWc1FicEpMcHJDR19mOUE2Mm5xVkp1V1pJRHNEX011d3gzY0Zp?oc=5",
+        "date": "Mon, 24 Aug 2026 10:39:51 GMT",
+        "summary": "ByteDance folds AI tools into Doubao super-app to fight Tencent The Edge Malaysia",
+        "score": 2,
         "weight": 1
       },
       {
@@ -9195,6 +9225,30 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:aaf96987c4c34a109f64805e450a13d033885d3165d689555fa2d7ec558a9515",
+        "label": "Alibaba's HK$80 Billion Share Sale Is an AI All-In Bet\u2014and a Dilution Flashpoint - finance.biggo.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB6WERvcW56NFE3ODJyOXVkdGZPRzNmZ01jVjh0VGNfVko4SjJzTERQX1QtSEdzSVpZTmtueGJkZEVoMFhoZTk0Z3ZqQ2dGV1llNWNWTUpYcHVuUVhOSGNtVjU2NHJyNEZaandWRGJVLWVmMjh5X1E?oc=5",
+        "date": "Mon, 24 Aug 2026 03:00:58 GMT",
+        "summary": "Alibaba's HK$80 Billion Share Sale Is an AI All-In Bet\u2014and a Dilution Flashpoint finance.biggo.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:80bfa2b2bcbe18b7541e1ec97ca5122b407efc05edf7c2f0363bf167166c73d9",
+        "label": "Tencent trims Amer Sports (NYSE: AS) stake below 5% in block sale - Stock Titan",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Stock Titan",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZUtsMzc2aUEtSjYzWi1fZ1JQOVVNSy1KQUxyOTdGd0p2ek0zNkM0TkxpdlNKMzBxLUJYVmVWVHJocGlHX29KNHA4YjNmdjRoWTJxWTJ5cWVaZ09KVnlrTUY4c1UxR1Yta3VXRGZJV1RLdGo0Y3NYcmxRSkotWFMyblpUTnlNajAzeGFtU216cElUbW5LTmFWYXBLV3hWRUpsN280LUpudHFqQ05IdlM3SWpIZXdNMDE3MnNmYm9fT18?oc=5",
+        "date": "Mon, 24 Aug 2026 10:03:43 GMT",
+        "summary": "Tencent trims Amer Sports (NYSE: AS) stake below 5% in block sale Stock Titan",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10898,54 +10952,6 @@
         "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE1SYnFxaUk3a2NnUG9NMVhlQ3VHQ0txMmpjVUlDaHYwbnBLdExFeFN3ekRSTWM2UGxxVEJBYWVORQ?oc=5",
         "date": "Tue, 06 Jan 2026 08:00:00 GMT",
         "summary": "xAI Raises $20B Series E X.ai",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0ef6ddf22793d75de008655bd1fdca189119c3a78c7a68bc50d1577655410d87",
-        "label": "Tech leader xAI investing more than $20 billion in Southaven \u00bb Office of Governor Tate Reeves - Office of Governor Tate Reeves (.gov)",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Office of Governor Tate Reeves (.gov)",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNX2RxZEdjTkxJUUdxVGJIS0lPamMwMzdtZ0RqVmo1bi12QXlqby05SlJ6QjlJSGZQWUdxSXQ3R0hoNzdQWG1ocEpSSkY5Ymlzc0VzRDFHcmlpdFR3ekNCUTZhNDM0UF9oZjh4VmFoTVFCWVU0Q000QTQ2MkdERTkyZ3plamRMMUIxcTdqbXI2NlJvMHNN?oc=5",
-        "date": "Thu, 08 Jan 2026 08:00:00 GMT",
-        "summary": "Tech leader xAI investing more than $20 billion in Southaven \u00bb Office of Governor Tate Reeves Office of Governor Tate Reeves (.gov)",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:bda60c7bbbcd0dfacfcf8c28a5de206ec90ec90d0cbc8bd7c91851abdad24bef",
-        "label": "Meta Reports Fourth Quarter and Full Year 2025 Results - Meta Investor Relations",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Meta Investor Relations",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUEEtR2l5c2xYVVhqeVJMRTVDMU1tTzctSFA5aUpyN2p1TWpOV3pvR2VYdnJnQ1VwbVNjQTc3ajl1V2xodUlMYnQ2ZTg4eWNucHpKXzVMaVJzejBOaDdGVUJmOXFFdTc0NmcyVkNnb0ZFUktWTUUwZzYxZU12cHVYRElZR3I0NDZKSkUzcmJBVkxnTjVHZlJlNkg3TUljcTltMk92YnFVSUZ1LUlQeFFuYTlBVktwTXJJZkxZaXN4ZEstQkVLRGx5eWxCbDhVNjBvSVE?oc=5",
-        "date": "Wed, 28 Jan 2026 08:00:00 GMT",
-        "summary": "Meta Reports Fourth Quarter and Full Year 2025 Results Meta Investor Relations",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5b56c2e558377263ad7d3fb303298947737049c25abd42a30204fdcdfd90b9ea",
-        "label": "Apollo to Announce Fourth Quarter and Full Year 2025 Financial Results on February 9, 2026 - Apollo Global Management",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Apollo Global Management",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQamx5MUJzLTAxc1Y4TDE3V0ExWXlFdXBLMDNlNnJUS0FjYVR0RHh3bnp1dDdsM295anhhUkdQZXJXTWwyd0xrYUd2RTJCcl93N0dMNHRZZGFKY0NQdTB3UzNtOGlPMkM5N1czNDBTLW1ZRm9RMEN2TDRJbFFwTUtHeHhGTjJCX29kaE5mT2xZUHY1NllvSDBDaFhPUkN4dlAxSTBDTllwcGNaZ0NrSkVaQTVR?oc=5",
-        "date": "Tue, 06 Jan 2026 08:00:00 GMT",
-        "summary": "Apollo to Announce Fourth Quarter and Full Year 2025 Financial Results on February 9, 2026 Apollo Global Management",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a07a4ed170c4990a4c04b982ef18daa32cb25f91bcd38a4b7282aa32459bc91c",
-        "label": "Intuit and Amazon Expand Strategic Partnership - Intuit",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Intuit",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWThRVERaU0I2UTlCMWRmTzFiRFZzaDdBZEFsbFNnSU5SSHRCdVJLQVREZFFFSHFRZ3RlX2lmNU04RWRjOUVhUUUwaUJPWktQdU42bjIyUFJOLXVaR3JBaGlCTHFEVGlfd1dJS3U4MTRvSFZHSTBvQUZsbHFqT2xzcHJFaHlUTm56OV9rOXlFREk?oc=5",
-        "date": "Wed, 15 Jul 2026 07:00:00 GMT",
-        "summary": "Intuit and Amazon Expand Strategic Partnership Intuit",
         "score": 1,
         "weight": 1
       }
@@ -15180,6 +15186,27 @@
         "mentions": 1
       },
       {
+        "source": "Alphabet",
+        "target": "evidence:eb0eb603925d699af126be9f507024ca33bea9717f3b5470cc9940d1de5cf66c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:eb0eb603925d699af126be9f507024ca33bea9717f3b5470cc9940d1de5cf66c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:eb0eb603925d699af126be9f507024ca33bea9717f3b5470cc9940d1de5cf66c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "DeepSeek",
         "target": "evidence:b79cbf2064c8055e01c671b32261fa7da9db1232b64d80e2bd347b3dcfdd63bf",
         "type": "EVIDENCE",
@@ -15714,6 +15741,20 @@
       {
         "source": "OpenAI",
         "target": "evidence:06600c95c2f5d695294bccb3ff4287570861bf67cd81eb6bf97b9687a284e151",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:d95d242fe414d39d6f5a5931922dc5890ee8fa2f6584d27c398bc46841f0fbff",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:d95d242fe414d39d6f5a5931922dc5890ee8fa2f6584d27c398bc46841f0fbff",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17119,6 +17160,20 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:aaf96987c4c34a109f64805e450a13d033885d3165d689555fa2d7ec558a9515",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:80bfa2b2bcbe18b7541e1ec97ca5122b407efc05edf7c2f0363bf167166c73d9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alphabet",
         "target": "evidence:447aad217ed21039b3eb979b9f7702795a8aba3176abf3c437e66ccfef8ab6d9",
         "type": "EVIDENCE",
@@ -18108,34 +18163,6 @@
       {
         "source": "xAI",
         "target": "evidence:03f5e6b7ba00a9d8d145e3e9df150232abbf0ffe6e4e63ac6482373b73599f6d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:0ef6ddf22793d75de008655bd1fdca189119c3a78c7a68bc50d1577655410d87",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Meta",
-        "target": "evidence:bda60c7bbbcd0dfacfcf8c28a5de206ec90ec90d0cbc8bd7c91851abdad24bef",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:5b56c2e558377263ad7d3fb303298947737049c25abd42a30204fdcdfd90b9ea",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:a07a4ed170c4990a4c04b982ef18daa32cb25f91bcd38a4b7282aa32459bc91c",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32651,20 +32678,20 @@
   ],
   "collector_runs": [
     {
-      "id": 327,
+      "id": 331,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T10:03:48.315501+00:00",
-      "completed_at": "2026-08-24T10:04:02.783973+00:00",
+      "started_at": "2026-08-24T10:53:42.221943+00:00",
+      "completed_at": "2026-08-24T10:53:56.205281+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 8,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 328,
+      "id": 332,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T10:04:03.185370+00:00",
-      "completed_at": "2026-08-24T10:04:03.633401+00:00",
+      "started_at": "2026-08-24T10:53:56.606523+00:00",
+      "completed_at": "2026-08-24T10:53:57.097173+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32681,20 +32708,20 @@
       "error": null
     },
     {
-      "id": 326,
+      "id": 330,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T10:03:47.045090+00:00",
-      "completed_at": "2026-08-24T10:03:47.914219+00:00",
+      "started_at": "2026-08-24T10:53:41.226827+00:00",
+      "completed_at": "2026-08-24T10:53:41.820706+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 329,
+      "id": 333,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T10:04:04.035081+00:00",
-      "completed_at": "2026-08-24T10:04:05.760722+00:00",
+      "started_at": "2026-08-24T10:53:57.498195+00:00",
+      "completed_at": "2026-08-24T10:53:59.313044+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32711,7 +32738,7 @@
       "error": null
     }
   ],
-  "document_count": 1283,
+  "document_count": 1287,
   "event_count": 967,
   "mention_count": 2369,
   "review_counts": {
