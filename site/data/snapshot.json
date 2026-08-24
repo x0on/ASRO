@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T10:54:00.231963+00:00",
+  "generated_at": "2026-08-24T11:44:30.927527+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "external_pressure": 16.12,
-    "capital": 48.732271163185665,
-    "stress": 57.1,
-    "monetization": 42.9,
-    "fragility": 61.1,
     "counter_evidence": 42.9,
+    "capital": 48.732271163185665,
+    "monetization": 42.9,
+    "stress": 57.1,
     "transmission": 39.6,
     "cannibalization": 54.2,
-    "circularity": 57.1
+    "circularity": 57.1,
+    "external_pressure": 16.12,
+    "fragility": 61.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "capital": "aggregate",
-    "fragility": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "external_pressure": "aggregate",
-    "stress": "directional_estimate",
     "monetization": "directional_estimate",
     "transmission": "confirmed_trigger",
+    "stress": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "circularity": "directional_estimate"
+    "circularity": "directional_estimate",
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T11:44:30.414208+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 16.12, \"fragility\": 61.1, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 48.732271163185665}"
+    },
     {
       "captured_at": "2026-08-24T10:53:59.728671+00:00",
       "score": 45.3,
@@ -7908,6 +7914,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:86b801358449a1e6e8025ad234b06d07501a088deafdb8098a11103be6eb935d",
+        "label": "Weekly Recap: NVIDIA backs OpenAI Pike County lease and Q1 revenue surge - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORWZ0UGFvUHJrTnZFRmZ2STBWYjVhdEJLLXFFTTI1MVhuVkphUzl0WGR3VV83QndJTGVLOGowbGp3SmUyY1o4UXNQWElaYXRjNThVcWY3bVF3RTB2Y0QyWDZkNFNMRVdoLU5IZlJzWFdJX2RtM0JFeWNWeFFVWmpNWDZRMXBQV2NDSnRzZllvM3JVQ3E1anN3OEI3aW1LenJXcGNRLXRvOS1RdFBKandZcExWSXcwel9lNkJLRkJTTjJjR1JOZE1XS0NCaUdMdw?oc=5",
+        "date": "Mon, 24 Aug 2026 11:21:57 GMT",
+        "summary": "Weekly Recap: NVIDIA backs OpenAI Pike County lease and Q1 revenue surge TradingView",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:d95d242fe414d39d6f5a5931922dc5890ee8fa2f6584d27c398bc46841f0fbff",
         "label": "ByteDance folds AI tools into Doubao super-app to fight Tencent - The Edge Malaysia",
         "kind": "evidence",
@@ -9225,6 +9243,30 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b470b3d54557c12ea6ba8633c7b40af1cf8b6b88614f749313c83a54a8c417fb",
+        "label": "What the Google-Marvell Deal Means for Data Centre Chips - Data Centre Magazine",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Data Centre Magazine",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcjVzTG9ndFRCcGdlVnNGd1Z1cnh1M1RJcXlwVWJHeVFuR3FqeTNZdjNET2JmcURjSEVyMk1FazhIOUtqQU9YU3pqU1V6c2E0dXFfM2c1cmUwM2ZKdXBnbHhzTnFfSEJpalZ0NjZEZ0J5azFmbUpOWm1hbm5pYlllSXdUcVlUQ1lVSVRoTzBsbF9EaWdqeGZJ?oc=5",
+        "date": "Mon, 24 Aug 2026 10:09:51 GMT",
+        "summary": "What the Google-Marvell Deal Means for Data Centre Chips Data Centre Magazine",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3d361bd6c7dfb8bb349e12cab182f6a1cecb3d7023d5dc42b761dea5d5a326f6",
+        "label": "More tidbits from Epic UGM: Anthropic's Project Glasswing and a deeper partnership with UpToDate - Fierce Healthcare",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Fierce Healthcare",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZ18zMV9kMHZXcHBIMjRTdUxKQ3VuV25tLWVJOUlFX0c4SUk4ODRCc0FfdWdvbTJiZ3NKcldlRzRjV0JOcWJrY2NWQkljUk9CX283OUlSTDJiSFVXT001MG1TVUNGLUdLVjdWTFQ3NGhDNzFrakktMG03bGVYNVdGbnhsNTJjWTdmN1pNN1g5T1NWRHJMdlcyc1I1YUtKOVZyRTN6UFc3ZzJFeTcwR1NTZTlwcVRVNDd2aEh1cUVDWW93dkVBcHc?oc=5",
+        "date": "Mon, 24 Aug 2026 11:00:00 GMT",
+        "summary": "More tidbits from Epic UGM: Anthropic's Project Glasswing and a deeper partnership with UpToDate Fierce Healthcare",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10916,42 +10958,6 @@
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBHcjVqRWFQaV9oUlVUS1UxMXZqbTBybVhfYmRPdDBEMnFDLXg2QVZTV0l4cFFIdzN5UU4tX2gyWlRSQXBmQWtZbFVvRzRkOHRwUDV5UVgyQlhqU0RQRzJVWHNCeEQtcUNUY0lmbU1BbDNfandUU1E?oc=5",
         "date": "Wed, 19 Aug 2026 20:59:00 GMT",
         "summary": "OpenAI Says It Will Be Public by Next Year As AI Battle Heats Up Barron's",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0460ea7707da7e8b08447d9da0e2b49fad5f96e5a99510938aca4f843dc56fb5",
-        "label": "OpenAI CFO Tells Employees Public Debut Coming by 2027 - PYMNTS.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "PYMNTS.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNc2J3X0NtQTdtRlgtNUhXdTlqY2gzQVQ0RVdPMkVTQlE4SGtQQXdQQ01fc2Vsa0NJX0V5Qm5rSGtwalVtNWg1cDltaUJDYkVPV0QzZl9mZnAxYm9kWTdrLVI5MTFlVEhWajFsREN2SDZXN1RvSl9aT0RLOFdBYmhBaFlIS3RZcm5XTDM1NlFHTE9GRGhnRTBUUUttQm9GNW53Tng2ZkFoUWtXdWZyVDJFZzdR?oc=5",
-        "date": "Wed, 19 Aug 2026 22:47:47 GMT",
-        "summary": "OpenAI CFO Tells Employees Public Debut Coming by 2027 PYMNTS.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:88d17cfe1c55b15545b1f0ce0c4de3902843a5f38765120725d6b12f439cc012",
-        "label": "Heavy losses and weak revenue: xAI\u2019s brutal numbers - Substack",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Substack",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMGlsQUdMRHplTHZrTjkyRTNpVkdwR1JISHBhQ3dOb0VuMVJ0N090RHJlS0VhaExXMlgwWGw4ZnFEMjlzTnVwbEZXSUt6WWZHc0U3SnZVbW1XYW5OZmNhZWNLdWQwbXF3OXFySzBubkVPUWFjQTg5Qy1zS0gwdmthaA?oc=5",
-        "date": "Tue, 26 May 2026 07:00:00 GMT",
-        "summary": "Heavy losses and weak revenue: xAI\u2019s brutal numbers Substack",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:03f5e6b7ba00a9d8d145e3e9df150232abbf0ffe6e4e63ac6482373b73599f6d",
-        "label": "xAI Raises $20B Series E - X.ai",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "X.ai",
-        "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE1SYnFxaUk3a2NnUG9NMVhlQ3VHQ0txMmpjVUlDaHYwbnBLdExFeFN3ekRSTWM2UGxxVEJBYWVORQ?oc=5",
-        "date": "Tue, 06 Jan 2026 08:00:00 GMT",
-        "summary": "xAI Raises $20B Series E X.ai",
         "score": 1,
         "weight": 1
       }
@@ -15746,6 +15752,20 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:86b801358449a1e6e8025ad234b06d07501a088deafdb8098a11103be6eb935d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:86b801358449a1e6e8025ad234b06d07501a088deafdb8098a11103be6eb935d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "ByteDance",
         "target": "evidence:d95d242fe414d39d6f5a5931922dc5890ee8fa2f6584d27c398bc46841f0fbff",
         "type": "EVIDENCE",
@@ -17160,6 +17180,20 @@
         "mentions": 1
       },
       {
+        "source": "Alphabet",
+        "target": "evidence:b470b3d54557c12ea6ba8633c7b40af1cf8b6b88614f749313c83a54a8c417fb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:3d361bd6c7dfb8bb349e12cab182f6a1cecb3d7023d5dc42b761dea5d5a326f6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alibaba",
         "target": "evidence:aaf96987c4c34a109f64805e450a13d033885d3165d689555fa2d7ec558a9515",
         "type": "EVIDENCE",
@@ -18142,27 +18176,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:2570b16d6c5225d767024bdfa4867d5a0a90af506392fde33ddd86a5cd9faf12",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:0460ea7707da7e8b08447d9da0e2b49fad5f96e5a99510938aca4f843dc56fb5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:88d17cfe1c55b15545b1f0ce0c4de3902843a5f38765120725d6b12f439cc012",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:03f5e6b7ba00a9d8d145e3e9df150232abbf0ffe6e4e63ac6482373b73599f6d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32678,20 +32691,20 @@
   ],
   "collector_runs": [
     {
-      "id": 331,
+      "id": 335,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T10:53:42.221943+00:00",
-      "completed_at": "2026-08-24T10:53:56.205281+00:00",
+      "started_at": "2026-08-24T11:44:13.328080+00:00",
+      "completed_at": "2026-08-24T11:44:27.137776+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 4,
+      "items_new": 6,
       "error": null
     },
     {
-      "id": 332,
+      "id": 336,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T10:53:56.606523+00:00",
-      "completed_at": "2026-08-24T10:53:57.097173+00:00",
+      "started_at": "2026-08-24T11:44:27.538676+00:00",
+      "completed_at": "2026-08-24T11:44:27.899905+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32708,20 +32721,20 @@
       "error": null
     },
     {
-      "id": 330,
+      "id": 334,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T10:53:41.226827+00:00",
-      "completed_at": "2026-08-24T10:53:41.820706+00:00",
+      "started_at": "2026-08-24T11:44:12.059862+00:00",
+      "completed_at": "2026-08-24T11:44:12.927106+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 333,
+      "id": 337,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T10:53:57.498195+00:00",
-      "completed_at": "2026-08-24T10:53:59.313044+00:00",
+      "started_at": "2026-08-24T11:44:28.301098+00:00",
+      "completed_at": "2026-08-24T11:44:29.998623+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32738,7 +32751,7 @@
       "error": null
     }
   ],
-  "document_count": 1287,
+  "document_count": 1294,
   "event_count": 967,
   "mention_count": 2369,
   "review_counts": {
