@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T15:00:43.376424+00:00",
+  "generated_at": "2026-08-24T15:56:17.643292+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "capital": 48.732271163185665,
     "transmission": 39.6,
-    "circularity": 57.1,
-    "cannibalization": 54.2,
-    "external_pressure": 16.12,
-    "stress": 57.1,
-    "monetization": 42.9,
-    "fragility": 61.1,
     "counter_evidence": 42.9,
-    "capital": 48.732271163185665
+    "fragility": 61.1,
+    "monetization": 42.9,
+    "circularity": 57.1,
+    "stress": 57.1,
+    "cannibalization": 54.2,
+    "external_pressure": 16.12
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
     "counter_evidence": "directional_estimate",
-    "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
     "circularity": "directional_estimate",
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
+    "monetization": "directional_estimate",
     "cannibalization": "directional_estimate",
     "stress": "directional_estimate",
-    "monetization": "directional_estimate",
-    "fragility": "directional_estimate",
-    "capital": "aggregate"
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T15:56:17.151707+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"stress\": 57.1}"
+    },
     {
       "captured_at": "2026-08-24T15:00:42.886470+00:00",
       "score": 45.3,
@@ -7344,6 +7350,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:45585b3648999f3dfc4bea0183e37d48981875a6a8d94ed2d6a21e4a56960f8f",
+        "label": "Nvidia Is Coming for OpenAI and DeepSeek With $6 Billion Poolside Deal to Build a Powerful Open-Weight AI Model: Report - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5JR091ZzlzRWd1aUNyOGtBdWtJNGpxY2U0UDMyaGItaFotNTVBZGtXRXV1cTFBNmstYWU2VXp5QTNrcGpkcVpEcE51TThkZm9uT2p3eWZ1b3dGeVBkSTFxUVRObVlfakha?oc=5",
+        "date": "Mon, 24 Aug 2026 04:21:00 GMT",
+        "summary": "Nvidia Is Coming for OpenAI and DeepSeek With $6 Billion Poolside Deal to Build a Powerful Open-Weight AI Model: Report TradingView",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:83f147a5b5a44e23cd674bbf05e906b9ef0f3e9e3b900159d9f38ff361812c30",
         "label": "Jeff Bezos' Amazon Just Raised Its AI Spending Target to $220 Billion for 2026. Here's What That Capex Hike Means for Investors. - The Motley Fool",
         "kind": "evidence",
@@ -9372,6 +9390,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:8334cd0ec61dce721036814dd72dcfae8ae0f360616c5d8bf605ac8217694d71",
+        "label": "Nvidia earnings face a frustrating reality - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOak1xcHMxVk9KZmlxSTY5cDB3cmpfSFZxb0c3OHhaaE5KdjBVMGxvM1pFY2RwNVJSS3NhbXJNT2VsdmVDa0UyV3RDUFVvcTRfRmxZRGxZakpsMTlpdkZ0WVRtM0dHYTZ0eHNGbG1zSnVVNGFWMGhSLU10ckNhTTFVczRRMTNZcm5GTUFmZHdRUFRQT1RMUjQxQldXTVVDYXlRN2VTelljd3Jpdw?oc=5",
+        "date": "Mon, 24 Aug 2026 12:09:17 GMT",
+        "summary": "Nvidia earnings face a frustrating reality Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ab78a6fa0d062cfd6743bfa0ec7b9c3b2c29721849a73b34ae5b95b2ba42fa05",
+        "label": "Older Claude Models Found Vulnerable To Jailbreak Producing Explicit Content, Testing Shows - AI Insider",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "AI Insider",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcVJUNDEtRVBuLWR2WVlLcUc1VGsyREdjX1hXa3IzSFNnYnVqMlluRVBJazRJRnk0RzBqZW1fTzJ0N3hwX2o2WHJTbzJLaUQtN1RnYmgtVFp4enpJUERoMmJ1QVpLRjRHdDRJSnVFQmUwMHdDcklTWUdpc0QxSDl0SjBUOXlzTmozQVNVUk9XRVZyLVB2NUVIRUdBbVc0UGE3d2wyQmVGaG1DSGk5ZmlvcWh1azV2RXJYZGFrUXBISXNtSU5ZOEZn?oc=5",
+        "date": "Mon, 24 Aug 2026 15:45:00 GMT",
+        "summary": "Older Claude Models Found Vulnerable To Jailbreak Producing Explicit Content, Testing Shows AI Insider",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:e2824b03970c00ce1978ac6c907417ecc1e38f06ebf34070b8f145f6808f043d",
         "label": "This Nvidia earnings fact will frustrate you - Yahoo Finance",
         "kind": "evidence",
@@ -10940,42 +10982,6 @@
         "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9nZWs3NUphS3BTUVVMUU9jb092WlFZaTZlSzZHV1JLRUxNNHZxSE9IUGNVeDNzVG9NYVNUMXRrak5zTWQwWkc2amFWTkFvVXJIWkJGMXpYX25WdE1zZ3d4NGo4YW9NOUY0?oc=5",
         "date": "Fri, 05 Jun 2026 07:00:00 GMT",
         "summary": "NVIDIA Nemotron 3 Ultra: 550B Open AI, #2 to China [2026] tech-insider.org",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3cd3d67c26c7161cd9b2b4b833d634adafe10c275a046d2d805f88fce0565543",
-        "label": "MiniMax M3 Claims 59% SWE-bench, Beats GPT-5.5 [2026] - tech-insider.org",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "tech-insider.org",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE55STFTdkNnVnhKOGtvNm9lN0hIZU1felh2R0dmY3E2OUV4OG53aTdYVkVVX1QxRHZMUFJiZE8ydXhBQVJRbzhXMHkzSk0zVWNJeng3QkwyMk5JT0R6MTdxSUVlV0o4aVdRTEpoRg?oc=5",
-        "date": "Tue, 30 Jun 2026 07:00:00 GMT",
-        "summary": "MiniMax M3 Claims 59% SWE-bench, Beats GPT-5.5 [2026] tech-insider.org",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cb5ec0a276e243b703058c08eb91069c2dc5b42c45e20e4235faff36d2c389e5",
-        "label": "CAISI Evaluation of DeepSeek V4 Pro - National Institute of Standards and Technology (.gov)",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "National Institute of Standards and Technology (.gov)",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbnpMSXhpbnhyUG4yNWwySi01cnhqOTFIRlBCYXdNNnZrdXlhV2NXSXdkTWh5RklwaEljNmtqZ1p2YmMzb2Z1Ymt2TFhSN0s5UXk4MGdwOXFfQ0tnekttMEJCVmJsSGNvXzRLSW9BTUdyOE1yOVhvQ3RNZWJ1Ni1YMFNvSmc?oc=5",
-        "date": "Fri, 01 May 2026 07:00:00 GMT",
-        "summary": "CAISI Evaluation of DeepSeek V4 Pro National Institute of Standards and Technology (.gov)",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2dcfe67f0f1325b56bcf85539a02a8e11ef49905a585bbfdd7f32a18ca1501ef",
-        "label": "Everything You Need to Know About Kimi K3, the Latest Model From China to Shake Up AI - Big Technology | Alex Kantrowitz",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Big Technology | Alex Kantrowitz",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE90djZFdmZzRm5XbTFQemRaXzhMbTdhT0YwNHB3cVZJR2JxOTJVM0sxakpaX01zT1h5eUM2V3F6b00zX09ZVFUwVkFmZXhzd1NyamlwWE9xVUNXQ2hMeE5LeExyRUs3a3RZYjIwd2VQTXpoaTg?oc=5",
-        "date": "Mon, 20 Jul 2026 07:00:00 GMT",
-        "summary": "Everything You Need to Know About Kimi K3, the Latest Model From China to Shake Up AI Big Technology | Alex Kantrowitz",
         "score": 1,
         "weight": 1
       }
@@ -15266,6 +15272,27 @@
         "mentions": 1
       },
       {
+        "source": "DeepSeek",
+        "target": "evidence:45585b3648999f3dfc4bea0183e37d48981875a6a8d94ed2d6a21e4a56960f8f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:45585b3648999f3dfc4bea0183e37d48981875a6a8d94ed2d6a21e4a56960f8f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:45585b3648999f3dfc4bea0183e37d48981875a6a8d94ed2d6a21e4a56960f8f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:83f147a5b5a44e23cd674bbf05e906b9ef0f3e9e3b900159d9f38ff361812c30",
         "type": "EVIDENCE",
@@ -17297,6 +17324,20 @@
       },
       {
         "source": "Nvidia",
+        "target": "evidence:8334cd0ec61dce721036814dd72dcfae8ae0f360616c5d8bf605ac8217694d71",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:ab78a6fa0d062cfd6743bfa0ec7b9c3b2c29721849a73b34ae5b95b2ba42fa05",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
         "target": "evidence:e2824b03970c00ce1978ac6c907417ecc1e38f06ebf34070b8f145f6808f043d",
         "type": "EVIDENCE",
         "weight": 1,
@@ -18208,27 +18249,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:398924fe047fe80ce0e0abaa73bbb006033d6cd0c57a4cfda99f63f243eb17e3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:3cd3d67c26c7161cd9b2b4b833d634adafe10c275a046d2d805f88fce0565543",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:cb5ec0a276e243b703058c08eb91069c2dc5b42c45e20e4235faff36d2c389e5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:2dcfe67f0f1325b56bcf85539a02a8e11ef49905a585bbfdd7f32a18ca1501ef",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32759,20 +32779,20 @@
   ],
   "collector_runs": [
     {
-      "id": 347,
+      "id": 351,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T15:00:22.457150+00:00",
-      "completed_at": "2026-08-24T15:00:39.507157+00:00",
+      "started_at": "2026-08-24T15:55:56.521619+00:00",
+      "completed_at": "2026-08-24T15:56:13.178686+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 9,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 348,
+      "id": 352,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T15:00:39.908061+00:00",
-      "completed_at": "2026-08-24T15:00:40.339229+00:00",
+      "started_at": "2026-08-24T15:56:13.579586+00:00",
+      "completed_at": "2026-08-24T15:56:14.067885+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32789,20 +32809,20 @@
       "error": null
     },
     {
-      "id": 346,
+      "id": 350,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T15:00:20.854159+00:00",
-      "completed_at": "2026-08-24T15:00:22.055741+00:00",
+      "started_at": "2026-08-24T15:55:55.312440+00:00",
+      "completed_at": "2026-08-24T15:55:56.120403+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 2,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 349,
+      "id": 353,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T15:00:40.740509+00:00",
-      "completed_at": "2026-08-24T15:00:42.470803+00:00",
+      "started_at": "2026-08-24T15:56:14.469133+00:00",
+      "completed_at": "2026-08-24T15:56:16.735859+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32819,7 +32839,7 @@
       "error": null
     }
   ],
-  "document_count": 1319,
+  "document_count": 1323,
   "event_count": 968,
   "mention_count": 2370,
   "review_counts": {
