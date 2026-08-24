@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T07:21:02.377261+00:00",
+  "generated_at": "2026-08-24T09:04:59.807723+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "counter_evidence": 42.9,
+    "external_pressure": 16.12,
     "transmission": 39.6,
     "fragility": 61.1,
-    "counter_evidence": 42.9,
     "cannibalization": 54.2,
-    "external_pressure": 16.12,
-    "circularity": 57.1,
-    "capital": 48.732271163185665,
     "stress": 57.1,
-    "monetization": 42.9
+    "monetization": 42.9,
+    "capital": 48.732271163185665,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "capital": "aggregate",
-    "transmission": "confirmed_trigger",
     "counter_evidence": "directional_estimate",
     "external_pressure": "aggregate",
-    "circularity": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
     "stress": "directional_estimate",
-    "monetization": "directional_estimate"
+    "circularity": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "monetization": "directional_estimate",
+    "capital": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -669,6 +669,12 @@
   ],
   "history": [
     {
+      "captured_at": "2026-08-24T09:04:59.313889+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"stress\": 57.1}"
+    },
+    {
       "captured_at": "2026-08-24T07:21:01.849392+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
@@ -1248,6 +1254,12 @@
         "weight": 4
       },
       {
+        "id": "Microsoft",
+        "label": "Microsoft",
+        "kind": "company",
+        "weight": 3
+      },
+      {
         "id": "Zhipu AI",
         "label": "Zhipu AI",
         "kind": "company",
@@ -1266,12 +1278,6 @@
         "weight": 2
       },
       {
-        "id": "Microsoft",
-        "label": "Microsoft",
-        "kind": "company",
-        "weight": 2
-      },
-      {
         "id": "Moonshot AI",
         "label": "Moonshot AI",
         "kind": "company",
@@ -1282,6 +1288,12 @@
         "label": "Blackstone",
         "kind": "company",
         "weight": 2
+      },
+      {
+        "id": "Meta",
+        "label": "Meta",
+        "kind": "company",
+        "weight": 1
       },
       {
         "id": "Baidu",
@@ -1312,12 +1324,6 @@
         "label": "Apollo",
         "kind": "company",
         "weight": 1
-      },
-      {
-        "id": "Meta",
-        "label": "Meta",
-        "kind": "company",
-        "weight": 0
       },
       {
         "id": "BlackRock",
@@ -4095,6 +4101,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6fa852b0f72448c3ab982992ecec14ae4e165f287b0e44385f0d3833f8e9779c",
+        "label": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B - Stocktwits",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNQ2ZDQkRWWGZaNVdBV1UwS0FEY0RvVVJqUFUxNXd2eHpWM1haeXltLUNpaXB2TW5kcHlJRFo0WFNOQWZFaGNDZ2p3WlcwZjhPVndrYkQwWVAxR0tVVnotaFdDNnZHT1IxZ1BJVHJXZXFpVG5ROUlMcGZoR29iczhkOGM4VG9UMEVWWHJoUEY5TlBCN0RiTEotLTFWNVdFZHZpUmVBOHBuYWVaN0xYMEJzSkgtSno4WHhuc2x4TmpMUkV5bHJDaTNqVHFKalBIMl9pZ01MSjF2a0hpczUtYjMxUHk1OGt0VUxxbHRuaHZ3Nkt4ekRLTl9YZzVQX04wYjFUS25wLUZwWUJwTFU?oc=5",
+        "date": "Sun, 23 Aug 2026 21:15:41 GMT",
+        "summary": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B Stocktwits",
+        "score": 5,
         "weight": 1
       },
       {
@@ -9150,6 +9168,78 @@
         "weight": 1
       },
       {
+        "id": "evidence:6c27ec786de366fecb89661d2a3b367702f9818cef670dc84037514cf403fd0b",
+        "label": "Spinnaker Investment Group LLC Has $2.31 Million Holdings in Amazon.com, Inc. $AMZN - MarketBeat",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPb05BWFVNckduMTF1TzEzbE5oV01jVldRU2tyQW1DdTJOc3YzdE5SaXU0YTRhVXZTXzlpc1NVdEdxcjFvNXlNR3M2NTZ3Njh1bmxQTmJlQUl1V0JrbkJ5NWl2d0lLN2l3T2kwQWkySlBhbW9ZVG5kMDJLR0Q0OE9QcjY4NkJsWE92NTRTdEVsbDFsZmsxVXNEZDVTM3BrN1lTdmhndlQyU0I4UTFKc0g3MUp5V3lyQVVpeWtKWmRielRsdkV2bXhPZmZiMUZocEc0S1FrQg?oc=5",
+        "date": "Mon, 24 Aug 2026 09:00:27 GMT",
+        "summary": "Spinnaker Investment Group LLC Has $2.31 Million Holdings in Amazon.com, Inc. $AMZN MarketBeat",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7064a59917e1d187d8ffeb07b116d724f1a17e94084a972759750eb2f0302cfc",
+        "label": "Going Into Earnings, Is Nvidia Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN1NpRHdBSDVMeGJTSzgwUGFveG1FU3BnOVFwUk5iMi0wWlpHN1o2VUw1U1lkcU96SVBfUVBKb3k1MEJZcHRJMnl2SnJ5RkVheE1WRmhiOVJBekdoR2JyLS1wcGpIOGdTeWxuSkN5cGNTa055TTZzcnpZUDJxTW1CeTlUNFFLMlFoZ2todVVLclhWSVJMcS1NWWprMXl3WnIyS3dXRHNxQXY0X3M?oc=5",
+        "date": "Mon, 24 Aug 2026 08:53:16 GMT",
+        "summary": "Going Into Earnings, Is Nvidia Stock a Buy, a Sell, or Fairly Valued? Morningstar",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c5e756d3c5a8d5d94fd0b8877de68cc31646f995468973eb27ac7a435f1d83fc",
+        "label": "Alibaba shares slide after $10.2 billion AI share sale offered at sharp discount - WKZO",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WKZO",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVUp6ekNoclVBR0FGS181Qk1sWkZYaTc3cklfeW5xYl8xWE5DLUpqUlpWOGhpUXQ0RGhoNV9ndmFMdXkxTmtMTXJsNENibGMzZVlVV29QeHNjUW1ub0VoalRJQk9uVjNEOTFtRFhGX3FERGVnaUlfVkt4VnpqX1hlUi1pWGpzRXlIUDZqOVJBaU1aQ01yUTRlSzNPcXhlLXl4N0xoMWFiOVNkN0sx?oc=5",
+        "date": "Mon, 24 Aug 2026 06:48:27 GMT",
+        "summary": "Alibaba shares slide after $10.2 billion AI share sale offered at sharp discount WKZO",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:1800c33f15dd6d1a4d360c800e11d665f8e6f1798b674c8322bd18bd4692c2df",
+        "label": "Hong Kong Stocks Rebound 62 Points at Midday; Xiaomi Surges 7% After Results, Baidu Plunges 12% - finance.biggo.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1oSTBNZU5aOXhuZ0kzZ1J4TVRjTEJUQXVubzBEU1JPMjRZZ0RqaGpkRzlhRUN6QnJtNXFaTndsR2tqQXdac0VMamkwbFpZelBEdFM1c1FabE5QSjNLaUllODlJZE9zODZFVWRzUXc3VkhXcWVoT1E?oc=5",
+        "date": "Mon, 24 Aug 2026 07:09:24 GMT",
+        "summary": "Hong Kong Stocks Rebound 62 Points at Midday; Xiaomi Surges 7% After Results, Baidu Plunges 12% finance.biggo.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ef7f7a96b0b1d957b24a7e1887d1dfd906375f6f9d8f6458dda262c43c34fe4c",
+        "label": "Longbridge Launches on ChatGPT and Claude - Yahoo Finance Singapore",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance Singapore",
+        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZHY2WVU5S0NnUmhRU2hwbS1DYzM4aUEydFB6RnNQME9UOXhrME9OemItcTFsOFBuQm84M0lGcDVDdkNoZ0tSX1hPLUlST2IzZ3prNWpyTXpNMEcyVXR2U3djOHZ6cTNQdHBKT19VUDFXRzc0NWU5M2QzTnozdG05bHN4cS02SEJERmFB?oc=5",
+        "date": "Mon, 24 Aug 2026 08:00:00 GMT",
+        "summary": "Longbridge Launches on ChatGPT and Claude Yahoo Finance Singapore",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7c2c08b7d2257641a150f2bd5884635f64c701e11ebc7bdeb4c66be5b8de6c52",
+        "label": "Anthropic Has a $65 Billion Run Rate. Buy These Stocks to Profit From It. - The Motley Fool",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMFZLMVlnNnkzQUlGbDZQM3Vfb1lNeHdkUWZSbXk4MWo3WVR3eEhGbl9JMDN4aUFGM3BUOXpYXzB1eG9kX1BSSkoycjlPUVFzTmFtTDlYbHpfN0RfbVpRMzJHN0ItZ1R2eUNEcDlkcUNfLUpBN2ZzdjhXT2ZTV1htNWhvcmxrOEJhV0s2UXRPQndHOE5sTDdSVw?oc=5",
+        "date": "Mon, 24 Aug 2026 08:51:43 GMT",
+        "summary": "Anthropic Has a $65 Billion Run Rate. Buy These Stocks to Profit From It. The Motley Fool",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:f4f84d6b0b365d08418935ab5837066eddd68fb4d6a5b8421aed351e9098638d",
         "label": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% - The Asia Business Daily - \uc544\uc2dc\uc544\uacbd\uc81c",
         "kind": "evidence",
@@ -10852,93 +10942,16 @@
         "summary": "Zhipu AI market cap tops HK$1 trillion after GLM-5.2 release South China Morning Post",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:ce80faab2b35b2c4031cbd10b34a8d532f9f1cf4170340626e76b10296871cfc",
-        "label": "GoldenTree Asset Management Closes $726MM CLO Under GLM Strategy - ABF Journal",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "ABF Journal",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObHU2NF9nY3N0MDQ1RGRBdWxkSXNxSnVwSEZDaDVyN2QyQlI4c0ZXbUd2QVRLS3hHN0J4bl9vS1V1SFI5SFNoUXB5Z0FMS3JFX1E0bEkwNUhraWVQNHhHQXRxZE15bWZVTDJfMHlGRDYxdGQ2eV9iSzl0Ul96M1Q2QjVBNDJZaUx4eE1uc3FuU0RHb3MzQ0E?oc=5",
-        "date": "Thu, 02 Jul 2026 06:28:46 GMT",
-        "summary": "GoldenTree Asset Management Closes $726MM CLO Under GLM Strategy ABF Journal",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:49bda1fc05dca8d850b52e42fecbd083b249ad8eced3f8bbddaf020b040614f7",
-        "label": "GoldenTree Asset Management Announces Closing of $602 Million CLO Under GLM Strategy - Business Wire",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Business Wire",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPampqX2ZTQkQwYk5iMWxINGdibGZyV2xwOFU5X0xuR29wZWU5aEJBT211MG5YOFlZdEFYX0NQYTBSeFk3QUcxaWZIM2otQ3NmQ1IxMDNkcnpGSXVYNkVkTXdCSzRRM2JJN1RnSzVvd3VFWi1EbWIyajNjSjViRFBldHBfY0V0TFc0a09XRWFPUk01azBBd3BCMV8xWnotVVhPNTlQbE1MZ1N6bVNidlY0UVdWSnZjTnlqdDNUNkhkdGlBN0QzV0xGakZVRnAtdUdFLXUyaGdlcmhtVFU?oc=5",
-        "date": "Wed, 13 May 2026 07:00:00 GMT",
-        "summary": "GoldenTree Asset Management Announces Closing of $602 Million CLO Under GLM Strategy Business Wire",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c073bffdc6a82437e2196496f06e6869e75b7d3d4db903cdf5b17b9729d53dc2",
-        "label": "GoldenTree Closes $726 Million CLO Under GLM Investment Strategy - citybiz",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "citybiz",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxON3c5b3dFdTRSTWJpY3pDb1gyLU1HeEtkaU0wdjlyOWltMHBlcG9hUk95bjluQV85TS1RQS11OTVWODA0ZV9LRjB3ekpCaTlqSnhxT0NFSkxyZXlXcEkydGJ3bzM1dGVfZkctUGtlcVg0RDJpaERzWVBzenFKV0V2QXBPNkpab3hVTms5Y0k3dlRKUFN6T0taZWNEbTRkSVAxajQySg?oc=5",
-        "date": "Fri, 26 Jun 2026 07:00:00 GMT",
-        "summary": "GoldenTree Closes $726 Million CLO Under GLM Investment Strategy citybiz",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d0a81828386abc8fdd674b2c1946a7086d37ac3baca967cda72e566623d49e19",
-        "label": "China's Zhipu AI raises $4 billion in Hong Kong share sale, source says - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaG15R1d0NTBacG00WVFSMk9keXNFNVJ6cUhLcm5tbVJ1X2c3OWFaeHo2ZVM3b2pUZjhwTWRHS290eEwxQkZIUWlCTlBaWlhNOGotUHBxZEx5M2xoMGxsSXpxR05NYV9EUDZJN0xUQk00eC04MGpHeUZod1ZVa1dPMWh6elN3QURQUjlzbFIyYV81WUV0V29hdFU3QnY0RzZQRFpaRUxYX0JaaGt3bE00TEVLbXhqZEpySUtUcEp6SGRabFdVTGJrbDZIaFU?oc=5",
-        "date": "Wed, 08 Jul 2026 07:00:00 GMT",
-        "summary": "China's Zhipu AI raises $4 billion in Hong Kong share sale, source says Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:20c1dfd6915168221be6db0f79778c2908290f6add5f97d67860c3bf423ac6fd",
-        "label": "Kimi\u2019s Moonshot AI sees revenue surge, secures over $700 million in new funding - TechNode",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TechNode",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOW9UdGhoSWh5MVdoRnJRUEdBUnFkQWhqZnM1ZXdMcEtIb29Tc09KcFp1NVRxeElhUFp6V2d3Nm9ZWFNiN2NfMFRFRUFIM0oyLVdjMWhDMmtBZVp6eGh5RW9ha0pDamVMM3NDRVljcTRrdm1QSnVrRlNZbFJmR01aX1Bsem1WcDlxRnROLUZJREJwS0laVzdtbmJhaTJBN2F1SWljY2R5cmNzcERlaEE?oc=5",
-        "date": "Tue, 24 Feb 2026 08:00:00 GMT",
-        "summary": "Kimi\u2019s Moonshot AI sees revenue surge, secures over $700 million in new funding TechNode",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8c786cf4fd7c8a0fed5bfa3028b3a766e9db9d9a1c6ffb8eb14f49369bbd4e90",
-        "label": "Moonshot AI\u2019s Kimi Chases $30B Valuation, Up 6x [2026] - tech-insider.org",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "tech-insider.org",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UMS1paTI2amNqUUU4OU05RjMxQzA3NGFEUWJqV200d25lR1hzc0R2WkNLV0RrMzdYSDZIWFJZTng4YVE4cFRwbnRUTDFfbDlXbzZ6RV92NjZqS09CNTIxSVplU3F2bzQ3LW9wQw?oc=5",
-        "date": "Tue, 14 Jul 2026 07:00:00 GMT",
-        "summary": "Moonshot AI\u2019s Kimi Chases $30B Valuation, Up 6x [2026] tech-insider.org",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f00dbb59d39e6032085021959d7b625fff275c7ce7aed7e0b7f592366f94a648",
-        "label": "Chinese AI Model Developer Kimi Raising Funds Valuing It At $20 Billion - Forbes",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Forbes",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbHJ0VDZNR3VyNWxYb1psaHpDUHEySFZQeW1aZTFtd0dkSTdCNVN3ampsd1NlaW1KczZ6eDlrMEw4cG1uWU5xU1hyampTZnVDQjdvNWUzTEN2T1p5aXZvTmxsYlhkZGhzUkxGUkZzMXhUOXpqMHlsa0Y0eHNwOWlVMmlhaU1TUlRSXzFocHRZdHBBcHlJa2E2akJFcUM0aWk1RGVfMm0wZ3IxZEZCbWRFTUxWRU5zTzVw?oc=5",
-        "date": "Thu, 07 May 2026 07:00:00 GMT",
-        "summary": "Chinese AI Model Developer Kimi Raising Funds Valuing It At $20 Billion Forbes",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
+      {
+        "source": "Microsoft",
+        "target": "Meta",
+        "type": "CAPEX_COMMITMENT",
+        "weight": 1,
+        "mentions": 1
+      },
       {
         "source": "Alphabet",
         "target": "Amazon",
@@ -13063,6 +13076,27 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:6fa852b0f72448c3ab982992ecec14ae4e165f287b0e44385f0d3833f8e9779c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:6fa852b0f72448c3ab982992ecec14ae4e165f287b0e44385f0d3833f8e9779c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:6fa852b0f72448c3ab982992ecec14ae4e165f287b0e44385f0d3833f8e9779c",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17051,6 +17085,48 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:6c27ec786de366fecb89661d2a3b367702f9818cef670dc84037514cf403fd0b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:7064a59917e1d187d8ffeb07b116d724f1a17e94084a972759750eb2f0302cfc",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:c5e756d3c5a8d5d94fd0b8877de68cc31646f995468973eb27ac7a435f1d83fc",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Baidu",
+        "target": "evidence:1800c33f15dd6d1a4d360c800e11d665f8e6f1798b674c8322bd18bd4692c2df",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:ef7f7a96b0b1d957b24a7e1887d1dfd906375f6f9d8f6458dda262c43c34fe4c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:7c2c08b7d2257641a150f2bd5884635f64c701e11ebc7bdeb4c66be5b8de6c52",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:f4f84d6b0b365d08418935ab5837066eddd68fb4d6a5b8421aed351e9098638d",
         "type": "EVIDENCE",
@@ -18040,55 +18116,6 @@
       {
         "source": "Zhipu AI",
         "target": "evidence:73cd9ed919be006277883805a4b89e8f985e8a8760c6cb4e9f9c74b87686f4bb",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:ce80faab2b35b2c4031cbd10b34a8d532f9f1cf4170340626e76b10296871cfc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:49bda1fc05dca8d850b52e42fecbd083b249ad8eced3f8bbddaf020b040614f7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:c073bffdc6a82437e2196496f06e6869e75b7d3d4db903cdf5b17b9729d53dc2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:d0a81828386abc8fdd674b2c1946a7086d37ac3baca967cda72e566623d49e19",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:20c1dfd6915168221be6db0f79778c2908290f6add5f97d67860c3bf423ac6fd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:8c786cf4fd7c8a0fed5bfa3028b3a766e9db9d9a1c6ffb8eb14f49369bbd4e90",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:f00dbb59d39e6032085021959d7b625fff275c7ce7aed7e0b7f592366f94a648",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31957,6 +31984,21 @@
       "source": "The Motley Fool"
     },
     {
+      "date": "Sun, 23 Aug 2026 21:15:41 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Microsoft",
+      "target_entity": "Meta",
+      "amount": 725000000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B - Stocktwits Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B Stocktwits Google News",
+      "title": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B - Stocktwits",
+      "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNQ2ZDQkRWWGZaNVdBV1UwS0FEY0RvVVJqUFUxNXd2eHpWM1haeXltLUNpaXB2TW5kcHlJRFo0WFNOQWZFaGNDZ2p3WlcwZjhPVndrYkQwWVAxR0tVVnotaFdDNnZHT1IxZ1BJVHJXZXFpVG5ROUlMcGZoR29iczhkOGM4VG9UMEVWWHJoUEY5TlBCN0RiTEotLTFWNVdFZHZpUmVBOHBuYWVaN0xYMEJzSkgtSno4WHhuc2x4TmpMUkV5bHJDaTNqVHFKalBIMl9pZ01MSjF2a0hpczUtYjMxUHk1OGt0VUxxbHRuaHZ3Nkt4ekRLTl9YZzVQX04wYjFUS25wLUZwWUJwTFU?oc=5",
+      "source": "Stocktwits"
+    },
+    {
       "date": "Thu, 07 May 2026 07:00:00 GMT",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": "CoreWeave",
@@ -32589,20 +32631,20 @@
   ],
   "collector_runs": [
     {
-      "id": 319,
+      "id": 323,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T07:20:45.078520+00:00",
-      "completed_at": "2026-08-24T07:20:58.479098+00:00",
+      "started_at": "2026-08-24T09:04:42.316014+00:00",
+      "completed_at": "2026-08-24T09:04:56.005710+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 8,
       "error": null
     },
     {
-      "id": 320,
+      "id": 324,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T07:20:58.880002+00:00",
-      "completed_at": "2026-08-24T07:20:59.287329+00:00",
+      "started_at": "2026-08-24T09:04:56.406723+00:00",
+      "completed_at": "2026-08-24T09:04:56.776090+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32619,20 +32661,20 @@
       "error": null
     },
     {
-      "id": 318,
+      "id": 322,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T07:20:44.132447+00:00",
-      "completed_at": "2026-08-24T07:20:44.676903+00:00",
+      "started_at": "2026-08-24T09:04:41.353943+00:00",
+      "completed_at": "2026-08-24T09:04:41.914619+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 321,
+      "id": 325,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T07:20:59.688808+00:00",
-      "completed_at": "2026-08-24T07:21:01.433203+00:00",
+      "started_at": "2026-08-24T09:04:57.178277+00:00",
+      "completed_at": "2026-08-24T09:04:58.898098+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32649,11 +32691,11 @@
       "error": null
     }
   ],
-  "document_count": 1266,
-  "event_count": 966,
-  "mention_count": 2368,
+  "document_count": 1274,
+  "event_count": 967,
+  "mention_count": 2369,
   "review_counts": {
-    "provisional": 0,
+    "provisional": 1,
     "confirmed": 275,
     "flagged": 691,
     "flagged_retry_pending": 0
