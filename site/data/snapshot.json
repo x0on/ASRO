@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T18:59:55.634450+00:00",
+  "generated_at": "2026-08-24T19:45:35.659331+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "capital": 48.732271163185665,
     "monetization": 42.9,
     "fragility": 61.1,
-    "cannibalization": 54.2,
-    "transmission": 39.6,
-    "external_pressure": 16.12,
+    "capital": 48.732271163185665,
     "counter_evidence": 42.9,
+    "circularity": 57.1,
     "stress": 57.1,
-    "circularity": 57.1
+    "transmission": 39.6,
+    "cannibalization": 54.2,
+    "external_pressure": 16.12
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,14 +32,14 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "capital": "aggregate",
     "monetization": "directional_estimate",
     "fragility": "directional_estimate",
-    "external_pressure": "aggregate",
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
+    "capital": "aggregate",
     "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
+    "external_pressure": "aggregate",
     "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
     "stress": "directional_estimate"
   },
   "dimension_direction": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T19:45:35.171940+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"external_pressure\": 16.12, \"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-24T18:59:55.153964+00:00",
       "score": 45.3,
@@ -9480,6 +9486,54 @@
         "weight": 1
       },
       {
+        "id": "evidence:1cbd02ef85f7be23accd23b039061f26035c8848519a75b8ec4bd292c7f58b81",
+        "label": "Here\u2019s Why Nvidia Stock Is Down Today\u2014Again - Forbes",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWGFuejdLcFlEYk1wTVhLZGZQTHNIT3NSRGJoOWY1NWZOU2VWU1FNQl9BeUdNdjY4RWhqRE9WYXFpYmRQcTBjTHFZRXVUa290OVVTdHlidVMwUVlqNWRzOTkzbTVwTnU1dHc4RERWYUJhOTZkQ1NVS0dQWXd1dFRmZTNrSG5UdGdtZWtZcE5SV1FmellEVkpqTUdreWFvNk85WWVPeHFoUkRieWFpYlhJZlVpTnMtcVhDT0ZSN1VOT1NUeV82djZuUkp5czc1c3c?oc=5",
+        "date": "Mon, 24 Aug 2026 17:14:48 GMT",
+        "summary": "Here\u2019s Why Nvidia Stock Is Down Today\u2014Again Forbes",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:8bc40accdc15ce3b0bd7a586efe5af1483d0f5cdb5b045eeb4e59d7c583508f9",
+        "label": "Nvidia reports earnings this week. Jay Woods says these are the key levels to watch - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbWY0RE1kb3RaUzZUMkUyS3BmSFo0YVI2bkJrNU1oNUhLdjJjN1c3RElLblVSdldRdk95WE00clRwc0l1ZktEck1LRHh5amVuZTAzTGV5eVRwTmhCbVFtQl9PUmJIMVdlUjBudmtRNHhGc2VBTkJ3QUdsRWRia3NFSC1tMHZnNDRIUFlVbG1nUThDNjYxVG01d1VaTC1kbWg2bFE?oc=5",
+        "date": "Mon, 24 Aug 2026 16:05:24 GMT",
+        "summary": "Nvidia reports earnings this week. Jay Woods says these are the key levels to watch CNBC",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b6fb41c1d2217fdbf473c82f67be1d8ad6253a3708365e8a0faf17a2d1dfb99d",
+        "label": "Tencent (SEHK:700) Stock Still Looks Undervalued After Recent Weakness - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR2RaTG5iUmdaTTY2QWpUa2xDUXRmNXNNUWc0QXRUd0RBM0NtOU9FV2lEWGdoNXpuUW1CSFNqb0ZCYW8wbmh1WjFsT0VIX3BDdG00bkdBdGE4Z3pVc2hzTy1nOTdiVkNoQ2dFUE83RHBqMXVPT1RQdC1JaWI2YnFqSTRnT0VHeDZxclJONXZjdHUyM2pXVGh0MU9QQ1pwRkdXeENnWXNhdXY1cmx3YWFNMmEzeE4tX2I1TVJ3NFR0NUUxUXU5ZkJHOFBhT2VEZ0E20gHWAUFVX3lxTE5STDRzNmlKMTBPUjJNbk9LRXpyTUFPUlYweTY1aUR1cGZJSXFYbXc3UlZ3MTlVWXQtc3pheWpZZXd1MjVFR3VEQ2RoUTFqZHZIRHctNGk5OWd6UldpSEpOVEtUaXdzZzNBSkJXdE5pV0RyeHNyQzEzZTd5bjNZTWZWVlE4cnF3UUlPY0RxX3NFaHFncjJaS0hmaUJhN3l5MElFRkdVemRPdFM3WUhjLW9kWTZaTF9OUnFjTXNXQmY3U05xOTd6UkR3M2pkLUIzNXZnWjFYNlE?oc=5",
+        "date": "Mon, 24 Aug 2026 19:16:36 GMT",
+        "summary": "Tencent (SEHK:700) Stock Still Looks Undervalued After Recent Weakness simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c51c08e8764578604bfe15ecd57e8544ab6f70170f27d55bb0cb826267538aa0",
+        "label": "Broadcom Stock And 2 AI Infrastructure Shares Backed By Data Center Demand - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeWVWdlhPeWlvSXExT2dJb2pkMW1IakFwUnR3ZkY1M0xYQTRxMXBtcjNCdUplb05DaWwtU3QzYnRYSDBRZ0ZuUEdBTGVxcTNZOXhXbWl6dndPd3RCUWMxZUFSZjI5ZU9iVDlCVUF6b2xzZDBib1Y3OWdKX1JvOXhRUmRsRkgtbjBXbWdQZHRpX1gtZWJXYWQxdklpQTlEOE9uRE90ZVRPeXl5bFBzQjRuSnIycmd2TTlKdDR2X3RublViNlV5OTFLVVRyRkJ2ZU5Gemdv0gHTAUFVX3lxTFB5ZVZ2WE95aW9JcTFPZ0lvamQxbUhqQXBSdHdmRjUzTFhBNHExcG1yM0J1SmVvTkNpbC1TdDNidFhIMFFnRm5QR0FMZXFxM1k5eFdtaXp2d093dEJRYzFlQVJmMjllT2JUOUJVQXpvbHNkMGJvVjc5Z0pfUm85eFFSZGxGSC1uMFdtZ1BkdGlfWC1lYldhZDF2SWlBOUQ4T25ET3RlVE95eXlsUHNCNG5KcjJyZ3ZNOUp0NHZfdG5uVWI2VXk5MUtVVHJGQnZlTkZ6Z28?oc=5",
+        "date": "Mon, 24 Aug 2026 16:51:54 GMT",
+        "summary": "Broadcom Stock And 2 AI Infrastructure Shares Backed By Data Center Demand simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:f831e932aaf139bd043456a5e454741f3036d96865cf4a43b56f99266cc57ab8",
         "label": "Pinterest's $4B AWS Deal Expands AI Ambitions and Spending Exposure - Yahoo Finance",
         "kind": "evidence",
@@ -10952,54 +11006,6 @@
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkR0Mk1hdnJPQVZHWEJYWXQ2UENlazJ1OG1EWTVtNFVYLTdMVHpfbVRIQ09zMmtMRnlLT1dnd0VyVzh1cTQzVm1jMS1keHR1TUNXOXBPSXEwWE10bFNoTi1Sd1ptX1lDcHhzaG5OaTFwTzE0UlBvTzgzTHpGVkVQeUoyY2szcks3RkFENTdPbmRVUVFWMjZaWF93cFpXcnZEUEM3d21BTGpKcWZJblEtcEhJVjA?oc=5",
         "date": "Sat, 22 Aug 2026 02:36:00 GMT",
         "summary": "Dow Jones Futures: Market Rally Repairs Some Damage; Nvidia Earnings Loom Investor's Business Daily",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:876c5f5af1539a665ae1b67223d37f0e5f79397d66dd3733590991a1eaea0e84",
-        "label": "Former Qwen Tech Chief Lin Junyang Launches Pragmatik Labs with a Two-Billion-Dollar Valuation \u2014 and Pivots from Foundation Models to Agents - Pandaily",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Pandaily",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQSzctODBHN1loZGM0T2ZUdEZaRUxZcGpaUkZaMmVISFhwdFJBbmljbXlWNjBRaGZkZm5LU1JVRHIybkNRQnZsOXBwTzdrRXFEM0txa1lGV24xNlFzaTM3aFJwUWhycmluYmg3TDVfcnk5WW82UWN6WFlGRUJfLU5BcDV6UFZoa3dXNEx2YzhZTTFoQlB5QW5rNUVfc1FuVENmWkZZQQ?oc=5",
-        "date": "Fri, 21 Aug 2026 09:34:48 GMT",
-        "summary": "Former Qwen Tech Chief Lin Junyang Launches Pragmatik Labs with a Two-Billion-Dollar Valuation \u2014 and Pivots from Foundation Models to Agents Pandaily",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0c3083f78fffd626e37ec3b6fb29e6a9bf8c92a02cf8473562bcdf9badafa223",
-        "label": "Japan's defense buildup draws small, midsize manufacturers into surging demand - \u6bce\u65e5\u65b0\u805e",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "\u6bce\u65e5\u65b0\u805e",
-        "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1RYU5Ua1UtUjZZTnRpNUo3dWxOSXV6TU1BM1dycnkyVDRyX1RyN05SanlFTTlwVmZ2SUVfdWRkZE5EZGNMZ0RPcHB4aFphdjhjUEM3dWJjSDdWLU9nSktEQXpXM1hiZGFmWGhnSXY1cmJUQWc?oc=5",
-        "date": "Sat, 22 Aug 2026 00:01:11 GMT",
-        "summary": "Japan's defense buildup draws small, midsize manufacturers into surging demand \u6bce\u65e5\u65b0\u805e",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3bedc52cdfd457277b8a71e493409e1ef360e63a6ad3cc35a28c01119987685d",
-        "label": "Anthropic Could Aim to Raise $100 Billion in Blockbuster I.P.O. - The New York Times",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUXg2WVgtendKTnJablIxTHFpMzE2Nm91VTR2enZZSk5wWld3Y2pFTGVWQjE2OVpPcTFyUTJRNFU1SkpMOS1ZajQwSDM5RV8tYlEybi1kUGVlWEZhV2pKdW9DYS1Pc1M5cGgzanlUVncyV192cXVxT2VHRFF4dVUyVkNn?oc=5",
-        "date": "Sat, 22 Aug 2026 00:24:20 GMT",
-        "summary": "Anthropic Could Aim to Raise $100 Billion in Blockbuster I.P.O. The New York Times",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d5bc35626ccd0017a1b02a4a18ae0ddfa57e99d192d65a9ad5a7c634ef0b9b0d",
-        "label": "OpenAI confidentially files for initial public offering on US stock market - The Guardian",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Guardian",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQS2V6emZ1aTdkOUFrMExWai1vR2lFSkstYXdTRldTZXpId2doa2VqdG5vQk5QSDM4OHFpYXdEcVJaRmtmcFNvVFdWdVJxb1hET0h0amttZUVNQzFyeDVOZVNJZ3JGR0NBZ0JONmp1Q1psanFFQ1l6LUh0aHlUenJGZ2xyS2tzUENoSEtfdGd3SWhzQWRUbVE?oc=5",
-        "date": "Mon, 08 Jun 2026 07:00:00 GMT",
-        "summary": "OpenAI confidentially files for initial public offering on US stock market The Guardian",
         "score": 1,
         "weight": 1
       }
@@ -17432,6 +17438,34 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:1cbd02ef85f7be23accd23b039061f26035c8848519a75b8ec4bd292c7f58b81",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:8bc40accdc15ce3b0bd7a586efe5af1483d0f5cdb5b045eeb4e59d7c583508f9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:b6fb41c1d2217fdbf473c82f67be1d8ad6253a3708365e8a0faf17a2d1dfb99d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:c51c08e8764578604bfe15ecd57e8544ab6f70170f27d55bb0cb826267538aa0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:f831e932aaf139bd043456a5e454741f3036d96865cf4a43b56f99266cc57ab8",
         "type": "EVIDENCE",
@@ -18288,34 +18322,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:d2c182219db517a8aa2a65b7595f9f85e40b610b03747cc43f03928aa97fc95c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:876c5f5af1539a665ae1b67223d37f0e5f79397d66dd3733590991a1eaea0e84",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:0c3083f78fffd626e37ec3b6fb29e6a9bf8c92a02cf8473562bcdf9badafa223",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:3bedc52cdfd457277b8a71e493409e1ef360e63a6ad3cc35a28c01119987685d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:d5bc35626ccd0017a1b02a4a18ae0ddfa57e99d192d65a9ad5a7c634ef0b9b0d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32846,20 +32852,20 @@
   ],
   "collector_runs": [
     {
-      "id": 363,
+      "id": 367,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T18:59:36.529356+00:00",
-      "completed_at": "2026-08-24T18:59:51.831831+00:00",
+      "started_at": "2026-08-24T19:45:18.363606+00:00",
+      "completed_at": "2026-08-24T19:45:31.732302+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 3,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 364,
+      "id": 368,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T18:59:52.233107+00:00",
-      "completed_at": "2026-08-24T18:59:52.631737+00:00",
+      "started_at": "2026-08-24T19:45:32.133228+00:00",
+      "completed_at": "2026-08-24T19:45:32.522897+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32876,20 +32882,20 @@
       "error": null
     },
     {
-      "id": 362,
+      "id": 366,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T18:59:35.569784+00:00",
-      "completed_at": "2026-08-24T18:59:36.127924+00:00",
+      "started_at": "2026-08-24T19:45:17.395791+00:00",
+      "completed_at": "2026-08-24T19:45:17.962478+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 365,
+      "id": 369,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T18:59:53.033434+00:00",
-      "completed_at": "2026-08-24T18:59:54.738890+00:00",
+      "started_at": "2026-08-24T19:45:32.923922+00:00",
+      "completed_at": "2026-08-24T19:45:34.757231+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32906,7 +32912,7 @@
       "error": null
     }
   ],
-  "document_count": 1339,
+  "document_count": 1343,
   "event_count": 968,
   "mention_count": 2370,
   "review_counts": {
