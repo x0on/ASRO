@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T23:36:11.583610+00:00",
+  "generated_at": "2026-08-24T01:58:26.048250+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "capital": 52.15125962813687,
-    "counter_evidence": 42.9,
-    "circularity": 57.1,
-    "cannibalization": 54.2,
-    "fragility": 61.1,
-    "stress": 57.1,
     "external_pressure": 61.1,
-    "monetization": 42.9,
-    "transmission": 39.6
+    "transmission": 39.6,
+    "cannibalization": 54.2,
+    "circularity": 57.1,
+    "fragility": 61.1,
+    "capital": 52.15125962813687,
+    "stress": 57.1,
+    "counter_evidence": 42.9,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,14 +32,14 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "capital": "aggregate",
-    "circularity": "directional_estimate",
-    "external_pressure": "directional_estimate",
-    "monetization": "directional_estimate",
-    "transmission": "confirmed_trigger",
     "counter_evidence": "directional_estimate",
+    "monetization": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "transmission": "confirmed_trigger",
     "cannibalization": "directional_estimate",
+    "circularity": "directional_estimate",
     "fragility": "directional_estimate",
+    "capital": "aggregate",
     "stress": "directional_estimate"
   },
   "dimension_direction": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T01:58:25.571297+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"transmission\": 39.6, \"external_pressure\": 61.1, \"stress\": 57.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"circularity\": 57.1, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-23T23:36:11.101924+00:00",
       "score": 51.4,
@@ -3717,6 +3723,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:d8be47d700d552a0b18f5980aea1ed9f299168ab5ef4372e55b9bf104db0fdb5",
+        "label": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - Currently.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Currently.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMXk4YWxlaTYxeFpDdndYT1BpUVh4V3oxZmg2aEhObFBnandVWnl3WTJqNy1ORE1WUWd5MlNmM0FhSEhaSTJBUHZyWDh3SWEwRzNNNTF6Q05CNU9qYlluN3FNZ0RqUmY0M0xpWFNjWkdsck1aQ18xQ09tekh4ZnVheHktYU8?oc=5",
+        "date": "Sun, 23 Aug 2026 14:35:00 GMT",
+        "summary": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. Currently.com",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:6900661a2e4fa506b33d5edae368e2b4c7ddd1330405c038b6d1d755f7cb538a",
         "label": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
         "kind": "evidence",
@@ -4002,6 +4020,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e9ef43e5144e01b6076f17e4210df363cd9559bf46e30c2b74c72f06d795630d",
+        "label": "Anthropic, OpenAI IPO plans squeeze liquidity, boost AI capital battle; Korea contrasts - CHOSUNBIZ - Chosunbiz",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Chosunbiz",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZkdaWEpMT0hZTklxOEhqejR2UTNMMjdZU2ZZcHR6em83ZjJlSGJCLXBIaWtJRjNzZFEzUmRlQmRsMFNWT2hGdmxEUVBBM1ZfbDU0OGt0alpDcExtenc4bHZRakN0bDJMb0dDaUdnbGl2N3dJWVFTajJtZlFKVmM3RNIBlAFBVV95cUxNMVVManBJZGxpV3EtRGVoS0lyR2t2N3pWaDBGTGFFcmNnNFFFQi1UakZDUjZ6M25wNFdWM21qMGV3WVR5UW5qSkc3SnRsSlJ5R1d3TXY1anhLb0RNMVIxanYtaVcxYzMxUFlURGo0UFhHRERPWEJMNU9lNnFFNWRrNDYyUG1YN0xsV1M3RTJFdDBUWWRV?oc=5",
+        "date": "Sun, 23 Aug 2026 23:47:00 GMT",
+        "summary": "Anthropic, OpenAI IPO plans squeeze liquidity, boost AI capital battle; Korea contrasts - CHOSUNBIZ Chosunbiz",
+        "score": 5,
         "weight": 1
       },
       {
@@ -5190,6 +5220,30 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d8da241c31032984ffa45112c974fce0cc1e98e6a74c695646f3f80ee6a85146",
+        "label": "Anthropic\u2019s Potential Post IPO Healthcare M&A Strategy: Clinical AI, Healthtech Infrastructure and Biomolecular Engineering - healthcare.digital",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "healthcare.digital",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQLWRvdElPVGwxQ2h3eUFOcWpTRnV5akRCeDlKRzM5a09RM3g0a2NUNDFXTWlQQ0prelVQc3d2OUstaWM1QTlSYS1zWE9lTEltVUFnY1NLbVJMQklUWlktVEc5a25EeUcwcDhvSjZmUFhZc2Zvcm9GQUUzSzdqN3J1d2tFd2UxRHBCVG9YMGpIOXVEaWRLMTRyQUNrWTdYaVVKekpIUGpvazNaaDBvc2t1blhGVWNZamtkSGtLLUx5cFcyTENBWDQ0X0gzY0hpcHA5RjRGSU13?oc=5",
+        "date": "Sun, 23 Aug 2026 19:29:37 GMT",
+        "summary": "Anthropic\u2019s Potential Post IPO Healthcare M&A Strategy: Clinical AI, Healthtech Infrastructure and Biomolecular Engineering healthcare.digital",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:867c5974171402dfc0d99f406166ebe67398839aead1dcf3e162523630a5630f",
+        "label": "Anthropic Customers Switch to Cheaper Models Ahead of IPO - PYMNTS.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "PYMNTS.com",
+        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSlVfSFdqRDlDNjAxbTBzN01TYXY4WkYxU050eFZ3cERYeHRIa2hsd3prNzQ1cElPZlM1Mm9hdzA2VlloeTNXYlQ5aEVtRUJRWEl0aGZiM3N2ckpLLThhTDAwdTJIWDZJS2l3TGZvZlI5NGZTRk15VEZVQzFUUjBxMDFUdWJzRnMyM1VLdGY3MEVIak80TzRyQzNUSGJHQXNlMmpqcHg5SE0xd2N4azVvTGVXbHRHdw?oc=5",
+        "date": "Sun, 23 Aug 2026 22:07:07 GMT",
+        "summary": "Anthropic Customers Switch to Cheaper Models Ahead of IPO PYMNTS.com",
+        "score": 4,
         "weight": 1
       },
       {
@@ -7038,6 +7092,18 @@
         "date": "Thu, 20 Aug 2026 04:32:35 GMT",
         "summary": "OpenAI CFO Reveals How Soon the IPO Could Actually Land Yahoo Finance",
         "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
+        "label": "WSJ: Nvidia to Invest $6 Billion to Compete with DeepSeek and Kimi K3 - ForkLog",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "ForkLog",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZmdjZDNfVjdoQ3VPajdtdU4zWlRLUUNEUVJWU0tJeFk4T3NnQk1xTGtOTU44cHZUSUVRQXQxYVpGcXZYclpwQmQyZlk2bmR2OFpLcGlzLVhuOXl2UExVX2hWRVZKUXBCVTloNEVPR3ctV1lFUHJqX01NcExIanNtdkRoQ1VCSnFEbWgwWDdOemIzZ0VPbGc?oc=5",
+        "date": "Sun, 23 Aug 2026 10:51:39 GMT",
+        "summary": "WSJ: Nvidia to Invest $6 Billion to Compete with DeepSeek and Kimi K3 ForkLog",
+        "score": 3,
         "weight": 1
       },
       {
@@ -8937,6 +9003,102 @@
         "weight": 1
       },
       {
+        "id": "evidence:ed851508b47a84768aa473acbd5b0064ed7090b0d7c2f1f5e4e1c53b11f28b25",
+        "label": "Alphabet Stock (GOOGL) Opinions on Recent Earnings and AI Outlook - Quiver Quantitative",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Quiver Quantitative",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdTd0VkI5TzhTQWFxcjVfQy16V0V1c19IeTl5Vm43YndLUWFuUlgweEN6Z0VabXVBQTlXNnZjQjlxVGpGWkF4dkhScUJEdmhHOHdDcXo2bUIyanJ4TlJfNnE1N0tzdk9DRlk1cEJGOXV6ejIwT09zalhZd0FvX3ZFUUtVTnJHbWJjU2RuOUg0eDNBUW9KOXRsSU5sMkVHYjZVWEdoYg?oc=5",
+        "date": "Sun, 23 Aug 2026 14:03:00 GMT",
+        "summary": "Alphabet Stock (GOOGL) Opinions on Recent Earnings and AI Outlook Quiver Quantitative",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9662bb71cb0060fea42300e8fca6c8fe3733748f67892c835ad42b1a169d9a12",
+        "label": "Novo Nordisk Expands Its AI Push With AWS, But Can It Accelerate Drug Discovery? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaDFzV1o2UVlnUjNYSldmWGtTZ3ZYM3dEY0JsYTZOb2tDQUQwTkN4LVBVM2ZRZ2otV2l4TkgzX2xxWGNOWkQydEkzbkswWlpURlRQZ0lkSDJQYW1CdU5UamZjNWdobTlXR2VQUlM0bjVpcVpzTlM5SmpobjNTall1Rk9ybDVKXy1xRmdOVTBVMjk4U0k?oc=5",
+        "date": "Sun, 23 Aug 2026 23:43:53 GMT",
+        "summary": "Novo Nordisk Expands Its AI Push With AWS, But Can It Accelerate Drug Discovery? Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:93cdb592f2a3b188a1e9c857640ce72244f4372728444a6c692687bb979a69a0",
+        "label": "Shares flat in Asia before Iran sanctions news, Nvidia results - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMG83ZmMxSkVxZFI2eFdsTkhlblVtbE82OFd5SmxFekFOZmtQZEVLSzZOZU1tckZxd2QyOU9vYmRuWGhXeDIzVDhkQ1RaUF96T1hRZkg1SVRHWHAxcGVMTWxmMXBsSjVONURWaEFhMWp2dWdKM0piSGtyWVF1bkJ0YWFxWQ?oc=5",
+        "date": "Mon, 24 Aug 2026 00:49:00 GMT",
+        "summary": "Shares flat in Asia before Iran sanctions news, Nvidia results Reuters",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:cf57d9dc16004838ad4ea2c921e3a2444524a4b538029f50d5ab1bd5a8fbee15",
+        "label": "Zhipu AI Highlights New RL Infrastructure Behind GLM-5.2 Post-Training - TipRanks",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TipRanks",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPallQeUw5QXRBaVdQaWVubTFDZUgwOXpsTkNQTFNmNUY5U3lsaEhQRWROWVFnZkpoZVZ4Z1h3WkE0S0ZHUU11bXJUWWlhUjhzSkNGSkhNa3Y3aUVYdDVCMzBTTDlMc09uLWU3MWxqY3F4ODNLQ2owem1ZdXEzQ2tORDhhbFVYSWxjS0xPbmhFbUZ6R0JkWlZkZksxTWpQdG42WW9IdXBORC1TVnJGSGdGckUyTVZJODFXclE?oc=5",
+        "date": "Sat, 22 Aug 2026 12:59:42 GMT",
+        "summary": "Zhipu AI Highlights New RL Infrastructure Behind GLM-5.2 Post-Training TipRanks",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3e7741fb7c2e7987ad162f23374e3c60b076afc39b25e8aecafcce1d176459d2",
+        "label": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% - \uc544\uc2dc\uc544\uacbd\uc81c",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "\uc544\uc2dc\uc544\uacbd\uc81c",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5RVG1SektNRU85M1B4T1UxbFNDcExlSVpXNGRqOERCWEpUS2RWNGkwWVIxd0o3MTVHYkkwRFJUbk9CU0JOaDFfWDMwNV9ISDRrTDUxMjNEbGs2VzAzVFAxRDIzUlc?oc=5",
+        "date": "Sun, 23 Aug 2026 19:44:24 GMT",
+        "summary": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% \uc544\uc2dc\uc544\uacbd\uc81c",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7cb0af148f1ef129e363dff3ebcea9ff730dcbad6b77a51d940b689d047ea27d",
+        "label": "Hong Kong Stock Exchange: Hang Seng Index Falls 1.1% to 25,652 as Tencent and Xiaomi Lead Tech Retreat - BBN Times",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "BBN Times",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZ2JTUWFVY2FtRjBmQXZnZDNvZ1hiWmFFUlpQR0dUWEQ3bVpOdWMwWTYtczlLVHFudHNxRWQ2QmlzeS1hNDlLQUxwMll2ejlEY2ZUeHhDRENmd2VmajV5eDJqVVRqQUpnd3l4NmtRcmhUNnJ0aWZLWFZSR0hlUTNoMXJ1VndQSUlmcWttb1FObW92XzkyVUtoU2I2NVhpRjhzS1VRMGUyYWZCQzdzMWtfcHZWR1FTNWtya2lxQkI1TGdEei1obmp5Vk4zcTNzYTlzUF9MV1N3RQ?oc=5",
+        "date": "Sun, 23 Aug 2026 22:55:21 GMT",
+        "summary": "Hong Kong Stock Exchange: Hang Seng Index Falls 1.1% to 25,652 as Tencent and Xiaomi Lead Tech Retreat BBN Times",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:58949a594936e0411e8a21971082b4609b534ed4b80461351e875f9a8c47e57e",
+        "label": "Alibaba to Bulk Up AI Investment via $10.20 Billion Share Placement - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQODYzZUNTRmFDWldFZ0NoQzJIVWhNY1ZtZ1F2UVlGOU5MWlh6RlBQUHI5NHhpUmVkcjNUX3Mya1hoOUt2aGVQRzdvYnJHcThnOVVNMXl1WXpmVzAycmxKN3pqdFhaa2FtUWlIT0RubXFmeGp6OUQ0TDN4MEVuZG1HZVR2RE5mZEhreDVIQTVkWTRkNzhNVk44ZlVFQl9PbWgwX2c?oc=5",
+        "date": "Mon, 24 Aug 2026 01:07:00 GMT",
+        "summary": "Alibaba to Bulk Up AI Investment via $10.20 Billion Share Placement WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0f554f7c9785106e03db99df52a782ad1ff3c12d63690141edf8c9155026dbe0",
+        "label": "SoftBank Plans Record $6.3 Billion Retail Bond Sale in Japan - Bloomberg.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOakgzWUJKSldHUFB3bWJzblhFSkVuc1NOdExfcExSeVRoVzJFaTFRd1BsMEYtLW1ibmxGOWlkVWkxUmlVYmZjdlZBbENNZE1yQXV1MTd6QmFLLW5uT1BlUUZzaEgzYW1vdWg2cHNmaVkwOVZxZEFIak1naDFoN2hhZTRFN2tyQUQ3R0g1WEZYZ0pNM3ZzaElJa2t3MHJGYURaMzd2eUR5OUNxT2tjQmZzbHJROA?oc=5",
+        "date": "Mon, 24 Aug 2026 00:36:00 GMT",
+        "summary": "SoftBank Plans Record $6.3 Billion Retail Bond Sale in Japan Bloomberg.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:4eea100126f7b50ef64e191fb606eb7bf7fd99db4bee8ccf65fffea1467c6097",
         "label": "Ahead of Nvidia Earnings, Here's What Barchart Data Says Comes Next for NVDA Stock - Barchart.com",
         "kind": "evidence",
@@ -10723,162 +10885,6 @@
         "summary": "Wall Street Analysts Think Baidu Inc. (BIDU) Is a Good Investment: Is It? Yahoo Finance",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:af1d3e61396831797c7743330de4395eeac8a91fbeef3466737d3a01bac21df3",
-        "label": "Baidu CEO vows to return Ernie to AI frontier as revenue miss sinks shares - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQXcyM1FrTGh6ZnJCeE1pUzk0aTQxVTkzTTB6TDR4eHJFNmlPWXZUMDZBdUxEelBmeVVJNUxCUi1DRUdWSXVZcWE5VDVlb2tvcXYyMnRlcElabndCSVlWU2JTSk9BeThKU2JFa2pHNFBQRElyVGNHSVdObkpaOVNwNHVTcm9DYXIxMHc4a3EzRGF4ZGhyc3RLa3k5cF9wVlB0X1JTRnVEbTN5Wmc?oc=5",
-        "date": "Tue, 18 Aug 2026 14:41:53 GMT",
-        "summary": "Baidu CEO vows to return Ernie to AI frontier as revenue miss sinks shares Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1a199e3bc32af2babf2fe3eece017065fb86582f26eed8028ed807ef658ac33c",
-        "label": "Baidu\u2019s Profit, Revenue Continue to Fall as It Pivots to AI - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZ1RKTnRCSi1QY1V3ZFlsdWpCYWV1WF96UENDZkY0NXdCcDctOFVxemI3VHpUc3VOa01JSzZpNXhham9WV0NWMV9MWGs4YnBrWTJVNEJkN0FhSFFuMXlRb1o5T29hNEViZm9Ob0JvTEREQXJ1TmliVHdHbFNqdFpxZ09fekRkbUFGQmlKbUd5c2gwVTdGS2NkbjF5dWUzQklqNkdkWl9uTQ?oc=5",
-        "date": "Tue, 18 Aug 2026 10:54:00 GMT",
-        "summary": "Baidu\u2019s Profit, Revenue Continue to Fall as It Pivots to AI WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7054d1b316000b42b9098d4c63da46068780b271d69537d5f3a4ef81b2ba996f",
-        "label": "Qwen Goes to the Max - Substack",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Substack",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5EUHVCZGhWb3hqTFEwdk5iVVFXOVFhQmtfaHl5cDJKcnFoejZsYkNJZWQ0aDJfRERUSVVMWV9WZFQ0OC0wcVdNdWRsc1JFT1QxWmY1alkxR29fT1dqVGxseDhqSmFfcXdS?oc=5",
-        "date": "Fri, 26 Sep 2025 07:00:00 GMT",
-        "summary": "Qwen Goes to the Max Substack",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:49a2c3d189d21a730e65d43c0a738766a7043155196203e440ec9543a4ec9b0e",
-        "label": "EXCLUSIVE: Alibaba plans to charge big users of its next open-source AI model, sources say - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNbE5xeXpfUzZwaHRia2xzb1A2V3VQU0xPVmpLWG1rckR6dzJYUW51Y1NjdzdtQjUzWlFRdGVJcXE5Y29NZGlKMHdxZDU3dkpHY3BTREx3U0xjVXJ6S1QtSXgwb2xEeHpveEVuVmJIYTRkMDNTNE1lTlM4Wng3V2JMcTNYWExvWnpCZW4xWEdqQ2ktdThBWnJXX0haRW1TRjUwOExfVHBGQ1dHQTNibWNmTjRNQzVMb0ozTGRnMkx6dE9VbXNVR25BYmplc2ZoQQ?oc=5",
-        "date": "Fri, 07 Aug 2026 07:00:00 GMT",
-        "summary": "EXCLUSIVE: Alibaba plans to charge big users of its next open-source AI model, sources say Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:59b6533b0cd3f6c1d8730aa1a8095e06af154d2488e35a44dbf165d13694cf6b",
-        "label": "Alibaba plans revenue sharing for next open-source Qwen AI model - qz.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "qz.com",
-        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1QNXpYQzl1QUZ5RW53SEZjQmFmejc2alNvUFFuWWZsMk1YYTNYRWFfNFhzcGZmQ2xfaHJlSjMtUlpXYjdkcEoyemk4T0xxenBVb3ZNSzk5Zzc1dVJZSW4yOVNGdUNCS3NkZUJlR2xkcw?oc=5",
-        "date": "Fri, 07 Aug 2026 07:00:00 GMT",
-        "summary": "Alibaba plans revenue sharing for next open-source Qwen AI model qz.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b26438f5e21d544e720d7e0bfe86370310ab0b71f4ebd0c23e80cdcbba534004",
-        "label": "Alibaba Group Holding (NYSE:BABA) Valuation Check As New Qwen AI Partnerships Take Shape - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPV0JyYTVDb0haQjlZTTEzX1JNck5kSHJiemFOSzhoXzM4WEdqOEdCX0Y1dmNkUjk2UzNJQ2FXMm9Xa2IwM0RYN1hNaWpYcEZkdHVBN3hiMlVJV3E0QUcwOWtfcDduMUlidVY2Ri1jVGtrUWFLMXphSlV4NmpnT0tLZng0aHYxbHF2OUNtMGp2b2ZHSERjeWZXMWVlc2M?oc=5",
-        "date": "Sun, 26 Apr 2026 07:00:00 GMT",
-        "summary": "Alibaba Group Holding (NYSE:BABA) Valuation Check As New Qwen AI Partnerships Take Shape Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cbba197879df739c0f46252d3a59b0dc1727ba0072c4df58bccac436c62ba5f8",
-        "label": "Alibaba stock surges after earnings report - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPb0RwcG84dFVSbzlFN3NFWUtJdGFHUDR6dEZ3X1VZNUV3aDhFR3JUTEloZzJQSE1CQXI5NjVDMlBjbHJCQzJFNW1Ld29zdDh0ODhfdkJncDhOdS1PdndHTWk4N1A3VGg3eXU5aEstWkpBaTRxeHBSRGYybUVmang4bzRiZFpHQmtTSkFCMjFFclpiS2E1YjdiQk1nVmdSWjNuSFRVdVowc2lSZw?oc=5",
-        "date": "Wed, 13 May 2026 07:00:00 GMT",
-        "summary": "Alibaba stock surges after earnings report Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:32ecb702474460172cf5d54983e4d08106fcc21776e2c2697d52d5938c06b502",
-        "label": "Alibaba\u2019s AI Arm Surges 34% Though Big Spending Hits Profit - Bloomberg.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMzYxYllOYTJQdlplNmVqS1lGaU42NlFCZ3JGQ2luaHRUNkxoT2pKY0pTZEYxXzVzLVZQcjlhOHNJNE1GUkUzdV9LZWFQQmQ3NWpqems1aHJZMVZqRmlOUFpndWlVRlFKWmFtZTJsRVNoZnNnMUYyRWF2R0lBd3h0dmktNHVHMDhfRWJEbzA2bGdyc0RXa1gzTmRxZEp6NGU4bk5ES25rVEVIZWdzQU9qOHNiTnk?oc=5",
-        "date": "Tue, 25 Nov 2025 08:00:00 GMT",
-        "summary": "Alibaba\u2019s AI Arm Surges 34% Though Big Spending Hits Profit Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b914971ff4466672c91bd07505e2ea1071a0816546a06b614f2cb6c18559cfca",
-        "label": "Alibaba Stock Falls After Earnings. Why AI Is to Blame. - Barron's",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Barron's",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5la2xYY2dSZkNueUQ4X0JudF9JWTZDRUJrSFZ6NnNIUFJkVHp6cHVLOENva3AySFp3bFdEci1RU2hQeUU2djd6aFdjNW9NYndnbXpMUmtuWDlKM0FKby1JOFRQS1U5d19INGQwYVg5RkhzemQzR2lwazJn?oc=5",
-        "date": "Thu, 20 Aug 2026 13:57:00 GMT",
-        "summary": "Alibaba Stock Falls After Earnings. Why AI Is to Blame. Barron's",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:939c7777eb65840547bab41d9273cea97ef8e4feb110ce9d8e70aa65e61d5c89",
-        "label": "Alibaba: State-Led Data Center Could Reduce Cloud Revenue - Morningstar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Morningstar",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMlczbVIyZC1aQUc5ZGo5V2lyMUtydG9VRWdZSThEUWxycHAwZGMyRkxLci1zYlpLZ2ppVTRaTnZQcHNwRngzcmVTaHN2UlJORGhpdU50bGlLTElEcWQyaXFkU3N4cTVIcjBzUWRiSWNFZk5mQ3NwVXVYWkZvWk5lMVFnOHRIcE9SNWxkcDFiYnlfUVZZRklDMm9lMmlxR2lYb0E?oc=5",
-        "date": "Thu, 09 Jul 2026 07:00:00 GMT",
-        "summary": "Alibaba: State-Led Data Center Could Reduce Cloud Revenue Morningstar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:44125141c572c9ddb35660d2369f5d9b015076bc60fee232be967652beba2992",
-        "label": "Alibaba revenue tops estimates with strong instant retail, AI push - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTFF6ck81LVhQOVZkWTZJWjBLMlVvdGZqSk50bG9XYnRTdV9fSlBDOVBGVFVRVTNPanpqVFNoQzhNTjFaSllCMW5pOWpud192UmFvNEszemhIcS1HM3RDYTlpeWJRMUxFT3NvZFNyVE1XUmE1TnVpUlJFR2QxRkJkMFc5ZnliRUpCSDN3YURpN3p6QS1RQk5IZFNVaFg?oc=5",
-        "date": "Tue, 25 Nov 2025 08:00:00 GMT",
-        "summary": "Alibaba revenue tops estimates with strong instant retail, AI push Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7b7899b8c8c382ce55b833d40b1caddebe0b77695a06c6a61deb63720f0fbf36",
-        "label": "Alibaba shares fall 5% as AI spending drives 75% drop in net income - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXSEhwMVo2bGM2dXQyeWFVYkVYM3d4dExLOTRNSFZUMGVXZEwzanU1RWc0NmcwY20xZ0Y2Qk9OcExIWS03S1B3MVU4amNkeFdkMGQ5M3ZYUm9pZ2pQVlMxSnVadHN0dE5SOEHSAW9BVV95cUxPQWtHNDBuQ3ZQZkhETm9mVXNoZUczR29UM1BveUo1cGhPWlNua2ZfdDNUa240R01vOHF2SWUwS0prcEpHQnMxMXc3Y0xwMU1WRmJMQTVIOVhVNFd3anZZWW16ZHVfVkloZHB4N1gzYzQ?oc=5",
-        "date": "Thu, 20 Aug 2026 09:48:16 GMT",
-        "summary": "Alibaba shares fall 5% as AI spending drives 75% drop in net income CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5579710f27e443311e6c0568c5256c27a7d7709787b7ce476cffafb36ad6666f",
-        "label": "Alibaba Posts Weaker Earnings Amid Heavy AI Investments - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQd0dFa3prVThRdl9wNzc2LUR3eExka1JndWdxTG81NXhSQlZ5U3QwVXdENEFHTGRpNldOdDBEN2VfQkc2eFVYRlJHeENldzRmaHlWQmxUbHdJODJVNHBBMTdnS0xmbXhSdnRnb0ZzUDNmOWwzYWNrNmZjUHpRb2tnd25feVZsbFdhZS1mNWRCNzZhWGREQ19QV2NOUzZjdWtqWVZRSg?oc=5",
-        "date": "Thu, 20 Aug 2026 12:05:00 GMT",
-        "summary": "Alibaba Posts Weaker Earnings Amid Heavy AI Investments WSJ",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12655,6 +12661,13 @@
       },
       {
         "source": "Amazon",
+        "target": "evidence:d8be47d700d552a0b18f5980aea1ed9f299168ab5ef4372e55b9bf104db0fdb5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
         "target": "evidence:6900661a2e4fa506b33d5edae368e2b4c7ddd1330405c038b6d1d755f7cb538a",
         "type": "EVIDENCE",
         "weight": 1,
@@ -12943,6 +12956,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:e9ef43e5144e01b6076f17e4210df363cd9559bf46e30c2b74c72f06d795630d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:e9ef43e5144e01b6076f17e4210df363cd9559bf46e30c2b74c72f06d795630d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -13984,6 +14011,20 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:d8da241c31032984ffa45112c974fce0cc1e98e6a74c695646f3f80ee6a85146",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:867c5974171402dfc0d99f406166ebe67398839aead1dcf3e162523630a5630f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
         "target": "evidence:ec5347b6caa71e5e4742ca4ab63b155e23a4deffc8184285d7a7a0a8c3a5b995",
         "type": "EVIDENCE",
@@ -14938,6 +14979,27 @@
       {
         "source": "OpenAI",
         "target": "evidence:4d2c5a1ea037299f5beef2350486d461ad7d13eb64e7babaea111d19d8f4386e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16805,6 +16867,62 @@
         "mentions": 1
       },
       {
+        "source": "Alphabet",
+        "target": "evidence:ed851508b47a84768aa473acbd5b0064ed7090b0d7c2f1f5e4e1c53b11f28b25",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:9662bb71cb0060fea42300e8fca6c8fe3733748f67892c835ad42b1a169d9a12",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:93cdb592f2a3b188a1e9c857640ce72244f4372728444a6c692687bb979a69a0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:cf57d9dc16004838ad4ea2c921e3a2444524a4b538029f50d5ab1bd5a8fbee15",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:3e7741fb7c2e7987ad162f23374e3c60b076afc39b25e8aecafcce1d176459d2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:7cb0af148f1ef129e363dff3ebcea9ff730dcbad6b77a51d940b689d047ea27d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:58949a594936e0411e8a21971082b4609b534ed4b80461351e875f9a8c47e57e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SoftBank",
+        "target": "evidence:0f554f7c9785106e03db99df52a782ad1ff3c12d63690141edf8c9155026dbe0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:4eea100126f7b50ef64e191fb606eb7bf7fd99db4bee8ccf65fffea1467c6097",
         "type": "EVIDENCE",
@@ -17843,97 +17961,6 @@
       {
         "source": "Baidu",
         "target": "evidence:ad120a68406c6db85df1969252860841b63bf3169e8404b1af7c5c210019a455",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:af1d3e61396831797c7743330de4395eeac8a91fbeef3466737d3a01bac21df3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:1a199e3bc32af2babf2fe3eece017065fb86582f26eed8028ed807ef658ac33c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:7054d1b316000b42b9098d4c63da46068780b271d69537d5f3a4ef81b2ba996f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:49a2c3d189d21a730e65d43c0a738766a7043155196203e440ec9543a4ec9b0e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:59b6533b0cd3f6c1d8730aa1a8095e06af154d2488e35a44dbf165d13694cf6b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:b26438f5e21d544e720d7e0bfe86370310ab0b71f4ebd0c23e80cdcbba534004",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:cbba197879df739c0f46252d3a59b0dc1727ba0072c4df58bccac436c62ba5f8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:32ecb702474460172cf5d54983e4d08106fcc21776e2c2697d52d5938c06b502",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:b914971ff4466672c91bd07505e2ea1071a0816546a06b614f2cb6c18559cfca",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:939c7777eb65840547bab41d9273cea97ef8e4feb110ce9d8e70aa65e61d5c89",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:44125141c572c9ddb35660d2369f5d9b015076bc60fee232be967652beba2992",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:7b7899b8c8c382ce55b833d40b1caddebe0b77695a06c6a61deb63720f0fbf36",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:5579710f27e443311e6c0568c5256c27a7d7709787b7ce476cffafb36ad6666f",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31764,7 +31791,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 2,
+      "mentions": 4,
       "review_status": "provisional",
       "evidence_text": "Here's the Gap AI Capex Is Actually Creating.",
       "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
@@ -31779,7 +31806,7 @@
       "amount": 7600000000.0,
       "currency": "USD",
       "confidence": 0.8,
-      "mentions": 2,
+      "mentions": 4,
       "review_status": "provisional",
       "evidence_text": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%.",
       "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
@@ -32419,20 +32446,20 @@
   ],
   "collector_runs": [
     {
-      "id": 291,
+      "id": 295,
       "collector": "company-economic-news",
-      "started_at": "2026-08-23T23:35:52.407887+00:00",
-      "completed_at": "2026-08-23T23:36:07.676680+00:00",
+      "started_at": "2026-08-24T01:58:07.926455+00:00",
+      "completed_at": "2026-08-24T01:58:22.295686+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 14,
       "error": null
     },
     {
-      "id": 292,
+      "id": 296,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-23T23:36:08.078001+00:00",
-      "completed_at": "2026-08-23T23:36:08.479534+00:00",
+      "started_at": "2026-08-24T01:58:22.696722+00:00",
+      "completed_at": "2026-08-24T01:58:23.091605+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32449,20 +32476,20 @@
       "error": null
     },
     {
-      "id": 290,
+      "id": 294,
       "collector": "google-news-rss",
-      "started_at": "2026-08-23T23:35:50.991820+00:00",
-      "completed_at": "2026-08-23T23:35:52.006425+00:00",
+      "started_at": "2026-08-24T01:58:06.826342+00:00",
+      "completed_at": "2026-08-24T01:58:07.525389+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 293,
+      "id": 297,
       "collector": "sec-edgar",
-      "started_at": "2026-08-23T23:36:08.881780+00:00",
-      "completed_at": "2026-08-23T23:36:10.688207+00:00",
+      "started_at": "2026-08-24T01:58:23.492815+00:00",
+      "completed_at": "2026-08-24T01:58:25.156183+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32479,9 +32506,9 @@
       "error": null
     }
   ],
-  "document_count": 1215,
+  "document_count": 1230,
   "event_count": 965,
-  "mention_count": 2364,
+  "mention_count": 2367,
   "review_counts": {
     "provisional": 16,
     "confirmed": 271,
