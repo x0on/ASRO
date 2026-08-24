@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T04:31:12.180260+00:00",
+  "generated_at": "2026-08-24T05:01:31.560337+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "fragility": 61.1,
-    "capital": 48.732271163185665,
-    "transmission": 39.6,
-    "external_pressure": 16.12,
     "circularity": 57.1,
-    "counter_evidence": 42.9,
-    "stress": 57.1,
+    "transmission": 39.6,
+    "capital": 48.732271163185665,
+    "fragility": 61.1,
     "monetization": 42.9,
-    "cannibalization": 54.2
+    "counter_evidence": 42.9,
+    "cannibalization": 54.2,
+    "stress": 57.1,
+    "external_pressure": 16.12
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
-    "circularity": "directional_estimate",
-    "stress": "directional_estimate",
-    "fragility": "directional_estimate",
-    "capital": "aggregate",
-    "transmission": "confirmed_trigger",
-    "counter_evidence": "directional_estimate",
     "monetization": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "counter_evidence": "directional_estimate",
+    "stress": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "circularity": "directional_estimate",
+    "capital": "aggregate",
+    "fragility": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T05:01:31.172755+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-24T04:30:30.544410+00:00",
       "score": 51.4,
@@ -5280,6 +5286,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:ed9de7dcbcc4bbeaa119b03947eca93a97c37895b0e6fa2bf4924259e32f50b0",
+        "label": "Anthropic Clears Major IPO Hurdle As US Lifts Export Controls On Claude AI Fable, Mythos Models - Stocktwits",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOU1lBaE1vZ2ZYUExkM08zU2VHNFBGU1Zzc2UzblBvUktnX1MtZFgtM1lKcThYVnJVUEZWeHR4ZEJmcDFtN3ZLUTRtbGEtbDFrbDZ2cmh3NVBwMWY1YnVTMGhTUVI4cFBCUW5HMXlVV0twVHVfZGdtRmt3d3dneWRhcE9jQXYwUHVkamNxaFlkcTFaYjFXbU9nMzAwamZOU1pvLU95QWk2QUZpNzh1U3VfakwybDdNUEtqa1VtUDJPeEt1VTMwcGZjYzZqX3hvMlc0bUlDNkxha044eXY2YUdBai12MjdoS2Rtc3duSFJ1cw?oc=5",
+        "date": "Sun, 23 Aug 2026 15:09:07 GMT",
+        "summary": "Anthropic Clears Major IPO Hurdle As US Lifts Export Controls On Claude AI Fable, Mythos Models Stocktwits",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:d8da241c31032984ffa45112c974fce0cc1e98e6a74c695646f3f80ee6a85146",
         "label": "Anthropic\u2019s Potential Post IPO Healthcare M&A Strategy: Clinical AI, Healthtech Infrastructure and Biomolecular Engineering - healthcare.digital",
         "kind": "evidence",
@@ -7149,6 +7167,18 @@
         "date": "Thu, 20 Aug 2026 04:32:35 GMT",
         "summary": "OpenAI CFO Reveals How Soon the IPO Could Actually Land Yahoo Finance",
         "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2ee5aa82badab64d9a2de9ddb05dd48750e84fea9f686faf3a4d4c15f7808e69",
+        "label": "Shein seeks up to $1.8b in long-awaited Hong Kong IPO - chinadailyasia.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "chinadailyasia.com",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9lQzM2c1E2WmpUV2VQbzAyMC1sUlhtckhIWDBvWTNXbXBJOURvNExaN2hfVWZVbU80dGpuZDBxLW1qaEx5TUxDVU1Wa2ZSbUh2WnFWTjczcTA?oc=5",
+        "date": "Mon, 24 Aug 2026 02:02:37 GMT",
+        "summary": "Shein seeks up to $1.8b in long-awaited Hong Kong IPO chinadailyasia.com",
+        "score": 3,
         "weight": 1
       },
       {
@@ -9072,6 +9102,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:7217d068a6bcfb5fab82f0027851ee2103bb87a21b616e6d24cabeace12d8448",
+        "label": "Doubao \"Boards\" Tesla: Why Did Elon Musk Make an Exception for the Chinese AI Assistant? - 36Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YY3JzdlAwQmdZRTdrY2pXZ25wTC1OM3o5NmtkdWhkMVM2NFFYUGNDYnhQX2xzcUFKSG5OV1Nfd0VYOFFBRGdsVkNrQnRzbVVuaXJ3?oc=5",
+        "date": "Mon, 24 Aug 2026 04:34:02 GMT",
+        "summary": "Doubao \"Boards\" Tesla: Why Did Elon Musk Make an Exception for the Chinese AI Assistant? 36Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0e0eef1302fc595006a1334984166fea1319a77d1ac49c31e15729a63e10364d",
+        "label": "DeepSeek Ends Weekend Peak Pricing for API Users From Today - Bloomberg",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeFNQSEZZUWJBaFd0UjhxczRNcWJacndYSG91UGgyVUtXMjNjYmctV2t3VnBPWXFaZFFER3IxMHo3ZVVpRWdULXdkbWVYemxXSlZaZkZyRTVSY0NsLS1pVnNWY1ZCdnpLdWhLeXUxYUxWSUM2cUYtal8tdHpCWmhJUkY0X21PeGczaEM2a3VjNGZGd2dLTUc0cVN4bGhLNWxmZkc5aVhzbWxhaEY2eUI4?oc=5",
+        "date": "Sun, 23 Aug 2026 05:57:00 GMT",
+        "summary": "DeepSeek Ends Weekend Peak Pricing for API Users From Today Bloomberg",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:a2f02795eb0e3a9e55b4ef3915ae742411745fb5eb79aa043b34953100875239",
         "label": "Nvidia discusses Perplexity investment at $30 billion-plus valuation, The Information reports - Reuters",
         "kind": "evidence",
@@ -10868,54 +10922,6 @@
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPXzBoa0ZRbUR3VG5NcmdaTmlmWXgxSU5HVm5pQ3ZrYXUyNXJQR05TZUlDaGJsSVcxRlE1a2FHbTY3dHdYRFBtWmJPSWZDWkthcmFZZHFZTHpvOVF4bTFJbXhfZnNfZ2cta21yZllCVjlXaEp1ZjMwNjZlYTdsMDhOSzN5Vk9CckkzYmRaVW9IMFVGQ2FWQ3c?oc=5",
         "date": "Tue, 30 Jun 2026 07:00:00 GMT",
         "summary": "Tencent: AI Panic Hits Earnings Multiple, Not the Fundamentals Morningstar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f67f0d818424fac61fb45abd80a6ca9f24708c025f6032a40031bb3d03d5cbcd",
-        "label": "Tencent\u2019s Revenue Miss Heightens Pressure for Faster AI Payoff - Bloomberg.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPbS1PdVNYN09QMDI2Z3JGOFFwN0s5Q3BwUWNndkZqNEJYQkhpa1BjZ0Z3WC1pbF8yM0pNb3g5SWx0TjA5eElWd193alV4bUJRQmRGY2ZTWWRsTGxOWXZha2NXVG5LQURabDl1Q2tCSzVxOC1kQnhYSzhPeVU1NlFuLTJkZUk2dVlIZkJMWWE0TEl5VVFCTlpfczJQX2JYMUlaQUtVX012MA?oc=5",
-        "date": "Wed, 13 May 2026 07:00:00 GMT",
-        "summary": "Tencent\u2019s Revenue Miss Heightens Pressure for Faster AI Payoff Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9bc590d19bcf12d4f85aa0c747df7f40a7d36d3a8e3ae57d18bba08e26de8498",
-        "label": "Tech Investor Prosus Posts Core Earnings Rise on Growth Across Units, Tencent - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaHVKTVJSX0ozNnFldkEwSERtN0E0TG1Pc25GaF94S016cVNod3JJcGtJMFNoMHR3Z3Z4TWkzek9rc1Rzc0d0aWYwQ1p6OTFvOGFya0QwaE9KWnBYWkZQaWVuU3ppSnZ0QXRVVHVWRG9aeDBqSFpIdm1VTFNfaXBtNS14NlBHUnlXY3JyRmxZeVV5MXFJcWl6dko5b050NnZjeE8wMDhn?oc=5",
-        "date": "Fri, 19 Jun 2026 07:00:00 GMT",
-        "summary": "Tech Investor Prosus Posts Core Earnings Rise on Growth Across Units, Tencent WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b1478685636fdaa542250e38c1aebbe89c1509f2d22ecf9f6e5ced705efc5b8b",
-        "label": "Tencent Q2 revenue climbs 11% on AI-driven ad gains, but profit falls short - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPT2l1RHZ4bThwRVExMWRtRHhkWHhFdkNnd0tmSFRxVEJwY2xaQXZGVnhRd19ucGhOTFZsb1hSTzFwX0VwajBLSXJFV2Z5N1YweVhJSnF1amJVUFRjMnFpWHpKelJ5X2pnX041bUJ3SVBES1QtdVNyUGcxTGlqUWZ0OVA5Z0dxTHJOSXVUcld4U0lUbFlkN2tiTWh4UQ?oc=5",
-        "date": "Wed, 12 Aug 2026 07:00:00 GMT",
-        "summary": "Tencent Q2 revenue climbs 11% on AI-driven ad gains, but profit falls short Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0f41b84c0d70998b6a791e1b1be76e14a74aae0fbcce8b120e0b151818a9fec9",
-        "label": "Chinese tech giant Tencent sees spending surge, defends potential 'superior' AI returns - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNVXcyRWI1eTdzeUtIMkJSTkJ6YlhUNGNhakNwY2Jmc2FrUVpNT2NKbHM3VmxxcEpTWERUSExkcmlPSVlCSVVvTExYQmxzZm1WWWx5dVRMc1BCZzBOcWJpVC1hckFwQUhNUXBKZV9MaXZpS2JwNWFSVDBMTmM5MW4wZlAwVDlNaTFzd3ctTDVEcm5jZTDSAZgBQVVfeXFMTkxxQkgyOE9Sb2lVeWJtTUY4bHlsbXM4V1M2b0JPU2c2eEFGOW44RGowR0x1Z0RUTVZQRTdSOWszNXJiMkZyRnlVRzFUU0tJd0QyNWJzUkpNakxsY3NBX1V5LXZsVjU5WVQ3eTFxT2doZHZxNkk4WVFpb21jemNHUWV4bmxxWENndlMxd1VjOTVIRU9lcllYdEs?oc=5",
-        "date": "Wed, 12 Aug 2026 07:00:00 GMT",
-        "summary": "Chinese tech giant Tencent sees spending surge, defends potential 'superior' AI returns CNBC",
         "score": 1,
         "weight": 1
       }
@@ -14087,6 +14093,13 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:ed9de7dcbcc4bbeaa119b03947eca93a97c37895b0e6fa2bf4924259e32f50b0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:d8da241c31032984ffa45112c974fce0cc1e98e6a74c695646f3f80ee6a85146",
         "type": "EVIDENCE",
         "weight": 1,
@@ -16963,6 +16976,20 @@
         "mentions": 1
       },
       {
+        "source": "ByteDance",
+        "target": "evidence:7217d068a6bcfb5fab82f0027851ee2103bb87a21b616e6d24cabeace12d8448",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:0e0eef1302fc595006a1334984166fea1319a77d1ac49c31e15729a63e10364d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:a2f02795eb0e3a9e55b4ef3915ae742411745fb5eb79aa043b34953100875239",
         "type": "EVIDENCE",
@@ -18008,34 +18035,6 @@
       {
         "source": "Tencent",
         "target": "evidence:ea8d4485e0dd91f63fdf360a0df7b1cbaeec67b3c67958bdccfd208cd0192bef",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:f67f0d818424fac61fb45abd80a6ca9f24708c025f6032a40031bb3d03d5cbcd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:9bc590d19bcf12d4f85aa0c747df7f40a7d36d3a8e3ae57d18bba08e26de8498",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:b1478685636fdaa542250e38c1aebbe89c1509f2d22ecf9f6e5ced705efc5b8b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:0f41b84c0d70998b6a791e1b1be76e14a74aae0fbcce8b120e0b151818a9fec9",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32536,20 +32535,20 @@
   ],
   "collector_runs": [
     {
-      "id": 307,
+      "id": 311,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T04:30:14.374926+00:00",
-      "completed_at": "2026-08-24T04:30:27.249191+00:00",
+      "started_at": "2026-08-24T05:01:15.758098+00:00",
+      "completed_at": "2026-08-24T05:01:27.730433+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 5,
       "error": null
     },
     {
-      "id": 308,
+      "id": 312,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T04:30:27.650207+00:00",
-      "completed_at": "2026-08-24T04:30:28.027665+00:00",
+      "started_at": "2026-08-24T05:01:28.131475+00:00",
+      "completed_at": "2026-08-24T05:01:28.466889+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32566,20 +32565,20 @@
       "error": null
     },
     {
-      "id": 306,
+      "id": 310,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T04:30:13.302564+00:00",
-      "completed_at": "2026-08-24T04:30:13.973585+00:00",
+      "started_at": "2026-08-24T05:01:14.760443+00:00",
+      "completed_at": "2026-08-24T05:01:15.276502+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 309,
+      "id": 313,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T04:30:28.429387+00:00",
-      "completed_at": "2026-08-24T04:30:30.129421+00:00",
+      "started_at": "2026-08-24T05:01:28.882747+00:00",
+      "completed_at": "2026-08-24T05:01:30.759176+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32596,7 +32595,7 @@
       "error": null
     }
   ],
-  "document_count": 1249,
+  "document_count": 1254,
   "event_count": 966,
   "mention_count": 2368,
   "review_counts": {
