@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T13:13:29.488711+00:00",
+  "generated_at": "2026-08-24T14:03:13.575872+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "circularity": 57.1,
     "counter_evidence": 42.9,
-    "fragility": 61.1,
-    "capital": 48.732271163185665,
-    "monetization": 42.9,
+    "circularity": 57.1,
     "stress": 57.1,
-    "external_pressure": 16.12,
     "transmission": 39.6,
+    "fragility": 61.1,
+    "monetization": 42.9,
+    "capital": 48.732271163185665,
+    "external_pressure": 16.12,
     "cannibalization": 54.2
   },
   "dimension_evidence": {
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "circularity": "directional_estimate",
-    "fragility": "directional_estimate",
     "stress": "directional_estimate",
-    "external_pressure": "aggregate",
-    "transmission": "confirmed_trigger",
-    "counter_evidence": "directional_estimate",
     "capital": "aggregate",
-    "monetization": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "external_pressure": "aggregate",
+    "fragility": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "monetization": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T14:03:13.142316+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"monetization\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-24T13:13:29.041753+00:00",
       "score": 45.3,
@@ -5388,6 +5394,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:f7032f3185acc816cc05b826678adb1a4d4871164fc7222af9118ee5580047a8",
+        "label": "OpenAI\u2019s CFO Just Told Employees the IPO Is Coming in 2027 or Sooner - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdERmeTlEelBRYmtIWDJtd0h0cm9heEZEZlJNNy1yaXVjb21tcjdud1dfUVdZSzR6azh3TWRxYUoxMkcwTjcxckxUM3JiTlhzOUxkZGMxNGQ3YWw4QVdLNHptcnROOVlUekNzYXlOWHRKaXVBQU9ZQjFCSDU1N3FLT045VkFCdk93M1VlZXVSbGdjQkZHTjRwcVh0UVgtd0hwQmd1VFJDM2pPT1lYRExObw?oc=5",
+        "date": "Mon, 24 Aug 2026 13:50:36 GMT",
+        "summary": "OpenAI\u2019s CFO Just Told Employees the IPO Is Coming in 2027 or Sooner 24/7 Wall St.",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:c5f73d244b1227ebc72af40c0731cf4869fc824599ad9a3601fb25ad199284e8",
         "label": "Anthropic Is Chasing a $2 Trillion IPO. Its Most Powerful AI Model Is Raising a Big Red Flag - 24/7 Wall St.",
         "kind": "evidence",
@@ -9312,6 +9330,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:13e6c00d19cc3e0b59cbacedae00a2600e6dfd99bd0bf1982f2a0217b9dde177",
+        "label": "MiniMax, Luxshare Precision Among 3 Stocks Added to Stock Connect Today; AI Concept Stocks Surge 18% Against Market Headwinds - finance.biggo.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB5LWVVUUV3WnBpbzlIRXA4MVhUN1NZWlZqRk5aUF9ITmNGeTY4eE1qUEUwZzIyVUE4eDcyNG9Dam1lbWt0Tl9EX3ZUMmZhbTdGSDNOMkNBTzQ0eEdGNVpzUmQ1ejc2OElLMk9zR245SFFZa2NpS1E?oc=5",
+        "date": "Mon, 24 Aug 2026 07:12:01 GMT",
+        "summary": "MiniMax, Luxshare Precision Among 3 Stocks Added to Stock Connect Today; AI Concept Stocks Surge 18% Against Market Headwinds finance.biggo.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:997dba7bacd82ddb1633ccfc0790618957c7ae29d18d828f9aad7a13111d010c",
         "label": "Qwen 3.7 Max Hits AI Top 5 With 1M-Token Context [2026] - tech-insider.org",
         "kind": "evidence",
@@ -10940,30 +10970,6 @@
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNzhNRjJMRUdkRGQ5NF84QXh6MTc0Z0VtN1JtUWlpZXZPSDZoNFNvMzZKLWNPVE9waFRieER0VmhvYk1reVBEcFp3ZDVHZTBndDh2bmdkSTJBWC1zdVduV1BJTGUxQ3BVVElSZkE1ODFJOWZaNXBrdnA1dENxdktRNzdvMW1BTHBaNUc0cFRWVWRGWkR6b0E?oc=5",
         "date": "Fri, 21 Aug 2026 19:00:00 GMT",
         "summary": "NVIDIA Earnings in 5 Days: Should You Buy, Hold, or Sell NVDA? Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d7bcfa39dbe2237d8f3816d2fc352d674871a6f28a0f83258728939e036c4c4f",
-        "label": "MiniMax, Z.ai Front-Runners for Hang Seng Index as Tech Weighting Rises - News and Statistics - IndexBox",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "IndexBox",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQa0JkV1c2Wl9XV1ZpZ2ZuUFpuUjlLRzFQOEhUUXdzbmJGYVR1X3ltRHhxVHdXRWlJNVlYRi1xR1daZ2c5WUZ6RkkxZ2xkV1NBWHAwcUdOTFlvTnZXdDI5aUtNYjRjcHhRWHdQR0xBNnpiaHFhX0kwdDVIQk9FNFFFOFFVSzVkcDdXOXJPZUtjTFpjT3NlWXc?oc=5",
-        "date": "Fri, 21 Aug 2026 04:31:00 GMT",
-        "summary": "MiniMax, Z.ai Front-Runners for Hang Seng Index as Tech Weighting Rises - News and Statistics IndexBox",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:585ac9c61d85eb7657dd49c5e3bb9debcc3c6788b3717bb39a64918f3868878f",
-        "label": "Destiny-Altering Decision: How 500B-Valued Zhipu AI Defies Headwinds to Rewrite Its Fate | DeepKr - 36 Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36 Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA1UE5RdXJ6N1lfTWwzcktackNmZUtXcVlkM0J2WTFieTI4Zm1kVUN2enV5ck05RFo5UlduSW93THAtOFp5eEpQTHVnT1pKNTcxUHZF?oc=5",
-        "date": "Thu, 20 Aug 2026 07:54:46 GMT",
-        "summary": "Destiny-Altering Decision: How 500B-Valued Zhipu AI Defies Headwinds to Rewrite Its Fate | DeepKr 36 Kr",
         "score": 1,
         "weight": 1
       }
@@ -14225,6 +14231,13 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:f7032f3185acc816cc05b826678adb1a4d4871164fc7222af9118ee5580047a8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:c5f73d244b1227ebc72af40c0731cf4869fc824599ad9a3601fb25ad199284e8",
         "type": "EVIDENCE",
@@ -17242,6 +17255,13 @@
         "mentions": 1
       },
       {
+        "source": "MiniMax",
+        "target": "evidence:13e6c00d19cc3e0b59cbacedae00a2600e6dfd99bd0bf1982f2a0217b9dde177",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alibaba",
         "target": "evidence:997dba7bacd82ddb1633ccfc0790618957c7ae29d18d828f9aad7a13111d010c",
         "type": "EVIDENCE",
@@ -18189,20 +18209,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:576754d82dd08157177c35879fb689f1707f8645eb7cfd1d8fe3758a1379f093",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:d7bcfa39dbe2237d8f3816d2fc352d674871a6f28a0f83258728939e036c4c4f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:585ac9c61d85eb7657dd49c5e3bb9debcc3c6788b3717bb39a64918f3868878f",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32718,23 +32724,23 @@
   ],
   "collector_runs": [
     {
-      "id": 339,
+      "id": 343,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T13:13:08.870655+00:00",
-      "completed_at": "2026-08-24T13:13:25.211446+00:00",
+      "started_at": "2026-08-24T14:02:54.221829+00:00",
+      "completed_at": "2026-08-24T14:03:09.768871+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 9,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 340,
+      "id": 344,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T13:13:25.612541+00:00",
-      "completed_at": "2026-08-24T13:13:26.400979+00:00",
+      "started_at": "2026-08-24T14:03:10.169782+00:00",
+      "completed_at": "2026-08-24T14:03:10.613073+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
@@ -32748,20 +32754,20 @@
       "error": null
     },
     {
-      "id": 338,
+      "id": 342,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T13:13:07.332058+00:00",
-      "completed_at": "2026-08-24T13:13:08.469430+00:00",
+      "started_at": "2026-08-24T14:02:52.769929+00:00",
+      "completed_at": "2026-08-24T14:02:53.820979+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 341,
+      "id": 345,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T13:13:26.802054+00:00",
-      "completed_at": "2026-08-24T13:13:28.628498+00:00",
+      "started_at": "2026-08-24T14:03:11.015263+00:00",
+      "completed_at": "2026-08-24T14:03:12.727983+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32778,7 +32784,7 @@
       "error": null
     }
   ],
-  "document_count": 1305,
+  "document_count": 1308,
   "event_count": 967,
   "mention_count": 2369,
   "review_counts": {
