@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T05:54:12.612673+00:00",
+  "generated_at": "2026-08-24T07:21:02.377261+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
-    "stress": 57.1,
-    "capital": 48.732271163185665,
-    "monetization": 42.9,
-    "cannibalization": 54.2,
     "transmission": 39.6,
     "fragility": 61.1,
+    "counter_evidence": 42.9,
+    "cannibalization": 54.2,
+    "external_pressure": 16.12,
     "circularity": 57.1,
-    "external_pressure": 16.12
+    "capital": 48.732271163185665,
+    "stress": 57.1,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "stress": "directional_estimate",
-    "capital": "aggregate",
-    "monetization": "directional_estimate",
-    "external_pressure": "aggregate",
-    "counter_evidence": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "transmission": "confirmed_trigger",
     "fragility": "directional_estimate",
-    "circularity": "directional_estimate"
+    "cannibalization": "directional_estimate",
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
+    "counter_evidence": "directional_estimate",
+    "external_pressure": "aggregate",
+    "circularity": "directional_estimate",
+    "stress": "directional_estimate",
+    "monetization": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T07:21:01.849392+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"circularity\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"external_pressure\": 16.12, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-24T05:54:12.094267+00:00",
       "score": 45.3,
@@ -7836,6 +7842,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:f9766fe24f6274263c91a3a0695c94650418008335f59028517e4328d6ab1e00",
+        "label": "Watch Alibaba's $10B Share Sale Draws Investor Scrutiny | The China Show | 8/24/2026 - Bloomberg",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcW84UFBoYmpFOVZtYWRraThiYnVjQ3FtNEZwUzJyZlhKbjQ2UEVUQVczUDJ3U0s4ZjZHWG9pT2JKMEtPZEE1WWhNR090Q0ZrWEdPRTZXZkFaSDlwZzRBLU5sNFF2aGtqT0FXbnp1NTVPNi1xTXYwREtCUG9EVXpCbFc2YURvdw?oc=5",
+        "date": "Mon, 24 Aug 2026 00:00:00 GMT",
+        "summary": "Watch Alibaba's $10B Share Sale Draws Investor Scrutiny | The China Show | 8/24/2026 Bloomberg",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:d89062e29f7d05794f3e0b89158f6faba300a6c34868a206e93969c7f514ad07",
         "label": "NVIDIA\u2019s Earnings Report Draws Intense Scrutiny: The Rubin Cycle, Rollover Financing, and Forward Market Share - Moomoo",
         "kind": "evidence",
@@ -9129,6 +9147,42 @@
         "date": "Tue, 21 Jul 2026 07:00:00 GMT",
         "summary": "Chinese AI Models Close in on OpenAI as Google Delays Gemini 3.5 Pro thelec.net",
         "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f4f84d6b0b365d08418935ab5837066eddd68fb4d6a5b8421aed351e9098638d",
+        "label": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% - The Asia Business Daily - \uc544\uc2dc\uc544\uacbd\uc81c",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "\uc544\uc2dc\uc544\uacbd\uc81c",
+        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5RVG1SektNRU85M1B4T1UxbFNDcExlSVpXNGRqOERCWEpUS2RWNGkwWVIxd0o3MTVHYkkwRFJUbk9CU0JOaDFfWDMwNV9ISDRrTDUxMjNEbGs2VzAzVFAxRDIzUlc?oc=5",
+        "date": "Sun, 23 Aug 2026 19:44:24 GMT",
+        "summary": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% - The Asia Business Daily \uc544\uc2dc\uc544\uacbd\uc81c",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:82ec3390d204caa5cadc03a285197629628d91b90f61b9743da2639f9c78fc9d",
+        "label": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration - 36Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ZR1h5Sm95eG51b2NTNzZfOVZpSUptZ2VCZnlQMmJ3MjF0RTBWQTFibXkzMmJjYWg3QW94cU9xSGEtZkppUGdiNXc0cVdMTEo1SWQ0?oc=5",
+        "date": "Mon, 24 Aug 2026 06:34:18 GMT",
+        "summary": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration 36Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5c64fbd11d80697857dd7fcb6aa3ac60b530075b2e80f12e042bdc9c8b26f811",
+        "label": "Breakingviews - Alibaba's $10 bln share sale starts AI countdown - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaS1NZ2VyRjRQUEdya1kzTU5hOTA0d2U1Y3VLTXlqLUN0SFlEd2VoOV9nMGtOWDVzOUgzY0RmbjZoV2g0QXd1RG1EZnpGQXQzeWpSRFZxNXZKMzU1YURMdm1XR2lfOWIwM1RzelBKWlJFRFQwWF9lVDNYVWZseFRwcW9WUmxmLUJkUmR3U28tOUJqekFXSXFHZURkMk13Z1lveHBxWXc3dGdYYzQ?oc=5",
+        "date": "Mon, 24 Aug 2026 05:03:00 GMT",
+        "summary": "Breakingviews - Alibaba's $10 bln share sale starts AI countdown Reuters",
+        "score": 1,
         "weight": 1
       },
       {
@@ -10880,54 +10934,6 @@
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbHJ0VDZNR3VyNWxYb1psaHpDUHEySFZQeW1aZTFtd0dkSTdCNVN3ampsd1NlaW1KczZ6eDlrMEw4cG1uWU5xU1hyampTZnVDQjdvNWUzTEN2T1p5aXZvTmxsYlhkZGhzUkxGUkZzMXhUOXpqMHlsa0Y0eHNwOWlVMmlhaU1TUlRSXzFocHRZdHBBcHlJa2E2akJFcUM0aWk1RGVfMm0wZ3IxZEZCbWRFTUxWRU5zTzVw?oc=5",
         "date": "Thu, 07 May 2026 07:00:00 GMT",
         "summary": "Chinese AI Model Developer Kimi Raising Funds Valuing It At $20 Billion Forbes",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:21c7c0a19b5f93ced71fc189dfd842e36e6922599a408259429e2f47c6f3090b",
-        "label": "Moonshot AI Surpasses Funding Goal to Hit $35 Billion Value - Bloomberg.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPb0N0WDlMd1dFLUVQS1Bfd2U5WDgzVFdydjV3dVNUbHpKX3BmV2l5cWtIRDRWSlZfTHZZYW96QVd5RVliVHJUYWFCLXhnaXozT21NNWppODlGYkw0UzdNd1l2X0V4LUdnR0llajVMZ2VNS29iZEFBSU50LV8zWjhXRHpEVVp2UThjVlhjbVkySHJua3hQZTB5U1EzVUtHdEFJV0NicnhDMEFFNDJ4ek9PSG5RdEY?oc=5",
-        "date": "Wed, 29 Jul 2026 07:00:00 GMT",
-        "summary": "Moonshot AI Surpasses Funding Goal to Hit $35 Billion Value Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4de0e373bb331d2a6b6f76278f80824f3182cd2626fc9a1768b80025a2b1c4aa",
-        "label": "China\u2019s Moonshot AI raises $2B at $20B valuation as demand for open source AI skyrockets - TechCrunch",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPZHZYS2VaR3pGWm9CVVNnVDZVNV9yaWF3bXphX1lhay1DVEozWXBpcVBMeXRNaG03MUNqdTNMdlR1LXh1dTBqRmhod0FBRHNNVjlOT2hEX3pJUXNaRDFwdWg1Y0poV3BOVTlXWm5yM0FZZ29sYzRRazNPNy1UZ1drT2oxa29iMEdoWmdQQ00xQnh2LWdscEw3VTB4cGhRMlRNZGkzNlVKNFpYWU9zNW4xMy1EaGhScGdyNmNHVg?oc=5",
-        "date": "Thu, 07 May 2026 07:00:00 GMT",
-        "summary": "China\u2019s Moonshot AI raises $2B at $20B valuation as demand for open source AI skyrockets TechCrunch",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e494cae9eeb0352e82a10153f766dba643cbee459deaf99511b802d8d8457e26",
-        "label": "Chinese tech giant Tencent's quarterly revenue jumps 15% on AI investments, gaming unit boost - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9kcEFyaENFaDVILWhubU9Canc1a1NkcDhHbDk4YkdUQWlUeS1QaGl3Zm9pNHlDVnNCaFQ5ODdvQzVrVEF5cHJjdlhNRW41ckhZd29hTTUwTDF0UWZScnA5NGRHS0liY2tjTWVUWGhTa0XSAXZBVV95cUxNalpkYWo2WVMxS2lsZG5PNW1lT0hYRjVsM0FDQlFPTHM5TkhRaV9Uci1EeDZfSlJmX2xuNkxJcGM2UEhtUWVpdGpUZnBiRDFSV2pTMkNWQllWN0VyUkVkdUtNNnRSd1ZSZFNGSlpfNmdmZ3U4ampB?oc=5",
-        "date": "Wed, 13 Aug 2025 07:00:00 GMT",
-        "summary": "Chinese tech giant Tencent's quarterly revenue jumps 15% on AI investments, gaming unit boost CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f9d9f27516bfe34d33a98498de3f55f4c23da5b74d073ebf129608a49d5f766d",
-        "label": "Daily News Digest: Tencent Unveils Hunyuan Turbo S AI Model\uff5cDaily News Digest\uff5c2025-02-28\uff5cweb only - \u5929\u4e0b\u96dc\u8a8c",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "\u5929\u4e0b\u96dc\u8a8c",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xUFZSN19nUkx1Y1Itc1lRdDZRNmVCSjhFNzQzbVdnc1ZzSmV0V2FYNnJWZ1ZBTXp0SGZzWlU4N3lxczJHTUVMdkgyUHRyMVI1LTZMMFNQMm1jOG56RE5jM1prQWV2OVE?oc=5",
-        "date": "Fri, 28 Feb 2025 08:00:00 GMT",
-        "summary": "Daily News Digest: Tencent Unveils Hunyuan Turbo S AI Model\uff5cDaily News Digest\uff5c2025-02-28\uff5cweb only \u5929\u4e0b\u96dc\u8a8c",
         "score": 1,
         "weight": 1
       }
@@ -15646,6 +15652,20 @@
       },
       {
         "source": "Amazon",
+        "target": "evidence:f9766fe24f6274263c91a3a0695c94650418008335f59028517e4328d6ab1e00",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:f9766fe24f6274263c91a3a0695c94650418008335f59028517e4328d6ab1e00",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
         "target": "evidence:d89062e29f7d05794f3e0b89158f6faba300a6c34868a206e93969c7f514ad07",
         "type": "EVIDENCE",
         "weight": 1,
@@ -17032,6 +17052,27 @@
       },
       {
         "source": "Nvidia",
+        "target": "evidence:f4f84d6b0b365d08418935ab5837066eddd68fb4d6a5b8421aed351e9098638d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:82ec3390d204caa5cadc03a285197629628d91b90f61b9743da2639f9c78fc9d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:5c64fbd11d80697857dd7fcb6aa3ac60b530075b2e80f12e042bdc9c8b26f811",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
         "target": "evidence:34675b0e4120ac314165f152742b347e53f77f8cd5ce441db1155782b260a7cf",
         "type": "EVIDENCE",
         "weight": 1,
@@ -18048,34 +18089,6 @@
       {
         "source": "Moonshot AI",
         "target": "evidence:f00dbb59d39e6032085021959d7b625fff275c7ce7aed7e0b7f592366f94a648",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:21c7c0a19b5f93ced71fc189dfd842e36e6922599a408259429e2f47c6f3090b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:4de0e373bb331d2a6b6f76278f80824f3182cd2626fc9a1768b80025a2b1c4aa",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:e494cae9eeb0352e82a10153f766dba643cbee459deaf99511b802d8d8457e26",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:f9d9f27516bfe34d33a98498de3f55f4c23da5b74d073ebf129608a49d5f766d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32576,20 +32589,20 @@
   ],
   "collector_runs": [
     {
-      "id": 315,
+      "id": 319,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T05:53:52.344615+00:00",
-      "completed_at": "2026-08-24T05:54:08.171431+00:00",
+      "started_at": "2026-08-24T07:20:45.078520+00:00",
+      "completed_at": "2026-08-24T07:20:58.479098+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 5,
+      "items_new": 6,
       "error": null
     },
     {
-      "id": 316,
+      "id": 320,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T05:54:08.572445+00:00",
-      "completed_at": "2026-08-24T05:54:08.994574+00:00",
+      "started_at": "2026-08-24T07:20:58.880002+00:00",
+      "completed_at": "2026-08-24T07:20:59.287329+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32606,20 +32619,20 @@
       "error": null
     },
     {
-      "id": 314,
+      "id": 318,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T05:53:51.028000+00:00",
-      "completed_at": "2026-08-24T05:53:51.943496+00:00",
+      "started_at": "2026-08-24T07:20:44.132447+00:00",
+      "completed_at": "2026-08-24T07:20:44.676903+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 317,
+      "id": 321,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T05:54:09.395941+00:00",
-      "completed_at": "2026-08-24T05:54:11.678575+00:00",
+      "started_at": "2026-08-24T07:20:59.688808+00:00",
+      "completed_at": "2026-08-24T07:21:01.433203+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32636,7 +32649,7 @@
       "error": null
     }
   ],
-  "document_count": 1260,
+  "document_count": 1266,
   "event_count": 966,
   "mention_count": 2368,
   "review_counts": {
