@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T14:03:13.575872+00:00",
+  "generated_at": "2026-08-24T15:00:43.376424+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
-    "circularity": 57.1,
-    "stress": 57.1,
     "transmission": 39.6,
-    "fragility": 61.1,
-    "monetization": 42.9,
-    "capital": 48.732271163185665,
+    "circularity": 57.1,
+    "cannibalization": 54.2,
     "external_pressure": 16.12,
-    "cannibalization": 54.2
+    "stress": 57.1,
+    "monetization": 42.9,
+    "fragility": 61.1,
+    "counter_evidence": 42.9,
+    "capital": 48.732271163185665
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "stress": "directional_estimate",
-    "capital": "aggregate",
     "external_pressure": "aggregate",
-    "fragility": "directional_estimate",
-    "cannibalization": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "monetization": "directional_estimate"
+    "circularity": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "stress": "directional_estimate",
+    "monetization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "capital": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T15:00:42.886470+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"circularity\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-24T14:03:13.142316+00:00",
       "score": 45.3,
@@ -3822,6 +3828,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:23667607ddeb573b33c41ef860cf2de869be0a87ca2002784943434ad045b65a",
+        "label": "OpenAI Financials Leaked Ahead Of IPO? ChatGPT Maker Said To Have Lost $39B Last Year: Here's How That Compares To Anthropic, SpaceX - Stocktwits",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQUU5IcS1zSnYtRUFqY1BvcHpBNWlLMEV3cm9sMmdTNnNtLVRyQ2tyT0dUXzBWNG9CYXNQVW5mMGN0eGc3aXJqRm9oWm5hRzBMLWt1d2d4SXVaQ2Z1aTZWWjlXQkJNeFNzamxkTkkwLUYtN3hROWRqM0hWUFhXZFNVbDBQMmVjM1FRSEtKOXh6YTl0WktrY0Z0SDlmZ3p5dHg5U1Z1V05kdVNCbDJyODhzNVFrdjI0dHd6U0FHNzBGb2w0cnY4SnpLd1dVUERGSXJoeEUwYjUxTFJJODVKRHY5MFc4ZXZKazZSbjZhV3RqX1pWZXNBXzVnOFBLcTFuNmE3S19ES1ZIVE52ekFmLTdkb0JHT3hDTjFCUmlIbWdidUxkUQ?oc=5",
+        "date": "Mon, 24 Aug 2026 06:40:56 GMT",
+        "summary": "OpenAI Financials Leaked Ahead Of IPO? ChatGPT Maker Said To Have Lost $39B Last Year: Here's How That Compares To Anthropic, SpaceX Stocktwits",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:2209e081901d441d39b36682bcb41e8a7621bd0fac6496cba71fb66945a03545",
         "label": "Google, Amazon, Meta, and Microsoft Hiked AI Capex and It Benefits One Stock - AOL.com",
         "kind": "evidence",
@@ -5391,6 +5409,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f9d5892a812c64fbbd50331370cd4103703ded8211035f9314c6a3f1568b0eae",
+        "label": "OpenAI IPO Wants $1 Trillion; Its CEO Just Admitted His Disruption Timeline Was Wrong - Tech Times",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Tech Times",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRndZanp3YmlxUEZLd1hXejBxSnMyNklMeU1fYWhzRVF3aEUtdnhwbm0wXzJ5T1hxTE05a1ZSdlZNd25LaUoxTWFwQkM1YjgyMTFJNHRWSlV5QzlVaUVkNkRJc3RTcUM2YUdEVm1CNVdKMnVLTkhKYklmMVg0eVJPSGZ4bkVEV0VKRnlTSFV2UW1jTlZyaTAwN0c4X3B6RmR3T0NrallEdHBaYkM0NGM3djZXR0ZiTGJCOFpOVkNneGVKbEJTU0daOHNPRUhEWXFxNFJTYQ?oc=5",
+        "date": "Mon, 24 Aug 2026 14:43:01 GMT",
+        "summary": "OpenAI IPO Wants $1 Trillion; Its CEO Just Admitted His Disruption Timeline Was Wrong Tech Times",
+        "score": 4,
         "weight": 1
       },
       {
@@ -7311,6 +7341,18 @@
         "date": "Thu, 20 Aug 2026 04:32:35 GMT",
         "summary": "OpenAI CFO Reveals How Soon the IPO Could Actually Land Yahoo Finance",
         "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:83f147a5b5a44e23cd674bbf05e906b9ef0f3e9e3b900159d9f38ff361812c30",
+        "label": "Jeff Bezos' Amazon Just Raised Its AI Spending Target to $220 Billion for 2026. Here's What That Capex Hike Means for Investors. - The Motley Fool",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNUtfWkVRSURxMXY2NEVxQlFJcjhYNTdQRTVMNDJrcjFMR2RhY2t2Y2RkRENEdHk3NHFFRkxhQ3hzY1Flamp3ZExjejNPakoxSFBPVzIwdE5nZ0VxZFdRTVdjS2lJeUNMUVFiNi11RkRaMVVEc1otM2txb0FYTkRyQ2Y1d2w5N0NtTXBwdUxWcW9icndOQTI3Xw?oc=5",
+        "date": "Mon, 24 Aug 2026 12:59:02 GMT",
+        "summary": "Jeff Bezos' Amazon Just Raised Its AI Spending Target to $220 Billion for 2026. Here's What That Capex Hike Means for Investors. The Motley Fool",
+        "score": 3,
         "weight": 1
       },
       {
@@ -9330,6 +9372,78 @@
         "weight": 1
       },
       {
+        "id": "evidence:e2824b03970c00ce1978ac6c907417ecc1e38f06ebf34070b8f145f6808f043d",
+        "label": "This Nvidia earnings fact will frustrate you - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNajcwMWRLT2pTNEYwQllDZXVDQ3VRM3FvekVxWUxJTjZidFZ1ckNhX08tU25sR1V5a3pIVVV5WXpDOXhRUnhxb0dOcjkwYXk4YV9Fa09YUlRJZFA5YmhDYlFLMXByeUVvTWFkU09rN3l5TXFfTUszUDVPNXpzVXE4bW42TFVNSngxcjI1WHNBOHBvUHhfQ2ZjelNCTjJPVUdqZDhYU29hQTZBczlV?oc=5",
+        "date": "Mon, 24 Aug 2026 10:32:34 GMT",
+        "summary": "This Nvidia earnings fact will frustrate you Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:fdc5c213391078b51dce6d84384cb2fb83af7efd2977a0bca9de3f98b00d7905",
+        "label": "Alibaba to Raise HK$80 Billion in Share Placement, All of It for AI - Wowtale",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Wowtale",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wS3dnVU1VMTZPOUpoeWtTUXk0S3lFUmluODM2X2VENXFuX0xpV1VEbDZKaVhjeEh5MnN1bFU5bHJJTGFqN3Ffb3hud19QdFVNLTdZ?oc=5",
+        "date": "Mon, 24 Aug 2026 13:24:01 GMT",
+        "summary": "Alibaba to Raise HK$80 Billion in Share Placement, All of It for AI Wowtale",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0af1f7201d7cba3b23299f66a509ccd9221a241fbc5497422ddceedfc74ed55b",
+        "label": "Baidu (NASDAQ:BIDU) Crashes 13%: AI Now Half Its Revenue, but Investors Aren\u2019t Buying It - Stocks Down Under",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Stocks Down Under",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5ISXBVUVV2dUpQSFRtelhwNDRVWDlsdkxQaUxzS1FSSW9fOGh5aFpyNS1Vb2J2RjFVanRqYUkyVVM3Q29Wbk8wNURjZmtQOVFkbHl5UnBuNnBRNW9KVk5ybEFvcjdCTHJKMFRFRThqMUw3Rk9OeHVOag?oc=5",
+        "date": "Mon, 24 Aug 2026 10:47:07 GMT",
+        "summary": "Baidu (NASDAQ:BIDU) Crashes 13%: AI Now Half Its Revenue, but Investors Aren\u2019t Buying It Stocks Down Under",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7b1d79084252c4ed7e457612045a7f70559e4cb0101312c174a1425d36d830aa",
+        "label": "Alibaba shares slide after US$10.2 billion AI share sale offered at sharp discount - BNN Bloomberg",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "BNN Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQM1ZBbTg3cGdvVWNJVG12WllZZFJVelAwQzBGVU9uMDA5bVNfR0hSUUdiQnAwZ0M2SXFHZGI1MENheXJ1cHd3cl8zX2pBemRGbUg3aFg3QjRXNUFrd1dxb0R2TFU4TUV0RVNfejZMUGRjWjhoeENrNDhPajdZREliTWQweXJiMXZDcUE1VWZqemN5Um9EVWlZVGtMRVF2UExNT3EycGU0ZHhKclNnUDhVcTliWWFEVTFGQ3NQSnA0dUdFOHR2TWhGdWdfUmlZU05MRnJEMkRMRFdMdw?oc=5",
+        "date": "Mon, 24 Aug 2026 11:19:16 GMT",
+        "summary": "Alibaba shares slide after US$10.2 billion AI share sale offered at sharp discount BNN Bloomberg",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:a8f687187070d837e7c6566acf79b19af472a2c063b06365aed3df44bfc5dfe5",
+        "label": "Anthropic's $2 Trillion Valuation Faces a Reality Check\u2014SPCX Offers a Warning, Wall Street Veteran Says - Benzinga",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNOC0yQjhoZDhKRWozaHZ5SGNseUVCY2FwOXRKZG9lSW9vVm42eXQyRkQtSVN0UE13cjhwMXJMV0FMbVJ2ZkN4dzlia21RdDVoaUM2eHk5c0JoZzVhSUtpUGUzYlZmN2lra2FLQ212dGpRUDd2cF9tcUNnV2ZJcmI2emZXc2YtTVdSXzJYQmRXNzI1eld6eFBzU2NLbmN6bGg0MkQ1Z3ZLbWhRZi0xbGxhTzlGMVdjVVIweERDSTdfMzVoUElhaXpaTGx3T3loZkpfbnVNVUdGVVJtMGhWWFBBRTVIYkhnRmppbndoN0NsVzBWMVVlUmc?oc=5",
+        "date": "Mon, 24 Aug 2026 13:23:00 GMT",
+        "summary": "Anthropic's $2 Trillion Valuation Faces a Reality Check\u2014SPCX Offers a Warning, Wall Street Veteran Says Benzinga",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5c354917c56bfd87167ed499d873d50f4f80fae059e758aa48e4aa14eac32672",
+        "label": "OpenAI Pro's 'Unlimited' Image Generation Faces Scrutiny - StartupHub.ai",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "StartupHub.ai",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeFRQMUJYbmxsN2dZUDVfQ3RpZkNmU2FYOTJiNnYxQjA2ek1OWHlFNHN0aTljSmNqVmNLMUMyNGFmN2x0UURuY01mTW1YOWo0a3ZNSjkxZ0c4Nmo2elNyNHZ3RXRkT2FrM3JaMW1LdnJkVGtMMzJDcTA5WWs0U3BjM3ZiV19vWmdvTWN4V01CNWVLOTBFdXBTOGhxNkYyMS1SQ0tVeTF3Q2RYSDZ6Q05LZlRDeFM2STMy?oc=5",
+        "date": "Mon, 24 Aug 2026 04:32:58 GMT",
+        "summary": "OpenAI Pro's 'Unlimited' Image Generation Faces Scrutiny StartupHub.ai",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:13e6c00d19cc3e0b59cbacedae00a2600e6dfd99bd0bf1982f2a0217b9dde177",
         "label": "MiniMax, Luxshare Precision Among 3 Stocks Added to Stock Connect Today; AI Concept Stocks Surge 18% Against Market Headwinds - finance.biggo.com",
         "kind": "evidence",
@@ -10862,114 +10976,6 @@
         "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE90djZFdmZzRm5XbTFQemRaXzhMbTdhT0YwNHB3cVZJR2JxOTJVM0sxakpaX01zT1h5eUM2V3F6b00zX09ZVFUwVkFmZXhzd1NyamlwWE9xVUNXQ2hMeE5LeExyRUs3a3RZYjIwd2VQTXpoaTg?oc=5",
         "date": "Mon, 20 Jul 2026 07:00:00 GMT",
         "summary": "Everything You Need to Know About Kimi K3, the Latest Model From China to Shake Up AI Big Technology | Alex Kantrowitz",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b9d598c7f60c9405fd6f02cf9699b33721f821a09cd781d16859d608f08fc493",
-        "label": "Kimi K3 is the best model ever made (sometimes)\uff5cTheo - t3.gg - finance.biggo.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBWS0wxLUh6Vk5uR21IT3JyeVA4VTg5Qlc1a01CNmlVQllBRko3azNpaTNBM3FGbHFySzk1dWFlRzdXZVFnNV9SdTZ6SHEtRzI0UXhhN0xfdlQtQkVUTlBz?oc=5",
-        "date": "Fri, 17 Jul 2026 11:44:09 GMT",
-        "summary": "Kimi K3 is the best model ever made (sometimes)\uff5cTheo - t3.gg finance.biggo.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b52a862f6e84f078c70b02a371da79fe92bd18ee7b0fbcb0d098c26e83c16e7d",
-        "label": "DeepSeek vs ChatGPT 2026: 97.3% vs 60.3% MATH-500 and a 9x Price Gap [Tested] - tech-insider.org",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "tech-insider.org",
-        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5nZUwyaG9QamZ4dzNzeHRXVHliMEI0bHBKQzFQa0lSZmI2ZFpOcGFxWjdnMjREQlg2UC1tRDhHSFBJRVZ4VVlzRk9rdWZFZTR1YUtfbFkyTGY?oc=5",
-        "date": "Tue, 10 Mar 2026 07:00:00 GMT",
-        "summary": "DeepSeek vs ChatGPT 2026: 97.3% vs 60.3% MATH-500 and a 9x Price Gap [Tested] tech-insider.org",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d8fc8fe9d581e00e8c9301d4d98427be767fc2e50019514d258cd277a85cbfc5",
-        "label": "DeepSeek V4 arrives with benchmark scores that put American AI labs on notice - Startup Fortune",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Startup Fortune",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWEUxbjZPZzRibENEYWR1eWZlSlRqT2RoVHFWQmIxY2NvZ0M2V3FBYS1QN0pQaF9zZExhaS14ZGJ6b3dKT1RKdkpTYUxDNTU5NlFxLWxGUnZXcmVYazVFdm4zV0Q1Z2xDUVlFZnBUeUotdkxMR1N4eGdWZHZJbzhmZzQwWFJ4S1dxMkhmNmpoZ2RqbjBvQnRvUHJEenJ4aUg1Q2ZkWXdSTzE?oc=5",
-        "date": "Fri, 24 Apr 2026 07:00:00 GMT",
-        "summary": "DeepSeek V4 arrives with benchmark scores that put American AI labs on notice Startup Fortune",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e9401b7d296b3f1581fd0b45da44f46c1e71dfb0be660987f27105bec120f5a9",
-        "label": "Kimi K3 Shows the Cheap Chinese AI Era Is Coming to an End - Startup Fortune",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Startup Fortune",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQY0U5QnlSa1c4akl3S2Z3OVVfNGdkVV94Rk1PWXdURy1IZ1g4YmxEWVZ4dEdZTzNqcEt3NWNNMDVYQWxCQ3ZBWWM5a2N5Vk9QamZMb1lzVnhCNlp3c2Jmdm5heTVPTGtxS01XdUR2TG5UaXh1azFwREZUd1ZaUkJoRUZHcGxEY2U0VjhsakhURQ?oc=5",
-        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
-        "summary": "Kimi K3 Shows the Cheap Chinese AI Era Is Coming to an End Startup Fortune",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:79401475eab9a31845a9e5f1c1cbdb52141e7a584ff9602f89c64c5dd6a9bdcd",
-        "label": "DeepSeek V4 on Huawei Ascend: 1.6T MoE, $1.74 Token Price [2026] - tech-insider.org",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "tech-insider.org",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNeXZWbUlybnhNZmhpX0FmOGdrUUZRQ0hiaGxfbk9VYXZ2MUVWcGtpSDk5THBYVnFOMHlvdVhPTGp4Q1A2LUpNNXZqV2JDWjdNd1RzMXRGZ0RXcG9zaGtkMmJrS0ZKcUtiV3Z5VExBR2ZXV09tQldPVHdVU1dtbjJIbjFQSFpDZzFOUTJv?oc=5",
-        "date": "Sat, 16 May 2026 07:00:00 GMT",
-        "summary": "DeepSeek V4 on Huawei Ascend: 1.6T MoE, $1.74 Token Price [2026] tech-insider.org",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3a8700698246c7cf38b79876533f1b375e9c68f509676bd62e9d0ca03700cb62",
-        "label": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost - Venturebeat",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Venturebeat",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVjJnVDMxM3Q1RWdaV3VBLWJPV2VwaTJEcEZxMER4UUtxV0tMSlNzMVRITUpUM0VhYm04Wko3UDhyMjQwU01YWmlDaFNJamtaRkhOZ0FQNjZmNkFvYldmTDRhRVFPWW91OHY0dUtiSXhQSXpIZXlXbV9mMVdzVC1Db3JUWjdLWjRpb1hkSnk5dFFfWEE3SEZCOGNnRE5rN2gzVGRqZkxJaFZ6RmpvOTB4N3dBX2hBdnJtZkNucDVKdGt5cFpKMDdHbTJKU2pvem1zbnFYVnpZSExGSjlm?oc=5",
-        "date": "Mon, 01 Jun 2026 07:00:00 GMT",
-        "summary": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost Venturebeat",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:08158b157272985f7e56e337ec3ad00e48a7faebe600eeae90170b3798724eae",
-        "label": "DeepSeek previews new AI model that \u2018closes the gap\u2019 with frontier models - TechCrunch",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWTkwWkktandzT2ZKZTFpNVM5czRCYm8zZkpHblJra043c2xmUUpWV0NVZWpLZ1hNNFZWMTd4MFZNTF9saXhWYlJDY2djUGd1SUJONU8zSW13czRzUlFvWktoeW9CWlpJcmFFdGtnSGZzanNsM3REWk55V3FZMjlHUjROVFJ4LVlaU2stcUY4YWpoWDZWcHFLbThwTnpxZlZGV0x3VHhWVWpsdw?oc=5",
-        "date": "Fri, 24 Apr 2026 07:00:00 GMT",
-        "summary": "DeepSeek previews new AI model that \u2018closes the gap\u2019 with frontier models TechCrunch",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cfdcb9362bd354194e87f89633e0cb9da6fabaa00504ab55935b824eea11cb64",
-        "label": "GLM-5.2: Open LLM Beats GPT-5.5 at 1/6 Cost [2026] - tech-insider.org",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "tech-insider.org",
-        "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA4RGYyTmkwR3k2VWJGYXFTeVFubXVQSWM1RHhIN2RCSldEamhmaEVELTlnWHd0aTdnSW10LVN3dEthTEYzaFRQNjhzSmpLYV84OG5LN1ZoZWdrN2FPZFQwblVNZlB5WU53?oc=5",
-        "date": "Wed, 01 Jul 2026 07:00:00 GMT",
-        "summary": "GLM-5.2: Open LLM Beats GPT-5.5 at 1/6 Cost [2026] tech-insider.org",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:576754d82dd08157177c35879fb689f1707f8645eb7cfd1d8fe3758a1379f093",
-        "label": "NVIDIA Earnings in 5 Days: Should You Buy, Hold, or Sell NVDA? - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNzhNRjJMRUdkRGQ5NF84QXh6MTc0Z0VtN1JtUWlpZXZPSDZoNFNvMzZKLWNPVE9waFRieER0VmhvYk1reVBEcFp3ZDVHZTBndDh2bmdkSTJBWC1zdVduV1BJTGUxQ3BVVElSZkE1ODFJOWZaNXBrdnA1dENxdktRNzdvMW1BTHBaNUc0cFRWVWRGWkR6b0E?oc=5",
-        "date": "Fri, 21 Aug 2026 19:00:00 GMT",
-        "summary": "NVIDIA Earnings in 5 Days: Should You Buy, Hold, or Sell NVDA? Yahoo Finance",
         "score": 1,
         "weight": 1
       }
@@ -12782,6 +12788,27 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:23667607ddeb573b33c41ef860cf2de869be0a87ca2002784943434ad045b65a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:23667607ddeb573b33c41ef860cf2de869be0a87ca2002784943434ad045b65a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:23667607ddeb573b33c41ef860cf2de869be0a87ca2002784943434ad045b65a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:2209e081901d441d39b36682bcb41e8a7621bd0fac6496cba71fb66945a03545",
         "type": "EVIDENCE",
@@ -14232,6 +14259,13 @@
       },
       {
         "source": "OpenAI",
+        "target": "evidence:f9d5892a812c64fbbd50331370cd4103703ded8211035f9314c6a3f1568b0eae",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
         "target": "evidence:f7032f3185acc816cc05b826678adb1a4d4871164fc7222af9118ee5580047a8",
         "type": "EVIDENCE",
         "weight": 1,
@@ -15227,6 +15261,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:4d2c5a1ea037299f5beef2350486d461ad7d13eb64e7babaea111d19d8f4386e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:83f147a5b5a44e23cd674bbf05e906b9ef0f3e9e3b900159d9f38ff361812c30",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17255,6 +17296,48 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:e2824b03970c00ce1978ac6c907417ecc1e38f06ebf34070b8f145f6808f043d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:fdc5c213391078b51dce6d84384cb2fb83af7efd2977a0bca9de3f98b00d7905",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Baidu",
+        "target": "evidence:0af1f7201d7cba3b23299f66a509ccd9221a241fbc5497422ddceedfc74ed55b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:7b1d79084252c4ed7e457612045a7f70559e4cb0101312c174a1425d36d830aa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:a8f687187070d837e7c6566acf79b19af472a2c063b06365aed3df44bfc5dfe5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:5c354917c56bfd87167ed499d873d50f4f80fae059e758aa48e4aa14eac32672",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "MiniMax",
         "target": "evidence:13e6c00d19cc3e0b59cbacedae00a2600e6dfd99bd0bf1982f2a0217b9dde177",
         "type": "EVIDENCE",
@@ -18146,69 +18229,6 @@
       {
         "source": "Moonshot AI",
         "target": "evidence:2dcfe67f0f1325b56bcf85539a02a8e11ef49905a585bbfdd7f32a18ca1501ef",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:b9d598c7f60c9405fd6f02cf9699b33721f821a09cd781d16859d608f08fc493",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:b52a862f6e84f078c70b02a371da79fe92bd18ee7b0fbcb0d098c26e83c16e7d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:d8fc8fe9d581e00e8c9301d4d98427be767fc2e50019514d258cd277a85cbfc5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:e9401b7d296b3f1581fd0b45da44f46c1e71dfb0be660987f27105bec120f5a9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:79401475eab9a31845a9e5f1c1cbdb52141e7a584ff9602f89c64c5dd6a9bdcd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:3a8700698246c7cf38b79876533f1b375e9c68f509676bd62e9d0ca03700cb62",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:08158b157272985f7e56e337ec3ad00e48a7faebe600eeae90170b3798724eae",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:cfdcb9362bd354194e87f89633e0cb9da6fabaa00504ab55935b824eea11cb64",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:576754d82dd08157177c35879fb689f1707f8645eb7cfd1d8fe3758a1379f093",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31927,6 +31947,21 @@
       "source": "AOL.com"
     },
     {
+      "date": "Mon, 24 Aug 2026 12:59:02 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "Here's What That Capex Hike Means for Investors.",
+      "title": "Jeff Bezos' Amazon Just Raised Its AI Spending Target to $220 Billion for 2026. Here's What That Capex Hike Means for Investors. - The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNUtfWkVRSURxMXY2NEVxQlFJcjhYNTdQRTVMNDJrcjFMR2RhY2t2Y2RkRENEdHk3NHFFRkxhQ3hzY1Flamp3ZExjejNPakoxSFBPVzIwdE5nZ0VxZFdRTVdjS2lJeUNMUVFiNi11RkRaMVVEc1otM2txb0FYTkRyQ2Y1d2w5N0NtTXBwdUxWcW9icndOQTI3Xw?oc=5",
+      "source": "The Motley Fool"
+    },
+    {
       "date": "Mon, 25 May 2026 07:00:00 GMT",
       "event_type": "PRICE_CUT",
       "source_entity": "Alphabet",
@@ -32724,20 +32759,20 @@
   ],
   "collector_runs": [
     {
-      "id": 343,
+      "id": 347,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T14:02:54.221829+00:00",
-      "completed_at": "2026-08-24T14:03:09.768871+00:00",
+      "started_at": "2026-08-24T15:00:22.457150+00:00",
+      "completed_at": "2026-08-24T15:00:39.507157+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 9,
       "error": null
     },
     {
-      "id": 344,
+      "id": 348,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T14:03:10.169782+00:00",
-      "completed_at": "2026-08-24T14:03:10.613073+00:00",
+      "started_at": "2026-08-24T15:00:39.908061+00:00",
+      "completed_at": "2026-08-24T15:00:40.339229+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32754,20 +32789,20 @@
       "error": null
     },
     {
-      "id": 342,
+      "id": 346,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T14:02:52.769929+00:00",
-      "completed_at": "2026-08-24T14:02:53.820979+00:00",
+      "started_at": "2026-08-24T15:00:20.854159+00:00",
+      "completed_at": "2026-08-24T15:00:22.055741+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 345,
+      "id": 349,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T14:03:11.015263+00:00",
-      "completed_at": "2026-08-24T14:03:12.727983+00:00",
+      "started_at": "2026-08-24T15:00:40.740509+00:00",
+      "completed_at": "2026-08-24T15:00:42.470803+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32784,11 +32819,11 @@
       "error": null
     }
   ],
-  "document_count": 1308,
-  "event_count": 967,
-  "mention_count": 2369,
+  "document_count": 1319,
+  "event_count": 968,
+  "mention_count": 2370,
   "review_counts": {
-    "provisional": 1,
+    "provisional": 2,
     "confirmed": 275,
     "flagged": 691,
     "flagged_retry_pending": 0
