@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T09:04:59.807723+00:00",
+  "generated_at": "2026-08-24T10:04:06.612699+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
-    "external_pressure": 16.12,
-    "transmission": 39.6,
     "fragility": 61.1,
-    "cannibalization": 54.2,
-    "stress": 57.1,
+    "counter_evidence": 42.9,
+    "circularity": 57.1,
     "monetization": 42.9,
+    "external_pressure": 16.12,
+    "cannibalization": 54.2,
+    "transmission": 39.6,
     "capital": 48.732271163185665,
-    "circularity": 57.1
+    "stress": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
+    "fragility": "directional_estimate",
+    "cannibalization": "directional_estimate",
     "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
+    "monetization": "directional_estimate",
     "external_pressure": "aggregate",
     "transmission": "confirmed_trigger",
-    "fragility": "directional_estimate",
-    "stress": "directional_estimate",
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "monetization": "directional_estimate",
-    "capital": "aggregate"
+    "capital": "aggregate",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T10:04:06.174393+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"stress\": 57.1, \"capital\": 48.732271163185665}"
+    },
     {
       "captured_at": "2026-08-24T09:04:59.313889+00:00",
       "score": 45.3,
@@ -4101,6 +4107,30 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2761c5725ea66ca84cfba8d1ba0cf45f60dff43c7c3c417bf2cfd9a07adaec3e",
+        "label": "\ud83d\ude3a Anthropic's IPO could top SpaceX's record - The Neuron",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Neuron",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XNzZPM1lGeDY5LWtpUXdxVFpHR0d4cFNzY1BlcklfT1REOFh6Ml92ZUtodTExQld0WlpxVGtHZ0JLVVBZQjQ3UVNKaTZHWEJ4OVl4RHZOSDFGUlBQMDJIaFFvMTlUYW1tbkdCaVBGTmhXcDl3M2tFME50ZGxZaGM?oc=5",
+        "date": "Mon, 24 Aug 2026 09:33:31 GMT",
+        "summary": "\ud83d\ude3a Anthropic's IPO could top SpaceX's record The Neuron",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:51fbe15beff841d464203f74fbd014d87b85f29f6e477078d1f681fdfc4e2843",
+        "label": "IPO News - IPO Winners & Losers: Anthropic\u2019s Mega IPO, OpenAI Steps Back, and AI Infra Cracks - renaissancecapital.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "renaissancecapital.com",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQSkVEaWlQaXlkVXp2bG5FYlpva3IxTDNwU1lIdEp5RndmMkNwY0puNk5xWXRnXy1peVRDbUlfa0lHVXVpLUFWYW0zNFhjT1dNd3lIdG95Nkxxd0pxd29SRGtHUThFdGs5Y21TMWhya3l5YThDVXdwU0xUWDdZZ0RtdjUweUlmMk1tRzNmY2NabGJpZ3pwTWlnV1l1V1hfQk1KT0NraEVRbEtud08xLWt1T0lTOGNFUDFiRXJlTnMta3F2Y0lHMVFRYjR1dUR1a0puVDBXa0Fqdlk?oc=5",
+        "date": "Mon, 24 Aug 2026 09:59:57 GMT",
+        "summary": "IPO News - IPO Winners & Losers: Anthropic\u2019s Mega IPO, OpenAI Steps Back, and AI Infra Cracks renaissancecapital.com",
+        "score": 5,
         "weight": 1
       },
       {
@@ -9168,6 +9198,66 @@
         "weight": 1
       },
       {
+        "id": "evidence:447aad217ed21039b3eb979b9f7702795a8aba3176abf3c437e66ccfef8ab6d9",
+        "label": "Consumer Internet Q2 Earnings: Alphabet (NASDAQ:GOOGL) Simply the Best - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOallhMlZKY3k2Y2s2bWlnUFhhZmtuZ0tVbm9LX2dlNVB5WmQ4bDJFV3pjUWN3MWVka25KZVUxYnBlN1NWR2J4NzlJQ1N5djU1SjVmaklJeVNaMjkyMnZpaG5iY3o4WkNUQzUtakVaLTNNb1pYNFhaT3pFWlJmZUgzTjJ6Yzh3NGYxZ2gwZGQtRDdWenhoNXZxd29wU0diakhYbmh6T1QwMjQ0YVZkSlhZd05QSVdkZVo1ZGdxNVE2OWxHS2FZZlBR?oc=5",
+        "date": "Mon, 24 Aug 2026 03:34:00 GMT",
+        "summary": "Consumer Internet Q2 Earnings: Alphabet (NASDAQ:GOOGL) Simply the Best TradingView",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9bc50c6e1639f48164ccf00f995b0ed3ff3d618cea46e2b386c8ea9eb5708547",
+        "label": "Asure Launches Enterprise Payroll Tax and Treasury Solutions on AWS Marketplace to Reach 330,000 Customers - FF News",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "FF News",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeEI5UzlCZy0yVXZPU05FSjFpYmVCVEt6ZUNrY1dJanFkaEpSMUNPUlBpVjFBX3hDYjNldEhPbm1NSjlRV2tnSUlEYmpxOGpyYmNSaWN4RVRHYXRBQVE5cVZIT0MwWUptbVBOYkZUYU5QaVM5dFRyTWlaNVlraHRkQmE1U3Fpd0lXTmMyNGE3WFVHU1FRWWp6Z2pCZmNSb0UtZzN6UlJURlhnSWZWRUg2MmphTVl4NlNOOHJ5RlJJQVVhWHpaS2ZSRw?oc=5",
+        "date": "Mon, 24 Aug 2026 09:43:48 GMT",
+        "summary": "Asure Launches Enterprise Payroll Tax and Treasury Solutions on AWS Marketplace to Reach 330,000 Customers FF News",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:676ea79315ff2ffc2aa9aedc406e4b51222f2d4a977244a1f3053c4de15be817",
+        "label": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered - 36 Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fS183LXk5ZENZU25Uc2dxWXBaZ1VxYWhhLXJuNTFNaG9jV3lnTUhoeTJVVzZWY3Vib25uTUlUdG1hdGd2NWhqMlFFbWxzTUtuWWhj?oc=5",
+        "date": "Mon, 24 Aug 2026 05:14:16 GMT",
+        "summary": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered 36 Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d568ee5075417f4d70dc35f05e53c5abcd8a7609dd0904625a3233018a8096b8",
+        "label": "Doubao \"Boards\" Tesla: Why Did Elon Musk Make an Exception for the Chinese AI Assistant? - 36 Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YY3JzdlAwQmdZRTdrY2pXZ25wTC1OM3o5NmtkdWhkMVM2NFFYUGNDYnhQX2xzcUFKSG5OV1Nfd0VYOFFBRGdsVkNrQnRzbVVuaXJ3?oc=5",
+        "date": "Mon, 24 Aug 2026 04:34:02 GMT",
+        "summary": "Doubao \"Boards\" Tesla: Why Did Elon Musk Make an Exception for the Chinese AI Assistant? 36 Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e3996e4ef971dae29f49c0bd607c5e819ca598ab7cc744e53163a4d4061f48e7",
+        "label": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration - 36 Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ZR1h5Sm95eG51b2NTNzZfOVZpSUptZ2VCZnlQMmJ3MjF0RTBWQTFibXkzMmJjYWg3QW94cU9xSGEtZkppUGdiNXc0cVdMTEo1SWQ0?oc=5",
+        "date": "Mon, 24 Aug 2026 06:34:18 GMT",
+        "summary": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration 36 Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:6c27ec786de366fecb89661d2a3b367702f9818cef670dc84037514cf403fd0b",
         "label": "Spinnaker Investment Group LLC Has $2.31 Million Holdings in Amazon.com, Inc. $AMZN - MarketBeat",
         "kind": "evidence",
@@ -10856,90 +10946,6 @@
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWThRVERaU0I2UTlCMWRmTzFiRFZzaDdBZEFsbFNnSU5SSHRCdVJLQVREZFFFSHFRZ3RlX2lmNU04RWRjOUVhUUUwaUJPWktQdU42bjIyUFJOLXVaR3JBaGlCTHFEVGlfd1dJS3U4MTRvSFZHSTBvQUZsbHFqT2xzcHJFaHlUTm56OV9rOXlFREk?oc=5",
         "date": "Wed, 15 Jul 2026 07:00:00 GMT",
         "summary": "Intuit and Amazon Expand Strategic Partnership Intuit",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c23438c31826211e507f479fb8e393ecac64b6988545574c79ab2d9a7e90810c",
-        "label": "AWS doubles investment in AWS Generative AI Innovation Center, marking two years of customer success - Amazon Web Services (AWS)",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Amazon Web Services (AWS)",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTUdqcm9KMnU5aFozSjNDbVpYR2tvaUotazROQmZId0ZCOVVNb2xaempId0dONFl4V0RLdHVMa1JGSDViV3RkNlJTbHhXNDRySkdRNmU0NlpLMC1JZE9yOHp1dllmbEVQQUdiYkNNaGhlLXE5Y3NKSjJmZHRDSFlYcVJHMmxtclRSU1NaT0NMM0dvT1hRTjF4VV9LNkJnOHJWdlQtMG1OTENaOGMwVEZVNWl1cGM1dWNYX0t2U05CRWJYUVU4TG9HYXZiS3U3RE1tOFd3MjBSLXFGdThzeksw?oc=5",
-        "date": "Tue, 15 Jul 2025 07:00:00 GMT",
-        "summary": "AWS doubles investment in AWS Generative AI Innovation Center, marking two years of customer success Amazon Web Services (AWS)",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1eb720e4ff5426ef2560ab14842e147dcaae4e9eb276fe2a2d3607c4868bfbee",
-        "label": "Seattle Seahawks Announce Multi-Year Partnership Extension with Amazon Web Services - Seattle Seahawks",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Seattle Seahawks",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQN3hBNG5mWXRNUS1wQnM1Q0xYYnVNQ0RSTzVleVl6Rk51NHpTbGxwaUs4WTJsaGFxaGt6Qy16eFlPR3NzZmR4WmFmWWlhaDFMQ0RGakt3SnI0eDdVSEZnSXBZWV80SmZZa2ZfMklTRkI0UTlPSzVfbmpVTkhmX1lmeFotQVlNNUMzUW5udk9NYjFLS3hnX2NlcHFzd2liNjU2UFoyTlIxS2hCUmw5aU9LWlQxQQ?oc=5",
-        "date": "Thu, 10 Oct 2024 07:00:00 GMT",
-        "summary": "Seattle Seahawks Announce Multi-Year Partnership Extension with Amazon Web Services Seattle Seahawks",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:331b8e3b2baa1e691a03bac247177fff95ef8521b48370b00ff5b12974e30b4a",
-        "label": "Hong Kong-listed AI firm MiniMax\u2019s revenue jumps 159% on strong demand - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPS21IVzR0U0tweU15Zng0dGY0b0U0TTlqVEQzQmhOVWVMdzgyd19kQ0dQbXJRNkF5WUJiU0VpaFJQeFN3TlV5MHd3M0lFWTh5MzljbFd2VFZGMWJJajRkY0ZIMDB0c3N5OENDbTlja0ZCQ1MzNTI2bzRZQW5qR0tzMEgtOE5SN2pySGsxeW5lSkZ2VHJXRnJYczNKVnNGZXpFOW81YU5qaThiX2ZLRFBiddIBsAFBVV95cUxNY0NyVl9QSWVkSHYzXzhVT1FvMnkxQy10WjA5QmRzalFMM3U1THJZcnB2R3Y5dkJJaS1sLVptOXo0aFdjRXZxNmYwQU82NmRUMkdwbVU1RzJMRl9PRUxLcVpyanNHeU1RdE1HUnY3NDBNNXVyN1RTQWF3R3E3YWtORlNqYVpFcU1DOHBxWlA5Vm0zWmNUdnN2WS1yVjV6bHFtamtiR0lQbEl4Yjd0cDBZYg?oc=5",
-        "date": "Mon, 02 Mar 2026 08:00:00 GMT",
-        "summary": "Hong Kong-listed AI firm MiniMax\u2019s revenue jumps 159% on strong demand South China Morning Post",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6b5ce49d935e5f532316e144f0780cbf6311cbff893f0c4c9871cd31ce00b73c",
-        "label": "MiniMax doubles in Hong Kong debut, marking yet another Chinese AI listing - CNBC",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE16MnNUSjF5MnNLeUFFam94ZjlmOFVXLXRpWVNVTG01WmM4cWVmX0VNd2N0VFF6OUhxTTdwQVdQOVYzckxVVGpkSU9YN3hUVXlUaEcxdXgyeTFDVW1uZ0JKTDBLWGlpTlRpMjZfbl8xa3V4TWh6eUVySi1CVUY4ZDTSAYQBQVVfeXFMTlVObUVBalhrTTRZNUhldWtwOWtrWVJJaG82T2RWVzdpYzZwejJDdHJORnlKZmNxejNlMkhJTmFEUGJHYlRWd0lmQklyVUZtQzRGbVRpSy0weXQ5aElfUEZsMkdxdmo1UElEUG95dHBJUWllRW1FS3J1cE5wZnpPOG1GNm9F?oc=5",
-        "date": "Fri, 09 Jan 2026 08:00:00 GMT",
-        "summary": "MiniMax doubles in Hong Kong debut, marking yet another Chinese AI listing CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:52ad91474cc9c705f2bb6ef8dc0d9b8129d8385c348f89797830973de5ecacc3",
-        "label": "MiniMax Group (SEHK:100) Valuation Check After Strong Short Term Share Price Gains - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOVRFZTQ2alp1TEgzUTJab19tRnFuRUkyaE9QeE16MFd5MEthc2ZBdTg0V2JDZkxBdFhnNHpfa3htb0hKOVRYXzdxZnBaaHR1eF93RWRWUlp3d2xjYTNoallhSHhTckp5UnJIWFlaZmo5VUk3dTlzbWRvcXNIdnJzZWlhdjA?oc=5",
-        "date": "Fri, 06 Mar 2026 08:00:00 GMT",
-        "summary": "MiniMax Group (SEHK:100) Valuation Check After Strong Short Term Share Price Gains Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:996ed76935cf3c16b4c45f5e48999069ba66fe81390883794082061fce2e9096",
-        "label": "MiniMax revenue seen rising to $219M in 2026, reaching $5.8B by 2030 - S&P Global",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "S&P Global",
-        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQT3BuQTJaTVVELVBBQ0RPd2hueFZYd3FwNVNROEF4Y0FpNjdPZ2pmLUhuZWRXVUV1QUd5UmNtNzNTa25XOWNfZlZnbS1zMUdJUEVqdUpzajJscVYyUGtSREJtX1dMT3EzYjdvemVqZnFvam5HdUV3X2VvckVfMWVBTGN5THFNeVhOM2JCYzFsTGZsTVYyNnVISkRMdE9mTm5FZWs0U3BPOGd5QTJaNG9URzNvUmhvbnJmb3k4eXFGY0RWaG1RRDBsSlFDeWtGNWY2LUszYlZWeUVRTFJfTVNkbjdR?oc=5",
-        "date": "Wed, 22 Apr 2026 07:00:00 GMT",
-        "summary": "MiniMax revenue seen rising to $219M in 2026, reaching $5.8B by 2030 S&P Global",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:73cd9ed919be006277883805a4b89e8f985e8a8760c6cb4e9f9c74b87686f4bb",
-        "label": "Zhipu AI market cap tops HK$1 trillion after GLM-5.2 release - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcHRwcGZxUFpoVEU5d0xIbkJVYzUzZGc2Z1h6bzRMQXEyVkNwWXM2N2hMd2x3MVFHMUtlWS1BdWUyUkpXQ0hHU0dWSVE0VE5NSnBBLUs5VXMzYmhpbmR4Zlh1d0R0STFqTHFEUExMUmtpalVZR2lrT1M0b0JvaklmLTQweU9MVndMa1g2TGlZVWc4dnhvaWtMaTVSME5aRXV3MnowSVJzeW9KbTBl0gGsAUFVX3lxTE9ja3RwdDlRVGZwUVZwV2JiejdJSk8ycDZhMHNvSXF1OEVTYjdlRmFLSWJSVE5vU0JZNmoxYU55UkhjTGxrNnI2UFR4a09DOXQyZlNkR1VDMVI3ZnZWV0tuRjMzdk5wa0hpVzk5NU9yVVZGSjZWYXVTdFNJcDJScm5rd3NCcHdoMUNNUGpTM1JzMEZYWWhyZFpWUGk3TUY2dHF2b283R3VZb244UEg?oc=5",
-        "date": "Mon, 22 Jun 2026 07:00:00 GMT",
-        "summary": "Zhipu AI market cap tops HK$1 trillion after GLM-5.2 release South China Morning Post",
         "score": 1,
         "weight": 1
       }
@@ -13076,6 +13082,34 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:2761c5725ea66ca84cfba8d1ba0cf45f60dff43c7c3c417bf2cfd9a07adaec3e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:2761c5725ea66ca84cfba8d1ba0cf45f60dff43c7c3c417bf2cfd9a07adaec3e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:51fbe15beff841d464203f74fbd014d87b85f29f6e477078d1f681fdfc4e2843",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:51fbe15beff841d464203f74fbd014d87b85f29f6e477078d1f681fdfc4e2843",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17085,6 +17119,41 @@
         "mentions": 1
       },
       {
+        "source": "Alphabet",
+        "target": "evidence:447aad217ed21039b3eb979b9f7702795a8aba3176abf3c437e66ccfef8ab6d9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:9bc50c6e1639f48164ccf00f995b0ed3ff3d618cea46e2b386c8ea9eb5708547",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:676ea79315ff2ffc2aa9aedc406e4b51222f2d4a977244a1f3053c4de15be817",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:d568ee5075417f4d70dc35f05e53c5abcd8a7609dd0904625a3233018a8096b8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:e3996e4ef971dae29f49c0bd607c5e819ca598ab7cc744e53163a4d4061f48e7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:6c27ec786de366fecb89661d2a3b367702f9818cef670dc84037514cf403fd0b",
         "type": "EVIDENCE",
@@ -18067,55 +18136,6 @@
       {
         "source": "Amazon",
         "target": "evidence:a07a4ed170c4990a4c04b982ef18daa32cb25f91bcd38a4b7282aa32459bc91c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:c23438c31826211e507f479fb8e393ecac64b6988545574c79ab2d9a7e90810c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:1eb720e4ff5426ef2560ab14842e147dcaae4e9eb276fe2a2d3607c4868bfbee",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:331b8e3b2baa1e691a03bac247177fff95ef8521b48370b00ff5b12974e30b4a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:6b5ce49d935e5f532316e144f0780cbf6311cbff893f0c4c9871cd31ce00b73c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:52ad91474cc9c705f2bb6ef8dc0d9b8129d8385c348f89797830973de5ecacc3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:996ed76935cf3c16b4c45f5e48999069ba66fe81390883794082061fce2e9096",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:73cd9ed919be006277883805a4b89e8f985e8a8760c6cb4e9f9c74b87686f4bb",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32631,20 +32651,20 @@
   ],
   "collector_runs": [
     {
-      "id": 323,
+      "id": 327,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T09:04:42.316014+00:00",
-      "completed_at": "2026-08-24T09:04:56.005710+00:00",
+      "started_at": "2026-08-24T10:03:48.315501+00:00",
+      "completed_at": "2026-08-24T10:04:02.783973+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 8,
       "error": null
     },
     {
-      "id": 324,
+      "id": 328,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T09:04:56.406723+00:00",
-      "completed_at": "2026-08-24T09:04:56.776090+00:00",
+      "started_at": "2026-08-24T10:04:03.185370+00:00",
+      "completed_at": "2026-08-24T10:04:03.633401+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32661,20 +32681,20 @@
       "error": null
     },
     {
-      "id": 322,
+      "id": 326,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T09:04:41.353943+00:00",
-      "completed_at": "2026-08-24T09:04:41.914619+00:00",
+      "started_at": "2026-08-24T10:03:47.045090+00:00",
+      "completed_at": "2026-08-24T10:03:47.914219+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 325,
+      "id": 329,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T09:04:57.178277+00:00",
-      "completed_at": "2026-08-24T09:04:58.898098+00:00",
+      "started_at": "2026-08-24T10:04:04.035081+00:00",
+      "completed_at": "2026-08-24T10:04:05.760722+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32691,7 +32711,7 @@
       "error": null
     }
   ],
-  "document_count": 1274,
+  "document_count": 1283,
   "event_count": 967,
   "mention_count": 2369,
   "review_counts": {
