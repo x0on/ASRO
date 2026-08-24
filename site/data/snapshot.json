@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T17:47:30.644506+00:00",
+  "generated_at": "2026-08-24T18:59:55.634450+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
     "capital": 48.732271163185665,
+    "monetization": 42.9,
+    "fragility": 61.1,
+    "cannibalization": 54.2,
     "transmission": 39.6,
     "external_pressure": 16.12,
-    "circularity": 57.1,
-    "monetization": 42.9,
-    "cannibalization": 54.2,
-    "fragility": 61.1,
-    "stress": 57.1
+    "counter_evidence": 42.9,
+    "stress": 57.1,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
     "capital": "aggregate",
-    "circularity": "directional_estimate",
-    "fragility": "directional_estimate",
-    "stress": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "external_pressure": "aggregate",
     "monetization": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "fragility": "directional_estimate",
+    "external_pressure": "aggregate",
+    "circularity": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "counter_evidence": "directional_estimate",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T18:59:55.153964+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"capital\": 48.732271163185665, \"transmission\": 39.6, \"fragility\": 61.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 57.1}"
+    },
     {
       "captured_at": "2026-08-24T17:47:30.316432+00:00",
       "score": 45.3,
@@ -9474,6 +9480,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:f831e932aaf139bd043456a5e454741f3036d96865cf4a43b56f99266cc57ab8",
+        "label": "Pinterest's $4B AWS Deal Expands AI Ambitions and Spending Exposure - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPamp3MVFkcXZhQUxGcmNYM0lzbFRDeGxDTU5VUnRnX25EdmJtUTFMSHNseEtzbXFZdHU1R0x3SW1sRDRIRzVHaG9NbnZvV1BQeHJjSVhqX0NoUlgzQlNDU3RDM1A0VHFRMFd5QzJIb0xpbUFHbWZuNjBsRFVjdncxZ1BfaVdtMUpSWEtSdXV3cUNFQVE1emRmdTZn?oc=5",
+        "date": "Mon, 24 Aug 2026 17:55:00 GMT",
+        "summary": "Pinterest's $4B AWS Deal Expands AI Ambitions and Spending Exposure Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0960daf73359ede6ee4aa8ea9e0e862f754e17528cce93406355436700150cc8",
+        "label": "Zoom Q2 Earnings Preview: Why Its Hidden Anthropic Stake Could Outshine A 15-Quarter Revenue Streak - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTUprejl2b19zZGx2SmRmemRwWjM0V2VGaHF6YXZVVGlTVGd6STJYc0FiLTBWbkVubXptQVhCTGdZVXNoNlVVLUw5UFZBdXRqUTNSLTZlTy1nb2pZbVM1ZzNiUHNQbnBrTDJXb1BveVBTVkRXVkwyZW82ckdkLUJ3S1VQOThxZGRySjlzQmcya2h5U25RMUs0NA?oc=5",
+        "date": "Mon, 24 Aug 2026 17:07:57 GMT",
+        "summary": "Zoom Q2 Earnings Preview: Why Its Hidden Anthropic Stake Could Outshine A 15-Quarter Revenue Streak Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:709c0497cf68473ecfbb678efa3a471e833cdd89432e104e855dbeb412c6259b",
         "label": "TD Cowen predicts Amazon AWS revenue will hit $165B by 2026, driven by AI and heavy investment. - Pluang",
         "kind": "evidence",
@@ -10970,30 +11000,6 @@
         "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQS2V6emZ1aTdkOUFrMExWai1vR2lFSkstYXdTRldTZXpId2doa2VqdG5vQk5QSDM4OHFpYXdEcVJaRmtmcFNvVFdWdVJxb1hET0h0amttZUVNQzFyeDVOZVNJZ3JGR0NBZ0JONmp1Q1psanFFQ1l6LUh0aHlUenJGZ2xyS2tzUENoSEtfdGd3SWhzQWRUbVE?oc=5",
         "date": "Mon, 08 Jun 2026 07:00:00 GMT",
         "summary": "OpenAI confidentially files for initial public offering on US stock market The Guardian",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f79a1cda3758a9a940be28094e1bd908f23c70c3d2262adc163c02ca02f8c670",
-        "label": "Marvell Technology (MRVL) Stock Fair Value Edges Higher After Google AI Partnership Expansion - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTDRaem5IYVhYOElFekVzbzAzWFZ5RHpySUU1TjY2MmIwd0Jjb1otLWIzLTg3VTBucWxmRXlqeXloVkdMME1hRE94SUdMZUVYMDY4dGhvRDJqS2NQTnlDSmVld1lSV016OTBoQXdldEs5OUxaQUlNaU9LbDBaMnN1QkJJbFpCUDhCUzNmSWdjR21zSmx0aW9DUzRldHFCRG9P?oc=5",
-        "date": "Fri, 21 Aug 2026 21:10:42 GMT",
-        "summary": "Marvell Technology (MRVL) Stock Fair Value Edges Higher After Google AI Partnership Expansion Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cf3e51cbde17509ec5a68a3b41ad0ebe7352fb5243d295a402551db77d61b562",
-        "label": "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWVRTd2NDRG9waUtVV1RMLUdrQkxFSVlwV2JyRmNGekxnZUJvQkMyel9haUdfck5hdloySDBNRlFGVlVLM1E4a2lQQTlablJycE9WVUN6Uy1kTVRTWnR2MlV3TGVmQVZpZ09sa25jWld3WmR2R1BmRzdqN0E0WkpTaWRqRXctRWNJSEJiRE9tdU4?oc=5",
-        "date": "Fri, 21 Aug 2026 15:30:04 GMT",
-        "summary": "Why Is Alphabet (GOOGL) Up 7.2% Since Last Earnings Report? Yahoo Finance",
         "score": 1,
         "weight": 1
       }
@@ -17427,6 +17433,20 @@
       },
       {
         "source": "Amazon",
+        "target": "evidence:f831e932aaf139bd043456a5e454741f3036d96865cf4a43b56f99266cc57ab8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:0960daf73359ede6ee4aa8ea9e0e862f754e17528cce93406355436700150cc8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
         "target": "evidence:709c0497cf68473ecfbb678efa3a471e833cdd89432e104e855dbeb412c6259b",
         "type": "EVIDENCE",
         "weight": 1,
@@ -18296,20 +18316,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:d5bc35626ccd0017a1b02a4a18ae0ddfa57e99d192d65a9ad5a7c634ef0b9b0d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:f79a1cda3758a9a940be28094e1bd908f23c70c3d2262adc163c02ca02f8c670",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:cf3e51cbde17509ec5a68a3b41ad0ebe7352fb5243d295a402551db77d61b562",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32840,20 +32846,20 @@
   ],
   "collector_runs": [
     {
-      "id": 359,
+      "id": 363,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T17:47:06.295113+00:00",
-      "completed_at": "2026-08-24T17:47:26.339404+00:00",
+      "started_at": "2026-08-24T18:59:36.529356+00:00",
+      "completed_at": "2026-08-24T18:59:51.831831+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 4,
+      "items_new": 3,
       "error": null
     },
     {
-      "id": 360,
+      "id": 364,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T17:47:26.741395+00:00",
-      "completed_at": "2026-08-24T17:47:27.209188+00:00",
+      "started_at": "2026-08-24T18:59:52.233107+00:00",
+      "completed_at": "2026-08-24T18:59:52.631737+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32870,20 +32876,20 @@
       "error": null
     },
     {
-      "id": 358,
+      "id": 362,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T17:47:05.205469+00:00",
-      "completed_at": "2026-08-24T17:47:05.853452+00:00",
+      "started_at": "2026-08-24T18:59:35.569784+00:00",
+      "completed_at": "2026-08-24T18:59:36.127924+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 361,
+      "id": 365,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T17:47:27.610923+00:00",
-      "completed_at": "2026-08-24T17:47:29.902803+00:00",
+      "started_at": "2026-08-24T18:59:53.033434+00:00",
+      "completed_at": "2026-08-24T18:59:54.738890+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32900,7 +32906,7 @@
       "error": null
     }
   ],
-  "document_count": 1336,
+  "document_count": 1339,
   "event_count": 968,
   "mention_count": 2370,
   "review_counts": {
