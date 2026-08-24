@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T03:17:06.726307+00:00",
+  "generated_at": "2026-08-24T04:09:53.131925+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -13,14 +13,14 @@
   },
   "dimensions": {
     "stress": 57.1,
-    "transmission": 39.6,
-    "cannibalization": 54.2,
-    "monetization": 42.9,
-    "capital": 52.15125962813687,
     "external_pressure": 61.1,
+    "monetization": 42.9,
+    "circularity": 57.1,
     "fragility": 61.1,
+    "transmission": 39.6,
     "counter_evidence": 42.9,
-    "circularity": 57.1
+    "cannibalization": 54.2,
+    "capital": 52.15125962813687
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
+    "fragility": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "cannibalization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
     "capital": "aggregate",
     "stress": "directional_estimate",
-    "monetization": "directional_estimate",
     "external_pressure": "directional_estimate",
-    "fragility": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate"
+    "monetization": "directional_estimate",
+    "circularity": "directional_estimate",
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -654,6 +654,12 @@
   ],
   "history": [
     {
+      "captured_at": "2026-08-24T04:09:52.619112+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"cannibalization\": 54.2}"
+    },
+    {
       "captured_at": "2026-08-24T03:17:06.306882+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
@@ -1128,13 +1134,13 @@
         "id": "Alphabet",
         "label": "Alphabet",
         "kind": "company",
-        "weight": 60
+        "weight": 61
       },
       {
         "id": "Amazon",
         "label": "Amazon",
         "kind": "company",
-        "weight": 56
+        "weight": 57
       },
       {
         "id": "Oracle",
@@ -3726,6 +3732,18 @@
         "date": "Wed, 07 Jan 2026 08:00:00 GMT",
         "summary": "Google's 'Cannibalization' Risk Vs Microsoft's Azure Growth: Expert Explains How AI Answers Could Slash GOOG's Ad Revenue Yahoo Finance",
         "score": 7,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2209e081901d441d39b36682bcb41e8a7621bd0fac6496cba71fb66945a03545",
+        "label": "Google, Amazon, Meta, and Microsoft Hiked AI Capex and It Benefits One Stock - AOL.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX2tOS0x6LVZqR2NGNlh4UmIwSWpNYkFwVjZKR1g1dWtXdzNMaHJFbTZGTEVPT2JiTFExdF9RUm5hN250bkZ1b0lFTHV2RkhmVHdVTUxIVERWRm5NSk9xTzBxdldBblVMa0NKdy1BUS1VcmlkekVjTlZUOFZ1MkVkZmNnWFk?oc=5",
+        "date": "Mon, 24 Aug 2026 01:20:59 GMT",
+        "summary": "Google, Amazon, Meta, and Microsoft Hiked AI Capex and It Benefits One Stock AOL.com",
+        "score": 6,
         "weight": 1
       },
       {
@@ -9021,6 +9039,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:09e9aa22a87606caaa300b3f815ab628c43d2088c4c41bd78423a20cc558e2d2",
+        "label": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation - The Information",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Information",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMGdwRGUxNHpRRFM3dndxcG04azgxTFYxWkotZjNIVjAyT2dtbWkyNFo1NEJ6bXNlU1BGR3JYN0RyS18xZHNycVRkMXZBNHZsSlhFSVVPWU9QdFlaX0pJa19SNmZ2M1ZZY0RqNnJIakJwSXZPSEhSWDBPNlg4MUc3VWpyZGdUSlI5N2NjX3hnaWU2TUp1cmVFdHlMNVMxc01xVExsOWVCT0NfRXRaYzdsTnNMaVFMR3dIVWwzeW10dkxhRUJmaWhkVUtzd1QybjN3?oc=5",
+        "date": "Mon, 24 Aug 2026 03:06:00 GMT",
+        "summary": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation The Information",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0baa960251eefb8768d1faf8c2fda0bc0e5c43252abe5b371ea1190aec1d732a",
+        "label": "Alibaba's HK$800 Billion AI Push Amid Financial Strain - \uc870\uc120\uc77c\ubcf4",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "\uc870\uc120\uc77c\ubcf4",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTXJ5SldzQzRKVDFVQ3ZJRHM3MEtpY3pCM2dqWlhUQTlodklXM1V4cGxRdkdLRTVBZUdFUWtTVFB1bGlsQUtfNzJZOHpzUnQ2LWJLcTJNdnNBb25ha1JNM2UzVkdqY0VEbHc5aTdoODJTVzh0TmpOU3VxdzhCNmJJMmlzT2NGUU1U?oc=5",
+        "date": "Mon, 24 Aug 2026 04:01:49 GMT",
+        "summary": "Alibaba's HK$800 Billion AI Push Amid Financial Strain \uc870\uc120\uc77c\ubcf4",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:40e8b2e8a5f6f42c45abad4cc57dc9c55143032d445b1d7af7c5747567625765",
+        "label": "Alibaba to Raise $10.20 Billion for AI Investment With Share Placement - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQODYzZUNTRmFDWldFZ0NoQzJIVWhNY1ZtZ1F2UVlGOU5MWlh6RlBQUHI5NHhpUmVkcjNUX3Mya1hoOUt2aGVQRzdvYnJHcThnOVVNMXl1WXpmVzAycmxKN3pqdFhaa2FtUWlIT0RubXFmeGp6OUQ0TDN4MEVuZG1HZVR2RE5mZEhreDVIQTVkWTRkNzhNVk44ZlVFQl9PbWgwX2c?oc=5",
+        "date": "Mon, 24 Aug 2026 03:58:00 GMT",
+        "summary": "Alibaba to Raise $10.20 Billion for AI Investment With Share Placement WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:db9b7c659a7822817aa641ff9a578584aa4ae94b7e66934d25abb11320cae063",
         "label": "Alphabet (GOOGL) Develops Custom AI Chip For Robotaxis - simplywall.st",
         "kind": "evidence",
@@ -10843,57 +10897,16 @@
         "summary": "China's hottest AI bot? ByteDance's Doubao tops the charts with 51 million active users Yahoo Finance",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:5149553a35c840e68933c51072cd77b70f369e767e1e09b492664b7cfe1b3cbc",
-        "label": "Doubao AI Smartphone\u2019s Rise Challenges Existing App Ecosystems - Counterpoint Research",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Counterpoint Research",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUzVGbEczSUd3TXZUeVZRSWxPMGprYWFmdUdUc215UGc5LXdYaW5FeTZZTGk1NnZQdkNYTEZrZVJUNUlLSDkyMDJWWnFGellfeXNLdlcxT24xUGhhUWVTUDY3bG82U3hmR0hPeDZQb0RIRnloejJjNVBKU2xMUTgxTjZRWDh6SmJLQ3V6S1NsRGFiN2xvRmxwRlpXdWlJSmh1T3lZcTdwcWdPRjYyMzN1eDBib0R1Zw?oc=5",
-        "date": "Mon, 22 Dec 2025 08:00:00 GMT",
-        "summary": "Doubao AI Smartphone\u2019s Rise Challenges Existing App Ecosystems Counterpoint Research",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:52d9fb0b8f0f216b675fdc8add224240d50db4f53ad6ad3f6eada45c7f6fea56",
-        "label": "SaiDou is Here: Aiming to Leverage \"Doubao\" to Crack the 100,000-200,000 Yuan Market? - Gasgoo",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Gasgoo",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOTTJDZVFyeGtWSXhnelJub2FFMFZwMkRjVXFWTkFTUW53Y1RWb0YyM1dhLUtYY1NacmZRVkFwTTRISml1V1dKdFNkWmxycFNvMUp2anhWeDJTeWpOak1BZXpuWk9WbW9nX1FrQmt1eVo5LTA4cUJfMmpIMEtIM0FHTkROV2tKUFl1RURNS0VfQkNocks3OGZINy1uRGJjT3RuQXVuQ3FacVhpT2NoUjZQbEhsaEV1QnVpb3pjZExhTTVqREEwRzc4UDVEMDJ1T2lNSnRUa0R3UnU?oc=5",
-        "date": "Wed, 03 Jun 2026 07:00:00 GMT",
-        "summary": "SaiDou is Here: Aiming to Leverage \"Doubao\" to Crack the 100,000-200,000 Yuan Market? Gasgoo",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:889fe74197e39527faf679e535fc4b9da27fa94eab562f816c8994c77b5f8607",
-        "label": "ByteDance's AI chatbot Doubao wins China holiday battle with 100 million users - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZHBQdzZ1UlZmRnBLTWZib3JTMVJXbTg0RHQ0WjBSdnRJODVVT1RzWDdrVkxRalpHam15TS1CVjdTSm9tMTFETDlRcWpUQUJkenVfbS1WX3JfdDFSOTBEUHVkNzlaVDdrNTFnT1E5bDcyWnU4cVMzcU1ILUN1NkI1SVJneE1XdXN5WHlCVVZFSjZpRTFKT29KU0NWSDU5S3JJS1ZORjR3NExCdWIwQ21GWDhEMWE2WUtTSm12dmxRTWFEU3l2U093MnY4ZzA?oc=5",
-        "date": "Wed, 25 Feb 2026 08:00:00 GMT",
-        "summary": "ByteDance's AI chatbot Doubao wins China holiday battle with 100 million users Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:57d4aad4f84a2a6027edc538cf6a3ea4432bd4f9a76f53dcc336abd3410c43f3",
-        "label": "ByteDance weighs biggest-ever offshore borrowing to support AI expansion - TradingView",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUzVKeER2VnhHNzctaU1ER0ZoN1BIclJsRUp4VnhaLXBoektSWWhTYmR1R0w2MDJ1WkdiUWhtM1QwMVFVbkRiV0VUb2dCTGZmNnFnQVBvUWRQRU9XWVFQdUk5eUx5TXpNTGtrd3d2SW1ZOXdIN2RrZWJQaXRxZ0RMVnR5bDRzajUxQlBVcjBXS3JTSkpOaExlLVo2enNLdTdYQ1dOazMxZmhYdVhxUFc4aFJ6RHZkSTB0eXNfSUNyMUZ6N3JkVXVB?oc=5",
-        "date": "Wed, 24 Jun 2026 07:00:00 GMT",
-        "summary": "ByteDance weighs biggest-ever offshore borrowing to support AI expansion TradingView",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
+      {
+        "source": "Alphabet",
+        "target": "Amazon",
+        "type": "CAPEX_COMMITMENT",
+        "weight": 11,
+        "mentions": 11
+      },
       {
         "source": "Moonshot AI",
         "target": "Anthropic",
@@ -11096,13 +11109,6 @@
         "type": "GUARANTEES",
         "weight": 1,
         "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "Amazon",
-        "type": "CAPEX_COMMITMENT",
-        "weight": 10,
-        "mentions": 10
       },
       {
         "source": "CoreWeave",
@@ -12661,6 +12667,34 @@
       {
         "source": "Microsoft",
         "target": "evidence:7e3204b9b49eb2feff33ce7cee1bd409b7e9308913b15e81b28aaf9a5cafa76a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:2209e081901d441d39b36682bcb41e8a7621bd0fac6496cba71fb66945a03545",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:2209e081901d441d39b36682bcb41e8a7621bd0fac6496cba71fb66945a03545",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:2209e081901d441d39b36682bcb41e8a7621bd0fac6496cba71fb66945a03545",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:2209e081901d441d39b36682bcb41e8a7621bd0fac6496cba71fb66945a03545",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16887,6 +16921,27 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:09e9aa22a87606caaa300b3f815ab628c43d2088c4c41bd78423a20cc558e2d2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:0baa960251eefb8768d1faf8c2fda0bc0e5c43252abe5b371ea1190aec1d732a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:40e8b2e8a5f6f42c45abad4cc57dc9c55143032d445b1d7af7c5747567625765",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alphabet",
         "target": "evidence:db9b7c659a7822817aa641ff9a578584aa4ae94b7e66934d25abb11320cae063",
         "type": "EVIDENCE",
@@ -17946,34 +18001,6 @@
       {
         "source": "ByteDance",
         "target": "evidence:be8e1fbfd0d3d088d8398d030817627aeea9df3548f1080fa29b4ef4cececed5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:5149553a35c840e68933c51072cd77b70f369e767e1e09b492664b7cfe1b3cbc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:52d9fb0b8f0f216b675fdc8add224240d50db4f53ad6ad3f6eada45c7f6fea56",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:889fe74197e39527faf679e535fc4b9da27fa94eab562f816c8994c77b5f8607",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:57d4aad4f84a2a6027edc538cf6a3ea4432bd4f9a76f53dcc336abd3410c43f3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -31677,6 +31704,21 @@
       "source": "Apollo Global Management"
     },
     {
+      "date": "Mon, 24 Aug 2026 01:20:59 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Alphabet",
+      "target_entity": "Amazon",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Google, Amazon, Meta, and Microsoft Hiked AI Capex and It Benefits One Stock - AOL.com Google, Amazon, Meta, and Microsoft Hiked AI Capex and It Benefits One Stock AOL.com Google News",
+      "title": "Google, Amazon, Meta, and Microsoft Hiked AI Capex and It Benefits One Stock - AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOX2tOS0x6LVZqR2NGNlh4UmIwSWpNYkFwVjZKR1g1dWtXdzNMaHJFbTZGTEVPT2JiTFExdF9RUm5hN250bkZ1b0lFTHV2RkhmVHdVTUxIVERWRm5NSk9xTzBxdldBblVMa0NKdy1BUS1VcmlkekVjTlZUOFZ1MkVkZmNnWFk?oc=5",
+      "source": "AOL.com"
+    },
+    {
       "date": "Mon, 25 May 2026 07:00:00 GMT",
       "event_type": "PRICE_CUT",
       "source_entity": "Alphabet",
@@ -32459,20 +32501,20 @@
   ],
   "collector_runs": [
     {
-      "id": 299,
+      "id": 303,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T03:16:49.295914+00:00",
-      "completed_at": "2026-08-24T03:17:02.902477+00:00",
+      "started_at": "2026-08-24T04:09:35.746713+00:00",
+      "completed_at": "2026-08-24T04:09:49.206954+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 7,
       "error": null
     },
     {
-      "id": 300,
+      "id": 304,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T03:17:03.303769+00:00",
-      "completed_at": "2026-08-24T03:17:03.715327+00:00",
+      "started_at": "2026-08-24T04:09:49.607718+00:00",
+      "completed_at": "2026-08-24T04:09:49.965942+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32489,20 +32531,20 @@
       "error": null
     },
     {
-      "id": 298,
+      "id": 302,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T03:16:47.948108+00:00",
-      "completed_at": "2026-08-24T03:16:48.894763+00:00",
+      "started_at": "2026-08-24T04:09:34.830350+00:00",
+      "completed_at": "2026-08-24T04:09:35.345206+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 301,
+      "id": 305,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T03:17:04.117253+00:00",
-      "completed_at": "2026-08-24T03:17:05.893637+00:00",
+      "started_at": "2026-08-24T04:09:50.366979+00:00",
+      "completed_at": "2026-08-24T04:09:52.203164+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32519,11 +32561,11 @@
       "error": null
     }
   ],
-  "document_count": 1237,
-  "event_count": 965,
-  "mention_count": 2367,
+  "document_count": 1244,
+  "event_count": 966,
+  "mention_count": 2368,
   "review_counts": {
-    "provisional": 16,
+    "provisional": 17,
     "confirmed": 271,
     "flagged": 678,
     "flagged_retry_pending": 0
