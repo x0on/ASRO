@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T01:58:26.048250+00:00",
+  "generated_at": "2026-08-24T03:17:06.726307+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "external_pressure": 61.1,
+    "stress": 57.1,
     "transmission": 39.6,
     "cannibalization": 54.2,
-    "circularity": 57.1,
-    "fragility": 61.1,
+    "monetization": 42.9,
     "capital": 52.15125962813687,
-    "stress": 57.1,
+    "external_pressure": 61.1,
+    "fragility": 61.1,
     "counter_evidence": 42.9,
-    "monetization": 42.9
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "external_pressure": 4,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
-    "monetization": "directional_estimate",
-    "external_pressure": "directional_estimate",
     "transmission": "confirmed_trigger",
     "cannibalization": "directional_estimate",
-    "circularity": "directional_estimate",
-    "fragility": "directional_estimate",
     "capital": "aggregate",
-    "stress": "directional_estimate"
+    "stress": "directional_estimate",
+    "monetization": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -653,6 +653,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T03:17:06.306882+00:00",
+      "score": 51.4,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"external_pressure\": 61.1}"
+    },
     {
       "captured_at": "2026-08-24T01:58:25.571297+00:00",
       "score": 51.4,
@@ -4020,6 +4026,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7a5840152bd5edc489adade1bdc6b184d3c137a1115732e32821ce9196e4a363",
+        "label": "Anthropic market debut could beat recent IPO record set by SpaceX - Daily Sabah",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Daily Sabah",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZEZBTUZOTEUyMDRVRGswSnpEc1ZtV1FpckN5QWMyUEZfdE1PcExIbWFSbU5RQ09lRlF3eHJHWGpOZmlrajFHN0VGSjhDak1VbjNRWVpKSkNSY01ZeDViaEJIa1BiblgtSFd4S3p5Y1pyYzFVNlEyekpPeFVsNE9DTE52bE0zbnluTnE1aG5Kc005V3k3b0RzWGVWN0owM19EV2JNcW9FQ0pSdw?oc=5",
+        "date": "Sun, 23 Aug 2026 08:09:00 GMT",
+        "summary": "Anthropic market debut could beat recent IPO record set by SpaceX Daily Sabah",
+        "score": 5,
         "weight": 1
       },
       {
@@ -9003,6 +9021,54 @@
         "weight": 1
       },
       {
+        "id": "evidence:db9b7c659a7822817aa641ff9a578584aa4ae94b7e66934d25abb11320cae063",
+        "label": "Alphabet (GOOGL) Develops Custom AI Chip For Robotaxis - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTkpVLUdvX3o0VGpFRnJfU25WWlFKaG80VjhiZ0V4aklJSkFLYTZRTUFyeTA2NVZMZkJXU0U3WnNldWxyanZJN3pETkRxeHJRVGs4RHQtTDc0TkxZdkZ4TlpIc1g0akhBLVdUVVE2N2hZMFJ6TzI3YVFHNEhmRUlnVlRkUUJNZ04tNkM5VkE0NVNQWXN0TnBfUlR6by1pUFpua3NSa2FKdVNSZ0duZ2ZIb1RKcVVpVldL0gG-AUFVX3lxTE5abnJ3ZDBGUVJBNlFQSDMwSC1tMGxKU2NCVUs3ZmlPT2VkaEVCX2E3OWtuNFR3VDNkUFVFVU1BSnRQQnVHdjVjZ2g2eEl4Wm9ESkdxTFliVDRIUUQzbENYR2RsSHVxLWJpUDZaOTQyNzhXRUhXQlRBeXY1clVfeFhIMlAzR1VUQzhXTHZXTHNWeXp6RmJTSVFxQWNWNXZRUnVuLUNobDZGT1hOTEs4dFlLOTJfRXN3SXU5Q190SGc?oc=5",
+        "date": "Sun, 23 Aug 2026 19:41:15 GMT",
+        "summary": "Alphabet (GOOGL) Develops Custom AI Chip For Robotaxis simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:718988a3d2d1a3ac0a16a2282cc2184762bc4c0827c3c1cf6a49db447c642ceb",
+        "label": "Amazon Pips Walmart To Become World\u2019s Biggest Company By Revenue - Stocktwits",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR2U2RkRiaHlidTdFVHFWLWNsdmdKTmpQcXNQOXVqbjFDNHpPeldYNFg0UFUtT1VaTGc1LXNqV2N3endGeEo4a2xmQWNYeWZvMmhSX0NVdmxpRTJ3eXlZQ2d6VDBYOXZpRUF5dWRwT2lPb19IUWp2YWRKRl9zZzFva1JhSDNmT0g2N0dudElYRHdaVzVRSUxqZTltZEduV3AxLTlHczdkY2hRQUh4TnVPSzhuQlRtZXlEUy1GNXEzRDRFUGs?oc=5",
+        "date": "Sun, 23 Aug 2026 17:05:23 GMT",
+        "summary": "Amazon Pips Walmart To Become World\u2019s Biggest Company By Revenue Stocktwits",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9dcf8b80cb2dae17c4eeb651d0396aabbe3ae67b554be64a53af324ba4b6db04",
+        "label": "Kimi K3 Pushes Open-Source Models to the Frontier's Doorstep - Pandaily",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Pandaily",
+        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE81UGZmTllhR3pIYy16TGxJbS1qaDJHYTBCOGs3SHA4Qm1oY3RCRDIxd0M4M295UFczOWVSRGRPTC1jbi1iaU54cFdjMXU5d0VvV1N6SjVLdlIzWk5hSVBCZE9uQmpmb2dLVjBBbWRlNm5QWUgw?oc=5",
+        "date": "Mon, 24 Aug 2026 02:05:46 GMT",
+        "summary": "Kimi K3 Pushes Open-Source Models to the Frontier's Doorstep Pandaily",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c8aa8ed8657b7250ab1c05bfee5290b2e5c5dae7a872e5f1dd30f9cab01fc305",
+        "label": "Alibaba plunges after announcing $10.2 billion share placement to fund AI push - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMGpwVXdlcm9rRVZna3o3N1drZW5uUWZiSVB5akJmR1haV3Z4RFdBVlZnVkxhcFMyN3U2Z2toZDB4Z1VYbktJbm91eW9XUWViRnk1ZHRKTk1UcndGSVMwOGFfWklDMVRRVjJsc1BYNEc0UEpBZW15LWNEX1ZLaUxqZ3lPeWbSAYoBQVVfeXFMTmttSENYYVI2RUlQUnhzampuN1NQZTZ2aUFreWNZbXhpWWtwZ1JXTkdaRGdPb3dPQXBoN3RFdTV5NkNUeHhKY0lpaF9scTNlQm43aWx1LTNBVjF6SkdhOFc4V21fRXd6aDhZeWwtWkNjaXZ2NW9uWlZWQ2piZ25weE0yNWxGYmlIU0VB?oc=5",
+        "date": "Mon, 24 Aug 2026 02:55:00 GMT",
+        "summary": "Alibaba plunges after announcing $10.2 billion share placement to fund AI push CNBC",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:ed851508b47a84768aa473acbd5b0064ed7090b0d7c2f1f5e4e1c53b11f28b25",
         "label": "Alphabet Stock (GOOGL) Opinions on Recent Earnings and AI Outlook - Quiver Quantitative",
         "kind": "evidence",
@@ -10823,66 +10889,6 @@
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUzVKeER2VnhHNzctaU1ER0ZoN1BIclJsRUp4VnhaLXBoektSWWhTYmR1R0w2MDJ1WkdiUWhtM1QwMVFVbkRiV0VUb2dCTGZmNnFnQVBvUWRQRU9XWVFQdUk5eUx5TXpNTGtrd3d2SW1ZOXdIN2RrZWJQaXRxZ0RMVnR5bDRzajUxQlBVcjBXS3JTSkpOaExlLVo2enNLdTdYQ1dOazMxZmhYdVhxUFc4aFJ6RHZkSTB0eXNfSUNyMUZ6N3JkVXVB?oc=5",
         "date": "Wed, 24 Jun 2026 07:00:00 GMT",
         "summary": "ByteDance weighs biggest-ever offshore borrowing to support AI expansion TradingView",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:68eeb10bd9ebae5e6d13ccdf8b1803770282befa4ec5b09ebec463a456dd52dc",
-        "label": "ByteDance sidelines listing as China's first $1 trillion valuation nears - Nikkei Asia",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Nikkei Asia",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS1dUODJTVU1QVmE5bnBBaDhSRFhtdVRpaXh0X3BVSG5ZM2dBNmo2OERZV1MtLWZaR3h0c19GX3lvak1kSHhhZUhSX1VXclpNakNnejRWTTE3T0RKYUJSWHFFdklMaGdXbW50elAwQlZpTGNPTFA3VW42WVgxZjNPSXBuWUdDcTBJODc2b1E5TXkzVGs1RzVHajZtLVhRbFFOd0loZDlR?oc=5",
-        "date": "Mon, 22 Jun 2026 07:00:00 GMT",
-        "summary": "ByteDance sidelines listing as China's first $1 trillion valuation nears Nikkei Asia",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9145bdcedfef4a697ba230a6aac61c45fb607fcdbbdd235d4a28e0d0aca94ede",
-        "label": "ByteDance sharpens AI focus as annualised revenue reaches US$4b - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxObFNBT21NNW5kYjZMM1dReDBNb2prU1JqLWU4RjhlUEhiVnljMUMxSkZUUjltVk9DMDI1bkpEendqUk5RbmoydUV0dXgtMUVyRVlMenlWYWdZQkJLV3Fhb2tzc2hYX2l1T19mblNySG1PSVB0RmdBbUtqNGZKQVAwMFFhVTZGQzZGZmxoV1QySDRnUUJhazRGWklzY3JOd0pxZWdYNjhQWGJ4ejR2WXBLanVmejFFYk5tUGpDd1Nfb9IBvwFBVV95cUxOTTYtTmhja2JWQTVEY0djeDF3WmpOYVEtWlJ1ZVVNQkFfQ3kydnd0S1BrM0UyNlczYUxFby1kOGRreXVXRlFHcHZoX3dEejVLVXl1U21Ga0EzcWJ5SFdpdmJudzJQV0hCeFNMd0VHN0hqOWMtSkstTzJrNW90NFVyY05EelNEQmxFaFpkODgyVWxBeldPdTRsbzNkVVJJbmlvQi10aHJCeGxQeEl5UmFLNThDRmdweWJvTWlDTGVidw?oc=5",
-        "date": "Thu, 30 Jul 2026 07:00:00 GMT",
-        "summary": "ByteDance sharpens AI focus as annualised revenue reaches US$4b South China Morning Post",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a3410ff423814c5043ee0877e20bec67aa67de961e5b0499f982d285094f1a8a",
-        "label": "ERNIE BALL TEAMS UP WITH JOHN MAYER TO LAUNCH ALL-NEW John Mayer Silver Slinky Signature Guitar Strings - Vintage Guitar\u00ae magazine",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Vintage Guitar\u00ae magazine",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSHBFT1otQk9fNWg2MjIxN09SVkhjd1NUNUZsaWk1S25YNkNxeEh5R2puS2Z5d21EamoxWFNxQlJNV1MtMWtEQV81NElOQVpVM3lsN1hwZ1FsTEtHTnZ5LTdWRVJhc3l0UDV5Z3pNV016bHhlYnZDU0NSMUxhMmoyOC05N1hOWUg5a2oxdWpKUk1NZFZWVWduaUdXVTIweGdVVkhWakNQeFFZVVpzX0FuNl8zZjZMSjhmb0ItRVAxMWEtOFpxeVJXcWlwT3c1dFE5MFJSeTE0d9IB3AFBVV95cUxNZzZJel9uYkxJdGJoRnM1QmdnXzUzTGZEeFpWeFZWUUwtc29ZU2FPeFJQQUJOWERJZ0N2akZTaG54Zy1GcDBkazhNWWdYVWNpOGsxRGwzdWdIR1NoU0RyLXB1ZHRPemRjaXZOMkRxMFhmOWVTSmd6bU5YNFl1US1uNWd4OEpOMXJ1YnlSalJHTnZQeFN4VFhuUXFMUkpCaUlWZTNBc2pyQXMtcFdlQ3I2blVCMm1VU3F1OG4tWFp5cEM1S0o1NlVkLTlGZGFUeTRZcmdibldKVzdUUzJR?oc=5",
-        "date": "Thu, 10 Oct 2024 07:00:00 GMT",
-        "summary": "ERNIE BALL TEAMS UP WITH JOHN MAYER TO LAUNCH ALL-NEW John Mayer Silver Slinky Signature Guitar Strings Vintage Guitar\u00ae magazine",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8f102a0df3667ff519d08224f64f80ca100b8778622915a9be3a5e7bca6c1b08",
-        "label": "Ernie Ball to Acquire Source Audio - Premier Guitar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Premier Guitar",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1WSWFETG1XbF8xS3ZVZmFpQkRva2Z1UjdaajEwZ1E5dmFBcFNyWUlab0pZNVRPaGRQMHd4T0ZXbTRHR0pVYVdRNktPemx4bHo5UmgtcDVoU0kzaWNQc05SS3cwNjlxSXJiRnZEaFlMaHk3ZGVzbVgxbA?oc=5",
-        "date": "Wed, 08 Jul 2026 07:00:00 GMT",
-        "summary": "Ernie Ball to Acquire Source Audio Premier Guitar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ad120a68406c6db85df1969252860841b63bf3169e8404b1af7c5c210019a455",
-        "label": "Wall Street Analysts Think Baidu Inc. (BIDU) Is a Good Investment: Is It? - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTkp6R2FnbDVDSHZiVUlqcWVady1mTmN0ZGlWTzV3eWZtV0NYUU5YdUg3U18xTDUzZGVQWGd3UXNvcFlNTmZwa0l3Y2ZYcmtaUFdHU05TMlM0VlkzSUVXbTFabURjMGozWnlqX1hCbXpQOTRoaGNzT201d0MyWHk2SUE2RHlGRVVPaUJvYk9rSl83dXZlWjlNY0E3bThiZw?oc=5",
-        "date": "Fri, 24 Jul 2026 07:00:00 GMT",
-        "summary": "Wall Street Analysts Think Baidu Inc. (BIDU) Is a Good Investment: Is It? Yahoo Finance",
         "score": 1,
         "weight": 1
       }
@@ -12956,6 +12962,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:7a5840152bd5edc489adade1bdc6b184d3c137a1115732e32821ce9196e4a363",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:7a5840152bd5edc489adade1bdc6b184d3c137a1115732e32821ce9196e4a363",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16868,6 +16888,34 @@
       },
       {
         "source": "Alphabet",
+        "target": "evidence:db9b7c659a7822817aa641ff9a578584aa4ae94b7e66934d25abb11320cae063",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:718988a3d2d1a3ac0a16a2282cc2184762bc4c0827c3c1cf6a49db447c642ceb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:9dcf8b80cb2dae17c4eeb651d0396aabbe3ae67b554be64a53af324ba4b6db04",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:c8aa8ed8657b7250ab1c05bfee5290b2e5c5dae7a872e5f1dd30f9cab01fc305",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
         "target": "evidence:ed851508b47a84768aa473acbd5b0064ed7090b0d7c2f1f5e4e1c53b11f28b25",
         "type": "EVIDENCE",
         "weight": 1,
@@ -17926,41 +17974,6 @@
       {
         "source": "ByteDance",
         "target": "evidence:57d4aad4f84a2a6027edc538cf6a3ea4432bd4f9a76f53dcc336abd3410c43f3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:68eeb10bd9ebae5e6d13ccdf8b1803770282befa4ec5b09ebec463a456dd52dc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:9145bdcedfef4a697ba230a6aac61c45fb607fcdbbdd235d4a28e0d0aca94ede",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:a3410ff423814c5043ee0877e20bec67aa67de961e5b0499f982d285094f1a8a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:8f102a0df3667ff519d08224f64f80ca100b8778622915a9be3a5e7bca6c1b08",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:ad120a68406c6db85df1969252860841b63bf3169e8404b1af7c5c210019a455",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32446,20 +32459,20 @@
   ],
   "collector_runs": [
     {
-      "id": 295,
+      "id": 299,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T01:58:07.926455+00:00",
-      "completed_at": "2026-08-24T01:58:22.295686+00:00",
+      "started_at": "2026-08-24T03:16:49.295914+00:00",
+      "completed_at": "2026-08-24T03:17:02.902477+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 14,
+      "items_new": 6,
       "error": null
     },
     {
-      "id": 296,
+      "id": 300,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T01:58:22.696722+00:00",
-      "completed_at": "2026-08-24T01:58:23.091605+00:00",
+      "started_at": "2026-08-24T03:17:03.303769+00:00",
+      "completed_at": "2026-08-24T03:17:03.715327+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32476,20 +32489,20 @@
       "error": null
     },
     {
-      "id": 294,
+      "id": 298,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T01:58:06.826342+00:00",
-      "completed_at": "2026-08-24T01:58:07.525389+00:00",
+      "started_at": "2026-08-24T03:16:47.948108+00:00",
+      "completed_at": "2026-08-24T03:16:48.894763+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 297,
+      "id": 301,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T01:58:23.492815+00:00",
-      "completed_at": "2026-08-24T01:58:25.156183+00:00",
+      "started_at": "2026-08-24T03:17:04.117253+00:00",
+      "completed_at": "2026-08-24T03:17:05.893637+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32506,7 +32519,7 @@
       "error": null
     }
   ],
-  "document_count": 1230,
+  "document_count": 1237,
   "event_count": 965,
   "mention_count": 2367,
   "review_counts": {
