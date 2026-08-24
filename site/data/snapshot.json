@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T05:01:31.560337+00:00",
+  "generated_at": "2026-08-24T05:54:12.612673+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "circularity": 57.1,
-    "transmission": 39.6,
-    "capital": 48.732271163185665,
-    "fragility": 61.1,
-    "monetization": 42.9,
     "counter_evidence": 42.9,
-    "cannibalization": 54.2,
     "stress": 57.1,
+    "capital": 48.732271163185665,
+    "monetization": 42.9,
+    "cannibalization": 54.2,
+    "transmission": 39.6,
+    "fragility": 61.1,
+    "circularity": 57.1,
     "external_pressure": 16.12
   },
   "dimension_evidence": {
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "monetization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
     "stress": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "circularity": "directional_estimate",
     "capital": "aggregate",
-    "fragility": "directional_estimate",
+    "monetization": "directional_estimate",
+    "external_pressure": "aggregate",
+    "counter_evidence": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "external_pressure": "aggregate"
+    "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-24T05:54:12.094267+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"stress\": 57.1, \"capital\": 48.732271163185665, \"transmission\": 39.6, \"circularity\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"monetization\": 42.9}"
+    },
     {
       "captured_at": "2026-08-24T05:01:31.172755+00:00",
       "score": 45.3,
@@ -3699,6 +3705,18 @@
         "date": "Tue, 11 Aug 2026 07:00:00 GMT",
         "summary": "OpenAI IPO Delay: Just the Start? Price Cuts Hint It May Not Happen at All MarketWise",
         "score": 8,
+        "weight": 1
+      },
+      {
+        "id": "evidence:204619097e2682c24e0355507f32a7467fa05137237b3a29243413aec9874441",
+        "label": "AI: Anthropic\u2019s mega-IPO Aims Past SpaceXAI & OpenAI. AI-RTZ #1188 - AI: Reset to Zero",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "AI: Reset to Zero",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5YUkJnSk9ZdE5EUDdubHVMZ1U5cmFhckVqLWx4bE5VLUptSEdmQjNPcy1UQUdYcmtabkNJdDd5RU5jeHVEcEMwV194V296NFZlVEhZcXBBdDF0UDI1YjZZWW9sRGI1THU1S0JHLTdfX1F4cENEVGpUZQ?oc=5",
+        "date": "Mon, 24 Aug 2026 05:02:40 GMT",
+        "summary": "AI: Anthropic\u2019s mega-IPO Aims Past SpaceXAI & OpenAI. AI-RTZ #1188 AI: Reset to Zero",
+        "score": 7,
         "weight": 1
       },
       {
@@ -7170,6 +7188,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:b79cbf2064c8055e01c671b32261fa7da9db1232b64d80e2bd347b3dcfdd63bf",
+        "label": "Nvidia Is Coming for OpenAI and DeepSeek With $6 Billion Poolside Deal to Build a Powerful Open-Weight AI Model: Report - Yahoo Finance Singapore",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance Singapore",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNkJSZjh5eGFZYXpkR0xmeUtqQTBpa1hlX0ZjSGtBQWhhS3ZRS1ZQOUIxNEZadjM4VGlxYnZfbzdXT3FMTWZjS0g2NC1HaEFqVjUxWmhKbFZyM2dtdkdhcG5mRmdmWEFVRlhKSy1OVl9TbmdaYV84d3ZrX0dsTnNaTk83b3dkc3M?oc=5",
+        "date": "Mon, 24 Aug 2026 04:21:00 GMT",
+        "summary": "Nvidia Is Coming for OpenAI and DeepSeek With $6 Billion Poolside Deal to Build a Powerful Open-Weight AI Model: Report Yahoo Finance Singapore",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:2ee5aa82badab64d9a2de9ddb05dd48750e84fea9f686faf3a4d4c15f7808e69",
         "label": "Shein seeks up to $1.8b in long-awaited Hong Kong IPO - chinadailyasia.com",
         "kind": "evidence",
@@ -9102,6 +9132,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:34675b0e4120ac314165f152742b347e53f77f8cd5ce441db1155782b260a7cf",
+        "label": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation, Considered Tech Licensing Deal - The Information",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Information",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMGdwRGUxNHpRRFM3dndxcG04azgxTFYxWkotZjNIVjAyT2dtbWkyNFo1NEJ6bXNlU1BGR3JYN0RyS18xZHNycVRkMXZBNHZsSlhFSVVPWU9QdFlaX0pJa19SNmZ2M1ZZY0RqNnJIakJwSXZPSEhSWDBPNlg4MUc3VWpyZGdUSlI5N2NjX3hnaWU2TUp1cmVFdHlMNVMxc01xVExsOWVCT0NfRXRaYzdsTnNMaVFMR3dIVWwzeW10dkxhRUJmaWhkVUtzd1QybjN3?oc=5",
+        "date": "Mon, 24 Aug 2026 03:06:00 GMT",
+        "summary": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation, Considered Tech Licensing Deal The Information",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d8d0a39f1f2079717bad72e2025b3b01a0aa0fd8419638bf025341d901746ed9",
+        "label": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered - 36Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fS183LXk5ZENZU25Uc2dxWXBaZ1VxYWhhLXJuNTFNaG9jV3lnTUhoeTJVVzZWY3Vib25uTUlUdG1hdGd2NWhqMlFFbWxzTUtuWWhj?oc=5",
+        "date": "Mon, 24 Aug 2026 05:14:16 GMT",
+        "summary": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered 36Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:21d3588f765fca62c84d005961861a8f79c7bc11a3f9188daab522cb6d5487fd",
+        "label": "Tencent Effectively Exits as Major Netmarble Shareholder as Bang Jun-hyuk Raises Stake to 38% - thelec.net",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "thelec.net",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwcWFMRUMtRHNwenZuTDZHM3o3alhvWHlFZmZQd3FoZ3BMVlBYTUhBSWxtSXpzenZRV3RlcHBrTkV5RERTRGtUR0pRYURsdWpYam11ZDJxN3lzR1A5UjYyLXFPUDI4RnM?oc=5",
+        "date": "Mon, 24 Aug 2026 05:25:18 GMT",
+        "summary": "Tencent Effectively Exits as Major Netmarble Shareholder as Bang Jun-hyuk Raises Stake to 38% thelec.net",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:7217d068a6bcfb5fab82f0027851ee2103bb87a21b616e6d24cabeace12d8448",
         "label": "Doubao \"Boards\" Tesla: Why Did Elon Musk Make an Exception for the Chinese AI Assistant? - 36Kr",
         "kind": "evidence",
@@ -10864,66 +10930,6 @@
         "summary": "Daily News Digest: Tencent Unveils Hunyuan Turbo S AI Model\uff5cDaily News Digest\uff5c2025-02-28\uff5cweb only \u5929\u4e0b\u96dc\u8a8c",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:fc59e382b6279c6708a7c4f245e40df5a94e56e3a4570012f3b4a9e5fd7f9fb8",
-        "label": "Tencent to Launch Hunyuan 3.0 in April, Build WeChat AI Agent - Caixin Global",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Caixin Global",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMG9uakFkUnF3WXFlM2lDNzdHZE9qVUlJdUdzdndTQVprVE55NlVmQUhLZ0tmOVJTelNSOG14bWcyMGtlM1hwMG9mSEZTNVdGd2Q0OVIyWlNwWVhCcF9FYUstMklmOEZNYmx0Vm0zb3FmeTZFRlI5dWg4OFdRNVc5RmxienpGQWszeU5ZbTQybHFxWmlTc3VsTUJBdGRGbWJVUEh6ZzhkQVdzX0dhMGFtWmJ2a1U?oc=5",
-        "date": "Wed, 18 Mar 2026 07:00:00 GMT",
-        "summary": "Tencent to Launch Hunyuan 3.0 in April, Build WeChat AI Agent Caixin Global",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9096bec577d0a7dd043a7b60d38d19513810100938597c3c77593a125bc82027",
-        "label": "Tencent debuts Hunyuan AI model, opens it up for enterprise use - Computerworld",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Computerworld",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNGN3cFpmZUN2SkllWkRiY0RHZ3pLbk1yWWNuQUgwbGRMdG9LLTByaExjRmpNSHNLYkdKQml3ZzJtYnBlTmV0Yy03dFBSY25wd1g0enEzZE1GV2phR3Jvdk92bjdTNGlwbTF6VVJnbWlMa1ZfaC1kbXBZaHB3cU02dWlzQzlYZnRORW1KRHVES2RldkZUdUstTjBRMHFJMXRzVmhBeHRNc095Mmx5emRkRThhMA?oc=5",
-        "date": "Thu, 07 Sep 2023 07:00:00 GMT",
-        "summary": "Tencent debuts Hunyuan AI model, opens it up for enterprise use Computerworld",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ad745b4500398703592355eddb8ca0e412b9b14845af35b66652dbba6d779559",
-        "label": "Tencent posts 19% jump in third-quarter profit on AI gains, beating estimates - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNkxFclpzUHZNM1dydkRVZ29NdnM5M1Q3OWI3dmZGNDFacTVxWU8zMHY5em5JTDZuMmlBTFZxZEw0YmNCRnBZa0FFTkFPaTc4TTN0SUVsbFAwU3EwZHNDVnlCNERoalRRM29JUVB0R2V0aTExYlVzUERGRjZEOW1UNFRZNHF5OE1NbzJvMzdXMXM3dHpBY0gtU2x3VU5iM1hEaWhCZXRZZEo0b3dvRlZzN1BaWFlPcmxXRFlr0gG7AUFVX3lxTFBYajBNUl85LWdwSlotbE91REczZDh4VTZVR0owMzNDN2w2YmNGSHA3Rk1HMWp0ZWpLMnR0NU9BVlpaamZFV1JLNlF2WVVfc2c2ZjZYcmdCT0FzSk5XZEV1S2VKazlDYzRTR2ZQaVo3Uy1kV0hrUjRHLVdCS0p3SGJBNmE2cXFHblVJNW4xVElab09XaWpHVU5Pa2Z3WDZSckhQd0hZVHBPbEZPZ0VQTDEwZWdNTjBYZXJuQTA?oc=5",
-        "date": "Thu, 13 Nov 2025 08:00:00 GMT",
-        "summary": "Tencent posts 19% jump in third-quarter profit on AI gains, beating estimates South China Morning Post",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e1ff9a2febfc942987922bd0ca0afb4ce7352e24634b61db77c48da4b1691f42",
-        "label": "Tencent Announces Global Rollout of Scenario-Based AI Capabilities to Accelerate Industrial Efficiency - Tencent",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Tencent",
-        "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ibnNHUzNUQXVFQ0w0RC00WUc4SVVFcWowbEZhb2hCVGgzNm02ekZibE4yeWhxSWxTWmN0SlR4dWU1NnlYcm9qVHFpVDVQbVJ5b0d4TmJDYnFBaUhEUVY5Uw?oc=5",
-        "date": "Tue, 16 Sep 2025 07:00:00 GMT",
-        "summary": "Tencent Announces Global Rollout of Scenario-Based AI Capabilities to Accelerate Industrial Efficiency Tencent",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ea8d4485e0dd91f63fdf360a0df7b1cbaeec67b3c67958bdccfd208cd0192bef",
-        "label": "Tencent: AI Panic Hits Earnings Multiple, Not the Fundamentals - Morningstar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Morningstar",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPXzBoa0ZRbUR3VG5NcmdaTmlmWXgxSU5HVm5pQ3ZrYXUyNXJQR05TZUlDaGJsSVcxRlE1a2FHbTY3dHdYRFBtWmJPSWZDWkthcmFZZHFZTHpvOVF4bTFJbXhfZnNfZ2cta21yZllCVjlXaEp1ZjMwNjZlYTdsMDhOSzN5Vk9CckkzYmRaVW9IMFVGQ2FWQ3c?oc=5",
-        "date": "Tue, 30 Jun 2026 07:00:00 GMT",
-        "summary": "Tencent: AI Panic Hits Earnings Multiple, Not the Fundamentals Morningstar",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -12589,6 +12595,34 @@
       {
         "source": "OpenAI",
         "target": "evidence:27d29d8241f5ea7bc2a990ce5b031b9c0b35c8dc5035dda9ad6161e1a8d6401d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:204619097e2682c24e0355507f32a7467fa05137237b3a29243413aec9874441",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:204619097e2682c24e0355507f32a7467fa05137237b3a29243413aec9874441",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:204619097e2682c24e0355507f32a7467fa05137237b3a29243413aec9874441",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "xAI",
+        "target": "evidence:204619097e2682c24e0355507f32a7467fa05137237b3a29243413aec9874441",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15073,6 +15107,27 @@
       },
       {
         "source": "DeepSeek",
+        "target": "evidence:b79cbf2064c8055e01c671b32261fa7da9db1232b64d80e2bd347b3dcfdd63bf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:b79cbf2064c8055e01c671b32261fa7da9db1232b64d80e2bd347b3dcfdd63bf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:b79cbf2064c8055e01c671b32261fa7da9db1232b64d80e2bd347b3dcfdd63bf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
         "target": "evidence:22b081476bc05e39cf170cb9051b8bbdba2831be4d8396f86fc5f0bf6956e8c8",
         "type": "EVIDENCE",
         "weight": 1,
@@ -16976,6 +17031,27 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:34675b0e4120ac314165f152742b347e53f77f8cd5ce441db1155782b260a7cf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:d8d0a39f1f2079717bad72e2025b3b01a0aa0fd8419638bf025341d901746ed9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:21d3588f765fca62c84d005961861a8f79c7bc11a3f9188daab522cb6d5487fd",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "ByteDance",
         "target": "evidence:7217d068a6bcfb5fab82f0027851ee2103bb87a21b616e6d24cabeace12d8448",
         "type": "EVIDENCE",
@@ -18000,41 +18076,6 @@
       {
         "source": "Tencent",
         "target": "evidence:f9d9f27516bfe34d33a98498de3f55f4c23da5b74d073ebf129608a49d5f766d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:fc59e382b6279c6708a7c4f245e40df5a94e56e3a4570012f3b4a9e5fd7f9fb8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:9096bec577d0a7dd043a7b60d38d19513810100938597c3c77593a125bc82027",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:ad745b4500398703592355eddb8ca0e412b9b14845af35b66652dbba6d779559",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:e1ff9a2febfc942987922bd0ca0afb4ce7352e24634b61db77c48da4b1691f42",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:ea8d4485e0dd91f63fdf360a0df7b1cbaeec67b3c67958bdccfd208cd0192bef",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32535,20 +32576,20 @@
   ],
   "collector_runs": [
     {
-      "id": 311,
+      "id": 315,
       "collector": "company-economic-news",
-      "started_at": "2026-08-24T05:01:15.758098+00:00",
-      "completed_at": "2026-08-24T05:01:27.730433+00:00",
+      "started_at": "2026-08-24T05:53:52.344615+00:00",
+      "completed_at": "2026-08-24T05:54:08.171431+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 5,
       "error": null
     },
     {
-      "id": 312,
+      "id": 316,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-24T05:01:28.131475+00:00",
-      "completed_at": "2026-08-24T05:01:28.466889+00:00",
+      "started_at": "2026-08-24T05:54:08.572445+00:00",
+      "completed_at": "2026-08-24T05:54:08.994574+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -32565,20 +32606,20 @@
       "error": null
     },
     {
-      "id": 310,
+      "id": 314,
       "collector": "google-news-rss",
-      "started_at": "2026-08-24T05:01:14.760443+00:00",
-      "completed_at": "2026-08-24T05:01:15.276502+00:00",
+      "started_at": "2026-08-24T05:53:51.028000+00:00",
+      "completed_at": "2026-08-24T05:53:51.943496+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 313,
+      "id": 317,
       "collector": "sec-edgar",
-      "started_at": "2026-08-24T05:01:28.882747+00:00",
-      "completed_at": "2026-08-24T05:01:30.759176+00:00",
+      "started_at": "2026-08-24T05:54:09.395941+00:00",
+      "completed_at": "2026-08-24T05:54:11.678575+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -32595,7 +32636,7 @@
       "error": null
     }
   ],
-  "document_count": 1254,
+  "document_count": 1260,
   "event_count": 966,
   "mention_count": 2368,
   "review_counts": {
