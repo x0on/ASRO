@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T04:00:23.201789+00:00",
+  "generated_at": "2026-08-25T04:25:00.456188+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -14,13 +14,13 @@
   "dimensions": {
     "monetization": 42.9,
     "transmission": 39.6,
+    "cannibalization": 54.2,
+    "capital": 48.732271163185665,
+    "counter_evidence": 42.9,
     "circularity": 57.1,
     "fragility": 61.1,
-    "stress": 57.1,
-    "capital": 48.732271163185665,
     "external_pressure": 16.12,
-    "counter_evidence": 42.9,
-    "cannibalization": 54.2
+    "stress": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "monetization": "directional_estimate",
-    "fragility": "directional_estimate",
-    "capital": "aggregate",
     "counter_evidence": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "circularity": "directional_estimate",
+    "external_pressure": "aggregate",
     "stress": "directional_estimate",
-    "external_pressure": "aggregate"
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
+    "capital": "aggregate",
+    "circularity": "directional_estimate",
+    "fragility": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T04:24:52.907100+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"circularity\": 57.1, \"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-25T04:00:22.707913+00:00",
       "score": 45.3,
@@ -9654,6 +9660,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:d6f75ad1971791085bcccd63b4ddb2c0e0f7ef8920408dd58ac1e123d71f64a8",
+        "label": "Prediction: Microsoft\u2019s AI Boom Is Bigger Than Investors Realize - AOL.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxON3FndHdLTHAzUGhoX096Skl3X3gwRzJRdGZHYldoMkx6cFFzSDRxOTNjZGNFZlFJY2djSGo3SU5YQXJzaGQxWDg0eGJKMWJLSHdYT3l0NXNvMC0wNXM1TFFWVWVOekpycTN6dlVrT2szTHFVeXkzRXpwQV9zd3NLeWV0R0JkUQ?oc=5",
+        "date": "Mon, 24 Aug 2026 21:44:54 GMT",
+        "summary": "Prediction: Microsoft\u2019s AI Boom Is Bigger Than Investors Realize AOL.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:9dddd81c8a130af25fc5c2b26ef2c93a48f38bcb550ddeaed6e0c1e5ded49ffc",
         "label": "Kimi Antonelli's F1 salary, bonus, and lucrative net worth through the years - RFK Racing Digest",
         "kind": "evidence",
@@ -11030,18 +11048,6 @@
         "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdzFueHV2QVY3UElhS3pObUN2VUJ5aTRVSnpaZFoyREQ1QVBYcW9ad2gycEhtNUZzRmtyU0RweWlaRkh3OURjOWRBbVRmYmxWQlR5MWxBSl9IalJESXIxUTgtMkFjM0o2dXJSeTdMV19BSU9Za09pM1ZNU2VLa1k1MnU4N1Fzc2tNQnJPdnlVdldoQmQ5V2Rqem9aQ0ZBZDBnOXJ3em5SLV9VODNJR1NfWXQyd0F5VHdXS1FLTXVYVFQ5TUR60gHKAUFVX3lxTFBHNW9MY1c4MEhwd1ktTVNyLV9wckZzSzdpVlY2VEV2ZG9zamVRN3FNQ1pmN1ZITzNtdFdsN1lJcWQ5eUNBaXRGcjVBRm1PdTA4cnBOMlpyYW01MTduRWEyMW41WXV4Z0tEYUJNNGd1UWlCcHlBUUNqLUJiRXdWdnc4UHlNQVB0X3gyd0NFbWU2N3pHazZMMTh6blg0cXJyYzNGUnZYOGhuU3prejJQTnRYTVVudEVsckJVVlB6bFoyWHZqcjZHLXhFdEE?oc=5",
         "date": "Sat, 22 Aug 2026 19:21:13 GMT",
         "summary": "Is Microsoft (MSFT) Stock Reasonable If AI Spending Pays Off? simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:511bb7af8791d3740e702ff323ffa89ff9ba3702666e937a962ed4f4f5133501",
-        "label": "Stock Market Week Ahead: A Choppy Market Heads For Nvidia Earnings, Jackson Hole - Investor's Business Daily",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Investor's Business Daily",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcW5QRE12ZEV3TUE2ZnFjdGljdFJhV3JGay1NRHBUa0pCSWhuNy00bkh1NDVScGVuazFZVFZwWnAzcDhMc0luWkRNeG90MWM1LUc4SXFwMmlPT2t3dVQ4a2pLbUc4NzJaS19LT1Brd01oYXUxcFNBTGVKaHJTNkRPcnRjbll3UzNNN0hOU3lub0FhU2hBeU9fSWF0NXpIRDRJb2dyN1IySVVKbTV6cm9tNzZqdlZqeTVkZnBrbFA0cFkzQ29qMmVhOFJ0V05jMGtXUnc?oc=5",
-        "date": "Sat, 22 Aug 2026 17:05:00 GMT",
-        "summary": "Stock Market Week Ahead: A Choppy Market Heads For Nvidia Earnings, Jackson Hole Investor's Business Daily",
         "score": 1,
         "weight": 1
       }
@@ -17621,6 +17627,13 @@
         "mentions": 1
       },
       {
+        "source": "Microsoft",
+        "target": "evidence:d6f75ad1971791085bcccd63b4ddb2c0e0f7ef8920408dd58ac1e123d71f64a8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Moonshot AI",
         "target": "evidence:9dddd81c8a130af25fc5c2b26ef2c93a48f38bcb550ddeaed6e0c1e5ded49ffc",
         "type": "EVIDENCE",
@@ -18421,13 +18434,6 @@
       {
         "source": "Microsoft",
         "target": "evidence:edac4ecdac4c9bcd3a40b54da292f23ff1c69bd59e689526e48d390a01e64417",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:511bb7af8791d3740e702ff323ffa89ff9ba3702666e937a962ed4f4f5133501",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32973,20 +32979,20 @@
   ],
   "collector_runs": [
     {
-      "id": 391,
+      "id": 395,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T04:00:05.058531+00:00",
-      "completed_at": "2026-08-25T04:00:19.110327+00:00",
+      "started_at": "2026-08-25T04:24:37.163992+00:00",
+      "completed_at": "2026-08-25T04:24:49.211062+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 392,
+      "id": 396,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T04:00:19.511725+00:00",
-      "completed_at": "2026-08-25T04:00:19.929800+00:00",
+      "started_at": "2026-08-25T04:24:49.612605+00:00",
+      "completed_at": "2026-08-25T04:24:50.028266+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33003,20 +33009,20 @@
       "error": null
     },
     {
-      "id": 390,
+      "id": 394,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T04:00:04.175472+00:00",
-      "completed_at": "2026-08-25T04:00:04.656180+00:00",
+      "started_at": "2026-08-25T04:24:36.273235+00:00",
+      "completed_at": "2026-08-25T04:24:36.762463+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 393,
+      "id": 397,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T04:00:20.331370+00:00",
-      "completed_at": "2026-08-25T04:00:22.291598+00:00",
+      "started_at": "2026-08-25T04:24:50.429730+00:00",
+      "completed_at": "2026-08-25T04:24:52.491027+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33033,7 +33039,7 @@
       "error": null
     }
   ],
-  "document_count": 1378,
+  "document_count": 1379,
   "event_count": 969,
   "mention_count": 2372,
   "review_counts": {
