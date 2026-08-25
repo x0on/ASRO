@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T14:04:17.409462+00:00",
+  "generated_at": "2026-08-25T15:05:57.300818+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "cannibalization": 54.2,
-    "external_pressure": 16.12,
-    "counter_evidence": 42.9,
-    "circularity": 57.1,
-    "stress": 57.1,
-    "transmission": 39.6,
-    "fragility": 61.1,
     "capital": 48.732271163185665,
+    "transmission": 39.6,
+    "external_pressure": 16.12,
+    "stress": 57.1,
+    "fragility": 61.1,
+    "circularity": 57.1,
+    "cannibalization": 54.2,
+    "counter_evidence": 42.9,
     "monetization": 42.9
   },
   "dimension_evidence": {
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
-    "fragility": "directional_estimate",
     "monetization": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "stress": "directional_estimate",
     "capital": "aggregate",
-    "external_pressure": "aggregate"
+    "transmission": "confirmed_trigger",
+    "external_pressure": "aggregate",
+    "counter_evidence": "directional_estimate",
+    "stress": "directional_estimate",
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T15:05:56.812474+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-25T14:04:16.908916+00:00",
       "score": 45.3,
@@ -5616,6 +5622,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:2103246b9d0441e72ab99f638394c1e04c7a2f3fdb63a04fe10b660dba59cacf",
+        "label": "OpenAI's IPO Won't Likely Happen Until 2027. Here's Why That's the Right Call. - The Motley Fool",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcElUOUhZZEJjZ3JleXcwellTeUtTbTZndWhVWUFtdG5qb3QtQWRRMy0xSk1ySV80T053YWw0VEdsYzIyYnZLSEUySWlyUmQ1N0VZQjRUVThmcXpRQnliMUFxRlRSM0dielowb1JKYmlueUhlOW53M1ZyaVdDNnNINy1hSHpkN0psczJadUxnQWhQM21BUm1DWQ?oc=5",
+        "date": "Tue, 25 Aug 2026 14:47:18 GMT",
+        "summary": "OpenAI's IPO Won't Likely Happen Until 2027. Here's Why That's the Right Call. The Motley Fool",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:ffabc2ac017353bae00dd53447a564423ca7528534e4c86d5aafed9f3ee610f2",
         "label": "Alibaba's First Post-IPO Share Placement to Raise HK$80 Billion Sends Stock Tumbling Over 8%, Dragging Hong Kong Tech Sector - finance.biggo.com",
         "kind": "evidence",
@@ -9876,6 +9894,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:897791e2077f82b4b5afe61252c2f7760253faf47e38ce32d9a1e1ec3f93ae5e",
+        "label": "SPECTRUM EXPANDS ITS COMMUNITY INVESTMENT AND OFFERS AMAZON PRIME MEMBERSHIP TO QUALIFYING LOW-INCOME SPECTRUM INTERNET CUSTOMERS - PR Newswire",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "PR Newswire",
+        "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOSG8yWlIwN185ZUtGanN1bXJKdW9SUzlXT0VUWXUydktkYmNqaEd6cnNZVmQ3TEJWUjU2Sy1qRndEMzI2VUJtaHR1U1JGVlRUc0xDYzZyZmdFUUZiMklHUnFEQzJCeXFyTXh1VW1qZmxHcjZNY1dSQTZUMHdMclBUVk9kSW5COV8zZkRNaXhLdV9PM2RwOHRZN2ZuUnZCOEd4eUE1eDZDcllMR0xBNG94M0RuVFd0M1ZEWHZqRzBEZzNQdk5DcjZXVlE2WGlJZWp0ZC1yS0pQQTNtY1FRZ0Q4RFdzeXpoQkdfeC1ZU1VkMWlJSmRqbVpkQlUtbTZpV2taTW83cVFLTDdYUy1faGRrQnVNVQ?oc=5",
+        "date": "Tue, 25 Aug 2026 14:01:00 GMT",
+        "summary": "SPECTRUM EXPANDS ITS COMMUNITY INVESTMENT AND OFFERS AMAZON PRIME MEMBERSHIP TO QUALIFYING LOW-INCOME SPECTRUM INTERNET CUSTOMERS PR Newswire",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9a859e2f0eb19df628858cc13a240540ce474c1e16faeb1e73a7e6f787408ccd",
+        "label": "Bain & Company announces partnership with Anthropic to accelerate clients' enterprise AI transformations - Morningstar",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQeUx1U1hsbWZVeXJRbkNJNVdTSUx0LXFWclFOV2dfWWFzamxFVGdERkhTbkFtdkxYXzhhLXBrdG53blE2NDdGcWNPZVh5bDdhcG9oMU41V1M3SnV0bGRDVW1HdjZIT2gzNjBjNkt2M2tFckJxdnlPMTlhaTA5MThfb0t1bmpFcWVvVHEwTmVUZVZvOFI2MDhmcERjV0JNSlptbU5tWE9GRzFhTW5XNFRnQi1MSzJpcmhGZTRIc2RGdG9TMmNxSU1zOHNuZEppM3VRUmh3clVfMlJHQXpwZ0pNdEhISWZUNUdCV1B3Z3o0akFQNXR0?oc=5",
+        "date": "Tue, 25 Aug 2026 14:08:41 GMT",
+        "summary": "Bain & Company announces partnership with Anthropic to accelerate clients' enterprise AI transformations Morningstar",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:6045212d46516fb9d72b6be071cdb47d0896a69204ad92c1c88b55b118866c2f",
         "label": "Alibaba's $10 Billion Stock Sale Was Nearly 3 Times Oversubscribed. Should You Follow the Smart Money? - 24/7 Wall St.",
         "kind": "evidence",
@@ -11072,42 +11114,6 @@
         "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR2U2RkRiaHlidTdFVHFWLWNsdmdKTmpQcXNQOXVqbjFDNHpPeldYNFg0UFUtT1VaTGc1LXNqV2N3endGeEo4a2xmQWNYeWZvMmhSX0NVdmxpRTJ3eXlZQ2d6VDBYOXZpRUF5dWRwT2lPb19IUWp2YWRKRl9zZzFva1JhSDNmT0g2N0dudElYRHdaVzVRSUxqZTltZEduV3AxLTlHczdkY2hRQUh4TnVPSzhuQlRtZXlEUy1GNXEzRDRFUGs?oc=5",
         "date": "Sun, 23 Aug 2026 17:05:23 GMT",
         "summary": "Amazon Pips Walmart To Become World\u2019s Biggest Company By Revenue Stocktwits",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9dcf8b80cb2dae17c4eeb651d0396aabbe3ae67b554be64a53af324ba4b6db04",
-        "label": "Kimi K3 Pushes Open-Source Models to the Frontier's Doorstep - Pandaily",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Pandaily",
-        "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE81UGZmTllhR3pIYy16TGxJbS1qaDJHYTBCOGs3SHA4Qm1oY3RCRDIxd0M4M295UFczOWVSRGRPTC1jbi1iaU54cFdjMXU5d0VvV1N6SjVLdlIzWk5hSVBCZE9uQmpmb2dLVjBBbWRlNm5QWUgw?oc=5",
-        "date": "Mon, 24 Aug 2026 02:05:46 GMT",
-        "summary": "Kimi K3 Pushes Open-Source Models to the Frontier's Doorstep Pandaily",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c8aa8ed8657b7250ab1c05bfee5290b2e5c5dae7a872e5f1dd30f9cab01fc305",
-        "label": "Alibaba plunges after announcing $10.2 billion share placement to fund AI push - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMGpwVXdlcm9rRVZna3o3N1drZW5uUWZiSVB5akJmR1haV3Z4RFdBVlZnVkxhcFMyN3U2Z2toZDB4Z1VYbktJbm91eW9XUWViRnk1ZHRKTk1UcndGSVMwOGFfWklDMVRRVjJsc1BYNEc0UEpBZW15LWNEX1ZLaUxqZ3lPeWbSAYoBQVVfeXFMTmttSENYYVI2RUlQUnhzampuN1NQZTZ2aUFreWNZbXhpWWtwZ1JXTkdaRGdPb3dPQXBoN3RFdTV5NkNUeHhKY0lpaF9scTNlQm43aWx1LTNBVjF6SkdhOFc4V21fRXd6aDhZeWwtWkNjaXZ2NW9uWlZWQ2piZ25weE0yNWxGYmlIU0VB?oc=5",
-        "date": "Mon, 24 Aug 2026 02:55:00 GMT",
-        "summary": "Alibaba plunges after announcing $10.2 billion share placement to fund AI push CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ed851508b47a84768aa473acbd5b0064ed7090b0d7c2f1f5e4e1c53b11f28b25",
-        "label": "Alphabet Stock (GOOGL) Opinions on Recent Earnings and AI Outlook - Quiver Quantitative",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Quiver Quantitative",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdTd0VkI5TzhTQWFxcjVfQy16V0V1c19IeTl5Vm43YndLUWFuUlgweEN6Z0VabXVBQTlXNnZjQjlxVGpGWkF4dkhScUJEdmhHOHdDcXo2bUIyanJ4TlJfNnE1N0tzdk9DRlk1cEJGOXV6ejIwT09zalhZd0FvX3ZFUUtVTnJHbWJjU2RuOUg0eDNBUW9KOXRsSU5sMkVHYjZVWEdoYg?oc=5",
-        "date": "Sun, 23 Aug 2026 14:03:00 GMT",
-        "summary": "Alphabet Stock (GOOGL) Opinions on Recent Earnings and AI Outlook Quiver Quantitative",
         "score": 1,
         "weight": 1
       }
@@ -14481,6 +14487,13 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:2103246b9d0441e72ab99f638394c1e04c7a2f3fdb63a04fe10b660dba59cacf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alibaba",
         "target": "evidence:ffabc2ac017353bae00dd53447a564423ca7528534e4c86d5aafed9f3ee610f2",
         "type": "EVIDENCE",
@@ -17841,6 +17854,20 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:897791e2077f82b4b5afe61252c2f7760253faf47e38ce32d9a1e1ec3f93ae5e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:9a859e2f0eb19df628858cc13a240540ce474c1e16faeb1e73a7e6f787408ccd",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alibaba",
         "target": "evidence:6045212d46516fb9d72b6be071cdb47d0896a69204ad92c1c88b55b118866c2f",
         "type": "EVIDENCE",
@@ -18536,27 +18563,6 @@
       {
         "source": "Amazon",
         "target": "evidence:718988a3d2d1a3ac0a16a2282cc2184762bc4c0827c3c1cf6a49db447c642ceb",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:9dcf8b80cb2dae17c4eeb651d0396aabbe3ae67b554be64a53af324ba4b6db04",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:c8aa8ed8657b7250ab1c05bfee5290b2e5c5dae7a872e5f1dd30f9cab01fc305",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:ed851508b47a84768aa473acbd5b0064ed7090b0d7c2f1f5e4e1c53b11f28b25",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33117,20 +33123,20 @@
   ],
   "collector_runs": [
     {
-      "id": 435,
+      "id": 439,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T14:03:58.089724+00:00",
-      "completed_at": "2026-08-25T14:04:13.564884+00:00",
+      "started_at": "2026-08-25T15:05:38.804344+00:00",
+      "completed_at": "2026-08-25T15:05:53.477003+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 4,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 436,
+      "id": 440,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T14:04:13.965720+00:00",
-      "completed_at": "2026-08-25T14:04:14.394189+00:00",
+      "started_at": "2026-08-25T15:05:53.878076+00:00",
+      "completed_at": "2026-08-25T15:05:54.273839+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33147,20 +33153,20 @@
       "error": null
     },
     {
-      "id": 434,
+      "id": 438,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T14:03:57.040281+00:00",
-      "completed_at": "2026-08-25T14:03:57.688501+00:00",
+      "started_at": "2026-08-25T15:05:37.663778+00:00",
+      "completed_at": "2026-08-25T15:05:38.403333+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 437,
+      "id": 441,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T14:04:14.795362+00:00",
-      "completed_at": "2026-08-25T14:04:16.493118+00:00",
+      "started_at": "2026-08-25T15:05:54.675195+00:00",
+      "completed_at": "2026-08-25T15:05:56.396906+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33177,7 +33183,7 @@
       "error": null
     }
   ],
-  "document_count": 1429,
+  "document_count": 1432,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
