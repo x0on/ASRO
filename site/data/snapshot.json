@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T07:09:00.435001+00:00",
+  "generated_at": "2026-08-25T07:58:55.750798+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,14 +12,14 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "transmission": 39.6,
-    "stress": 57.1,
-    "monetization": 42.9,
-    "capital": 48.732271163185665,
-    "external_pressure": 16.12,
     "cannibalization": 54.2,
     "counter_evidence": 42.9,
     "circularity": 57.1,
+    "stress": 57.1,
+    "monetization": 42.9,
+    "transmission": 39.6,
+    "external_pressure": 16.12,
+    "capital": 48.732271163185665,
     "fragility": 61.1
   },
   "dimension_evidence": {
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "monetization": "directional_estimate",
-    "capital": "aggregate",
-    "cannibalization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
+    "stress": "directional_estimate",
     "transmission": "confirmed_trigger",
     "external_pressure": "aggregate",
-    "stress": "directional_estimate",
-    "fragility": "directional_estimate"
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "circularity": "directional_estimate",
+    "monetization": "directional_estimate",
+    "capital": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T07:58:55.247958+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"capital\": 48.732271163185665}"
+    },
     {
       "captured_at": "2026-08-25T07:08:59.854241+00:00",
       "score": 45.3,
@@ -8370,6 +8376,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:bad85a8b26532e94569dd9801b4d543e415be6875e32a6e1739e0eace6da7b67",
+        "label": "AI Weekly: Codex Growth Overtakes Claude Code; DeepSeek Quietly Launches Vision Model - finance.biggo.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE02dlFiYVh5emEzZjNBdlJZN3BqRWtraVJ3T2kwYXdVajJHZmh6MGszSk1ydmJmVDlaV254WjFlSjRlZHdGYkhvc0Mtd3pKV212Y1NQSk0xVURtM2VIbGFqamozaERCTVFNcm91RDZDMndzTEE1SUE?oc=5",
+        "date": "Mon, 24 Aug 2026 13:35:00 GMT",
+        "summary": "AI Weekly: Codex Growth Overtakes Claude Code; DeepSeek Quietly Launches Vision Model finance.biggo.com",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:0b5183ff068fe3658fc3fb1fd406806c2781157774ea09be20f3e89fc9367bc9",
         "label": "ByteDance challenges Tencent with new Doubao workplace AI agent - Free Malaysia Today",
         "kind": "evidence",
@@ -9750,6 +9768,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:3e1779e6ccc99e9ab2ee7b5b32c99f046bdcc94a07d85a9494e63845e1f50a94",
+        "label": "What Is Tencent Holdings (SEHK:700) Looking For In Humanoid Robotics? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdkZBZGN4alpoZ0RlN3Jxamx4aldTa3ZqS0xTcmFDaHUwX016eGJ0a3hpNHVVd3NIUVZSLUN2OXNLTXhlb2llMUMtWTFXLVdKeFJ1dXRiUmdyYTF6dERzbERpRGNHX1Nnb09laS1KWGY4eHFfYjVpNkluRUFSZ3JLM1NEajRJQ1d2TjdTYUZRTC1WZVVYbXY5MWVncHMwQQ?oc=5",
+        "date": "Tue, 25 Aug 2026 07:05:14 GMT",
+        "summary": "What Is Tencent Holdings (SEHK:700) Looking For In Humanoid Robotics? Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:346030086514db82aae180ec5ec8fbd9cf5f45205e71ca8caaacafbc99dcb83b",
         "label": "Microsoft (MSFT) - Moomoo",
         "kind": "evidence",
@@ -11042,30 +11072,6 @@
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVEw3NTBFZ0NQamJYXzFvWFNoVTZLcUhUaFd0QldtOFBwQ05sN3ltWVhEeUpwazIydGdUNFdCQjZrTnRZMjgtc3VIdXpFajZteGJidzBWeDkwRElDRnZheXZFSmJYa2RKbHBLWDJKbTUtdkVrUUd6WjNCZmtXU3BTM3d3RnE2WjloaWNMT0VFOTNVdVJwSWFWNEtNejdJS3N5OGhBanNQNlE5b1k4X0xveUpvUmNqaHVaYUJCSjAwR1psWDd3eXk2aGV4TjlTTU05RHhkZ0ZaSdIB1wFBVV95cUxPVEw3NTBFZ0NQamJYXzFvWFNoVTZLcUhUaFd0QldtOFBwQ05sN3ltWVhEeUpwazIydGdUNFdCQjZrTnRZMjgtc3VIdXpFajZteGJidzBWeDkwRElDRnZheXZFSmJYa2RKbHBLWDJKbTUtdkVrUUd6WjNCZmtXU3BTM3d3RnE2WjloaWNMT0VFOTNVdVJwSWFWNEtNejdJS3N5OGhBanNQNlE5b1k4X0xveUpvUmNqaHVaYUJCSjAwR1psWDd3eXk2aGV4TjlTTU05RHhkZ0ZaSQ?oc=5",
         "date": "Sat, 22 Aug 2026 23:27:13 GMT",
         "summary": "Alibaba\u2019s AI Spending Squeezes Margins Yet Deepens Cloud Strategy Could Be A Game Changer For Alibaba Group Holding (BABA) simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e4a4464270e0c104e86e52aa9ef40b748dd0c6f1aa7130813d9fe42595f24ef8",
-        "label": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending - WTVB",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WTVB",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUHBOaXNmVkE2T2hLWmtmNFpMcjNGbWpHYTc2dmIwdm5TeDRmWV9tNDh6V1UzbGNObzFpbUgzWldZZ1dLNHFaUHNzQzFrc1p3WkZNQWRQSG9EcG5VRUNHX0oyWl9Tcks4blo2aU9MSU5mUHFDOUYzUUd0MENHUVZmcFpUbzBmdWRSX3gwTm1JUDFlMDc3?oc=5",
-        "date": "Sun, 23 Aug 2026 07:18:45 GMT",
-        "summary": "Alibaba plans $10 billion Hong Kong share placement to fund AI spending WTVB",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a20492d23661676ca3f32c5c5149220d4fdecc99b5747a41c7c9abed0aa94c1a",
-        "label": "Alibaba (NYSE:BABA) Stock Drops As AI Spending Crushes Profitability - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMDhTYXFjNmpBeWxQTDdWaVY4VXdxcmJ3UDFMQTRaQWVlb2ZITVY1bWtUYnc5bHktcWs3Z1FfcjF5ZXltbUFralEzMGNCc2ZHeG03NFZrd09ra2NhbW5BMUpfT0RHVnlSM2NzeE50OWNNb2tQQWRxbFBFY3VwUDZaTnBPZlVJYVp6cUtWbXJ1Zmh2YmhYdXVWZ3YyREJBR3pGSzdHNXJnXy13dmdIbjI2Q0tXaE15MDdtWUJkWWdWQi1UM0VmN2hsSk5Va0tvN2RoUmfSAdcBQVVfeXFMT1paeHQzOTZzQmViOExpckNhbXZSYk10cUI4VE9HZUQwUHczNHRCQlNteFljVC1jZ04wMDdGcG1sVmY1UENib1hDbEZ3Z3Bub1BVblcxNnM0X0xoaXBxenFLZzNUcnlmNmYzWkE5cENjSy1mMVlLdmJ6N1c3YmhJOXo1SFc2R19QY282MS1mLU9adFdURHBpcXhvOFpuWExTYjJMOXZrWk5wc3ZUWmtmc3NKMzdmNWZIQWZ0R0N1Rmk3Q0JmdmNoN0xFaG9ISHJudW10SmhycTQ?oc=5",
-        "date": "Fri, 21 Aug 2026 22:37:42 GMT",
-        "summary": "Alibaba (NYSE:BABA) Stock Drops As AI Spending Crushes Profitability simplywall.st",
         "score": 1,
         "weight": 1
       }
@@ -16252,6 +16258,20 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:bad85a8b26532e94569dd9801b4d543e415be6875e32a6e1739e0eace6da7b67",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:bad85a8b26532e94569dd9801b4d543e415be6875e32a6e1739e0eace6da7b67",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "ByteDance",
         "target": "evidence:0b5183ff068fe3658fc3fb1fd406806c2781157774ea09be20f3e89fc9367bc9",
         "type": "EVIDENCE",
@@ -17736,6 +17756,13 @@
         "mentions": 1
       },
       {
+        "source": "Tencent",
+        "target": "evidence:3e1779e6ccc99e9ab2ee7b5b32c99f046bdcc94a07d85a9494e63845e1f50a94",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Microsoft",
         "target": "evidence:346030086514db82aae180ec5ec8fbd9cf5f45205e71ca8caaacafbc99dcb83b",
         "type": "EVIDENCE",
@@ -18487,20 +18514,6 @@
       {
         "source": "Alibaba",
         "target": "evidence:a4d345388fdc73e6bfa3179b105d21e87ed304195ea89798be1207307c453910",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:e4a4464270e0c104e86e52aa9ef40b748dd0c6f1aa7130813d9fe42595f24ef8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:a20492d23661676ca3f32c5c5149220d4fdecc99b5747a41c7c9abed0aa94c1a",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33061,23 +33074,23 @@
   ],
   "collector_runs": [
     {
-      "id": 407,
+      "id": 411,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T07:08:41.847139+00:00",
-      "completed_at": "2026-08-25T07:08:56.510220+00:00",
+      "started_at": "2026-08-25T07:58:35.099955+00:00",
+      "completed_at": "2026-08-25T07:58:51.061060+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 5,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 408,
+      "id": 412,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T07:08:56.911256+00:00",
-      "completed_at": "2026-08-25T07:08:57.345127+00:00",
+      "started_at": "2026-08-25T07:58:51.462057+00:00",
+      "completed_at": "2026-08-25T07:58:52.233757+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
@@ -33091,20 +33104,20 @@
       "error": null
     },
     {
-      "id": 406,
+      "id": 410,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T07:08:40.688548+00:00",
-      "completed_at": "2026-08-25T07:08:41.445804+00:00",
+      "started_at": "2026-08-25T07:58:34.019132+00:00",
+      "completed_at": "2026-08-25T07:58:34.697308+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 409,
+      "id": 413,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T07:08:57.746547+00:00",
-      "completed_at": "2026-08-25T07:08:59.439012+00:00",
+      "started_at": "2026-08-25T07:58:52.635077+00:00",
+      "completed_at": "2026-08-25T07:58:54.832670+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33121,7 +33134,7 @@
       "error": null
     }
   ],
-  "document_count": 1391,
+  "document_count": 1396,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
