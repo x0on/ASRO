@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T07:58:55.750798+00:00",
+  "generated_at": "2026-08-25T09:00:34.063152+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "monetization": 42.9,
+    "capital": 48.732271163185665,
     "cannibalization": 54.2,
     "counter_evidence": 42.9,
-    "circularity": 57.1,
     "stress": 57.1,
-    "monetization": 42.9,
     "transmission": 39.6,
     "external_pressure": 16.12,
-    "capital": 48.732271163185665,
-    "fragility": 61.1
+    "fragility": 61.1,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
+    "monetization": "directional_estimate",
+    "capital": "aggregate",
+    "cannibalization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
     "stress": "directional_estimate",
     "transmission": "confirmed_trigger",
     "external_pressure": "aggregate",
     "fragility": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "circularity": "directional_estimate",
-    "monetization": "directional_estimate",
-    "capital": "aggregate"
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T09:00:33.559501+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"capital\": 48.732271163185665, \"stress\": 57.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-25T07:58:55.247958+00:00",
       "score": 45.3,
@@ -5580,6 +5586,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:d82aac28f7a755eb5d4c57873bd0131852930f2835d25c10feff0d22765e042d",
+        "label": "Citi, JPM Reportedly In Talks To Join OpenAI IPO Bank Lineup - Stocktwits",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVTV6X2FEbkUwSmM5VldPRndBVy1GMWwxcGY5Vll3RmpsUVcwc1dwRkU1c3dKc3owcTlHZ1dWcDVJV1pjSkZjVEIyTWRqc0NWZTcxQXNyRnNPSlZRaE5RTGlMOW9mOXlob1ExdVJJMXp2Sjl1U1ZFSHRsekNVaGtvdXZiZVBFVC15cUh2YTg4SHE3R0NQVmtSVWljRHlkS2N2LWZOb1BIWTl4TFU2bHl3WFlIYjc0dUltOUszbllYdEY2QUxKWnJaSE4taFg2VHVRV2VyaVpYSGd3MEhJQ2lR?oc=5",
+        "date": "Tue, 25 Aug 2026 02:45:05 GMT",
+        "summary": "Citi, JPM Reportedly In Talks To Join OpenAI IPO Bank Lineup Stocktwits",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d648e092dadbe63f4c7ac0b943969858268bd486e0c5849d9143dd48686796af",
+        "label": "OpenAI's IPO strategy: Why is it in no rush to go public? - The CFO",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The CFO",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVk1EMjBWdElMLXFpNjZUV2t0T0F5b2dlNEppcVNYeUROTlpiLWV0SFU1OEtXaDdGcjhrcGUzWVdhZW04N2k1Z0Y5Mm5RbHNiU2ZjaXhUS2xXbk0yckh2OTFFUzVMeFU3YnM1bWhabEFYdEg1d0NEMkRDWFBmdVFGekJPdTYtZUdhLTJ4TENR?oc=5",
+        "date": "Tue, 25 Aug 2026 07:27:02 GMT",
+        "summary": "OpenAI's IPO strategy: Why is it in no rush to go public? The CFO",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:e696b5af85d8fcccf4ca6558396d2e702714ec345216ef9427a8aec88f2a86ad",
         "label": "Tencent-backed AI chipmaker Enflame targets about $900M in Shanghai IPO - Seeking Alpha",
         "kind": "evidence",
@@ -9768,6 +9798,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:2bfbcbbcdb306b73a136c0fc34dd9903daf13c32c33421a4413200b8d39c7f76",
+        "label": "Up to 30x More Work Per Watt: NVIDIA Vera Rubin NVL72 Sets a New Efficiency Standard for AI Agents - NVIDIA Blog",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "NVIDIA Blog",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1abDNiV1R3b1JKQ01wRmJYVFdkMVVGempWd3hYQlFhRl9ZdG9ONjB0eXhNS2REdk9sZk43Q0V4eE9fa09KSm11UUJvck00eGNCWUFRdXZsLXVIU3dfbWNqOFNTekN6dmR3Z0JTTTdvZm1kbWxGS0ZJ?oc=5",
+        "date": "Mon, 24 Aug 2026 15:10:06 GMT",
+        "summary": "Up to 30x More Work Per Watt: NVIDIA Vera Rubin NVL72 Sets a New Efficiency Standard for AI Agents NVIDIA Blog",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:3e1779e6ccc99e9ab2ee7b5b32c99f046bdcc94a07d85a9494e63845e1f50a94",
         "label": "What Is Tencent Holdings (SEHK:700) Looking For In Humanoid Robotics? - Yahoo Finance",
         "kind": "evidence",
@@ -11036,42 +11078,6 @@
         "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNEdNMFc2bXZIeDFtSUVHaURibi1oU1VRSFU0SzF0MlAxYUJheEt1U1d1djktaEtza1ZuVGJGS0U2LWZmQXlYYXJwR0V4WFJKWnRQMDJ0eVhseUlZNlA5Qzc2eFE1a3JzRGxaTEZvXzl2NTlWUS1BSFVCd1VsNzZBcTJ5ZnE?oc=5",
         "date": "Sun, 23 Aug 2026 08:33:27 GMT",
         "summary": "Alibaba announces $10.2bn share placement as Chinese companies expand AI investment Financial Times",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:afd0faa514a48df1af2992067f000053a3263ebe21698b4c3063566666e9cdf0",
-        "label": "Alibaba to issue US$10 billion in new shares for global AI push - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeGtocVNGQndkMUp5Q3RuWWlXNFVTZG5uYnhBZC03RnVlU1c2YTk4dXVsSVFTdXdFZC1kM3VTR2dzRnE1UjB0Y3lNcUZnSDBoeGJDXzNXcnZ0T0FoTC1EaFU5QTFnc3E3ZmJmZXNlRElQNWRoVGZKaTBVbklSZ0lCcWhyZm01MFFsLWFnenNvV2ZVVDM5dXM3MGJ1UmVPcEE3R1NVVi1R0gGmAUFVX3lxTE9mUmZkVFRpZGR5WkQ5MXFheDdzc215a0tyX0ZiUlM4U2dtWF9PR1J2VVo4UFNaN0g1amRZb0plQXNicmsxdFBfVXJWMmR6c0MybnFHYnJ5aFJ3OWxPUTVMMExqYndjVDNqY0xrYXl6MGVLTC1MVVM5RHd1ZkstRVNvLUJnaXh2OHhjTXdxTnNiLUFJZ0hBZHNDbXFOOC1KSWpjRDVudVE?oc=5",
-        "date": "Sun, 23 Aug 2026 05:18:31 GMT",
-        "summary": "Alibaba to issue US$10 billion in new shares for global AI push South China Morning Post",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c6de9b249f5e59c16431875e5a7b33ef385831d0a50528b3ce9bd7a84f2687e6",
-        "label": "Amazon Just Gave Investors a Big Reason to Be Bullish - AOL.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "AOL.com",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB5TXJPcUxaa2pkX0N1ZkNwUVFzM05HQ2RrYXJmSFZYbl9DNXk5SUxLb25LTFp1MkRSN3MzYzh6OFo1d3B3NHlHa2JQZGJlMlZNY1E5YUtHUkg1Wmw2OGFfM1Vnbl92eTFqbEtlQW9EQTRodkRFdjE5cWk5aHRFQjg?oc=5",
-        "date": "Sun, 23 Aug 2026 04:54:10 GMT",
-        "summary": "Amazon Just Gave Investors a Big Reason to Be Bullish AOL.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a4d345388fdc73e6bfa3179b105d21e87ed304195ea89798be1207307c453910",
-        "label": "Alibaba\u2019s AI Spending Squeezes Margins Yet Deepens Cloud Strategy Could Be A Game Changer For Alibaba Group Holding (BABA) - simplywall.st",
-        "kind": "evidence",
-        "category": "Cannibalization / economics",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPVEw3NTBFZ0NQamJYXzFvWFNoVTZLcUhUaFd0QldtOFBwQ05sN3ltWVhEeUpwazIydGdUNFdCQjZrTnRZMjgtc3VIdXpFajZteGJidzBWeDkwRElDRnZheXZFSmJYa2RKbHBLWDJKbTUtdkVrUUd6WjNCZmtXU3BTM3d3RnE2WjloaWNMT0VFOTNVdVJwSWFWNEtNejdJS3N5OGhBanNQNlE5b1k4X0xveUpvUmNqaHVaYUJCSjAwR1psWDd3eXk2aGV4TjlTTU05RHhkZ0ZaSdIB1wFBVV95cUxPVEw3NTBFZ0NQamJYXzFvWFNoVTZLcUhUaFd0QldtOFBwQ05sN3ltWVhEeUpwazIydGdUNFdCQjZrTnRZMjgtc3VIdXpFajZteGJidzBWeDkwRElDRnZheXZFSmJYa2RKbHBLWDJKbTUtdkVrUUd6WjNCZmtXU3BTM3d3RnE2WjloaWNMT0VFOTNVdVJwSWFWNEtNejdJS3N5OGhBanNQNlE5b1k4X0xveUpvUmNqaHVaYUJCSjAwR1psWDd3eXk2aGV4TjlTTU05RHhkZ0ZaSQ?oc=5",
-        "date": "Sat, 22 Aug 2026 23:27:13 GMT",
-        "summary": "Alibaba\u2019s AI Spending Squeezes Margins Yet Deepens Cloud Strategy Could Be A Game Changer For Alibaba Group Holding (BABA) simplywall.st",
         "score": 1,
         "weight": 1
       }
@@ -14445,6 +14451,20 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:d82aac28f7a755eb5d4c57873bd0131852930f2835d25c10feff0d22765e042d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:d648e092dadbe63f4c7ac0b943969858268bd486e0c5849d9143dd48686796af",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Tencent",
         "target": "evidence:e696b5af85d8fcccf4ca6558396d2e702714ec345216ef9427a8aec88f2a86ad",
         "type": "EVIDENCE",
@@ -17756,6 +17776,13 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:2bfbcbbcdb306b73a136c0fc34dd9903daf13c32c33421a4413200b8d39c7f76",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Tencent",
         "target": "evidence:3e1779e6ccc99e9ab2ee7b5b32c99f046bdcc94a07d85a9494e63845e1f50a94",
         "type": "EVIDENCE",
@@ -18493,27 +18520,6 @@
       {
         "source": "Alibaba",
         "target": "evidence:7c181fe147919d8f0fb614c4eef773c518b2037df335baae31a9e26b2d28d901",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:afd0faa514a48df1af2992067f000053a3263ebe21698b4c3063566666e9cdf0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:c6de9b249f5e59c16431875e5a7b33ef385831d0a50528b3ce9bd7a84f2687e6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:a4d345388fdc73e6bfa3179b105d21e87ed304195ea89798be1207307c453910",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33074,23 +33080,23 @@
   ],
   "collector_runs": [
     {
-      "id": 411,
+      "id": 415,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T07:58:35.099955+00:00",
-      "completed_at": "2026-08-25T07:58:51.061060+00:00",
+      "started_at": "2026-08-25T09:00:14.120961+00:00",
+      "completed_at": "2026-08-25T09:00:29.638086+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 4,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 412,
+      "id": 416,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T07:58:51.462057+00:00",
-      "completed_at": "2026-08-25T07:58:52.233757+00:00",
+      "started_at": "2026-08-25T09:00:30.039242+00:00",
+      "completed_at": "2026-08-25T09:00:30.539795+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
@@ -33104,20 +33110,20 @@
       "error": null
     },
     {
-      "id": 410,
+      "id": 414,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T07:58:34.019132+00:00",
-      "completed_at": "2026-08-25T07:58:34.697308+00:00",
+      "started_at": "2026-08-25T09:00:12.828826+00:00",
+      "completed_at": "2026-08-25T09:00:13.719975+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 413,
+      "id": 417,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T07:58:52.635077+00:00",
-      "completed_at": "2026-08-25T07:58:54.832670+00:00",
+      "started_at": "2026-08-25T09:00:30.941104+00:00",
+      "completed_at": "2026-08-25T09:00:33.143741+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33134,7 +33140,7 @@
       "error": null
     }
   ],
-  "document_count": 1396,
+  "document_count": 1399,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
