@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T03:13:11.294751+00:00",
+  "generated_at": "2026-08-25T04:00:23.201789+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "cannibalization": 54.2,
+    "monetization": 42.9,
+    "transmission": 39.6,
+    "circularity": 57.1,
     "fragility": 61.1,
-    "counter_evidence": 42.9,
-    "external_pressure": 16.12,
     "stress": 57.1,
     "capital": 48.732271163185665,
-    "transmission": 39.6,
-    "monetization": 42.9,
-    "circularity": 57.1
+    "external_pressure": 16.12,
+    "counter_evidence": 42.9,
+    "cannibalization": 54.2
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
-    "external_pressure": "aggregate",
-    "stress": "directional_estimate",
-    "capital": "aggregate",
     "monetization": "directional_estimate",
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "capital": "aggregate",
     "counter_evidence": "directional_estimate",
-    "transmission": "confirmed_trigger"
+    "cannibalization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "circularity": "directional_estimate",
+    "stress": "directional_estimate",
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T04:00:22.707913+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"stress\": 57.1, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"circularity\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9}"
+    },
     {
       "captured_at": "2026-08-25T03:13:10.799977+00:00",
       "score": 45.3,
@@ -5532,6 +5538,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:dfff0c98e213ca6c8d1eac2e6b4e47a1d882b4e1eeead93677a916cbe844a3c1",
+        "label": "Tencent-Backed Enflame Lines Up A STAR Market IPO - Finimize",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Finimize",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNY3Axa0V2TFFuek5zVUVOYU1EVWJMZE41UmNqMGlCMHc0RXV6VlllalRabjBHWG1fY3hkZ2NFQkxYbFJkQnBjYTVuci0zLUF1ZFpNMjFqMkxja1RoaW5VcVhPTkFhdmtIWnhKenUtSnlmdEhnSDJsemQycFhRV3k4MC1vSGs?oc=5",
+        "date": "Tue, 25 Aug 2026 00:15:29 GMT",
+        "summary": "Tencent-Backed Enflame Lines Up A STAR Market IPO Finimize",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:f7b7142625936bb6f1c438b1b631c5c6ccb454bae6d0874cb7d8db302efa67cc",
         "label": "Amazon\u2019s AWS Is Booming and Its Free Cash Flow Is Negative. Here\u2019s Where the Stock Could Go - TIKR.com",
         "kind": "evidence",
@@ -9636,6 +9654,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:9dddd81c8a130af25fc5c2b26ef2c93a48f38bcb550ddeaed6e0c1e5ded49ffc",
+        "label": "Kimi Antonelli's F1 salary, bonus, and lucrative net worth through the years - RFK Racing Digest",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "RFK Racing Digest",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNLVB0WFlPaFYxX1U5S09DNmJBRDVaTjR4RldJSzE3UnhGUnRvMnVUWV9SNFh6cmc2QUg3eV9WRmJoSDZGZUxTSDd5S2NSb1BTVkpwU1FpS0NJQnYwaFdHVmRpRVR6dHA1dzI5TEVnRkZic1RhVFJmTGgxeWxxM1RWdzEyTzFXLTB6YThUMk8xQ0NkWlZWVE5teXBHMTZhcUhaVU1FMU5OUEVqZlBSZU5xSA?oc=5",
+        "date": "Mon, 24 Aug 2026 18:00:29 GMT",
+        "summary": "Kimi Antonelli's F1 salary, bonus, and lucrative net worth through the years RFK Racing Digest",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:02fe9165a2e6888ebb5c74b1441de4b4e71e3e409192fab053591fddc147be12",
         "label": "Kimi K3\u2019s 2.8 Trillion Parameters Ignite A Fight Over Banning Chinese AI - Yellow.com",
         "kind": "evidence",
@@ -11012,30 +11042,6 @@
         "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNcW5QRE12ZEV3TUE2ZnFjdGljdFJhV3JGay1NRHBUa0pCSWhuNy00bkh1NDVScGVuazFZVFZwWnAzcDhMc0luWkRNeG90MWM1LUc4SXFwMmlPT2t3dVQ4a2pLbUc4NzJaS19LT1Brd01oYXUxcFNBTGVKaHJTNkRPcnRjbll3UzNNN0hOU3lub0FhU2hBeU9fSWF0NXpIRDRJb2dyN1IySVVKbTV6cm9tNzZqdlZqeTVkZnBrbFA0cFkzQ29qMmVhOFJ0V05jMGtXUnc?oc=5",
         "date": "Sat, 22 Aug 2026 17:05:00 GMT",
         "summary": "Stock Market Week Ahead: A Choppy Market Heads For Nvidia Earnings, Jackson Hole Investor's Business Daily",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f0f9cf0f25546e941ada0eeaac92d8cd2c70c3088ce3044537cb3c3a7f264488",
-        "label": "Dow Jones Futures: Market Rally Repairs Some Damage As Nvidia Looms; New Trump Tariffs On Canada - Investor's Business Daily",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Investor's Business Daily",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkR0Mk1hdnJPQVZHWEJYWXQ2UENlazJ1OG1EWTVtNFVYLTdMVHpfbVRIQ09zMmtMRnlLT1dnd0VyVzh1cTQzVm1jMS1keHR1TUNXOXBPSXEwWE10bFNoTi1Sd1ptX1lDcHhzaG5OaTFwTzE0UlBvTzgzTHpGVkVQeUoyY2szcks3RkFENTdPbmRVUVFWMjZaWF93cFpXcnZEUEM3d21BTGpKcWZJblEtcEhJVjA?oc=5",
-        "date": "Sat, 22 Aug 2026 15:25:00 GMT",
-        "summary": "Dow Jones Futures: Market Rally Repairs Some Damage As Nvidia Looms; New Trump Tariffs On Canada Investor's Business Daily",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:26ff0ff5d2e72bc86f99dadff2b2cfcb510ceb204a5aed8ef14793205338ba2f",
-        "label": "Tesla integrates the Doubao large language model; updates are now being rolled out to Tesla vehicle infotainment systems. - Moomoo",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQWDFyWjJBbjRMZEp5RkhfR2ttU1poTTFVeVc5RWhCNldBRUI5UkcyTEQ1MnBqUjlMWkFiYTVZcm1vYTJZQk1ocndYWkxVOEx1TEhDdW1McGhyeXN3VGhPeU9lT1NXaWZfNEhfQzFsM0JMTmVFWllmUGpWREZnd2ZjT3hGYjRyOTdDckpxcnRGaUQ2WGMxYUswX0FQYnlLQmxIUGNLRlNsN2V5Zw?oc=5",
-        "date": "Fri, 21 Aug 2026 08:14:41 GMT",
-        "summary": "Tesla integrates the Doubao large language model; updates are now being rolled out to Tesla vehicle infotainment systems. Moomoo",
         "score": 1,
         "weight": 1
       }
@@ -14388,6 +14394,13 @@
         "mentions": 1
       },
       {
+        "source": "Tencent",
+        "target": "evidence:dfff0c98e213ca6c8d1eac2e6b4e47a1d882b4e1eeead93677a916cbe844a3c1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:f7b7142625936bb6f1c438b1b631c5c6ccb454bae6d0874cb7d8db302efa67cc",
         "type": "EVIDENCE",
@@ -17609,6 +17622,13 @@
       },
       {
         "source": "Moonshot AI",
+        "target": "evidence:9dddd81c8a130af25fc5c2b26ef2c93a48f38bcb550ddeaed6e0c1e5ded49ffc",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
         "target": "evidence:02fe9165a2e6888ebb5c74b1441de4b4e71e3e409192fab053591fddc147be12",
         "type": "EVIDENCE",
         "weight": 1,
@@ -18408,20 +18428,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:511bb7af8791d3740e702ff323ffa89ff9ba3702666e937a962ed4f4f5133501",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:f0f9cf0f25546e941ada0eeaac92d8cd2c70c3088ce3044537cb3c3a7f264488",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:26ff0ff5d2e72bc86f99dadff2b2cfcb510ceb204a5aed8ef14793205338ba2f",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32967,23 +32973,23 @@
   ],
   "collector_runs": [
     {
-      "id": 387,
+      "id": 391,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T03:12:48.008483+00:00",
-      "completed_at": "2026-08-25T03:13:05.093291+00:00",
+      "started_at": "2026-08-25T04:00:05.058531+00:00",
+      "completed_at": "2026-08-25T04:00:19.110327+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 5,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 388,
+      "id": 392,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T03:13:05.494079+00:00",
-      "completed_at": "2026-08-25T03:13:07.678896+00:00",
+      "started_at": "2026-08-25T04:00:19.511725+00:00",
+      "completed_at": "2026-08-25T04:00:19.929800+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 5,
+      "items_new": 0,
       "error": null
     },
     {
@@ -32997,20 +33003,20 @@
       "error": null
     },
     {
-      "id": 386,
+      "id": 390,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T03:12:46.809202+00:00",
-      "completed_at": "2026-08-25T03:12:47.607036+00:00",
+      "started_at": "2026-08-25T04:00:04.175472+00:00",
+      "completed_at": "2026-08-25T04:00:04.656180+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 389,
+      "id": 393,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T03:13:08.079725+00:00",
-      "completed_at": "2026-08-25T03:13:10.384131+00:00",
+      "started_at": "2026-08-25T04:00:20.331370+00:00",
+      "completed_at": "2026-08-25T04:00:22.291598+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33027,7 +33033,7 @@
       "error": null
     }
   ],
-  "document_count": 1376,
+  "document_count": 1378,
   "event_count": 969,
   "mention_count": 2372,
   "review_counts": {
