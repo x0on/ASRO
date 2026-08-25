@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T19:46:12.882288+00:00",
+  "generated_at": "2026-08-25T20:46:25.204352+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "counter_evidence": 42.9,
+    "circularity": 57.1,
+    "external_pressure": 16.12,
     "stress": 57.1,
     "capital": 48.732271163185665,
-    "external_pressure": 16.12,
-    "cannibalization": 54.2,
-    "circularity": 57.1,
-    "fragility": 61.1,
     "monetization": 42.9,
-    "counter_evidence": 42.9,
-    "transmission": 39.6
+    "fragility": 61.1,
+    "transmission": 39.6,
+    "cannibalization": 54.2
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "stress": "directional_estimate",
-    "capital": "aggregate",
-    "external_pressure": "aggregate",
-    "cannibalization": "directional_estimate",
-    "circularity": "directional_estimate",
-    "fragility": "directional_estimate",
     "counter_evidence": "directional_estimate",
+    "stress": "directional_estimate",
     "monetization": "directional_estimate",
-    "transmission": "confirmed_trigger"
+    "transmission": "confirmed_trigger",
+    "circularity": "directional_estimate",
+    "external_pressure": "aggregate",
+    "capital": "aggregate",
+    "fragility": "directional_estimate",
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T20:46:24.713900+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"external_pressure\": 16.12, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-25T19:46:12.373208+00:00",
       "score": 45.3,
@@ -5664,6 +5670,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:6435122887f79d414dc33501bd97cadcd7a98c2b73f41b3c391b533b2bf309cd",
+        "label": "Anthropic IPO: What it Means for Wall Street - TradingView",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQWVE5bVBQMmswMF9fMGw0NU4tQWhVQWd1VGl3c09oamNNSGxRa0FCMi1iRGdQQTFvbENRenNRQUVtLUE1cTd0WjNHMWMtSk83Sk1LelVUSUE2SkJXS1psR2t4SEVrY21ndHhjcnBqS1N2cS1uYXBKY3hhb3h1b2I1U3BkTmlMR2dKd0dIZ0dDZXlaU3BDMk9LOEJUUXp3dWNL?oc=5",
+        "date": "Tue, 25 Aug 2026 18:51:00 GMT",
+        "summary": "Anthropic IPO: What it Means for Wall Street TradingView",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:198c0a5cf668143178d6fc830e4110ffb241c538f5bacae7714c4681ece8b79d",
+        "label": "OpenAI data center chief exits as 4 executives leave ahead of 2027 IPO - Investing.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZ2RaSTF2ZWx2RGo1Undnblg2Q0xra3hmbUQySXpNYlN3SGMtVFM4UkJ5UTRyWWlsVEhyb05hdG1qVUxtV2FTSE1MajlXT2dmY0xwZ1hsNUYyTUdRLXI3RWZyN0swdVBXNENHTjBkaXB0eDI1NTF6YkRiNDYtVWhjcGZOX0NTQ0VpUGVOZUFhbUt5Z3JrN19EOWR0cUp5LThYTmlLVG5ybW0wekVNeW1xTG9QbGxMQmxaeHVtVVhib3lZdUluZkE?oc=5",
+        "date": "Tue, 25 Aug 2026 19:45:33 GMT",
+        "summary": "OpenAI data center chief exits as 4 executives leave ahead of 2027 IPO Investing.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:ab7009cbbc80798803288d28eaea11946f17f857dff7159df0397772c3e3f2d4",
         "label": "Anthropic Has a New Problem Before IPO - TradingView",
         "kind": "evidence",
@@ -10008,6 +10038,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:fd9f53aaabb13e1cb647d42fa32ba92576c882ea00831d685ee3fe13532fa73b",
+        "label": "Nvidia's Next AI Bet Is Taking Shape - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObVhfOGlNS0hXRW9rc3lUZ0MxbFBDbXV3bU5kcG5IV0pZT0lnMmdfSHZVQnRvak9jbE9taFFncXVWdXBucF8wYmR3eWtBLXRjbDVmYzVYMm5Ha0JXLTFTV2NrNy1MQzdxNFEzWVkyR05RRnRnc1NsczBlZWRwMzZ3RTZtQkt5d2pzMC1nTkRsVE5XZWlrOXdxN0VBN1Y?oc=5",
+        "date": "Tue, 25 Aug 2026 19:58:44 GMT",
+        "summary": "Nvidia's Next AI Bet Is Taking Shape TradingView",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:1aad3b4fa7b0f503a7a47d554acd601c507b587613fa346ed06308e9e913c405",
         "label": "Baidu (BIDU) Sank 12.7% After Earnings. Is Its AI Transition Losing Momentum? - Yahoo Finance",
         "kind": "evidence",
@@ -11108,42 +11150,6 @@
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ZR1h5Sm95eG51b2NTNzZfOVZpSUptZ2VCZnlQMmJ3MjF0RTBWQTFibXkzMmJjYWg3QW94cU9xSGEtZkppUGdiNXc0cVdMTEo1SWQ0?oc=5",
         "date": "Mon, 24 Aug 2026 06:34:18 GMT",
         "summary": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration 36 Kr",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6c27ec786de366fecb89661d2a3b367702f9818cef670dc84037514cf403fd0b",
-        "label": "Spinnaker Investment Group LLC Has $2.31 Million Holdings in Amazon.com, Inc. $AMZN - MarketBeat",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "MarketBeat",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPb05BWFVNckduMTF1TzEzbE5oV01jVldRU2tyQW1DdTJOc3YzdE5SaXU0YTRhVXZTXzlpc1NVdEdxcjFvNXlNR3M2NTZ3Njh1bmxQTmJlQUl1V0JrbkJ5NWl2d0lLN2l3T2kwQWkySlBhbW9ZVG5kMDJLR0Q0OE9QcjY4NkJsWE92NTRTdEVsbDFsZmsxVXNEZDVTM3BrN1lTdmhndlQyU0I4UTFKc0g3MUp5V3lyQVVpeWtKWmRielRsdkV2bXhPZmZiMUZocEc0S1FrQg?oc=5",
-        "date": "Mon, 24 Aug 2026 09:00:27 GMT",
-        "summary": "Spinnaker Investment Group LLC Has $2.31 Million Holdings in Amazon.com, Inc. $AMZN MarketBeat",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7064a59917e1d187d8ffeb07b116d724f1a17e94084a972759750eb2f0302cfc",
-        "label": "Going Into Earnings, Is Nvidia Stock a Buy, a Sell, or Fairly Valued? - Morningstar",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Morningstar",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN1NpRHdBSDVMeGJTSzgwUGFveG1FU3BnOVFwUk5iMi0wWlpHN1o2VUw1U1lkcU96SVBfUVBKb3k1MEJZcHRJMnl2SnJ5RkVheE1WRmhiOVJBekdoR2JyLS1wcGpIOGdTeWxuSkN5cGNTa055TTZzcnpZUDJxTW1CeTlUNFFLMlFoZ2todVVLclhWSVJMcS1NWWprMXl3WnIyS3dXRHNxQXY0X3M?oc=5",
-        "date": "Mon, 24 Aug 2026 08:53:16 GMT",
-        "summary": "Going Into Earnings, Is Nvidia Stock a Buy, a Sell, or Fairly Valued? Morningstar",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c5e756d3c5a8d5d94fd0b8877de68cc31646f995468973eb27ac7a435f1d83fc",
-        "label": "Alibaba shares slide after $10.2 billion AI share sale offered at sharp discount - WKZO",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WKZO",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVUp6ekNoclVBR0FGS181Qk1sWkZYaTc3cklfeW5xYl8xWE5DLUpqUlpWOGhpUXQ0RGhoNV9ndmFMdXkxTmtMTXJsNENibGMzZVlVV29QeHNjUW1ub0VoalRJQk9uVjNEOTFtRFhGX3FERGVnaUlfVkt4VnpqX1hlUi1pWGpzRXlIUDZqOVJBaU1aQ01yUTRlSzNPcXhlLXl4N0xoMWFiOVNkN0sx?oc=5",
-        "date": "Mon, 24 Aug 2026 06:48:27 GMT",
-        "summary": "Alibaba shares slide after $10.2 billion AI share sale offered at sharp discount WKZO",
         "score": 1,
         "weight": 1
       }
@@ -14526,6 +14532,20 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:6435122887f79d414dc33501bd97cadcd7a98c2b73f41b3c391b533b2bf309cd",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:198c0a5cf668143178d6fc830e4110ffb241c538f5bacae7714c4681ece8b79d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17947,6 +17967,13 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:fd9f53aaabb13e1cb647d42fa32ba92576c882ea00831d685ee3fe13532fa73b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Baidu",
         "target": "evidence:1aad3b4fa7b0f503a7a47d554acd601c507b587613fa346ed06308e9e913c405",
         "type": "EVIDENCE",
@@ -18586,27 +18613,6 @@
       {
         "source": "ByteDance",
         "target": "evidence:e3996e4ef971dae29f49c0bd607c5e819ca598ab7cc744e53163a4d4061f48e7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:6c27ec786de366fecb89661d2a3b367702f9818cef670dc84037514cf403fd0b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:7064a59917e1d187d8ffeb07b116d724f1a17e94084a972759750eb2f0302cfc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:c5e756d3c5a8d5d94fd0b8877de68cc31646f995468973eb27ac7a435f1d83fc",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33167,20 +33173,20 @@
   ],
   "collector_runs": [
     {
-      "id": 459,
+      "id": 463,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T19:45:52.871399+00:00",
-      "completed_at": "2026-08-25T19:46:08.843198+00:00",
+      "started_at": "2026-08-25T20:46:04.602509+00:00",
+      "completed_at": "2026-08-25T20:46:21.112539+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 4,
+      "items_new": 1,
       "error": null
     },
     {
-      "id": 460,
+      "id": 464,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T19:46:09.244150+00:00",
-      "completed_at": "2026-08-25T19:46:09.655374+00:00",
+      "started_at": "2026-08-25T20:46:21.513686+00:00",
+      "completed_at": "2026-08-25T20:46:22.016032+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33197,20 +33203,20 @@
       "error": null
     },
     {
-      "id": 458,
+      "id": 462,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T19:45:51.927540+00:00",
-      "completed_at": "2026-08-25T19:45:52.470091+00:00",
+      "started_at": "2026-08-25T20:46:02.660917+00:00",
+      "completed_at": "2026-08-25T20:46:04.200852+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 461,
+      "id": 465,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T19:46:10.056534+00:00",
-      "completed_at": "2026-08-25T19:46:11.957306+00:00",
+      "started_at": "2026-08-25T20:46:22.417702+00:00",
+      "completed_at": "2026-08-25T20:46:24.298662+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33227,7 +33233,7 @@
       "error": null
     }
   ],
-  "document_count": 1454,
+  "document_count": 1457,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
