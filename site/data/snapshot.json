@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T16:00:30.990086+00:00",
+  "generated_at": "2026-08-25T16:55:55.127100+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
-    "counter_evidence": 42.9,
+    "circularity": 57.1,
+    "transmission": 39.6,
     "fragility": 61.1,
     "capital": 48.732271163185665,
-    "transmission": 39.6,
-    "cannibalization": 54.2,
     "stress": 57.1,
-    "external_pressure": 16.12,
-    "circularity": 57.1
+    "cannibalization": 54.2,
+    "monetization": 42.9,
+    "counter_evidence": 42.9,
+    "external_pressure": 16.12
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "monetization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
     "capital": "aggregate",
-    "fragility": "directional_estimate",
-    "transmission": "confirmed_trigger",
+    "external_pressure": "aggregate",
     "circularity": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
     "cannibalization": "directional_estimate",
     "stress": "directional_estimate",
-    "external_pressure": "aggregate"
+    "counter_evidence": "directional_estimate",
+    "monetization": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T16:55:54.637036+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"circularity\": 57.1, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 48.732271163185665}"
+    },
     {
       "captured_at": "2026-08-25T16:00:30.501851+00:00",
       "score": 45.3,
@@ -5628,6 +5634,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:4dbca6de6c16177319adb09734e4fca23b0311ee232710b7715d731a76121833",
+        "label": "Anthropic\u2019s $2T IPO could create millionaires\u2014but it\u2019s asking candidates what they\u2019d do if stock hit zero - Fortune",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Fortune",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQV0Z5cjhSbnNySllOMUNKUXRRNXZ5V2NsSURxd0ljMVIwc3F2eWFqd2hwMVFFZGVrV09WeDkxa2h5MjF0Y3F4bnFjUmpNeDVXSjlYem9nNzZPNzRZSWJzVGU5U19KQ01SLTd3WFNObl9uWGJveUlrRWVEOWVwcXFickVySktndEwtdTh6UmF1dUR6Sk9rcUhYSVp1T3V3aTY4elZMOFJFZVhyZk8wRFhlS3BKcXlDZkV1Si1YR1BCNDd1ckVTNjNjSTRsT1ZQRmdzblBodHRmU00?oc=5",
+        "date": "Tue, 25 Aug 2026 15:03:00 GMT",
+        "summary": "Anthropic\u2019s $2T IPO could create millionaires\u2014but it\u2019s asking candidates what they\u2019d do if stock hit zero Fortune",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:877a82d11d16db51aa0567085f1a9016340cba6b48cd23add9c3341d1ac32f37",
         "label": "OpenAI's IPO Won't Likely Happen Until 2027. Here's Why That's the Right Call. - AOL.com",
         "kind": "evidence",
@@ -8520,6 +8538,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:c5b8d45383735eed04b34ee8a2f7ccc0e2fc7dc988d343b165ef2b2e2bc86b6f",
+        "label": "Meta, ByteDance And YouTube Take 94% Of A $150 Billion Vertical Video Market - Yahoo! Finance Canada",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVUxKMmZEMXF4d3BNd0dlZVdmZUVsRF9fUGVveGdDMW5WUkJISlh0NnhMaF9RUkRCQm5obG9IOS1FWTdWdTlYeURzc3NPeXB1MkdLS3dxbHpGckxqaHpkbkpfd2FFOGZTc3p4Rm5SNlBNVWhITmJ3cTVfN29oeG1qR0FkS2h6UQ?oc=5",
+        "date": "Tue, 25 Aug 2026 09:59:15 GMT",
+        "summary": "Meta, ByteDance And YouTube Take 94% Of A $150 Billion Vertical Video Market Yahoo! Finance Canada",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:c0de50b3bce5eed9345c2b5abca02a2d11f8ca33ac1fe6b753ec1a8670cb18d0",
         "label": "OpenAI models, Codex, and Managed Agents come to AWS - OpenAI",
         "kind": "evidence",
@@ -9924,6 +9954,54 @@
         "weight": 1
       },
       {
+        "id": "evidence:069a5aeecd8f931dafc8f7299cfe690981a653a1b4c63b7238ca2f9b03ecb45b",
+        "label": "Tencent Leads $18M Investment to Expand Godot Engine into Asia - Inven Global",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Inven Global",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQTktiajVhMkZ3WHZDVUtPN1B6cTlUUy05ZWNWaktmOFNaZDI0RFd5SWVKY1Yyd216MXpMSUlCcnFOdmo2MXdqRXhfWi1YdEJOdmNXU3VTU3NQMlBGZmFIR2xkQlg2NlFmRFdNaW1uaC1iaGJVNDZGYThqd3NCVkpITE05ZkJHZWxmdW1Bdk51ZHFyc0FDQmg0Z0t5a2tibUVTckJ4MENaSQ?oc=5",
+        "date": "Tue, 25 Aug 2026 16:07:34 GMT",
+        "summary": "Tencent Leads $18M Investment to Expand Godot Engine into Asia Inven Global",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e1f4199835982ca86ce76f8c85686f9ccda6beb7005a26fc7eef75864c94d436",
+        "label": "NVDA Groq 3 LPX now in full production; ByteDance 'Doubao Work' debuts\uff5cDaily News Recap - Longbridge",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Longbridge",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlaFY0RHN2SkU1bnd2cnRVVlByTExBbE9uYl9VdnQ1NjRsdzRocWZzcmpvWVJwcVJkWnpmWTFPTE1ueEhfTEREMnRNUkpvQk1kYXhhNHJkVFZBcFE?oc=5",
+        "date": "Tue, 25 Aug 2026 13:11:15 GMT",
+        "summary": "NVDA Groq 3 LPX now in full production; ByteDance 'Doubao Work' debuts\uff5cDaily News Recap Longbridge",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:08917193ea196c889dd2e3b6f998ab6cf94cc8497cf9da0f8f4ba2c8ddfc41d2",
+        "label": "Perplexity partners with Nvidia to launch Portable Computer, a fully local AI agent with zero token costs - VentureBeat",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "VentureBeat",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRVpZRmNaMUJxNHZsUEJtUGhpc2ZBaTloU3BOSFg0LU9IV3Yxcl9GbXh0Y2VRaGo5STFmYTZBNzNnUzdjSEsyUjR6YXVJbmRCelNqbVRQNUNPVmhGQ2ZCQk53T2MzZ0dZNjdLR3V3RlhGa0tMZU9NbExmcVo0a1ctRGhJOGxWeGVVMW9aTndVSHFwVXBpcTYyRUxjS1owWXhxcDFTdmMzOTNuZDdFeGU2WXktaEV5VHF1T21WZi00eUZhRzN0TmFMMkNqeDFUWUY0ZXAxcWt5THFJTEE?oc=5",
+        "date": "Tue, 25 Aug 2026 13:00:00 GMT",
+        "summary": "Perplexity partners with Nvidia to launch Portable Computer, a fully local AI agent with zero token costs VentureBeat",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7723e73c4b3204ccfd79a302d74938d6ffc27ea0d8446fd105250dc8c18287e0",
+        "label": "Exclusive | Anthropic Expected to Tell Investors It Sees Over $30 Trillion in Potential Revenue - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZjZaazBLZXFzWnlOOHJ2b24wZzZsOGd6Sy11ZGF2NXZ1NmJ0bWdYNklaOUszQ2NMT2J0YTh6X0V6ZUJNVl9LVF82blJCTHZadHEybHN1WEFBMy1NdXNoenIxNGdudjZscEVQT09xMjRjU3htekdoNk45SzdkbGRlMUdKWUJCVlpzcFlYM1RLSlVqWHBtZUM0azctZV8xaWpvbHJLcmxGNXQ5bV9Mc1JjQVJXcXZnaWJ1MmJN?oc=5",
+        "date": "Tue, 25 Aug 2026 15:58:00 GMT",
+        "summary": "Exclusive | Anthropic Expected to Tell Investors It Sees Over $30 Trillion in Potential Revenue WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:5ab5d1a6b3e206d2a408b7ff9a96c0e16e16168e091884e7047ebd256c7db8b8",
         "label": "Microsoft (MSFT) - Moomoo",
         "kind": "evidence",
@@ -11048,78 +11126,6 @@
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMGdwRGUxNHpRRFM3dndxcG04azgxTFYxWkotZjNIVjAyT2dtbWkyNFo1NEJ6bXNlU1BGR3JYN0RyS18xZHNycVRkMXZBNHZsSlhFSVVPWU9QdFlaX0pJa19SNmZ2M1ZZY0RqNnJIakJwSXZPSEhSWDBPNlg4MUc3VWpyZGdUSlI5N2NjX3hnaWU2TUp1cmVFdHlMNVMxc01xVExsOWVCT0NfRXRaYzdsTnNMaVFMR3dIVWwzeW10dkxhRUJmaWhkVUtzd1QybjN3?oc=5",
         "date": "Mon, 24 Aug 2026 03:06:00 GMT",
         "summary": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation, Considered Tech Licensing Deal The Information",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d8d0a39f1f2079717bad72e2025b3b01a0aa0fd8419638bf025341d901746ed9",
-        "label": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered - 36Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fS183LXk5ZENZU25Uc2dxWXBaZ1VxYWhhLXJuNTFNaG9jV3lnTUhoeTJVVzZWY3Vib25uTUlUdG1hdGd2NWhqMlFFbWxzTUtuWWhj?oc=5",
-        "date": "Mon, 24 Aug 2026 05:14:16 GMT",
-        "summary": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered 36Kr",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:21d3588f765fca62c84d005961861a8f79c7bc11a3f9188daab522cb6d5487fd",
-        "label": "Tencent Effectively Exits as Major Netmarble Shareholder as Bang Jun-hyuk Raises Stake to 38% - thelec.net",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "thelec.net",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwcWFMRUMtRHNwenZuTDZHM3o3alhvWHlFZmZQd3FoZ3BMVlBYTUhBSWxtSXpzenZRV3RlcHBrTkV5RERTRGtUR0pRYURsdWpYam11ZDJxN3lzR1A5UjYyLXFPUDI4RnM?oc=5",
-        "date": "Mon, 24 Aug 2026 05:25:18 GMT",
-        "summary": "Tencent Effectively Exits as Major Netmarble Shareholder as Bang Jun-hyuk Raises Stake to 38% thelec.net",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7217d068a6bcfb5fab82f0027851ee2103bb87a21b616e6d24cabeace12d8448",
-        "label": "Doubao \"Boards\" Tesla: Why Did Elon Musk Make an Exception for the Chinese AI Assistant? - 36Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YY3JzdlAwQmdZRTdrY2pXZ25wTC1OM3o5NmtkdWhkMVM2NFFYUGNDYnhQX2xzcUFKSG5OV1Nfd0VYOFFBRGdsVkNrQnRzbVVuaXJ3?oc=5",
-        "date": "Mon, 24 Aug 2026 04:34:02 GMT",
-        "summary": "Doubao \"Boards\" Tesla: Why Did Elon Musk Make an Exception for the Chinese AI Assistant? 36Kr",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0e0eef1302fc595006a1334984166fea1319a77d1ac49c31e15729a63e10364d",
-        "label": "DeepSeek Ends Weekend Peak Pricing for API Users From Today - Bloomberg",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeFNQSEZZUWJBaFd0UjhxczRNcWJacndYSG91UGgyVUtXMjNjYmctV2t3VnBPWXFaZFFER3IxMHo3ZVVpRWdULXdkbWVYemxXSlZaZkZyRTVSY0NsLS1pVnNWY1ZCdnpLdWhLeXUxYUxWSUM2cUYtal8tdHpCWmhJUkY0X21PeGczaEM2a3VjNGZGd2dLTUc0cVN4bGhLNWxmZkc5aVhzbWxhaEY2eUI4?oc=5",
-        "date": "Sun, 23 Aug 2026 05:57:00 GMT",
-        "summary": "DeepSeek Ends Weekend Peak Pricing for API Users From Today Bloomberg",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a2f02795eb0e3a9e55b4ef3915ae742411745fb5eb79aa043b34953100875239",
-        "label": "Nvidia discusses Perplexity investment at $30 billion-plus valuation, The Information reports - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcFhTZEFZTUhYaHB6bUtnVVg0Q2hMT19aV3MxMkJEX3IySC04dWlZaFlWYjJqdDJ0Y2s5RmZtTk9HNDluQ2tGT2cwRkpkYm5xQ2pmbDJBV1hRSkwtTE5zeDcxdEx3VThSV3cxcXM1RTAyUl9pcEw2OExWNm9oZkpwUWdvRXVCWUtNMkRDd2s2eXU3a3VMeDZua1UwYi1wbzljV2Zqd0tESlRjMzVjUUJVQnVfb2I1VUNHWWFWRTJtZWg?oc=5",
-        "date": "Mon, 24 Aug 2026 03:18:00 GMT",
-        "summary": "Nvidia discusses Perplexity investment at $30 billion-plus valuation, The Information reports Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:45d5500193d5e59bbff13ac25c9dbef7e50fd8551c3e751ba5f96fda63749b78",
-        "label": "SoftBank Plans Record $6.3 Billion Retail Bond Sale in Japan - Bloomberg",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Bloomberg",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOakgzWUJKSldHUFB3bWJzblhFSkVuc1NOdExfcExSeVRoVzJFaTFRd1BsMEYtLW1ibmxGOWlkVWkxUmlVYmZjdlZBbENNZE1yQXV1MTd6QmFLLW5uT1BlUUZzaEgzYW1vdWg2cHNmaVkwOVZxZEFIak1naDFoN2hhZTRFN2tyQUQ3R0g1WEZYZ0pNM3ZzaElJa2t3MHJGYURaMzd2eUR5OUNxT2tjQmZzbHJROA?oc=5",
-        "date": "Mon, 24 Aug 2026 01:53:00 GMT",
-        "summary": "SoftBank Plans Record $6.3 Billion Retail Bond Sale in Japan Bloomberg",
         "score": 1,
         "weight": 1
       }
@@ -14493,6 +14499,13 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:4dbca6de6c16177319adb09734e4fca23b0311ee232710b7715d731a76121833",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
         "target": "evidence:877a82d11d16db51aa0567085f1a9016340cba6b48cd23add9c3341d1ac32f37",
         "type": "EVIDENCE",
@@ -16362,6 +16375,20 @@
         "mentions": 1
       },
       {
+        "source": "ByteDance",
+        "target": "evidence:c5b8d45383735eed04b34ee8a2f7ccc0e2fc7dc988d343b165ef2b2e2bc86b6f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:c5b8d45383735eed04b34ee8a2f7ccc0e2fc7dc988d343b165ef2b2e2bc86b6f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:c0de50b3bce5eed9345c2b5abca02a2d11f8ca33ac1fe6b753ec1a8670cb18d0",
         "type": "EVIDENCE",
@@ -17874,6 +17901,34 @@
         "mentions": 1
       },
       {
+        "source": "Tencent",
+        "target": "evidence:069a5aeecd8f931dafc8f7299cfe690981a653a1b4c63b7238ca2f9b03ecb45b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:e1f4199835982ca86ce76f8c85686f9ccda6beb7005a26fc7eef75864c94d436",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:08917193ea196c889dd2e3b6f998ab6cf94cc8497cf9da0f8f4ba2c8ddfc41d2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:7723e73c4b3204ccfd79a302d74938d6ffc27ea0d8446fd105250dc8c18287e0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Microsoft",
         "target": "evidence:5ab5d1a6b3e206d2a408b7ff9a96c0e16e16168e091884e7047ebd256c7db8b8",
         "type": "EVIDENCE",
@@ -18527,48 +18582,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:34675b0e4120ac314165f152742b347e53f77f8cd5ce441db1155782b260a7cf",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:d8d0a39f1f2079717bad72e2025b3b01a0aa0fd8419638bf025341d901746ed9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:21d3588f765fca62c84d005961861a8f79c7bc11a3f9188daab522cb6d5487fd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:7217d068a6bcfb5fab82f0027851ee2103bb87a21b616e6d24cabeace12d8448",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:0e0eef1302fc595006a1334984166fea1319a77d1ac49c31e15729a63e10364d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:a2f02795eb0e3a9e55b4ef3915ae742411745fb5eb79aa043b34953100875239",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SoftBank",
-        "target": "evidence:45d5500193d5e59bbff13ac25c9dbef7e50fd8551c3e751ba5f96fda63749b78",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33129,20 +33142,20 @@
   ],
   "collector_runs": [
     {
-      "id": 443,
+      "id": 447,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T16:00:10.628575+00:00",
-      "completed_at": "2026-08-25T16:00:27.143800+00:00",
+      "started_at": "2026-08-25T16:55:35.323646+00:00",
+      "completed_at": "2026-08-25T16:55:51.094169+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 4,
+      "items_new": 6,
       "error": null
     },
     {
-      "id": 444,
+      "id": 448,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T16:00:27.544815+00:00",
-      "completed_at": "2026-08-25T16:00:27.988671+00:00",
+      "started_at": "2026-08-25T16:55:51.495253+00:00",
+      "completed_at": "2026-08-25T16:55:51.918376+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33159,20 +33172,20 @@
       "error": null
     },
     {
-      "id": 442,
+      "id": 446,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T16:00:09.139590+00:00",
-      "completed_at": "2026-08-25T16:00:10.227480+00:00",
+      "started_at": "2026-08-25T16:55:34.323732+00:00",
+      "completed_at": "2026-08-25T16:55:34.921673+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 2,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 445,
+      "id": 449,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T16:00:28.390439+00:00",
-      "completed_at": "2026-08-25T16:00:30.086673+00:00",
+      "started_at": "2026-08-25T16:55:52.319673+00:00",
+      "completed_at": "2026-08-25T16:55:54.221889+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33189,7 +33202,7 @@
       "error": null
     }
   ],
-  "document_count": 1438,
+  "document_count": 1444,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
