@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T09:51:59.234274+00:00",
+  "generated_at": "2026-08-25T10:50:21.146823+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "transmission": 39.6,
-    "external_pressure": 16.12,
-    "circularity": 57.1,
     "cannibalization": 54.2,
     "fragility": 61.1,
-    "monetization": 42.9,
+    "transmission": 39.6,
     "capital": 48.732271163185665,
+    "external_pressure": 16.12,
+    "stress": 57.1,
     "counter_evidence": 42.9,
-    "stress": 57.1
+    "circularity": 57.1,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,14 +32,14 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
-    "transmission": "confirmed_trigger",
-    "fragility": "directional_estimate",
     "capital": "aggregate",
     "stress": "directional_estimate",
     "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
     "monetization": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "external_pressure": "aggregate",
     "counter_evidence": "directional_estimate"
   },
   "dimension_direction": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T10:50:20.727140+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"fragility\": 61.1, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-25T09:51:58.742371+00:00",
       "score": 45.3,
@@ -5592,6 +5598,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:59739ebef88bbfabd173b79e90d869495faa23d8abbb18cc6fac74eb9f3ee19b",
+        "label": "Anthropic IPO: The Partner Stocks That Could Win Twice - Moomoo",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY1M5X0JFd19GVDVPc1dmZExIXzZ4TzJtT0xFUkZqUnNtTTY3c3UxTFhnQUlzdjNiSFNUejJncmlZU0pFVVpaTlIzRFd6eDFHbzJCRm9DLXhLZHZDWXR2akY3dTBqOEY2WGE1eHBoM0tadFdVRUd3Qm1peGRKUS13bjdZUXppOGxJOFpuT2FKZXgwOHZjYXNzamJWSmlBSGFaMXVvUmFKRm1DcnM?oc=5",
+        "date": "Tue, 25 Aug 2026 10:05:08 GMT",
+        "summary": "Anthropic IPO: The Partner Stocks That Could Win Twice Moomoo",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:d82aac28f7a755eb5d4c57873bd0131852930f2835d25c10feff0d22765e042d",
         "label": "Citi, JPM Reportedly In Talks To Join OpenAI IPO Bank Lineup - Stocktwits",
         "kind": "evidence",
@@ -9804,6 +9822,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:9a07f6687d7e37daa3c193de06d630d8b1b970deead212f06423b878046b8908",
+        "label": "Andy Jassy Believes AWS Can Hit $1 Trillion in Revenue. Here's When the Math Says It Might Happen. - Currently.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Currently.com",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZWRESkRhakRXci1LZXpQUnlNN1NQUl9lV0d4b2x4XzBzTU02N1pmZWlRVTAwZ290dmlwVTBWX000eGMxY3lmdU5kbmlHVm5lXzhCc1BIS1FUbVpBSEwwSEFpN25peFZ6VHBCSXNSYTBNS2tWQlJVSllNbmtfVndiN3YxcXM?oc=5",
+        "date": "Tue, 25 Aug 2026 09:35:00 GMT",
+        "summary": "Andy Jassy Believes AWS Can Hit $1 Trillion in Revenue. Here's When the Math Says It Might Happen. Currently.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3a2395ac80ca71141a7e660765b1e62e8a23a4e972630c873898b7fb6d24c449",
+        "label": "Nvidia's valuation looks surprisingly cheap heading into earnings. Could it be an issue for the stock? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxORWdvNG1VdTNjdk9ZcDNpTW11aUdGMmNMOVZ6WE5QbE9GV0Y4bE1hdXhmUUJUS3ZuRVpZTUNFbWxTVVZXZXJmUVZNMHBKbllQTWlrVGIybG1YeUtPTE5QMGhYVlkta19kV2JnOU1KcUFhYkgzQVlMRG5Md3YxLTJDNnhGazNUaVBnMGJ0Z3ZuZ0t2bUxVZTNqRjdJSFctY3dRZkRqNUV2a1ZpRHRLZTM2MHkzWktVNXM0aE9HdU9WWldwMEVlNGVyUmlJbFFXQzJIZkxtLU1PcmZYYlJKSlNJMTd0ZXlaS2NqQ3dJcnc0TWdWWFZ4eHc?oc=5",
+        "date": "Tue, 25 Aug 2026 08:23:57 GMT",
+        "summary": "Nvidia's valuation looks surprisingly cheap heading into earnings. Could it be an issue for the stock? Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:21dd40eaf4772185e266654608fe8290d618cc6ea747952331ab15c39904de59",
+        "label": "Is Uber (UBER) Quietly Rewriting Its Autonomous Strategy Through Baidu Robotaxis in Dubai? - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRU5JUnZMWE55OW9IdkM0UkwwVkNQWEpFWTBzTmtUZFVpa2NJRG0zYTZnVTJ1SmYwVVBVaC1sdVI1eDQxaXpQMkpwZGZ1eDBPZ3lfaFhicWZtRkFCcjY4Z2t1ZERJVURXd0NEVmVMNnhocXBoeldWS2t2WEQtT0RPZGZ0UnhQWk9qbzlWYlFQWVEtS3pSUENSM19Rc3pkSmtON2ZwbnR2V0NDR045a3d1c01STVBWdXNnVHVRcC1iMU5kcHpPTEdRd2R6TUtpcmltZk8tTjBiNNIB3AFBVV95cUxQSjJiVWdsdk5JblR0dWU4VHd4MHI1MjdUbW9zZlFFUHhRYmJfUTJEeDZ4ZHpYY3BaaG5SVWpIT0lTYzl4Vy1TN1FaOWNmNDhjZElmUHNwZDRaLU9FUEFqd1QwbGhzT2l6d3drSERMUGk1QzhPdXM3dDRXN05ZdE44NGU1bkZpN1hxcmZ5OGtua2NHcEdtWTBuSU5qdGU1NlpGTGZhTWlNeHlJdk5STkUwbTEza0FxWmRHNDFSVllyZGJsNzRPbXA5WXJsamtRX3lEVEdiT3R4c19zZHpN?oc=5",
+        "date": "Tue, 25 Aug 2026 10:35:28 GMT",
+        "summary": "Is Uber (UBER) Quietly Rewriting Its Autonomous Strategy Through Baidu Robotaxis in Dubai? simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:0e64430f9b5551136c066be89a2eb93ed4bda1f6bc4b2e3f03c57ced09de28bb",
         "label": "Alphabet (GOOGL), What Is Behind The Fresh Attention? - simplywall.st",
         "kind": "evidence",
@@ -11036,54 +11090,6 @@
         "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9rOWxucm9QN2YxSnVtQXBnMHFVRFc4VElkOVJqS0lqWjU2RHVUUUY4ajZfS1hua0l6ckRsM0Q2czlfeVd2U2JfUFRacDhhWXVMaHlqSWZaMnplUG40M0VEMThLRnItLUwwNnc?oc=5",
         "date": "Sun, 23 Aug 2026 08:15:00 GMT",
         "summary": "MiniMax Group (Derivatives) Price Today | Live MINIMAX Price, Chart & Market Data Binance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:91d5c0ef70a9dcb1184f322376785e972616412cb62433c6e3668b3c0cdd418e",
-        "label": "Alibaba Proposes $10 Billion Share Placement to Fund Global AI Drive - The China-Global South Project",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The China-Global South Project",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOZ3dlRmZyazlOUG1lMkVGNHp3Y2VMTF9seWdwd0hfYkJxajlydldhTl85RWZxa21OWEU2Y25DNVAyazcybS00c1pHbVZQY184QjBVaUFaLXBwYVpZYjlOTmhMN3A2Q29ySVBpSU1HakZxRWNIV3hnci1RbDFhR0lwRG1CTEFIc00?oc=5",
-        "date": "Sun, 23 Aug 2026 11:08:33 GMT",
-        "summary": "Alibaba Proposes $10 Billion Share Placement to Fund Global AI Drive The China-Global South Project",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9f1e5633c443560327264aa2b72e062cc5d0194abe80d46dceb72d0ac1ee5960",
-        "label": "DeepSeek Ends Weekend Peak Pricing for API Users From Today - Bloomberg.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeFNQSEZZUWJBaFd0UjhxczRNcWJacndYSG91UGgyVUtXMjNjYmctV2t3VnBPWXFaZFFER3IxMHo3ZVVpRWdULXdkbWVYemxXSlZaZkZyRTVSY0NsLS1pVnNWY1ZCdnpLdWhLeXUxYUxWSUM2cUYtal8tdHpCWmhJUkY0X21PeGczaEM2a3VjNGZGd2dLTUc0cVN4bGhLNWxmZkc5aVhzbWxhaEY2eUI4?oc=5",
-        "date": "Sun, 23 Aug 2026 05:57:00 GMT",
-        "summary": "DeepSeek Ends Weekend Peak Pricing for API Users From Today Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f30bedb91ae512f8b0aa04594e3dc35fda4172bf0114e5a508e1ee77b041ab5c",
-        "label": "OpenAI Files to Go Public as A.I. Companies Rush to Wall St. - The New York Times",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE90QWIzaHhCR2xlRVVmWEZyWWNrMXkyOUtCZFJJN2dSOHp0ZWtLdkg1dGdIdU9rVEtVMG5ZeGVVRFZIemFLalZhSnQySFE0VnM4VmNmSEY3eHB1aXl6SmRpQ01QLWw4ZUdKV2h4bXpn?oc=5",
-        "date": "Mon, 08 Jun 2026 07:00:00 GMT",
-        "summary": "OpenAI Files to Go Public as A.I. Companies Rush to Wall St. The New York Times",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ce78c935a51e3233c685be310f22eb33e104d48aec01d6c310ffaa94e8aff06d",
-        "label": "OpenAI Prepares to File to Go Public in Coming Weeks - The New York Times",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1qcklkTzJFdzZvREs4Ukc2SWM1X1J2dVE1MTUxcU90a1N1NUFWR3ZtOWt6SFZKekthZ2huSlpXRnJ1TDViY1NlcWQ2NUMxaU9tcHUzLUVhRnl6R0pkR1plZHhPVW5WWEhfSTVJZEhn?oc=5",
-        "date": "Wed, 20 May 2026 07:00:00 GMT",
-        "summary": "OpenAI Prepares to File to Go Public in Coming Weeks The New York Times",
         "score": 1,
         "weight": 1
       }
@@ -14457,6 +14463,13 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:59739ebef88bbfabd173b79e90d869495faa23d8abbb18cc6fac74eb9f3ee19b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
         "target": "evidence:d82aac28f7a755eb5d4c57873bd0131852930f2835d25c10feff0d22765e042d",
         "type": "EVIDENCE",
@@ -17782,6 +17795,27 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:9a07f6687d7e37daa3c193de06d630d8b1b970deead212f06423b878046b8908",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:3a2395ac80ca71141a7e660765b1e62e8a23a4e972630c873898b7fb6d24c449",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Baidu",
+        "target": "evidence:21dd40eaf4772185e266654608fe8290d618cc6ea747952331ab15c39904de59",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alphabet",
         "target": "evidence:0e64430f9b5551136c066be89a2eb93ed4bda1f6bc4b2e3f03c57ced09de28bb",
         "type": "EVIDENCE",
@@ -18498,34 +18532,6 @@
       {
         "source": "MiniMax",
         "target": "evidence:0f2a3d9fd005f699dfc748be9cdffa0d2239015fc73ac5bc3c07196f78c66918",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:91d5c0ef70a9dcb1184f322376785e972616412cb62433c6e3668b3c0cdd418e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:9f1e5633c443560327264aa2b72e062cc5d0194abe80d46dceb72d0ac1ee5960",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:f30bedb91ae512f8b0aa04594e3dc35fda4172bf0114e5a508e1ee77b041ab5c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:ce78c935a51e3233c685be310f22eb33e104d48aec01d6c310ffaa94e8aff06d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33086,20 +33092,20 @@
   ],
   "collector_runs": [
     {
-      "id": 419,
+      "id": 423,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T09:51:40.546662+00:00",
-      "completed_at": "2026-08-25T09:51:55.206471+00:00",
+      "started_at": "2026-08-25T10:49:59.784114+00:00",
+      "completed_at": "2026-08-25T10:50:17.091136+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 7,
+      "items_new": 6,
       "error": null
     },
     {
-      "id": 420,
+      "id": 424,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T09:51:55.607435+00:00",
-      "completed_at": "2026-08-25T09:51:56.088547+00:00",
+      "started_at": "2026-08-25T10:50:17.492997+00:00",
+      "completed_at": "2026-08-25T10:50:17.880143+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33116,20 +33122,20 @@
       "error": null
     },
     {
-      "id": 418,
+      "id": 422,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T09:51:39.652278+00:00",
-      "completed_at": "2026-08-25T09:51:40.145331+00:00",
+      "started_at": "2026-08-25T10:49:58.375049+00:00",
+      "completed_at": "2026-08-25T10:49:59.353320+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 421,
+      "id": 425,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T09:51:56.489788+00:00",
-      "completed_at": "2026-08-25T09:51:58.326711+00:00",
+      "started_at": "2026-08-25T10:50:18.286316+00:00",
+      "completed_at": "2026-08-25T10:50:20.312560+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33146,7 +33152,7 @@
       "error": null
     }
   ],
-  "document_count": 1406,
+  "document_count": 1412,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
