@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T17:46:07.999050+00:00",
+  "generated_at": "2026-08-25T18:57:10.934323+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "circularity": 57.1,
-    "external_pressure": 16.12,
-    "cannibalization": 54.2,
-    "transmission": 39.6,
-    "fragility": 61.1,
-    "capital": 48.732271163185665,
-    "stress": 57.1,
     "monetization": 42.9,
-    "counter_evidence": 42.9
+    "capital": 48.732271163185665,
+    "circularity": 57.1,
+    "transmission": 39.6,
+    "stress": 57.1,
+    "cannibalization": 54.2,
+    "fragility": 61.1,
+    "counter_evidence": 42.9,
+    "external_pressure": 16.12
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "transmission": "confirmed_trigger",
-    "fragility": "directional_estimate",
-    "capital": "aggregate",
-    "monetization": "directional_estimate",
     "circularity": "directional_estimate",
-    "external_pressure": "aggregate",
-    "cannibalization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate",
+    "fragility": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "stress": "directional_estimate"
+    "external_pressure": "aggregate",
+    "monetization": "directional_estimate",
+    "capital": "aggregate",
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T18:57:10.554789+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"circularity\": 57.1, \"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9}"
+    },
     {
       "captured_at": "2026-08-25T17:46:07.570622+00:00",
       "score": 45.3,
@@ -9972,6 +9978,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:a69a450d791262c78a7777f704f5d030db0866e3491c4666d67facb4c3df49aa",
+        "label": "Brazil Slaps TikTok Owner ByteDance With $30 Million Penalty, Orders Deletion Of Teen Data - NDTV Profit",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "NDTV Profit",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNWVzTnFDb1g2aTlhaVdrY2VQUkFKTURTLS1LSENDaUVoQm9XWnNWbll0eUI0cW9aOTBkOWNVT2ZuSEN0emN1MDN1SllKdFRuUVdVQjVtWC1OMWEtOFRjcDNYcnFaYjkwX081Skt5NEdBTFpiaVZyYXJ5STlEQjlBZ2J5QTJpMGYybzkxT1pGQmUzRkFBUG5ZdkNraEdCaU9uZG53M2Rtdmlvc2pBY3Y4NVRxYkxWZ0R4OUNPSUwyZ3prY3NtYjg0djV30gHSAUFVX3lxTE9zZWlCcDMwbDNhcVNUTEpPWlFfSWR4M0Y5dWN5RkFjUTFGWm1Ed1JxSXBEZU40eXFQeXdaM0g4TUZEcFVNX19vZnBfS0JIUGh2RW43cTlfLW0zZlZ5MUhocUIyYUlPaWpCNDJPamR6QkFGWDlQSjFoMFZBRFBIbVBiQTJVdndRbGpBb3hPSDEtQUd1TEpCMWJHNjEzREhBV1ZubGduRXFlZ0RHSW5Yd0RNTXBJXzZzX1VYSHJ0UEdPREdDYVFTek5Ka3RGd0dWWG9wZw?oc=5",
+        "date": "Tue, 25 Aug 2026 18:09:09 GMT",
+        "summary": "Brazil Slaps TikTok Owner ByteDance With $30 Million Penalty, Orders Deletion Of Teen Data NDTV Profit",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:06f02756ce6afad44257b59b7861b4c5c53f7d1c47b36bcd2511bd408237ed1e",
+        "label": "Anthropic expected to tell investors it sees over $30 trillion in potential revenue, WSJ reports - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPUlR3eXlsWC1xOV9yNnI3OUcySkF2Z2xmdHJoZElUaWQxZXpwRlVoUHZXaDVsWU00ckUtR0FVdWN0RlhVSDFKS0tyZ0VuWVBXLVV4bDNfa3M0Zll5blM0OWJsQmU5TDJRVmZRVXFLM3VZNjdLMFhRTXBncE1pQUhrRDVORkpnODFtdXJiNjRsakFyQUR5c0phRVR2LXlWV1VFTUdEYThjZVEyMGNfcWQtRmNyblVaN2FJRFBPRjliT2RORkprd09YUDJBVUtzbWo2RUpTUHpB?oc=5",
+        "date": "Tue, 25 Aug 2026 16:56:38 GMT",
+        "summary": "Anthropic expected to tell investors it sees over $30 trillion in potential revenue, WSJ reports Reuters",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:675febb505eb0e988c9908acd832d75a1165b039313078c0c8658260def456ba",
         "label": "Microsoft, Qcells expand partnership to power growing AI infrastructure - ESG Dive",
         "kind": "evidence",
@@ -11108,30 +11138,6 @@
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMFZLMVlnNnkzQUlGbDZQM3Vfb1lNeHdkUWZSbXk4MWo3WVR3eEhGbl9JMDN4aUFGM3BUOXpYXzB1eG9kX1BSSkoycjlPUVFzTmFtTDlYbHpfN0RfbVpRMzJHN0ItZ1R2eUNEcDlkcUNfLUpBN2ZzdjhXT2ZTV1htNWhvcmxrOEJhV0s2UXRPQndHOE5sTDdSVw?oc=5",
         "date": "Mon, 24 Aug 2026 08:51:43 GMT",
         "summary": "Anthropic Has a $65 Billion Run Rate. Buy These Stocks to Profit From It. The Motley Fool",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f4f84d6b0b365d08418935ab5837066eddd68fb4d6a5b8421aed351e9098638d",
-        "label": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% - The Asia Business Daily - \uc544\uc2dc\uc544\uacbd\uc81c",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "\uc544\uc2dc\uc544\uacbd\uc81c",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5RVG1SektNRU85M1B4T1UxbFNDcExlSVpXNGRqOERCWEpUS2RWNGkwWVIxd0o3MTVHYkkwRFJUbk9CU0JOaDFfWDMwNV9ISDRrTDUxMjNEbGs2VzAzVFAxRDIzUlc?oc=5",
-        "date": "Sun, 23 Aug 2026 19:44:24 GMT",
-        "summary": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% - The Asia Business Daily \uc544\uc2dc\uc544\uacbd\uc81c",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:82ec3390d204caa5cadc03a285197629628d91b90f61b9743da2639f9c78fc9d",
-        "label": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration - 36Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ZR1h5Sm95eG51b2NTNzZfOVZpSUptZ2VCZnlQMmJ3MjF0RTBWQTFibXkzMmJjYWg3QW94cU9xSGEtZkppUGdiNXc0cVdMTEo1SWQ0?oc=5",
-        "date": "Mon, 24 Aug 2026 06:34:18 GMT",
-        "summary": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration 36Kr",
         "score": 1,
         "weight": 1
       }
@@ -17914,6 +17920,20 @@
         "mentions": 1
       },
       {
+        "source": "ByteDance",
+        "target": "evidence:a69a450d791262c78a7777f704f5d030db0866e3491c4666d67facb4c3df49aa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:06f02756ce6afad44257b59b7861b4c5c53f7d1c47b36bcd2511bd408237ed1e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Microsoft",
         "target": "evidence:675febb505eb0e988c9908acd832d75a1165b039313078c0c8658260def456ba",
         "type": "EVIDENCE",
@@ -18574,20 +18594,6 @@
       {
         "source": "Anthropic",
         "target": "evidence:7c2c08b7d2257641a150f2bd5884635f64c701e11ebc7bdeb4c66be5b8de6c52",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:f4f84d6b0b365d08418935ab5837066eddd68fb4d6a5b8421aed351e9098638d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:82ec3390d204caa5cadc03a285197629628d91b90f61b9743da2639f9c78fc9d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33148,20 +33154,20 @@
   ],
   "collector_runs": [
     {
-      "id": 451,
+      "id": 455,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T17:45:46.171526+00:00",
-      "completed_at": "2026-08-25T17:46:03.739007+00:00",
+      "started_at": "2026-08-25T18:56:48.068556+00:00",
+      "completed_at": "2026-08-25T18:57:06.148223+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 452,
+      "id": 456,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T17:46:04.139805+00:00",
-      "completed_at": "2026-08-25T17:46:04.606173+00:00",
+      "started_at": "2026-08-25T18:57:06.549434+00:00",
+      "completed_at": "2026-08-25T18:57:07.055504+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33178,20 +33184,20 @@
       "error": null
     },
     {
-      "id": 450,
+      "id": 454,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T17:45:44.962284+00:00",
-      "completed_at": "2026-08-25T17:45:45.770385+00:00",
+      "started_at": "2026-08-25T18:56:47.006215+00:00",
+      "completed_at": "2026-08-25T18:56:47.667062+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 453,
+      "id": 457,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T17:46:05.007455+00:00",
-      "completed_at": "2026-08-25T17:46:07.156827+00:00",
+      "started_at": "2026-08-25T18:57:07.468945+00:00",
+      "completed_at": "2026-08-25T18:57:10.142563+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33208,7 +33214,7 @@
       "error": null
     }
   ],
-  "document_count": 1446,
+  "document_count": 1450,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
