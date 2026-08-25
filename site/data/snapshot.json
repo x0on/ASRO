@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T16:55:55.127100+00:00",
+  "generated_at": "2026-08-25T17:46:07.999050+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -13,14 +13,14 @@
   },
   "dimensions": {
     "circularity": 57.1,
+    "external_pressure": 16.12,
+    "cannibalization": 54.2,
     "transmission": 39.6,
     "fragility": 61.1,
     "capital": 48.732271163185665,
     "stress": 57.1,
-    "cannibalization": 54.2,
     "monetization": 42.9,
-    "counter_evidence": 42.9,
-    "external_pressure": 16.12
+    "counter_evidence": 42.9
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "capital": "aggregate",
-    "external_pressure": "aggregate",
-    "circularity": "directional_estimate",
     "transmission": "confirmed_trigger",
     "fragility": "directional_estimate",
+    "capital": "aggregate",
+    "monetization": "directional_estimate",
+    "circularity": "directional_estimate",
+    "external_pressure": "aggregate",
     "cannibalization": "directional_estimate",
-    "stress": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "monetization": "directional_estimate"
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T17:46:07.570622+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-25T16:55:54.637036+00:00",
       "score": 45.3,
@@ -5634,6 +5640,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:1777b611d1ac6507282ede197af5a729d0d7beef510a2c9e8ccad204c9f745e6",
+        "label": "Anthropic is pitching IPO investors on a $30 trillion market opportunity - qz.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "qz.com",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUUpHNVp6RjAzNXVIMUROSlNKX1c3QzctaVo4Sm9MVXdqRU1uQ0VNcGdNS2h3Vkk0cWJtRkk5UVFuVmFoWUVQR20zTkIxbUNMX3ZoYmhYOGtzZGVxNTdvYWhPMGFSdTdQNDVqbXlnT21BLUxuSE9sV0lnREoyUUNMc05R?oc=5",
+        "date": "Tue, 25 Aug 2026 17:21:30 GMT",
+        "summary": "Anthropic is pitching IPO investors on a $30 trillion market opportunity qz.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:4dbca6de6c16177319adb09734e4fca23b0311ee232710b7715d731a76121833",
         "label": "Anthropic\u2019s $2T IPO could create millionaires\u2014but it\u2019s asking candidates what they\u2019d do if stock hit zero - Fortune",
         "kind": "evidence",
@@ -9954,6 +9972,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:675febb505eb0e988c9908acd832d75a1165b039313078c0c8658260def456ba",
+        "label": "Microsoft, Qcells expand partnership to power growing AI infrastructure - ESG Dive",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "ESG Dive",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObVpRTDlrcjhsRERva0h0RDY1bjdIZ0lDWkpWRGJCcGVvblZQTjN0Q3VMT1NBMGpDdzZ0N0M4Tm9Ub2RkQ3MyZkdhTXUzRmt1NHlKZnJQX1NyYTkzLUQ1bW5zZzBRamwtcUQxbE1DSmQzX3lWQzFDTDBveXlrbHdlbGctLUVGUTBNNzIxOGd1c0l4OGk1dTRaYS1VZ0Nhay13RmVXY1lsMUVNU2sweGg5aUx1dnhlNkhqRDd3?oc=5",
+        "date": "Tue, 25 Aug 2026 17:09:28 GMT",
+        "summary": "Microsoft, Qcells expand partnership to power growing AI infrastructure ESG Dive",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:069a5aeecd8f931dafc8f7299cfe690981a653a1b4c63b7238ca2f9b03ecb45b",
         "label": "Tencent Leads $18M Investment to Expand Godot Engine into Asia - Inven Global",
         "kind": "evidence",
@@ -11102,30 +11132,6 @@
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ZR1h5Sm95eG51b2NTNzZfOVZpSUptZ2VCZnlQMmJ3MjF0RTBWQTFibXkzMmJjYWg3QW94cU9xSGEtZkppUGdiNXc0cVdMTEo1SWQ0?oc=5",
         "date": "Mon, 24 Aug 2026 06:34:18 GMT",
         "summary": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration 36Kr",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5c64fbd11d80697857dd7fcb6aa3ac60b530075b2e80f12e042bdc9c8b26f811",
-        "label": "Breakingviews - Alibaba's $10 bln share sale starts AI countdown - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNaS1NZ2VyRjRQUEdya1kzTU5hOTA0d2U1Y3VLTXlqLUN0SFlEd2VoOV9nMGtOWDVzOUgzY0RmbjZoV2g0QXd1RG1EZnpGQXQzeWpSRFZxNXZKMzU1YURMdm1XR2lfOWIwM1RzelBKWlJFRFQwWF9lVDNYVWZseFRwcW9WUmxmLUJkUmR3U28tOUJqekFXSXFHZURkMk13Z1lveHBxWXc3dGdYYzQ?oc=5",
-        "date": "Mon, 24 Aug 2026 05:03:00 GMT",
-        "summary": "Breakingviews - Alibaba's $10 bln share sale starts AI countdown Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:34675b0e4120ac314165f152742b347e53f77f8cd5ce441db1155782b260a7cf",
-        "label": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation, Considered Tech Licensing Deal - The Information",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Information",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMGdwRGUxNHpRRFM3dndxcG04azgxTFYxWkotZjNIVjAyT2dtbWkyNFo1NEJ6bXNlU1BGR3JYN0RyS18xZHNycVRkMXZBNHZsSlhFSVVPWU9QdFlaX0pJa19SNmZ2M1ZZY0RqNnJIakJwSXZPSEhSWDBPNlg4MUc3VWpyZGdUSlI5N2NjX3hnaWU2TUp1cmVFdHlMNVMxc01xVExsOWVCT0NfRXRaYzdsTnNMaVFMR3dIVWwzeW10dkxhRUJmaWhkVUtzd1QybjN3?oc=5",
-        "date": "Mon, 24 Aug 2026 03:06:00 GMT",
-        "summary": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation, Considered Tech Licensing Deal The Information",
         "score": 1,
         "weight": 1
       }
@@ -14494,6 +14500,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:1777b611d1ac6507282ede197af5a729d0d7beef510a2c9e8ccad204c9f745e6",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17901,6 +17914,13 @@
         "mentions": 1
       },
       {
+        "source": "Microsoft",
+        "target": "evidence:675febb505eb0e988c9908acd832d75a1165b039313078c0c8658260def456ba",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Tencent",
         "target": "evidence:069a5aeecd8f931dafc8f7299cfe690981a653a1b4c63b7238ca2f9b03ecb45b",
         "type": "EVIDENCE",
@@ -18568,20 +18588,6 @@
       {
         "source": "ByteDance",
         "target": "evidence:82ec3390d204caa5cadc03a285197629628d91b90f61b9743da2639f9c78fc9d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:5c64fbd11d80697857dd7fcb6aa3ac60b530075b2e80f12e042bdc9c8b26f811",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:34675b0e4120ac314165f152742b347e53f77f8cd5ce441db1155782b260a7cf",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33142,20 +33148,20 @@
   ],
   "collector_runs": [
     {
-      "id": 447,
+      "id": 451,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T16:55:35.323646+00:00",
-      "completed_at": "2026-08-25T16:55:51.094169+00:00",
+      "started_at": "2026-08-25T17:45:46.171526+00:00",
+      "completed_at": "2026-08-25T17:46:03.739007+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 448,
+      "id": 452,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T16:55:51.495253+00:00",
-      "completed_at": "2026-08-25T16:55:51.918376+00:00",
+      "started_at": "2026-08-25T17:46:04.139805+00:00",
+      "completed_at": "2026-08-25T17:46:04.606173+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33172,20 +33178,20 @@
       "error": null
     },
     {
-      "id": 446,
+      "id": 450,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T16:55:34.323732+00:00",
-      "completed_at": "2026-08-25T16:55:34.921673+00:00",
+      "started_at": "2026-08-25T17:45:44.962284+00:00",
+      "completed_at": "2026-08-25T17:45:45.770385+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 449,
+      "id": 453,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T16:55:52.319673+00:00",
-      "completed_at": "2026-08-25T16:55:54.221889+00:00",
+      "started_at": "2026-08-25T17:46:05.007455+00:00",
+      "completed_at": "2026-08-25T17:46:07.156827+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33202,7 +33208,7 @@
       "error": null
     }
   ],
-  "document_count": 1444,
+  "document_count": 1446,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
