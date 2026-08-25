@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T22:45:22.425804+00:00",
+  "generated_at": "2026-08-25T23:38:19.010457+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
-    "external_pressure": 16.12,
-    "stress": 57.1,
     "capital": 48.732271163185665,
     "fragility": 61.1,
-    "transmission": 39.6,
-    "cannibalization": 54.2,
+    "stress": 57.1,
+    "circularity": 57.1,
+    "monetization": 42.9,
     "counter_evidence": 42.9,
-    "circularity": 57.1
+    "transmission": 39.6,
+    "external_pressure": 16.12,
+    "cannibalization": 54.2
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
+    "fragility": "directional_estimate",
+    "stress": "directional_estimate",
     "circularity": "directional_estimate",
     "monetization": "directional_estimate",
-    "stress": "directional_estimate",
-    "capital": "aggregate",
-    "fragility": "directional_estimate",
-    "transmission": "confirmed_trigger",
+    "counter_evidence": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "counter_evidence": "directional_estimate"
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T23:38:18.620427+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-25T22:45:21.925843+00:00",
       "score": 45.3,
@@ -7902,6 +7908,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:96bf14ab03e80f36a6eeef4e1f4de780841e90c9c12b4fb679478aafddd66c82",
+        "label": "Tech layoffs 2026: Tracking all the job losses across Apple, TikTok, Meta, Microsoft, Oracle and others - Yahoo Tech",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Tech",
+        "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOVW9Ibi1qVHEyc2VtS25NdUNzeHFDNnRjTmsxdmx2RkNNRWtNWE8tT0cwcjRIbWJOVDZCdmhidFRoWVBuVHlPZEhsaEhTdnIxM05MZzhRV2dFVUIwRmdGbmpyUUlzQmVQcnpLZzlab0NtazRtU2REUWRrY0RyU3NId25LS21sVjZCYTNaX1ZtOWdlbThiNXZ3bmJVakhnbUtHV1dpcFotMTk1eEM0VUROa0d1eFd2bjdpMUhaSll6d0M2SFhCN2x5SXRKVzRfOG5yRE85MmVxeGlGMEYwY21aVnBPWko0bXM?oc=5",
+        "date": "Tue, 25 Aug 2026 18:12:06 GMT",
+        "summary": "Tech layoffs 2026: Tracking all the job losses across Apple, TikTok, Meta, Microsoft, Oracle and others Yahoo Tech",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:fba643def15f1b92a73caf93a23ec23593943305667f8f934b27f88c4573fedb",
         "label": "Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) - Seeking Alpha",
         "kind": "evidence",
@@ -10062,6 +10080,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:a50fe2de68352a2d1316b2a40d5e3267aca2e7ea70de395ff4037fc1d720a44f",
+        "label": "Convert 1 GLM to 0.014587 AVAX | Golem Converter - Binance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Binance",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpTDNpcTlIQzlzc3dreEtoY1FPRkF5dGd1SWNhTXZnbjVQQ0J2LXpWTlFVSXQtRlFaNnpOZTVCUE5Gekp1d0h6OUxJQ0t3dmJYWjBrVlNWNjltUQ?oc=5",
+        "date": "Tue, 25 Aug 2026 20:06:26 GMT",
+        "summary": "Convert 1 GLM to 0.014587 AVAX | Golem Converter Binance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7663c9f77db231d751f62617e7b415bed9550d5b845ca2d40809ab039ccc4b3a",
+        "label": "Kimi.ai Selects TiDB to Power Persistent Data Infrastructure for Next-Generation AI Agents - The Manila Times",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Manila Times",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQTGdXbWN6ZTg1bzZ5cnBnQXdIcUQyelhMUEl6U2prbkxCMWkxbEVHVXc3ZWZMLXpkSDI4SWh4WFg4MG5rUXNVeTN4aTAyOF96a3dOWjhvSXpiWVpEelEwREJzcGtUOE9pVDVBVEtDd2luU3FYTG41Nm5uYk51NjAxTksweHhfVkVNbWZ3QndZa3JtYWw0cldPMGhtN1NxMGJrdEh0bS1GRjFqNnNCZzRwRjZhR2pESDdKbUtkb2xhanljaEk3U2tBa1FBeHZxeExDVjk3bHQ2cFRtc245RlB0UWU2TjNZS0RvRm8zcVQzTnA0QUlOQUd1SVViY9IB-wFBVV95cUxQTGdXbWN6ZTg1bzZ5cnBnQXdIcUQyelhMUEl6U2prbkxCMWkxbEVHVXc3ZWZMLXpkSDI4SWh4WFg4MG5rUXNVeTN4aTAyOF96a3dOWjhvSXpiWVpEelEwREJzcGtUOE9pVDVBVEtDd2luU3FYTG41Nm5uYk51NjAxTksweHhfVkVNbWZ3QndZa3JtYWw0cldPMGhtN1NxMGJrdEh0bS1GRjFqNnNCZzRwRjZhR2pESDdKbUtkb2xhanljaEk3U2tBa1FBeHZxeExDVjk3bHQ2cFRtc245RlB0UWU2TjNZS0RvRm8zcVQzTnA0QUlOQUd1SVViYw?oc=5",
+        "date": "Tue, 25 Aug 2026 12:06:54 GMT",
+        "summary": "Kimi.ai Selects TiDB to Power Persistent Data Infrastructure for Next-Generation AI Agents The Manila Times",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2318a63a823c97dd07e5c87ca90de6d52193cd22bd94a00bb1879a96cf7c3a3d",
+        "label": "Moonshot AI: what the Chinese AI startup does and builds - qz.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "qz.com",
+        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5qdTZOWVFSdmhUTExRek5Wd2ZDVDFuQm1ydHJxcWRnRVpIczdLWDBWSUFWNDh0SzJTVVg4UjJQNlgtSXVVOWlpZkNB?oc=5",
+        "date": "Tue, 25 Aug 2026 23:35:51 GMT",
+        "summary": "Moonshot AI: what the Chinese AI startup does and builds qz.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:011f036af1f63d186bfafb8de41ab4e311397337ff0c804fa62cce03cdd04c8c",
         "label": "Godot Engine partner firm W4 Games secures $18m Series B funding, signs deal with Tencent to bolster Asia ecosystem - GamesIndustry.biz",
         "kind": "evidence",
@@ -11114,54 +11168,6 @@
         "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aVENBbFA5azdxb245Y3B2dFJuaHFYX3ktaER0dWJvOHNsYnl0ZE1EenlPN2NRRTBpTl9qUlVDTmVOV1M4NlhXT19SZ0JPY1VJM3J1d2dHdEFVekNORFFGTzEtdw?oc=5",
         "date": "Fri, 12 Jun 2026 07:00:00 GMT",
         "summary": "Qwen 3.7 Max Hits AI Top 5 With 1M-Token Context [2026] tech-insider.org",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6d84f9eb2bd7df4ef268cd056443267f09578e31de49fa5624120017e3fd6994",
-        "label": "Amazon's AWS Could Compound to $222 Billion by 2027. TD Cowen Says That's 11% More Than Anyone Expects - 24/7 Wall St.",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOR082b0dFa3daa2h4M2ZDSnlyQmkyRnpkelByZnVTR0FqaWlIYWZNSFotSURvMzludnhHYkxrTnI3NzN5eEw5V1Y5cS1EekZTRUtwQmsxWDRiRXpZWlU5QnplcHpFSldJRDV3VWRjUG1nWF9VYlBYTy1rN3AtM1J5cl80OTlEQzNtYllRZ1cxQ2RLdHVHR3YtLVQ2SElEQVJaMmtSNk9Beno3aWwtSldmZnBDMXBhM1hHRjY5WmRkVVBVeXN2UV9Nako3YzBsTXE4UnktYzlYX3I?oc=5",
-        "date": "Mon, 24 Aug 2026 13:00:58 GMT",
-        "summary": "Amazon's AWS Could Compound to $222 Billion by 2027. TD Cowen Says That's 11% More Than Anyone Expects 24/7 Wall St.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d8921187082d31f1c64a8315b25491f93b4ad7ba6821886837b714bd0349dde7",
-        "label": "Baidu : BIDU Stock Analysis & Valuation : Ark Invest & Cathie Wood Bought Millions Of BIDU Kevin Bradley Top Cop Allegations (W1bHDEsDPP) - Mshale",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Mshale",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5FVHhLMFpvaWlWYkc1M3NEMnZYS2dydW1vZlItZllWSml0OElzRE9FSTViTk82aXdERHVYcTl1VlZuclV5QmdMZVkwaVlwal85aUd5U09LN1VCNjA?oc=5",
-        "date": "Mon, 24 Aug 2026 12:11:36 GMT",
-        "summary": "Baidu : BIDU Stock Analysis & Valuation : Ark Invest & Cathie Wood Bought Millions Of BIDU Kevin Bradley Top Cop Allegations (W1bHDEsDPP) Mshale",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4b76741fb7ada42b734bf0b024bf7ddce1de43160b0890e82cecd69ff1d539b8",
-        "label": "Anthropic Suspends Top AI Models On US National Security Order - Stocktwits",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTk5hTGE4YjRid2ZvLUNCRERBQ29PZ3pYRER3VEhYR25aVXowQnVOc0txNmNCeXlmSzNDVU10dnVnZHpabG1PSmZoalVxdWE1dldjdEVQTy00WG9CaVVkcFZOdG41S0RhaWFXTXNHRHI2NWkzVFRkMWt3ODZrZFMyR3psMWtXT3lreGhfbElsNEMtX20xaGRWUjl5VzhpZEZEcWhyVw?oc=5",
-        "date": "Mon, 24 Aug 2026 00:29:36 GMT",
-        "summary": "Anthropic Suspends Top AI Models On US National Security Order Stocktwits",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b470b3d54557c12ea6ba8633c7b40af1cf8b6b88614f749313c83a54a8c417fb",
-        "label": "What the Google-Marvell Deal Means for Data Centre Chips - Data Centre Magazine",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Data Centre Magazine",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcjVzTG9ndFRCcGdlVnNGd1Z1cnh1M1RJcXlwVWJHeVFuR3FqeTNZdjNET2JmcURjSEVyMk1FazhIOUtqQU9YU3pqU1V6c2E0dXFfM2c1cmUwM2ZKdXBnbHhzTnFfSEJpalZ0NjZEZ0J5azFmbUpOWm1hbm5pYlllSXdUcVlUQ1lVSVRoTzBsbF9EaWdqeGZJ?oc=5",
-        "date": "Mon, 24 Aug 2026 10:09:51 GMT",
-        "summary": "What the Google-Marvell Deal Means for Data Centre Chips Data Centre Magazine",
         "score": 1,
         "weight": 1
       }
@@ -15767,6 +15773,27 @@
         "mentions": 1
       },
       {
+        "source": "Meta",
+        "target": "evidence:96bf14ab03e80f36a6eeef4e1f4de780841e90c9c12b4fb679478aafddd66c82",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:96bf14ab03e80f36a6eeef4e1f4de780841e90c9c12b4fb679478aafddd66c82",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Oracle",
+        "target": "evidence:96bf14ab03e80f36a6eeef4e1f4de780841e90c9c12b4fb679478aafddd66c82",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:fba643def15f1b92a73caf93a23ec23593943305667f8f934b27f88c4573fedb",
         "type": "EVIDENCE",
@@ -17986,6 +18013,27 @@
         "mentions": 1
       },
       {
+        "source": "Zhipu AI",
+        "target": "evidence:a50fe2de68352a2d1316b2a40d5e3267aca2e7ea70de395ff4037fc1d720a44f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:7663c9f77db231d751f62617e7b415bed9550d5b845ca2d40809ab039ccc4b3a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:2318a63a823c97dd07e5c87ca90de6d52193cd22bd94a00bb1879a96cf7c3a3d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Tencent",
         "target": "evidence:011f036af1f63d186bfafb8de41ab4e311397337ff0c804fa62cce03cdd04c8c",
         "type": "EVIDENCE",
@@ -18597,34 +18645,6 @@
       {
         "source": "Alibaba",
         "target": "evidence:997dba7bacd82ddb1633ccfc0790618957c7ae29d18d828f9aad7a13111d010c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:6d84f9eb2bd7df4ef268cd056443267f09578e31de49fa5624120017e3fd6994",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:d8921187082d31f1c64a8315b25491f93b4ad7ba6821886837b714bd0349dde7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:4b76741fb7ada42b734bf0b024bf7ddce1de43160b0890e82cecd69ff1d539b8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:b470b3d54557c12ea6ba8633c7b40af1cf8b6b88614f749313c83a54a8c417fb",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33185,20 +33205,20 @@
   ],
   "collector_runs": [
     {
-      "id": 471,
+      "id": 475,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T22:45:03.491161+00:00",
-      "completed_at": "2026-08-25T22:45:18.217000+00:00",
+      "started_at": "2026-08-25T23:37:59.969049+00:00",
+      "completed_at": "2026-08-25T23:38:15.125451+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 4,
       "error": null
     },
     {
-      "id": 472,
+      "id": 476,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T22:45:18.617880+00:00",
-      "completed_at": "2026-08-25T22:45:19.076370+00:00",
+      "started_at": "2026-08-25T23:38:15.526506+00:00",
+      "completed_at": "2026-08-25T23:38:16.015226+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33215,20 +33235,20 @@
       "error": null
     },
     {
-      "id": 470,
+      "id": 474,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T22:45:02.538665+00:00",
-      "completed_at": "2026-08-25T22:45:03.089865+00:00",
+      "started_at": "2026-08-25T23:37:58.873193+00:00",
+      "completed_at": "2026-08-25T23:37:59.567581+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 473,
+      "id": 477,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T22:45:19.477408+00:00",
-      "completed_at": "2026-08-25T22:45:21.510514+00:00",
+      "started_at": "2026-08-25T23:38:16.416886+00:00",
+      "completed_at": "2026-08-25T23:38:18.206980+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33245,7 +33265,7 @@
       "error": null
     }
   ],
-  "document_count": 1465,
+  "document_count": 1469,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
