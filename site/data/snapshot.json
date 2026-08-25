@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T20:46:25.204352+00:00",
+  "generated_at": "2026-08-25T21:44:43.577909+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
+    "stress": 57.1,
+    "monetization": 42.9,
+    "cannibalization": 54.2,
     "circularity": 57.1,
     "external_pressure": 16.12,
-    "stress": 57.1,
+    "counter_evidence": 42.9,
     "capital": 48.732271163185665,
-    "monetization": 42.9,
-    "fragility": 61.1,
     "transmission": 39.6,
-    "cannibalization": 54.2
+    "fragility": 61.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
     "stress": "directional_estimate",
     "monetization": "directional_estimate",
-    "transmission": "confirmed_trigger",
     "circularity": "directional_estimate",
     "external_pressure": "aggregate",
+    "counter_evidence": "directional_estimate",
     "capital": "aggregate",
-    "fragility": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T21:44:43.055805+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"circularity\": 57.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-25T20:46:24.713900+00:00",
       "score": 45.3,
@@ -5670,6 +5676,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:0afa6e2d40396db88c3c7886453994d26ed778f1bfd0c8ed15eef2a61f2db290",
+        "label": "OpenAI\u2019s Data-Center Chief Has Reportedly Left \u2014 Executive Exodus Grows Ahead Of Planned IPO - TradingView",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQkUyVHNOVG1ReWJvbzA2amFWNHBVdm5jeEI1ckxJbnVVN2xxN3ZNd3hJQjhMSEpJbTRXSHVMUVJJZ3NjNVhxVGJUMU50YUtNODJuNmM2RURDR0h6OUlFQXE0cVlvZF9JZGEwQS1iYkkxTWJWMFdqTDRuSzg2WC0tOGRhM2RyXzRsQnljRDN1bE5xV1dBSGhSRU5PYUxCZ253M0M0aXFWcFc1UGo5Ri1SamlpTkJFbHJ6dzBrR3ZqMVJ5YVFsUUxiQ25uOGEycHN6azZrSi11Yy1Hdk9iR05rRjZoQzN6dw?oc=5",
+        "date": "Tue, 25 Aug 2026 21:02:57 GMT",
+        "summary": "OpenAI\u2019s Data-Center Chief Has Reportedly Left \u2014 Executive Exodus Grows Ahead Of Planned IPO TradingView",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:6435122887f79d414dc33501bd97cadcd7a98c2b73f41b3c391b533b2bf309cd",
         "label": "Anthropic IPO: What it Means for Wall Street - TradingView",
         "kind": "evidence",
@@ -10038,6 +10056,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:c64c1f2b59ac8e02f3d6301f319f2e3b4e8a18b31dde17c7b435fa234b78e911",
+        "label": "AppFolio (APPF) AWS Tie Up Puts Its Valuation Back In Focus - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOZWM1bEtOT3pWa28xOWlzSjBWVHJKT0kxX194WkIyTUhfUGNWeDFrbmFCZUdiVGktZGY1Rzd1R1dvRThQVUVZb1gxYnNRY2dMYXU1Nl9qS0l6aXpIaXdVcFJhc0ZkRS1DeU55RjIzTTc3ZEcyemJxTURXNV81bFFKT3dRU3hhaXFZWHZRUktfTE9tWWRMOHdhNHBNRTM4STRKTk1VTUpfWHRNNWpCSVRJa2JnNGpNVGJzUXhWMWk0T09LQdIBxwFBVV95cUxNTjhxYk5oVGNUaHlrSFJJbkV0QW83djJOUVkxRlJUTVdfME82QWJCOVZlUGt0RGNoemdmLTNjYndNUmlyd1pwTHhKNW12T3MzclJ3aWtpY3N0OTVRaFl1anRVaDl3dU14bHhMRjBqd2tpRlhVNndjd0VmRXUyNDRhcXFoTkZfNFlDUlh1bElJU2x6bDBHcjJYMVczdEo3Z0szaUxwMl9za09Ha3ZZMmI1RjJPMVEtMFZNWGNhYUF2aG5nVEZCT29r?oc=5",
+        "date": "Tue, 25 Aug 2026 21:38:26 GMT",
+        "summary": "AppFolio (APPF) AWS Tie Up Puts Its Valuation Back In Focus simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:8dcda88650fcdc981ea790c666c2077107f55479d66d94e9d17aa91f55aaaa45",
+        "label": "Cisco Expands Secure AI Factory with NVIDIA for the Rack-Scale Era - Cisco Newsroom",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Cisco Newsroom",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNOC12cUNTSGEwQW56a09pUEFFbTdQZDYyOHFwSzlNMFNxQ19oUllSc3g1LXd6ekd3b3p4MmNFYUU0VU9QRVhKMEprQU5iVDE5am9YUzZfbDF0TGZUZ19OT0hMSVZIeEZmUjR1OXVkV0ZtaTNINU5xaUJwZnNyaW9GR3FBQkVpcEQ0MW9FRDh4UnJfSWtvNkFtUXhvSnFncktUUk90VXJCcw?oc=5",
+        "date": "Tue, 25 Aug 2026 13:04:19 GMT",
+        "summary": "Cisco Expands Secure AI Factory with NVIDIA for the Rack-Scale Era Cisco Newsroom",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f5e5f828e4a61330aafd8652d8cf5e18bc077cdd888e878408e80ea8ca7a572d",
+        "label": "Alabama launches OpenAI probe after artificial intelligence agent hacks Hugging Face during testing - The Jerusalem Post",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Jerusalem Post",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNVXFSVjh3OHZleW9Bc2lFbnJRMUhUNHRYVXhGaFJGVGRKQXROZjU0MHpxZGYyMDFYTE9Sdk1POENhenEta19DOGp6R2QwUG5oelA1Wm1OaWFiOHZyVmpsX2hlX29fd2JyTzBSdDhnUkc4MTRIUy1FNXhvWGFSVlZQcTNmUnBndw?oc=5",
+        "date": "Tue, 25 Aug 2026 04:39:04 GMT",
+        "summary": "Alabama launches OpenAI probe after artificial intelligence agent hacks Hugging Face during testing The Jerusalem Post",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:fd9f53aaabb13e1cb647d42fa32ba92576c882ea00831d685ee3fe13532fa73b",
         "label": "Nvidia's Next AI Bet Is Taking Shape - TradingView",
         "kind": "evidence",
@@ -11102,54 +11156,6 @@
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOallhMlZKY3k2Y2s2bWlnUFhhZmtuZ0tVbm9LX2dlNVB5WmQ4bDJFV3pjUWN3MWVka25KZVUxYnBlN1NWR2J4NzlJQ1N5djU1SjVmaklJeVNaMjkyMnZpaG5iY3o4WkNUQzUtakVaLTNNb1pYNFhaT3pFWlJmZUgzTjJ6Yzh3NGYxZ2gwZGQtRDdWenhoNXZxd29wU0diakhYbmh6T1QwMjQ0YVZkSlhZd05QSVdkZVo1ZGdxNVE2OWxHS2FZZlBR?oc=5",
         "date": "Mon, 24 Aug 2026 03:34:00 GMT",
         "summary": "Consumer Internet Q2 Earnings: Alphabet (NASDAQ:GOOGL) Simply the Best TradingView",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9bc50c6e1639f48164ccf00f995b0ed3ff3d618cea46e2b386c8ea9eb5708547",
-        "label": "Asure Launches Enterprise Payroll Tax and Treasury Solutions on AWS Marketplace to Reach 330,000 Customers - FF News",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "FF News",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeEI5UzlCZy0yVXZPU05FSjFpYmVCVEt6ZUNrY1dJanFkaEpSMUNPUlBpVjFBX3hDYjNldEhPbm1NSjlRV2tnSUlEYmpxOGpyYmNSaWN4RVRHYXRBQVE5cVZIT0MwWUptbVBOYkZUYU5QaVM5dFRyTWlaNVlraHRkQmE1U3Fpd0lXTmMyNGE3WFVHU1FRWWp6Z2pCZmNSb0UtZzN6UlJURlhnSWZWRUg2MmphTVl4NlNOOHJ5RlJJQVVhWHpaS2ZSRw?oc=5",
-        "date": "Mon, 24 Aug 2026 09:43:48 GMT",
-        "summary": "Asure Launches Enterprise Payroll Tax and Treasury Solutions on AWS Marketplace to Reach 330,000 Customers FF News",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:676ea79315ff2ffc2aa9aedc406e4b51222f2d4a977244a1f3053c4de15be817",
-        "label": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered - 36 Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36 Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fS183LXk5ZENZU25Uc2dxWXBaZ1VxYWhhLXJuNTFNaG9jV3lnTUhoeTJVVzZWY3Vib25uTUlUdG1hdGd2NWhqMlFFbWxzTUtuWWhj?oc=5",
-        "date": "Mon, 24 Aug 2026 05:14:16 GMT",
-        "summary": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered 36 Kr",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d568ee5075417f4d70dc35f05e53c5abcd8a7609dd0904625a3233018a8096b8",
-        "label": "Doubao \"Boards\" Tesla: Why Did Elon Musk Make an Exception for the Chinese AI Assistant? - 36 Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36 Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YY3JzdlAwQmdZRTdrY2pXZ25wTC1OM3o5NmtkdWhkMVM2NFFYUGNDYnhQX2xzcUFKSG5OV1Nfd0VYOFFBRGdsVkNrQnRzbVVuaXJ3?oc=5",
-        "date": "Mon, 24 Aug 2026 04:34:02 GMT",
-        "summary": "Doubao \"Boards\" Tesla: Why Did Elon Musk Make an Exception for the Chinese AI Assistant? 36 Kr",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e3996e4ef971dae29f49c0bd607c5e819ca598ab7cc744e53163a4d4061f48e7",
-        "label": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration - 36 Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36 Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5ZR1h5Sm95eG51b2NTNzZfOVZpSUptZ2VCZnlQMmJ3MjF0RTBWQTFibXkzMmJjYWg3QW94cU9xSGEtZkppUGdiNXc0cVdMTEo1SWQ0?oc=5",
-        "date": "Mon, 24 Aug 2026 06:34:18 GMT",
-        "summary": "Doubao to Launch WorkBuddy-Type AI Products: Feishu\u2019s Decade of Enterprise Capabilities Goes Modular for Next-Gen Work Collaboration 36 Kr",
         "score": 1,
         "weight": 1
       }
@@ -14532,6 +14538,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:0afa6e2d40396db88c3c7886453994d26ed778f1bfd0c8ed15eef2a61f2db290",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17967,6 +17980,27 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:c64c1f2b59ac8e02f3d6301f319f2e3b4e8a18b31dde17c7b435fa234b78e911",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:8dcda88650fcdc981ea790c666c2077107f55479d66d94e9d17aa91f55aaaa45",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:f5e5f828e4a61330aafd8652d8cf5e18bc077cdd888e878408e80ea8ca7a572d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:fd9f53aaabb13e1cb647d42fa32ba92576c882ea00831d685ee3fe13532fa73b",
         "type": "EVIDENCE",
@@ -18585,34 +18619,6 @@
       {
         "source": "Alphabet",
         "target": "evidence:447aad217ed21039b3eb979b9f7702795a8aba3176abf3c437e66ccfef8ab6d9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:9bc50c6e1639f48164ccf00f995b0ed3ff3d618cea46e2b386c8ea9eb5708547",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:676ea79315ff2ffc2aa9aedc406e4b51222f2d4a977244a1f3053c4de15be817",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:d568ee5075417f4d70dc35f05e53c5abcd8a7609dd0904625a3233018a8096b8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:e3996e4ef971dae29f49c0bd607c5e819ca598ab7cc744e53163a4d4061f48e7",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33173,20 +33179,20 @@
   ],
   "collector_runs": [
     {
-      "id": 463,
+      "id": 467,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T20:46:04.602509+00:00",
-      "completed_at": "2026-08-25T20:46:21.112539+00:00",
+      "started_at": "2026-08-25T21:44:21.292749+00:00",
+      "completed_at": "2026-08-25T21:44:38.630325+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 464,
+      "id": 468,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T20:46:21.513686+00:00",
-      "completed_at": "2026-08-25T20:46:22.016032+00:00",
+      "started_at": "2026-08-25T21:44:39.031702+00:00",
+      "completed_at": "2026-08-25T21:44:39.611733+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33203,20 +33209,20 @@
       "error": null
     },
     {
-      "id": 462,
+      "id": 466,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T20:46:02.660917+00:00",
-      "completed_at": "2026-08-25T20:46:04.200852+00:00",
+      "started_at": "2026-08-25T21:44:19.684925+00:00",
+      "completed_at": "2026-08-25T21:44:20.891761+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 2,
       "error": null
     },
     {
-      "id": 465,
+      "id": 469,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T20:46:22.417702+00:00",
-      "completed_at": "2026-08-25T20:46:24.298662+00:00",
+      "started_at": "2026-08-25T21:44:40.013068+00:00",
+      "completed_at": "2026-08-25T21:44:42.639958+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33233,7 +33239,7 @@
       "error": null
     }
   ],
-  "document_count": 1457,
+  "document_count": 1461,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
