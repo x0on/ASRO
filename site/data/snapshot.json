@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T04:54:07.757489+00:00",
+  "generated_at": "2026-08-25T05:48:32.780882+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
     "monetization": 42.9,
-    "transmission": 39.6,
-    "cannibalization": 54.2,
-    "circularity": 57.1,
-    "capital": 48.732271163185665,
     "stress": 57.1,
+    "cannibalization": 54.2,
     "external_pressure": 16.12,
-    "fragility": 61.1
+    "counter_evidence": 42.9,
+    "capital": 48.732271163185665,
+    "fragility": 61.1,
+    "circularity": 57.1,
+    "transmission": 39.6
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "cannibalization": "directional_estimate",
-    "capital": "aggregate",
-    "stress": "directional_estimate",
     "monetization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "capital": "aggregate",
+    "fragility": "directional_estimate",
     "circularity": "directional_estimate",
+    "stress": "directional_estimate",
+    "cannibalization": "directional_estimate",
     "external_pressure": "aggregate",
-    "fragility": "directional_estimate"
+    "transmission": "confirmed_trigger"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T05:48:32.269667+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-25T04:54:07.266876+00:00",
       "score": 45.3,
@@ -4230,6 +4236,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:439997eeda34c3729b1916f9a0035d0d7536d82881b81d7f77761bb55b24abce",
+        "label": "SpaceX Raised $86 Billion and OpenAI Is Next. This ETF Owns the IPO Class of 2026 - AOL.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaW5EQmZZZVpmVDkwZ1V0S3NFUEdpLTFmRmtheU10ZTdqRXFLQXZsX3Vock1PUllJT2tLT2dUNm02TDFaTkp5ZDlKZklVZnFFc3VCbFFtYm96SXRuTHRJc284amhsZHR3bWhERV9vSE9LU194UW5wRklYWEJiZ3ZxVw?oc=5",
+        "date": "Tue, 25 Aug 2026 01:18:57 GMT",
+        "summary": "SpaceX Raised $86 Billion and OpenAI Is Next. This ETF Owns the IPO Class of 2026 AOL.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:dd1823efa68312692fe9f387839e8721444d6e86492c9fa736722ad2fa3d82b8",
         "label": "SpaceX Raised $86 Billion and OpenAI Is Next. This ETF Owns the IPO Class of 2026 - 24/7 Wall St.",
         "kind": "evidence",
@@ -5547,6 +5565,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:4fbbbfb1aa862dbfe3c83b6c114d0ef72ef419b679ea05efb19061d02683a057",
+        "label": "AI: OpenAI Consolidates under Brockman, pre-IPO. AI-RTZ #1189 - AI: Reset to Zero",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "AI: Reset to Zero",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BS0VaR1VKVHhaRUVnWTZDaF9MWnFBQ2xUay14dEdaSnI2cXhZejFLVENfRlJOejdGMmZkSk5OZkJ6a0hJWnNzUmNLTVNWd2ZPSFNxZWtlQ0xlVGdQeW41V0N4bE91d05EdXM5clN3QnZ1YTdPeU1mR0N3T01oYk0?oc=5",
+        "date": "Tue, 25 Aug 2026 05:03:33 GMT",
+        "summary": "AI: OpenAI Consolidates under Brockman, pre-IPO. AI-RTZ #1189 AI: Reset to Zero",
+        "score": 4,
         "weight": 1
       },
       {
@@ -7575,6 +7605,18 @@
         "date": "Thu, 20 Aug 2026 04:32:35 GMT",
         "summary": "OpenAI CFO Reveals How Soon the IPO Could Actually Land Yahoo Finance",
         "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b8250af0fdbaf093da4214bd4a77cb37f95dc14c1f6ea4183e641ec28cc62fb0",
+        "label": "The Battle for Dominance in AI Office Solutions: Tencent Secures Early Entry Points, Alibaba Integrates to Target the B2B Sector, and ByteDance Accelerates with Doubao - Moomoo",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWk15NUlWYmNabDhORXY2bEQ5eVktamp3bm50NmIzVDBvQWNtMFQ1TldMQzBvRVJwd2ZRXzBwWjBvdXRwUU1zaUd5QXh3UlVZZm9Bb01PcUZSNnJ3VVlwak5QcDAtcGlhMmN2NXh1RzJrSjBhQkM3TXFrSk90X2w4WjVYREpTYUJpZkFyY3VObXVqSHl5aU91VloyS2NqS3ZaU3NuanZwdnM?oc=5",
+        "date": "Tue, 25 Aug 2026 04:41:23 GMT",
+        "summary": "The Battle for Dominance in AI Office Solutions: Tencent Secures Early Entry Points, Alibaba Integrates to Target the B2B Sector, and ByteDance Accelerates with Doubao Moomoo",
+        "score": 3,
         "weight": 1
       },
       {
@@ -9666,6 +9708,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:e0d38a7d7c2f3ae7d32b1077f1b787bf96177fd205c6f7b75e2c96cee23908a8",
+        "label": "Doubao Work Enters AI Office Competition: Has the Sector Entered a Systematic Head-to-Head Showdown Stage? - 36 Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9BaGI0cTZQM1ZHOUtPLTBqWWJUcDNFTmZjb0N6MHRXbXJ1RXFHUEZvVFBfMU0tYXhjcHgzSF96aFpQSTFKbGhhLVNUZEQ0TkhNSmhz?oc=5",
+        "date": "Tue, 25 Aug 2026 04:41:06 GMT",
+        "summary": "Doubao Work Enters AI Office Competition: Has the Sector Entered a Systematic Head-to-Head Showdown Stage? 36 Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0fa50c7fabc36bc0675ae8be9fdeba0ac6fd4bae9ede7134700c50dc3b87b3fe",
+        "label": "After the Horse Race, ByteDance Calls a Retreat: Strategic Shift in Business Development - 36 Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9aQkwxT3VtNHEyZVA1UGFFMmlRRWJYM2hjNllJTFFrOTlUYkVWMTl0QkxIOUdBRE1kMkE1YWRDcXpwM2tMMWhVRHlWbWVkbEF3QmIw?oc=5",
+        "date": "Tue, 25 Aug 2026 00:20:42 GMT",
+        "summary": "After the Horse Race, ByteDance Calls a Retreat: Strategic Shift in Business Development 36 Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:c283af5fd16667e2b3eb54251d5d73c6c6e8cb5e79fdac601d04bddaf8cde39b",
         "label": "Doubao Work Enters AI Office Competition: Has the Sector Entered a Systematic Head-to-Head Showdown Stage? - 36\u6c2a",
         "kind": "evidence",
@@ -10994,66 +11060,6 @@
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1PWjRtN2xmcmdZTUlQbjU0SFJLeS1icHBaZ1Z5YXlEcjZmX1RXOXVCejRDVF9rWFlObmlQMWI2NG5ZUVVYNnp4V0JUQkNpNm8xc3ZxQ3Q4Y2JfdWgxczItUHE4T042T0pkbmwyS3hyVWhyWnFfenc?oc=5",
         "date": "Fri, 21 Aug 2026 07:05:00 GMT",
         "summary": "MiniMax Launches Multimodal Creation Platform Design; Shares Surge Over 12% in Two Days finance.biggo.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:498c310e9016b2b9415eb120bbab3df485a27e6c80bbcf65c919d564f8bcaf88",
-        "label": "Netmarble chief to buy W374b Tencent stake to tighten control - The Korea Herald",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Korea Herald",
-        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE10YVRGU3h2QlRzQUt6TUhPbDFGY1VfMmFsMjNkODBQRjlHMUNRTE5NWUhJYXN4WlNnSHp5QUJqcDB3MmstWG83NFlKY0JZZ1JSUm1ZQnNmYw?oc=5",
-        "date": "Sun, 23 Aug 2026 01:54:38 GMT",
-        "summary": "Netmarble chief to buy W374b Tencent stake to tighten control The Korea Herald",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:403761c56b101641c3da7cd9a824280e8ad447cb8f252b55dd3597b945fff31a",
-        "label": "Alibaba\u2019s AI Spending Squeezes Margins Yet Deepens Cloud Strategy Could Be A Game Changer For Alibaba Group Holding (BABA) - simplywall.st",
-        "kind": "evidence",
-        "category": "Cannibalization / economics",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPRXpnQUJuQzllUTI4Uk1Za1E1b2JYajJzVmZMOWtYcjlNeGw3TlQ3YUVnVHdzcDN2Q1NaWGxTdkxLLUlCeXFfMGowZGxzcW1UNHpuR2g5U1pPb3N3Y1M3T2tqeUM4WG8zSFBuMktETlg5eksyb2xpWmhnNXRyRURzSmYtNHJ5T2tOTVRNdE5mdGVRWnNQcGFuSzRtTC1jRXpSSmdsbEdnX3dIVjNENWgxYzZiTkhrQ0ZIRHJURDdNLVR2b29SZ1RSbG8zM0wtaWRRY3fSAdcBQVVfeXFMT1RMNzUwRWdDUGpiWF8xb1hTaFU2S3FIVGhXdEJXbThQcENObDd5bVlYRHlKcGsyMnRnVDRXQkI2a050WTI4LXN1SHV6RWo2bXhiYncwVng5MERJQ0Z2YXl2RUpiWGtkSmxwS1gySm01LXZFa1FHelozQmZrV1NwUzN3d0ZxNlo5aGljTE9FRTkzVXVScElhVjRLTXo3SUtzeThoQWpzUDZROW9ZOF9Mb3lKb1Jjamh1WmFCQkowMEdabFg3d3l5NmhleE45U01NOUR4ZGdGWkk?oc=5",
-        "date": "Sat, 22 Aug 2026 23:27:11 GMT",
-        "summary": "Alibaba\u2019s AI Spending Squeezes Margins Yet Deepens Cloud Strategy Could Be A Game Changer For Alibaba Group Holding (BABA) simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5d4126cb01e59eae9621f251e6b0e25a29d7d9a724aeada615ccd632b46b4b79",
-        "label": "Destiny-Altering Decision: How 500B-Valued Zhipu AI Defies Headwinds to Rewrite Its Fate | DeepKr - 36Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA1UE5RdXJ6N1lfTWwzcktackNmZUtXcVlkM0J2WTFieTI4Zm1kVUN2enV5ck05RFo5UlduSW93THAtOFp5eEpQTHVnT1pKNTcxUHZF?oc=5",
-        "date": "Thu, 20 Aug 2026 07:54:46 GMT",
-        "summary": "Destiny-Altering Decision: How 500B-Valued Zhipu AI Defies Headwinds to Rewrite Its Fate | DeepKr 36Kr",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c2bdda760cac8b6f02683c802e0c0895e7efb01f5dbef48626a1c7abca82552e",
-        "label": "Qwen 3.8 Closes the Reasoning Gap, but Agentic Coding Remains a US Stronghold - CryptoRank",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CryptoRank",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbEctRUp6dkY3YTBnWDZmUTFqa2VsUjNQelBwWWsxQWdfNTJRNk4yMEp1V0lqRUFiWlFNS0dEeWllTUp5VUVCenNubmRsX0FfQXNmcWU0WXhaUnpiV0s2THZsREZCVEU1azEyLUZDRXN6ZGRzNFFQSG1mZEVuZXFCRXE3V3lBRzM1OWNuZzlSWW5vQThqNThnLVJtRjZyUDVLUkNzZXBESENRaW1TRmZKSnNCX1I?oc=5",
-        "date": "Sat, 22 Aug 2026 23:09:43 GMT",
-        "summary": "Qwen 3.8 Closes the Reasoning Gap, but Agentic Coding Remains a US Stronghold CryptoRank",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b9dc0d0d67d15a7d6a1179fd9a58e114c9100bfc71fa3fc02df3e5fa5f19ec33",
-        "label": "MiniMax H3: The Open-Weight AI Video Model Reshaping the Industry - Intelligent Living",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Intelligent Living",
-        "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBUQmIwdmU3Ti1IUDNlU3V1TkFqd3NSWVJrajdhd3ltYlBpZkhtXzQzeFAxM3NkbDJKRGU5YWxWM2NUQnNsWXBrTkhUZ0hMTW5lbTltSlNrZ0VnX0JIRXpLbEpab0Z4T2JyWmtKQkh3M3QzNjBfUlBsdGhuVQ?oc=5",
-        "date": "Sat, 22 Aug 2026 20:08:07 GMT",
-        "summary": "MiniMax H3: The Open-Weight AI Video Model Reshaping the Industry Intelligent Living",
         "score": 1,
         "weight": 1
       }
@@ -13217,6 +13223,20 @@
       },
       {
         "source": "OpenAI",
+        "target": "evidence:439997eeda34c3729b1916f9a0035d0d7536d82881b81d7f77761bb55b24abce",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:439997eeda34c3729b1916f9a0035d0d7536d82881b81d7f77761bb55b24abce",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
         "target": "evidence:dd1823efa68312692fe9f387839e8721444d6e86492c9fa736722ad2fa3d82b8",
         "type": "EVIDENCE",
         "weight": 1,
@@ -14406,6 +14426,13 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:4fbbbfb1aa862dbfe3c83b6c114d0ef72ef419b679ea05efb19061d02683a057",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Tencent",
         "target": "evidence:dfff0c98e213ca6c8d1eac2e6b4e47a1d882b4e1eeead93677a916cbe844a3c1",
         "type": "EVIDENCE",
@@ -15507,6 +15534,27 @@
       {
         "source": "OpenAI",
         "target": "evidence:4d2c5a1ea037299f5beef2350486d461ad7d13eb64e7babaea111d19d8f4386e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:b8250af0fdbaf093da4214bd4a77cb37f95dc14c1f6ea4183e641ec28cc62fb0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:b8250af0fdbaf093da4214bd4a77cb37f95dc14c1f6ea4183e641ec28cc62fb0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:b8250af0fdbaf093da4214bd4a77cb37f95dc14c1f6ea4183e641ec28cc62fb0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17634,6 +17682,20 @@
       },
       {
         "source": "ByteDance",
+        "target": "evidence:e0d38a7d7c2f3ae7d32b1077f1b787bf96177fd205c6f7b75e2c96cee23908a8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:0fa50c7fabc36bc0675ae8be9fdeba0ac6fd4bae9ede7134700c50dc3b87b3fe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
         "target": "evidence:c283af5fd16667e2b3eb54251d5d73c6c6e8cb5e79fdac601d04bddaf8cde39b",
         "type": "EVIDENCE",
         "weight": 1,
@@ -18405,41 +18467,6 @@
       {
         "source": "MiniMax",
         "target": "evidence:472c2c47fa3f65fcc62bcb39e5ab728d41460725cb74af5582c7f6d3df192a92",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:498c310e9016b2b9415eb120bbab3df485a27e6c80bbcf65c919d564f8bcaf88",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:403761c56b101641c3da7cd9a824280e8ad447cb8f252b55dd3597b945fff31a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:5d4126cb01e59eae9621f251e6b0e25a29d7d9a724aeada615ccd632b46b4b79",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:c2bdda760cac8b6f02683c802e0c0895e7efb01f5dbef48626a1c7abca82552e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:b9dc0d0d67d15a7d6a1179fd9a58e114c9100bfc71fa3fc02df3e5fa5f19ec33",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32985,20 +33012,20 @@
   ],
   "collector_runs": [
     {
-      "id": 399,
+      "id": 403,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T04:53:51.209736+00:00",
-      "completed_at": "2026-08-25T04:54:03.834281+00:00",
+      "started_at": "2026-08-25T05:48:16.349762+00:00",
+      "completed_at": "2026-08-25T05:48:28.826893+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 3,
       "error": null
     },
     {
-      "id": 400,
+      "id": 404,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T04:54:04.235064+00:00",
-      "completed_at": "2026-08-25T04:54:04.645051+00:00",
+      "started_at": "2026-08-25T05:48:29.227865+00:00",
+      "completed_at": "2026-08-25T05:48:29.728050+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33015,20 +33042,20 @@
       "error": null
     },
     {
-      "id": 398,
+      "id": 402,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T04:53:50.209817+00:00",
-      "completed_at": "2026-08-25T04:53:50.808444+00:00",
+      "started_at": "2026-08-25T05:48:15.162984+00:00",
+      "completed_at": "2026-08-25T05:48:15.948666+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 401,
+      "id": 405,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T04:54:05.046264+00:00",
-      "completed_at": "2026-08-25T04:54:06.851270+00:00",
+      "started_at": "2026-08-25T05:48:30.130546+00:00",
+      "completed_at": "2026-08-25T05:48:31.853621+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33045,7 +33072,7 @@
       "error": null
     }
   ],
-  "document_count": 1381,
+  "document_count": 1386,
   "event_count": 969,
   "mention_count": 2372,
   "review_counts": {
