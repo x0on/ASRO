@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T15:05:57.300818+00:00",
+  "generated_at": "2026-08-25T16:00:30.990086+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "monetization": 42.9,
+    "counter_evidence": 42.9,
+    "fragility": 61.1,
     "capital": 48.732271163185665,
     "transmission": 39.6,
-    "external_pressure": 16.12,
-    "stress": 57.1,
-    "fragility": 61.1,
-    "circularity": 57.1,
     "cannibalization": 54.2,
-    "counter_evidence": 42.9,
-    "monetization": 42.9
+    "stress": 57.1,
+    "external_pressure": 16.12,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "monetization": "directional_estimate",
-    "capital": "aggregate",
-    "transmission": "confirmed_trigger",
-    "external_pressure": "aggregate",
     "counter_evidence": "directional_estimate",
-    "stress": "directional_estimate",
+    "capital": "aggregate",
     "fragility": "directional_estimate",
+    "transmission": "confirmed_trigger",
     "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "cannibalization": "directional_estimate",
+    "stress": "directional_estimate",
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T16:00:30.501851+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"monetization\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"capital\": 48.732271163185665}"
+    },
     {
       "captured_at": "2026-08-25T15:05:56.812474+00:00",
       "score": 45.3,
@@ -5622,6 +5628,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:877a82d11d16db51aa0567085f1a9016340cba6b48cd23add9c3341d1ac32f37",
+        "label": "OpenAI's IPO Won't Likely Happen Until 2027. Here's Why That's the Right Call. - AOL.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE91VHpFcXJVZzBrLUJ3dTJKbjZwSDZsdHE0aEJ1T1NWNUVQTUpENU1obEVuNFRyZ2RSUmdqcVFRcnFYUHpOWHZwYndnbjlGS3QzNGVqaGc1ZUM4OXU1aGNfZWpTZm5SY0FvRmxpeDlDdHhENjhUUFdja2FrZXNGaDA?oc=5",
+        "date": "Tue, 25 Aug 2026 15:15:07 GMT",
+        "summary": "OpenAI's IPO Won't Likely Happen Until 2027. Here's Why That's the Right Call. AOL.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:013cf9d986cc298b1e518818bff567f7807b8ce21d973f19c6dd7ab5ae8f95ee",
+        "label": "OpenAI's IPO Won't Likely Happen Until 2027. Here's Why That's the Right Call. - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNTmxDYnZ2Q1BzdnJKTXBPZU0xUUp2MmFvVXFCOFB1SXNDQnozeEdiVGhGZXdINmtiWUpzTXFxaFRsRVRYNnF0Q0JxTlZlTXZCTmEyOXdCR1NZQm9lUXVyYTE3MWdzeTVfYTdhclFuOHlHb1VYOS1QTlFhU2JjRWtDdk5SX2VFVnBBZndXZHR1djlOaWpRbThTWUNUaw?oc=5",
+        "date": "Tue, 25 Aug 2026 15:03:00 GMT",
+        "summary": "OpenAI's IPO Won't Likely Happen Until 2027. Here's Why That's the Right Call. Yahoo Finance",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:2103246b9d0441e72ab99f638394c1e04c7a2f3fdb63a04fe10b660dba59cacf",
         "label": "OpenAI's IPO Won't Likely Happen Until 2027. Here's Why That's the Right Call. - The Motley Fool",
         "kind": "evidence",
@@ -9894,6 +9924,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:5ab5d1a6b3e206d2a408b7ff9a96c0e16e16168e091884e7047ebd256c7db8b8",
+        "label": "Microsoft (MSFT) - Moomoo",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxOV09ZX0RCY3I1YnhNNHpacFA5NldTZlpkZEw0MzlpZEtlOFN2cEhZMnFkSFN1M2lUMHFFY2s2RGJxT1RPLVNacUQ1R2F1c1JMb0V0YkJDRWJuWVFlc2pMR0dwYjBvV09wUnhRTVo1cmZ4SVZxeEVIOHVxbjdjV2lVOXY2X0tEQWtXemFmMy1qT2RnZFY4TS1UZGw0OG9XaEFxX083NkNKclFJcVJtZVE4UTRueXJpcEdwQnZjcm91NXIweWNOVFNreE9VMU13VUdjeXhlMG9MZW1KekU3dnZ4N1VjX2xjbEFfeTlHMDM3MEtPTllGWFJueW9pQnZYMFVwNENfOHJFWkluWXVzN1FxUjZzMTVvSlV2Unhydm1TOEVkTk9RZGQ4?oc=5",
+        "date": "Mon, 24 Aug 2026 22:33:23 GMT",
+        "summary": "Microsoft (MSFT) Moomoo",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5cc4d47a0f5512b5007a1ab980a4eea1365e14e0d67ae58b7f50dc40880e1976",
+        "label": "Nvidia stock is on a 7-day losing streak ahead of its big earnings report - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcERWSDRueE5tTEJLWGdZeDB3ZVpUQmZJWkVXa29Ua1U2SW9Lbno0YmQyRlZ1RUxpS20xaV85cXNvbjktM0tfWGZlOWFMNmh2dWUtSy0zYUpfdHAxcGJRc1NNNEtGNTNGZWJrcmxNSTRHdnI0OTZGNFdzZ09hQk13MkNqSlB6NzN2dW9MNkdtRkYtczJJSWFzZE04d3V1aXFaWi1WOVUzMlRWRXZCN0tzVjVVcU9SMmtXY3VyRjNNUmVFTWdua0pkekJOOTB6aVZjMVNB?oc=5",
+        "date": "Tue, 25 Aug 2026 12:15:27 GMT",
+        "summary": "Nvidia stock is on a 7-day losing streak ahead of its big earnings report Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:30bc2519fb216869446c223e549f7f1677a785d4dfe98bdd463b86d245870356",
+        "label": "Jalape\u00f1o\u2019s first results show industry-leading speed and efficiency in AI inference - OpenAI",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "OpenAI",
+        "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBwMGNpOVlmLU9XdHlqemwwb2ZIRmRab3cyUTJnZ0x4UGVtWWZkMzYwb0thVlY5QVhSYXVaQ0xCRllRQUFuVE9FVUtac3FxUFM3T0Nfc0ItUTAzOVRP?oc=5",
+        "date": "Tue, 25 Aug 2026 14:28:01 GMT",
+        "summary": "Jalape\u00f1o\u2019s first results show industry-leading speed and efficiency in AI inference OpenAI",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:897791e2077f82b4b5afe61252c2f7760253faf47e38ce32d9a1e1ec3f93ae5e",
         "label": "SPECTRUM EXPANDS ITS COMMUNITY INVESTMENT AND OFFERS AMAZON PRIME MEMBERSHIP TO QUALIFYING LOW-INCOME SPECTRUM INTERNET CUSTOMERS - PR Newswire",
         "kind": "evidence",
@@ -11054,66 +11120,6 @@
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOakgzWUJKSldHUFB3bWJzblhFSkVuc1NOdExfcExSeVRoVzJFaTFRd1BsMEYtLW1ibmxGOWlkVWkxUmlVYmZjdlZBbENNZE1yQXV1MTd6QmFLLW5uT1BlUUZzaEgzYW1vdWg2cHNmaVkwOVZxZEFIak1naDFoN2hhZTRFN2tyQUQ3R0g1WEZYZ0pNM3ZzaElJa2t3MHJGYURaMzd2eUR5OUNxT2tjQmZzbHJROA?oc=5",
         "date": "Mon, 24 Aug 2026 01:53:00 GMT",
         "summary": "SoftBank Plans Record $6.3 Billion Retail Bond Sale in Japan Bloomberg",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:09e9aa22a87606caaa300b3f815ab628c43d2088c4c41bd78423a20cc558e2d2",
-        "label": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation - The Information",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Information",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQMGdwRGUxNHpRRFM3dndxcG04azgxTFYxWkotZjNIVjAyT2dtbWkyNFo1NEJ6bXNlU1BGR3JYN0RyS18xZHNycVRkMXZBNHZsSlhFSVVPWU9QdFlaX0pJa19SNmZ2M1ZZY0RqNnJIakJwSXZPSEhSWDBPNlg4MUc3VWpyZGdUSlI5N2NjX3hnaWU2TUp1cmVFdHlMNVMxc01xVExsOWVCT0NfRXRaYzdsTnNMaVFMR3dIVWwzeW10dkxhRUJmaWhkVUtzd1QybjN3?oc=5",
-        "date": "Mon, 24 Aug 2026 03:06:00 GMT",
-        "summary": "Nvidia Discusses Perplexity Investment at $30 Billion-Plus Valuation The Information",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0baa960251eefb8768d1faf8c2fda0bc0e5c43252abe5b371ea1190aec1d732a",
-        "label": "Alibaba's HK$800 Billion AI Push Amid Financial Strain - \uc870\uc120\uc77c\ubcf4",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "\uc870\uc120\uc77c\ubcf4",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTXJ5SldzQzRKVDFVQ3ZJRHM3MEtpY3pCM2dqWlhUQTlodklXM1V4cGxRdkdLRTVBZUdFUWtTVFB1bGlsQUtfNzJZOHpzUnQ2LWJLcTJNdnNBb25ha1JNM2UzVkdqY0VEbHc5aTdoODJTVzh0TmpOU3VxdzhCNmJJMmlzT2NGUU1U?oc=5",
-        "date": "Mon, 24 Aug 2026 04:01:49 GMT",
-        "summary": "Alibaba's HK$800 Billion AI Push Amid Financial Strain \uc870\uc120\uc77c\ubcf4",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:40e8b2e8a5f6f42c45abad4cc57dc9c55143032d445b1d7af7c5747567625765",
-        "label": "Alibaba to Raise $10.20 Billion for AI Investment With Share Placement - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQODYzZUNTRmFDWldFZ0NoQzJIVWhNY1ZtZ1F2UVlGOU5MWlh6RlBQUHI5NHhpUmVkcjNUX3Mya1hoOUt2aGVQRzdvYnJHcThnOVVNMXl1WXpmVzAycmxKN3pqdFhaa2FtUWlIT0RubXFmeGp6OUQ0TDN4MEVuZG1HZVR2RE5mZEhreDVIQTVkWTRkNzhNVk44ZlVFQl9PbWgwX2c?oc=5",
-        "date": "Mon, 24 Aug 2026 03:58:00 GMT",
-        "summary": "Alibaba to Raise $10.20 Billion for AI Investment With Share Placement WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:db9b7c659a7822817aa641ff9a578584aa4ae94b7e66934d25abb11320cae063",
-        "label": "Alphabet (GOOGL) Develops Custom AI Chip For Robotaxis - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTkpVLUdvX3o0VGpFRnJfU25WWlFKaG80VjhiZ0V4aklJSkFLYTZRTUFyeTA2NVZMZkJXU0U3WnNldWxyanZJN3pETkRxeHJRVGs4RHQtTDc0TkxZdkZ4TlpIc1g0akhBLVdUVVE2N2hZMFJ6TzI3YVFHNEhmRUlnVlRkUUJNZ04tNkM5VkE0NVNQWXN0TnBfUlR6by1pUFpua3NSa2FKdVNSZ0duZ2ZIb1RKcVVpVldL0gG-AUFVX3lxTE5abnJ3ZDBGUVJBNlFQSDMwSC1tMGxKU2NCVUs3ZmlPT2VkaEVCX2E3OWtuNFR3VDNkUFVFVU1BSnRQQnVHdjVjZ2g2eEl4Wm9ESkdxTFliVDRIUUQzbENYR2RsSHVxLWJpUDZaOTQyNzhXRUhXQlRBeXY1clVfeFhIMlAzR1VUQzhXTHZXTHNWeXp6RmJTSVFxQWNWNXZRUnVuLUNobDZGT1hOTEs4dFlLOTJfRXN3SXU5Q190SGc?oc=5",
-        "date": "Sun, 23 Aug 2026 19:41:15 GMT",
-        "summary": "Alphabet (GOOGL) Develops Custom AI Chip For Robotaxis simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:718988a3d2d1a3ac0a16a2282cc2184762bc4c0827c3c1cf6a49db447c642ceb",
-        "label": "Amazon Pips Walmart To Become World\u2019s Biggest Company By Revenue - Stocktwits",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPR2U2RkRiaHlidTdFVHFWLWNsdmdKTmpQcXNQOXVqbjFDNHpPeldYNFg0UFUtT1VaTGc1LXNqV2N3endGeEo4a2xmQWNYeWZvMmhSX0NVdmxpRTJ3eXlZQ2d6VDBYOXZpRUF5dWRwT2lPb19IUWp2YWRKRl9zZzFva1JhSDNmT0g2N0dudElYRHdaVzVRSUxqZTltZEduV3AxLTlHczdkY2hRQUh4TnVPSzhuQlRtZXlEUy1GNXEzRDRFUGs?oc=5",
-        "date": "Sun, 23 Aug 2026 17:05:23 GMT",
-        "summary": "Amazon Pips Walmart To Become World\u2019s Biggest Company By Revenue Stocktwits",
         "score": 1,
         "weight": 1
       }
@@ -14488,6 +14494,20 @@
       },
       {
         "source": "OpenAI",
+        "target": "evidence:877a82d11d16db51aa0567085f1a9016340cba6b48cd23add9c3341d1ac32f37",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:013cf9d986cc298b1e518818bff567f7807b8ce21d973f19c6dd7ab5ae8f95ee",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
         "target": "evidence:2103246b9d0441e72ab99f638394c1e04c7a2f3fdb63a04fe10b660dba59cacf",
         "type": "EVIDENCE",
         "weight": 1,
@@ -17854,6 +17874,27 @@
         "mentions": 1
       },
       {
+        "source": "Microsoft",
+        "target": "evidence:5ab5d1a6b3e206d2a408b7ff9a96c0e16e16168e091884e7047ebd256c7db8b8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:5cc4d47a0f5512b5007a1ab980a4eea1365e14e0d67ae58b7f50dc40880e1976",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:30bc2519fb216869446c223e549f7f1677a785d4dfe98bdd463b86d245870356",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:897791e2077f82b4b5afe61252c2f7760253faf47e38ce32d9a1e1ec3f93ae5e",
         "type": "EVIDENCE",
@@ -18528,41 +18569,6 @@
       {
         "source": "SoftBank",
         "target": "evidence:45d5500193d5e59bbff13ac25c9dbef7e50fd8551c3e751ba5f96fda63749b78",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:09e9aa22a87606caaa300b3f815ab628c43d2088c4c41bd78423a20cc558e2d2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:0baa960251eefb8768d1faf8c2fda0bc0e5c43252abe5b371ea1190aec1d732a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:40e8b2e8a5f6f42c45abad4cc57dc9c55143032d445b1d7af7c5747567625765",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:db9b7c659a7822817aa641ff9a578584aa4ae94b7e66934d25abb11320cae063",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:718988a3d2d1a3ac0a16a2282cc2184762bc4c0827c3c1cf6a49db447c642ceb",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33123,20 +33129,20 @@
   ],
   "collector_runs": [
     {
-      "id": 439,
+      "id": 443,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T15:05:38.804344+00:00",
-      "completed_at": "2026-08-25T15:05:53.477003+00:00",
+      "started_at": "2026-08-25T16:00:10.628575+00:00",
+      "completed_at": "2026-08-25T16:00:27.143800+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 440,
+      "id": 444,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T15:05:53.878076+00:00",
-      "completed_at": "2026-08-25T15:05:54.273839+00:00",
+      "started_at": "2026-08-25T16:00:27.544815+00:00",
+      "completed_at": "2026-08-25T16:00:27.988671+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33153,20 +33159,20 @@
       "error": null
     },
     {
-      "id": 438,
+      "id": 442,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T15:05:37.663778+00:00",
-      "completed_at": "2026-08-25T15:05:38.403333+00:00",
+      "started_at": "2026-08-25T16:00:09.139590+00:00",
+      "completed_at": "2026-08-25T16:00:10.227480+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 441,
+      "id": 445,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T15:05:54.675195+00:00",
-      "completed_at": "2026-08-25T15:05:56.396906+00:00",
+      "started_at": "2026-08-25T16:00:28.390439+00:00",
+      "completed_at": "2026-08-25T16:00:30.086673+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33183,7 +33189,7 @@
       "error": null
     }
   ],
-  "document_count": 1432,
+  "document_count": 1438,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
