@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T11:44:15.413583+00:00",
+  "generated_at": "2026-08-25T13:12:24.651895+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
-    "cannibalization": 54.2,
-    "capital": 48.732271163185665,
     "monetization": 42.9,
-    "fragility": 61.1,
-    "stress": 57.1,
     "external_pressure": 16.12,
+    "counter_evidence": 42.9,
+    "stress": 57.1,
+    "capital": 48.732271163185665,
+    "transmission": 39.6,
     "circularity": 57.1,
-    "transmission": 39.6
+    "fragility": 61.1,
+    "cannibalization": 54.2
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "capital": "aggregate",
-    "monetization": "directional_estimate",
-    "stress": "directional_estimate",
     "external_pressure": "aggregate",
-    "circularity": "directional_estimate",
-    "transmission": "confirmed_trigger",
     "counter_evidence": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "fragility": "directional_estimate"
+    "circularity": "directional_estimate",
+    "fragility": "directional_estimate",
+    "monetization": "directional_estimate",
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate",
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T13:12:24.212624+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"transmission\": 39.6, \"fragility\": 61.1}"
+    },
     {
       "captured_at": "2026-08-25T11:44:15.028387+00:00",
       "score": 45.3,
@@ -5604,6 +5610,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:ffabc2ac017353bae00dd53447a564423ca7528534e4c86d5aafed9f3ee610f2",
+        "label": "Alibaba's First Post-IPO Share Placement to Raise HK$80 Billion Sends Stock Tumbling Over 8%, Dragging Hong Kong Tech Sector - finance.biggo.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0wcU5QYWZLZ0VuVkFmdGs5cVJOVzk3NjZ1RzFKV3YzUjRkUWV5MEVydmNULUhmbTdLYjNrVlBPTE5VZHJ5OXlVNzRHZmFCSE5MeE01LXIycmdlWWhGMEFjeldWeno2eU9mMi05X09fQ00wZ19yNlE?oc=5",
+        "date": "Mon, 24 Aug 2026 08:35:00 GMT",
+        "summary": "Alibaba's First Post-IPO Share Placement to Raise HK$80 Billion Sends Stock Tumbling Over 8%, Dragging Hong Kong Tech Sector finance.biggo.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d524bf81bd866b1a2a877ace9bea8242bafb2b74b23f7ea1bd46d3cc15d1689f",
+        "label": "Anthropic Expands Enterprise AI Arsenal With Autonomous Tools Ahead Of Widely Expected IPO - Stocktwits",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQYzBTVFhtYVNkNUMtcWZYYkV2VUhGcEV6WTB6N2htWnFJN3dibGYyUU1TOU0yUy1EWEhpampTc0c1ZWk5b3Z2a1o3b0NBTFFQenNrdkppQ3N3U0RFY3kzSElRR0xVbER3YmtRTkVIU0VldV9GSnlfbG96Zm5ORWpuU295Z1VFVE9yVnB5VlR0VDA1SlNyT1ZGdG5fTXl3VGktWVdLemMzS3NrdXU0NUJRTk05ZWZUQzRjZ1ZNSEVZOGc1RVVRQ1M1cmVkZDRkSGhxZDVFSXZKb3VFLW8yT0E?oc=5",
+        "date": "Tue, 25 Aug 2026 07:15:14 GMT",
+        "summary": "Anthropic Expands Enterprise AI Arsenal With Autonomous Tools Ahead Of Widely Expected IPO Stocktwits",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:59739ebef88bbfabd173b79e90d869495faa23d8abbb18cc6fac74eb9f3ee19b",
         "label": "Anthropic IPO: The Partner Stocks That Could Win Twice - Moomoo",
         "kind": "evidence",
@@ -8436,6 +8466,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:c0de50b3bce5eed9345c2b5abca02a2d11f8ca33ac1fe6b753ec1a8670cb18d0",
+        "label": "OpenAI models, Codex, and Managed Agents come to AWS - OpenAI",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "OpenAI",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE8yUmlDZ29pZlZFNHNfSzBVbXkxRkZXNTZ0cjVpOG5DWHMtTGpNOV82dG5WeVZpbVktQjViSHRRZ0lEVWx3N0ZIZGo0UllDV3A4Z1R1R29HbzU?oc=5",
+        "date": "Mon, 24 Aug 2026 20:49:56 GMT",
+        "summary": "OpenAI models, Codex, and Managed Agents come to AWS OpenAI",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:bad85a8b26532e94569dd9801b4d543e415be6875e32a6e1739e0eace6da7b67",
         "label": "AI Weekly: Codex Growth Overtakes Claude Code; DeepSeek Quietly Launches Vision Model - finance.biggo.com",
         "kind": "evidence",
@@ -9828,6 +9870,102 @@
         "weight": 1
       },
       {
+        "id": "evidence:5126baf1845a682977d2ebc11ea4394c2afc156d6226789fb4b7988353bc819c",
+        "label": "Nvidia shares set for $280 billion price swing after earnings, options show - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa182VERRNl9ULTg3MXh0Z004aGNnVW9HQW9TLTI3R01YZzRMeWZEMFhramsxeHVLNGE1ZXAwYTRZcWxMbGF5YTB5dkl6OHVyT2FrTks2ODRFdlNPSTNmUE1MM0ZhaF9LT1JRZEdVX1ZJU2NMNlZiQWlQZ0toUWk1WmVSbXdYTWJva3NxTG92LVJrczhfQzVnLTZ4aE1yYTAwVHVucFNQbHRxSDN6OGJZcjZNVHo?oc=5",
+        "date": "Tue, 25 Aug 2026 05:01:00 GMT",
+        "summary": "Nvidia shares set for $280 billion price swing after earnings, options show Reuters",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b8c4b09149983a14dfc519f753013b1cd42ad5b20e7785ed5002be9fd35a77eb",
+        "label": "Nvidia\u2019s dependence on hyperscalers faces big test in earnings report - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUW1ETzlYdmdSM2tOdEVPN1kzZUhSM1lMRjctVkpQOFl3VFNhT3N5eG1QTTZMVkh4cG9pQWRKUGt0ZmdCaXl6V3FJdFBaUF9oMUdrS2xqeENNV2I1bUhaQ3J6NTN4MFJyZDVzMlpkcEt2RHVhTTZ5V3U3TVh3ZzBCRWdnazFPQmh1bTBqWXgyRkFaUklaM0s2S0ttWnlUVGFBdmJNclpzRHrSAa4BQVVfeXFMTXlMb2p6dVN6Vmg0Wk83T3RLalNJTDlOQnVOOUtUNTlUUV9UelZ5SEp3TW9GZGhqeDIxUklXQ09XblJtY2cyVHFNYXI1SElQQXlHWHJIZ18xTFg0WkNKc1haZmoxRU1EVHc4dlRjQ25CWktUUjBKNV9qd2xmRWZKNDRTY0hpNTdRTlN3ZjdWbWhac2R1TjdUZ0ZIM3kybEZQamNpYm5yRDEwM2xlNjJ3?oc=5",
+        "date": "Tue, 25 Aug 2026 12:00:01 GMT",
+        "summary": "Nvidia\u2019s dependence on hyperscalers faces big test in earnings report CNBC",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:49209c0584fd967683aac861a43d9391a1468b776ebac07e9c96c248eba5c6ac",
+        "label": "Nvidia's Third Structured Non-Acquisition in Nine Months: $27 Billion to Sidestep Merger Review - Tech Times",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Tech Times",
+        "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZlVWd0l3WjgtNlVSTWo3RGxfalZxZXBDZ0xIRHhUWThGVGFKOWVqQUFGUE1yeGttUkROVFIzX3B4R3FVbkhlcTQxS0pSbGRXTDZoUjZKblRBcUpaUnpOLUUtODk1akJ1RVBHbGtUc29qOW1JRUVsbVU2NS02TUxSWlhOZ3NsWjVVY2xxZE9FLXY1cm81WWNlNkhTMGZ1NDAwZ0o0UEpoTVRNbzlPTjRacDhETUlueEtMa2d4YjFMVi0zQjBYX0pjVHRDeFpVWTlEZHQ1d1ZpVnc?oc=5",
+        "date": "Tue, 25 Aug 2026 12:12:04 GMT",
+        "summary": "Nvidia's Third Structured Non-Acquisition in Nine Months: $27 Billion to Sidestep Merger Review Tech Times",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ba9fdfa8bcc5967a0948f3d94ddd4e3299769ac585a9832b21c0dff8a09f0bd3",
+        "label": "NVIDIA May Raise Its Already Staggering AI Growth Outlook - TradingView",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZjllRF9JZzlPMFhJS0lnXzNFUjQ3TWNfWmlFb2ljQ0UzRkY1cXFlZnlhNDhmLWxLWmczSzdkMVFsODQ1cnJKSHVBYUtYNmJHM1pqWGswWDZtclJfNzNFd0k1bnA1aGc5M09Fd0lmYmFfcE1jd0lQVllLbzh4UG01WEtaTjY0aXFnMjV3TFhnZnlxU29JSkhkNEZxcFpJMzBVMEtKOWZBTkdnMDUtMGFkcy01dUxiY0U?oc=5",
+        "date": "Tue, 25 Aug 2026 10:39:18 GMT",
+        "summary": "NVIDIA May Raise Its Already Staggering AI Growth Outlook TradingView",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:643355ac9bd5de9c3dc133c88f96df736739229acccf8a8bf144a03c47c32913",
+        "label": "Breakingviews - Prosus is struggling to shed Tencent shadow - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPanVjcEx6RDI2MTdiZXZnc3JxdkMxdkpXYVJfR0tQQkdpLW9mMFdMRzBTTkNXVlhVaHlUc3hUUmRlcU9ya1h6Wk9PS2Jwak9Wa1phSXYtSFhYS1pCaG90VERXTkpzT1lWVVpCVExiR2NjcUFwYmpTSW0ycTJlakpfVnFscml2c0lOeEFWRHYzbUstOGxJRW8xZjJiYkx1eFNYT0cw?oc=5",
+        "date": "Tue, 25 Aug 2026 11:36:40 GMT",
+        "summary": "Breakingviews - Prosus is struggling to shed Tencent shadow Reuters",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:24566cc1f9d6701ed92d4742336f312e923a01df3c20d23a195934d9e7f3b105",
+        "label": "ByteDance's AI Business Consolidation: TRAE and Coze Folded into Doubao, Standalone Office Product \"Doubao Work\" Debuts This Week - finance.biggo.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YX3hEV0ZHTmJxaTA3bDNQcElBdW95NUhkR19sbW9SSkptLVV6WlBpaW15QS1pdFNUVlVuMUZtUU04c0lxMkNpYlhtUDh6alkwd1lhYzlGMTFDNnE5dENuTUpGaFR3bjdCM1hzeVFxZ2NqdDdFWnc?oc=5",
+        "date": "Tue, 25 Aug 2026 00:35:00 GMT",
+        "summary": "ByteDance's AI Business Consolidation: TRAE and Coze Folded into Doubao, Standalone Office Product \"Doubao Work\" Debuts This Week finance.biggo.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:62bdf6b6112c2f999f2b92ecebc4b29ebe318310297b3d80efc65fdbf2579d8b",
+        "label": "Is Uber (UBER) Quietly Rewriting Its Autonomous Strategy Through Baidu Robotaxis in Dubai? - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSjJiVWdsdk5JblR0dWU4VHd4MHI1MjdUbW9zZlFFUHhRYmJfUTJEeDZ4ZHpYY3BaaG5SVWpIT0lTYzl4Vy1TN1FaOWNmNDhjZElmUHNwZDRaLU9FUEFqd1QwbGhzT2l6d3drSERMUGk1QzhPdXM3dDRXN05ZdE44NGU1bkZpN1hxcmZ5OGtua2NHcEdtWTBuSU5qdGU1NlpGTGZhTWlNeHlJdk5STkUwbTEza0FxWmRHNDFSVllyZGJsNzRPbXA5WXJsamtRX3lEVEdiT3R4c19zZHpN0gHcAUFVX3lxTFBKMmJVZ2x2TkluVHR1ZThUd3gwcjUyN1Rtb3NmUUVQeFFiYl9RMkR4NnhkelhjcFpoblJVakhPSVNjOXhXLVM3UVo5Y2Y0OGNkSWZQc3BkNFotT0VQQWp3VDBsaHNPaXp3d2tIRExQaTVDOE91czd0NFc3Tll0Tjg0ZTVuRmk3WHFyZnk4a25rY0dwR21ZMG5JTmp0ZTU2WkZMZmFNaU14eUl2TlJORTBtMTNrQXFaZEc0MVJWWXJkYmw3NE9tcDlZcmxqa1FfeURUR2JPdHhzX3Nkek0?oc=5",
+        "date": "Tue, 25 Aug 2026 10:35:29 GMT",
+        "summary": "Is Uber (UBER) Quietly Rewriting Its Autonomous Strategy Through Baidu Robotaxis in Dubai? simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:de03b39124375c096c63b10f07bc45749faa9aa8126fc664c46a332248abbed4",
+        "label": "China's richest man, Zhong Shanshan, invests $350 million in DeepSeek AI - KuCoin",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "KuCoin",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNOXBaN3FWTEFEaEpXcEhKN3ZMd25hVm85b05CNzRscG9yQmo5ZlFHUnlkY1A5NHB6dWdrdkJ0OU9Ealg0SGhoZ3ZGUjZIOVdZQ1lDRjdWV3FpVDFzSDhBOXEwUW1yMmRfX3RaWGNzb05sRlp1QTlEakFXcnhleTEwRjNOWGNSMFFuN2d4bFBrM3hTYmVEZ1IyNFdndDI?oc=5",
+        "date": "Tue, 25 Aug 2026 10:56:11 GMT",
+        "summary": "China's richest man, Zhong Shanshan, invests $350 million in DeepSeek AI KuCoin",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:f0e5f75536e3c9719eb7c228031e33356d3f3a3653af500a06fbdb180c6488b4",
         "label": "How to buy a car with Amazon Autos - About Amazon",
         "kind": "evidence",
@@ -10964,138 +11102,6 @@
         "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPallQeUw5QXRBaVdQaWVubTFDZUgwOXpsTkNQTFNmNUY5U3lsaEhQRWROWVFnZkpoZVZ4Z1h3WkE0S0ZHUU11bXJUWWlhUjhzSkNGSkhNa3Y3aUVYdDVCMzBTTDlMc09uLWU3MWxqY3F4ODNLQ2owem1ZdXEzQ2tORDhhbFVYSWxjS0xPbmhFbUZ6R0JkWlZkZksxTWpQdG42WW9IdXBORC1TVnJGSGdGckUyTVZJODFXclE?oc=5",
         "date": "Sat, 22 Aug 2026 12:59:42 GMT",
         "summary": "Zhipu AI Highlights New RL Infrastructure Behind GLM-5.2 Post-Training TipRanks",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3e7741fb7c2e7987ad162f23374e3c60b076afc39b25e8aecafcce1d176459d2",
-        "label": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% - \uc544\uc2dc\uc544\uacbd\uc81c",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "\uc544\uc2dc\uc544\uacbd\uc81c",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5RVG1SektNRU85M1B4T1UxbFNDcExlSVpXNGRqOERCWEpUS2RWNGkwWVIxd0o3MTVHYkkwRFJUbk9CU0JOaDFfWDMwNV9ISDRrTDUxMjNEbGs2VzAzVFAxRDIzUlc?oc=5",
-        "date": "Sun, 23 Aug 2026 19:44:24 GMT",
-        "summary": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% \uc544\uc2dc\uc544\uacbd\uc81c",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7cb0af148f1ef129e363dff3ebcea9ff730dcbad6b77a51d940b689d047ea27d",
-        "label": "Hong Kong Stock Exchange: Hang Seng Index Falls 1.1% to 25,652 as Tencent and Xiaomi Lead Tech Retreat - BBN Times",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "BBN Times",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNZ2JTUWFVY2FtRjBmQXZnZDNvZ1hiWmFFUlpQR0dUWEQ3bVpOdWMwWTYtczlLVHFudHNxRWQ2QmlzeS1hNDlLQUxwMll2ejlEY2ZUeHhDRENmd2VmajV5eDJqVVRqQUpnd3l4NmtRcmhUNnJ0aWZLWFZSR0hlUTNoMXJ1VndQSUlmcWttb1FObW92XzkyVUtoU2I2NVhpRjhzS1VRMGUyYWZCQzdzMWtfcHZWR1FTNWtya2lxQkI1TGdEei1obmp5Vk4zcTNzYTlzUF9MV1N3RQ?oc=5",
-        "date": "Sun, 23 Aug 2026 22:55:21 GMT",
-        "summary": "Hong Kong Stock Exchange: Hang Seng Index Falls 1.1% to 25,652 as Tencent and Xiaomi Lead Tech Retreat BBN Times",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:58949a594936e0411e8a21971082b4609b534ed4b80461351e875f9a8c47e57e",
-        "label": "Alibaba to Bulk Up AI Investment via $10.20 Billion Share Placement - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQODYzZUNTRmFDWldFZ0NoQzJIVWhNY1ZtZ1F2UVlGOU5MWlh6RlBQUHI5NHhpUmVkcjNUX3Mya1hoOUt2aGVQRzdvYnJHcThnOVVNMXl1WXpmVzAycmxKN3pqdFhaa2FtUWlIT0RubXFmeGp6OUQ0TDN4MEVuZG1HZVR2RE5mZEhreDVIQTVkWTRkNzhNVk44ZlVFQl9PbWgwX2c?oc=5",
-        "date": "Mon, 24 Aug 2026 01:07:00 GMT",
-        "summary": "Alibaba to Bulk Up AI Investment via $10.20 Billion Share Placement WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0f554f7c9785106e03db99df52a782ad1ff3c12d63690141edf8c9155026dbe0",
-        "label": "SoftBank Plans Record $6.3 Billion Retail Bond Sale in Japan - Bloomberg.com",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOakgzWUJKSldHUFB3bWJzblhFSkVuc1NOdExfcExSeVRoVzJFaTFRd1BsMEYtLW1ibmxGOWlkVWkxUmlVYmZjdlZBbENNZE1yQXV1MTd6QmFLLW5uT1BlUUZzaEgzYW1vdWg2cHNmaVkwOVZxZEFIak1naDFoN2hhZTRFN2tyQUQ3R0g1WEZYZ0pNM3ZzaElJa2t3MHJGYURaMzd2eUR5OUNxT2tjQmZzbHJROA?oc=5",
-        "date": "Mon, 24 Aug 2026 00:36:00 GMT",
-        "summary": "SoftBank Plans Record $6.3 Billion Retail Bond Sale in Japan Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4eea100126f7b50ef64e191fb606eb7bf7fd99db4bee8ccf65fffea1467c6097",
-        "label": "Ahead of Nvidia Earnings, Here's What Barchart Data Says Comes Next for NVDA Stock - Barchart.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Barchart.com",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPU3RZWWUzSUtZbUtrREFQOUxyUVVObUVHb242N0U0aUo5dDhMcGxPX1lIblc2Rm5jTUxvd0ZicnAyQ2xoWnhjYXJaYWNFMnlHOE9jVkxOSGZld3BndnU2akVPcWs0czRMX2dyTjczYk92WDdrOTBObzBBT0VJd2ROR2JGd2tCWG9FZWhNVU1wMThOalhHYWh2ZWt3OE12Zl9Qck50Y1o4alppbG9CUlVnZ0QtV2trOW94dlZ0NEFZbHROVmM?oc=5",
-        "date": "Sun, 23 Aug 2026 19:00:02 GMT",
-        "summary": "Ahead of Nvidia Earnings, Here's What Barchart Data Says Comes Next for NVDA Stock Barchart.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4f25f1bd05efea36111207617849499ca4d2276b1ed9cf7e14bacd07201351d9",
-        "label": "Kimi K3 Pushes Open-Weight AI to the Frontier, With a Catch - HackerNoon",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "HackerNoon",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZkoyZGFzWmxKM3YyOHBkcnloQTVnandXalBsTUVZdjdmdVFpb3VXZmlHT1ZsZ3Jxb3lSR3F5UHdEZWVHSkpGcjdZUHF6cXlCLTl2QUxsd1piQjc4WHBlMGx1Z3VrUFNyZE5PRHZEWE1qRVFDcU9YMnVkYUQxS1p4bVA4Y2xiVmNF?oc=5",
-        "date": "Sun, 23 Aug 2026 20:32:41 GMT",
-        "summary": "Kimi K3 Pushes Open-Weight AI to the Frontier, With a Catch HackerNoon",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cb0ac31253459dbb3c2647b075b0baf27c8f807f53854206194eea1531630a1c",
-        "label": "AppFolio (APPF) Is Up 9.9% After Naming AWS Preferred Cloud Partner For AI-Native Platform - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWDZyVTFpMUdIMEloWTVKR2dwcHRQUUd6SFBhLUdhVk8wTTcxeDRRb2pfQTNHdjBnZUpUQkZtVE5BUlBwWHRJUDYzTUZ3WVM5TWtjdTVkNHA1dnFmOTYwUC1Ed211bzB4UXFSYkc3Q2pmX2VQdjJkRzQ5b1hrM2VyTlpuZjRXOHltRDVkdTloZ3N1UG9RNjd6S3l2Y2tmeC12dk5YX0JZRjRvUV9FWlRVQmd1dE1RU3VWMjAzSnBqOURwMS10bGfSAcsBQVVfeXFMUDVWalBjWmVBSzNrcE9VOEtHTFU0cHAwVjk2RGd2WFptTmJZQ1luMjctaVo2bzVvQkNBRE96SmFmek9ITlYzZFo5TU5wWS0wNi1XalgxQm56RXZFWUZjZi0tRXV0cTRIRnhBRkNPZWdQYl9vd3RlbUp5RGs4Q0dLS0Z6VnNjdHVkc1F0RFJBc2JZMlFpWWdxekxXNXYtNmllcE9la0tsSG04Q1lPUGJVSFNWT2lpemJwTmg2NE1QSjdNd21razdacjdGcHc?oc=5",
-        "date": "Sun, 23 Aug 2026 20:24:02 GMT",
-        "summary": "AppFolio (APPF) Is Up 9.9% After Naming AWS Preferred Cloud Partner For AI-Native Platform simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:720e63d707bdbceb04d640590eb9d36a251f95356eccc884abeafe1a9e07285b",
-        "label": "Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) - Seeking Alpha",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Seeking Alpha",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPdDhDY0doSElNSFZmMFBMVnduNXhVN295UWp6VFMyVWpQOGhDenQ5OXlkTUx1X0xPSDBVOTlVT3prcFBLMEljMHRjcFpsR09yQVNPOEV3bGlyNDd0andzaVRFRjNreE96TmY2SzE1SElYeWxrOER4T1hlS3RhWjlhVzFDeUV6VFNIMDllUURhekZ6T2NkcTM0TnVNbW4?oc=5",
-        "date": "Sun, 23 Aug 2026 11:25:00 GMT",
-        "summary": "Nvidia Stock May Plunge After Earnings, Even If It Beats (NASDAQ:NVDA) Seeking Alpha",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:71bd699bf9585dd8e5f72827080a18236426a6b18c38d80afcd5ad20293124f7",
-        "label": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% - \uc544\uc2dc\uc544\uacbd\uc81c",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "\uc544\uc2dc\uc544\uacbd\uc81c",
-        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5UNTJqM1ZSNHlGQ0Y3bS03T3JqclVhUnNPTFktYU9lTnJKSlo4VG85ZWxIUnYxbExCNm5NaUhGMDN3cnhycXJIVllTb1RESGgzbm9JZjZiWUlpOWFCSWEwdEZhRTg3ME5JSDVLQ052ZkUzOW9NbWZmSjVBNjM?oc=5",
-        "date": "Sun, 23 Aug 2026 19:44:24 GMT",
-        "summary": "Nvidia Expands Territory with AI Model Development... Server Prices Set to Rise by 15% \uc544\uc2dc\uc544\uacbd\uc81c",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:fdd3066c6f9d97e8648b76d5106203893f058ca69f5157e7f4bab188362a01e6",
-        "label": "Dow Jones Futures Due With Market At Key Point; Nvidia, Tariffs, Warsh In Focus - Investor's Business Daily",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Investor's Business Daily",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkR0Mk1hdnJPQVZHWEJYWXQ2UENlazJ1OG1EWTVtNFVYLTdMVHpfbVRIQ09zMmtMRnlLT1dnd0VyVzh1cTQzVm1jMS1keHR1TUNXOXBPSXEwWE10bFNoTi1Sd1ptX1lDcHhzaG5OaTFwTzE0UlBvTzgzTHpGVkVQeUoyY2szcks3RkFENTdPbmRVUVFWMjZaWF93cFpXcnZEUEM3d21BTGpKcWZJblEtcEhJVjA?oc=5",
-        "date": "Sun, 23 Aug 2026 18:36:00 GMT",
-        "summary": "Dow Jones Futures Due With Market At Key Point; Nvidia, Tariffs, Warsh In Focus Investor's Business Daily",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b1b7fc2e38c4cf954bcfd1adcfab593d29c20d1c9449faef6613042795709e04",
-        "label": "Burry exits Alibaba, builds large JD.com position over valuation concerns - Investing.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Investing.com",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWTRkcFFoSTdaeWVvaldLdlRTNUdjRUZrSjd3X0lxVHNheHRERFFGaGtJVE53S2xrMkdndkFRUlRBRGVuY1c1anZQZ0N1THBjU2FIQV9leW9fMDdrMWQyMTJtMnFUN1BjbkVvVVhvUXVjVHRwWDlZV2ktbWwwSUF5UWw4Yk90VWJlX1RrV3dCZWV2ZTgzYVRONThraUtrZjBMTS1DMFdXdjMyVWtMMTE4eXdlYkNRd1ByX3hTaVJKWG1BQ3o2RG5z?oc=5",
-        "date": "Sun, 23 Aug 2026 18:26:45 GMT",
-        "summary": "Burry exits Alibaba, builds large JD.com position over valuation concerns Investing.com",
         "score": 1,
         "weight": 1
       }
@@ -14469,6 +14475,20 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:ffabc2ac017353bae00dd53447a564423ca7528534e4c86d5aafed9f3ee610f2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:d524bf81bd866b1a2a877ace9bea8242bafb2b74b23f7ea1bd46d3cc15d1689f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:59739ebef88bbfabd173b79e90d869495faa23d8abbb18cc6fac74eb9f3ee19b",
         "type": "EVIDENCE",
@@ -16303,6 +16323,20 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:c0de50b3bce5eed9345c2b5abca02a2d11f8ca33ac1fe6b753ec1a8670cb18d0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c0de50b3bce5eed9345c2b5abca02a2d11f8ca33ac1fe6b753ec1a8670cb18d0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:bad85a8b26532e94569dd9801b4d543e415be6875e32a6e1739e0eace6da7b67",
         "type": "EVIDENCE",
@@ -17801,6 +17835,62 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:5126baf1845a682977d2ebc11ea4394c2afc156d6226789fb4b7988353bc819c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:b8c4b09149983a14dfc519f753013b1cd42ad5b20e7785ed5002be9fd35a77eb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:49209c0584fd967683aac861a43d9391a1468b776ebac07e9c96c248eba5c6ac",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:ba9fdfa8bcc5967a0948f3d94ddd4e3299769ac585a9832b21c0dff8a09f0bd3",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:643355ac9bd5de9c3dc133c88f96df736739229acccf8a8bf144a03c47c32913",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:24566cc1f9d6701ed92d4742336f312e923a01df3c20d23a195934d9e7f3b105",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Baidu",
+        "target": "evidence:62bdf6b6112c2f999f2b92ecebc4b29ebe318310297b3d80efc65fdbf2579d8b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:de03b39124375c096c63b10f07bc45749faa9aa8126fc664c46a332248abbed4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:f0e5f75536e3c9719eb7c228031e33356d3f3a3653af500a06fbdb180c6488b4",
         "type": "EVIDENCE",
@@ -18461,83 +18551,6 @@
       {
         "source": "Zhipu AI",
         "target": "evidence:cf57d9dc16004838ad4ea2c921e3a2444524a4b538029f50d5ab1bd5a8fbee15",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:3e7741fb7c2e7987ad162f23374e3c60b076afc39b25e8aecafcce1d176459d2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:7cb0af148f1ef129e363dff3ebcea9ff730dcbad6b77a51d940b689d047ea27d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:58949a594936e0411e8a21971082b4609b534ed4b80461351e875f9a8c47e57e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SoftBank",
-        "target": "evidence:0f554f7c9785106e03db99df52a782ad1ff3c12d63690141edf8c9155026dbe0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:4eea100126f7b50ef64e191fb606eb7bf7fd99db4bee8ccf65fffea1467c6097",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:4f25f1bd05efea36111207617849499ca4d2276b1ed9cf7e14bacd07201351d9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:cb0ac31253459dbb3c2647b075b0baf27c8f807f53854206194eea1531630a1c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:720e63d707bdbceb04d640590eb9d36a251f95356eccc884abeafe1a9e07285b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:71bd699bf9585dd8e5f72827080a18236426a6b18c38d80afcd5ad20293124f7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:fdd3066c6f9d97e8648b76d5106203893f058ca69f5157e7f4bab188362a01e6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:b1b7fc2e38c4cf954bcfd1adcfab593d29c20d1c9449faef6613042795709e04",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33098,20 +33111,20 @@
   ],
   "collector_runs": [
     {
-      "id": 427,
+      "id": 431,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T11:43:57.615018+00:00",
-      "completed_at": "2026-08-25T11:44:11.599598+00:00",
+      "started_at": "2026-08-25T13:12:00.783112+00:00",
+      "completed_at": "2026-08-25T13:12:19.811631+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 11,
       "error": null
     },
     {
-      "id": 428,
+      "id": 432,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T11:44:12.001003+00:00",
-      "completed_at": "2026-08-25T11:44:12.436578+00:00",
+      "started_at": "2026-08-25T13:12:20.270650+00:00",
+      "completed_at": "2026-08-25T13:12:20.810564+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33128,20 +33141,20 @@
       "error": null
     },
     {
-      "id": 426,
+      "id": 430,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T11:43:56.665879+00:00",
-      "completed_at": "2026-08-25T11:43:57.213559+00:00",
+      "started_at": "2026-08-25T13:11:59.403825+00:00",
+      "completed_at": "2026-08-25T13:12:00.327470+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 429,
+      "id": 433,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T11:44:12.838142+00:00",
-      "completed_at": "2026-08-25T11:44:14.615332+00:00",
+      "started_at": "2026-08-25T13:12:21.340326+00:00",
+      "completed_at": "2026-08-25T13:12:23.716015+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33158,7 +33171,7 @@
       "error": null
     }
   ],
-  "document_count": 1414,
+  "document_count": 1425,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
