@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T10:50:21.146823+00:00",
+  "generated_at": "2026-08-25T11:44:15.413583+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "cannibalization": 54.2,
-    "fragility": 61.1,
-    "transmission": 39.6,
-    "capital": 48.732271163185665,
-    "external_pressure": 16.12,
-    "stress": 57.1,
     "counter_evidence": 42.9,
+    "cannibalization": 54.2,
+    "capital": 48.732271163185665,
+    "monetization": 42.9,
+    "fragility": 61.1,
+    "stress": 57.1,
+    "external_pressure": 16.12,
     "circularity": 57.1,
-    "monetization": 42.9
+    "transmission": 39.6
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "capital": "aggregate",
-    "stress": "directional_estimate",
-    "circularity": "directional_estimate",
     "monetization": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "fragility": "directional_estimate",
-    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate",
     "external_pressure": "aggregate",
-    "counter_evidence": "directional_estimate"
+    "circularity": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "counter_evidence": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T11:44:15.028387+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"transmission\": 39.6, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1}"
+    },
     {
       "captured_at": "2026-08-25T10:50:20.727140+00:00",
       "score": 45.3,
@@ -9822,6 +9828,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:f0e5f75536e3c9719eb7c228031e33356d3f3a3653af500a06fbdb180c6488b4",
+        "label": "How to buy a car with Amazon Autos - About Amazon",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "About Amazon",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UbHJkRkQwNFF6c3RMTWZGU056UlBrWmdfMmNwQmNWWFZBaF9pY0lGckx6S1hteFl1TFlKdkhyUlY4OHFGTmNkeURfQ0pPUXdPNEpKUnBwaFhJTmtzNjIxcU55VjVfZUhzYS13Wm5CbVNibjgtZWpTNE9MRWdNU00?oc=5",
+        "date": "Tue, 25 Aug 2026 09:30:43 GMT",
+        "summary": "How to buy a car with Amazon Autos About Amazon",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:eb4c6a2c441e82ee0a867e9e925072385ba852632e609d32e03840f845146e57",
+        "label": "Understanding Microsoft's Position In Software Industry Compared To Competitors - Benzinga",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Benzinga",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWHNfcngwUzJJbmcybk45d3llaGdNS1lLTi1rcDRubWJMU2JlSTJmZFd4T3AtNlBTemN1VE9xY04weEtQd2lteEhTOUhJc2ExTWRrQjFaZFl5UlY5Q1psMS1SWDVzVzR2WWxPX0lyYTF6UEtLUDM1bTNPazhxeXBTZ3RFNzN6V1JvX2Y0ZW9tbkZjUmNZOGZSbU9OMmoxRUJnS1k0bGhYZno5UUpaWWxzRzZhYW81RnA1TXc?oc=5",
+        "date": "Tue, 25 Aug 2026 09:58:29 GMT",
+        "summary": "Understanding Microsoft's Position In Software Industry Compared To Competitors Benzinga",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:9a07f6687d7e37daa3c193de06d630d8b1b970deead212f06423b878046b8908",
         "label": "Andy Jassy Believes AWS Can Hit $1 Trillion in Revenue. Here's When the Math Says It Might Happen. - Currently.com",
         "kind": "evidence",
@@ -11066,30 +11096,6 @@
         "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOWTRkcFFoSTdaeWVvaldLdlRTNUdjRUZrSjd3X0lxVHNheHRERFFGaGtJVE53S2xrMkdndkFRUlRBRGVuY1c1anZQZ0N1THBjU2FIQV9leW9fMDdrMWQyMTJtMnFUN1BjbkVvVVhvUXVjVHRwWDlZV2ktbWwwSUF5UWw4Yk90VWJlX1RrV3dCZWV2ZTgzYVRONThraUtrZjBMTS1DMFdXdjMyVWtMMTE4eXdlYkNRd1ByX3hTaVJKWG1BQ3o2RG5z?oc=5",
         "date": "Sun, 23 Aug 2026 18:26:45 GMT",
         "summary": "Burry exits Alibaba, builds large JD.com position over valuation concerns Investing.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a0a5ad8b84becb8451d4238f8c2e873d12bbc301649870713baee2720c2b512e",
-        "label": "Nvidia's Q2 earnings to test resurgent AI trade - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeG1sTG1ra3lPVXF0YVI1TlRmUEg2bGJ2cjlzNThjQWV2TFVERTZnQlVnWVVNT29JaDhhYUZ4bVRzVFpIemdvZmozOTZLS05pTW5Ob1BPS3phU2hNSUpoLTh2VkZUZ290Y2NIeEtQQ2IxNmZBRnhRQkpGelUzcldoS2ZHd19EX0gtQjFhT0g5QTdrTEdJc0Fj?oc=5",
-        "date": "Sun, 23 Aug 2026 11:25:02 GMT",
-        "summary": "Nvidia's Q2 earnings to test resurgent AI trade Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0f2a3d9fd005f699dfc748be9cdffa0d2239015fc73ac5bc3c07196f78c66918",
-        "label": "MiniMax Group (Derivatives) Price Today | Live MINIMAX Price, Chart & Market Data - Binance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Binance",
-        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9rOWxucm9QN2YxSnVtQXBnMHFVRFc4VElkOVJqS0lqWjU2RHVUUUY4ajZfS1hua0l6ckRsM0Q2czlfeVd2U2JfUFRacDhhWXVMaHlqSWZaMnplUG40M0VEMThLRnItLUwwNnc?oc=5",
-        "date": "Sun, 23 Aug 2026 08:15:00 GMT",
-        "summary": "MiniMax Group (Derivatives) Price Today | Live MINIMAX Price, Chart & Market Data Binance",
         "score": 1,
         "weight": 1
       }
@@ -17796,6 +17802,20 @@
       },
       {
         "source": "Amazon",
+        "target": "evidence:f0e5f75536e3c9719eb7c228031e33356d3f3a3653af500a06fbdb180c6488b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:eb4c6a2c441e82ee0a867e9e925072385ba852632e609d32e03840f845146e57",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
         "target": "evidence:9a07f6687d7e37daa3c193de06d630d8b1b970deead212f06423b878046b8908",
         "type": "EVIDENCE",
         "weight": 1,
@@ -18518,20 +18538,6 @@
       {
         "source": "Alibaba",
         "target": "evidence:b1b7fc2e38c4cf954bcfd1adcfab593d29c20d1c9449faef6613042795709e04",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:a0a5ad8b84becb8451d4238f8c2e873d12bbc301649870713baee2720c2b512e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:0f2a3d9fd005f699dfc748be9cdffa0d2239015fc73ac5bc3c07196f78c66918",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33092,20 +33098,20 @@
   ],
   "collector_runs": [
     {
-      "id": 423,
+      "id": 427,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T10:49:59.784114+00:00",
-      "completed_at": "2026-08-25T10:50:17.091136+00:00",
+      "started_at": "2026-08-25T11:43:57.615018+00:00",
+      "completed_at": "2026-08-25T11:44:11.599598+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 424,
+      "id": 428,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T10:50:17.492997+00:00",
-      "completed_at": "2026-08-25T10:50:17.880143+00:00",
+      "started_at": "2026-08-25T11:44:12.001003+00:00",
+      "completed_at": "2026-08-25T11:44:12.436578+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33122,20 +33128,20 @@
       "error": null
     },
     {
-      "id": 422,
+      "id": 426,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T10:49:58.375049+00:00",
-      "completed_at": "2026-08-25T10:49:59.353320+00:00",
+      "started_at": "2026-08-25T11:43:56.665879+00:00",
+      "completed_at": "2026-08-25T11:43:57.213559+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 425,
+      "id": 429,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T10:50:18.286316+00:00",
-      "completed_at": "2026-08-25T10:50:20.312560+00:00",
+      "started_at": "2026-08-25T11:44:12.838142+00:00",
+      "completed_at": "2026-08-25T11:44:14.615332+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33152,7 +33158,7 @@
       "error": null
     }
   ],
-  "document_count": 1412,
+  "document_count": 1414,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
