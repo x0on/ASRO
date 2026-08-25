@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T04:25:00.456188+00:00",
+  "generated_at": "2026-08-25T04:54:07.757489+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
+    "counter_evidence": 42.9,
     "monetization": 42.9,
     "transmission": 39.6,
     "cannibalization": 54.2,
-    "capital": 48.732271163185665,
-    "counter_evidence": 42.9,
     "circularity": 57.1,
-    "fragility": 61.1,
+    "capital": 48.732271163185665,
+    "stress": 57.1,
     "external_pressure": 16.12,
-    "stress": 57.1
+    "fragility": 61.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,14 +32,14 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "monetization": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "external_pressure": "aggregate",
-    "stress": "directional_estimate",
     "transmission": "confirmed_trigger",
     "cannibalization": "directional_estimate",
     "capital": "aggregate",
+    "stress": "directional_estimate",
+    "monetization": "directional_estimate",
     "circularity": "directional_estimate",
+    "external_pressure": "aggregate",
     "fragility": "directional_estimate"
   },
   "dimension_direction": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T04:54:07.266876+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-25T04:24:52.907100+00:00",
       "score": 45.3,
@@ -9660,6 +9666,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:c283af5fd16667e2b3eb54251d5d73c6c6e8cb5e79fdac601d04bddaf8cde39b",
+        "label": "Doubao Work Enters AI Office Competition: Has the Sector Entered a Systematic Head-to-Head Showdown Stage? - 36\u6c2a",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36\u6c2a",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9BaGI0cTZQM1ZHOUtPLTBqWWJUcDNFTmZjb0N6MHRXbXJ1RXFHUEZvVFBfMU0tYXhjcHgzSF96aFpQSTFKbGhhLVNUZEQ0TkhNSmhz?oc=5",
+        "date": "Tue, 25 Aug 2026 04:41:06 GMT",
+        "summary": "Doubao Work Enters AI Office Competition: Has the Sector Entered a Systematic Head-to-Head Showdown Stage? 36\u6c2a",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:d6f75ad1971791085bcccd63b4ddb2c0e0f7ef8920408dd58ac1e123d71f64a8",
         "label": "Prediction: Microsoft\u2019s AI Boom Is Bigger Than Investors Realize - AOL.com",
         "kind": "evidence",
@@ -11036,18 +11054,6 @@
         "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBUQmIwdmU3Ti1IUDNlU3V1TkFqd3NSWVJrajdhd3ltYlBpZkhtXzQzeFAxM3NkbDJKRGU5YWxWM2NUQnNsWXBrTkhUZ0hMTW5lbTltSlNrZ0VnX0JIRXpLbEpab0Z4T2JyWmtKQkh3M3QzNjBfUlBsdGhuVQ?oc=5",
         "date": "Sat, 22 Aug 2026 20:08:07 GMT",
         "summary": "MiniMax H3: The Open-Weight AI Video Model Reshaping the Industry Intelligent Living",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:edac4ecdac4c9bcd3a40b54da292f23ff1c69bd59e689526e48d390a01e64417",
-        "label": "Is Microsoft (MSFT) Stock Reasonable If AI Spending Pays Off? - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdzFueHV2QVY3UElhS3pObUN2VUJ5aTRVSnpaZFoyREQ1QVBYcW9ad2gycEhtNUZzRmtyU0RweWlaRkh3OURjOWRBbVRmYmxWQlR5MWxBSl9IalJESXIxUTgtMkFjM0o2dXJSeTdMV19BSU9Za09pM1ZNU2VLa1k1MnU4N1Fzc2tNQnJPdnlVdldoQmQ5V2Rqem9aQ0ZBZDBnOXJ3em5SLV9VODNJR1NfWXQyd0F5VHdXS1FLTXVYVFQ5TUR60gHKAUFVX3lxTFBHNW9MY1c4MEhwd1ktTVNyLV9wckZzSzdpVlY2VEV2ZG9zamVRN3FNQ1pmN1ZITzNtdFdsN1lJcWQ5eUNBaXRGcjVBRm1PdTA4cnBOMlpyYW01MTduRWEyMW41WXV4Z0tEYUJNNGd1UWlCcHlBUUNqLUJiRXdWdnc4UHlNQVB0X3gyd0NFbWU2N3pHazZMMTh6blg0cXJyYzNGUnZYOGhuU3prejJQTnRYTVVudEVsckJVVlB6bFoyWHZqcjZHLXhFdEE?oc=5",
-        "date": "Sat, 22 Aug 2026 19:21:13 GMT",
-        "summary": "Is Microsoft (MSFT) Stock Reasonable If AI Spending Pays Off? simplywall.st",
         "score": 1,
         "weight": 1
       }
@@ -17627,6 +17633,13 @@
         "mentions": 1
       },
       {
+        "source": "ByteDance",
+        "target": "evidence:c283af5fd16667e2b3eb54251d5d73c6c6e8cb5e79fdac601d04bddaf8cde39b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Microsoft",
         "target": "evidence:d6f75ad1971791085bcccd63b4ddb2c0e0f7ef8920408dd58ac1e123d71f64a8",
         "type": "EVIDENCE",
@@ -18427,13 +18440,6 @@
       {
         "source": "MiniMax",
         "target": "evidence:b9dc0d0d67d15a7d6a1179fd9a58e114c9100bfc71fa3fc02df3e5fa5f19ec33",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:edac4ecdac4c9bcd3a40b54da292f23ff1c69bd59e689526e48d390a01e64417",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32979,20 +32985,20 @@
   ],
   "collector_runs": [
     {
-      "id": 395,
+      "id": 399,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T04:24:37.163992+00:00",
-      "completed_at": "2026-08-25T04:24:49.211062+00:00",
+      "started_at": "2026-08-25T04:53:51.209736+00:00",
+      "completed_at": "2026-08-25T04:54:03.834281+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 1,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 396,
+      "id": 400,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T04:24:49.612605+00:00",
-      "completed_at": "2026-08-25T04:24:50.028266+00:00",
+      "started_at": "2026-08-25T04:54:04.235064+00:00",
+      "completed_at": "2026-08-25T04:54:04.645051+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33009,20 +33015,20 @@
       "error": null
     },
     {
-      "id": 394,
+      "id": 398,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T04:24:36.273235+00:00",
-      "completed_at": "2026-08-25T04:24:36.762463+00:00",
+      "started_at": "2026-08-25T04:53:50.209817+00:00",
+      "completed_at": "2026-08-25T04:53:50.808444+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 397,
+      "id": 401,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T04:24:50.429730+00:00",
-      "completed_at": "2026-08-25T04:24:52.491027+00:00",
+      "started_at": "2026-08-25T04:54:05.046264+00:00",
+      "completed_at": "2026-08-25T04:54:06.851270+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33039,7 +33045,7 @@
       "error": null
     }
   ],
-  "document_count": 1379,
+  "document_count": 1381,
   "event_count": 969,
   "mention_count": 2372,
   "review_counts": {
