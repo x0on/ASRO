@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T05:48:32.780882+00:00",
+  "generated_at": "2026-08-25T07:09:00.435001+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
+    "transmission": 39.6,
     "stress": 57.1,
-    "cannibalization": 54.2,
-    "external_pressure": 16.12,
-    "counter_evidence": 42.9,
+    "monetization": 42.9,
     "capital": 48.732271163185665,
-    "fragility": 61.1,
+    "external_pressure": 16.12,
+    "cannibalization": 54.2,
+    "counter_evidence": 42.9,
     "circularity": 57.1,
-    "transmission": 39.6
+    "fragility": 61.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "monetization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
     "capital": "aggregate",
-    "fragility": "directional_estimate",
-    "circularity": "directional_estimate",
-    "stress": "directional_estimate",
     "cannibalization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
+    "transmission": "confirmed_trigger",
     "external_pressure": "aggregate",
-    "transmission": "confirmed_trigger"
+    "stress": "directional_estimate",
+    "fragility": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T07:08:59.854241+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"monetization\": 42.9}"
+    },
     {
       "captured_at": "2026-08-25T05:48:32.269667+00:00",
       "score": 45.3,
@@ -1305,7 +1311,7 @@
         "id": "Amazon",
         "label": "Amazon",
         "kind": "company",
-        "weight": 59
+        "weight": 60
       },
       {
         "id": "Oracle",
@@ -1317,7 +1323,7 @@
         "id": "OpenAI",
         "label": "OpenAI",
         "kind": "company",
-        "weight": 21
+        "weight": 22
       },
       {
         "id": "Anthropic",
@@ -5568,6 +5574,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:e696b5af85d8fcccf4ca6558396d2e702714ec345216ef9427a8aec88f2a86ad",
+        "label": "Tencent-backed AI chipmaker Enflame targets about $900M in Shanghai IPO - Seeking Alpha",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORzNQaEVUM1VIZ05DT1BhUlBfLVR5RFp2VTU4TEVva3o1MHdsMWZZMFg3Zm5TNlJEVnBaVEhkMmdyQ2NyQWN2Q1NBRThPSnptaFVGcE1RbDZzaVZUMk5jSEFsOHZmRlFTajhqS0xFRFBMbWJHSGxkVHF6RjI2V2RvRHY1X0pwZldFU3ViWV9mR2dBUlVRb282cHdkTU9IOVNOeXFVc01sUHNxWXp3?oc=5",
+        "date": "Tue, 25 Aug 2026 06:07:41 GMT",
+        "summary": "Tencent-backed AI chipmaker Enflame targets about $900M in Shanghai IPO Seeking Alpha",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:4fbbbfb1aa862dbfe3c83b6c114d0ef72ef419b679ea05efb19061d02683a057",
         "label": "AI: OpenAI Consolidates under Brockman, pre-IPO. AI-RTZ #1189 - AI: Reset to Zero",
         "kind": "evidence",
@@ -7608,6 +7626,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:fba643def15f1b92a73caf93a23ec23593943305667f8f934b27f88c4573fedb",
+        "label": "Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) - Seeking Alpha",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTFN3SlpYOWFJZHhZM0U2N1VCQXBvT010YVJ3R0MwM0M3dEZPSWhva2VaVS0wYWxTUE1DSTFSdWNxZzJENUJLTnpMcjRSMVdmZEpPOUJpdU5uY0lCNnp5RmVvZ0VVSUxtUHVmSDMydGpSNE5HRnlTWjNwczdDWnJVLWFTbDhBTHNmZXdSd3loS0ZjdDRNWXBJcGl3OF93X2NyUTRuaw?oc=5",
+        "date": "Tue, 25 Aug 2026 06:24:32 GMT",
+        "summary": "Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) Seeking Alpha",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:b8250af0fdbaf093da4214bd4a77cb37f95dc14c1f6ea4183e641ec28cc62fb0",
         "label": "The Battle for Dominance in AI Office Solutions: Tencent Secures Early Entry Points, Alibaba Integrates to Target the B2B Sector, and ByteDance Accelerates with Doubao - Moomoo",
         "kind": "evidence",
@@ -8337,6 +8367,18 @@
         "date": "Thu, 28 May 2026 07:00:00 GMT",
         "summary": "Beyond the IPO frenzy: what Nasdaq\u2019s new \u2018Fast Entry\u2019 rules could mean for ETF investors Bitpanda",
         "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0b5183ff068fe3658fc3fb1fd406806c2781157774ea09be20f3e89fc9367bc9",
+        "label": "ByteDance challenges Tencent with new Doubao workplace AI agent - Free Malaysia Today",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Free Malaysia Today",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeFhncjFzOHlvaTN0OXBhMkhlZlJYR0tDVFlSVXZ2bUIyeWtKVHN3UkNhcFN6eURwajVfTW82d3hfcU5idmptUkZvYmNuekhBdUxPdEc1djBOMDJoVUtMamxaUW9kdFJDdXJFalpqSEJDb3pyUmNoR0VxN3hZd2lRVk1HNk91a3E0MnBPQ0x5Ny1JeTBkektvY0pCcklnZ1laRV8zNjZFS3kzVlByd0ZTTmdxWlJkcHJUNEloUWVpUnlCS2pL?oc=5",
+        "date": "Tue, 25 Aug 2026 05:54:00 GMT",
+        "summary": "ByteDance challenges Tencent with new Doubao workplace AI agent Free Malaysia Today",
+        "score": 2,
         "weight": 1
       },
       {
@@ -9708,6 +9750,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:346030086514db82aae180ec5ec8fbd9cf5f45205e71ca8caaacafbc99dcb83b",
+        "label": "Microsoft (MSFT) - Moomoo",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQcXNUaTFVYnR1WVdYai0yMHktdl90VnM2b1ZLNTg5LWREQWI5R0JiWXY3N1k4TXJ2YWRSc2FzZGU4N1pXR3hndG1SRW5jN1JpSVBPLWFIVnAweE53bTlfUVoyNHNudVpKTW9ZMkpBX2JXYmZHTkFhc0JHVFItWFVVVFR3VjNsMFRRRU5qT1FqNFlqQm1wbUdDQ2RJUFV5cVMwUGVqel81TDhia1pvSlQ3UlV2ZnBIZlFxUG1HblB3bDBVXzRsbzZjVGI4NXRXbUZ5OHg2SS0yY0ZjY3g5N2ZuSkZ6OHZPZHJILXkyYjdLX1ZTNVRibEpTM3lLT0xwaUUtaHRqZFY5emZ3N1pxbWRUWTdaNkVfMmpLZGhLTTFKNDFnMXVsVjEwUG1OQ1MxWWZiZGxreg?oc=5",
+        "date": "Mon, 24 Aug 2026 08:00:03 GMT",
+        "summary": "Microsoft (MSFT) Moomoo",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:fdd7f0cd8ea6aa3995ad8c2f5d047f8a6b8bc60ec7353ba8691a576465b38247",
+        "label": "Wall Street Is Counting on Nvidia to Keep the AI Party Going - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcEVGeXQwZFloV1dOS1JyclZMeDdyMmJZcF9KRVlwR1d6NVhITlh5Ml84cHhadmNpaTcxSHFneU16YTUweXUzY1c4eTVDV3Q5WjZmZF9sWlRPa3dzWUZoaGV3SjBhUkR4N2ZoQ1Q0YlY2cWloNVQ0cWl2bGJ0VG1xN0I1Vlg4QUQ0TG82emJDcS0zVTJ3Qk9vcFFMWHpNb09UY1YxV1NzQQ?oc=5",
+        "date": "Tue, 25 Aug 2026 07:01:56 GMT",
+        "summary": "Wall Street Is Counting on Nvidia to Keep the AI Party Going WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:e0d38a7d7c2f3ae7d32b1077f1b787bf96177fd205c6f7b75e2c96cee23908a8",
         "label": "Doubao Work Enters AI Office Competition: Has the Sector Entered a Systematic Head-to-Head Showdown Stage? - 36 Kr",
         "kind": "evidence",
@@ -11002,69 +11068,16 @@
         "summary": "Alibaba (NYSE:BABA) Stock Drops As AI Spending Crushes Profitability simplywall.st",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:bec5e3d97714b9cb80ac728f2d1fc3a45721bb3cb3cacdaedeb3ec6cadb585b0",
-        "label": "China\u2019s MiniMax releases AI model \u2018designed for real-world productivity\u2019 - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQRU5hRUhRQ1JoalN2aDBTQTQ5MUNET0VnV2FqZTkyY0lBb0tSQmxvZVplVjAtZlIzUlQ2NC1XRHZjbmVzbWlxTWNfUEp2elVQRlVnZUZqNDFqY1UwcHBCUHk1cUNZeFFnb01XS2FNbXdQMHNSSWhsQTdEbUtYSTNWdXJaVmJXNy1rckEtdkt4WGJSMlZWc3VENHozQ3habHd2bDlMMFJYaDRjRDNVMDhZYmtMQdIBswFBVV95cUxOalRDS29lSlhwcTRPc2MxbnVsbENfck00R05GSG5KSW13eXQwUHVjNjBXNTZqMmRNUDUwUEdka3VPaXJWM09iZVRRR1pkaG9vSmZqNkpfRVZ4MFVMakwzQldmV2xDREZacEllcU5kSGN5SXR1STdrOENoNGdTdzJwZjFMU2dITGhhY0lpRmxQUHZzM2F6TElFZEMwcjNZckYzdmFNSE9mci14aFJZY3ZTNVJKUQ?oc=5",
-        "date": "Fri, 13 Feb 2026 08:00:00 GMT",
-        "summary": "China\u2019s MiniMax releases AI model \u2018designed for real-world productivity\u2019 South China Morning Post",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0a92612c64eefe7446df85643020825047561b9da0ae5bff1c50e1ffd71a468e",
-        "label": "Alibaba: Pay 13x FWD Earnings For 45% AI Cloud Growth (NYSE:BABA) - Seeking Alpha",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Seeking Alpha",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQXzJldUNvLUJCZ0wxTDlERUFZZU1vNUJVMjAzMDUtd0pjQUQ2bUxfTDlFeExiSWJXV1ZFUEVZZm83SFk0ZGY2MTVXQjdCTV9XSlM0MWFLdlhxX2piUTB3d3NaYkJGbElIME5QYl9ZUmdaMk9ocnFXZ0ZTOVVOLUNXWkhydWtBSHdIcUtXN0hfblVCMmxvVUg3WFBTa0lXc1BIREE?oc=5",
-        "date": "Fri, 21 Aug 2026 17:00:25 GMT",
-        "summary": "Alibaba: Pay 13x FWD Earnings For 45% AI Cloud Growth (NYSE:BABA) Seeking Alpha",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:39ba83e5f6dc877ba9a1eab5f7e16bf5597be3af7257e6e16c93f38fdd4e0ebe",
-        "label": "Amazon Stock Is Historically Cheap. Is This a Once-in-a-Decade Buying Opportunity? - 24/7 Wall St.",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOV85ci1UM3ZfQ0tDLXpTcXJlV0d0SjktUWZKMHdvQk12SjhsS1F1VGRqV21DcDM0UVo0Y0xqbDRGbnhKemI5ZEliNkowRGtuUHZOUmdDaWR5MEVjcDFLOGdYa3JTZkFQZTc1X1kxR0M4WVY3eTZVaTRMX3ZWOHI1aW1wRkFBOWwxU0FZc0h3czNtTEhfVXRTazJ5VGpFZzJoR016Zno5aDZRdUszV1pyYTBYWmtNUHI1MWdSZGhxTThUUQ?oc=5",
-        "date": "Sat, 22 Aug 2026 13:30:46 GMT",
-        "summary": "Amazon Stock Is Historically Cheap. Is This a Once-in-a-Decade Buying Opportunity? 24/7 Wall St.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:52319d071419a414fd87e21bd01e1d30e9d37e6c3f9cbae6b1faca30faa99085",
-        "label": "Nvidia Is Spending $6 Billion to Build a Powerful U.S. Alternative to Chinese AI - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWHdVbW56NVZvU3ZwQTRIcmdRUVVZWjBVc1J4TFhhVUs2VE5RY21CNEpSdHA2NUJLa0daUVhYcGJwaGh6bERReE5fcFdFdHJ5bWpXa1dPTkFweDVVS3AycGxMa3VqS2JDS0VTZDNIb2RYLVVYcmdxT2xQUUpRSXNFbHhTTVozVjVyUkVYRmItTzc5SlIwS2M0NVZseUtUWFZDX3V6azMxTHJhdHJwYm5XU28yUmlzUQ?oc=5",
-        "date": "Sun, 23 Aug 2026 00:00:00 GMT",
-        "summary": "Nvidia Is Spending $6 Billion to Build a Powerful U.S. Alternative to Chinese AI WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:472c2c47fa3f65fcc62bcb39e5ab728d41460725cb74af5582c7f6d3df192a92",
-        "label": "MiniMax Launches Multimodal Creation Platform Design; Shares Surge Over 12% in Two Days - finance.biggo.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1PWjRtN2xmcmdZTUlQbjU0SFJLeS1icHBaZ1Z5YXlEcjZmX1RXOXVCejRDVF9rWFlObmlQMWI2NG5ZUVVYNnp4V0JUQkNpNm8xc3ZxQ3Q4Y2JfdWgxczItUHE4T042T0pkbmwyS3hyVWhyWnFfenc?oc=5",
-        "date": "Fri, 21 Aug 2026 07:05:00 GMT",
-        "summary": "MiniMax Launches Multimodal Creation Platform Design; Shares Surge Over 12% in Two Days finance.biggo.com",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
+      {
+        "source": "Amazon",
+        "target": "OpenAI",
+        "type": "REVENUE_REPORT",
+        "weight": 1,
+        "mentions": 1
+      },
       {
         "source": "Microsoft",
         "target": "Meta",
@@ -14426,6 +14439,13 @@
         "mentions": 1
       },
       {
+        "source": "Tencent",
+        "target": "evidence:e696b5af85d8fcccf4ca6558396d2e702714ec345216ef9427a8aec88f2a86ad",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
         "target": "evidence:4fbbbfb1aa862dbfe3c83b6c114d0ef72ef419b679ea05efb19061d02683a057",
         "type": "EVIDENCE",
@@ -15539,6 +15559,27 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:fba643def15f1b92a73caf93a23ec23593943305667f8f934b27f88c4573fedb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:fba643def15f1b92a73caf93a23ec23593943305667f8f934b27f88c4573fedb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:fba643def15f1b92a73caf93a23ec23593943305667f8f934b27f88c4573fedb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alibaba",
         "target": "evidence:b8250af0fdbaf093da4214bd4a77cb37f95dc14c1f6ea4183e641ec28cc62fb0",
         "type": "EVIDENCE",
@@ -16206,6 +16247,20 @@
       {
         "source": "OpenAI",
         "target": "evidence:06600c95c2f5d695294bccb3ff4287570861bf67cd81eb6bf97b9687a284e151",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:0b5183ff068fe3658fc3fb1fd406806c2781157774ea09be20f3e89fc9367bc9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:0b5183ff068fe3658fc3fb1fd406806c2781157774ea09be20f3e89fc9367bc9",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17681,6 +17736,20 @@
         "mentions": 1
       },
       {
+        "source": "Microsoft",
+        "target": "evidence:346030086514db82aae180ec5ec8fbd9cf5f45205e71ca8caaacafbc99dcb83b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:fdd7f0cd8ea6aa3995ad8c2f5d047f8a6b8bc60ec7353ba8691a576465b38247",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "ByteDance",
         "target": "evidence:e0d38a7d7c2f3ae7d32b1077f1b787bf96177fd205c6f7b75e2c96cee23908a8",
         "type": "EVIDENCE",
@@ -18432,41 +18501,6 @@
       {
         "source": "Alibaba",
         "target": "evidence:a20492d23661676ca3f32c5c5149220d4fdecc99b5747a41c7c9abed0aa94c1a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:bec5e3d97714b9cb80ac728f2d1fc3a45721bb3cb3cacdaedeb3ec6cadb585b0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:0a92612c64eefe7446df85643020825047561b9da0ae5bff1c50e1ffd71a468e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:39ba83e5f6dc877ba9a1eab5f7e16bf5597be3af7257e6e16c93f38fdd4e0ebe",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:52319d071419a414fd87e21bd01e1d30e9d37e6c3f9cbae6b1faca30faa99085",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:472c2c47fa3f65fcc62bcb39e5ab728d41460725cb74af5582c7f6d3df192a92",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32725,6 +32759,21 @@
       "source": "TIKR.com"
     },
     {
+      "date": "Tue, 25 Aug 2026 06:24:32 GMT",
+      "event_type": "REVENUE_REPORT",
+      "source_entity": "Amazon",
+      "target_entity": "OpenAI",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.72,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) - Seeking Alpha Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) Seeking Alpha Google News",
+      "title": "Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) - Seeking Alpha",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTFN3SlpYOWFJZHhZM0U2N1VCQXBvT010YVJ3R0MwM0M3dEZPSWhva2VaVS0wYWxTUE1DSTFSdWNxZzJENUJLTnpMcjRSMVdmZEpPOUJpdU5uY0lCNnp5RmVvZ0VVSUxtUHVmSDMydGpSNE5HRnlTWjNwczdDWnJVLWFTbDhBTHNmZXdSd3loS0ZjdDRNWXBJcGl3OF93X2NyUTRuaw?oc=5",
+      "source": "Seeking Alpha"
+    },
+    {
       "date": "Tue, 30 Jun 2026 07:00:00 GMT",
       "event_type": "BENCHMARK_GAIN",
       "source_entity": "MiniMax",
@@ -33012,20 +33061,20 @@
   ],
   "collector_runs": [
     {
-      "id": 403,
+      "id": 407,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T05:48:16.349762+00:00",
-      "completed_at": "2026-08-25T05:48:28.826893+00:00",
+      "started_at": "2026-08-25T07:08:41.847139+00:00",
+      "completed_at": "2026-08-25T07:08:56.510220+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 3,
+      "items_new": 5,
       "error": null
     },
     {
-      "id": 404,
+      "id": 408,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T05:48:29.227865+00:00",
-      "completed_at": "2026-08-25T05:48:29.728050+00:00",
+      "started_at": "2026-08-25T07:08:56.911256+00:00",
+      "completed_at": "2026-08-25T07:08:57.345127+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33042,20 +33091,20 @@
       "error": null
     },
     {
-      "id": 402,
+      "id": 406,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T05:48:15.162984+00:00",
-      "completed_at": "2026-08-25T05:48:15.948666+00:00",
+      "started_at": "2026-08-25T07:08:40.688548+00:00",
+      "completed_at": "2026-08-25T07:08:41.445804+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 2,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 405,
+      "id": 409,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T05:48:30.130546+00:00",
-      "completed_at": "2026-08-25T05:48:31.853621+00:00",
+      "started_at": "2026-08-25T07:08:57.746547+00:00",
+      "completed_at": "2026-08-25T07:08:59.439012+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33072,11 +33121,11 @@
       "error": null
     }
   ],
-  "document_count": 1386,
-  "event_count": 969,
-  "mention_count": 2372,
+  "document_count": 1391,
+  "event_count": 970,
+  "mention_count": 2373,
   "review_counts": {
-    "provisional": 3,
+    "provisional": 4,
     "confirmed": 275,
     "flagged": 691,
     "flagged_retry_pending": 0
