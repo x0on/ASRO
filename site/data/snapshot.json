@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T21:44:43.577909+00:00",
+  "generated_at": "2026-08-25T22:45:22.425804+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "stress": 57.1,
     "monetization": 42.9,
-    "cannibalization": 54.2,
-    "circularity": 57.1,
     "external_pressure": 16.12,
-    "counter_evidence": 42.9,
+    "stress": 57.1,
     "capital": 48.732271163185665,
+    "fragility": 61.1,
     "transmission": 39.6,
-    "fragility": 61.1
+    "cannibalization": 54.2,
+    "counter_evidence": 42.9,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "stress": "directional_estimate",
-    "monetization": "directional_estimate",
-    "circularity": "directional_estimate",
     "external_pressure": "aggregate",
-    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
+    "monetization": "directional_estimate",
+    "stress": "directional_estimate",
     "capital": "aggregate",
+    "fragility": "directional_estimate",
     "transmission": "confirmed_trigger",
     "cannibalization": "directional_estimate",
-    "fragility": "directional_estimate"
+    "counter_evidence": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T22:45:21.925843+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"stress\": 57.1, \"monetization\": 42.9, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1}"
+    },
     {
       "captured_at": "2026-08-25T21:44:43.055805+00:00",
       "score": 45.3,
@@ -10056,6 +10062,54 @@
         "weight": 1
       },
       {
+        "id": "evidence:011f036af1f63d186bfafb8de41ab4e311397337ff0c804fa62cce03cdd04c8c",
+        "label": "Godot Engine partner firm W4 Games secures $18m Series B funding, signs deal with Tencent to bolster Asia ecosystem - GamesIndustry.biz",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "GamesIndustry.biz",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWEc4dDVWeDdSaUdBX3M5TURqODhPNlpZSVpObnVONGJMbWY4cl9vbnR4OUwyUENrOEw3M2lKOV81SEpyZDRIWnQ4OTFacDdJSmRzXzNTYTZzM2ZRa2l5SG5PaWFNemFxNG9UamJNQlhwOGx5NnZtZWc2SXctMUtud2E1R2ZYNWVNZDZhaWt6LThPbDV5WjFFdVBaS1EydmppR3FtWURxU0VhQUxtbzNrR0ZKdEx0Z09tYVlETXpMcWNIR2N4Q29uXzdyYWZ1SzBLVk16emZ3Y3FsWlk?oc=5",
+        "date": "Tue, 25 Aug 2026 08:00:00 GMT",
+        "summary": "Godot Engine partner firm W4 Games secures $18m Series B funding, signs deal with Tencent to bolster Asia ecosystem GamesIndustry.biz",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b6201eb8448ee0f8f58052e90bfe9f8b586ce52a04805dc0343ad8a4cf3cdca0",
+        "label": "Alibaba to Release Qwen 3.8-Flash-Next as a Preview of What Qwen 4 Will Offer - Decrypt",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Decrypt",
+        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ONXh5VW9jMlg2bmV2OFhETHZNV3FnS1ZLZk85VWdHakdEMGRYaXFoRmpsTFhLQ3BwWmNXX01fRGhUQUtSdS1YTXZBSmZLeDg5ZnJSSUx6dnNTbUpSUU1yR0JmS0xWX1d3TW9FTTcwbEx1eGFwaXdz0gF_QVVfeXFMT1I4UnpTZHFhQXJIaFFRakhzd3JZRnI4LVhkSWx1dkNJVmt1M1lGSVkwTVVXMU8xQXBFZTB6MWlLZUh5Y2Ytb19BaEhROTFhc1NvdlRtaVJtTE9yUXhEYmczY0RZQlh1dGl4QUtZRnNjZTRNbzl6WDhhUWktZ0VxZw?oc=5",
+        "date": "Tue, 25 Aug 2026 21:16:04 GMT",
+        "summary": "Alibaba to Release Qwen 3.8-Flash-Next as a Preview of What Qwen 4 Will Offer Decrypt",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c1275e6ab28de5d19f986f18588558abcb12f601a27b70ce78630847ffa0818b",
+        "label": "OpenAI data center chief Chris Malone is out, the latest in a string of executive exits - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaHN6cUtXZ0UyUlhaQlBNUXVpc2F4YU9ETnhHeTZzWnlLN3FTR0ZMWE42d3FkQmZKNUJHT183ekcya2pYRGNOSGIwMkVwa2xuZkhueW01ck4wb1E4RFdKVkdaN3d0SzBQMy1lclAxNng0eDZiX0tmdGpnRUF2ZDRDSTMtQkdjQW96N2M4WlBEZmRKQnE5TGhHOVJDNDVqSEU3aDVmbzVOdUnSAa4BQVVfeXFMTWVLVW80ck9uenpyZmdaTF9wY3BxLVNxMHZfblBsZXpBVFpfQnQxcjU1cUdwLTJDUGlQajR0QXV5MWNWNTUwSllMMzktZkl5NEt1ckNjYUdKNEZFbDYzaWxJQ3BQNUJmSjhRY0c2V1FISXV4UVMxXzhjVm1FZ1didndMWVFsU3VPcTIxQWRMTVhGR3Vyc1pVbUduaW00UGx6dTN4TTB4Um4xQzhFNnZn?oc=5",
+        "date": "Tue, 25 Aug 2026 21:23:28 GMT",
+        "summary": "OpenAI data center chief Chris Malone is out, the latest in a string of executive exits CNBC",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b0e40a2e95c6f39ff2d7fb98309ebbf19f1e502b0bafd8bea0a8ff71c8486e54",
+        "label": "Exclusive | OpenAI\u2019s Head of Data Centers Has Left the Company - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNR1RrUjMxSkNzODB0a3VTU0kyVTZBVktqYUxEdUFKZFBXRl9uUzhnUjlaX3FsWUNfcHozYS1Oa1VKeW43MDM2eFluZlpwMWltb0pXeDgyT2tST0l1WHg5Q0pxaVB5RG9NRmY2aW9rWmE4d3FmcmMwOEp1TVlFeUFETERXVENDVTR5MWc?oc=5",
+        "date": "Tue, 25 Aug 2026 21:30:00 GMT",
+        "summary": "Exclusive | OpenAI\u2019s Head of Data Centers Has Left the Company WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:c64c1f2b59ac8e02f3d6301f319f2e3b4e8a18b31dde17c7b435fa234b78e911",
         "label": "AppFolio (APPF) AWS Tie Up Puts Its Valuation Back In Focus - simplywall.st",
         "kind": "evidence",
@@ -11108,54 +11162,6 @@
         "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcjVzTG9ndFRCcGdlVnNGd1Z1cnh1M1RJcXlwVWJHeVFuR3FqeTNZdjNET2JmcURjSEVyMk1FazhIOUtqQU9YU3pqU1V6c2E0dXFfM2c1cmUwM2ZKdXBnbHhzTnFfSEJpalZ0NjZEZ0J5azFmbUpOWm1hbm5pYlllSXdUcVlUQ1lVSVRoTzBsbF9EaWdqeGZJ?oc=5",
         "date": "Mon, 24 Aug 2026 10:09:51 GMT",
         "summary": "What the Google-Marvell Deal Means for Data Centre Chips Data Centre Magazine",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3d361bd6c7dfb8bb349e12cab182f6a1cecb3d7023d5dc42b761dea5d5a326f6",
-        "label": "More tidbits from Epic UGM: Anthropic's Project Glasswing and a deeper partnership with UpToDate - Fierce Healthcare",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Fierce Healthcare",
-        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNZ18zMV9kMHZXcHBIMjRTdUxKQ3VuV25tLWVJOUlFX0c4SUk4ODRCc0FfdWdvbTJiZ3NKcldlRzRjV0JOcWJrY2NWQkljUk9CX283OUlSTDJiSFVXT001MG1TVUNGLUdLVjdWTFQ3NGhDNzFrakktMG03bGVYNVdGbnhsNTJjWTdmN1pNN1g5T1NWRHJMdlcyc1I1YUtKOVZyRTN6UFc3ZzJFeTcwR1NTZTlwcVRVNDd2aEh1cUVDWW93dkVBcHc?oc=5",
-        "date": "Mon, 24 Aug 2026 11:00:00 GMT",
-        "summary": "More tidbits from Epic UGM: Anthropic's Project Glasswing and a deeper partnership with UpToDate Fierce Healthcare",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:aaf96987c4c34a109f64805e450a13d033885d3165d689555fa2d7ec558a9515",
-        "label": "Alibaba's HK$80 Billion Share Sale Is an AI All-In Bet\u2014and a Dilution Flashpoint - finance.biggo.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB6WERvcW56NFE3ODJyOXVkdGZPRzNmZ01jVjh0VGNfVko4SjJzTERQX1QtSEdzSVpZTmtueGJkZEVoMFhoZTk0Z3ZqQ2dGV1llNWNWTUpYcHVuUVhOSGNtVjU2NHJyNEZaandWRGJVLWVmMjh5X1E?oc=5",
-        "date": "Mon, 24 Aug 2026 03:00:58 GMT",
-        "summary": "Alibaba's HK$80 Billion Share Sale Is an AI All-In Bet\u2014and a Dilution Flashpoint finance.biggo.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:80bfa2b2bcbe18b7541e1ec97ca5122b407efc05edf7c2f0363bf167166c73d9",
-        "label": "Tencent trims Amer Sports (NYSE: AS) stake below 5% in block sale - Stock Titan",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Stock Titan",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPZUtsMzc2aUEtSjYzWi1fZ1JQOVVNSy1KQUxyOTdGd0p2ek0zNkM0TkxpdlNKMzBxLUJYVmVWVHJocGlHX29KNHA4YjNmdjRoWTJxWTJ5cWVaZ09KVnlrTUY4c1UxR1Yta3VXRGZJV1RLdGo0Y3NYcmxRSkotWFMyblpUTnlNajAzeGFtU216cElUbW5LTmFWYXBLV3hWRUpsN280LUpudHFqQ05IdlM3SWpIZXdNMDE3MnNmYm9fT18?oc=5",
-        "date": "Mon, 24 Aug 2026 10:03:43 GMT",
-        "summary": "Tencent trims Amer Sports (NYSE: AS) stake below 5% in block sale Stock Titan",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:447aad217ed21039b3eb979b9f7702795a8aba3176abf3c437e66ccfef8ab6d9",
-        "label": "Consumer Internet Q2 Earnings: Alphabet (NASDAQ:GOOGL) Simply the Best - TradingView",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOallhMlZKY3k2Y2s2bWlnUFhhZmtuZ0tVbm9LX2dlNVB5WmQ4bDJFV3pjUWN3MWVka25KZVUxYnBlN1NWR2J4NzlJQ1N5djU1SjVmaklJeVNaMjkyMnZpaG5iY3o4WkNUQzUtakVaLTNNb1pYNFhaT3pFWlJmZUgzTjJ6Yzh3NGYxZ2gwZGQtRDdWenhoNXZxd29wU0diakhYbmh6T1QwMjQ0YVZkSlhZd05QSVdkZVo1ZGdxNVE2OWxHS2FZZlBR?oc=5",
-        "date": "Mon, 24 Aug 2026 03:34:00 GMT",
-        "summary": "Consumer Internet Q2 Earnings: Alphabet (NASDAQ:GOOGL) Simply the Best TradingView",
         "score": 1,
         "weight": 1
       }
@@ -17980,6 +17986,34 @@
         "mentions": 1
       },
       {
+        "source": "Tencent",
+        "target": "evidence:011f036af1f63d186bfafb8de41ab4e311397337ff0c804fa62cce03cdd04c8c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:b6201eb8448ee0f8f58052e90bfe9f8b586ce52a04805dc0343ad8a4cf3cdca0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c1275e6ab28de5d19f986f18588558abcb12f601a27b70ce78630847ffa0818b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:b0e40a2e95c6f39ff2d7fb98309ebbf19f1e502b0bafd8bea0a8ff71c8486e54",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:c64c1f2b59ac8e02f3d6301f319f2e3b4e8a18b31dde17c7b435fa234b78e911",
         "type": "EVIDENCE",
@@ -18591,34 +18625,6 @@
       {
         "source": "Alphabet",
         "target": "evidence:b470b3d54557c12ea6ba8633c7b40af1cf8b6b88614f749313c83a54a8c417fb",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:3d361bd6c7dfb8bb349e12cab182f6a1cecb3d7023d5dc42b761dea5d5a326f6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:aaf96987c4c34a109f64805e450a13d033885d3165d689555fa2d7ec558a9515",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:80bfa2b2bcbe18b7541e1ec97ca5122b407efc05edf7c2f0363bf167166c73d9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:447aad217ed21039b3eb979b9f7702795a8aba3176abf3c437e66ccfef8ab6d9",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33179,20 +33185,20 @@
   ],
   "collector_runs": [
     {
-      "id": 467,
+      "id": 471,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T21:44:21.292749+00:00",
-      "completed_at": "2026-08-25T21:44:38.630325+00:00",
+      "started_at": "2026-08-25T22:45:03.491161+00:00",
+      "completed_at": "2026-08-25T22:45:18.217000+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 2,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 468,
+      "id": 472,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T21:44:39.031702+00:00",
-      "completed_at": "2026-08-25T21:44:39.611733+00:00",
+      "started_at": "2026-08-25T22:45:18.617880+00:00",
+      "completed_at": "2026-08-25T22:45:19.076370+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33209,20 +33215,20 @@
       "error": null
     },
     {
-      "id": 466,
+      "id": 470,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T21:44:19.684925+00:00",
-      "completed_at": "2026-08-25T21:44:20.891761+00:00",
+      "started_at": "2026-08-25T22:45:02.538665+00:00",
+      "completed_at": "2026-08-25T22:45:03.089865+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 2,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 469,
+      "id": 473,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T21:44:40.013068+00:00",
-      "completed_at": "2026-08-25T21:44:42.639958+00:00",
+      "started_at": "2026-08-25T22:45:19.477408+00:00",
+      "completed_at": "2026-08-25T22:45:21.510514+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33239,7 +33245,7 @@
       "error": null
     }
   ],
-  "document_count": 1461,
+  "document_count": 1465,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
