@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T18:57:10.934323+00:00",
+  "generated_at": "2026-08-25T19:46:12.882288+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
-    "capital": 48.732271163185665,
-    "circularity": 57.1,
-    "transmission": 39.6,
     "stress": 57.1,
+    "capital": 48.732271163185665,
+    "external_pressure": 16.12,
     "cannibalization": 54.2,
+    "circularity": 57.1,
     "fragility": 61.1,
+    "monetization": 42.9,
     "counter_evidence": 42.9,
-    "external_pressure": 16.12
+    "transmission": 39.6
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "circularity": "directional_estimate",
-    "transmission": "confirmed_trigger",
     "stress": "directional_estimate",
+    "capital": "aggregate",
+    "external_pressure": "aggregate",
+    "cannibalization": "directional_estimate",
+    "circularity": "directional_estimate",
     "fragility": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "external_pressure": "aggregate",
     "monetization": "directional_estimate",
-    "capital": "aggregate",
-    "cannibalization": "directional_estimate"
+    "transmission": "confirmed_trigger"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T19:46:12.373208+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-25T18:57:10.554789+00:00",
       "score": 45.3,
@@ -3990,6 +3996,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:5beb23e0bd3c93e8fe7a0f5c755766a22d6c9f2322dc5f83359241c3d74e9565",
+        "label": "Jensen Huang Said Nvidia's $30 Billion OpenAI Investment Might Be the Last. Nvidia Just Guaranteed Up to $105 Billion of OpenAI's Leases. - The Motley Fool",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNa0l4ZHpVcmliRHJLYUd4ZVRSbExIWFlpYUlyWFRZTUhDZUlHdVpZTFE2OWVrWjIxX1hoMmU4a3NXZFNxeTR4WVAyalVVcWNNQXkzcG8wTEJTSkx5eVVLSkltTWVVaFhBdThVQ3dFVXNwMWE1cnF4RFdwaHkyTHJHYkRNZFdQdVVZN1pkdjBmWWhTQ0lMZ09EclVFa3IzVW1jMmVCcXg0TmxmTURKMTc5LWc4VWN6aGkzVWgwcDU2Q2QyUFBmUVhSNXdNYmtUNzR6ZG95dEhTQ0xlTmxOQU5wOHFLQkVIS3BCcWREaUtMT0lhemtKOXRLQzdJVWUxSUV0ZEtQOFNqcV9ucjItQS1j?oc=5",
+        "date": "Tue, 25 Aug 2026 18:48:09 GMT",
+        "summary": "Jensen Huang Said Nvidia's $30 Billion OpenAI Investment Might Be the Last. Nvidia Just Guaranteed Up to $105 Billion of OpenAI's Leases. The Motley Fool",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:23667607ddeb573b33c41ef860cf2de869be0a87ca2002784943434ad045b65a",
         "label": "OpenAI Financials Leaked Ahead Of IPO? ChatGPT Maker Said To Have Lost $39B Last Year: Here's How That Compares To Anthropic, SpaceX - Stocktwits",
         "kind": "evidence",
@@ -5643,6 +5661,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ab7009cbbc80798803288d28eaea11946f17f857dff7159df0397772c3e3f2d4",
+        "label": "Anthropic Has a New Problem Before IPO - TradingView",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMEQxQ1llMUxFaVpndEc2Rmcyclo3cmZ1Sl91WVpBa3pzTXl1NTV0RnE3Z1JtQ1M5U2pGdlhHS2FoWmo5aVBhbmdKRTRCOWw2bXc1OGZLeXowZVRoa3pNc2M4d0RNYmFxMklpZ3F2LXpNa1lPQ3cyREd3dEUxLWVrU3d1MmRmM3UxQ1dFSEJDSmlYcm5QMWpvT2NmemtoeHc?oc=5",
+        "date": "Tue, 25 Aug 2026 19:23:37 GMT",
+        "summary": "Anthropic Has a New Problem Before IPO TradingView",
+        "score": 4,
         "weight": 1
       },
       {
@@ -9978,6 +10008,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:1aad3b4fa7b0f503a7a47d554acd601c507b587613fa346ed06308e9e913c405",
+        "label": "Baidu (BIDU) Sank 12.7% After Earnings. Is Its AI Transition Losing Momentum? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZDdydWhDUzFQNkFzWFgwS2dVNWx2ZkNZOUhzWFhfN2NhQ2hLLWZWUXdVNmdhbE84aTlUWVVFVXBUVVFzY196V2x1ZUpYMTNpTGdHXzhsVDJTOXZpVDJ0S3Z4QzZ5aFBBVTkwZmVKZUtNcDdfT01kenZEM0Z6bzh5NzR5NDRxUTN1MGI2Tw?oc=5",
+        "date": "Tue, 25 Aug 2026 18:55:29 GMT",
+        "summary": "Baidu (BIDU) Sank 12.7% After Earnings. Is Its AI Transition Losing Momentum? Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:a69a450d791262c78a7777f704f5d030db0866e3491c4666d67facb4c3df49aa",
         "label": "Brazil Slaps TikTok Owner ByteDance With $30 Million Penalty, Orders Deletion Of Teen Data - NDTV Profit",
         "kind": "evidence",
@@ -11102,42 +11144,6 @@
         "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVUp6ekNoclVBR0FGS181Qk1sWkZYaTc3cklfeW5xYl8xWE5DLUpqUlpWOGhpUXQ0RGhoNV9ndmFMdXkxTmtMTXJsNENibGMzZVlVV29QeHNjUW1ub0VoalRJQk9uVjNEOTFtRFhGX3FERGVnaUlfVkt4VnpqX1hlUi1pWGpzRXlIUDZqOVJBaU1aQ01yUTRlSzNPcXhlLXl4N0xoMWFiOVNkN0sx?oc=5",
         "date": "Mon, 24 Aug 2026 06:48:27 GMT",
         "summary": "Alibaba shares slide after $10.2 billion AI share sale offered at sharp discount WKZO",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1800c33f15dd6d1a4d360c800e11d665f8e6f1798b674c8322bd18bd4692c2df",
-        "label": "Hong Kong Stocks Rebound 62 Points at Midday; Xiaomi Surges 7% After Results, Baidu Plunges 12% - finance.biggo.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1oSTBNZU5aOXhuZ0kzZ1J4TVRjTEJUQXVubzBEU1JPMjRZZ0RqaGpkRzlhRUN6QnJtNXFaTndsR2tqQXdac0VMamkwbFpZelBEdFM1c1FabE5QSjNLaUllODlJZE9zODZFVWRzUXc3VkhXcWVoT1E?oc=5",
-        "date": "Mon, 24 Aug 2026 07:09:24 GMT",
-        "summary": "Hong Kong Stocks Rebound 62 Points at Midday; Xiaomi Surges 7% After Results, Baidu Plunges 12% finance.biggo.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ef7f7a96b0b1d957b24a7e1887d1dfd906375f6f9d8f6458dda262c43c34fe4c",
-        "label": "Longbridge Launches on ChatGPT and Claude - Yahoo Finance Singapore",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance Singapore",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZHY2WVU5S0NnUmhRU2hwbS1DYzM4aUEydFB6RnNQME9UOXhrME9OemItcTFsOFBuQm84M0lGcDVDdkNoZ0tSX1hPLUlST2IzZ3prNWpyTXpNMEcyVXR2U3djOHZ6cTNQdHBKT19VUDFXRzc0NWU5M2QzTnozdG05bHN4cS02SEJERmFB?oc=5",
-        "date": "Mon, 24 Aug 2026 08:00:00 GMT",
-        "summary": "Longbridge Launches on ChatGPT and Claude Yahoo Finance Singapore",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7c2c08b7d2257641a150f2bd5884635f64c701e11ebc7bdeb4c66be5b8de6c52",
-        "label": "Anthropic Has a $65 Billion Run Rate. Buy These Stocks to Profit From It. - The Motley Fool",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Motley Fool",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMFZLMVlnNnkzQUlGbDZQM3Vfb1lNeHdkUWZSbXk4MWo3WVR3eEhGbl9JMDN4aUFGM3BUOXpYXzB1eG9kX1BSSkoycjlPUVFzTmFtTDlYbHpfN0RfbVpRMzJHN0ItZ1R2eUNEcDlkcUNfLUpBN2ZzdjhXT2ZTV1htNWhvcmxrOEJhV0s2UXRPQndHOE5sTDdSVw?oc=5",
-        "date": "Mon, 24 Aug 2026 08:51:43 GMT",
-        "summary": "Anthropic Has a $65 Billion Run Rate. Buy These Stocks to Profit From It. The Motley Fool",
         "score": 1,
         "weight": 1
       }
@@ -12957,6 +12963,20 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:5beb23e0bd3c93e8fe7a0f5c755766a22d6c9f2322dc5f83359241c3d74e9565",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:5beb23e0bd3c93e8fe7a0f5c755766a22d6c9f2322dc5f83359241c3d74e9565",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:23667607ddeb573b33c41ef860cf2de869be0a87ca2002784943434ad045b65a",
         "type": "EVIDENCE",
@@ -14506,6 +14526,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:ab7009cbbc80798803288d28eaea11946f17f857dff7159df0397772c3e3f2d4",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17920,6 +17947,13 @@
         "mentions": 1
       },
       {
+        "source": "Baidu",
+        "target": "evidence:1aad3b4fa7b0f503a7a47d554acd601c507b587613fa346ed06308e9e913c405",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "ByteDance",
         "target": "evidence:a69a450d791262c78a7777f704f5d030db0866e3491c4666d67facb4c3df49aa",
         "type": "EVIDENCE",
@@ -18573,27 +18607,6 @@
       {
         "source": "Alibaba",
         "target": "evidence:c5e756d3c5a8d5d94fd0b8877de68cc31646f995468973eb27ac7a435f1d83fc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:1800c33f15dd6d1a4d360c800e11d665f8e6f1798b674c8322bd18bd4692c2df",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:ef7f7a96b0b1d957b24a7e1887d1dfd906375f6f9d8f6458dda262c43c34fe4c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:7c2c08b7d2257641a150f2bd5884635f64c701e11ebc7bdeb4c66be5b8de6c52",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33154,20 +33167,20 @@
   ],
   "collector_runs": [
     {
-      "id": 455,
+      "id": 459,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T18:56:48.068556+00:00",
-      "completed_at": "2026-08-25T18:57:06.148223+00:00",
+      "started_at": "2026-08-25T19:45:52.871399+00:00",
+      "completed_at": "2026-08-25T19:46:08.843198+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 4,
       "error": null
     },
     {
-      "id": 456,
+      "id": 460,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T18:57:06.549434+00:00",
-      "completed_at": "2026-08-25T18:57:07.055504+00:00",
+      "started_at": "2026-08-25T19:46:09.244150+00:00",
+      "completed_at": "2026-08-25T19:46:09.655374+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33184,20 +33197,20 @@
       "error": null
     },
     {
-      "id": 454,
+      "id": 458,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T18:56:47.006215+00:00",
-      "completed_at": "2026-08-25T18:56:47.667062+00:00",
+      "started_at": "2026-08-25T19:45:51.927540+00:00",
+      "completed_at": "2026-08-25T19:45:52.470091+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 457,
+      "id": 461,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T18:57:07.468945+00:00",
-      "completed_at": "2026-08-25T18:57:10.142563+00:00",
+      "started_at": "2026-08-25T19:46:10.056534+00:00",
+      "completed_at": "2026-08-25T19:46:11.957306+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33214,7 +33227,7 @@
       "error": null
     }
   ],
-  "document_count": 1450,
+  "document_count": 1454,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
