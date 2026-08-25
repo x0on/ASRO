@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T13:12:24.651895+00:00",
+  "generated_at": "2026-08-25T14:04:17.409462+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "monetization": 42.9,
+    "cannibalization": 54.2,
     "external_pressure": 16.12,
     "counter_evidence": 42.9,
-    "stress": 57.1,
-    "capital": 48.732271163185665,
-    "transmission": 39.6,
     "circularity": 57.1,
+    "stress": 57.1,
+    "transmission": 39.6,
     "fragility": 61.1,
-    "cannibalization": 54.2
+    "capital": 48.732271163185665,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
     "counter_evidence": "directional_estimate",
     "circularity": "directional_estimate",
     "fragility": "directional_estimate",
     "monetization": "directional_estimate",
-    "capital": "aggregate",
+    "cannibalization": "directional_estimate",
     "transmission": "confirmed_trigger",
     "stress": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "capital": "aggregate",
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-25T14:04:16.908916+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-25T13:12:24.212624+00:00",
       "score": 45.3,
@@ -9870,6 +9876,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:6045212d46516fb9d72b6be071cdb47d0896a69204ad92c1c88b55b118866c2f",
+        "label": "Alibaba's $10 Billion Stock Sale Was Nearly 3 Times Oversubscribed. Should You Follow the Smart Money? - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxORlE1aWNsT0FxLUF5dURYeW5ZeWZtVC0wQUxHUmVpaFlqNEk3Z0doMlF3UFQ4cUhYaERVUmJja1RXM2hKZHY4N3JDb2xpMWsyeG04emRIaG9WN3BFWnQ5ZDlXd3l4WlhOMlNpTXNrSnhNMG1CSWxSYnYtVk9meV91NGZuaURDSkZaSXFwLVY0MGR2ZG5mV0RGNDcwZEJvZGthbWdUU1NLT2pPXzBRbjR0M09LRFh0N050SmwzUUNoOG5IYnVPRHhWbjJoN2RzR2RZUVRFaXlQcGJjQQ?oc=5",
+        "date": "Tue, 25 Aug 2026 13:20:08 GMT",
+        "summary": "Alibaba's $10 Billion Stock Sale Was Nearly 3 Times Oversubscribed. Should You Follow the Smart Money? 24/7 Wall St.",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e7f295c454487870d6ede7f67636803a652746b6e3c88561d0ce9383b5d004cb",
+        "label": "Bain & Company announces partnership with Anthropic to accelerate clients' enterprise AI transformations - The AI Journal",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The AI Journal",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUUdSM0Q2a0dnYnBVY25JRjlpUXpmamU0NWpHT1J1QWpSVFZhV2w5R3B5aGxvdlY5dTV6cFQ2b3hWa1lpa0lCQTh6TGJUM0tXQjhwY3BhTXEyckJaQVpITU8tVTNyMVVvQjFrR2ljX25MdUJTcVFJbFRIM0lsclBUVlUza2t4cWNPMnVIOXozMVFPbmQtQ2Z4YXdWT2N0amRib1BKbkNTSFRaejNtTENFQTJPek02TE1PakR3b19yaw?oc=5",
+        "date": "Tue, 25 Aug 2026 13:55:04 GMT",
+        "summary": "Bain & Company announces partnership with Anthropic to accelerate clients' enterprise AI transformations The AI Journal",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:98e2e9788e10043042802cc92ffd2bb44d40caee98121ac2593184388d5e9132",
+        "label": "ClickHouse\u2019s Recurring Revenue Passes $350 Million as OpenAI, Agent Use Jumps - The Information",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Information",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYV94LW8zenFiZnI4QjZYd0piT3BCNTBaZVZKQThLMG9DNUFiM1lTaWZmanFBMHJ3LWIyc3BRY2FzNUpvS3JCVUo2ZlVqclBYY0c1bE5LcTNYTWoyVmR2ekxqM0xMWE1MeVpjaXpodk1OT0pwVDNYbGxRdWUtTWhMT0kxdXNTVjFRR1h4UmxFRGdOZmk0SlU0VE1TQmNGZHJ0a3pHam5IQlBRVVd4VUFleg?oc=5",
+        "date": "Tue, 25 Aug 2026 13:04:00 GMT",
+        "summary": "ClickHouse\u2019s Recurring Revenue Passes $350 Million as OpenAI, Agent Use Jumps The Information",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:5126baf1845a682977d2ebc11ea4394c2afc156d6226789fb4b7988353bc819c",
         "label": "Nvidia shares set for $280 billion price swing after earnings, options show - Reuters",
         "kind": "evidence",
@@ -11066,42 +11108,6 @@
         "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPdTd0VkI5TzhTQWFxcjVfQy16V0V1c19IeTl5Vm43YndLUWFuUlgweEN6Z0VabXVBQTlXNnZjQjlxVGpGWkF4dkhScUJEdmhHOHdDcXo2bUIyanJ4TlJfNnE1N0tzdk9DRlk1cEJGOXV6ejIwT09zalhZd0FvX3ZFUUtVTnJHbWJjU2RuOUg0eDNBUW9KOXRsSU5sMkVHYjZVWEdoYg?oc=5",
         "date": "Sun, 23 Aug 2026 14:03:00 GMT",
         "summary": "Alphabet Stock (GOOGL) Opinions on Recent Earnings and AI Outlook Quiver Quantitative",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9662bb71cb0060fea42300e8fca6c8fe3733748f67892c835ad42b1a169d9a12",
-        "label": "Novo Nordisk Expands Its AI Push With AWS, But Can It Accelerate Drug Discovery? - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQaDFzV1o2UVlnUjNYSldmWGtTZ3ZYM3dEY0JsYTZOb2tDQUQwTkN4LVBVM2ZRZ2otV2l4TkgzX2xxWGNOWkQydEkzbkswWlpURlRQZ0lkSDJQYW1CdU5UamZjNWdobTlXR2VQUlM0bjVpcVpzTlM5SmpobjNTall1Rk9ybDVKXy1xRmdOVTBVMjk4U0k?oc=5",
-        "date": "Sun, 23 Aug 2026 23:43:53 GMT",
-        "summary": "Novo Nordisk Expands Its AI Push With AWS, But Can It Accelerate Drug Discovery? Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:93cdb592f2a3b188a1e9c857640ce72244f4372728444a6c692687bb979a69a0",
-        "label": "Shares flat in Asia before Iran sanctions news, Nvidia results - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMG83ZmMxSkVxZFI2eFdsTkhlblVtbE82OFd5SmxFekFOZmtQZEVLSzZOZU1tckZxd2QyOU9vYmRuWGhXeDIzVDhkQ1RaUF96T1hRZkg1SVRHWHAxcGVMTWxmMXBsSjVONURWaEFhMWp2dWdKM0piSGtyWVF1bkJ0YWFxWQ?oc=5",
-        "date": "Mon, 24 Aug 2026 00:49:00 GMT",
-        "summary": "Shares flat in Asia before Iran sanctions news, Nvidia results Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cf57d9dc16004838ad4ea2c921e3a2444524a4b538029f50d5ab1bd5a8fbee15",
-        "label": "Zhipu AI Highlights New RL Infrastructure Behind GLM-5.2 Post-Training - TipRanks",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TipRanks",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPallQeUw5QXRBaVdQaWVubTFDZUgwOXpsTkNQTFNmNUY5U3lsaEhQRWROWVFnZkpoZVZ4Z1h3WkE0S0ZHUU11bXJUWWlhUjhzSkNGSkhNa3Y3aUVYdDVCMzBTTDlMc09uLWU3MWxqY3F4ODNLQ2owem1ZdXEzQ2tORDhhbFVYSWxjS0xPbmhFbUZ6R0JkWlZkZksxTWpQdG42WW9IdXBORC1TVnJGSGdGckUyTVZJODFXclE?oc=5",
-        "date": "Sat, 22 Aug 2026 12:59:42 GMT",
-        "summary": "Zhipu AI Highlights New RL Infrastructure Behind GLM-5.2 Post-Training TipRanks",
         "score": 1,
         "weight": 1
       }
@@ -17835,6 +17841,27 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:6045212d46516fb9d72b6be071cdb47d0896a69204ad92c1c88b55b118866c2f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:e7f295c454487870d6ede7f67636803a652746b6e3c88561d0ce9383b5d004cb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:98e2e9788e10043042802cc92ffd2bb44d40caee98121ac2593184388d5e9132",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:5126baf1845a682977d2ebc11ea4394c2afc156d6226789fb4b7988353bc819c",
         "type": "EVIDENCE",
@@ -18530,27 +18557,6 @@
       {
         "source": "Alphabet",
         "target": "evidence:ed851508b47a84768aa473acbd5b0064ed7090b0d7c2f1f5e4e1c53b11f28b25",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:9662bb71cb0060fea42300e8fca6c8fe3733748f67892c835ad42b1a169d9a12",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:93cdb592f2a3b188a1e9c857640ce72244f4372728444a6c692687bb979a69a0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:cf57d9dc16004838ad4ea2c921e3a2444524a4b538029f50d5ab1bd5a8fbee15",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33111,20 +33117,20 @@
   ],
   "collector_runs": [
     {
-      "id": 431,
+      "id": 435,
       "collector": "company-economic-news",
-      "started_at": "2026-08-25T13:12:00.783112+00:00",
-      "completed_at": "2026-08-25T13:12:19.811631+00:00",
+      "started_at": "2026-08-25T14:03:58.089724+00:00",
+      "completed_at": "2026-08-25T14:04:13.564884+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 11,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 432,
+      "id": 436,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-25T13:12:20.270650+00:00",
-      "completed_at": "2026-08-25T13:12:20.810564+00:00",
+      "started_at": "2026-08-25T14:04:13.965720+00:00",
+      "completed_at": "2026-08-25T14:04:14.394189+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33141,20 +33147,20 @@
       "error": null
     },
     {
-      "id": 430,
+      "id": 434,
       "collector": "google-news-rss",
-      "started_at": "2026-08-25T13:11:59.403825+00:00",
-      "completed_at": "2026-08-25T13:12:00.327470+00:00",
+      "started_at": "2026-08-25T14:03:57.040281+00:00",
+      "completed_at": "2026-08-25T14:03:57.688501+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 433,
+      "id": 437,
       "collector": "sec-edgar",
-      "started_at": "2026-08-25T13:12:21.340326+00:00",
-      "completed_at": "2026-08-25T13:12:23.716015+00:00",
+      "started_at": "2026-08-25T14:04:14.795362+00:00",
+      "completed_at": "2026-08-25T14:04:16.493118+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33171,7 +33177,7 @@
       "error": null
     }
   ],
-  "document_count": 1425,
+  "document_count": 1429,
   "event_count": 970,
   "mention_count": 2373,
   "review_counts": {
