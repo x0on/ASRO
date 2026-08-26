@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T09:57:48.965685+00:00",
+  "generated_at": "2026-08-26T10:52:17.278441+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "capital": 48.732271163185665,
-    "external_pressure": 16.12,
-    "counter_evidence": 42.9,
     "monetization": 42.9,
+    "fragility": 61.1,
     "transmission": 39.6,
-    "circularity": 57.1,
-    "stress": 57.1,
     "cannibalization": 54.2,
-    "fragility": 61.1
+    "stress": 57.1,
+    "capital": 48.732271163185665,
+    "circularity": 57.1,
+    "counter_evidence": 42.9,
+    "external_pressure": 16.12
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
-    "capital": "aggregate",
-    "transmission": "confirmed_trigger",
     "stress": "directional_estimate",
-    "monetization": "directional_estimate",
-    "fragility": "directional_estimate",
-    "counter_evidence": "directional_estimate",
+    "capital": "aggregate",
     "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate"
+    "monetization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "fragility": "directional_estimate",
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-26T10:52:16.799008+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"monetization\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1}"
+    },
     {
       "captured_at": "2026-08-26T09:57:48.451744+00:00",
       "score": 45.3,
@@ -5766,6 +5772,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:cd401b0e8f0920ea2b5fcf8ec3b0d555803fe438b2d5ff4072360a51211d24fe",
+        "label": "Moonshot mulls revenue-sharing deals with Microsoft, Amazon, Google over Kimi K3 AI model: report - Seeking Alpha",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Seeking Alpha",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORzJNdGQ1NC1RRWlaZ1JqTUNmYXpqTUdtejE4THZid3BrNUFQQl9paFBZdUgtbWREc2M3R25oaE1mUzBXMnk5WVdoU0ViMklBUTJPUGF5dGktNDA4cWRNbzk5MWJQY0xBenN0cTNfYWV5YWJocFJpNUFudDlVWW50cWROaEp6RG9lYXhSSU5TMGM5YmlZY0hCQW0yRVdVanVJa3RHSHRBWXpQTnI0LW1SVGdnSlFENWt0a0V0T3JTQnRBV00?oc=5",
+        "date": "Wed, 26 Aug 2026 09:04:36 GMT",
+        "summary": "Moonshot mulls revenue-sharing deals with Microsoft, Amazon, Google over Kimi K3 AI model: report Seeking Alpha",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:9f0e479111a5b8b73a2ea7dc1f9cbc039735dbb3d69cfde022851a1ed388f825",
         "label": "DeepSeek targets 2027 listing as pre-IPO funding nears close: sources - South China Morning Post",
         "kind": "evidence",
@@ -10410,6 +10428,54 @@
         "weight": 1
       },
       {
+        "id": "evidence:67a7cc1b6a654155ef3ad00d0a0b6da3e87ad207d5d9832a7a93ebf7277f9b46",
+        "label": "Nasdaq Futures Lower Before Nvidia Earnings - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQklUWjc0SG1rbFBXYVFmb19naTdBTm1jRXZ3UmhzWFFzb1FVZzI4eC1QTENvekY0U1BxV3NRekt4U0RrR0JXUm5zaDMtSkF4by1JZnQwdEV6STY3eV9tcG5jUmU1aml6ZDFheE45OXlYa3I4SnNmRHc4SlIxanQwcXB0Rl9OLTN3VmxGdlNnUWhZMlJsU1BOZ2xkbm9xRnpzTk1zV0J1dldDdDF0?oc=5",
+        "date": "Wed, 26 Aug 2026 08:37:00 GMT",
+        "summary": "Nasdaq Futures Lower Before Nvidia Earnings WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:613c5e5821e35e442ba542f48ffc464b3d0d7e5f0fa3c917206d006d158ae6ee",
+        "label": "Nvidia earnings preview: The report the entire market is waiting on - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcFg3MU1CN01ha1JpX3pKQmVIZHMxOHl3OGRBSGJEcnkwdmZOcVhGdlFhU3VmaF9kTV9ZVUNWZEZGa0xWR1ZNYjlITnBjaTFMUDBueC1vbUVIcFl0NDBXd0NoMjB3cFhOX3h6UlpHeHVjN2FtNEp3M2lBRXFqMm52SWN3M1p4RDBRV3gtd0RrX0hxTi1GN2NQQTVSa2dLeHBJVUJMOA?oc=5",
+        "date": "Wed, 26 Aug 2026 09:04:35 GMT",
+        "summary": "Nvidia earnings preview: The report the entire market is waiting on Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:8a686f00cc62c620cb73e69e2b8fd5e782521065216e125fcc9412a0be9dd175",
+        "label": "MiniMax Group: Revenue up 283% year-over-year, gross margin rises, and loss narrows amid global AI demand - TradingView",
+        "kind": "evidence",
+        "category": "Cannibalization / economics",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNbEc1Y0lmUm9aci00eDhHS1VtMTF5am9OOGxxYWVCd1NEUWo3RUVpWC1KbFdzRXdBM3lhUGNJRU1nYWxRYWJ0cjBDaDJlczE3dkpYa1ZmU1BZNEh6bTZHQkxTVjVLVm9DcUR3TWdWUjN5OVJleEQzRm9KY3BxUzRzRDZpSVFuVDkxQkZDVlhDNnVKYURGUHNMZ0ZaZEZBQ2xQbDl3eGQxel9NcWVZRTdPd2d6N1NRbVdtTngzSkN0aF9aZVhxZzE4OU1BRHMtUlJreVVOOFRtZ2JVd2hHWHFGLWlWcmNZX3hFSFc4dG5JdVdENGlFRVVUdzVGekIya3FoMk1KUVd1TFdkdkNfRlliY1h3?oc=5",
+        "date": "Wed, 26 Aug 2026 09:47:54 GMT",
+        "summary": "MiniMax Group: Revenue up 283% year-over-year, gross margin rises, and loss narrows amid global AI demand TradingView",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e3728792d92c43b94ae1376a691cb6a199babae6aa65afa02a8ce2919450a52b",
+        "label": "MiniMax Sales Nearly Quadruple in Crowded Race for China AI Lead - Bloomberg.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc2hEMUdRRG1hMWJDd1hhUXlPVGczb1U0cUlncV9Pb3UyMXVSdm9vdkx1ZmU3WG40V1laSnR1elZmd3RlaGE3ZHNQVE5pMEREeG03Zl9pQnBQM0Y1Rk9jMlZVc1J5QVNFSzFiV2FCUjBCTVRXbDlRcHNmWWlwbl9KVzllTDhvbHMxNXg5Z3hTc280UXRheTJhVEo0Z1gxZEFXWDNUQ1hDSjktZk55NjJwanZPSXI?oc=5",
+        "date": "Wed, 26 Aug 2026 09:56:17 GMT",
+        "summary": "MiniMax Sales Nearly Quadruple in Crowded Race for China AI Lead Bloomberg.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:f16806870d55e87414759e7720d8d6cc410f57d42695500a69b494512d457c2c",
         "label": "Moonshot AI in Talks With US Tech Giants Over Revenue-Sharing Deals on Kimi K3 Model - marketscreener.com",
         "kind": "evidence",
@@ -11162,66 +11228,6 @@
         "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9UbHJkRkQwNFF6c3RMTWZGU056UlBrWmdfMmNwQmNWWFZBaF9pY0lGckx6S1hteFl1TFlKdkhyUlY4OHFGTmNkeURfQ0pPUXdPNEpKUnBwaFhJTmtzNjIxcU55VjVfZUhzYS13Wm5CbVNibjgtZWpTNE9MRWdNU00?oc=5",
         "date": "Tue, 25 Aug 2026 09:30:43 GMT",
         "summary": "How to buy a car with Amazon Autos About Amazon",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:eb4c6a2c441e82ee0a867e9e925072385ba852632e609d32e03840f845146e57",
-        "label": "Understanding Microsoft's Position In Software Industry Compared To Competitors - Benzinga",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Benzinga",
-        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWHNfcngwUzJJbmcybk45d3llaGdNS1lLTi1rcDRubWJMU2JlSTJmZFd4T3AtNlBTemN1VE9xY04weEtQd2lteEhTOUhJc2ExTWRrQjFaZFl5UlY5Q1psMS1SWDVzVzR2WWxPX0lyYTF6UEtLUDM1bTNPazhxeXBTZ3RFNzN6V1JvX2Y0ZW9tbkZjUmNZOGZSbU9OMmoxRUJnS1k0bGhYZno5UUpaWWxzRzZhYW81RnA1TXc?oc=5",
-        "date": "Tue, 25 Aug 2026 09:58:29 GMT",
-        "summary": "Understanding Microsoft's Position In Software Industry Compared To Competitors Benzinga",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9a07f6687d7e37daa3c193de06d630d8b1b970deead212f06423b878046b8908",
-        "label": "Andy Jassy Believes AWS Can Hit $1 Trillion in Revenue. Here's When the Math Says It Might Happen. - Currently.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Currently.com",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZWRESkRhakRXci1LZXpQUnlNN1NQUl9lV0d4b2x4XzBzTU02N1pmZWlRVTAwZ290dmlwVTBWX000eGMxY3lmdU5kbmlHVm5lXzhCc1BIS1FUbVpBSEwwSEFpN25peFZ6VHBCSXNSYTBNS2tWQlJVSllNbmtfVndiN3YxcXM?oc=5",
-        "date": "Tue, 25 Aug 2026 09:35:00 GMT",
-        "summary": "Andy Jassy Believes AWS Can Hit $1 Trillion in Revenue. Here's When the Math Says It Might Happen. Currently.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3a2395ac80ca71141a7e660765b1e62e8a23a4e972630c873898b7fb6d24c449",
-        "label": "Nvidia's valuation looks surprisingly cheap heading into earnings. Could it be an issue for the stock? - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxORWdvNG1VdTNjdk9ZcDNpTW11aUdGMmNMOVZ6WE5QbE9GV0Y4bE1hdXhmUUJUS3ZuRVpZTUNFbWxTVVZXZXJmUVZNMHBKbllQTWlrVGIybG1YeUtPTE5QMGhYVlkta19kV2JnOU1KcUFhYkgzQVlMRG5Md3YxLTJDNnhGazNUaVBnMGJ0Z3ZuZ0t2bUxVZTNqRjdJSFctY3dRZkRqNUV2a1ZpRHRLZTM2MHkzWktVNXM0aE9HdU9WWldwMEVlNGVyUmlJbFFXQzJIZkxtLU1PcmZYYlJKSlNJMTd0ZXlaS2NqQ3dJcnc0TWdWWFZ4eHc?oc=5",
-        "date": "Tue, 25 Aug 2026 08:23:57 GMT",
-        "summary": "Nvidia's valuation looks surprisingly cheap heading into earnings. Could it be an issue for the stock? Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:21dd40eaf4772185e266654608fe8290d618cc6ea747952331ab15c39904de59",
-        "label": "Is Uber (UBER) Quietly Rewriting Its Autonomous Strategy Through Baidu Robotaxis in Dubai? - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNRU5JUnZMWE55OW9IdkM0UkwwVkNQWEpFWTBzTmtUZFVpa2NJRG0zYTZnVTJ1SmYwVVBVaC1sdVI1eDQxaXpQMkpwZGZ1eDBPZ3lfaFhicWZtRkFCcjY4Z2t1ZERJVURXd0NEVmVMNnhocXBoeldWS2t2WEQtT0RPZGZ0UnhQWk9qbzlWYlFQWVEtS3pSUENSM19Rc3pkSmtON2ZwbnR2V0NDR045a3d1c01STVBWdXNnVHVRcC1iMU5kcHpPTEdRd2R6TUtpcmltZk8tTjBiNNIB3AFBVV95cUxQSjJiVWdsdk5JblR0dWU4VHd4MHI1MjdUbW9zZlFFUHhRYmJfUTJEeDZ4ZHpYY3BaaG5SVWpIT0lTYzl4Vy1TN1FaOWNmNDhjZElmUHNwZDRaLU9FUEFqd1QwbGhzT2l6d3drSERMUGk1QzhPdXM3dDRXN05ZdE44NGU1bkZpN1hxcmZ5OGtua2NHcEdtWTBuSU5qdGU1NlpGTGZhTWlNeHlJdk5STkUwbTEza0FxWmRHNDFSVllyZGJsNzRPbXA5WXJsamtRX3lEVEdiT3R4c19zZHpN?oc=5",
-        "date": "Tue, 25 Aug 2026 10:35:28 GMT",
-        "summary": "Is Uber (UBER) Quietly Rewriting Its Autonomous Strategy Through Baidu Robotaxis in Dubai? simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0e64430f9b5551136c066be89a2eb93ed4bda1f6bc4b2e3f03c57ced09de28bb",
-        "label": "Alphabet (GOOGL), What Is Behind The Fresh Attention? - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWlppZnFoNVY2emZVTGZGeExacm1tYmVuRFF1bzlDSENObnNnSVMwckRzcXRYOS1RX19oWDczUVhqcFF4Q29sYk5WcnFXYXN0SkpocUJDanp3TWZPUGhNbFRfS0FEMkx1ZlpfdDAwN08xcjVxS3c5NENFM2VjUW5oZzd4QXhVdDVBanQwc0hiVl9DWjkzTVBKeFRKV1VNcFJwNC1pNlppYzRkb1Q2eVNRZnJ4Y2rSAboBQVVfeXFMTUZISkVhLVpiS3IxMVo5d0VNc3VMcXNKYnpOcGo2b2lRdlpVS0I0b18zOUR6SmhYS2MxaU9zUlROZWRaZmlsMGN1amxNV3V6QTZ3Z2cyb2JnSFRLRjM2bE5PR18wV3htWnREZ3VRZXlsUzJzdldReE5hNTZHVGRYdWJhaVFWLU1sOXFnTmF2dTFaQ3JVN0RVZ2VtZmUyVG9QVDAteTlCNnNDUkZFQklna0l0R0I1WHNMYjJn?oc=5",
-        "date": "Tue, 25 Aug 2026 07:31:03 GMT",
-        "summary": "Alphabet (GOOGL), What Is Behind The Fresh Attention? simplywall.st",
         "score": 1,
         "weight": 1
       }
@@ -14632,6 +14638,34 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:cd401b0e8f0920ea2b5fcf8ec3b0d555803fe438b2d5ff4072360a51211d24fe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:cd401b0e8f0920ea2b5fcf8ec3b0d555803fe438b2d5ff4072360a51211d24fe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:cd401b0e8f0920ea2b5fcf8ec3b0d555803fe438b2d5ff4072360a51211d24fe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:cd401b0e8f0920ea2b5fcf8ec3b0d555803fe438b2d5ff4072360a51211d24fe",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -18319,6 +18353,34 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:67a7cc1b6a654155ef3ad00d0a0b6da3e87ad207d5d9832a7a93ebf7277f9b46",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:613c5e5821e35e442ba542f48ffc464b3d0d7e5f0fa3c917206d006d158ae6ee",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "MiniMax",
+        "target": "evidence:8a686f00cc62c620cb73e69e2b8fd5e782521065216e125fcc9412a0be9dd175",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "MiniMax",
+        "target": "evidence:e3728792d92c43b94ae1376a691cb6a199babae6aa65afa02a8ce2919450a52b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Moonshot AI",
         "target": "evidence:f16806870d55e87414759e7720d8d6cc410f57d42695500a69b494512d457c2c",
         "type": "EVIDENCE",
@@ -18755,41 +18817,6 @@
       {
         "source": "Amazon",
         "target": "evidence:f0e5f75536e3c9719eb7c228031e33356d3f3a3653af500a06fbdb180c6488b4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:eb4c6a2c441e82ee0a867e9e925072385ba852632e609d32e03840f845146e57",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:9a07f6687d7e37daa3c193de06d630d8b1b970deead212f06423b878046b8908",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:3a2395ac80ca71141a7e660765b1e62e8a23a4e972630c873898b7fb6d24c449",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:21dd40eaf4772185e266654608fe8290d618cc6ea747952331ab15c39904de59",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:0e64430f9b5551136c066be89a2eb93ed4bda1f6bc4b2e3f03c57ced09de28bb",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33395,20 +33422,20 @@
   ],
   "collector_runs": [
     {
-      "id": 511,
+      "id": 515,
       "collector": "company-economic-news",
-      "started_at": "2026-08-26T09:57:30.330732+00:00",
-      "completed_at": "2026-08-26T09:57:44.992300+00:00",
+      "started_at": "2026-08-26T10:51:59.715418+00:00",
+      "completed_at": "2026-08-26T10:52:13.541655+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 5,
       "error": null
     },
     {
-      "id": 512,
+      "id": 516,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-26T09:57:45.393164+00:00",
-      "completed_at": "2026-08-26T09:57:45.860337+00:00",
+      "started_at": "2026-08-26T10:52:13.942529+00:00",
+      "completed_at": "2026-08-26T10:52:14.281943+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33425,20 +33452,20 @@
       "error": null
     },
     {
-      "id": 510,
+      "id": 514,
       "collector": "google-news-rss",
-      "started_at": "2026-08-26T09:57:29.231512+00:00",
-      "completed_at": "2026-08-26T09:57:29.929862+00:00",
+      "started_at": "2026-08-26T10:51:58.585615+00:00",
+      "completed_at": "2026-08-26T10:51:59.314025+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 513,
+      "id": 517,
       "collector": "sec-edgar",
-      "started_at": "2026-08-26T09:57:46.261385+00:00",
-      "completed_at": "2026-08-26T09:57:48.035674+00:00",
+      "started_at": "2026-08-26T10:52:14.683185+00:00",
+      "completed_at": "2026-08-26T10:52:16.383890+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
