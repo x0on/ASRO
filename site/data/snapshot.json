@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T07:59:43.287572+00:00",
+  "generated_at": "2026-08-26T09:02:53.089586+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "transmission": 39.6,
-    "fragility": 61.1,
-    "circularity": 57.1,
     "counter_evidence": 42.9,
-    "external_pressure": 16.12,
-    "cannibalization": 54.2,
-    "monetization": 42.9,
+    "fragility": 61.1,
     "stress": 57.1,
-    "capital": 48.732271163185665
+    "cannibalization": 54.2,
+    "external_pressure": 16.12,
+    "capital": 48.732271163185665,
+    "monetization": 42.9,
+    "transmission": 39.6,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "transmission": "confirmed_trigger",
-    "circularity": "directional_estimate",
-    "external_pressure": "aggregate",
-    "cannibalization": "directional_estimate",
     "counter_evidence": "directional_estimate",
-    "monetization": "directional_estimate",
     "fragility": "directional_estimate",
+    "external_pressure": "aggregate",
+    "transmission": "confirmed_trigger",
     "stress": "directional_estimate",
-    "capital": "aggregate"
+    "cannibalization": "directional_estimate",
+    "capital": "aggregate",
+    "monetization": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-26T09:02:52.713196+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"capital\": 48.732271163185665, \"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 57.1, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-26T07:59:42.903491+00:00",
       "score": 45.3,
@@ -5754,6 +5760,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:ca5c54f8569ca513f25605661367bc55ccbc4e59cd24241c88e980654c4879d1",
+        "label": "Moonshot AI Negotiating for KIMI K3 Revenue-Sharing with Microsoft, Amazon, Google - marketscreener.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPRF8zMS1SY2Y2dFhCZ3VHd0tfdE5FMncwQ1EtZ05wV0EtaGRhdXRGQm5ELUtLTGhUenk2RUdBRVF3RU5MZ1AwYldHQjViNDl0NWJNNnJZNi1Jck84NzBnOVphaFlpMEdfVG8xX0RTTWRfaGNUWTdyb1l4Y2NjWGZDLUp5cVJMSEhQOWE5RU8tMGhxZ0pYVFVqOUZ0TlJnOGR4NjJjMzU5TVN1elBYUFhvWjdHaWl1VkdfRmZyemhjNjNjTlY1T2VRQzIwNzRXUQ?oc=5",
+        "date": "Wed, 26 Aug 2026 08:45:54 GMT",
+        "summary": "Moonshot AI Negotiating for KIMI K3 Revenue-Sharing with Microsoft, Amazon, Google marketscreener.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:1fc3800a50246d585c6c7877f468205b3a580fc712e956a3908d9adf0971304b",
+        "label": "Anthropic IPO: Five things to know before its Wall Street debut - Euronews.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Euronews.com",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPM1Y2ZDVQUmoxekl6LTB6OUQ3T09qT0o1MHlKYW9Yd0MyNmJ1MlZWLU93bzlXbmRGLUpoSU1JWjRBTUgxV0RlYkE3VUtKLU5CelNzR211R01lMTVLclVDNkVOVnEzRmEtZ0U1QmE2T2hVSnNCckkxcS1yZWtGa1dFLWN0LXJtc243dXRjVk1IbVpxYzlZWUZwREtodjlDRHNkekRkY3lhRWlzaHc?oc=5",
+        "date": "Wed, 26 Aug 2026 07:18:22 GMT",
+        "summary": "Anthropic IPO: Five things to know before its Wall Street debut Euronews.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:544814b896a8b531bdf3837c56bb4cd7f93d6915ae8751719c84fb35af715450",
         "label": "Anthropic IPO: Five things to know before its Wall Street debut - AOL.co.uk",
         "kind": "evidence",
@@ -8874,6 +8904,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:23aae05e3a92e9809dcebfc0171ef388c2581d4e50e498a96d8c28d51352a1f7",
+        "label": "How Investors Are Reacting To Baidu (BIDU) Launching Apollo Go Robotaxis On Uber In Dubai - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeHE1R1ZQV1MycjA5NzlGSlYtdGpSV1hTUjFFVHNVQjVWZEhWSmdaN1U2azQyOW1lTXI4Tk9JczIwb1l3dVhyOVNnY2lDUjROVnF1YzUtSzBDZEVsbGlkVWJsZDNMQjIzQXJFY1hiOTVJTFA5MWN6bVVXNFhBbzkwQ1FRT3RTdTNyX3NQX09henZJR2c0YnZmNDY1d253cURNOWxZa1hyTEJMQWtQaG9KVXhLQXRaWGZVSV9hbU9B0gHDAUFVX3lxTFBwaDlRbEY1THZ0cHpzZXRRME1HNDNDSFpNSEQ5RGZJV1JpRUo2bnV1N1M0cjQzVFk2SWtMRGtyNjNNY2xBNl9yRVpNenRaN1VWNHVwemF1QjRHNFB6UEF6Y3FWN0VlWUJoWHVhQVdoV0V6SF9KdWF0eThweXRaV1VxSjRKOFBYblREb3JKamFxU29nY0RhczNSWHBHUE5lTjRsM0lKZUZMOUQ4SkVKQk0wTC1YS3VOdDNaUVo1VzVxQWNtNA?oc=5",
+        "date": "Wed, 26 Aug 2026 06:26:14 GMT",
+        "summary": "How Investors Are Reacting To Baidu (BIDU) Launching Apollo Go Robotaxis On Uber In Dubai simplywall.st",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:95bcffaa621a1a78d9dc3a4ac41776fca8e14b7b5f19cc081aa6f4ae3895eba6",
+        "label": "SoftBank mulls up to $20 billion bond sale for OpenAI financing, Bloomberg News reports - Reuters",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxONS1xODNmbldTX1NicUxDQUpzWno2R1dTV19iN0RGYWcxZUhFMWczNWlhNnZaYndQRVdrSkhQVUpZMVcySXBBRmVPVVFmb0dzWTVIZ0U1TW5XeElfb1lfekRQTVZncEo0cjB3cndmNXI5NTlpSnpLNzJvSGxhcXNJUVp3WDdISldoelEtWGk0MW5xQW9MbW81VFRXSE5qTzdtSnhOV01CZl90UmgybHpuNG9wZURSZ3hyTFVveWVNR2V6ODBieGs3M3ktMjhhUQ?oc=5",
+        "date": "Wed, 26 Aug 2026 05:26:00 GMT",
+        "summary": "SoftBank mulls up to $20 billion bond sale for OpenAI financing, Bloomberg News reports Reuters",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:be380d18ff9e0f9be70c81b3e6185f9dd5a2dd1915c1262ce73b3911dac5a9e5",
         "label": "SoftBank Mulls Up to $20 Billion Bond Sale for OpenAI Financing - Bloomberg.com",
         "kind": "evidence",
@@ -10326,6 +10380,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:1371ed9116721ea041a5e5e84e08485becbe710e33bdcab748e9ef6a754a47d7",
+        "label": "European shares flat ahead of Nvidia earnings - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV1pZeWdGeTdjVWRoOE0zZi1zQzhRVTdhU3g3U3VPV2J4dHVRQWtiRF9CUHlWVGllbFpPYnIyUmc5TDZPVlJrX0lrNDZCME5rcWZEYmN2a1JFY1diVE5oeDk1WEFDNmhIeDZfUmdFMFBBVUh6M1ZibFFvdkNzSDRVc1NEcFdZZmVhRDVjTGtxQWZwd2JDd3hzS1lHalBGUmMwRkZDUTRidDZIQ3lM?oc=5",
+        "date": "Wed, 26 Aug 2026 08:46:36 GMT",
+        "summary": "European shares flat ahead of Nvidia earnings Reuters",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:86289be0d4b4a8dc834c4f2bdda40028535cbdebc8d27cd66e50a8a87fedcf8e",
+        "label": "Oil Extends Falls, Nasdaq Futures Lower Before Nvidia Earnings - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQklUWjc0SG1rbFBXYVFmb19naTdBTm1jRXZ3UmhzWFFzb1FVZzI4eC1QTENvekY0U1BxV3NRekt4U0RrR0JXUm5zaDMtSkF4by1JZnQwdEV6STY3eV9tcG5jUmU1aml6ZDFheE45OXlYa3I4SnNmRHc4SlIxanQwcXB0Rl9OLTN3VmxGdlNnUWhZMlJsU1BOZ2xkbm9xRnpzTk1zV0J1dldDdDF0?oc=5",
+        "date": "Wed, 26 Aug 2026 08:37:00 GMT",
+        "summary": "Oil Extends Falls, Nasdaq Futures Lower Before Nvidia Earnings WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:b302369907900fb399441aa9e78d8bd532368526b0428518db8e273560e4e334",
         "label": "Alphabet Earnings Rise 24% As Google Faces Reddit Challenges 07/23/2026 - MediaPost",
         "kind": "evidence",
@@ -11138,78 +11216,6 @@
         "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNN0dVTlRMR1dEXzRnVENERFAydGN3Ylo3Tms5R0xjU19qU0lIU3JFQmJESVM5MFpNbXJ3TUhmYWl0bFlvUVpGR1pLY3JJMXNadHZISlVEMGJLT2FlU1A3Ul9EWWVfXzlCYlVnS2YySWV2M2pQUlA0eUxoUGZEVHR5allRSUxXYW5yenhOSS1sOTQtV0o4cTJmb2lrV24zWHBiczNaNlJ1STFVbVViei1xOEgwNmhfQUJoSy1JNGZPODJiSzhwN18xUllmOWY2d2hnWFHSAdcBQVVfeXFMTms5VzkyWGtwLXppbmg2R0toeHBXVlU4dEhiM3R5b2NXblBuM2stNGVIQnFmaVZtT1FlZmNfejlLNEJfRnhJZkk5OFpYQ0xJWENrUnZybUxtZklOVk15RS1tX0pLRjViUW5NSFQ2WDlvMk1IV2dUUU9aMHRiV3c2TExSak0tYjJHZDZDaWJweXQxRXg4UFh1dUlpZ1hqVENmVkFEOTIzUDhkV0dOUFRQbzZWUnNRRlhSSFBobG84UnR5NUVWODZacm5tMFNvUTFfSk9sdmFMaWM?oc=5",
         "date": "Tue, 25 Aug 2026 09:41:09 GMT",
         "summary": "Alibaba (BABA) Stock Could Be A Bargain Despite AI Spending Worries simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:793ccdaac6502f3235536a3ca04e096bdfd64f913a72149102ed9846279face7",
-        "label": "Longbridge Launches on ChatGPT and Claude - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPNHUtUU5feFl1RmJNVFc5NFhPTmpUWEtPUEhNaFZ6V3J3WVFtaVNEdUR2LVhXRXpralBfRzkwdGpxSC15N1dOcjFlS3JrWGtlS29aOVZtWTNLTzhRS2tpRzRZQm5laDJOeHk3VG1LVmFNRjhaZkR3TlZNc0ZvNE5TUVk3VlJJMGpZdzBOQjM5cWtRcGhOZ0h3NjZmQmdEeGdw?oc=5",
-        "date": "Mon, 24 Aug 2026 08:00:00 GMT",
-        "summary": "Longbridge Launches on ChatGPT and Claude Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2bfbcbbcdb306b73a136c0fc34dd9903daf13c32c33421a4413200b8d39c7f76",
-        "label": "Up to 30x More Work Per Watt: NVIDIA Vera Rubin NVL72 Sets a New Efficiency Standard for AI Agents - NVIDIA Blog",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "NVIDIA Blog",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1abDNiV1R3b1JKQ01wRmJYVFdkMVVGempWd3hYQlFhRl9ZdG9ONjB0eXhNS2REdk9sZk43Q0V4eE9fa09KSm11UUJvck00eGNCWUFRdXZsLXVIU3dfbWNqOFNTekN6dmR3Z0JTTTdvZm1kbWxGS0ZJ?oc=5",
-        "date": "Mon, 24 Aug 2026 15:10:06 GMT",
-        "summary": "Up to 30x More Work Per Watt: NVIDIA Vera Rubin NVL72 Sets a New Efficiency Standard for AI Agents NVIDIA Blog",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3e1779e6ccc99e9ab2ee7b5b32c99f046bdcc94a07d85a9494e63845e1f50a94",
-        "label": "What Is Tencent Holdings (SEHK:700) Looking For In Humanoid Robotics? - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdkZBZGN4alpoZ0RlN3Jxamx4aldTa3ZqS0xTcmFDaHUwX016eGJ0a3hpNHVVd3NIUVZSLUN2OXNLTXhlb2llMUMtWTFXLVdKeFJ1dXRiUmdyYTF6dERzbERpRGNHX1Nnb09laS1KWGY4eHFfYjVpNkluRUFSZ3JLM1NEajRJQ1d2TjdTYUZRTC1WZVVYbXY5MWVncHMwQQ?oc=5",
-        "date": "Tue, 25 Aug 2026 07:05:14 GMT",
-        "summary": "What Is Tencent Holdings (SEHK:700) Looking For In Humanoid Robotics? Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:346030086514db82aae180ec5ec8fbd9cf5f45205e71ca8caaacafbc99dcb83b",
-        "label": "Microsoft (MSFT) - Moomoo",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMitAJBVV95cUxQcXNUaTFVYnR1WVdYai0yMHktdl90VnM2b1ZLNTg5LWREQWI5R0JiWXY3N1k4TXJ2YWRSc2FzZGU4N1pXR3hndG1SRW5jN1JpSVBPLWFIVnAweE53bTlfUVoyNHNudVpKTW9ZMkpBX2JXYmZHTkFhc0JHVFItWFVVVFR3VjNsMFRRRU5qT1FqNFlqQm1wbUdDQ2RJUFV5cVMwUGVqel81TDhia1pvSlQ3UlV2ZnBIZlFxUG1HblB3bDBVXzRsbzZjVGI4NXRXbUZ5OHg2SS0yY0ZjY3g5N2ZuSkZ6OHZPZHJILXkyYjdLX1ZTNVRibEpTM3lLT0xwaUUtaHRqZFY5emZ3N1pxbWRUWTdaNkVfMmpLZGhLTTFKNDFnMXVsVjEwUG1OQ1MxWWZiZGxreg?oc=5",
-        "date": "Mon, 24 Aug 2026 08:00:03 GMT",
-        "summary": "Microsoft (MSFT) Moomoo",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:fdd7f0cd8ea6aa3995ad8c2f5d047f8a6b8bc60ec7353ba8691a576465b38247",
-        "label": "Wall Street Is Counting on Nvidia to Keep the AI Party Going - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcEVGeXQwZFloV1dOS1JyclZMeDdyMmJZcF9KRVlwR1d6NVhITlh5Ml84cHhadmNpaTcxSHFneU16YTUweXUzY1c4eTVDV3Q5WjZmZF9sWlRPa3dzWUZoaGV3SjBhUkR4N2ZoQ1Q0YlY2cWloNVQ0cWl2bGJ0VG1xN0I1Vlg4QUQ0TG82emJDcS0zVTJ3Qk9vcFFMWHpNb09UY1YxV1NzQQ?oc=5",
-        "date": "Tue, 25 Aug 2026 07:01:56 GMT",
-        "summary": "Wall Street Is Counting on Nvidia to Keep the AI Party Going WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e0d38a7d7c2f3ae7d32b1077f1b787bf96177fd205c6f7b75e2c96cee23908a8",
-        "label": "Doubao Work Enters AI Office Competition: Has the Sector Entered a Systematic Head-to-Head Showdown Stage? - 36 Kr",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36 Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9BaGI0cTZQM1ZHOUtPLTBqWWJUcDNFTmZjb0N6MHRXbXJ1RXFHUEZvVFBfMU0tYXhjcHgzSF96aFpQSTFKbGhhLVNUZEQ0TkhNSmhz?oc=5",
-        "date": "Tue, 25 Aug 2026 04:41:06 GMT",
-        "summary": "Doubao Work Enters AI Office Competition: Has the Sector Entered a Systematic Head-to-Head Showdown Stage? 36 Kr",
         "score": 1,
         "weight": 1
       }
@@ -14625,6 +14631,41 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:ca5c54f8569ca513f25605661367bc55ccbc4e59cd24241c88e980654c4879d1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:ca5c54f8569ca513f25605661367bc55ccbc4e59cd24241c88e980654c4879d1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:ca5c54f8569ca513f25605661367bc55ccbc4e59cd24241c88e980654c4879d1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:ca5c54f8569ca513f25605661367bc55ccbc4e59cd24241c88e980654c4879d1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:1fc3800a50246d585c6c7877f468205b3a580fc712e956a3908d9adf0971304b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:544814b896a8b531bdf3837c56bb4cd7f93d6915ae8751719c84fb35af715450",
         "type": "EVIDENCE",
@@ -16655,6 +16696,34 @@
         "mentions": 1
       },
       {
+        "source": "Apollo",
+        "target": "evidence:23aae05e3a92e9809dcebfc0171ef388c2581d4e50e498a96d8c28d51352a1f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Baidu",
+        "target": "evidence:23aae05e3a92e9809dcebfc0171ef388c2581d4e50e498a96d8c28d51352a1f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:95bcffaa621a1a78d9dc3a4ac41776fca8e14b7b5f19cc081aa6f4ae3895eba6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SoftBank",
+        "target": "evidence:95bcffaa621a1a78d9dc3a4ac41776fca8e14b7b5f19cc081aa6f4ae3895eba6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "OpenAI",
         "target": "evidence:be380d18ff9e0f9be70c81b3e6185f9dd5a2dd1915c1262ce73b3911dac5a9e5",
         "type": "EVIDENCE",
@@ -18223,6 +18292,20 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:1371ed9116721ea041a5e5e84e08485becbe710e33bdcab748e9ef6a754a47d7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:86289be0d4b4a8dc834c4f2bdda40028535cbdebc8d27cd66e50a8a87fedcf8e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alphabet",
         "target": "evidence:b302369907900fb399441aa9e78d8bd532368526b0428518db8e273560e4e334",
         "type": "EVIDENCE",
@@ -18694,48 +18777,6 @@
       {
         "source": "Alibaba",
         "target": "evidence:c77b9f151df5e66b98c4187f4331ab3530c49a18bb883800b53f2b5456008c71",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:793ccdaac6502f3235536a3ca04e096bdfd64f913a72149102ed9846279face7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:2bfbcbbcdb306b73a136c0fc34dd9903daf13c32c33421a4413200b8d39c7f76",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:3e1779e6ccc99e9ab2ee7b5b32c99f046bdcc94a07d85a9494e63845e1f50a94",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:346030086514db82aae180ec5ec8fbd9cf5f45205e71ca8caaacafbc99dcb83b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:fdd7f0cd8ea6aa3995ad8c2f5d047f8a6b8bc60ec7353ba8691a576465b38247",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:e0d38a7d7c2f3ae7d32b1077f1b787bf96177fd205c6f7b75e2c96cee23908a8",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33341,20 +33382,20 @@
   ],
   "collector_runs": [
     {
-      "id": 503,
+      "id": 507,
       "collector": "company-economic-news",
-      "started_at": "2026-08-26T07:59:23.721739+00:00",
-      "completed_at": "2026-08-26T07:59:39.571779+00:00",
+      "started_at": "2026-08-26T09:02:33.915997+00:00",
+      "completed_at": "2026-08-26T09:02:49.333677+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 5,
+      "items_new": 6,
       "error": null
     },
     {
-      "id": 504,
+      "id": 508,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-26T07:59:39.972921+00:00",
-      "completed_at": "2026-08-26T07:59:40.345409+00:00",
+      "started_at": "2026-08-26T09:02:49.734886+00:00",
+      "completed_at": "2026-08-26T09:02:50.174828+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33371,20 +33412,20 @@
       "error": null
     },
     {
-      "id": 502,
+      "id": 506,
       "collector": "google-news-rss",
-      "started_at": "2026-08-26T07:59:22.269842+00:00",
-      "completed_at": "2026-08-26T07:59:23.320279+00:00",
+      "started_at": "2026-08-26T09:02:32.581826+00:00",
+      "completed_at": "2026-08-26T09:02:33.500776+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 505,
+      "id": 509,
       "collector": "sec-edgar",
-      "started_at": "2026-08-26T07:59:40.747063+00:00",
-      "completed_at": "2026-08-26T07:59:42.491723+00:00",
+      "started_at": "2026-08-26T09:02:50.576485+00:00",
+      "completed_at": "2026-08-26T09:02:52.300854+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
