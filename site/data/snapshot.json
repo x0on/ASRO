@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T15:53:38.141409+00:00",
+  "generated_at": "2026-08-26T16:59:57.467578+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "capital": 48.732271163185665,
     "cannibalization": 54.2,
-    "external_pressure": 16.12,
-    "transmission": 39.6,
-    "monetization": 42.9,
-    "stress": 57.1,
-    "circularity": 57.1,
     "fragility": 61.1,
-    "counter_evidence": 42.9
+    "circularity": 57.1,
+    "capital": 48.732271163185665,
+    "stress": 57.1,
+    "counter_evidence": 42.9,
+    "monetization": 42.9,
+    "transmission": 39.6,
+    "external_pressure": 16.12
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
-    "transmission": "confirmed_trigger",
-    "monetization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "fragility": "directional_estimate",
     "capital": "aggregate",
+    "transmission": "confirmed_trigger",
     "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
+    "counter_evidence": "directional_estimate",
     "stress": "directional_estimate",
-    "circularity": "directional_estimate"
+    "monetization": "directional_estimate",
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-26T16:59:56.974763+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-26T15:53:37.652683+00:00",
       "score": 45.3,
@@ -5796,6 +5802,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:eb8bcf897e7dcdb68f4a96a33ad9743659c95c90aac29b9776f212cbc188b853",
+        "label": "Why Anthropic's $30 trillion sales pitch ahead of its IPO could make sense - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPTXc3c2NpYl8ySjRDRUhrRm5XMkJSTnAwX1EyMnF4NjRhREpUNlJYTVdFLXZLZVdnalNveXBWdTlzY0xHZGJGbFN5TmJOWUxyQWJpcGF0Vy1KR1ZiYmtmMzFudmxLUnFmOVlBeGMySUFMUU9HTF9aN1BYLUlqLVB1UW5pSlg5VFF4RkhlYjY3cGFXMExVYTdBYkI3UjkzbzF2VFMxOFpBNGYwZUFIWHZGdFhHTHBCemQyRTlNU2dFX3pMbXFDTWJGMw?oc=5",
+        "date": "Wed, 26 Aug 2026 14:54:13 GMT",
+        "summary": "Why Anthropic's $30 trillion sales pitch ahead of its IPO could make sense Yahoo Finance",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6d76015dad618acc57700413b797d3e23fa9371d0a03dbb295032bf337f19632",
+        "label": "Another Top Executive Departs OpenAI Even As The Company Continues Marching Toward Its Massive IPO - International Business Times",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "International Business Times",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObUJ0SzFFNzVpNFN0Sk5TTmhXNTJQaWI2bm1QWGhleXRTNzNxTV9ReGFaaE5iSWxGZGNhRjJ2bUdDNFJBbmhVUkpvd3VMYlh6bzBjdU5ZMTV2SGdONVl2b1ZUaEpwM1B3eHFKd0VFSVlHVGt1RmxKbDlscS1PRmlnUjYxeC13YmVyQjRxZTBxTTUxWlRtNDhZSlRvQV80UUhDLXRJS1RoSGxRWWxsMW9YcF82RXhrTGVTYzhxR3JIX2E?oc=5",
+        "date": "Wed, 26 Aug 2026 15:05:29 GMT",
+        "summary": "Another Top Executive Departs OpenAI Even As The Company Continues Marching Toward Its Massive IPO International Business Times",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:a5d7dab5f22f1d7f0a69166ff4c581c856926cb8381302bc86c4bf97f088a95e",
+        "label": "Anthropic IPO: Five things to know before its Wall Street debut - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTll3a1g0RFMtWFpLdFN2eGN1ZzFlSUxWWGd5eGFVYVpoZEVGUS02WHFJeTlkWDFfVW0wNVl6N1NsakZkXzVrNENkcE1zdTRfTlBRbmdxSHdWR09peHJ0SHlmYXZNYTRqM2NYZk1GUlU0X0tlMzBRNXp5ZklvZEJXclk4LUFGTExPYVRtN19mQUdXcXR2S0JtODBR?oc=5",
+        "date": "Wed, 26 Aug 2026 07:18:22 GMT",
+        "summary": "Anthropic IPO: Five things to know before its Wall Street debut Yahoo Finance",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:605033cde83cf8dcf5e290bc663b262a190ea97a3cc0342f0ea6d8b8370339e3",
         "label": "China's Moonshot AI is seeking a revenue cut from Microsoft, Amazon, and Google - qz.com",
         "kind": "evidence",
@@ -10548,6 +10590,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:9d2f66250cc1c6737f5b9b090cc30b80ef1d1b03f218ae8fcd42f3356a1ce61e",
+        "label": "What Alphabet (GOOGL)'s Gemini Enterprise Push Into Regulated Industries Means For Shareholders - Yahoo! Finance Canada",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo! Finance Canada",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOdHlIZnpQdDFJODlNNEZTc2lKUk5FTmlaWS1SU1ZDZ09iYWNqd3JTbGQ2SDJDRXlCbzllN1RsS0I2WXA2cGd2Rk1rQTlXdXJTeU9ONkFNbHBpM21aUU9sYUVwUzZ4QkxFdGJId3JFRmNFckEtRFRpYWRsVVdwVElaU3VXclFoM2xkc1U1NWR3dw?oc=5",
+        "date": "Wed, 26 Aug 2026 16:18:47 GMT",
+        "summary": "What Alphabet (GOOGL)'s Gemini Enterprise Push Into Regulated Industries Means For Shareholders Yahoo! Finance Canada",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:47342f535674d1a2de98c93a3a92b9b69452c56b64ce17da35d16e72af40a3fa",
+        "label": "MiniMax\u2019s ARR hits $800M, up from $150M in February - Dealroom",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Dealroom",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOT2hVNUZoLXpkczExTTJzTE80S2ZBLVJFR1M1RXFGUTdzNG84bW1QOGg2a1lxNFQ3NUtDYnRsR3ZoaXU3Z1BOYnp1My01TmU1S1VhMk9BdEtCSEhTNkZYNlRMRU05d1ptdTZWS3RtQkFyQXhYOWEwalVYRmhLd2RqRnFlWVBlNGdQcGc?oc=5",
+        "date": "Wed, 26 Aug 2026 15:52:02 GMT",
+        "summary": "MiniMax\u2019s ARR hits $800M, up from $150M in February Dealroom",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f2f486469c72e3942ef421fa4c0097075166fb6052abd4263d1ade0cb95d1ff0",
+        "label": "Alibaba's Qwen launches Qwen3.8-Flash AI model with lower training costs - Reuters",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNFBiN0MydXZkUlB3UHdHb0xzNGNqVVhKdzZVMkQwalM4WWozbUxWSkZuRTljSXdfdjdOUjZkMWN2SEVRSnBXTEJwSlJfdkNqNzJreVp5MDNULVdDZ1ozSzE1YXp6dWR6MzZsOFBlRllhdlZEQmVBa1Eyb1hpQWlMWmdUaGlzeFpUZFlDZUszLU5KRG9SblF0VTNFT092TllTQnVqVlZHY2J3Uk1WblBfOUJGRmFob041dzEwRV9WaU5TWjlxbkswcTVJRQ?oc=5",
+        "date": "Wed, 26 Aug 2026 15:03:43 GMT",
+        "summary": "Alibaba's Qwen launches Qwen3.8-Flash AI model with lower training costs Reuters",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:361a6487a0ed3caa1e510779679ff083ebbd15a8386160b8164d503c763aeb87",
         "label": "AWS buys DuckLabs to bring DuckDB\u2019s embeddable analytics to more enterprises - SiliconANGLE",
         "kind": "evidence",
@@ -11180,78 +11258,6 @@
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNWThaMmJPUUlvYmRNYkFfRHByODdKTVYzSzd3ZzYzRE1wVUFvSXlWU1VGWTNOY1ZzOUczTnV1dHFDdUV1WVAyUHk3X1NTcF95cU96OWJULXpzV3Z2OU1tOXBIVnlRNDhYN1YyZGtWNHQ2MjRUaHFET3NBR2R3bTNJQUxhVndiQ0pkdEMwLU10TW9KaGNPMHFfbjAxUlRsbFdnTllOckhqTktheXdMeE1BWmdWdkI4UDdDM3lOVXpnONIBvwFBVV95cUxOa3h1bWlia2xLUk5RQjctWGxhcmMxRWFhTUxZZ2RqYk1OendyU2R4azZUZGg4anlMeWY3RnhZMDYyaGZ1ZWxCdHNqYnlfU1ZJY096MGxkbnRBWEJHNVNKQXg4ZGN3bkFrbUdfMTFScWFBcnp5eXhaUkZaaGpiUGNJbFl4VnlEMDhRelE1elJJMXRyVmJSVWhaVUpLUmdLS0JZY2hQcndDRVVRV2VyMmhtQU1kQkN4LTFWaEJyODltcw?oc=5",
         "date": "Tue, 25 Aug 2026 10:30:07 GMT",
         "summary": "DeepSeek leads surge in low-cost Chinese open-weight models on US platform South China Morning Post",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d5bb549821cafb428cc21653d8df51af0ab7e449a2e5f5ebd3396b168d6f2a4a",
-        "label": "Internal emails expose scale of Anthropic's Australian AI plans - ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPMjBEMEtZXzM2SVFEZjJLZU96SnV0bmZOMzVtd2VRWVoydzduNWUtUDBLZFFENEFDaVFZUXdXb05jcDgzeFN5S2o1LThCZFYyM3FBd1NiRXUtM1ZJWUUwcVBJTExlSFlNWkk3eG5Nc2loa2dTMDctbDRVT3NQUm1lcF95cG9JWGVQVzlUY3RIaW0xN0hHbFNDakEtUmhJN1NVTTVqNg?oc=5",
-        "date": "Tue, 25 Aug 2026 19:26:52 GMT",
-        "summary": "Internal emails expose scale of Anthropic's Australian AI plans ABC News & Headlines \u2013 Australian Broadcasting Corporation",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a50fe2de68352a2d1316b2a40d5e3267aca2e7ea70de395ff4037fc1d720a44f",
-        "label": "Convert 1 GLM to 0.014587 AVAX | Golem Converter - Binance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Binance",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBpTDNpcTlIQzlzc3dreEtoY1FPRkF5dGd1SWNhTXZnbjVQQ0J2LXpWTlFVSXQtRlFaNnpOZTVCUE5Gekp1d0h6OUxJQ0t3dmJYWjBrVlNWNjltUQ?oc=5",
-        "date": "Tue, 25 Aug 2026 20:06:26 GMT",
-        "summary": "Convert 1 GLM to 0.014587 AVAX | Golem Converter Binance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7663c9f77db231d751f62617e7b415bed9550d5b845ca2d40809ab039ccc4b3a",
-        "label": "Kimi.ai Selects TiDB to Power Persistent Data Infrastructure for Next-Generation AI Agents - The Manila Times",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Manila Times",
-        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQTGdXbWN6ZTg1bzZ5cnBnQXdIcUQyelhMUEl6U2prbkxCMWkxbEVHVXc3ZWZMLXpkSDI4SWh4WFg4MG5rUXNVeTN4aTAyOF96a3dOWjhvSXpiWVpEelEwREJzcGtUOE9pVDVBVEtDd2luU3FYTG41Nm5uYk51NjAxTksweHhfVkVNbWZ3QndZa3JtYWw0cldPMGhtN1NxMGJrdEh0bS1GRjFqNnNCZzRwRjZhR2pESDdKbUtkb2xhanljaEk3U2tBa1FBeHZxeExDVjk3bHQ2cFRtc245RlB0UWU2TjNZS0RvRm8zcVQzTnA0QUlOQUd1SVViY9IB-wFBVV95cUxQTGdXbWN6ZTg1bzZ5cnBnQXdIcUQyelhMUEl6U2prbkxCMWkxbEVHVXc3ZWZMLXpkSDI4SWh4WFg4MG5rUXNVeTN4aTAyOF96a3dOWjhvSXpiWVpEelEwREJzcGtUOE9pVDVBVEtDd2luU3FYTG41Nm5uYk51NjAxTksweHhfVkVNbWZ3QndZa3JtYWw0cldPMGhtN1NxMGJrdEh0bS1GRjFqNnNCZzRwRjZhR2pESDdKbUtkb2xhanljaEk3U2tBa1FBeHZxeExDVjk3bHQ2cFRtc245RlB0UWU2TjNZS0RvRm8zcVQzTnA0QUlOQUd1SVViYw?oc=5",
-        "date": "Tue, 25 Aug 2026 12:06:54 GMT",
-        "summary": "Kimi.ai Selects TiDB to Power Persistent Data Infrastructure for Next-Generation AI Agents The Manila Times",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2318a63a823c97dd07e5c87ca90de6d52193cd22bd94a00bb1879a96cf7c3a3d",
-        "label": "Moonshot AI: what the Chinese AI startup does and builds - qz.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "qz.com",
-        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5qdTZOWVFSdmhUTExRek5Wd2ZDVDFuQm1ydHJxcWRnRVpIczdLWDBWSUFWNDh0SzJTVVg4UjJQNlgtSXVVOWlpZkNB?oc=5",
-        "date": "Tue, 25 Aug 2026 23:35:51 GMT",
-        "summary": "Moonshot AI: what the Chinese AI startup does and builds qz.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:011f036af1f63d186bfafb8de41ab4e311397337ff0c804fa62cce03cdd04c8c",
-        "label": "Godot Engine partner firm W4 Games secures $18m Series B funding, signs deal with Tencent to bolster Asia ecosystem - GamesIndustry.biz",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "GamesIndustry.biz",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPWEc4dDVWeDdSaUdBX3M5TURqODhPNlpZSVpObnVONGJMbWY4cl9vbnR4OUwyUENrOEw3M2lKOV81SEpyZDRIWnQ4OTFacDdJSmRzXzNTYTZzM2ZRa2l5SG5PaWFNemFxNG9UamJNQlhwOGx5NnZtZWc2SXctMUtud2E1R2ZYNWVNZDZhaWt6LThPbDV5WjFFdVBaS1EydmppR3FtWURxU0VhQUxtbzNrR0ZKdEx0Z09tYVlETXpMcWNIR2N4Q29uXzdyYWZ1SzBLVk16emZ3Y3FsWlk?oc=5",
-        "date": "Tue, 25 Aug 2026 08:00:00 GMT",
-        "summary": "Godot Engine partner firm W4 Games secures $18m Series B funding, signs deal with Tencent to bolster Asia ecosystem GamesIndustry.biz",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b6201eb8448ee0f8f58052e90bfe9f8b586ce52a04805dc0343ad8a4cf3cdca0",
-        "label": "Alibaba to Release Qwen 3.8-Flash-Next as a Preview of What Qwen 4 Will Offer - Decrypt",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Decrypt",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9ONXh5VW9jMlg2bmV2OFhETHZNV3FnS1ZLZk85VWdHakdEMGRYaXFoRmpsTFhLQ3BwWmNXX01fRGhUQUtSdS1YTXZBSmZLeDg5ZnJSSUx6dnNTbUpSUU1yR0JmS0xWX1d3TW9FTTcwbEx1eGFwaXdz0gF_QVVfeXFMT1I4UnpTZHFhQXJIaFFRakhzd3JZRnI4LVhkSWx1dkNJVmt1M1lGSVkwTVVXMU8xQXBFZTB6MWlLZUh5Y2Ytb19BaEhROTFhc1NvdlRtaVJtTE9yUXhEYmczY0RZQlh1dGl4QUtZRnNjZTRNbzl6WDhhUWktZ0VxZw?oc=5",
-        "date": "Tue, 25 Aug 2026 21:16:04 GMT",
-        "summary": "Alibaba to Release Qwen 3.8-Flash-Next as a Preview of What Qwen 4 Will Offer Decrypt",
         "score": 1,
         "weight": 1
       }
@@ -14662,6 +14668,27 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:eb8bcf897e7dcdb68f4a96a33ad9743659c95c90aac29b9776f212cbc188b853",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:6d76015dad618acc57700413b797d3e23fa9371d0a03dbb295032bf337f19632",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:a5d7dab5f22f1d7f0a69166ff4c581c856926cb8381302bc86c4bf97f088a95e",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -18517,6 +18544,27 @@
         "mentions": 1
       },
       {
+        "source": "Alphabet",
+        "target": "evidence:9d2f66250cc1c6737f5b9b090cc30b80ef1d1b03f218ae8fcd42f3356a1ce61e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "MiniMax",
+        "target": "evidence:47342f535674d1a2de98c93a3a92b9b69452c56b64ce17da35d16e72af40a3fa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:f2f486469c72e3942ef421fa4c0097075166fb6052abd4263d1ade0cb95d1ff0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:361a6487a0ed3caa1e510779679ff083ebbd15a8386160b8164d503c763aeb87",
         "type": "EVIDENCE",
@@ -18883,48 +18931,6 @@
       {
         "source": "DeepSeek",
         "target": "evidence:6f853c283daa6a7f708c2003d5687a3a0b13c0017f2e39f923da4b6df9c6caeb",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:d5bb549821cafb428cc21653d8df51af0ab7e449a2e5f5ebd3396b168d6f2a4a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:a50fe2de68352a2d1316b2a40d5e3267aca2e7ea70de395ff4037fc1d720a44f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:7663c9f77db231d751f62617e7b415bed9550d5b845ca2d40809ab039ccc4b3a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:2318a63a823c97dd07e5c87ca90de6d52193cd22bd94a00bb1879a96cf7c3a3d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:011f036af1f63d186bfafb8de41ab4e311397337ff0c804fa62cce03cdd04c8c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:b6201eb8448ee0f8f58052e90bfe9f8b586ce52a04805dc0343ad8a4cf3cdca0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33545,20 +33551,20 @@
   ],
   "collector_runs": [
     {
-      "id": 531,
+      "id": 535,
       "collector": "company-economic-news",
-      "started_at": "2026-08-26T15:53:11.976095+00:00",
-      "completed_at": "2026-08-26T15:53:33.324684+00:00",
+      "started_at": "2026-08-26T16:59:36.556182+00:00",
+      "completed_at": "2026-08-26T16:59:53.495962+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 10,
+      "items_new": 4,
       "error": null
     },
     {
-      "id": 532,
+      "id": 536,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-26T15:53:33.725504+00:00",
-      "completed_at": "2026-08-26T15:53:34.238846+00:00",
+      "started_at": "2026-08-26T16:59:53.897361+00:00",
+      "completed_at": "2026-08-26T16:59:54.302955+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33575,20 +33581,20 @@
       "error": null
     },
     {
-      "id": 530,
+      "id": 534,
       "collector": "google-news-rss",
-      "started_at": "2026-08-26T15:53:10.899219+00:00",
-      "completed_at": "2026-08-26T15:53:11.574987+00:00",
+      "started_at": "2026-08-26T16:59:35.032488+00:00",
+      "completed_at": "2026-08-26T16:59:36.155188+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 533,
+      "id": 537,
       "collector": "sec-edgar",
-      "started_at": "2026-08-26T15:53:34.639961+00:00",
-      "completed_at": "2026-08-26T15:53:37.236665+00:00",
+      "started_at": "2026-08-26T16:59:54.704250+00:00",
+      "completed_at": "2026-08-26T16:59:56.559750+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
