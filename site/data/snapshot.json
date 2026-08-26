@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T04:26:17.546447+00:00",
+  "generated_at": "2026-08-26T04:56:33.543896+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "fragility": 61.1,
     "external_pressure": 16.12,
-    "monetization": 42.9,
-    "counter_evidence": 42.9,
-    "capital": 48.732271163185665,
-    "cannibalization": 54.2,
-    "circularity": 57.1,
     "transmission": 39.6,
-    "stress": 57.1
+    "cannibalization": 54.2,
+    "counter_evidence": 42.9,
+    "monetization": 42.9,
+    "stress": 57.1,
+    "fragility": 61.1,
+    "circularity": 57.1,
+    "capital": 48.732271163185665
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
-    "external_pressure": "aggregate",
-    "monetization": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "capital": "aggregate",
-    "circularity": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "stress": "directional_estimate"
+    "cannibalization": "directional_estimate",
+    "stress": "directional_estimate",
+    "fragility": "directional_estimate",
+    "capital": "aggregate",
+    "external_pressure": "aggregate",
+    "counter_evidence": "directional_estimate",
+    "monetization": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-26T04:56:33.103575+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-08-26T04:25:57.407769+00:00",
       "score": 45.3,
@@ -10206,6 +10212,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:4d9e555ba34616b4d4de123d6c9e7e5cc1d0c468408c75981f6168b09096d56d",
+        "label": "Tencent Channels Gaming Revenue Into AI Infrastructure - thelec.net",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "thelec.net",
+        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE94N2tWVmJPSkJRX0JKU2tUeWVRbzVNcXQyT2phREEtc3E0TlgzY2tYQVpTR2RqOWxzQ0dIZ19rVHBWWndrUTQxNzNTeWVObjUtckJoaXhrSDk4bTR2Z1VRY1ExUHpEVFU?oc=5",
+        "date": "Wed, 26 Aug 2026 04:45:03 GMT",
+        "summary": "Tencent Channels Gaming Revenue Into AI Infrastructure thelec.net",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0e5aa5c52b777c7ee4b9646c89516d3c437cabf434f13ede3e9b09f826eab694",
+        "label": "China\u2019s Hackers Use DeepSeek for Attacks, Researchers Say - Bloomberg",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Bloomberg",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOZEpqTmlyY1RnNmtHTEJVXzBnb0IyaU9FdHdQbnlOSTI1cVg3YW1rbzdrU2NyWjR6YmowOG1pemFmSnZaZ1lMY24tWUIzQTRWMUVDUmFFeVVncWVjM3p1VFAxWGVjTzkyTXRiMURPYTlFU0FQV19UQlU4a01JZU8tUmt4c29oNUdRUUQ3WVVUUkNWRjRkdU0xSG52VWI2UDVQQ3YxQXA5Qm9XSGZUblozcFVETEhHQ0lBSW5ZcExn?oc=5",
+        "date": "Mon, 24 Aug 2026 20:00:21 GMT",
+        "summary": "China\u2019s Hackers Use DeepSeek for Attacks, Researchers Say Bloomberg",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:1ebd2bcaef46c4870013b9ddd7268cc21a4eabf2482a7458ddd0cdfb41cc9a93",
         "label": "Prediction: Nvidia's Shares Will Fall for a 5th Consecutive Quarter After Reporting Earnings on Aug. 26 - Yahoo Finance",
         "kind": "evidence",
@@ -11162,30 +11192,6 @@
         "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQWGFuejdLcFlEYk1wTVhLZGZQTHNIT3NSRGJoOWY1NWZOU2VWU1FNQl9BeUdNdjY4RWhqRE9WYXFpYmRQcTBjTHFZRXVUa290OVVTdHlidVMwUVlqNWRzOTkzbTVwTnU1dHc4RERWYUJhOTZkQ1NVS0dQWXd1dFRmZTNrSG5UdGdtZWtZcE5SV1FmellEVkpqTUdreWFvNk85WWVPeHFoUkRieWFpYlhJZlVpTnMtcVhDT0ZSN1VOT1NUeV82djZuUkp5czc1c3c?oc=5",
         "date": "Mon, 24 Aug 2026 17:14:48 GMT",
         "summary": "Here\u2019s Why Nvidia Stock Is Down Today\u2014Again Forbes",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8bc40accdc15ce3b0bd7a586efe5af1483d0f5cdb5b045eeb4e59d7c583508f9",
-        "label": "Nvidia reports earnings this week. Jay Woods says these are the key levels to watch - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQbWY0RE1kb3RaUzZUMkUyS3BmSFo0YVI2bkJrNU1oNUhLdjJjN1c3RElLblVSdldRdk95WE00clRwc0l1ZktEck1LRHh5amVuZTAzTGV5eVRwTmhCbVFtQl9PUmJIMVdlUjBudmtRNHhGc2VBTkJ3QUdsRWRia3NFSC1tMHZnNDRIUFlVbG1nUThDNjYxVG01d1VaTC1kbWg2bFE?oc=5",
-        "date": "Mon, 24 Aug 2026 16:05:24 GMT",
-        "summary": "Nvidia reports earnings this week. Jay Woods says these are the key levels to watch CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b6fb41c1d2217fdbf473c82f67be1d8ad6253a3708365e8a0faf17a2d1dfb99d",
-        "label": "Tencent (SEHK:700) Stock Still Looks Undervalued After Recent Weakness - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR2RaTG5iUmdaTTY2QWpUa2xDUXRmNXNNUWc0QXRUd0RBM0NtOU9FV2lEWGdoNXpuUW1CSFNqb0ZCYW8wbmh1WjFsT0VIX3BDdG00bkdBdGE4Z3pVc2hzTy1nOTdiVkNoQ2dFUE83RHBqMXVPT1RQdC1JaWI2YnFqSTRnT0VHeDZxclJONXZjdHUyM2pXVGh0MU9QQ1pwRkdXeENnWXNhdXY1cmx3YWFNMmEzeE4tX2I1TVJ3NFR0NUUxUXU5ZkJHOFBhT2VEZ0E20gHWAUFVX3lxTE5STDRzNmlKMTBPUjJNbk9LRXpyTUFPUlYweTY1aUR1cGZJSXFYbXc3UlZ3MTlVWXQtc3pheWpZZXd1MjVFR3VEQ2RoUTFqZHZIRHctNGk5OWd6UldpSEpOVEtUaXdzZzNBSkJXdE5pV0RyeHNyQzEzZTd5bjNZTWZWVlE4cnF3UUlPY0RxX3NFaHFncjJaS0hmaUJhN3l5MElFRkdVemRPdFM3WUhjLW9kWTZaTF9OUnFjTXNXQmY3U05xOTd6UkR3M2pkLUIzNXZnWjFYNlE?oc=5",
-        "date": "Mon, 24 Aug 2026 19:16:36 GMT",
-        "summary": "Tencent (SEHK:700) Stock Still Looks Undervalued After Recent Weakness simplywall.st",
         "score": 1,
         "weight": 1
       }
@@ -18122,6 +18128,20 @@
         "mentions": 1
       },
       {
+        "source": "Tencent",
+        "target": "evidence:4d9e555ba34616b4d4de123d6c9e7e5cc1d0c468408c75981f6168b09096d56d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:0e5aa5c52b777c7ee4b9646c89516d3c437cabf434f13ede3e9b09f826eab694",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:1ebd2bcaef46c4870013b9ddd7268cc21a4eabf2482a7458ddd0cdfb41cc9a93",
         "type": "EVIDENCE",
@@ -18677,20 +18697,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:1cbd02ef85f7be23accd23b039061f26035c8848519a75b8ec4bd292c7f58b81",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:8bc40accdc15ce3b0bd7a586efe5af1483d0f5cdb5b045eeb4e59d7c583508f9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:b6fb41c1d2217fdbf473c82f67be1d8ad6253a3708365e8a0faf17a2d1dfb99d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33266,20 +33272,20 @@
   ],
   "collector_runs": [
     {
-      "id": 487,
+      "id": 491,
       "collector": "company-economic-news",
-      "started_at": "2026-08-26T04:25:37.052523+00:00",
-      "completed_at": "2026-08-26T04:25:53.492526+00:00",
+      "started_at": "2026-08-26T04:56:14.475284+00:00",
+      "completed_at": "2026-08-26T04:56:29.291888+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 2,
       "error": null
     },
     {
-      "id": 488,
+      "id": 492,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-26T04:25:53.893551+00:00",
-      "completed_at": "2026-08-26T04:25:54.359493+00:00",
+      "started_at": "2026-08-26T04:56:29.692737+00:00",
+      "completed_at": "2026-08-26T04:56:30.147882+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33296,20 +33302,20 @@
       "error": null
     },
     {
-      "id": 486,
+      "id": 490,
       "collector": "google-news-rss",
-      "started_at": "2026-08-26T04:25:35.977849+00:00",
-      "completed_at": "2026-08-26T04:25:36.651092+00:00",
+      "started_at": "2026-08-26T04:56:13.188043+00:00",
+      "completed_at": "2026-08-26T04:56:13.770893+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
       "error": null
     },
     {
-      "id": 489,
+      "id": 493,
       "collector": "sec-edgar",
-      "started_at": "2026-08-26T04:25:54.760694+00:00",
-      "completed_at": "2026-08-26T04:25:56.991801+00:00",
+      "started_at": "2026-08-26T04:56:30.549293+00:00",
+      "completed_at": "2026-08-26T04:56:32.689408+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33326,7 +33332,7 @@
       "error": null
     }
   ],
-  "document_count": 1490,
+  "document_count": 1492,
   "event_count": 971,
   "mention_count": 2374,
   "review_counts": {
