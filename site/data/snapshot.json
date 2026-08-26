@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T05:51:09.164061+00:00",
+  "generated_at": "2026-08-26T07:09:44.770583+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -13,14 +13,14 @@
   },
   "dimensions": {
     "external_pressure": 16.12,
-    "circularity": 57.1,
-    "monetization": 42.9,
-    "stress": 57.1,
+    "counter_evidence": 42.9,
     "cannibalization": 54.2,
-    "fragility": 61.1,
     "transmission": 39.6,
+    "monetization": 42.9,
     "capital": 48.732271163185665,
-    "counter_evidence": 42.9
+    "fragility": 61.1,
+    "stress": 57.1,
+    "circularity": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -33,14 +33,14 @@
   },
   "dimension_basis": {
     "external_pressure": "aggregate",
-    "monetization": "directional_estimate",
-    "stress": "directional_estimate",
-    "fragility": "directional_estimate",
-    "circularity": "directional_estimate",
     "cannibalization": "directional_estimate",
+    "monetization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "stress": "directional_estimate",
+    "counter_evidence": "directional_estimate",
     "transmission": "confirmed_trigger",
     "capital": "aggregate",
-    "counter_evidence": "directional_estimate"
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-26T07:09:44.265214+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"monetization\": 42.9, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 16.12, \"transmission\": 39.6, \"capital\": 48.732271163185665}"
+    },
     {
       "captured_at": "2026-08-26T05:51:08.666847+00:00",
       "score": 45.3,
@@ -8070,6 +8076,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:e913177e50126982009171fbc71c1ed07bf0b00def0103d9ad0407ee54be2fac",
+        "label": "Moonshot Plans IPO In Six Months After China AI Breakthrough Leylah Fernandez (wSAOgBC2Xw) - Mshale",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Mshale",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5pbjVkNjA4bTllVEZXTVlvejJmNTFjVEllN1pZVHdBQ3FkcW4tYzZDQS13QkdQeTFYQTdQWGc3bjVlZjl4eHVPUEc3TFJ6cDZjU2lyWFRCNkxybkE?oc=5",
+        "date": "Tue, 25 Aug 2026 20:41:48 GMT",
+        "summary": "Moonshot Plans IPO In Six Months After China AI Breakthrough Leylah Fernandez (wSAOgBC2Xw) Mshale",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:96bf14ab03e80f36a6eeef4e1f4de780841e90c9c12b4fb679478aafddd66c82",
         "label": "Tech layoffs 2026: Tracking all the job losses across Apple, TikTok, Meta, Microsoft, Oracle and others - Yahoo Tech",
         "kind": "evidence",
@@ -8823,6 +8841,18 @@
         "date": "Thu, 28 May 2026 07:00:00 GMT",
         "summary": "Beyond the IPO frenzy: what Nasdaq\u2019s new \u2018Fast Entry\u2019 rules could mean for ETF investors Bitpanda",
         "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:be380d18ff9e0f9be70c81b3e6185f9dd5a2dd1915c1262ce73b3911dac5a9e5",
+        "label": "SoftBank Mulls Up to $20 Billion Bond Sale for OpenAI Financing - Bloomberg.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWGNBOThiTEdqZHNsZURvWVhrZjM0d2NhZXNEYnRIdzJTbTJ5cW1FM2FPaEJJTWRTWldpMFhpYXFKcjljNWVsdDhwNVJ3Q2YzWkZMT05NOExHejhPRERlcllCRnRqQkxSdV83RHdBWHlLdGhDS05BTW5RU2x0aXY1VHlTZ2RkaFY4eXpxN1IyLV8zTEpYYWloTFNfZ3JqbWlsb3JvYkcxNjZTUGlLakdFQkxPQQ?oc=5",
+        "date": "Wed, 26 Aug 2026 04:55:00 GMT",
+        "summary": "SoftBank Mulls Up to $20 Billion Bond Sale for OpenAI Financing Bloomberg.com",
+        "score": 2,
         "weight": 1
       },
       {
@@ -10266,6 +10296,66 @@
         "weight": 1
       },
       {
+        "id": "evidence:36654aba637b6a88303436a079602c58db01e83ebe117bd5e787bd3f0295f506",
+        "label": "Amazon.com vs. e.l.f. Beauty: Which High-Growth Consumer Stock Is a Better Investment in 2026? - The Motley Fool",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWEcySGJmOTNxOXgwSGNUcTVkZ1piNHhVTHJ4WXhKaU12X281Q3lKaE00UGNpTk93bktsYWdpN2p1TS1HNzBxanRWLUdwR29zNFlDOF9KbG01aEF4LUtadVNGZkVfWEVnLThQaEs2aWRyWlJJZ2VBSzFubU9GaXE4amk3bklEUjhwel95Skc5eE9oVEJxZHBlMmlKSDJhNXBnQy04aWVtckFPMzFDcmVQZ2p0Q0hvSTdGS1MwazVEaUtYLVZ6d1EwQlE4N0d1bUN3enNfaGlNbUFEX00?oc=5",
+        "date": "Wed, 26 Aug 2026 06:32:50 GMT",
+        "summary": "Amazon.com vs. e.l.f. Beauty: Which High-Growth Consumer Stock Is a Better Investment in 2026? The Motley Fool",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:813764e0fe9f8ebfcab556fb6970e36d5766b1d47d5aaa2b4f537b82db001e53",
+        "label": "Microsoft Just Ripped 28% in a Month. What Would It Take to Get MSFT Stock Up to $600? - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZDVfQV9ZaDF1UnBrYnJtdGNXRVBORHc1bzNZSE5EdGZjVDBJbTNkVlVQZ04zeEFnOVd5clRHQmNfSG41TUZUemFfcnhEUUJTTE1wRnA4TUVOY0dLMnJucWZiR0kzanJQSlQ3Q05BcTUxSWtIcFkwbXFPd2hFN1VOZTBXWUl3QWhlRk01U1F1Mlh1ck5yTXF4RDVJMjlMQ2FZQXZsT05QU3RuMExaRjF1eTgyQ3dDWm5nb1lZZVBDQTFfRkM2?oc=5",
+        "date": "Tue, 25 Aug 2026 19:41:01 GMT",
+        "summary": "Microsoft Just Ripped 28% in a Month. What Would It Take to Get MSFT Stock Up to $600? 24/7 Wall St.",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:1a6b10951a8ef0c83d50ee3bd094e5d8ceee06f21f50dffc6c8d322bd7595081",
+        "label": "Nvidia Earnings and Jackson Hole Are the Stock Market\u2019s Next Big Tests - Barron's",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Barron's",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNd2s2UXZEbWM3Q2tqUE5ONzc1bXJvSG1PUVZFMDBFSEZwTnVRTW9kdWNHa1lYSE53R2h1cm81WjRsS0VvVUNCLTRvajhlaGZHRUNoMkRYMXVxYWRPc2N4dEM1aEk2Y3k3eHZVZEFrd3gwR21vYnpPdUtZckxpdGpKRDJ1SE5qODlqWVNtcjI2bHdOYkE5a3pQNmNSNW5DdHhGN0NTbXBIYXF3YlVGM2ZHZA?oc=5",
+        "date": "Wed, 26 Aug 2026 05:00:00 GMT",
+        "summary": "Nvidia Earnings and Jackson Hole Are the Stock Market\u2019s Next Big Tests Barron's",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:cc8128e1d5f39f3cb5115fddefa5c667f00cef3c13a029d80f518c8db4353107",
+        "label": "Jack Ma, Alibaba top executives buy $102m of stock after record share sale - Nikkei Asia",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Nikkei Asia",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMHp6d3FnM2dFcnlWSGR4Zzgyem95eGtaWnI4bjdRVVpXeXhCSnIzRWtzaUJpWUFEU29wam5zVDRJTFhxbHFxSXZEOWFjS21FMXBWS1ZNYllaQkhlejVvaWRwUjd2TW9TeGRYZ191bmxwRng2RS05bjZTWWZmQnRDMk03X0N2NUw5UnJBSWFyU2pmanBMd1lvY3Z4Q2VER1o0Z25LeEJCVGFtM1E2S1dQYTNHOA?oc=5",
+        "date": "Wed, 26 Aug 2026 06:03:00 GMT",
+        "summary": "Jack Ma, Alibaba top executives buy $102m of stock after record share sale Nikkei Asia",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b4cc731edf01abe6288df4c19cf360c9db8ce7b4ffb479d435df64682608c2f3",
+        "label": "DeepSeek\u2019s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025 - The Information",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Information",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSy0tcEswZzRDRWxKTTRlRGdrdk1mWU04a0FMcUpjLWlVVlduTlZHUi1KQUVFRFNvTmRlekpuczYtaFlvZEx4RjlodlZ6YWF6SjZpWEhualN4aDRDekxhT2FtRmVtSXNFSi1aVkxleUsxNDY2OE0xNXFuV2N1QnpSQ2hyN2RDc3ZrbGhiQVU3ZHJCbkFnRjF5NzZqRzJrcDZ0?oc=5",
+        "date": "Wed, 26 Aug 2026 06:50:00 GMT",
+        "summary": "DeepSeek\u2019s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025 The Information",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:8c94d767d4885775aa90fa080c39079804a81f03b157fa9d0c27ed0cfe729563",
         "label": "Whatever Happens on Wednesday, Nvidia Stock Will Almost Certainly Be Cheaper After Earnings - Yahoo Finance",
         "kind": "evidence",
@@ -11114,90 +11204,6 @@
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPS2pHSEt0Y2tIVGlKSEtHbGRjb1FRTjVJc1VKUjlrdFpRazIxSGNvbjI0LXdyUGZFNGN2OU5CSnRHNWktQlNfVUhhTU9QRldJUGpxUnBVaHFOTjNqbnJQRjBjWENKRU1xel9VQ3hmYnFhV3Vxc3ZTVmdOeUR0bUhyTVN5RkpVbk84NWwzeUFDX1lDVTBDWDNPUUxEWVlHRExhM3ZhOGlaN2MwWmpTeWE2QTBiWUpUdw?oc=5",
         "date": "Sat, 22 Aug 2026 08:31:21 GMT",
         "summary": "Kimi K3\u2019s 2.8 Trillion Parameters Ignite A Fight Over Banning Chinese AI Yellow.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f9b0093234016117b80c2bf2518f556507f0bd58b56d7ad68799f33224c11e76",
-        "label": "GPT-5.6 Sol vs Qwen3.8 Max vs Opus 4.6: SWE-Bench Pro - tech-insider.org",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "tech-insider.org",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORXZudHR1Ymd5aGx6RkxwamU2VTZ3Rjg1djN2VzZieDNNQ1VBV1NjX3VBa0pITmZDcWZnNFhjdHZUWHBnVDZTNlZ2ZXgzbmQ0NVB6azRkNTVoazN4TEx0XzFKalNuU1JRNFRhOEdaODBzUHhjNzdPWUJnWjlNVGRKNzNn?oc=5",
-        "date": "Mon, 24 Aug 2026 12:09:30 GMT",
-        "summary": "GPT-5.6 Sol vs Qwen3.8 Max vs Opus 4.6: SWE-Bench Pro tech-insider.org",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:24ac169e000a492b1fde1852ea874a3e72ff8b15f1531651ae4254341e773885",
-        "label": "Alphabet Grew Cloud 82% Last Quarter. The Stock Still Trades Cheaper Than Almost Every Mega-Cap - TIKR.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TIKR.com",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTmIxaVlPNTdQbk9LZXdoYzhrdXFLWWlrU2JZNDJidG5ES0o5RVg3MlpERENycVJ5bGpRc2tKUkdjSGlBcGFvaFc5Wk81UFRsVzFlUDdUaXNDT3lNS3RPdGFoNi1raE5va0RFTjc1bEV3MzVCMG1kVFJFWUFpaDBwc21QOVNkdUk3U0RkVjJRdXBuQkhDWHg5Vmk5MGRxbmdjUzZ3Zy1TX3JMeWw2Vk1RVFQ5N1hHS1lLa2lv?oc=5",
-        "date": "Tue, 25 Aug 2026 00:04:34 GMT",
-        "summary": "Alphabet Grew Cloud 82% Last Quarter. The Stock Still Trades Cheaper Than Almost Every Mega-Cap TIKR.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b57c96bbab9a9a60d0e0023bc1670e71f25ac525670a6bb498f1f14f37c4fe79",
-        "label": "Why Tesla chose ByteDance\u2019s Doubao for its AI push in China - KrASIA",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "KrASIA",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeUViLTNPdlBlVG1sX003SFNaWGlScFdIVzRiUThQeFdkMWt0eGFGLThJUzE5OHBmVW8tdnE0LVN2WlFseC1lVkgxcXotSEkwX1E3RUxDZlNKRklTUFNQSmNMT01UTlZaSGo0RUROUW5tbUFJdUFUS3ZjRnIzNkY5S0V5a0s?oc=5",
-        "date": "Tue, 25 Aug 2026 02:02:23 GMT",
-        "summary": "Why Tesla chose ByteDance\u2019s Doubao for its AI push in China KrASIA",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:da95a8a2c218272dc373bc10eb6182a3fd996f9d25222c31ce790c08244c550d",
-        "label": "Here's how Thomson Reuters is loosening Claude's costly grip - Business Insider",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Business Insider",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNTlJeGxyakhWMlAyR0JTaEV6UDVnaTZmWVMxYk9SSk5wNktnU3gyVnZWdzRBek5CMjJsdExoWXBkNzJlQlZUQWVsbmVoTkcyQWZlX1p4ZUo1YUdkajlXUkw2TV83eTM1WFdsSUphQmU0eWo0dXExYjlKSXgwNlZzSzRRMDBOLWthMTNVbTFlU3JuTURNZ0tpWA?oc=5",
-        "date": "Mon, 24 Aug 2026 13:00:00 GMT",
-        "summary": "Here's how Thomson Reuters is loosening Claude's costly grip Business Insider",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4b42b762a38246d43c97eff580bc121d4daa898c3c55aba1c53e8d4e807ff3fd",
-        "label": "Dow Jones Futures: Trump, Bessent Comments Spark Tech Losses; Nvidia Sells Off Before Earnings - Investor's Business Daily",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Investor's Business Daily",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQRFZIaFY5UkpfTGhqVzNUZS00enZhN2pKRlFWcGJrVkI3dzZnZ0hQY3FEMlotRTJEOHE5OTNiVnREbjdZOUpla09mbEdKaVNVb2FQaXlkSlFWTFF2MlhZcjNlN1ZHb28zMnZRUFN5WERyX2RQV2FVWHRYZ2lRRUJlNXN0eWN2Q3BtNVhhOWhQM20yTC1OYkRxZVBCSEJhYThMWUtOd3JyS3hnVkJWdkRvSDZxRnl0N1NrNUE4eWJPUUE1OXlCanBuekJB?oc=5",
-        "date": "Tue, 25 Aug 2026 00:04:00 GMT",
-        "summary": "Dow Jones Futures: Trump, Bessent Comments Spark Tech Losses; Nvidia Sells Off Before Earnings Investor's Business Daily",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6c8c6c4d8f0ad470ae77f914b4763f75d171216c89bfb1aa58a6d28227364adc",
-        "label": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered - 36\u6c2a",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "36\u6c2a",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9fS183LXk5ZENZU25Uc2dxWXBaZ1VxYWhhLXJuNTFNaG9jV3lnTUhoeTJVVzZWY3Vib25uTUlUdG1hdGd2NWhqMlFFbWxzTUtuWWhj?oc=5",
-        "date": "Mon, 24 Aug 2026 05:13:56 GMT",
-        "summary": "Why Didn't the High-Power GLM-5.3 Dominate Global Social Media Feeds? Core Barriers & Hidden Truths Uncovered 36\u6c2a",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:87be13d2f999f0d59176af6230d8035af69d6ec3c3a400b2d40f1df5a2290a6b",
-        "label": "ByteDance to fold Trae, Coze into Doubao in China: sources - Tech in Asia",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Tech in Asia",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOS0VBcV8yMC1icFp6MmNidWZMY04xU25TNTN1R2dwV2NjeXZwYWJYZ3JiVURZM3pLS0VfWkhCdVNzc1Q4MDBOUU0zNnJfLVJZbllBVzAyQmg1VkdWY3llVVRtQVpobTA4Qkx3U0RvVnFpeVlyYmpjdm9GVmp6bGVnZzdTQQ?oc=5",
-        "date": "Tue, 25 Aug 2026 00:30:00 GMT",
-        "summary": "ByteDance to fold Trae, Coze into Doubao in China: sources Tech in Asia",
         "score": 1,
         "weight": 1
       }
@@ -16616,6 +16622,20 @@
       },
       {
         "source": "OpenAI",
+        "target": "evidence:be380d18ff9e0f9be70c81b3e6185f9dd5a2dd1915c1262ce73b3911dac5a9e5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SoftBank",
+        "target": "evidence:be380d18ff9e0f9be70c81b3e6185f9dd5a2dd1915c1262ce73b3911dac5a9e5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
         "target": "evidence:3c5b0d8eb2fe10f1a245d14414221e56dee5094e093931a186cc537337a80568",
         "type": "EVIDENCE",
         "weight": 1,
@@ -18169,6 +18189,41 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:36654aba637b6a88303436a079602c58db01e83ebe117bd5e787bd3f0295f506",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:813764e0fe9f8ebfcab556fb6970e36d5766b1d47d5aaa2b4f537b82db001e53",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:1a6b10951a8ef0c83d50ee3bd094e5d8ceee06f21f50dffc6c8d322bd7595081",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:cc8128e1d5f39f3cb5115fddefa5c667f00cef3c13a029d80f518c8db4353107",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:b4cc731edf01abe6288df4c19cf360c9db8ce7b4ffb479d435df64682608c2f3",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:8c94d767d4885775aa90fa080c39079804a81f03b157fa9d0c27ed0cfe729563",
         "type": "EVIDENCE",
@@ -18661,55 +18716,6 @@
       {
         "source": "Moonshot AI",
         "target": "evidence:02fe9165a2e6888ebb5c74b1441de4b4e71e3e409192fab053591fddc147be12",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:f9b0093234016117b80c2bf2518f556507f0bd58b56d7ad68799f33224c11e76",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:24ac169e000a492b1fde1852ea874a3e72ff8b15f1531651ae4254341e773885",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:b57c96bbab9a9a60d0e0023bc1670e71f25ac525670a6bb498f1f14f37c4fe79",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:da95a8a2c218272dc373bc10eb6182a3fd996f9d25222c31ce790c08244c550d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:4b42b762a38246d43c97eff580bc121d4daa898c3c55aba1c53e8d4e807ff3fd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:6c8c6c4d8f0ad470ae77f914b4763f75d171216c89bfb1aa58a6d28227364adc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:87be13d2f999f0d59176af6230d8035af69d6ec3c3a400b2d40f1df5a2290a6b",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32443,6 +32449,21 @@
       "source": "The Motley Fool"
     },
     {
+      "date": "Mon, 24 Aug 2026 22:38:08 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 5000000.0,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "I Put OX Alpha Through My Gauntlet Benchmark Tdsb Central Administration Staff Layoffs (CbwVGBHX5m) - Mshale I Put OX Alpha Through My Gauntlet Benchmark Tdsb Central Administration Staff Layoffs (CbwVGBHX5m) Mshale Google News",
+      "title": "I Put OX Alpha Through My Gauntlet Benchmark Tdsb Central Administration Staff Layoffs (CbwVGBHX5m) - Mshale",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1vQnZUTURZcGg3TEtwQi1uT3RfeElBUC1oUG4ybkVxVGNoaWk3VDlWcXIzeDFzejNPeXI2alRSamlaSTJpYlh0emVYZHg3bWxoS2xwSVNpYzNQOG8?oc=5",
+      "source": "Mshale"
+    },
+    {
       "date": "Mon, 25 May 2026 07:00:00 GMT",
       "event_type": "PRICE_CUT",
       "source_entity": "Alphabet",
@@ -33268,6 +33289,21 @@
       "source": "AOL.com"
     },
     {
+      "date": "Wed, 26 Aug 2026 06:32:50 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "Beauty: Which High-Growth Consumer Stock Is a Better Investment in 2026?",
+      "title": "Amazon.com vs. e.l.f. Beauty: Which High-Growth Consumer Stock Is a Better Investment in 2026? - The Motley Fool",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWEcySGJmOTNxOXgwSGNUcTVkZ1piNHhVTHJ4WXhKaU12X281Q3lKaE00UGNpTk93bktsYWdpN2p1TS1HNzBxanRWLUdwR29zNFlDOF9KbG01aEF4LUtadVNGZkVfWEVnLThQaEs2aWRyWlJJZ2VBSzFubU9GaXE4amk3bklEUjhwel95Skc5eE9oVEJxZHBlMmlKSDJhNXBnQy04aWVtckFPMzFDcmVQZ2p0Q0hvSTdGS1MwazVEaUtYLVZ6d1EwQlE4N0d1bUN3enNfaGlNbUFEX00?oc=5",
+      "source": "The Motley Fool"
+    },
+    {
       "date": "Wed, 27 May 2026 07:00:00 GMT",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": "ByteDance",
@@ -33285,20 +33321,20 @@
   ],
   "collector_runs": [
     {
-      "id": 495,
+      "id": 499,
       "collector": "company-economic-news",
-      "started_at": "2026-08-26T05:50:50.853932+00:00",
-      "completed_at": "2026-08-26T05:51:05.100354+00:00",
+      "started_at": "2026-08-26T07:09:21.178014+00:00",
+      "completed_at": "2026-08-26T07:09:40.599632+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 9,
       "error": null
     },
     {
-      "id": 496,
+      "id": 500,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-26T05:51:05.501157+00:00",
-      "completed_at": "2026-08-26T05:51:05.918028+00:00",
+      "started_at": "2026-08-26T07:09:41.032716+00:00",
+      "completed_at": "2026-08-26T07:09:41.487638+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33315,20 +33351,20 @@
       "error": null
     },
     {
-      "id": 494,
+      "id": 498,
       "collector": "google-news-rss",
-      "started_at": "2026-08-26T05:50:49.735041+00:00",
-      "completed_at": "2026-08-26T05:50:50.453038+00:00",
+      "started_at": "2026-08-26T07:09:19.945765+00:00",
+      "completed_at": "2026-08-26T07:09:20.776701+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 1,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 497,
+      "id": 501,
       "collector": "sec-edgar",
-      "started_at": "2026-08-26T05:51:06.319183+00:00",
-      "completed_at": "2026-08-26T05:51:08.251323+00:00",
+      "started_at": "2026-08-26T07:09:41.895233+00:00",
+      "completed_at": "2026-08-26T07:09:43.852237+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33345,11 +33381,11 @@
       "error": null
     }
   ],
-  "document_count": 1499,
-  "event_count": 971,
-  "mention_count": 2374,
+  "document_count": 1500,
+  "event_count": 973,
+  "mention_count": 2376,
   "review_counts": {
-    "provisional": 0,
+    "provisional": 2,
     "confirmed": 275,
     "flagged": 696,
     "flagged_retry_pending": 0
