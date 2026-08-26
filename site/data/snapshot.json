@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T09:02:53.089586+00:00",
+  "generated_at": "2026-08-26T09:57:48.965685+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
-    "fragility": 61.1,
-    "stress": 57.1,
-    "cannibalization": 54.2,
-    "external_pressure": 16.12,
     "capital": 48.732271163185665,
+    "external_pressure": 16.12,
+    "counter_evidence": 42.9,
     "monetization": 42.9,
     "transmission": 39.6,
-    "circularity": 57.1
+    "circularity": 57.1,
+    "stress": 57.1,
+    "cannibalization": 54.2,
+    "fragility": 61.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
-    "fragility": "directional_estimate",
     "external_pressure": "aggregate",
+    "capital": "aggregate",
     "transmission": "confirmed_trigger",
     "stress": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "capital": "aggregate",
     "monetization": "directional_estimate",
-    "circularity": "directional_estimate"
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-26T09:57:48.451744+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"fragility\": 61.1, \"stress\": 57.1}"
+    },
     {
       "captured_at": "2026-08-26T09:02:52.713196+00:00",
       "score": 45.3,
@@ -5760,6 +5766,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:9f0e479111a5b8b73a2ea7dc1f9cbc039735dbb3d69cfde022851a1ed388f825",
+        "label": "DeepSeek targets 2027 listing as pre-IPO funding nears close: sources - South China Morning Post",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNeFRqME1FRW5ZODlpWFdta0gycVM2WndYTEI2QTJEVGh5WUxtM0xSRnNKUHpMX2E2VzhuV2FPOHA2ZWVOSV9fOHFFeDNhYy1LMVZEazVOd1RlLW5zbjVVRkx2MTNMWHdHSDJud0NiNUNTeDhIUWM3QWpiUmtsWjR5dVlyNjdKQktoOEJCbW5tX1VyQno5Q0ljVk84WGFlQ21FNm5XTFpyUjJGYzNRdUxnQUw4eHBvMXlHdWpIUFMtSHNDOHfSAcMBQVVfeXFMTXhUajBNRUVuWTg5aVhXbWtIMnFTNlp3WExCNkEyRFRoeVlMbTNMUkZzSlB6TF9hNlc4bldhTzhwNmVlTklfXzhxRXgzYWMtSzFWRGs1TndUZS1uc241VUZMdjEzTFh3R0gybndDYjVDU3g4SFFjN0FqYlJrbFo0eXVZcjY3SkJLaDhCQm1ubV9VckJ6OUNJY1ZPOFhhZUNtRTZuV0xaclIyRmMzUXVMZ0FMOHhwbzF5R3VqSFBTLUhzQzh3?oc=5",
+        "date": "Wed, 26 Aug 2026 05:01:09 GMT",
+        "summary": "DeepSeek targets 2027 listing as pre-IPO funding nears close: sources South China Morning Post",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:ca5c54f8569ca513f25605661367bc55ccbc4e59cd24241c88e980654c4879d1",
         "label": "Moonshot AI Negotiating for KIMI K3 Revenue-Sharing with Microsoft, Amazon, Google - marketscreener.com",
         "kind": "evidence",
@@ -8904,6 +8922,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:6447cca8a03cfd0d4c641f716c561ae57785821c6758731146aa82b39b7317a4",
+        "label": "Microsoft, Alibaba Qwen, Plaud, KIRI: \"Silicon-based Employees\" Are Here \u2013 Is Your Organization Ready in 2025? - 36 Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE43U1hINGdQbWlrWXdPN3V3dFQ4WFZJRmRnU3VId1RwVzdtbUJWU0c2WUhMMlBYc0cwRnJBQ3F3S3J6ZEQ4RkM2a09lZEFCYVJiRE9N?oc=5",
+        "date": "Wed, 26 Aug 2026 09:34:55 GMT",
+        "summary": "Microsoft, Alibaba Qwen, Plaud, KIRI: \"Silicon-based Employees\" Are Here \u2013 Is Your Organization Ready in 2025? 36 Kr",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:23aae05e3a92e9809dcebfc0171ef388c2581d4e50e498a96d8c28d51352a1f7",
         "label": "How Investors Are Reacting To Baidu (BIDU) Launching Apollo Go Robotaxis On Uber In Dubai - simplywall.st",
         "kind": "evidence",
@@ -10380,6 +10410,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:f16806870d55e87414759e7720d8d6cc410f57d42695500a69b494512d457c2c",
+        "label": "Moonshot AI in Talks With US Tech Giants Over Revenue-Sharing Deals on Kimi K3 Model - marketscreener.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZmdmMWNuRlhqOFJjckI3VGdwMTdrcE9UaVdRdnRPd3hDcWV6Q1pmS1dkWjZQSzRzbFJDNTg1TDRxOUhmV0dNdjJOcFA2X1lTd2VHTm9NUVJnVHBjbFI5SHJqbi0zblEtTkhHVFhVQ0VCNW1hVy1Ccm4zRnVSUG1GczJpMkdIMXdoa08zUkhNVDlBX256OVhScWhzSHpKczk2RThKbHlVWkpDb1FkNmRiQkViMkNIeFpRcEZsOFVEVDNROVZRck9uUTZ5V25Yb1hiWXZV?oc=5",
+        "date": "Wed, 26 Aug 2026 08:49:20 GMT",
+        "summary": "Moonshot AI in Talks With US Tech Giants Over Revenue-Sharing Deals on Kimi K3 Model marketscreener.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:195ffeb6fabedc7b13d24bfa131c933e00e5220d3901067781464c4e222f174d",
+        "label": "Longbridge integrates investment tools into ChatGPT and Claude platforms - Vietnam Investment Review - VIR",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Vietnam Investment Review - VIR",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWURFS2hjY2xKaGJoYjJtODlnS1E4bllEQ3UtejRRNjMxR2lyb2RsbE1UOGVjMXdyZktnNk1FT1RRczgyVlVFbzhXWDBHZV9YejUyUXRscXFBbTFqd2pOYTZ3RmZZRlc4U3V0MkI3b0ZnNDBndEVfX2VDbnhvVWFHX0huOC1Hb2ZfazBZLVhsTFYxeUFZdUlZUjBNRmsxT0NYV0V2SzNR?oc=5",
+        "date": "Wed, 26 Aug 2026 07:38:17 GMT",
+        "summary": "Longbridge integrates investment tools into ChatGPT and Claude platforms Vietnam Investment Review - VIR",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c55835370ab94d2365118058a2c25d73782dda6462187d3b39db43d71d40f392",
+        "label": "OpenAI data centre chief Chris Malone exits as executive departures mount, US backlash over AI infrastructure grows - Livemint",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Livemint",
+        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQT3V4LXRZblVjLW1sMEZIeTJqVGJWOVB4dF9PUkJjemxMODVZeDhNQm1QRUlqcjVGM0tGbkcxODJGOU1QNnd3VnpfQ0Rua2VMZE96X3BBdnRQOGUtVXZ4QUFGNEIxMHVyYy1MTFJkLVB4RjF5RFFxSTRjdXVCandmNkxlQ1FMNU9jamtqcUcyRDA3VGdTWGp2UkZ0VU9KLTIwTHpFTU1DbEV2UGw4R0RqOEgyRzNYRzl5emJTLUQ3MEp2VFdsdDg0bGttUmFfS1N4OUVmdkh6S1otVHpHU3ZMdVQ4bFJoVllua1dyOFdPVU4xTWI0aEhjU0JwRER6aUVhazMxMWN2NNIBjAJBVV95cUxQMnd3RUlZOVJvanRzblNMR2V1NDBXdkY2b2FNLXdUbVFDRmcyb1hEaWw2UjlWY3RfaFVBbGZZd1pUZkFqekZDemdmYWliNVdnQl9ocC1yUy1jUmVYNzJKckxZWHkyd0FKQVBaT1lqRGRGMDBXSEVFWWxQbVBUdjI0ZzBrMnRRcHJhcTNLNTNBcmtMNGViN2hWSFdqTmhZakVmOE85Z0RxWW1nNXBtVm9PbnFPd3ZHQmhCSW96bVRLZld6VU5fb3JnQjYyTWtndEk2VGVGc0hzQjVSdFo3eFdLbE1LenBnYVdxU1dNRnF2U3F4M2RKeWtENFdod1F4RVZEUmpkQUFSd0ExS1hO?oc=5",
+        "date": "Wed, 26 Aug 2026 06:34:22 GMT",
+        "summary": "OpenAI data centre chief Chris Malone exits as executive departures mount, US backlash over AI infrastructure grows Livemint",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:1371ed9116721ea041a5e5e84e08485becbe710e33bdcab748e9ef6a754a47d7",
         "label": "European shares flat ahead of Nvidia earnings - Reuters",
         "kind": "evidence",
@@ -11156,66 +11222,6 @@
         "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWlppZnFoNVY2emZVTGZGeExacm1tYmVuRFF1bzlDSENObnNnSVMwckRzcXRYOS1RX19oWDczUVhqcFF4Q29sYk5WcnFXYXN0SkpocUJDanp3TWZPUGhNbFRfS0FEMkx1ZlpfdDAwN08xcjVxS3c5NENFM2VjUW5oZzd4QXhVdDVBanQwc0hiVl9DWjkzTVBKeFRKV1VNcFJwNC1pNlppYzRkb1Q2eVNRZnJ4Y2rSAboBQVVfeXFMTUZISkVhLVpiS3IxMVo5d0VNc3VMcXNKYnpOcGo2b2lRdlpVS0I0b18zOUR6SmhYS2MxaU9zUlROZWRaZmlsMGN1amxNV3V6QTZ3Z2cyb2JnSFRLRjM2bE5PR18wV3htWnREZ3VRZXlsUzJzdldReE5hNTZHVGRYdWJhaVFWLU1sOXFnTmF2dTFaQ3JVN0RVZ2VtZmUyVG9QVDAteTlCNnNDUkZFQklna0l0R0I1WHNMYjJn?oc=5",
         "date": "Tue, 25 Aug 2026 07:31:03 GMT",
         "summary": "Alphabet (GOOGL), What Is Behind The Fresh Attention? simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ad7f43a05244e1f84a117e8031d2b8a0750fc35c80c14dfe0e448df1348ac48c",
-        "label": "Andy Jassy Believes AWS Can Hit $1 Trillion in Revenue. Here's When the Math Says It Might Happen. - The Globe and Mail",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Globe and Mail",
-        "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNUDVLbzdITVBwbnBsWnc3czZoMFE0aXZhd2o0eEtTcTJGVGlTZHBtME1kendlU1FqMVlGZ2JxQ1hvUkRxQXNuckoxbi1Vcks2cF9jTHVrWGVYLVo3dy1KbTF5emdZVjNyZVVpa0xQSmFiSGxneUgtWGpFSXBfQXZWNlVYZHdtNHZ0NU1VXzZkT21GSFNlbjRNbFJCejFsY3J0M3RZLWxjZWJDbU5PSDQwTGNDZ1BXT3ZUTmFTeXA4LTdFckQ0dE1qTzdObDZKeHJNMmxzOHRDeUgtRDRxX3hzbHg1dWM4NFN4N3o3dFlzRGRQd0lZZF85SFZkWUY2eHJDYk1ZQWYwaFgtTFk?oc=5",
-        "date": "Tue, 25 Aug 2026 09:36:56 GMT",
-        "summary": "Andy Jassy Believes AWS Can Hit $1 Trillion in Revenue. Here's When the Math Says It Might Happen. The Globe and Mail",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2ee74821d2977d8929ffbf11670ecf4ad61f8c5d60aa6827be16fdcb14cc2a20",
-        "label": "Andy Jassy Believes AWS Can Hit $1 Trillion in Revenue. Here's When the Math Says It Might Happen. - The Motley Fool",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Motley Fool",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQQWROdXk5V2FJN0ViaTFjd2J2RmJiUVdQM182UUpUM1NHWWF2akN5NFRjSS1QdGpXaTlwVUI5OTF2MUlNbDJQV2FJNldXaWZKOG5HYzRGYTVzdEc1dnRNMjFSdktaSVpTYWlRWXI1bGRmY1BzalV4bjNnTnM4UUl3aDRINmpYVDJraU5HS3hlakpDaDB4TzF5cQ?oc=5",
-        "date": "Tue, 25 Aug 2026 09:44:49 GMT",
-        "summary": "Andy Jassy Believes AWS Can Hit $1 Trillion in Revenue. Here's When the Math Says It Might Happen. The Motley Fool",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b000e7cbeef7724d1235e22b15f8d6f1361ca384d07f725403fc69261133fde9",
-        "label": "Amazon and HYROX announce global partnership to support athletes at every stage of their fitness journey, as new Amazon storefronts go live, featuring fitness essentials - About Amazon Europe",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "About Amazon Europe",
-        "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxPMi1RQVBRNHZvbHNkSUxOelpMckhvVUxONFV3M2Q4ZDZETGZSUGh1UkFDeW9jR0lrRjdsemRrcDVIMlcyNVh4OEVkWkNnQ3JGU2NNNWlaMXdmeTNhYXRDZFpvaVQtNmdjVXpHQ1BUWTNUbU4xYlhZalZqOV93R3Z1amQtcEhXNENMU0dUTDlXRVM1WXZLVXNFb0hxR2p0NFhHWE5qX2F1dEkwWXEwMVo4N0QyNnVUTndUcjBsY3hJYlJXOTVZTm9rRzdmRTZuV1NTclo3MnZJODR6TjZ0QzF2Q0o1cjU3Vjc3d1c5V3ZrdnY2YmJvTWo4cXlTOEd1STE3WjRMWWVYVEZDUURuOVJBLVNlMmpkNWVHWXQ2cXdFbTNadUpRLTlZZXV6Y211VWM?oc=5",
-        "date": "Tue, 25 Aug 2026 09:32:10 GMT",
-        "summary": "Amazon and HYROX announce global partnership to support athletes at every stage of their fitness journey, as new Amazon storefronts go live, featuring fitness essentials About Amazon Europe",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8e5f662bd1eadfbb8ca8090516dc3b7780722836db9aef052444c14a94c573e3",
-        "label": "NVDA Groq 3 LPX now in full production; ByteDance 'Doubao Work' debuts\uff5cDaily News Recap - Longbridge",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Longbridge",
-        "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9iMWQ2RXdHZkl5ZWJmSzlPdmRMRkd2c3FZN0NoUHZaOWxEYlhfOXBjYm1nR2xGTUcwSlFzUXVSWEJfTGxfaXZoYTZPVVQ0QzQ?oc=5",
-        "date": "Tue, 25 Aug 2026 08:33:56 GMT",
-        "summary": "NVDA Groq 3 LPX now in full production; ByteDance 'Doubao Work' debuts\uff5cDaily News Recap Longbridge",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c77b9f151df5e66b98c4187f4331ab3530c49a18bb883800b53f2b5456008c71",
-        "label": "Alibaba (BABA) Stock Could Be A Bargain Despite AI Spending Worries - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNN0dVTlRMR1dEXzRnVENERFAydGN3Ylo3Tms5R0xjU19qU0lIU3JFQmJESVM5MFpNbXJ3TUhmYWl0bFlvUVpGR1pLY3JJMXNadHZISlVEMGJLT2FlU1A3Ul9EWWVfXzlCYlVnS2YySWV2M2pQUlA0eUxoUGZEVHR5allRSUxXYW5yenhOSS1sOTQtV0o4cTJmb2lrV24zWHBiczNaNlJ1STFVbVViei1xOEgwNmhfQUJoSy1JNGZPODJiSzhwN18xUllmOWY2d2hnWFHSAdcBQVVfeXFMTms5VzkyWGtwLXppbmg2R0toeHBXVlU4dEhiM3R5b2NXblBuM2stNGVIQnFmaVZtT1FlZmNfejlLNEJfRnhJZkk5OFpYQ0xJWENrUnZybUxtZklOVk15RS1tX0pLRjViUW5NSFQ2WDlvMk1IV2dUUU9aMHRiV3c2TExSak0tYjJHZDZDaWJweXQxRXg4UFh1dUlpZ1hqVENmVkFEOTIzUDhkV0dOUFRQbzZWUnNRRlhSSFBobG84UnR5NUVWODZacm5tMFNvUTFfSk9sdmFMaWM?oc=5",
-        "date": "Tue, 25 Aug 2026 09:41:09 GMT",
-        "summary": "Alibaba (BABA) Stock Could Be A Bargain Despite AI Spending Worries simplywall.st",
         "score": 1,
         "weight": 1
       }
@@ -14631,6 +14637,13 @@
         "mentions": 1
       },
       {
+        "source": "DeepSeek",
+        "target": "evidence:9f0e479111a5b8b73a2ea7dc1f9cbc039735dbb3d69cfde022851a1ed388f825",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:ca5c54f8569ca513f25605661367bc55ccbc4e59cd24241c88e980654c4879d1",
         "type": "EVIDENCE",
@@ -16696,6 +16709,20 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:6447cca8a03cfd0d4c641f716c561ae57785821c6758731146aa82b39b7317a4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:6447cca8a03cfd0d4c641f716c561ae57785821c6758731146aa82b39b7317a4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Apollo",
         "target": "evidence:23aae05e3a92e9809dcebfc0171ef388c2581d4e50e498a96d8c28d51352a1f7",
         "type": "EVIDENCE",
@@ -18292,6 +18319,27 @@
         "mentions": 1
       },
       {
+        "source": "Moonshot AI",
+        "target": "evidence:f16806870d55e87414759e7720d8d6cc410f57d42695500a69b494512d457c2c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:195ffeb6fabedc7b13d24bfa131c933e00e5220d3901067781464c4e222f174d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c55835370ab94d2365118058a2c25d73782dda6462187d3b39db43d71d40f392",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:1371ed9116721ea041a5e5e84e08485becbe710e33bdcab748e9ef6a754a47d7",
         "type": "EVIDENCE",
@@ -18742,41 +18790,6 @@
       {
         "source": "Alphabet",
         "target": "evidence:0e64430f9b5551136c066be89a2eb93ed4bda1f6bc4b2e3f03c57ced09de28bb",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:ad7f43a05244e1f84a117e8031d2b8a0750fc35c80c14dfe0e448df1348ac48c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:2ee74821d2977d8929ffbf11670ecf4ad61f8c5d60aa6827be16fdcb14cc2a20",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:b000e7cbeef7724d1235e22b15f8d6f1361ca384d07f725403fc69261133fde9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:8e5f662bd1eadfbb8ca8090516dc3b7780722836db9aef052444c14a94c573e3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:c77b9f151df5e66b98c4187f4331ab3530c49a18bb883800b53f2b5456008c71",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33382,20 +33395,20 @@
   ],
   "collector_runs": [
     {
-      "id": 507,
+      "id": 511,
       "collector": "company-economic-news",
-      "started_at": "2026-08-26T09:02:33.915997+00:00",
-      "completed_at": "2026-08-26T09:02:49.333677+00:00",
+      "started_at": "2026-08-26T09:57:30.330732+00:00",
+      "completed_at": "2026-08-26T09:57:44.992300+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 5,
       "error": null
     },
     {
-      "id": 508,
+      "id": 512,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-26T09:02:49.734886+00:00",
-      "completed_at": "2026-08-26T09:02:50.174828+00:00",
+      "started_at": "2026-08-26T09:57:45.393164+00:00",
+      "completed_at": "2026-08-26T09:57:45.860337+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33412,20 +33425,20 @@
       "error": null
     },
     {
-      "id": 506,
+      "id": 510,
       "collector": "google-news-rss",
-      "started_at": "2026-08-26T09:02:32.581826+00:00",
-      "completed_at": "2026-08-26T09:02:33.500776+00:00",
+      "started_at": "2026-08-26T09:57:29.231512+00:00",
+      "completed_at": "2026-08-26T09:57:29.929862+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 1,
       "error": null
     },
     {
-      "id": 509,
+      "id": 513,
       "collector": "sec-edgar",
-      "started_at": "2026-08-26T09:02:50.576485+00:00",
-      "completed_at": "2026-08-26T09:02:52.300854+00:00",
+      "started_at": "2026-08-26T09:57:46.261385+00:00",
+      "completed_at": "2026-08-26T09:57:48.035674+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
