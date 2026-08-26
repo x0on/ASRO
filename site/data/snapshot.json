@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T03:18:43.420868+00:00",
+  "generated_at": "2026-08-26T04:26:17.546447+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "cannibalization": 54.2,
-    "capital": 48.732271163185665,
-    "monetization": 42.9,
-    "transmission": 39.6,
+    "fragility": 61.1,
     "external_pressure": 16.12,
-    "circularity": 57.1,
+    "monetization": 42.9,
     "counter_evidence": 42.9,
-    "stress": 57.1,
-    "fragility": 61.1
+    "capital": 48.732271163185665,
+    "cannibalization": 54.2,
+    "circularity": 57.1,
+    "transmission": 39.6,
+    "stress": 57.1
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "capital": "aggregate",
-    "external_pressure": "aggregate",
-    "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
-    "stress": "directional_estimate",
     "fragility": "directional_estimate",
-    "cannibalization": "directional_estimate",
+    "external_pressure": "aggregate",
     "monetization": "directional_estimate",
-    "transmission": "confirmed_trigger"
+    "cannibalization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "capital": "aggregate",
+    "circularity": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-26T04:25:57.407769+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"transmission\": 39.6, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-26T03:18:42.923253+00:00",
       "score": 45.3,
@@ -10200,6 +10206,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:1ebd2bcaef46c4870013b9ddd7268cc21a4eabf2482a7458ddd0cdfb41cc9a93",
+        "label": "Prediction: Nvidia's Shares Will Fall for a 5th Consecutive Quarter After Reporting Earnings on Aug. 26 - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeS1UMGExTWp5aUJnSDBBaEEwZWlTbEtQM1R2Vm54cWQ0UGhsUUFLeUNMRHMtcXJ0WDdCMlFPeGlySEtWLXJpaDllc0c0TncwQnR5ZEYzMXB0M2xMaDg4TnBvLWlCcVNkTUtUVGlqbUVxdW5OVDRDNVhKNXM1eGp3SnVjSUFoeVN2d1pBMkt3a0RHakhPMUFsZGxoeldZSnd2?oc=5",
+        "date": "Tue, 25 Aug 2026 23:26:00 GMT",
+        "summary": "Prediction: Nvidia's Shares Will Fall for a 5th Consecutive Quarter After Reporting Earnings on Aug. 26 Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:076838e3ddebc25125bb236a41b7e784fa7e2cfa7f10a0c1478abd36d0b1d211",
+        "label": "Alibaba Sets New Precedent: AI Development Cash-Burning Costs Now Shouldered by Shareholders - 36 Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBpWGdxbFZoZHZZUXpRQ21iUlZTVjVMeVZmTWdxQTJibndOWWhoWkZ1ZjdaZjl4YVh4T1hhbmdPQlZ6VzIxLVZDNWZWMXVTc3V6czhN?oc=5",
+        "date": "Wed, 26 Aug 2026 03:43:54 GMT",
+        "summary": "Alibaba Sets New Precedent: AI Development Cash-Burning Costs Now Shouldered by Shareholders 36 Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:ba29e7bb28acd47ba7b8b45543572873095bb9040c2c8057ed84b38d806e279e",
         "label": "Nvidia Reports Earnings Wednesday\u2014Here Are 5 Things Wall Street Analysts Will Be Watching - Investopedia",
         "kind": "evidence",
@@ -11156,30 +11186,6 @@
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPR2RaTG5iUmdaTTY2QWpUa2xDUXRmNXNNUWc0QXRUd0RBM0NtOU9FV2lEWGdoNXpuUW1CSFNqb0ZCYW8wbmh1WjFsT0VIX3BDdG00bkdBdGE4Z3pVc2hzTy1nOTdiVkNoQ2dFUE83RHBqMXVPT1RQdC1JaWI2YnFqSTRnT0VHeDZxclJONXZjdHUyM2pXVGh0MU9QQ1pwRkdXeENnWXNhdXY1cmx3YWFNMmEzeE4tX2I1TVJ3NFR0NUUxUXU5ZkJHOFBhT2VEZ0E20gHWAUFVX3lxTE5STDRzNmlKMTBPUjJNbk9LRXpyTUFPUlYweTY1aUR1cGZJSXFYbXc3UlZ3MTlVWXQtc3pheWpZZXd1MjVFR3VEQ2RoUTFqZHZIRHctNGk5OWd6UldpSEpOVEtUaXdzZzNBSkJXdE5pV0RyeHNyQzEzZTd5bjNZTWZWVlE4cnF3UUlPY0RxX3NFaHFncjJaS0hmaUJhN3l5MElFRkdVemRPdFM3WUhjLW9kWTZaTF9OUnFjTXNXQmY3U05xOTd6UkR3M2pkLUIzNXZnWjFYNlE?oc=5",
         "date": "Mon, 24 Aug 2026 19:16:36 GMT",
         "summary": "Tencent (SEHK:700) Stock Still Looks Undervalued After Recent Weakness simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c51c08e8764578604bfe15ecd57e8544ab6f70170f27d55bb0cb826267538aa0",
-        "label": "Broadcom Stock And 2 AI Infrastructure Shares Backed By Data Center Demand - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeWVWdlhPeWlvSXExT2dJb2pkMW1IakFwUnR3ZkY1M0xYQTRxMXBtcjNCdUplb05DaWwtU3QzYnRYSDBRZ0ZuUEdBTGVxcTNZOXhXbWl6dndPd3RCUWMxZUFSZjI5ZU9iVDlCVUF6b2xzZDBib1Y3OWdKX1JvOXhRUmRsRkgtbjBXbWdQZHRpX1gtZWJXYWQxdklpQTlEOE9uRE90ZVRPeXl5bFBzQjRuSnIycmd2TTlKdDR2X3RublViNlV5OTFLVVRyRkJ2ZU5Gemdv0gHTAUFVX3lxTFB5ZVZ2WE95aW9JcTFPZ0lvamQxbUhqQXBSdHdmRjUzTFhBNHExcG1yM0J1SmVvTkNpbC1TdDNidFhIMFFnRm5QR0FMZXFxM1k5eFdtaXp2d093dEJRYzFlQVJmMjllT2JUOUJVQXpvbHNkMGJvVjc5Z0pfUm85eFFSZGxGSC1uMFdtZ1BkdGlfWC1lYldhZDF2SWlBOUQ4T25ET3RlVE95eXlsUHNCNG5KcjJyZ3ZNOUp0NHZfdG5uVWI2VXk5MUtVVHJGQnZlTkZ6Z28?oc=5",
-        "date": "Mon, 24 Aug 2026 16:51:54 GMT",
-        "summary": "Broadcom Stock And 2 AI Infrastructure Shares Backed By Data Center Demand simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f831e932aaf139bd043456a5e454741f3036d96865cf4a43b56f99266cc57ab8",
-        "label": "Pinterest's $4B AWS Deal Expands AI Ambitions and Spending Exposure - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPamp3MVFkcXZhQUxGcmNYM0lzbFRDeGxDTU5VUnRnX25EdmJtUTFMSHNseEtzbXFZdHU1R0x3SW1sRDRIRzVHaG9NbnZvV1BQeHJjSVhqX0NoUlgzQlNDU3RDM1A0VHFRMFd5QzJIb0xpbUFHbWZuNjBsRFVjdncxZ1BfaVdtMUpSWEtSdXV3cUNFQVE1emRmdTZn?oc=5",
-        "date": "Mon, 24 Aug 2026 17:55:00 GMT",
-        "summary": "Pinterest's $4B AWS Deal Expands AI Ambitions and Spending Exposure Yahoo Finance",
         "score": 1,
         "weight": 1
       }
@@ -18117,6 +18123,20 @@
       },
       {
         "source": "Nvidia",
+        "target": "evidence:1ebd2bcaef46c4870013b9ddd7268cc21a4eabf2482a7458ddd0cdfb41cc9a93",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:076838e3ddebc25125bb236a41b7e784fa7e2cfa7f10a0c1478abd36d0b1d211",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
         "target": "evidence:ba29e7bb28acd47ba7b8b45543572873095bb9040c2c8057ed84b38d806e279e",
         "type": "EVIDENCE",
         "weight": 1,
@@ -18671,20 +18691,6 @@
       {
         "source": "Tencent",
         "target": "evidence:b6fb41c1d2217fdbf473c82f67be1d8ad6253a3708365e8a0faf17a2d1dfb99d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:c51c08e8764578604bfe15ecd57e8544ab6f70170f27d55bb0cb826267538aa0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:f831e932aaf139bd043456a5e454741f3036d96865cf4a43b56f99266cc57ab8",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32411,7 +32417,7 @@
       "currency": null,
       "confidence": 0.76,
       "mentions": 2,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Here's What That Capex Hike Means for Investors.",
       "title": "Jeff Bezos' Amazon Just Raised Its AI Spending Target to $220 Billion for 2026. Here's What That Capex Hike Means for Investors. - The Motley Fool",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNUtfWkVRSURxMXY2NEVxQlFJcjhYNTdQRTVMNDJrcjFMR2RhY2t2Y2RkRENEdHk3NHFFRkxhQ3hzY1Flamp3ZExjejNPakoxSFBPVzIwdE5nZ0VxZFdRTVdjS2lJeUNMUVFiNi11RkRaMVVEc1otM2txb0FYTkRyQ2Y1d2w5N0NtTXBwdUxWcW9icndOQTI3Xw?oc=5",
@@ -32576,7 +32582,7 @@
       "currency": "USD",
       "confidence": 0.76,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B - Stocktwits Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B Stocktwits Google News",
       "title": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B - Stocktwits",
       "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNQ2ZDQkRWWGZaNVdBV1UwS0FEY0RvVVJqUFUxNXd2eHpWM1haeXltLUNpaXB2TW5kcHlJRFo0WFNOQWZFaGNDZ2p3WlcwZjhPVndrYkQwWVAxR0tVVnotaFdDNnZHT1IxZ1BJVHJXZXFpVG5ROUlMcGZoR29iczhkOGM4VG9UMEVWWHJoUEY5TlBCN0RiTEotLTFWNVdFZHZpUmVBOHBuYWVaN0xYMEJzSkgtSno4WHhuc2x4TmpMUkV5bHJDaTNqVHFKalBIMl9pZ01MSjF2a0hpczUtYjMxUHk1OGt0VUxxbHRuaHZ3Nkt4ekRLTl9YZzVQX04wYjFUS25wLUZwWUJwTFU?oc=5",
@@ -32936,7 +32942,7 @@
       "currency": null,
       "confidence": 0.8,
       "mentions": 2,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Amazon\u2019s AWS Is Booming and Its Free Cash Flow Is Negative.",
       "title": "Amazon\u2019s AWS Is Booming and Its Free Cash Flow Is Negative. Here\u2019s Where the Stock Could Go - TIKR.com",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYWNnRWxYeUNTazIxSW5zS3Y1eUJ4R2dScWVSVGhlSUlia01oVnlhbmRVYy1PeEZWakp5RzhSSEhBMjZMcHFaeWZTYTczTkJ0N1AtQ2pZemtCMXZ0ZmMwa3g3b0pCNFNteEhEeVJkRVprc1NTX1h6a0hocTEwTno1N2w3OFplRFNkMjVMX0ZVdkVkakFKUUM2bkhRN3AxZlhsTmJsVFJwZWQ4N2Y4Tktuc1lXUGo?oc=5",
@@ -32951,7 +32957,7 @@
       "currency": null,
       "confidence": 0.72,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) - Seeking Alpha Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) Seeking Alpha Google News",
       "title": "Amazon: AI Revenue Too Dependent On OpenAI And Anthropic (NASDAQ:AMZN) - Seeking Alpha",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTFN3SlpYOWFJZHhZM0U2N1VCQXBvT010YVJ3R0MwM0M3dEZPSWhva2VaVS0wYWxTUE1DSTFSdWNxZzJENUJLTnpMcjRSMVdmZEpPOUJpdU5uY0lCNnp5RmVvZ0VVSUxtUHVmSDMydGpSNE5HRnlTWjNwczdDWnJVLWFTbDhBTHNmZXdSd3loS0ZjdDRNWXBJcGl3OF93X2NyUTRuaw?oc=5",
@@ -33236,7 +33242,7 @@
       "currency": null,
       "confidence": 0.76,
       "mentions": 1,
-      "review_status": "provisional",
+      "review_status": "flagged",
       "evidence_text": "Alibaba Sinks 7% as a 75% Capex Surge Swallows 45% Cloud Growth; Baidu Ticks Up - AOL.com Alibaba Sinks 7% as a 75% Capex Surge Swallows 45% Cloud Growth; Baidu Ticks Up AOL.com Google News",
       "title": "Alibaba Sinks 7% as a 75% Capex Surge Swallows 45% Cloud Growth; Baidu Ticks Up - AOL.com",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBqTk5VUFRmRUYtTkxQMXhRZHk3UWh1Y2tXSzd1YURNempsQkJuczhRSW91NmVRSHI1TFdqT2Nsc3BXblp3NVV0bDVoVXY5YWhTcy1hLU40TmxONmlnUnMtRjh3YkZERWN2VmxHVi1KRUxCZm55ZzJF?oc=5",
@@ -33260,20 +33266,20 @@
   ],
   "collector_runs": [
     {
-      "id": 483,
+      "id": 487,
       "collector": "company-economic-news",
-      "started_at": "2026-08-26T03:18:24.920173+00:00",
-      "completed_at": "2026-08-26T03:18:39.596591+00:00",
+      "started_at": "2026-08-26T04:25:37.052523+00:00",
+      "completed_at": "2026-08-26T04:25:53.492526+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 484,
+      "id": 488,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-26T03:18:39.997383+00:00",
-      "completed_at": "2026-08-26T03:18:40.389714+00:00",
+      "started_at": "2026-08-26T04:25:53.893551+00:00",
+      "completed_at": "2026-08-26T04:25:54.359493+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33290,20 +33296,20 @@
       "error": null
     },
     {
-      "id": 482,
+      "id": 486,
       "collector": "google-news-rss",
-      "started_at": "2026-08-26T03:18:23.469018+00:00",
-      "completed_at": "2026-08-26T03:18:24.519418+00:00",
+      "started_at": "2026-08-26T04:25:35.977849+00:00",
+      "completed_at": "2026-08-26T04:25:36.651092+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 3,
+      "items_new": 0,
       "error": null
     },
     {
-      "id": 485,
+      "id": 489,
       "collector": "sec-edgar",
-      "started_at": "2026-08-26T03:18:40.791372+00:00",
-      "completed_at": "2026-08-26T03:18:42.507564+00:00",
+      "started_at": "2026-08-26T04:25:54.760694+00:00",
+      "completed_at": "2026-08-26T04:25:56.991801+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33320,13 +33326,13 @@
       "error": null
     }
   ],
-  "document_count": 1488,
+  "document_count": 1490,
   "event_count": 971,
   "mention_count": 2374,
   "review_counts": {
-    "provisional": 5,
+    "provisional": 0,
     "confirmed": 275,
-    "flagged": 691,
+    "flagged": 696,
     "flagged_retry_pending": 0
   }
 }
