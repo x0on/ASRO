@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T19:20:20.646991+00:00",
+  "generated_at": "2026-08-26T23:33:04.827394+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "external_pressure": 16.12,
-    "counter_evidence": 42.9,
-    "fragility": 61.1,
-    "transmission": 39.6,
-    "stress": 57.1,
-    "cannibalization": 54.2,
     "monetization": 42.9,
     "circularity": 57.1,
-    "capital": 48.732271163185665
+    "stress": 57.1,
+    "external_pressure": 16.12,
+    "transmission": 39.6,
+    "counter_evidence": 42.9,
+    "fragility": 61.1,
+    "capital": 48.732271163185665,
+    "cannibalization": 54.2
   },
   "dimension_evidence": {
     "counter_evidence": 2,
@@ -32,15 +32,15 @@
     "circularity": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
-    "fragility": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "circularity": "directional_estimate",
-    "capital": "aggregate",
+    "monetization": "directional_estimate",
     "external_pressure": "aggregate",
+    "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
+    "capital": "aggregate",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
     "stress": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "monetization": "directional_estimate"
+    "cannibalization": "directional_estimate"
   },
   "dimension_direction": {
     "counter_evidence": {
@@ -668,6 +668,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-26T23:33:04.307482+00:00",
+      "score": 45.3,
+      "label": "BUILDING PRESSURE",
+      "dimensions": "{\"external_pressure\": 16.12, \"stress\": 57.1, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"transmission\": 39.6, \"monetization\": 42.9, \"fragility\": 61.1, \"counter_evidence\": 42.9}"
+    },
     {
       "captured_at": "2026-08-26T19:20:20.155417+00:00",
       "score": 45.3,
@@ -1521,7 +1527,7 @@
         "id": "OpenAI",
         "label": "OpenAI",
         "kind": "company",
-        "weight": 22
+        "weight": 23
       },
       {
         "id": "Anthropic",
@@ -1533,7 +1539,7 @@
         "id": "Nvidia",
         "label": "Nvidia",
         "kind": "company",
-        "weight": 10
+        "weight": 11
       },
       {
         "id": "CoreWeave",
@@ -1773,6 +1779,30 @@
         "date": "2022-10-27",
         "summary": "Twitter reported that the merger was completed on October 27, 2022 and Twitter became a wholly owned subsidiary of X Holdings. The transaction valued Twitter at approximately $44 billion.",
         "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f09f008f4fdeb65e9db2d1766f3d793cf2ee98670048b4584af9e4fdcca0dfd4",
+        "label": "NVIDIA SEC filing: 8-K (2026-08-26)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/nvda-20260826.htm",
+        "date": "2026-08-26",
+        "summary": "SEC filing 8-K for NVIDIA. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0e6c95f1100533bb6d1c47bcc70629487a4aed418bed8d518bb193b745ba7cc0",
+        "label": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "date": "2026-08-26",
+        "summary": "SEC filing 10-Q for NVIDIA. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
         "weight": 1
       },
       {
@@ -5808,6 +5838,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:be462daf5f56c5392c9356bea75e49aa976090ae3b91678efe9de5ebdfefb935",
+        "label": "OpenAI Reshapes Leadership as More Than Ten Executives Leave Amid Potential IPO - \u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438.",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "\u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438.",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83LWFlVkxuMjdfUUVxXzhWc1FONzBYVEhEeFJGN21IWFB4bGpUUUVha3B0a2hIUTdCX18yYkJYUHNJVFVfMU5ZRHV4TEZLMlVnN2RXVUdrZWVoU3NFdHlOajU3ZVFwTjc3bjdSTzE0Q1ZNZw?oc=5",
+        "date": "Wed, 26 Aug 2026 20:17:34 GMT",
+        "summary": "OpenAI Reshapes Leadership as More Than Ten Executives Leave Amid Potential IPO \u041c\u0435\u0436\u0430. \u041d\u043e\u0432\u0438\u043d\u0438 \u0423\u043a\u0440\u0430\u0457\u043d\u0438.",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:eb8bcf897e7dcdb68f4a96a33ad9743659c95c90aac29b9776f212cbc188b853",
         "label": "Why Anthropic's $30 trillion sales pitch ahead of its IPO could make sense - Yahoo Finance",
         "kind": "evidence",
@@ -9072,6 +9114,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:e32d524b1951f642ae03d2041d97eaa7c519e3302c397c373f66eab2a5c6e45c",
+        "label": "AWS and NVIDIA to Deliver 2 Million Additional GPUs and Next-Generation Infrastructure for Agentic and Physical AI - NVIDIA Newsroom",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "NVIDIA Newsroom",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNZUNocGNzT2FJb01QNmVWTHpoSXkxUUNVdlRDTVZET3hZZVBDN0JGTVBTUFF5aEdERTJOcU9LeV9VMW12ZlZSck5uQ194MjFmYVlMWGt1SzdVODFjY2hkV2RFamlFdzVaWkNYNUdnbXcxbF9rTGJwY005LTlwN1BtUDdTWDVaMk1kejdPRzJKaVRTUVB4X3FWVnVlNnNPcUxUZGNHSzNTV0liVVJaNTMwdEdYcENaOFVtZVc5TXFIY0xsUlZJZUg2bkJKVnJ2OUhqSVg3bDZrQTd3eWdTVmNvMlJkcw?oc=5",
+        "date": "Wed, 26 Aug 2026 21:10:30 GMT",
+        "summary": "AWS and NVIDIA to Deliver 2 Million Additional GPUs and Next-Generation Infrastructure for Agentic and Physical AI NVIDIA Newsroom",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:cb817877d662132d1ded3bd094c7155e7ae6e5a1b13521ec254d3484a860e587",
+        "label": "SoftBank Mulls Up to $20 Billion Bond Sale for OpenAI Stake - Bloomberg.com",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWGNBOThiTEdqZHNsZURvWVhrZjM0d2NhZXNEYnRIdzJTbTJ5cW1FM2FPaEJJTWRTWldpMFhpYXFKcjljNWVsdDhwNVJ3Q2YzWkZMT05NOExHejhPRERlcllCRnRqQkxSdV83RHdBWHlLdGhDS05BTW5RU2x0aXY1VHlTZ2RkaFY4eXpxN1IyLV8zTEpYYWloTFNfZ3JqbWlsb3JvYkcxNjZTUGlLakdFQkxPQQ?oc=5",
+        "date": "Wed, 26 Aug 2026 07:10:52 GMT",
+        "summary": "SoftBank Mulls Up to $20 Billion Bond Sale for OpenAI Stake Bloomberg.com",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:ae0ce7288905644a78b3c63aabce90a12a533a606d592b8681bcf5bfd26a30fd",
         "label": "\u201cThey\u2019re Financing\u201d a Rival: Jim Cramer Challenges Nvidia\u2019s $30 Billion OpenAI Investment - 24/7 Wall St.",
         "kind": "evidence",
@@ -10620,6 +10686,186 @@
         "weight": 1
       },
       {
+        "id": "evidence:a54cd8a3514c79be7a50dd74ab6f8b8348f77fa49e934dc2473b3a517ba2f6e5",
+        "label": "Google Cloud Announces Strategic Partnership with Verizon to Scale Enterprise AI - Google Cloud Press Corner",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Google Cloud Press Corner",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOWnlZcHctY2lOakN4YXVGM3dHb2VqY1hzenZMbUREZ2tBNmZ0OHZwRV9HZ1FzcFVMZGZYLWwzZEJSdjJ2NU1MQXR2Zi16WDk0Tm1WZEdmZkM1YXJWc1VvbmdzZGVmV1YwTHpXLUpvalJuQW5pUGZtZ3dNQXZvNUJXbENQLVFEZnlKbE4tdEVFUkVUSDB5TktkTmh4aEhZNW1QLUhXTm9IbmI0aFpHejBVMzdnMm1sWFNGUDlUZlhBYVdyMGZQdUxQZ2x3?oc=5",
+        "date": "Mon, 24 Aug 2026 13:05:22 GMT",
+        "summary": "Google Cloud Announces Strategic Partnership with Verizon to Scale Enterprise AI Google Cloud Press Corner",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:207208a5a0ea68c541afaecd7018649a07d0b93d81d26f284b0df9806dd6be7c",
+        "label": "Alphabet (GOOGL) Stock May Be 22% Below Fair Value Despite Gemini Enterprise Expansion - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQcVZvSU9DTUd4b05vVmZDckVYNm02WVlBS1NfS09vY1paNWczN2gtZWk0QzZIOUgtTl9Zd0hJY3Z4cDdIZFFnc05LOFJzcm8zbGlxLTVsaVJST0pEejRqeGEyM1NVbmRuczVXQ0pUdkRBU25pcE1SRndyWVFPWU5zb21TeXZIMDNBZHlHcVZfbko2NktZbHJsVklyOGlJSHdyaHRxOThjT1h4bjU0elA2NzZqMng3cW82VHNqZ0JXdEhwNEHSAcgBQVVfeXFMTVZkazhuczhjVDc3d1pVUTJ1dVBQdnBWU2FiZG4tTGlzZHcycDhxb1NzTGhKanE5Zm1Yc3d1SG0zck5aTWwwUUljQUtzVTQxQUMxeF94d2FWYmRHRmZ5QkEyV0xodldJM2NOMFJ0VFc1WDRtWDlNSnNSM3dUUTBLUUN3NFZEUTdUNGhfVVgyeXhCcndsWkNkU0szQlBnREZKak54LXRXSjVoMkhMSW9zS3VKX055QU9vTzdFR0RSV0xNTzRscFphX1Q?oc=5",
+        "date": "Wed, 26 Aug 2026 16:42:34 GMT",
+        "summary": "Alphabet (GOOGL) Stock May Be 22% Below Fair Value Despite Gemini Enterprise Expansion simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:8d8ad9b07d38057b6758cce55244f9fb4297edffd944e45a88f5406c92d8cd19",
+        "label": "What Alphabet (GOOGL)'s Gemini Enterprise Push Into Regulated Industries Means For Shareholders - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWk9NRmVTN1FOMVcwOHpHMjlZdTNyMVZ4UFNZYzRmbGtITWc2WUYwVjVSZXRqbXhlSUdSalBUVkkzZjR1M1lJdGJHUWZlRzdNZVoyVURINGZtNUl4YnVpNVJlWndWRW1fT05pREJHSXptTS1abU4zazhIeGFMTFFFX29UWk9mbWZiNFJjcFJzLVFna3JkUlB2RDdmcnRQOVFRSXFj?oc=5",
+        "date": "Wed, 26 Aug 2026 16:18:47 GMT",
+        "summary": "What Alphabet (GOOGL)'s Gemini Enterprise Push Into Regulated Industries Means For Shareholders Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c3ce6bfdde83a03ba96fb60e89c7355a871b687cd217c7610374c4f229c87560",
+        "label": "AWS and DuckLabs: Building the future of analytics together | Amazon Web Services - Amazon Web Services (AWS)",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Amazon Web Services (AWS)",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYWszbmw5bDlVdWNvNTVDTmZqaU5DVC02Ykx3NlRVa3BxWUxXNlhFTU1pdTlNSmc4WHNKaTBLZ2lnR29IMExwZzA0MW8yLWlxZ0ttR05mZjQ3WUsteUJ4dUI5cVdZX0tNTWxzbVVHTkhkQngwZU96TlFzNHdrc3BQWVQ0MHF5VHh4Qzh2T1hFMWNKcHhNcHlFUkstMGkxUQ?oc=5",
+        "date": "Wed, 26 Aug 2026 13:28:34 GMT",
+        "summary": "AWS and DuckLabs: Building the future of analytics together | Amazon Web Services Amazon Web Services (AWS)",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7830cbd0d9a217f058b6610886620f6a64892e0374e2baad25b27b832d698fae",
+        "label": "Nvidia has a blowout quarter, but Wall Street wants more - Axios",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Axios",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5oRFVrbV9ibGpJRVVDQkVKbE83R2tzLVdUVVJIY3NPRXFvQzJsMzlXWjFTR242akpiektLVTNPdXVyak0xVGdZUE02MU1KeFo3V08wdjNRT2pEb0hOQmh5N1RtbG04bVdxU2RncGZ6THFCQQ?oc=5",
+        "date": "Wed, 26 Aug 2026 21:02:03 GMT",
+        "summary": "Nvidia has a blowout quarter, but Wall Street wants more Axios",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3a1f38fa5a2f2a2875f1cdd74dea384d928b2cd4145c2fd905a4b48aaf759aab",
+        "label": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027 - NVIDIA Newsroom",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "NVIDIA Newsroom",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcjZPeVV6eC01Z2tWOHlyVEhmMG9uZDgyaXdvVTV3MVVMWGdKVVhJdlNiRHBvejd0UnlSNFJfTFA4dXAxUk9fVi1RQ2h2VU1kd2FkSUoydEJheDVMNWRnYUdMa2RFcG8zcTROTl9ZX1lJQ0tRU1VZR2pkQjFRdEtkM0tpUUlOcXhsYTFGcGY5RHFQYWZyNkh6LXVCSmN0Y1J3WWc?oc=5",
+        "date": "Wed, 26 Aug 2026 20:25:18 GMT",
+        "summary": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027 NVIDIA Newsroom",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:103a0dcb6a582dca6d6654eed0cdd9812d6af4d916a525befae143a735b822dc",
+        "label": "Zhipu (Z.ai) Unmasks The Mystery Ox Alpha Model as GLM-5.3-Flash, Revealing That It Was Run Entirely On Chinese GPUs While Serving 100 Trillion Tokens/Day - Wccftech",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Wccftech",
+        "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOc1FIbjFhNlJxM1gzTm9XekQtcV9xeG96TE80MjBpUGdKWmM1ZlgzTFloYllmQlJUa1lVbFFkU2Q1QXJFdUt5NnBkN0dOYzZxTUhneHM0QkpMSENIS3BJMnZXcTdrZkNJWUxKX2dSUjVPeTdwM1d5alozbVByRjNpUHU0SXZyVV8zekwtcGdXVllfbjlCZ0VZdnpkUmdSY3V1MzYyYldENUZJUzFpRkdZUFVVYWZCYk54bzFaVXRMM3UwT2pzOV9zMkZ3NHBmWm1VZ3JxUnBBS1pZRkxJRUNjQ2xmZy1xUmpMbkdySGcyci1QTTdwOU13dktvQUVsMklCX1ZZ0gGIAkFVX3lxTE1uZFpuMUNnelpkMW5VbzZpR21iOXoycGVlVFl1X3BwS25fdWdtX3pYelZkSUMxZDJwcXRJbWJSUW9uTWlIdVFkRVVMQWJDTWZlM0RfaF9VTWNFZG01YWhkZHFrNTM5TFNlaHdWOWNGbUw3b1hqanZURlIzV2RGMEVsYXl4SXZoWDZvT0gzN25ab2xMcklIb2ZtcFdjcmhybnlHNlhXYjEwSkFWMlpFUlp2a1U4akJROFVFNk9zV2RJX1gyR3JWNlpTdF92c1o5ckJyRzhBd0d5TFhCOUpjVUJvenVHNTBHNmJnNTNUeDdrRXoyZl9SbzBNVmRWZ1AxdE50cXdkRlNHVg?oc=5",
+        "date": "Wed, 26 Aug 2026 16:01:03 GMT",
+        "summary": "Zhipu (Z.ai) Unmasks The Mystery Ox Alpha Model as GLM-5.3-Flash, Revealing That It Was Run Entirely On Chinese GPUs While Serving 100 Trillion Tokens/Day Wccftech",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:07dda4d475a774c0273678996992e18c7464c3ddf0b483d73e443b42d8986d10",
+        "label": "Report: ByteDance Plans AI Spend Boost For 2026 12/26/2025 - MediaPost",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "MediaPost",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNRE5icGM3M2lPRS16amtNQy02TEQ0ZC1ITklidHBDdW1OSVRVU0x3VU9RZkFib2t4eVlJcGJRN0lUWGFUQ0JSU1U0eDZ3ZzJ4YmVBYk5LRXRTVHZmdVI2WGNDSUZPUmFMUkx0WkpDckRab1c1dE5WS3pPWF9aWEQ0WC1iN0NybHU0UEZjRVRjc3lOMnhtWkEwYm5PR2JzTWZvRndFNG5wU1c?oc=5",
+        "date": "Wed, 26 Aug 2026 17:15:51 GMT",
+        "summary": "Report: ByteDance Plans AI Spend Boost For 2026 12/26/2025 MediaPost",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2f96e7f5f8a44ddb718d70133757a57aa5ad075aa2acf91761e4308bc0e03a4f",
+        "label": "Heritage Insurance CEO Ernie Garateix sells $348,750 in stock - Investing.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOdTAwRU9QN2JJM2JqWmJLVXRRbk1Rdm1rMnNENDFyUDdpU21RX2FRNzdVWVctdDlwY2VTTGdtZGU3UmpnV0hsOU12YWpxNlAtZWRaMGMzSmxpc2pGSzMtM2tadnNkdEVwTW04eVp1NnpJVVd4a1ZTQ1pvZFRBZWZZRWVSWnZBRjRaSHZyR1VnZFlMVmlLVElrcXlERVdhRDctZ2xGS1N5YXZ2d0k0TmhiYjZlQVI1NDV1N0l0Zk4tcmpiOTUxMzdFajlGOEE?oc=5",
+        "date": "Wed, 26 Aug 2026 21:31:00 GMT",
+        "summary": "Heritage Insurance CEO Ernie Garateix sells $348,750 in stock Investing.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6de3009feffcaa607714b5219d8b3371a17d4983f1aebdd3c6f292cdf995e7ca",
+        "label": "Hong Kong Designers Association launches strategic design tech partnership with PolyU and Alibaba - Fashion United",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Fashion United",
+        "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNODBaaTV5b25hOG5GdmQtRzk2RzcwaTI1azRfVFBZSEZpWWF0WXhyUkI0SFBtRE9BbDVOdWp0RnZjOTI1U3MzQ1Jobko1aGpvWjdZeEpSSFNJTFZWOGtwMlk2enA1elhWZDNEdGppOXQ3VGJlTnl2ZnNKLTBUeXVYQjNTenhqeWlxQ3YweGxlUE91ZUcyc1FOcUFsNEE2dy1lVXZSTzBpR29zSmJIU3VSSGVaM0czMzVEem5vQUdnN01tOVllWnZISkU4cGlaSkI1WFBEVHlQb2l0RUtOZUdtRFdYZG9RekMxcGdj?oc=5",
+        "date": "Wed, 26 Aug 2026 18:09:57 GMT",
+        "summary": "Hong Kong Designers Association launches strategic design tech partnership with PolyU and Alibaba Fashion United",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:4dc08785a96d80b587e9b268e960c12b20ffbdbf546d15a2ddfacbe6a77c26b4",
+        "label": "Michael Burry Just Abandoned Alibaba Stock. How to Play BABA Stock from Here. - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPU2VXejlrWEs2R3VrekdmSmsxb0VMbTVGQWdaWlpSRHhiQTNpcGRUMzV3aWx3MFFJcktQams4b1l6OTM2bXdxRF9JdDhSdExPMGUtZ1dTUnV0WDhvVmwxY2FSSHJNWFdIT1E5VE9KWF9XM0lON2VOWjR2WVVXTFRVZ3hDODFCbnZMN2hac2Y3enJONkY5S1pZaTRJNzBIT2FpcTNF?oc=5",
+        "date": "Wed, 26 Aug 2026 14:24:48 GMT",
+        "summary": "Michael Burry Just Abandoned Alibaba Stock. How to Play BABA Stock from Here. Yahoo Finance",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:892a6a194cdf6aa531d17c89b54500de600d00471c26fb022736f0519397cf60",
+        "label": "Salesforce Profit, Revenue Rise, Expands Partnership with Anthropic\u2019s Claude - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSFpqV2tQWnJEcXhJRUJhZVFIblRMOWV2NDBCenVXcFh0M3N6YWpCcXZ2MGZueXowZWlaQy1uUXdEY3JVUzBHcVk4dHZKWHNkSHh4d0NEZ0RIVUQwZXZhdjZYLVdWNy1lZjNSRXR4akhmRTZSaEo1dTVIQlAyeVByMV9UX0V2aE9LNzRCUDBqaGNzLWY3Z2xibWFHbTF1amM4akhRZGlpWUFKQWtkWmZuWXhKU3QzTExPaWFQRQ?oc=5",
+        "date": "Wed, 26 Aug 2026 21:23:00 GMT",
+        "summary": "Salesforce Profit, Revenue Rise, Expands Partnership with Anthropic\u2019s Claude WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b5fbebf2d768dafc2c2a25c7167a386dd5ee7a8664a18d30cbe6559c0c006bde",
+        "label": "Salesforce, Anthropic expand partnership as Benioff responds to \u2018SaaSpocalypse\u2019 concerns - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeDU0UHo4UERDMHZlcjVyV1I4S0dWWEQ1SGhYOXFURmJmZUJiZHpud1pGVXRKQmx1ZXl6Sy01NjBkTlkyQXFRWEJfeTVkYXVHODNvZ0p3YTVudnVSNEN4WTJQLWpad0JJa09WZ1Roay1JZ3JUZDlNdFJNRGNZYzMyNHd1TmRzTVJQ0gGOAUFVX3lxTE5oWUF2YXIzVjUzOE5zUzVNT05nemItSm9rdm1OMmRvQWFPc05NRWVteG5mNnM3dmtzSHZOYlowYTNFTnNFT0M0UmY3ZTRhN1FGTUV1U1NKcnZhcUp0LUpVU2dMa1ZCazZvSUFWNTNBNWhzNlUtekUwR1J1a2UtZ25wT3JaVzUzZGFWV1BpX1E?oc=5",
+        "date": "Wed, 26 Aug 2026 20:05:14 GMT",
+        "summary": "Salesforce, Anthropic expand partnership as Benioff responds to \u2018SaaSpocalypse\u2019 concerns CNBC",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:84b315eafc2796183a24f29164a8cc29463419c889c5986e0dd30f1ebca6b950",
+        "label": "Virginia Beach Schools enters partnership with OpenAI to bring ChatGPT to educators - WHRO",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WHRO",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdHEwbC1ac2xueDVfWjlhZzEzQXUwNWVEYlNYMXhPcUwxMW5OLWtRdWRON3h2dVh4X2RmUlV6QnR5dnB0RnRCSzZfbEg0Uzc2X0dhdmVoSU9VMGdySDlSemxiT1dQVWlXUmZOS2NJUjdBRjFMXzByTkVBempOci1NdGJVOU9GdmtTTS1lcEVnek5jOHJlM0dxVEIyRUNYTmgzaFBEYkRWUE15ZDJteGdhTkVjM01FdHRuQXFCeEZweUlQODloZVQ3ODRB?oc=5",
+        "date": "Wed, 26 Aug 2026 17:00:00 GMT",
+        "summary": "Virginia Beach Schools enters partnership with OpenAI to bring ChatGPT to educators WHRO",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:61e8cc114a514eb22c4c10c9c5691270445792568c2adcd33f5073084aeb27de",
+        "label": "OpenAI loses a top data center exec as stream of high-profile departures continues - TechCrunch",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQnZDYTNQU016aGJnVUljb0VNRXQtd2ExUzBuSl9ZZE5XVWtwUG5kY2RpVmZqcGs5cHpTUjhuakFnVFRkRFhQaE5BRDhXbGdCSnRVbVhhYm4zNEJSLWpQR0lodzE2YzBUODkwUnNLd2FBSWZWYnozcDBYd1FxTG1GNlVCOFdjUnpKM0hvRnZNM1ljSkx1UThVWDg3dU45eE1BSGV2M0VjSk9tS2tIRW51VTF5TlBzOFJG?oc=5",
+        "date": "Wed, 26 Aug 2026 00:06:20 GMT",
+        "summary": "OpenAI loses a top data center exec as stream of high-profile departures continues TechCrunch",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:248790919eab493c4ab1bd073319ee2034787c28c01db1c436df159efd45f981",
         "label": "AWS CEO \u2018Excited\u2019 DuckLabs Acquisition Will Drive Analytics; Partner Says Deal Will Help Fill \u2018Gap\u2019 For Clients - crn.com",
         "kind": "evidence",
@@ -11026,246 +11272,6 @@
         "summary": "MiniMax revenue more than triples but remains behind pace to meet forecast South China Morning Post",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:67a7cc1b6a654155ef3ad00d0a0b6da3e87ad207d5d9832a7a93ebf7277f9b46",
-        "label": "Nasdaq Futures Lower Before Nvidia Earnings - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQklUWjc0SG1rbFBXYVFmb19naTdBTm1jRXZ3UmhzWFFzb1FVZzI4eC1QTENvekY0U1BxV3NRekt4U0RrR0JXUm5zaDMtSkF4by1JZnQwdEV6STY3eV9tcG5jUmU1aml6ZDFheE45OXlYa3I4SnNmRHc4SlIxanQwcXB0Rl9OLTN3VmxGdlNnUWhZMlJsU1BOZ2xkbm9xRnpzTk1zV0J1dldDdDF0?oc=5",
-        "date": "Wed, 26 Aug 2026 08:37:00 GMT",
-        "summary": "Nasdaq Futures Lower Before Nvidia Earnings WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:613c5e5821e35e442ba542f48ffc464b3d0d7e5f0fa3c917206d006d158ae6ee",
-        "label": "Nvidia earnings preview: The report the entire market is waiting on - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcFg3MU1CN01ha1JpX3pKQmVIZHMxOHl3OGRBSGJEcnkwdmZOcVhGdlFhU3VmaF9kTV9ZVUNWZEZGa0xWR1ZNYjlITnBjaTFMUDBueC1vbUVIcFl0NDBXd0NoMjB3cFhOX3h6UlpHeHVjN2FtNEp3M2lBRXFqMm52SWN3M1p4RDBRV3gtd0RrX0hxTi1GN2NQQTVSa2dLeHBJVUJMOA?oc=5",
-        "date": "Wed, 26 Aug 2026 09:04:35 GMT",
-        "summary": "Nvidia earnings preview: The report the entire market is waiting on Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8a686f00cc62c620cb73e69e2b8fd5e782521065216e125fcc9412a0be9dd175",
-        "label": "MiniMax Group: Revenue up 283% year-over-year, gross margin rises, and loss narrows amid global AI demand - TradingView",
-        "kind": "evidence",
-        "category": "Cannibalization / economics",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNbEc1Y0lmUm9aci00eDhHS1VtMTF5am9OOGxxYWVCd1NEUWo3RUVpWC1KbFdzRXdBM3lhUGNJRU1nYWxRYWJ0cjBDaDJlczE3dkpYa1ZmU1BZNEh6bTZHQkxTVjVLVm9DcUR3TWdWUjN5OVJleEQzRm9KY3BxUzRzRDZpSVFuVDkxQkZDVlhDNnVKYURGUHNMZ0ZaZEZBQ2xQbDl3eGQxel9NcWVZRTdPd2d6N1NRbVdtTngzSkN0aF9aZVhxZzE4OU1BRHMtUlJreVVOOFRtZ2JVd2hHWHFGLWlWcmNZX3hFSFc4dG5JdVdENGlFRVVUdzVGekIya3FoMk1KUVd1TFdkdkNfRlliY1h3?oc=5",
-        "date": "Wed, 26 Aug 2026 09:47:54 GMT",
-        "summary": "MiniMax Group: Revenue up 283% year-over-year, gross margin rises, and loss narrows amid global AI demand TradingView",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e3728792d92c43b94ae1376a691cb6a199babae6aa65afa02a8ce2919450a52b",
-        "label": "MiniMax Sales Nearly Quadruple in Crowded Race for China AI Lead - Bloomberg.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOc2hEMUdRRG1hMWJDd1hhUXlPVGczb1U0cUlncV9Pb3UyMXVSdm9vdkx1ZmU3WG40V1laSnR1elZmd3RlaGE3ZHNQVE5pMEREeG03Zl9pQnBQM0Y1Rk9jMlZVc1J5QVNFSzFiV2FCUjBCTVRXbDlRcHNmWWlwbl9KVzllTDhvbHMxNXg5Z3hTc280UXRheTJhVEo0Z1gxZEFXWDNUQ1hDSjktZk55NjJwanZPSXI?oc=5",
-        "date": "Wed, 26 Aug 2026 09:56:17 GMT",
-        "summary": "MiniMax Sales Nearly Quadruple in Crowded Race for China AI Lead Bloomberg.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f16806870d55e87414759e7720d8d6cc410f57d42695500a69b494512d457c2c",
-        "label": "Moonshot AI in Talks With US Tech Giants Over Revenue-Sharing Deals on Kimi K3 Model - marketscreener.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "marketscreener.com",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZmdmMWNuRlhqOFJjckI3VGdwMTdrcE9UaVdRdnRPd3hDcWV6Q1pmS1dkWjZQSzRzbFJDNTg1TDRxOUhmV0dNdjJOcFA2X1lTd2VHTm9NUVJnVHBjbFI5SHJqbi0zblEtTkhHVFhVQ0VCNW1hVy1Ccm4zRnVSUG1GczJpMkdIMXdoa08zUkhNVDlBX256OVhScWhzSHpKczk2RThKbHlVWkpDb1FkNmRiQkViMkNIeFpRcEZsOFVEVDNROVZRck9uUTZ5V25Yb1hiWXZV?oc=5",
-        "date": "Wed, 26 Aug 2026 08:49:20 GMT",
-        "summary": "Moonshot AI in Talks With US Tech Giants Over Revenue-Sharing Deals on Kimi K3 Model marketscreener.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:195ffeb6fabedc7b13d24bfa131c933e00e5220d3901067781464c4e222f174d",
-        "label": "Longbridge integrates investment tools into ChatGPT and Claude platforms - Vietnam Investment Review - VIR",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Vietnam Investment Review - VIR",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWURFS2hjY2xKaGJoYjJtODlnS1E4bllEQ3UtejRRNjMxR2lyb2RsbE1UOGVjMXdyZktnNk1FT1RRczgyVlVFbzhXWDBHZV9YejUyUXRscXFBbTFqd2pOYTZ3RmZZRlc4U3V0MkI3b0ZnNDBndEVfX2VDbnhvVWFHX0huOC1Hb2ZfazBZLVhsTFYxeUFZdUlZUjBNRmsxT0NYV0V2SzNR?oc=5",
-        "date": "Wed, 26 Aug 2026 07:38:17 GMT",
-        "summary": "Longbridge integrates investment tools into ChatGPT and Claude platforms Vietnam Investment Review - VIR",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c55835370ab94d2365118058a2c25d73782dda6462187d3b39db43d71d40f392",
-        "label": "OpenAI data centre chief Chris Malone exits as executive departures mount, US backlash over AI infrastructure grows - Livemint",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Livemint",
-        "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQT3V4LXRZblVjLW1sMEZIeTJqVGJWOVB4dF9PUkJjemxMODVZeDhNQm1QRUlqcjVGM0tGbkcxODJGOU1QNnd3VnpfQ0Rua2VMZE96X3BBdnRQOGUtVXZ4QUFGNEIxMHVyYy1MTFJkLVB4RjF5RFFxSTRjdXVCandmNkxlQ1FMNU9jamtqcUcyRDA3VGdTWGp2UkZ0VU9KLTIwTHpFTU1DbEV2UGw4R0RqOEgyRzNYRzl5emJTLUQ3MEp2VFdsdDg0bGttUmFfS1N4OUVmdkh6S1otVHpHU3ZMdVQ4bFJoVllua1dyOFdPVU4xTWI0aEhjU0JwRER6aUVhazMxMWN2NNIBjAJBVV95cUxQMnd3RUlZOVJvanRzblNMR2V1NDBXdkY2b2FNLXdUbVFDRmcyb1hEaWw2UjlWY3RfaFVBbGZZd1pUZkFqekZDemdmYWliNVdnQl9ocC1yUy1jUmVYNzJKckxZWHkyd0FKQVBaT1lqRGRGMDBXSEVFWWxQbVBUdjI0ZzBrMnRRcHJhcTNLNTNBcmtMNGViN2hWSFdqTmhZakVmOE85Z0RxWW1nNXBtVm9PbnFPd3ZHQmhCSW96bVRLZld6VU5fb3JnQjYyTWtndEk2VGVGc0hzQjVSdFo3eFdLbE1LenBnYVdxU1dNRnF2U3F4M2RKeWtENFdod1F4RVZEUmpkQUFSd0ExS1hO?oc=5",
-        "date": "Wed, 26 Aug 2026 06:34:22 GMT",
-        "summary": "OpenAI data centre chief Chris Malone exits as executive departures mount, US backlash over AI infrastructure grows Livemint",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1371ed9116721ea041a5e5e84e08485becbe710e33bdcab748e9ef6a754a47d7",
-        "label": "European shares flat ahead of Nvidia earnings - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNV1pZeWdGeTdjVWRoOE0zZi1zQzhRVTdhU3g3U3VPV2J4dHVRQWtiRF9CUHlWVGllbFpPYnIyUmc5TDZPVlJrX0lrNDZCME5rcWZEYmN2a1JFY1diVE5oeDk1WEFDNmhIeDZfUmdFMFBBVUh6M1ZibFFvdkNzSDRVc1NEcFdZZmVhRDVjTGtxQWZwd2JDd3hzS1lHalBGUmMwRkZDUTRidDZIQ3lM?oc=5",
-        "date": "Wed, 26 Aug 2026 08:46:36 GMT",
-        "summary": "European shares flat ahead of Nvidia earnings Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:86289be0d4b4a8dc834c4f2bdda40028535cbdebc8d27cd66e50a8a87fedcf8e",
-        "label": "Oil Extends Falls, Nasdaq Futures Lower Before Nvidia Earnings - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQQklUWjc0SG1rbFBXYVFmb19naTdBTm1jRXZ3UmhzWFFzb1FVZzI4eC1QTENvekY0U1BxV3NRekt4U0RrR0JXUm5zaDMtSkF4by1JZnQwdEV6STY3eV9tcG5jUmU1aml6ZDFheE45OXlYa3I4SnNmRHc4SlIxanQwcXB0Rl9OLTN3VmxGdlNnUWhZMlJsU1BOZ2xkbm9xRnpzTk1zV0J1dldDdDF0?oc=5",
-        "date": "Wed, 26 Aug 2026 08:37:00 GMT",
-        "summary": "Oil Extends Falls, Nasdaq Futures Lower Before Nvidia Earnings WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b302369907900fb399441aa9e78d8bd532368526b0428518db8e273560e4e334",
-        "label": "Alphabet Earnings Rise 24% As Google Faces Reddit Challenges 07/23/2026 - MediaPost",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "MediaPost",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPd1d6RDZXZGdBSmhyZC1lNVRHcU11dVNUZWdoZ09rMG94SjY1b01uemhfREQ2dEVRSjRBYXQ5bUpUS2lGUWo2Y0lGcU1rUXpveVluOUhmaTRkTUhlTVhKYlg1QmRhc3B0N25JVnQ0X3JKMWtCUDZzbWVGM1BuWW9ERGVwT1lMdVBsZWg1X3dJSlRsanlWS1g1UkctaEV4QjJFZ2FzeXgtZlkwVTQ?oc=5",
-        "date": "Wed, 26 Aug 2026 01:26:46 GMT",
-        "summary": "Alphabet Earnings Rise 24% As Google Faces Reddit Challenges 07/23/2026 MediaPost",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4fc533d023be457448850333ae8e6c4bf20f70c77c516cb8b8e688dc3ee717bb",
-        "label": "Nvidia faces growth test as Rubin debut meets AI financing scrutiny - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYU91VUx2bDVfM1V1NDN3eGYtVk1kNzBLUEpUS2tkcW9ULXV2U0NqaVdEUG03aXc2SVd2Q3J4QXVtYWlnbFRpQWszb19mR3JqWTh3RHlKMVZfeTFwalZxLTJMRGhSbHJVeHdHUjlTOVBDcklqVXdLcDYxbXk4VW85VWZpZEhRdHNNTzJiemtnUHlESWx0LWJmbVFQaHVTVzBqbmZRUFRlS3hqN0hWRVkxTlVXWWJDdE1wTk02RUd4cmxKaUU?oc=5",
-        "date": "Tue, 25 Aug 2026 23:57:57 GMT",
-        "summary": "Nvidia faces growth test as Rubin debut meets AI financing scrutiny Reuters",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5a9aa130f88801ccb9bdc4a0bd7d3a6594f3a52c9d5e488473f255ca1892c1b8",
-        "label": "Claude-maker Anthropic is set to make hundreds of its employees millionaires and it is worrying CEO Dario - The Times of India",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Times of India",
-        "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxPeWtmZ25SRU8zYnBDZzgyWWNMcEItR0o1cTB6M0NHX2hkZFo1MFhVX0loTmx3VWFYSEVITnVETUtQU21KV2JfeTY2dGppSWZETDlsVnR4RjVvTVpHaXNOaE1odERQVGsteko0aU9wZlh6Ym92QThYdjVIbjQzcEtwSlQ4dDQ4TEZuejFBb0paeXdQbFBzYW9uMXlTRlNOeWJvTm9MVEx1U2tnT3NnRTNPT01fbnh6aU5wa0JEN0VvTnZfN2xndXYyTUxySmNmbUpMd2RrT2l1V2RTeVhMQlVyZmtSM3pLUm83RXk2M0NJVG53bzRkdEc1aWdET2k3dmxmYmV0ZjBQSlNIa1Bjd0JNbFhIZXR6UENJYWdJNGlVaDhtUjdHN2NzTGJZUnJlOHBKb3FER0QxYU9XWmc5RVE4TEFmcVgwTmFYeGVmcjQtU3ZlMEdmQUUzRzR3a9IB4AJBVV95cUxQNVprWkRXZ2tLdmw1Rk1ETDFvbktNajFHMHUwRG1GeGc2R2JmX0RyWjIyOUh0MmhzdlhRSy13NWZURGVYY0N3bUhaY2o0cDNpZnBtR3FKUFBDUU9pVzdXUlRjSVJZQWJPT0tseTJJVTJPMS1adEJTcEhPZ2hQdVh5TmU3VlN0SlRNelBRamVaTDdoZHIxa1AyZkc4aDB5bUZqcW51T1FneWY1X3VkMzluRVctVU53Q20yNGl4VFR1TGYwRlh3MEVScHdwb1FFRlJ6T3dOZDRud29qSXlDRkVNb2N5NkpKbFFpQzNQNXNBWTNCQVVVM3dWNjFMTFVMaXlUVUYxOUlCa0xxSktudUtfbEo5cEpNMnpHc3hXdXBHaWFTSUhac3dabmdhelhnY3V3UGJDdjVkU1NaLUFfa25xdFFFZW5VaS1Hdk1NYlVRdktfclAtM0d4VG5GdVMzRFZ2?oc=5",
-        "date": "Wed, 26 Aug 2026 07:24:00 GMT",
-        "summary": "Claude-maker Anthropic is set to make hundreds of its employees millionaires and it is worrying CEO Dario The Times of India",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:36654aba637b6a88303436a079602c58db01e83ebe117bd5e787bd3f0295f506",
-        "label": "Amazon.com vs. e.l.f. Beauty: Which High-Growth Consumer Stock Is a Better Investment in 2026? - The Motley Fool",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Motley Fool",
-        "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWEcySGJmOTNxOXgwSGNUcTVkZ1piNHhVTHJ4WXhKaU12X281Q3lKaE00UGNpTk93bktsYWdpN2p1TS1HNzBxanRWLUdwR29zNFlDOF9KbG01aEF4LUtadVNGZkVfWEVnLThQaEs2aWRyWlJJZ2VBSzFubU9GaXE4amk3bklEUjhwel95Skc5eE9oVEJxZHBlMmlKSDJhNXBnQy04aWVtckFPMzFDcmVQZ2p0Q0hvSTdGS1MwazVEaUtYLVZ6d1EwQlE4N0d1bUN3enNfaGlNbUFEX00?oc=5",
-        "date": "Wed, 26 Aug 2026 06:32:50 GMT",
-        "summary": "Amazon.com vs. e.l.f. Beauty: Which High-Growth Consumer Stock Is a Better Investment in 2026? The Motley Fool",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:813764e0fe9f8ebfcab556fb6970e36d5766b1d47d5aaa2b4f537b82db001e53",
-        "label": "Microsoft Just Ripped 28% in a Month. What Would It Take to Get MSFT Stock Up to $600? - 24/7 Wall St.",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZDVfQV9ZaDF1UnBrYnJtdGNXRVBORHc1bzNZSE5EdGZjVDBJbTNkVlVQZ04zeEFnOVd5clRHQmNfSG41TUZUemFfcnhEUUJTTE1wRnA4TUVOY0dLMnJucWZiR0kzanJQSlQ3Q05BcTUxSWtIcFkwbXFPd2hFN1VOZTBXWUl3QWhlRk01U1F1Mlh1ck5yTXF4RDVJMjlMQ2FZQXZsT05QU3RuMExaRjF1eTgyQ3dDWm5nb1lZZVBDQTFfRkM2?oc=5",
-        "date": "Tue, 25 Aug 2026 19:41:01 GMT",
-        "summary": "Microsoft Just Ripped 28% in a Month. What Would It Take to Get MSFT Stock Up to $600? 24/7 Wall St.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1a6b10951a8ef0c83d50ee3bd094e5d8ceee06f21f50dffc6c8d322bd7595081",
-        "label": "Nvidia Earnings and Jackson Hole Are the Stock Market\u2019s Next Big Tests - Barron's",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Barron's",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNd2s2UXZEbWM3Q2tqUE5ONzc1bXJvSG1PUVZFMDBFSEZwTnVRTW9kdWNHa1lYSE53R2h1cm81WjRsS0VvVUNCLTRvajhlaGZHRUNoMkRYMXVxYWRPc2N4dEM1aEk2Y3k3eHZVZEFrd3gwR21vYnpPdUtZckxpdGpKRDJ1SE5qODlqWVNtcjI2bHdOYkE5a3pQNmNSNW5DdHhGN0NTbXBIYXF3YlVGM2ZHZA?oc=5",
-        "date": "Wed, 26 Aug 2026 05:00:00 GMT",
-        "summary": "Nvidia Earnings and Jackson Hole Are the Stock Market\u2019s Next Big Tests Barron's",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cc8128e1d5f39f3cb5115fddefa5c667f00cef3c13a029d80f518c8db4353107",
-        "label": "Jack Ma, Alibaba top executives buy $102m of stock after record share sale - Nikkei Asia",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Nikkei Asia",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMHp6d3FnM2dFcnlWSGR4Zzgyem95eGtaWnI4bjdRVVpXeXhCSnIzRWtzaUJpWUFEU29wam5zVDRJTFhxbHFxSXZEOWFjS21FMXBWS1ZNYllaQkhlejVvaWRwUjd2TW9TeGRYZ191bmxwRng2RS05bjZTWWZmQnRDMk03X0N2NUw5UnJBSWFyU2pmanBMd1lvY3Z4Q2VER1o0Z25LeEJCVGFtM1E2S1dQYTNHOA?oc=5",
-        "date": "Wed, 26 Aug 2026 06:03:00 GMT",
-        "summary": "Jack Ma, Alibaba top executives buy $102m of stock after record share sale Nikkei Asia",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b4cc731edf01abe6288df4c19cf360c9db8ce7b4ffb479d435df64682608c2f3",
-        "label": "DeepSeek\u2019s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025 - The Information",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Information",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPSy0tcEswZzRDRWxKTTRlRGdrdk1mWU04a0FMcUpjLWlVVlduTlZHUi1KQUVFRFNvTmRlekpuczYtaFlvZEx4RjlodlZ6YWF6SjZpWEhualN4aDRDekxhT2FtRmVtSXNFSi1aVkxleUsxNDY2OE0xNXFuV2N1QnpSQ2hyN2RDc3ZrbGhiQVU3ZHJCbkFnRjF5NzZqRzJrcDZ0?oc=5",
-        "date": "Wed, 26 Aug 2026 06:50:00 GMT",
-        "summary": "DeepSeek\u2019s Revenue Reaches $70 Million as of July, Tenfold Jump from 2025 The Information",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8c94d767d4885775aa90fa080c39079804a81f03b157fa9d0c27ed0cfe729563",
-        "label": "Whatever Happens on Wednesday, Nvidia Stock Will Almost Certainly Be Cheaper After Earnings - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ05IY2VrWnNlazlnNE1IVFpOeXFpNGxqLVhRQzJSS1RjZ203d0ZsX1RYTXJKUUlQb3d2S1A1NmQyTndOSkFZdldXUk9obTRUejgweWM0YlEyajNCNEwzOGMzN2FxUkVPUjRfeldTLUVtSmZlT2dka056X0VwRUlVRjlyc0F6MExVa1V6cEpTMzE4WkRrQVkyenVZcE5DZ3IxNDRMQ1hUSQ?oc=5",
-        "date": "Wed, 26 Aug 2026 03:35:00 GMT",
-        "summary": "Whatever Happens on Wednesday, Nvidia Stock Will Almost Certainly Be Cheaper After Earnings Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a2f902b8b12e1a5c8bdd1f4d03a0add8e8a5edd96106372a1ca10df6b9deecf9",
-        "label": "Alibaba Earnings Call: AI Bet Drives Growth, Strains Cash - The Globe and Mail",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Globe and Mail",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSFo2VWNlTmYyWXd5V2t2UDdsbHhfSzZlRHlRVmNtdjgtc1J4NnhmemxHQmZ6aXprXzlXb21oZlVaaEttYU5Ea3YtQ2Y3dUxZX0Z1b19Vb3JvVGk2bnc3azdkN1pPVHRQMmFkQU14ZTRDdFYtVDlma3g4UThuNlpMNU9ETnVqSm9iRVFOUlZnbjRlZEpqT3JKZHNwem5kYjVqcFEzNFQ3WGhPLUdYMHk0T0dMOGhDX2p3SzVlZmlKRzJBZ2k5dzg0WVd6c0ZfLTRZR3RIOVM0WQ?oc=5",
-        "date": "Wed, 26 Aug 2026 00:39:23 GMT",
-        "summary": "Alibaba Earnings Call: AI Bet Drives Growth, Strains Cash The Globe and Mail",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7b7922ed0f637b088a51b01e18362e64bc4fd2b75fb7ff6e5b94bcd7532da958",
-        "label": "Trader Claude Aug 25: AI Trading Bot Results - StartupHub.ai",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "StartupHub.ai",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNT21JNUY1cnE0aUlaV3BOSm9INWgzYXBsaEhHYlVSMWNrd3ZsWFpwVjdKVnYzR2FreWtBX194cnNIUDZzWm9yYTRWNkdPdGNuM25fMlh6dnowZFZPUjQ2SzNkV3did0FHWWZFTV93QnpfSm1fNl9GZ0J2R0prNV9HTDI4cXNaZw?oc=5",
-        "date": "Tue, 25 Aug 2026 14:00:00 GMT",
-        "summary": "Trader Claude Aug 25: AI Trading Bot Results StartupHub.ai",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -11657,6 +11663,20 @@
       {
         "source": "X (Twitter)",
         "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:f09f008f4fdeb65e9db2d1766f3d793cf2ee98670048b4584af9e4fdcca0dfd4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:0e6c95f1100533bb6d1c47bcc70629487a4aed418bed8d518bb193b745ba7cc0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -14679,6 +14699,13 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:be462daf5f56c5392c9356bea75e49aa976090ae3b91678efe9de5ebdfefb935",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:eb8bcf897e7dcdb68f4a96a33ad9743659c95c90aac29b9776f212cbc188b853",
         "type": "EVIDENCE",
@@ -16905,6 +16932,34 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:e32d524b1951f642ae03d2041d97eaa7c519e3302c397c373f66eab2a5c6e45c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:e32d524b1951f642ae03d2041d97eaa7c519e3302c397c373f66eab2a5c6e45c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:cb817877d662132d1ded3bd094c7155e7ae6e5a1b13521ec254d3484a860e587",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SoftBank",
+        "target": "evidence:cb817877d662132d1ded3bd094c7155e7ae6e5a1b13521ec254d3484a860e587",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:ae0ce7288905644a78b3c63aabce90a12a533a606d592b8681bcf5bfd26a30fd",
         "type": "EVIDENCE",
@@ -18585,6 +18640,111 @@
         "mentions": 1
       },
       {
+        "source": "Alphabet",
+        "target": "evidence:a54cd8a3514c79be7a50dd74ab6f8b8348f77fa49e934dc2473b3a517ba2f6e5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:207208a5a0ea68c541afaecd7018649a07d0b93d81d26f284b0df9806dd6be7c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:8d8ad9b07d38057b6758cce55244f9fb4297edffd944e45a88f5406c92d8cd19",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:c3ce6bfdde83a03ba96fb60e89c7355a871b687cd217c7610374c4f229c87560",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:7830cbd0d9a217f058b6610886620f6a64892e0374e2baad25b27b832d698fae",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:3a1f38fa5a2f2a2875f1cdd74dea384d928b2cd4145c2fd905a4b48aaf759aab",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:103a0dcb6a582dca6d6654eed0cdd9812d6af4d916a525befae143a735b822dc",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:07dda4d475a774c0273678996992e18c7464c3ddf0b483d73e443b42d8986d10",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Baidu",
+        "target": "evidence:2f96e7f5f8a44ddb718d70133757a57aa5ad075aa2acf91761e4308bc0e03a4f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:6de3009feffcaa607714b5219d8b3371a17d4983f1aebdd3c6f292cdf995e7ca",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:4dc08785a96d80b587e9b268e960c12b20ffbdbf546d15a2ddfacbe6a77c26b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:892a6a194cdf6aa531d17c89b54500de600d00471c26fb022736f0519397cf60",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:b5fbebf2d768dafc2c2a25c7167a386dd5ee7a8664a18d30cbe6559c0c006bde",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:84b315eafc2796183a24f29164a8cc29463419c889c5986e0dd30f1ebca6b950",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:61e8cc114a514eb22c4c10c9c5691270445792568c2adcd33f5073084aeb27de",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:248790919eab493c4ab1bd073319ee2034787c28c01db1c436df159efd45f981",
         "type": "EVIDENCE",
@@ -18818,146 +18978,6 @@
       {
         "source": "MiniMax",
         "target": "evidence:10348a687b8a61d59b1abd54f187c3bb6d2bd5894698e105d1f8ab354d8c0423",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:67a7cc1b6a654155ef3ad00d0a0b6da3e87ad207d5d9832a7a93ebf7277f9b46",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:613c5e5821e35e442ba542f48ffc464b3d0d7e5f0fa3c917206d006d158ae6ee",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:8a686f00cc62c620cb73e69e2b8fd5e782521065216e125fcc9412a0be9dd175",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:e3728792d92c43b94ae1376a691cb6a199babae6aa65afa02a8ce2919450a52b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:f16806870d55e87414759e7720d8d6cc410f57d42695500a69b494512d457c2c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:195ffeb6fabedc7b13d24bfa131c933e00e5220d3901067781464c4e222f174d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:c55835370ab94d2365118058a2c25d73782dda6462187d3b39db43d71d40f392",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:1371ed9116721ea041a5e5e84e08485becbe710e33bdcab748e9ef6a754a47d7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:86289be0d4b4a8dc834c4f2bdda40028535cbdebc8d27cd66e50a8a87fedcf8e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:b302369907900fb399441aa9e78d8bd532368526b0428518db8e273560e4e334",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:4fc533d023be457448850333ae8e6c4bf20f70c77c516cb8b8e688dc3ee717bb",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:5a9aa130f88801ccb9bdc4a0bd7d3a6594f3a52c9d5e488473f255ca1892c1b8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:36654aba637b6a88303436a079602c58db01e83ebe117bd5e787bd3f0295f506",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:813764e0fe9f8ebfcab556fb6970e36d5766b1d47d5aaa2b4f537b82db001e53",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:1a6b10951a8ef0c83d50ee3bd094e5d8ceee06f21f50dffc6c8d322bd7595081",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:cc8128e1d5f39f3cb5115fddefa5c667f00cef3c13a029d80f518c8db4353107",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:b4cc731edf01abe6288df4c19cf360c9db8ce7b4ffb479d435df64682608c2f3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:8c94d767d4885775aa90fa080c39079804a81f03b157fa9d0c27ed0cfe729563",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:a2f902b8b12e1a5c8bdd1f4d03a0add8e8a5edd96106372a1ca10df6b9deecf9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:7b7922ed0f637b088a51b01e18362e64bc4fd2b75fb7ff6e5b94bcd7532da958",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -32278,7 +32298,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.86,
-      "mentions": 4,
+      "mentions": 7,
       "review_status": "flagged",
       "evidence_text": "Accordingly, the investment in the JV is accounted for as an equity method investment and is included in other non-current assets on the condensed consolidated balance sheets.",
       "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
@@ -32323,7 +32343,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.88,
-      "mentions": 1,
+      "mentions": 2,
       "review_status": "flagged",
       "evidence_text": "These forward-looking statements are not guarantees of future performance and speak only as of the date hereof, and, except as required by law, NVIDIA disclaims any obligation to update these forward-looking statements to reflect future events or circumstances.",
       "title": "NVIDIA SEC filing: 8-K (2026-08-17)",
@@ -32338,7 +32358,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 13,
+      "mentions": 16,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-08-17)",
@@ -32353,7 +32373,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.82,
-      "mentions": 5,
+      "mentions": 7,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-08-17)",
@@ -32368,11 +32388,116 @@
       "amount": null,
       "currency": null,
       "confidence": 0.88,
-      "mentions": 9,
+      "mentions": 28,
       "review_status": "confirmed",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-08-17)",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-08-26",
+      "event_type": "PURCHASES_FROM",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 10000000000.0,
+      "currency": null,
+      "confidence": 0.78,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "We may execute repurchases from time to time, subject to market conditions, operating requirements and other investment opportunities, in the open market, in privately-negotiated transactions, pursuant to a Rule 10b5-1 trading plan or in structured share repurchase agreements in compliance with Rule 10b-18 of the Exchange Act.",
+      "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-08-26",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 105000000000000.0,
+      "currency": null,
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "guarantees 105.0 Total $ 108.5 Accrual for Product Warranty Liabilities The estimated product returns and product warranty activity consisted of the following: Three Months Ended Six Months Ended Jul 26, 2026 Jul 27, 2025 Jul 26, 2026 Jul 27, 2025 (In millions) Balance at beginning of period $ 2,948 $ 2,080 $ 2,807 $ 1,290 Additions 391 220 720 1,090 Utilization ( 401 ) ( 156 ) ( 589 ) ( 236 ) Balance at end of period $ 2,938 $ 2,144 $ 2,938 $ 2,144 For the second quarter and first half of fiscal years 2027 and 2026, the additions in product warranty liabilities primarily related to our Compute & Networking segment.",
+      "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-08-26",
+      "event_type": "GUARANTEES",
+      "source_entity": "OpenAI",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.88,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "The guarantees terminate upon certain events, including OpenAI achieving a satisfactory credit rating or after each respective lease term has completed.",
+      "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-08-26",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 105000000000.0,
+      "currency": "USD",
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "guarantees \u2013 In August 2026, we entered into guarantees, capped at a total of $ 105 billion, to provide credit support on a land, power, and shell buildout with affiliates of SB Energy Corp.",
+      "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-08-26",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Nvidia",
+      "target_entity": null,
+      "amount": 92.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "17 NVIDIA Corporation and Subsidiaries Notes to Condensed Consolidated Financial Statements (Continued) (Unaudited) Future commitments by fiscal year as of July 26, 2026, were as follows: Remainder of 2027 2028 2029 2030 2031 2032 and thereafter Total (In billions) Supply and capacity $ 92 $ 87 $ 88 $ 6 $ 5 $ 1 $ 279 Cloud service agreements 3 8 7 6 4 1 29 Data center leases not commenced \u2014 1 1 2 1 20 25 Equity investments 18 3 2 2 \u2014 \u2014 25 Capital expenditures 7 1 \u2014 \u2014 \u2014 \u2014 8 Total $ 120 $ 100 $ 98 $ 16 $ 10 $ 22 $ 366 Supply and capacity \u2013 We have partnered with our extensive network to secure the necessary supply and critical components needed to meet demand for the next several years, increasing supply commitments from $ 119 billion last quarter to $ 279 billion as of July 26, 2026.",
+      "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-08-26",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 2.0,
+      "currency": "USD",
+      "confidence": 0.88,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "Derivative Financial Instrument Notional Values The table below presents the notional values of our derivatives outstanding: Jul 26, 2026 Jan 25, 2026 (In millions) Foreign currency contracts designated as accounting hedges $ 2,162 $ 1,765 Not designated as accounting hedges: Foreign currency contracts $ 2,252 $ 2,332 Land, power, and shell guarantees for AI clouds (1) $ 3,529 $ 3,530 Public company warrants $ 4,800 $ \u2014 Equity forward contract $ 1,000 $ \u2014 (1) The maximum gross exposure under all agreements is reduced as the partners make payments to the lessors over terms ranging from five to seven years.",
+      "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-08-26",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 2000000.0,
+      "currency": null,
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "nvda-20260726 0001045810 1/31 2027 Q2 FALSE P3Y P5Y P7Y http://fasb.org/us-gaap/2026#AccruedLiabilitiesCurrent 372 546 570 xbrli:shares iso4217:USD iso4217:USD xbrli:shares xbrli:pure utr:GW nvda:segment 0001045810 2026-01-26 2026-07-26 0001045810 2026-08-21 0001045810 2026-04-27 2026-07-26 0001045810 2025-04-28 2025-07-27 0001045810 2025-01-27 2025-07-27 0001045810 2026-07-26 0001045810 2026-01-25 0001045810 us-gaap:CommonStockMember 2026-04-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-04-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-04-26 0001045810 us-gaap:RetainedEarningsMember 2026-04-26 0001045810 2026-04-26 0001045810 us-gaap:RetainedEarningsMember 2026-04-27 2026-07-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-04-27 2026-07-26 0001045810 us-gaap:CommonStockMember 2026-04-27 2026-07-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-04-27 2026-07-26 0001045810 us-gaap:CommonStockMember 2026-07-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-07-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-07-26 0001045810 us-gaap:RetainedEarningsMember 2026-07-26 0001045810 us-gaap:CommonStockMember 2025-04-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-04-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-04-27 0001045810 us-gaap:RetainedEarningsMember 2025-04-27 0001045810 2025-04-27 0001045810 us-gaap:RetainedEarningsMember 2025-04-28 2025-07-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-04-28 2025-07-27 0001045810 us-gaap:CommonStockMember 2025-04-28 2025-07-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-04-28 2025-07-27 0001045810 us-gaap:CommonStockMember 2025-07-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-07-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-07-27 0001045810 us-gaap:RetainedEarningsMember 2025-07-27 0001045810 2025-07-27 0001045810 us-gaap:CommonStockMember 2026-01-25 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-01-25 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-01-25 0001045810 us-gaap:RetainedEarningsMember 2026-01-25 0001045810 us-gaap:RetainedEarningsMember 2026-01-26 2026-07-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-01-26 2026-07-26 0001045810 us-gaap:CommonStockMember 2026-01-26 2026-07-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-01-26 2026-07-26 0001045810 us-gaap:CommonStockMember 2025-01-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-01-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-01-26 0001045810 us-gaap:RetainedEarningsMember 2025-01-26 0001045810 2025-01-26 0001045810 us-gaap:RetainedEarningsMember 2025-01-27 2025-07-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-01-27 2025-07-27 0001045810 us-gaap:CommonStockMember 2025-01-27 2025-07-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-01-27 2025-07-27 0001045810 us-gaap:CostOfRevenue 2026-04-27 2026-07-26 0001045810 us-gaap:CostOfRevenue 2025-04-28 2025-07-27 0001045810 us-gaap:CostOfRevenue 2026-01-26 2026-07-26 0001045810 us-gaap:CostOfRevenue 2025-01-27 2025-07-27 0001045810 us-gaap:ResearchAndDevelopmentExpense 2026-04-27 2026-07-26 0001045810 us-gaap:ResearchAndDevelopmentExpense 2025-04-28 2025-07-27 0001045810 us-gaap:ResearchAndDevelopmentExpense 2026-01-26 2026-07-26 0001045810 us-gaap:ResearchAndDevelopmentExpense 2025-01-27 2025-07-27 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2026-04-27 2026-07-26 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2025-04-28 2025-07-27 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2026-01-26 2026-07-26 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2025-01-27 2025-07-27 0001045810 nvda:RSUsPSUsandMarketbasedPSUsMember 2026-01-25 0001045810 nvda:RSUsPSUsandMarketbasedPSUsMember 2026-01-26 2026-07-26 0001045810 nvda:RSUsPSUsandMarketbasedPSUsMember 2026-07-26 0001045810 us-gaap:EmployeeStockMember 2026-01-26 2026-07-26 0001045810 nvda:IntangibleAssetsArisingFromBusinessCombinationMember 2026-07-26 0001045810 nvda:IntangibleAssetsArisingFromBusinessCombinationMember 2026-01-25 0001045810 nvda:PatentsAndLicensedTechnologyMember 2026-07-26 0001045810 nvda:PatentsAndLicensedTechnologyMember 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:CashAndCashEquivalentsAtCarryingValue 2026-07-26 0001045810 us-gaap:DebtSecuritiesCurrent 2026-07-26 0001045810 us-gaap:EquitySecuritiesFvNi 2026-07-26 0001045810 us-gaap:OtherAssetsNoncurrent 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-04-27 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-01-26 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2025-04-28 2025-07-27 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2025-01-27 2025-07-27 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:CashAndCashEquivalentsAtCarryingValue 2026-01-25 0001045810 us-gaap:DebtSecuritiesCurrent 2026-01-25 0001045810 us-gaap:EquitySecuritiesFvNi 2026-01-25 0001045810 us-gaap:OtherAssetsNoncurrent 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-01-25 0001045810 us-gaap:EquitySecuritiesMember 2026-07-26 0001045810 nvda:CarryingValuesAndFutureCommittedAmountsMember 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerAMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerBMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerCMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerDMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerEMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerFMember us-gaap:AccountsReceivableMember 2025-01-27 2026-01-25 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerGMember us-gaap:AccountsReceivableMember 2025-01-27 2026-01-25 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerHMember us-gaap:AccountsReceivableMember 2025-01-27 2026-01-25 0001045810 nvda:InvestmentGradeCustomerMember srt:MinimumMember 2026-07-26 0001045810 nvda:InvestmentGradeCustomerMember srt:MaximumMember 2026-07-26 0001045810 nvda:NatureOfExpenseCustomerAdvancesAndDeferralsMember 2026-07-26 0001045810 nvda:NatureOfExpenseCustomerAdvancesAndDeferralsMember 2026-01-25 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2026-04-27 2026-07-26 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2025-04-28 2025-07-27 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2026-01-26 2026-07-26 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2025-01-27 2025-07-27 0001045810 2026-07-27 2026-07-26 0001045810 us-gaap:ForeignExchangeForwardMember 2026-01-26 2026-07-26 0001045810 nvda:PublicCompanyWarrantsMember srt:MinimumMember 2026-07-26 0001045810 nvda:PublicCompanyWarrantsMember srt:MaximumMember 2026-07-26 0001045810 us-gaap:NondesignatedMember nvda:PublicCompanyWarrantsMember 2026-07-26 0001045810 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:ForeignExchangeForwardMember 2026-07-26 0001045810 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:ForeignExchangeForwardMember 2026-01-25 0001045810 us-gaap:NondesignatedMember us-gaap:ForeignExchangeForwardMember 2026-07-26 0001045810 us-gaap:NondesignatedMember us-gaap:ForeignExchangeForwardMember 2026-01-25 0001045810 us-gaap:NondesignatedMember nvda:LandPowerAndShellGuaranteesForAICloudsMember 2026-07-26 0001045810 us-gaap:NondesignatedMember nvda:LandPowerAndShellGuaranteesForAICloudsMember 2026-01-25 0001045810 us-gaap:NondesignatedMember nvda:PublicCompanyWarrantsMember 2026-01-25 0001045810 us-gaap:NondesignatedMember nvda:EquityForwardContractMember 2026-07-26 0001045810 us-gaap:NondesignatedMember nvda:EquityForwardContractMember 2026-01-25 0001045810 nvda:LandPowerAndShellGuaranteesForAICloudsMember srt:MinimumMember 2026-01-26 2026-07-26 0001045810 nvda:LandPowerAndShellGuaranteesForAICloudsMember srt:MaximumMember 2026-01-26 2026-07-26 0001045810 nvda:LandPowerAndShellGuaranteesForAICloudsMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2026NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2026NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2026NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesOneMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesOneMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesOneMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesTwoMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesTwoMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesTwoMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2029NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2029NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2029NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2030NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2030NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2030NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesOneMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesOneMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesOneMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesTwoMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesTwoMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesTwoMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2033NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2033NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2033NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2036NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2036NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2036NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2040NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2040NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2040NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2046NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2046NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2046NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2050NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2050NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2050NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2056NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2056NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2056NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2060NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2060NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2060NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember 2026-06-30 0001045810 us-gaap:CommercialPaperMember nvda:CommercialPaperProgramMember 2026-07-26 0001045810 nvda:SupplyAndCapacityCommitmentsMember 2026-07-26 0001045810 nvda:CloudServiceAgreementCommitmentsMember 2026-07-26 0001045810 nvda:DataCenterLeaseNotYetCommencedMember 2026-07-26 0001045810 nvda:EquityInvestmentCommitmentsMember 2026-07-26 0001045810 nvda:CapitalExpenditureObligationsMember 2026-07-26 0001045810 nvda:FuturePurchaseAndOtherCommitmentsMember 2026-07-26 0001045810 nvda:SupplyAndCapacityCommitmentsMember 2026-04-26 0001045810 nvda:AICloudPartnershipCommitmentsMember 2026-07-26 0001045810 nvda:DataCenterForThirdPartyLeaseNotYetCommencedMember 2026-07-26 0001045810 nvda:FutureAdditionalCommitmentsMember 2026-07-26 0001045810 us-gaap:FinancialGuaranteeMember us-gaap:SubsequentEventMember nvda:SBEnergyCorp.Member 2026-08-31 0001045810 us-gaap:FinancialGuaranteeMember 2026-07-26 0001045810 2026-05-18 0001045810 2026-01-26 2026-04-26 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2026-04-27 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2026-04-27 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember 2026-04-27 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2025-04-28 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2025-04-28 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember 2025-04-28 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2026-01-26 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2026-01-26 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember 2026-01-26 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2025-01-27 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2025-01-27 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember 2025-01-27 2025-07-27 0001045810 nvda:ComputeAndNetworkingSegmentMember 2026-04-27 2026-07-26 0001045810 nvda:ComputeAndNetworkingSegmentMember 2025-04-28 2025-07-27 0001045810 nvda:ComputeAndNetworkingSegmentMember 2026-01-26 2026-07-26 0001045810 nvda:ComputeAndNetworkingSegmentMember 2025-01-27 2025-07-27 0001045810 nvda:GraphicsSegmentMember 2026-04-27 2026-07-26 0001045810 nvda:GraphicsSegmentMember 2025-04-28 2025-07-27 0001045810 nvda:GraphicsSegmentMember 2026-01-26 2026-07-26 0001045810 nvda:GraphicsSegmentMember 2025-01-27 2025-07-27 0001045810 us-gaap:CorporateNonSegmentMember 2026-04-27 2026-07-26 0001045810 us-gaap:CorporateNonSegmentMember 2025-04-28 2025-07-27 0001045810 us-gaap:CorporateNonSegmentMember 2026-01-26 2026-07-26 0001045810 us-gaap:CorporateNonSegmentMember 2025-01-27 2025-07-27 0001045810 country:US 2026-04-27 2026-07-26 0001045810 country:US 2025-04-28 2025-07-27 0001045810 country:US 2026-01-26 2026-07-26 0001045810 country:US 2025-01-27 2025-07-27 0001045810 country:TW 2026-04-27 2026-07-26 0001045810 country:TW 2025-04-28 2025-07-27 0001045810 country:TW 2026-01-26 2026-07-26 0001045810 country:TW 2025-01-27 2025-07-27 0001045810 nvda:ChinaIncludingHongKongMember 2026-04-27 2026-07-26 0001045810 nvda:ChinaIncludingHongKongMember 2025-04-28 2025-07-27 0001045810 nvda:ChinaIncludingHongKongMember 2026-01-26 2026-07-26 0001045810 nvda:ChinaIncludingHongKongMember 2025-01-27 2025-07-27 0001045810 nvda:OtherCountriesMember 2026-04-27 2026-07-26 0001045810 nvda:OtherCountriesMember 2025-04-28 2025-07-27 0001045810 nvda:OtherCountriesMember 2026-01-26 2026-07-26 0001045810 nvda:OtherCountriesMember 2025-01-27 2025-07-27 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2026-04-27 2026-07-26 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2026-01-26 2026-07-26 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2025-04-28 2025-07-27 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2025-01-27 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer1Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-04-27 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer2Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer3Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer4Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer5Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-04-28 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer6Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-04-28 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer7Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-01-27 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer8Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-01-27 2025-07-27 0001045810 nvda:DataCenterMember 2026-04-27 2026-07-26 0001045810 nvda:DataCenterMember 2025-04-28 2025-07-27 0001045810 nvda:DataCenterMember 2026-01-26 2026-07-26 0001045810 nvda:DataCenterMember 2025-01-27 2025-07-27 0001045810 nvda:HyperscaleMember 2026-04-27 2026-07-26 0001045810 nvda:HyperscaleMember 2025-04-28 2025-07-27 0001045810 nvda:HyperscaleMember 2026-01-26 2026-07-26 0001045810 nvda:HyperscaleMember 2025-01-27 2025-07-27 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2026-04-27 2026-07-26 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2025-04-28 2025-07-27 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2026-01-26 2026-07-26 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2025-01-27 2025-07-27 0001045810 nvda:EdgeComputingMember 2026-04-27 2026-07-26 0001045810 nvda:EdgeComputingMember 2025-04-28 2025-07-27 0001045810 nvda:EdgeComputingMember 2026-01-26 2026-07-26 0001045810 nvda:EdgeComputingMember 2025-01-27 2025-07-27 0001045810 nvda:AartiShahMember 2026-04-27 2026-07-26 0001045810 nvda:AartiShahMember 2026-07-26 0001045810 nvda:TimothyS.TeterMember 2026-04-27 2026-07-26 0001045810 nvda:TimothyS.TeterMember 2026-07-26 0001045810 nvda:ColetteM.KressMember 2026-04-27 2026-07-26 0001045810 nvda:ColetteM.KressMember 2026-07-26 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C.",
+      "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
       "source": "SEC EDGAR"
     },
     {
@@ -33578,23 +33703,23 @@
   ],
   "collector_runs": [
     {
-      "id": 539,
+      "id": 543,
       "collector": "company-economic-news",
-      "started_at": "2026-08-26T19:19:51.131586+00:00",
-      "completed_at": "2026-08-26T19:20:16.637050+00:00",
+      "started_at": "2026-08-26T23:32:35.871778+00:00",
+      "completed_at": "2026-08-26T23:32:59.475501+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 11,
+      "items_new": 17,
       "error": null
     },
     {
-      "id": 540,
+      "id": 544,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-26T19:20:17.037858+00:00",
-      "completed_at": "2026-08-26T19:20:17.499305+00:00",
+      "started_at": "2026-08-26T23:32:59.876360+00:00",
+      "completed_at": "2026-08-26T23:33:00.704640+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 1,
       "error": null
     },
     {
@@ -33608,23 +33733,23 @@
       "error": null
     },
     {
-      "id": 538,
+      "id": 542,
       "collector": "google-news-rss",
-      "started_at": "2026-08-26T19:19:50.131205+00:00",
-      "completed_at": "2026-08-26T19:19:50.730484+00:00",
+      "started_at": "2026-08-26T23:32:34.116307+00:00",
+      "completed_at": "2026-08-26T23:32:35.470883+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
-      "id": 541,
+      "id": 545,
       "collector": "sec-edgar",
-      "started_at": "2026-08-26T19:20:17.900355+00:00",
-      "completed_at": "2026-08-26T19:20:19.739299+00:00",
+      "started_at": "2026-08-26T23:33:01.105361+00:00",
+      "completed_at": "2026-08-26T23:33:03.892606+00:00",
       "status": "ok",
       "items_seen": 21,
-      "items_new": 0,
+      "items_new": 2,
       "error": null
     },
     {
@@ -33639,10 +33764,10 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 974,
-  "mention_count": 2378,
+  "event_count": 981,
+  "mention_count": 2413,
   "review_counts": {
-    "provisional": 3,
+    "provisional": 10,
     "confirmed": 275,
     "flagged": 696,
     "flagged_retry_pending": 0
