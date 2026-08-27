@@ -13,15 +13,19 @@ def _inputs(tmp_path: Path) -> tuple[sqlite3.Connection, Path, Path]:
     connection = sqlite3.connect(":memory:")
     connection.row_factory = sqlite3.Row
     connection.executescript(
-        """CREATE TABLE documents(id TEXT);
-           CREATE TABLE economic_events(id TEXT,review_status TEXT);
-           CREATE TABLE financial_events(id TEXT);
+        """CREATE TABLE items(id TEXT,score REAL,discovered_at TEXT);
+           CREATE TABLE documents(id TEXT);
+           CREATE TABLE economic_events(
+             canonical_event_id TEXT,review_status TEXT,first_seen TEXT);
+           CREATE TABLE financial_events(event_id TEXT,document_id TEXT);
            CREATE TABLE collector_runs(
              id INTEGER PRIMARY KEY,collector TEXT,started_at TEXT,completed_at TEXT,
              status TEXT,collection_execution_id TEXT);
+           INSERT INTO items VALUES('document',1.0,'2026-08-27T12:00:00+00:00');
            INSERT INTO documents VALUES('document');
-           INSERT INTO economic_events VALUES('fact','confirmed');
-           INSERT INTO financial_events VALUES('mention');"""
+           INSERT INTO economic_events VALUES(
+             'mention','confirmed','2026-08-27T12:00:00+00:00');
+           INSERT INTO financial_events VALUES('mention','document');"""
     )
     for run_id, collector in enumerate(sorted(CURRENT_COLLECTORS), start=1):
         connection.execute(
@@ -146,6 +150,6 @@ def test_release_rejects_stale_or_future_site(
 
 def test_release_rejects_count_mismatch(tmp_path: Path) -> None:
     connection, snapshot, proof = _inputs(tmp_path)
-    connection.execute("INSERT INTO documents VALUES('extra')")
+    connection.execute("INSERT INTO items VALUES('extra',0.5,'2026-08-27T12:00:00+00:00')")
     with pytest.raises(ValueError, match="counts"):
         _validate(connection, snapshot, proof)

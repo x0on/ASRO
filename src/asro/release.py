@@ -82,10 +82,25 @@ def validate_release(
             raise ValueError(f"collector timing is invalid: {name}")
         if generated_at < completed:
             raise ValueError("site predates its collection proof")
-    document_count = int(connection.execute("SELECT COUNT(*) FROM documents").fetchone()[0])
+    # Mirror the exact bounded queries used to serialize the public snapshot.
+    document_count = int(
+        connection.execute(
+            """SELECT COUNT(*) FROM (
+                   SELECT 1 FROM items
+                   ORDER BY score DESC, discovered_at DESC LIMIT 1500
+               )"""
+        ).fetchone()[0]
+    )
     event_count = int(
         connection.execute(
-            "SELECT COUNT(*) FROM economic_events WHERE review_status!='merged'"
+            """SELECT COUNT(*) FROM (
+                   SELECT 1
+                   FROM economic_events ec
+                   JOIN financial_events e ON e.event_id = ec.canonical_event_id
+                   JOIN items i ON i.id = e.document_id
+                   WHERE ec.review_status != 'merged'
+                   ORDER BY ec.first_seen DESC LIMIT 5000
+               )"""
         ).fetchone()[0]
     )
     mention_count = int(connection.execute("SELECT COUNT(*) FROM financial_events").fetchone()[0])
