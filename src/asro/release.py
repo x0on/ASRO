@@ -28,7 +28,9 @@ def write_collection_proof(
         "collection_execution_id": collection_execution_id,
         "collector_run_ids": sorted(collector_run_ids),
         "workflow_run_id": workflow_run_id,
-        "created_at": datetime.now(UTC).isoformat(timespec="seconds"),
+        # Keep full precision so a collector completed in this same second cannot
+        # appear to finish after the proof that records it.
+        "created_at": datetime.now(UTC).isoformat(timespec="microseconds"),
         "collectors": [str(row["collector"]) for row in rows],
     }
     path.parent.mkdir(parents=True, exist_ok=True)

@@ -5,7 +5,8 @@ from pathlib import Path
 
 import pytest
 
-from asro.release import CURRENT_COLLECTORS, validate_release
+import asro.release as release_module
+from asro.release import CURRENT_COLLECTORS, validate_release, write_collection_proof
 
 
 def _inputs(tmp_path: Path) -> tuple[sqlite3.Connection, Path, Path]:
@@ -75,6 +76,33 @@ def _validate(connection: sqlite3.Connection, snapshot: Path, proof: Path) -> di
 def test_release_accepts_one_exact_successful_collection(tmp_path: Path) -> None:
     connection, snapshot, proof = _inputs(tmp_path)
     assert _validate(connection, snapshot, proof)["releaseable"] is True
+
+
+def test_collection_proof_preserves_subsecond_ordering(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    connection, _snapshot, proof = _inputs(tmp_path)
+
+    class FixedDateTime(datetime):
+        @classmethod
+        def now(cls, tz: object = None) -> datetime:
+            return cls(2026, 8, 27, 12, 10, 0, 900_000, tzinfo=UTC)
+
+    monkeypatch.setattr(release_module, "datetime", FixedDateTime)
+    connection.execute(
+        "UPDATE collector_runs SET completed_at=? WHERE id=1",
+        ("2026-08-27T12:10:00.800000+00:00",),
+    )
+    write_collection_proof(
+        connection,
+        proof,
+        collection_execution_id="execution-current",
+        collector_run_ids=[1, 2, 3, 4],
+        workflow_run_id="workflow-current",
+    )
+
+    payload = json.loads(proof.read_text(encoding="utf-8"))
+    assert payload["created_at"] == "2026-08-27T12:10:00.900000+00:00"
 
 
 @pytest.mark.parametrize("status", ["error", "degraded", "running"])
