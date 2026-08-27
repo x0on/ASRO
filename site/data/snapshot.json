@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T20:30:48.919938+00:00",
+  "generated_at": "2026-08-27T21:21:59.996899+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "circularity": 59.4,
-    "capital": 42.64073738140746,
-    "stress": 57.1,
-    "fragility": 61.1,
     "external_pressure": 16.12,
+    "fragility": 61.1,
+    "monetization": 42.9,
+    "stress": 57.1,
     "transmission": 39.6,
+    "capital": 42.64073738140746,
     "cannibalization": 54.2,
     "counter_evidence": 42.9,
-    "monetization": 42.9
+    "circularity": 59.4
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "circularity": "directional_estimate",
-    "capital": "aggregate",
-    "stress": "directional_estimate",
-    "fragility": "directional_estimate",
     "external_pressure": "aggregate",
+    "fragility": "directional_estimate",
+    "monetization": "directional_estimate",
+    "stress": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "cannibalization": "directional_estimate",
+    "capital": "aggregate",
     "counter_evidence": "directional_estimate",
-    "monetization": "directional_estimate"
+    "cannibalization": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "circularity": {
@@ -697,6 +697,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-27T21:21:58+00:00",
+      "score": 44.9,
+      "label": "FORMING",
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"external_pressure\": 16.12, \"transmission\": 39.6, \"circularity\": 59.4}"
+    },
     {
       "captured_at": "2026-08-27T20:30:48+00:00",
       "score": 44.9,
@@ -10943,6 +10949,54 @@
         "weight": 1
       },
       {
+        "id": "evidence:b7f25f7bcaed30393323b9ff99fef6722dcf791a3e0a37775587801757ee7bfc",
+        "label": "Alibaba (BABA) Reportedly Nears Lingxi Games Divestiture - simplywall.st",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "simplywall.st",
+        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZ2UzYmhpVVRUcHFFM1lib1Bjb1E4LUx3bjRxQmF5V2ZPOW50ME1BQlNWb25NQTFMQlhldE0wSkFqR1k4blFoVEtmdkV6OE95QWY4TWNUbnBiRF9GZDlMNTJUR3ZRdXd2ejRWdzZhNGxiLW83bS1sX0dUb3k1aE5LZWxTeC1KOWw1Z3FQek9iVHR0WjE5T1M2a2JFRHY4WkVtdGs2TlZxUkRKekl6SjdMdVBwOGs4VFU5Nm02YmkzbDNwc051WHRjcURIZ1BZY2fSAc8BQVVfeXFMTmdlM2JoaVVUVHBxRTNZYm9QY29ROC1Md240cUJheVdmTzludDBNQUJTVm9uTUExTEJYZXRNMEpBakdZOG5RaFRLZnZFejhPeUFmOE1jVG5wYkRfRmQ5TDUyVEd2UXV3dno0Vnc2YTRsYi1vN20tbF9HVG95NWhOS2VsU3gtSjlsNWdxUHpPYlR0dFoxOU9TNmtiRUR2OFpFbXRrNk5WcVJESnpJeko3THVQcDhrOFRVOTZtNmJpM2wzcHNOdVh0Y3FESGdQWWNn?oc=5",
+        "date": "Thu, 27 Aug 2026 11:32:33 GMT",
+        "summary": "Alibaba (BABA) Reportedly Nears Lingxi Games Divestiture simplywall.st",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7435b54ccd307fbfc80df760d1d38e7bb41f133954a53b3f75c0ae1b4cebe6f1",
+        "label": "Salesforce, Anthropic expand partnership to develop Claudeforce integrations - Digital Commerce 360",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Digital Commerce 360",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUVdyMTRiTFM0a0t4SmdzaDhWRXYyVW42N2hoQVo4eS1lTGp3ZmhzUDUzMzFBWXBJUk5yMWJqdElZMHh0bEJabHlGMF9KZEVIdm4xRXVmMUNib1haS01iQnhuZERvQzFRTGZSSGM0QTdJOTlqOVpKbU10UTZBXzlTTzlFV2hyTkRJeS1XRnRUQlZ1djlXOVN0ak5rZ3p3cEhSb1RnZNIBpAFBVV95cUxNUVdyMTRiTFM0a0t4SmdzaDhWRXYyVW42N2hoQVo4eS1lTGp3ZmhzUDUzMzFBWXBJUk5yMWJqdElZMHh0bEJabHlGMF9KZEVIdm4xRXVmMUNib1haS01iQnhuZERvQzFRTGZSSGM0QTdJOTlqOVpKbU10UTZBXzlTTzlFV2hyTkRJeS1XRnRUQlZ1djlXOVN0ak5rZ3p3cEhSb1RnZA?oc=5",
+        "date": "Thu, 27 Aug 2026 18:09:06 GMT",
+        "summary": "Salesforce, Anthropic expand partnership to develop Claudeforce integrations Digital Commerce 360",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c45738a5ab597cd531d3d75e61c6d3a54915ce47d0c3dfe27a22a4f21852d376",
+        "label": "Georgia Power official discusses local OpenAI partnership - WSAV-TV",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSAV-TV",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMUIwQmU3UmZpaF9lWnVCbTNqek9yd2Z4Z1lUcFBrMVg3R1ppZVBBZ2J5OHFpWEZKYzB0N05ETjRaQ1BNUVVKbjJuMTJEZ2VjcF95S0hzTnNpeWRqX0JsQUw3ZHdRQ2xFU1hmcDJyakNobjhtaHh3dHRaNkItbnlxZFpvczE5UFhnWjhHdm5uMEdXcmp1SFRxWXcyc2vSAaIBQVVfeXFMTTM2dkZ1TkxrbzFDZGZ5anlwMHhQRzBJU3JIdXdFbWV6MVRvOG11c3dTS2FLVlpTbERaR2dBYkZsSGZ1UlhsOEk5aEY3UVU0SUVVNzhobGRWSzNZZGVmSkFPeFhVeHlLS2dqblNHLXlYVlVrYjM2WUhGVk1BU3MxUmRYZGlSb0tKN3dsN1lRTFg1WnpBYXhsY2FuVEgtSUR3STNn?oc=5",
+        "date": "Thu, 27 Aug 2026 20:00:39 GMT",
+        "summary": "Georgia Power official discusses local OpenAI partnership WSAV-TV",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:cae16a31b7759cbae7baac1a21f0ed00c51b7948d01ff773a482c01d2f619212",
+        "label": "Meta Platforms $30 billion senior notes prospectus supplement",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312525261217/d762778d424b2.htm",
+        "date": "2025-10-30",
+        "summary": "Meta Platforms, Inc. offered $30,000,000,000 aggregate principal amount of senior notes in six tranches.",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:ced766a1cabb9b265fe640e45339a50b0551271cc1a11f6455f31cc6345b87d5",
         "label": "Nvidia adds more than $400 billion in value after blowout earnings boost AI confidence - CNBC",
         "kind": "evidence",
@@ -11275,54 +11329,6 @@
         "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNeXNfdGNvMjZOaEQ5b01OTUdkS1lwRURwOV9PRVNiUEZvN3VkQ00xU1NURU9GUm81LWoybjNLd2loekREM0hKT2taVkgtd2JkS0I0SzlsdjlZUlNHYTlLMEdMTnJ0NEJ2d1hsUllMZjJNSWlXMVZmQWZEUjVlZ0JmSlZOaTkybDZNNHFHVXIyRGdvRjR5N2hmelE1aDNMb1BPOS1Cbng3OGMyV1l0Nk1sX3hSRHN5c2Z5WnRMZ2g5a3ZzY0xxSXJnVGtn?oc=5",
         "date": "Thu, 27 Aug 2026 00:11:10 GMT",
         "summary": "Tencent Cloud Partners with TruKKer to Expand Saudi Arabia Cloud Operations The Fast Mode",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:36b1a581276e239d83dec3dac0005c6b9dc802041ac0b885e121e5bdb6585a10",
-        "label": "Baidu (BIDU) Q4 2025 Earnings: Results, Market Reaction & History - 24/7 Wall St.",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YUzc4Mk95Vk5mYmtycjRmbnpuVXVjNzk1cVZSemNqeFlEMXhkbVhoOEhjQjRBMm9jWnBQTzl0YThOWEJUYldUVDdFQWhqWE1NZEVVNmUyNndWRTBjVU5Ed0lzeUc?oc=5",
-        "date": "Thu, 27 Aug 2026 04:50:20 GMT",
-        "summary": "Baidu (BIDU) Q4 2025 Earnings: Results, Market Reaction & History 24/7 Wall St.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:da78dfbdc63259aab81e9d9762821aab34320958d1eac6258d0392674abe310c",
-        "label": "Alibaba unveils cheaper Qwen AI model: is this what its stock needed? - TradingView",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOakhlbXhLUUd2QTdWV0ptV2poYm1PbGhOSVllUkRuSlZOSndNOEhxQjVuaW9RaldSWlpPYjU0UEczbHBoU1E3R0V4eXd6RVRSVVp3eXVjMVN0VktoeEM2aTZsWG1leFBKTXlWSWxPdDEyVGRFVV9QUW1qcUFPcmZaOGJqVWRzQkJQaU00RzdndUVMVlhkazRxOHd5R0l2MVNWWTFCZXZYbDI5WUkxaFJVTUx1dFRfbWJrNjVhaUhUZy1ndw?oc=5",
-        "date": "Thu, 27 Aug 2026 04:35:00 GMT",
-        "summary": "Alibaba unveils cheaper Qwen AI model: is this what its stock needed? TradingView",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:36a2b290f2ea11a5030707c409452f982fef3688f01e3c86b0278896edf4c040",
-        "label": "AI Startup DeepSeek Poised to Reach $74 Billion Valuation - WSJ",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNN2ZVcER1YXNsaEthelVtNENlUXBCMzdyRV80bWhNWHBHSk5rVmMzZGJyaFZfWS1YclBDWklqc0RFTEZzYm1fSXJzd1RWVDR4U1d2QzZfWTRFTUtfa1Ewa2FBUzRGZU93dkE4dWZJM0YwdHFhaWlrLTF2ajRBaWt2TGZMS1oyclVaM0lpQms1dGx1T3JTVlFLdA?oc=5",
-        "date": "Thu, 27 Aug 2026 05:18:00 GMT",
-        "summary": "AI Startup DeepSeek Poised to Reach $74 Billion Valuation WSJ",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cdbe9eadd32f19bf9ccb8edaa1f9c5fd52764ba61435f7bacfc2da12daa08051",
-        "label": "Salesforce and Anthropic Announce Claudeforce: The #1 AI Meets the #1 AI CRM - Salesforce",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Salesforce",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPcklqU2RlQWZLY3c5dG9uaF83Z0xHSHNuQzNHSGZOTWw3c2wzSmtGTE45VzlWaF80R2tON1JfcFhFVC1walRFUmRyVDA1UkdoQ3pydUdKc1hPTm9SQTV0akl4aWV6NlVqR3ZtSEhCYjJlRTJTOTJYWHU2aDJIWjl0c21ReTJDRVlKb0pwRVE3MTJLdUdVeE9tSGJuQ2hoN3RBbFMtTGJrdw?oc=5",
-        "date": "Wed, 26 Aug 2026 20:13:05 GMT",
-        "summary": "Salesforce and Anthropic Announce Claudeforce: The #1 AI Meets the #1 AI CRM Salesforce",
         "score": 1,
         "weight": 1
       }
@@ -18854,6 +18860,34 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:b7f25f7bcaed30393323b9ff99fef6722dcf791a3e0a37775587801757ee7bfc",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:7435b54ccd307fbfc80df760d1d38e7bb41f133954a53b3f75c0ae1b4cebe6f1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c45738a5ab597cd531d3d75e61c6d3a54915ce47d0c3dfe27a22a4f21852d376",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:cae16a31b7759cbae7baac1a21f0ed00c51b7948d01ff773a482c01d2f619212",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:ced766a1cabb9b265fe640e45339a50b0551271cc1a11f6455f31cc6345b87d5",
         "type": "EVIDENCE",
@@ -19045,34 +19079,6 @@
       {
         "source": "Tencent",
         "target": "evidence:512823944b959da2d5633c611cb32e1ac9ad0ea89ca15ed438c3085b5a087eec",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:36b1a581276e239d83dec3dac0005c6b9dc802041ac0b885e121e5bdb6585a10",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:da78dfbdc63259aab81e9d9762821aab34320958d1eac6258d0392674abe310c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:36a2b290f2ea11a5030707c409452f982fef3688f01e3c86b0278896edf4c040",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:cdbe9eadd32f19bf9ccb8edaa1f9c5fd52764ba61435f7bacfc2da12daa08051",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33783,26 +33789,26 @@
   ],
   "collector_runs": [
     {
-      "id": 559,
+      "id": 563,
       "collector": "company-economic-news",
-      "started_at": "2026-08-27T20:30:27+00:00",
-      "completed_at": "2026-08-27T20:30:44+00:00",
+      "started_at": "2026-08-27T21:21:39+00:00",
+      "completed_at": "2026-08-27T21:21:55+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 10,
+      "items_new": 4,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "af9006db-5960-47b6-aeb2-a6e2f76c535a"
+      "collection_execution_id": "2bc5aced-410e-4294-9ab2-5e83cab13e09"
     },
     {
-      "id": 560,
+      "id": 564,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-27T20:30:45+00:00",
-      "completed_at": "2026-08-27T20:30:45+00:00",
+      "started_at": "2026-08-27T21:21:55+00:00",
+      "completed_at": "2026-08-27T21:21:56+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33812,7 +33818,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "af9006db-5960-47b6-aeb2-a6e2f76c535a"
+      "collection_execution_id": "2bc5aced-410e-4294-9ab2-5e83cab13e09"
     },
     {
       "id": 56,
@@ -33831,26 +33837,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 558,
+      "id": 562,
       "collector": "google-news-rss",
-      "started_at": "2026-08-27T20:30:26+00:00",
-      "completed_at": "2026-08-27T20:30:27+00:00",
+      "started_at": "2026-08-27T21:21:38+00:00",
+      "completed_at": "2026-08-27T21:21:39+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 3,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "af9006db-5960-47b6-aeb2-a6e2f76c535a"
+      "collection_execution_id": "2bc5aced-410e-4294-9ab2-5e83cab13e09"
     },
     {
-      "id": 561,
+      "id": 565,
       "collector": "sec-edgar",
-      "started_at": "2026-08-27T20:30:46+00:00",
-      "completed_at": "2026-08-27T20:30:47+00:00",
+      "started_at": "2026-08-27T21:21:56+00:00",
+      "completed_at": "2026-08-27T21:21:58+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33860,7 +33866,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "af9006db-5960-47b6-aeb2-a6e2f76c535a"
+      "collection_execution_id": "2bc5aced-410e-4294-9ab2-5e83cab13e09"
     },
     {
       "id": 57,
@@ -33881,7 +33887,7 @@
   ],
   "document_count": 1500,
   "event_count": 980,
-  "mention_count": 2413,
+  "mention_count": 2414,
   "review_counts": {
     "provisional": 0,
     "confirmed": 280,
