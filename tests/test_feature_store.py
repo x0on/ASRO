@@ -445,6 +445,45 @@ def test_as_of_feature_respects_publication_cutoff_and_staleness(tmp_path: Path)
         ("2026-03-01", None, "unknown"),
         ("2026-04-01", None, "unknown"),
     ]
+    assert EvidenceRepository.register_feature(
+        connection,
+        FeatureDefinitionV2(
+            feature_key="ecosystem_ai_infrastructure_debt_stock",
+            feature_version="1.0.0",
+            definition_json=json.dumps(
+                {"aggregation": "sum", "unit": "currency", "grain": "ecosystem_month"},
+                sort_keys=True,
+            ),
+            released_at="2026-01-01",
+        ),
+    )
+    connection.commit()
+    ecosystem = EcosystemFeatureStoreBuilder(connection).build_months(
+        result.build_id,
+        [
+            EcosystemFeatureSpec(
+                source_feature_key="ai_infrastructure_debt_stock",
+                source_feature_version="1.0.0",
+                feature_key="ecosystem_ai_infrastructure_debt_stock",
+                feature_version="1.0.0",
+                aggregation=Aggregation.SUM,
+                unit="currency",
+            )
+        ],
+        code_commit="as-of-test",
+        feature_set_version="as-of-1",
+    )
+    ecosystem_rows = connection.execute(
+        """SELECT period_start,value_numeric,missingness_reason
+           FROM ecosystem_feature_value WHERE build_id=? ORDER BY period_start""",
+        (ecosystem.build_id,),
+    ).fetchall()
+    assert [tuple(row) for row in ecosystem_rows] == [
+        ("2026-01-01", None, "unknown"),
+        ("2026-02-01", 900_000_000, None),
+        ("2026-03-01", None, "unknown"),
+        ("2026-04-01", None, "unknown"),
+    ]
     connection.close()
 
 
@@ -2861,7 +2900,7 @@ def test_forward_upgrade_preserves_existing_observations_and_feature_values(
         assert [
             row[0]
             for row in upgraded.execute("SELECT version FROM schema_migrations ORDER BY version")
-        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
         assert upgraded.execute("SELECT COUNT(*) FROM observation_v2").fetchone()[0] == (
             2 if starting_version == 2 else 1
         )

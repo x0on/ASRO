@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import sqlite3
 from collections import Counter
 from datetime import UTC, datetime
 from importlib.resources import files
@@ -217,6 +218,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         observations = _safe_rows(repository.recent_observations(connection, limit=2000))
         history = _safe_rows(repository.recent_snapshots(connection, limit=365))
         review_counts = repository.review_counts(connection)
+        feature_family = _feature_family_rows(connection)
 
     dimensions = compute_dimension_scores(observations)
     convergence = compute_convergence(dimensions)
@@ -257,6 +259,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         "event_count": len(events),
         "mention_count": mention_count,
         "review_counts": review_counts,
+        "feature_family": feature_family,
     }
 
     (data_dir / "snapshot.json").write_text(
@@ -267,3 +270,30 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
     )
     (output_dir / ".nojekyll").write_text("", encoding="utf-8")
     return output_dir
+
+
+def _feature_family_rows(connection: sqlite3.Connection) -> list[dict[str, object]]:
+    """Return only finalized cells from the latest reviewed feature-family build."""
+    build = connection.execute(
+        """SELECT build.build_id FROM dataset_build build
+           JOIN dataset_build_finalization finalized ON finalized.build_id=build.build_id
+           WHERE build.feature_set_version='current-ai-feature-family-1.0.0'
+           ORDER BY build.created_at DESC, build.build_id DESC LIMIT 1"""
+    ).fetchone()
+    if build is None:
+        return []
+    rows = connection.execute(
+        """SELECT value.entity_id,value.period_start,value.period_end,value.feature_key,
+                  value.feature_version,value.value_numeric,value.missingness_reason,
+                  value.coverage,value.reliability,observation.availability_at,
+                  observation.evidence_text,item.url
+           FROM finalized_entity_feature_value value
+           LEFT JOIN feature_value_fact fact
+             ON fact.feature_value_id=value.feature_value_id
+           LEFT JOIN observation_v2 observation
+             ON observation.observation_id=fact.representative_observation_id
+           LEFT JOIN items item ON item.id=observation.source_document_id
+           WHERE value.build_id=? ORDER BY value.feature_key,value.entity_id,value.period_start""",
+        (build[0],),
+    )
+    return [dict(row) for row in rows]

@@ -9,6 +9,7 @@ the event month.
 | Feature | Grain | Unit | Aggregation | Carry-forward |
 |---|---|---|---|---|
 | `ai_related_debt@1.0.0` | entity-month flow | reported currency | distinct canonical-fact sum | never |
+| `ai_compute_contract_value_flow@1.0.0` | entity-month disclosure flow | reported currency | distinct newly disclosed total-contract facts | never |
 | `ai_infrastructure_debt_stock@1.0.0` | entity-month as-of | reported currency | latest single canonical point fact | only through the registered `max_age_months` |
 | `ai_compute_commitment_stock@1.0.0` | entity-month as-of | reported currency | latest disclosed remaining obligation | only through the registered `max_age_months` |
 | `ai_contingent_credit_support_stock@1.0.0` | entity-month as-of | reported currency | latest disclosed total guarantee/backstop | only through the registered `max_age_months` |

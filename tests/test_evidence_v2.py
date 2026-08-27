@@ -504,7 +504,7 @@ def test_genuine_pre_v2_database_is_migrated_without_losing_legacy_data(tmp_path
         assert [
             row[0]
             for row in upgraded.execute("SELECT version FROM schema_migrations ORDER BY version")
-        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
         assert upgraded.execute(
             "SELECT 1 FROM sqlite_master WHERE type='table' AND name='observation_v2'"
         ).fetchone()

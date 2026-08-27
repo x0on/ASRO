@@ -18,6 +18,7 @@ from asro.backfill import (
     ingest_candidate_package,
 )
 from asro.backfill.acquisition import acquire_inventory
+from asro.backfill.current_ai_slice import promote_current_ai_feature_family
 from asro.backfill.negative_evidence import enumerate_negative_evidence_universe
 from asro.evidence.time import normalize_timestamp
 from asro.features import (
@@ -219,6 +220,25 @@ def acceptance_negative_universe(
     """Enumerate the bounded SEC review universe without creating numeric zeros."""
     result = enumerate_negative_evidence_universe(inventory, receipts, acquired)
     output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))
+
+
+@app.command("acceptance-promote-feature-family")
+def acceptance_promote_feature_family(
+    acquired: Annotated[Path, typer.Option()] = Path("data/acceptance/acquired/current-ai-4x6"),
+    output: Annotated[Path, typer.Option()] = Path(
+        "data/acceptance/current_ai_4x6_feature_family_report.json"
+    ),
+) -> None:
+    """Promote the bounded reviewed primary-source feature-family batch."""
+    settings = Settings()
+    with SqliteRepository(settings.database_path).connect() as connection:
+        result = promote_current_ai_feature_family(
+            connection,
+            acquired_directory=acquired,
+            code_commit=os.getenv("GITHUB_SHA", "local-reviewed-batch"),
+        )
     output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))
 

@@ -366,6 +366,306 @@ def _register_features(connection: sqlite3.Connection) -> None:
         )
 
 
+_FEATURE_FAMILY_FACTS = (
+    {
+        "receipt_id": "terawulf-fluidstack-google-2025-08",
+        "entity": "Alphabet",
+        "counterparty": "TeraWulf",
+        "feature_key": "ai_contingent_credit_support_stock",
+        "amount": 3_200_000_000,
+        "event_date": "2025-08-18",
+        "event_type": EventType.GUARANTEES,
+        "locator": "Exhibit 99.1: Google Increases Backstop to $3.2 Billion",
+        "evidence_marker": "$3.2 billion",
+        "evidence": (
+            "With this incremental commitment, Google's total backstop increases to "
+            "approximately $3.2 billion."
+        ),
+    },
+    {
+        "receipt_id": "coreweave-meta-2025-09-8k",
+        "entity": "Meta",
+        "counterparty": "CoreWeave",
+        "feature_key": "ai_compute_contract_value_flow",
+        "amount": 14_200_000_000,
+        "event_date": "2025-09-25",
+        "event_type": EventType.CAPEX_COMMITMENT,
+        "locator": "Item 1.01 Material Definitive Agreement",
+        "evidence_marker": "$14.2 billion",
+        "evidence": (
+            "Meta has initially committed to pay the Company up to approximately $14.2 "
+            "billion through December 14, 2031 under the Order Form."
+        ),
+    },
+    {
+        "receipt_id": "nebius-microsoft-2025-09-6k",
+        "entity": "Microsoft",
+        "counterparty": "Nebius",
+        "feature_key": "ai_compute_contract_value_flow",
+        "amount": 17_400_000_000,
+        "event_date": "2025-09-08",
+        "event_type": EventType.CAPEX_COMMITMENT,
+        "locator": "Commercial Agreement with Microsoft",
+        "evidence_marker": "$17.4 billion",
+        "evidence": (
+            "Subject to deployment and availability of the GPU Services, the total contract "
+            "value is about $17.4 billion through 2031."
+        ),
+    },
+    {
+        "receipt_id": "iren-microsoft-2025-11-8k",
+        "entity": "Microsoft",
+        "counterparty": "IREN",
+        "feature_key": "ai_compute_contract_value_flow",
+        "amount": 9_700_000_000,
+        "event_date": "2025-11-03",
+        "event_type": EventType.CAPEX_COMMITMENT,
+        "locator": "Item 1.01 Microsoft Agreement",
+        "evidence_marker": "$9.7 billion",
+        "evidence": "The contract value is approximately $9.7 billion through 2031.",
+    },
+)
+
+
+def promote_current_ai_feature_family(
+    connection: sqlite3.Connection,
+    *,
+    acquired_directory: Path,
+    code_commit: str,
+) -> dict[str, object]:
+    """Promote a bounded primary-source batch and build the exact 4x6 matrices."""
+    receipts_payload = json.loads(
+        (acquired_directory / "acquisition-receipts.json").read_text(encoding="utf-8")
+    )
+    receipts = {item["id"]: item for item in receipts_payload["receipts"]}
+    review_time = datetime.now(UTC).replace(microsecond=0).isoformat()
+    repository = SqliteRepository(Path("unused"))
+    definitions = (
+        (
+            "ai_compute_contract_value_flow",
+            {
+                "aggregation": "sum",
+                "unit": "currency",
+                "grain": "entity_month",
+                "expected_facts_per_period": 1,
+                "meaning": "newly disclosed total contract value; not remaining obligation",
+            },
+        ),
+        (
+            "ai_contingent_credit_support_stock",
+            {
+                "aggregation": "as_of_latest",
+                "unit": "currency",
+                "grain": "entity_month_as_of",
+                "expected_facts_per_period": 1,
+                "max_age_months": 3,
+                "meaning": "latest disclosed total guarantee or financing backstop",
+            },
+        ),
+    )
+    for key, semantics in definitions:
+        EvidenceRepository.register_feature(
+            connection,
+            FeatureDefinitionV2(
+                feature_key=key,
+                feature_version="1.0.0",
+                definition_json=json.dumps(semantics, sort_keys=True, separators=(",", ":")),
+                released_at="2025-01-01",
+            ),
+        )
+        EvidenceRepository.register_feature(
+            connection,
+            FeatureDefinitionV2(
+                feature_key=f"ecosystem_{key}",
+                feature_version="1.0.0",
+                definition_json=json.dumps(
+                    {"aggregation": "sum", "unit": "currency", "grain": "ecosystem_month"},
+                    sort_keys=True,
+                    separators=(",", ":"),
+                ),
+                released_at="2025-01-01",
+            ),
+        )
+    _register_features(connection)
+    promoted: list[dict[str, object]] = []
+    for fact in _FEATURE_FAMILY_FACTS:
+        receipt = receipts[str(fact["receipt_id"])]
+        content_path = acquired_directory / str(receipt["content_file"])
+        content_bytes = content_path.read_bytes()
+        digest = hashlib.sha256(content_bytes).hexdigest()
+        if digest != receipt["content_sha256"]:
+            raise ValueError(f"immutable receipt hash mismatch: {fact['receipt_id']}")
+        content = content_bytes.decode("utf-8")
+        if str(fact["evidence_marker"]) not in content:
+            raise ValueError(f"reviewed evidence text not found: {fact['receipt_id']}")
+        item = score(
+            SourceItem(
+                title=f"Primary filing: {fact['receipt_id']}",
+                url=receipt["final_url"],
+                source="SEC",
+                summary=str(fact["evidence"]),
+                published_at=str(receipt["public_availability_at"])[:10],
+                discovered_at=receipt["fetched_at"],
+            ),
+            [str(fact["entity"]), str(fact["counterparty"])],
+        )
+        repository.insert(connection, item)
+        repository.upsert_document(
+            connection,
+            item.item_id,
+            receipt["fetched_at"],
+            receipt["content_type"],
+            "ok",
+            content,
+        )
+        slug = str(fact["receipt_id"])
+        event_id = f"accepted-{slug}"
+        repository.insert_event(
+            connection,
+            FinancialEvent(
+                event_id=event_id,
+                document_id=item.item_id,
+                event_type=fact["event_type"],
+                source_entity=str(fact["entity"]),
+                target_entity=str(fact["counterparty"]),
+                amount=float(fact["amount"]),
+                currency="USD",
+                instrument=str(fact["feature_key"]),
+                effective_date=str(fact["event_date"]),
+                confidence=1.0,
+                evidence_text=str(fact["evidence"]),
+                extractor="asro-v2-manual-acceptance",
+                processed_at=review_time,
+            ),
+        )
+        review_id = _accepted_review(connection, event_id, review_time)
+        canonical_fact_id = f"fact-{slug}"
+        EvidenceRepository.register_canonical_fact(connection, canonical_fact_id)
+        assignment_id = f"assignment-{slug}"
+        EvidenceRepository.assign_canonical_fact(
+            connection,
+            CanonicalFactAssignment(
+                assignment_id=assignment_id,
+                event_id=event_id,
+                canonical_fact_id=canonical_fact_id,
+                available_at=review_time,
+                reviewer_id=review_id,
+                assigned_by="human-acceptance-review",
+                assignment_method="full-document-manual-review",
+                provenance={"source_url": receipt["final_url"], "content_sha256": digest},
+                created_at=review_time,
+            ),
+        )
+        event_date = str(fact["event_date"])
+        month_start = f"{event_date[:7]}-01"
+        month_end = (
+            f"{event_date[:7]}-{calendar.monthrange(int(event_date[:4]), int(event_date[5:7]))[1]}"
+        )
+        observation_id = f"observation-{slug}"
+        EvidenceRepository.insert(
+            connection,
+            ObservationV2(
+                observation_id=observation_id,
+                event_id=event_id,
+                source_document_id=item.item_id,
+                source_locator=str(fact["locator"]),
+                evidence_text=str(fact["evidence"]),
+                entity_id=str(fact["entity"]),
+                counterparty_entity_id=str(fact["counterparty"]),
+                entity_role="customer"
+                if fact["feature_key"] != "ai_contingent_credit_support_stock"
+                else "guarantor",
+                feature_key=str(fact["feature_key"]),
+                feature_version="1.0.0",
+                value_numeric=float(fact["amount"]),
+                unit="currency",
+                currency="USD",
+                economic_scope=EconomicScope.ENTITY,
+                period_start=month_start,
+                period_end=month_end,
+                event_at=event_date,
+                published_at=receipt["public_availability_at"],
+                availability_at=receipt["public_availability_at"],
+                extracted_at=review_time,
+                fact_status=FactStatus.DIRECT,
+                source_tier=SourceTier.PRIMARY,
+                source_quality=1.0,
+                extraction_confidence=1.0,
+                review_confidence=1.0,
+                extractor_name="manual-full-document-review",
+                extractor_version="2.0.0",
+                review_id=review_id,
+            ),
+        )
+        promoted.append({"observation_id": observation_id, "content_sha256": digest})
+    connection.commit()
+    specs = [
+        FeatureSpec(
+            feature_key="ai_related_debt",
+            feature_version="1.0.0",
+            aggregation=Aggregation.SUM,
+            unit="currency",
+            expected_facts_per_period=1,
+        ),
+        FeatureSpec(
+            feature_key="ai_compute_contract_value_flow",
+            feature_version="1.0.0",
+            aggregation=Aggregation.SUM,
+            unit="currency",
+            expected_facts_per_period=1,
+        ),
+        FeatureSpec(
+            feature_key="ai_contingent_credit_support_stock",
+            feature_version="1.0.0",
+            aggregation=Aggregation.AS_OF_LATEST,
+            unit="currency",
+            expected_facts_per_period=1,
+            max_age_months=3,
+        ),
+    ]
+    entity_build = FeatureStoreBuilder(connection).build_entity_month(
+        specs,
+        "2026-08-28T00:00:00Z",
+        ["Alphabet", "Amazon", "Meta", "Microsoft"],
+        code_commit,
+        "current-ai-feature-family-1.0.0",
+        "2025-07-01",
+        "2025-12-31",
+    )
+    ecosystem_build = EcosystemFeatureStoreBuilder(connection).build_months(
+        entity_build.build_id,
+        [
+            EcosystemFeatureSpec(
+                source_feature_key=spec.feature_key,
+                source_feature_version=spec.feature_version,
+                feature_key=f"ecosystem_{spec.feature_key}",
+                feature_version="1.0.0",
+                aggregation=Aggregation.SUM,
+                unit="currency",
+            )
+            for spec in specs
+        ],
+        code_commit,
+        "current-ai-feature-family-1.0.0",
+    )
+    counts = {
+        row[0]: {"accepted": int(row[1]), "missing": 24 - int(row[1]), "required": 24}
+        for row in connection.execute(
+            """SELECT feature_key, SUM(value_numeric IS NOT NULL) FROM feature_value
+               WHERE build_id=? GROUP BY feature_key ORDER BY feature_key""",
+            (entity_build.build_id,),
+        )
+    }
+    return {
+        "status": "partial_evidence_acceptance",
+        "entity_build_id": entity_build.build_id,
+        "ecosystem_build_id": ecosystem_build.build_id,
+        "promoted": promoted,
+        "feature_cells": counts,
+        "modeling_allowed": False,
+    }
+
+
 def _accepted_review(connection: sqlite3.Connection, event_id: str, reviewed_at: str) -> int:
     existing = connection.execute(
         """SELECT review_id FROM evidence_reviews

@@ -7,6 +7,7 @@ from dataclasses import dataclass
 from asro.migrations import (
     candidate_quarantine,
     canonical_lineage,
+    ecosystem_as_of_lineage,
     ecosystem_store,
     feature_family_as_of,
     feature_family_as_of_cutoff,
@@ -83,6 +84,11 @@ MIGRATIONS = (
         feature_family_as_of_cutoff.VERSION,
         feature_family_as_of_cutoff.NAME,
         feature_family_as_of_cutoff.STATEMENTS,
+    ),
+    Migration(
+        ecosystem_as_of_lineage.VERSION,
+        ecosystem_as_of_lineage.NAME,
+        ecosystem_as_of_lineage.STATEMENTS,
     ),
 )
 
