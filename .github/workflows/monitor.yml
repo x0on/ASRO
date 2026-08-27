@@ -83,7 +83,14 @@ jobs:
       - name: Build static site
         run: asro build-site
       - name: Validate usable release artifact
-        run: asro release-check --max-age-hours 26
+        run: |
+          if ! release_output=$(asro release-check --max-age-hours 26 2>&1); then
+            echo "$release_output"
+            release_message=$(printf '%s\n' "$release_output" | tail -n 1)
+            echo "::error title=Release artifact rejected::$release_message"
+            exit 1
+          fi
+          echo "$release_output"
       - name: Commit updated observatory data
         run: |
           git config user.name "asro-bot"
