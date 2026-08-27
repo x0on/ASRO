@@ -1,0 +1,43 @@
+{
+  "inventory_version": "1.0.0",
+  "status": "candidate_acquisition_only",
+  "episode_manifest": "data/acceptance/current_ai_cycle_4x6_slice.toml",
+  "selection": {
+    "entities": ["Alphabet", "Amazon", "Meta", "Microsoft"],
+    "months": ["2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12"],
+    "feature": "ai_related_debt@1.0.0",
+    "rationale": "This is the densest six-consecutive-month block of candidate primary filing evidence among public issuers in current-ai-cycle@2.0.0. It includes the accepted Meta October 2025 issuance and avoids treating private-company assertions as authoritative disclosure. Candidate density selects the work queue only; it does not establish coverage."
+  },
+  "required_grid": {
+    "entity_month_feature_cells": 24,
+    "entity_month_primary_source_cells": 24,
+    "control_month_cells": 18
+  },
+  "documents": [
+    {"id":"alphabet-q2-2025-results","entity":"Alphabet","candidate_months":["2025-07"],"url":"https://www.sec.gov/Archives/edgar/data/1652044/000165204425000056/googexhibit991q22025.htm","publisher":"SEC EDGAR / Alphabet","public_availability_at":"2025-07-23T00:00:00Z","candidate_event_ids":["evt-goog-capexguide-20250723-01"]},
+    {"id":"terawulf-fluidstack-google-2025-08","entity":"Alphabet","candidate_months":["2025-08"],"url":"https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm","publisher":"SEC EDGAR / TeraWulf","public_availability_at":"2025-08-18T00:00:00Z","candidate_event_ids":["evt-terawulf-google-20250818-01"]},
+    {"id":"alphabet-q3-2025-results","entity":"Alphabet","candidate_months":["2025-10"],"url":"https://www.sec.gov/Archives/edgar/data/1652044/000165204425000087/googexhibit991q32025.htm","publisher":"SEC EDGAR / Alphabet","public_availability_at":"2025-10-29T00:00:00Z","candidate_event_ids":["evt-goog-capexguide-20251029-01"]},
+    {"id":"alphabet-fy2025-10k","entity":"Alphabet","candidate_months":["2025-12"],"url":"https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm","publisher":"SEC EDGAR / Alphabet","public_availability_at":"2026-02-03T00:00:00Z","candidate_event_ids":["evt-goog-notes-2025-01","evt-goog-leases-20251231-01"]},
+    {"id":"amazon-fy2025-10k","entity":"Amazon","candidate_months":["2025-11","2025-12"],"url":"https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm","publisher":"SEC EDGAR / Amazon","public_availability_at":"2026-02-05T00:00:00Z","candidate_event_ids":["evt-amzn-debt-20251130-01","evt-amzn-finlease-20251231-01"]},
+    {"id":"meta-q2-2025-10q","entity":"Meta","candidate_months":["2025-07"],"url":"https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/meta-20250630.htm","publisher":"SEC EDGAR / Meta","public_availability_at":"2025-07-31T00:00:00Z","candidate_event_ids":["evt-meta-capexguide-20250731-01"]},
+    {"id":"coreweave-meta-2025-09-8k","entity":"Meta","candidate_months":["2025-09"],"url":"https://www.sec.gov/Archives/edgar/data/1769628/000176962825000050/crwv-20250925.htm","publisher":"SEC EDGAR / CoreWeave","public_availability_at":"2025-09-30T00:00:00Z","candidate_event_ids":["evt-crwv-meta-142-20250925-01"]},
+    {"id":"meta-30b-notes-2025-10","entity":"Meta","candidate_months":["2025-10"],"url":"https://www.sec.gov/Archives/edgar/data/1326801/000119312525261217/d762778d424b2.htm","publisher":"SEC EDGAR / Meta","public_availability_at":"2025-10-30T00:00:00Z","candidate_event_ids":["evt-meta-30bn-bond-20251030-01"]},
+    {"id":"nebius-meta-fy2025-20f","entity":"Meta","candidate_months":["2025-11"],"url":"https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm","publisher":"SEC EDGAR / Nebius","public_availability_at":"2026-04-30T00:00:00Z","candidate_event_ids":["evt-nbis-meta-20251101-01"]},
+    {"id":"meta-fy2025-10k","entity":"Meta","candidate_months":["2025-12"],"url":"https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm","publisher":"SEC EDGAR / Meta","public_availability_at":"2026-01-29T00:00:00Z","candidate_event_ids":["evt-meta-debt-20251231-01","evt-meta-hyperion-leases-20251231-01"]},
+    {"id":"nebius-microsoft-2025-09-6k","entity":"Microsoft","candidate_months":["2025-09"],"url":"https://www.sec.gov/Archives/edgar/data/1513845/000110465925088312/tm2525580d1_6k.htm","publisher":"SEC EDGAR / Nebius","public_availability_at":"2025-09-08T00:00:00Z","candidate_event_ids":["evt-nbis-msft-20250908-01"]},
+    {"id":"iren-microsoft-2025-11-8k","entity":"Microsoft","candidate_months":["2025-11"],"url":"https://www.sec.gov/Archives/edgar/data/1878848/000114036125040072/ef20058139_8k.htm","publisher":"SEC EDGAR / IREN","public_availability_at":"2025-11-03T00:00:00Z","candidate_event_ids":["evt-iren-microsoft-20251102-01"]},
+    {"id":"microsoft-q2-fy2026-10q","entity":"Microsoft","candidate_months":["2025-12"],"url":"https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/msft-20251231.htm","publisher":"SEC EDGAR / Microsoft","public_availability_at":"2026-01-28T00:00:00Z","candidate_event_ids":["evt-msft-leasenyc-20251231-01"]}
+  ],
+  "controls": [
+    {"series_id":"policy_rate","series_version":"1.0.0","unit":"percent","url":"https://fred.stlouisfed.org/graph/fredgraph.csv?id=FEDFUNDS","publisher":"Federal Reserve Bank of St. Louis"},
+    {"series_id":"credit_spread","series_version":"1.0.0","unit":"basis_points","url":"https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAMLC0A0CM","publisher":"Federal Reserve Bank of St. Louis"},
+    {"series_id":"semiconductor_cycle","series_version":"1.0.0","unit":"index","url":"https://fred.stlouisfed.org/graph/fredgraph.csv?id=IPG3344S","publisher":"Federal Reserve Bank of St. Louis"}
+  ],
+  "known_candidate_gaps": [
+    {"entity":"Alphabet","months":["2025-09","2025-11"]},
+    {"entity":"Amazon","months":["2025-07","2025-08","2025-09"]},
+    {"entity":"Meta","months":["2025-08"]},
+    {"entity":"Microsoft","months":["2025-07","2025-08","2025-10"]}
+  ],
+  "policy": "Every document and claim remains candidate-only until full-content reacquisition, hash verification, accepted review, V2 observation insertion, and an active temporal canonical assignment. Missing candidate leads are not zeros."
+}

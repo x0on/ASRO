@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import calendar
 import csv
 import hashlib
 import json
@@ -237,6 +238,104 @@ def build_current_ai_acceptance_slice(
     }
 
 
+def build_current_ai_4x6_matrix(
+    connection: sqlite3.Connection,
+    *,
+    control_files: dict[str, Path],
+    manifest_path: Path,
+    code_commit: str,
+) -> dict[str, object]:
+    """Build the exact four-entity, six-month matrix without filling evidence gaps."""
+    manifest = EpisodeManifest.from_toml(manifest_path)
+    expected_entities = ["Alphabet", "Amazon", "Meta", "Microsoft"]
+    if manifest.entities != expected_entities:
+        raise ValueError("4x6 slice requires the approved exact entity set")
+    months = ["2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12"]
+    if manifest.period_start.isoformat() != "2025-07-01" or manifest.period_end.isoformat() != (
+        "2025-12-31"
+    ):
+        raise ValueError("4x6 slice requires the approved exact month window")
+    accepted = connection.execute(
+        """SELECT 1 FROM observation_v2
+           WHERE entity_id='Meta' AND feature_key='ai_related_debt'
+             AND feature_version='1.0.0'
+             AND substr(period_start,1,10)='2025-10-01'
+             AND substr(period_end,1,10)='2025-10-31' AND review_id IS NOT NULL"""
+    ).fetchone()
+    if accepted is None:
+        raise ValueError("reviewed Meta October evidence must be persisted before building 4x6")
+    registered_at = datetime.now(UTC).replace(microsecond=0).isoformat()
+    _register_features(connection)
+    _register_control_definitions(connection, manifest, registered_at)
+    _register_controls_for_months(connection, control_files, months)
+    connection.commit()
+    feature_spec = FeatureSpec(
+        feature_key="ai_related_debt",
+        feature_version="1.0.0",
+        aggregation=Aggregation.SUM,
+        unit="currency",
+        expected_facts_per_period=1,
+    )
+    entity_build = FeatureStoreBuilder(connection).build_entity_month(
+        [feature_spec],
+        manifest.availability_cutoff,
+        manifest.entities,
+        code_commit,
+        manifest.feature_set_version,
+        manifest.period_start,
+        manifest.period_end,
+    )
+    ecosystem_build = EcosystemFeatureStoreBuilder(connection).build_months(
+        entity_build.build_id,
+        [
+            EcosystemFeatureSpec(
+                source_feature_key="ai_related_debt",
+                source_feature_version="1.0.0",
+                feature_key="ecosystem_ai_related_debt",
+                feature_version="1.0.0",
+                aggregation=Aggregation.SUM,
+                unit="currency",
+            )
+        ],
+        code_commit,
+        manifest.feature_set_version,
+    )
+    result = BackfillRunner(connection).run(
+        manifest, entity_build.build_id, ecosystem_build.build_id
+    )
+    rows = list(
+        connection.execute(
+            """SELECT entity_id,period_start,dimension,requirement_key,present,
+                      missingness_reason
+               FROM backfill_coverage_cell WHERE run_id=?
+               ORDER BY dimension,entity_id,period_start,requirement_key""",
+            (result.run_id,),
+        )
+    )
+    dimensions: dict[str, dict[str, int]] = {}
+    for dimension in ("feature", "source", "control"):
+        selected = [row for row in rows if str(row["dimension"]) == dimension]
+        dimensions[dimension] = {
+            "accepted": sum(int(row["present"]) for row in selected),
+            "missing": sum(not bool(row["present"]) for row in selected),
+            "required": len(selected),
+        }
+    return {
+        "episode_id": manifest.episode_id,
+        "episode_version": manifest.version,
+        "entities": manifest.entities,
+        "months": months,
+        "entity_build_id": entity_build.build_id,
+        "ecosystem_build_id": ecosystem_build.build_id,
+        "backfill_run_id": result.run_id,
+        "coverage_passed": result.coverage_passed,
+        "leakage_passed": result.leakage_passed,
+        "cells": dimensions,
+        "accepted_cells": [dict(row) for row in rows if row["present"]],
+        "missing_cells": [dict(row) for row in rows if not row["present"]],
+    }
+
+
 def _register_features(connection: sqlite3.Connection) -> None:
     definitions = (
         (
@@ -388,6 +487,48 @@ def _register_controls(
         )
 
 
+def _register_controls_for_months(
+    connection: sqlite3.Connection, files: dict[str, Path], months: list[str]
+) -> None:
+    specifications = (
+        ("policy_rate", "FEDFUNDS", "percent", 1.0),
+        ("credit_spread", "BAMLC0A0CM", "basis_points", 100.0),
+        ("semiconductor_cycle", "IPG3344S", "index", 1.0),
+    )
+    for series_id, fred_id, unit, multiplier in specifications:
+        source_file = files[fred_id]
+        fetched_at = _file_time(source_file)
+        digest = hashlib.sha256(source_file.read_bytes()).hexdigest()
+        for month in months:
+            observation_date, raw_value = _first_csv_value_in_month(source_file, month)
+            year, month_number = (int(part) for part in month.split("-"))
+            period_start = f"{month}-01"
+            period_end = f"{month}-{calendar.monthrange(year, month_number)[1]:02d}"
+            register_control_observation(
+                connection,
+                ControlObservation(
+                    control_observation_id=(f"{series_id}-{month}-current-vintage-{digest[:12]}"),
+                    series_id=series_id,
+                    series_version="1.0.0",
+                    period_start=period_start,
+                    period_end=period_end,
+                    observed_at=f"{observation_date}T00:00:00Z",
+                    availability_at=fetched_at,
+                    value_numeric=raw_value * multiplier,
+                    unit=unit,
+                    provenance={
+                        "publisher": "Federal Reserve Bank of St. Louis (FRED)",
+                        "source_url": (
+                            f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={fred_id}"
+                        ),
+                        "source_observation_date": observation_date,
+                        "content_sha256": digest,
+                        "vintage": f"current-vintage-retrieved-{fetched_at}",
+                    },
+                ),
+            )
+
+
 def _register_control_definitions(
     connection: sqlite3.Connection, manifest: EpisodeManifest, registered_at: str
 ) -> None:
@@ -410,6 +551,17 @@ def _csv_value(path: Path, observation_date: str) -> float:
             if row["observation_date"] == observation_date:
                 return float(next(value for key, value in row.items() if key != "observation_date"))
     raise ValueError(f"missing {observation_date} in {path.name}")
+
+
+def _first_csv_value_in_month(path: Path, month: str) -> tuple[str, float]:
+    with path.open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            observation_date = row["observation_date"]
+            if observation_date.startswith(f"{month}-"):
+                value = next(value for key, value in row.items() if key != "observation_date")
+                if value not in {"", "."}:
+                    return observation_date, float(value)
+    raise ValueError(f"missing {month} in {path.name}")
 
 
 def _file_time(path: Path) -> str:

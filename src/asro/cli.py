@@ -17,6 +17,7 @@ from asro.backfill import (
     candidate_episode_support,
     ingest_candidate_package,
 )
+from asro.backfill.acquisition import acquire_inventory
 from asro.evidence.time import normalize_timestamp
 from asro.features import (
     EcosystemFeatureSpec,
@@ -180,6 +181,23 @@ def build_site() -> None:
     """Build the zero-server static dashboard into ./site."""
     path = build_static_site()
     typer.echo(f"Static site built at: {path}")
+
+
+@app.command("acceptance-acquire")
+def acceptance_acquire(
+    inventory: Annotated[Path, typer.Option()] = Path(
+        "data/acceptance/current_ai_4x6_acquisition_inventory.json"
+    ),
+    output: Annotated[Path, typer.Option()] = Path("data/acceptance/acquired/current-ai-4x6"),
+) -> None:
+    """Reacquire declared authoritative candidates without accepting their claims."""
+    settings = Settings()
+    result = acquire_inventory(
+        inventory,
+        output,
+        user_agent=settings.sec_user_agent,
+    )
+    typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))
 
 
 @app.command("release-check")

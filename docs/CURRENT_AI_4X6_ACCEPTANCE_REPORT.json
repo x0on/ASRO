@@ -1,0 +1,69 @@
+{
+  "status": "acquisition_complete_acceptance_incomplete",
+  "generated_at": "2026-08-27T21:17:11+00:00",
+  "selection": {
+    "entities": ["Alphabet", "Amazon", "Meta", "Microsoft"],
+    "months": ["2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12"],
+    "feature": "ai_related_debt@1.0.0",
+    "reason": "This is the densest consecutive six-month candidate-primary-source block among public issuers in current-ai-cycle@2.0.0 and includes the already reviewed Meta October issuance. Candidate density selected the queue only."
+  },
+  "acquisition": {
+    "declared_documents": 13,
+    "reacquired_full_documents": 13,
+    "official_control_series": 3,
+    "reacquired_control_series": 3,
+    "total_content_bytes": 21662356,
+    "receipt": "data/acceptance/acquired/current-ai-4x6/acquisition-receipts.json",
+    "classification": "candidate_unreviewed_except_explicit_promotions",
+    "forbes_leads_promoted": 0
+  },
+  "persisted_matrix": {
+    "episode_id": "current-ai-cycle-4x6-2025h2-slice",
+    "episode_version": "1.0.0",
+    "entity_build_id": "fecaf145cb440da548b7ed001370782e25ede4f3f2752b5b526fdee98e8e21cb",
+    "ecosystem_build_id": "073b4595766ee541eef40972680dafd311b7e75cf3f935f33dc0287e2781bcd7",
+    "backfill_run_id": "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
+    "coverage_passed": false,
+    "leakage_passed": true,
+    "feature_cells": {"accepted": 1, "missing": 23, "required": 24},
+    "primary_source_cells": {"accepted": 1, "missing": 23, "required": 24},
+    "control_cells": {"accepted": 18, "missing": 0, "required": 18}
+  },
+  "accepted_evidence": [
+    {
+      "entity": "Meta",
+      "month": "2025-10",
+      "value_numeric": 30000000000,
+      "unit": "USD",
+      "fact": "six-tranche senior-notes issuance",
+      "source_sha256": "1504265779775683145c1fbe879cf7caeb0a233296f2956a9661783bb223d454",
+      "review_status": "accepted",
+      "canonical_assignment_active": true
+    }
+  ],
+  "review_dispositions": {
+    "compute_service_commitments": "held_out_not_debt",
+    "capex_guidance": "held_out_not_debt",
+    "leases": "held_out_not_debt_without_approved_feature_semantics",
+    "alphabet_2025_notes": "held_out_annual_and_general_corporate_purpose",
+    "amazon_november_2025_notes": "held_out_general_corporate_purpose_without_primary_AI_use_of_proceeds",
+    "meta_december_debt_balance": "held_out_stock_measure_would_double_count_period_issuances",
+    "forbes_opinion_claims": "candidate_leads_only"
+  },
+  "counter_evidence": [
+    "The authoritative contracts reviewed often place project financing or delivery risk on a supplier rather than on the hyperscaler customer.",
+    "Amazon and Alphabet describe the identified note proceeds as general corporate purposes, not specifically AI financing.",
+    "Signed compute and lease commitments are economically relevant but are not automatically debt under ai_related_debt@1.0.0."
+  ],
+  "minimum_remaining_work": {
+    "feature_cells": 23,
+    "primary_source_cells": 23,
+    "control_cells": 0,
+    "requirements": [
+      "Find and reacquire primary evidence that directly establishes AI-related debt or a defensible evidence-backed zero for each missing entity-month.",
+      "Perform explicit accepted reviews and temporal canonical assignments for each promoted fact.",
+      "Rebuild the exact matrices and rerun unchanged coverage and leakage gates."
+    ]
+  },
+  "modeling_status": "blocked"
+}
