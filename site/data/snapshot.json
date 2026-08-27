@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T23:07:47.878726+00:00",
+  "generated_at": "2026-08-27T23:12:30.255998+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
-    "cannibalization": 54.2,
-    "fragility": 61.1,
-    "circularity": 59.4,
+    "capital": 42.64073738140746,
     "transmission": 39.6,
     "stress": 57.1,
+    "cannibalization": 54.2,
+    "circularity": 59.4,
     "external_pressure": 16.12,
     "monetization": 42.9,
-    "capital": 42.64073738140746
+    "fragility": 61.1,
+    "counter_evidence": 42.9
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "fragility": "directional_estimate",
+    "external_pressure": "aggregate",
     "circularity": "directional_estimate",
     "monetization": "directional_estimate",
-    "stress": "directional_estimate",
-    "external_pressure": "aggregate",
-    "transmission": "confirmed_trigger",
-    "capital": "aggregate"
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate"
   },
   "dimension_direction": {
     "circularity": {
@@ -11123,6 +11123,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:671b3c4871821c580f921ca41c9c2ff2873b4e794773803fb62f2295be2e5d25",
+        "label": "Primary filing: cipher-amazon-2025-11-8k-exhibit",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm",
+        "date": "2025-11-03",
+        "summary": "Cipher announced an approximately $5.5 billion, 15-year lease agreement with Amazon Web Services to provide turnkey space and power for AI workloads.",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:a0e2f0c86156f0f318136714c3c7f056388c6b70db0beb793f97cdd81b2a356d",
         "label": "Is Microsoft Stock A True Safe Haven When The Market Stumbles? - Trefis",
         "kind": "evidence",
@@ -11371,18 +11383,6 @@
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSTBfamFuTzJQSXIyd2JxSUFGa1htY0t6TXlycG1CT2JSR2FPWkpGNzh6RkwyX3lyOFk2Y25sZ1lYNVhLOXU2WFlsMjJURDU5NWpWaHgtdThGamFrazA3LTNTMXNFdzUya2Z3d3NoOUtDMURCckx6SlVfY0RFWjllOHEwU185dmdoZzR1NWRvYWw2ZHd2OWhIa0JXXzloNmxUN2xqRzVRbU1SNzVZMGZOSHJTVQ?oc=5",
         "date": "Thu, 27 Aug 2026 12:51:00 GMT",
         "summary": "This Analyst Just Called Alphabet 2027\u2019s Best Stock. She Might Be Right 24/7 Wall St.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:df0177fb87744b1d03810cd742c945d9382e1b818cdcb9cd8714bde5642404ce",
-        "label": "Amazon Trades at 24x 2027 Earnings. Citizens Says It Should Be Worth 29x - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ0JNQmwwNVZOX0ZYcW03QlBfNy1Ddnl4OGtNckhqOHIwOW8tRGp2dXJzdXRYcU1jeFpaeGcxMmcwVHpiT2xwT3RqeW1hTnVrb1BhMWhVLVMwdkUxR0t2RjhUTGI4dXpRT191UEpWcVRBYzczMm1hQW9xZGtHeVZZN3VLZm1LM2I5LV9jUmRKQWo1cWdJa1FTMklxUVA?oc=5",
-        "date": "Thu, 27 Aug 2026 13:25:53 GMT",
-        "summary": "Amazon Trades at 24x 2027 Earnings. Citizens Says It Should Be Worth 29x Yahoo Finance",
         "score": 1,
         "weight": 1
       }
@@ -19047,6 +19047,13 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:671b3c4871821c580f921ca41c9c2ff2873b4e794773803fb62f2295be2e5d25",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Microsoft",
         "target": "evidence:a0e2f0c86156f0f318136714c3c7f056388c6b70db0beb793f97cdd81b2a356d",
         "type": "EVIDENCE",
@@ -19189,13 +19196,6 @@
       {
         "source": "Alphabet",
         "target": "evidence:a2c3324ba18bc74c40f006ad1f3f6d3c672d25c48cf83611ad88ddb75cf14312",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:df0177fb87744b1d03810cd742c945d9382e1b818cdcb9cd8714bde5642404ce",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -34019,7 +34019,7 @@
   ],
   "document_count": 1500,
   "event_count": 981,
-  "mention_count": 2420,
+  "mention_count": 2421,
   "review_counts": {
     "provisional": 0,
     "confirmed": 280,
@@ -34173,13 +34173,13 @@
       "period_end": "2025-11-30",
       "feature_key": "ai_compute_contract_value_flow",
       "feature_version": "1.0.0",
-      "value_numeric": null,
-      "missingness_reason": "unknown",
-      "coverage": 0.0,
-      "reliability": 0.0,
-      "availability_at": null,
-      "evidence_text": null,
-      "url": null
+      "value_numeric": 5500000000.0,
+      "missingness_reason": null,
+      "coverage": 1.0,
+      "reliability": 1.0,
+      "availability_at": "2025-11-03T00:00:00+00:00",
+      "evidence_text": "Cipher announced an approximately $5.5 billion, 15-year lease agreement with Amazon Web Services to provide turnkey space and power for AI workloads.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm"
     },
     {
       "entity_id": "Amazon",

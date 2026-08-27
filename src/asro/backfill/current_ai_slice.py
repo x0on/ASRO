@@ -440,6 +440,21 @@ _FEATURE_FAMILY_FACTS = (
             "dedicated GPU infrastructure capacity clusters over a five-year term."
         ),
     },
+    {
+        "receipt_id": "cipher-amazon-2025-11-8k-exhibit",
+        "entity": "Amazon",
+        "counterparty": "Cipher Mining",
+        "feature_key": "ai_compute_contract_value_flow",
+        "amount": 5_500_000_000,
+        "event_date": "2025-11-03",
+        "event_type": EventType.CAPEX_COMMITMENT,
+        "locator": "Exhibit 99.1: Third Quarter 2025 Business Update",
+        "evidence_marker": "$5.5 billion",
+        "evidence": (
+            "Cipher announced an approximately $5.5 billion, 15-year lease agreement with "
+            "Amazon Web Services to provide turnkey space and power for AI workloads."
+        ),
+    },
 )
 
 
@@ -697,6 +712,14 @@ def promote_current_ai_feature_family(
             (entity_build.build_id,),
         )
     }
+    entity_counts = {
+        row[0]: {"accepted": int(row[1]), "unknown": 18 - int(row[1]), "required": 18}
+        for row in connection.execute(
+            """SELECT entity_id,SUM(value_numeric IS NOT NULL) FROM feature_value
+               WHERE build_id=? GROUP BY entity_id ORDER BY entity_id""",
+            (entity_build.build_id,),
+        )
+    }
     numeric_cell_count = sum(int(item["accepted"]) for item in counts.values())
     distinct_fact_count = int(
         connection.execute(
@@ -713,6 +736,7 @@ def promote_current_ai_feature_family(
         "ecosystem_build_id": ecosystem_build.build_id,
         "promoted": promoted,
         "feature_cells": counts,
+        "entity_cells": entity_counts,
         "accepted_numeric_cells": numeric_cell_count,
         "distinct_accepted_facts": distinct_fact_count,
         "modeling_allowed": False,

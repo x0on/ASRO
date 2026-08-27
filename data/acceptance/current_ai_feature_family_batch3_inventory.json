@@ -1,0 +1,24 @@
+{
+  "inventory_version": "1.0.0",
+  "status": "candidate_acquisition_only",
+  "episode_manifest": "data/acceptance/current_ai_cycle_4x6_slice.toml",
+  "selection": {
+    "entities": ["Amazon"],
+    "months": ["2025-11"],
+    "feature": "ai_compute_contract_value_flow@1.0.0",
+    "rationale": "Bounded Amazon-first SEC counterparty search found one explicit customer-side AI data-center lease total available within the row cutoff."
+  },
+  "documents": [
+    {
+      "id": "cipher-amazon-2025-11-8k-exhibit",
+      "entity": "Amazon",
+      "candidate_months": ["2025-11"],
+      "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998925000110/nov3_earningspressreleasex.htm",
+      "publisher": "SEC EDGAR / Cipher Mining",
+      "public_availability_at": "2025-11-03T00:00:00Z",
+      "candidate_event_ids": []
+    }
+  ],
+  "controls": [],
+  "policy": "Full content must be hash-preserved and manually reviewed before V2 promotion. Cipher financing is not attributed to Amazon."
+}

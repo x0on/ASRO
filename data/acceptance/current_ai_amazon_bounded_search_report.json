@@ -1,0 +1,35 @@
+{
+  "report_version": "1.0.0",
+  "status": "reviewed_bounded_search",
+  "entity": "Amazon",
+  "window": ["2025-07", "2025-12"],
+  "search_universe": [
+    "quarantined ASRO DATA candidate edges mentioning Amazon or AWS",
+    "Amazon SEC filings already reacquired for the slice",
+    "SEC-filed counterparty disclosures for Amazon/AWS data-center leases, guarantees, backstops, and project financing"
+  ],
+  "accepted": [
+    {
+      "source_id": "cipher-amazon-2025-11-8k-exhibit",
+      "feature": "ai_compute_contract_value_flow@1.0.0",
+      "period": "2025-11",
+      "value_usd": 5500000000,
+      "role": "Amazon customer / Cipher infrastructure provider"
+    }
+  ],
+  "reviewed_exclusions": [
+    {
+      "claim": "OpenAI committed $38 billion of AWS compute spend in November 2025",
+      "reason": "provider-side Amazon revenue/backlog relationship, not an Amazon customer obligation; retained as a research lead rather than added to the customer-side aggregate"
+    },
+    {
+      "claim": "Cipher financing was anchored by the AWS lease",
+      "reason": "the financing is Cipher debt; the reviewed filing does not make it Amazon debt or an Amazon guarantee"
+    },
+    {
+      "claim": "Amazon 2025 year-end debt, lease, and purchase-obligation totals",
+      "reason": "published in February 2026 after every row cutoff in the July-December 2025 slice and not sufficiently attributable to AI for a historical monthly cell"
+    }
+  ],
+  "remaining_unknown_policy": "No other Amazon row receives a numeric value or zero without an explicit qualifying primary disclosure available by that row cutoff."
+}
