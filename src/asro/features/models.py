@@ -9,6 +9,7 @@ class Aggregation(StrEnum):
     SUM = "sum"
     MEAN = "mean"
     LATEST = "latest"
+    AS_OF_LATEST = "as_of_latest"
 
 
 class MissingnessReason(StrEnum):
@@ -27,6 +28,15 @@ class FeatureSpec(BaseModel):
     aggregation: Aggregation
     unit: str
     expected_facts_per_period: int = Field(ge=1)
+    max_age_months: int | None = Field(default=None, ge=0)
+
+    @model_validator(mode="after")
+    def validate_temporal_semantics(self) -> FeatureSpec:
+        if self.aggregation is Aggregation.AS_OF_LATEST and self.max_age_months is None:
+            raise ValueError("as-of features require max_age_months")
+        if self.aggregation is not Aggregation.AS_OF_LATEST and self.max_age_months is not None:
+            raise ValueError("max_age_months is only valid for as-of features")
+        return self
 
 
 class EcosystemFeatureSpec(BaseModel):

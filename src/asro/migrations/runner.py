@@ -8,6 +8,7 @@ from asro.migrations import (
     candidate_quarantine,
     canonical_lineage,
     ecosystem_store,
+    feature_family_as_of,
     feature_store,
     historical_backfill,
     historical_backfill_integrity,
@@ -71,6 +72,11 @@ MIGRATIONS = (
         release_collection_identity.VERSION,
         release_collection_identity.NAME,
         release_collection_identity.STATEMENTS,
+    ),
+    Migration(
+        feature_family_as_of.VERSION,
+        feature_family_as_of.NAME,
+        feature_family_as_of.STATEMENTS,
     ),
 )
 

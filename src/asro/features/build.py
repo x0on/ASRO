@@ -5,7 +5,7 @@ import json
 import sqlite3
 from collections import defaultdict
 from dataclasses import dataclass
-from datetime import UTC, date, datetime
+from datetime import UTC, date, datetime, time
 from statistics import fmean
 
 from asro.evidence.models import EconomicScope, ObservationV2
@@ -82,6 +82,10 @@ def _reliability(observations: list[ObservationV2]) -> float:
     return round(fmean(values), 6)
 
 
+def _month_age(observed: date, target: date) -> int:
+    return (target.year - observed.year) * 12 + target.month - observed.month
+
+
 class FeatureStoreBuilder:
     def __init__(self, connection: sqlite3.Connection) -> None:
         self._connection = connection
@@ -119,6 +123,7 @@ class FeatureStoreBuilder:
                 semantics.get("aggregation") != spec.aggregation.value
                 or semantics.get("unit") != spec.unit
                 or semantics.get("expected_facts_per_period") != spec.expected_facts_per_period
+                or semantics.get("max_age_months") != spec.max_age_months
             ):
                 raise ValueError(
                     f"build spec does not match registered semantics: "
@@ -131,6 +136,7 @@ class FeatureStoreBuilder:
         )
         spec_by_key = {(spec.feature_key, spec.feature_version): spec for spec in canonical_specs}
         groups: dict[tuple[str, str, str, str], list[ObservationV2]] = defaultdict(list)
+        as_of_groups: dict[tuple[str, str, str], list[ObservationV2]] = defaultdict(list)
         for observation in observations:
             candidate = spec_by_key.get((observation.feature_key, observation.feature_version))
             if (
@@ -143,7 +149,16 @@ class FeatureStoreBuilder:
             ):
                 continue
             month = observation.period_end.date().replace(day=1).isoformat()
-            if requested_start.isoformat() <= month <= requested_end.isoformat():
+            if candidate.aggregation is Aggregation.AS_OF_LATEST:
+                if month <= requested_end.isoformat():
+                    as_of_groups[
+                        (
+                            observation.entity_id,
+                            observation.feature_key,
+                            observation.feature_version,
+                        )
+                    ].append(observation)
+            elif requested_start.isoformat() <= month <= requested_end.isoformat():
                 groups[
                     (
                         observation.entity_id,
@@ -159,9 +174,34 @@ class FeatureStoreBuilder:
             row_period_start, row_period_end = _month_bounds(month_value)
             for entity in sorted(set(expected_entities)):
                 for spec in canonical_specs:
-                    contributors = groups.get(
-                        (entity, month, spec.feature_key, spec.feature_version), []
+                    row_cutoff = datetime.combine(
+                        date.fromisoformat(row_period_end), time.max, tzinfo=UTC
                     )
+                    if spec.aggregation is Aggregation.AS_OF_LATEST:
+                        candidates = [
+                            item
+                            for item in as_of_groups.get(
+                                (entity, spec.feature_key, spec.feature_version), []
+                            )
+                            if item.period_end is not None
+                            and item.period_end.date() <= date.fromisoformat(row_period_end)
+                            and item.availability_at <= row_cutoff
+                        ]
+                        fresh = [
+                            item
+                            for item in candidates
+                            if _month_age(item.period_end.date(), month_value)
+                            <= (spec.max_age_months or 0)
+                        ]
+                        latest_period = max(
+                            (item.period_end for item in fresh if item.period_end is not None),
+                            default=None,
+                        )
+                        contributors = [item for item in fresh if item.period_end == latest_period]
+                    else:
+                        contributors = groups.get(
+                            (entity, month, spec.feature_key, spec.feature_version), []
+                        )
                     if not contributors:
                         rows.append(
                             FeatureValue(
@@ -192,6 +232,11 @@ class FeatureStoreBuilder:
                         (_representative(items) for items in by_fact.values()),
                         key=lambda item: (item.availability_at, item.observation_id),
                     )
+                    if spec.aggregation is Aggregation.AS_OF_LATEST and len(representatives) != 1:
+                        raise ValueError(
+                            f"as-of feature requires exactly one canonical point fact: "
+                            f"{spec.feature_key}@{spec.feature_version}"
+                        )
                     values = [
                         float(item.value_numeric)
                         for item in representatives
@@ -251,7 +296,7 @@ class FeatureStoreBuilder:
             "coverage_semantics": (
                 "distinct_economic_facts / expected_facts_per_period, capped at 1"
             ),
-            "specs": [spec.model_dump(mode="json") for spec in canonical_specs],
+            "specs": [spec.model_dump(mode="json", exclude_none=True) for spec in canonical_specs],
             "rows": canonical_rows,
         }
         serialized = json.dumps(manifest, sort_keys=True, separators=(",", ":"))

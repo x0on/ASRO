@@ -376,6 +376,158 @@ def test_requested_window_includes_entirely_evidence_free_month(tmp_path: Path) 
     connection.close()
 
 
+def test_as_of_feature_respects_publication_cutoff_and_staleness(tmp_path: Path) -> None:
+    connection, _flow_spec = _prepare(tmp_path)
+    assert EvidenceRepository.register_feature(
+        connection,
+        FeatureDefinitionV2(
+            feature_key="ai_infrastructure_debt_stock",
+            feature_version="1.0.0",
+            definition_json=json.dumps(
+                {
+                    "aggregation": "as_of_latest",
+                    "unit": "currency",
+                    "grain": "entity_month_as_of",
+                    "expected_facts_per_period": 1,
+                    "max_age_months": 1,
+                },
+                sort_keys=True,
+            ),
+            released_at="2026-01-01",
+        ),
+    )
+    source_id, event_id = connection.execute(
+        "SELECT document_id,event_id FROM financial_events WHERE event_id='event-one'"
+    ).fetchone()
+    stock_values = _observation(
+        "stock-one", source_id, event_id, 900_000_000, "2026-03-31T12:00:00Z"
+    ).model_dump()
+    stock_values.update(
+        {
+            "feature_key": "ai_infrastructure_debt_stock",
+            "feature_version": "1.0.0",
+            "period_start": "2026-01-31",
+            "period_end": "2026-01-31",
+            "event_at": "2026-01-31",
+            "published_at": "2026-02-15T12:00:00Z",
+            "availability_at": "2026-02-15T12:00:00Z",
+            "extracted_at": "2026-02-15T12:00:00Z",
+        }
+    )
+    stock = ObservationV2.model_validate(stock_values)
+    assert EvidenceRepository.insert(connection, stock)
+    connection.commit()
+    spec = FeatureSpec(
+        feature_key="ai_infrastructure_debt_stock",
+        feature_version="1.0.0",
+        aggregation=Aggregation.AS_OF_LATEST,
+        unit="currency",
+        expected_facts_per_period=1,
+        max_age_months=1,
+    )
+    result = FeatureStoreBuilder(connection).build_entity_month(
+        [spec],
+        "2026-04-30T23:59:59Z",
+        ["company-a"],
+        code_commit="as-of-test",
+        feature_set_version="as-of-1",
+        period_start="2026-01-01",
+        period_end="2026-04-30",
+    )
+    rows = connection.execute(
+        """SELECT period_start,value_numeric,missingness_reason
+           FROM feature_value WHERE build_id=? ORDER BY period_start""",
+        (result.build_id,),
+    ).fetchall()
+    assert [tuple(row) for row in rows] == [
+        ("2026-01-01", None, "unknown"),
+        ("2026-02-01", 900_000_000, None),
+        ("2026-03-01", None, "unknown"),
+        ("2026-04-01", None, "unknown"),
+    ]
+    connection.close()
+
+
+def test_feature_spec_rejects_flow_stock_semantic_confusion() -> None:
+    with pytest.raises(ValueError, match="require max_age_months"):
+        FeatureSpec(
+            feature_key="stock",
+            feature_version="1",
+            aggregation=Aggregation.AS_OF_LATEST,
+            unit="currency",
+            expected_facts_per_period=1,
+        )
+    with pytest.raises(ValueError, match="only valid for as-of"):
+        FeatureSpec(
+            feature_key="flow",
+            feature_version="1",
+            aggregation=Aggregation.SUM,
+            unit="currency",
+            expected_facts_per_period=1,
+            max_age_months=1,
+        )
+
+
+def test_as_of_feature_rejects_multiple_canonical_point_facts(tmp_path: Path) -> None:
+    connection, _flow_spec = _prepare(tmp_path)
+    assert EvidenceRepository.register_feature(
+        connection,
+        FeatureDefinitionV2(
+            feature_key="ai_credit_support_stock",
+            feature_version="1.0.0",
+            definition_json=json.dumps(
+                {
+                    "aggregation": "as_of_latest",
+                    "unit": "currency",
+                    "grain": "entity_month_as_of",
+                    "expected_facts_per_period": 1,
+                    "max_age_months": 2,
+                },
+                sort_keys=True,
+            ),
+            released_at="2026-01-01",
+        ),
+    )
+    for ordinal, event_id in enumerate(("event-one", "event-two"), start=1):
+        source_id = connection.execute(
+            "SELECT document_id FROM financial_events WHERE event_id=?", (event_id,)
+        ).fetchone()[0]
+        values = _observation(
+            f"support-{ordinal}", source_id, event_id, float(ordinal), "2026-03-31T12:00:00Z"
+        ).model_dump()
+        values.update(
+            {
+                "feature_key": "ai_credit_support_stock",
+                "feature_version": "1.0.0",
+                "period_start": "2026-03-01",
+                "period_end": "2026-03-31",
+                "event_time_precision": "second",
+            }
+        )
+        assert EvidenceRepository.insert(connection, ObservationV2.model_validate(values))
+    connection.commit()
+    with pytest.raises(ValueError, match="exactly one canonical point fact"):
+        FeatureStoreBuilder(connection).build_entity_month(
+            [
+                FeatureSpec(
+                    feature_key="ai_credit_support_stock",
+                    feature_version="1.0.0",
+                    aggregation=Aggregation.AS_OF_LATEST,
+                    unit="currency",
+                    expected_facts_per_period=1,
+                    max_age_months=2,
+                )
+            ],
+            "2026-03-31T23:59:59Z",
+            ["company-a"],
+            code_commit="as-of-double-count-test",
+            feature_set_version="as-of-1",
+            period_start="2026-03-01",
+            period_end="2026-03-31",
+        )
+    connection.close()
+
+
 def test_feature_identity_distinguishes_versions_and_feature_sets(tmp_path: Path) -> None:
     connection, first_spec = _prepare(tmp_path)
     source_id, event_id = connection.execute(
@@ -2626,7 +2778,7 @@ def test_forward_upgrade_preserves_existing_observations_and_feature_values(
         assert [
             row[0]
             for row in upgraded.execute("SELECT version FROM schema_migrations ORDER BY version")
-        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
         assert upgraded.execute("SELECT COUNT(*) FROM observation_v2").fetchone()[0] == (
             2 if starting_version == 2 else 1
         )
