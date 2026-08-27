@@ -9,6 +9,7 @@ from asro.migrations import (
     canonical_lineage,
     ecosystem_store,
     feature_family_as_of,
+    feature_family_as_of_cutoff,
     feature_store,
     historical_backfill,
     historical_backfill_integrity,
@@ -77,6 +78,11 @@ MIGRATIONS = (
         feature_family_as_of.VERSION,
         feature_family_as_of.NAME,
         feature_family_as_of.STATEMENTS,
+    ),
+    Migration(
+        feature_family_as_of_cutoff.VERSION,
+        feature_family_as_of_cutoff.NAME,
+        feature_family_as_of_cutoff.STATEMENTS,
     ),
 )
 

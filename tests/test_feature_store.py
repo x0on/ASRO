@@ -834,6 +834,89 @@ def test_direct_sql_lineage_cannot_claim_missing_fact_or_observation(tmp_path: P
     connection.close()
 
 
+def test_direct_sql_as_of_lineage_enforces_same_month_row_cutoff(tmp_path: Path) -> None:
+    connection, _ = _prepare(tmp_path)
+    assert EvidenceRepository.register_feature(
+        connection,
+        FeatureDefinitionV2(
+            feature_key="ai_credit_support_stock",
+            feature_version="1.0.0",
+            definition_json=json.dumps(
+                {
+                    "aggregation": "as_of_latest",
+                    "unit": "currency",
+                    "grain": "entity_month_as_of",
+                    "expected_facts_per_period": 1,
+                    "max_age_months": 2,
+                },
+                sort_keys=True,
+            ),
+            released_at="2026-01-01",
+        ),
+    )
+    source_id = connection.execute(
+        "SELECT document_id FROM financial_events WHERE event_id='event-one'"
+    ).fetchone()[0]
+    for observation_id, available_at in (
+        ("support-timely", "2026-03-31T12:00:00Z"),
+        ("support-future", "2026-04-15T12:00:00Z"),
+    ):
+        values = _observation(
+            observation_id, source_id, "event-one", 3.0, available_at
+        ).model_dump()
+        values.update(
+            {
+                "feature_key": "ai_credit_support_stock",
+                "feature_version": "1.0.0",
+                "published_at": available_at,
+                "event_time_precision": "second",
+            }
+        )
+        assert EvidenceRepository.insert(
+            connection,
+            ObservationV2.model_validate(values, context={"from_storage": True}),
+        )
+    for suffix in ("timely", "future-fact", "future-contributor"):
+        connection.execute(
+            """INSERT INTO dataset_build VALUES (?, 'sql', 'as-of-direct',
+               '2026-05-01T00:00:00+00:00', '2026-03-01', '2026-03-31', 1,
+               '{}', ?, '2026-05-01T00:00:00+00:00')""",
+            (f"as-of-build-{suffix}", f"as-of-checksum-{suffix}"),
+        )
+        connection.execute(
+            """INSERT INTO feature_value VALUES (?, ?, 'company-a', '2026-03-01',
+               '2026-03-31', 'ai_credit_support_stock', '1.0.0', 3.0, NULL,
+               1.0, 1.0, 1, 1)""",
+            (f"as-of-value-{suffix}", f"as-of-build-{suffix}"),
+        )
+    connection.execute(
+        """INSERT INTO feature_value_fact VALUES (
+           'as-of-value-timely', 'event-one', 'assignment-event-one', 'support-timely')"""
+    )
+    connection.execute(
+        """INSERT INTO feature_value_contributor VALUES (
+           'as-of-value-timely', 'event-one', 'assignment-event-one', 'support-timely')"""
+    )
+    with pytest.raises(sqlite3.IntegrityError, match="fact lineage does not match"):
+        connection.execute(
+            """INSERT INTO feature_value_fact VALUES (
+               'as-of-value-future-fact', 'event-one', 'assignment-event-one',
+               'support-future')"""
+        )
+    connection.execute(
+        """INSERT INTO feature_value_fact VALUES (
+           'as-of-value-future-contributor', 'event-one', 'assignment-event-one',
+           'support-timely')"""
+    )
+    with pytest.raises(sqlite3.IntegrityError, match="contributor does not match"):
+        connection.execute(
+            """INSERT INTO feature_value_contributor VALUES (
+               'as-of-value-future-contributor', 'event-one', 'assignment-event-one',
+               'support-future')"""
+        )
+    connection.close()
+
+
 @pytest.mark.parametrize("numeric", [True, False])
 def test_build_finalization_rejects_cells_inconsistent_with_fact_lineage(
     tmp_path: Path, numeric: bool
@@ -2778,7 +2861,7 @@ def test_forward_upgrade_preserves_existing_observations_and_feature_values(
         assert [
             row[0]
             for row in upgraded.execute("SELECT version FROM schema_migrations ORDER BY version")
-        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
         assert upgraded.execute("SELECT COUNT(*) FROM observation_v2").fetchone()[0] == (
             2 if starting_version == 2 else 1
         )
