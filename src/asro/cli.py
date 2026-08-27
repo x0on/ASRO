@@ -230,6 +230,9 @@ def acceptance_promote_feature_family(
     output: Annotated[Path, typer.Option()] = Path(
         "data/acceptance/current_ai_4x6_feature_family_report.json"
     ),
+    additional_acquired: Annotated[Path, typer.Option()] = Path(
+        "data/acceptance/acquired/current-ai-feature-family-batch2"
+    ),
 ) -> None:
     """Promote the bounded reviewed primary-source feature-family batch."""
     settings = Settings()
@@ -237,6 +240,7 @@ def acceptance_promote_feature_family(
         result = promote_current_ai_feature_family(
             connection,
             acquired_directory=acquired,
+            additional_acquired_directories=(additional_acquired,),
             code_commit=os.getenv("GITHUB_SHA", "local-reviewed-batch"),
         )
     output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")

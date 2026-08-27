@@ -7,6 +7,7 @@ import json
 import sqlite3
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import Any
 
 from asro.backfill.candidate import ingest_candidate_package
 from asro.backfill.controls import ControlObservation, register_control_observation
@@ -424,6 +425,21 @@ _FEATURE_FAMILY_FACTS = (
         "evidence_marker": "$9.7 billion",
         "evidence": "The contract value is approximately $9.7 billion through 2031.",
     },
+    {
+        "receipt_id": "nebius-meta-2025-11-6k",
+        "entity": "Meta",
+        "counterparty": "Nebius",
+        "feature_key": "ai_compute_contract_value_flow",
+        "amount": 2_900_000_000,
+        "event_date": "2025-11-01",
+        "event_type": EventType.CAPEX_COMMITMENT,
+        "locator": "Commercial Agreement with Meta",
+        "evidence_marker": "$2.9 billion",
+        "evidence": (
+            "The Order has a total contract value of approximately $2.9 billion for two "
+            "dedicated GPU infrastructure capacity clusters over a five-year term."
+        ),
+    },
 )
 
 
@@ -431,13 +447,19 @@ def promote_current_ai_feature_family(
     connection: sqlite3.Connection,
     *,
     acquired_directory: Path,
+    additional_acquired_directories: tuple[Path, ...] = (),
     code_commit: str,
 ) -> dict[str, object]:
     """Promote a bounded primary-source batch and build the exact 4x6 matrices."""
-    receipts_payload = json.loads(
-        (acquired_directory / "acquisition-receipts.json").read_text(encoding="utf-8")
-    )
-    receipts = {item["id"]: item for item in receipts_payload["receipts"]}
+    receipts: dict[str, dict[str, Any]] = {}
+    for directory in (acquired_directory, *additional_acquired_directories):
+        receipts_payload = json.loads(
+            (directory / "acquisition-receipts.json").read_text(encoding="utf-8")
+        )
+        for raw in receipts_payload["receipts"]:
+            receipt_record = dict(raw)
+            receipt_record["_directory"] = directory
+            receipts[str(receipt_record["id"])] = receipt_record
     review_time = datetime.now(UTC).replace(microsecond=0).isoformat()
     repository = SqliteRepository(Path("unused"))
     definitions = (
@@ -498,7 +520,7 @@ def promote_current_ai_feature_family(
     promoted: list[dict[str, object]] = []
     for fact in _FEATURE_FAMILY_FACTS:
         receipt = receipts[str(fact["receipt_id"])]
-        content_path = acquired_directory / str(receipt["content_file"])
+        content_path = Path(str(receipt["_directory"])) / str(receipt["content_file"])
         content_bytes = content_path.read_bytes()
         digest = hashlib.sha256(content_bytes).hexdigest()
         if digest != receipt["content_sha256"]:
@@ -675,12 +697,24 @@ def promote_current_ai_feature_family(
             (entity_build.build_id,),
         )
     }
+    numeric_cell_count = sum(int(item["accepted"]) for item in counts.values())
+    distinct_fact_count = int(
+        connection.execute(
+            """SELECT COUNT(DISTINCT fact.canonical_fact_id)
+               FROM feature_value value JOIN feature_value_fact fact
+                 ON fact.feature_value_id=value.feature_value_id
+               WHERE value.build_id=?""",
+            (entity_build.build_id,),
+        ).fetchone()[0]
+    )
     return {
         "status": "partial_evidence_acceptance",
         "entity_build_id": entity_build.build_id,
         "ecosystem_build_id": ecosystem_build.build_id,
         "promoted": promoted,
         "feature_cells": counts,
+        "accepted_numeric_cells": numeric_cell_count,
+        "distinct_accepted_facts": distinct_fact_count,
         "modeling_allowed": False,
     }
 

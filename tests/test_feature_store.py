@@ -389,7 +389,7 @@ def test_as_of_feature_respects_publication_cutoff_and_staleness(tmp_path: Path)
                     "unit": "currency",
                     "grain": "entity_month_as_of",
                     "expected_facts_per_period": 1,
-                    "max_age_months": 1,
+                    "max_age_months": 3,
                 },
                 sort_keys=True,
             ),
@@ -423,16 +423,16 @@ def test_as_of_feature_respects_publication_cutoff_and_staleness(tmp_path: Path)
         aggregation=Aggregation.AS_OF_LATEST,
         unit="currency",
         expected_facts_per_period=1,
-        max_age_months=1,
+        max_age_months=3,
     )
     result = FeatureStoreBuilder(connection).build_entity_month(
         [spec],
-        "2026-04-30T23:59:59Z",
+        "2026-05-31T23:59:59Z",
         ["company-a"],
         code_commit="as-of-test",
         feature_set_version="as-of-1",
         period_start="2026-01-01",
-        period_end="2026-04-30",
+        period_end="2026-05-31",
     )
     rows = connection.execute(
         """SELECT period_start,value_numeric,missingness_reason
@@ -442,8 +442,9 @@ def test_as_of_feature_respects_publication_cutoff_and_staleness(tmp_path: Path)
     assert [tuple(row) for row in rows] == [
         ("2026-01-01", None, "unknown"),
         ("2026-02-01", 900_000_000, None),
-        ("2026-03-01", None, "unknown"),
-        ("2026-04-01", None, "unknown"),
+        ("2026-03-01", 900_000_000, None),
+        ("2026-04-01", 900_000_000, None),
+        ("2026-05-01", None, "unknown"),
     ]
     assert EvidenceRepository.register_feature(
         connection,
@@ -481,9 +482,19 @@ def test_as_of_feature_respects_publication_cutoff_and_staleness(tmp_path: Path)
     assert [tuple(row) for row in ecosystem_rows] == [
         ("2026-01-01", None, "unknown"),
         ("2026-02-01", 900_000_000, None),
-        ("2026-03-01", None, "unknown"),
-        ("2026-04-01", None, "unknown"),
+        ("2026-03-01", 900_000_000, None),
+        ("2026-04-01", 900_000_000, None),
+        ("2026-05-01", None, "unknown"),
     ]
+    lineage = connection.execute(
+        """SELECT COUNT(*),COUNT(DISTINCT fact.canonical_fact_id)
+           FROM ecosystem_feature_value value
+           JOIN ecosystem_feature_value_fact fact
+             ON fact.ecosystem_feature_value_id=value.ecosystem_feature_value_id
+           WHERE value.build_id=?""",
+        (ecosystem.build_id,),
+    ).fetchone()
+    assert tuple(lineage) == (3, 1)
     connection.close()
 
 

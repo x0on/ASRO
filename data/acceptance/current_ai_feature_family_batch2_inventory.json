@@ -1,0 +1,24 @@
+{
+  "inventory_version": "1.0.0",
+  "status": "candidate_acquisition_only",
+  "episode_manifest": "data/acceptance/current_ai_cycle_4x6_slice.toml",
+  "selection": {
+    "entities": ["Meta"],
+    "months": ["2025-11"],
+    "feature": "ai_compute_contract_value_flow@1.0.0",
+    "rationale": "Targeted same-month SEC filing identified after the first reviewed batch. Candidate status does not establish acceptance."
+  },
+  "documents": [
+    {
+      "id": "nebius-meta-2025-11-6k",
+      "entity": "Meta",
+      "candidate_months": ["2025-11"],
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109803/tm2530882d2_6k.htm",
+      "publisher": "SEC EDGAR / Nebius",
+      "public_availability_at": "2025-11-12T00:00:00Z",
+      "candidate_event_ids": ["evt-nbis-meta-20251101-01"]
+    }
+  ],
+  "controls": [],
+  "policy": "Full content must be hash-preserved and manually reviewed before V2 promotion."
+}
