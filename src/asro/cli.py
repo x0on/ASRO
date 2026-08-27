@@ -17,6 +17,7 @@ from asro.backfill import (
     candidate_episode_support,
     ingest_candidate_package,
 )
+from asro.backfill.acceptance_queue import build_acceptance_queue
 from asro.backfill.acquisition import acquire_inventory
 from asro.backfill.current_ai_slice import promote_current_ai_feature_family
 from asro.backfill.negative_evidence import enumerate_negative_evidence_universe
@@ -200,6 +201,24 @@ def acceptance_acquire(
         user_agent=settings.sec_user_agent,
     )
     typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))
+
+
+@app.command("acceptance-queue-run")
+def acceptance_queue_run(
+    manifest: Annotated[Path, typer.Option()],
+    acquired: Annotated[Path, typer.Option()],
+    output: Annotated[Path, typer.Option()] = Path("data/reports/current-ai-acceptance-queue.json"),
+    acquire: Annotated[bool, typer.Option()] = False,
+) -> None:
+    """Acquire authoritative documents and build a non-promoting reviewer queue."""
+    settings = Settings()
+    if acquire:
+        acquire_inventory(manifest, acquired, user_agent=settings.sec_user_agent)
+    with SqliteRepository(settings.database_path).connect() as connection:
+        report = build_acceptance_queue(connection, manifest, acquired)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(report, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    typer.echo(json.dumps(report, sort_keys=True, separators=(",", ":")))
 
 
 @app.command("acceptance-negative-universe")

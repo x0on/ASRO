@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T23:13:37.547263+00:00",
+  "generated_at": "2026-08-27T23:20:33.371712+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "cannibalization": 54.2,
-    "stress": 57.1,
     "capital": 42.64073738140746,
-    "fragility": 61.1,
-    "transmission": 39.6,
+    "cannibalization": 54.2,
     "counter_evidence": 42.9,
+    "stress": 57.1,
     "external_pressure": 16.12,
-    "circularity": 59.4,
-    "monetization": 42.9
+    "fragility": 61.1,
+    "monetization": 42.9,
+    "transmission": 39.6,
+    "circularity": 59.4
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
+    "capital": "aggregate",
     "cannibalization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
     "stress": "directional_estimate",
     "fragility": "directional_estimate",
-    "capital": "aggregate",
-    "transmission": "confirmed_trigger",
-    "counter_evidence": "directional_estimate",
-    "external_pressure": "aggregate",
     "circularity": "directional_estimate",
-    "monetization": "directional_estimate"
+    "monetization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "external_pressure": "aggregate"
   },
   "dimension_direction": {
     "circularity": {
@@ -35041,5 +35041,13 @@
       "evidence_text": null,
       "url": null
     }
-  ]
+  ],
+  "acceptance_queue": {
+    "run_id": "0ea655db1394d4216d736d88422378eba1b840eb465dafcb364d2c609c6db5f1",
+    "created_at": "2026-08-27T23:20:32+00:00",
+    "item_count": 1,
+    "pending_review": 0,
+    "duplicate_fact": 1,
+    "rejected": 0
+  }
 }

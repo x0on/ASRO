@@ -219,6 +219,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         history = _safe_rows(repository.recent_snapshots(connection, limit=365))
         review_counts = repository.review_counts(connection)
         feature_family = _feature_family_rows(connection)
+        acceptance_queue = _acceptance_queue_status(connection)
 
     dimensions = compute_dimension_scores(observations)
     convergence = compute_convergence(dimensions)
@@ -260,6 +261,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         "mention_count": mention_count,
         "review_counts": review_counts,
         "feature_family": feature_family,
+        "acceptance_queue": acceptance_queue,
     }
 
     (data_dir / "snapshot.json").write_text(
@@ -297,3 +299,28 @@ def _feature_family_rows(connection: sqlite3.Connection) -> list[dict[str, objec
         (build[0],),
     )
     return [dict(row) for row in rows]
+
+
+def _acceptance_queue_status(connection: sqlite3.Connection) -> dict[str, object]:
+    run = connection.execute(
+        """SELECT run_id,created_at,item_count FROM acceptance_queue_run
+           ORDER BY created_at DESC,run_id DESC LIMIT 1"""
+    ).fetchone()
+    if run is None:
+        return {"item_count": 0, "pending_review": 0, "duplicate_fact": 0, "rejected": 0}
+    counts = {
+        str(row[0]): int(row[1])
+        for row in connection.execute(
+            """SELECT status,COUNT(*) FROM acceptance_queue_item
+               WHERE run_id=? GROUP BY status""",
+            (run[0],),
+        )
+    }
+    return {
+        "run_id": run[0],
+        "created_at": run[1],
+        "item_count": int(run[2]),
+        "pending_review": counts.get("pending_review", 0),
+        "duplicate_fact": counts.get("duplicate_fact", 0),
+        "rejected": counts.get("rejected", 0),
+    }

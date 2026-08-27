@@ -80,6 +80,19 @@ jobs:
           REVIEW_LIMIT: ${{ (inputs.backfill == true || contains(github.event.head_commit.message, '[backfill]')) && 600 || 100 }}
           RETRY_FLAGGED_LIMIT: 700
         run: asro review --limit "$REVIEW_LIMIT" --retry-flagged-limit "$RETRY_FLAGGED_LIMIT" --batch-size 10
+      - name: Daily authoritative acceptance queue audit
+        if: github.event.schedule == '47 3 * * *' || inputs.review
+        # Candidate queue failures are reported but cannot block the hourly evidence site.
+        # This command never promotes observations or changes accepted aggregates.
+        continue-on-error: true
+        env:
+          ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
+        run: >-
+          asro acceptance-queue-run
+          --manifest data/acceptance/current_ai_feature_family_batch3_inventory.json
+          --acquired "$RUNNER_TEMP/asro-acceptance-queue"
+          --output data/reports/current-ai-acceptance-queue.json
+          --acquire
       - name: Build static site
         run: asro build-site
       - name: Validate usable release artifact

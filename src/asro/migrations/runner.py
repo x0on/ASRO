@@ -5,6 +5,7 @@ from collections.abc import Sequence
 from dataclasses import dataclass
 
 from asro.migrations import (
+    acceptance_queue,
     candidate_quarantine,
     canonical_lineage,
     ecosystem_as_of_lineage,
@@ -89,6 +90,11 @@ MIGRATIONS = (
         ecosystem_as_of_lineage.VERSION,
         ecosystem_as_of_lineage.NAME,
         ecosystem_as_of_lineage.STATEMENTS,
+    ),
+    Migration(
+        acceptance_queue.VERSION,
+        acceptance_queue.NAME,
+        acceptance_queue.STATEMENTS,
     ),
 )
 
