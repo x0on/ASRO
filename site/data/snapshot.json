@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T23:05:26.066904+00:00",
+  "generated_at": "2026-08-27T23:07:47.878726+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "transmission": 39.6,
-    "monetization": 42.9,
-    "cannibalization": 54.2,
-    "circularity": 59.4,
-    "stress": 57.1,
     "counter_evidence": 42.9,
-    "capital": 42.64073738140746,
+    "cannibalization": 54.2,
+    "fragility": 61.1,
+    "circularity": 59.4,
+    "transmission": 39.6,
+    "stress": 57.1,
     "external_pressure": 16.12,
-    "fragility": 61.1
+    "monetization": 42.9,
+    "capital": 42.64073738140746
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "transmission": "confirmed_trigger",
-    "monetization": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "circularity": "directional_estimate",
     "counter_evidence": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "circularity": "directional_estimate",
+    "monetization": "directional_estimate",
     "stress": "directional_estimate",
-    "capital": "aggregate",
     "external_pressure": "aggregate",
-    "fragility": "directional_estimate"
+    "transmission": "confirmed_trigger",
+    "capital": "aggregate"
   },
   "dimension_direction": {
     "circularity": {
@@ -697,6 +697,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-27T23:07:46+00:00",
+      "score": 44.9,
+      "label": "FORMING",
+      "dimensions": "{\"monetization\": 42.9, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 59.4, \"stress\": 57.1, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-27T23:00:15+00:00",
       "score": 44.9,
@@ -11117,6 +11123,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:a0e2f0c86156f0f318136714c3c7f056388c6b70db0beb793f97cdd81b2a356d",
+        "label": "Is Microsoft Stock A True Safe Haven When The Market Stumbles? - Trefis",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Trefis",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQUFZJNnJoOFQ1elJ1WW8taXV2Vi12YW03VHBaSkYyeGZidEZ3aERNRzlHcEwzQWJHSWhIVkgwR1RzeXU0UkZ4cGRrcE9BNzdyMmJrWnVvS2wxMzAtZFI4RTNkTnhER3pJMXZmbF9tWDBSLUhIdEJpSTMwemFyckU5SnBKMlJsWXUtenhWdjBFZ1lhYU92TjlXQnkzSVIwbzlIYkVNeUZDSnhvU2JoaFVyNkNPbjFtR3ltR3JlR1FRcw?oc=5",
+        "date": "Thu, 27 Aug 2026 16:52:07 GMT",
+        "summary": "Is Microsoft Stock A True Safe Haven When The Market Stumbles? Trefis",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:b0ee680a5cd985404ec9caa837b06e1a897687ffe576df5c059f8e59b21d14da",
         "label": "Here's what companies like Walmart and Amazon say they're doing with their tariff refunds - marketplace.org",
         "kind": "evidence",
@@ -11365,18 +11383,6 @@
         "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ0JNQmwwNVZOX0ZYcW03QlBfNy1Ddnl4OGtNckhqOHIwOW8tRGp2dXJzdXRYcU1jeFpaeGcxMmcwVHpiT2xwT3RqeW1hTnVrb1BhMWhVLVMwdkUxR0t2RjhUTGI4dXpRT191UEpWcVRBYzczMm1hQW9xZGtHeVZZN3VLZm1LM2I5LV9jUmRKQWo1cWdJa1FTMklxUVA?oc=5",
         "date": "Thu, 27 Aug 2026 13:25:53 GMT",
         "summary": "Amazon Trades at 24x 2027 Earnings. Citizens Says It Should Be Worth 29x Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b2a97aca1b61fd2a567589569f6ef96bb5bd6932c0943ff4d807accb22694973",
-        "label": "Microsoft Stock (MSFT) Opinions on Strong Cloud Growth and Market Recovery - Quiver Quantitative",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Quiver Quantitative",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQnlfRGhWcTduUEI2OGJJQXR2U2luNWlzb3F0NUsybmhxY2RaRGZTSVExYWM5WmgxdW9oTlY4ZzBGclc5dGZaQXoxaG8wMFYtbDRvX1p3dHFiRVFNRVFUUTd1ZkNBXzNYUTNfckxRYWNUVkNBMlNGZWtablAtS2JkSl91NXVVWGswYnZ0S18xTV9xcVlvMDFQSkM5MkJlZ250bjUtQW1iMnMzWFRLWEU5YQ?oc=5",
-        "date": "Thu, 27 Aug 2026 14:05:00 GMT",
-        "summary": "Microsoft Stock (MSFT) Opinions on Strong Cloud Growth and Market Recovery Quiver Quantitative",
         "score": 1,
         "weight": 1
       }
@@ -19041,6 +19047,13 @@
         "mentions": 1
       },
       {
+        "source": "Microsoft",
+        "target": "evidence:a0e2f0c86156f0f318136714c3c7f056388c6b70db0beb793f97cdd81b2a356d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:b0ee680a5cd985404ec9caa837b06e1a897687ffe576df5c059f8e59b21d14da",
         "type": "EVIDENCE",
@@ -19183,13 +19196,6 @@
       {
         "source": "Amazon",
         "target": "evidence:df0177fb87744b1d03810cd742c945d9382e1b818cdcb9cd8714bde5642404ce",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:b2a97aca1b61fd2a567589569f6ef96bb5bd6932c0943ff4d807accb22694973",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33915,10 +33921,10 @@
   ],
   "collector_runs": [
     {
-      "id": 583,
+      "id": 587,
       "collector": "company-economic-news",
-      "started_at": "2026-08-27T22:59:56+00:00",
-      "completed_at": "2026-08-27T23:00:11+00:00",
+      "started_at": "2026-08-27T23:07:26+00:00",
+      "completed_at": "2026-08-27T23:07:43+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 1,
@@ -33928,13 +33934,13 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "6ea1845d-6291-4746-a12c-5ff94b8ae414"
+      "collection_execution_id": "05be81c4-cb41-425b-b4b9-c9cc6d58ea90"
     },
     {
-      "id": 584,
+      "id": 588,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-27T23:00:11+00:00",
-      "completed_at": "2026-08-27T23:00:11+00:00",
+      "started_at": "2026-08-27T23:07:43+00:00",
+      "completed_at": "2026-08-27T23:07:44+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33944,7 +33950,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "6ea1845d-6291-4746-a12c-5ff94b8ae414"
+      "collection_execution_id": "05be81c4-cb41-425b-b4b9-c9cc6d58ea90"
     },
     {
       "id": 56,
@@ -33963,10 +33969,10 @@
       "collection_execution_id": null
     },
     {
-      "id": 582,
+      "id": 586,
       "collector": "google-news-rss",
-      "started_at": "2026-08-27T22:59:55+00:00",
-      "completed_at": "2026-08-27T22:59:56+00:00",
+      "started_at": "2026-08-27T23:07:25+00:00",
+      "completed_at": "2026-08-27T23:07:26+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
@@ -33976,13 +33982,13 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "6ea1845d-6291-4746-a12c-5ff94b8ae414"
+      "collection_execution_id": "05be81c4-cb41-425b-b4b9-c9cc6d58ea90"
     },
     {
-      "id": 585,
+      "id": 589,
       "collector": "sec-edgar",
-      "started_at": "2026-08-27T23:00:12+00:00",
-      "completed_at": "2026-08-27T23:00:14+00:00",
+      "started_at": "2026-08-27T23:07:44+00:00",
+      "completed_at": "2026-08-27T23:07:46+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33992,7 +33998,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "6ea1845d-6291-4746-a12c-5ff94b8ae414"
+      "collection_execution_id": "05be81c4-cb41-425b-b4b9-c9cc6d58ea90"
     },
     {
       "id": 57,
