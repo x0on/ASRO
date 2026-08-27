@@ -218,7 +218,29 @@ asro db-stats
 asro freshness
 asro watch
 asro review
+asro feature-build --config feature-build.json
+asro feature-audit --build-id BUILD_ID
+asro historical-backfill --manifest episode.toml
+asro candidate-data-quarantine --package candidate-directory
+asro candidate-episode-support --package-id SHA256 --manifest-directory episode-directory
 ```
+
+`feature-build` consumes a pinned JSON configuration for either `entity_month` or
+`ecosystem_month`. `feature-audit` emits deterministic JSON quality and provenance metrics and only
+reads finalized builds. See [the integrated migration plan](docs/INTEGRATED_MODEL_MIGRATION.md) for
+the feature contract and build semantics.
+
+`historical-backfill` freezes full document content and finalized feature builds into an immutable,
+content-addressed episode run. Public availability and local fetch time remain separate. Finalized
+runs require the exact entity/month/feature/source/control matrix, exact build provenance, and no
+temporal leakage; the command does not run or delay live collectors.
+
+`candidate-data-quarantine` is the only supported entry point for untrusted research corpora. It
+hashes the archive and raw files, retains every candidate source edge and assertion, and creates no
+production observations. Excerpts are not treated as documents. Candidates contribute zero
+coverage until authoritative full documents are acquired and a reviewer promotes matching V2
+evidence. Current corpus outcomes are in
+[the Stage 3 candidate report](docs/STAGE3_CANDIDATE_ACCEPTANCE_REPORT.json).
 
 ## Configuration
 
@@ -321,6 +343,14 @@ If you are interested in finance, data engineering, graph databases, NLP, or inv
 ## V1 event extraction
 
 See [docs/V1_EVENT_MODEL.md](docs/V1_EVENT_MODEL.md).
+
+## Integrated model migration
+
+The next architecture separates **Observer** evidence, **Scientist** statistical inference, and
+**Critic** falsification. The repository audit, V2 evidence contract, feature-store grain, baseline
+methods, migration stages, risks, tests, and acceptance criteria are documented in
+[docs/INTEGRATED_MODEL_MIGRATION.md](docs/INTEGRATED_MODEL_MIGRATION.md). The frozen V0 assumptions
+are catalogued in [docs/LEGACY_SCORING_AUDIT.md](docs/LEGACY_SCORING_AUDIT.md).
 
 
 

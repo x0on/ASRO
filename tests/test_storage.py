@@ -25,9 +25,17 @@ def test_insert_deduplicates(tmp_path: Path) -> None:
 
 def test_insert_event_and_observation_deduplicate(tmp_path: Path) -> None:
     repo = SqliteRepository(tmp_path / "test.db")
+    source = score(
+        SourceItem(
+            title="Nvidia guarantee filing",
+            url="https://example.com/guarantee",
+            source="Test filing",
+        ),
+        [],
+    )
     event = FinancialEvent(
         event_id="e1",
-        document_id="d1",
+        document_id=source.item_id,
         event_type=EventType.GUARANTEES,
         source_entity="Nvidia",
         target_entity="OpenAI",
@@ -41,6 +49,7 @@ def test_insert_event_and_observation_deduplicate(tmp_path: Path) -> None:
     assert observation is not None
 
     with repo.connect() as connection:
+        assert repo.insert(connection, source) is True
         assert repo.insert_event(connection, event) is True
         assert repo.insert_event(connection, event) is False
         assert repo.insert_observation(connection, observation) is True

@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import hashlib
 import sqlite3
 import time
+import uuid
 from dataclasses import dataclass, field
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
@@ -28,7 +30,7 @@ from asro.storage import SqliteRepository
 
 
 def _now() -> str:
-    return datetime.now(UTC).isoformat()
+    return datetime.now(UTC).isoformat(timespec="seconds")
 
 
 @dataclass
@@ -43,6 +45,8 @@ class RunSummary:
     new_items: int = 0
     failed: list[str] = field(default_factory=list)
     degraded: list[str] = field(default_factory=list)
+    collector_run_ids: list[int] = field(default_factory=list)
+    collection_execution_id: str = ""
 
     @property
     def ok(self) -> bool:
@@ -85,19 +89,35 @@ class MonitorService:
         )
         return [f'"{company}" ({economic_terms})' for company in companies]
 
-    def run(self, collectors: list[Collector] | None = None) -> RunSummary:
+    def run(
+        self,
+        collectors: list[Collector] | None = None,
+        repair_provenance: tuple[str, str, str, str, str] | None = None,
+    ) -> RunSummary:
         """Run every collector once. Each collector is atomic: its items, documents, events
         and observations are committed together or rolled back together. The run record
         itself is committed separately so a failed collector still leaves an audit row.
         """
         monitor_cfg = self._config["monitor"]
         companies = self._config["entities"]["companies"]
-        summary = RunSummary()
+        summary = RunSummary(collection_execution_id=str(uuid.uuid4()))
+        repair_values = repair_provenance or (None, None, None, None, None)
 
         with self._repository.connect() as connection:
             for collector in self._collectors() if collectors is None else collectors:
                 # Commits: nothing else is pending, so only the run row is persisted here.
-                run_id = self._repository.start_collector_run(connection, collector.name, _now())
+                run_id = self._repository.start_collector_run(
+                    connection,
+                    collector.name,
+                    _now(),
+                    repair_execution_id=repair_values[0],
+                    target_window_start=repair_values[1],
+                    target_window_end=repair_values[2],
+                    acquisition_start=repair_values[3],
+                    acquisition_end=repair_values[4],
+                    collection_execution_id=summary.collection_execution_id,
+                )
+                summary.collector_run_ids.append(run_id)
                 stats = _CollectorStats()
 
                 try:
@@ -128,6 +148,12 @@ class MonitorService:
                 self._repository.finish_collector_run(
                     connection, run_id, _now(), status, stats.seen, stats.new, error
                 )
+                if repair_provenance is not None:
+                    connection.execute(
+                        "INSERT INTO repair_execution_collector VALUES(?,?)",
+                        (repair_provenance[0], run_id),
+                    )
+                    connection.commit()
                 time.sleep(float(monitor_cfg["request_delay_seconds"]))
 
             observations = [
@@ -168,6 +194,57 @@ class MonitorService:
             ),
         ]
         return self.run(collectors)
+
+    def repair_interval(self, since: datetime, until: datetime) -> tuple[RunSummary, str]:
+        """Re-query day-bounded sources while preserving the narrower target interval."""
+        if until <= since:
+            raise ValueError("repair interval end must follow its start")
+        config = self._config
+        acquisition_start = datetime.combine(since.date(), datetime.min.time(), UTC)
+        acquisition_end = datetime.combine(
+            until.date() + timedelta(days=1), datetime.min.time(), UTC
+        )
+        started_at = datetime.now(UTC).isoformat(timespec="seconds")
+        repair_execution_id = hashlib.sha256(
+            f"{since.isoformat()}|{until.isoformat()}|{started_at}".encode()
+        ).hexdigest()
+        provenance = (
+            repair_execution_id,
+            since.isoformat(timespec="seconds"),
+            until.isoformat(timespec="seconds"),
+            acquisition_start.isoformat(timespec="seconds"),
+            acquisition_end.isoformat(timespec="seconds"),
+        )
+        with self._repository.connect() as connection:
+            connection.execute(
+                "INSERT INTO repair_execution VALUES(?,?,?,?,?,?)",
+                (*provenance, started_at),
+            )
+            connection.commit()
+        collectors: list[Collector] = [
+            HistoricalGoogleNewsCollector(
+                [*config["news"]["queries"], *self._company_news_queries()],
+                since=acquisition_start.date(),
+                until=acquisition_end.date(),
+                max_items=500,
+            ),
+            HistoricalSecCollector(
+                config["sec"]["companies"],
+                user_agent=self._settings.sec_user_agent,
+                since=acquisition_start.date(),
+                until=acquisition_end.date(),
+                max_per_company=100,
+            ),
+        ]
+        summary = self.run(collectors, repair_provenance=provenance)
+        if summary.ok and not summary.degraded:
+            with self._repository.connect() as connection:
+                connection.execute(
+                    "INSERT INTO repair_execution_finalization VALUES(?,?)",
+                    (repair_execution_id, datetime.now(UTC).isoformat(timespec="seconds")),
+                )
+                connection.commit()
+        return summary, repair_execution_id
 
     def _ingest(
         self, connection: sqlite3.Connection, scored: ScoredItem, stats: _CollectorStats

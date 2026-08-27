@@ -4,6 +4,7 @@ import json
 import sqlite3
 from pathlib import Path
 
+from asro.migrations.runner import apply_migrations
 from asro.models import FinancialEvent, ScoredItem
 from asro.observations import Observation
 
@@ -16,6 +17,16 @@ class SqliteRepository:
     def connect(self) -> sqlite3.Connection:
         connection = sqlite3.connect(self._path)
         connection.row_factory = sqlite3.Row
+        connection.create_function(
+            "sha256",
+            1,
+            lambda value: __import__("hashlib").sha256(str(value).encode()).hexdigest(),
+            deterministic=True,
+        )
+        connection.execute("PRAGMA foreign_keys = ON")
+        if connection.execute("PRAGMA foreign_keys").fetchone()[0] != 1:
+            connection.close()
+            raise RuntimeError("SQLite foreign-key enforcement could not be enabled")
         self._initialize(connection)
         return connection
 
@@ -151,6 +162,7 @@ class SqliteRepository:
         if "event_id" not in observation_columns:
             connection.execute("ALTER TABLE observations ADD COLUMN event_id TEXT")
         connection.commit()
+        apply_migrations(connection)
 
     @staticmethod
     def insert(connection: sqlite3.Connection, item: ScoredItem) -> bool:
@@ -550,13 +562,35 @@ class SqliteRepository:
         return int(row["count"])
 
     @staticmethod
-    def start_collector_run(connection: sqlite3.Connection, collector: str, started_at: str) -> int:
+    def start_collector_run(
+        connection: sqlite3.Connection,
+        collector: str,
+        started_at: str,
+        repair_execution_id: str | None = None,
+        target_window_start: str | None = None,
+        target_window_end: str | None = None,
+        acquisition_start: str | None = None,
+        acquisition_end: str | None = None,
+        collection_execution_id: str | None = None,
+    ) -> int:
         cur = connection.execute(
             """
-            INSERT INTO collector_runs (collector, started_at, status)
-            VALUES (?, ?, 'running')
+            INSERT INTO collector_runs (
+                collector, started_at, status, repair_execution_id,
+                target_window_start, target_window_end, acquisition_start, acquisition_end,
+                collection_execution_id
+            ) VALUES (?, ?, 'running', ?, ?, ?, ?, ?, ?)
             """,
-            (collector, started_at),
+            (
+                collector,
+                started_at,
+                repair_execution_id,
+                target_window_start,
+                target_window_end,
+                acquisition_start,
+                acquisition_end,
+                collection_execution_id,
+            ),
         )
         connection.commit()
         assert cur.lastrowid is not None

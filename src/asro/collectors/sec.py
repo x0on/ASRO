@@ -41,6 +41,7 @@ class SecCollector:
         user_agent: str,
         request_delay_seconds: float = 0.2,
         since: date | None = None,
+        until: date | None = None,
         max_per_company: int = 3,
     ) -> None:
         self._companies = companies
@@ -50,6 +51,7 @@ class SecCollector:
         }
         self._delay = request_delay_seconds
         self._since = since
+        self._until = until
         self._max_per_company = max_per_company
 
     def collect(self) -> list[SourceItem]:
@@ -73,6 +75,8 @@ class SecCollector:
             if record["form"] not in INTERESTING_FORMS:
                 continue
             if self._since is not None and record["filing_date"] < self._since.isoformat():
+                continue
+            if self._until is not None and record["filing_date"] >= self._until.isoformat():
                 continue
             items.append(self._source_item(name, cik, record))
 
@@ -126,7 +130,9 @@ class HistoricalSecCollector(SecCollector):
         relevant = {
             record["accession"]: record
             for record in records
-            if record["form"] in INTERESTING_FORMS and record["filing_date"] >= since
+            if record["form"] in INTERESTING_FORMS
+            and record["filing_date"] >= since
+            and (self._until is None or record["filing_date"] < self._until.isoformat())
         }
         ordered = sorted(relevant.values(), key=lambda record: record["filing_date"], reverse=True)
         core = [record for record in ordered if record["form"] in CORE_HISTORICAL_FORMS]

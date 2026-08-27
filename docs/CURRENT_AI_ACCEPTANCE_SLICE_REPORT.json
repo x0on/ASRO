@@ -1,0 +1,71 @@
+{
+  "status": "bounded_slice_accepted_full_episode_unaccepted",
+  "generated_at": "2026-08-27T16:00:00+00:00",
+  "slice": {
+    "episode_id": "current-ai-cycle-meta-oct2025-slice",
+    "episode_version": "1.0.0",
+    "entities": ["Meta"],
+    "months": ["2025-10"],
+    "feature": "ai_related_debt@1.0.0",
+    "backfill_run_id": "16c41a9ed1b18f62174af66f9e72c24aeda98826217341f97683ded67f5ec0c9",
+    "entity_build_id": "15deda4eeac8103fcd124b191f876788e5327a3dd288430c0606a2fdc1351bb7",
+    "ecosystem_build_id": "955d900966dbdc8920df437b754b4dad3bb1ef55045095ee823faba0faa52229",
+    "coverage_passed": true,
+    "leakage_passed": true
+  },
+  "accepted_evidence": {
+    "candidate_event_id": "evt-meta-30bn-bond-20251030-01",
+    "promoted_event_count": 1,
+    "entity": "Meta",
+    "event_date": "2025-10-30",
+    "value_numeric": 30000000000,
+    "unit": "USD",
+    "canonical_fact_count": 1,
+    "observation_contributor_count": 1,
+    "source": {
+      "publisher": "U.S. Securities and Exchange Commission",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312525261217/d762778d424b2.htm",
+      "public_availability_at": "2025-10-30T00:00:00+00:00",
+      "fetched_at": "2026-08-27T15:57:23+00:00",
+      "content_sha256": "1504265779775683145c1fbe879cf7caeb0a233296f2956a9661783bb223d454",
+      "full_content_frozen": true,
+      "review_decision": "confirm",
+      "promotion_basis": "full_authoritative_document_review"
+    }
+  },
+  "accepted_cells": [
+    {"dimension": "feature", "entity": "Meta", "month": "2025-10", "key": "ai_related_debt", "value": 30000000000, "coverage": 1.0, "reliability": 1.0},
+    {"dimension": "source", "entity": "Meta", "month": "2025-10", "key": "primary-filings", "present": true},
+    {"dimension": "control", "month": "2025-10", "key": "policy_rate", "value": 4.09, "unit": "percent"},
+    {"dimension": "control", "month": "2025-10", "key": "credit_spread", "value": 76.0, "unit": "basis_points"},
+    {"dimension": "control", "month": "2025-10", "key": "semiconductor_cycle", "value": 169.1163, "unit": "index"}
+  ],
+  "missing_cells_in_slice": [],
+  "full_current_ai_episode": {
+    "status": "unaccepted",
+    "entities": 6,
+    "months": 55,
+    "required_entity_month_feature_cells": 330,
+    "evidence_backed_cells_now": 1,
+    "remaining_entity_month_feature_cells": 329,
+    "required_entity_month_primary_source_cells": 330,
+    "source_cells_supported_by_this_slice": 1,
+    "remaining_entity_month_primary_source_cells": 329,
+    "required_control_month_cells": 165,
+    "control_cells_supported_by_this_slice": 3,
+    "remaining_control_month_cells": 162,
+    "minimum_next_work": [
+      "Reacquire and review authoritative evidence for the remaining entity-month feature and primary-source cells; do not infer zeros from absent evidence.",
+      "Register 162 additional versioned control-month observations using historically appropriate vintages where available.",
+      "Rebuild the exact six-entity, 55-month entity and ecosystem matrices and rerun the approved gates."
+    ]
+  },
+  "limitations": [
+    "This is a bounded acceptance slice, not acceptance of current-ai-cycle@2.0.0.",
+    "The three FRED controls use a current vintage retrieved on 2026-08-27 and are available only at that retrieval time; they are not represented as unrevised 2025 vintages.",
+    "No researcher assertion was bulk-promoted.",
+    "The other six historical episodes remain unaccepted.",
+    "Run 107 remains unresolved and was not repaired.",
+    "Statistical modeling remains blocked."
+  ]
+}

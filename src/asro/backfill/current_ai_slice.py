@@ -1,0 +1,416 @@
+from __future__ import annotations
+
+import csv
+import hashlib
+import json
+import sqlite3
+from datetime import UTC, datetime
+from pathlib import Path
+
+from asro.backfill.candidate import ingest_candidate_package
+from asro.backfill.controls import ControlObservation, register_control_observation
+from asro.backfill.manifest import EpisodeManifest
+from asro.backfill.runner import BackfillRunner
+from asro.evidence import (
+    CanonicalFactAssignment,
+    EconomicScope,
+    EvidenceRepository,
+    FactStatus,
+    FeatureDefinitionV2,
+    ObservationV2,
+    SourceTier,
+)
+from asro.features import (
+    Aggregation,
+    EcosystemFeatureSpec,
+    EcosystemFeatureStoreBuilder,
+    FeatureSpec,
+    FeatureStoreBuilder,
+)
+from asro.models import EventType, FinancialEvent, SourceItem
+from asro.scoring import score
+from asro.storage import SqliteRepository
+
+_SEC_URL = "https://www.sec.gov/Archives/edgar/data/1326801/000119312525261217/d762778d424b2.htm"
+_CANDIDATE_EVENT_ID = "evt-meta-30bn-bond-20251030-01"
+_EVIDENCE = (
+    "Meta Platforms, Inc. offered $30,000,000,000 aggregate principal amount "
+    "of senior notes in six tranches."
+)
+
+
+def build_current_ai_acceptance_slice(
+    connection: sqlite3.Connection,
+    *,
+    candidate_directory: Path,
+    sec_document: Path,
+    control_files: dict[str, Path],
+    manifest_path: Path,
+    code_commit: str,
+) -> dict[str, object]:
+    """Build the bounded, reviewed Meta October-2025 acceptance slice."""
+    manifest = EpisodeManifest.from_toml(manifest_path)
+    package = ingest_candidate_package(connection, candidate_directory)
+    content = sec_document.read_text(encoding="utf-8")
+    fetched_at = _file_time(sec_document)
+    review_time = datetime.now(UTC).replace(microsecond=0).isoformat()
+    if review_time >= manifest.availability_cutoff.isoformat():
+        raise ValueError("slice review occurred after its declared availability cutoff")
+
+    item = score(
+        SourceItem.model_validate(
+            {
+                "title": "Meta Platforms $30 billion senior notes prospectus supplement",
+                "url": _SEC_URL,
+                "source": "SEC",
+                "summary": _EVIDENCE,
+                "published_at": "2025-10-30",
+                "discovered_at": fetched_at,
+            }
+        ),
+        ["Meta"],
+    )
+    repository = SqliteRepository(Path("unused"))
+    repository.insert(connection, item)
+    repository.upsert_document(connection, item.item_id, fetched_at, "text/html", "ok", content)
+    event_id = "accepted-meta-30b-notes-2025-10-30"
+    repository.insert_event(
+        connection,
+        FinancialEvent.model_validate(
+            {
+                "event_id": event_id,
+                "document_id": item.item_id,
+                "event_type": EventType.ISSUES_DEBT,
+                "source_entity": "Meta",
+                "amount": 30_000_000_000,
+                "currency": "USD",
+                "instrument": "six senior-note tranches",
+                "effective_date": "2025-10-30",
+                "confidence": 1.0,
+                "evidence_text": _EVIDENCE,
+                "extractor": "asro-v2-manual-acceptance",
+                "processed_at": review_time,
+            }
+        ),
+    )
+    _register_features(connection)
+    review_id = _accepted_review(connection, event_id, review_time)
+    fact_id = "fact-meta-30b-senior-notes-2025-10-30"
+    EvidenceRepository.register_canonical_fact(connection, fact_id)
+    assignment_id = "assignment-meta-30b-senior-notes-2025-10-30"
+    EvidenceRepository.assign_canonical_fact(
+        connection,
+        CanonicalFactAssignment.model_validate(
+            {
+                "assignment_id": assignment_id,
+                "event_id": event_id,
+                "canonical_fact_id": fact_id,
+                "available_at": review_time,
+                "reviewer_id": review_id,
+                "assigned_by": "human-acceptance-review",
+                "assignment_method": "full-document-manual-review",
+                "provenance": {
+                    "candidate_event_id": _CANDIDATE_EVENT_ID,
+                    "source_url": _SEC_URL,
+                },
+                "created_at": review_time,
+            }
+        ),
+    )
+    observation_id = "observation-meta-30b-senior-notes-2025-10-30"
+    EvidenceRepository.insert(
+        connection,
+        ObservationV2.model_validate(
+            {
+                "observation_id": observation_id,
+                "event_id": event_id,
+                "source_document_id": item.item_id,
+                "source_locator": "$30,000,000,000 cover and Description of Notes",
+                "evidence_text": _EVIDENCE,
+                "entity_id": "Meta",
+                "entity_role": "issuer",
+                "feature_key": "ai_related_debt",
+                "feature_version": "1.0.0",
+                "value_numeric": 30_000_000_000,
+                "unit": "currency",
+                "currency": "USD",
+                "economic_scope": EconomicScope.ENTITY,
+                "period_start": "2025-10-01",
+                "period_end": "2025-10-31",
+                "event_at": "2025-10-30",
+                "published_at": "2025-10-30",
+                "availability_at": "2025-10-30",
+                "extracted_at": review_time,
+                "fact_status": FactStatus.DIRECT,
+                "source_tier": SourceTier.PRIMARY,
+                "source_quality": 1.0,
+                "extraction_confidence": 1.0,
+                "review_confidence": 1.0,
+                "extractor_name": "manual-full-document-review",
+                "extractor_version": "2.0.0",
+                "review_id": review_id,
+            }
+        ),
+    )
+    _promote_candidate(
+        connection,
+        package.package_id,
+        item.item_id,
+        content,
+        fetched_at,
+        observation_id,
+        fact_id,
+        review_time,
+    )
+    _register_control_definitions(connection, manifest, review_time)
+    _register_controls(connection, control_files, fetched_at)
+    connection.commit()
+
+    entity_build = FeatureStoreBuilder(connection).build_entity_month(
+        [
+            FeatureSpec(
+                feature_key="ai_related_debt",
+                feature_version="1.0.0",
+                aggregation=Aggregation.SUM,
+                unit="currency",
+                expected_facts_per_period=1,
+            )
+        ],
+        manifest.availability_cutoff,
+        manifest.entities,
+        code_commit,
+        manifest.feature_set_version,
+        manifest.period_start,
+        manifest.period_end,
+    )
+    ecosystem_build = EcosystemFeatureStoreBuilder(connection).build_months(
+        entity_build.build_id,
+        [
+            EcosystemFeatureSpec(
+                source_feature_key="ai_related_debt",
+                source_feature_version="1.0.0",
+                feature_key="ecosystem_ai_related_debt",
+                feature_version="1.0.0",
+                aggregation=Aggregation.SUM,
+                unit="currency",
+            )
+        ],
+        code_commit,
+        manifest.feature_set_version,
+    )
+    result = BackfillRunner(connection).run(
+        manifest, entity_build.build_id, ecosystem_build.build_id
+    )
+    cells = [
+        dict(row)
+        for row in connection.execute(
+            """SELECT entity_id,period_start,period_end,dimension,requirement_key,
+                      requirement_version,present,missingness_reason
+               FROM backfill_coverage_cell WHERE run_id=?
+               ORDER BY dimension,entity_id,period_start,requirement_key""",
+            (result.run_id,),
+        )
+    ]
+    return {
+        "episode_id": manifest.episode_id,
+        "episode_version": manifest.version,
+        "scope": {"entities": manifest.entities, "months": ["2025-10"], "features": 1},
+        "source_document": {
+            "url": _SEC_URL,
+            "sha256": hashlib.sha256(content.encode()).hexdigest(),
+            "fetched_at": fetched_at,
+            "public_availability_at": "2025-10-30T00:00:00+00:00",
+        },
+        "entity_build_id": entity_build.build_id,
+        "ecosystem_build_id": ecosystem_build.build_id,
+        "backfill_run_id": result.run_id,
+        "coverage_passed": result.coverage_passed,
+        "leakage_passed": result.leakage_passed,
+        "accepted_cells": [cell for cell in cells if cell["present"]],
+        "missing_cells": [cell for cell in cells if not cell["present"]],
+        "full_episode_remaining": {
+            "accepted_entity_month_feature_cells": 1,
+            "required_entity_month_feature_cells": 330,
+            "remaining_entity_month_feature_cells": 329,
+            "all_other_episodes_accepted": False,
+        },
+    }
+
+
+def _register_features(connection: sqlite3.Connection) -> None:
+    definitions = (
+        (
+            "ai_related_debt",
+            {
+                "aggregation": "sum",
+                "unit": "currency",
+                "grain": "entity_month",
+                "expected_facts_per_period": 1,
+            },
+        ),
+        (
+            "ecosystem_ai_related_debt",
+            {"aggregation": "sum", "unit": "currency", "grain": "ecosystem_month"},
+        ),
+    )
+    for key, semantics in definitions:
+        EvidenceRepository.register_feature(
+            connection,
+            FeatureDefinitionV2.model_validate(
+                {
+                    "feature_key": key,
+                    "feature_version": "1.0.0",
+                    "definition_json": json.dumps(semantics, sort_keys=True, separators=(",", ":")),
+                    "released_at": "2025-01-01",
+                }
+            ),
+        )
+
+
+def _accepted_review(connection: sqlite3.Connection, event_id: str, reviewed_at: str) -> int:
+    existing = connection.execute(
+        """SELECT review_id FROM evidence_reviews
+           WHERE fingerprint=? AND decision='confirm' AND model='human-acceptance-review'
+           ORDER BY review_id LIMIT 1""",
+        (event_id,),
+    ).fetchone()
+    if existing is not None:
+        return int(existing[0])
+    cursor = connection.execute(
+        """INSERT INTO evidence_reviews(
+           fingerprint,decision,canonical_fingerprint,confidence,reasoning,model,reviewed_at
+           ) VALUES(?, 'confirm', NULL, 1.0, ?, 'human-acceptance-review', ?)""",
+        (
+            event_id,
+            "Full SEC prospectus directly states the six-tranche $30B issuance.",
+            reviewed_at,
+        ),
+    )
+    assert cursor.lastrowid is not None
+    return int(cursor.lastrowid)
+
+
+def _promote_candidate(
+    connection: sqlite3.Connection,
+    package_id: str,
+    document_id: str,
+    content: str,
+    fetched_at: str,
+    observation_id: str,
+    fact_id: str,
+    reviewed_at: str,
+) -> None:
+    ordinal = int(
+        connection.execute(
+            """SELECT source_ordinal FROM candidate_source_edge
+               WHERE package_id=? AND candidate_event_id=? AND url=?
+               ORDER BY source_ordinal LIMIT 1""",
+            (package_id, _CANDIDATE_EVENT_ID, _SEC_URL),
+        ).fetchone()[0]
+    )
+    digest = hashlib.sha256(content.encode()).hexdigest()
+    acquired = connection.execute(
+        """SELECT 1 FROM candidate_acquired_document
+           WHERE package_id=? AND candidate_event_id=? AND source_ordinal=?""",
+        (package_id, _CANDIDATE_EVENT_ID, ordinal),
+    ).fetchone()
+    if acquired is None:
+        connection.execute(
+            "INSERT INTO candidate_acquired_document VALUES(?,?,?,?,?,?,?,?,?)",
+            (
+                package_id,
+                _CANDIDATE_EVENT_ID,
+                ordinal,
+                document_id,
+                digest,
+                content,
+                "2025-10-30T00:00:00+00:00",
+                fetched_at,
+                json.dumps({"method": "authoritative_sec_fetch", "url": _SEC_URL}, sort_keys=True),
+            ),
+        )
+    promoted = connection.execute(
+        """SELECT 1 FROM candidate_evidence_promotion_v2
+           WHERE package_id=? AND candidate_event_id=? AND source_ordinal=?""",
+        (package_id, _CANDIDATE_EVENT_ID, ordinal),
+    ).fetchone()
+    if promoted is None:
+        connection.execute(
+            "INSERT INTO candidate_evidence_promotion_v2 VALUES(?,?,?,?,?,?,?,?,?)",
+            (
+                package_id,
+                _CANDIDATE_EVENT_ID,
+                ordinal,
+                observation_id,
+                fact_id,
+                "primary",
+                reviewed_at,
+                "human-acceptance-review",
+                json.dumps(
+                    {
+                        "decision": "promote",
+                        "basis": "full_authoritative_document_review",
+                    },
+                    sort_keys=True,
+                ),
+            ),
+        )
+
+
+def _register_controls(
+    connection: sqlite3.Connection, files: dict[str, Path], fetched_at: str
+) -> None:
+    specifications = (
+        ("policy_rate", "FEDFUNDS", "percent", 1.0),
+        ("credit_spread", "BAMLC0A0CM", "basis_points", 100.0),
+        ("semiconductor_cycle", "IPG3344S", "index", 1.0),
+    )
+    for series_id, fred_id, unit, multiplier in specifications:
+        value = _csv_value(files[fred_id], "2025-10-01") * multiplier
+        register_control_observation(
+            connection,
+            ControlObservation(
+                control_observation_id=f"{series_id}-2025-10-current-vintage",
+                series_id=series_id,
+                series_version="1.0.0",
+                period_start="2025-10-01",
+                period_end="2025-10-31",
+                observed_at="2025-10-31T00:00:00Z",
+                availability_at=fetched_at,
+                value_numeric=value,
+                unit=unit,
+                provenance={
+                    "publisher": "Federal Reserve Bank of St. Louis (FRED)",
+                    "source_url": f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={fred_id}",
+                    "vintage": f"current-vintage-retrieved-{fetched_at}",
+                },
+            ),
+        )
+
+
+def _register_control_definitions(
+    connection: sqlite3.Connection, manifest: EpisodeManifest, registered_at: str
+) -> None:
+    for control in manifest.controls:
+        connection.execute(
+            "INSERT OR IGNORE INTO control_series_definition VALUES(?,?,?,?,?)",
+            (
+                control.series_id,
+                control.version,
+                control.unit,
+                json.dumps(control.provenance_schema, sort_keys=True, separators=(",", ":")),
+                registered_at,
+            ),
+        )
+
+
+def _csv_value(path: Path, observation_date: str) -> float:
+    with path.open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            if row["observation_date"] == observation_date:
+                return float(next(value for key, value in row.items() if key != "observation_date"))
+    raise ValueError(f"missing {observation_date} in {path.name}")
+
+
+def _file_time(path: Path) -> str:
+    return datetime.fromtimestamp(path.stat().st_mtime, UTC).replace(microsecond=0).isoformat()

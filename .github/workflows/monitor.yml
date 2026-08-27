@@ -82,6 +82,8 @@ jobs:
         run: asro review --limit "$REVIEW_LIMIT" --retry-flagged-limit "$RETRY_FLAGGED_LIMIT" --batch-size 10
       - name: Build static site
         run: asro build-site
+      - name: Validate usable release artifact
+        run: asro release-check --max-age-hours 26
       - name: Commit updated observatory data
         run: |
           git config user.name "asro-bot"
