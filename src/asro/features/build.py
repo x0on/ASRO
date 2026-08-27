@@ -190,7 +190,8 @@ class FeatureStoreBuilder:
                         fresh = [
                             item
                             for item in candidates
-                            if _month_age(item.period_end.date(), month_value)
+                            if item.period_end is not None
+                            and _month_age(item.period_end.date(), month_value)
                             <= (spec.max_age_months or 0)
                         ]
                         latest_period = max(

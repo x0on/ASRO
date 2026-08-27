@@ -466,24 +466,32 @@ def promote_current_ai_feature_family(
     for key, semantics in definitions:
         EvidenceRepository.register_feature(
             connection,
-            FeatureDefinitionV2(
-                feature_key=key,
-                feature_version="1.0.0",
-                definition_json=json.dumps(semantics, sort_keys=True, separators=(",", ":")),
-                released_at="2025-01-01",
+            FeatureDefinitionV2.model_validate(
+                {
+                    "feature_key": key,
+                    "feature_version": "1.0.0",
+                    "definition_json": json.dumps(semantics, sort_keys=True, separators=(",", ":")),
+                    "released_at": "2025-01-01",
+                }
             ),
         )
         EvidenceRepository.register_feature(
             connection,
-            FeatureDefinitionV2(
-                feature_key=f"ecosystem_{key}",
-                feature_version="1.0.0",
-                definition_json=json.dumps(
-                    {"aggregation": "sum", "unit": "currency", "grain": "ecosystem_month"},
-                    sort_keys=True,
-                    separators=(",", ":"),
-                ),
-                released_at="2025-01-01",
+            FeatureDefinitionV2.model_validate(
+                {
+                    "feature_key": f"ecosystem_{key}",
+                    "feature_version": "1.0.0",
+                    "definition_json": json.dumps(
+                        {
+                            "aggregation": "sum",
+                            "unit": "currency",
+                            "grain": "ecosystem_month",
+                        },
+                        sort_keys=True,
+                        separators=(",", ":"),
+                    ),
+                    "released_at": "2025-01-01",
+                }
             ),
         )
     _register_features(connection)
@@ -522,20 +530,22 @@ def promote_current_ai_feature_family(
         event_id = f"accepted-{slug}"
         repository.insert_event(
             connection,
-            FinancialEvent(
-                event_id=event_id,
-                document_id=item.item_id,
-                event_type=fact["event_type"],
-                source_entity=str(fact["entity"]),
-                target_entity=str(fact["counterparty"]),
-                amount=float(fact["amount"]),
-                currency="USD",
-                instrument=str(fact["feature_key"]),
-                effective_date=str(fact["event_date"]),
-                confidence=1.0,
-                evidence_text=str(fact["evidence"]),
-                extractor="asro-v2-manual-acceptance",
-                processed_at=review_time,
+            FinancialEvent.model_validate(
+                {
+                    "event_id": event_id,
+                    "document_id": item.item_id,
+                    "event_type": fact["event_type"],
+                    "source_entity": str(fact["entity"]),
+                    "target_entity": str(fact["counterparty"]),
+                    "amount": fact["amount"],
+                    "currency": "USD",
+                    "instrument": str(fact["feature_key"]),
+                    "effective_date": str(fact["event_date"]),
+                    "confidence": 1.0,
+                    "evidence_text": str(fact["evidence"]),
+                    "extractor": "asro-v2-manual-acceptance",
+                    "processed_at": review_time,
+                }
             ),
         )
         review_id = _accepted_review(connection, event_id, review_time)
@@ -544,16 +554,21 @@ def promote_current_ai_feature_family(
         assignment_id = f"assignment-{slug}"
         EvidenceRepository.assign_canonical_fact(
             connection,
-            CanonicalFactAssignment(
-                assignment_id=assignment_id,
-                event_id=event_id,
-                canonical_fact_id=canonical_fact_id,
-                available_at=review_time,
-                reviewer_id=review_id,
-                assigned_by="human-acceptance-review",
-                assignment_method="full-document-manual-review",
-                provenance={"source_url": receipt["final_url"], "content_sha256": digest},
-                created_at=review_time,
+            CanonicalFactAssignment.model_validate(
+                {
+                    "assignment_id": assignment_id,
+                    "event_id": event_id,
+                    "canonical_fact_id": canonical_fact_id,
+                    "available_at": review_time,
+                    "reviewer_id": review_id,
+                    "assigned_by": "human-acceptance-review",
+                    "assignment_method": "full-document-manual-review",
+                    "provenance": {
+                        "source_url": receipt["final_url"],
+                        "content_sha256": digest,
+                    },
+                    "created_at": review_time,
+                }
             ),
         )
         event_date = str(fact["event_date"])
@@ -564,37 +579,41 @@ def promote_current_ai_feature_family(
         observation_id = f"observation-{slug}"
         EvidenceRepository.insert(
             connection,
-            ObservationV2(
-                observation_id=observation_id,
-                event_id=event_id,
-                source_document_id=item.item_id,
-                source_locator=str(fact["locator"]),
-                evidence_text=str(fact["evidence"]),
-                entity_id=str(fact["entity"]),
-                counterparty_entity_id=str(fact["counterparty"]),
-                entity_role="customer"
-                if fact["feature_key"] != "ai_contingent_credit_support_stock"
-                else "guarantor",
-                feature_key=str(fact["feature_key"]),
-                feature_version="1.0.0",
-                value_numeric=float(fact["amount"]),
-                unit="currency",
-                currency="USD",
-                economic_scope=EconomicScope.ENTITY,
-                period_start=month_start,
-                period_end=month_end,
-                event_at=event_date,
-                published_at=receipt["public_availability_at"],
-                availability_at=receipt["public_availability_at"],
-                extracted_at=review_time,
-                fact_status=FactStatus.DIRECT,
-                source_tier=SourceTier.PRIMARY,
-                source_quality=1.0,
-                extraction_confidence=1.0,
-                review_confidence=1.0,
-                extractor_name="manual-full-document-review",
-                extractor_version="2.0.0",
-                review_id=review_id,
+            ObservationV2.model_validate(
+                {
+                    "observation_id": observation_id,
+                    "event_id": event_id,
+                    "source_document_id": item.item_id,
+                    "source_locator": str(fact["locator"]),
+                    "evidence_text": str(fact["evidence"]),
+                    "entity_id": str(fact["entity"]),
+                    "counterparty_entity_id": str(fact["counterparty"]),
+                    "entity_role": (
+                        "customer"
+                        if fact["feature_key"] != "ai_contingent_credit_support_stock"
+                        else "guarantor"
+                    ),
+                    "feature_key": str(fact["feature_key"]),
+                    "feature_version": "1.0.0",
+                    "value_numeric": fact["amount"],
+                    "unit": "currency",
+                    "currency": "USD",
+                    "economic_scope": EconomicScope.ENTITY,
+                    "period_start": month_start,
+                    "period_end": month_end,
+                    "event_at": event_date,
+                    "published_at": receipt["public_availability_at"],
+                    "availability_at": receipt["public_availability_at"],
+                    "extracted_at": review_time,
+                    "fact_status": FactStatus.DIRECT,
+                    "source_tier": SourceTier.PRIMARY,
+                    "source_quality": 1.0,
+                    "extraction_confidence": 1.0,
+                    "review_confidence": 1.0,
+                    "extractor_name": "manual-full-document-review",
+                    "extractor_version": "2.0.0",
+                    "review_id": review_id,
+                }
             ),
         )
         promoted.append({"observation_id": observation_id, "content_sha256": digest})
