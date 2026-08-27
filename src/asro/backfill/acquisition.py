@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 
 import requests
 
-_ALLOWED_HOSTS = {"www.sec.gov", "fred.stlouisfed.org"}
+_ALLOWED_HOSTS = {"www.sec.gov", "data.sec.gov", "fred.stlouisfed.org"}
 
 
 def acquire_inventory(
