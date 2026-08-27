@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T21:28:50.570177+00:00",
+  "generated_at": "2026-08-27T22:43:30.404690+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "external_pressure": 16.12,
-    "counter_evidence": 42.9,
-    "circularity": 59.4,
-    "fragility": 61.1,
-    "cannibalization": 54.2,
     "capital": 42.64073738140746,
-    "monetization": 42.9,
+    "external_pressure": 16.12,
+    "cannibalization": 54.2,
+    "fragility": 61.1,
     "transmission": 39.6,
-    "stress": 57.1
+    "counter_evidence": 42.9,
+    "stress": 57.1,
+    "circularity": 59.4,
+    "monetization": 42.9
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
-    "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
-    "fragility": "directional_estimate",
-    "cannibalization": "directional_estimate",
     "capital": "aggregate",
-    "monetization": "directional_estimate",
+    "external_pressure": "aggregate",
+    "cannibalization": "directional_estimate",
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "stress": "directional_estimate"
+    "stress": "directional_estimate",
+    "circularity": "directional_estimate",
+    "monetization": "directional_estimate"
   },
   "dimension_direction": {
     "circularity": {
@@ -697,6 +697,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-27T22:43:22+00:00",
+      "score": 44.9,
+      "label": "FORMING",
+      "dimensions": "{\"cannibalization\": 54.2, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"circularity\": 59.4, \"transmission\": 39.6, \"monetization\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12}"
+    },
     {
       "captured_at": "2026-08-27T21:28:49+00:00",
       "score": 44.9,
@@ -1571,16 +1577,16 @@
   "network": {
     "nodes": [
       {
-        "id": "Alphabet",
-        "label": "Alphabet",
+        "id": "Amazon",
+        "label": "Amazon",
         "kind": "company",
         "weight": 61
       },
       {
-        "id": "Amazon",
-        "label": "Amazon",
+        "id": "Alphabet",
+        "label": "Alphabet",
         "kind": "company",
-        "weight": 60
+        "weight": 61
       },
       {
         "id": "Oracle",
@@ -1613,16 +1619,16 @@
         "weight": 10
       },
       {
-        "id": "SpaceX",
-        "label": "SpaceX",
+        "id": "Alibaba",
+        "label": "Alibaba",
         "kind": "company",
         "weight": 6
       },
       {
-        "id": "Alibaba",
-        "label": "Alibaba",
+        "id": "SpaceX",
+        "label": "SpaceX",
         "kind": "company",
-        "weight": 5
+        "weight": 6
       },
       {
         "id": "Tencent",
@@ -5927,6 +5933,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:ba5d3414bd0fa79c012c4b8b192f66815fe36a9b98a886c2ed56c9f019b8de5a",
+        "label": "Anthropic plans to publicly unveil IPO prospectus after Labor Day, the Information reports - Reuters",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdHNDeVlrV1NXSUs4MVBjR2R3X2ozdWpIRGgwN1FKaUU3VkxVa2NGbmctb2lYNk82N0NCNDFNOENFaUE1LWtqZ0c5NXdjckRfRWZOd3IzeWpGRzlJMjZNOUc5QWdOZjhqSjNaYnhYSUYxODRoLVdHZWRSQ0R2VGZ6NWlESndXQ2FPbDRVbGpvZ29QMWl5Q2NicFhwaGd2eFprMHlvbVpfcTU3d3lURnZidTVJZ3RSbU5OY2d1bWtDV3VINjRaN0E?oc=5",
+        "date": "Thu, 27 Aug 2026 19:08:22 GMT",
+        "summary": "Anthropic plans to publicly unveil IPO prospectus after Labor Day, the Information reports Reuters",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:294fe6b347f8d2c53cb4b76612493d1cdc382d131440c4513a483457db9c342b",
         "label": "Anthropic CFO Krishna Rao is leading early IPO meetings with investors and has not discussed valuation, sources say - CNBC",
         "kind": "evidence",
@@ -9323,6 +9341,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:ce380ef10e2d24978e8e537bf2de5a340c4de7868ac6b81d64b1c4f17e124211",
+        "label": "GPT-5.6 Sol vs Qwen3.8 Max vs Claude Opus 4.6: 5x Price Gap [2026] - tech-insider.org",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "tech-insider.org",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxORXZudHR1Ymd5aGx6RkxwamU2VTZ3Rjg1djN2VzZieDNNQ1VBV1NjX3VBa0pITmZDcWZnNFhjdHZUWHBnVDZTNlZ2ZXgzbmQ0NVB6azRkNTVoazN4TEx0XzFKalNuU1JRNFRhOEdaODBzUHhjNzdPWUJnWjlNVGRKNzNn?oc=5",
+        "date": "Mon, 24 Aug 2026 12:09:30 GMT",
+        "summary": "GPT-5.6 Sol vs Qwen3.8 Max vs Claude Opus 4.6: 5x Price Gap [2026] tech-insider.org",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:867d75c55a5ca0d5068296376b9b58c2f96858694895ac09c88ec36056f9fa5f",
+        "label": "INVESTOR ALERT: Pomerantz Law Firm Reminds Investors with Losses on their Investment in Alibaba Group Holding Limited of Class Action Lawsuit and Upcoming Deadlines - BABA - PR Newswire",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "PR Newswire",
+        "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQc0MzeHJDRzRpdDAtOE80bU91UjdtR01ZQ1Vmb2c0dkEyc3NnT0JNbHYwN0ZmYkFWN2M5dnI5cG1mZFIyYko5QWtuMnc4eTBLSkx4NUZObjc4cS1NOVREWC1INGxZXzlNNER4UFJGSXlQU1N6ZFRkMGlLbFZCOU91YVgyeDBpQnNEVGtKOGZ3UGkzaHVKeFo5dk5aeDJpa293M2w1dkVtNFBuWGxJTTBhTlJDQV9NN0pENUJSRWlKMlZ4cnNjWko5cWVaSTN0WjktRkp0c3FCUjNiN3NpcTg0SFZiV1dCM2hfV0FkczRhYTczeWtkSi1ncTVzbHN2c2xkYnVzN1liZzJGd1dpQ01fanVRZC02RnlUUGVpRVJEeTkwZ0RyWDlKcFZmMnBRaG44aHdoVWNRUzRlUlF5UFllRGlRbjhOMFdn?oc=5",
+        "date": "Thu, 27 Aug 2026 21:27:00 GMT",
+        "summary": "INVESTOR ALERT: Pomerantz Law Firm Reminds Investors with Losses on their Investment in Alibaba Group Holding Limited of Class Action Lawsuit and Upcoming Deadlines - BABA PR Newswire",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:d772345fd66837a524c16f080535c61dfe8dabb012d1744322cd111085c57002",
         "label": "SpaceX Stock: 3 Things Nvidia Said About the Company on Its Earnings Call - Barron's",
         "kind": "evidence",
@@ -10979,6 +11021,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:b0ee680a5cd985404ec9caa837b06e1a897687ffe576df5c059f8e59b21d14da",
+        "label": "Here's what companies like Walmart and Amazon say they're doing with their tariff refunds - marketplace.org",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "marketplace.org",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOS0dCODdjbWxfS2U1aVlsa0htQ2VkbjRkSEtYM29PVGZybTVubURyWmpFSVVjdVFLc1FhTF9mYUV3dkU4eFo3c0hROWt5NHh3elVQUEozS0NtOFBJYl95UHVqSEVnVFlCUTZXalRfdnJDRjhoeHlJVDJHV0lQeHJhem1PVkszc0dESVpEWkczbUktcEF3ZWw2TkwtUTVrZzRJSDQ5OVRSb1BjN3o4dlhlQ01JaXBLUk1IX1dNT1VoOUdLUGFGckVNZGxILTY?oc=5",
+        "date": "Thu, 27 Aug 2026 22:27:16 GMT",
+        "summary": "Here's what companies like Walmart and Amazon say they're doing with their tariff refunds marketplace.org",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:84ceaf83da570f98887d89215815134d1e985194b43742e7cc88b0cdbd954a5b",
+        "label": "Exclusive | Nvidia Pauses Revenue-Sharing Deals With AI Cloud Companies - WSJ",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYlMycHNtbklRdFFPaXNoeHlmVzF1dHJYU042Z0xMRFdXdE45V1ZFek1wOGdVUjg2WHVxc3NBdjdXQnJibnlLUTVLb0Zya1A4czhaQkMxNTlFbVBBZ0RtTTduY0VydW51RF94dTRyaXExZ25ReUU0OG9BX3lUWUZqVHlLQjNjUm1RdWlKclJScXlHWlUxRlBtNw?oc=5",
+        "date": "Thu, 27 Aug 2026 21:46:00 GMT",
+        "summary": "Exclusive | Nvidia Pauses Revenue-Sharing Deals With AI Cloud Companies WSJ",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:126adcbb09c2d851c9d81d4c9e9c895c766dc616353bc3d0171928e59491435d",
+        "label": "Reuters \u2013 China\u2019s Moonshot talking to US cloud giants over Kimi K3 - Silicon Republic",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Silicon Republic",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaDItYW5vUDJrNl9sZ2pTQjF4cGp4ekJxZG9kMXRldDBLX3V5ZjNPYktSYnAzVnF4c0NMOHpwX1BzYXBnYWpNTGF5SG5HS09hY0VEUGNVck5NSVpXa2QtSVU1LTNfV2kxLXBKRDQ4Z19iUEtPc2U1TFJ5ZnJ6NHBoRnF3eE45cVVjUlczZExpYmo0cUpjTVhoTV9uYWR3bkEyd05qMXVERGlfUQ?oc=5",
+        "date": "Thu, 27 Aug 2026 15:02:50 GMT",
+        "summary": "Reuters \u2013 China\u2019s Moonshot talking to US cloud giants over Kimi K3 Silicon Republic",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:b7f25f7bcaed30393323b9ff99fef6722dcf791a3e0a37775587801757ee7bfc",
         "label": "Alibaba (BABA) Reportedly Nears Lingxi Games Divestiture - simplywall.st",
         "kind": "evidence",
@@ -11265,81 +11343,16 @@
         "summary": "Nvidia is bolstering support for Chinese open AI models as it warns of White House crackdown CNBC",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:325cf6ffc407bbc03bac5f189b2f1837d389fa6026cdae36024a813be7aae03c",
-        "label": "MiniMax M3 gives Chinese AI labs a new frontier coding test - Startup Fortune",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Startup Fortune",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZHpMWXc0bzJPWlRXSERlWEZNRUxpOFFvTWc3TGVyOTc2Tmx6d3UtWkRqLUxQOXJHV3RtanFnd0xoYmlqWXMtcFZrVlNLZ0tXV1VnQ2d2Rm54eTNHY01RSTVJRDk0aGRyS2JpU25LTGRIamZFUDNJNnZlNEtQZnprQUZCMlVaREZLSXg3WUd6Wjg?oc=5",
-        "date": "Sun, 31 May 2026 07:00:00 GMT",
-        "summary": "MiniMax M3 gives Chinese AI labs a new frontier coding test Startup Fortune",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:40ca70a9dd51c2ad2c87d425866ea06150020dffc22275cfbe677995f166d21d",
-        "label": "Alphabet's Hidden AI Goldmine: Why TPU Sales Could Supercharge ROIC (NASDAQ:GOOGL) - Seeking Alpha",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Seeking Alpha",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNcDZmTVBNTVlvM0VQRUl1dzJCaVdXbmtzdkEyZVp0ZFZDUVZPTEs5OWlVOURXbWgyX19QMkdFNVVKY25mNllGay1RbHN5cDVFOUNuWVQ1Um1nc0VQelB4U01KTTFnWnBYN3p1ZXItTG5WSkJScmpxeVZmOV9vZXRvWXNBYWNGWlRjTnBHaTZZR3lVRjVLYl9aNFp4VlpibXpNY3A5YS1obEs?oc=5",
-        "date": "Thu, 27 Aug 2026 08:34:58 GMT",
-        "summary": "Alphabet's Hidden AI Goldmine: Why TPU Sales Could Supercharge ROIC (NASDAQ:GOOGL) Seeking Alpha",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:86e3d3d1a83600da6d6e2fd7e997c008f4cdbdb4c0717f1ebebfcab4a2d01d82",
-        "label": "Nvidia\u2019s earnings to test resurgent AI trade - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYmRYN1JmV1dzS2VkR0NvTFlQbnNoZllEWFhhLUdQbTQ4MFY5M1NBY2NQcWIxTmZXbGRJTjAtMzgzQW5yeXBNOFVreU1nWDNSXzB4aUtPYlppdDVubk9yOVN0a1h1RzNJYW9WUkw2WkM4c0pkMDBZbko0MUpBVXNiUktEMFFvQjlTOWRTbm8yS0VCS0JiV0hEcWZEd3h1cjFpbzBYYTc1WWJ3MlAzdlRFRXk5RGx3enR3UHdKNGNmUHQxQXh6QWphb0VGc3p1RFhm?oc=5",
-        "date": "Thu, 27 Aug 2026 08:33:14 GMT",
-        "summary": "Nvidia\u2019s earnings to test resurgent AI trade Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:af7a31a1f42cd483bf35764288c9f6de6cab3747588f2944b9bff7ecf0b171e0",
-        "label": "Nvidia projects 70% revenue growth in 2028 - Axios",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Axios",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5oRFVrbV9ibGpJRVVDQkVKbE83R2tzLVdUVVJIY3NPRXFvQzJsMzlXWjFTR242akpiektLVTNPdXVyak0xVGdZUE02MU1KeFo3V08wdjNRT2pEb0hOQmh5N1RtbG04bVdxU2RncGZ6THFCQQ?oc=5",
-        "date": "Thu, 27 Aug 2026 07:26:19 GMT",
-        "summary": "Nvidia projects 70% revenue growth in 2028 Axios",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9848850d5755fb64f30aa07e768d254eec1a8702027fda87417dfa8fa64f883a",
-        "label": "MiniMax\u2019s enterprise AI and open-platform revenue jumps 703% in H1 - TechNode",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TechNode",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOSy1fNjB0bkRWUnVnVVdGc0N3VV9DYXloaGtlN2pxazhZOUwtbWgwZk9raXFVNmdfc0dVQzN1N253Y0d0YkhhejhSQ2JxY0hGZjBVR2FNRzlyaGNsUkt3VTFwTF9vZVNhdDk0bWlOd3NzUWJRaDZOQ1h3Z3pRdEFKOXVHZ2xKRHBCTUt3eGlNS09JZ3JES21OMDFvdW42UQ?oc=5",
-        "date": "Thu, 27 Aug 2026 06:59:58 GMT",
-        "summary": "MiniMax\u2019s enterprise AI and open-platform revenue jumps 703% in H1 TechNode",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:27433c9ad0c102e218de8b9aaf626f5a1cce7b2473327cc4c679f062ad6b5fe8",
-        "label": "MiniMax\u2019s Revenue Jumps 280% as Business Customers Drive Growth - Caixin Global",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Caixin Global",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORWFKa1pVOWdsZzFWaFRxdmpkZ0MybzRHUENVREc2TUtzbU9DRUpkQlpPLTE1YXMtaFZOS1dnaFFITTNjM0NMN2JnZnp2Y1UwenNrWmpTOTFuOC1SbkVlaFFrWndOUEFIZ1ZqcTVBSmNqUzdkOFhFdjdETktNdGd2RllYRmZ5UzhEd2lOV05FZHgzbDRuMENPMWR5UDFkTGxjT21TVTBhVDFtVWpTaFoyOWxuaWNXTFU?oc=5",
-        "date": "Thu, 27 Aug 2026 04:55:00 GMT",
-        "summary": "MiniMax\u2019s Revenue Jumps 280% as Business Customers Drive Growth Caixin Global",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
+      {
+        "source": "Alibaba",
+        "target": "Amazon",
+        "type": "INVESTS_IN",
+        "weight": 1,
+        "mentions": 1
+      },
       {
         "source": "Alibaba",
         "target": "Baidu",
@@ -14793,6 +14806,13 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:ba5d3414bd0fa79c012c4b8b192f66815fe36a9b98a886c2ed56c9f019b8de5a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:294fe6b347f8d2c53cb4b76612493d1cdc382d131440c4513a483457db9c342b",
         "type": "EVIDENCE",
         "weight": 1,
@@ -17088,6 +17108,34 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:ce380ef10e2d24978e8e537bf2de5a340c4de7868ac6b81d64b1c4f17e124211",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:ce380ef10e2d24978e8e537bf2de5a340c4de7868ac6b81d64b1c4f17e124211",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:867d75c55a5ca0d5068296376b9b58c2f96858694895ac09c88ec36056f9fa5f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:867d75c55a5ca0d5068296376b9b58c2f96858694895ac09c88ec36056f9fa5f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:d772345fd66837a524c16f080535c61dfe8dabb012d1744322cd111085c57002",
         "type": "EVIDENCE",
@@ -18894,6 +18942,27 @@
         "mentions": 1
       },
       {
+        "source": "Amazon",
+        "target": "evidence:b0ee680a5cd985404ec9caa837b06e1a897687ffe576df5c059f8e59b21d14da",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:84ceaf83da570f98887d89215815134d1e985194b43742e7cc88b0cdbd954a5b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:126adcbb09c2d851c9d81d4c9e9c895c766dc616353bc3d0171928e59491435d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alibaba",
         "target": "evidence:b7f25f7bcaed30393323b9ff99fef6722dcf791a3e0a37775587801757ee7bfc",
         "type": "EVIDENCE",
@@ -19057,48 +19126,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:5602d1a192cda3f50e60d9c94c0e9529b7f6010d49c204532b43a2a52611182e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:325cf6ffc407bbc03bac5f189b2f1837d389fa6026cdae36024a813be7aae03c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:40ca70a9dd51c2ad2c87d425866ea06150020dffc22275cfbe677995f166d21d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:86e3d3d1a83600da6d6e2fd7e997c008f4cdbdb4c0717f1ebebfcab4a2d01d82",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:af7a31a1f42cd483bf35764288c9f6de6cab3747588f2944b9bff7ecf0b171e0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:9848850d5755fb64f30aa07e768d254eec1a8702027fda87417dfa8fa64f883a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:27433c9ad0c102e218de8b9aaf626f5a1cce7b2473327cc4c679f062ad6b5fe8",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33222,6 +33249,21 @@
       "source": "Yahoo Finance"
     },
     {
+      "date": "Thu, 27 Aug 2026 21:27:00 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": "Alibaba",
+      "target_entity": "Amazon",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "INVESTOR ALERT: Pomerantz Law Firm Reminds Investors with Losses on their Investment in Alibaba Group Holding Limited of Class Action Lawsuit and Upcoming Deadlines - BABA - PR Newswire INVESTOR ALERT: Pomerantz Law Firm Reminds Investors with Losses on their Investment in Alibaba Group Holding Limited of Class Action Lawsuit and Upcoming Deadlines - BABA PR Newswire Google News",
+      "title": "INVESTOR ALERT: Pomerantz Law Firm Reminds Investors with Losses on their Investment in Alibaba Group Holding Limited of Class Action Lawsuit and Upcoming Deadlines - BABA - PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxQc0MzeHJDRzRpdDAtOE80bU91UjdtR01ZQ1Vmb2c0dkEyc3NnT0JNbHYwN0ZmYkFWN2M5dnI5cG1mZFIyYko5QWtuMnc4eTBLSkx4NUZObjc4cS1NOVREWC1INGxZXzlNNER4UFJGSXlQU1N6ZFRkMGlLbFZCOU91YVgyeDBpQnNEVGtKOGZ3UGkzaHVKeFo5dk5aeDJpa293M2w1dkVtNFBuWGxJTTBhTlJDQV9NN0pENUJSRWlKMlZ4cnNjWko5cWVaSTN0WjktRkp0c3FCUjNiN3NpcTg0SFZiV1dCM2hfV0FkczRhYTczeWtkSi1ncTVzbHN2c2xkYnVzN1liZzJGd1dpQ01fanVRZC02RnlUUGVpRVJEeTkwZ0RyWDlKcFZmMnBRaG44aHdoVWNRUzRlUlF5UFllRGlRbjhOMFdn?oc=5",
+      "source": "PR Newswire"
+    },
+    {
       "date": "Thu, 28 May 2026 07:00:00 GMT",
       "event_type": "INVESTS_IN",
       "source_entity": "Blackstone",
@@ -33809,12 +33851,28 @@
   ],
   "collector_runs": [
     {
-      "id": 567,
+      "id": 571,
       "collector": "company-economic-news",
-      "started_at": "2026-08-27T21:28:21+00:00",
-      "completed_at": "2026-08-27T21:28:45+00:00",
+      "started_at": "2026-08-27T22:43:00+00:00",
+      "completed_at": "2026-08-27T22:43:18+00:00",
       "status": "ok",
       "items_seen": 36,
+      "items_new": 5,
+      "error": null,
+      "repair_execution_id": null,
+      "target_window_start": null,
+      "target_window_end": null,
+      "acquisition_start": null,
+      "acquisition_end": null,
+      "collection_execution_id": "df386a5d-e353-4994-a8f1-fda0d83acb38"
+    },
+    {
+      "id": 572,
+      "collector": "external-competitive-pressure",
+      "started_at": "2026-08-27T22:43:18+00:00",
+      "completed_at": "2026-08-27T22:43:19+00:00",
+      "status": "ok",
+      "items_seen": 40,
       "items_new": 2,
       "error": null,
       "repair_execution_id": null,
@@ -33822,23 +33880,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "26dd665b-5314-4fc1-a4ee-00a41d84f205"
-    },
-    {
-      "id": 568,
-      "collector": "external-competitive-pressure",
-      "started_at": "2026-08-27T21:28:45+00:00",
-      "completed_at": "2026-08-27T21:28:46+00:00",
-      "status": "ok",
-      "items_seen": 40,
-      "items_new": 0,
-      "error": null,
-      "repair_execution_id": null,
-      "target_window_start": null,
-      "target_window_end": null,
-      "acquisition_start": null,
-      "acquisition_end": null,
-      "collection_execution_id": "26dd665b-5314-4fc1-a4ee-00a41d84f205"
+      "collection_execution_id": "df386a5d-e353-4994-a8f1-fda0d83acb38"
     },
     {
       "id": 56,
@@ -33857,10 +33899,10 @@
       "collection_execution_id": null
     },
     {
-      "id": 566,
+      "id": 570,
       "collector": "google-news-rss",
-      "started_at": "2026-08-27T21:28:20+00:00",
-      "completed_at": "2026-08-27T21:28:21+00:00",
+      "started_at": "2026-08-27T22:42:59+00:00",
+      "completed_at": "2026-08-27T22:43:00+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
@@ -33870,13 +33912,13 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "26dd665b-5314-4fc1-a4ee-00a41d84f205"
+      "collection_execution_id": "df386a5d-e353-4994-a8f1-fda0d83acb38"
     },
     {
-      "id": 569,
+      "id": 573,
       "collector": "sec-edgar",
-      "started_at": "2026-08-27T21:28:46+00:00",
-      "completed_at": "2026-08-27T21:28:49+00:00",
+      "started_at": "2026-08-27T22:43:20+00:00",
+      "completed_at": "2026-08-27T22:43:22+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33886,7 +33928,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "26dd665b-5314-4fc1-a4ee-00a41d84f205"
+      "collection_execution_id": "df386a5d-e353-4994-a8f1-fda0d83acb38"
     },
     {
       "id": 57,
@@ -33906,12 +33948,12 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 980,
-  "mention_count": 2414,
+  "event_count": 981,
+  "mention_count": 2415,
   "review_counts": {
     "provisional": 0,
     "confirmed": 280,
-    "flagged": 700,
+    "flagged": 701,
     "flagged_retry_pending": 0
   }
 }
