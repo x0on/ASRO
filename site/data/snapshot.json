@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T22:57:06.051754+00:00",
+  "generated_at": "2026-08-27T23:00:16.369408+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "external_pressure": 16.12,
-    "cannibalization": 54.2,
-    "counter_evidence": 42.9,
-    "circularity": 59.4,
     "fragility": 61.1,
+    "cannibalization": 54.2,
+    "capital": 42.64073738140746,
+    "circularity": 59.4,
     "transmission": 39.6,
+    "counter_evidence": 42.9,
+    "external_pressure": 16.12,
     "monetization": 42.9,
-    "stress": 57.1,
-    "capital": 42.64073738140746
+    "stress": 57.1
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
+    "fragility": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "counter_evidence": "directional_estimate",
+    "capital": "aggregate",
     "circularity": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "external_pressure": "aggregate",
     "monetization": "directional_estimate",
-    "stress": "directional_estimate",
-    "capital": "aggregate"
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "circularity": {
@@ -697,6 +697,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-27T23:00:15+00:00",
+      "score": 44.9,
+      "label": "FORMING",
+      "dimensions": "{\"circularity\": 59.4, \"stress\": 57.1, \"capital\": 42.64073738140746, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"external_pressure\": 16.12, \"fragility\": 61.1, \"transmission\": 39.6}"
+    },
     {
       "captured_at": "2026-08-27T22:57:05+00:00",
       "score": 44.9,
@@ -5960,6 +5966,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:fd50319bfff1e31e994c1fc3257fb5dafdec935afa9582607667e325f44aae16",
+        "label": "From Claude to the Stock Market: Anthropic\u2019s IPO Filing, Explained. - Direxion",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Direxion",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNekpfbDRZSnBaRFlzVnk5VXpFN0otblZTU3h2Q0ZKeUtRRElVN2dMT0xyeTZFOUhqTFZNcWJVRmd3dzRtbDBncmdCU25keUdvR2tMMldlMTY0YzF2NmtocDJmam5UdlRoTEd5V3Jfb010QlZEZ2d3RVlrZF96N2xwTFdleDdnb2JQMzlSYXplZXUyem9ueEVKT2xLSUs?oc=5",
+        "date": "Wed, 26 Aug 2026 13:10:38 GMT",
+        "summary": "From Claude to the Stock Market: Anthropic\u2019s IPO Filing, Explained. Direxion",
+        "score": 4,
         "weight": 1
       },
       {
@@ -11361,18 +11379,6 @@
         "summary": "Nvidia Agrees to Buy Open Source AI Platform Hugging Face For $12.9 Billion The Information",
         "score": 1,
         "weight": 1
-      },
-      {
-        "id": "evidence:ab7db5c526ff250544a5a96f2db05610bb8f6350c404f9e9e05f6f4d95c7e880",
-        "label": "MiniMax revenue surges 283% as enterprise adoption increases - digitimes",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "digitimes",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOcjN4Zk1wc0Q5XzJOTzJ1NTVDTDA0NzMwOW5TY2JLWmp6UE14OUxxRlVZRkF5Skl1cmF2bWZ6LTczU2tRZ0lXMk5WUWJmd1dENmFkaVB4S0wwZll4UEVqNC05WTdRS3V4UjB1ZFZ2dHliek5jbFktRk81bk1DOS02NFVPaXJjTTZFZmdwM1JhT0k5Qm01blE?oc=5",
-        "date": "Thu, 27 Aug 2026 09:40:41 GMT",
-        "summary": "MiniMax revenue surges 283% as enterprise adoption increases digitimes",
-        "score": 1,
-        "weight": 1
       }
     ],
     "edges": [
@@ -14830,6 +14836,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:fd50319bfff1e31e994c1fc3257fb5dafdec935afa9582607667e325f44aae16",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -19170,13 +19183,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:f9ef4599d1de571d2d6edb8874af85b1cf0f46664deda22a945c798100a902cd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:ab7db5c526ff250544a5a96f2db05610bb8f6350c404f9e9e05f6f4d95c7e880",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33902,26 +33908,26 @@
   ],
   "collector_runs": [
     {
-      "id": 579,
+      "id": 583,
       "collector": "company-economic-news",
-      "started_at": "2026-08-27T22:56:43+00:00",
-      "completed_at": "2026-08-27T22:57:00+00:00",
+      "started_at": "2026-08-27T22:59:56+00:00",
+      "completed_at": "2026-08-27T23:00:11+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 0,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "c71c4d71-0dd9-4d72-a7ee-947b761e9d55"
+      "collection_execution_id": "6ea1845d-6291-4746-a12c-5ff94b8ae414"
     },
     {
-      "id": 580,
+      "id": 584,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-27T22:57:01+00:00",
-      "completed_at": "2026-08-27T22:57:02+00:00",
+      "started_at": "2026-08-27T23:00:11+00:00",
+      "completed_at": "2026-08-27T23:00:11+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33931,7 +33937,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "c71c4d71-0dd9-4d72-a7ee-947b761e9d55"
+      "collection_execution_id": "6ea1845d-6291-4746-a12c-5ff94b8ae414"
     },
     {
       "id": 56,
@@ -33950,10 +33956,10 @@
       "collection_execution_id": null
     },
     {
-      "id": 578,
+      "id": 582,
       "collector": "google-news-rss",
-      "started_at": "2026-08-27T22:56:41+00:00",
-      "completed_at": "2026-08-27T22:56:42+00:00",
+      "started_at": "2026-08-27T22:59:55+00:00",
+      "completed_at": "2026-08-27T22:59:56+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
@@ -33963,13 +33969,13 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "c71c4d71-0dd9-4d72-a7ee-947b761e9d55"
+      "collection_execution_id": "6ea1845d-6291-4746-a12c-5ff94b8ae414"
     },
     {
-      "id": 581,
+      "id": 585,
       "collector": "sec-edgar",
-      "started_at": "2026-08-27T22:57:02+00:00",
-      "completed_at": "2026-08-27T22:57:04+00:00",
+      "started_at": "2026-08-27T23:00:12+00:00",
+      "completed_at": "2026-08-27T23:00:14+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33979,7 +33985,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "c71c4d71-0dd9-4d72-a7ee-947b761e9d55"
+      "collection_execution_id": "6ea1845d-6291-4746-a12c-5ff94b8ae414"
     },
     {
       "id": 57,
