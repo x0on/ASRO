@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T21:21:59.996899+00:00",
+  "generated_at": "2026-08-27T21:28:50.570177+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -13,14 +13,14 @@
   },
   "dimensions": {
     "external_pressure": 16.12,
-    "fragility": 61.1,
-    "monetization": 42.9,
-    "stress": 57.1,
-    "transmission": 39.6,
-    "capital": 42.64073738140746,
-    "cannibalization": 54.2,
     "counter_evidence": 42.9,
-    "circularity": 59.4
+    "circularity": 59.4,
+    "fragility": 61.1,
+    "cannibalization": 54.2,
+    "capital": 42.64073738140746,
+    "monetization": 42.9,
+    "transmission": 39.6,
+    "stress": 57.1
   },
   "dimension_evidence": {
     "capital": 8,
@@ -32,14 +32,14 @@
   },
   "dimension_basis": {
     "external_pressure": "aggregate",
-    "fragility": "directional_estimate",
-    "monetization": "directional_estimate",
-    "stress": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "capital": "aggregate",
     "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
+    "fragility": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "circularity": "directional_estimate"
+    "capital": "aggregate",
+    "monetization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "circularity": {
@@ -697,6 +697,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-27T21:28:49+00:00",
+      "score": 44.9,
+      "label": "FORMING",
+      "dimensions": "{\"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"transmission\": 39.6, \"fragility\": 61.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 59.4, \"external_pressure\": 16.12, \"stress\": 57.1}"
+    },
     {
       "captured_at": "2026-08-27T21:21:58+00:00",
       "score": 44.9,
@@ -9317,6 +9323,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:d772345fd66837a524c16f080535c61dfe8dabb012d1744322cd111085c57002",
+        "label": "SpaceX Stock: 3 Things Nvidia Said About the Company on Its Earnings Call - Barron's",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Barron's",
+        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPZGgyRGVVS2hrRXcwSGlkUVoyalpLTm8xczFSeUFFbk44eHctYmZVcXVTcmd3bkNzLTA4cDFsQjJ3S2VqXzFfN3FsNTVUcWdaUTJ4MGZXUFlZUUdJb0YxWGs4emg5ckRvamMycFNKMmlSRXNrVGZHSElkZmZfSXMySlV3?oc=5",
+        "date": "Thu, 27 Aug 2026 20:08:00 GMT",
+        "summary": "SpaceX Stock: 3 Things Nvidia Said About the Company on Its Earnings Call Barron's",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:14fc29ad45c9abe966f0a357dcd390ed8a3f00dc66ef1917fae0a94ff0ff22ca",
+        "label": "20VC x SaaStr: Nvidia Pays $6B for Poolside\u2019s Model Factory, OpenAI Has to Go Public in 2027, and Why $9B No Longer Clears the Bar for Seed - saastr.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "saastr.com",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQeXZ3cTRuR3FrVk5xOTBjNExfZUxtRjNqQXlGaE9RWDRscjFSMlRYSU1MZnFHQ29VZk5Bb2t5M2hDaWMxMncyZ082X2hhQUpwWTVsUmdqdzhvZjZzT3JiRE4zQmFIZTdnc1RnZjk2Z1V2bFF1aUhXWU5hWHIza0xrVkJMZGVQWkhYZnJMU0VxOC12UVRoRW5SREkwVDZhSFJxdUV6cU52TXczQTA4azhnMnlkMEg5czlQRnJIR2d5cDVwcTF5RW0wWl9mYUp0bEFsSE9WV3c0NmlFTTVsdmd1Zk1xa0g1MTRhal9QU0pn?oc=5",
+        "date": "Thu, 27 Aug 2026 17:32:54 GMT",
+        "summary": "20VC x SaaStr: Nvidia Pays $6B for Poolside\u2019s Model Factory, OpenAI Has to Go Public in 2027, and Why $9B No Longer Clears the Bar for Seed saastr.com",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:716fb86936ef46b38a742ee04103a2cafa3ef80b7f1012d6eead46955e8b6b5d",
         "label": "Meta Projected It Could Spend $10 Billion on Anthropic\u2019s A.I. - The New York Times",
         "kind": "evidence",
@@ -11305,30 +11335,6 @@
         "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORWFKa1pVOWdsZzFWaFRxdmpkZ0MybzRHUENVREc2TUtzbU9DRUpkQlpPLTE1YXMtaFZOS1dnaFFITTNjM0NMN2JnZnp2Y1UwenNrWmpTOTFuOC1SbkVlaFFrWndOUEFIZ1ZqcTVBSmNqUzdkOFhFdjdETktNdGd2RllYRmZ5UzhEd2lOV05FZHgzbDRuMENPMWR5UDFkTGxjT21TVTBhVDFtVWpTaFoyOWxuaWNXTFU?oc=5",
         "date": "Thu, 27 Aug 2026 04:55:00 GMT",
         "summary": "MiniMax\u2019s Revenue Jumps 280% as Business Customers Drive Growth Caixin Global",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:bf7b1c7e5f5ae247651c2d801fa136955faae02d99e34fb26f74ba787ff8c9db",
-        "label": "Nvidia Acquires Hugging Face for $12.9 Billion - StartupHub.ai",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "StartupHub.ai",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWXVWMmo0SlJoNFBQbDR0NHkwdmMzUUJOa1JxNTdQY2ZZTkhIeXJyN25KRkM2U1EzQ1pXZkYwVDJ6b1hMT3FFdzVqb0NWMFI2OGRINEJMWlRiWmwxODJlcVUxVnZldjBUNmlkeFhHZ2ZXWTAxejQ2dGh6T1VlZmpPRU5PMHd3QXNPdWpNU1BhWnZScDdYeUU2TkJmcllkeVRrb0pLanZLYUcwMWtk?oc=5",
-        "date": "Thu, 27 Aug 2026 02:32:06 GMT",
-        "summary": "Nvidia Acquires Hugging Face for $12.9 Billion StartupHub.ai",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:512823944b959da2d5633c611cb32e1ac9ad0ea89ca15ed438c3085b5a087eec",
-        "label": "Tencent Cloud Partners with TruKKer to Expand Saudi Arabia Cloud Operations - The Fast Mode",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Fast Mode",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNeXNfdGNvMjZOaEQ5b01OTUdkS1lwRURwOV9PRVNiUEZvN3VkQ00xU1NURU9GUm81LWoybjNLd2loekREM0hKT2taVkgtd2JkS0I0SzlsdjlZUlNHYTlLMEdMTnJ0NEJ2d1hsUllMZjJNSWlXMVZmQWZEUjVlZ0JmSlZOaTkybDZNNHFHVXIyRGdvRjR5N2hmelE1aDNMb1BPOS1Cbng3OGMyV1l0Nk1sX3hSRHN5c2Z5WnRMZ2g5a3ZzY0xxSXJnVGtn?oc=5",
-        "date": "Thu, 27 Aug 2026 00:11:10 GMT",
-        "summary": "Tencent Cloud Partners with TruKKer to Expand Saudi Arabia Cloud Operations The Fast Mode",
         "score": 1,
         "weight": 1
       }
@@ -17082,6 +17088,34 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:d772345fd66837a524c16f080535c61dfe8dabb012d1744322cd111085c57002",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:d772345fd66837a524c16f080535c61dfe8dabb012d1744322cd111085c57002",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:14fc29ad45c9abe966f0a357dcd390ed8a3f00dc66ef1917fae0a94ff0ff22ca",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:14fc29ad45c9abe966f0a357dcd390ed8a3f00dc66ef1917fae0a94ff0ff22ca",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:716fb86936ef46b38a742ee04103a2cafa3ef80b7f1012d6eead46955e8b6b5d",
         "type": "EVIDENCE",
@@ -19065,20 +19099,6 @@
       {
         "source": "MiniMax",
         "target": "evidence:27433c9ad0c102e218de8b9aaf626f5a1cce7b2473327cc4c679f062ad6b5fe8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:bf7b1c7e5f5ae247651c2d801fa136955faae02d99e34fb26f74ba787ff8c9db",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:512823944b959da2d5633c611cb32e1ac9ad0ea89ca15ed438c3085b5a087eec",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33789,26 +33809,26 @@
   ],
   "collector_runs": [
     {
-      "id": 563,
+      "id": 567,
       "collector": "company-economic-news",
-      "started_at": "2026-08-27T21:21:39+00:00",
-      "completed_at": "2026-08-27T21:21:55+00:00",
+      "started_at": "2026-08-27T21:28:21+00:00",
+      "completed_at": "2026-08-27T21:28:45+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 4,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "2bc5aced-410e-4294-9ab2-5e83cab13e09"
+      "collection_execution_id": "26dd665b-5314-4fc1-a4ee-00a41d84f205"
     },
     {
-      "id": 564,
+      "id": 568,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-27T21:21:55+00:00",
-      "completed_at": "2026-08-27T21:21:56+00:00",
+      "started_at": "2026-08-27T21:28:45+00:00",
+      "completed_at": "2026-08-27T21:28:46+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33818,7 +33838,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "2bc5aced-410e-4294-9ab2-5e83cab13e09"
+      "collection_execution_id": "26dd665b-5314-4fc1-a4ee-00a41d84f205"
     },
     {
       "id": 56,
@@ -33837,10 +33857,10 @@
       "collection_execution_id": null
     },
     {
-      "id": 562,
+      "id": 566,
       "collector": "google-news-rss",
-      "started_at": "2026-08-27T21:21:38+00:00",
-      "completed_at": "2026-08-27T21:21:39+00:00",
+      "started_at": "2026-08-27T21:28:20+00:00",
+      "completed_at": "2026-08-27T21:28:21+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
@@ -33850,13 +33870,13 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "2bc5aced-410e-4294-9ab2-5e83cab13e09"
+      "collection_execution_id": "26dd665b-5314-4fc1-a4ee-00a41d84f205"
     },
     {
-      "id": 565,
+      "id": 569,
       "collector": "sec-edgar",
-      "started_at": "2026-08-27T21:21:56+00:00",
-      "completed_at": "2026-08-27T21:21:58+00:00",
+      "started_at": "2026-08-27T21:28:46+00:00",
+      "completed_at": "2026-08-27T21:28:49+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -33866,7 +33886,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "2bc5aced-410e-4294-9ab2-5e83cab13e09"
+      "collection_execution_id": "26dd665b-5314-4fc1-a4ee-00a41d84f205"
     },
     {
       "id": 57,
