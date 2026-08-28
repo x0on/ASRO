@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T23:24:21.725825+00:00",
+  "generated_at": "2026-08-28T05:24:49.507346+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "external_pressure": 16.12,
-    "transmission": 39.6,
+    "monetization": 42.9,
     "circularity": 59.4,
     "cannibalization": 54.2,
-    "monetization": 42.9,
-    "capital": 42.64073738140746,
+    "external_pressure": 16.12,
     "stress": 57.1,
-    "counter_evidence": 42.9,
-    "fragility": 61.1
+    "capital": 42.64073738140746,
+    "transmission": 39.6,
+    "fragility": 61.1,
+    "counter_evidence": 42.9
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
-    "transmission": "confirmed_trigger",
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
     "monetization": "directional_estimate",
-    "capital": "aggregate",
+    "circularity": "directional_estimate",
+    "external_pressure": "aggregate",
+    "cannibalization": "directional_estimate",
     "stress": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "fragility": "directional_estimate"
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate"
   },
   "dimension_direction": {
     "circularity": {
@@ -697,6 +697,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-28T05:24:48+00:00",
+      "score": 44.9,
+      "label": "FORMING",
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"monetization\": 42.9, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"circularity\": 59.4, \"external_pressure\": 16.12, \"counter_evidence\": 42.9}"
+    },
     {
       "captured_at": "2026-08-27T23:24:20+00:00",
       "score": 44.9,
@@ -4619,6 +4625,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:fe6376512411037f7566d48dca7981974d50ab908bfa0dd7ece4a81767ede4c6",
+        "label": "Nasdaq-100 futures surge 1.5% as Nvidia earnings lift tech sector. - CME Group",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "CME Group",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNRXFzMGtJQ1FJaURNVEFpcVBRQVdnWmUzSU9RSnRfLTkweHBvVE0ydTRVMno0dUxJSnJFUDFvbndzcHN4MENiUHVsdVdwQ0Jrc0I0cUc0RDVEM2h3R3pvUmREM1luNXBQa2JaUHpXSEVTMk1hVm1qMnBoclhlcHRMeGFvU0hwbVZ6aE9ZTGZfWTMxYjM1Y0ZZMHNPck1QMzNXSVc2aEJYZWR2Wi10RWVETQ?oc=5",
+        "date": "Fri, 28 Aug 2026 00:13:30 GMT",
+        "summary": "Nasdaq-100 futures surge 1.5% as Nvidia earnings lift tech sector. CME Group",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:1678c0ecff6099e1e8f83c88a334afa3f5a5f659131a131b99f136752155ca7c",
+        "label": "Anthropic\u2019s IPO math just got more aggressive than SpaceX\u2019s - thestreet.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "thestreet.com",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9CclFCRkRiTHZTd1ZqMGJqWHI5QXpFcU9UYTR5QjdMSFN4VE1LRjREblNRV1YtRkxnVk5aRXg0Wjdxd3FBSk52MG44VGl0ZlY1aUQtVnJ4b1VnaG45LXJTd1ZOUFFMQ09nZ2VVUzRSRWF2TklUWGVabnFURFA?oc=5",
+        "date": "Thu, 27 Aug 2026 15:03:00 GMT",
+        "summary": "Anthropic\u2019s IPO math just got more aggressive than SpaceX\u2019s thestreet.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:eb644dee29db7f63342c0478629000c3cb50c3c7b9f60288c17d6bebc7dee8c9",
         "label": "Anthropic Considers Letting Shareholders Sell In IPO, Departing from SpaceX Playbook - The Information",
         "kind": "evidence",
@@ -5984,6 +6014,66 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:89758d131718bb74d0ac0de9cdc358fe2782ca5896beb71004b0f259623a9460",
+        "label": "Dario Amodei Anthropic Revenue and IPO Plans 2026 - StartupHub.ai",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "StartupHub.ai",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVC1ZWW9QZGtnYmdNSVUxTjIta0s0ZnRhS1F0a2xWNXR4MUtQV0VtU2xwT3JKbjM2aEVxbHJIRUd2ci1sR1F0M0RIMUJQT3RJR1F4akstNy1qRktDeTZqT2JkZXU2am1TV1l6RWY2N3VLN0o2Ujd4T1MteksyZmFiUmhvZkplbXA0UjhTRHpRbjRBSWxGNGJaTkhlMEowbGNoeW9KdU0yWWRCZ21T?oc=5",
+        "date": "Thu, 27 Aug 2026 08:00:00 GMT",
+        "summary": "Dario Amodei Anthropic Revenue and IPO Plans 2026 StartupHub.ai",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:80416f42fd0375e20159399f8a2c13f61d4ef295633602c57eb79b3093816dd1",
+        "label": "DeepSeek looks for fresh capital as founder\u2019s quant empire navigates China\u2019s choppy IPO market - CNBC",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQzMxVFMwN0tVYWwxaTN1QUtCdVpwUnJVVmxMYWFUOHdNRFMzeDMzZVVjam0ydE5FSTJCNkRhTzNWalFZbHFxNmxXLTdWMTFXamlTVEtCT0lMdzVWZm1XT0RHdk5ZLWZoZmR5WWw4X0JrYkl6dUs1bEIwemxFa3FOMDRxejJoZk5wLU9jQS1veXFNUTBvTVNjSklQS3BGQTNqSWNmWNIBqgFBVV95cUxOd2V3enVGa2wyX05kbDNtbzhjTzdid3JubkxWeG5NQkE4OUk2WVp1dzJDMFNOWGJYcE9HUFpWRHhfamp4RGZqeGlUNFQzUWFaNU5fVFkzZ3ZERXFXbTRIcV9hMUFqdHlSSFJHNUNqbEhGZ2VwdlJoY2k0N2piNWI4ZFJoV2c3c1NaTHQ2b2FTaXJrQkR0akhHYzIybkY0ek1IXy1EdFZTLU5rUQ?oc=5",
+        "date": "Fri, 28 Aug 2026 01:02:00 GMT",
+        "summary": "DeepSeek looks for fresh capital as founder\u2019s quant empire navigates China\u2019s choppy IPO market CNBC",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:41ddf39f4b482d83cbc29846e371ecc6679e343f14db74b327da20b2ea41c135",
+        "label": "OpenAI Just Hit a $40 Billion Run Rate. So Why Are Its Top Executives Sprinting for the Exit Before the IPO? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMTRMakU2eGl6cUhIRnJCcnE5bnllRHYtQkpmbkRZWWRiQ3ZvNDFoVU5uc0xnTi1vU0EtYUp6d2tQNWFieWlpY2J3N1JINko0LWRncjhjNnBLTTdra0xNQUpBZk80Xzg3ODVvQ2E1cWFNQkktc01CeU1sMWhzZHVXQXduaW0tM09qc2VOWGRhSjZONjZC?oc=5",
+        "date": "Fri, 14 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI Just Hit a $40 Billion Run Rate. So Why Are Its Top Executives Sprinting for the Exit Before the IPO? Yahoo Finance",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2496eb580c6087fec27bd9e8431800746485f9933105b52ca33dbdc8c851c731",
+        "label": "OpenAI IPO Launch Date Becomes Clearer in Polymarket Odds - Action Network",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Action Network",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSnUyZDR5aC1jZzRlamp6THZndUF4Q2ZxTXVid0x0WlBXNlFnTzBTLS1OZE9ndEdOelQ3ZXNUVm9pWWZ4ZzlIYm56YU16eEZ4SEs3cEtXU3ZVek9TRWdQaVVLb1l1Q25NSXRObFd2Q2NUbDQ4TkVBRXk0SVE1WkxVenJSNA?oc=5",
+        "date": "Fri, 28 Aug 2026 03:15:00 GMT",
+        "summary": "OpenAI IPO Launch Date Becomes Clearer in Polymarket Odds Action Network",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9408449bf593be7433cf396638bc72e9398904611f0f792820b34b4baaa64413",
+        "label": "OpenAI Stock IPO: Expected Valuation, Timeline and Investment Options - SmartAsset",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "SmartAsset",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE15OEdhUlNaM0Z5cjB2VFdVbU5kYlU1VXNKcGF6YXpBbVZvTEhSTnFNbWo1LUZPdkxmbG1FcGJSRTI0bkgwTWxLNERtVFQ2S1lvaXpqaC03RWVoa1FJN1E?oc=5",
+        "date": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI Stock IPO: Expected Valuation, Timeline and Investment Options SmartAsset",
+        "score": 4,
         "weight": 1
       },
       {
@@ -9407,6 +9497,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:88a088822d95a83c9ddaa2cbc6f222bb69f63c2d4fbac3235f5496003073d65d",
+        "label": "China E-Commerce Stocks Sink While Baidu Climbs 4%: Alibaba Falls 4%, PDD Holdings Declines 3% - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQS2MzaEZyazdlSVB1YlNsak5iU0lMdzNsOTB4bXpkRUx6Zk1WQm1oUndYdEJjNXI5Zm03dHlhZ3NVSlhwMFlueXk2VU9mYURlSU93dkxIRlN4d01TaE9MMVM2Tk5wRE8wRm40TEJ2b1daRFp6WDVMOVJWX0ltbTZmYUlpak1YVFM1WW41MURKbTMzRFBGdGRyYlFpRmRrQ2tOMVFqOU9ZZmtIOFQ0VHR3Vk1BVm9lX25mbWZZRHU4Nl9FQ0NHRXFxNEVkVUJQUQ?oc=5",
+        "date": "Thu, 27 Aug 2026 18:14:00 GMT",
+        "summary": "China E-Commerce Stocks Sink While Baidu Climbs 4%: Alibaba Falls 4%, PDD Holdings Declines 3% 24/7 Wall St.",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:5e54afef9f4aee3580edd2ffa600c3755197a8f0e4695f9240d2b1e75988971b",
         "label": "Primary filing: nebius-meta-2025-11-6k",
         "kind": "evidence",
@@ -11135,6 +11237,66 @@
         "weight": 1
       },
       {
+        "id": "evidence:ce504b7685c13d003f39fa577eae0bf3e41f03afae1138badf6d9ddbedc8c209",
+        "label": "MSFT: Microsoft Corp Latest Stock Price, Analysis, News and Trading Ideas - Stocktwits",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1DbmU1aGxiWGkxQnoybzVuVUg3c1hiUFpIQmJWZnF6QW9ON19hZW9LOE1ZX0dxeVdpa0Y5TmlWVW1INFJKRm1IcEJR?oc=5",
+        "date": "Fri, 28 Aug 2026 00:35:56 GMT",
+        "summary": "MSFT: Microsoft Corp Latest Stock Price, Analysis, News and Trading Ideas Stocktwits",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b4d0e8b1bbf478dc16849fda413f697db31bc0e6058d1b760bad3031e2ec5e2f",
+        "label": "MSFT Q4 2026 Earnings: Microsoft Reports $90 Billion in Revenue, Azure Grows 43% - webull.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "webull.com",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYzJnZFM4MEdNbS1wM09oLU1xSjhSREFqVHJid0dESEpYbDN6VThRY242cFRlaEluYTNZTVllZm9vUEZZMGthTklKU25RQncxaUFBYUhUSlJVeGlndDROZGx0aUxwdkZuVUZ1alMySXZqTnRJaFZ0dW9wSXpXekVSYTBMeXVMRk1TUkhfVnR2Nk5iZTVvc3BhUF92ZWNqVXI0TzJNRTR6OThhVEp3?oc=5",
+        "date": "Fri, 28 Aug 2026 03:56:22 GMT",
+        "summary": "MSFT Q4 2026 Earnings: Microsoft Reports $90 Billion in Revenue, Azure Grows 43% webull.com",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:44118631e2b7c6d17bc933f0d9476f88478437fbabe1e34cd452e1320e151f83",
+        "label": "Sandbox Interactive Working with Tencent Cloud and Tencent ACE to strengthen Android security for Albion Online - PocketGamer.biz",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "PocketGamer.biz",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPeUFVUHJlQTdhaHl6RHhXUS1NZndKWFkxMmkySmU3a2t0RkpGNFVEM0JQZER3b1pUTXRBNWxOMmFfcUhyQURmd1dBcmVTVGsxZHZSd2lOa3dYV2ltWF82eHk4WDJPdGhiM0RoRVdKVDh5VnV6ZDZ6Y0tpS3AzbE95cGlVaWpPSTByazdVaXBWOUhOMHNJbTBQdXdjQ2tDd1lVNVBLa0RzTk1lZDRBbUNtMmZlLTNucVFtMnZ2YVNuenp6eDE3cDBSU0czZVVjVXE1WGVwQUMydw?oc=5",
+        "date": "Thu, 27 Aug 2026 14:00:00 GMT",
+        "summary": "Sandbox Interactive Working with Tencent Cloud and Tencent ACE to strengthen Android security for Albion Online PocketGamer.biz",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ff5b6ac2515dee14ec6035826210e5b947a7ad4956f5791fe5133fc80d1b7a77",
+        "label": "Hollywood Strikes a Deal with ByteDance: Unstoppable AI Video Wave Spurs Joint Profit Partnership - 36 Kr",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5hRmZHUFpEV0dCUFJCRmxiSlNSdXdDN3VPeDltcGxnZjg5OGdsbGtzUnlWazZFTjRXd3E5NWdVTEhPRDRmUkJuWGFvYU95dXR0OERZ?oc=5",
+        "date": "Fri, 28 Aug 2026 04:00:44 GMT",
+        "summary": "Hollywood Strikes a Deal with ByteDance: Unstoppable AI Video Wave Spurs Joint Profit Partnership 36 Kr",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:cc064738eb593d3f91b17b9a665665ae2b00e03c60487a80bfa51458a36aaf4d",
+        "label": "OpenAI rolls out ads on select ChatGPT plans in India to boost monetization, support wider access - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5wU3BSTUhWQXkxRjEwZHMxbmN0WEkzX1VEY3AwZUtHbzB1eVpzTVljOUlMV1pzd3ZVTkNqN0FVTEtpajRPcnhKZEhsaUxhd0Vac2NhR19NNDRxQWQ5bjVmWlVzV3NBbld0OHNxZjRlY2J2bmxDMGZxYTZLazfSAYIBQVVfeXFMUEM0VGlsR0dXUUxCZDdfWW9iQmhDS1NocUNFSWVQcWdrLTFzaGxzdkFxcW1pSEx2dFdJQ21TLWUtbDJvWkdNOVQ1R3Y3aDBZTS1CNDEzcmhfUkgyN1JfemdxSDhXVXpSN3NvQTRLeWU3RHJ6Q3RQMUl2ZjVGM21lZjNDdw?oc=5",
+        "date": "Fri, 28 Aug 2026 03:26:00 GMT",
+        "summary": "OpenAI rolls out ads on select ChatGPT plans in India to boost monetization, support wider access CNBC",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:671b3c4871821c580f921ca41c9c2ff2873b4e794773803fb62f2295be2e5d25",
         "label": "Primary filing: cipher-amazon-2025-11-8k-exhibit",
         "kind": "evidence",
@@ -11239,162 +11401,6 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm",
         "date": "2025-08-18",
         "summary": "With this incremental commitment, Google's total backstop increases to approximately $3.2 billion.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cae16a31b7759cbae7baac1a21f0ed00c51b7948d01ff773a482c01d2f619212",
-        "label": "Meta Platforms $30 billion senior notes prospectus supplement",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "SEC",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312525261217/d762778d424b2.htm",
-        "date": "2025-10-30",
-        "summary": "Meta Platforms, Inc. offered $30,000,000,000 aggregate principal amount of senior notes in six tranches.",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ced766a1cabb9b265fe640e45339a50b0551271cc1a11f6455f31cc6345b87d5",
-        "label": "Nvidia adds more than $400 billion in value after blowout earnings boost AI confidence - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1wT0tKVG5QdjJIV3RXNmZNYUROM1dJYWJ3d3VOUzdKUEZjTFgweTFXNlhFT3RwLUoxZ1E4SXYzQ0g4LUFYdW9tNkNVUmE5OE5TendnYU02ekhBeThSZDRpTVBwcmlCRXdkcDVoetIBckFVX3lxTFBTYXloWFBxMWUxVXBhV1VLdkJzbWpITXdabzh3b00zYXlnb0ZHcEZlRjFqRHRtWmF4QjA2ei1Id3hTQ3N3X1lQcGZyQkJKRzhZalpsbmZrd3lRd2gxQXRpMWpQUUpiVTFxTHJ3N0NEY0k1Zw?oc=5",
-        "date": "Thu, 27 Aug 2026 08:04:33 GMT",
-        "summary": "Nvidia adds more than $400 billion in value after blowout earnings boost AI confidence CNBC",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1b96f4b102cddf68ca7276a29b6de43c84f015cfba352041feca248b497b0888",
-        "label": "China\u2019s MiniMax sees revenue nearly quadruple in first half as AI demand surges - 927thevan.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "927thevan.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxObkh4ZmtNTmNkcDJXX0FEeHVWN1dNYWk4VkRPRW10czdqbWlCZVY0VHQwYVhIekd6NmVUUm9IYnQ4SzFSTkpveGpZaFN5c1hUWjlXcUFEMDRDWVdYanAzamh3WTFrOXhzTWF2RGthakFmUENHSVhta1B6bTNmOTFwSUY0WWFSdEUtLUl6Z21pa1g3Vkk5bVZXYnNaSmhiZWc1bUFIN3pLYzdEZDNNaW8wTjNB?oc=5",
-        "date": "Thu, 27 Aug 2026 10:06:15 GMT",
-        "summary": "China\u2019s MiniMax sees revenue nearly quadruple in first half as AI demand surges 927thevan.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e9caef444cb5814ff0ae8a0ec4817ad5e37704c4ef548bd504cec5a2787a3276",
-        "label": "Tencent Executive Revisits AI Strategy: Dowson Tong Says Endurance Matters More Than Speed in a Marathon Race - finance.biggo.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE51eU1xd2JLM0lDWm9wV3YtemRienVlclBTMHpFbm95eEIwcElEd1hSbzUwMEFQUmc5NllJdkpkcFFLNmNtSjMzSVBDdjVvNTF1N3YyUlZTRU5CenNLT2xWd1RmVEVGNWxKZE1waDNKOWI0MXBmTkE?oc=5",
-        "date": "Wed, 26 Aug 2026 18:30:00 GMT",
-        "summary": "Tencent Executive Revisits AI Strategy: Dowson Tong Says Endurance Matters More Than Speed in a Marathon Race finance.biggo.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c3d1507962eacd9a7e08ac64cb1285c665103dc8223f2642e2e047f627739acc",
-        "label": "Heritage Insurance (HRTG) CEO Ernie Garateix Sells 10,000 Shares - GuruFocus",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "GuruFocus",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaDBuWGpMM3ptX0lCYzJ2TnJ2UGJEYWVYOWxTMmxnUWZuaEpNcUI2eEgxQlF0c3NKc1ZCb01DbjJQaU5DVDNxaW9XQnFNNnlwdk9nNzdYeWhFdkhJc2hUVjk4QTg1czd2a2V1OEtMVU5PMjBHdGtObDFVMk1yTjJZc0VtQkhjYUJiZWs3R1JkZkJvQk9fZzAtR0Q1bjF5alZqbEE?oc=5",
-        "date": "Thu, 27 Aug 2026 00:02:59 GMT",
-        "summary": "Heritage Insurance (HRTG) CEO Ernie Garateix Sells 10,000 Shares GuruFocus",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4fb1b0a7e91a5944e7237a42a40f74c1accf6adf169583d82da968d5f1b56e1a",
-        "label": "Wall Street Analysts Think Alibaba (BABA) Is a Good Investment: Is It? - qz.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "qz.com",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWVoyQ3NndDRlS0FfeVlzSXh4NlE4NkdUWWhJc0hDX05nQjhlMlhscW5wV0pKNWFwZWxVSGhhM3kyUVk0N0RUMzloaW5jSWlXWGRiMzdRTVRfZmpiR2dNNGQ3RERndnp6RlB4Mm5JVHN1UXZXN1ZRSWx0ZTRWVF9mOFFJVjB4MVVZ?oc=5",
-        "date": "Wed, 26 Aug 2026 08:26:17 GMT",
-        "summary": "Wall Street Analysts Think Alibaba (BABA) Is a Good Investment: Is It? qz.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:17e621e7029cc4a811192a3f91c5bdc105333d75b2940106e2188e7c518351de",
-        "label": "Salesforce, Anthropic expand partnership to develop Claudeforce integrations - Digital Commerce 360",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Digital Commerce 360",
-        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZU0xTERLbUFqcVYwS3F0RXgwZ3ZZSnZOalI5bkt0S3RaMjhZOWpwTU80akZIeHJDMTF6SHNvVkEyZFVyRXFWWkZuVEFhUzJHTFAtVGx6VXlBeU5ZWVJCeTJ2WmJHQ3ZhRXltUkNORTVNMXJjUWFfSjBUQ3JDZnpQUWxlbWkwbGlhWFZ6bm9RREZXczFHenJSa3c0LVR0LWfSAaQBQVVfeXFMTVFXcjE0YkxTNGtLeEpnc2g4VkV2MlVuNjdoaEFaOHktZUxqd2Zoc1A1MzMxQVlwSVJOcjFianRJWTB4dGxCWmx5RjBfSmRFSHZuMUV1ZjFDYm9YWktNYkJ4bmREb0MxUUxmUkhjNEE3STk5ajlaSm1NdFE2QV85U085RVdock5ESXktV0Z0VEJWdXY5VzlTdGpOa2d6d3BIUm9UZ2Q?oc=5",
-        "date": "Thu, 27 Aug 2026 18:26:34 GMT",
-        "summary": "Salesforce, Anthropic expand partnership to develop Claudeforce integrations Digital Commerce 360",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4a82abc891c1c7f431a77db2dc4ab1ea458581b6c3d0dd8dc8c5a630c9de7ba4",
-        "label": "Georgia Power gets clearance to serve OpenAI's massive AI data center in Effingham County\u200b - CBS News",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CBS News",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMDFlSWdGM0pFWTdhbkhOa0k3ZFBuNXZINVY3RHVTNTY4b0kxZV9ZWlpUQ040QjQ5LXNWcFZfUkd0QmpialJfek9nNWlTQlE5VGFWMUh4ZjFLZWNwY01GZ3EwcTdFNkw3eW1zcUQ1REtpcUxUMVlHWGhfRjlBbTdnS2huR0FaSG9STndBVDRDOE53dFdLODg2cXJJUVFhYzM5M2NqdkpySnhMMWF6SkN2eXNQbzJ0bENXdWJBMXpOdVZhbHNW?oc=5",
-        "date": "Thu, 27 Aug 2026 18:48:39 GMT",
-        "summary": "Georgia Power gets clearance to serve OpenAI's massive AI data center in Effingham County\u200b CBS News",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:495a91c00ab09e82f9c3bd1e8dc0073046f01b44faefdb4eba83f4664ba2ecdf",
-        "label": "Earnings Preview | Zhipu AI to Release Results Next Monday! ARR and Token Volume-Price Dynamics Take Center Stage; Can the Stock Recover After Halving from Its Peak? - \u5bcc\u9014\u725b\u725b",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "\u5bcc\u9014\u725b\u725b",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOFBtWjRxRUV2WmdBZWpLUkJoTXhqenRqRXNVVDVpWlNpRVRjRVplUUdOU3RuOUt1R0ItMEx1bTJBUmJVSFAtcHZDOVNUbHRTZGRteWZLbG44a0lBZkR5TmRjTWpRQTQ0dU9NLXF5WXRucGVrb0lmazFsMWI1bnhhM05lZ2JLSVN2NEU2X21CQjRfRkEzZWRwcUxGazVFTm9Ib0M4?oc=5",
-        "date": "Thu, 27 Aug 2026 08:37:16 GMT",
-        "summary": "Earnings Preview | Zhipu AI to Release Results Next Monday! ARR and Token Volume-Price Dynamics Take Center Stage; Can the Stock Recover After Halving from Its Peak? \u5bcc\u9014\u725b\u725b",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1a45ad8a525eb9a46882d47403882b0984492fec454c250c5c2e18951396d4bc",
-        "label": "Reuters: China\u2019s Moonshot talking to US cloud giants over Kimi K3 - Silicon Republic",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Silicon Republic",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdlp0NFhRYm9FcGRTTTB4UzJqSmI0bjZ4ZUlRQy1EdHRGaHo2RWRsSnc3RHpiWGdLMHlkbHlVd3lHWWRieHV2a0hfV2ptRG5FWmxBNlp4Z1JTWnZXVnFuTXBVWW9lVnVXMFZWRWhnMVVyN0tVZXoxWFQzTlpUUi1ERTliYzBpMFlSb08tN1hTNXJIb2lOM0dJX2IwSTVlYktNVHdBTmdncFViZw?oc=5",
-        "date": "Thu, 27 Aug 2026 16:15:05 GMT",
-        "summary": "Reuters: China\u2019s Moonshot talking to US cloud giants over Kimi K3 Silicon Republic",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a679c91aa9459005f3f7f8da12e817bd09fd70a50174be0c2e63019ab4e52416",
-        "label": "Baidu (BIDU) Stock Looks Expensive On Cash Flow But Cheap On Sales - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPRlR4ano2OG5fOThNbUNPZkt4bnhYS1hjUHdEY3l6ZnphbXBzMUVXSHJhbzhqSkpFWFR6aldRRlBiMGJEZkcyRkNDeUdOTUJ2bHJQbFZ2WnhZVkV4U2h1eGN6MWpDeGNlclQ5MXJXYWVuNUVQWHdmcWJYQVgxc0pLaWc3TUFyU3Qtb2dEN1czcHpUOHJIeDl1NGVXWHdqTVdkY3AwcS12YmZhVGczUDVsbGFaa2ZYZVVtU2hFVk1n0gHDAUFVX3lxTFBNWUpDVVFBYVBHQU9xemFnSXRRaXU0S1FJLXJiR3pCZ1lTT19USGtJanhqdGkyTThBcGJ5VmlJUGlxTVJvNjUwcmFZX214dmhGcUstWUJUbHBSckk3d1Y5SUdsUDluSWtxMjAwbGtvOFRidDNhNkY1ckhOVEZIX25GVzBrbTlDS3VCOXhOLUtGSUZZb2F3bzI0cWVaUm1tVU9MRFpkaXE2RTFkYUhoVkZoRUR1X01iMVlyRTdpV2JNdEt1NA?oc=5",
-        "date": "Thu, 27 Aug 2026 13:51:52 GMT",
-        "summary": "Baidu (BIDU) Stock Looks Expensive On Cash Flow But Cheap On Sales simplywall.st",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:63f3da71a87dc537a7515cbc1f9f92765c62c6df23bf70eb4cd7426e58b9d33b",
-        "label": "Alibaba Group Holding Ltd Stock (BABA) Moved Down by 3.28% on Aug 27: Drivers Behind the Movement - TradingKey",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TradingKey",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRXVLZ3QwcEphOFd0aFkwOEVfcW03SmE2VkxTeFZrS0N5YXdQV0RrcUsyRWFUaFgzRTNOVVRxb3EzZFFHWmQzSEVRbEFDS285eVZIV0U0UHo4MTNYZ1F4b3BuRG9HanNOcDJKWDFsUjhFQUQzQTFnSWE2Sk5XelBveGhXcW96aFlEaF9R?oc=5",
-        "date": "Thu, 27 Aug 2026 14:15:30 GMT",
-        "summary": "Alibaba Group Holding Ltd Stock (BABA) Moved Down by 3.28% on Aug 27: Drivers Behind the Movement TradingKey",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a2c3324ba18bc74c40f006ad1f3f6d3c672d25c48cf83611ad88ddb75cf14312",
-        "label": "This Analyst Just Called Alphabet 2027\u2019s Best Stock. She Might Be Right - 24/7 Wall St.",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSTBfamFuTzJQSXIyd2JxSUFGa1htY0t6TXlycG1CT2JSR2FPWkpGNzh6RkwyX3lyOFk2Y25sZ1lYNVhLOXU2WFlsMjJURDU5NWpWaHgtdThGamFrazA3LTNTMXNFdzUya2Z3d3NoOUtDMURCckx6SlVfY0RFWjllOHEwU185dmdoZzR1NWRvYWw2ZHd2OWhIa0JXXzloNmxUN2xqRzVRbU1SNzVZMGZOSHJTVQ?oc=5",
-        "date": "Thu, 27 Aug 2026 12:51:00 GMT",
-        "summary": "This Analyst Just Called Alphabet 2027\u2019s Best Stock. She Might Be Right 24/7 Wall St.",
         "score": 1,
         "weight": 1
       }
@@ -13613,6 +13619,27 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:fe6376512411037f7566d48dca7981974d50ab908bfa0dd7ece4a81767ede4c6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:1678c0ecff6099e1e8f83c88a334afa3f5a5f659131a131b99f136752155ca7c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:1678c0ecff6099e1e8f83c88a334afa3f5a5f659131a131b99f136752155ca7c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:eb644dee29db7f63342c0478629000c3cb50c3c7b9f60288c17d6bebc7dee8c9",
         "type": "EVIDENCE",
@@ -14854,6 +14881,41 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:89758d131718bb74d0ac0de9cdc358fe2782ca5896beb71004b0f259623a9460",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:80416f42fd0375e20159399f8a2c13f61d4ef295633602c57eb79b3093816dd1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:41ddf39f4b482d83cbc29846e371ecc6679e343f14db74b327da20b2ea41c135",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:2496eb580c6087fec27bd9e8431800746485f9933105b52ca33dbdc8c851c731",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:9408449bf593be7433cf396638bc72e9398904611f0f792820b34b4baaa64413",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17169,6 +17231,20 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:88a088822d95a83c9ddaa2cbc6f222bb69f63c2d4fbac3235f5496003073d65d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Baidu",
+        "target": "evidence:88a088822d95a83c9ddaa2cbc6f222bb69f63c2d4fbac3235f5496003073d65d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Meta",
         "target": "evidence:5e54afef9f4aee3580edd2ffa600c3755197a8f0e4695f9240d2b1e75988971b",
         "type": "EVIDENCE",
@@ -19059,6 +19135,41 @@
         "mentions": 1
       },
       {
+        "source": "Microsoft",
+        "target": "evidence:ce504b7685c13d003f39fa577eae0bf3e41f03afae1138badf6d9ddbedc8c209",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:b4d0e8b1bbf478dc16849fda413f697db31bc0e6058d1b760bad3031e2ec5e2f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:44118631e2b7c6d17bc933f0d9476f88478437fbabe1e34cd452e1320e151f83",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:ff5b6ac2515dee14ec6035826210e5b947a7ad4956f5791fe5133fc80d1b7a77",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:cc064738eb593d3f91b17b9a665665ae2b00e03c60487a80bfa51458a36aaf4d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:671b3c4871821c580f921ca41c9c2ff2873b4e794773803fb62f2295be2e5d25",
         "type": "EVIDENCE",
@@ -19117,97 +19228,6 @@
       {
         "source": "TeraWulf",
         "target": "evidence:dc7cb6603e47def789cc2ad2b4d70001da35fd24adeec10051b6f852f4ce0961",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Meta",
-        "target": "evidence:cae16a31b7759cbae7baac1a21f0ed00c51b7948d01ff773a482c01d2f619212",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:ced766a1cabb9b265fe640e45339a50b0551271cc1a11f6455f31cc6345b87d5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:1b96f4b102cddf68ca7276a29b6de43c84f015cfba352041feca248b497b0888",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:e9caef444cb5814ff0ae8a0ec4817ad5e37704c4ef548bd504cec5a2787a3276",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:c3d1507962eacd9a7e08ac64cb1285c665103dc8223f2642e2e047f627739acc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:4fb1b0a7e91a5944e7237a42a40f74c1accf6adf169583d82da968d5f1b56e1a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:17e621e7029cc4a811192a3f91c5bdc105333d75b2940106e2188e7c518351de",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:4a82abc891c1c7f431a77db2dc4ab1ea458581b6c3d0dd8dc8c5a630c9de7ba4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:495a91c00ab09e82f9c3bd1e8dc0073046f01b44faefdb4eba83f4664ba2ecdf",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:1a45ad8a525eb9a46882d47403882b0984492fec454c250c5c2e18951396d4bc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:a679c91aa9459005f3f7f8da12e817bd09fd70a50174be0c2e63019ab4e52416",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:63f3da71a87dc537a7515cbc1f9f92765c62c6df23bf70eb4cd7426e58b9d33b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:a2c3324ba18bc74c40f006ad1f3f6d3c672d25c48cf83611ad88ddb75cf14312",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33933,26 +33953,26 @@
   ],
   "collector_runs": [
     {
-      "id": 595,
+      "id": 599,
       "collector": "company-economic-news",
-      "started_at": "2026-08-27T23:24:02+00:00",
-      "completed_at": "2026-08-27T23:24:16+00:00",
+      "started_at": "2026-08-28T05:24:29+00:00",
+      "completed_at": "2026-08-28T05:24:45+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 0,
+      "items_new": 10,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "774dbdf6-e886-422f-9e0f-b50e157e07a7"
+      "collection_execution_id": "7f72eeb5-47ad-4942-9270-f6cd07d62c1f"
     },
     {
-      "id": 596,
+      "id": 600,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-27T23:24:17+00:00",
-      "completed_at": "2026-08-27T23:24:18+00:00",
+      "started_at": "2026-08-28T05:24:45+00:00",
+      "completed_at": "2026-08-28T05:24:46+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -33962,7 +33982,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "774dbdf6-e886-422f-9e0f-b50e157e07a7"
+      "collection_execution_id": "7f72eeb5-47ad-4942-9270-f6cd07d62c1f"
     },
     {
       "id": 56,
@@ -33981,26 +34001,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 594,
+      "id": 598,
       "collector": "google-news-rss",
-      "started_at": "2026-08-27T23:24:01+00:00",
-      "completed_at": "2026-08-27T23:24:01+00:00",
+      "started_at": "2026-08-28T05:24:27+00:00",
+      "completed_at": "2026-08-28T05:24:28+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 4,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "774dbdf6-e886-422f-9e0f-b50e157e07a7"
+      "collection_execution_id": "7f72eeb5-47ad-4942-9270-f6cd07d62c1f"
     },
     {
-      "id": 597,
+      "id": 601,
       "collector": "sec-edgar",
-      "started_at": "2026-08-27T23:24:18+00:00",
-      "completed_at": "2026-08-27T23:24:20+00:00",
+      "started_at": "2026-08-28T05:24:46+00:00",
+      "completed_at": "2026-08-28T05:24:48+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -34010,7 +34030,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "774dbdf6-e886-422f-9e0f-b50e157e07a7"
+      "collection_execution_id": "7f72eeb5-47ad-4942-9270-f6cd07d62c1f"
     },
     {
       "id": 57,
