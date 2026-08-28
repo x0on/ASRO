@@ -455,6 +455,37 @@ _FEATURE_FAMILY_FACTS = (
             "Amazon Web Services to provide turnkey space and power for AI workloads."
         ),
     },
+    {
+        "receipt_id": "alphabet-q3-total-backstop-2025-09",
+        "entity": "Alphabet",
+        "counterparty": "Third-party data center lessors",
+        "feature_key": "ai_contingent_credit_support_stock",
+        "amount": 6_529_000_000,
+        "event_date": "2025-09-30",
+        "event_type": EventType.GUARANTEES,
+        "locator": "Form 10-Q, Note 3: Financial Instruments, credit derivatives table",
+        "evidence_marker": "6,529",
+        "evidence": (
+            "The $6.529 billion notional amount for credit derivatives represents "
+            "Alphabet's maximum potential backstop payments related to certain third-party "
+            "data center leases."
+        ),
+    },
+    {
+        "receipt_id": "meta-october-cloud-capacity-total-2025",
+        "entity": "Meta",
+        "counterparty": "Third-party cloud providers",
+        "feature_key": "ai_compute_contract_value_flow",
+        "amount": 40_000_000_000,
+        "event_date": "2025-10-31",
+        "event_type": EventType.CAPEX_COMMITMENT,
+        "locator": "Form 10-Q, Contractual Commitments",
+        "evidence_marker": "40 billion",
+        "evidence": (
+            "In October 2025, Meta entered into multi-year third-party cloud capacity "
+            "arrangements for an aggregate amount of approximately $40 billion."
+        ),
+    },
 )
 
 
@@ -655,6 +686,15 @@ def promote_current_ai_feature_family(
         )
         promoted.append({"observation_id": observation_id, "content_sha256": digest})
     connection.commit()
+    accepted_event_ids = [f"accepted-{fact['receipt_id']}" for fact in _FEATURE_FAMILY_FACTS]
+    placeholders = ",".join("?" for _ in accepted_event_ids)
+    build_cutoff = str(
+        connection.execute(
+            f"""SELECT MAX(available_at) FROM canonical_fact_assignment
+                WHERE event_id IN ({placeholders})""",  # noqa: S608
+            accepted_event_ids,
+        ).fetchone()[0]
+    )
     specs = [
         FeatureSpec(
             feature_key="ai_related_debt",
@@ -681,7 +721,7 @@ def promote_current_ai_feature_family(
     ]
     entity_build = FeatureStoreBuilder(connection).build_entity_month(
         specs,
-        "2026-08-28T00:00:00Z",
+        build_cutoff,
         ["Alphabet", "Amazon", "Meta", "Microsoft"],
         code_commit,
         "current-ai-feature-family-1.0.0",
@@ -740,6 +780,7 @@ def promote_current_ai_feature_family(
         "accepted_numeric_cells": numeric_cell_count,
         "distinct_accepted_facts": distinct_fact_count,
         "modeling_allowed": False,
+        "build_cutoff": build_cutoff,
     }
 
 
@@ -758,7 +799,7 @@ def _accepted_review(connection: sqlite3.Connection, event_id: str, reviewed_at:
            ) VALUES(?, 'confirm', NULL, 1.0, ?, 'human-acceptance-review', ?)""",
         (
             event_id,
-            "Full SEC prospectus directly states the six-tranche $30B issuance.",
+            "Full authoritative document explicitly states the reviewed value, roles, and timing.",
             reviewed_at,
         ),
     )

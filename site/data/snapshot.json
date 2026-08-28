@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T13:37:11.027294+00:00",
+  "generated_at": "2026-08-28T13:48:39.523563+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "stress": 57.1,
-    "circularity": 59.4,
-    "capital": 42.64073738140746,
-    "cannibalization": 54.2,
-    "monetization": 42.9,
-    "fragility": 61.1,
-    "transmission": 39.6,
     "external_pressure": 16.12,
-    "counter_evidence": 42.9
+    "fragility": 61.1,
+    "stress": 57.1,
+    "capital": 42.64073738140746,
+    "monetization": 42.9,
+    "counter_evidence": 42.9,
+    "cannibalization": 54.2,
+    "circularity": 59.4,
+    "transmission": 39.6
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "stress": "directional_estimate",
-    "circularity": "directional_estimate",
-    "capital": "aggregate",
-    "cannibalization": "directional_estimate",
-    "monetization": "directional_estimate",
-    "fragility": "directional_estimate",
-    "transmission": "confirmed_trigger",
     "external_pressure": "aggregate",
-    "counter_evidence": "directional_estimate"
+    "stress": "directional_estimate",
+    "fragility": "directional_estimate",
+    "capital": "aggregate",
+    "monetization": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
     "circularity": {
@@ -11303,6 +11303,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:9a604d048f879db5961746d097877b21433cbc0dd248369ca6d708b9c3cbb2c5",
+        "label": "Primary filing: meta-october-cloud-capacity-total-2025",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm",
+        "date": "2025-10-30",
+        "summary": "In October 2025, Meta entered into multi-year third-party cloud capacity arrangements for an aggregate amount of approximately $40 billion.",
+        "score": 1,
+        "weight": 1
+      },
+      {
+        "id": "evidence:fe1072acf778246f1b75804bf2e6225a849517bb43e69a7d91db1d94f0cd47da",
+        "label": "Primary filing: alphabet-q3-total-backstop-2025-09",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm",
+        "date": "2025-10-30",
+        "summary": "The $6.529 billion notional amount for credit derivatives represents Alphabet's maximum potential backstop payments related to certain third-party data center leases.",
+        "score": 1,
+        "weight": 1
+      },
+      {
         "id": "evidence:480f5bde72db49ea57e5c9875335ed274757d913a3e97252557cea3e3aa1a0d7",
         "label": "Does Microsoft Stock Have More Upside? - Trefis",
         "kind": "evidence",
@@ -11383,30 +11407,6 @@
         "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9SM2h1LTBLTG5zZ3RQbVpncUF6TTZXTnZEV3F2YUotQm43YVRwUUxURkxGNzRtR2ZQRTZBZE41RG1HZnpueEpxbm1qbFJqaVdpbzVB?oc=5",
         "date": "Fri, 28 Aug 2026 08:30:59 GMT",
         "summary": "ByteDance Launches Full Doubao Product Suite: All-Out Effort to Unveil Complete Doubao AI Product Ecosystem 36 Kr",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e97963524a4dff53f21a2aafed2717291ec84795b4fe19ab84cdc46864c75dcf",
-        "label": "Baidu Inc (BIDU) Shares Surge 4.0% -- What GF Score of 77 Tells Investors - GuruFocus",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "GuruFocus",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTTlRZ096Vk9iNnFINnZBcG84bzF5cjVnUWRad2pJNnY3NlpqSFJXcnpTU3JGNHlHdi1JRG10WTFBb1RWWjlXdmlkLURfOUNrUFk2MERNN1FkQ3RXc2tIenc0RThzVXd6Q3FXMVFSNmlwZUJyRjJhMGJkQldEVlpoRjFUSXU1RWJBbmVaVEJKWXJBSEpYcUlVTUxVdGZqbUNqNVBvQUg4SjA?oc=5",
-        "date": "Thu, 27 Aug 2026 21:32:08 GMT",
-        "summary": "Baidu Inc (BIDU) Shares Surge 4.0% -- What GF Score of 77 Tells Investors GuruFocus",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:96490bbf854984b5c64815b005e17764d76ccc5f9a1572fbc5cbfe2406c7aaa3",
-        "label": "Nvidia is bolstering support for Chinese open AI models as it warns of White House crackdown - CNBC",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBMLVduQzZINVRma3Z3aTdoWHdpQ19yQlctQk1xZTN1ejcwdXZhMXBOU3lVRmRCNUxObHJOMjFaUGlWTWNFV0tyWlUzajFtcEU2MEF6WkpWVnNqc0wyVkZfODBGUk5jcl81bGpMTXBR?oc=5",
-        "date": "Thu, 27 Aug 2026 14:31:25 GMT",
-        "summary": "Nvidia is bolstering support for Chinese open AI models as it warns of White House crackdown CNBC",
         "score": 1,
         "weight": 1
       }
@@ -19197,6 +19197,20 @@
         "mentions": 1
       },
       {
+        "source": "Meta",
+        "target": "evidence:9a604d048f879db5961746d097877b21433cbc0dd248369ca6d708b9c3cbb2c5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:fe1072acf778246f1b75804bf2e6225a849517bb43e69a7d91db1d94f0cd47da",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Microsoft",
         "target": "evidence:480f5bde72db49ea57e5c9875335ed274757d913a3e97252557cea3e3aa1a0d7",
         "type": "EVIDENCE",
@@ -19241,20 +19255,6 @@
       {
         "source": "ByteDance",
         "target": "evidence:74548eda38e24434fa5114cc7c30e136962030ce19afc370cfeb9d2f6790f28f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:e97963524a4dff53f21a2aafed2717291ec84795b4fe19ab84cdc46864c75dcf",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:96490bbf854984b5c64815b005e17764d76ccc5f9a1572fbc5cbfe2406c7aaa3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -34078,7 +34078,7 @@
   ],
   "document_count": 1500,
   "event_count": 981,
-  "mention_count": 2421,
+  "mention_count": 2423,
   "review_counts": {
     "provisional": 0,
     "confirmed": 280,
@@ -34302,13 +34302,13 @@
       "period_end": "2025-10-31",
       "feature_key": "ai_compute_contract_value_flow",
       "feature_version": "1.0.0",
-      "value_numeric": null,
-      "missingness_reason": "unknown",
-      "coverage": 0.0,
-      "reliability": 0.0,
-      "availability_at": null,
-      "evidence_text": null,
-      "url": null
+      "value_numeric": 40000000000.0,
+      "missingness_reason": null,
+      "coverage": 1.0,
+      "reliability": 1.0,
+      "availability_at": "2025-10-30T00:00:00+00:00",
+      "evidence_text": "In October 2025, Meta entered into multi-year third-party cloud capacity arrangements for an aggregate amount of approximately $40 billion.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/meta-20250930.htm"
     },
     {
       "entity_id": "Meta",
@@ -34470,13 +34470,13 @@
       "period_end": "2025-10-31",
       "feature_key": "ai_contingent_credit_support_stock",
       "feature_version": "1.0.0",
-      "value_numeric": 3200000000.0,
+      "value_numeric": 6529000000.0,
       "missingness_reason": null,
       "coverage": 1.0,
       "reliability": 1.0,
-      "availability_at": "2025-08-18T00:00:00+00:00",
-      "evidence_text": "With this incremental commitment, Google's total backstop increases to approximately $3.2 billion.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm"
+      "availability_at": "2025-10-30T00:00:00+00:00",
+      "evidence_text": "The $6.529 billion notional amount for credit derivatives represents Alphabet's maximum potential backstop payments related to certain third-party data center leases.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm"
     },
     {
       "entity_id": "Alphabet",
@@ -34484,13 +34484,13 @@
       "period_end": "2025-11-30",
       "feature_key": "ai_contingent_credit_support_stock",
       "feature_version": "1.0.0",
-      "value_numeric": 3200000000.0,
+      "value_numeric": 6529000000.0,
       "missingness_reason": null,
       "coverage": 1.0,
       "reliability": 1.0,
-      "availability_at": "2025-08-18T00:00:00+00:00",
-      "evidence_text": "With this incremental commitment, Google's total backstop increases to approximately $3.2 billion.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1083301/000110465925079463/tm2523651d3_ex99-1.htm"
+      "availability_at": "2025-10-30T00:00:00+00:00",
+      "evidence_text": "The $6.529 billion notional amount for credit derivatives represents Alphabet's maximum potential backstop payments related to certain third-party data center leases.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm"
     },
     {
       "entity_id": "Alphabet",
@@ -34498,13 +34498,13 @@
       "period_end": "2025-12-31",
       "feature_key": "ai_contingent_credit_support_stock",
       "feature_version": "1.0.0",
-      "value_numeric": null,
-      "missingness_reason": "unknown",
-      "coverage": 0.0,
-      "reliability": 0.0,
-      "availability_at": null,
-      "evidence_text": null,
-      "url": null
+      "value_numeric": 6529000000.0,
+      "missingness_reason": null,
+      "coverage": 1.0,
+      "reliability": 1.0,
+      "availability_at": "2025-10-30T00:00:00+00:00",
+      "evidence_text": "The $6.529 billion notional amount for credit derivatives represents Alphabet's maximum potential backstop payments related to certain third-party data center leases.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/goog-20250930.htm"
     },
     {
       "entity_id": "Amazon",
@@ -35096,11 +35096,11 @@
     }
   ],
   "acceptance_queue": {
-    "run_id": "0ea655db1394d4216d736d88422378eba1b840eb465dafcb364d2c609c6db5f1",
-    "created_at": "2026-08-27T23:20:32+00:00",
-    "item_count": 1,
-    "pending_review": 0,
-    "duplicate_fact": 1,
-    "rejected": 0
+    "run_id": "ddf2535f3ca58954d25ceac8b7a533e6625ae8320ebfa9d84994ff724cc8ff3b",
+    "created_at": "2026-08-28T13:45:17+00:00",
+    "item_count": 7,
+    "pending_review": 4,
+    "duplicate_fact": 0,
+    "rejected": 3
   }
 }

@@ -1,13 +1,14 @@
 {
-  "accepted_numeric_cells": 10,
-  "distinct_accepted_facts": 7,
-  "ecosystem_build_id": "9bc4a445324826dea6a13adce65c753c6c291881119ba82493efbef241155cd9",
-  "entity_build_id": "e418ac4cfe686a481cfd81987d2630fd0d1bdfbcd8c2a942b3b2248231233ace",
+  "accepted_numeric_cells": 12,
+  "build_cutoff": "2026-08-28T13:46:41+00:00",
+  "distinct_accepted_facts": 9,
+  "ecosystem_build_id": "9ea40e5d7ff4a63c7e76b20cd8af9a04dc5ab09514dbf671141e457969580e43",
+  "entity_build_id": "3e08079ace0451926f6966b1412f6b0c6c6bdd88e7d4672917b709c2c024e9b0",
   "entity_cells": {
     "Alphabet": {
-      "accepted": 4,
+      "accepted": 5,
       "required": 18,
-      "unknown": 14
+      "unknown": 13
     },
     "Amazon": {
       "accepted": 1,
@@ -15,9 +16,9 @@
       "unknown": 17
     },
     "Meta": {
-      "accepted": 3,
+      "accepted": 4,
       "required": 18,
-      "unknown": 15
+      "unknown": 14
     },
     "Microsoft": {
       "accepted": 2,
@@ -27,13 +28,13 @@
   },
   "feature_cells": {
     "ai_compute_contract_value_flow": {
-      "accepted": 5,
-      "missing": 19,
+      "accepted": 6,
+      "missing": 18,
       "required": 24
     },
     "ai_contingent_credit_support_stock": {
-      "accepted": 4,
-      "missing": 20,
+      "accepted": 5,
+      "missing": 19,
       "required": 24
     },
     "ai_related_debt": {
@@ -67,6 +68,14 @@
     {
       "content_sha256": "cd7914a04802fbdc7ccc6cf9a7c2bf6dea2bdd190f650da65384359dba96532e",
       "observation_id": "observation-cipher-amazon-2025-11-8k-exhibit"
+    },
+    {
+      "content_sha256": "e68cbf35268433dd0f5e0dc4591c29b530af7369cfe685db16a1b65b5a19fcec",
+      "observation_id": "observation-alphabet-q3-total-backstop-2025-09"
+    },
+    {
+      "content_sha256": "bfa9cb439b5ece90f11b47657f2975eb1ebbc360b99acce7f7f673755635eead",
+      "observation_id": "observation-meta-october-cloud-capacity-total-2025"
     }
   ],
   "status": "partial_evidence_acceptance"

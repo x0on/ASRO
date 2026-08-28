@@ -1,0 +1,46 @@
+{
+  "queue_run_id": "ddf2535f3ca58954d25ceac8b7a533e6625ae8320ebfa9d84994ff724cc8ff3b",
+  "review_policy": "Full authoritative document, registered feature semantics, entity/counterparty roles, row cutoff, and overlap with accepted canonical facts were reviewed. Candidate assertions were not treated as authoritative.",
+  "decisions": [
+    {
+      "lead_id": "alphabet-q3-total-backstop-2025-09",
+      "decision": "accepted",
+      "reason": "Alphabet's timely Form 10-Q reports the quarter-end total notional backstop exposure and defines it as maximum potential payments for third-party data-center leases. This is the required total-stock scope, not a project component."
+    },
+    {
+      "lead_id": "meta-october-cloud-capacity-total-2025",
+      "decision": "accepted",
+      "reason": "Meta's timely Form 10-Q explicitly reports a newly entered October aggregate for multi-year third-party cloud-capacity arrangements. The disclosure is customer-side contract flow and does not reuse the previously accepted September CoreWeave contract."
+    },
+    {
+      "lead_id": "alphabet-cipher-incremental-backstop-2025-11",
+      "decision": "not_promoted",
+      "reason": "The $333 million is one project component, not Alphabet's latest total backstop stock. Promoting it as the total-stock feature would replace the broader $6.529 billion disclosure with a narrower scope."
+    },
+    {
+      "lead_id": "meta-mixed-contractual-commitments-2025-09",
+      "decision": "not_promoted",
+      "reason": "The $81.19 billion total mixes cloud capacity, servers, networking, Reality Labs hardware, and data centers. It cannot be attributed wholly to the registered cloud-contract-flow feature."
+    },
+    {
+      "lead_id": "amazon-november-notes-late-disclosure",
+      "decision": "rejected_by_queue",
+      "reason": "The February 2026 filing was not publicly available by the November 2025 row cutoff and states general corporate purpose rather than attributable AI debt."
+    },
+    {
+      "lead_id": "alphabet-2025-notes-late-disclosure",
+      "decision": "rejected_by_queue",
+      "reason": "The February 2026 filing was not publicly available by the December 2025 row cutoff and states general corporate purpose rather than attributable AI debt."
+    },
+    {
+      "lead_id": "meta-hyperion-rvg-late-disclosure",
+      "decision": "rejected_by_queue",
+      "reason": "The January 2026 filing was not publicly available by the December 2025 row cutoff. The value therefore cannot enter the historical cell despite its relevant contingent-support semantics."
+    }
+  ],
+  "accepted_count": 2,
+  "not_promoted_after_review_count": 2,
+  "queue_rejected_count": 3,
+  "auto_promoted_count": 0,
+  "modeling_allowed": false
+}
