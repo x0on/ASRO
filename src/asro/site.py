@@ -219,6 +219,7 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         history = _safe_rows(repository.recent_snapshots(connection, limit=365))
         review_counts = repository.review_counts(connection)
         feature_family = _feature_family_rows(connection)
+        fundamentals = _fundamentals_rows(connection)
         acceptance_queue = _acceptance_queue_status(connection)
 
     dimensions = compute_dimension_scores(observations)
@@ -272,6 +273,16 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
             "preserved_4x6_status": "finalized and unchanged",
             "modeling_allowed": False,
         },
+        "fundamentals": fundamentals,
+        "fundamentals_scope": {
+            "window": "2025-01 through 2025-12",
+            "entities": 4,
+            "features": 1,
+            "required_cells": len(fundamentals),
+            "accepted_numeric_cells": sum(row["value_numeric"] is not None for row in fundamentals),
+            "label": "total-company context; not AI-attributed",
+            "modeling_allowed": False,
+        },
         "acceptance_queue": acceptance_queue,
     }
 
@@ -307,6 +318,33 @@ def _feature_family_rows(connection: sqlite3.Connection) -> list[dict[str, objec
              ON observation.observation_id=fact.representative_observation_id
            LEFT JOIN items item ON item.id=observation.source_document_id
            WHERE value.build_id=? ORDER BY value.feature_key,value.entity_id,value.period_start""",
+        (build[0],),
+    )
+    return [dict(row) for row in rows]
+
+
+def _fundamentals_rows(connection: sqlite3.Connection) -> list[dict[str, object]]:
+    """Return the separate finalized total-company context matrix."""
+    build = connection.execute(
+        """SELECT build.build_id FROM dataset_build build
+           JOIN dataset_build_finalization finalized ON finalized.build_id=build.build_id
+           WHERE build.feature_set_version='company-fundamentals-context-1.0.0'
+           ORDER BY build.created_at DESC,build.build_id DESC LIMIT 1"""
+    ).fetchone()
+    if build is None:
+        return []
+    rows = connection.execute(
+        """SELECT value.entity_id,value.period_start,value.period_end,value.feature_key,
+                  value.feature_version,value.value_numeric,value.missingness_reason,
+                  value.coverage,value.reliability,observation.availability_at,
+                  observation.source_locator,observation.evidence_text,item.url
+           FROM finalized_entity_feature_value value
+           LEFT JOIN feature_value_fact fact
+             ON fact.feature_value_id=value.feature_value_id
+           LEFT JOIN observation_v2 observation
+             ON observation.observation_id=fact.representative_observation_id
+           LEFT JOIN items item ON item.id=observation.source_document_id
+           WHERE value.build_id=? ORDER BY value.entity_id,value.period_start""",
         (build[0],),
     )
     return [dict(row) for row in rows]

@@ -78,7 +78,7 @@ def test_build_static_site_on_empty_db_reports_insufficient_evidence(tmp_path: P
 
     assert (out / "index.html").exists()
     assert (out / ".nojekyll").exists()
-    html = (out / "index.html").read_text()
+    html = (out / "index.html").read_text(encoding="utf-8")
     assert 'id="companyLabelsToggle"' in html
     assert "drawCompanyLabels" in html
     payload = json.loads((out / "data" / "snapshot.json").read_text())

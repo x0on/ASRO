@@ -20,6 +20,7 @@ from asro.backfill import (
 from asro.backfill.acceptance_queue import build_acceptance_queue
 from asro.backfill.acquisition import acquire_inventory
 from asro.backfill.current_ai_slice import promote_current_ai_feature_family
+from asro.backfill.fundamentals import promote_company_fundamentals
 from asro.backfill.negative_evidence import enumerate_negative_evidence_universe
 from asro.evidence.time import normalize_timestamp
 from asro.features import (
@@ -271,6 +272,27 @@ def acceptance_promote_feature_family(
                 fourth_acquired,
             ),
             code_commit=os.getenv("GITHUB_SHA", "local-reviewed-batch"),
+        )
+    output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))
+
+
+@app.command("acceptance-promote-fundamentals")
+def acceptance_promote_fundamentals(
+    acquired: Annotated[Path, typer.Option()] = Path(
+        "data/acceptance/acquired/company-fundamentals-4x12"
+    ),
+    output: Annotated[Path, typer.Option()] = Path(
+        "data/acceptance/company_fundamentals_4x12_report.json"
+    ),
+) -> None:
+    """Review the bounded SEC fundamentals subset and build its separate 4x12 matrix."""
+    settings = Settings()
+    with SqliteRepository(settings.database_path).connect() as connection:
+        result = promote_company_fundamentals(
+            connection,
+            acquired_directory=acquired,
+            code_commit=os.getenv("GITHUB_SHA", "local-reviewed-fundamentals"),
         )
     output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))

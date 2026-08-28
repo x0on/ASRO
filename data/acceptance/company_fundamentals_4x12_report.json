@@ -1,0 +1,245 @@
+{
+  "accepted_numeric_cells": 44,
+  "build_cutoff": "2026-08-28T14:22:53+00:00",
+  "carry_semantics": "as-of latest, maximum age three months, filing acceptance cutoff",
+  "deferred_features": {
+    "purchase_obligations": "tag and scope are not consistently comparable",
+    "quarterly_capex_and_operating_cash_flow": "deferred until quarter-only derivations are validated against YTD periods",
+    "total_debt": "taxonomy/scope paths are not yet uniformly validated"
+  },
+  "distinct_accepted_facts": 16,
+  "ecosystem_build_id": "eb3de71489b304a80a806ecb77b1582b37ff7a4fcffa45e28eb2753d7ca208bb",
+  "entity_build_id": "d29aaa0e03f8191a901581f7d8960ea3802186562dd169792cb100b154f6b243",
+  "feature": "company_liquid_assets_stock@1.0.0",
+  "feature_set_version": "company-fundamentals-context-1.0.0",
+  "modeling_allowed": false,
+  "promoted_points": [
+    {
+      "accession": "0001652044-25-000014",
+      "available_at": "2025-02-05T01:41:40.000Z",
+      "derivation": "direct_standardized_combined_tag",
+      "entity": "Alphabet",
+      "period_end": "2024-12-31",
+      "taxonomy_tags": [
+        "us-gaap:CashCashEquivalentsAndShortTermInvestments"
+      ],
+      "value_numeric": 95657000000.0
+    },
+    {
+      "accession": "0001652044-25-000043",
+      "available_at": "2025-04-25T01:05:29.000Z",
+      "derivation": "direct_standardized_combined_tag",
+      "entity": "Alphabet",
+      "period_end": "2025-03-31",
+      "taxonomy_tags": [
+        "us-gaap:CashCashEquivalentsAndShortTermInvestments"
+      ],
+      "value_numeric": 95328000000.0
+    },
+    {
+      "accession": "0001652044-25-000062",
+      "available_at": "2025-07-23T23:44:01.000Z",
+      "derivation": "direct_standardized_combined_tag",
+      "entity": "Alphabet",
+      "period_end": "2025-06-30",
+      "taxonomy_tags": [
+        "us-gaap:CashCashEquivalentsAndShortTermInvestments"
+      ],
+      "value_numeric": 95148000000.0
+    },
+    {
+      "accession": "0001652044-25-000091",
+      "available_at": "2025-10-30T01:55:01.000Z",
+      "derivation": "direct_standardized_combined_tag",
+      "entity": "Alphabet",
+      "period_end": "2025-09-30",
+      "taxonomy_tags": [
+        "us-gaap:CashCashEquivalentsAndShortTermInvestments"
+      ],
+      "value_numeric": 98496000000.0
+    },
+    {
+      "accession": "0001018724-25-000004",
+      "available_at": "2025-02-06T23:40:29.000Z",
+      "derivation": "sum_same_accession_cash_and_current_marketable_securities",
+      "entity": "Amazon",
+      "period_end": "2024-12-31",
+      "taxonomy_tags": [
+        "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "us-gaap:MarketableSecuritiesCurrent"
+      ],
+      "value_numeric": 101202000000.0
+    },
+    {
+      "accession": "0001018724-25-000036",
+      "available_at": "2025-05-01T22:14:53.000Z",
+      "derivation": "sum_same_accession_cash_and_current_marketable_securities",
+      "entity": "Amazon",
+      "period_end": "2025-03-31",
+      "taxonomy_tags": [
+        "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "us-gaap:MarketableSecuritiesCurrent"
+      ],
+      "value_numeric": 94565000000.0
+    },
+    {
+      "accession": "0001018724-25-000086",
+      "available_at": "2025-07-31T22:13:08.000Z",
+      "derivation": "sum_same_accession_cash_and_current_marketable_securities",
+      "entity": "Amazon",
+      "period_end": "2025-06-30",
+      "taxonomy_tags": [
+        "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "us-gaap:MarketableSecuritiesCurrent"
+      ],
+      "value_numeric": 93180000000.0
+    },
+    {
+      "accession": "0001018724-25-000123",
+      "available_at": "2025-10-30T22:18:21.000Z",
+      "derivation": "sum_same_accession_cash_and_current_marketable_securities",
+      "entity": "Amazon",
+      "period_end": "2025-09-30",
+      "taxonomy_tags": [
+        "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "us-gaap:MarketableSecuritiesCurrent"
+      ],
+      "value_numeric": 94197000000.0
+    },
+    {
+      "accession": "0001326801-25-000017",
+      "available_at": "2025-01-30T01:00:50.000Z",
+      "derivation": "sum_same_accession_cash_and_current_marketable_securities",
+      "entity": "Meta",
+      "period_end": "2024-12-31",
+      "taxonomy_tags": [
+        "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "us-gaap:MarketableSecuritiesCurrent"
+      ],
+      "value_numeric": 77815000000.0
+    },
+    {
+      "accession": "0001326801-25-000054",
+      "available_at": "2025-05-01T00:03:18.000Z",
+      "derivation": "sum_same_accession_cash_and_current_marketable_securities",
+      "entity": "Meta",
+      "period_end": "2025-03-31",
+      "taxonomy_tags": [
+        "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "us-gaap:MarketableSecuritiesCurrent"
+      ],
+      "value_numeric": 70230000000.0
+    },
+    {
+      "accession": "0001628280-25-036791",
+      "available_at": "2025-07-31T00:02:12.000Z",
+      "derivation": "sum_same_accession_cash_and_current_marketable_securities",
+      "entity": "Meta",
+      "period_end": "2025-06-30",
+      "taxonomy_tags": [
+        "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "us-gaap:MarketableSecuritiesCurrent"
+      ],
+      "value_numeric": 47071000000.0
+    },
+    {
+      "accession": "0001628280-25-047240",
+      "available_at": "2025-10-29T22:50:26.000Z",
+      "derivation": "sum_same_accession_cash_and_current_marketable_securities",
+      "entity": "Meta",
+      "period_end": "2025-09-30",
+      "taxonomy_tags": [
+        "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+        "us-gaap:MarketableSecuritiesCurrent"
+      ],
+      "value_numeric": 44448000000.0
+    },
+    {
+      "accession": "0000950170-25-010491",
+      "available_at": "2025-01-29T21:11:54.000Z",
+      "derivation": "direct_standardized_combined_tag",
+      "entity": "Microsoft",
+      "period_end": "2024-12-31",
+      "taxonomy_tags": [
+        "us-gaap:CashCashEquivalentsAndShortTermInvestments"
+      ],
+      "value_numeric": 71555000000.0
+    },
+    {
+      "accession": "0000950170-25-061046",
+      "available_at": "2025-04-30T20:08:52.000Z",
+      "derivation": "direct_standardized_combined_tag",
+      "entity": "Microsoft",
+      "period_end": "2025-03-31",
+      "taxonomy_tags": [
+        "us-gaap:CashCashEquivalentsAndShortTermInvestments"
+      ],
+      "value_numeric": 79618000000.0
+    },
+    {
+      "accession": "0000950170-25-100235",
+      "available_at": "2025-07-30T20:11:40.000Z",
+      "derivation": "direct_standardized_combined_tag",
+      "entity": "Microsoft",
+      "period_end": "2025-06-30",
+      "taxonomy_tags": [
+        "us-gaap:CashCashEquivalentsAndShortTermInvestments"
+      ],
+      "value_numeric": 94565000000.0
+    },
+    {
+      "accession": "0001193125-25-256321",
+      "available_at": "2025-10-29T20:10:48.000Z",
+      "derivation": "direct_standardized_combined_tag",
+      "entity": "Microsoft",
+      "period_end": "2025-09-30",
+      "taxonomy_tags": [
+        "us-gaap:CashCashEquivalentsAndShortTermInvestments"
+      ],
+      "value_numeric": 102012000000.0
+    }
+  ],
+  "rejected_or_deferred": [],
+  "required_cells": 48,
+  "scope": "total-company context; not AI-attributed",
+  "source_snapshots": {
+    "Alphabet": {
+      "companyfacts_fetched_at": "2026-08-28T14:09:30.627900+00:00",
+      "companyfacts_sha256": "a017f26ee88cb4a639d1c1ddb06d53b4afe22f0ac89cabec7cd67c88919fe1c5",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+      "document_id": "2574cd9713f6b9f71c4c50564d29ebf670fd421172be34c696cab4d24d9d23d9",
+      "submissions_fetched_at": "2026-08-28T14:09:30.927135+00:00",
+      "submissions_sha256": "65baad4517d635da87ac38429d42fdbdc7797e612ee308286306378bb62af06c",
+      "submissions_url": "https://data.sec.gov/submissions/CIK0001652044.json"
+    },
+    "Amazon": {
+      "companyfacts_fetched_at": "2026-08-28T14:09:30.715007+00:00",
+      "companyfacts_sha256": "e6aadb0da7384597dbd78f74d1379ffb7fd0829a4d2e797b6d7e442b5e1da0d7",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+      "document_id": "b2f79ad185438c8abfe050a28e3637dbf09eb184081ca91c484bb2399c39c11b",
+      "submissions_fetched_at": "2026-08-28T14:09:31.033342+00:00",
+      "submissions_sha256": "73c9acc85b4e857b74c97a9fd316fbff5c5a4dedbdaf91e4c52dee3eaf72d68d",
+      "submissions_url": "https://data.sec.gov/submissions/CIK0001018724.json"
+    },
+    "Meta": {
+      "companyfacts_fetched_at": "2026-08-28T14:09:30.769745+00:00",
+      "companyfacts_sha256": "7518e76d6dac2d016e1a3d1dec1cc55ff9ea3bdd58a151b16fcaa067a6c9d94e",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+      "document_id": "2c970a92e72f7cd1f4dcbd19d36b4ec31e7eaf39d1159aba120cc79d32776bdd",
+      "submissions_fetched_at": "2026-08-28T14:09:31.065965+00:00",
+      "submissions_sha256": "2c11151eea83ce390d096daf3245c56c421ab3695af2cc6e1f59a218fbe6e645",
+      "submissions_url": "https://data.sec.gov/submissions/CIK0001326801.json"
+    },
+    "Microsoft": {
+      "companyfacts_fetched_at": "2026-08-28T14:09:30.876459+00:00",
+      "companyfacts_sha256": "f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f",
+      "companyfacts_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "document_id": "479bb3a01ca4c84c1e742bbc79c21cb523664b35ba5fb9dac2728fc92ed194e5",
+      "submissions_fetched_at": "2026-08-28T14:09:31.125627+00:00",
+      "submissions_sha256": "ef3d1eed787e1d32831fbebbce56e7e151dd13dcc99cf727c427627625df9cfd",
+      "submissions_url": "https://data.sec.gov/submissions/CIK0000789019.json"
+    }
+  },
+  "status": "accepted_context_not_modeling",
+  "unknown_cells": 4
+}

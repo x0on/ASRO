@@ -1,0 +1,65 @@
+{
+  "inventory_version": "1.0.0",
+  "status": "candidate_acquisition_only",
+  "scope": "four-company fundamentals context, January-December 2025",
+  "documents": [
+    {
+      "id": "alphabet-companyfacts-2026-08-28",
+      "entity": "Alphabet",
+      "cik": "0001652044",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001652044.json",
+      "candidate_event_ids": []
+    },
+    {
+      "id": "amazon-companyfacts-2026-08-28",
+      "entity": "Amazon",
+      "cik": "0001018724",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+      "candidate_event_ids": []
+    },
+    {
+      "id": "meta-companyfacts-2026-08-28",
+      "entity": "Meta",
+      "cik": "0001326801",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+      "candidate_event_ids": []
+    },
+    {
+      "id": "microsoft-companyfacts-2026-08-28",
+      "entity": "Microsoft",
+      "cik": "0000789019",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "candidate_event_ids": []
+    },
+    {
+      "id": "alphabet-submissions-2026-08-28",
+      "entity": "Alphabet",
+      "cik": "0001652044",
+      "url": "https://data.sec.gov/submissions/CIK0001652044.json",
+      "candidate_event_ids": []
+    },
+    {
+      "id": "amazon-submissions-2026-08-28",
+      "entity": "Amazon",
+      "cik": "0001018724",
+      "url": "https://data.sec.gov/submissions/CIK0001018724.json",
+      "candidate_event_ids": []
+    },
+    {
+      "id": "meta-submissions-2026-08-28",
+      "entity": "Meta",
+      "cik": "0001326801",
+      "url": "https://data.sec.gov/submissions/CIK0001326801.json",
+      "candidate_event_ids": []
+    },
+    {
+      "id": "microsoft-submissions-2026-08-28",
+      "entity": "Microsoft",
+      "cik": "0000789019",
+      "url": "https://data.sec.gov/submissions/CIK0000789019.json",
+      "candidate_event_ids": []
+    }
+  ],
+  "controls": [],
+  "policy": "Authoritative SEC Companyfacts snapshots are discovery inputs. Promotion requires deterministic taxonomy, unit, period, filing-availability, accession, amendment, and reviewer validation."
+}
