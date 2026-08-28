@@ -42,7 +42,7 @@ This is a minimum for a conservative descriptive baseline, not for a production 
 
 ## Exact next milestone
 
-Ship an initial evidence-monitoring release candidate through the existing hourly workflow. The
+Ship an initial evidence-monitoring release candidate through the existing daily workflow. The
 workflow must collect, build the static site, pass `asro release-check`, and deploy. In parallel,
 expand the accepted current-AI slice from Meta/October 2025 to four entities across six consecutive
 months; this is the shortest useful block toward the 24-month modeling threshold without starting

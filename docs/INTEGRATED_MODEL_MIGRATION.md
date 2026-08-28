@@ -45,7 +45,7 @@ rules, and feature semantics below are implemented and tested.
 9. `site.py` exports the legacy signal, dimension evidence, graph, timeline, and operational health
    to static JSON and HTML.
 10. `.github/workflows/monitor.yml` rebuilds observations, collects, optionally reviews, builds the
-    site, commits data, and deploys hourly.
+    site, commits data, and deploys daily.
 
 ## Where human assumptions enter
 
@@ -288,7 +288,7 @@ Stage 2 without changing the legacy monitoring workflow.
 Files: add `src/asro/backfill/manifest.py`, `runner.py`, episode TOML files, and coverage reports.
 
 Acceptance: reruns are idempotent; source hashes and availability dates are retained; crisis and
-benign strata are present; no backfill job delays hourly collection.
+benign strata are present; no backfill job delays daily collection.
 
 Implementation status: forward migrations 5–7 add immutable episodes, reconstructable full-content
 snapshots, historically knowable availability with separate fetch time, source-to-entity links,
@@ -352,7 +352,7 @@ false positives and critic defeats are tracked alongside successful warnings.
 - Feature versioning: semantic changes require a new version and cannot splice historical series.
 - Quality gates: sparse features remain descriptive; model fitting refuses inadequate coverage.
 - Robustness: low-confidence/source/entity exclusions and alternate controls are reported.
-- Compatibility: the hourly workflow, existing CLI, graph, timeline, and legacy snapshot continue to
+- Compatibility: the daily workflow, existing CLI, graph, timeline, and legacy snapshot continue to
   work through the migration.
 
 ## Principal risks and mitigations

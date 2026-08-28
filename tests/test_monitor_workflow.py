@@ -1,0 +1,18 @@
+from __future__ import annotations
+
+from pathlib import Path
+
+
+def test_monitor_has_one_daily_schedule_and_preserves_manual_backfill() -> None:
+    workflow = (Path(__file__).parents[1] / ".github" / "workflows" / "monitor.yml").read_text(
+        encoding="utf-8"
+    )
+
+    assert workflow.startswith("name: Daily monitor\n")
+    assert workflow.count('cron: "17 10 * * *"') == 1
+    assert 'cron: "17 * * * *"' not in workflow
+    assert "workflow_dispatch:" in workflow
+    assert "backfill:" in workflow
+    assert "github.event.schedule == '17 10 * * *'" in workflow
+    assert "data: daily observatory update" in workflow
+    assert "group: daily-monitor" in workflow

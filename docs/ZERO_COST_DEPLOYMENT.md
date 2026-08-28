@@ -7,7 +7,7 @@ ASRO is intentionally designed so the early public observatory can run without a
 ```text
 GitHub public repository
         │
-        ├── GitHub Actions (hourly)
+        ├── GitHub Actions (daily at 10:17 UTC)
         │      ├── collect sources
         │      ├── extract events
         │      ├── update SQLite
@@ -42,7 +42,8 @@ python -m http.server 8000 -d site
 
 ## Freshness
 
-The included workflow runs hourly. Priority sources should generally appear well within the project's 24-hour freshness target.
+The included workflow runs once per day at 10:17 UTC. Manual dispatch remains available for
+operator-triggered collection, while historical backfill remains a separate non-deploying path.
 
 ## GitHub Pages setup
 

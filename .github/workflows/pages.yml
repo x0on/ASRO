@@ -1,7 +1,7 @@
 name: Deploy dashboard
 
 # Manual redeploy of whatever is currently committed under site/.
-# The hourly monitor workflow deploys automatically after each collection run.
+# The daily monitor workflow deploys automatically after each collection run.
 
 on:
   workflow_dispatch:

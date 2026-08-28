@@ -41,7 +41,9 @@ from asro.migrations import runner as migration_runner
 from asro.models import EventType, FinancialEvent, SourceItem
 from asro.operations import (
     WorkflowRunRecord,
+    alert_missing_daily_windows,
     alert_missing_hourly_windows,
+    missing_daily_windows,
     missing_hourly_windows,
     record_window_repair,
     record_workflow_run,
@@ -2793,6 +2795,29 @@ def test_later_green_run_does_not_close_failed_window_and_repair_is_idempotent(
     first = record_window_repair(connection, repair)
     assert record_window_repair(connection, repair) == first
     assert not missing_hourly_windows(connection, "2026-08-24T20:17:00Z", "2026-08-24T22:17:00Z")
+    connection.close()
+
+
+def test_daily_window_audit_uses_1017_utc_and_24_hour_cadence(tmp_path: Path) -> None:
+    connection, _ = _prepare(tmp_path)
+    assert missing_daily_windows(connection, "2026-08-27T00:00:00Z", "2026-08-29T10:17:00Z") == [
+        ("2026-08-27T10:17:00+00:00", "2026-08-28T10:17:00+00:00"),
+        ("2026-08-28T10:17:00+00:00", "2026-08-29T10:17:00+00:00"),
+    ]
+    alert_ids = alert_missing_daily_windows(
+        connection, "2026-08-27T00:00:00Z", "2026-08-29T10:17:00Z"
+    )
+    assert len(alert_ids) == 2
+    details = [
+        json.loads(row[0])
+        for row in connection.execute(
+            "SELECT detail_json FROM operational_alert ORDER BY window_start"
+        )
+    ]
+    assert details == [
+        {"expected_cadence_minutes": 1440},
+        {"expected_cadence_minutes": 1440},
+    ]
     connection.close()
 
 

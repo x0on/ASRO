@@ -304,9 +304,9 @@ The reviewer never deletes source reports or silently rewrites evidence. Its dec
 confidence, reasoning, model and timestamp are stored in `evidence_reviews`. The public
 dashboard shows how many events are awaiting review and labels provisional timeline entries.
 
-For a new installation, a maintainer can manually run the **Hourly monitor** workflow with
+For a new installation, a maintainer can manually run the **Daily monitor** workflow with
 **backfill** enabled. This creates a bounded three-year baseline across the configured news
-queries and key SEC filings. It is deliberately separate from hourly collection so historical
+queries and key SEC filings. It is deliberately separate from daily collection so historical
 research cannot delay the live monitor. Re-running it is safe because documents and economic
 events are deduplicated.
 
@@ -359,7 +359,7 @@ are catalogued in [docs/LEGACY_SCORING_AUDIT.md](docs/LEGACY_SCORING_AUDIT.md).
 The early observatory can run without a paid server:
 
 ```text
-GitHub Actions (hourly ingestion)
+GitHub Actions (daily ingestion at 10:17 UTC)
         ↓
 SQLite + generated JSON snapshot
         ↓

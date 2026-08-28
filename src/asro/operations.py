@@ -110,11 +110,35 @@ def record_workflow_run(connection: sqlite3.Connection, record: WorkflowRunRecor
 def missing_hourly_windows(
     connection: sqlite3.Connection, start: str, end: str
 ) -> list[tuple[str, str]]:
-    cursor = normalize_timestamp(start).replace(minute=17, second=0, microsecond=0)
+    """Audit the retired hourly cadence used by historical run 107."""
+
+    return _missing_windows(connection, start, end, minute=17, hours=1)
+
+
+def missing_daily_windows(
+    connection: sqlite3.Connection, start: str, end: str
+) -> list[tuple[str, str]]:
+    """Return missing 24-hour collection windows anchored at 10:17 UTC."""
+
+    cursor = normalize_timestamp(start).replace(hour=10, minute=17, second=0, microsecond=0)
+    if cursor < normalize_timestamp(start):
+        cursor += timedelta(days=1)
+    return _missing_windows(connection, cursor.isoformat(), end, minute=17, hours=24)
+
+
+def _missing_windows(
+    connection: sqlite3.Connection,
+    start: str,
+    end: str,
+    *,
+    minute: int,
+    hours: int,
+) -> list[tuple[str, str]]:
+    cursor = normalize_timestamp(start).replace(minute=minute, second=0, microsecond=0)
     finish = normalize_timestamp(end)
     missing: list[tuple[str, str]] = []
     while cursor < finish:
-        window_end = cursor + timedelta(hours=1)
+        window_end = cursor + timedelta(hours=hours)
         found = connection.execute(
             """SELECT 1 FROM current_collection_window
                WHERE window_start=? AND window_end=? AND status IN ('complete','repaired')""",
@@ -129,8 +153,33 @@ def missing_hourly_windows(
 
 
 def alert_missing_hourly_windows(connection: sqlite3.Connection, start: str, end: str) -> list[str]:
+    """Persist alerts for the retired hourly cadence and historical gap audits."""
+
+    return _alert_missing_windows(
+        connection,
+        missing_hourly_windows(connection, start, end),
+        cadence_minutes=60,
+    )
+
+
+def alert_missing_daily_windows(connection: sqlite3.Connection, start: str, end: str) -> list[str]:
+    """Persist alerts for missing current daily collection windows."""
+
+    return _alert_missing_windows(
+        connection,
+        missing_daily_windows(connection, start, end),
+        cadence_minutes=24 * 60,
+    )
+
+
+def _alert_missing_windows(
+    connection: sqlite3.Connection,
+    windows: list[tuple[str, str]],
+    *,
+    cadence_minutes: int,
+) -> list[str]:
     alert_ids: list[str] = []
-    for window_start, window_end in missing_hourly_windows(connection, start, end):
+    for window_start, window_end in windows:
         alert_id = hashlib.sha256(f"missing|{window_start}|{window_end}".encode()).hexdigest()
         connection.execute(
             """INSERT OR IGNORE INTO operational_alert(
@@ -141,7 +190,7 @@ def alert_missing_hourly_windows(connection: sqlite3.Connection, start: str, end
                 alert_id,
                 window_start,
                 window_end,
-                _json({"expected_cadence_minutes": 60}),
+                _json({"expected_cadence_minutes": cadence_minutes}),
                 datetime.now(UTC).isoformat(timespec="seconds"),
             ),
         )

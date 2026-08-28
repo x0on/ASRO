@@ -30,3 +30,16 @@ are single-use across workflows, and terminal or finalized-repair records cannot
 
 No repair was executed for run 107: its status intentionally remains unresolved until authenticated
 logs are available and a repair can produce the required database-verifiable proof.
+
+## 2026-08-27 release-gate failures
+
+The latest failed monitor execution was run `33102139988` at commit `b7abb556`. Its exact failed
+step was **Validate usable release artifact**. The public check annotation records the rejection as
+`site snapshot counts are empty or disagree with the database`. This was a release-validation query
+mismatch during the execution-bound proof rollout, not a collector, publication, or deployment
+failure. Commit `c631159` aligned validation with the exact bounded snapshot queries; subsequent
+collection and deployment runs succeeded without weakening the gate.
+
+As of 2026-08-28, normal collection is scheduled once daily at **10:17 UTC** under the **Daily
+monitor** workflow. Manual non-backfill dispatch remains available. The cadence change does not
+alter or close run 107's historical one-hour gap; its original window and provenance remain intact.

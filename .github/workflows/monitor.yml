@@ -1,4 +1,4 @@
-name: Hourly monitor
+name: Daily monitor
 
 # Collects, builds the static dashboard, commits the data, and deploys Pages —
 # all in one workflow. A push made with GITHUB_TOKEN does not trigger other
@@ -11,8 +11,7 @@ on:
       - "data/**"
       - "site/**"
   schedule:
-    - cron: "17 * * * *"
-    - cron: "47 3 * * *"
+    - cron: "17 10 * * *"
   workflow_dispatch:
     inputs:
       review:
@@ -32,7 +31,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: hourly-monitor
+  group: daily-monitor
   # Never interrupt a review or historical baseline halfway through.
   cancel-in-progress: false
 
@@ -71,7 +70,7 @@ jobs:
           ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
         run: asro backfill --years 3 --news-limit 500 --sec-per-company 24
       - name: Daily evidence review and flagged repair
-        if: github.event_name == 'push' || github.event.schedule == '47 3 * * *' || inputs.review || inputs.backfill
+        if: github.event_name == 'push' || github.event.schedule == '17 10 * * *' || inputs.review || inputs.backfill
         # Review enriches provisional evidence but must never take the observatory offline.
         continue-on-error: true
         env:
@@ -81,8 +80,8 @@ jobs:
           RETRY_FLAGGED_LIMIT: 700
         run: asro review --limit "$REVIEW_LIMIT" --retry-flagged-limit "$RETRY_FLAGGED_LIMIT" --batch-size 10
       - name: Daily authoritative acceptance queue audit
-        if: github.event.schedule == '47 3 * * *' || inputs.review
-        # Candidate queue failures are reported but cannot block the hourly evidence site.
+        if: github.event.schedule == '17 10 * * *' || inputs.review
+        # Candidate queue failures are reported but cannot block the daily evidence site.
         # This command never promotes observations or changes accepted aggregates.
         continue-on-error: true
         env:
@@ -112,7 +111,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No data changes."
           else
-            git commit -m "data: hourly observatory update"
+            git commit -m "data: daily observatory update"
             # A source-only commit can land while collection is running. Replay
             # the generated data commit on top of it instead of rejecting the
             # monitor's push as non-fast-forward.
