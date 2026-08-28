@@ -261,6 +261,17 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         "mention_count": mention_count,
         "review_counts": review_counts,
         "feature_family": feature_family,
+        "feature_family_scope": {
+            "window": "2025-01 through 2025-12",
+            "entities": 4,
+            "features": 3,
+            "required_cells": len(feature_family),
+            "accepted_numeric_cells": sum(
+                row["value_numeric"] is not None for row in feature_family
+            ),
+            "preserved_4x6_status": "finalized and unchanged",
+            "modeling_allowed": False,
+        },
         "acceptance_queue": acceptance_queue,
     }
 
@@ -279,7 +290,7 @@ def _feature_family_rows(connection: sqlite3.Connection) -> list[dict[str, objec
     build = connection.execute(
         """SELECT build.build_id FROM dataset_build build
            JOIN dataset_build_finalization finalized ON finalized.build_id=build.build_id
-           WHERE build.feature_set_version='current-ai-feature-family-1.0.0'
+           WHERE build.feature_set_version='current-ai-feature-family-12m-1.0.0'
            ORDER BY build.created_at DESC, build.build_id DESC LIMIT 1"""
     ).fetchone()
     if build is None:

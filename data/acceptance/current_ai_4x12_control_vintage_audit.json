@@ -1,0 +1,15 @@
+{
+  "audit_version": "1.0.0",
+  "scope": "current-ai-cycle-4x12-2025-slice",
+  "finding": "existing_controls_are_current_vintage_not_historically_available_vintages",
+  "existing_series_version": "1.0.0",
+  "existing_source": "FRED current/revised CSV downloads retrieved in 2026",
+  "existing_availability_semantics": "availability_at equals the 2026 acquisition timestamp; no value is represented as available during 2025",
+  "modeling_disposition": "excluded_until_official_release_vintage_data_are_registered",
+  "required_modeling_version": "1.0.0-alfred-vintage",
+  "required_provenance": ["official release or ALFRED vintage URL", "vintage date", "observation date", "actual public availability timestamp", "content hash"],
+  "manifest_control_version": "1.0.0-current-vintage",
+  "coverage_effect": "4x12 historical control gate remains failed; current-vintage values are descriptive only",
+  "append_only_correction": true,
+  "modeling_allowed": false
+}

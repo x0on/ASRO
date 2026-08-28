@@ -744,6 +744,31 @@ def promote_current_ai_feature_family(
         code_commit,
         "current-ai-feature-family-1.0.0",
     )
+    expanded_entity_build = FeatureStoreBuilder(connection).build_entity_month(
+        specs,
+        build_cutoff,
+        ["Alphabet", "Amazon", "Meta", "Microsoft"],
+        code_commit,
+        "current-ai-feature-family-12m-1.0.0",
+        "2025-01-01",
+        "2025-12-31",
+    )
+    expanded_ecosystem_build = EcosystemFeatureStoreBuilder(connection).build_months(
+        expanded_entity_build.build_id,
+        [
+            EcosystemFeatureSpec(
+                source_feature_key=spec.feature_key,
+                source_feature_version=spec.feature_version,
+                feature_key=f"ecosystem_{spec.feature_key}",
+                feature_version="1.0.0",
+                aggregation=Aggregation.SUM,
+                unit="currency",
+            )
+            for spec in specs
+        ],
+        code_commit,
+        "current-ai-feature-family-12m-1.0.0",
+    )
     counts = {
         row[0]: {"accepted": int(row[1]), "missing": 24 - int(row[1]), "required": 24}
         for row in connection.execute(
@@ -770,6 +795,12 @@ def promote_current_ai_feature_family(
             (entity_build.build_id,),
         ).fetchone()[0]
     )
+    expanded_numeric_count = int(
+        connection.execute(
+            "SELECT SUM(value_numeric IS NOT NULL) FROM feature_value WHERE build_id=?",
+            (expanded_entity_build.build_id,),
+        ).fetchone()[0]
+    )
     return {
         "status": "partial_evidence_acceptance",
         "entity_build_id": entity_build.build_id,
@@ -781,6 +812,17 @@ def promote_current_ai_feature_family(
         "distinct_accepted_facts": distinct_fact_count,
         "modeling_allowed": False,
         "build_cutoff": build_cutoff,
+        "expanded_4x12": {
+            "status": "partial_evidence_acceptance",
+            "entity_build_id": expanded_entity_build.build_id,
+            "ecosystem_build_id": expanded_ecosystem_build.build_id,
+            "required_cells": 144,
+            "accepted_numeric_cells": expanded_numeric_count,
+            "unknown_cells": 144 - expanded_numeric_count,
+            "first_half_accepted_numeric_cells": 0,
+            "first_half_unknown_cells": 72,
+            "modeling_allowed": False,
+        },
     }
 
 

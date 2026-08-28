@@ -1,0 +1,39 @@
+{
+  "inventory_version": "1.0.0",
+  "status": "candidate_acquisition_only",
+  "episode_manifest": "data/acceptance/current_ai_cycle_4x12_2025_slice.toml",
+  "selection": {
+    "entities": ["Alphabet", "Amazon", "Meta", "Microsoft"],
+    "months": ["2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06"],
+    "registered_features": ["ai_related_debt@1.0.0", "ai_compute_contract_value_flow@1.0.0", "ai_contingent_credit_support_stock@1.0.0"],
+    "lead_cap": 25,
+    "selected_leads": 1,
+    "rationale": "The bounded corpus and SEC search found no timely first-half numeric disclosure matching the registered feature family. One mixed-scope Meta commitment disclosure is retained to prove temporal and semantic rejection; unrelated capex, equity, revenue, lease-obligation, and acquisition assertions are excluded before acquisition."
+  },
+  "documents": [
+    {
+      "id": "meta-june-mixed-commitments-late-disclosure",
+      "entity": "Meta",
+      "candidate_months": ["2025-06"],
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/meta-20250630.htm",
+      "publisher": "SEC EDGAR / Meta",
+      "public_availability_at": "2025-07-31T00:00:00Z",
+      "candidate_event_ids": ["evt-meta-commit-20250630-01"],
+      "counterparty": "Unspecified infrastructure counterparties",
+      "entity_role": "customer",
+      "counterparty_role": "mixed_providers",
+      "feature_key": "ai_compute_contract_value_flow",
+      "feature_version": "1.0.0",
+      "candidate_value_numeric": 27950000000,
+      "unit": "currency",
+      "currency": "USD",
+      "event_at": "2025-06-30",
+      "row_period_end": "2025-06-30",
+      "passage_locator": "Form 10-Q, Contractual Commitments",
+      "passage_marker": "27.95",
+      "passage_text": "Meta disclosed $27.95 billion of mixed non-cancelable commitments covering servers, networking, Reality Labs hardware, and data centers."
+    }
+  ],
+  "controls": [],
+  "policy": "Candidate only. The disclosure is expected to fail the historical row cutoff and is mixed-scope; no automatic or manual promotion is permitted."
+}
