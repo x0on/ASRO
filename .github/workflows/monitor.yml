@@ -55,6 +55,16 @@ jobs:
           cache: pip
       - name: Install
         run: pip install -e .
+      - name: Restore verified observatory state
+        run: |
+          if [ -f data/state/current.json ]; then
+            asro state-restore --pointer data/state/current.json --database data/monitor.db
+          elif git ls-files --error-unmatch data/monitor.db >/dev/null 2>&1; then
+            echo "One-time release-asset bootstrap from the currently tracked public database."
+          else
+            echo "::error::No verified state pointer and no authorized bootstrap database."
+            exit 1
+          fi
       - name: Seed verified ownership and liability lineage
         run: asro seed-lineage
       - name: Rebuild derived measurements from reviewed source events
@@ -92,21 +102,61 @@ jobs:
           --acquired "$RUNNER_TEMP/asro-acceptance-queue"
           --output data/reports/current-ai-acceptance-queue.json
           --acquire
+      - name: Package candidate immutable state
+        env:
+          GITHUB_SHA: ${{ github.sha }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/state-package" data/state
+          if [ ! -f data/state/current.json ]; then
+            # Bootstrap two distinct prior public Git states, oldest first, so
+            # rollback protection exists before monitor.db leaves Git tracking.
+            for ref in $(git log --format=%H -- data/monitor.db | sed -n '2,3p' | tac); do
+              git show "$ref:data/monitor.db" > "$RUNNER_TEMP/prior.db"
+              GITHUB_SHA="$ref" asro state-package \
+                --database "$RUNNER_TEMP/prior.db" \
+                --output "$RUNNER_TEMP/state-package" \
+                --pointer data/state/current.json
+              cp "$RUNNER_TEMP/state-package/current.json" data/state/current.json
+            done
+          fi
+          asro state-package --database data/monitor.db --output "$RUNNER_TEMP/state-package" --pointer data/state/current.json
+          cp "$RUNNER_TEMP/state-package/current.json" data/state/current.json
       - name: Build static site
         run: asro build-site
       - name: Validate usable release artifact
         run: |
-          if ! release_output=$(asro release-check --max-age-hours 26 2>&1); then
+          if ! release_output=$(asro release-check --max-age-hours 26 --state-pointer data/state/current.json 2>&1); then
             echo "$release_output"
             release_message=$(printf '%s\n' "$release_output" | tail -n 1)
             echo "::error title=Release artifact rejected::$release_message"
             exit 1
           fi
           echo "$release_output"
+      - name: Publish immutable state assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view asro-state >/dev/null 2>&1 || \
+            gh release create asro-state --title "ASRO durable public state" \
+              --notes "Versioned, checksummed public SQLite state assets. See data/state/current.json."
+          mkdir -p "$RUNNER_TEMP/state-existing"
+          for asset in "$RUNNER_TEMP"/state-package/monitor-*; do
+            name=$(basename "$asset")
+            if gh release download asro-state --pattern "$name" --dir "$RUNNER_TEMP/state-existing" 2>/dev/null; then
+              cmp "$asset" "$RUNNER_TEMP/state-existing/$name" || {
+                echo "::error::Immutable release asset name collision: $name"
+                exit 1
+              }
+            else
+              gh release upload asro-state "$asset"
+            fi
+          done
       - name: Commit updated observatory data
         run: |
           git config user.name "asro-bot"
           git config user.email "asro-bot@users.noreply.github.com"
+          git rm --cached --ignore-unmatch data/monitor.db
           git add data/ site/
           if git diff --cached --quiet; then
             echo "No data changes."

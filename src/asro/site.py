@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import sqlite3
 from collections import Counter
@@ -205,7 +206,8 @@ def _build_dimension_evidence(
 def build_static_site(output_dir: Path = Path("site"), database_path: Path | None = None) -> Path:
     settings = Settings()
     config = load_project_config(settings.config_path)
-    repository = SqliteRepository(database_path or settings.database_path)
+    actual_database_path = database_path or settings.database_path
+    repository = SqliteRepository(actual_database_path)
     output_dir.mkdir(parents=True, exist_ok=True)
     data_dir = output_dir / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
@@ -285,6 +287,8 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         },
         "acceptance_queue": acceptance_queue,
     }
+    state_identity = _database_state_identity(actual_database_path)
+    payload.update(state_identity)
 
     (data_dir / "snapshot.json").write_text(
         json.dumps(payload, indent=2, default=str), encoding="utf-8"
@@ -294,6 +298,25 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
     )
     (output_dir / ".nojekyll").write_text("", encoding="utf-8")
     return output_dir
+
+
+def _database_state_identity(database: Path) -> dict[str, str]:
+    digest = hashlib.sha256(database.read_bytes()).hexdigest()
+    pointer_path = Path("data/state/current.json")
+    if pointer_path.exists():
+        pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
+        current = next(
+            (
+                item
+                for item in pointer.get("versions", [])
+                if item.get("version_id") == pointer.get("current_version_id")
+            ),
+            None,
+        )
+        if current is None or current.get("database_sha256") != digest:
+            raise ValueError("database does not match state pointer while building site")
+        return {"database_state_version": str(current["version_id"]), "database_sha256": digest}
+    return {"database_state_version": f"embedded-{digest[:16]}", "database_sha256": digest}
 
 
 def _feature_family_rows(connection: sqlite3.Connection) -> list[dict[str, object]]:

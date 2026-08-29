@@ -36,6 +36,7 @@ from asro.reviewer import EvidenceReviewer
 from asro.service import MonitorService, RunSummary
 from asro.settings import Settings
 from asro.site import build_static_site
+from asro.state_assets import package_state, restore_state
 from asro.storage import SqliteRepository
 
 app = typer.Typer(
@@ -187,6 +188,37 @@ def build_site() -> None:
     typer.echo(f"Static site built at: {path}")
 
 
+@app.command("state-restore")
+def state_restore(
+    pointer: Annotated[Path, typer.Option()] = Path("data/state/current.json"),
+    database: Annotated[Path, typer.Option()] = Path("data/monitor.db"),
+) -> None:
+    """Restore and verify the latest valid public release-asset database state."""
+    result = restore_state(pointer, database)
+    with SqliteRepository(database).connect():
+        pass
+    typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))
+
+
+@app.command("state-package")
+def state_package(
+    database: Annotated[Path, typer.Option()] = Path("data/monitor.db"),
+    output: Annotated[Path, typer.Option()] = Path("data/state/package"),
+    pointer: Annotated[Path, typer.Option()] = Path("data/state/current.json"),
+) -> None:
+    """Create immutable compressed state assets and a candidate pointer."""
+    repository = os.getenv("GITHUB_REPOSITORY", "x0on/ASRO")
+    result = package_state(
+        database,
+        output,
+        repository=repository,
+        source_commit=os.getenv("GITHUB_SHA", "local"),
+        workflow_run_id=os.getenv("GITHUB_RUN_ID", "local"),
+        prior_pointer=pointer,
+    )
+    typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))
+
+
 @app.command("acceptance-acquire")
 def acceptance_acquire(
     inventory: Annotated[Path, typer.Option()] = Path(
@@ -302,6 +334,7 @@ def acceptance_promote_fundamentals(
 def release_check(
     max_age_hours: float = typer.Option(26.0, min=1.0, max=168.0),
     proof: Annotated[Path, typer.Option()] = Path("data/reports/current-run-proof.json"),
+    state_pointer: Annotated[Path | None, typer.Option()] = None,
 ) -> None:
     """Verify that the database and generated public site form a usable release."""
     settings = Settings()
@@ -313,6 +346,7 @@ def release_check(
                 proof,
                 max_age_hours=max_age_hours,
                 expected_workflow_run_id=os.getenv("GITHUB_RUN_ID"),
+                state_pointer_path=state_pointer,
             )
         typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))
     except (OSError, KeyError, TypeError, ValueError, sqlite3.Error) as exc:

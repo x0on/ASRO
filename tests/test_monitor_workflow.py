@@ -16,3 +16,8 @@ def test_monitor_has_one_daily_schedule_and_preserves_manual_backfill() -> None:
     assert "github.event.schedule == '17 10 * * *'" in workflow
     assert "data: daily observatory update" in workflow
     assert "group: daily-monitor" in workflow
+    assert "asro state-restore" in workflow
+    assert "asro state-package" in workflow
+    assert "gh release upload asro-state" in workflow
+    assert "--state-pointer data/state/current.json" in workflow
+    assert "git rm --cached --ignore-unmatch data/monitor.db" in workflow

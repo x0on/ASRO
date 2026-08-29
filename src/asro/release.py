@@ -6,6 +6,7 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 
 from asro.evidence.time import normalize_timestamp
+from asro.state_assets import validate_state_binding
 
 CURRENT_COLLECTORS = {
     "google-news-rss",
@@ -44,6 +45,7 @@ def validate_release(
     *,
     max_age_hours: float,
     expected_workflow_run_id: str | None = None,
+    state_pointer_path: Path | None = None,
     now: datetime | None = None,
 ) -> dict[str, object]:
     payload = json.loads(snapshot_path.read_text(encoding="utf-8"))
@@ -112,6 +114,12 @@ def validate_release(
     )
     if min(expected_counts) < 1 or snapshot_counts != expected_counts:
         raise ValueError("site snapshot counts are empty or disagree with the database")
+    state_binding = None
+    if state_pointer_path is not None:
+        database_path = connection.execute("PRAGMA database_list").fetchone()[2]
+        state_binding = validate_state_binding(
+            Path(str(database_path)), snapshot_path, state_pointer_path
+        )
     return {
         "releaseable": True,
         "collection_execution_id": execution_id,
@@ -122,6 +130,7 @@ def validate_release(
         "mention_count": mention_count,
         "collectors": sorted(CURRENT_COLLECTORS),
         "collector_run_ids": sorted(int(value) for value in run_ids),
+        "database_state": state_binding,
     }
 
 
