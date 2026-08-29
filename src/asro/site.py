@@ -303,7 +303,8 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
 def _database_state_identity(database: Path) -> dict[str, str]:
     digest = hashlib.sha256(database.read_bytes()).hexdigest()
     pointer_path = Path("data/state/current.json")
-    if pointer_path.exists():
+    production_database = Path("data/monitor.db").resolve()
+    if pointer_path.exists() and database.resolve() == production_database:
         pointer = json.loads(pointer_path.read_text(encoding="utf-8"))
         current = next(
             (
