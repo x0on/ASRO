@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T23:50:59.547514+00:00",
+  "generated_at": "2026-08-29T00:02:48.842852+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -13,14 +13,14 @@
   },
   "dimensions": {
     "counter_evidence": 42.9,
-    "circularity": 59.4,
-    "cannibalization": 54.2,
-    "transmission": 39.6,
-    "external_pressure": 16.12,
+    "monetization": 42.9,
     "fragility": 61.1,
-    "stress": 57.1,
     "capital": 42.64073738140746,
-    "monetization": 42.9
+    "cannibalization": 54.2,
+    "external_pressure": 16.12,
+    "circularity": 59.4,
+    "transmission": 39.6,
+    "stress": 57.1
   },
   "dimension_evidence": {
     "capital": 8,
@@ -32,14 +32,14 @@
   },
   "dimension_basis": {
     "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "external_pressure": "aggregate",
+    "monetization": "directional_estimate",
     "fragility": "directional_estimate",
-    "stress": "directional_estimate",
     "capital": "aggregate",
-    "monetization": "directional_estimate"
+    "cannibalization": "directional_estimate",
+    "external_pressure": "aggregate",
+    "circularity": "directional_estimate",
+    "transmission": "confirmed_trigger",
+    "stress": "directional_estimate"
   },
   "dimension_direction": {
     "circularity": {
@@ -697,6 +697,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-29T00:02:39+00:00",
+      "score": 44.9,
+      "label": "FORMING",
+      "dimensions": "{\"stress\": 57.1, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"circularity\": 59.4}"
+    },
     {
       "captured_at": "2026-08-28T23:50:51+00:00",
       "score": 44.9,
@@ -4649,6 +4655,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:b2b828ed80affc1aad22ef26ad55074c7e5388021184c7c2e3c477dda42b7453",
+        "label": "Anthropic Wants to Go Bigger Than SpaceX\u2014Claude Maker Reportedly Eyes $30 Trillion Revenue Opportunity Ahead of Fall IPO - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOb1Z2Z0xoQko1VW04UU1EaEFSZ0dIckRKcjEyemp6Y3JPRTBLOTY0M1ZGdU95U3JISExha0p5LWhjWVhMVVI0cTRDeG5oLWNQUTZaT21TX0JBS3hKVjI4dFd2aG9wQUk1akFwZlpTRnpPUHJvbVhLTjZmT3pFM1hXd0hpODFSTWU5QjR0UWI4SHlQQUFfYmlqdk9LVkswaXVyaEE?oc=5",
+        "date": "Fri, 28 Aug 2026 12:30:54 GMT",
+        "summary": "Anthropic Wants to Go Bigger Than SpaceX\u2014Claude Maker Reportedly Eyes $30 Trillion Revenue Opportunity Ahead of Fall IPO Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:118bd2a2b5c130c8ff7d7695ddb5b584b18d9fa64ea0bcc04bd6c7c9b8c87c78",
         "label": "How The Anthropic And OpenAI IPOs Could Shake Up The AI Brawl - Investor's Business Daily",
         "kind": "evidence",
@@ -6050,6 +6068,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:42a0d242d7431a1ee918481eedeeb95210ef8ed9e75dcc12cf50dd1c885f442a",
+        "label": "\u201c$74 Billion Valuation\u201d \u2014 China\u2019s DeepSeek Seeks Fresh Funding and Greater Profitability, May Join Global AI Market\u2019s IPO Race - economy.ac",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "economy.ac",
+        "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE14NEl5T3R5Zngwd3hNVHViUkdQZjl1M3JEZ0ZPTzhiSGNXcTY5aWtPRUJkaFVQM2k5YXkwVEFOay10aWRhUDgxNFJZZE5BVU84ZXlwd3lBYw?oc=5",
+        "date": "Fri, 28 Aug 2026 11:43:40 GMT",
+        "summary": "\u201c$74 Billion Valuation\u201d \u2014 China\u2019s DeepSeek Seeks Fresh Funding and Greater Profitability, May Join Global AI Market\u2019s IPO Race economy.ac",
+        "score": 4,
         "weight": 1
       },
       {
@@ -11369,62 +11399,38 @@
         "weight": 1
       },
       {
-        "id": "evidence:9749ffac75cb384099e6cd533a5233c61d38fa6e3a1c613b29283fcc743b3b02",
-        "label": "Kimi K3 Open-Weight Release Hits Canada: 70% Cheaper [2026] - tech-insider.org",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "tech-insider.org",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9GOHJKaFF1bGpva0sxTnJxU3E4ckhUek5QanJORkZldTctZXlSRFVESWw4MWg1ZjlycGlLcHJLUXNHQnNiMXh0dXBjajRzYmlXVzJoRXpYbWw2T193WFdKUkMwUTNyWGQxTnUwck5IUjJ1cXVSNFlr?oc=5",
-        "date": "Mon, 27 Jul 2026 07:00:00 GMT",
-        "summary": "Kimi K3 Open-Weight Release Hits Canada: 70% Cheaper [2026] tech-insider.org",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ff85de5594b0d17bee42d0b182769936ae749ae0ac9fc2ea6597892c7e2d51d7",
-        "label": "MSFT Stock Alert: Moonshot Could Give Microsoft Another AI Revenue Stream - Barchart.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Barchart.com",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOc3I5dFl2aDhyRGpJSVBUSFhfUmdjVWFRTlQ4dDFPSGpaaUVjbW5JdmZDZEl5UnoxX2JVZ19hNmFSZTd4ZlBvcnZBcHdQZ2EwYnU4NGptbEFiWDVqTC1nTFVrWFh4aS12em0yRURyMUZ4S2N4MnNIN2U5MlROdTZBT1ozdDAwY016eTZUb3hTajlEUXJ2WlRzNGxHcTRidWo0ODZxVjU0Y3Y4VTcxMDZPOHp2WnIxWEk?oc=5",
-        "date": "Fri, 28 Aug 2026 18:57:18 GMT",
-        "summary": "MSFT Stock Alert: Moonshot Could Give Microsoft Another AI Revenue Stream Barchart.com",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b05bbea9420dca10c4ecd1a9cf30bc73fca3893453a352ef14316e0d0edb8e57",
-        "label": "Why Is Microsoft (MSFT) Up 12% Since Last Earnings Report? - Yahoo Finance",
+        "id": "evidence:bd5b509f0ba685ae8bdfc4f33893e772c2e4af8cb758952fa272b3bb45aff5a1",
+        "label": "Nvidia (NVDA) Pulls Back A Financing Program Right After Blowout Earnings - Yahoo Finance",
         "kind": "evidence",
         "category": "General AI capital",
         "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxObVp5azE0RFpsQkFwRXkyenRjTXYzWWI1QXdSc19LUldtNy1ybUNYYU4zYWEzak8ycmhRV29qSjZ0Rm16WUFDM2xJaVJaQ3p1X3lCVzUxNUNZaWQwYzUxOE10ZzFZMHFLUUdUNUZrTU5Na2Q0aFFkQi1BeEZJdlh5aVdnR0xsTFpMdHQtZ1kwSHFIWHlzV19v?oc=5",
-        "date": "Fri, 28 Aug 2026 15:30:27 GMT",
-        "summary": "Why Is Microsoft (MSFT) Up 12% Since Last Earnings Report? Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVGo1Rm56UUkxdTFHZVh4VXBBSDNvc2J0QUtnbDE2aUpHbUs0ckJ2MzJQWGZLeU9nWm54SV8wQ1JMZG1QVE5MdXgtZVlNR05XX0lQdG04RXdUNkwzOUs0bHlyWDdrZ2FHcUQzUVY0WFFtZGZVRXI4RjJnSXU4RFFBVURkdTVZdjhfWkFHNEFFcUM0OFJnT0RKOXl5ZFdHdw?oc=5",
+        "date": "Fri, 28 Aug 2026 15:34:23 GMT",
+        "summary": "Nvidia (NVDA) Pulls Back A Financing Program Right After Blowout Earnings Yahoo Finance",
         "score": 1,
         "weight": 1
       },
       {
-        "id": "evidence:bc3f65c59191b2d2023f1216eb545af66cedf76e96cdb57ab48e041509473515",
-        "label": "Z.ai\u2019s GLM-5.3 goes open weight, but its new license aims at hyperscalers - The New Stack",
+        "id": "evidence:1def537b64a298692c2fb1ffce891b2b924eb3a5ce0cb8d2c5661858b5794eda",
+        "label": "Nvidia Stock Breaks Out On Earnings Boost; Is Nvidia A Buy Now? - Investor's Business Daily",
         "kind": "evidence",
         "category": "General AI capital",
-        "source": "The New Stack",
-        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBrZlg0SEo2X1NjTVktLWpLUllZbGR1ZVNiUV9ZYVU4NFBHajUtY3pSeGVtV0ZBb0NQSFJhTE5XSkxUdGtoTU5zTVNPWU5GU0JYVkpYUGtiVVdQUGs?oc=5",
-        "date": "Fri, 28 Aug 2026 17:48:21 GMT",
-        "summary": "Z.ai\u2019s GLM-5.3 goes open weight, but its new license aims at hyperscalers The New Stack",
+        "source": "Investor's Business Daily",
+        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMExxTWMwSHpLWTBHWDdMcm5DbVNEQkFYNUVXN1hfdUlBOGUwSE5nVmRzbmJMUy1UWjN5ZUtmUnZUWUNvbTZFSFZUYklnZTg3UFRMeUVNekYtX1V6ZmNXRjdaOVRfYkZta0JlNGp5OEpEakRLNGg4Q2JpZ0xlZllMdHgxM0lmbTA5elE?oc=5",
+        "date": "Fri, 28 Aug 2026 14:57:00 GMT",
+        "summary": "Nvidia Stock Breaks Out On Earnings Boost; Is Nvidia A Buy Now? Investor's Business Daily",
         "score": 1,
         "weight": 1
       },
       {
-        "id": "evidence:9523812b8734fe4a3407b857b5bff16c162385f47e0a9396cc23071c33697aef",
-        "label": "Tencent Music Entertainment Group (TME), Why Is It Getting Fresh Attention? - simplywall.st",
+        "id": "evidence:c199814cd794da239cbd573ab65449b82a8320b146f6ac87547221e4d22e0b77",
+        "label": "MiniMax interim report: B-side revenue surges sevenfold, ARR tops $800 million - finance.biggo.com",
         "kind": "evidence",
         "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaHU5dUM4ZHo5NEY3ZlBJZ01Rc29ycXptQnYwbzlvOGlOSGZmdXRyMmlFeEF6ajlKcnRfRjRhbDVFaXlhWHhFU1dyUUd5WU9nTXNBby1ZSWU3SXg1MVk5Sk5heFQ1NG5BSmhJOWRfOFpBWUNraGd3M1A3bEVFZndySGJhNmd3WmRURHpqUEdhLVJmdHBNbC10TUJTcTV0RVdNd2lEbUQwWE4zWlQ1d0hyYWUyRVNZRE9MaFFMQThCbzJVYWhVWFpFVHFBQ3hiOGpHbHFaelh2S1ZXR1ppTXJj0gHkAUFVX3lxTE9VdHpncTkzb3BDOV9KYldRazRfd1dUMVZkRkhXSTZfai1uWWFSeFJ2clBKc2lJbzl0WmFXVzM2Tm5iNDZpLWJkcS1PdWhvWklmSm1hbkxZZHJOVHJzemtsbGNfb0xKN3ZqQnpIWlZYQlJTeTZxLW5OM1RIX0JWQ1lMazFSMXdEMmVhdDVGWGl5eGRlTU9DSUVuWUN5a3M4TFFEVEV2dXo4dW5LSXJvNUdfOU5UZzY2YlF1aWltUVY0amg2RE8wOVZMbTlIVmMwWWRrOTJObVVrZ3VkQVNwZ2JXLWd4Sg?oc=5",
-        "date": "Fri, 28 Aug 2026 16:42:38 GMT",
-        "summary": "Tencent Music Entertainment Group (TME), Why Is It Getting Fresh Attention? simplywall.st",
+        "source": "finance.biggo.com",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NbGNJUFZtOEVzLVNMTDAxTnMySzFibS00b3ZLT09PVV9YcUVjTXlRQUtRdzZQbExXZm9uelBHSjZNaXlRYnBXRjM5d3VPaXNoSFpxQVZXZUkyclE2bjlPMDMwUVJTNjJjZkYteV9ET2ZQZXVBc2c?oc=5",
+        "date": "Fri, 28 Aug 2026 07:55:00 GMT",
+        "summary": "MiniMax interim report: B-side revenue surges sevenfold, ARR tops $800 million finance.biggo.com",
         "score": 1,
         "weight": 1
       }
@@ -13644,6 +13650,20 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:b2b828ed80affc1aad22ef26ad55074c7e5388021184c7c2e3c477dda42b7453",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:b2b828ed80affc1aad22ef26ad55074c7e5388021184c7c2e3c477dda42b7453",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:118bd2a2b5c130c8ff7d7695ddb5b584b18d9fa64ea0bcc04bd6c7c9b8c87c78",
         "type": "EVIDENCE",
         "weight": 1,
@@ -14919,6 +14939,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:42a0d242d7431a1ee918481eedeeb95210ef8ed9e75dcc12cf50dd1c885f442a",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -19243,36 +19270,22 @@
         "mentions": 1
       },
       {
-        "source": "Moonshot AI",
-        "target": "evidence:9749ffac75cb384099e6cd533a5233c61d38fa6e3a1c613b29283fcc743b3b02",
+        "source": "Nvidia",
+        "target": "evidence:bd5b509f0ba685ae8bdfc4f33893e772c2e4af8cb758952fa272b3bb45aff5a1",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Microsoft",
-        "target": "evidence:ff85de5594b0d17bee42d0b182769936ae749ae0ac9fc2ea6597892c7e2d51d7",
+        "source": "Nvidia",
+        "target": "evidence:1def537b64a298692c2fb1ffce891b2b924eb3a5ce0cb8d2c5661858b5794eda",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
       },
       {
-        "source": "Microsoft",
-        "target": "evidence:b05bbea9420dca10c4ecd1a9cf30bc73fca3893453a352ef14316e0d0edb8e57",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:bc3f65c59191b2d2023f1216eb545af66cedf76e96cdb57ab48e041509473515",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:9523812b8734fe4a3407b857b5bff16c162385f47e0a9396cc23071c33697aef",
+        "source": "MiniMax",
+        "target": "evidence:c199814cd794da239cbd573ab65449b82a8320b146f6ac87547221e4d22e0b77",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -34028,36 +34041,36 @@
   ],
   "collector_runs": [
     {
-      "id": 619,
+      "id": 623,
       "collector": "company-economic-news",
-      "started_at": "2026-08-28T23:50:29+00:00",
-      "completed_at": "2026-08-28T23:50:47+00:00",
+      "started_at": "2026-08-29T00:02:19+00:00",
+      "completed_at": "2026-08-29T00:02:35+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 15,
+      "items_new": 9,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "a7fe41c3-4bdf-4dee-888e-9718c1f1afc0"
+      "collection_execution_id": "060c0b64-61c9-4af2-b084-5994d948beda"
     },
     {
-      "id": 620,
+      "id": 624,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-28T23:50:48+00:00",
-      "completed_at": "2026-08-28T23:50:48+00:00",
+      "started_at": "2026-08-29T00:02:35+00:00",
+      "completed_at": "2026-08-29T00:02:36+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 1,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "a7fe41c3-4bdf-4dee-888e-9718c1f1afc0"
+      "collection_execution_id": "060c0b64-61c9-4af2-b084-5994d948beda"
     },
     {
       "id": 56,
@@ -34076,26 +34089,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 618,
+      "id": 622,
       "collector": "google-news-rss",
-      "started_at": "2026-08-28T23:50:27+00:00",
-      "completed_at": "2026-08-28T23:50:28+00:00",
+      "started_at": "2026-08-29T00:02:18+00:00",
+      "completed_at": "2026-08-29T00:02:19+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 2,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "a7fe41c3-4bdf-4dee-888e-9718c1f1afc0"
+      "collection_execution_id": "060c0b64-61c9-4af2-b084-5994d948beda"
     },
     {
-      "id": 621,
+      "id": 625,
       "collector": "sec-edgar",
-      "started_at": "2026-08-28T23:50:49+00:00",
-      "completed_at": "2026-08-28T23:50:50+00:00",
+      "started_at": "2026-08-29T00:02:36+00:00",
+      "completed_at": "2026-08-29T00:02:38+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -34105,7 +34118,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "a7fe41c3-4bdf-4dee-888e-9718c1f1afc0"
+      "collection_execution_id": "060c0b64-61c9-4af2-b084-5994d948beda"
     },
     {
       "id": 57,
@@ -36898,5 +36911,7 @@
     "pending_review": 0,
     "duplicate_fact": 0,
     "rejected": 1
-  }
+  },
+  "database_state_version": "v1-4500f0122c8c7686",
+  "database_sha256": "4500f0122c8c76862595666fca5aec3f6fc6bdf76c1639ff56fe4aae6aa5b7c1"
 }
