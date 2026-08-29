@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T00:02:48.842852+00:00",
+  "generated_at": "2026-08-29T00:06:11.056660+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "counter_evidence": 42.9,
-    "monetization": 42.9,
-    "fragility": 61.1,
     "capital": 42.64073738140746,
     "cannibalization": 54.2,
-    "external_pressure": 16.12,
+    "fragility": 61.1,
+    "counter_evidence": 42.9,
+    "stress": 57.1,
     "circularity": 59.4,
-    "transmission": 39.6,
-    "stress": 57.1
+    "external_pressure": 16.12,
+    "monetization": 42.9,
+    "transmission": 39.6
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
-    "monetization": "directional_estimate",
-    "fragility": "directional_estimate",
     "capital": "aggregate",
     "cannibalization": "directional_estimate",
-    "external_pressure": "aggregate",
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
+    "stress": "directional_estimate",
     "circularity": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "stress": "directional_estimate"
+    "external_pressure": "aggregate",
+    "monetization": "directional_estimate",
+    "transmission": "confirmed_trigger"
   },
   "dimension_direction": {
     "circularity": {
@@ -697,6 +697,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-29T00:06:08+00:00",
+      "score": 44.9,
+      "label": "FORMING",
+      "dimensions": "{\"capital\": 42.64073738140746, \"fragility\": 61.1, \"external_pressure\": 16.12, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"circularity\": 59.4}"
+    },
     {
       "captured_at": "2026-08-29T00:02:39+00:00",
       "score": 44.9,
@@ -34041,26 +34047,26 @@
   ],
   "collector_runs": [
     {
-      "id": 623,
+      "id": 627,
       "collector": "company-economic-news",
-      "started_at": "2026-08-29T00:02:19+00:00",
-      "completed_at": "2026-08-29T00:02:35+00:00",
+      "started_at": "2026-08-29T00:05:47+00:00",
+      "completed_at": "2026-08-29T00:06:04+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 9,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "060c0b64-61c9-4af2-b084-5994d948beda"
+      "collection_execution_id": "3ea02f9e-5c0a-43a6-b672-a6af7e129be4"
     },
     {
-      "id": 624,
+      "id": 628,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-29T00:02:35+00:00",
-      "completed_at": "2026-08-29T00:02:36+00:00",
+      "started_at": "2026-08-29T00:06:05+00:00",
+      "completed_at": "2026-08-29T00:06:05+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -34070,7 +34076,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "060c0b64-61c9-4af2-b084-5994d948beda"
+      "collection_execution_id": "3ea02f9e-5c0a-43a6-b672-a6af7e129be4"
     },
     {
       "id": 56,
@@ -34089,10 +34095,10 @@
       "collection_execution_id": null
     },
     {
-      "id": 622,
+      "id": 626,
       "collector": "google-news-rss",
-      "started_at": "2026-08-29T00:02:18+00:00",
-      "completed_at": "2026-08-29T00:02:19+00:00",
+      "started_at": "2026-08-29T00:05:45+00:00",
+      "completed_at": "2026-08-29T00:05:46+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 0,
@@ -34102,13 +34108,13 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "060c0b64-61c9-4af2-b084-5994d948beda"
+      "collection_execution_id": "3ea02f9e-5c0a-43a6-b672-a6af7e129be4"
     },
     {
-      "id": 625,
+      "id": 629,
       "collector": "sec-edgar",
-      "started_at": "2026-08-29T00:02:36+00:00",
-      "completed_at": "2026-08-29T00:02:38+00:00",
+      "started_at": "2026-08-29T00:06:05+00:00",
+      "completed_at": "2026-08-29T00:06:08+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -34118,7 +34124,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "060c0b64-61c9-4af2-b084-5994d948beda"
+      "collection_execution_id": "3ea02f9e-5c0a-43a6-b672-a6af7e129be4"
     },
     {
       "id": 57,
@@ -36912,6 +36918,6 @@
     "duplicate_fact": 0,
     "rejected": 1
   },
-  "database_state_version": "v1-4500f0122c8c7686",
-  "database_sha256": "4500f0122c8c76862595666fca5aec3f6fc6bdf76c1639ff56fe4aae6aa5b7c1"
+  "database_state_version": "v1-e1ecb80479d11d4a",
+  "database_sha256": "e1ecb80479d11d4a2a5e6b56caffe473b2075a9887b1d58f689ffdb181ee84c8"
 }
