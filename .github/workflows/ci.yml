@@ -23,6 +23,9 @@ jobs:
       - name: Install
         run: pip install -e ".[dev]"
 
+      - name: Restore verified public observatory state
+        run: asro state-restore --pointer data/state/current.json --database data/monitor.db
+
       - name: Ruff
         run: |
           ruff check .
