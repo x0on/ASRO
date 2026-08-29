@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T00:06:11.056660+00:00",
+  "generated_at": "2026-08-29T00:08:38.358665+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -12,15 +12,15 @@
     "evidence_direction": "higher_pressure"
   },
   "dimensions": {
-    "capital": 42.64073738140746,
-    "cannibalization": 54.2,
-    "fragility": 61.1,
-    "counter_evidence": 42.9,
-    "stress": 57.1,
-    "circularity": 59.4,
+    "transmission": 39.6,
     "external_pressure": 16.12,
+    "counter_evidence": 42.9,
+    "fragility": 61.1,
     "monetization": 42.9,
-    "transmission": 39.6
+    "stress": 57.1,
+    "cannibalization": 54.2,
+    "circularity": 59.4,
+    "capital": 42.64073738140746
   },
   "dimension_evidence": {
     "capital": 8,
@@ -31,15 +31,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "capital": "aggregate",
-    "cannibalization": "directional_estimate",
-    "fragility": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "stress": "directional_estimate",
-    "circularity": "directional_estimate",
+    "transmission": "confirmed_trigger",
     "external_pressure": "aggregate",
+    "counter_evidence": "directional_estimate",
+    "fragility": "directional_estimate",
     "monetization": "directional_estimate",
-    "transmission": "confirmed_trigger"
+    "stress": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "circularity": "directional_estimate",
+    "capital": "aggregate"
   },
   "dimension_direction": {
     "circularity": {
@@ -697,6 +697,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-08-29T00:08:33+00:00",
+      "score": 44.9,
+      "label": "FORMING",
+      "dimensions": "{\"external_pressure\": 16.12, \"monetization\": 42.9, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"circularity\": 59.4, \"stress\": 57.1, \"capital\": 42.64073738140746}"
+    },
     {
       "captured_at": "2026-08-29T00:06:08+00:00",
       "score": 44.9,
@@ -6077,6 +6083,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:139065969398c0972ba9f52cb20d65765372d61b48d95eb04f6356848afa8cbf",
+        "label": "OpenAI's annualized revenue has doubled to top $40 billion ahead of its IPO - qz.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "qz.com",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vR21vVWR6RnFZZGQ2dFEwSm9FUjE2cW9IUk0tN1dXTVFQanBUbTlMM0h1N1Q2OWlMT19kMXJVNEV6ME9ZSXVpZUdFZjhqMFVuaDR2NEJtMUstd2U0THQ3QlBsWURIdG1va0NWY0RObw?oc=5",
+        "date": "Fri, 14 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI's annualized revenue has doubled to top $40 billion ahead of its IPO qz.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:42a0d242d7431a1ee918481eedeeb95210ef8ed9e75dcc12cf50dd1c885f442a",
         "label": "\u201c$74 Billion Valuation\u201d \u2014 China\u2019s DeepSeek Seeks Fresh Funding and Greater Profitability, May Join Global AI Market\u2019s IPO Race - economy.ac",
         "kind": "evidence",
@@ -9641,6 +9659,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:5f6b31afc768e78dc284c411f19bfc36f1153543f628095a13f9dd536eb042fa",
+        "label": "Nvidia\u2019s revenue forecast is so huge that Wall Street wonders if SpaceX is the reason - MarketWatch",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "MarketWatch",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOelFCMHo4N1R6cVZNaXMydzl3NUdkVDVuMm5oejZtZjJkN2lNdnVVbWZrcWttRVFMS1EtRnVCQnN6Uk84M2h6eGhHM3lCc09SOW8zRkNnWVFHWDR1MzlLOWp2X2pBTEtjZXAwS21RdTRvTW9VOGw1X1IxZ01kTHZVOFRWYjUybTJJSXZHcFF6TGt0WFVibWdzYld5SE81c0VOaER4R2pSdjRscU9pWDRtelpKTnc5aHZva004T2RwVVYyVkpkMkE?oc=5",
+        "date": "Fri, 28 Aug 2026 20:58:00 GMT",
+        "summary": "Nvidia\u2019s revenue forecast is so huge that Wall Street wonders if SpaceX is the reason MarketWatch",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:97f8ff541626dee77fea2371d828a21b52c6c552e983122ff1f2f2270b5ccc76",
         "label": "Zhipu AI Launches First Major Strategic Strike Against DeepSeek: The Formidable AI Industry Shakeup - 36 Kr",
         "kind": "evidence",
@@ -11405,38 +11435,14 @@
         "weight": 1
       },
       {
-        "id": "evidence:bd5b509f0ba685ae8bdfc4f33893e772c2e4af8cb758952fa272b3bb45aff5a1",
-        "label": "Nvidia (NVDA) Pulls Back A Financing Program Right After Blowout Earnings - Yahoo Finance",
+        "id": "evidence:5adc8670fc2d8d86b0b91cbb9efffdbc9906360048ecadaebc3692a1cf35c58b",
+        "label": "Alibaba Group (NYSE:BABA) Stock Price Up 2.1% - Here's What Happened - MarketBeat",
         "kind": "evidence",
         "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVGo1Rm56UUkxdTFHZVh4VXBBSDNvc2J0QUtnbDE2aUpHbUs0ckJ2MzJQWGZLeU9nWm54SV8wQ1JMZG1QVE5MdXgtZVlNR05XX0lQdG04RXdUNkwzOUs0bHlyWDdrZ2FHcUQzUVY0WFFtZGZVRXI4RjJnSXU4RFFBVURkdTVZdjhfWkFHNEFFcUM0OFJnT0RKOXl5ZFdHdw?oc=5",
-        "date": "Fri, 28 Aug 2026 15:34:23 GMT",
-        "summary": "Nvidia (NVDA) Pulls Back A Financing Program Right After Blowout Earnings Yahoo Finance",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1def537b64a298692c2fb1ffce891b2b924eb3a5ce0cb8d2c5661858b5794eda",
-        "label": "Nvidia Stock Breaks Out On Earnings Boost; Is Nvidia A Buy Now? - Investor's Business Daily",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Investor's Business Daily",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNMExxTWMwSHpLWTBHWDdMcm5DbVNEQkFYNUVXN1hfdUlBOGUwSE5nVmRzbmJMUy1UWjN5ZUtmUnZUWUNvbTZFSFZUYklnZTg3UFRMeUVNekYtX1V6ZmNXRjdaOVRfYkZta0JlNGp5OEpEakRLNGg4Q2JpZ0xlZllMdHgxM0lmbTA5elE?oc=5",
-        "date": "Fri, 28 Aug 2026 14:57:00 GMT",
-        "summary": "Nvidia Stock Breaks Out On Earnings Boost; Is Nvidia A Buy Now? Investor's Business Daily",
-        "score": 1,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c199814cd794da239cbd573ab65449b82a8320b146f6ac87547221e4d22e0b77",
-        "label": "MiniMax interim report: B-side revenue surges sevenfold, ARR tops $800 million - finance.biggo.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1NbGNJUFZtOEVzLVNMTDAxTnMySzFibS00b3ZLT09PVV9YcUVjTXlRQUtRdzZQbExXZm9uelBHSjZNaXlRYnBXRjM5d3VPaXNoSFpxQVZXZUkyclE2bjlPMDMwUVJTNjJjZkYteV9ET2ZQZXVBc2c?oc=5",
-        "date": "Fri, 28 Aug 2026 07:55:00 GMT",
-        "summary": "MiniMax interim report: B-side revenue surges sevenfold, ARR tops $800 million finance.biggo.com",
+        "source": "MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZnVILUgwMTVQOHhtZFdqSkVGMVBMQnhKeERoMThmdWJwemtkdy1yaFBUQWNWVHhfOW9hT1RLbGlMU2pwWWhncEFmN05MYXJOclRJNm92dF9TS1l0bUtSc0pIUXhtUnc0TXpQN2RmUTRUbjZGalVNdkhpdldhUDh0cXczcUdJNnRwd09qdGM1UDlZRVFXcG5jMmRFSzdzWnhIMTNoX00tcTRIUGQ3RnFvVmdjdi15eGlpeDJ6djNR?oc=5",
+        "date": "Fri, 28 Aug 2026 21:43:05 GMT",
+        "summary": "Alibaba Group (NYSE:BABA) Stock Price Up 2.1% - Here's What Happened MarketBeat",
         "score": 1,
         "weight": 1
       }
@@ -14950,6 +14956,13 @@
         "mentions": 1
       },
       {
+        "source": "OpenAI",
+        "target": "evidence:139065969398c0972ba9f52cb20d65765372d61b48d95eb04f6356848afa8cbf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "DeepSeek",
         "target": "evidence:42a0d242d7431a1ee918481eedeeb95210ef8ed9e75dcc12cf50dd1c885f442a",
         "type": "EVIDENCE",
@@ -17344,6 +17357,20 @@
         "mentions": 1
       },
       {
+        "source": "Nvidia",
+        "target": "evidence:5f6b31afc768e78dc284c411f19bfc36f1153543f628095a13f9dd536eb042fa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:5f6b31afc768e78dc284c411f19bfc36f1153543f628095a13f9dd536eb042fa",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "DeepSeek",
         "target": "evidence:97f8ff541626dee77fea2371d828a21b52c6c552e983122ff1f2f2270b5ccc76",
         "type": "EVIDENCE",
@@ -19276,22 +19303,8 @@
         "mentions": 1
       },
       {
-        "source": "Nvidia",
-        "target": "evidence:bd5b509f0ba685ae8bdfc4f33893e772c2e4af8cb758952fa272b3bb45aff5a1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:1def537b64a298692c2fb1ffce891b2b924eb3a5ce0cb8d2c5661858b5794eda",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:c199814cd794da239cbd573ab65449b82a8320b146f6ac87547221e4d22e0b77",
+        "source": "Alibaba",
+        "target": "evidence:5adc8670fc2d8d86b0b91cbb9efffdbc9906360048ecadaebc3692a1cf35c58b",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -34047,26 +34060,26 @@
   ],
   "collector_runs": [
     {
-      "id": 627,
+      "id": 631,
       "collector": "company-economic-news",
-      "started_at": "2026-08-29T00:05:47+00:00",
-      "completed_at": "2026-08-29T00:06:04+00:00",
+      "started_at": "2026-08-29T00:08:14+00:00",
+      "completed_at": "2026-08-29T00:08:30+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 0,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "3ea02f9e-5c0a-43a6-b672-a6af7e129be4"
+      "collection_execution_id": "134769a3-a560-4d9a-8daf-0f116275f93c"
     },
     {
-      "id": 628,
+      "id": 632,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-08-29T00:06:05+00:00",
-      "completed_at": "2026-08-29T00:06:05+00:00",
+      "started_at": "2026-08-29T00:08:30+00:00",
+      "completed_at": "2026-08-29T00:08:31+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 0,
@@ -34076,7 +34089,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "3ea02f9e-5c0a-43a6-b672-a6af7e129be4"
+      "collection_execution_id": "134769a3-a560-4d9a-8daf-0f116275f93c"
     },
     {
       "id": 56,
@@ -34095,26 +34108,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 626,
+      "id": 630,
       "collector": "google-news-rss",
-      "started_at": "2026-08-29T00:05:45+00:00",
-      "completed_at": "2026-08-29T00:05:46+00:00",
+      "started_at": "2026-08-29T00:08:13+00:00",
+      "completed_at": "2026-08-29T00:08:13+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 0,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "3ea02f9e-5c0a-43a6-b672-a6af7e129be4"
+      "collection_execution_id": "134769a3-a560-4d9a-8daf-0f116275f93c"
     },
     {
-      "id": 629,
+      "id": 633,
       "collector": "sec-edgar",
-      "started_at": "2026-08-29T00:06:05+00:00",
-      "completed_at": "2026-08-29T00:06:08+00:00",
+      "started_at": "2026-08-29T00:08:31+00:00",
+      "completed_at": "2026-08-29T00:08:33+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -34124,7 +34137,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "3ea02f9e-5c0a-43a6-b672-a6af7e129be4"
+      "collection_execution_id": "134769a3-a560-4d9a-8daf-0f116275f93c"
     },
     {
       "id": 57,
@@ -36918,6 +36931,6 @@
     "duplicate_fact": 0,
     "rejected": 1
   },
-  "database_state_version": "v1-e1ecb80479d11d4a",
-  "database_sha256": "e1ecb80479d11d4a2a5e6b56caffe473b2075a9887b1d58f689ffdb181ee84c8"
+  "database_state_version": "v1-ff48cfab42f96469",
+  "database_sha256": "ff48cfab42f9646954907da07d7b606bd45f1a3a9172871f80ece40caf970e31"
 }
