@@ -15,6 +15,7 @@ from asro.migrations import (
     feature_store,
     historical_backfill,
     historical_backfill_integrity,
+    historical_pipeline_time,
     operational_provenance,
     release_collection_identity,
     stage3_acceptance_integrity,
@@ -95,6 +96,11 @@ MIGRATIONS = (
         acceptance_queue.VERSION,
         acceptance_queue.NAME,
         acceptance_queue.STATEMENTS,
+    ),
+    Migration(
+        historical_pipeline_time.VERSION,
+        historical_pipeline_time.NAME,
+        historical_pipeline_time.STATEMENTS,
     ),
 )
 

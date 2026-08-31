@@ -2936,7 +2936,7 @@ def test_forward_upgrade_preserves_existing_observations_and_feature_values(
         assert [
             row[0]
             for row in upgraded.execute("SELECT version FROM schema_migrations ORDER BY version")
-        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        ] == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
         assert upgraded.execute("SELECT COUNT(*) FROM observation_v2").fetchone()[0] == (
             2 if starting_version == 2 else 1
         )

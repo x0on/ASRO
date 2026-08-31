@@ -1,0 +1,162 @@
+{
+ "episodes": {
+  "benign-infrastructure-capex": {
+   "coverage_passed": false,
+   "leakage_passed": true,
+   "source_count": 57,
+   "control_count": 180,
+   "coverage_cells": 1800,
+   "metrics": {
+    "control": {
+     "present": 180,
+     "total": 180,
+     "ratio": 1.0,
+     "threshold": 0.95,
+     "meets_threshold": true
+    },
+    "feature": {
+     "present": 1222,
+     "total": 1440,
+     "ratio": 0.8486,
+     "threshold": 0.9,
+     "meets_threshold": false
+    },
+    "source": {
+     "present": 171,
+     "total": 180,
+     "ratio": 0.95,
+     "threshold": 0.95,
+     "meets_threshold": true
+    }
+   }
+  },
+  "current-ai-cycle": {
+   "coverage_passed": true,
+   "leakage_passed": true,
+   "source_count": 90,
+   "control_count": 162,
+   "coverage_cells": 2640,
+   "metrics": {
+    "control": {
+     "present": 162,
+     "total": 165,
+     "ratio": 0.9818,
+     "threshold": 0.95,
+     "meets_threshold": true
+    },
+    "feature": {
+     "present": 2058,
+     "total": 2200,
+     "ratio": 0.9355,
+     "threshold": 0.9,
+     "meets_threshold": true
+    },
+    "source": {
+     "present": 268,
+     "total": 275,
+     "ratio": 0.9745,
+     "threshold": 0.95,
+     "meets_threshold": true
+    }
+   }
+  },
+  "pandemic-technology-acceleration": {
+   "coverage_passed": true,
+   "leakage_passed": true,
+   "source_count": 35,
+   "control_count": 108,
+   "coverage_cells": 1080,
+   "metrics": {
+    "control": {
+     "present": 108,
+     "total": 108,
+     "ratio": 1.0,
+     "threshold": 0.95,
+     "meets_threshold": true
+    },
+    "feature": {
+     "present": 792,
+     "total": 864,
+     "ratio": 0.9167,
+     "threshold": 0.9,
+     "meets_threshold": true
+    },
+    "source": {
+     "present": 103,
+     "total": 108,
+     "ratio": 0.9537,
+     "threshold": 0.95,
+     "meets_threshold": true
+    }
+   }
+  },
+  "regional-bank-stress": {
+   "coverage_passed": false,
+   "leakage_passed": true,
+   "source_count": 34,
+   "control_count": 144,
+   "coverage_cells": 1440,
+   "metrics": {
+    "control": {
+     "present": 144,
+     "total": 144,
+     "ratio": 1.0,
+     "threshold": 0.95,
+     "meets_threshold": true
+    },
+    "feature": {
+     "present": 650,
+     "total": 1152,
+     "ratio": 0.5642,
+     "threshold": 0.9,
+     "meets_threshold": false
+    },
+    "source": {
+     "present": 102,
+     "total": 144,
+     "ratio": 0.7083,
+     "threshold": 0.95,
+     "meets_threshold": false
+    }
+   }
+  },
+  "shale-financing": {
+   "coverage_passed": false,
+   "leakage_passed": true,
+   "source_count": 92,
+   "control_count": 288,
+   "coverage_cells": 2880,
+   "metrics": {
+    "control": {
+     "present": 288,
+     "total": 288,
+     "ratio": 1.0,
+     "threshold": 0.95,
+     "meets_threshold": true
+    },
+    "feature": {
+     "present": 2022,
+     "total": 2304,
+     "ratio": 0.8776,
+     "threshold": 0.9,
+     "meets_threshold": false
+    },
+    "source": {
+     "present": 279,
+     "total": 288,
+     "ratio": 0.9688,
+     "threshold": 0.95,
+     "meets_threshold": true
+    }
+   }
+  },
+  "dotcom-telecom": {
+   "measurable": false,
+   "reason": "XBRL reporting began in 2009. Cisco's earliest structured facts are from 2008, five years after this episode ends, and WorldCom and Global Crossing have no usable structured facts at all. Entity-level fundamentals for 1998-2003 would require parsing unstructured filing text, which is not attempted here rather than being approximated."
+  },
+  "housing-credit": {
+   "measurable": false,
+   "reason": "Lehman Brothers, Bear Stearns and Countrywide all failed or were absorbed before XBRL reporting began, so none has structured facts. The episode is carried at control-series level only."
+  }
+ }
+}

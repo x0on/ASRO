@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "reviewed_at": "2026-08-31",
+  "note": "Each entry states why a causal role cannot currently be measured from primary sources. A documented insufficiency lets the readiness gate proceed past a role; it is never a claim that the role does not matter, and it is not a substitute for evidence.",
+  "insufficiencies": [
+    {
+      "causal_role": "shock",
+      "reason": "Policy-rate, input-price and funding-disruption shocks are covered by control series, but the two spread series that carry funding-market disruption for pre-2023 episodes (ICE BofA high-yield and investment-grade option-adjusted spreads) are licensed and the public endpoint returns only a rolling three-year window. Technological obsolescence and asset-collateral shocks have no public index for the asset classes involved."
+    },
+    {
+      "causal_role": "transmission",
+      "reason": "Bank exposure is covered by supervisory aggregates. Insurer, leveraged-fund, retirement look-through and network-concentration measures require N-PORT parsing, statutory filings and a relationship graph built to a uniform standard across episodes, none of which exists yet. Index and passive weights require an index-provider licence."
+    }
+  ]
+}

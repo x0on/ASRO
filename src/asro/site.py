@@ -9,6 +9,12 @@ from importlib.resources import files
 from pathlib import Path
 from typing import Any
 
+from asro.benchmark import (
+    OutputTier,
+    assert_claim_supported,
+    evaluate_readiness,
+    load_documented_insufficiency,
+)
 from asro.dictionary.registry import VARIABLES
 from asro.entities import canonicalize, canonicalize_many
 from asro.indicators import (
@@ -203,14 +209,26 @@ def _build_dimension_evidence(
     return result
 
 
-def build_static_site(output_dir: Path = Path("site"), database_path: Path | None = None) -> Path:
+#: Reviewed statements of why a causal role cannot be measured. Read for reporting only;
+#: an insufficiency never closes a role.
+INSUFFICIENCY_PATH = Path("data/benchmark/documented_insufficiency.json")
+
+
+def build_static_site(
+    output_dir: Path = Path("site"),
+    database_path: Path | None = None,
+    claimed_tier: OutputTier = OutputTier.HEURISTIC,
+) -> Path:
+    """Publish the static site, refusing any claim the historical evidence cannot support.
+
+    `claimed_tier` is what the published page asserts about itself. The readiness gate is
+    consulted before anything is written, so a build that would claim a calibrated reading
+    without the accepted episodes behind it raises and produces no output at all.
+    """
     settings = Settings()
     config = load_project_config(settings.config_path)
     actual_database_path = database_path or settings.database_path
     repository = SqliteRepository(actual_database_path)
-    output_dir.mkdir(parents=True, exist_ok=True)
-    data_dir = output_dir / "data"
-    data_dir.mkdir(parents=True, exist_ok=True)
 
     with repository.connect() as connection:
         items = _safe_rows(repository.top_items(connection, limit=1500))
@@ -223,6 +241,19 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
         feature_family = _feature_family_rows(connection)
         fundamentals = _fundamentals_rows(connection)
         acceptance_queue = _acceptance_queue_status(connection)
+        readiness = evaluate_readiness(
+            connection,
+            documented_insufficiency=load_documented_insufficiency(INSUFFICIENCY_PATH),
+        )
+
+    # Enforced before a single file is written: the site cannot describe itself as more
+    # than the accepted evidence supports.
+    assert_claim_supported(readiness, claimed_tier)
+
+    # Only now, once the claim is known to be supported, does anything reach disk.
+    output_dir.mkdir(parents=True, exist_ok=True)
+    data_dir = output_dir / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
 
     dimensions = compute_dimension_scores(observations)
     convergence = compute_convergence(dimensions)
@@ -231,6 +262,10 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
     dimension_direction = dimension_directional_readings(observations)
     signal = convergence.model_dump()
     signal["evidence_direction"] = overall_evidence_direction(dimension_direction)
+    signal["calibration_label"] = (
+        "HISTORICALLY CALIBRATED" if readiness.historically_calibrated else "NOT YET CALIBRATED"
+    )
+    signal["basis"] = readiness.output_tier.value
 
     payload = {
         "generated_at": datetime.now(UTC).isoformat(),
@@ -286,6 +321,16 @@ def build_static_site(output_dir: Path = Path("site"), database_path: Path | Non
             "modeling_allowed": False,
         },
         "acceptance_queue": acceptance_queue,
+        "calibration": {
+            **readiness.as_public_status(),
+            "claimed_tier": claimed_tier.value,
+            "statement": (
+                "This reading is a deterministic heuristic. It is not calibrated against "
+                "historical crisis or benign investment cycles."
+                if not readiness.historically_calibrated
+                else "This reading is placed against accepted historical episodes."
+            ),
+        },
     }
     state_identity = _database_state_identity(actual_database_path)
     payload.update(state_identity)

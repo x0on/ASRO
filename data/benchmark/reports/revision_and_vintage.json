@@ -1,0 +1,63 @@
+{
+ "vintage_rule": "earliest XBRL filing at or before the episode availability cutoff",
+ "control_series": {
+  "bank_deposits": {
+   "vintage_basis": "latest_revision",
+   "fred_series_id": "DPSACBW027SBOG",
+   "observations": 367
+  },
+  "commercial_industrial_loans": {
+   "vintage_basis": "latest_revision",
+   "fred_series_id": "BUSLOANS",
+   "observations": 367
+  },
+  "electricity_price": {
+   "vintage_basis": "as_published",
+   "fred_series_id": "APU000072610",
+   "observations": 366
+  },
+  "mortgage_rate": {
+   "vintage_basis": "as_published",
+   "fred_series_id": "MORTGAGE30US",
+   "observations": 367
+  },
+  "oil_price": {
+   "vintage_basis": "as_published",
+   "fred_series_id": "WTISPLC",
+   "observations": 367
+  },
+  "policy_rate": {
+   "vintage_basis": "as_published",
+   "fred_series_id": "FEDFUNDS",
+   "observations": 367
+  },
+  "private_fixed_investment": {
+   "vintage_basis": "latest_revision",
+   "fred_series_id": "PNFI",
+   "observations": 366
+  },
+  "real_personal_consumption": {
+   "vintage_basis": "latest_revision",
+   "fred_series_id": "PCEC96",
+   "observations": 235
+  },
+  "ten_year_treasury": {
+   "vintage_basis": "as_published",
+   "fred_series_id": "DGS10",
+   "observations": 367
+  },
+  "unemployment_rate": {
+   "vintage_basis": "latest_revision",
+   "fred_series_id": "UNRATE",
+   "observations": 366
+  }
+ },
+ "restatements_rejected_note": "later restatements are recorded as rejections during selection and never overwrite the original filing",
+ "unavailable_control_series": {
+  "high_yield_spread": "ICE BofA high-yield option-adjusted spread (BAMLH0A0HYM2) is licensed and the public CSV returns only a rolling three-year window, so history before 2023 is not reachable.",
+  "investment_grade_spread": "ICE BofA investment-grade option-adjusted spread (BAMLC0A0CM) is truncated to a rolling three-year window on the public endpoint.",
+  "speculative_default_rate": "Rating-agency speculative-grade default rates are not published on a freely accessible endpoint; business_loan_delinquency is ingested as a labelled proxy and is not a substitute.",
+  "equity_index_pe": "Index-level earnings multiples require an index-provider licence.",
+  "equity_index_concentration": "Index constituent weights require an index-provider licence or N-PORT parsing that is out of scope for the control layer."
+ }
+}

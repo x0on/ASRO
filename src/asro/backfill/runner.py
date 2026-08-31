@@ -467,15 +467,26 @@ class BackfillRunner:
     def _source_supports_month(
         self, document_id: str, entity_id: str, start: str, end: str, cutoff: str
     ) -> bool:
+        """Whether a document carries reviewed, canonically assigned evidence for a month.
+
+        Leakage is governed by `availability_at` and by the canonical assignment's
+        `available_at`: both answer "was this knowable then". `extracted_at` and
+        `reviewed_at` answer a different question, namely when this observatory did its
+        own work, and for a historical backfill that is necessarily today. Requiring them
+        to precede the cutoff would make every retrospective episode permanently
+        uncoverable while protecting against nothing, so they are recorded and audited but
+        not used as an as-of filter here. The leakage report still rejects any observation
+        whose availability postdates the cutoff.
+        """
         return (
             self._connection.execute(
                 """SELECT 1 FROM observation_v2
                    JOIN evidence_reviews review ON review.review_id=observation_v2.review_id
                    WHERE source_document_id=? AND entity_id=?
                    AND period_start<=? AND period_end>=?
-                   AND availability_at<=? AND extracted_at<=?
-                   AND review.decision IN ('confirm','merge') AND review.reviewed_at<=?""",
-                (document_id, entity_id, end, start, cutoff, cutoff, cutoff),
+                   AND availability_at<=?
+                   AND review.decision IN ('confirm','merge')""",
+                (document_id, entity_id, end, start, cutoff),
             ).fetchone()
             is not None
             and self._connection.execute(
@@ -485,14 +496,14 @@ class BackfillRunner:
                      ON assignment.event_id=observation.event_id
                    WHERE observation.source_document_id=? AND observation.entity_id=?
                      AND observation.period_start<=? AND observation.period_end>=?
-                     AND observation.availability_at<=? AND observation.extracted_at<=?
-                     AND review.decision IN ('confirm','merge') AND review.reviewed_at<=?
+                     AND observation.availability_at<=?
+                     AND review.decision IN ('confirm','merge')
                      AND assignment.available_at<=?
                      AND NOT EXISTS(
                        SELECT 1 FROM canonical_fact_assignment correction
                        WHERE correction.supersedes_assignment_id=assignment.assignment_id
                          AND correction.available_at<=?)""",
-                (document_id, entity_id, end, start, cutoff, cutoff, cutoff, cutoff, cutoff),
+                (document_id, entity_id, end, start, cutoff, cutoff, cutoff),
             ).fetchone()
             is not None
         )
