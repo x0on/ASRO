@@ -3,58 +3,58 @@
  "output_tier": "descriptive",
  "historically_calibrated": false,
  "accepted_episodes": {
-  "crisis": 0,
-  "benign": 0,
-  "current": 1
+  "crisis": 2,
+  "benign": 1,
+  "current": 2
  },
  "causal_role_coverage": {
   "boom": {
    "catalog_variables": 8,
-   "observed_variables": 0,
+   "observed_variables": 1,
    "documented_insufficiency": null,
-   "satisfied": false
+   "satisfied": true
   },
   "validation": {
    "catalog_variables": 8,
-   "observed_variables": 0,
+   "observed_variables": 4,
    "documented_insufficiency": null,
-   "satisfied": false
+   "satisfied": true
   },
   "vulnerability": {
    "catalog_variables": 17,
-   "observed_variables": 0,
+   "observed_variables": 5,
    "documented_insufficiency": null,
-   "satisfied": false
+   "satisfied": true
   },
   "shock": {
    "catalog_variables": 7,
-   "observed_variables": 1,
+   "observed_variables": 3,
    "documented_insufficiency": "Policy-rate, input-price and funding-disruption shocks are covered by control series, but the two spread series that carry funding-market disruption for pre-2023 episodes (ICE BofA high-yield and investment-grade option-adjusted spreads) are licensed and the public endpoint returns only a rolling three-year window. Technological obsolescence and asset-collateral shocks have no public index for the asset classes involved.",
    "satisfied": true
   },
   "transmission": {
    "catalog_variables": 8,
-   "observed_variables": 0,
+   "observed_variables": 1,
    "documented_insufficiency": "Bank exposure is covered by supervisory aggregates. Insurer, leveraged-fund, retirement look-through and network-concentration measures require N-PORT parsing, statutory filings and a relationship graph built to a uniform standard across episodes, none of which exists yet. Index and passive weights require an index-provider licence.",
-   "satisfied": false
+   "satisfied": true
   },
   "activated_stress": {
    "catalog_variables": 13,
-   "observed_variables": 0,
+   "observed_variables": 1,
    "documented_insufficiency": null,
-   "satisfied": false
+   "satisfied": true
   },
   "real_economy": {
    "catalog_variables": 7,
-   "observed_variables": 0,
+   "observed_variables": 3,
    "documented_insufficiency": null,
-   "satisfied": false
+   "satisfied": true
   },
   "resilience": {
    "catalog_variables": 9,
-   "observed_variables": 0,
+   "observed_variables": 2,
    "documented_insufficiency": null,
-   "satisfied": false
+   "satisfied": true
   }
  },
  "revised_only_control_series": [
@@ -63,15 +63,29 @@
   "semiconductor_cycle"
  ],
  "blocking_reasons": [
-  "accepted crisis episodes 0 below required 2",
-  "accepted benign episodes 0 below required 1",
-  "causal roles with no measured evidence in an accepted episode: activated_stress, boom, real_economy, resilience, transmission, validation, vulnerability (1 with a documented reason, which does not close them)",
-  "debt and fixed-obligation ratios not observed: debt_to_operating_cash_flow, debt_to_assets, fixed_obligations_to_external_cash",
-  "control series in accepted episodes are latest-revision, not point-in-time: credit_spread, policy_rate, semiconductor_cycle",
-  "no resilience or counter-evidence variable is observed"
+  "control series in accepted episodes are latest-revision, not point-in-time: credit_spread, policy_rate, semiconductor_cycle"
  ],
  "observed_variable_keys": [
-  "policy_rate_change"
+  "accumulated_other_comprehensive_income",
+  "bank_exposure",
+  "capex_to_revenue",
+  "capital_expenditure",
+  "credit_contraction",
+  "credit_spread_level",
+  "debt_to_assets",
+  "debt_to_operating_cash_flow",
+  "deposit_funding_share",
+  "equity_to_assets",
+  "external_cash_generation",
+  "external_revenue",
+  "fixed_obligations_to_external_cash",
+  "free_cash_flow",
+  "funding_market_disruption",
+  "household_wealth_effect",
+  "input_price_shock",
+  "policy_rate_change",
+  "resilient_liquidity_runway",
+  "unemployment_change"
  ],
  "catalog_variable_count": 77,
  "episode_runs_considered": [
@@ -79,13 +93,13 @@
    "episode_id": "benign-infrastructure-capex",
    "stratum": "benign",
    "accepted": false,
-   "run_id": "41627ba88a626506798161810a70016caed18b802328ac3f1f87bf6afad21a6a"
+   "run_id": "4733e7d8177e6d99a33d28bd40d1f2dd4d8f4e1228d1eb47a95f5629ac36a18d"
   },
   {
    "episode_id": "current-ai-cycle",
    "stratum": "current",
-   "accepted": false,
-   "run_id": "f2387ac569fdd73cfb5784b9c4a05bdcbdd15bc575250b84c3db83ffea3309bb"
+   "accepted": true,
+   "run_id": "3d50a9cba6af847d0c364b88617e75bab01e4c4f154a2668a7185788b3a222df"
   },
   {
    "episode_id": "current-ai-cycle-4x6-2025h2-slice",
@@ -102,29 +116,29 @@
   {
    "episode_id": "pandemic-technology-acceleration",
    "stratum": "benign",
-   "accepted": false,
-   "run_id": "f526aeca0036683320ba941b0db0d581638cadd0b20e608ccf8b7fe3bb36c434"
+   "accepted": true,
+   "run_id": "a7eb17395e0c6e0c1671ada58baae8c97067d5bd9e76254f222ade270352dad4"
   },
   {
    "episode_id": "regional-bank-stress",
    "stratum": "crisis",
-   "accepted": false,
-   "run_id": "a6f2171c54c4d482ee4150da43acc031b4f216335adcf864064ee0fa2dd18124"
+   "accepted": true,
+   "run_id": "5cc63cf819bbf9d4754e5698dfab00f1a4013e529af6f778e7c1a34587c33f16"
   },
   {
    "episode_id": "shale-financing",
    "stratum": "crisis",
-   "accepted": false,
-   "run_id": "8f33b6acdc865057805a4722cae219b646c06acb2209a05462e22c763dfdefc1"
+   "accepted": true,
+   "run_id": "af6bb8208c25a6a3c3cf18a81a56162285038d2039f0914410130823072b1969"
   }
  ],
  "reported_run_ids": [
-  "41627ba88a626506798161810a70016caed18b802328ac3f1f87bf6afad21a6a",
-  "f2387ac569fdd73cfb5784b9c4a05bdcbdd15bc575250b84c3db83ffea3309bb",
+  "4733e7d8177e6d99a33d28bd40d1f2dd4d8f4e1228d1eb47a95f5629ac36a18d",
+  "3d50a9cba6af847d0c364b88617e75bab01e4c4f154a2668a7185788b3a222df",
   "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
   "7c64a02395918e87a03019baa755ecc6ef8888e97373a691a38f5628a4a67861",
-  "f526aeca0036683320ba941b0db0d581638cadd0b20e608ccf8b7fe3bb36c434",
-  "a6f2171c54c4d482ee4150da43acc031b4f216335adcf864064ee0fa2dd18124",
-  "8f33b6acdc865057805a4722cae219b646c06acb2209a05462e22c763dfdefc1"
+  "a7eb17395e0c6e0c1671ada58baae8c97067d5bd9e76254f222ade270352dad4",
+  "5cc63cf819bbf9d4754e5698dfab00f1a4013e529af6f778e7c1a34587c33f16",
+  "af6bb8208c25a6a3c3cf18a81a56162285038d2039f0914410130823072b1969"
  ]
 }

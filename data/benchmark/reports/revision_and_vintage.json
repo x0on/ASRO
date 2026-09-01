@@ -14,18 +14,54 @@
   "housing-credit": "2011-01-31"
  },
  "reported_run_ids": [
-  "41627ba88a626506798161810a70016caed18b802328ac3f1f87bf6afad21a6a",
-  "f2387ac569fdd73cfb5784b9c4a05bdcbdd15bc575250b84c3db83ffea3309bb",
+  "4733e7d8177e6d99a33d28bd40d1f2dd4d8f4e1228d1eb47a95f5629ac36a18d",
+  "3d50a9cba6af847d0c364b88617e75bab01e4c4f154a2668a7185788b3a222df",
   "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
   "7c64a02395918e87a03019baa755ecc6ef8888e97373a691a38f5628a4a67861",
-  "f526aeca0036683320ba941b0db0d581638cadd0b20e608ccf8b7fe3bb36c434",
-  "a6f2171c54c4d482ee4150da43acc031b4f216335adcf864064ee0fa2dd18124",
-  "8f33b6acdc865057805a4722cae219b646c06acb2209a05462e22c763dfdefc1"
+  "a7eb17395e0c6e0c1671ada58baae8c97067d5bd9e76254f222ade270352dad4",
+  "5cc63cf819bbf9d4754e5698dfab00f1a4013e529af6f778e7c1a34587c33f16",
+  "af6bb8208c25a6a3c3cf18a81a56162285038d2039f0914410130823072b1969"
  ],
  "accepted_run_ids": [
-  "7c64a02395918e87a03019baa755ecc6ef8888e97373a691a38f5628a4a67861"
+  "3d50a9cba6af847d0c364b88617e75bab01e4c4f154a2668a7185788b3a222df",
+  "7c64a02395918e87a03019baa755ecc6ef8888e97373a691a38f5628a4a67861",
+  "a7eb17395e0c6e0c1671ada58baae8c97067d5bd9e76254f222ade270352dad4",
+  "5cc63cf819bbf9d4754e5698dfab00f1a4013e529af6f778e7c1a34587c33f16",
+  "af6bb8208c25a6a3c3cf18a81a56162285038d2039f0914410130823072b1969"
  ],
  "control_series": {
+  "commercial_industrial_loans": [
+   {
+    "vintage": "point_in_time:2017-01-31",
+    "fred_series_id": "BUSLOANS",
+    "run_id": "4733e7d8177e6d99a33d28bd40d1f2dd4d8f4e1228d1eb47a95f5629ac36a18d",
+    "in_accepted_run": false,
+    "observations": 60
+   },
+   {
+    "vintage": "point_in_time:2026-08-01",
+    "fred_series_id": "BUSLOANS",
+    "run_id": "3d50a9cba6af847d0c364b88617e75bab01e4c4f154a2668a7185788b3a222df",
+    "in_accepted_run": true,
+    "observations": 54
+   }
+  ],
+  "corporate_bond_spread": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "BAA10Y",
+    "run_id": "5cc63cf819bbf9d4754e5698dfab00f1a4013e529af6f778e7c1a34587c33f16",
+    "in_accepted_run": true,
+    "observations": 27
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "BAA10Y",
+    "run_id": "af6bb8208c25a6a3c3cf18a81a56162285038d2039f0914410130823072b1969",
+    "in_accepted_run": true,
+    "observations": 96
+   }
+  ],
   "credit_spread": [
    {
     "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
@@ -49,7 +85,60 @@
     "observations": 6
    }
   ],
+  "electricity_price": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "APU000072610",
+    "run_id": "3d50a9cba6af847d0c364b88617e75bab01e4c4f154a2668a7185788b3a222df",
+    "in_accepted_run": true,
+    "observations": 53
+   }
+  ],
+  "oil_price": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "WTISPLC",
+    "run_id": "af6bb8208c25a6a3c3cf18a81a56162285038d2039f0914410130823072b1969",
+    "in_accepted_run": true,
+    "observations": 96
+   }
+  ],
   "policy_rate": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "3d50a9cba6af847d0c364b88617e75bab01e4c4f154a2668a7185788b3a222df",
+    "in_accepted_run": true,
+    "observations": 55
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "4733e7d8177e6d99a33d28bd40d1f2dd4d8f4e1228d1eb47a95f5629ac36a18d",
+    "in_accepted_run": false,
+    "observations": 60
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "5cc63cf819bbf9d4754e5698dfab00f1a4013e529af6f778e7c1a34587c33f16",
+    "in_accepted_run": true,
+    "observations": 27
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "a7eb17395e0c6e0c1671ada58baae8c97067d5bd9e76254f222ade270352dad4",
+    "in_accepted_run": true,
+    "observations": 36
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "af6bb8208c25a6a3c3cf18a81a56162285038d2039f0914410130823072b1969",
+    "in_accepted_run": true,
+    "observations": 96
+   },
    {
     "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
     "fred_series_id": null,
@@ -70,6 +159,24 @@
     "run_id": "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
     "in_accepted_run": false,
     "observations": 6
+   }
+  ],
+  "private_fixed_investment": [
+   {
+    "vintage": "point_in_time:2017-01-31",
+    "fred_series_id": "PNFI",
+    "run_id": "4733e7d8177e6d99a33d28bd40d1f2dd4d8f4e1228d1eb47a95f5629ac36a18d",
+    "in_accepted_run": false,
+    "observations": 60
+   }
+  ],
+  "real_personal_consumption": [
+   {
+    "vintage": "point_in_time:2023-01-31",
+    "fred_series_id": "PCEC96",
+    "run_id": "a7eb17395e0c6e0c1671ada58baae8c97067d5bd9e76254f222ade270352dad4",
+    "in_accepted_run": true,
+    "observations": 36
    }
   ],
   "semiconductor_cycle": [
@@ -93,11 +200,53 @@
     "run_id": "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
     "in_accepted_run": false,
     "observations": 6
+   }
+  ],
+  "ten_year_treasury": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "DGS10",
+    "run_id": "5cc63cf819bbf9d4754e5698dfab00f1a4013e529af6f778e7c1a34587c33f16",
+    "in_accepted_run": true,
+    "observations": 27
+   }
+  ],
+  "unemployment_rate": [
+   {
+    "vintage": "point_in_time:2023-01-31",
+    "fred_series_id": "UNRATE",
+    "run_id": "a7eb17395e0c6e0c1671ada58baae8c97067d5bd9e76254f222ade270352dad4",
+    "in_accepted_run": true,
+    "observations": 36
    }
   ]
  },
  "control_series_note": "control_series is scoped to reported_run_ids: the snapshots the reported runs froze, one entry per run. Only entries with in_accepted_run can block calibration, which is why a revised vintage may appear here without appearing in the gate's revised_only_control_series. store_inventory is the whole shared store, including vintages no reported run selected.",
  "store_inventory": {
+  "commercial_industrial_loans": [
+   {
+    "vintage": "point_in_time:2004-01-31",
+    "fred_series_id": "BUSLOANS",
+    "observations": 684
+   },
+   {
+    "vintage": "point_in_time:2017-01-31",
+    "fred_series_id": "BUSLOANS",
+    "observations": 840
+   },
+   {
+    "vintage": "point_in_time:2026-08-01",
+    "fred_series_id": "BUSLOANS",
+    "observations": 954
+   }
+  ],
+  "corporate_bond_spread": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "BAA10Y",
+    "observations": 488
+   }
+  ],
   "credit_spread": [
    {
     "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
@@ -110,7 +259,33 @@
     "observations": 6
    }
   ],
+  "electricity_price": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "APU000072610",
+    "observations": 571
+   }
+  ],
+  "mortgage_rate": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "MORTGAGE30US",
+    "observations": 665
+   }
+  ],
+  "oil_price": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "WTISPLC",
+    "observations": 967
+   }
+  ],
   "policy_rate": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "observations": 865
+   },
    {
     "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
     "fred_series_id": null,
@@ -120,6 +295,20 @@
     "vintage": "current-vintage-retrieved-2026-08-27T21:13:49+00:00",
     "fred_series_id": null,
     "observations": 6
+   }
+  ],
+  "private_fixed_investment": [
+   {
+    "vintage": "point_in_time:2017-01-31",
+    "fred_series_id": "PNFI",
+    "observations": 840
+   }
+  ],
+  "real_personal_consumption": [
+   {
+    "vintage": "point_in_time:2023-01-31",
+    "fred_series_id": "PCEC96",
+    "observations": 252
    }
   ],
   "semiconductor_cycle": [
@@ -132,6 +321,30 @@
     "vintage": "current-vintage-retrieved-2026-08-27T21:13:50+00:00",
     "fred_series_id": null,
     "observations": 6
+   }
+  ],
+  "ten_year_treasury": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "DGS10",
+    "observations": 776
+   }
+  ],
+  "unemployment_rate": [
+   {
+    "vintage": "point_in_time:2004-01-31",
+    "fred_series_id": "UNRATE",
+    "observations": 672
+   },
+   {
+    "vintage": "point_in_time:2011-01-31",
+    "fred_series_id": "UNRATE",
+    "observations": 756
+   },
+   {
+    "vintage": "point_in_time:2023-01-31",
+    "fred_series_id": "UNRATE",
+    "observations": 900
    }
   ]
  },
