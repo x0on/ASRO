@@ -1,15 +1,15 @@
 episode_id = "shale-financing"
-version = "3.0.0"
+version = "4.0.0"
 title = "Shale financing and commodity retrenchment"
 stratum = "crisis"
 period_start = 2010-01-01
 period_end = 2017-12-31
 availability_cutoff = 2018-01-31T00:00:00Z
-entities = ["Chesapeake Energy", "Whiting Petroleum", "Halliburton"]
+entities = ["Chesapeake Energy", "Continental Resources", "Halliburton"]
 controls = [
 {series_id="policy_rate", version="1.0.0", unit="percent"},
 {series_id="oil_price", version="1.0.0", unit="usd_per_barrel"},
-{series_id="commercial_industrial_loans", version="1.0.0", unit="usd_billions"},
+{series_id="corporate_bond_spread", version="1.0.0", unit="percent"},
 ]
 features = [
 {feature_key="capital_expenditure", feature_version="1.0.0"},
@@ -23,7 +23,7 @@ features = [
 ]
 schema_version = "v2"
 extractor_version = "1.0.0"
-feature_set_version = "historical-benchmark-1.0.0"
+feature_set_version = "historical-benchmark-2.0.0"
 
 [[source_plan]]
 source_id = "primary-filings"
@@ -31,9 +31,10 @@ source_pattern = "SEC"
 tier = "primary"
 required = true
 
-# Thresholds fixed before any coverage was measured. Feature coverage is allowed to fall
-# short of one because a month can legitimately sit between filings; sources and controls
-# are held near-complete because a gap there means the evidence is simply absent.
+# Thresholds unchanged from the reviewed v3 manifests and fixed before any coverage was
+# measured. Feature coverage may fall short of one because a month can sit between
+# filings; sources and controls are held near-complete because a gap there means the
+# evidence is simply absent.
 [coverage_gate]
 minimum_entity_month_feature_coverage = 0.90
 minimum_entity_source_coverage = 0.95

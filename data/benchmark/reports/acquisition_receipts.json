@@ -1,0 +1,4427 @@
+{
+ "control_series_acquired": [
+  {
+   "series_id": "commercial_industrial_loans",
+   "fred_series_id": "BUSLOANS",
+   "vintage": "latest_revision",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BUSLOANS",
+   "content_sha256": "5371055a02c70eef115ad132d5ced4821c61954fc983b37ccce8ae5cb79cc859",
+   "monthly_observations": 367
+  },
+  {
+   "series_id": "corporate_bond_spread",
+   "fred_series_id": "BAA10Y",
+   "vintage": "as_published",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=BAA10Y",
+   "content_sha256": "a8fea4334ced96f959ba1f34db869b91f47a4899e048911536fc908c52523381",
+   "monthly_observations": 367
+  },
+  {
+   "series_id": "electricity_price",
+   "fred_series_id": "APU000072610",
+   "vintage": "as_published",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=APU000072610",
+   "content_sha256": "5c7ab8df6563a095aa44c52fdd9bfec48188c59ecc7505303b9e8722a7460033",
+   "monthly_observations": 366
+  },
+  {
+   "series_id": "mortgage_rate",
+   "fred_series_id": "MORTGAGE30US",
+   "vintage": "as_published",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=MORTGAGE30US",
+   "content_sha256": "c3cbce71ddda380e1cea01bcc867fe29f2108040c503fcfd912e0d6adae98205",
+   "monthly_observations": 367
+  },
+  {
+   "series_id": "oil_price",
+   "fred_series_id": "WTISPLC",
+   "vintage": "as_published",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=WTISPLC",
+   "content_sha256": "c743308284c5e8c53e38f580338367461b0860ece94c13bb5e8491f32802b732",
+   "monthly_observations": 367
+  },
+  {
+   "series_id": "policy_rate",
+   "fred_series_id": "FEDFUNDS",
+   "vintage": "as_published",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=FEDFUNDS",
+   "content_sha256": "8c320a5e17fc8f0b41a42b537309f261371f7926563f829411af4a9358a4db44",
+   "monthly_observations": 367
+  },
+  {
+   "series_id": "private_fixed_investment",
+   "fred_series_id": "PNFI",
+   "vintage": "latest_revision",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PNFI",
+   "content_sha256": "549e883a0039d6cbd27ae090dfab89fabf911800f89b17227b4326850a272245",
+   "monthly_observations": 366
+  },
+  {
+   "series_id": "real_personal_consumption",
+   "fred_series_id": "PCEC96",
+   "vintage": "latest_revision",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=PCEC96",
+   "content_sha256": "fe4d77f0da74c46555ce29fcad1fb122a14f02071fef3928cb45770680894aab",
+   "monthly_observations": 235
+  },
+  {
+   "series_id": "ten_year_treasury",
+   "fred_series_id": "DGS10",
+   "vintage": "as_published",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10",
+   "content_sha256": "7eabc7416ef3bb242e9515f17ff9c9de7a3d57b91c3a4d592674894e1906aae0",
+   "monthly_observations": 367
+  },
+  {
+   "series_id": "unemployment_rate",
+   "fred_series_id": "UNRATE",
+   "vintage": "latest_revision",
+   "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=UNRATE",
+   "content_sha256": "b671b94c9381e263cafeb2c24f035b49829d805ee2650498c8eb08a33b156f60",
+   "monthly_observations": 366
+  }
+ ],
+ "sec_filings_acquired_count": 434,
+ "sec_filings_acquired": [
+  {
+   "document_id": "27f0e43e62280ac90179c30cbd45d549f12d6dbea2db1be33bfc2271c6f2c6fd",
+   "title": "Crown Castle 10-Q/A 0001193125-09-183869 filed 2009-08-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000119312509183869/0001193125-09-183869-index.htm",
+   "filed": "2009-08-28",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "c87b5f1797fe7f54f8233785577c84a8400c7114673346081134720d423f33a7",
+   "title": "Halliburton 10-Q 0000045012-09-000390 filed 2009-10-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501209000390/0000045012-09-000390-index.htm",
+   "filed": "2009-10-23",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "e8858b60ee49383f4efc945467e5e5a33286852b748e0ed23ab4171d4cd73b6b",
+   "title": "American Tower 10-Q 0001193125-09-225699 filed 2009-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312509225699/0001193125-09-225699-index.htm",
+   "filed": "2009-11-05",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "8804aacaaa68e4706058631ab07469ae623e7699c48950a6ce5e5d91056490fb",
+   "title": "Crown Castle 10-Q 0001193125-09-225905 filed 2009-11-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000119312509225905/0001193125-09-225905-index.htm",
+   "filed": "2009-11-06",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "822d1c39d7b80a817d46179c064489f6b931717d34d43ef133c1dc4b60ef53d2",
+   "title": "Chesapeake Energy 10-Q 0001193125-09-229377 filed 2009-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312509229377/0001193125-09-229377-index.htm",
+   "filed": "2009-11-09",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 22
+  },
+  {
+   "document_id": "a25bc786435cc5a8213b12fd0b3c29b87a28a211f0eec7189cdf27386582e485",
+   "title": "Crown Castle 10-K 0001193125-10-031419 filed 2010-02-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000119312510031419/0001193125-10-031419-index.htm",
+   "filed": "2010-02-16",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 21
+  },
+  {
+   "document_id": "a26638e64a6e4d7863a3518584917c3fe6124d23e6355e34b0ee1a005474a2bf",
+   "title": "Halliburton 10-K 0000045012-10-000085 filed 2010-02-17",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501210000085/0000045012-10-000085-index.htm",
+   "filed": "2010-02-17",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "c08e88e58111b52c8591e9360e1cbdea5b87a047d4125ee6246a4801a5a2192e",
+   "title": "Chesapeake Energy 10-K 0001193125-10-044784 filed 2010-03-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312510044784/0001193125-10-044784-index.htm",
+   "filed": "2010-03-01",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 24
+  },
+  {
+   "document_id": "e23a8abfd3e27a929e25ad4bd782b8767201dbf9af843d3317bd7871abd89866",
+   "title": "American Tower 10-K 0001193125-10-044876 filed 2010-03-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312510044876/0001193125-10-044876-index.htm",
+   "filed": "2010-03-01",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "4f70856dfa88a3ad448adfce457cea8f8176bb20c4490a0da2bb98777568bc54",
+   "title": "Halliburton 10-Q/A 0000045012-09-000273 filed 2010-04-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501209000273/0000045012-09-000273-index.htm",
+   "filed": "2010-04-22",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 8
+  },
+  {
+   "document_id": "5c034dc51e9b82f2032559569636bfa224fcf3fd6782d09d4cd42a0859c55a7e",
+   "title": "Halliburton 10-Q 0000045012-10-000170 filed 2010-04-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501210000170/0000045012-10-000170-index.htm",
+   "filed": "2010-04-22",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "189f24391701408ce8f4317ebfac7f4b768c366dc9f0360c3d8624b393212e7d",
+   "title": "American Tower 10-Q 0001193125-09-167155 filed 2010-05-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312509167155/0001193125-09-167155-index.htm",
+   "filed": "2010-05-06",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "6d3b430e88df460f337efb29c7c71d297d5c07fe01b5b7b68a4a7682de9978a9",
+   "title": "American Tower 10-Q 0001193125-10-111052 filed 2010-05-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312510111052/0001193125-10-111052-index.htm",
+   "filed": "2010-05-06",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "29b74ee47ce4e14224020fdd654ef2c62cea447a74bd2a7ce12c20a94ca1be53",
+   "title": "Chesapeake Energy 10-Q 0001193125-09-170647 filed 2010-05-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312509170647/0001193125-09-170647-index.htm",
+   "filed": "2010-05-10",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 19
+  },
+  {
+   "document_id": "356aae88adde4cf37ab1bbc7368b991a7400360983596002fb6d631415ebdf2b",
+   "title": "Crown Castle 10-Q 0001193125-10-113706 filed 2010-05-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000119312510113706/0001193125-10-113706-index.htm",
+   "filed": "2010-05-10",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 25
+  },
+  {
+   "document_id": "44907d55f733f43a8be0f43fe62b9de96b91e9dfb86dba5f7f4e02db0708443a",
+   "title": "Chesapeake Energy 10-Q 0001193125-10-114778 filed 2010-05-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312510114778/0001193125-10-114778-index.htm",
+   "filed": "2010-05-10",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 21
+  },
+  {
+   "document_id": "b3de64d9c35e64baf5ffc160f271ddb9f38a09c24384c45f09a9459a1ed7f708",
+   "title": "Halliburton 10-Q 0000045012-10-000226 filed 2010-07-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501210000226/0000045012-10-000226-index.htm",
+   "filed": "2010-07-23",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 7
+  },
+  {
+   "document_id": "d3ef0b7e48de9b843be05edcc527634e8723d11e5f08823b426e4b3055fcdfaf",
+   "title": "Equinix 10-Q 0001193125-10-176872 filed 2010-08-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312510176872/0001193125-10-176872-index.htm",
+   "filed": "2010-08-04",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "ebf6fce09d003e9a3aced116bdb5bc9822b63a98aad45eca9a14a379a94a7dc2",
+   "title": "American Tower 10-Q 0001193125-10-179874 filed 2010-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312510179874/0001193125-10-179874-index.htm",
+   "filed": "2010-08-06",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "70d15e4f93f0b5ef063c5ffb707d79e7808600576f0dcfa561fd6a428df94e1e",
+   "title": "Chesapeake Energy 10-Q 0001193125-10-182451 filed 2010-08-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312510182451/0001193125-10-182451-index.htm",
+   "filed": "2010-08-09",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "639ccc53c62846e088a374f4b18355ca34d4682ab9e415d18d4a5eeee32e38ab",
+   "title": "Crown Castle 10-Q/A 0001193125-10-198338 filed 2010-08-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000119312510198338/0001193125-10-198338-index.htm",
+   "filed": "2010-08-26",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "9bbdbc8f5f5525a21c924c9ed835dfb5cc50feecc602b5ac7b284e6ad16b9c1a",
+   "title": "Halliburton 10-Q 0000045012-10-000345 filed 2010-10-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501210000345/0000045012-10-000345-index.htm",
+   "filed": "2010-10-22",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 7
+  },
+  {
+   "document_id": "51f0eb2884dbbc85bebd5da27f6343faa2c6c4c836c3d757b4e6e0839e221521",
+   "title": "Equinix 10-Q 0001193125-10-241047 filed 2010-10-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312510241047/0001193125-10-241047-index.htm",
+   "filed": "2010-10-29",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 8
+  },
+  {
+   "document_id": "3924076f1e42959f15870a3a4fafff10e9689fc5565198badf87f6cd62d451c8",
+   "title": "Crown Castle 10-Q 0001445305-10-001287 filed 2010-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000144530510001287/0001445305-10-001287-index.htm",
+   "filed": "2010-11-05",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "a82a1377255e6f84469f718da5ccebb9c77510036514f08003d0c62dc16c1b6e",
+   "title": "Continental Resources 10-Q 0001193125-10-249335 filed 2010-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312510249335/0001193125-10-249335-index.htm",
+   "filed": "2010-11-05",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 20
+  },
+  {
+   "document_id": "bb8e47191856a2fc9bbfef6b9beb58f277d14e68ad59d73813bb51c1b03f2f3e",
+   "title": "American Tower 10-Q 0001193125-10-250228 filed 2010-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312510250228/0001193125-10-250228-index.htm",
+   "filed": "2010-11-05",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "fa5e77f11cb6123313a45167aa138163d39f45c1f2fb704d78f43abacee90c3e",
+   "title": "Chesapeake Energy 10-Q 0001193125-10-254365 filed 2010-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312510254365/0001193125-10-254365-index.htm",
+   "filed": "2010-11-09",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "2c05b78228ffa79a635bd27d08dd2b5c128f818bb57947d922539ae033f2e3f6",
+   "title": "Crown Castle 10-K/A 0001445305-11-000278 filed 2011-02-17",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000144530511000278/0001445305-11-000278-index.htm",
+   "filed": "2011-02-17",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 20
+  },
+  {
+   "document_id": "42c2b02c2bca35d8fe0c52dc1bafbaeda968c547bdd7fd0d730b28ed17233801",
+   "title": "Halliburton 10-K 0000045012-11-000087 filed 2011-02-17",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501211000087/0000045012-11-000087-index.htm",
+   "filed": "2011-02-17",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "ae700c97fa925111fbbfc1754c73ebc6d8b1a4c0f02e8b9aa945d1273330b3dc",
+   "title": "Continental Resources 10-K 0001193125-11-046209 filed 2011-02-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312511046209/0001193125-11-046209-index.htm",
+   "filed": "2011-02-25",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "d3f0b7256a0145eef4d1b0ae59beda937fa1c87998f34691c9eee14d0f5c29b8",
+   "title": "Equinix 10-K 0001193125-11-047157 filed 2011-02-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312511047157/0001193125-11-047157-index.htm",
+   "filed": "2011-02-25",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 8
+  },
+  {
+   "document_id": "7b8ed5b7368dd8ceb6e2a083006aa2bc283fed59c9144d4bbc372a9af950444e",
+   "title": "American Tower 10-K 0001193125-11-050129 filed 2011-02-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312511050129/0001193125-11-050129-index.htm",
+   "filed": "2011-02-28",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "d4b49702188e43a2fdef7596e1ee88ffec8bc2603df7f148a3678cf43e56e818",
+   "title": "Chesapeake Energy 10-K 0001193125-11-052349 filed 2011-03-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312511052349/0001193125-11-052349-index.htm",
+   "filed": "2011-03-01",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "a0731199a715d3583169671ca006a364aa7d83767255afcb025dcca720cee69e",
+   "title": "Halliburton 10-Q 0000045012-11-000194 filed 2011-04-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501211000194/0000045012-11-000194-index.htm",
+   "filed": "2011-04-22",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 6
+  },
+  {
+   "document_id": "29a750891192e408e218db2ee8a1aa4ad272e65c89bec6cb37d0f49541ad2755",
+   "title": "Equinix 10-Q 0001193125-11-118503 filed 2011-04-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312511118503/0001193125-11-118503-index.htm",
+   "filed": "2011-04-29",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "0037e2bb21a6ca59b3066fd6117882ead4d67098e5436384accbfb5ab81c4f5d",
+   "title": "American Tower 10-Q 0001193125-11-128578 filed 2011-05-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312511128578/0001193125-11-128578-index.htm",
+   "filed": "2011-05-05",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "1eae3f7ff8c639ecd813364dc764ed0dab4fb25595f4d8e8f616c8493c100842",
+   "title": "Continental Resources 10-Q 0001193125-11-128377 filed 2011-05-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312511128377/0001193125-11-128377-index.htm",
+   "filed": "2011-05-05",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 23
+  },
+  {
+   "document_id": "20c1ac868819003a4fa678b67e5a0386924137a42780fd045874fc6a421e9b95",
+   "title": "Continental Resources 10-Q 0001193125-10-180805 filed 2011-05-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312510180805/0001193125-10-180805-index.htm",
+   "filed": "2011-05-05",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "6cb4634582668a5863737e451552f257a695c7f495822110f280442b106fa795",
+   "title": "Crown Castle 10-Q 0001445305-11-000835 filed 2011-05-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000144530511000835/0001445305-11-000835-index.htm",
+   "filed": "2011-05-06",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "850648ee676059a28d09fe755c115890e21166849556b461b2d9a6b0f70bfaeb",
+   "title": "Chesapeake Energy 10-Q 0001193125-11-134388 filed 2011-05-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312511134388/0001193125-11-134388-index.htm",
+   "filed": "2011-05-10",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "c655161315ca8cdd7d09f05d59976603aadfe78d710b0c3a6be5bf1448573de1",
+   "title": "Halliburton 10-Q 0000045012-11-000273 filed 2011-07-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501211000273/0000045012-11-000273-index.htm",
+   "filed": "2011-07-21",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 8
+  },
+  {
+   "document_id": "400ac7dfe006dc8b2b8a442a094bd3b4431c6ec5e751a3db251b583283941b42",
+   "title": "Equinix 10-Q 0001193125-11-202647 filed 2011-07-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312511202647/0001193125-11-202647-index.htm",
+   "filed": "2011-07-29",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "3759a3306cebde5d352f3029533894e048ec8add56e5f227a272b0a769931cbb",
+   "title": "American Tower 10-Q 0001193125-11-210453 filed 2011-08-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312511210453/0001193125-11-210453-index.htm",
+   "filed": "2011-08-04",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "31b2fe5a4612585cbd1fa5abcfaeb1e432fd669f17af3a4acb2bd23a77c1f909",
+   "title": "Continental Resources 10-Q 0001193125-11-210956 filed 2011-08-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312511210956/0001193125-11-210956-index.htm",
+   "filed": "2011-08-05",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "91c0437724e8d87d93b49b78c7be7600f20b7edbac5b5d619a5e1f96853af009",
+   "title": "Crown Castle 10-Q 0001445305-11-002377 filed 2011-08-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000144530511002377/0001445305-11-002377-index.htm",
+   "filed": "2011-08-05",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "88e7df9b91101f28a5dba10cb29f22fd4a017eecdac5bed79fc38c59ebd1a15f",
+   "title": "Chesapeake Energy 10-Q 0001193125-11-216653 filed 2011-08-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312511216653/0001193125-11-216653-index.htm",
+   "filed": "2011-08-09",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "628b9a755d75569e811b0dcfefe582a082d84cfd5b8d4ae52b6484c7b118d3fb",
+   "title": "Halliburton 10-Q 0000045012-11-000354 filed 2011-10-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501211000354/0000045012-11-000354-index.htm",
+   "filed": "2011-10-21",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "03fc536bf2a91c561a5d563d50048dcbb22722827c3c876b31b59f83ef81bafe",
+   "title": "Equinix 10-Q 0001193125-11-286045 filed 2011-10-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312511286045/0001193125-11-286045-index.htm",
+   "filed": "2011-10-28",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "c954f84caa6be67668e8550893fd7045000d3c841fd78c9a62ae68d6c795c57f",
+   "title": "American Tower 10-Q 0001193125-11-291078 filed 2011-11-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312511291078/0001193125-11-291078-index.htm",
+   "filed": "2011-11-02",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "2746530bf339f33b585a9300e71f4d4e3699d14b6ab087fd390baaff396e53c4",
+   "title": "Crown Castle 10-Q 0001051470-11-000006 filed 2011-11-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147011000006/0001051470-11-000006-index.htm",
+   "filed": "2011-11-03",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "47962fd3f063fdb5a4b42f57635ce1f489e53e8c1678910c84bac42b5f63f98f",
+   "title": "Continental Resources 10-Q 0001193125-11-295218 filed 2011-11-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312511295218/0001193125-11-295218-index.htm",
+   "filed": "2011-11-03",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "114ff1580912cd103f18481ed4bf834d1a06e601a48d0620cb35e156350dc7d4",
+   "title": "Chesapeake Energy 10-Q 0001193125-11-304766 filed 2011-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312511304766/0001193125-11-304766-index.htm",
+   "filed": "2011-11-09",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "6a2a96a35fb4e1a2f2e868fea7015dddab404aaf56cd13e79989b07fdb3b1a74",
+   "title": "Crown Castle 10-K 0001051470-12-000007 filed 2012-02-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147012000007/0001051470-12-000007-index.htm",
+   "filed": "2012-02-13",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "38b23f0bd35fc26725e4fa53e6cc6dc1c805aef575278fcc06a13452fa267328",
+   "title": "Halliburton 10-K 0000045012-12-000075 filed 2012-02-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501212000075/0000045012-12-000075-index.htm",
+   "filed": "2012-02-16",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "46e01dd4b39e1491e0bad11482d2843889af728ddbe740e6960345b0c1eec502",
+   "title": "Continental Resources 10-K 0001193125-12-077054 filed 2012-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312512077054/0001193125-12-077054-index.htm",
+   "filed": "2012-02-24",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 19
+  },
+  {
+   "document_id": "d1c1963525818060908d28a383468f1f8e73ef9e59be5546a949b5103ddd742d",
+   "title": "Equinix 10-K 0001193125-12-077943 filed 2012-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312512077943/0001193125-12-077943-index.htm",
+   "filed": "2012-02-24",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "1d6659108de0c86f4d68dcf9157feba2fc8f50b39c5d80cea556fbc566d78a9c",
+   "title": "American Tower 10-K 0001193125-12-086162 filed 2012-02-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312512086162/0001193125-12-086162-index.htm",
+   "filed": "2012-02-29",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "abef7f12545c3b1ae1d9e0ab0ff8b59d341ebb95fd9ddfc95f0aa228a306c7ee",
+   "title": "Chesapeake Energy 10-K 0001193125-12-089591 filed 2012-02-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312512089591/0001193125-12-089591-index.htm",
+   "filed": "2012-02-29",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "afa592d0bd3c681d500dbe4554864258c3ab089f19d6daa9f04c038eabfe0e07",
+   "title": "Halliburton 10-Q 0000045012-12-000146 filed 2012-04-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501212000146/0000045012-12-000146-index.htm",
+   "filed": "2012-04-24",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "3556872b7d2ffb3dba66d099a035500ea6aaaa74c49d0270dc5907df2d9e4451",
+   "title": "Equinix 10-Q 0001193125-12-190764 filed 2012-04-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312512190764/0001193125-12-190764-index.htm",
+   "filed": "2012-04-27",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "1045ec20bdbfbd89e3c92c32765f0ea90dcbeabfcea8c77aa70c8414e88f96d6",
+   "title": "Crown Castle 10-Q 0001051470-12-000015 filed 2012-05-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147012000015/0001051470-12-000015-index.htm",
+   "filed": "2012-05-03",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "4b3d4acf131180d592ce528ec7749ef6f881a8df75a453b301715d01a76975bb",
+   "title": "American Tower 10-Q 0001193125-12-208966 filed 2012-05-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312512208966/0001193125-12-208966-index.htm",
+   "filed": "2012-05-03",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "7f441c99911150de5c862020f1183cc0fdcb95eef789765436ca47259dcaa5d3",
+   "title": "Continental Resources 10-Q 0001193125-12-208800 filed 2012-05-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312512208800/0001193125-12-208800-index.htm",
+   "filed": "2012-05-03",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "33c03bc09e69f3045438b49dcb890bba69df236fda820002210effc0d8ec1743",
+   "title": "Chesapeake Energy 10-Q 0001193125-12-228139 filed 2012-05-11",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312512228139/0001193125-12-228139-index.htm",
+   "filed": "2012-05-11",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "0900aeba6985691302dbffa1255273f016de6ddfa35507db2fb2b7e57c47925f",
+   "title": "Halliburton 10-Q 0000045012-12-000204 filed 2012-07-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501212000204/0000045012-12-000204-index.htm",
+   "filed": "2012-07-27",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "53ee04b8238985c5d02474aa542847c13011d261bab9754eb4f217d16aa78440",
+   "title": "Equinix 10-Q 0001193125-12-317379 filed 2012-07-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312512317379/0001193125-12-317379-index.htm",
+   "filed": "2012-07-27",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "5c8937a4e57a31fc8713521acf5facbc412120a6f5b0f43ef255be1a86432398",
+   "title": "American Tower 10-Q 0001193125-12-332009 filed 2012-08-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312512332009/0001193125-12-332009-index.htm",
+   "filed": "2012-08-02",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "87a30ac788cf4a08c3f159c5c347d7717bc04ff484e9f117f77d1ab4647ab356",
+   "title": "Crown Castle 10-Q 0001051470-12-000022 filed 2012-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147012000022/0001051470-12-000022-index.htm",
+   "filed": "2012-08-06",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "01a61fa1c7619d755a337172a1b4c5d44498bc8402f15b7e22f949e2bea38480",
+   "title": "Continental Resources 10-Q 0001193125-12-344815 filed 2012-08-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312512344815/0001193125-12-344815-index.htm",
+   "filed": "2012-08-09",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "922b08df89ab759342667a9e7a2aeaf737af17fd3a4478ac2116de34c94c0066",
+   "title": "Chesapeake Energy 10-Q 0001193125-12-347824 filed 2012-08-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000119312512347824/0001193125-12-347824-index.htm",
+   "filed": "2012-08-09",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "ed98c50d77a5e85258c8fc2db20627a74f6588f2873061c6602b225df230f4b0",
+   "title": "Halliburton 10-Q 0000045012-12-000278 filed 2012-10-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501212000278/0000045012-12-000278-index.htm",
+   "filed": "2012-10-23",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "a8486ac188d87524466ad9cc8e3903f3017f10a0db1384bd0b6a21abc2e970f5",
+   "title": "American Tower 10-Q 0001193125-12-443907 filed 2012-10-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312512443907/0001193125-12-443907-index.htm",
+   "filed": "2012-10-31",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "84d977d24afdb4ac689ccfde2f7abc124988bf86522bf5f449591bd96a6a2a83",
+   "title": "Crown Castle 10-Q 0001051470-12-000028 filed 2012-11-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147012000028/0001051470-12-000028-index.htm",
+   "filed": "2012-11-02",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "2a662d194e1f15ebb2955ebcb8dd005d633b0269cb2b04f8a33d8e46aa96b06e",
+   "title": "Equinix 10-Q 0001193125-12-452681 filed 2012-11-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312512452681/0001193125-12-452681-index.htm",
+   "filed": "2012-11-06",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "305e437c8d0a6be9c84085adde7f8328131c7f756e13476187a8f2954464f9f3",
+   "title": "Continental Resources 10-Q 0001193125-12-458845 filed 2012-11-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312512458845/0001193125-12-458845-index.htm",
+   "filed": "2012-11-08",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "6f0aeb0a6f5d298367224056535656aac405fde065a63e582aa58b6ec4ada955",
+   "title": "Chesapeake Energy 10-Q 0000895126-12-000310 filed 2012-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512612000310/0000895126-12-000310-index.htm",
+   "filed": "2012-11-09",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "f3138369b2a1925f52510319c125af97d56cdc7c1597d413b7aefabad0b1534b",
+   "title": "Halliburton 10-K 0000045012-13-000086 filed 2013-02-11",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501213000086/0000045012-13-000086-index.htm",
+   "filed": "2013-02-11",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "da6e654df704b1787b5a0619343eac83872fcd5b7923aca84fe2e2db3f0c464c",
+   "title": "Crown Castle 10-K 0001051470-13-000007 filed 2013-02-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147013000007/0001051470-13-000007-index.htm",
+   "filed": "2013-02-12",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "61ba636d992d064cd5e1166879cf7ce265df4dff7b6dbad296f8bc02fd17375b",
+   "title": "Equinix 10-K 0001193125-13-076572 filed 2013-02-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312513076572/0001193125-13-076572-index.htm",
+   "filed": "2013-02-26",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "c935ffef9a691cee942329e556e5e5aa04b19aff55c660e3b405b5d735abd5ec",
+   "title": "American Tower 10-K 0001193125-13-077821 filed 2013-02-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312513077821/0001193125-13-077821-index.htm",
+   "filed": "2013-02-27",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "505560f0aa06594256fccf8b99daa269caf170113563ceadd03acc791c8378ce",
+   "title": "Continental Resources 10-K 0001193125-13-080751 filed 2013-02-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312513080751/0001193125-13-080751-index.htm",
+   "filed": "2013-02-28",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "f8508d8b67492556d06604a745cb5e312992ca4d0e196517df3e0d177dd67662",
+   "title": "Chesapeake Energy 10-K 0000895126-13-000076 filed 2013-03-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512613000076/0000895126-13-000076-index.htm",
+   "filed": "2013-03-01",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "5e09cbf3de3939aa40f51e130f717306df6f5dd38a16174b4a4db2a6aed8cbf4",
+   "title": "Equinix 10-Q 0001193125-13-178095 filed 2013-04-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312513178095/0001193125-13-178095-index.htm",
+   "filed": "2013-04-26",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "cf7c8eb32464361ff7402e145ec2fa2abb825fc71be0a7cb19bb6ca4b4568f7c",
+   "title": "Halliburton 10-Q 0000045012-13-000159 filed 2013-04-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501213000159/0000045012-13-000159-index.htm",
+   "filed": "2013-04-26",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "f91a6ec50a41ef271eb84ce95adc39e861914684c23ca65ab436bb09974426b7",
+   "title": "American Tower 10-Q 0001193125-13-192592 filed 2013-05-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312513192592/0001193125-13-192592-index.htm",
+   "filed": "2013-05-01",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "bbfdf172df8efd79f55ff4105d41fe216d46414583f5f49c508a20fc805fe345",
+   "title": "Crown Castle 10-Q 0001051470-13-000015 filed 2013-05-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147013000015/0001051470-13-000015-index.htm",
+   "filed": "2013-05-03",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "8d78f9f95b7ffbdb70d3eb4f49b135cdd28dc67747de6d754c114ac40ddc6ea6",
+   "title": "Continental Resources 10-Q 0001193125-13-207589 filed 2013-05-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000119312513207589/0001193125-13-207589-index.htm",
+   "filed": "2013-05-08",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "3d8f77f5f11d068e2d35f7b96359ac5d127666f9dc008b601d34ef89c10df6e8",
+   "title": "Chesapeake Energy 10-Q 0000895126-13-000157 filed 2013-05-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512613000157/0000895126-13-000157-index.htm",
+   "filed": "2013-05-10",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "51d84cf7df013c942b55064f3af56c9f5bd7c68527d18edd8a928b8cd0d50bff",
+   "title": "Equinix 10-Q 0001193125-13-304769 filed 2013-07-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312513304769/0001193125-13-304769-index.htm",
+   "filed": "2013-07-26",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "c2912f926c946762216ced294ef06ee3f76fb7ad6660fbf0cfc8751dd8f71e66",
+   "title": "Halliburton 10-Q 0000045012-13-000242 filed 2013-07-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501213000242/0000045012-13-000242-index.htm",
+   "filed": "2013-07-26",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "c786f132df460b9fb4b421ca543382876b0dd600d03a504374cfb4dac3d299c8",
+   "title": "American Tower 10-Q 0001193125-13-312703 filed 2013-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312513312703/0001193125-13-312703-index.htm",
+   "filed": "2013-07-31",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "5b93e91cba1801927ee3cf493bbf1cbb364f64a31083f767497a643542ebf5c7",
+   "title": "Crown Castle 10-Q 0001051470-13-000025 filed 2013-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147013000025/0001051470-13-000025-index.htm",
+   "filed": "2013-08-06",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "93e5538f79f3e42b50e4ee9691ba891f82486613eb7416649aee1029e737e355",
+   "title": "Chesapeake Energy 10-Q 0000895126-13-000254 filed 2013-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512613000254/0000895126-13-000254-index.htm",
+   "filed": "2013-08-06",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "4c39b9e610ad0f3f5f3744f43de1b113c0235b6c530d84e7c69a478c38f39b59",
+   "title": "Continental Resources 10-Q 0000732834-13-000004 filed 2013-08-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283413000004/0000732834-13-000004-index.htm",
+   "filed": "2013-08-08",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "92930181da54ab6cf47b8b8bcb5612320eab8a440f5a1f82ddb27396252eddbd",
+   "title": "Halliburton 10-Q 0000045012-13-000356 filed 2013-10-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501213000356/0000045012-13-000356-index.htm",
+   "filed": "2013-10-25",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "50b9716004ba32034dbfd805b00fc573612edfa1ab62771f1e2a162c4f64b7d2",
+   "title": "American Tower 10-Q 0001193125-13-418850 filed 2013-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312513418850/0001193125-13-418850-index.htm",
+   "filed": "2013-10-30",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "078e0f2fe5303101021479f669124ac7f9da774ee466f7f66c5521740aeb62af",
+   "title": "Chesapeake Energy 10-Q 0000895126-13-000326 filed 2013-11-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512613000326/0000895126-13-000326-index.htm",
+   "filed": "2013-11-06",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "a9cf79a822859e965c5f5f291f64193d04b8ac23402a42e30f9bacbf941f3b3b",
+   "title": "Continental Resources 10-Q 0000732834-13-000007 filed 2013-11-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283413000007/0000732834-13-000007-index.htm",
+   "filed": "2013-11-07",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "404b120f13e4e21d03ec13d663cc0495a4369e4aa185635ff4621bccfa0da0dd",
+   "title": "Crown Castle 10-Q 0001051470-13-000029 filed 2013-11-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147013000029/0001051470-13-000029-index.htm",
+   "filed": "2013-11-08",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "e8db9ae8aa341f7daa62ce16633a70c6afd6977986762da4c5e21c7616b81348",
+   "title": "Equinix 10-Q 0001193125-13-437940 filed 2013-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312513437940/0001193125-13-437940-index.htm",
+   "filed": "2013-11-12",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "c145bc3b8a8e7d0d5d9c4fbf7d43b53318731675ee2959524a764fcb2fab630c",
+   "title": "Halliburton 10-K 0000045012-14-000069 filed 2014-02-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501214000069/0000045012-14-000069-index.htm",
+   "filed": "2014-02-07",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "4d9ac392b8ca14357a4163cd3e103ab9e704b050a6326a2f4dc08d278c3a050e",
+   "title": "Crown Castle 10-K 0001051470-14-000008 filed 2014-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147014000008/0001051470-14-000008-index.htm",
+   "filed": "2014-02-24",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "0ae74083247de172ee7e1a55582ca24e9c25012df1305c8c767ca3a3a36c8c40",
+   "title": "American Tower 10-K 0001193125-14-068001 filed 2014-02-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312514068001/0001193125-14-068001-index.htm",
+   "filed": "2014-02-26",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "33ed692afead04c7bf6f33762c604e0fb69d5151d85a4394835c81da960c3d4d",
+   "title": "Continental Resources 10-K 0000732834-14-000003 filed 2014-02-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283414000003/0000732834-14-000003-index.htm",
+   "filed": "2014-02-27",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "5f13919bcc84c547c950c5d396d7de6f4a3b3c92abab4a9ea1db21fd01c239bc",
+   "title": "Chesapeake Energy 10-K 0000895126-14-000104 filed 2014-02-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512614000104/0000895126-14-000104-index.htm",
+   "filed": "2014-02-27",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "5f7fdc52be995079f0947d7fb99920a52309217f3d9a4c994a12d66be058ae6e",
+   "title": "Equinix 10-K 0001193125-14-076710 filed 2014-02-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312514076710/0001193125-14-076710-index.htm",
+   "filed": "2014-02-28",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "6a91abab17dc6ec6f636c1d02b7bbd739dfb3cdde42277b056b1cb89f52b0f47",
+   "title": "Halliburton 10-Q 0000045012-14-000199 filed 2014-04-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501214000199/0000045012-14-000199-index.htm",
+   "filed": "2014-04-25",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "d6da324db263b8f878fd7f05b99b242e8bbb0e82249efbe56c960b30f354fc3f",
+   "title": "American Tower 10-Q 0001193125-14-177280 filed 2014-05-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312514177280/0001193125-14-177280-index.htm",
+   "filed": "2014-05-01",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "6c3a760ef7c935b4067641395d7d81199b3ac0978477733befcc467bbcb7af88",
+   "title": "Equinix 10-Q 0001193125-14-179863 filed 2014-05-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312514179863/0001193125-14-179863-index.htm",
+   "filed": "2014-05-02",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "4bce0927743cf864cef4230c6e07412ac139d2b106796b1404039b8ac582b495",
+   "title": "Crown Castle 10-Q 0001051470-14-000013 filed 2014-05-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147014000013/0001051470-14-000013-index.htm",
+   "filed": "2014-05-06",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "d2dd2c27559d341fd7ad91b7b653098aa9d1045404d4d664fd3d9fa537682d28",
+   "title": "Chesapeake Energy 10-Q 0000895126-14-000142 filed 2014-05-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512614000142/0000895126-14-000142-index.htm",
+   "filed": "2014-05-07",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "715c2d762dca428674832138a54c14a3b3b42e2dfddfa6187e83fbdc3adf68ed",
+   "title": "Continental Resources 10-Q 0000732834-14-000006 filed 2014-05-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283414000006/0000732834-14-000006-index.htm",
+   "filed": "2014-05-08",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "96bb4acf0df44c844e34d5fb99d408ef2f83b69f131e0f5807259dc1dcd6378c",
+   "title": "Halliburton 10-Q 0000045012-14-000282 filed 2014-07-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501214000282/0000045012-14-000282-index.htm",
+   "filed": "2014-07-25",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "4e98cf5856505a20111b87b28f55be9ccbf53f7b2347935d035a0183be2facf8",
+   "title": "American Tower 10-Q 0001193125-14-287223 filed 2014-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312514287223/0001193125-14-287223-index.htm",
+   "filed": "2014-07-30",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "2848aa09e7b5cccd15ba47d0b782ea4f02ca3b8496998d14d5eba0370bb4b19f",
+   "title": "Continental Resources 10-Q 0000732834-14-000010 filed 2014-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283414000010/0000732834-14-000010-index.htm",
+   "filed": "2014-08-06",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "f4ea5fc14c8d7303a07a78474a93f6af16747cd4ff3aea5db2ca30a02fda7a62",
+   "title": "Chesapeake Energy 10-Q 0000895126-14-000225 filed 2014-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512614000225/0000895126-14-000225-index.htm",
+   "filed": "2014-08-06",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "285138d8159a2fc82d9cfb5b8c0d0c5a0e49b667618061d9b4dcb22144c21aa8",
+   "title": "Equinix 10-Q 0001193125-14-303273 filed 2014-08-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312514303273/0001193125-14-303273-index.htm",
+   "filed": "2014-08-08",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "9b1ebc96b3620fb05a2dd17999024d0d35de981fae0f99fb46361c93c7919534",
+   "title": "Crown Castle 10-Q 0001051470-14-000036 filed 2014-08-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147014000036/0001051470-14-000036-index.htm",
+   "filed": "2014-08-08",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "63633f6650c8392ba688dda52d52518e2351e897f862cc8d08f5cd0b38b5446c",
+   "title": "Halliburton 10-Q 0000045012-14-000341 filed 2014-10-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501214000341/0000045012-14-000341-index.htm",
+   "filed": "2014-10-24",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "6d956fbab782b9b967b6da57c687c48b0086d788cf2a369ea71378d7592cd997",
+   "title": "American Tower 10-Q 0001193125-14-389764 filed 2014-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312514389764/0001193125-14-389764-index.htm",
+   "filed": "2014-10-30",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "2bced7ca6b85901fef01267150ec6617b053d129da8b2b03d0244c16c34b1c4c",
+   "title": "Continental Resources 10-Q 0000732834-14-000013 filed 2014-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283414000013/0000732834-14-000013-index.htm",
+   "filed": "2014-11-05",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "45c261ba688da4765816465c88f56547b41dd1fcace77883d99226e2c730fd80",
+   "title": "Chesapeake Energy 10-Q 0000895126-14-000268 filed 2014-11-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512614000268/0000895126-14-000268-index.htm",
+   "filed": "2014-11-06",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "417076c221f67db7799aab45e01cc6cdef63c3f6312f28d35e6fb198aade9cc9",
+   "title": "Crown Castle 10-Q 0001051470-14-000048 filed 2014-11-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147014000048/0001051470-14-000048-index.htm",
+   "filed": "2014-11-07",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "690fc9c996ea52478fd4534f187bd4d7802055ed7ef6b8092d61e804ac93534d",
+   "title": "Equinix 10-Q 0001193125-14-402944 filed 2014-11-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312514402944/0001193125-14-402944-index.htm",
+   "filed": "2014-11-07",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "18aa7c13ed609e7ba6faf6cb49e9be2a4cf840ef8c33ca04240f69f7897b1e52",
+   "title": "Crown Castle 10-K 0001051470-15-000034 filed 2015-02-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147015000034/0001051470-15-000034-index.htm",
+   "filed": "2015-02-19",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "2a766f829dad62da0597f06bb55f187f1fce587338aa037591da0a0baa0876d6",
+   "title": "American Tower 10-K 0001193125-15-059026 filed 2015-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312515059026/0001193125-15-059026-index.htm",
+   "filed": "2015-02-24",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "accaa990ae79a5fee235eb6ec576e9fc6af42efc417e7a9b5569fef3085d8bd7",
+   "title": "Continental Resources 10-K 0000732834-15-000004 filed 2015-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283415000004/0000732834-15-000004-index.htm",
+   "filed": "2015-02-24",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "db069d348b3ad15b782f29a156a0c026dd3b611e7181a178534d1d13bd172e6e",
+   "title": "Halliburton 10-K 0000045012-15-000040 filed 2015-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501215000040/0000045012-15-000040-index.htm",
+   "filed": "2015-02-24",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "e14ec01836db451f03e57ed573d684ffdefbba24c703d1043e4fca8d81370636",
+   "title": "Chesapeake Energy 10-K 0000895126-15-000076 filed 2015-02-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512615000076/0000895126-15-000076-index.htm",
+   "filed": "2015-02-27",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "1fce7ac00c1ac6d39903c249350e002c628a5672db976af98d2d36d72135cf9d",
+   "title": "Equinix 10-K 0001193125-15-073042 filed 2015-03-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312515073042/0001193125-15-073042-index.htm",
+   "filed": "2015-03-02",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "b729c4403fb1ff369d7b951ab82a34f2332ab4c786319dc032fa4638be7e7283",
+   "title": "Halliburton 10-Q 0000045012-15-000079 filed 2015-04-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501215000079/0000045012-15-000079-index.htm",
+   "filed": "2015-04-23",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "c30df99ff34ba6d14bae9b8c1d0d25d7e444ede08d92eb427036c477f5b59576",
+   "title": "American Tower 10-Q 0001193125-15-162716 filed 2015-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312515162716/0001193125-15-162716-index.htm",
+   "filed": "2015-04-30",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "faac6be7ed623c2e25331adcb85420901fa736cc290282b44bc8d3b06abdb0cd",
+   "title": "Equinix 10-Q 0001193125-15-166246 filed 2015-05-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312515166246/0001193125-15-166246-index.htm",
+   "filed": "2015-05-01",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "05941e4775507a52c99d2c69c1306233f25be63d56f765086a411c4abecbfd4a",
+   "title": "Continental Resources 10-Q 0000732834-15-000007 filed 2015-05-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283415000007/0000732834-15-000007-index.htm",
+   "filed": "2015-05-06",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "667e9739b495b3afe5c7b5afab6be5975ce25399b0c2091969efa28ce5545374",
+   "title": "Chesapeake Energy 10-Q 0000895126-15-000128 filed 2015-05-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512615000128/0000895126-15-000128-index.htm",
+   "filed": "2015-05-06",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "01db32326435114175a0914cb0e2365c6c013685077f0f75b3755ecd5d35ffa0",
+   "title": "Crown Castle 10-Q 0001051470-15-000088 filed 2015-05-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147015000088/0001051470-15-000088-index.htm",
+   "filed": "2015-05-08",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "21a7a9d6c8a8cde90f8e66dcae6853375faae235c49994709d2f216f2637a7f0",
+   "title": "Halliburton 10-Q 0000045012-15-000104 filed 2015-07-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501215000104/0000045012-15-000104-index.htm",
+   "filed": "2015-07-24",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "06aeda20d1179ba36ece5403bc31a3dd0dd31e2290fec2e98edc90d3f27e91f4",
+   "title": "American Tower 10-Q 0001193125-15-268479 filed 2015-07-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000119312515268479/0001193125-15-268479-index.htm",
+   "filed": "2015-07-29",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "43320027cf9b7c82cab90e121c1efa84115d095766e0b9d96619cfd198715897",
+   "title": "Equinix 10-Q 0001193125-15-272652 filed 2015-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312515272652/0001193125-15-272652-index.htm",
+   "filed": "2015-07-31",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "601662719a7e5d701c05ac7839f09ddb37468c7f6af908e5d34988f15dc0ac46",
+   "title": "Chesapeake Energy 10-Q 0000895126-15-000203 filed 2015-08-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512615000203/0000895126-15-000203-index.htm",
+   "filed": "2015-08-05",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "a375ad5ff2de099471de86dc639cd0df9389db30e2ba9bd638b448f9744ae9e2",
+   "title": "Continental Resources 10-Q 0000732834-15-000011 filed 2015-08-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283415000011/0000732834-15-000011-index.htm",
+   "filed": "2015-08-05",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "5e107288a88987525e2b64636b97985893946eef1ea64fbba9494de773d47ae4",
+   "title": "Crown Castle 10-Q 0001051470-15-000114 filed 2015-08-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147015000114/0001051470-15-000114-index.htm",
+   "filed": "2015-08-07",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "b9d7c5d9d6a325661f65eaa5eb69c47051681632a24055a8ebd3cb2919115937",
+   "title": "Halliburton 10-Q 0000045012-15-000156 filed 2015-10-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501215000156/0000045012-15-000156-index.htm",
+   "filed": "2015-10-23",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "ef8cdf2168ae50ea801b9d8f0cbe3be23e6cdada5c002b9eefbd7c5a57265363",
+   "title": "American Tower 10-Q 0001628280-15-008027 filed 2015-10-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000162828015008027/0001628280-15-008027-index.htm",
+   "filed": "2015-10-29",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "cc0770e72425b8700c190756e3d1df083ebf53aac6137c8ad8ae2617419d6f45",
+   "title": "Equinix 10-Q 0001193125-15-359693 filed 2015-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000119312515359693/0001193125-15-359693-index.htm",
+   "filed": "2015-10-30",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "7b21a5da3d8ae9d513229f83026e0d7dfb2da545b5f9b3afb25e5433b0925ece",
+   "title": "Continental Resources 10-Q 0000732834-15-000014 filed 2015-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283415000014/0000732834-15-000014-index.htm",
+   "filed": "2015-11-04",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "fa4611d677857c261466a01a62c52cce19ed500921d2b84db1c72dbec4d47ebc",
+   "title": "Chesapeake Energy 10-Q 0000895126-15-000292 filed 2015-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512615000292/0000895126-15-000292-index.htm",
+   "filed": "2015-11-04",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "236714458ac0e63ab34478c4c351518d29671c117483b28605d1839f2b79934d",
+   "title": "Crown Castle 10-Q 0001051470-15-000128 filed 2015-11-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147015000128/0001051470-15-000128-index.htm",
+   "filed": "2015-11-06",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "76daa10f0bbe9b943968388d40cee5b67e815018d1eb53ebc0810d1c41c4996e",
+   "title": "Halliburton 10-K 0000045012-16-000272 filed 2016-02-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501216000272/0000045012-16-000272-index.htm",
+   "filed": "2016-02-05",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "c89d4695b155062f2a2accdf9736b8fb14d59409390103d52f9ea6bbba51773a",
+   "title": "Crown Castle 10-K 0001051470-16-000158 filed 2016-02-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147016000158/0001051470-16-000158-index.htm",
+   "filed": "2016-02-22",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "fe350359169bc2b8b96c248a3bc3c87fc8e71602797d72d48414e950171653c3",
+   "title": "Continental Resources 10-K 0000732834-16-000018 filed 2016-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283416000018/0000732834-16-000018-index.htm",
+   "filed": "2016-02-24",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "87c2e4ab29ef2a0fbcbe4361737223cc8cc4bc7a81d44643ef4d7fb6048aeee2",
+   "title": "Chesapeake Energy 10-K 0000895126-16-000395 filed 2016-02-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512616000395/0000895126-16-000395-index.htm",
+   "filed": "2016-02-25",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "1774591574c26d291744d7f1da68bd09e9c5e2a1bfdb00ab0afa51acb29cc391",
+   "title": "Equinix 10-K 0001628280-16-011802 filed 2016-02-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828016011802/0001628280-16-011802-index.htm",
+   "filed": "2016-02-26",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "abd180e16fa898aa8d77701705203a5005c434295090d4360b57b2069e6ab646",
+   "title": "American Tower 10-K 0001053507-16-000018 filed 2016-02-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350716000018/0001053507-16-000018-index.htm",
+   "filed": "2016-02-26",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "670dcd211d4679636f15fbff7820f6040d831ff919f70cf5750365798385d04d",
+   "title": "American Tower 10-Q 0001053507-16-000032 filed 2016-04-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350716000032/0001053507-16-000032-index.htm",
+   "filed": "2016-04-29",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "e49ab09b996773d435cc97fb3af0c298c017eb09ffb6bf75d7f63f142d93c27f",
+   "title": "Continental Resources 10-Q 0000732834-16-000022 filed 2016-05-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283416000022/0000732834-16-000022-index.htm",
+   "filed": "2016-05-04",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "69f8d937e63da5e67e45415e274cced424f55c02a8c87f94e21cf2cbef4e7148",
+   "title": "Chesapeake Energy 10-Q 0000895126-16-000435 filed 2016-05-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512616000435/0000895126-16-000435-index.htm",
+   "filed": "2016-05-05",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "c8be708d5378a00dc273c8b203cabba3ee83f3211c942c69af0e93d636017c82",
+   "title": "Halliburton 10-Q 0000045012-16-000298 filed 2016-05-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501216000298/0000045012-16-000298-index.htm",
+   "filed": "2016-05-06",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "5748ee81de814ade064399da41bb7f47050eabae70999c22553620447d719332",
+   "title": "Equinix 10-Q 0001628280-16-015911 filed 2016-05-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828016015911/0001628280-16-015911-index.htm",
+   "filed": "2016-05-09",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "58314285ab938b7f79a53a128fad9388a02cc0b00ccfb00fb88f858be579b902",
+   "title": "Crown Castle 10-Q 0001051470-16-000233 filed 2016-05-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147016000233/0001051470-16-000233-index.htm",
+   "filed": "2016-05-09",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "303504be15b69281a388f84f257425b69a775bd0c482ad136700d54da919acae",
+   "title": "American Tower 10-Q 0001053507-16-000048 filed 2016-07-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350716000048/0001053507-16-000048-index.htm",
+   "filed": "2016-07-28",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "4b80c60d4b9e66aa349668adb3f95646dd6746c006115cca0147bf859be7e5b7",
+   "title": "Halliburton 10-Q 0000045012-16-000331 filed 2016-08-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501216000331/0000045012-16-000331-index.htm",
+   "filed": "2016-08-01",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "651f5474e046d90ae9983bba34eced7029b48f5232ff0104b5125f9e8faae525",
+   "title": "Continental Resources 10-Q 0000732834-16-000025 filed 2016-08-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283416000025/0000732834-16-000025-index.htm",
+   "filed": "2016-08-03",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "25a56615a13cb8b9924b44871722f83b50f6f64b4120fad43e63c9dcbbc2e519",
+   "title": "Chesapeake Energy 10-Q 0000895126-16-000516 filed 2016-08-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512616000516/0000895126-16-000516-index.htm",
+   "filed": "2016-08-04",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "26d3155b3498fce4f25aa0d52bc72c6389c5712bb2cfc14a77d766df6444910b",
+   "title": "Crown Castle 10-Q 0001051470-16-000262 filed 2016-08-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147016000262/0001051470-16-000262-index.htm",
+   "filed": "2016-08-04",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "61a508d78a55d4347f9f17d1f7e1842f9d3b87e090348f238248fbaa9b2deda1",
+   "title": "Equinix 10-Q 0001628280-16-018674 filed 2016-08-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828016018674/0001628280-16-018674-index.htm",
+   "filed": "2016-08-08",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "df06e81ed1c9d16f15f691f17d82550197972189e18d848ffab0891837b1c5d7",
+   "title": "American Tower 10-Q 0001053507-16-000057 filed 2016-10-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350716000057/0001053507-16-000057-index.htm",
+   "filed": "2016-10-27",
+   "entities": [
+    "American Tower"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "a1b92af0abf4c404e716858c946f0c1cc37f4d2d6164d67ac56902436e7a062e",
+   "title": "Halliburton 10-Q 0000045012-16-000401 filed 2016-10-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501216000401/0000045012-16-000401-index.htm",
+   "filed": "2016-10-28",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "1ebcc64223fa42e666d445ab4b81c210b862e6bdc1a8190dbdf2d4fdaf1a5216",
+   "title": "Crown Castle 10-Q 0001051470-16-000284 filed 2016-11-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1051470/000105147016000284/0001051470-16-000284-index.htm",
+   "filed": "2016-11-01",
+   "entities": [
+    "Crown Castle"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "6a03a14494c6827e731a2f40e0a74e8c706aeb6369087aa87e6bc619c4a59566",
+   "title": "Continental Resources 10-Q 0000732834-16-000028 filed 2016-11-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283416000028/0000732834-16-000028-index.htm",
+   "filed": "2016-11-02",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "4226336deb023609ddfba1c0049586e750c0434f73907402b8c93954b2089c65",
+   "title": "Chesapeake Energy 10-Q 0000895126-16-000593 filed 2016-11-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512616000593/0000895126-16-000593-index.htm",
+   "filed": "2016-11-03",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "c4a32b0087a4adf71eba6a7e3a014ced429f04695fb7fcc02232ff338f8de727",
+   "title": "Equinix 10-Q 0001628280-16-020845 filed 2016-11-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1101239/000162828016020845/0001628280-16-020845-index.htm",
+   "filed": "2016-11-04",
+   "entities": [
+    "Equinix"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "f5a04001063fda244fc14fa75dfe892bb27f3572ab1d79ede08cd98d547c393a",
+   "title": "Microsoft 10-Q 0001564590-17-000654 filed 2017-01-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459017000654/0001564590-17-000654-index.htm",
+   "filed": "2017-01-26",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 7
+  },
+  {
+   "document_id": "ea639bdbd01bafe4e3776c6321e0b516031ac076064393c02da8812acb8ab92c",
+   "title": "Halliburton 10-K 0000045012-17-000047 filed 2017-02-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501217000047/0000045012-17-000047-index.htm",
+   "filed": "2017-02-07",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "2ba7077476b6ae4010d0f632ca23d3a768edfda9b719d6f55d1b679007cae3e1",
+   "title": "Amazon 10-K 0001018724-17-000011 filed 2017-02-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872417000011/0001018724-17-000011-index.htm",
+   "filed": "2017-02-10",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 5
+  },
+  {
+   "document_id": "872ee2fc4859e77c1a624e22b97c61234769540c7b180dc5104bc601d960aac5",
+   "title": "Continental Resources 10-K 0000732834-17-000004 filed 2017-02-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283417000004/0000732834-17-000004-index.htm",
+   "filed": "2017-02-22",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "847586980812f2191faf5685f8df57992f62f7218413a6c75606746d17d68d48",
+   "title": "Chesapeake Energy 10-K 0000895126-17-000068 filed 2017-03-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512617000068/0000895126-17-000068-index.htm",
+   "filed": "2017-03-03",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "549f171a948b245056f8cc049fecd6866b407bf7969d84d51a9b769e084c76b0",
+   "title": "Microsoft 10-Q 0001564590-17-007547 filed 2017-04-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459017007547/0001564590-17-007547-index.htm",
+   "filed": "2017-04-27",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 7
+  },
+  {
+   "document_id": "02318218b7c245414e0ee8270f182e3e8f41d23ce66a64725523ac5e3d6fa54c",
+   "title": "Amazon 10-Q 0001018724-17-000051 filed 2017-04-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872417000051/0001018724-17-000051-index.htm",
+   "filed": "2017-04-28",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 4
+  },
+  {
+   "document_id": "ceeb796db9b10a760d93511ea421cadf5b7ff7c1714b740b3ddfad8588520053",
+   "title": "Halliburton 10-Q 0000045012-17-000091 filed 2017-04-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501217000091/0000045012-17-000091-index.htm",
+   "filed": "2017-04-28",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "cf7548173a9b0ff1277c48c745e1a4caaa0b4e18f45bcb15b973ee30bcf65217",
+   "title": "Continental Resources 10-Q 0000732834-17-000007 filed 2017-05-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283417000007/0000732834-17-000007-index.htm",
+   "filed": "2017-05-03",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "f75a8fad8d26e39def352c9c38590b3e4f6c59d56f18241da20d7426fedfe64e",
+   "title": "Chesapeake Energy 10-Q 0000895126-17-000127 filed 2017-05-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512617000127/0000895126-17-000127-index.htm",
+   "filed": "2017-05-04",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "8b2b8d4473539fda312b6c89fba97da72fd7b2fbfb4922099fff48edf76d7961",
+   "title": "Amazon 10-Q 0001018724-17-000100 filed 2017-07-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872417000100/0001018724-17-000100-index.htm",
+   "filed": "2017-07-28",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 4
+  },
+  {
+   "document_id": "dd6ef0b2a164309d22d285e21b3dde4cc50fc5ff7fb6b98146c4938ae5b47e32",
+   "title": "Halliburton 10-Q 0000045012-17-000159 filed 2017-07-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501217000159/0000045012-17-000159-index.htm",
+   "filed": "2017-07-28",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "4fd7e323f51de26fa2b8e240501c6e14d847dbc86028b40d37e34ad635827ab9",
+   "title": "Microsoft 10-K 0001564590-17-014900 filed 2017-08-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459017014900/0001564590-17-014900-index.htm",
+   "filed": "2017-08-02",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "0d19ffdcbdc3bf5f29d4ef76d8d10864aa0a9f9dd9fd9b3fec3ef637bd849390",
+   "title": "Chesapeake Energy 10-Q 0000895126-17-000234 filed 2017-08-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512617000234/0000895126-17-000234-index.htm",
+   "filed": "2017-08-03",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "f6477dbf0d7e359d00b16cd4ade55e36c7ddd9d90504152bf44a48c230f7e1f3",
+   "title": "Continental Resources 10-Q 0000732834-17-000011 filed 2017-08-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283417000011/0000732834-17-000011-index.htm",
+   "filed": "2017-08-09",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "b9fb0a201aceddc234030a0374512a6aa5d2324627366be84c5235a7e57c6e8d",
+   "title": "Microsoft 10-Q 0001564590-17-020171 filed 2017-10-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459017020171/0001564590-17-020171-index.htm",
+   "filed": "2017-10-26",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "358a09de1d53c30df72140374c44bac1f7ea8a35cd3555132bff429db00149bc",
+   "title": "Amazon 10-Q 0001018724-17-000135 filed 2017-10-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872417000135/0001018724-17-000135-index.htm",
+   "filed": "2017-10-27",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "61ca250776a5f15d7878cfc96dbe2b4587f913b8bc03d6568128a1471036f182",
+   "title": "Halliburton 10-Q 0000045012-17-000218 filed 2017-10-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/45012/000004501217000218/0000045012-17-000218-index.htm",
+   "filed": "2017-10-27",
+   "entities": [
+    "Halliburton"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "354efd30306088963711d4ca7221a1ee2266aa8da588c5a3b6041e225c2d0c21",
+   "title": "Chesapeake Energy 10-Q 0000895126-17-000306 filed 2017-11-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/895126/000089512617000306/0000895126-17-000306-index.htm",
+   "filed": "2017-11-02",
+   "entities": [
+    "Chesapeake Energy"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "4cec23fa62d765a03baef1e7e2cbf19fee04c1cfc20b41efccf8781c2d876a87",
+   "title": "Continental Resources 10-Q 0000732834-17-000015 filed 2017-11-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/732834/000073283417000015/0000732834-17-000015-index.htm",
+   "filed": "2017-11-07",
+   "entities": [
+    "Continental Resources"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "cc9133e5a9c405b67fda799f27dbd2f862a4ca8cd7b8431eb40d4f677dcf160d",
+   "title": "Microsoft 10-Q 0001564590-18-001129 filed 2018-01-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459018001129/0001564590-18-001129-index.htm",
+   "filed": "2018-01-31",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "b30e6f85e94fbd64450712de33b557261ed971f694057210d15d070e36a60de7",
+   "title": "Amazon 10-K 0001018724-18-000005 filed 2018-02-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872418000005/0001018724-18-000005-index.htm",
+   "filed": "2018-02-02",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "b23408284d128b12a1acc9ab1886da3f5254c446c9385ccc2ff0e52514ff2bad",
+   "title": "Western Alliance Bancorporation 10-K 0001212545-18-000091 filed 2018-02-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254518000091/0001212545-18-000091-index.htm",
+   "filed": "2018-02-26",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 6
+  },
+  {
+   "document_id": "b51ce48b45f4605b963058dfd0380f0ecb2b6904ab38c53c40f6ad0115170aed",
+   "title": "SVB Financial Group 10-K 0000719739-18-000011 filed 2018-02-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973918000011/0000719739-18-000011-index.htm",
+   "filed": "2018-02-28",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "0a05039ff25baee73c715cf60d0255438655df7094ccf8e096ab5215ec2a5f68",
+   "title": "PacWest Bancorp 10-K 0001628280-18-002617 filed 2018-03-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828018002617/0001628280-18-002617-index.htm",
+   "filed": "2018-03-01",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 8
+  },
+  {
+   "document_id": "8eb5b18c4cb850e221ca6c175a35e79aa29fcf2cbbcdb01c503b43e1d5476cc7",
+   "title": "Microsoft 10-Q 0001564590-18-009307 filed 2018-04-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459018009307/0001564590-18-009307-index.htm",
+   "filed": "2018-04-26",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "30db2f3bacdd7d160b48984abd5c34e0aa32837b6e0fe250817f91101e555411",
+   "title": "Amazon 10-Q 0001018724-18-000072 filed 2018-04-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872418000072/0001018724-18-000072-index.htm",
+   "filed": "2018-04-27",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "e531be1b50452a5e9b538cda6848809031b2f239b988975242bef045b10ef1c1",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-18-000141 filed 2018-04-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254518000141/0001212545-18-000141-index.htm",
+   "filed": "2018-04-27",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 5
+  },
+  {
+   "document_id": "27c65082ad3e10e85dd7b7929cb887ead2b6c0b52d7714974cc0da8504eb0674",
+   "title": "SVB Financial Group 10-Q 0000719739-18-000024 filed 2018-05-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973918000024/0000719739-18-000024-index.htm",
+   "filed": "2018-05-08",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "cc04122d129b2c607e5b989b6fb892e1271cf3c14f83543360437334ae589462",
+   "title": "PacWest Bancorp 10-Q 0001628280-18-006439 filed 2018-05-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828018006439/0001628280-18-006439-index.htm",
+   "filed": "2018-05-10",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "77a3e11c2990a91bc27f223381c138134e61977325991fd3b35fe8a0f4fbadd2",
+   "title": "Amazon 10-Q 0001018724-18-000108 filed 2018-07-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872418000108/0001018724-18-000108-index.htm",
+   "filed": "2018-07-27",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "bd332bbb647ebfc13dd2d637b3a87682464ed83a01bed509d56a18339ba83a39",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-18-000172 filed 2018-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254518000172/0001212545-18-000172-index.htm",
+   "filed": "2018-07-31",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 4
+  },
+  {
+   "document_id": "7025e5e215e69e6c1dcbe0383693c85bfa5f9d9ecf076951185d76cfff62d146",
+   "title": "Microsoft 10-K 0001564590-18-019062 filed 2018-08-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459018019062/0001564590-18-019062-index.htm",
+   "filed": "2018-08-03",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 25
+  },
+  {
+   "document_id": "f828878b04d11c9652eda0d0a4fe7592142e9cf6877f1468c1086882b19c0283",
+   "title": "SVB Financial Group 10-Q 0000719739-18-000038 filed 2018-08-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973918000038/0000719739-18-000038-index.htm",
+   "filed": "2018-08-07",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "c0c0a06f6cb5614f350a10f929a0aaeb04e6de67c20d9cded5f0215e4884b0e1",
+   "title": "PacWest Bancorp 10-Q 0001628280-18-010735 filed 2018-08-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828018010735/0001628280-18-010735-index.htm",
+   "filed": "2018-08-08",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "f03325148713235e683b84cee1effb0280d38d52cbbd73fae4236d3cb64d314d",
+   "title": "Microsoft 10-Q 0001564590-18-024893 filed 2018-10-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459018024893/0001564590-18-024893-index.htm",
+   "filed": "2018-10-24",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 19
+  },
+  {
+   "document_id": "30750e686ff37a47d19174e30fabe07a68502be64cd99b64d7ad61628cb77318",
+   "title": "Amazon 10-Q 0001018724-18-000159 filed 2018-10-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872418000159/0001018724-18-000159-index.htm",
+   "filed": "2018-10-26",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "327e267cb2ad586d7752b55f11633f91de3774d9ec07e242faa1363936bf372e",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-18-000180 filed 2018-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254518000180/0001212545-18-000180-index.htm",
+   "filed": "2018-10-30",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 4
+  },
+  {
+   "document_id": "c509fe714cf4e647515bae7d5cf39f5feb373769a0abd9696ea60ec11caca7c5",
+   "title": "PacWest Bancorp 10-Q 0001628280-18-013902 filed 2018-11-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828018013902/0001628280-18-013902-index.htm",
+   "filed": "2018-11-07",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "e782f1b3005b243e744f8cf5e1eb9d906029bb7e563130f37efcacc4e8d6d859",
+   "title": "SVB Financial Group 10-Q 0000719739-18-000049 filed 2018-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973918000049/0000719739-18-000049-index.htm",
+   "filed": "2018-11-09",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "b6c9dcaa29820b9164aca5d14a1272246c39c40eb17462d7fb6e9c88f44fa4c8",
+   "title": "Microsoft 10-Q 0001564590-19-001392 filed 2019-01-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019001392/0001564590-19-001392-index.htm",
+   "filed": "2019-01-30",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "b18128919e2639c669a4a51c6d3ab6abb59d4c47ec8745d886fecb3dc6866c2c",
+   "title": "Meta 10-K 0001326801-19-000009 filed 2019-01-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680119000009/0001326801-19-000009-index.htm",
+   "filed": "2019-01-31",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "0393a6abef3264df026b3ef0fb4478fe1a88fe867cf9bf1738c285e59c338e6b",
+   "title": "Amazon 10-K 0001018724-19-000004 filed 2019-02-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872419000004/0001018724-19-000004-index.htm",
+   "filed": "2019-02-01",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 22
+  },
+  {
+   "document_id": "4cd7605f39d98d3b2e01c04b3f7035da1fd83ac5ff567db796335fdab85b6f37",
+   "title": "Alphabet 10-K 0001652044-19-000004 filed 2019-02-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204419000004/0001652044-19-000004-index.htm",
+   "filed": "2019-02-05",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "2bcbdc87523133c5b64df759cb97892cd9cd162aac37df0896e3b498a7ffb6fb",
+   "title": "NVIDIA 10-K 0001045810-19-000023 filed 2019-02-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581019000023/0001045810-19-000023-index.htm",
+   "filed": "2019-02-21",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 5
+  },
+  {
+   "document_id": "3df1670cbeb49fd0e383df62dc2981ad2ba52adb058f107c62f2c128585985f4",
+   "title": "PacWest Bancorp 10-K 0001628280-19-002144 filed 2019-02-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828019002144/0001628280-19-002144-index.htm",
+   "filed": "2019-02-27",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "3bb66f12ebde0984ace19fa87f4ba94ad3038ede5a00b04d691a72f05d3a47cb",
+   "title": "SVB Financial Group 10-K 0000719739-19-000018 filed 2019-02-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973919000018/0000719739-19-000018-index.htm",
+   "filed": "2019-02-28",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "c6ccae7b3706a6438499a1f7191dc6bc490606ed549ead6c854a26a550f1e310",
+   "title": "Western Alliance Bancorporation 10-K 0001212545-19-000066 filed 2019-03-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254519000066/0001212545-19-000066-index.htm",
+   "filed": "2019-03-01",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 5
+  },
+  {
+   "document_id": "510b18d5f70fe5418669526fc79a9fe1dbbf6b0c795d798ce99aaa024cb34528",
+   "title": "Microsoft 10-Q 0001564590-19-012709 filed 2019-04-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019012709/0001564590-19-012709-index.htm",
+   "filed": "2019-04-24",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "2dda5bbb40acb4e890ef58961b7d79a71f9e51b6ec83e630ed9bfbeaad31834e",
+   "title": "Meta 10-Q 0001326801-19-000037 filed 2019-04-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680119000037/0001326801-19-000037-index.htm",
+   "filed": "2019-04-25",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "302850c6919757e539de909dbad6a622d1ca0e73577f4ce9bba6ade8dafc082b",
+   "title": "Amazon 10-Q 0001018724-19-000043 filed 2019-04-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872419000043/0001018724-19-000043-index.htm",
+   "filed": "2019-04-26",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "6fd77ca37ff3485dc435b85fbd117238d70c00d26244bfb1ffcef59558bf37e1",
+   "title": "Alphabet 10-Q 0001652044-19-000015 filed 2019-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204419000015/0001652044-19-000015-index.htm",
+   "filed": "2019-04-30",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "ecbbefbab435b07affce8716e969fcc65d2a82ea44d0da1a3ef52c0def8daafb",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-19-000090 filed 2019-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254519000090/0001212545-19-000090-index.htm",
+   "filed": "2019-04-30",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 6
+  },
+  {
+   "document_id": "48cd7207a4879d5276a7e02e9c4f0fe272d380dfb97b098b372853d04fe89d93",
+   "title": "SVB Financial Group 10-Q 0000719739-19-000034 filed 2019-05-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973919000034/0000719739-19-000034-index.htm",
+   "filed": "2019-05-09",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "87574f2527ef8410cff6c994486521f86d10747e5e19608bdfc70496112335ad",
+   "title": "PacWest Bancorp 10-Q 0001628280-19-006327 filed 2019-05-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828019006327/0001628280-19-006327-index.htm",
+   "filed": "2019-05-09",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "2f0a4d62ec306d8c8ec61358a3278379d95bbac28a5cf1b695799c026b3980bd",
+   "title": "NVIDIA 10-Q 0001045810-19-000079 filed 2019-05-16",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581019000079/0001045810-19-000079-index.htm",
+   "filed": "2019-05-16",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 7
+  },
+  {
+   "document_id": "8fc9d85918717170006111d23042b52fec9744b11408e00a406f4f845be174b6",
+   "title": "Zoom 10-Q 0001564590-19-022032 filed 2019-06-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000156459019022032/0001564590-19-022032-index.htm",
+   "filed": "2019-06-07",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 22
+  },
+  {
+   "document_id": "4d6530265abf20bc090c67245b6cdda50c534fda9693abfc82dd1e740c940666",
+   "title": "Meta 10-Q 0001326801-19-000055 filed 2019-07-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680119000055/0001326801-19-000055-index.htm",
+   "filed": "2019-07-25",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "0404989b364b402f21920753b49f4fd3b212d9fbf0a85460969636dbc4ac1d6a",
+   "title": "Amazon 10-Q 0001018724-19-000071 filed 2019-07-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872419000071/0001018724-19-000071-index.htm",
+   "filed": "2019-07-26",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "c6a229b7fbc7f8a1bb2a0866346a21e17b0f7b71751e3bb6afed73263d5bc111",
+   "title": "Alphabet 10-Q 0001652044-19-000023 filed 2019-07-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204419000023/0001652044-19-000023-index.htm",
+   "filed": "2019-07-26",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "3309bc2f64ec2a13af083bb90b0a7a1bb5fc441cc5ba8adf4c186c8401b68739",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-19-000108 filed 2019-08-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254519000108/0001212545-19-000108-index.htm",
+   "filed": "2019-08-01",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 5
+  },
+  {
+   "document_id": "aedff5820e88d9978e30d00dedfc51a80da5f694e90e0f9e77fc20de5b725cbf",
+   "title": "Microsoft 10-K 0001564590-19-027952 filed 2019-08-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/0001564590-19-027952-index.htm",
+   "filed": "2019-08-01",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "69572d10c8d86d2df22d42e67e2f8a4c683dd08eeacf95101abc11564c4fdba5",
+   "title": "PacWest Bancorp 10-Q 0001628280-19-010355 filed 2019-08-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828019010355/0001628280-19-010355-index.htm",
+   "filed": "2019-08-08",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "f1102db52db8b0f49f864a5dc919ec75568e3f72bb447e771d764b53ea0644bd",
+   "title": "SVB Financial Group 10-Q 0000719739-19-000052 filed 2019-08-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973919000052/0000719739-19-000052-index.htm",
+   "filed": "2019-08-09",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "8315a1a118f9a5082d640b72496d3b8d2b0a54704024e3612a9cc15daeb9a0e6",
+   "title": "NVIDIA 10-Q 0001045810-19-000144 filed 2019-08-15",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581019000144/0001045810-19-000144-index.htm",
+   "filed": "2019-08-15",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 6
+  },
+  {
+   "document_id": "4852fe1182a3f55c76095eea524c4c8264300dcb26f95794d3f9263acf4769d7",
+   "title": "Zoom 10-Q 0001585521-19-000020 filed 2019-09-13",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552119000020/0001585521-19-000020-index.htm",
+   "filed": "2019-09-13",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "57f47b08a1111660253500cd6d4392fa09f68e5f0c04d24597f0dcd1f8aaa9f2",
+   "title": "Microsoft 10-Q 0001564590-19-037549 filed 2019-10-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459019037549/0001564590-19-037549-index.htm",
+   "filed": "2019-10-23",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "d93d605b6f72d57af55c5e68cf42f850bb8037c5aa939c3235d0e10d43fc1ec3",
+   "title": "Amazon 10-Q 0001018724-19-000089 filed 2019-10-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872419000089/0001018724-19-000089-index.htm",
+   "filed": "2019-10-25",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "1836ca8d95b95b08f56366beebbda1b0cc85ddb04b878ca6240808b596ca828c",
+   "title": "Alphabet 10-Q 0001652044-19-000032 filed 2019-10-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204419000032/0001652044-19-000032-index.htm",
+   "filed": "2019-10-29",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "60f356c0c08809d7321f466e2174593ec9ac24881bed4b3723d19bfb2db8b276",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-19-000115 filed 2019-10-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254519000115/0001212545-19-000115-index.htm",
+   "filed": "2019-10-31",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 5
+  },
+  {
+   "document_id": "ff82cb2cdba3bfc39f6310da656161e00fe49be4fe1cfe65fa3da2cf9476f35e",
+   "title": "Meta 10-Q 0001326801-19-000069 filed 2019-10-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680119000069/0001326801-19-000069-index.htm",
+   "filed": "2019-10-31",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "000afd06a4a4296e1291e03bfc889659b0a1532ec4a0020ab3097815a29105ae",
+   "title": "PacWest Bancorp 10-Q 0001628280-19-013559 filed 2019-11-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828019013559/0001628280-19-013559-index.htm",
+   "filed": "2019-11-07",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "a0a70e37cac1ba878c22157d558eacf03b64b3265ad9157935bf64aae3736ef2",
+   "title": "SVB Financial Group 10-Q 0000719739-19-000075 filed 2019-11-12",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973919000075/0000719739-19-000075-index.htm",
+   "filed": "2019-11-12",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "f00fea74a9dceb23b6a3c4a28f611abd1c82eac1a4e6f51c40733dfae7126f5b",
+   "title": "NVIDIA 10-Q 0001045810-19-000170 filed 2019-11-14",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581019000170/0001045810-19-000170-index.htm",
+   "filed": "2019-11-14",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 8
+  },
+  {
+   "document_id": "55189ecc362c21cc32d728610b9e75fb330e1e7f7f7691bf9255418442178163",
+   "title": "Zoom 10-Q 0001585521-19-000059 filed 2019-12-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552119000059/0001585521-19-000059-index.htm",
+   "filed": "2019-12-09",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "7a1a70247f283fa4e9a6a625139338aaab72c0ad0be990dc694c8152e76049dd",
+   "title": "Microsoft 10-Q 0001564590-20-002450 filed 2020-01-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020002450/0001564590-20-002450-index.htm",
+   "filed": "2020-01-29",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "9fc31e13f8c49ee92bc5f6cbdd90caed840924e01df733ab4cc7cf4aadd10fae",
+   "title": "Meta 10-K 0001326801-20-000013 filed 2020-01-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000013/0001326801-20-000013-index.htm",
+   "filed": "2020-01-30",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "862c1547c89598df501dbf05bb8715a2d45648765d78be1950ed3e0adbe63905",
+   "title": "Amazon 10-K 0001018724-20-000004 filed 2020-01-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872420000004/0001018724-20-000004-index.htm",
+   "filed": "2020-01-31",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "0adec0c3e9ff58186ec3cc63a8fa9c7552b4e1329d16cf1ee603c9d920e8addb",
+   "title": "Alphabet 10-K 0001652044-20-000008 filed 2020-02-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204420000008/0001652044-20-000008-index.htm",
+   "filed": "2020-02-04",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "6cc9c6bcec159767571ec8bdda4eb33d5696a5af83675fdd7fc5c45013163c2a",
+   "title": "NVIDIA 10-K 0001045810-20-000010 filed 2020-02-20",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000010/0001045810-20-000010-index.htm",
+   "filed": "2020-02-20",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "203b89ae04802696c3fad162f776f6c8e97977983091697a4928da1c1d35e796",
+   "title": "SVB Financial Group 10-K 0000719739-20-000016 filed 2020-02-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973920000016/0000719739-20-000016-index.htm",
+   "filed": "2020-02-28",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "506e17436e9af033d1f6570bce55581472e9b215266dfbaec0c0274a737802b8",
+   "title": "PacWest Bancorp 10-K 0001628280-20-002507 filed 2020-02-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828020002507/0001628280-20-002507-index.htm",
+   "filed": "2020-02-28",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "77ab8431879309925a8363718c88e6dcf3f726948207a9296a521e8135b2bf48",
+   "title": "Western Alliance Bancorporation 10-K 0001212545-20-000104 filed 2020-03-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254520000104/0001212545-20-000104-index.htm",
+   "filed": "2020-03-02",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 6
+  },
+  {
+   "document_id": "0e336b33fe7d66d242e2d578edc2c3b97a4a9e0e60593852c47f68c283a48fb7",
+   "title": "Zoom 10-K 0001585521-20-000095 filed 2020-03-20",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552120000095/0001585521-20-000095-index.htm",
+   "filed": "2020-03-20",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 19
+  },
+  {
+   "document_id": "49dfc88848c3fbeb31e532722936aa25f35c8baac779560bb37c58d3f52a7928",
+   "title": "Alphabet 10-Q 0001652044-20-000021 filed 2020-04-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204420000021/0001652044-20-000021-index.htm",
+   "filed": "2020-04-29",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "6c376fe7234ab2b91f23a3ce8962a6eba8593580c5e53dc1b590dca866caa4fb",
+   "title": "Microsoft 10-Q 0001564590-20-019706 filed 2020-04-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020019706/0001564590-20-019706-index.htm",
+   "filed": "2020-04-29",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "92312f3aebf6a0be8b9130cfe024b9b47f6a16d2b8046cd99ee584c8427a4267",
+   "title": "Meta 10-Q 0001326801-20-000048 filed 2020-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000048/0001326801-20-000048-index.htm",
+   "filed": "2020-04-30",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "ed13582f45e34ca9974966cfb0bcd728d30b1a23d5397511d6a529cb0981899e",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-20-000131 filed 2020-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254520000131/0001212545-20-000131-index.htm",
+   "filed": "2020-04-30",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 5
+  },
+  {
+   "document_id": "8dcdfcee95a468333dad22f751aa254a077eb9f50ecce07b4e31ece9a982d194",
+   "title": "Amazon 10-Q 0001018724-20-000010 filed 2020-05-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872420000010/0001018724-20-000010-index.htm",
+   "filed": "2020-05-01",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "80c8dac4e3017d44e938d407f7dd3161ed4621f2c0341d806dd1af242b28ff73",
+   "title": "PacWest Bancorp 10-Q 0001628280-20-007221 filed 2020-05-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828020007221/0001628280-20-007221-index.htm",
+   "filed": "2020-05-08",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 19
+  },
+  {
+   "document_id": "e74bbd5fa6385ad5c0f2c89ad075774b5c944079d4b3d59985e56d854687719e",
+   "title": "SVB Financial Group 10-Q 0000719739-20-000036 filed 2020-05-11",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973920000036/0000719739-20-000036-index.htm",
+   "filed": "2020-05-11",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "d50bec86c36965bb84446bfd20f6e8cdd7f16da9952e9ba7abe45f5a1a03644a",
+   "title": "NVIDIA 10-Q 0001045810-20-000065 filed 2020-05-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000065/0001045810-20-000065-index.htm",
+   "filed": "2020-05-21",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "60c1eb1129d38a72e69a9f9fda8c9f21caba828e845570e763d78531f8fa9474",
+   "title": "Zoom 10-Q 0001585521-20-000154 filed 2020-06-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552120000154/0001585521-20-000154-index.htm",
+   "filed": "2020-06-05",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "40e26f9f78963940b562357ca761d08ea3b95429e1004c8c7e741b97d8989935",
+   "title": "Microsoft 10-K 0001564590-20-034944 filed 2020-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020034944/0001564590-20-034944-index.htm",
+   "filed": "2020-07-30",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "1aa49db2dcb94ba09e1bef1e97f89d513408c814658a80a5cab132f7f7e0d017",
+   "title": "Alphabet 10-Q 0001652044-20-000032 filed 2020-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204420000032/0001652044-20-000032-index.htm",
+   "filed": "2020-07-31",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "37aa0124ac724ddaee01b90616a489998d9fe50d26831abf844a571d6c1fba86",
+   "title": "Meta 10-Q 0001326801-20-000076 filed 2020-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000076/0001326801-20-000076-index.htm",
+   "filed": "2020-07-31",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "a01e519535d4911a2ca786703ff7978a9c21fbaa4bcb19161e921e97c75d0b9e",
+   "title": "Amazon 10-Q 0001018724-20-000021 filed 2020-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872420000021/0001018724-20-000021-index.htm",
+   "filed": "2020-07-31",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "e8a85331b04ff0713df132f2bcf51588480edebdd489e6c27cd62d9e0e633b30",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-20-000163 filed 2020-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254520000163/0001212545-20-000163-index.htm",
+   "filed": "2020-07-31",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 5
+  },
+  {
+   "document_id": "4194acf5cb197aaa30361c4fbf605d288f7c75ceb8847c4cb4dc33a37014a79e",
+   "title": "SVB Financial Group 10-Q 0000719739-20-000055 filed 2020-08-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973920000055/0000719739-20-000055-index.htm",
+   "filed": "2020-08-07",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "74f4fc1aeb264fa376fc0cfdbef53f49a2696c44f7c2a08479dd969847d3217e",
+   "title": "PacWest Bancorp 10-Q 0001628280-20-012214 filed 2020-08-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828020012214/0001628280-20-012214-index.htm",
+   "filed": "2020-08-07",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "a7ab8083b3db399d7ef2412d4a4da698a356815bd5bf9c3762022c6172505132",
+   "title": "NVIDIA 10-Q 0001045810-20-000147 filed 2020-08-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000147/0001045810-20-000147-index.htm",
+   "filed": "2020-08-19",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "6a46ac0e5aeb17cb70cae4a7328d7506525be54a6158648397fe126a30906fde",
+   "title": "Zoom 10-Q 0001585521-20-000238 filed 2020-09-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552120000238/0001585521-20-000238-index.htm",
+   "filed": "2020-09-03",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "06f6330e4ab420fe9c67e3c00caad4f74e3047ee43b7bb0530a69c1567a352fa",
+   "title": "Microsoft 10-Q 0001564590-20-047996 filed 2020-10-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459020047996/0001564590-20-047996-index.htm",
+   "filed": "2020-10-27",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "1884d41de5c3103cc75741d683e618716f76ac4fecb263da412c6552dba15c68",
+   "title": "Alphabet 10-Q 0001652044-20-000050 filed 2020-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204420000050/0001652044-20-000050-index.htm",
+   "filed": "2020-10-30",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "2b280a8c15ccb62a38907651fe1d1bd4c0664193540db7e29f9c0d698463daae",
+   "title": "Meta 10-Q 0001326801-20-000084 filed 2020-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680120000084/0001326801-20-000084-index.htm",
+   "filed": "2020-10-30",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "3c9ee441b9c1080b127682b29ac43b41d02073a67291f17dfb6989bdc91ce337",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-20-000170 filed 2020-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254520000170/0001212545-20-000170-index.htm",
+   "filed": "2020-10-30",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 5
+  },
+  {
+   "document_id": "f5901d8aab72f6f7dcd4c44c60c3ba45d503635392f79b37c5f7b5f56ee93149",
+   "title": "Amazon 10-Q 0001018724-20-000030 filed 2020-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872420000030/0001018724-20-000030-index.htm",
+   "filed": "2020-10-30",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "73f5a5321bd75f26b251833a0811ada6a6616487cc50917ebc9a97dff7cf1a5e",
+   "title": "SVB Financial Group 10-Q 0000719739-20-000074 filed 2020-11-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973920000074/0000719739-20-000074-index.htm",
+   "filed": "2020-11-05",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "47903dd8340031eff7ab8afb0192722f67dc7b0c09c13f692fce2dc4b5842f21",
+   "title": "PacWest Bancorp 10-Q 0001628280-20-015997 filed 2020-11-09",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828020015997/0001628280-20-015997-index.htm",
+   "filed": "2020-11-09",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "ac54c259c852356fe84f3f44ce3c5ff6119ca7655378b79d655bf0fbd30c8132",
+   "title": "Zoom 10-Q 0001585521-20-000299 filed 2020-12-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552120000299/0001585521-20-000299-index.htm",
+   "filed": "2020-12-04",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "92eba5ef4d7b7079a77cb94e6173fe3ec65b9f6588a5979d9946d5d667a2eff2",
+   "title": "Microsoft 10-Q 0001564590-21-002316 filed 2021-01-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021002316/0001564590-21-002316-index.htm",
+   "filed": "2021-01-26",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "148866203274d1b1516615046aa010d6272916944df9a90ac755152a3676c3bd",
+   "title": "Meta 10-K 0001326801-21-000014 filed 2021-01-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000014/0001326801-21-000014-index.htm",
+   "filed": "2021-01-28",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "9a26c04978eb3c44784e66c48e452a659b5a68ee9b7843891627b40a01558c9f",
+   "title": "Amazon 10-K 0001018724-21-000004 filed 2021-02-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872421000004/0001018724-21-000004-index.htm",
+   "filed": "2021-02-03",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "caed66156f8989cae6b6bbff19a73c8409bf5783c54e126b71aca88ad1c299a7",
+   "title": "Alphabet 10-K 0001652044-21-000010 filed 2021-02-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204421000010/0001652044-21-000010-index.htm",
+   "filed": "2021-02-03",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "837290a2381d6ba7d5c0c21288fbee08179fe334c23e35b6b234eadf5d83dcec",
+   "title": "Western Alliance Bancorporation 10-K 0001212545-21-000085 filed 2021-02-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254521000085/0001212545-21-000085-index.htm",
+   "filed": "2021-02-25",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 6
+  },
+  {
+   "document_id": "9545de94635cbd7a19a8a7811855944abd0e3bc0a81f73d5e86872bd795b9b64",
+   "title": "NVIDIA 10-K 0001045810-21-000010 filed 2021-02-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581021000010/0001045810-21-000010-index.htm",
+   "filed": "2021-02-26",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "b307fbb62ec929454c17c8d64ab73ed9e00ff8dfdc9bbe850f12a6378c4cb94f",
+   "title": "PacWest Bancorp 10-K 0001628280-21-003477 filed 2021-02-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828021003477/0001628280-21-003477-index.htm",
+   "filed": "2021-02-26",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "f1cc42fb6322e87432b14058124772583c4709fde20293289a16b43e78a58bcd",
+   "title": "SVB Financial Group 10-K 0000719739-21-000023 filed 2021-03-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973921000023/0000719739-21-000023-index.htm",
+   "filed": "2021-03-01",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "768447acce5637488c07ebc86db86678a6224a5cb26e80e127aac8fc8eba428c",
+   "title": "Zoom 10-K 0001585521-21-000048 filed 2021-03-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552121000048/0001585521-21-000048-index.htm",
+   "filed": "2021-03-18",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "e31ab2b2d00ff83a123e21f7ed078900b88b16b8c378ff884b1b582b19b8610a",
+   "title": "Microsoft 10-Q 0001564590-21-020891 filed 2021-04-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021020891/0001564590-21-020891-index.htm",
+   "filed": "2021-04-27",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "acaf7c64cbec8b7f15f69f1d5035579eb119f39ed1120ce5aca43ed82dcf7d8b",
+   "title": "Alphabet 10-Q 0001652044-21-000020 filed 2021-04-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204421000020/0001652044-21-000020-index.htm",
+   "filed": "2021-04-28",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "6ae9788c88cae21041865e7bd4cabf2a5ae7e5670e58a20844c1be4972b2490a",
+   "title": "Meta 10-Q 0001326801-21-000033 filed 2021-04-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000033/0001326801-21-000033-index.htm",
+   "filed": "2021-04-29",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "ba341cb887bb0366a272a59e9758f6c85999cf387671d1f74c0097020de9afa0",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-21-000127 filed 2021-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254521000127/0001212545-21-000127-index.htm",
+   "filed": "2021-04-30",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 7
+  },
+  {
+   "document_id": "dd4a7fa485da70ec4092a0daf76095549e6fed581e33443e1ee72514f296911d",
+   "title": "Amazon 10-Q 0001018724-21-000010 filed 2021-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872421000010/0001018724-21-000010-index.htm",
+   "filed": "2021-04-30",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "715d9e0c145cf34721a23292f3332103a5ecebea5821fb53cc37bbe20a951966",
+   "title": "SVB Financial Group 10-Q 0000719739-21-000036 filed 2021-05-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973921000036/0000719739-21-000036-index.htm",
+   "filed": "2021-05-10",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "e701fc19cb5fcda61def10ede672e3417929e961f8493c2ec7866345158bc927",
+   "title": "PacWest Bancorp 10-Q 0001628280-21-009560 filed 2021-05-10",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828021009560/0001628280-21-009560-index.htm",
+   "filed": "2021-05-10",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "a28a527b20daab6644f230daccf78f51f5a033dd33961552cedb411ddc196f00",
+   "title": "NVIDIA 10-Q 0001045810-21-000064 filed 2021-05-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581021000064/0001045810-21-000064-index.htm",
+   "filed": "2021-05-26",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "47556db5b6853fd70c6b1cd7303535b17262c5ba6b7ef5ba38c0bb1b537671b8",
+   "title": "Zoom 10-Q 0001585521-21-000131 filed 2021-06-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552121000131/0001585521-21-000131-index.htm",
+   "filed": "2021-06-02",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "bd281c35914c1c16757fdeffddb33058f8f786c29315b2996dc2e22ebd3ecf6d",
+   "title": "Alphabet 10-Q 0001652044-21-000047 filed 2021-07-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204421000047/0001652044-21-000047-index.htm",
+   "filed": "2021-07-28",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "4e3dcc1254015280baf267cf01dba759af1d4ef76e2752a17525464e03b7a00e",
+   "title": "Meta 10-Q 0001326801-21-000049 filed 2021-07-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000049/0001326801-21-000049-index.htm",
+   "filed": "2021-07-29",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "79caa2d44d70f7345130810b22741337dfc46893d1cfb3f245890588189518e9",
+   "title": "Microsoft 10-K 0001564590-21-039151 filed 2021-07-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021039151/0001564590-21-039151-index.htm",
+   "filed": "2021-07-29",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "271512ff9b46f7c4f02737e489e8318576568df617392d6dadb0a0e402b8f35b",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-21-000151 filed 2021-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254521000151/0001212545-21-000151-index.htm",
+   "filed": "2021-07-30",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "567c79245e152357e071ecfc0231fe4fb23fb35c65f60292e5c96afea13ff379",
+   "title": "Amazon 10-Q 0001018724-21-000020 filed 2021-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872421000020/0001018724-21-000020-index.htm",
+   "filed": "2021-07-30",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "4738988000f727958cc705707f96cb6bd421568f9219dfeb134246319e11d893",
+   "title": "PacWest Bancorp 10-Q 0001628280-21-016117 filed 2021-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828021016117/0001628280-21-016117-index.htm",
+   "filed": "2021-08-06",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "e3beee5d6af93313e385b06edcf2d2b41d71cbc2f614c68aa52d69764ba4d028",
+   "title": "SVB Financial Group 10-Q 0000719739-21-000060 filed 2021-08-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973921000060/0000719739-21-000060-index.htm",
+   "filed": "2021-08-06",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "a2043a2b85cb0dc8a1c09664809ea48933d8811f061b2dac3496369776b942e1",
+   "title": "NVIDIA 10-Q 0001045810-20-000189 filed 2021-08-20",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581020000189/0001045810-20-000189-index.htm",
+   "filed": "2021-08-20",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "d3c6aaeccb3cd518fddae7e7cbcef608d61ffa203ef61711a78d43d19d657320",
+   "title": "NVIDIA 10-Q 0001045810-21-000131 filed 2021-08-20",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581021000131/0001045810-21-000131-index.htm",
+   "filed": "2021-08-20",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "d853670e5514cce0dc55862ae2e49d76746e5e567b6767c592ddd32efaeec7f7",
+   "title": "Zoom 10-Q 0001585521-21-000235 filed 2021-08-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552121000235/0001585521-21-000235-index.htm",
+   "filed": "2021-08-31",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "3231421a7fb56a67ef269e5466001feb97cec475d507945425d65e33147bf816",
+   "title": "Microsoft 10-Q 0001564590-21-051992 filed 2021-10-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459021051992/0001564590-21-051992-index.htm",
+   "filed": "2021-10-26",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "b9e3a8347f754338f7d48134dd1ae4f07187a78cd472967712a38961c96bb7c4",
+   "title": "Meta 10-Q 0001326801-21-000065 filed 2021-10-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680121000065/0001326801-21-000065-index.htm",
+   "filed": "2021-10-26",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "818e6d93ee9022e412879cccd443eb2ef654215f32a5b42bf11fa92173876ead",
+   "title": "Alphabet 10-Q 0001652044-21-000057 filed 2021-10-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204421000057/0001652044-21-000057-index.htm",
+   "filed": "2021-10-27",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "f4d56a46901dbd15da07ec8fe22b9423127c40bd6c8de15a2be0a24b91e5228d",
+   "title": "Amazon 10-Q 0001018724-21-000028 filed 2021-10-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872421000028/0001018724-21-000028-index.htm",
+   "filed": "2021-10-29",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "bdd81ef4f5b40fa0751a2abda8a43c401da95e32cc9d9584d6368d1e96916a36",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-21-000170 filed 2021-11-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254521000170/0001212545-21-000170-index.htm",
+   "filed": "2021-11-03",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 10
+  },
+  {
+   "document_id": "4967a55f3edcd5f758d7716f67fedc65db61da93be7f1a6e9c2bb7537c45f644",
+   "title": "PacWest Bancorp 10-Q 0001628280-21-022297 filed 2021-11-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828021022297/0001628280-21-022297-index.htm",
+   "filed": "2021-11-08",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "c0d67a4f199f5f86f1e8724adb615c40d4fffda25a70dcbbf6299ce34c637764",
+   "title": "SVB Financial Group 10-Q 0000719739-21-000071 filed 2021-11-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973921000071/0000719739-21-000071-index.htm",
+   "filed": "2021-11-08",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "3a188509d81681715d948ca3ad4ecdd6de4928d2b11734aeb45f901bf3c0666e",
+   "title": "NVIDIA 10-Q 0001045810-21-000163 filed 2021-11-22",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581021000163/0001045810-21-000163-index.htm",
+   "filed": "2021-11-22",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 13
+  },
+  {
+   "document_id": "73faa3b3879a794a35c3dc51c12bbf93c943e0d43110dc420251c81e4443275b",
+   "title": "Zoom 10-Q 0001585521-21-000295 filed 2021-11-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552121000295/0001585521-21-000295-index.htm",
+   "filed": "2021-11-23",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "4799314062e350d69defa79b45815c00d780e3881d59bfcb99b56c2b103dbdac",
+   "title": "Microsoft 10-Q 0001564590-22-002324 filed 2022-01-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022002324/0001564590-22-002324-index.htm",
+   "filed": "2022-01-25",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "d5990d5b4d110ddebdfd2e7311a3e7689299a3bb6175a515c0b9c76b69390a1c",
+   "title": "Alphabet 10-K 0001652044-22-000019 filed 2022-02-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000019/0001652044-22-000019-index.htm",
+   "filed": "2022-02-02",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "79912129aa2928d945c5d6e258fa6f9ed532c4e4613994eaa63dbbff1a313083",
+   "title": "Meta 10-K 0001326801-22-000018 filed 2022-02-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000018/0001326801-22-000018-index.htm",
+   "filed": "2022-02-03",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "c5257776fe72140053afce3f249080842f060c32fa94bd2f991d4c3542f2fc8a",
+   "title": "Amazon 10-K 0001018724-22-000005 filed 2022-02-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000005/0001018724-22-000005-index.htm",
+   "filed": "2022-02-04",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 19
+  },
+  {
+   "document_id": "5c23db70adf21b970e900a792f07b2169502380ec7acd26c3566df5d7e555947",
+   "title": "Western Alliance Bancorporation 10-K 0001212545-22-000090 filed 2022-02-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254522000090/0001212545-22-000090-index.htm",
+   "filed": "2022-02-25",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "67005a301f5897553b613c2b38b1b7041045c3cbbd575746250373fd850c32f3",
+   "title": "PacWest Bancorp 10-K 0001628280-22-004301 filed 2022-02-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828022004301/0001628280-22-004301-index.htm",
+   "filed": "2022-02-28",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "ee027128ff199c5d6d359a96981abe3d91dc9d9557b7eb75effc728e7379309c",
+   "title": "SVB Financial Group 10-K 0000719739-22-000023 filed 2022-03-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973922000023/0000719739-22-000023-index.htm",
+   "filed": "2022-03-01",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "c3d4eb9460d7e8c3d8758a2e8d1dbda001647f89206d43423db38dc89a54b93a",
+   "title": "Zoom 10-K 0001585521-22-000037 filed 2022-03-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552122000037/0001585521-22-000037-index.htm",
+   "filed": "2022-03-07",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "bc3ada92ec39f7bdf1aef4c03275bae0c439d78a16765d8c9f19db972fa6011a",
+   "title": "NVIDIA 10-K 0001045810-22-000036 filed 2022-03-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000036/0001045810-22-000036-index.htm",
+   "filed": "2022-03-18",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "2a0d4789fa71947ec88bbce5ca6beb319c957ddfd821f80d2223809afbe2b7aa",
+   "title": "Microsoft 10-Q 0001564590-22-015675 filed 2022-04-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022015675/0001564590-22-015675-index.htm",
+   "filed": "2022-04-26",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "0c78656c1dffe56d22b4feaea8135e065376c956edc2ec629bf82773f5c1394c",
+   "title": "Alphabet 10-Q 0001652044-22-000029 filed 2022-04-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000029/0001652044-22-000029-index.htm",
+   "filed": "2022-04-27",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "1819976d59477f945801b120e0cc7fa243fc6eaed8cf3dd9913b853bcea69266",
+   "title": "Meta 10-Q 0001326801-22-000057 filed 2022-04-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000057/0001326801-22-000057-index.htm",
+   "filed": "2022-04-28",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "ad00bfdb74c9a0f4d0d5550c662fa3726f80e15a1d40ed60d53dba85b16e3d7e",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-22-000109 filed 2022-04-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254522000109/0001212545-22-000109-index.htm",
+   "filed": "2022-04-29",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "c317974589eaf6577d17b351cdb896d538c026ec9069c8a89ff43b339962630a",
+   "title": "Amazon 10-Q 0001018724-22-000013 filed 2022-04-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000013/0001018724-22-000013-index.htm",
+   "filed": "2022-04-29",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "03efd8aa8594e97e41707ce55da0374e37a7484b1a13f9aa97b3ef3cffbd9a48",
+   "title": "SVB Financial Group 10-Q 0000719739-22-000040 filed 2022-05-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973922000040/0000719739-22-000040-index.htm",
+   "filed": "2022-05-06",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "62684c86257a670cf41897321e6773779e64744c91703e1ea55a13fca8fe8fe1",
+   "title": "PacWest Bancorp 10-Q 0001628280-22-013054 filed 2022-05-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828022013054/0001628280-22-013054-index.htm",
+   "filed": "2022-05-06",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "e66a43643d6a271cff1eb4c75336b9f9bdf2d20030bd9df15224609a1b4f9e02",
+   "title": "Zoom 10-Q 0001585521-22-000106 filed 2022-05-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552122000106/0001585521-22-000106-index.htm",
+   "filed": "2022-05-25",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "dfc912386400ae1e35b4a140501b7fe53e94a243fbbf5dd04f325a40bbda5241",
+   "title": "NVIDIA 10-Q 0001045810-22-000079 filed 2022-05-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000079/0001045810-22-000079-index.htm",
+   "filed": "2022-05-27",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "de54b47cfc2fd8f4a466c20ca7f2bd5dcce452a859c18b04daae5a9222251e77",
+   "title": "Alphabet 10-Q 0001652044-22-000071 filed 2022-07-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000071/0001652044-22-000071-index.htm",
+   "filed": "2022-07-27",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "82c2ad69823784e37ed34d25983b3cec932d44f30a22ddd02a284cd245207ce2",
+   "title": "Meta 10-Q 0001326801-22-000082 filed 2022-07-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000082/0001326801-22-000082-index.htm",
+   "filed": "2022-07-28",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "9a23d4db722e786cc7a66e2e98e9fc3a5fc25c5bc184fb4c219c7d79ef71ad47",
+   "title": "Microsoft 10-K 0001564590-22-026876 filed 2022-07-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022026876/0001564590-22-026876-index.htm",
+   "filed": "2022-07-28",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "52de771197e0b634539afddbf799e02db586c671f5f99a28850bf766a3d4228e",
+   "title": "Amazon 10-Q 0001018724-22-000019 filed 2022-07-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000019/0001018724-22-000019-index.htm",
+   "filed": "2022-07-29",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "661115ebd2d5a94d50596e9c2c9a769ad9b3c390d519708b0eb64fbf4ad6253b",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-22-000130 filed 2022-07-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254522000130/0001212545-22-000130-index.htm",
+   "filed": "2022-07-29",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "abd806ee69f2d38b9bd121d5c818825b5327d5c881cd148c3949a81ca3f89382",
+   "title": "PacWest Bancorp 10-Q 0001628280-22-021577 filed 2022-08-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828022021577/0001628280-22-021577-index.htm",
+   "filed": "2022-08-08",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "e8fb7e395401c67d3e5853c8cbcad261485ebc35823b8fe6997a2ddd997e16de",
+   "title": "SVB Financial Group 10-Q 0000719739-22-000055 filed 2022-08-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973922000055/0000719739-22-000055-index.htm",
+   "filed": "2022-08-08",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "9b54d3287ced2326684d886ad52105a653937af3261d55dcacddc4d630d02f31",
+   "title": "Zoom 10-Q 0001585521-22-000180 filed 2022-08-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552122000180/0001585521-22-000180-index.htm",
+   "filed": "2022-08-24",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "57506752d07780289481f17caae518facaae66a6b261813218712e900b9e71bc",
+   "title": "NVIDIA 10-Q 0001045810-22-000147 filed 2022-08-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000147/0001045810-22-000147-index.htm",
+   "filed": "2022-08-31",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "242c63b28dbb2aafe310a0bf822ae9d0fbfc80339a8106b266e4c5afacece60c",
+   "title": "Microsoft 10-Q 0001564590-22-035087 filed 2022-10-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022035087/0001564590-22-035087-index.htm",
+   "filed": "2022-10-25",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "2fb5e1bd4131097b8d3c2e69fadbd5a27f979569047d5aa9705522ad699ebfdb",
+   "title": "Alphabet 10-Q 0001652044-22-000090 filed 2022-10-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204422000090/0001652044-22-000090-index.htm",
+   "filed": "2022-10-26",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "0d4809f55518f7a6bd77e791763c57f7e181e759b7e3439c14b24c2ede3b0151",
+   "title": "Meta 10-Q 0001326801-22-000108 filed 2022-10-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000108/0001326801-22-000108-index.htm",
+   "filed": "2022-10-27",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "0901e3230ca51401d371196b385d67e6fddd2865b732dd43cc9159dba1d37a5a",
+   "title": "Amazon 10-Q 0001018724-22-000023 filed 2022-10-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000023/0001018724-22-000023-index.htm",
+   "filed": "2022-10-28",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "2b5a4d8d764ffd2f645f2c0df7d93337872d016d5f5e313306c10d9add0f0e41",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-22-000155 filed 2022-11-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254522000155/0001212545-22-000155-index.htm",
+   "filed": "2022-11-01",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "97efbd6c4cbac8bbb4df23e7dd8652149dd99fa7f375a3ad58f8849a397660af",
+   "title": "SVB Financial Group 10-Q 0000719739-22-000081 filed 2022-11-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973922000081/0000719739-22-000081-index.htm",
+   "filed": "2022-11-07",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "5229df34e27e24010684f0d6a85e22fddc445cfb7eb2f592f49f625c24991c62",
+   "title": "PacWest Bancorp 10-Q 0001628280-22-028720 filed 2022-11-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828022028720/0001628280-22-028720-index.htm",
+   "filed": "2022-11-08",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "52f1bdab678c4908a0a84a02aa569d57935643c7c422ab1b60e71471e13a00b7",
+   "title": "NVIDIA 10-Q 0001045810-22-000166 filed 2022-11-18",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581022000166/0001045810-22-000166-index.htm",
+   "filed": "2022-11-18",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "b01e49329642057459116cf3725cdad74d63b4929af3b45c7352d73e4dc8a136",
+   "title": "Zoom 10-Q 0001585521-22-000213 filed 2022-11-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1585521/000158552122000213/0001585521-22-000213-index.htm",
+   "filed": "2022-11-23",
+   "entities": [
+    "Zoom"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "d164b1a8d2448aa2f69a5c2f3235b2bf74034854549b5fe73d20e9a8ac66b48a",
+   "title": "Microsoft 10-Q 0001564590-23-000733 filed 2023-01-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459023000733/0001564590-23-000733-index.htm",
+   "filed": "2023-01-24",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "06b664c20ef635b188ce2d0b8a17d544bfb369220b427e4bb45e9c83490407e2",
+   "title": "Meta 10-K 0001326801-23-000013 filed 2023-02-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000013/0001326801-23-000013-index.htm",
+   "filed": "2023-02-02",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "2dedfb946e356b9b07ed30818cc78373d27b2cf5d27ba98ee2315e4cf49faeb8",
+   "title": "Amazon 10-K 0001018724-23-000004 filed 2023-02-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/0001018724-23-000004-index.htm",
+   "filed": "2023-02-03",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "f4f9452b3ecaffc5059175d4be969398ffd1a3f05e4eba1524dcc7582cea2adc",
+   "title": "Alphabet 10-K 0001652044-23-000016 filed 2023-02-03",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000016/0001652044-23-000016-index.htm",
+   "filed": "2023-02-03",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "87236d50fc22e0928871bed5ee203e1e75d2f78bbfe1f9748e15b3ddd2daef17",
+   "title": "Western Alliance Bancorporation 10-K 0001212545-23-000093 filed 2023-02-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254523000093/0001212545-23-000093-index.htm",
+   "filed": "2023-02-23",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "249a48b2f6828b229b4a7cbf1cfc7d54e4e3493d6af092601db651ebf1f342a0",
+   "title": "NVIDIA 10-K 0001045810-23-000017 filed 2023-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000017/0001045810-23-000017-index.htm",
+   "filed": "2023-02-24",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 12
+  },
+  {
+   "document_id": "8237ebcf9d7109954b66208351b6bc6f8110a9818f3a37b4ac42bdbad579be3e",
+   "title": "SVB Financial Group 10-K 0000719739-23-000021 filed 2023-02-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/719739/000071973923000021/0000719739-23-000021-index.htm",
+   "filed": "2023-02-24",
+   "entities": [
+    "SVB Financial Group"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "af6ab2aa62b0966ec9549886a53f5bc670ea15bdc706990e40c231026500d513",
+   "title": "PacWest Bancorp 10-K 0001628280-23-005257 filed 2023-02-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828023005257/0001628280-23-005257-index.htm",
+   "filed": "2023-02-27",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "a0fce3be102017a6ac97f2e4f2b4de0f31f51492f664dbd1c4acbde8f1ca1f61",
+   "title": "Microsoft 10-Q 0000950170-23-014423 filed 2023-04-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023014423/0000950170-23-014423-index.htm",
+   "filed": "2023-04-25",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "7ec08dd4b8798eb5f8e995ebcd64969d24e66ea09bdde1aadaae3b056372f354",
+   "title": "Alphabet 10-Q 0001652044-23-000045 filed 2023-04-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000045/0001652044-23-000045-index.htm",
+   "filed": "2023-04-26",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "b5860f5166a7995662c1de5a7eab42272df433d290ac3607ced1d259ae8bbf18",
+   "title": "Meta 10-Q 0001326801-23-000067 filed 2023-04-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000067/0001326801-23-000067-index.htm",
+   "filed": "2023-04-27",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "f3b3a1bd4a9c48edbe821e2e3020bd3d1f7efd8a72d9f0d604dea7771fa25782",
+   "title": "Amazon 10-Q 0001018724-23-000008 filed 2023-04-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000008/0001018724-23-000008-index.htm",
+   "filed": "2023-04-28",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "6c2e3941529f7d4a96151b68ca31e50341749eca51b17c4dfca010d1075e5b3a",
+   "title": "Western Alliance Bancorporation 10-Q 0001212545-23-000127 filed 2023-05-08",
+   "url": "https://www.sec.gov/Archives/edgar/data/1212545/000121254523000127/0001212545-23-000127-index.htm",
+   "filed": "2023-05-08",
+   "entities": [
+    "Western Alliance Bancorporation"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "90a4f1a2ef93d864d8326ae639afa25dce6c08d9dccb894a65b322a1575c1a01",
+   "title": "PacWest Bancorp 10-Q 0001628280-23-017382 filed 2023-05-11",
+   "url": "https://www.sec.gov/Archives/edgar/data/1102112/000162828023017382/0001628280-23-017382-index.htm",
+   "filed": "2023-05-11",
+   "entities": [
+    "PacWest Bancorp"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "6c119101bdc8d06b2dcb2f4671171a0687f61e1e80b654ef51a4b56919d0bb7c",
+   "title": "NVIDIA 10-Q 0001045810-23-000093 filed 2023-05-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000093/0001045810-23-000093-index.htm",
+   "filed": "2023-05-26",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "b78fc520c5c4cde9d132226eb0e84e2760ccca58a5aab55c78e16c409055c94a",
+   "title": "Alphabet 10-Q 0001652044-23-000070 filed 2023-07-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000070/0001652044-23-000070-index.htm",
+   "filed": "2023-07-26",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "91767d549bc1d7c135ffd2a6ec47bc2dbeda576d39ba9b9f47805bda98bb0877",
+   "title": "Meta 10-Q 0001326801-23-000093 filed 2023-07-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000093/0001326801-23-000093-index.htm",
+   "filed": "2023-07-27",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "be106d51ebb6adbff8814cf2e07d734df11742e9cbfcd4adb552b6d9f4b8bec5",
+   "title": "Microsoft 10-K 0000950170-23-035122 filed 2023-07-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023035122/0000950170-23-035122-index.htm",
+   "filed": "2023-07-27",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "c0424ed8ae8ba85bf90d730c9c73b7446152178bf35d31dd9da7eaef29e0897b",
+   "title": "Amazon 10-Q 0001018724-23-000012 filed 2023-08-04",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000012/0001018724-23-000012-index.htm",
+   "filed": "2023-08-04",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "51c71a46c47d1d58c9bc4c8cd339966f37d8efc4807f475c50305fb79e037070",
+   "title": "NVIDIA 10-Q 0001045810-23-000175 filed 2023-08-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000175/0001045810-23-000175-index.htm",
+   "filed": "2023-08-28",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 11
+  },
+  {
+   "document_id": "b50cd8fe4d69676a91b7c99335759b467d2fdbef0bc6067ecd7b84f672825956",
+   "title": "Microsoft 10-Q 0000950170-23-054855 filed 2023-10-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017023054855/0000950170-23-054855-index.htm",
+   "filed": "2023-10-24",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "6cb3696d218e0bde440e4ea3b12c17e2671a38a4d8b76b48bad8860e2fb69a53",
+   "title": "Alphabet 10-Q 0001652044-23-000094 filed 2023-10-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000094/0001652044-23-000094-index.htm",
+   "filed": "2023-10-25",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "4b2bd7e505f57a829dec38738fed464d0d578ddf202c20aa050d086bc24b5872",
+   "title": "Meta 10-Q 0001326801-23-000103 filed 2023-10-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680123000103/0001326801-23-000103-index.htm",
+   "filed": "2023-10-26",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "6ba145966942d4089367c034a7fe7a81afe4b664ade34486417065a1ce6526f9",
+   "title": "Amazon 10-Q 0001018724-23-000018 filed 2023-10-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000018/0001018724-23-000018-index.htm",
+   "filed": "2023-10-27",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "6e7328e78b554eb2c88b9ec1f74d929187a2c21d26697528480ea6d89daef705",
+   "title": "Microsoft 10-Q 0000950170-24-008814 filed 2024-01-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024008814/0000950170-24-008814-index.htm",
+   "filed": "2024-01-30",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "0c0b82629904c3f93ead7fb849b8b77faaaa1c1fa66eca4cf9e98a8d6ddb17b4",
+   "title": "Alphabet 10-K 0001652044-24-000022 filed 2024-01-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000022/0001652044-24-000022-index.htm",
+   "filed": "2024-01-31",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "0ae8312b163aa150cc255be766ec5383a9bc3b7eef99d0d26e0f4b72bbab8a18",
+   "title": "Amazon 10-K 0001018724-24-000008 filed 2024-02-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/0001018724-24-000008-index.htm",
+   "filed": "2024-02-02",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "e31d4fb8da3160e3cc10b59757cee1c6371776281efe6eadf1a69704b3d0c804",
+   "title": "Meta 10-K 0001326801-24-000012 filed 2024-02-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/0001326801-24-000012-index.htm",
+   "filed": "2024-02-02",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "2e2f8e78f9fbd026616cc4278d8268eadd2b51efe7358be01e3cee99cf6124ff",
+   "title": "NVIDIA 10-K 0001045810-24-000029 filed 2024-02-21",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000029/0001045810-24-000029-index.htm",
+   "filed": "2024-02-21",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 19
+  },
+  {
+   "document_id": "0488393492b8b5c8cf407139ed923d50dd588b641c2a74064a6b615a59bb8d33",
+   "title": "Meta 10-Q 0001326801-24-000049 filed 2024-04-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000049/0001326801-24-000049-index.htm",
+   "filed": "2024-04-25",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "e0104d7da580e1a3feecd2ace2d1531d404f94aa3de52c6e647539407cb5d848",
+   "title": "Microsoft 10-Q 0000950170-24-048288 filed 2024-04-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024048288/0000950170-24-048288-index.htm",
+   "filed": "2024-04-25",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "5de54749b48f55c3eeb349058587ee166be337344730bf9128e133cbcf31388a",
+   "title": "Alphabet 10-Q 0001652044-24-000053 filed 2024-04-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000053/0001652044-24-000053-index.htm",
+   "filed": "2024-04-26",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "b20a06d18dcc7bb24d6cbff8be2bc91056b0569efddbb51ebf052596a83d0598",
+   "title": "Amazon 10-Q 0001018724-24-000083 filed 2024-05-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000083/0001018724-24-000083-index.htm",
+   "filed": "2024-05-01",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "a2b0e684fffa6125ed82461b77ee7c5a261a0d9e5ea8fcf3ce6d6730731528a3",
+   "title": "NVIDIA 10-Q 0001045810-24-000124 filed 2024-05-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000124/0001045810-24-000124-index.htm",
+   "filed": "2024-05-29",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "c25f3581c6e7931a3bc58b8716182c8b8cb66ddb5c8c809f77e4197afc15b50c",
+   "title": "Alphabet 10-Q 0001652044-24-000079 filed 2024-07-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000079/0001652044-24-000079-index.htm",
+   "filed": "2024-07-24",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "83e7e8839de9f9c1182518203d924bd0791d5fd9ba25e286688f7b4520b703b3",
+   "title": "Microsoft 10-K 0000950170-24-087843 filed 2024-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024087843/0000950170-24-087843-index.htm",
+   "filed": "2024-07-30",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "1991e271503fd1279905f63cba6037eefd57199acd44c2ce0aa60778f7cd774b",
+   "title": "Meta 10-Q 0001326801-24-000069 filed 2024-08-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000069/0001326801-24-000069-index.htm",
+   "filed": "2024-08-01",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "e5265942829a1a70e45a19cd67a08f206b325486a36ae14a6fc9a3f5a952dc65",
+   "title": "Amazon 10-Q 0001018724-24-000130 filed 2024-08-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000130/0001018724-24-000130-index.htm",
+   "filed": "2024-08-02",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "a43245af0744858dfc977d17a7ff4d007a1f326e101f04f1df5de056f97e4b1f",
+   "title": "NVIDIA 10-Q 0001045810-24-000264 filed 2024-08-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/0001045810-24-000264-index.htm",
+   "filed": "2024-08-28",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "d3b5730a4c7aeb7f56519e6edf7c82c8b9be9548ce9a1a2b99ac4e17feeeb00c",
+   "title": "NVIDIA 10-Q 0001045810-23-000227 filed 2024-08-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000227/0001045810-23-000227-index.htm",
+   "filed": "2024-08-28",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "b8b578a5e4129b4ad48a710396ae014f3c15854a38165cfb3d00dd439c2bb113",
+   "title": "Alphabet 10-Q 0001652044-24-000118 filed 2024-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204424000118/0001652044-24-000118-index.htm",
+   "filed": "2024-10-30",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "e15b0341d74e50e7bfb909b9ffa3119d074bcca3ceb8207e7aed85b25b127356",
+   "title": "Microsoft 10-Q 0000950170-24-118967 filed 2024-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118967/0000950170-24-118967-index.htm",
+   "filed": "2024-10-30",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "901ca279dff77a17a2a3fc64d4860157ec606260886624bc978493ab29e6e5d6",
+   "title": "Meta 10-Q 0001326801-24-000081 filed 2024-10-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000081/0001326801-24-000081-index.htm",
+   "filed": "2024-10-31",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "58c0b784638a298fe7c8ff6a90640b21684d129256e63a45d2281c7029ae3ea2",
+   "title": "Amazon 10-Q 0001018724-24-000161 filed 2024-11-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000161/0001018724-24-000161-index.htm",
+   "filed": "2024-11-01",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "6b3e70ef289a4875b382c79efc80c2d4624c601d988987e05bd35771145b140b",
+   "title": "NVIDIA 10-Q 0001045810-24-000316 filed 2024-11-20",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000316/0001045810-24-000316-index.htm",
+   "filed": "2024-11-20",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "90ee09d164733f8a494d0afafb5cec4a77520d3523e81031652236f03af1e83f",
+   "title": "Microsoft 10-Q 0000950170-25-010491 filed 2025-01-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025010491/0000950170-25-010491-index.htm",
+   "filed": "2025-01-29",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "df99d62d70aa2f6742af747926bc71f56bb73acf7a30fbfc0b7db4daea7fed7b",
+   "title": "Meta 10-K 0001326801-25-000017 filed 2025-01-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/0001326801-25-000017-index.htm",
+   "filed": "2025-01-30",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "6db9630d1443aa9d6671a561af5d0a44ef723f8ad85161a1a145865a3156df43",
+   "title": "Alphabet 10-K 0001652044-25-000014 filed 2025-02-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000014/0001652044-25-000014-index.htm",
+   "filed": "2025-02-05",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "9f47fdca0a647cf269f3ba7df57d9408c2c496bdf8f91a76ea74ac59513d14fe",
+   "title": "Amazon 10-K 0001018724-25-000004 filed 2025-02-07",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/0001018724-25-000004-index.htm",
+   "filed": "2025-02-07",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "9a3ef81fd4440c2234c305469bed10941ecb61d7a2e2b61a704116268140b100",
+   "title": "NVIDIA 10-K 0001045810-25-000023 filed 2025-02-26",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/0001045810-25-000023-index.htm",
+   "filed": "2025-02-26",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "190990a9ea56c11e9b77afb197cfbe4799af98a9320058fced8200a0dd8dc02a",
+   "title": "Alphabet 10-Q 0001652044-25-000043 filed 2025-04-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000043/0001652044-25-000043-index.htm",
+   "filed": "2025-04-25",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "4e2ec6e7942a080b3e3084625faeef2deaa71aed14a595a5e2a3ee8640ddcb7b",
+   "title": "Microsoft 10-Q 0000950170-25-061046 filed 2025-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025061046/0000950170-25-061046-index.htm",
+   "filed": "2025-04-30",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "80802457092b49311d12be310aa0b6b09c7577fba432541ce760fd80187c1e9d",
+   "title": "Meta 10-Q 0001326801-25-000054 filed 2025-05-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000054/0001326801-25-000054-index.htm",
+   "filed": "2025-05-01",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "0f426cc4b0caf19cbddd376b5396fb7a64106fc10f65590ed596a192afd8431b",
+   "title": "Amazon 10-Q 0001018724-25-000036 filed 2025-05-02",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000036/0001018724-25-000036-index.htm",
+   "filed": "2025-05-02",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "84c6c5bc28f35853f2d84f2dc2c996a62179f7d3103e73e14a00b6f85bd6820c",
+   "title": "NVIDIA 10-Q 0001045810-25-000116 filed 2025-05-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/0001045810-25-000116-index.htm",
+   "filed": "2025-05-28",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "8466090e9fdfd5297ad77975af4848bb25315568aa3e8343efe0822986f45b93",
+   "title": "Alphabet 10-Q 0001652044-25-000062 filed 2025-07-24",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000062/0001652044-25-000062-index.htm",
+   "filed": "2025-07-24",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 8
+  },
+  {
+   "document_id": "04ba602a9be1ecdeb02298906383fb0ec482f79fccc2ecfae2a572c7c8d502b3",
+   "title": "Microsoft 10-K 0000950170-25-100235 filed 2025-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/0000950170-25-100235-index.htm",
+   "filed": "2025-07-30",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 18
+  },
+  {
+   "document_id": "6cb69548cd94bc1a90d4a6ace59571a6392bd215c3eb25ecc07b9e005c94afc0",
+   "title": "Meta 10-Q 0001628280-25-036791 filed 2025-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025036791/0001628280-25-036791-index.htm",
+   "filed": "2025-07-31",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "2f2375a85b9383a411dbaba737fb2b1b440737cae328df7f171a893e57e9a5cb",
+   "title": "Amazon 10-Q 0001018724-25-000086 filed 2025-08-01",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000086/0001018724-25-000086-index.htm",
+   "filed": "2025-08-01",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "90949e24da066fcfca7e6881249e9822613f981ec29cf74ffbb7850304c824d5",
+   "title": "NVIDIA 10-Q 0001045810-25-000209 filed 2025-08-27",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/0001045810-25-000209-index.htm",
+   "filed": "2025-08-27",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "bdde0a7dd707c6804c02586027a54f7b9e5941f49a849c6c6381edad8852b2ea",
+   "title": "Microsoft 10-Q 0001193125-25-256321 filed 2025-10-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525256321/0001193125-25-256321-index.htm",
+   "filed": "2025-10-29",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "042d6921b01d8498588a18b4cefb761d8f1a8f0b823b6d6d5f72bd321cfb390f",
+   "title": "Meta 10-Q 0001628280-25-047240 filed 2025-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828025047240/0001628280-25-047240-index.htm",
+   "filed": "2025-10-30",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "9780411b3c88f034ae0a4fa0b5c7655305beda117e3ad8b63a1cf7e126e361f4",
+   "title": "Alphabet 10-Q 0001652044-25-000091 filed 2025-10-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204425000091/0001652044-25-000091-index.htm",
+   "filed": "2025-10-30",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 8
+  },
+  {
+   "document_id": "baad400d5f1d675e4a935f8e206545804e04859d1bff693085c47e3de1d5b4c0",
+   "title": "Amazon 10-Q 0001018724-25-000123 filed 2025-10-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000123/0001018724-25-000123-index.htm",
+   "filed": "2025-10-31",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "062bab0d82d4b333a615085c952ee00d0427462c8fcefe3b150b7148d6e67748",
+   "title": "NVIDIA 10-Q 0001045810-25-000230 filed 2025-11-19",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/0001045810-25-000230-index.htm",
+   "filed": "2025-11-19",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "cca7d9c1b444a461b85fe39edcf6f84875c5180170ecc78d354ba6ccc1ddbdfd",
+   "title": "Microsoft 10-Q 0001193125-26-027207 filed 2026-01-28",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526027207/0001193125-26-027207-index.htm",
+   "filed": "2026-01-28",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "dd7c38f9f096445dcfc36184e0020269e8247be661a025faf1f893dc8c48f7f1",
+   "title": "Meta 10-K 0001628280-26-003942 filed 2026-01-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/0001628280-26-003942-index.htm",
+   "filed": "2026-01-29",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "93b5d1d90c01bc4066ef13ce6355a02b6bd5e4b59c79feecf977ac562d437e8c",
+   "title": "Alphabet 10-K 0001652044-26-000018 filed 2026-02-05",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/0001652044-26-000018-index.htm",
+   "filed": "2026-02-05",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "b3ae6d9c5f03b81adfeb0249fb9f385327081a9bf06e2045017b7113cad48646",
+   "title": "Amazon 10-K 0001018724-26-000004 filed 2026-02-06",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/0001018724-26-000004-index.htm",
+   "filed": "2026-02-06",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 20
+  },
+  {
+   "document_id": "5624c994f77c9e97a7ac414fb22a80bbb35d37c52a796426b26702e304a126e2",
+   "title": "NVIDIA 10-K 0001045810-26-000021 filed 2026-02-25",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/0001045810-26-000021-index.htm",
+   "filed": "2026-02-25",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 16
+  },
+  {
+   "document_id": "7e7a35a125ba483c3718e4496b0bf05a2de2ce1f1888ab1de396d0ececa7fc13",
+   "title": "Microsoft 10-Q 0001193125-26-191507 filed 2026-04-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/0001193125-26-191507-index.htm",
+   "filed": "2026-04-29",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "52fede55ae0e42fef367139f6901f5902706438d785d819f0991e19b047542af",
+   "title": "Meta 10-Q 0001628280-26-028526 filed 2026-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026028526/0001628280-26-028526-index.htm",
+   "filed": "2026-04-30",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "8ebfe8ffb611b19f221cbae70120a6afdd8f0a841917535835097abf8681088c",
+   "title": "Amazon 10-Q 0001018724-26-000014 filed 2026-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/0001018724-26-000014-index.htm",
+   "filed": "2026-04-30",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "aba35dac7287b86f8c532bd464f37a6fc5e137d1a8938c7eca8fb55cd475fdd5",
+   "title": "Alphabet 10-Q 0001652044-26-000048 filed 2026-04-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000048/0001652044-26-000048-index.htm",
+   "filed": "2026-04-30",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "165df81a05ea0eac3e4f8b9578624bd7de28c5c6cb65d4dad108c10c0cb36b1b",
+   "title": "NVIDIA 10-Q 0001045810-26-000052 filed 2026-05-20",
+   "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/0001045810-26-000052-index.htm",
+   "filed": "2026-05-20",
+   "entities": [
+    "Nvidia"
+   ],
+   "observations": 15
+  },
+  {
+   "document_id": "4a3243257c2a3ccbe94822efb9cf4cecbccdcfe629abd3597637adafc5186bf7",
+   "title": "Alphabet 10-Q 0001652044-26-000071 filed 2026-07-23",
+   "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/0001652044-26-000071-index.htm",
+   "filed": "2026-07-23",
+   "entities": [
+    "Alphabet"
+   ],
+   "observations": 9
+  },
+  {
+   "document_id": "e8b82c4babebffdcac5fcda9c180619a00349af5491dcd22bb3c6cef3ad6edef",
+   "title": "Microsoft 10-K 0001193125-26-323660 filed 2026-07-29",
+   "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/0001193125-26-323660-index.htm",
+   "filed": "2026-07-29",
+   "entities": [
+    "Microsoft"
+   ],
+   "observations": 17
+  },
+  {
+   "document_id": "5b055a5195d128aeeac9a736c13a40b799d9f14680dd887e18209379a2d9258f",
+   "title": "Meta 10-Q 0001628280-26-050705 filed 2026-07-30",
+   "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/0001628280-26-050705-index.htm",
+   "filed": "2026-07-30",
+   "entities": [
+    "Meta"
+   ],
+   "observations": 14
+  },
+  {
+   "document_id": "6a72d4bc66ae274d125a53247daea1f0bec8708c2e2ccac4d0598aadf7176c15",
+   "title": "Amazon 10-Q 0001018724-26-000026 filed 2026-07-31",
+   "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/0001018724-26-000026-index.htm",
+   "filed": "2026-07-31",
+   "entities": [
+    "Amazon"
+   ],
+   "observations": 17
+  }
+ ]
+}

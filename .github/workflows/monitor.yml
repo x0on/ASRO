@@ -78,6 +78,7 @@ jobs:
         if: inputs.backfill == true || contains(github.event.head_commit.message, '[backfill]')
         env:
           ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
+          ASRO_FRED_API_KEY: ${{ secrets.ASRO_FRED_API_KEY }}
         run: asro backfill --years 3 --news-limit 500 --sec-per-company 24
       - name: Daily evidence review and flagged repair
         if: github.event_name == 'push' || github.event.schedule == '17 10 * * *' || inputs.review || inputs.backfill
@@ -102,6 +103,15 @@ jobs:
           --acquired "$RUNNER_TEMP/asro-acceptance-queue"
           --output data/reports/current-ai-acceptance-queue.json
           --acquire
+      - name: Acquire point-in-time control vintages
+        # Without the secret the command exits 1 with an explanatory message; that must
+        # not fail the whole scheduled run, it must leave the gate honestly blocking.
+        continue-on-error: true
+        env:
+          ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
+          ASRO_FRED_API_KEY: ${{ secrets.ASRO_FRED_API_KEY }}
+        run: asro acquire-vintages
+
       - name: Package candidate immutable state
         env:
           GITHUB_SHA: ${{ github.sha }}

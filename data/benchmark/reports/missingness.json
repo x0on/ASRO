@@ -1,45 +1,83 @@
 {
- "note": "missing cells are recorded as unknown; never zero",
+ "note": "missing cells are recorded as unknown, never zero",
  "by_episode": {
   "benign-infrastructure-capex": [
    {
     "dimension": "feature",
-    "requirement": "debt_to_operating_cash_flow",
-    "missing_cells": 62
+    "requirement": "free_cash_flow",
+    "entity": "Equinix",
+    "missing_cells": 35
    },
    {
     "dimension": "feature",
-    "requirement": "free_cash_flow",
-    "missing_cells": 59
+    "requirement": "debt_to_operating_cash_flow",
+    "entity": "American Tower",
+    "missing_cells": 34
+   },
+   {
+    "dimension": "feature",
+    "requirement": "debt_to_operating_cash_flow",
+    "entity": "Equinix",
+    "missing_cells": 28
    },
    {
     "dimension": "feature",
     "requirement": "external_cash_generation",
-    "missing_cells": 41
+    "entity": "American Tower",
+    "missing_cells": 24
+   },
+   {
+    "dimension": "feature",
+    "requirement": "free_cash_flow",
+    "entity": "American Tower",
+    "missing_cells": 24
    },
    {
     "dimension": "feature",
     "requirement": "resilient_liquidity_runway",
+    "entity": "Equinix",
     "missing_cells": 19
    },
    {
     "dimension": "feature",
     "requirement": "capex_to_revenue",
+    "entity": "Equinix",
     "missing_cells": 18
    },
    {
     "dimension": "feature",
     "requirement": "capital_expenditure",
+    "entity": "Equinix",
     "missing_cells": 18
+   },
+   {
+    "dimension": "feature",
+    "requirement": "external_cash_generation",
+    "entity": "Equinix",
+    "missing_cells": 17
    },
    {
     "dimension": "source",
     "requirement": "primary-filings",
-    "missing_cells": 9
+    "entity": "American Tower",
+    "missing_cells": 3
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Crown Castle",
+    "missing_cells": 3
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Equinix",
+    "missing_cells": 3
    },
    {
     "dimension": "feature",
     "requirement": "debt_to_assets",
+    "entity": "Equinix",
     "missing_cells": 1
    }
   ],
@@ -47,51 +85,103 @@
    {
     "dimension": "feature",
     "requirement": "capex_to_revenue",
-    "missing_cells": 31
+    "entity": "NVIDIA",
+    "missing_cells": 21
    },
    {
     "dimension": "feature",
     "requirement": "capital_expenditure",
+    "entity": "NVIDIA",
     "missing_cells": 21
    },
    {
     "dimension": "feature",
     "requirement": "free_cash_flow",
+    "entity": "NVIDIA",
     "missing_cells": 21
    },
    {
     "dimension": "feature",
     "requirement": "resilient_liquidity_runway",
+    "entity": "NVIDIA",
     "missing_cells": 21
    },
    {
     "dimension": "feature",
+    "requirement": "capex_to_revenue",
+    "entity": "Alphabet",
+    "missing_cells": 10
+   },
+   {
+    "dimension": "feature",
     "requirement": "debt_to_assets",
-    "missing_cells": 19
+    "entity": "Alphabet",
+    "missing_cells": 10
    },
    {
     "dimension": "feature",
     "requirement": "debt_to_operating_cash_flow",
-    "missing_cells": 19
+    "entity": "Alphabet",
+    "missing_cells": 10
    },
    {
     "dimension": "feature",
     "requirement": "external_revenue",
+    "entity": "Alphabet",
     "missing_cells": 10
+   },
+   {
+    "dimension": "feature",
+    "requirement": "debt_to_assets",
+    "entity": "Meta",
+    "missing_cells": 9
+   },
+   {
+    "dimension": "feature",
+    "requirement": "debt_to_operating_cash_flow",
+    "entity": "Meta",
+    "missing_cells": 9
    },
    {
     "dimension": "source",
     "requirement": "primary-filings",
-    "missing_cells": 7
+    "entity": "NVIDIA",
+    "missing_cells": 3
    },
    {
     "dimension": "control",
     "requirement": "electricity_price",
+    "entity": "__episode__",
     "missing_cells": 2
    },
    {
     "dimension": "control",
     "requirement": "commercial_industrial_loans",
+    "entity": "__episode__",
+    "missing_cells": 1
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Alphabet",
+    "missing_cells": 1
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Amazon",
+    "missing_cells": 1
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Meta",
+    "missing_cells": 1
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Microsoft",
     "missing_cells": 1
    }
   ],
@@ -99,118 +189,163 @@
    {
     "dimension": "feature",
     "requirement": "debt_to_assets",
+    "entity": "Zoom",
     "missing_cells": 36
    },
    {
     "dimension": "feature",
     "requirement": "debt_to_operating_cash_flow",
+    "entity": "Zoom",
     "missing_cells": 36
    },
    {
     "dimension": "source",
     "requirement": "primary-filings",
-    "missing_cells": 5
+    "entity": "Amazon",
+    "missing_cells": 3
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Zoom",
+    "missing_cells": 2
    }
   ],
   "regional-bank-stress": [
    {
     "dimension": "feature",
-    "requirement": "resilient_liquidity_runway",
-    "missing_cells": 114
-   },
-   {
-    "dimension": "feature",
-    "requirement": "capex_to_revenue",
-    "missing_cells": 75
-   },
-   {
-    "dimension": "feature",
-    "requirement": "capital_expenditure",
-    "missing_cells": 75
-   },
-   {
-    "dimension": "feature",
-    "requirement": "free_cash_flow",
-    "missing_cells": 75
-   },
-   {
-    "dimension": "feature",
-    "requirement": "external_revenue",
-    "missing_cells": 70
-   },
-   {
-    "dimension": "source",
-    "requirement": "primary-filings",
-    "missing_cells": 42
-   },
-   {
-    "dimension": "feature",
     "requirement": "debt_to_assets",
-    "missing_cells": 33
+    "entity": "Western Alliance Bancorporation",
+    "missing_cells": 6
    },
    {
     "dimension": "feature",
     "requirement": "debt_to_operating_cash_flow",
-    "missing_cells": 33
+    "entity": "Western Alliance Bancorporation",
+    "missing_cells": 6
    },
    {
     "dimension": "feature",
-    "requirement": "external_cash_generation",
-    "missing_cells": 27
+    "requirement": "fixed_obligations_to_external_cash",
+    "entity": "Western Alliance Bancorporation",
+    "missing_cells": 6
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "SVB Financial Group",
+    "missing_cells": 3
    }
   ],
   "shale-financing": [
    {
     "dimension": "feature",
-    "requirement": "debt_to_operating_cash_flow",
-    "missing_cells": 59
-   },
-   {
-    "dimension": "feature",
     "requirement": "capex_to_revenue",
-    "missing_cells": 50
-   },
-   {
-    "dimension": "feature",
-    "requirement": "free_cash_flow",
-    "missing_cells": 43
+    "entity": "Halliburton",
+    "missing_cells": 21
    },
    {
     "dimension": "feature",
     "requirement": "external_revenue",
-    "missing_cells": 37
-   },
-   {
-    "dimension": "feature",
-    "requirement": "external_cash_generation",
-    "missing_cells": 33
+    "entity": "Halliburton",
+    "missing_cells": 21
    },
    {
     "dimension": "feature",
     "requirement": "debt_to_assets",
-    "missing_cells": 22
+    "entity": "Halliburton",
+    "missing_cells": 16
+   },
+   {
+    "dimension": "feature",
+    "requirement": "debt_to_operating_cash_flow",
+    "entity": "Continental Resources",
+    "missing_cells": 16
+   },
+   {
+    "dimension": "feature",
+    "requirement": "debt_to_operating_cash_flow",
+    "entity": "Halliburton",
+    "missing_cells": 16
+   },
+   {
+    "dimension": "feature",
+    "requirement": "capex_to_revenue",
+    "entity": "Continental Resources",
+    "missing_cells": 12
    },
    {
     "dimension": "feature",
     "requirement": "capital_expenditure",
-    "missing_cells": 19
+    "entity": "Continental Resources",
+    "missing_cells": 10
+   },
+   {
+    "dimension": "feature",
+    "requirement": "external_cash_generation",
+    "entity": "Continental Resources",
+    "missing_cells": 10
+   },
+   {
+    "dimension": "feature",
+    "requirement": "free_cash_flow",
+    "entity": "Continental Resources",
+    "missing_cells": 10
    },
    {
     "dimension": "feature",
     "requirement": "resilient_liquidity_runway",
-    "missing_cells": 19
+    "entity": "Continental Resources",
+    "missing_cells": 10
+   },
+   {
+    "dimension": "feature",
+    "requirement": "external_revenue",
+    "entity": "Continental Resources",
+    "missing_cells": 9
+   },
+   {
+    "dimension": "feature",
+    "requirement": "debt_to_assets",
+    "entity": "Continental Resources",
+    "missing_cells": 7
+   },
+   {
+    "dimension": "feature",
+    "requirement": "debt_to_operating_cash_flow",
+    "entity": "Chesapeake Energy",
+    "missing_cells": 4
    },
    {
     "dimension": "source",
     "requirement": "primary-filings",
-    "missing_cells": 9
+    "entity": "Chesapeake Energy",
+    "missing_cells": 3
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Continental Resources",
+    "missing_cells": 3
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Halliburton",
+    "missing_cells": 3
+   },
+   {
+    "dimension": "feature",
+    "requirement": "capex_to_revenue",
+    "entity": "Chesapeake Energy",
+    "missing_cells": 1
+   },
+   {
+    "dimension": "feature",
+    "requirement": "external_revenue",
+    "entity": "Chesapeake Energy",
+    "missing_cells": 1
    }
   ]
- },
- "feature_value_missingness_reasons": [
-  {
-   "missingness_reason": "unknown",
-   "n": 1216
-  }
- ]
+ }
 }

@@ -20,8 +20,10 @@ historically_calibrated
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 from collections.abc import Mapping, Sequence
+from datetime import date
 from enum import StrEnum
 from pathlib import Path
 
@@ -32,6 +34,7 @@ from asro.benchmark.catalog import (
     CausalRole,
     variables_for_role,
 )
+from asro.evidence.time import normalize_timestamp
 
 
 class OutputTier(StrEnum):
@@ -243,32 +246,59 @@ def observed_variable_keys(
     return tuple(sorted(observed))
 
 
+POINT_IN_TIME_PATTERN = re.compile(r"^point_in_time:(\d{4}-\d{2}-\d{2})$")
+
+
+def point_in_time_date(vintage: str) -> date | None:
+    """The vintage date, or None when the marking is not a well-formed point-in-time one.
+
+    Parsed strictly. `point_in_time:2018-1-3`, `point_in_time:soon` and
+    `point_in_time:2018-01-31 (approx)` are all rejected rather than trusted on the
+    strength of their prefix.
+    """
+    match = POINT_IN_TIME_PATTERN.match(vintage)
+    if match is None:
+        return None
+    try:
+        return date.fromisoformat(match.group(1))
+    except ValueError:  # pragma: no cover - the pattern already constrains the shape
+        return None
+
+
 def revised_only_control_series(
     connection: sqlite3.Connection, accepted_run_ids: Sequence[str]
 ) -> tuple[str, ...]:
-    """Control series in accepted runs whose provenance is not point-in-time.
+    """Control series in accepted runs whose provenance is not usable point-in-time.
 
-    A series marked anything other than `as_published` is today's revised value. Using it
-    to place a historical reading means the reading knows things its own date could not.
+    Two markings are acceptable, and only two. `as_published` means the series is never
+    materially revised, so today's print is what was published. `point_in_time:<date>`
+    means the values came from the FRED API with `realtime_start` and `realtime_end`
+    pinned to that date -- and that date must be no later than the episode's own
+    availability cutoff, because a vintage cut after the cutoff is a later revision
+    wearing a point-in-time label. Anything else is today's revised value.
     """
     if not accepted_run_ids:
         return ()
     placeholders = ",".join("?" for _ in accepted_run_ids)
-    return tuple(
-        sorted(
-            {
-                str(row[0])
-                for row in connection.execute(
-                    f"""SELECT DISTINCT series_id FROM backfill_control_snapshot_v2
-                         WHERE run_id IN ({placeholders})
-                           AND COALESCE(
-                               json_extract(provenance_json, '$.vintage'), ''
-                           ) != 'as_published'""",  # noqa: S608
-                    tuple(accepted_run_ids),
-                )
-            }
-        )
-    )
+    offending: set[str] = set()
+    for series_id, provenance, cutoff in connection.execute(
+        f"""SELECT snapshot.series_id, snapshot.provenance_json,
+                   episode.availability_cutoff
+              FROM backfill_control_snapshot_v2 AS snapshot
+              JOIN backfill_run AS run ON run.run_id = snapshot.run_id
+              JOIN backfill_episode AS episode
+                ON episode.episode_id = run.episode_id
+               AND episode.version = run.episode_version
+             WHERE snapshot.run_id IN ({placeholders})""",  # noqa: S608
+        tuple(accepted_run_ids),
+    ):
+        vintage = str(json.loads(str(provenance)).get("vintage", ""))
+        if vintage == "as_published":
+            continue
+        vintage_date = point_in_time_date(vintage)
+        if vintage_date is None or vintage_date > normalize_timestamp(str(cutoff)).date():
+            offending.add(str(series_id))
+    return tuple(sorted(offending))
 
 
 def load_documented_insufficiency(path: Path) -> dict[CausalRole, str]:

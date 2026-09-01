@@ -1,29 +1,28 @@
 episode_id = "regional-bank-stress"
-version = "3.0.0"
+version = "4.0.0"
 title = "Regional-bank duration and funding stress"
 stratum = "crisis"
 period_start = 2021-01-01
-period_end = 2024-12-31
-availability_cutoff = 2025-01-31T00:00:00Z
+period_end = 2023-03-31
+availability_cutoff = 2023-07-31T00:00:00Z
 entities = ["SVB Financial Group", "PacWest Bancorp", "Western Alliance Bancorporation"]
 controls = [
 {series_id="policy_rate", version="1.0.0", unit="percent"},
-{series_id="bank_deposits", version="1.0.0", unit="usd_billions"},
 {series_id="ten_year_treasury", version="1.0.0", unit="percent"},
+{series_id="corporate_bond_spread", version="1.0.0", unit="percent"},
 ]
 features = [
-{feature_key="capital_expenditure", feature_version="1.0.0"},
-{feature_key="external_revenue", feature_version="1.0.0"},
 {feature_key="external_cash_generation", feature_version="1.0.0"},
-{feature_key="free_cash_flow", feature_version="1.0.0"},
-{feature_key="capex_to_revenue", feature_version="1.0.0"},
 {feature_key="debt_to_assets", feature_version="1.0.0"},
 {feature_key="debt_to_operating_cash_flow", feature_version="1.0.0"},
-{feature_key="resilient_liquidity_runway", feature_version="1.0.0"},
+{feature_key="fixed_obligations_to_external_cash", feature_version="1.0.0"},
+{feature_key="deposit_funding_share", feature_version="1.0.0"},
+{feature_key="equity_to_assets", feature_version="1.0.0"},
+{feature_key="accumulated_other_comprehensive_income", feature_version="1.0.0"},
 ]
 schema_version = "v2"
 extractor_version = "1.0.0"
-feature_set_version = "historical-benchmark-1.0.0"
+feature_set_version = "historical-benchmark-2.0.0"
 
 [[source_plan]]
 source_id = "primary-filings"
@@ -31,9 +30,10 @@ source_pattern = "SEC"
 tier = "primary"
 required = true
 
-# Thresholds fixed before any coverage was measured. Feature coverage is allowed to fall
-# short of one because a month can legitimately sit between filings; sources and controls
-# are held near-complete because a gap there means the evidence is simply absent.
+# Thresholds unchanged from the reviewed v3 manifests and fixed before any coverage was
+# measured. Feature coverage may fall short of one because a month can sit between
+# filings; sources and controls are held near-complete because a gap there means the
+# evidence is simply absent.
 [coverage_gate]
 minimum_entity_month_feature_coverage = 0.90
 minimum_entity_source_coverage = 0.95

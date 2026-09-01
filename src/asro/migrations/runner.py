@@ -8,6 +8,7 @@ from asro.migrations import (
     acceptance_queue,
     candidate_quarantine,
     canonical_lineage,
+    control_vintage_identity,
     ecosystem_as_of_lineage,
     ecosystem_store,
     feature_family_as_of,
@@ -101,6 +102,11 @@ MIGRATIONS = (
         historical_pipeline_time.VERSION,
         historical_pipeline_time.NAME,
         historical_pipeline_time.STATEMENTS,
+    ),
+    Migration(
+        control_vintage_identity.VERSION,
+        control_vintage_identity.NAME,
+        control_vintage_identity.STATEMENTS,
     ),
 )
 

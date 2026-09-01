@@ -558,6 +558,56 @@ _VULNERABILITY: tuple[BenchmarkVariable, ...] = (
         xbrl=("PropertyPlantAndEquipmentUsefulLife",),
     ),
     _v(
+        "deposit_funding_share",
+        "Deposit funding share",
+        _R.VULNERABILITY,
+        _ENTITY,
+        "ratio",
+        _MORE,
+        "Deposits divided by total assets.",
+        "Bank-specific. A high share is ordinarily a sign of cheap stable funding; it "
+        "becomes a vulnerability when the deposits are concentrated, uninsured and able "
+        "to leave in a day, which is why it is read alongside equity_to_assets rather "
+        "than alone.",
+        numerator="deposits",
+        denominator="total_assets",
+        xbrl=("Deposits", "Assets"),
+    ),
+    _v(
+        "equity_to_assets",
+        "Equity to assets",
+        _R.VULNERABILITY,
+        _ENTITY,
+        "ratio",
+        _LESS,
+        "Shareholders' equity divided by total assets: the loss-absorbing layer.",
+        "Bank-specific and directly comparable. Book equity excludes unrealised "
+        "held-to-maturity losses, so it overstates the buffer precisely when rates have "
+        "risen, which is the failure mode this stratum exists to capture.",
+        numerator="stockholders_equity",
+        denominator="total_assets",
+        xbrl=("StockholdersEquity", "Assets"),
+    ),
+    _v(
+        "accumulated_other_comprehensive_income",
+        "Accumulated other comprehensive income",
+        _R.VULNERABILITY,
+        _ENTITY,
+        "currency",
+        _LESS,
+        "Accumulated other comprehensive income net of tax: unrealised marks carried in "
+        "equity rather than through earnings.",
+        "This is the whole AOCI balance, not an unrealised-securities-loss line. It "
+        "aggregates available-for-sale marks with currency translation, pension and "
+        "cash-flow-hedge adjustments, and no filer in this benchmark tags the "
+        "securities-only component, so it must not be read as a pure securities loss. "
+        "The direction is deliberate: AOCI is signed, a more negative balance is a larger "
+        "unrecognised hole in the capital base, so a higher reading means less pressure. "
+        "It sits in vulnerability rather than activated stress because it records a loss "
+        "already absorbed into equity, not one currently forcing action.",
+        xbrl=("AccumulatedOtherComprehensiveIncomeLossNetOfTax",),
+    ),
+    _v(
         "off_balance_sheet_exposure",
         "Private-credit, SPV and off-balance-sheet exposure",
         _R.VULNERABILITY,
@@ -655,7 +705,7 @@ _SHOCK: tuple[BenchmarkVariable, ...] = (
         _MORE,
         "Widening in the cost or availability of new funding for the sector.",
         "Directly comparable through public spread series.",
-        controls=("high_yield_spread", "investment_grade_spread"),
+        controls=("corporate_bond_spread", "yield_curve_slope"),
         views=(DerivedView.LEVEL, DerivedView.VELOCITY),
     ),
 )
@@ -767,8 +817,10 @@ _ACTIVATED: tuple[BenchmarkVariable, ...] = (
         "basis_points",
         _MORE,
         "Option-adjusted spread on the relevant credit index.",
-        "Directly comparable back to 1996 through public index history.",
-        controls=("high_yield_spread", "investment_grade_spread"),
+        "Measured through Moody's Baa-over-Treasury, which is market-priced and final on "
+        "publication, so it is comparable and point-in-time across every episode. It is a "
+        "bond-yield spread, not an option-adjusted spread; the OAS indices are licensed.",
+        controls=("corporate_bond_spread", "high_grade_bond_spread"),
     ),
     _v(
         "issuer_spread_change",

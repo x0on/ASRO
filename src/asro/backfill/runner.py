@@ -260,13 +260,36 @@ class BackfillRunner:
         return sorted(candidates & declared)
 
     def _control_snapshots(self, manifest: EpisodeManifest) -> list[_ControlSnapshot]:
+        """Freeze one control row per series and period, choosing the right vintage.
+
+        A database may hold several versions of the same reading: today's revision, and a
+        genuine vintage for each episode's own cutoff. An episode must snapshot the one
+        that was true at *its* cutoff, so the preference is an exact point-in-time match
+        for this episode's date, then a series that is never revised, and only then
+        anything else.
+        """
+        preferred = f"point_in_time:{manifest.availability_cutoff.date().isoformat()}"
+
+        def rank(vintage: str) -> int:
+            if vintage == preferred:
+                return 0
+            if vintage == "as_published":
+                return 1
+            if vintage.startswith("point_in_time:"):
+                return 2
+            return 3
+
         controls: list[_ControlSnapshot] = []
         for plan in manifest.controls:
+            chosen: dict[tuple[str, str], tuple[int, _ControlSnapshot]] = {}
             rows = self._connection.execute(
-                """SELECT * FROM historical_control_observation_v2
-                   WHERE series_id=? AND series_version=? AND unit=?
-                     AND period_start>=? AND period_end<=? AND availability_at<=?
-                   ORDER BY period_start, control_observation_id""",
+                """SELECT control_observation_id, series_id, series_version, period_start,
+                          period_end, observed_at, availability_at, value_numeric, unit,
+                          provenance_json
+                     FROM historical_control_observation_v2
+                    WHERE series_id=? AND series_version=? AND unit=?
+                      AND period_start>=? AND period_end<=? AND availability_at<=?
+                    ORDER BY period_start, control_observation_id""",
                 (
                     plan.series_id,
                     plan.version,
@@ -276,7 +299,18 @@ class BackfillRunner:
                     manifest.availability_cutoff.isoformat(),
                 ),
             )
-            controls.extend(_ControlSnapshot(**dict(row)) for row in rows)
+            for row in rows:
+                snapshot = _ControlSnapshot(**dict(row))
+                vintage = str(json.loads(snapshot.provenance_json).get("vintage", "unknown"))
+                key = (snapshot.period_start, snapshot.period_end)
+                score = rank(vintage)
+                current = chosen.get(key)
+                if current is None or score < current[0]:
+                    chosen[key] = (score, snapshot)
+            controls.extend(
+                snapshot
+                for _, snapshot in sorted(chosen.values(), key=lambda pair: pair[1].period_start)
+            )
         return controls
 
     def _build_reports(

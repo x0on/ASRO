@@ -15,6 +15,10 @@ class Settings(BaseSettings):
     config_path: Path = Path(str(files("asro") / "default.toml"))
     poll_interval_minutes: int = 60
     openai_api_key: str = ""
+    # FRED API key. Required only for genuine ALFRED vintages: without it the control
+    # layer can still fetch series, but every revised series is today's revision and the
+    # calibration gate blocks on it.
+    fred_api_key: str = ""
     review_model: str = "gpt-4.1-mini"
 
     model_config = SettingsConfigDict(

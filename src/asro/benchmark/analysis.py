@@ -57,19 +57,43 @@ class MonthlySeries:
 
 
 def episode_series(
-    connection: sqlite3.Connection, episode_id: str, feature_keys: Sequence[str]
+    connection: sqlite3.Connection,
+    episode_id: str,
+    feature_keys: Sequence[str],
+    run_ids: Sequence[str] | None = None,
 ) -> list[MonthlySeries]:
-    """Entity-median monthly series per feature for the episode's latest finalized build."""
-    row = connection.execute(
-        """SELECT run.run_id, episode.stratum, link.build_id, link.grain
-             FROM backfill_run run
-             JOIN backfill_episode episode
-               ON episode.episode_id=run.episode_id AND episode.version=run.episode_version
-             JOIN backfill_build_link link ON link.run_id=run.run_id
-            WHERE run.episode_id=? AND link.grain='entity_month'
-            ORDER BY run.created_at DESC LIMIT 1""",
-        (episode_id,),
-    ).fetchone()
+    """Entity-median monthly series per feature for one episode's finalized build.
+
+    `run_ids` pins which runs may be read, so every report describes the same rebuild.
+    Without it the latest run for this episode is used, which is the same choice the
+    readiness gate makes.
+    """
+    if run_ids is not None:
+        placeholders = ",".join("?" for _ in run_ids) or "''"
+        row = connection.execute(
+            f"""SELECT run.run_id, episode.stratum, link.build_id, link.grain
+                  FROM backfill_run run
+                  JOIN backfill_episode episode
+                    ON episode.episode_id=run.episode_id
+                   AND episode.version=run.episode_version
+                  JOIN backfill_build_link link ON link.run_id=run.run_id
+                 WHERE run.episode_id=? AND link.grain='entity_month'
+                   AND run.run_id IN ({placeholders})
+                 ORDER BY run.created_at DESC LIMIT 1""",  # noqa: S608
+            (episode_id, *run_ids),
+        ).fetchone()
+    else:
+        row = connection.execute(
+            """SELECT run.run_id, episode.stratum, link.build_id, link.grain
+                 FROM backfill_run run
+                 JOIN backfill_episode episode
+                   ON episode.episode_id=run.episode_id
+                  AND episode.version=run.episode_version
+                 JOIN backfill_build_link link ON link.run_id=run.run_id
+                WHERE run.episode_id=? AND link.grain='entity_month'
+                ORDER BY run.created_at DESC LIMIT 1""",
+            (episode_id,),
+        ).fetchone()
     if row is None:
         return []
     stratum, build_id = str(row[1]), str(row[2])
@@ -138,10 +162,11 @@ def compare_episodes(
     connection: sqlite3.Connection,
     episode_ids: Sequence[str],
     feature_keys: Sequence[str],
+    run_ids: Sequence[str] | None = None,
 ) -> dict[str, object]:
     """Level, velocity, breadth and pooled percentiles for every episode and feature."""
     collected: dict[str, list[MonthlySeries]] = {
-        episode_id: episode_series(connection, episode_id, feature_keys)
+        episode_id: episode_series(connection, episode_id, feature_keys, run_ids)
         for episode_id in episode_ids
     }
     pooled: dict[str, list[float]] = {key: [] for key in feature_keys}

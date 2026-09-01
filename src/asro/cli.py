@@ -22,6 +22,8 @@ from asro.backfill.acquisition import acquire_inventory
 from asro.backfill.current_ai_slice import promote_current_ai_feature_family
 from asro.backfill.fundamentals import promote_company_fundamentals
 from asro.backfill.negative_evidence import enumerate_negative_evidence_universe
+from asro.benchmark.reports import REPORT_NAMES, write_benchmark_reports
+from asro.benchmark.vintages import acquire_episode_vintages, rebuild_episodes
 from asro.evidence.time import normalize_timestamp
 from asro.features import (
     EcosystemFeatureSpec,
@@ -35,7 +37,7 @@ from asro.release import validate_release, write_collection_proof
 from asro.reviewer import EvidenceReviewer
 from asro.service import MonitorService, RunSummary
 from asro.settings import Settings
-from asro.site import build_static_site
+from asro.site import INSUFFICIENCY_PATH, build_static_site
 from asro.state_assets import package_state, restore_state
 from asro.storage import SqliteRepository
 
@@ -44,6 +46,7 @@ app = typer.Typer(
     no_args_is_help=True,
 )
 REVIEW_STATUS_PATH = Path("data/reviewer-status.json")
+REPORTS_PATH = Path("data/benchmark/reports")
 
 
 def _write_review_status(status: str, reviewed: int = 0, error: Exception | None = None) -> None:
@@ -328,6 +331,61 @@ def acceptance_promote_fundamentals(
         )
     output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     typer.echo(json.dumps(result, sort_keys=True, separators=(",", ":")))
+
+
+@app.command("acquire-vintages")
+def acquire_vintages(
+    rebuild: Annotated[
+        bool, typer.Option(help="Re-run every episode after ingesting the vintages.")
+    ] = True,
+    accepted_only: Annotated[
+        bool, typer.Option(help="Only acquire for episodes that passed their gates.")
+    ] = True,
+    cache_dir: Annotated[Path, typer.Option()] = Path("data/acquired"),
+) -> None:
+    """Acquire point-in-time control data for each accepted historical episode.
+
+    Each episode gets a vintage cut at its own availability cutoff, never one shared
+    vintage. Requires ASRO_FRED_API_KEY; without it this exits rather than quietly
+    leaving today's revisions in place and letting them look point-in-time.
+    """
+    settings = Settings()
+    if not settings.fred_api_key:
+        typer.echo(
+            "ASRO_FRED_API_KEY is not set. Point-in-time control data cannot be "
+            "acquired, so the calibration gate will continue to block on "
+            "latest-revision series.",
+            err=True,
+        )
+        raise typer.Exit(code=1)
+    repository = SqliteRepository(settings.database_path)
+    with repository.connect() as connection:
+        acquired = acquire_episode_vintages(
+            connection,
+            api_key=settings.fred_api_key,
+            user_agent=settings.sec_user_agent,
+            accepted_only=accepted_only,
+        )
+        payload: dict[str, object] = {"acquired": acquired}
+        if rebuild:
+            payload["rebuilt"] = rebuild_episodes(
+                connection,
+                user_agent=settings.sec_user_agent,
+                cache_dir=cache_dir,
+                code_commit=os.environ.get("GITHUB_SHA", "local"),
+                feature_set_version="historical-benchmark-2.0.0",
+            )
+        # Every report is rewritten from the rebuilt database in one pass. Refreshing
+        # readiness alone would leave coverage, leakage and the vintage report describing
+        # an older build, and they would contradict the new verdict.
+        readiness = write_benchmark_reports(
+            connection,
+            REPORTS_PATH,
+            insufficiency_path=INSUFFICIENCY_PATH,
+        )
+        payload["readiness"] = readiness.as_public_status()
+        payload["reports_written"] = sorted(REPORT_NAMES)
+    typer.echo(json.dumps(payload, indent=2, default=str))
 
 
 @app.command("release-check")

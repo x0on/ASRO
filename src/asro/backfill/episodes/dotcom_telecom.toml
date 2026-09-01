@@ -1,5 +1,5 @@
 episode_id = "dotcom-telecom"
-version = "3.0.0"
+version = "4.0.0"
 title = "Dot-com and telecom cycle"
 stratum = "crisis"
 period_start = 1998-01-01
@@ -23,7 +23,7 @@ features = [
 ]
 schema_version = "v2"
 extractor_version = "1.0.0"
-feature_set_version = "historical-benchmark-1.0.0"
+feature_set_version = "historical-benchmark-2.0.0"
 
 [[source_plan]]
 source_id = "primary-filings"
@@ -31,9 +31,10 @@ source_pattern = "SEC"
 tier = "primary"
 required = true
 
-# Thresholds fixed before any coverage was measured. Feature coverage is allowed to fall
-# short of one because a month can legitimately sit between filings; sources and controls
-# are held near-complete because a gap there means the evidence is simply absent.
+# Thresholds unchanged from the reviewed v3 manifests and fixed before any coverage was
+# measured. Feature coverage may fall short of one because a month can sit between
+# filings; sources and controls are held near-complete because a gap there means the
+# evidence is simply absent.
 [coverage_gate]
 minimum_entity_month_feature_coverage = 0.90
 minimum_entity_source_coverage = 0.95

@@ -198,6 +198,31 @@ CONCEPTS: tuple[ConceptSpec, ...] = (
         xbrl_unit="Y",
     ),
     ConceptSpec(
+        "deposits",
+        (_g("Deposits"),),
+        "instant",
+        "currency",
+        catalog_variable=False,
+    ),
+    ConceptSpec(
+        "accumulated_other_comprehensive_income",
+        (_g("AccumulatedOtherComprehensiveIncomeLossNetOfTax"),),
+        "instant",
+        "currency",
+    ),
+    ConceptSpec(
+        "purchase_obligations",
+        (
+            _g("PurchaseObligation"),
+            _g("UnrecordedUnconditionalPurchaseObligationBalanceSheetAmount"),
+            _g("ContractualObligation"),
+            _g("UnrecordedUnconditionalPurchaseObligationDueWithinOneYear"),
+        ),
+        "instant",
+        "currency",
+        catalog_variable=False,
+    ),
+    ConceptSpec(
         "guarantees_to_equity_exposure",
         (_g("GuaranteeObligationsMaximumExposure"),),
         "instant",
@@ -323,6 +348,8 @@ RATIOS: tuple[RatioSpec, ...] = (
     RatioSpec(
         "guarantees_to_equity", "guarantees_to_equity_exposure", "stockholders_equity", "ratio"
     ),
+    RatioSpec("deposit_funding_share", "deposits", "total_assets", "ratio"),
+    RatioSpec("equity_to_assets", "stockholders_equity", "total_assets", "ratio"),
     RatioSpec(
         "resilient_liquidity_runway", "liquid_resources", "monthly_committed_spending", "months"
     ),
@@ -332,9 +359,31 @@ RATIOS: tuple[RatioSpec, ...] = (
 )
 
 #: Derived flows assembled from base measurements before ratios are computed.
+#: Composites whose first input is required and whose remaining inputs are added when the
+#: filer reports them. Each produced fact records exactly which legs it contains.
+PARTIAL_COMPOSITES: frozenset[str] = frozenset({"total_fixed_obligations"})
+
+#: A partial composite that also demands at least one leg beyond the first. Debt on its
+#: own is not a fixed-obligation stack: calling it one would restate
+#: debt_to_operating_cash_flow under a second name and claim a measurement of leases,
+#: purchase commitments and guarantees that was never made. Where no such leg is tagged --
+#: which is every filer before ASC 842 -- the total stays unknown rather than understated.
+SUPPLEMENTARY_LEGS: dict[str, tuple[str, ...]] = {
+    "total_fixed_obligations": (
+        "lease_and_guarantee_commitments",
+        "purchase_obligations",
+        "guarantees_to_equity_exposure",
+    )
+}
+
 COMPOSITES: dict[str, tuple[str, ...]] = {
     "free_cash_flow": ("external_cash_generation", "capital_expenditure"),
-    "total_fixed_obligations": ("total_debt", "lease_and_guarantee_commitments"),
+    "total_fixed_obligations": (
+        "total_debt",
+        "lease_and_guarantee_commitments",
+        "purchase_obligations",
+        "guarantees_to_equity_exposure",
+    ),
     "net_debt_issuance": ("debt_issuance", "debt_repayment"),
     "monthly_committed_spending": ("capital_expenditure",),
     "deleveraging": ("debt_repayment", "debt_issuance"),
@@ -650,7 +699,10 @@ def build_derived_facts(
     notes: list[dict[str, object]] = []
 
     for key, inputs in COMPOSITES.items():
-        if any(name not in indexed for name in inputs):
+        # A partial composite needs only its first, required leg; the rest are added
+        # wherever the filer reports them.
+        required = inputs[:1] if key in PARTIAL_COMPOSITES else inputs
+        if any(name not in indexed for name in required):
             notes.append(
                 {
                     "entity": entity_id,
@@ -660,12 +712,35 @@ def build_derived_facts(
                 }
             )
             continue
-        periods = set(indexed[inputs[0]])
-        for name in inputs[1:]:
-            periods &= set(indexed[name])
+        if key in PARTIAL_COMPOSITES:
+            periods = set(indexed[inputs[0]])
+        else:
+            periods = set(indexed[inputs[0]])
+            for name in inputs[1:]:
+                periods &= set(indexed[name])
         produced: dict[date, Fact] = {}
         for end in sorted(periods):
-            parts = [indexed[name][end] for name in inputs]
+            if key in PARTIAL_COMPOSITES:
+                present = [name for name in inputs if end in indexed.get(name, {})]
+                supplementary = SUPPLEMENTARY_LEGS.get(key, ())
+                if supplementary and not set(present) & set(supplementary):
+                    notes.append(
+                        {
+                            "entity": entity_id,
+                            "feature": key,
+                            "period_end": end.isoformat(),
+                            "reason": (
+                                "no lease, purchase, guarantee or contractual obligation "
+                                "leg is tagged for this period; debt alone would not be a "
+                                "fixed-obligation total, so the value stays unknown"
+                            ),
+                        }
+                    )
+                    continue
+                parts = [indexed[name][end] for name in present]
+            else:
+                present = list(inputs)
+                parts = [indexed[name][end] for name in inputs]
             if key == "free_cash_flow":
                 value = parts[0].value - parts[1].value
                 method = "operating_cash_flow_less_capital_expenditure"
@@ -680,7 +755,7 @@ def build_derived_facts(
                 method = "quarterly_capital_expenditure_divided_by_three"
             else:
                 value = sum(item.value for item in parts)
-                method = "sum_of_" + "_and_".join(inputs)
+                method = "sum_of_" + "_and_".join(present)
             if key == "monthly_committed_spending" and value <= 0:
                 continue
             produced[end] = Fact(

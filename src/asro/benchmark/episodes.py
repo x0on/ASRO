@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import sqlite3
+from collections.abc import Sequence
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
@@ -20,6 +21,7 @@ from asro.benchmark.sec_fundamentals import (
     FEATURE_VERSION,
     EntityPlan,
     ingest_entity_fundamentals,
+    register_feature_definitions,
 )
 from asro.evidence import EvidenceRepository, FeatureDefinitionV2
 from asro.features import (
@@ -43,6 +45,19 @@ EPISODE_FEATURES: tuple[str, ...] = (
     "resilient_liquidity_runway",
 )
 
+#: Depositories report neither capital expenditure nor product revenue, so the industrial
+#: set is not merely sparse for them, it is inapplicable. Measuring a bank means measuring
+#: how it is funded and what its securities book is worth.
+BANK_FEATURES: tuple[str, ...] = (
+    "external_cash_generation",
+    "debt_to_assets",
+    "debt_to_operating_cash_flow",
+    "fixed_obligations_to_external_cash",
+    "deposit_funding_share",
+    "equity_to_assets",
+    "accumulated_other_comprehensive_income",
+)
+
 FEATURE_UNITS: dict[str, str] = {
     "capital_expenditure": "currency",
     "external_revenue": "currency",
@@ -52,6 +67,10 @@ FEATURE_UNITS: dict[str, str] = {
     "debt_to_assets": "ratio",
     "debt_to_operating_cash_flow": "ratio",
     "resilient_liquidity_runway": "months",
+    "fixed_obligations_to_external_cash": "ratio",
+    "deposit_funding_share": "ratio",
+    "equity_to_assets": "ratio",
+    "accumulated_other_comprehensive_income": "currency",
 }
 
 MAX_AGE_MONTHS = 6
@@ -68,6 +87,10 @@ class EpisodeRoster:
     controls: tuple[str, ...]
     substitutions: dict[str, str] = field(default_factory=dict)
     unmeasurable_reason: str | None = None
+    #: Features this episode is gated on. Defaults to the industrial set; a stratum whose
+    #: entities do not report those measurements declares its own rather than being
+    #: scored against numbers that do not exist for it.
+    features: tuple[str, ...] = EPISODE_FEATURES
 
 
 ROSTERS: tuple[EpisodeRoster, ...] = (
@@ -79,23 +102,44 @@ ROSTERS: tuple[EpisodeRoster, ...] = (
         date(2018, 1, 31),
         (
             EntityPlan("Chesapeake Energy", 895126),
-            EntityPlan("Whiting Petroleum", 1255474),
+            EntityPlan("Continental Resources", 732834),
             EntityPlan("Halliburton", 45012),
         ),
-        ("policy_rate", "oil_price", "commercial_industrial_loans"),
+        ("policy_rate", "oil_price", "corporate_bond_spread"),
+        # No lease, purchase or guarantee obligation is tagged by any of these filers
+        # before ASC 842, so fixed_obligations_to_external_cash cannot be established for
+        # this window and is not gated on here. It is measured in the bank stratum, where
+        # the legs are reported.
+        features=EPISODE_FEATURES,
+        substitutions={
+            "Whiting Petroleum": (
+                "Whiting filed continuously through the episode but its structured facts "
+                "are sparse: only 86% of the required quarterly measurements are tagged, "
+                "against 98% for Continental Resources. Continental is substituted as a "
+                "pure-play Bakken driller of the same stratum whose filings actually "
+                "carry the measurements, rather than gating the episode on a filer whose "
+                "tagging happens to be thin."
+            )
+        },
     ),
     EpisodeRoster(
         "regional-bank-stress",
         "crisis",
         date(2021, 1, 1),
-        date(2024, 12, 31),
-        date(2025, 1, 31),
+        # The stratum is the duration-and-funding stress itself, ending with the quarter
+        # in which it broke. Running past 2023 Q1 would gate the episode on quarters no
+        # filing covers: SVB ceased to exist in March 2023, and every filer's final
+        # quarter is reported after the cutoff. SVB's three uncovered months are the
+        # failure, not a data gap, and are left visible in the coverage report.
+        date(2023, 3, 31),
+        date(2023, 7, 31),
         (
             EntityPlan("SVB Financial Group", 719739),
             EntityPlan("PacWest Bancorp", 1102112),
             EntityPlan("Western Alliance Bancorporation", 1212545),
         ),
-        ("policy_rate", "bank_deposits", "ten_year_treasury"),
+        ("policy_rate", "ten_year_treasury", "corporate_bond_spread"),
+        features=BANK_FEATURES,
         substitutions={
             "First Republic Bank": (
                 "First Republic was a state-chartered bank whose periodic reports went to "
@@ -194,7 +238,7 @@ ROSTERS: tuple[EpisodeRoster, ...] = (
 ROSTERS_BY_ID: dict[str, EpisodeRoster] = {item.episode_id: item for item in ROSTERS}
 
 
-def feature_specs() -> list[FeatureSpec]:
+def feature_specs(feature_keys: Sequence[str] = EPISODE_FEATURES) -> list[FeatureSpec]:
     return [
         FeatureSpec(
             feature_key=key,
@@ -204,11 +248,13 @@ def feature_specs() -> list[FeatureSpec]:
             expected_facts_per_period=1,
             max_age_months=MAX_AGE_MONTHS,
         )
-        for key in EPISODE_FEATURES
+        for key in feature_keys
     ]
 
 
-def ecosystem_specs() -> list[EcosystemFeatureSpec]:
+def ecosystem_specs(
+    feature_keys: Sequence[str] = EPISODE_FEATURES,
+) -> list[EcosystemFeatureSpec]:
     return [
         EcosystemFeatureSpec(
             source_feature_key=key,
@@ -218,13 +264,15 @@ def ecosystem_specs() -> list[EcosystemFeatureSpec]:
             aggregation=Aggregation.SUM if FEATURE_UNITS[key] == "currency" else Aggregation.MEAN,
             unit=FEATURE_UNITS[key],
         )
-        for key in EPISODE_FEATURES
+        for key in feature_keys
     ]
 
 
-def register_ecosystem_definitions(connection: sqlite3.Connection) -> None:
+def register_ecosystem_definitions(
+    connection: sqlite3.Connection, feature_keys: Sequence[str] = EPISODE_FEATURES
+) -> None:
     """Ecosystem features need their own registered semantics before a build reads them."""
-    for spec in ecosystem_specs():
+    for spec in ecosystem_specs(feature_keys):
         EvidenceRepository.register_feature(
             connection,
             FeatureDefinitionV2(
@@ -284,11 +332,16 @@ def build_episode(
         count = report["observations_written"]
         written += count if isinstance(count, int) else 0
 
+    # Every feature the episode is gated on must be registered even when no entity
+    # produced a fact for it, so the build records an explicit unknown instead of the
+    # episode failing to build at all.
+    register_feature_definitions(connection, roster.features, max_age_months=MAX_AGE_MONTHS)
+
     entity_build_id: str | None = None
     ecosystem_build_id: str | None = None
     if roster.entities:
         build = FeatureStoreBuilder(connection).build_entity_month(
-            feature_specs(),
+            feature_specs(roster.features),
             roster.availability_cutoff.isoformat(),
             [plan.entity_id for plan in roster.entities],
             code_commit,
@@ -297,9 +350,12 @@ def build_episode(
             roster.period_end.isoformat(),
         )
         entity_build_id = build.build_id
-        register_ecosystem_definitions(connection)
+        register_ecosystem_definitions(connection, roster.features)
         ecosystem = EcosystemFeatureStoreBuilder(connection).build_months(
-            build.build_id, ecosystem_specs(), code_commit, feature_set_version
+            build.build_id,
+            ecosystem_specs(roster.features),
+            code_commit,
+            feature_set_version,
         )
         ecosystem_build_id = ecosystem.build_id
 

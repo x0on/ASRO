@@ -1,229 +1,148 @@
 {
- "all_episodes": {
-  "question": "can these features tell a crisis episode from a benign boom?",
-  "features_evaluated": 8,
-  "features_separating": 0,
-  "findings": [
-   {
-    "feature_key": "capital_expenditure",
-    "separable": false,
-    "crisis_range": [
-     18068000.0,
-     741000000.0
-    ],
-    "benign_range": [
-     174509500.0,
-     5214500000.0
-    ],
-    "overlap": true
-   },
-   {
-    "feature_key": "external_revenue",
-    "separable": false,
-    "crisis_range": [
-     358477250.0,
-     3033000000.0
-    ],
-    "benign_range": [
-     875950000.0,
-     44196500000.0
-    ],
-    "overlap": true
-   },
-   {
-    "feature_key": "external_cash_generation",
-    "separable": false,
-    "crisis_range": [
-     135784500.0,
-     773500000.0
-    ],
-    "benign_range": [
-     383105250.0,
-     11042000000.0
-    ],
-    "overlap": true
-   },
-   {
-    "feature_key": "free_cash_flow",
-    "separable": false,
-    "crisis_range": [
-     -339020000.0,
-     255106000.0
-    ],
-    "benign_range": [
-     193367500.0,
-     478075000.0
-    ],
-    "overlap": true
-   },
-   {
-    "feature_key": "capex_to_revenue",
-    "separable": false,
-    "crisis_range": [
-     0.04891112298054018,
-     0.343564356435644
-    ],
-    "benign_range": [
-     0.112358951169451,
-     0.21455978802290848
-    ],
-    "overlap": true
-   },
-   {
-    "feature_key": "debt_to_assets",
-    "separable": false,
-    "crisis_range": [
-     0.015139040244575248,
-     0.286095068858285
-    ],
-    "benign_range": [
-     0.1488754921046665,
-     0.5609275678928991
-    ],
-    "overlap": true
-   },
-   {
-    "feature_key": "debt_to_operating_cash_flow",
-    "separable": false,
-    "crisis_range": [
-     0.46784274336056575,
-     2.2026558891455
-    ],
-    "benign_range": [
-     0.8584934099645141,
-     7.353379543194553
-    ],
-    "overlap": true
-   },
-   {
-    "feature_key": "resilient_liquidity_runway",
-    "separable": false,
-    "crisis_range": [
-     0.802717533315913,
-     1578.33333333333
-    ],
-    "benign_range": [
-     5.290379767366255,
-     67.4432013769363
-    ],
-    "overlap": true
-   }
-  ],
-  "caveat": "Separation across a handful of episodes is not evidence of predictive power. With one accepted episode per stratum this cannot distinguish a real signal from a coincidence of two samples."
- },
- "excluding_regional_banks": {
-  "rationale": "banks report neither capital expenditure nor product revenue, so the shared industrial feature set is not applicable to them; this view shows separation among the episodes the feature set actually fits",
-  "result": {
-   "question": "can these features tell a crisis episode from a benign boom?",
-   "features_evaluated": 8,
-   "features_separating": 3,
-   "findings": [
-    {
-     "feature_key": "capital_expenditure",
-     "separable": false,
-     "crisis_range": [
-      741000000.0,
-      741000000.0
-     ],
-     "benign_range": [
-      174509500.0,
-      5214500000.0
-     ],
-     "overlap": true
-    },
-    {
-     "feature_key": "external_revenue",
-     "separable": false,
-     "crisis_range": [
-      3033000000.0,
-      3033000000.0
-     ],
-     "benign_range": [
-      875950000.0,
-      44196500000.0
-     ],
-     "overlap": true
-    },
-    {
-     "feature_key": "external_cash_generation",
-     "separable": false,
-     "crisis_range": [
-      773500000.0,
-      773500000.0
-     ],
-     "benign_range": [
-      383105250.0,
-      11042000000.0
-     ],
-     "overlap": true
-    },
-    {
-     "feature_key": "free_cash_flow",
-     "separable": true,
-     "crisis_range": [
-      -339020000.0,
-      -339020000.0
-     ],
-     "benign_range": [
-      193367500.0,
-      478075000.0
-     ],
-     "overlap": false
-    },
-    {
-     "feature_key": "capex_to_revenue",
-     "separable": true,
-     "crisis_range": [
-      0.343564356435644,
-      0.343564356435644
-     ],
-     "benign_range": [
-      0.112358951169451,
-      0.21455978802290848
-     ],
-     "overlap": false
-    },
-    {
-     "feature_key": "debt_to_assets",
-     "separable": false,
-     "crisis_range": [
-      0.286095068858285,
-      0.286095068858285
-     ],
-     "benign_range": [
-      0.1488754921046665,
-      0.5609275678928991
-     ],
-     "overlap": true
-    },
-    {
-     "feature_key": "debt_to_operating_cash_flow",
-     "separable": false,
-     "crisis_range": [
-      2.2026558891455,
-      2.2026558891455
-     ],
-     "benign_range": [
-      0.8584934099645141,
-      7.353379543194553
-     ],
-     "overlap": true
-    },
-    {
-     "feature_key": "resilient_liquidity_runway",
-     "separable": true,
-     "crisis_range": [
-      0.802717533315913,
-      0.802717533315913
-     ],
-     "benign_range": [
-      5.290379767366255,
-      67.4432013769363
-     ],
-     "overlap": false
-    }
+ "question": "can these features tell a crisis episode from a benign boom?",
+ "features_evaluated": 8,
+ "features_separating": 3,
+ "findings": [
+  {
+   "feature_key": "accumulated_other_comprehensive_income",
+   "separable": null,
+   "reason": "a stratum has no measured level for this feature",
+   "crisis_levels": [
+    20960000.0
    ],
-   "caveat": "Separation across a handful of episodes is not evidence of predictive power. With one accepted episode per stratum this cannot distinguish a real signal from a coincidence of two samples."
+   "benign_levels": []
+  },
+  {
+   "feature_key": "capex_to_revenue",
+   "separable": true,
+   "crisis_range": [
+    0.430374331550802,
+    0.430374331550802
+   ],
+   "benign_range": [
+    0.112358951169451,
+    0.21455978802290848
+   ],
+   "overlap": false
+  },
+  {
+   "feature_key": "capital_expenditure",
+   "separable": false,
+   "crisis_range": [
+    868000000.0,
+    868000000.0
+   ],
+   "benign_range": [
+    174509500.0,
+    5214500000.0
+   ],
+   "overlap": true
+  },
+  {
+   "feature_key": "debt_to_assets",
+   "separable": false,
+   "crisis_range": [
+    0.0112240588987693,
+    0.309050708404853
+   ],
+   "benign_range": [
+    0.1488754921046665,
+    0.5609275678928991
+   ],
+   "overlap": true
+  },
+  {
+   "feature_key": "debt_to_operating_cash_flow",
+   "separable": false,
+   "crisis_range": [
+    0.3424731977040625,
+    2.09947482083796
+   ],
+   "benign_range": [
+    0.8584934099645141,
+    7.353379543194553
+   ],
+   "overlap": true
+  },
+  {
+   "feature_key": "deposit_funding_share",
+   "separable": null,
+   "reason": "a stratum has no measured level for this feature",
+   "crisis_levels": [
+    0.858029638977472
+   ],
+   "benign_levels": []
+  },
+  {
+   "feature_key": "equity_to_assets",
+   "separable": null,
+   "reason": "a stratum has no measured level for this feature",
+   "crisis_levels": [
+    0.0827322987118682
+   ],
+   "benign_levels": []
+  },
+  {
+   "feature_key": "external_cash_generation",
+   "separable": false,
+   "crisis_range": [
+    146703000.0,
+    745500000.0
+   ],
+   "benign_range": [
+    383105250.0,
+    11042000000.0
+   ],
+   "overlap": true
+  },
+  {
+   "feature_key": "external_revenue",
+   "separable": false,
+   "crisis_range": [
+    2798000000.0,
+    2798000000.0
+   ],
+   "benign_range": [
+    875950000.0,
+    44196500000.0
+   ],
+   "overlap": true
+  },
+  {
+   "feature_key": "fixed_obligations_to_external_cash",
+   "separable": null,
+   "reason": "a stratum has no measured level for this feature",
+   "crisis_levels": [
+    1.11198167353833
+   ],
+   "benign_levels": []
+  },
+  {
+   "feature_key": "free_cash_flow",
+   "separable": true,
+   "crisis_range": [
+    -282705000.0,
+    -282705000.0
+   ],
+   "benign_range": [
+    193367500.0,
+    478075000.0
+   ],
+   "overlap": false
+  },
+  {
+   "feature_key": "resilient_liquidity_runway",
+   "separable": true,
+   "crisis_range": [
+    1.447169451361555,
+    1.447169451361555
+   ],
+   "benign_range": [
+    5.290379767366255,
+    67.4432013769363
+   ],
+   "overlap": false
   }
- }
+ ],
+ "caveat": "Separation across a handful of episodes is not evidence of predictive power. With one accepted episode per stratum this cannot distinguish a real signal from a coincidence of two samples."
 }

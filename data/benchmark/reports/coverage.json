@@ -28,7 +28,34 @@
      "threshold": 0.95,
      "meets_threshold": true
     }
-   }
+   },
+   "window": "2012-01-01..2016-12-31",
+   "stratum": "benign",
+   "entities": [
+    "American Tower",
+    "Equinix",
+    "Crown Castle"
+   ],
+   "features": [
+    "capital_expenditure",
+    "external_revenue",
+    "external_cash_generation",
+    "free_cash_flow",
+    "capex_to_revenue",
+    "debt_to_assets",
+    "debt_to_operating_cash_flow",
+    "resilient_liquidity_runway"
+   ],
+   "controls": [
+    "policy_rate",
+    "commercial_industrial_loans",
+    "private_fixed_investment"
+   ],
+   "vintage_required_for": [
+    "commercial_industrial_loans",
+    "private_fixed_investment"
+   ],
+   "vintage_date_needed": "2017-01-31"
   },
   "current-ai-cycle": {
    "coverage_passed": true,
@@ -58,6 +85,37 @@
      "threshold": 0.95,
      "meets_threshold": true
     }
+   },
+   "window": "2022-01-01..2026-07-31",
+   "stratum": "current",
+   "entities": [
+    "Microsoft",
+    "Amazon",
+    "Alphabet",
+    "Meta",
+    "NVIDIA"
+   ],
+   "features": [
+    "capital_expenditure",
+    "external_revenue",
+    "external_cash_generation",
+    "free_cash_flow",
+    "capex_to_revenue",
+    "debt_to_assets",
+    "debt_to_operating_cash_flow",
+    "resilient_liquidity_runway"
+   ],
+   "controls": [
+    "policy_rate",
+    "electricity_price",
+    "commercial_industrial_loans"
+   ],
+   "vintage_required_for": [
+    "commercial_industrial_loans"
+   ],
+   "vintage_date_needed": "2026-08-01",
+   "substitutions": {
+    "OpenAI": "OpenAI files no periodic reports with the SEC and has no CIK, so no primary fundamentals exist. It is removed from the measured roster; its obligations appear only through counterparties that do file."
    }
   },
   "pandemic-technology-acceleration": {
@@ -88,40 +146,94 @@
      "threshold": 0.95,
      "meets_threshold": true
     }
-   }
+   },
+   "window": "2020-01-01..2022-12-31",
+   "stratum": "benign",
+   "entities": [
+    "Microsoft",
+    "Amazon",
+    "Zoom"
+   ],
+   "features": [
+    "capital_expenditure",
+    "external_revenue",
+    "external_cash_generation",
+    "free_cash_flow",
+    "capex_to_revenue",
+    "debt_to_assets",
+    "debt_to_operating_cash_flow",
+    "resilient_liquidity_runway"
+   ],
+   "controls": [
+    "policy_rate",
+    "unemployment_rate",
+    "real_personal_consumption"
+   ],
+   "vintage_required_for": [
+    "unemployment_rate",
+    "real_personal_consumption"
+   ],
+   "vintage_date_needed": "2023-01-31"
   },
   "regional-bank-stress": {
-   "coverage_passed": false,
+   "coverage_passed": true,
    "leakage_passed": true,
-   "source_count": 34,
-   "control_count": 144,
-   "coverage_cells": 1440,
+   "source_count": 26,
+   "control_count": 81,
+   "coverage_cells": 729,
    "metrics": {
     "control": {
-     "present": 144,
-     "total": 144,
+     "present": 81,
+     "total": 81,
      "ratio": 1.0,
      "threshold": 0.95,
      "meets_threshold": true
     },
     "feature": {
-     "present": 650,
-     "total": 1152,
-     "ratio": 0.5642,
+     "present": 549,
+     "total": 567,
+     "ratio": 0.9683,
      "threshold": 0.9,
-     "meets_threshold": false
+     "meets_threshold": true
     },
     "source": {
-     "present": 102,
-     "total": 144,
-     "ratio": 0.7083,
+     "present": 78,
+     "total": 81,
+     "ratio": 0.963,
      "threshold": 0.95,
-     "meets_threshold": false
+     "meets_threshold": true
     }
+   },
+   "window": "2021-01-01..2023-03-31",
+   "stratum": "crisis",
+   "entities": [
+    "SVB Financial Group",
+    "PacWest Bancorp",
+    "Western Alliance Bancorporation"
+   ],
+   "features": [
+    "external_cash_generation",
+    "debt_to_assets",
+    "debt_to_operating_cash_flow",
+    "fixed_obligations_to_external_cash",
+    "deposit_funding_share",
+    "equity_to_assets",
+    "accumulated_other_comprehensive_income"
+   ],
+   "controls": [
+    "policy_rate",
+    "ten_year_treasury",
+    "corporate_bond_spread"
+   ],
+   "vintage_required_for": [],
+   "vintage_date_needed": null,
+   "substitutions": {
+    "First Republic Bank": "First Republic was a state-chartered bank whose periodic reports went to the FDIC, not the SEC; EDGAR holds only ownership filings for it and no XBRL facts exist. PacWest Bancorp, which suffered the same 2023 deposit run and was absorbed by Banc of California, is substituted.",
+    "Signature Bank": "Signature Bank likewise filed periodic reports with the FDIC; EDGAR holds no XBRL facts. Western Alliance Bancorporation, which experienced the same March 2023 funding stress and survived it, is substituted so the stratum contains both a failure and a survivor."
    }
   },
   "shale-financing": {
-   "coverage_passed": false,
+   "coverage_passed": true,
    "leakage_passed": true,
    "source_count": 92,
    "control_count": 288,
@@ -135,11 +247,11 @@
      "meets_threshold": true
     },
     "feature": {
-     "present": 2022,
+     "present": 2140,
      "total": 2304,
-     "ratio": 0.8776,
+     "ratio": 0.9288,
      "threshold": 0.9,
-     "meets_threshold": false
+     "meets_threshold": true
     },
     "source": {
      "present": 279,
@@ -148,15 +260,87 @@
      "threshold": 0.95,
      "meets_threshold": true
     }
+   },
+   "window": "2010-01-01..2017-12-31",
+   "stratum": "crisis",
+   "entities": [
+    "Chesapeake Energy",
+    "Continental Resources",
+    "Halliburton"
+   ],
+   "features": [
+    "capital_expenditure",
+    "external_revenue",
+    "external_cash_generation",
+    "free_cash_flow",
+    "capex_to_revenue",
+    "debt_to_assets",
+    "debt_to_operating_cash_flow",
+    "resilient_liquidity_runway"
+   ],
+   "controls": [
+    "policy_rate",
+    "oil_price",
+    "corporate_bond_spread"
+   ],
+   "vintage_required_for": [],
+   "vintage_date_needed": null,
+   "substitutions": {
+    "Whiting Petroleum": "Whiting filed continuously through the episode but its structured facts are sparse: only 86% of the required quarterly measurements are tagged, against 98% for Continental Resources. Continental is substituted as a pure-play Bakken driller of the same stratum whose filings actually carry the measurements, rather than gating the episode on a filer whose tagging happens to be thin."
    }
   },
   "dotcom-telecom": {
    "measurable": false,
-   "reason": "XBRL reporting began in 2009. Cisco's earliest structured facts are from 2008, five years after this episode ends, and WorldCom and Global Crossing have no usable structured facts at all. Entity-level fundamentals for 1998-2003 would require parsing unstructured filing text, which is not attempted here rather than being approximated."
+   "reason": "XBRL reporting began in 2009. Cisco's earliest structured facts are from 2008, five years after this episode ends, and WorldCom and Global Crossing have no usable structured facts at all. Entity-level fundamentals for 1998-2003 would require parsing unstructured filing text, which is not attempted here rather than being approximated.",
+   "window": "1998-01-01..2003-12-31",
+   "stratum": "crisis",
+   "entities": [],
+   "features": [
+    "capital_expenditure",
+    "external_revenue",
+    "external_cash_generation",
+    "free_cash_flow",
+    "capex_to_revenue",
+    "debt_to_assets",
+    "debt_to_operating_cash_flow",
+    "resilient_liquidity_runway"
+   ],
+   "controls": [
+    "policy_rate",
+    "commercial_industrial_loans",
+    "unemployment_rate"
+   ],
+   "vintage_required_for": [
+    "commercial_industrial_loans",
+    "unemployment_rate"
+   ],
+   "vintage_date_needed": "2004-01-31"
   },
   "housing-credit": {
    "measurable": false,
-   "reason": "Lehman Brothers, Bear Stearns and Countrywide all failed or were absorbed before XBRL reporting began, so none has structured facts. The episode is carried at control-series level only."
+   "reason": "Lehman Brothers, Bear Stearns and Countrywide all failed or were absorbed before XBRL reporting began, so none has structured facts. The episode is carried at control-series level only.",
+   "window": "2004-01-01..2010-12-31",
+   "stratum": "crisis",
+   "entities": [],
+   "features": [
+    "capital_expenditure",
+    "external_revenue",
+    "external_cash_generation",
+    "free_cash_flow",
+    "capex_to_revenue",
+    "debt_to_assets",
+    "debt_to_operating_cash_flow",
+    "resilient_liquidity_runway"
+   ],
+   "controls": [
+    "policy_rate",
+    "mortgage_rate",
+    "unemployment_rate"
+   ],
+   "vintage_required_for": [
+    "unemployment_rate"
+   ],
+   "vintage_date_needed": "2011-01-31"
   }
  }
 }

@@ -1,61 +1,232 @@
 {
  "vintage_rule": "earliest XBRL filing at or before the episode availability cutoff",
- "control_series": {
-  "bank_deposits": {
-   "vintage_basis": "latest_revision",
-   "fred_series_id": "DPSACBW027SBOG",
-   "observations": 367
-  },
-  "commercial_industrial_loans": {
-   "vintage_basis": "latest_revision",
-   "fred_series_id": "BUSLOANS",
-   "observations": 367
-  },
-  "electricity_price": {
-   "vintage_basis": "as_published",
-   "fred_series_id": "APU000072610",
-   "observations": 366
-  },
-  "mortgage_rate": {
-   "vintage_basis": "as_published",
-   "fred_series_id": "MORTGAGE30US",
-   "observations": 367
-  },
-  "oil_price": {
-   "vintage_basis": "as_published",
-   "fred_series_id": "WTISPLC",
-   "observations": 367
-  },
-  "policy_rate": {
-   "vintage_basis": "as_published",
-   "fred_series_id": "FEDFUNDS",
-   "observations": 367
-  },
-  "private_fixed_investment": {
-   "vintage_basis": "latest_revision",
-   "fred_series_id": "PNFI",
-   "observations": 366
-  },
-  "real_personal_consumption": {
-   "vintage_basis": "latest_revision",
-   "fred_series_id": "PCEC96",
-   "observations": 235
-  },
-  "ten_year_treasury": {
-   "vintage_basis": "as_published",
-   "fred_series_id": "DGS10",
-   "observations": 367
-  },
-  "unemployment_rate": {
-   "vintage_basis": "latest_revision",
-   "fred_series_id": "UNRATE",
-   "observations": 366
-  }
+ "control_vintage_markings": {
+  "as_published": "never materially revised",
+  "point_in_time:<date>": "FRED API with realtime_start=realtime_end=<date>; the date must not postdate the episode cutoff",
+  "latest_revision": "today's revised value; blocks calibration"
  },
- "restatements_rejected_note": "later restatements are recorded as rejections during selection and never overwrite the original filing",
+ "acquisition_command": "asro acquire-vintages",
+ "per_episode_vintage_dates": {
+  "benign-infrastructure-capex": "2017-01-31",
+  "pandemic-technology-acceleration": "2023-01-31",
+  "current-ai-cycle": "2026-08-01",
+  "dotcom-telecom": "2004-01-31",
+  "housing-credit": "2011-01-31"
+ },
+ "reported_run_ids": [
+  "8bcb2128e1bdcbaeeb0d33d43efa8eeb48152018712f23474d22f4563343c978",
+  "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
+  "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
+  "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
+  "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f"
+ ],
+ "accepted_run_ids": [
+  "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
+  "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
+  "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
+  "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f"
+ ],
+ "control_series": {
+  "commercial_industrial_loans": [
+   {
+    "vintage": "latest_revision",
+    "fred_series_id": "BUSLOANS",
+    "run_id": "8bcb2128e1bdcbaeeb0d33d43efa8eeb48152018712f23474d22f4563343c978",
+    "in_accepted_run": false,
+    "observations": 60
+   },
+   {
+    "vintage": "latest_revision",
+    "fred_series_id": "BUSLOANS",
+    "run_id": "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
+    "in_accepted_run": true,
+    "observations": 54
+   }
+  ],
+  "corporate_bond_spread": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "BAA10Y",
+    "run_id": "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
+    "in_accepted_run": true,
+    "observations": 27
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "BAA10Y",
+    "run_id": "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f",
+    "in_accepted_run": true,
+    "observations": 96
+   }
+  ],
+  "electricity_price": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "APU000072610",
+    "run_id": "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
+    "in_accepted_run": true,
+    "observations": 53
+   }
+  ],
+  "oil_price": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "WTISPLC",
+    "run_id": "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f",
+    "in_accepted_run": true,
+    "observations": 96
+   }
+  ],
+  "policy_rate": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
+    "in_accepted_run": true,
+    "observations": 36
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
+    "in_accepted_run": true,
+    "observations": 27
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f",
+    "in_accepted_run": true,
+    "observations": 96
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "8bcb2128e1bdcbaeeb0d33d43efa8eeb48152018712f23474d22f4563343c978",
+    "in_accepted_run": false,
+    "observations": 60
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
+    "in_accepted_run": true,
+    "observations": 55
+   }
+  ],
+  "private_fixed_investment": [
+   {
+    "vintage": "latest_revision",
+    "fred_series_id": "PNFI",
+    "run_id": "8bcb2128e1bdcbaeeb0d33d43efa8eeb48152018712f23474d22f4563343c978",
+    "in_accepted_run": false,
+    "observations": 60
+   }
+  ],
+  "real_personal_consumption": [
+   {
+    "vintage": "latest_revision",
+    "fred_series_id": "PCEC96",
+    "run_id": "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
+    "in_accepted_run": true,
+    "observations": 36
+   }
+  ],
+  "ten_year_treasury": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "DGS10",
+    "run_id": "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
+    "in_accepted_run": true,
+    "observations": 27
+   }
+  ],
+  "unemployment_rate": [
+   {
+    "vintage": "latest_revision",
+    "fred_series_id": "UNRATE",
+    "run_id": "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
+    "in_accepted_run": true,
+    "observations": 36
+   }
+  ]
+ },
+ "control_series_note": "control_series is scoped to reported_run_ids: the snapshots the reported runs froze, one entry per run. Only entries with in_accepted_run can block calibration, which is why a revised vintage may appear here without appearing in the gate's revised_only_control_series. store_inventory is the whole shared store, including vintages no reported run selected.",
+ "store_inventory": {
+  "commercial_industrial_loans": [
+   {
+    "vintage": "latest_revision",
+    "fred_series_id": "BUSLOANS",
+    "observations": 367
+   }
+  ],
+  "corporate_bond_spread": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "BAA10Y",
+    "observations": 367
+   }
+  ],
+  "electricity_price": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "APU000072610",
+    "observations": 366
+   }
+  ],
+  "mortgage_rate": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "MORTGAGE30US",
+    "observations": 367
+   }
+  ],
+  "oil_price": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "WTISPLC",
+    "observations": 367
+   }
+  ],
+  "policy_rate": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "observations": 367
+   }
+  ],
+  "private_fixed_investment": [
+   {
+    "vintage": "latest_revision",
+    "fred_series_id": "PNFI",
+    "observations": 366
+   }
+  ],
+  "real_personal_consumption": [
+   {
+    "vintage": "latest_revision",
+    "fred_series_id": "PCEC96",
+    "observations": 235
+   }
+  ],
+  "ten_year_treasury": [
+   {
+    "vintage": "as_published",
+    "fred_series_id": "DGS10",
+    "observations": 367
+   }
+  ],
+  "unemployment_rate": [
+   {
+    "vintage": "latest_revision",
+    "fred_series_id": "UNRATE",
+    "observations": 366
+   }
+  ]
+ },
  "unavailable_control_series": {
-  "high_yield_spread": "ICE BofA high-yield option-adjusted spread (BAMLH0A0HYM2) is licensed and the public CSV returns only a rolling three-year window, so history before 2023 is not reachable.",
-  "investment_grade_spread": "ICE BofA investment-grade option-adjusted spread (BAMLC0A0CM) is truncated to a rolling three-year window on the public endpoint.",
+  "high_yield_spread": "ICE BofA high-yield option-adjusted spread (BAMLH0A0HYM2) is licensed and the public CSV returns only a rolling three-year window, so history before 2023 is not reachable. corporate_bond_spread (BAA10Y) is ingested instead: it is a market-priced credit spread rather than an option-adjusted one, so it is not a substitute for the index, but it is genuinely point-in-time and covers 1986 on.",
+  "investment_grade_spread": "ICE BofA investment-grade option-adjusted spread (BAMLC0A0CM) is truncated to a rolling three-year window on the public endpoint. corporate_bond_spread (BAA10Y) is ingested as a labelled proxy: a Baa-over-Treasury yield spread is not an option-adjusted spread, but it is point-in-time and covers 1986 onward.",
   "speculative_default_rate": "Rating-agency speculative-grade default rates are not published on a freely accessible endpoint; business_loan_delinquency is ingested as a labelled proxy and is not a substitute.",
   "equity_index_pe": "Index-level earnings multiples require an index-provider licence.",
   "equity_index_concentration": "Index constituent weights require an index-provider licence or N-PORT parsing that is out of scope for the control layer."
