@@ -19,7 +19,9 @@ import requests
 
 from asro.backfill.manifest import EpisodeManifest
 from asro.benchmark.controls_ingest import (
+    CONTROL_PLANS,
     CONTROL_PLANS_BY_ID,
+    ControlSeriesPlan,
     VintageBasis,
     fetch_series_vintage,
     ingest_series,
@@ -48,6 +50,24 @@ class VintageOutcome:
     written: int
     already_present: int
     error: str | None = None
+
+
+def as_published_plans_for(
+    rosters: tuple[EpisodeRoster, ...] = ROSTERS,
+) -> tuple[ControlSeriesPlan, ...]:
+    """Return the immutable market controls needed to bootstrap these episodes.
+
+    A restored production database can predate the historical benchmark.  In that
+    case there are no accepted episodes yet, but the episodes cannot become accepted
+    until their non-revised controls have first been loaded.  Keep this list bounded
+    to controls actually named by the requested rosters.
+    """
+    required = {series_id for roster in rosters for series_id in roster.controls}
+    return tuple(
+        plan
+        for plan in CONTROL_PLANS
+        if plan.series_id in required and plan.vintage_basis is VintageBasis.AS_PUBLISHED
+    )
 
 
 def revised_series_for(roster: EpisodeRoster) -> tuple[str, ...]:

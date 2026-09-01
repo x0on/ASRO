@@ -110,7 +110,7 @@ jobs:
         env:
           ASRO_SEC_USER_AGENT: ${{ secrets.ASRO_SEC_USER_AGENT }}
           ASRO_FRED_API_KEY: ${{ secrets.ASRO_FRED_API_KEY }}
-        run: asro acquire-vintages
+        run: asro acquire-vintages --bootstrap
 
       - name: Package candidate immutable state
         env:

@@ -22,8 +22,13 @@ from asro.backfill.acquisition import acquire_inventory
 from asro.backfill.current_ai_slice import promote_current_ai_feature_family
 from asro.backfill.fundamentals import promote_company_fundamentals
 from asro.backfill.negative_evidence import enumerate_negative_evidence_universe
+from asro.benchmark.controls_ingest import ingest_controls
 from asro.benchmark.reports import REPORT_NAMES, write_benchmark_reports
-from asro.benchmark.vintages import acquire_episode_vintages, rebuild_episodes
+from asro.benchmark.vintages import (
+    acquire_episode_vintages,
+    as_published_plans_for,
+    rebuild_episodes,
+)
 from asro.evidence.time import normalize_timestamp
 from asro.features import (
     EcosystemFeatureSpec,
@@ -341,6 +346,15 @@ def acquire_vintages(
     accepted_only: Annotated[
         bool, typer.Option(help="Only acquire for episodes that passed their gates.")
     ] = True,
+    bootstrap: Annotated[
+        bool,
+        typer.Option(
+            help=(
+                "Bootstrap a restored pre-benchmark database by loading required "
+                "as-published controls and acquiring vintages for every measurable episode."
+            )
+        ),
+    ] = False,
     cache_dir: Annotated[Path, typer.Option()] = Path("data/acquired"),
 ) -> None:
     """Acquire point-in-time control data for each accepted historical episode.
@@ -360,13 +374,22 @@ def acquire_vintages(
         raise typer.Exit(code=1)
     repository = SqliteRepository(settings.database_path)
     with repository.connect() as connection:
+        baseline_controls: dict[str, object] | None = None
+        if bootstrap:
+            baseline_controls = ingest_controls(
+                connection,
+                user_agent=settings.sec_user_agent,
+                plans=as_published_plans_for(),
+            )
         acquired = acquire_episode_vintages(
             connection,
             api_key=settings.fred_api_key,
             user_agent=settings.sec_user_agent,
-            accepted_only=accepted_only,
+            accepted_only=False if bootstrap else accepted_only,
         )
         payload: dict[str, object] = {"acquired": acquired}
+        if baseline_controls is not None:
+            payload["baseline_controls"] = baseline_controls
         if rebuild:
             payload["rebuilt"] = rebuild_episodes(
                 connection,

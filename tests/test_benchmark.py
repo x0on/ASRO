@@ -58,7 +58,11 @@ from asro.benchmark.sec_fundamentals import (
     build_derived_facts,
     select_facts,
 )
-from asro.benchmark.vintages import acquire_episode_vintages, revised_series_for
+from asro.benchmark.vintages import (
+    acquire_episode_vintages,
+    as_published_plans_for,
+    revised_series_for,
+)
 from asro.evidence import (
     CanonicalFactAssignment,
     EconomicScope,
@@ -1469,6 +1473,17 @@ def test_each_episode_asks_for_its_own_cutoff_not_one_shared_vintage() -> None:
             assert plan.vintage_basis is VintageBasis.LATEST_REVISION
 
 
+def test_bootstrap_loads_only_required_as_published_controls() -> None:
+    plans = as_published_plans_for()
+    assert plans
+    required = {series_id for roster in ROSTERS for series_id in roster.controls}
+    assert {plan.series_id for plan in plans} <= required
+    assert all(plan.vintage_basis is VintageBasis.AS_PUBLISHED for plan in plans)
+    assert "policy_rate" in {plan.series_id for plan in plans}
+    assert "corporate_bond_spread" in {plan.series_id for plan in plans}
+    assert "commercial_industrial_loans" not in {plan.series_id for plan in plans}
+
+
 def test_acquisition_requests_one_vintage_per_accepted_episode(
     connection: sqlite3.Connection,
 ) -> None:
@@ -1697,7 +1712,7 @@ def test_the_vintage_step_carries_the_key_and_cannot_fail_the_run() -> None:
     step = step[: step.index("      - name: Package candidate immutable state")]
     assert "ASRO_FRED_API_KEY: ${{ secrets.ASRO_FRED_API_KEY }}" in step
     assert "continue-on-error: true" in step
-    assert "run: asro acquire-vintages" in step
+    assert "run: asro acquire-vintages --bootstrap" in step
 
 
 def test_packaged_state_contains_the_vintages_and_matches_what_is_published(
