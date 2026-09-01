@@ -4,6 +4,7 @@ import hashlib
 import json
 import sqlite3
 from collections import Counter
+from collections.abc import Sequence
 from datetime import UTC, datetime
 from importlib.resources import files
 from pathlib import Path
@@ -218,6 +219,7 @@ def build_static_site(
     output_dir: Path = Path("site"),
     database_path: Path | None = None,
     claimed_tier: OutputTier = OutputTier.HEURISTIC,
+    readiness_episode_ids: Sequence[str] | None = None,
 ) -> Path:
     """Publish the static site, refusing any claim the historical evidence cannot support.
 
@@ -244,6 +246,7 @@ def build_static_site(
         readiness = evaluate_readiness(
             connection,
             documented_insufficiency=load_documented_insufficiency(INSUFFICIENCY_PATH),
+            episode_ids=readiness_episode_ids,
         )
 
     # Enforced before a single file is written: the site cannot describe itself as more

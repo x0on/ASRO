@@ -1531,6 +1531,20 @@ def test_acquisition_refuses_to_run_without_a_key(
         acquire_episode_vintages(connection, api_key="", user_agent="test")
 
 
+def test_readiness_scope_excludes_unrelated_accepted_backfills(
+    connection: sqlite3.Connection,
+) -> None:
+    _seed_episode(connection, "benchmark", "current", feature_keys=("capital_expenditure",))
+    _seed_episode(
+        connection,
+        "unrelated-slice",
+        "current",
+        feature_keys=("capital_expenditure",),
+    )
+    scoped = evaluate_readiness(connection, episode_ids=("benchmark",))
+    assert scoped.accepted_current_episodes == 1
+
+
 def test_a_vintage_cut_after_the_cutoff_is_refused(
     connection: sqlite3.Connection,
 ) -> None:

@@ -23,6 +23,7 @@ from asro.backfill.current_ai_slice import promote_current_ai_feature_family
 from asro.backfill.fundamentals import promote_company_fundamentals
 from asro.backfill.negative_evidence import enumerate_negative_evidence_universe
 from asro.benchmark.controls_ingest import ingest_controls
+from asro.benchmark.episodes import ROSTERS
 from asro.benchmark.reports import REPORT_NAMES, write_benchmark_reports
 from asro.benchmark.vintages import (
     acquire_episode_vintages,
@@ -192,7 +193,7 @@ def events(limit: int = 25) -> None:
 @app.command("build-site")
 def build_site() -> None:
     """Build the zero-server static dashboard into ./site."""
-    path = build_static_site()
+    path = build_static_site(readiness_episode_ids=tuple(roster.episode_id for roster in ROSTERS))
     typer.echo(f"Static site built at: {path}")
 
 
@@ -405,6 +406,7 @@ def acquire_vintages(
             connection,
             REPORTS_PATH,
             insufficiency_path=INSUFFICIENCY_PATH,
+            episode_ids=tuple(roster.episode_id for roster in ROSTERS),
         )
         payload["readiness"] = readiness.as_public_status()
         payload["reports_written"] = sorted(REPORT_NAMES)

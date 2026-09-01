@@ -237,6 +237,7 @@ def write_benchmark_reports(
     *,
     insufficiency_path: Path,
     rosters: tuple[EpisodeRoster, ...] = ROSTERS,
+    episode_ids: Sequence[str] | None = None,
 ) -> CalibrationReadiness:
     """Write every benchmark report from this connection and return the readiness result.
 
@@ -248,12 +249,13 @@ def write_benchmark_reports(
     re-deriving it.
     """
     output_directory.mkdir(parents=True, exist_ok=True)
-    acceptances = episode_acceptances(connection)
+    acceptances = episode_acceptances(connection, episode_ids)
     run_ids = [item.run_id for item in acceptances]
     run_placeholders = _placeholders(run_ids)
     readiness = evaluate_readiness(
         connection,
         documented_insufficiency=load_documented_insufficiency(insufficiency_path),
+        episode_ids=episode_ids,
     )
     status = readiness.as_public_status()
     status["observed_variable_keys"] = list(readiness.observed_variable_keys)

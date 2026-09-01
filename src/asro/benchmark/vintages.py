@@ -95,7 +95,10 @@ def acquire_episode_vintages(
             "no FRED API key configured; set ASRO_FRED_API_KEY to acquire point-in-time "
             "control data"
         )
-    accepted = {item.episode_id for item in episode_acceptances(connection) if item.accepted}
+    roster_ids = tuple(roster.episode_id for roster in rosters)
+    accepted = {
+        item.episode_id for item in episode_acceptances(connection, roster_ids) if item.accepted
+    }
     outcomes: list[VintageOutcome] = []
     for roster in rosters:
         if accepted_only and roster.episode_id not in accepted:

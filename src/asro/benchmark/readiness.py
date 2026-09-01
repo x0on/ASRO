@@ -162,15 +162,24 @@ class CalibrationClaimError(RuntimeError):
     """Raised when a claim would exceed what the accepted evidence supports."""
 
 
-def episode_acceptances(connection: sqlite3.Connection) -> tuple[EpisodeAcceptance, ...]:
+def episode_acceptances(
+    connection: sqlite3.Connection,
+    episode_ids: Sequence[str] | None = None,
+) -> tuple[EpisodeAcceptance, ...]:
     """The latest run for each distinct episode, with its gate outcomes.
 
     Keyed on `episode_id` alone, never on `(episode_id, version)`. Re-running an episode
     or bumping its manifest version produces more rows in `backfill_run`, and counting
     those as separate episodes would let one crisis satisfy a requirement for two.
     """
+    scope = ""
+    parameters: tuple[str, ...] = ()
+    if episode_ids is not None:
+        placeholders = ",".join("?" for _ in episode_ids) or "''"
+        scope = f"AND run.episode_id IN ({placeholders})"  # noqa: S608
+        parameters = tuple(episode_ids)
     rows = connection.execute(
-        """SELECT run.episode_id, run.episode_version, episode.stratum, run.run_id,
+        f"""SELECT run.episode_id, run.episode_version, episode.stratum, run.run_id,
                   run.coverage_passed, run.leakage_passed, run.coverage_cell_count,
                   run.source_count, run.control_count
              FROM backfill_run AS run
@@ -182,7 +191,9 @@ def episode_acceptances(connection: sqlite3.Connection) -> tuple[EpisodeAcceptan
                      WHERE inner_run.episode_id = run.episode_id
                      ORDER BY inner_run.created_at DESC, inner_run.rowid DESC
                      LIMIT 1)
-            ORDER BY run.episode_id"""
+              {scope}
+            ORDER BY run.episode_id""",  # noqa: S608
+        parameters,
     ).fetchall()
     return tuple(
         EpisodeAcceptance(
@@ -332,11 +343,12 @@ def evaluate_readiness(
     *,
     requirements: CalibrationRequirements | None = None,
     documented_insufficiency: Mapping[CausalRole, str] | None = None,
+    episode_ids: Sequence[str] | None = None,
 ) -> CalibrationReadiness:
     """Compute what the accepted historical evidence supports right now."""
     rules = requirements or CalibrationRequirements()
     insufficiency = dict(documented_insufficiency or {})
-    acceptances = episode_acceptances(connection)
+    acceptances = episode_acceptances(connection, episode_ids)
     accepted = [item for item in acceptances if item.accepted]
     # Distinct episodes, so a re-run or a version bump cannot inflate a stratum.
     distinct: dict[str, set[str]] = {"crisis": set(), "benign": set(), "current": set()}
