@@ -3,6 +3,24 @@
  "by_episode": {
   "benign-infrastructure-capex": [
    {
+    "dimension": "control",
+    "requirement": "commercial_industrial_loans",
+    "entity": "__episode__",
+    "missing_cells": 60
+   },
+   {
+    "dimension": "control",
+    "requirement": "policy_rate",
+    "entity": "__episode__",
+    "missing_cells": 60
+   },
+   {
+    "dimension": "control",
+    "requirement": "private_fixed_investment",
+    "entity": "__episode__",
+    "missing_cells": 60
+   },
+   {
     "dimension": "feature",
     "requirement": "free_cash_flow",
     "entity": "Equinix",
@@ -83,6 +101,24 @@
   ],
   "current-ai-cycle": [
    {
+    "dimension": "control",
+    "requirement": "commercial_industrial_loans",
+    "entity": "__episode__",
+    "missing_cells": 55
+   },
+   {
+    "dimension": "control",
+    "requirement": "electricity_price",
+    "entity": "__episode__",
+    "missing_cells": 55
+   },
+   {
+    "dimension": "control",
+    "requirement": "policy_rate",
+    "entity": "__episode__",
+    "missing_cells": 55
+   },
+   {
     "dimension": "feature",
     "requirement": "capex_to_revenue",
     "entity": "NVIDIA",
@@ -149,18 +185,6 @@
     "missing_cells": 3
    },
    {
-    "dimension": "control",
-    "requirement": "electricity_price",
-    "entity": "__episode__",
-    "missing_cells": 2
-   },
-   {
-    "dimension": "control",
-    "requirement": "commercial_industrial_loans",
-    "entity": "__episode__",
-    "missing_cells": 1
-   },
-   {
     "dimension": "source",
     "requirement": "primary-filings",
     "entity": "Alphabet",
@@ -185,7 +209,75 @@
     "missing_cells": 1
    }
   ],
+  "current-ai-cycle-4x6-2025h2-slice": [
+   {
+    "dimension": "feature",
+    "requirement": "ai_related_debt",
+    "entity": "Alphabet",
+    "missing_cells": 6
+   },
+   {
+    "dimension": "feature",
+    "requirement": "ai_related_debt",
+    "entity": "Amazon",
+    "missing_cells": 6
+   },
+   {
+    "dimension": "feature",
+    "requirement": "ai_related_debt",
+    "entity": "Microsoft",
+    "missing_cells": 6
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Alphabet",
+    "missing_cells": 6
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Amazon",
+    "missing_cells": 6
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Microsoft",
+    "missing_cells": 6
+   },
+   {
+    "dimension": "feature",
+    "requirement": "ai_related_debt",
+    "entity": "Meta",
+    "missing_cells": 5
+   },
+   {
+    "dimension": "source",
+    "requirement": "primary-filings",
+    "entity": "Meta",
+    "missing_cells": 5
+   }
+  ],
   "pandemic-technology-acceleration": [
+   {
+    "dimension": "control",
+    "requirement": "policy_rate",
+    "entity": "__episode__",
+    "missing_cells": 36
+   },
+   {
+    "dimension": "control",
+    "requirement": "real_personal_consumption",
+    "entity": "__episode__",
+    "missing_cells": 36
+   },
+   {
+    "dimension": "control",
+    "requirement": "unemployment_rate",
+    "entity": "__episode__",
+    "missing_cells": 36
+   },
    {
     "dimension": "feature",
     "requirement": "debt_to_assets",
@@ -213,6 +305,24 @@
   ],
   "regional-bank-stress": [
    {
+    "dimension": "control",
+    "requirement": "corporate_bond_spread",
+    "entity": "__episode__",
+    "missing_cells": 27
+   },
+   {
+    "dimension": "control",
+    "requirement": "policy_rate",
+    "entity": "__episode__",
+    "missing_cells": 27
+   },
+   {
+    "dimension": "control",
+    "requirement": "ten_year_treasury",
+    "entity": "__episode__",
+    "missing_cells": 27
+   },
+   {
     "dimension": "feature",
     "requirement": "debt_to_assets",
     "entity": "Western Alliance Bancorporation",
@@ -238,6 +348,24 @@
    }
   ],
   "shale-financing": [
+   {
+    "dimension": "control",
+    "requirement": "corporate_bond_spread",
+    "entity": "__episode__",
+    "missing_cells": 96
+   },
+   {
+    "dimension": "control",
+    "requirement": "oil_price",
+    "entity": "__episode__",
+    "missing_cells": 96
+   },
+   {
+    "dimension": "control",
+    "requirement": "policy_rate",
+    "entity": "__episode__",
+    "missing_cells": 96
+   },
    {
     "dimension": "feature",
     "requirement": "capex_to_revenue",

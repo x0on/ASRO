@@ -4,15 +4,15 @@
    "coverage_passed": false,
    "leakage_passed": true,
    "source_count": 57,
-   "control_count": 180,
+   "control_count": 0,
    "coverage_cells": 1800,
    "metrics": {
     "control": {
-     "present": 180,
+     "present": 0,
      "total": 180,
-     "ratio": 1.0,
+     "ratio": 0.0,
      "threshold": 0.95,
-     "meets_threshold": true
+     "meets_threshold": false
     },
     "feature": {
      "present": 1222,
@@ -58,18 +58,18 @@
    "vintage_date_needed": "2017-01-31"
   },
   "current-ai-cycle": {
-   "coverage_passed": true,
+   "coverage_passed": false,
    "leakage_passed": true,
-   "source_count": 90,
-   "control_count": 162,
+   "source_count": 99,
+   "control_count": 0,
    "coverage_cells": 2640,
    "metrics": {
     "control": {
-     "present": 162,
+     "present": 0,
      "total": 165,
-     "ratio": 0.9818,
+     "ratio": 0.0,
      "threshold": 0.95,
-     "meets_threshold": true
+     "meets_threshold": false
     },
     "feature": {
      "present": 2058,
@@ -118,19 +118,79 @@
     "OpenAI": "OpenAI files no periodic reports with the SEC and has no CIK, so no primary fundamentals exist. It is removed from the measured roster; its obligations appear only through counterparties that do file."
    }
   },
-  "pandemic-technology-acceleration": {
+  "current-ai-cycle-4x6-2025h2-slice": {
+   "coverage_passed": false,
+   "leakage_passed": true,
+   "source_count": 1,
+   "control_count": 21,
+   "coverage_cells": 66,
+   "metrics": {
+    "control": {
+     "present": 18,
+     "total": 18,
+     "ratio": 1.0,
+     "threshold": 1.0,
+     "meets_threshold": true
+    },
+    "feature": {
+     "present": 1,
+     "total": 24,
+     "ratio": 0.0417,
+     "threshold": 1.0,
+     "meets_threshold": false
+    },
+    "source": {
+     "present": 1,
+     "total": 24,
+     "ratio": 0.0417,
+     "threshold": 1.0,
+     "meets_threshold": false
+    }
+   }
+  },
+  "current-ai-cycle-meta-oct2025-slice": {
    "coverage_passed": true,
    "leakage_passed": true,
+   "source_count": 1,
+   "control_count": 3,
+   "coverage_cells": 5,
+   "metrics": {
+    "control": {
+     "present": 3,
+     "total": 3,
+     "ratio": 1.0,
+     "threshold": 1.0,
+     "meets_threshold": true
+    },
+    "feature": {
+     "present": 1,
+     "total": 1,
+     "ratio": 1.0,
+     "threshold": 1.0,
+     "meets_threshold": true
+    },
+    "source": {
+     "present": 1,
+     "total": 1,
+     "ratio": 1.0,
+     "threshold": 1.0,
+     "meets_threshold": true
+    }
+   }
+  },
+  "pandemic-technology-acceleration": {
+   "coverage_passed": false,
+   "leakage_passed": true,
    "source_count": 35,
-   "control_count": 108,
+   "control_count": 0,
    "coverage_cells": 1080,
    "metrics": {
     "control": {
-     "present": 108,
+     "present": 0,
      "total": 108,
-     "ratio": 1.0,
+     "ratio": 0.0,
      "threshold": 0.95,
-     "meets_threshold": true
+     "meets_threshold": false
     },
     "feature": {
      "present": 792,
@@ -176,18 +236,18 @@
    "vintage_date_needed": "2023-01-31"
   },
   "regional-bank-stress": {
-   "coverage_passed": true,
+   "coverage_passed": false,
    "leakage_passed": true,
    "source_count": 26,
-   "control_count": 81,
+   "control_count": 0,
    "coverage_cells": 729,
    "metrics": {
     "control": {
-     "present": 81,
+     "present": 0,
      "total": 81,
-     "ratio": 1.0,
+     "ratio": 0.0,
      "threshold": 0.95,
-     "meets_threshold": true
+     "meets_threshold": false
     },
     "feature": {
      "present": 549,
@@ -233,18 +293,18 @@
    }
   },
   "shale-financing": {
-   "coverage_passed": true,
+   "coverage_passed": false,
    "leakage_passed": true,
    "source_count": 92,
-   "control_count": 288,
+   "control_count": 0,
    "coverage_cells": 2880,
    "metrics": {
     "control": {
-     "present": 288,
+     "present": 0,
      "total": 288,
-     "ratio": 1.0,
+     "ratio": 0.0,
      "threshold": 0.95,
-     "meets_threshold": true
+     "meets_threshold": false
     },
     "feature": {
      "present": 2140,

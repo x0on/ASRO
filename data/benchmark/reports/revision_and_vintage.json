@@ -14,213 +14,124 @@
   "housing-credit": "2011-01-31"
  },
  "reported_run_ids": [
-  "8bcb2128e1bdcbaeeb0d33d43efa8eeb48152018712f23474d22f4563343c978",
-  "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
-  "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
-  "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
-  "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f"
+  "41627ba88a626506798161810a70016caed18b802328ac3f1f87bf6afad21a6a",
+  "f2387ac569fdd73cfb5784b9c4a05bdcbdd15bc575250b84c3db83ffea3309bb",
+  "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
+  "7c64a02395918e87a03019baa755ecc6ef8888e97373a691a38f5628a4a67861",
+  "f526aeca0036683320ba941b0db0d581638cadd0b20e608ccf8b7fe3bb36c434",
+  "a6f2171c54c4d482ee4150da43acc031b4f216335adcf864064ee0fa2dd18124",
+  "8f33b6acdc865057805a4722cae219b646c06acb2209a05462e22c763dfdefc1"
  ],
  "accepted_run_ids": [
-  "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
-  "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
-  "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
-  "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f"
+  "7c64a02395918e87a03019baa755ecc6ef8888e97373a691a38f5628a4a67861"
  ],
  "control_series": {
-  "commercial_industrial_loans": [
+  "credit_spread": [
    {
-    "vintage": "latest_revision",
-    "fred_series_id": "BUSLOANS",
-    "run_id": "8bcb2128e1bdcbaeeb0d33d43efa8eeb48152018712f23474d22f4563343c978",
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
+    "fred_series_id": null,
+    "run_id": "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
     "in_accepted_run": false,
-    "observations": 60
+    "observations": 1
    },
    {
-    "vintage": "latest_revision",
-    "fred_series_id": "BUSLOANS",
-    "run_id": "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
+    "fred_series_id": null,
+    "run_id": "7c64a02395918e87a03019baa755ecc6ef8888e97373a691a38f5628a4a67861",
     "in_accepted_run": true,
-    "observations": 54
-   }
-  ],
-  "corporate_bond_spread": [
-   {
-    "vintage": "as_published",
-    "fred_series_id": "BAA10Y",
-    "run_id": "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
-    "in_accepted_run": true,
-    "observations": 27
+    "observations": 1
    },
    {
-    "vintage": "as_published",
-    "fred_series_id": "BAA10Y",
-    "run_id": "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f",
-    "in_accepted_run": true,
-    "observations": 96
-   }
-  ],
-  "electricity_price": [
-   {
-    "vintage": "as_published",
-    "fred_series_id": "APU000072610",
-    "run_id": "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
-    "in_accepted_run": true,
-    "observations": 53
-   }
-  ],
-  "oil_price": [
-   {
-    "vintage": "as_published",
-    "fred_series_id": "WTISPLC",
-    "run_id": "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f",
-    "in_accepted_run": true,
-    "observations": 96
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:50+00:00",
+    "fred_series_id": null,
+    "run_id": "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
+    "in_accepted_run": false,
+    "observations": 6
    }
   ],
   "policy_rate": [
    {
-    "vintage": "as_published",
-    "fred_series_id": "FEDFUNDS",
-    "run_id": "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
-    "in_accepted_run": true,
-    "observations": 36
-   },
-   {
-    "vintage": "as_published",
-    "fred_series_id": "FEDFUNDS",
-    "run_id": "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
-    "in_accepted_run": true,
-    "observations": 27
-   },
-   {
-    "vintage": "as_published",
-    "fred_series_id": "FEDFUNDS",
-    "run_id": "61854d80d1d1e3530af6f41bd75a28b1502d1109e0a36d723075f88a4b6b1c5f",
-    "in_accepted_run": true,
-    "observations": 96
-   },
-   {
-    "vintage": "as_published",
-    "fred_series_id": "FEDFUNDS",
-    "run_id": "8bcb2128e1bdcbaeeb0d33d43efa8eeb48152018712f23474d22f4563343c978",
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
+    "fred_series_id": null,
+    "run_id": "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
     "in_accepted_run": false,
-    "observations": 60
+    "observations": 1
    },
    {
-    "vintage": "as_published",
-    "fred_series_id": "FEDFUNDS",
-    "run_id": "e7ecd450b02f4e38f56396b874219a07040cea8bebdce83976f0428ae3f89781",
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
+    "fred_series_id": null,
+    "run_id": "7c64a02395918e87a03019baa755ecc6ef8888e97373a691a38f5628a4a67861",
     "in_accepted_run": true,
-    "observations": 55
-   }
-  ],
-  "private_fixed_investment": [
+    "observations": 1
+   },
    {
-    "vintage": "latest_revision",
-    "fred_series_id": "PNFI",
-    "run_id": "8bcb2128e1bdcbaeeb0d33d43efa8eeb48152018712f23474d22f4563343c978",
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:49+00:00",
+    "fred_series_id": null,
+    "run_id": "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
     "in_accepted_run": false,
-    "observations": 60
+    "observations": 6
    }
   ],
-  "real_personal_consumption": [
+  "semiconductor_cycle": [
    {
-    "vintage": "latest_revision",
-    "fred_series_id": "PCEC96",
-    "run_id": "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
-    "in_accepted_run": true,
-    "observations": 36
-   }
-  ],
-  "ten_year_treasury": [
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
+    "fred_series_id": null,
+    "run_id": "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
+    "in_accepted_run": false,
+    "observations": 1
+   },
    {
-    "vintage": "as_published",
-    "fred_series_id": "DGS10",
-    "run_id": "558852956d35bd739351e77809c69f53b1d1df2c6cc6fe39f65ecbd55da02414",
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
+    "fred_series_id": null,
+    "run_id": "7c64a02395918e87a03019baa755ecc6ef8888e97373a691a38f5628a4a67861",
     "in_accepted_run": true,
-    "observations": 27
-   }
-  ],
-  "unemployment_rate": [
+    "observations": 1
+   },
    {
-    "vintage": "latest_revision",
-    "fred_series_id": "UNRATE",
-    "run_id": "20711a15d1bc5866adabcc9f867c5b43107b76044b5e7036231a4ccc1bfe63aa",
-    "in_accepted_run": true,
-    "observations": 36
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:50+00:00",
+    "fred_series_id": null,
+    "run_id": "64720902ba79359c4269aef7288223fcbfb04af88310e4bb4e22e23984a7e113",
+    "in_accepted_run": false,
+    "observations": 6
    }
   ]
  },
  "control_series_note": "control_series is scoped to reported_run_ids: the snapshots the reported runs froze, one entry per run. Only entries with in_accepted_run can block calibration, which is why a revised vintage may appear here without appearing in the gate's revised_only_control_series. store_inventory is the whole shared store, including vintages no reported run selected.",
  "store_inventory": {
-  "commercial_industrial_loans": [
+  "credit_spread": [
    {
-    "vintage": "latest_revision",
-    "fred_series_id": "BUSLOANS",
-    "observations": 367
-   }
-  ],
-  "corporate_bond_spread": [
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
+    "fred_series_id": null,
+    "observations": 1
+   },
    {
-    "vintage": "as_published",
-    "fred_series_id": "BAA10Y",
-    "observations": 367
-   }
-  ],
-  "electricity_price": [
-   {
-    "vintage": "as_published",
-    "fred_series_id": "APU000072610",
-    "observations": 366
-   }
-  ],
-  "mortgage_rate": [
-   {
-    "vintage": "as_published",
-    "fred_series_id": "MORTGAGE30US",
-    "observations": 367
-   }
-  ],
-  "oil_price": [
-   {
-    "vintage": "as_published",
-    "fred_series_id": "WTISPLC",
-    "observations": 367
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:50+00:00",
+    "fred_series_id": null,
+    "observations": 6
    }
   ],
   "policy_rate": [
    {
-    "vintage": "as_published",
-    "fred_series_id": "FEDFUNDS",
-    "observations": 367
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
+    "fred_series_id": null,
+    "observations": 1
+   },
+   {
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:49+00:00",
+    "fred_series_id": null,
+    "observations": 6
    }
   ],
-  "private_fixed_investment": [
+  "semiconductor_cycle": [
    {
-    "vintage": "latest_revision",
-    "fred_series_id": "PNFI",
-    "observations": 366
-   }
-  ],
-  "real_personal_consumption": [
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:48+00:00",
+    "fred_series_id": null,
+    "observations": 1
+   },
    {
-    "vintage": "latest_revision",
-    "fred_series_id": "PCEC96",
-    "observations": 235
-   }
-  ],
-  "ten_year_treasury": [
-   {
-    "vintage": "as_published",
-    "fred_series_id": "DGS10",
-    "observations": 367
-   }
-  ],
-  "unemployment_rate": [
-   {
-    "vintage": "latest_revision",
-    "fred_series_id": "UNRATE",
-    "observations": 366
+    "vintage": "current-vintage-retrieved-2026-08-27T21:13:50+00:00",
+    "fred_series_id": null,
+    "observations": 6
    }
   ]
  },
