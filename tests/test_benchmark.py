@@ -61,6 +61,7 @@ from asro.benchmark.sec_fundamentals import (
 from asro.benchmark.vintages import (
     acquire_episode_vintages,
     as_published_plans_for,
+    missing_as_published_plans,
     revised_series_for,
 )
 from asro.evidence import (
@@ -1484,6 +1485,23 @@ def test_bootstrap_loads_only_required_as_published_controls() -> None:
     assert "commercial_industrial_loans" not in {plan.series_id for plan in plans}
 
 
+def test_bootstrap_reuses_as_published_controls_already_in_state(
+    connection: sqlite3.Connection,
+) -> None:
+    plan = CONTROL_PLANS_BY_ID["policy_rate"]
+    ingest_series(
+        connection,
+        SeriesFetch(
+            plan=plan,
+            source_url="https://example.test/fedfunds",
+            content_sha256="a" * 64,
+            fetched_at="2026-01-01T00:00:00+00:00",
+            rows=((date(2015, 1, 1), 0.11),),
+        ),
+    )
+    assert "policy_rate" not in {item.series_id for item in missing_as_published_plans(connection)}
+
+
 def test_acquisition_requests_one_vintage_per_accepted_episode(
     connection: sqlite3.Connection,
 ) -> None:
@@ -1522,6 +1540,20 @@ def test_acquisition_requests_one_vintage_per_accepted_episode(
         "FROM historical_control_observation_v2"
     ):
         assert "api_key" not in str(url)
+
+    first_call_count = len(session.calls)
+    repeated = acquire_episode_vintages(
+        connection,
+        api_key="super-secret-key",
+        user_agent="test",
+        rosters=rosters,
+        accepted_only=False,
+        session=cast(Any, session),
+    )
+    assert len(session.calls) == first_call_count
+    assert repeated["series_written"] == 0
+    repeated_outcomes = cast(list[dict[str, object]], repeated["outcomes"])
+    assert sum(int(item["already_present"]) for item in repeated_outcomes) > 0
 
 
 def test_acquisition_refuses_to_run_without_a_key(

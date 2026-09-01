@@ -27,7 +27,7 @@ from asro.benchmark.episodes import ROSTERS
 from asro.benchmark.reports import REPORT_NAMES, write_benchmark_reports
 from asro.benchmark.vintages import (
     acquire_episode_vintages,
-    as_published_plans_for,
+    missing_as_published_plans,
     rebuild_episodes,
 )
 from asro.evidence.time import normalize_timestamp
@@ -377,10 +377,11 @@ def acquire_vintages(
     with repository.connect() as connection:
         baseline_controls: dict[str, object] | None = None
         if bootstrap:
+            missing_plans = missing_as_published_plans(connection)
             baseline_controls = ingest_controls(
                 connection,
                 user_agent=settings.sec_user_agent,
-                plans=as_published_plans_for(),
+                plans=missing_plans,
             )
         acquired = acquire_episode_vintages(
             connection,

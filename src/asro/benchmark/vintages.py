@@ -70,6 +70,22 @@ def as_published_plans_for(
     )
 
 
+def missing_as_published_plans(
+    connection: sqlite3.Connection,
+    rosters: tuple[EpisodeRoster, ...] = ROSTERS,
+) -> tuple[ControlSeriesPlan, ...]:
+    """Required immutable controls that are not already present in durable state."""
+    existing = {
+        str(row[0])
+        for row in connection.execute(
+            """SELECT DISTINCT series_id
+                 FROM historical_control_observation_v2
+                WHERE vintage = 'as_published'"""
+        )
+    }
+    return tuple(plan for plan in as_published_plans_for(rosters) if plan.series_id not in existing)
+
+
 def revised_series_for(roster: EpisodeRoster) -> tuple[str, ...]:
     """The episode's own controls that are revised and therefore need a vintage."""
     return tuple(
@@ -105,6 +121,25 @@ def acquire_episode_vintages(
             continue
         for series_id in revised_series_for(roster):
             plan = CONTROL_PLANS_BY_ID[series_id]
+            vintage = f"point_in_time:{roster.availability_cutoff.isoformat()}"
+            stored_count = int(
+                connection.execute(
+                    """SELECT COUNT(*) FROM historical_control_observation_v2
+                        WHERE series_id = ? AND vintage = ?""",
+                    (series_id, vintage),
+                ).fetchone()[0]
+            )
+            if stored_count:
+                outcomes.append(
+                    VintageOutcome(
+                        roster.episode_id,
+                        roster.availability_cutoff,
+                        series_id,
+                        0,
+                        stored_count,
+                    )
+                )
+                continue
             try:
                 fetch = fetch_series_vintage(
                     plan,
