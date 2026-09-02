@@ -3,6 +3,8 @@ from __future__ import annotations
 from collections import defaultdict
 from collections.abc import Iterable
 from datetime import UTC, datetime, timedelta
+from email.utils import parsedate_to_datetime
+from math import isfinite
 from typing import Any, Literal
 
 from pydantic import BaseModel
@@ -25,14 +27,18 @@ MIN_DIRECTIONAL_POINTS = 1
 DIRECTIONAL_PRIOR_STRENGTH = 5
 DIRECTIONAL_MAX_DEVIATION = 25.0
 MAX_PLAUSIBLE_USD = 5_000_000_000_000.0
+INDICATOR_VERSION = "numeric-evidence-v2"
 
 
 def _parse(ts: object) -> datetime | None:
     try:
         parsed = datetime.fromisoformat(str(ts))
     except (TypeError, ValueError):
-        return None
-    return parsed if parsed.tzinfo else parsed.replace(tzinfo=UTC)
+        try:
+            parsed = parsedate_to_datetime(str(ts))
+        except (TypeError, ValueError, OverflowError):
+            return None
+    return (parsed if parsed.tzinfo else parsed.replace(tzinfo=UTC)).astimezone(UTC)
 
 
 def latest_observations(
@@ -45,11 +51,18 @@ def latest_observations(
     latest: dict[tuple[str, str], tuple[datetime, dict[str, Any]]] = {}
     for obs in observations:
         observed_at = _parse(obs.get("observed_at"))
-        if observed_at is None or observed_at < cutoff or observed_at > as_of:
+        event_at = _parse(obs.get("effective_date")) if obs.get("effective_date") else observed_at
+        if (
+            observed_at is None
+            or observed_at > as_of
+            or event_at is None
+            or event_at < cutoff
+            or event_at > as_of
+        ):
             continue
         key = (str(obs.get("variable_key")), str(obs.get("entity") or ""))
-        if key not in latest or observed_at > latest[key][0]:
-            latest[key] = (observed_at, obs)
+        if key not in latest or event_at > latest[key][0]:
+            latest[key] = (event_at, obs)
     return [obs for _, obs in latest.values()]
 
 
@@ -61,23 +74,25 @@ def compute_dimension_scores(
     as_of = as_of or datetime.now(UTC)
     rows = list(observations)
     buckets = _dimension_buckets(rows, as_of, window_days)
-    directional = _direction_buckets(rows, as_of, window_days)
 
     dimensions = {v.dimension.value for v in VARIABLES.values()}
     scores: dict[str, float | None] = {}
     for dimension in dimensions:
         points = buckets.get(dimension, [])
+        milestones = [point for point in points if point[2] == "confirmed_trigger"]
+        if milestones:
+            # Stage is an ordinal frontier, not an average across companies.
+            # Another earlier-stage issuer must not reduce established reach.
+            scores[dimension] = max(point[0] / point[3] for point in milestones)
+            continue
         required = min((point[1] for point in points), default=MIN_DIMENSION_POINTS)
         if len(points) >= required:
-            scores[dimension] = min(100.0, sum(point[0] for point in points) / len(points))
+            scores[dimension] = sum(point[0] for point in points) / sum(
+                point[3] for point in points
+            )
             continue
-        direction_points = directional.get(dimension, [])
-        if len(direction_points) < MIN_DIRECTIONAL_POINTS:
-            scores[dimension] = None
-            continue
-        balance = sum(direction_points) / sum(abs(value) for value in direction_points)
-        support = len(direction_points) / (len(direction_points) + DIRECTIONAL_PRIOR_STRENGTH)
-        scores[dimension] = round(50.0 + DIRECTIONAL_MAX_DEVIATION * balance * support, 1)
+        # Qualitative direction is published separately; it is not a numeric severity.
+        scores[dimension] = None
     return scores
 
 
@@ -174,27 +189,31 @@ def overall_evidence_direction(readings: dict[str, dict[str, int | str]]) -> str
 
 def _dimension_buckets(
     observations: Iterable[dict[str, Any]], as_of: datetime, window_days: int
-) -> dict[str, list[tuple[float, int, str]]]:
-    buckets: dict[str, list[tuple[float, int, str]]] = defaultdict(list)
+) -> dict[str, list[tuple[float, int, str, float]]]:
+    buckets: dict[str, list[tuple[float, int, str, float]]] = defaultdict(list)
     for obs in latest_observations(observations, as_of, window_days):
         key = obs.get("variable_key")
         definition = VARIABLES.get(str(key))
         if not definition:
             continue
-        raw = float(obs.get("value") or 0.0)
+        if obs.get("value") is None:
+            continue
+        raw = float(obs["value"])
         confidence = float(obs.get("confidence") or 0.0)
+        if not isfinite(raw) or not 0 < confidence <= 1 or definition.weight <= 0:
+            continue
         if definition.unit == "USD":
             if obs.get("unit") != "USD" or raw <= 0 or raw > MAX_PLAUSIBLE_USD:
                 continue
             normalized = _normalize(raw, 10_000_000_000.0)
         elif definition.unit == "percent":
-            if obs.get("unit") != "percent":
+            if obs.get("unit") != "percent" or not 0 <= raw <= 100:
                 continue
             normalized = min(100.0, max(0.0, raw))
         else:
-            if obs.get("unit") not in {"score", "signal"}:
+            if obs.get("unit") != "score" or not 0 <= raw <= 5:
                 continue
-            normalized = min(100.0, max(0.0, raw * 20.0 if raw <= 5 else raw))
+            normalized = raw * 20.0
         if definition.direction == "higher_is_safer":
             normalized = 100.0 - normalized
         buckets[definition.dimension.value].append(
@@ -202,6 +221,7 @@ def _dimension_buckets(
                 normalized * confidence * definition.weight,
                 definition.minimum_points,
                 definition.evidence_basis,
+                confidence * definition.weight,
             )
         )
     return buckets

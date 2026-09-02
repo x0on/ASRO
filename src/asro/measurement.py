@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import hashlib
+import re
 
 from asro.dictionary.registry import VARIABLES
+from asro.indicators import _parse
 from asro.models import FinancialEvent
 from asro.observations import Observation
 
@@ -15,7 +17,8 @@ EVENT_VARIABLE_MAP: dict[str, tuple[str, float, str]] = {
     "INVESTS_IN": ("ai_capital_commitments", 1.0, "risk"),
     "CAPEX_COMMITMENT": ("ai_capital_commitments", 1.0, "risk"),
     # These are stages in a broader transmission channel, not 0/100 verdicts.
-    # 1 = public trading begins; 2 = a major index begins distributing exposure.
+    # 0.5 = filing (potential exposure); 1 = trading; 2 = index distribution.
+    "FILES_FOR_IPO": ("public_market_transmission_stage", 0.5, "risk"),
     # Higher stages require measured index weight and retirement-fund exposure.
     "COMPLETES_IPO": ("public_market_transmission_stage", 1.0, "risk"),
     "ENTERS_INDEX": ("public_market_transmission_stage", 2.0, "risk"),
@@ -32,6 +35,11 @@ EVENT_VARIABLE_MAP: dict[str, tuple[str, float, str]] = {
 
 
 def event_to_observation(event: FinancialEvent) -> Observation | None:
+    if event.event_type.value == "FILES_FOR_IPO" and not filing_issuer_matches(
+        event.source_entity, event.evidence_text
+    ):
+        # A backer named in a filing headline is not necessarily the issuer.
+        return None
     mapped = EVENT_VARIABLE_MAP.get(event.event_type.value)
     if not mapped:
         return None
@@ -60,10 +68,26 @@ def event_to_observation(event: FinancialEvent) -> Observation | None:
         entity=event.source_entity,
         value=float(value),
         unit=unit,
-        effective_date=event.effective_date,
+        effective_date=(
+            parsed.isoformat() if (parsed := _parse(event.effective_date)) else event.effective_date
+        ),
         confidence=event.confidence,
         source_document_id=event.document_id,
         evidence_text=event.evidence_text,
         extractor=event.extractor,
         polarity=polarity,
+    )
+
+
+def filing_issuer_matches(entity: str | None, text: str) -> bool:
+    """Conservative attribution guard; uncertainty never becomes an issuer measurement."""
+    return bool(
+        entity
+        and re.search(
+            rf"\b{re.escape(entity)}\s+(?:(?:has|have|confidentially)\s+)*"
+            r"(?:files?|filed)\s+(?:for\s+(?:an?\s+)?(?:IPO|initial public offering)"
+            r"|(?:an?\s+)?(?:confidential\s+)?draft\s+S-1)",
+            text,
+            re.IGNORECASE,
+        )
     )

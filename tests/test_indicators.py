@@ -146,7 +146,7 @@ def test_unquantified_money_creates_a_shrunk_directional_estimate() -> None:
         for entity in ("OpenAI", "Anthropic", "Nvidia")
     ]
 
-    assert compute_dimension_scores(observations, as_of=as_of)["monetization"] == 40.6
+    assert compute_dimension_scores(observations, as_of=as_of)["monetization"] is None
     assert dimension_evidence_counts(observations, as_of=as_of) == {}
 
 
@@ -163,7 +163,7 @@ def test_thin_directional_evidence_is_shrunk_until_five_numeric_points_exist() -
         _obs(50_000_000_000, "2026-08-20T00:00:00+00:00", "Alphabet"),
     ]
 
-    assert compute_dimension_scores(two, as_of=as_of)["fragility"] == 57.1
+    assert compute_dimension_scores(two, as_of=as_of)["fragility"] is None
     assert compute_dimension_scores(five, as_of=as_of)["fragility"] is not None
     assert dimension_evidence_counts(five, as_of=as_of)["fragility"] == 5
 
@@ -180,7 +180,7 @@ def test_authoritative_market_stage_does_not_require_five_estimates() -> None:
     }
 
     scores = compute_dimension_scores([observation], as_of=as_of)
-    assert scores["transmission"] == 39.6
+    assert scores["transmission"] == 40.0
     assert dimension_evidence_basis([observation], as_of=as_of) == {
         "transmission": "confirmed_trigger"
     }
@@ -201,7 +201,7 @@ def test_qualitative_evidence_sets_direction_and_a_conservative_estimate() -> No
         for entity in ("SpaceX", "CoreWeave")
     ]
 
-    assert compute_dimension_scores(observations, as_of=as_of)["stress"] == 57.1
+    assert compute_dimension_scores(observations, as_of=as_of)["stress"] is None
     assert dimension_directional_readings(observations, as_of=as_of)["stress"] == {
         "direction": "higher_pressure",
         "evidence_count": 2,
@@ -220,7 +220,7 @@ def test_one_confirmed_directional_event_publishes_a_heavily_shrunk_estimate() -
         "observed_at": "2026-08-20T00:00:00+00:00",
     }
 
-    assert compute_dimension_scores([observation], as_of=as_of)["cannibalization"] == 54.2
+    assert compute_dimension_scores([observation], as_of=as_of)["cannibalization"] is None
     assert dimension_evidence_basis([observation], as_of=as_of) == {
         "cannibalization": "directional_estimate"
     }

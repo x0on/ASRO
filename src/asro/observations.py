@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from datetime import UTC, datetime
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 
 class Observation(BaseModel):
@@ -19,3 +19,9 @@ class Observation(BaseModel):
     evidence_text: str
     extractor: str
     polarity: str
+
+    @model_validator(mode="after")
+    def validate_severity_scale(self) -> Observation:
+        if self.unit == "score" and not 0 <= self.value <= 5:
+            raise ValueError("score severity must be within the declared 0–5 scale")
+        return self

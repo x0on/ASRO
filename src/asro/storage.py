@@ -4,6 +4,7 @@ import json
 import sqlite3
 from pathlib import Path
 
+from asro.indicators import INDICATOR_VERSION
 from asro.migrations.runner import apply_migrations
 from asro.models import FinancialEvent, ScoredItem
 from asro.observations import Observation
@@ -248,10 +249,11 @@ class SqliteRepository:
     ) -> None:
         connection.execute(
             """
-            INSERT OR REPLACE INTO system_snapshots (captured_at, score, label, dimensions)
-            VALUES (?, ?, ?, ?)
+            INSERT OR REPLACE INTO system_snapshots
+                (captured_at, score, label, dimensions, indicator_version)
+            VALUES (?, ?, ?, ?, ?)
             """,
-            (captured_at, score, label, json.dumps(dimensions)),
+            (captured_at, score, label, json.dumps(dimensions), INDICATOR_VERSION),
         )
 
     @staticmethod

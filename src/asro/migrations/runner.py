@@ -108,6 +108,14 @@ MIGRATIONS = (
         control_vintage_identity.NAME,
         control_vintage_identity.STATEMENTS,
     ),
+    Migration(
+        19,
+        "indicator_method_version",
+        (
+            "ALTER TABLE system_snapshots ADD COLUMN indicator_version "
+            "TEXT NOT NULL DEFAULT 'legacy-v1'",
+        ),
+    ),
 )
 
 _V2_REQUIRED_COLUMNS = {

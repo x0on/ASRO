@@ -19,6 +19,7 @@ from asro.benchmark import (
 from asro.dictionary.registry import VARIABLES
 from asro.entities import canonicalize, canonicalize_many
 from asro.indicators import (
+    INDICATOR_VERSION,
     compute_convergence,
     compute_dimension_scores,
     dimension_directional_readings,
@@ -27,6 +28,7 @@ from asro.indicators import (
     latest_observations,
     overall_evidence_direction,
 )
+from asro.measurement import filing_issuer_matches
 from asro.settings import Settings, load_project_config
 from asro.storage import SqliteRepository
 
@@ -48,6 +50,52 @@ THESIS_EXPLANATION = (
 
 
 _INDEX_HTML = files("asro.templates") / "index.html"
+
+
+def public_market_alerts(events: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Reviewed milestones are alerts, not claims that household losses have occurred."""
+    stages = {
+        "FILES_FOR_IPO": "IPO filing: potential public-investor exposure",
+        "COMPLETES_IPO": "Public trading: exposure available to public investors",
+        "ENTERS_INDEX": "Index inclusion: potential distribution through tracking funds",
+    }
+    return [
+        {
+            "event_id": event.get("event_id"),
+            "company": (
+                event.get("source_entity")
+                if event["event_type"] != "FILES_FOR_IPO"
+                or filing_issuer_matches(
+                    event.get("source_entity"), str(event.get("evidence_text") or "")
+                )
+                else "Issuer attribution unresolved"
+            ),
+            "title": event.get("title"),
+            "stage": stages[str(event["event_type"])],
+            "date": event.get("effective_date"),
+            "url": event.get("url"),
+            "evidence": event.get("evidence_text"),
+        }
+        for event in events
+        if event.get("review_status") == "confirmed" and event.get("event_type") in stages
+    ]
+
+
+def comparable_history(
+    history: list[dict[str, Any]], dimensions: dict[str, float | None]
+) -> list[dict[str, Any]]:
+    """Stop at a method or coverage change; never join incompatible score regimes."""
+    known = {key for key, value in dimensions.items() if value is not None}
+    result = []
+    for row in sorted(history, key=lambda row: str(row["captured_at"]), reverse=True):
+        if row.get("indicator_version") != INDICATOR_VERSION:
+            break
+        stored = row["dimensions"]
+        previous = json.loads(stored) if isinstance(stored, str) else stored
+        if {key for key, value in previous.items() if value is not None} != known:
+            break
+        result.append(row)
+    return result
 
 
 def _safe_rows(rows: list[Any]) -> list[dict[str, Any]]:
@@ -264,6 +312,8 @@ def build_static_site(
     dimension_basis = dimension_evidence_basis(observations)
     dimension_direction = dimension_directional_readings(observations)
     signal = convergence.model_dump()
+    signal["indicator_version"] = INDICATOR_VERSION
+    signal["indicator_validation"] = "Revised indicator: not historically validated"
     signal["evidence_direction"] = overall_evidence_direction(dimension_direction)
     signal["calibration_label"] = (
         "HISTORICALLY CALIBRATED" if readiness.historically_calibrated else "NOT YET CALIBRATED"
@@ -294,6 +344,8 @@ def build_static_site(
             for definition in VARIABLES.values()
         ],
         "history": history,
+        "comparable_history": comparable_history(history, dimensions),
+        "public_market_alerts": public_market_alerts(events),
         "network": _build_network(events, items[:800]),
         "timeline": _build_timeline(events),
         "collector_runs": runs,

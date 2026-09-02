@@ -115,7 +115,10 @@ def test_measured_trend_reads_published_history(tmp_path: Path) -> None:
     """
     template = Path("src/asro/templates/index.html").read_text(encoding="utf-8")
     assert "Not established" not in template
-    assert "measuredTrend(data.history)" in template
+    assert "measuredTrend(data.comparable_history,data.signal.indicator_version)" in template
+    assert "Indicator change · not a risk direction" in template
+    assert "not a measurement of whether systemic risk rose or fell" in template
+    assert "not enough history yet" not in template
 
     node = shutil.which("node")
     if node is None:  # pragma: no cover - CI without node still gets the checks above
@@ -129,10 +132,10 @@ def test_measured_trend_reads_published_history(tmp_path: Path) -> None:
     cases = [
         ([], "Trend pending"),
         ([day(22, 50)], "Trend pending"),
-        ([day(24, 50), day(23, 45), day(22, 40)], "Rising +10.0"),
-        ([day(24, 40), day(23, 45), day(22, 50)], "Falling -10.0"),
-        ([day(24, 44.6), day(23, 44.9), day(22, 44.8)], "Holding steady"),
-        ([day(24, 50), day(23, None), day(22, 45), day(21, 40)], "Rising +10.0"),
+        ([day(24, 50), day(23, 45), day(22, 40)], "Indicator up 10.0"),
+        ([day(24, 40), day(23, 45), day(22, 50)], "Indicator down 10.0"),
+        ([day(24, 44.6), day(23, 44.9), day(22, 44.8)], "Indicator steady"),
+        ([day(24, 50), day(23, None), day(22, 45), day(21, 40)], "Indicator up 10.0"),
         # several readings land on one day; the last one is that day's value
         (
             [
@@ -141,7 +144,7 @@ def test_measured_trend_reads_published_history(tmp_path: Path) -> None:
                 day(23, 45),
                 day(22, 40),
             ],
-            "Rising +10.0",
+            "Indicator up 10.0",
         ),
     ]
     script = tmp_path / "trend.mjs"
@@ -156,3 +159,30 @@ def test_measured_trend_reads_published_history(tmp_path: Path) -> None:
         [node, str(script)], capture_output=True, text=True, check=True
     )
     assert json.loads(result.stdout) == [text for _, text in cases]
+
+
+def test_public_market_alert_renderer_is_independent_and_uses_text_nodes(tmp_path: Path) -> None:
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("node is not available")
+    template = Path("src/asro/templates/index.html").read_text()
+    source = template[
+        template.index("function renderPublicMarketAlerts()") : template.index(
+            "function renderDashboard()"
+        )
+    ]
+    script = tmp_path / "alerts.mjs"
+    script.write_text(
+        "const nodes=[];const panel={replaceChildren(){},appendChild(n){nodes.push(n)}};"
+        "const document={getElementById(){return panel},createElement(){return {appendChild(){}}},"
+        "createTextNode(t){return t}};"
+        "const data={signal:{score:null},public_market_alerts:[{company:'OpenAI',"
+        "stage:'IPO filing: potential public-investor exposure',date:'2026-06-08',"
+        "title:'Filing report',url:'https://example.com/filing'}]};"
+        + source
+        + "renderPublicMarketAlerts();console.log(JSON.stringify(nodes.map(n=>n.textContent)));"
+    )
+    result = subprocess.run([node, str(script)], capture_output=True, text=True, check=True)  # noqa: S603
+    assert "OpenAI" in result.stdout
+    assert "potential public-investor exposure" in result.stdout
+    assert "innerHTML" not in source
