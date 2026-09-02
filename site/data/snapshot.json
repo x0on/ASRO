@@ -1,56 +1,54 @@
 {
-  "generated_at": "2026-09-02T01:33:28.303710+00:00",
+  "generated_at": "2026-09-02T02:47:21.900088+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 44.6,
-    "label": "FORMING",
+    "score": null,
+    "label": "INSUFFICIENT EVIDENCE",
     "direction": "unknown",
-    "known_dimensions": 8,
-    "gate_passed": true,
-    "gate_reason": "material evidence in fragility and circularity",
+    "known_dimensions": 2,
+    "gate_passed": false,
+    "gate_reason": "2 of 3 required dimensions measured",
+    "indicator_version": "numeric-evidence-v2",
+    "indicator_validation": "Revised indicator: not historically validated",
     "evidence_direction": "higher_pressure",
     "calibration_label": "HISTORICALLY CALIBRATED",
     "basis": "historically_calibrated"
   },
   "dimensions": {
-    "external_pressure": 16.12,
-    "counter_evidence": 42.9,
-    "circularity": 59.4,
-    "cannibalization": 54.2,
-    "fragility": 61.1,
-    "monetization": 40.6,
-    "stress": 57.1,
-    "transmission": 39.6,
-    "capital": 42.64073738140746
+    "counter_evidence": null,
+    "transmission": 40.0,
+    "monetization": null,
+    "capital": 48.35840314496684,
+    "fragility": null,
+    "external_pressure": null,
+    "cannibalization": null,
+    "stress": null,
+    "circularity": null
   },
   "dimension_evidence": {
-    "external_pressure": 6,
-    "capital": 8,
+    "capital": 5,
     "counter_evidence": 2,
-    "transmission": 1,
-    "stress": 2,
-    "fragility": 3
+    "external_pressure": 2,
+    "transmission": 2,
+    "fragility": 1,
+    "stress": 1
   },
   "dimension_basis": {
-    "external_pressure": "aggregate",
     "counter_evidence": "directional_estimate",
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "fragility": "directional_estimate",
-    "monetization": "directional_estimate",
-    "stress": "directional_estimate",
     "transmission": "confirmed_trigger",
-    "capital": "aggregate"
+    "monetization": "directional_estimate",
+    "capital": "aggregate",
+    "fragility": "directional_estimate",
+    "external_pressure": "directional_estimate",
+    "cannibalization": "directional_estimate",
+    "stress": "directional_estimate",
+    "circularity": "directional_estimate"
   },
   "dimension_direction": {
-    "external_pressure": {
-      "direction": "higher_pressure",
-      "evidence_count": 6
-    },
     "monetization": {
       "direction": "lower_pressure",
-      "evidence_count": 3
+      "evidence_count": 2
     },
     "circularity": {
       "direction": "higher_pressure",
@@ -58,122 +56,34 @@
     },
     "capital": {
       "direction": "higher_pressure",
-      "evidence_count": 10
+      "evidence_count": 5
     },
     "counter_evidence": {
       "direction": "lower_pressure",
+      "evidence_count": 2
+    },
+    "external_pressure": {
+      "direction": "higher_pressure",
+      "evidence_count": 2
+    },
+    "transmission": {
+      "direction": "higher_pressure",
       "evidence_count": 2
     },
     "cannibalization": {
       "direction": "higher_pressure",
       "evidence_count": 1
     },
-    "transmission": {
+    "fragility": {
       "direction": "higher_pressure",
       "evidence_count": 1
     },
     "stress": {
       "direction": "higher_pressure",
-      "evidence_count": 2
-    },
-    "fragility": {
-      "direction": "higher_pressure",
-      "evidence_count": 4
+      "evidence_count": 1
     }
   },
   "dimension_evidence_items": {
-    "external_pressure": [
-      {
-        "variable": "External capability pressure",
-        "entity": "MiniMax",
-        "value": 1.0,
-        "unit": "score",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.62,
-        "date": "Mon, 01 Jun 2026 07:00:00 GMT",
-        "event_type": "BENCHMARK_GAIN",
-        "title": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost - VentureBeat",
-        "source": "VentureBeat",
-        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVjJnVDMxM3Q1RWdaV3VBLWJPV2VwaTJEcEZxMER4UUtxV0tMSlNzMVRITUpUM0VhYm04Wko3UDhyMjQwU01YWmlDaFNJamtaRkhOZ0FQNjZmNkFvYldmTDRhRVFPWW91OHY0dUtiSXhQSXpIZXlXbV9mMVdzVC1Db3JUWjdLWjRpb1hkSnk5dFFfWEE3SEZCOGNnRE5rN2gzVGRqZkxJaFZ6RmpvOTB4N3dBX2hBdnJtZkNucDVKdGt5cFpKMDdHbTJKU2pvem1zbnFYVnpZSExGSjlm?oc=5",
-        "evidence": "MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost - VentureBeat MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro on key benchmark performance for just 5-10% of the cost VentureBeat Google News"
-      },
-      {
-        "variable": "External capability pressure",
-        "entity": "DeepSeek",
-        "value": 1.0,
-        "unit": "score",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.62,
-        "date": "Fri, 24 Apr 2026 07:00:00 GMT",
-        "event_type": "BENCHMARK_GAIN",
-        "title": "DeepSeek V4 arrives with benchmark scores that put American AI labs on notice - startupfortune.com",
-        "source": "startupfortune.com",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWEUxbjZPZzRibENEYWR1eWZlSlRqT2RoVHFWQmIxY2NvZ0M2V3FBYS1QN0pQaF9zZExhaS14ZGJ6b3dKT1RKdkpTYUxDNTU5NlFxLWxGUnZXcmVYazVFdm4zV0Q1Z2xDUVlFZnBUeUotdkxMR1N4eGdWZHZJbzhmZzQwWFJ4S1dxMkhmNmpoZ2RqbjBvQnRvUHJEenJ4aUg1Q2ZkWXdSTzE?oc=5",
-        "evidence": "DeepSeek V4 arrives with benchmark scores that put American AI labs on notice - startupfortune.com DeepSeek V4 arrives with benchmark scores that put American AI labs on notice startupfortune.com Google News"
-      },
-      {
-        "variable": "External capability pressure",
-        "entity": "Nvidia",
-        "value": 1.0,
-        "unit": "score",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.62,
-        "date": "Fri, 21 Aug 2026 13:30:17 GMT",
-        "event_type": "BENCHMARK_GAIN",
-        "title": "$500 Billion of Private Credit Announced for GPU Financing. The New Residual Benchmark From NVIDIA Is 25%. - MonitorDaily",
-        "source": "MonitorDaily",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOX0VRU3lkaXBHUFRIbFNXRmF5U1c3YTZKbFdBZlVlcnR6dVp4MGRFU2dqRTc5TFBjWV8xbms3UlcxMGRadXBWdWJTYkRfb01ZbFd1U2tMY1Jsb3NqU21QOThPYVZpNnkzN2hlZ0M1ZzYzdjM0TDlxaTBBRThrdGY2XzZ0ZExSeGJ4UEt2Zm1yZUozam1xUXZtbjN0dmRSSVdJNGN4M0txZFBDeUt3Z2JtejZGRUVoY2RxRnRSc0tKSUV0b0luYnpmelVXZ2lhVmVlNE9zTTJWcw?oc=5",
-        "evidence": "The New Residual Benchmark From NVIDIA Is 25%."
-      },
-      {
-        "variable": "External capability pressure",
-        "entity": "Moonshot AI",
-        "value": 1.0,
-        "unit": "score",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.62,
-        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
-        "event_type": "BENCHMARK_GAIN",
-        "title": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S. compute limits - Tom's Hardware",
-        "source": "Tom's Hardware",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT25TNFlXeVFQMmVqWFYtSS1oSkpEUl9WeExTZUpmZEtFb1RpQ3dRbGxGV1hVWjNpMkRxTlpaQk5NSXNfdzlmYmg1cW5MUGlmR3FpeHV2bmpzMDBXQW1mV1B0N3QzUmZOOFU5T0w1QWFqYldjWnZER0t0UmNzcGZBQll1dWZBNEYyWTV3dnZvMkRzTkhqNHBDak5TTXd4b080eUJGbExOSUVCeU5Cd1ZmUWVXUG1SUQ?oc=5",
-        "evidence": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S."
-      },
-      {
-        "variable": "External capability pressure",
-        "entity": "CoreWeave",
-        "value": 1.0,
-        "unit": "score",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.62,
-        "date": "2025-03-31",
-        "event_type": "BENCHMARK_GAIN",
-        "title": "CoreWeave SEC filing: 424B4 (2025-03-31)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm",
-        "evidence": "Based on internal testing, our CoreWeave Cloud Platform offers up to approximately 20% improvement in system MFU over comparative benchmark MFU performance."
-      },
-      {
-        "variable": "External capability pressure",
-        "entity": null,
-        "value": 1.0,
-        "unit": "score",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.62,
-        "date": "2025-03-31",
-        "event_type": "BENCHMARK_GAIN",
-        "title": "CoreWeave SEC filing: 424B4 (2025-03-31)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525067651/d899798d424b4.htm",
-        "evidence": "1 Table of Contents benchmarks how quickly a system can train a model from scratch) in eleven minutes\u2014a record and 29 times faster than the next best competitor at the time of the benchmark test."
-      }
-    ],
     "monetization": [
       {
         "variable": "External AI revenue",
@@ -204,21 +114,6 @@
         "source": "New York Post",
         "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd25memJGdXMzVjI2QS1lT0ZsQ3luR0ZQU3FJTXlST1drQTRmdFB5RU5JZ0txOEo4TkI1TUJDWG8zc1NWMGRDdG5KbzZqdDBOeWs2V1UzNUFoWWtkd2NNcU1GXzdEYWxCMXYycVpzQWwwQ0E0QjJEX0U1YVBSSzFFcG9mYy1KYjloUHlNMUt6YkYzYXVDS3NoNXJKNjBoTkFLTHJUdEFn?oc=5",
         "evidence": "OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO - New York Post OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO New York Post Google News"
-      },
-      {
-        "variable": "External AI revenue",
-        "entity": null,
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "lowers the warning",
-        "confidence": 0.72,
-        "date": "2024-08-28",
-        "event_type": "REVENUE_REPORT",
-        "title": "NVIDIA SEC filing: 10-Q (2024-08-28)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm",
-        "evidence": "Networking revenue sequentially was up 16% and includes a doubling of Ethernet for AI revenue."
       }
     ],
     "circularity": [
@@ -271,21 +166,6 @@
     "capital": [
       {
         "variable": "AI capital commitments",
-        "entity": "Tencent",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.76,
-        "date": "Wed, 18 Mar 2026 07:00:00 GMT",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Tencent pledges higher AI investment in 2026 after chip curbs hit capex plans - Reuters",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOHI4MDJ5dGpiMmhkR2E5ejMwUndUNGRjWHhMdWNfWmhYZDVsVFVhME1DbERiVzc3X3Bicm82UnJYUU5ud25weFNhd0VPY0VqZ01nRUlUbVQ2TWxfeExZcTJLUUZXb01CRE1nTEp5UloxbnBwSXpRbF8yX2xBRGE3eE12eTlDMkhTS0tQV3RrSHNoU0syUF9Qa1V3cFg2QTVYV3hGX3o0YUlISlFtenJyLQ?oc=5",
-        "evidence": "Tencent pledges higher AI investment in 2026 after chip curbs hit capex plans - Reuters Tencent pledges higher AI investment in 2026 after chip curbs hit capex plans Reuters Google News"
-      },
-      {
-        "variable": "AI capital commitments",
         "entity": "Alphabet",
         "value": 745000000000.0,
         "unit": "USD",
@@ -298,21 +178,6 @@
         "source": "finance.biggo.com",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tQ3M3Vk8tM1haT2Y0Y0dIU2VNOVRmQ2dVUkl1czcxYmFYcnlQQnQ2WmszSmJKNFhxdXp2OHFGZFluRVpJN1Z2TWgxaWk2TndIX0ZYZXY5OUxUVnBjMmpDN1BtYmlSZl94bGlYMHNJYTZndmFXdmc?oc=5",
         "evidence": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" finance.biggo.com Google News"
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "Blackstone",
-        "value": 65000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.86,
-        "date": "Thu, 28 May 2026 07:00:00 GMT",
-        "event_type": "INVESTS_IN",
-        "title": "Watkins Advises Blackstone on Investment in Anthropic\u2019s US$65 Billion Series H at a US$965 Billion Valuation - Latham & Watkins LLP",
-        "source": "Latham & Watkins LLP",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOMV9lQmJIRWp6aTg3Qjl3X0FZbXN6SUNhYmxQNlExZ0IxVGRqSi1Uc1BpY2ZrUDFyXzBwWng2ZW1OaW9zU2RWVFFFcFRtLUQzYmFkZGdydXlJdk5hTzVOVmlVcGxuNWJSUjVMWmlpUjBIV2FKZVk0RFJvaDN4X25mR3BldnUwZ055LXI4T2xCUUlqcmdtT0dpdzVrMlFyNmpjdlJHNE5aNA?oc=5",
-        "evidence": "Watkins Advises Blackstone on Investment in Anthropic\u2019s US$65 Billion Series H at a US$965 Billion Valuation - Latham & Watkins LLP Watkins Advises Blackstone on Investment in Anthropic\u2019s US$65 Billion Series H at a US$965 Billion Valuation Latham & Watkins LLP Google News"
       },
       {
         "variable": "AI capital commitments",
@@ -347,77 +212,32 @@
       {
         "variable": "AI capital commitments",
         "entity": null,
-        "value": 50000000.0,
+        "value": 44000000.0,
         "unit": "USD",
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.86,
-        "date": "2025-08-13",
+        "date": "2026-08-12",
         "event_type": "INVESTS_IN",
-        "title": "CoreWeave SEC filing: 10-Q (2025-08-13)",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
         "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000041/crwv-20250630.htm",
-        "evidence": "Strategic Investment In June 2024, the Company contributed $ 50 million to a fund managed by Magnetar in connection with the fund\u2019s purchase of a third-party\u2019s preferred stock."
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "CoreWeave",
-        "value": 3.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.86,
-        "date": "2025-05-28",
-        "event_type": "INVESTS_IN",
-        "title": "NVIDIA SEC filing: 10-Q (2025-05-28)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000116/nvda-20250427.htm",
-        "evidence": "Adjustments to the carrying value of our non-marketable equity securities during the first quarter of fiscal years 2026 and 2025 were as follows: Three Months Ended Apr 27, 2025 Apr 28, 2024 (In millions) Balance at beginning of period $ 3,387 $ 1,321 Adjustments related to non-marketable equity securities: Net additions 649 127 Unrealized gains 63 15 Reclassification (1) ( 843 ) \u2014 Impairments and unrealized losses ( 16 ) \u2014 Balance at end of period $ 3,240 $ 1,463 (1) In the first quarter of fiscal year 2026, our investment in CoreWeave was reclassified from non-marketable equity securities to marketable securities following public market trading."
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "evidence": "The carrying value of the Company's investment in the JV was $ 44 million and $ 51 million as of June 30, 2026 and December 31, 2025, respectively."
       },
       {
         "variable": "AI capital commitments",
         "entity": "OpenAI",
-        "value": 13000000000.0,
+        "value": 28700000000.0,
         "unit": "USD",
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.86,
-        "date": "2024-10-30",
+        "date": "2026-07-31",
         "event_type": "INVESTS_IN",
-        "title": "Microsoft SEC filing: 10-Q (2024-10-30)",
+        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
         "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017024118967/msft-20240930.htm",
-        "evidence": "We have an investment in OpenAI Global, LLC (\u201cOpenAI\u201d) and have made total funding commitments of $ 13 billion."
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "Anthropic",
-        "value": 1250000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.86,
-        "date": "2023-10-27",
-        "event_type": "INVESTS_IN",
-        "title": "Amazon SEC filing: 10-Q (2023-10-27)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872423000018/amzn-20230930.htm",
-        "evidence": "Additionally, in September 2023 we invested in a $ 1.25 billion note from Anthropic, PBC, which is convertible to equity."
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "Oracle",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.76,
-        "date": "2023-09-12",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Oracle SEC filing: 10-Q (2023-09-12)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000095017023047713/orcl-20230831.htm",
-        "evidence": "6 Table of Contents ORACLE CORPORATION CONDENSED CONSOLIDATED S TATEMENTS OF CASH FLOWS For the Three Months Ended August 31, 2023 and 2022 (Unaudited) Three Months Ended August 31, (in millions) 2023 2022 Cash flows from operating activities: Net income $ 2,420 $ 1,548 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation 712 547 Amortization of intangible assets 763 919 Deferred income taxes ( 517 ) ( 344 ) Stock-based compensation 849 750 Other, net 169 156 Changes in operating assets and liabilities, net of effects from acquisitions: Decrease in trade receivables, net 380 761 Decrease in prepaid expenses and other assets 269 44 Decrease in accounts payable and other liabilities ( 457 ) ( 166 ) Increase in income taxes payable 69 145 Increase in deferred revenues 2,317 2,034 Net cash provided by operating activities 6,974 6,394 Cash flows from investing activities: Purchases of marketable securities and other investments ( 333 ) ( 57 ) Proceeds from sales and maturities of marketable securities and other investments 85 138 Acquisitions, net of cash acquired \u2014 ( 27,798 ) Capital expenditures ( 1,314 ) ( 1,719 ) Net cash used for investing activities ( 1,562 ) ( 29,436 ) Cash flows from financing activities: Payments for repurchases of common stock ( 150 ) ( 552 ) Proceeds from issuances of common stock 308 515 Shares repurchased for tax withholdings upon vesting of restricted stock-based awards ( 1,060 ) ( 829 ) Payments of dividends to stockholders ( 1,091 ) ( 860 ) Repayments of commercial paper ( 562 ) \u2014 Proceeds from issuances of senior notes and other borrowings, net of issuance costs \u2014 20,046 Repayments of senior notes and other borrowings ( 1,000 ) ( 5,883 ) Other, net 27 ( 127 ) Net cash (used for) provided by financing activities ( 3,528 ) 12,310 Effect of exchange rate changes on cash and cash equivalents ( 36 ) ( 203 ) Net increase (decrease) in cash and cash equivalents 1,848 ( 10,935 ) Cash and cash equivalents at beginning of period 9,765 21,383 Cash and cash equivalents at end of period $ 11,613 $ 10,448 Non-cash financing activities: Fair values of stock awards assumed in connection with acquisitions $ \u2014 $ 55 See notes to condensed consolidated financial statements."
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "evidence": "We invested $28.7 billion in OpenAI\u2019s Series C Preferred Stock for the six months ended June 30, 2026, including $13.7 billion invested in Q2 2026."
       }
     ],
     "counter_evidence": [
@@ -439,17 +259,81 @@
       {
         "variable": "Free cash flow strength",
         "entity": null,
-        "value": 91.0,
+        "value": 121.0,
         "unit": "USD",
         "role": "measured value",
         "effect": "lowers the warning",
         "confidence": 0.8,
-        "date": "2025-01-30",
+        "date": "2026-07-31",
         "event_type": "FREE_CASH_FLOW",
-        "title": "Meta SEC filing: 10-K (2025-01-30)",
+        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
         "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
-        "evidence": "The following is a reconciliation of FCF to the most comparable GAAP measure, net cash provided by operating activities (in millions): Year Ended December 31, 2024 2023 2022 Net cash provided by operating activities $ 91,328 $ 71,113 $ 50,475 Purchases of property and equipment (37,256) (27,045) (31,186) Principal payments on finance leases (1,969) (1,058) (850) Free cash flow $ 52,103 $ 43,010 $ 18,439 77 Table of Contents Material Cash Requirements We currently anticipate that our available funds and cash flow from operations and financing activities will be sufficient to meet our operational cash needs and fund our investments in infrastructure and AI initiatives, share repurchases and dividend payments for at least the next 12 months and thereafter for the foreseeable future."
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "evidence": "Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended June 30, 2025 and 2026 (in millions): Twelve Months Ended June 30, 2025 2026 Net cash provided by (used in) operating activities $ 121,137 $ 161,403 Purchases of property and equipment, net of proceeds from sales and incentives (102,953) (169,007) Free cash flow $ 18,184 $ (7,604) Net cash provided by (used in) investing activities $ (123,569) $ (216,775) Net cash provided by (used in) financing activities $ (8,652) $ 75,160 Free cash flow has limitations as it omits certain components of the overall cash flow statement and does not represent the residual cash flow available for discretionary expenditures."
+      }
+    ],
+    "external_pressure": [
+      {
+        "variable": "External capability pressure",
+        "entity": "Moonshot AI",
+        "value": 1.0,
+        "unit": "score",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.62,
+        "date": "Sun, 09 Aug 2026 07:00:00 GMT",
+        "event_type": "BENCHMARK_GAIN",
+        "title": "Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark - The Motley Fool",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVXJBb2EzZWZtYjJnOGFWOGU2ZEZQZnlQNzFnMTVGbDlmVFBublo0dVNpVGZzd05adVFaN3BWUUotVVRLOTVBRWdMb0tMY3FHRGJxa1REMndmVE5CZE1CbG12ZTRSc05TWHYtb25wejR5c2UzS2ltSXVpUlpna04xUmZFb3F6X2RqSEFBWVh1RE9NYktyeHNWWA?oc=5",
+        "evidence": "Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark - The Motley Fool Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark The Motley Fool Google News"
+      },
+      {
+        "variable": "External capability pressure",
+        "entity": "Nvidia",
+        "value": 1.0,
+        "unit": "score",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.62,
+        "date": "Fri, 21 Aug 2026 13:30:17 GMT",
+        "event_type": "BENCHMARK_GAIN",
+        "title": "$500 Billion of Private Credit Announced for GPU Financing. The New Residual Benchmark From NVIDIA Is 25%. - MonitorDaily",
+        "source": "MonitorDaily",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOX0VRU3lkaXBHUFRIbFNXRmF5U1c3YTZKbFdBZlVlcnR6dVp4MGRFU2dqRTc5TFBjWV8xbms3UlcxMGRadXBWdWJTYkRfb01ZbFd1U2tMY1Jsb3NqU21QOThPYVZpNnkzN2hlZ0M1ZzYzdjM0TDlxaTBBRThrdGY2XzZ0ZExSeGJ4UEt2Zm1yZUozam1xUXZtbjN0dmRSSVdJNGN4M0txZFBDeUt3Z2JtejZGRUVoY2RxRnRSc0tKSUV0b0luYnpmelVXZ2lhVmVlNE9zTTJWcw?oc=5",
+        "evidence": "The New Residual Benchmark From NVIDIA Is 25%."
+      }
+    ],
+    "transmission": [
+      {
+        "variable": "Verified public-market transmission stage",
+        "entity": "OpenAI",
+        "value": 0.5,
+        "unit": "score",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.9,
+        "date": "Mon, 08 Jun 2026 07:00:00 GMT",
+        "event_type": "FILES_FOR_IPO",
+        "title": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMVhyczJEUzJvM0ktd0k2RmJwZGY2YW1CRThUTTdLNERQY0ZXVXUyNjhHMklyRFVSdnRoTlc3dTFZd0NqNDd2TDJrYk43NTc4Y0Z5R0Qta08zLU5XdVVSd05LNF94WTlDS05xRklDYzluVnpWUjFqeHg2QWVZZWdSMkJHN0VVYWQtSU9BNVA3ejg2V3YyOHM3TkhsZFRtakxoRXY2WjZxWkdUZ9IBrwFBVV95cUxNYmdiVHBYUUVMODVqaDh4ZjJmV3RyXzNJa1BtblRDRWRFbEIzb2tQNURabU1hSmEtQkZCSDhva3JCVWFIYV9leDVYaVFxWXBQeTNpeHoxbVQzRk5vMVdsa1dpZW0tLXVNRXhuVzZtLVBCSTU2U0pBRDE2NzFKOFRqT041anVxS0RfamwtcEpqeHhiTnNxZ3ZIZWotSzZsSHQ5eTRJcW8xRGdMRkdjWmxF?oc=5",
+        "evidence": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut CNBC Google News"
+      },
+      {
+        "variable": "Verified public-market transmission stage",
+        "entity": "SpaceX",
+        "value": 2.0,
+        "unit": "score",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.99,
+        "date": "2026-07-07",
+        "event_type": "ENTERS_INDEX",
+        "title": "SpaceX joins the Nasdaq-100 Index",
+        "source": "Nasdaq index announcement",
+        "url": "https://ir.nasdaq.com/news-releases/news-release-details/space-exploration-technologies-corporation-join-nasdaq-100",
+        "evidence": "Nasdaq announced that SpaceX (SPCX) would become a Nasdaq-100 component before market open on July 7, 2026. Nasdaq states that more than 200 investment products with over $800 billion in assets track the index."
       }
     ],
     "cannibalization": [
@@ -469,39 +353,24 @@
         "evidence": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026."
       }
     ],
-    "transmission": [
+    "fragility": [
       {
-        "variable": "Verified public-market transmission stage",
-        "entity": "SpaceX",
-        "value": 2.0,
-        "unit": "score",
+        "variable": "AI-related debt",
+        "entity": null,
+        "value": 1200000000.0,
+        "unit": "USD",
         "role": "measured value",
         "effect": "raises the warning",
-        "confidence": 0.99,
-        "date": "2026-07-07",
-        "event_type": "ENTERS_INDEX",
-        "title": "SpaceX joins the Nasdaq-100 Index",
-        "source": "Nasdaq index announcement",
-        "url": "https://ir.nasdaq.com/news-releases/news-release-details/space-exploration-technologies-corporation-join-nasdaq-100",
-        "evidence": "Nasdaq announced that SpaceX (SPCX) would become a Nasdaq-100 component before market open on July 7, 2026. Nasdaq states that more than 200 investment products with over $800 billion in assets track the index."
+        "confidence": 0.82,
+        "date": "2026-08-12",
+        "event_type": "LENDS_TO",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "evidence": "In August 2026, the Company made a $ 1.2 billion draw down on the Revolving Credit Facility."
       }
     ],
     "stress": [
-      {
-        "variable": "Refinancing stress",
-        "entity": "SpaceX",
-        "value": 1.0,
-        "unit": "score",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.99,
-        "date": "2026-03-02",
-        "event_type": "REFINANCES",
-        "title": "SpaceX uses $20 billion bridge loan to refinance X and xAI debt",
-        "source": "SpaceX 2026 prospectus",
-        "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
-        "evidence": "SpaceX entered a $20 billion bridge loan whose proceeds repaid X term loans and xAI loans and secured notes."
-      },
       {
         "variable": "Refinancing stress",
         "entity": null,
@@ -510,74 +379,12 @@
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.86,
-        "date": "2024-08-01",
+        "date": "2026-08-12",
         "event_type": "IMPAIRMENT",
-        "title": "Meta SEC filing: 10-Q (2024-08-01)",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
         "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000069/meta-20240630.htm",
-        "evidence": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (In millions) (Unaudited) Six Months Ended June 30, 2024 2023 Cash flows from operating activities Net income $ 25,834 $ 13,498 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation and amortization 7,011 5,147 Share-based compensation 8,178 7,111 Deferred income taxes ( 2,098 ) ( 1,757 ) Impairment charges for facilities consolidation, net 280 1,002 Other ( 71 ) 204 Changes in assets and liabilities: Accounts receivable 1,350 1,122 Prepaid expenses and other current assets 16 767 Other assets ( 41 ) 67 Accounts payable ( 862 ) ( 1,155 ) Accrued expenses and other current liabilities ( 1,771 ) 5,268 Other liabilities 790 33 Net cash provided by operating activities 38,616 31,307 Cash flows from investing activities Purchases of property and equipment, net ( 14,573 ) ( 12,957 ) Purchases of marketable debt securities ( 10,176 ) ( 803 ) Sales and maturities of marketable debt securities 7,858 2,351 Acquisitions of businesses and intangible assets ( 129 ) ( 527 ) Other investing activities ( 12 ) ( 10 ) Net cash used in investing activities ( 17,032 ) ( 11,946 ) Cash flows from financing activities Taxes paid related to net share settlement of equity awards ( 6,370 ) ( 2,701 ) Repurchases of Class A common stock ( 21,307 ) ( 10,263 ) Dividend payments ( 2,539 ) \u2014 Proceeds from issuance of long-term debt, net \u2014 8,455 Principal payments on finance leases ( 614 ) ( 484 ) Other financing activities ( 115 ) ( 231 ) Net cash used in financing activities ( 30,945 ) ( 5,224 ) Effect of exchange rate changes on cash, cash equivalents, and restricted cash ( 440 ) 71 Net increase (decrease) in cash, cash equivalents, and restricted cash ( 9,801 ) 14,208 Cash, cash equivalents, and restricted cash at beginning of the period 42,827 15,596 Cash, cash equivalents, and restricted cash at end of the period $ 33,026 $ 29,804 Reconciliation of cash, cash equivalents, and restricted cash to the condensed consolidated balance sheets Cash and cash equivalents $ 32,045 $ 28,785 Restricted cash, included in prepaid expenses and other current assets 100 165 Restricted cash, included in other assets 881 854 Total cash, cash equivalents, and restricted cash $ 33,026 $ 29,804 See Accompanying Notes to Condensed Consolidated Financial Statements."
-      }
-    ],
-    "fragility": [
-      {
-        "variable": "AI-related debt",
-        "entity": "Oracle",
-        "value": 10000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.82,
-        "date": "2026-03-11",
-        "event_type": "LENDS_TO",
-        "title": "Oracle SEC filing: 10-Q (2026-03-11)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526101045/orcl-20260228.htm",
-        "evidence": "On March 6, 2026, Oracle entered into a new $ 10.0 billion, five-year revolving credit agreement (the Revolving Credit Agreement) among Oracle, as borrower, Bank of America, N.A., as administrative agent, and the lenders and other agents named therein, which provides for an unsecured $ 10.0 billion, five-year revolving credit facility (the Revolving Facility) to Oracle for working capital purposes and for other general corporate purposes."
-      },
-      {
-        "variable": "AI-related debt",
-        "entity": "SpaceX",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.99,
-        "date": "2026-02-02",
-        "event_type": "ASSUMES_DEBT",
-        "title": "SpaceX assumes debt through the xAI acquisition",
-        "source": "SpaceX 2026 prospectus",
-        "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX%20-%20EU%20Prospectus%20%28Approved%20by%20Bafin%29%20-%20June%205%2C%202026.pdf",
-        "evidence": "SpaceX's prospectus states that the company had a technical default when it acquired xAI because of the amount of debt assumed at the subsidiary level."
-      },
-      {
-        "variable": "AI-related debt",
-        "entity": null,
-        "value": 1000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.82,
-        "date": "2025-03-03",
-        "event_type": "LENDS_TO",
-        "title": "CoreWeave SEC filing: S-1 (2025-03-03)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000119312525044231/d899798ds1.htm",
-        "evidence": "In December 2024, we entered into a credit agreement providing for a $1.0 billion term loan facility (the \u201cTerm Loan Facility,\u201d and together with the Revolving Credit Facility, the DDTL 1.0 Facility and the DDTL 2.0 Facility, the \u201cCredit Facilities\u201d)."
-      },
-      {
-        "variable": "AI-related debt",
-        "entity": "X (Twitter)",
-        "value": 13000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.99,
-        "date": "2022-10-27",
-        "event_type": "ASSUMES_DEBT",
-        "title": "Twitter acquisition financed with $13 billion of company debt",
-        "source": "Twitter SEC proxy",
-        "url": "https://www.sec.gov/Archives/edgar/data/1418091/000119312522195126/d283119dprer14a.htm",
-        "evidence": "Twitter's proxy disclosed $13 billion in secured and unsecured debt financing commitments for the acquisition."
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "evidence": "Goodwill and Intangible Assets Goodwill There were no additions or impairment charges recorded to goodwill for any of the periods presented."
       }
     ]
   },
@@ -730,1036 +537,1280 @@
   ],
   "history": [
     {
+      "captured_at": "2026-09-02T02:46:52+00:00",
+      "score": null,
+      "label": "INSUFFICIENT EVIDENCE",
+      "dimensions": "{\"monetization\": null, \"fragility\": null, \"circularity\": null, \"stress\": null, \"capital\": 48.35840314496684, \"external_pressure\": null, \"counter_evidence\": null, \"transmission\": 40.0, \"cannibalization\": null}",
+      "indicator_version": "numeric-evidence-v2"
+    },
+    {
       "captured_at": "2026-09-02T01:33:06+00:00",
       "score": 44.6,
       "label": "FORMING",
-      "dimensions": "{\"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"stress\": 57.1, \"circularity\": 59.4, \"transmission\": 39.6, \"fragility\": 61.1, \"monetization\": 40.6, \"cannibalization\": 54.2}"
+      "dimensions": "{\"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"stress\": 57.1, \"circularity\": 59.4, \"transmission\": 39.6, \"fragility\": 61.1, \"monetization\": 40.6, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-09-01T20:05:12+00:00",
       "score": 44.6,
       "label": "FORMING",
-      "dimensions": "{\"transmission\": 39.6, \"monetization\": 40.6, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"stress\": 57.1, \"capital\": 42.64073738140746, \"circularity\": 59.4, \"fragility\": 61.1, \"counter_evidence\": 42.9}"
+      "dimensions": "{\"transmission\": 39.6, \"monetization\": 40.6, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"stress\": 57.1, \"capital\": 42.64073738140746, \"circularity\": 59.4, \"fragility\": 61.1, \"counter_evidence\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-09-01T20:00:56+00:00",
       "score": 44.6,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"capital\": 42.64073738140746, \"monetization\": 40.6, \"transmission\": 39.6, \"circularity\": 59.4}"
+      "dimensions": "{\"external_pressure\": 16.12, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"capital\": 42.64073738140746, \"monetization\": 40.6, \"transmission\": 39.6, \"circularity\": 59.4}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-09-01T19:55:21+00:00",
       "score": 44.6,
       "label": "FORMING",
-      "dimensions": "{\"counter_evidence\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 59.4, \"monetization\": 40.6, \"transmission\": 39.6, \"external_pressure\": 16.12, \"stress\": 57.1, \"capital\": 42.64073738140746}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 59.4, \"monetization\": 40.6, \"transmission\": 39.6, \"external_pressure\": 16.12, \"stress\": 57.1, \"capital\": 42.64073738140746}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-09-01T19:46:54+00:00",
       "score": 44.6,
       "label": "FORMING",
-      "dimensions": "{\"monetization\": 40.6, \"capital\": 42.64073738140746, \"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"circularity\": 59.4}"
+      "dimensions": "{\"monetization\": 40.6, \"capital\": 42.64073738140746, \"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"circularity\": 59.4}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-09-01T14:52:43+00:00",
       "score": 44.6,
       "label": "FORMING",
-      "dimensions": "{\"fragility\": 61.1, \"circularity\": 59.4, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 42.64073738140746, \"monetization\": 40.6, \"external_pressure\": 16.12, \"transmission\": 39.6, \"stress\": 57.1}"
+      "dimensions": "{\"fragility\": 61.1, \"circularity\": 59.4, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 42.64073738140746, \"monetization\": 40.6, \"external_pressure\": 16.12, \"transmission\": 39.6, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-31T23:45:49+00:00",
       "score": 44.6,
       "label": "FORMING",
-      "dimensions": "{\"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2, \"circularity\": 59.4, \"monetization\": 40.6, \"external_pressure\": 16.12, \"fragility\": 61.1, \"transmission\": 39.6}"
+      "dimensions": "{\"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2, \"circularity\": 59.4, \"monetization\": 40.6, \"external_pressure\": 16.12, \"fragility\": 61.1, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-31T17:37:12+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"cannibalization\": 54.2, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"stress\": 57.1, \"counter_evidence\": 42.9, \"circularity\": 59.4, \"monetization\": 42.9, \"fragility\": 61.1}"
+      "dimensions": "{\"external_pressure\": 16.12, \"cannibalization\": 54.2, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"stress\": 57.1, \"counter_evidence\": 42.9, \"circularity\": 59.4, \"monetization\": 42.9, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-30T14:52:23+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"circularity\": 59.4, \"fragility\": 61.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"transmission\": 39.6, \"stress\": 57.1, \"external_pressure\": 16.12}"
+      "dimensions": "{\"circularity\": 59.4, \"fragility\": 61.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"transmission\": 39.6, \"stress\": 57.1, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-29T15:03:44+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"circularity\": 59.4, \"capital\": 42.64073738140746, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"stress\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1}"
+      "dimensions": "{\"circularity\": 59.4, \"capital\": 42.64073738140746, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"stress\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-29T00:11:31+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"transmission\": 39.6, \"external_pressure\": 16.12, \"fragility\": 61.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"circularity\": 59.4, \"capital\": 42.64073738140746}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"transmission\": 39.6, \"external_pressure\": 16.12, \"fragility\": 61.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"circularity\": 59.4, \"capital\": 42.64073738140746}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-29T00:08:33+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"monetization\": 42.9, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"circularity\": 59.4, \"stress\": 57.1, \"capital\": 42.64073738140746}"
+      "dimensions": "{\"external_pressure\": 16.12, \"monetization\": 42.9, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"circularity\": 59.4, \"stress\": 57.1, \"capital\": 42.64073738140746}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-29T00:06:08+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"capital\": 42.64073738140746, \"fragility\": 61.1, \"external_pressure\": 16.12, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"circularity\": 59.4}"
+      "dimensions": "{\"capital\": 42.64073738140746, \"fragility\": 61.1, \"external_pressure\": 16.12, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"circularity\": 59.4}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-29T00:02:39+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"stress\": 57.1, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"circularity\": 59.4}"
+      "dimensions": "{\"stress\": 57.1, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"circularity\": 59.4}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-28T23:50:51+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"transmission\": 39.6, \"monetization\": 42.9, \"capital\": 42.64073738140746, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"circularity\": 59.4, \"fragility\": 61.1}"
+      "dimensions": "{\"transmission\": 39.6, \"monetization\": 42.9, \"capital\": 42.64073738140746, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"circularity\": 59.4, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-28T14:03:26+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1, \"circularity\": 59.4, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"monetization\": 42.9}"
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1, \"circularity\": 59.4, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-28T13:51:50+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"circularity\": 59.4}"
+      "dimensions": "{\"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"circularity\": 59.4}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-28T13:37:10+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"monetization\": 42.9, \"circularity\": 59.4, \"cannibalization\": 54.2, \"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9}"
+      "dimensions": "{\"external_pressure\": 16.12, \"monetization\": 42.9, \"circularity\": 59.4, \"cannibalization\": 54.2, \"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-28T13:35:58+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"monetization\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 59.4, \"stress\": 57.1, \"transmission\": 39.6}"
+      "dimensions": "{\"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"monetization\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 59.4, \"stress\": 57.1, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-28T05:24:48+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"monetization\": 42.9, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"circularity\": 59.4, \"external_pressure\": 16.12, \"counter_evidence\": 42.9}"
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"monetization\": 42.9, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"circularity\": 59.4, \"external_pressure\": 16.12, \"counter_evidence\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T23:24:20+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"capital\": 42.64073738140746, \"fragility\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 16.12, \"stress\": 57.1, \"counter_evidence\": 42.9, \"circularity\": 59.4}"
+      "dimensions": "{\"capital\": 42.64073738140746, \"fragility\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 16.12, \"stress\": 57.1, \"counter_evidence\": 42.9, \"circularity\": 59.4}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T23:13:36+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"circularity\": 59.4, \"monetization\": 42.9, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"cannibalization\": 54.2, \"stress\": 57.1}"
+      "dimensions": "{\"circularity\": 59.4, \"monetization\": 42.9, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"capital\": 42.64073738140746, \"fragility\": 61.1, \"cannibalization\": 54.2, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T23:07:46+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"monetization\": 42.9, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 59.4, \"stress\": 57.1, \"external_pressure\": 16.12}"
+      "dimensions": "{\"monetization\": 42.9, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 59.4, \"stress\": 57.1, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T23:00:15+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"circularity\": 59.4, \"stress\": 57.1, \"capital\": 42.64073738140746, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"external_pressure\": 16.12, \"fragility\": 61.1, \"transmission\": 39.6}"
+      "dimensions": "{\"circularity\": 59.4, \"stress\": 57.1, \"capital\": 42.64073738140746, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"external_pressure\": 16.12, \"fragility\": 61.1, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T22:57:05+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"transmission\": 39.6, \"cannibalization\": 54.2, \"fragility\": 61.1, \"capital\": 42.64073738140746, \"stress\": 57.1, \"counter_evidence\": 42.9, \"circularity\": 59.4, \"monetization\": 42.9}"
+      "dimensions": "{\"external_pressure\": 16.12, \"transmission\": 39.6, \"cannibalization\": 54.2, \"fragility\": 61.1, \"capital\": 42.64073738140746, \"stress\": 57.1, \"counter_evidence\": 42.9, \"circularity\": 59.4, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T22:46:23+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"cannibalization\": 54.2, \"circularity\": 59.4, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"fragility\": 61.1}"
+      "dimensions": "{\"external_pressure\": 16.12, \"cannibalization\": 54.2, \"circularity\": 59.4, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T22:43:22+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"cannibalization\": 54.2, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"circularity\": 59.4, \"transmission\": 39.6, \"monetization\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12}"
+      "dimensions": "{\"cannibalization\": 54.2, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"circularity\": 59.4, \"transmission\": 39.6, \"monetization\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T21:28:49+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"transmission\": 39.6, \"fragility\": 61.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 59.4, \"external_pressure\": 16.12, \"stress\": 57.1}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"transmission\": 39.6, \"fragility\": 61.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 59.4, \"external_pressure\": 16.12, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T21:21:58+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"external_pressure\": 16.12, \"transmission\": 39.6, \"circularity\": 59.4}"
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"capital\": 42.64073738140746, \"external_pressure\": 16.12, \"transmission\": 39.6, \"circularity\": 59.4}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T20:30:48+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"fragility\": 61.1, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"transmission\": 39.6, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 59.4}"
+      "dimensions": "{\"external_pressure\": 16.12, \"fragility\": 61.1, \"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"transmission\": 39.6, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 59.4}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T18:13:46+00:00",
       "score": 44.9,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"capital\": 42.64073738140746, \"transmission\": 39.6, \"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 59.4, \"counter_evidence\": 42.9, \"stress\": 57.1, \"fragility\": 61.1}"
+      "dimensions": "{\"external_pressure\": 16.12, \"capital\": 42.64073738140746, \"transmission\": 39.6, \"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 59.4, \"counter_evidence\": 42.9, \"stress\": 57.1, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T14:47:45.933630+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"stress\": 57.1, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"fragility\": 61.1, \"monetization\": 42.9, \"cannibalization\": 54.2}"
+      "dimensions": "{\"transmission\": 39.6, \"stress\": 57.1, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"fragility\": 61.1, \"monetization\": 42.9, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-27T09:48:25.815570+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"external_pressure\": 16.12, \"transmission\": 39.6, \"monetization\": 42.9, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"circularity\": 57.1, \"stress\": 57.1}"
+      "dimensions": "{\"external_pressure\": 16.12, \"transmission\": 39.6, \"monetization\": 42.9, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"circularity\": 57.1, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T23:33:04.307482+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"external_pressure\": 16.12, \"stress\": 57.1, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"transmission\": 39.6, \"monetization\": 42.9, \"fragility\": 61.1, \"counter_evidence\": 42.9}"
+      "dimensions": "{\"external_pressure\": 16.12, \"stress\": 57.1, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"transmission\": 39.6, \"monetization\": 42.9, \"fragility\": 61.1, \"counter_evidence\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T19:20:20.155417+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"external_pressure\": 16.12, \"monetization\": 42.9}"
+      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"external_pressure\": 16.12, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T16:59:56.974763+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 16.12}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T15:53:37.652683+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"stress\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"fragility\": 61.1}"
+      "dimensions": "{\"monetization\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"stress\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T14:07:48.566000+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"external_pressure\": 16.12, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"capital\": 48.732271163185665}"
+      "dimensions": "{\"external_pressure\": 16.12, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"capital\": 48.732271163185665}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T13:17:21.019216+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"stress\": 57.1, \"circularity\": 57.1, \"external_pressure\": 16.12, \"fragility\": 61.1}"
+      "dimensions": "{\"transmission\": 39.6, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"stress\": 57.1, \"circularity\": 57.1, \"external_pressure\": 16.12, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T11:45:34.218553+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"transmission\": 39.6, \"circularity\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2}"
+      "dimensions": "{\"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"transmission\": 39.6, \"circularity\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T10:52:16.799008+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"monetization\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1}"
+      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"monetization\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T09:57:48.451744+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"fragility\": 61.1, \"stress\": 57.1}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"fragility\": 61.1, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T09:02:52.713196+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 57.1, \"cannibalization\": 54.2}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 57.1, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T07:59:42.903491+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"capital\": 48.732271163185665, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"monetization\": 42.9, \"circularity\": 57.1, \"stress\": 57.1}"
+      "dimensions": "{\"fragility\": 61.1, \"capital\": 48.732271163185665, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"monetization\": 42.9, \"circularity\": 57.1, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T07:09:44.265214+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 16.12, \"transmission\": 39.6, \"capital\": 48.732271163185665}"
+      "dimensions": "{\"monetization\": 42.9, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 16.12, \"transmission\": 39.6, \"capital\": 48.732271163185665}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T05:51:08.666847+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"capital\": 48.732271163185665, \"stress\": 57.1, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"fragility\": 61.1}"
+      "dimensions": "{\"transmission\": 39.6, \"capital\": 48.732271163185665, \"stress\": 57.1, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T04:56:33.103575+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2}"
+      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T04:25:57.407769+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 16.12}"
+      "dimensions": "{\"transmission\": 39.6, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T03:18:42.923253+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"external_pressure\": 16.12, \"stress\": 57.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"monetization\": 42.9}"
+      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"external_pressure\": 16.12, \"stress\": 57.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-26T01:59:05.149291+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"transmission\": 39.6, \"circularity\": 57.1, \"monetization\": 42.9}"
+      "dimensions": "{\"stress\": 57.1, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"transmission\": 39.6, \"circularity\": 57.1, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T23:38:18.620427+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12}"
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T22:45:21.925843+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"monetization\": 42.9, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1}"
+      "dimensions": "{\"stress\": 57.1, \"monetization\": 42.9, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T21:44:43.055805+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"circularity\": 57.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"cannibalization\": 54.2}"
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"circularity\": 57.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T20:46:24.713900+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"external_pressure\": 16.12, \"transmission\": 39.6}"
+      "dimensions": "{\"monetization\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"external_pressure\": 16.12, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T19:46:12.373208+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"external_pressure\": 16.12}"
+      "dimensions": "{\"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T18:57:10.554789+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"circularity\": 57.1, \"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"circularity\": 57.1, \"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T17:46:07.570622+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"transmission\": 39.6}"
+      "dimensions": "{\"monetization\": 42.9, \"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"fragility\": 61.1, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T16:55:54.637036+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"circularity\": 57.1, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 48.732271163185665}"
+      "dimensions": "{\"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"circularity\": 57.1, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 48.732271163185665}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T16:00:30.501851+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"monetization\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"capital\": 48.732271163185665}"
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"monetization\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"capital\": 48.732271163185665}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T15:05:56.812474+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 16.12}"
+      "dimensions": "{\"fragility\": 61.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T14:04:16.908916+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2}"
+      "dimensions": "{\"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T13:12:24.212624+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"transmission\": 39.6, \"fragility\": 61.1}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"transmission\": 39.6, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T11:44:15.028387+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1}"
+      "dimensions": "{\"transmission\": 39.6, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"circularity\": 57.1, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T10:50:20.727140+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"fragility\": 61.1, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"fragility\": 61.1, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T09:51:58.742371+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"fragility\": 61.1, \"transmission\": 39.6}"
+      "dimensions": "{\"stress\": 57.1, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"fragility\": 61.1, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T09:00:33.559501+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"stress\": 57.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"stress\": 57.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T07:58:55.247958+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"capital\": 48.732271163185665}"
+      "dimensions": "{\"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"capital\": 48.732271163185665}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T07:08:59.854241+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"monetization\": 42.9}"
+      "dimensions": "{\"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T05:48:32.269667+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"external_pressure\": 16.12}"
+      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T04:54:07.266876+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"external_pressure\": 16.12}"
+      "dimensions": "{\"fragility\": 61.1, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T04:24:52.907100+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"circularity\": 57.1, \"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"cannibalization\": 54.2, \"circularity\": 57.1, \"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T04:00:22.707913+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"stress\": 57.1, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"circularity\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"stress\": 57.1, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"circularity\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T03:13:10.799977+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"fragility\": 61.1, \"circularity\": 57.1}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"fragility\": 61.1, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-25T01:53:11.004727+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"stress\": 57.1}"
+      "dimensions": "{\"monetization\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"fragility\": 61.1, \"transmission\": 39.6, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T23:35:40.178045+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"fragility\": 61.1, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"stress\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"fragility\": 61.1, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"stress\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T22:44:48.970501+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"circularity\": 57.1, \"cannibalization\": 54.2, \"stress\": 57.1}"
+      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"circularity\": 57.1, \"cannibalization\": 54.2, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T20:48:28.125837+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"transmission\": 39.6, \"fragility\": 61.1, \"external_pressure\": 16.12, \"circularity\": 57.1, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"transmission\": 39.6, \"fragility\": 61.1, \"external_pressure\": 16.12, \"circularity\": 57.1, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T19:45:35.171940+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"external_pressure\": 16.12, \"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6}"
+      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"external_pressure\": 16.12, \"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T18:59:55.153964+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"transmission\": 39.6, \"fragility\": 61.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 57.1}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"transmission\": 39.6, \"fragility\": 61.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T17:47:30.316432+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"fragility\": 61.1, \"external_pressure\": 16.12}"
+      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"fragility\": 61.1, \"external_pressure\": 16.12}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T16:55:25.617232+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9}"
+      "dimensions": "{\"transmission\": 39.6, \"stress\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T15:56:17.151707+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"stress\": 57.1}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2, \"capital\": 48.732271163185665, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T15:00:42.886470+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"circularity\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"transmission\": 39.6}"
+      "dimensions": "{\"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"circularity\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T14:03:13.142316+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"monetization\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"transmission\": 39.6}"
+      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"monetization\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T13:13:29.041753+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"transmission\": 39.6}"
+      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"external_pressure\": 16.12, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"monetization\": 42.9, \"capital\": 48.732271163185665, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T11:44:30.414208+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 16.12, \"fragility\": 61.1, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 48.732271163185665}"
+      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 16.12, \"fragility\": 61.1, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 48.732271163185665}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T10:53:59.728671+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"fragility\": 61.1, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"circularity\": 57.1}"
+      "dimensions": "{\"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"stress\": 57.1, \"external_pressure\": 16.12, \"fragility\": 61.1, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T10:04:06.174393+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"stress\": 57.1, \"capital\": 48.732271163185665}"
+      "dimensions": "{\"monetization\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"stress\": 57.1, \"capital\": 48.732271163185665}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T09:04:59.313889+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"stress\": 57.1}"
+      "dimensions": "{\"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"circularity\": 57.1, \"monetization\": 42.9, \"external_pressure\": 16.12, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T07:21:01.849392+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"circularity\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"external_pressure\": 16.12, \"transmission\": 39.6}"
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"circularity\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"capital\": 48.732271163185665, \"monetization\": 42.9, \"external_pressure\": 16.12, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T05:54:12.094267+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"capital\": 48.732271163185665, \"transmission\": 39.6, \"circularity\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"monetization\": 42.9}"
+      "dimensions": "{\"stress\": 57.1, \"capital\": 48.732271163185665, \"transmission\": 39.6, \"circularity\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"external_pressure\": 16.12, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T05:01:31.172755+00:00",
       "score": 45.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2}"
+      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"transmission\": 39.6, \"capital\": 48.732271163185665, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"external_pressure\": 16.12, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T04:30:30.544410+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"monetization\": 42.9}"
+      "dimensions": "{\"circularity\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T04:09:52.619112+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"cannibalization\": 54.2}"
+      "dimensions": "{\"fragility\": 61.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T03:17:06.306882+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"external_pressure\": 61.1}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"external_pressure\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-24T01:58:25.571297+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"transmission\": 39.6, \"external_pressure\": 61.1, \"stress\": 57.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"circularity\": 57.1, \"fragility\": 61.1}"
+      "dimensions": "{\"monetization\": 42.9, \"transmission\": 39.6, \"external_pressure\": 61.1, \"stress\": 57.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"circularity\": 57.1, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T23:36:11.101924+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"external_pressure\": 61.1}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"external_pressure\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T22:37:57.684103+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1}"
+      "dimensions": "{\"fragility\": 61.1, \"cannibalization\": 54.2, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T21:36:11.507061+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"external_pressure\": 61.1, \"circularity\": 57.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"fragility\": 61.1, \"counter_evidence\": 42.9}"
+      "dimensions": "{\"stress\": 57.1, \"external_pressure\": 61.1, \"circularity\": 57.1, \"monetization\": 42.9, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"fragility\": 61.1, \"counter_evidence\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T20:39:24.133893+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1}"
+      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T19:34:58.315281+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"stress\": 57.1, \"circularity\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T18:48:34.135633+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"capital\": 52.15125962813687, \"circularity\": 57.1}"
+      "dimensions": "{\"fragility\": 61.1, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"capital\": 52.15125962813687, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T17:34:53.494285+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"cannibalization\": 54.2}"
+      "dimensions": "{\"stress\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"fragility\": 61.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T16:43:31.030726+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 61.1, \"monetization\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"transmission\": 39.6, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 61.1, \"monetization\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"transmission\": 39.6, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T15:36:19.148401+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T14:39:20.968238+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"external_pressure\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"fragility\": 61.1}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"external_pressure\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T13:45:58.656477+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1, \"transmission\": 39.6, \"external_pressure\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"circularity\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1, \"transmission\": 39.6, \"external_pressure\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T13:02:46.629888+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"stress\": 57.1, \"circularity\": 57.1, \"external_pressure\": 61.1}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"stress\": 57.1, \"circularity\": 57.1, \"external_pressure\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T11:35:16.079441+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"fragility\": 61.1}"
+      "dimensions": "{\"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T10:40:14.774304+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"fragility\": 61.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2}"
+      "dimensions": "{\"circularity\": 57.1, \"fragility\": 61.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T09:43:22.204222+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"fragility\": 61.1}"
+      "dimensions": "{\"circularity\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T08:49:08.698388+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"stress\": 57.1}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T07:47:41.068970+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1, \"stress\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"circularity\": 57.1}"
+      "dimensions": "{\"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1, \"stress\": 57.1, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T07:01:20.767842+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 61.1, \"circularity\": 57.1, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"fragility\": 61.1}"
+      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 61.1, \"circularity\": 57.1, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T05:50:17.358982+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"stress\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6}"
+      "dimensions": "{\"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"stress\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T04:52:59.798547+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"external_pressure\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"fragility\": 61.1}"
+      "dimensions": "{\"monetization\": 42.9, \"external_pressure\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T04:23:31.873113+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9}"
+      "dimensions": "{\"circularity\": 57.1, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T04:04:10.843333+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"fragility\": 61.1, \"cannibalization\": 54.2, \"external_pressure\": 61.1}"
+      "dimensions": "{\"transmission\": 39.6, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"stress\": 57.1, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"fragility\": 61.1, \"cannibalization\": 54.2, \"external_pressure\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T03:15:39.830376+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1, \"fragility\": 61.1}"
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-23T02:00:09.764178+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"stress\": 57.1, \"transmission\": 39.6, \"monetization\": 42.9, \"circularity\": 57.1, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T23:35:27.522121+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T22:38:50.887015+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"external_pressure\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"cannibalization\": 54.2}"
+      "dimensions": "{\"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"external_pressure\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T21:35:52.127085+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"stress\": 57.1}"
+      "dimensions": "{\"circularity\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T20:39:55.889812+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"external_pressure\": 61.1, \"stress\": 57.1}"
+      "dimensions": "{\"fragility\": 61.1, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"external_pressure\": 61.1, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T19:35:10.710583+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"stress\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"circularity\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"stress\": 57.1, \"transmission\": 39.6, \"fragility\": 61.1, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T18:49:22.456034+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"monetization\": 42.9}"
+      "dimensions": "{\"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"monetization\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T17:35:52.290418+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"external_pressure\": 61.1, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9}"
+      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"circularity\": 57.1, \"external_pressure\": 61.1, \"transmission\": 39.6, \"stress\": 57.1, \"capital\": 52.15125962813687, \"counter_evidence\": 42.9}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T16:40:40.494720+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"fragility\": 61.1}"
+      "dimensions": "{\"capital\": 52.15125962813687, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"stress\": 57.1, \"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1, \"cannibalization\": 54.2, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T15:35:23.887157+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"transmission\": 39.6, \"external_pressure\": 61.1, \"fragility\": 61.1, \"monetization\": 42.9, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"transmission\": 39.6, \"external_pressure\": 61.1, \"fragility\": 61.1, \"monetization\": 42.9, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T14:38:09.100765+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2}"
+      "dimensions": "{\"stress\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T13:44:55.128205+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"transmission\": 39.6, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"counter_evidence\": 42.9, \"stress\": 57.1, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T13:01:02.647076+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"external_pressure\": 61.1, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"transmission\": 39.6, \"stress\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1, \"cannibalization\": 54.2, \"circularity\": 57.1, \"external_pressure\": 61.1, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T10:40:30.891707+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"fragility\": 61.1}"
+      "dimensions": "{\"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"stress\": 57.1, \"monetization\": 42.9, \"external_pressure\": 61.1, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"fragility\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T09:42:41.935668+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"cannibalization\": 54.2}"
+      "dimensions": "{\"monetization\": 42.9, \"transmission\": 39.6, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"circularity\": 57.1, \"stress\": 57.1, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T08:48:13.914432+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"monetization\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2}"
+      "dimensions": "{\"fragility\": 61.1, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"monetization\": 42.9, \"stress\": 57.1, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T07:46:46.035165+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1}"
+      "dimensions": "{\"fragility\": 61.1, \"stress\": 57.1, \"circularity\": 57.1, \"counter_evidence\": 42.9, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T05:43:10.792488+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"external_pressure\": 61.1, \"monetization\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2}"
+      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"external_pressure\": 61.1, \"monetization\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T04:49:19.150968+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"transmission\": 39.6, \"fragility\": 61.1, \"circularity\": 57.1}"
+      "dimensions": "{\"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"transmission\": 39.6, \"fragility\": 61.1, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T04:18:10.624598+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1, \"cannibalization\": 54.2}"
+      "dimensions": "{\"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"monetization\": 42.9, \"external_pressure\": 61.1, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T03:56:18.734206+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"circularity\": 57.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"stress\": 57.1}"
+      "dimensions": "{\"fragility\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"circularity\": 57.1, \"external_pressure\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-22T01:51:09.104932+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1}"
+      "dimensions": "{\"stress\": 57.1, \"monetization\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T23:38:20.849125+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"circularity\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"stress\": 57.1}"
+      "dimensions": "{\"cannibalization\": 54.2, \"circularity\": 57.1, \"fragility\": 61.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"counter_evidence\": 42.9, \"transmission\": 39.6, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T23:16:12.784254+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 61.1}"
+      "dimensions": "{\"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"monetization\": 42.9, \"fragility\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"counter_evidence\": 42.9, \"external_pressure\": 61.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T22:51:31.043529+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"stress\": 57.1, \"capital\": 52.15125962813687, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6}"
+      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"stress\": 57.1, \"capital\": 52.15125962813687, \"fragility\": 61.1, \"counter_evidence\": 42.9, \"circularity\": 57.1, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T22:41:43.894811+00:00",
       "score": 51.4,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"monetization\": 42.9, \"stress\": 57.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687}"
+      "dimensions": "{\"cannibalization\": 54.2, \"external_pressure\": 61.1, \"transmission\": 39.6, \"circularity\": 57.1, \"monetization\": 42.9, \"stress\": 57.1, \"counter_evidence\": 42.9, \"fragility\": 61.1, \"capital\": 52.15125962813687}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T22:10:27.136792+00:00",
       "score": 52.1,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"counter_evidence\": 45.8}"
+      "dimensions": "{\"transmission\": 39.6, \"circularity\": 57.1, \"stress\": 57.1, \"fragility\": 61.1, \"cannibalization\": 54.2, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"counter_evidence\": 45.8}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T22:04:51.870747+00:00",
       "score": 52.1,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"cannibalization\": 54.2, \"stress\": 57.1, \"transmission\": 39.6, \"external_pressure\": 61.1, \"fragility\": 61.1, \"counter_evidence\": 45.8}"
+      "dimensions": "{\"monetization\": 42.9, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"cannibalization\": 54.2, \"stress\": 57.1, \"transmission\": 39.6, \"external_pressure\": 61.1, \"fragility\": 61.1, \"counter_evidence\": 45.8}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T21:43:02.856003+00:00",
       "score": 52.1,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"counter_evidence\": 45.8, \"circularity\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"monetization\": 42.9, \"fragility\": 61.1, \"stress\": 57.1}"
+      "dimensions": "{\"counter_evidence\": 45.8, \"circularity\": 57.1, \"transmission\": 39.6, \"cannibalization\": 54.2, \"capital\": 52.15125962813687, \"external_pressure\": 61.1, \"monetization\": 42.9, \"fragility\": 61.1, \"stress\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T21:38:57.433895+00:00",
       "score": 52.1,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"counter_evidence\": 45.8, \"monetization\": 42.9, \"fragility\": 61.1, \"external_pressure\": 61.1, \"transmission\": 39.6}"
+      "dimensions": "{\"stress\": 57.1, \"circularity\": 57.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"counter_evidence\": 45.8, \"monetization\": 42.9, \"fragility\": 61.1, \"external_pressure\": 61.1, \"transmission\": 39.6}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T21:19:08.894366+00:00",
       "score": 52.1,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"fragility\": 61.1, \"external_pressure\": 61.1, \"circularity\": 57.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"stress\": 57.1, \"counter_evidence\": 45.8, \"transmission\": 39.6, \"cannibalization\": 54.2}"
+      "dimensions": "{\"fragility\": 61.1, \"external_pressure\": 61.1, \"circularity\": 57.1, \"monetization\": 42.9, \"capital\": 52.15125962813687, \"stress\": 57.1, \"counter_evidence\": 45.8, \"transmission\": 39.6, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T21:09:23.483041+00:00",
       "score": 52.1,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"stress\": 57.1, \"counter_evidence\": 45.8, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"circularity\": 57.1}"
+      "dimensions": "{\"stress\": 57.1, \"counter_evidence\": 45.8, \"fragility\": 61.1, \"capital\": 52.15125962813687, \"cannibalization\": 54.2, \"external_pressure\": 61.1, \"monetization\": 42.9, \"transmission\": 39.6, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T21:05:03.337891+00:00",
       "score": 52.1,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"counter_evidence\": 45.8, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"circularity\": 57.1}"
+      "dimensions": "{\"monetization\": 42.9, \"cannibalization\": 54.2, \"fragility\": 61.1, \"stress\": 57.1, \"counter_evidence\": 45.8, \"external_pressure\": 61.1, \"capital\": 52.15125962813687, \"transmission\": 39.6, \"circularity\": 57.1}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T20:54:28.102734+00:00",
       "score": 59.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"circularity\": 57.1, \"fragility\": 61.1, \"external_pressure\": 59.4, \"stress\": 57.1, \"monetization\": 42.9, \"counter_evidence\": 45.8, \"capital\": 52.15125962813687, \"transmission\": 99.0, \"cannibalization\": 54.2}"
+      "dimensions": "{\"circularity\": 57.1, \"fragility\": 61.1, \"external_pressure\": 59.4, \"stress\": 57.1, \"monetization\": 42.9, \"counter_evidence\": 45.8, \"capital\": 52.15125962813687, \"transmission\": 99.0, \"cannibalization\": 54.2}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T20:40:52.111687+00:00",
       "score": 59.3,
       "label": "BUILDING PRESSURE",
-      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 59.4, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"counter_evidence\": 45.8, \"fragility\": 61.1, \"monetization\": 42.9, \"transmission\": 99.0}"
+      "dimensions": "{\"cannibalization\": 54.2, \"stress\": 57.1, \"external_pressure\": 59.4, \"capital\": 52.15125962813687, \"circularity\": 57.1, \"counter_evidence\": 45.8, \"fragility\": 61.1, \"monetization\": 42.9, \"transmission\": 99.0}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T20:26:00.620943+00:00",
       "score": null,
       "label": "INSUFFICIENT EVIDENCE",
-      "dimensions": "{\"capital\": 52.15125962813687, \"stress\": null, \"fragility\": null, \"counter_evidence\": null, \"circularity\": null, \"transmission\": 99.0, \"monetization\": null, \"external_pressure\": null, \"cannibalization\": null}"
+      "dimensions": "{\"capital\": 52.15125962813687, \"stress\": null, \"fragility\": null, \"counter_evidence\": null, \"circularity\": null, \"transmission\": 99.0, \"monetization\": null, \"external_pressure\": null, \"cannibalization\": null}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T20:13:16.403997+00:00",
       "score": null,
       "label": "INSUFFICIENT EVIDENCE",
-      "dimensions": "{\"stress\": null, \"external_pressure\": null, \"capital\": 43.69843663790405, \"counter_evidence\": null, \"transmission\": 99.0, \"cannibalization\": null, \"monetization\": null, \"circularity\": null, \"fragility\": null}"
+      "dimensions": "{\"stress\": null, \"external_pressure\": null, \"capital\": 43.69843663790405, \"counter_evidence\": null, \"transmission\": 99.0, \"cannibalization\": null, \"monetization\": null, \"circularity\": null, \"fragility\": null}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T19:44:50.358505+00:00",
       "score": 40.1,
       "label": "FORMING",
-      "dimensions": "{\"monetization\": 100.0, \"capital\": 46.85454041759518, \"circularity\": 1.232000101936137e-08, \"fragility\": 29.235098819297246, \"stress\": 100.0, \"external_pressure\": 43.75428571428572, \"counter_evidence\": 100.0, \"cannibalization\": 0.82, \"transmission\": 1.2000000992884452e-08}"
+      "dimensions": "{\"monetization\": 100.0, \"capital\": 46.85454041759518, \"circularity\": 1.232000101936137e-08, \"fragility\": 29.235098819297246, \"stress\": 100.0, \"external_pressure\": 43.75428571428572, \"counter_evidence\": 100.0, \"cannibalization\": 0.82, \"transmission\": 1.2000000992884452e-08}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T19:40:27.777783+00:00",
       "score": 40.1,
       "label": "FORMING",
-      "dimensions": "{\"monetization\": 100.0, \"circularity\": 1.232000101936137e-08, \"fragility\": 29.235098819297246, \"stress\": 100.0, \"transmission\": 1.2000000992884452e-08, \"external_pressure\": 43.75428571428572, \"counter_evidence\": 100.0, \"cannibalization\": 0.82, \"capital\": 46.85454041759518}"
+      "dimensions": "{\"monetization\": 100.0, \"circularity\": 1.232000101936137e-08, \"fragility\": 29.235098819297246, \"stress\": 100.0, \"transmission\": 1.2000000992884452e-08, \"external_pressure\": 43.75428571428572, \"counter_evidence\": 100.0, \"cannibalization\": 0.82, \"capital\": 46.85454041759518}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T19:37:32.729395+00:00",
       "score": 36.4,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 43.75428571428572, \"capital\": 46.85454041759518, \"cannibalization\": 0.82, \"circularity\": 1.232000101936137e-08, \"counter_evidence\": 100.0, \"fragility\": 22.61212121594788, \"stress\": 77.52, \"transmission\": 1.2000000992884452e-08, \"monetization\": 100.0}"
+      "dimensions": "{\"external_pressure\": 43.75428571428572, \"capital\": 46.85454041759518, \"cannibalization\": 0.82, \"circularity\": 1.232000101936137e-08, \"counter_evidence\": 100.0, \"fragility\": 22.61212121594788, \"stress\": 77.52, \"transmission\": 1.2000000992884452e-08, \"monetization\": 100.0}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T19:34:29.466596+00:00",
       "score": 36.4,
       "label": "FORMING",
-      "dimensions": "{\"capital\": 46.85454041759518, \"external_pressure\": 43.75428571428572, \"cannibalization\": 0.82, \"monetization\": 100.0, \"transmission\": 1.2000000992884452e-08, \"fragility\": 22.61212121594788, \"counter_evidence\": 100.0, \"circularity\": 1.232000101936137e-08, \"stress\": 77.52}"
+      "dimensions": "{\"capital\": 46.85454041759518, \"external_pressure\": 43.75428571428572, \"cannibalization\": 0.82, \"monetization\": 100.0, \"transmission\": 1.2000000992884452e-08, \"fragility\": 22.61212121594788, \"counter_evidence\": 100.0, \"circularity\": 1.232000101936137e-08, \"stress\": 77.52}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T19:22:37.591171+00:00",
       "score": 36.4,
       "label": "FORMING",
-      "dimensions": "{\"monetization\": 100.0, \"fragility\": 22.61212121594788, \"cannibalization\": 0.82, \"transmission\": 1.2000000992884452e-08, \"circularity\": 1.232000101936137e-08, \"stress\": 77.52, \"capital\": 46.85454041759518, \"counter_evidence\": 100.0, \"external_pressure\": 43.75428571428572}"
+      "dimensions": "{\"monetization\": 100.0, \"fragility\": 22.61212121594788, \"cannibalization\": 0.82, \"transmission\": 1.2000000992884452e-08, \"circularity\": 1.232000101936137e-08, \"stress\": 77.52, \"capital\": 46.85454041759518, \"counter_evidence\": 100.0, \"external_pressure\": 43.75428571428572}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T19:20:47.240902+00:00",
       "score": 36.4,
       "label": "FORMING",
-      "dimensions": "{\"monetization\": 100.0, \"external_pressure\": 43.75428571428572, \"cannibalization\": 0.82, \"stress\": 77.52, \"counter_evidence\": 100.0, \"fragility\": 22.61212121594788, \"transmission\": 1.2000000992884452e-08, \"circularity\": 1.232000101936137e-08, \"capital\": 46.85454041759518}"
+      "dimensions": "{\"monetization\": 100.0, \"external_pressure\": 43.75428571428572, \"cannibalization\": 0.82, \"stress\": 77.52, \"counter_evidence\": 100.0, \"fragility\": 22.61212121594788, \"transmission\": 1.2000000992884452e-08, \"circularity\": 1.232000101936137e-08, \"capital\": 46.85454041759518}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T19:18:14.032194+00:00",
       "score": 36.4,
       "label": "FORMING",
-      "dimensions": "{\"capital\": 46.85454041759518, \"circularity\": 1.232000101936137e-08, \"transmission\": 1.2000000992884452e-08, \"monetization\": 100.0, \"external_pressure\": 43.75428571428572, \"stress\": 77.52, \"counter_evidence\": 100.0, \"cannibalization\": 0.82, \"fragility\": 22.61212121594788}"
+      "dimensions": "{\"capital\": 46.85454041759518, \"circularity\": 1.232000101936137e-08, \"transmission\": 1.2000000992884452e-08, \"monetization\": 100.0, \"external_pressure\": 43.75428571428572, \"stress\": 77.52, \"counter_evidence\": 100.0, \"cannibalization\": 0.82, \"fragility\": 22.61212121594788}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T18:56:05.051522+00:00",
       "score": 36.4,
       "label": "FORMING",
-      "dimensions": "{\"cannibalization\": 0.82, \"external_pressure\": 43.75428571428572, \"monetization\": 100.0, \"stress\": 77.52, \"counter_evidence\": 100.0, \"transmission\": 1.2000000992884452e-08, \"circularity\": 1.232000101936137e-08, \"capital\": 46.85454041759518, \"fragility\": 22.61212121594788}"
+      "dimensions": "{\"cannibalization\": 0.82, \"external_pressure\": 43.75428571428572, \"monetization\": 100.0, \"stress\": 77.52, \"counter_evidence\": 100.0, \"transmission\": 1.2000000992884452e-08, \"circularity\": 1.232000101936137e-08, \"capital\": 46.85454041759518, \"fragility\": 22.61212121594788}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T18:52:27.643469+00:00",
       "score": 36.4,
       "label": "FORMING",
-      "dimensions": "{\"stress\": 77.52, \"fragility\": 22.61212121594788, \"cannibalization\": 0.82, \"external_pressure\": 43.75428571428572, \"circularity\": 1.232000101936137e-08, \"capital\": 46.85454041759518, \"counter_evidence\": 100.0, \"transmission\": 1.2000000992884452e-08, \"monetization\": 100.0}"
+      "dimensions": "{\"stress\": 77.52, \"fragility\": 22.61212121594788, \"cannibalization\": 0.82, \"external_pressure\": 43.75428571428572, \"circularity\": 1.232000101936137e-08, \"capital\": 46.85454041759518, \"counter_evidence\": 100.0, \"transmission\": 1.2000000992884452e-08, \"monetization\": 100.0}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T18:47:08.556730+00:00",
       "score": 36.4,
       "label": "FORMING",
-      "dimensions": "{\"counter_evidence\": 100.0, \"fragility\": 22.61212121594788, \"circularity\": 1.232000101936137e-08, \"external_pressure\": 43.75428571428572, \"capital\": 46.85454041759518, \"cannibalization\": 0.82, \"transmission\": 1.2000000992884452e-08, \"stress\": 77.52, \"monetization\": 100.0}"
+      "dimensions": "{\"counter_evidence\": 100.0, \"fragility\": 22.61212121594788, \"circularity\": 1.232000101936137e-08, \"external_pressure\": 43.75428571428572, \"capital\": 46.85454041759518, \"cannibalization\": 0.82, \"transmission\": 1.2000000992884452e-08, \"stress\": 77.52, \"monetization\": 100.0}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T18:44:30.944375+00:00",
       "score": 36.1,
       "label": "FORMING",
-      "dimensions": "{\"capital\": 44.46806698764349, \"stress\": 77.52, \"transmission\": 1.2000000992884452e-08, \"external_pressure\": 43.75428571428572, \"fragility\": 22.61212121594788, \"cannibalization\": 0.82, \"counter_evidence\": 100.0, \"monetization\": 100.0, \"circularity\": 1.232000101936137e-08}"
+      "dimensions": "{\"capital\": 44.46806698764349, \"stress\": 77.52, \"transmission\": 1.2000000992884452e-08, \"external_pressure\": 43.75428571428572, \"fragility\": 22.61212121594788, \"cannibalization\": 0.82, \"counter_evidence\": 100.0, \"monetization\": 100.0, \"circularity\": 1.232000101936137e-08}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T18:37:04.179871+00:00",
       "score": 41.9,
       "label": "FORMING",
-      "dimensions": "{\"cannibalization\": 0.82, \"capital\": 58.70504249005779, \"circularity\": 1.232000101936137e-08, \"counter_evidence\": 100.0, \"monetization\": 100.0, \"transmission\": 1.2000000992884452e-08, \"external_pressure\": 52.96571428571429, \"fragility\": 22.61212121594788, \"stress\": 100.0}"
+      "dimensions": "{\"cannibalization\": 0.82, \"capital\": 58.70504249005779, \"circularity\": 1.232000101936137e-08, \"counter_evidence\": 100.0, \"monetization\": 100.0, \"transmission\": 1.2000000992884452e-08, \"external_pressure\": 52.96571428571429, \"fragility\": 22.61212121594788, \"stress\": 100.0}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T18:30:46.088636+00:00",
       "score": 32.0,
       "label": "FORMING",
-      "dimensions": "{\"external_pressure\": 16.12, \"stress\": 58.48, \"counter_evidence\": 100.0, \"transmission\": 1.2000000992884452e-08, \"circularity\": 0.38646195307052716, \"fragility\": 19.13333334864, \"capital\": 60.87882985468722, \"monetization\": 100.0, \"cannibalization\": 0.82}"
+      "dimensions": "{\"external_pressure\": 16.12, \"stress\": 58.48, \"counter_evidence\": 100.0, \"transmission\": 1.2000000992884452e-08, \"circularity\": 0.38646195307052716, \"fragility\": 19.13333334864, \"capital\": 60.87882985468722, \"monetization\": 100.0, \"cannibalization\": 0.82}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T18:26:19.970245+00:00",
       "score": 40.1,
       "label": "FORMING",
-      "dimensions": "{\"counter_evidence\": 100.0, \"circularity\": 0.38646195307052716, \"monetization\": 100.0, \"cannibalization\": null, \"transmission\": 1.2000000992884452e-08, \"capital\": 93.4405547944364, \"external_pressure\": 16.12, \"fragility\": 12.300000000000006, \"stress\": 58.48}"
+      "dimensions": "{\"counter_evidence\": 100.0, \"circularity\": 0.38646195307052716, \"monetization\": 100.0, \"cannibalization\": null, \"transmission\": 1.2000000992884452e-08, \"capital\": 93.4405547944364, \"external_pressure\": 16.12, \"fragility\": 12.300000000000006, \"stress\": 58.48}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T17:49:46.756969+00:00",
       "score": 40.1,
       "label": "FORMING",
-      "dimensions": "{\"monetization\": 100.0, \"cannibalization\": null, \"external_pressure\": 16.12, \"counter_evidence\": 100.0, \"stress\": 58.48, \"fragility\": 12.300000000000006, \"transmission\": 1.2000000992884452e-08, \"capital\": 93.4405547944364, \"circularity\": 0.38646195307052716}"
+      "dimensions": "{\"monetization\": 100.0, \"cannibalization\": null, \"external_pressure\": 16.12, \"counter_evidence\": 100.0, \"stress\": 58.48, \"fragility\": 12.300000000000006, \"transmission\": 1.2000000992884452e-08, \"capital\": 93.4405547944364, \"circularity\": 0.38646195307052716}",
+      "indicator_version": "legacy-v1"
     },
     {
       "captured_at": "2026-08-21T17:45:33.213028+00:00",
       "score": 40.1,
       "label": "FORMING",
-      "dimensions": "{\"capital\": 93.4405547944364, \"transmission\": 1.2000000992884452e-08, \"external_pressure\": 16.12, \"fragility\": 12.300000000000006, \"cannibalization\": null, \"circularity\": 0.38646195307052716, \"monetization\": 100.0, \"stress\": 58.48, \"counter_evidence\": 100.0}"
+      "dimensions": "{\"capital\": 93.4405547944364, \"transmission\": 1.2000000992884452e-08, \"external_pressure\": 16.12, \"fragility\": 12.300000000000006, \"cannibalization\": null, \"circularity\": 0.38646195307052716, \"monetization\": 100.0, \"stress\": 58.48, \"counter_evidence\": 100.0}",
+      "indicator_version": "legacy-v1"
+    }
+  ],
+  "comparable_history": [
+    {
+      "captured_at": "2026-09-02T02:46:52+00:00",
+      "score": null,
+      "label": "INSUFFICIENT EVIDENCE",
+      "dimensions": "{\"monetization\": null, \"fragility\": null, \"circularity\": null, \"stress\": null, \"capital\": 48.35840314496684, \"external_pressure\": null, \"counter_evidence\": null, \"transmission\": 40.0, \"cannibalization\": null}",
+      "indicator_version": "numeric-evidence-v2"
+    }
+  ],
+  "public_market_alerts": [
+    {
+      "event_id": "b562f249e843a9885d491e2323e9d667518cd0401e254de91b92bcc766126827",
+      "company": "Issuer attribution unresolved",
+      "title": "Softbank's SB Energy files for IPO, says it's 'substantially dependent' on OpenAI - CNBC",
+      "stage": "IPO filing: potential public-investor exposure",
+      "date": "Tue, 01 Sep 2026 15:32:36 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02WjktbGRkY3BXT2x4TmhXWGRvcnVyZHcyaFl0X2pTOEp5ZjFoa1F5cGNGSEJUME13bDBPT3ZBdWhxR2dQNTJsTjdoNUFIa3dua241V2RIXzh6OWhET0ZOUGRMVWF4cDVvRThOZTNudVhKWHRkSFYxR2g2Sll0bzDSAYQBQVVfeXFMTmtTeUdFWGpBZWpZWnVYYWVTZkZfdnJreTBqQW1TQVc0ZlZkdDhtU20wWWU5VzFTbFZJNDhsMFMwcEhuemYyUm9JRmxGNnZiRVF1ekZLTEtTWExjQ3c2RTY1QVBNSG9iZXdFSnFrVEo4dTlKbzl6VXpTYVJwWVExdS1sNE9U?oc=5",
+      "evidence": "Softbank's SB Energy files for IPO, says it's 'substantially dependent' on OpenAI - CNBC Softbank's SB Energy files for IPO, says it's 'substantially dependent' on OpenAI CNBC Google News"
+    },
+    {
+      "event_id": "70903aca9382e6659d876f79c14c469d403c5420433673894fa1bd9b76197178",
+      "company": "Issuer attribution unresolved",
+      "title": "SB Energy Files for IPO With Nvidia Backing - WSJ",
+      "stage": "IPO filing: potential public-investor exposure",
+      "date": "Tue, 01 Sep 2026 11:49:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTWxJS01CY1A4VlhIWXgyNFNwQ296MDQtM3VkYTFpWEhacWtVRmhvUDE2RlFPX09HNXJCXzJIbVdzaU9OMmNQOGxNQ0pWLThIUkJoMlFPekVFZm1fLWxyLVlYMlRHQzB1SFJkYTBPTEJVd3o3clBQaEtiMjJBN0M0TzlyVHNyU20wU3VSeVZJbjF5YjR3?oc=5",
+      "evidence": "SB Energy Files for IPO With Nvidia Backing - WSJ SB Energy Files for IPO With Nvidia Backing WSJ Google News"
+    },
+    {
+      "event_id": "c6806ceba707f53040752c226afb9bdf7cc17e25d9c81cce2d422cf55d6edab6",
+      "company": "Issuer attribution unresolved",
+      "title": "SB Energy Files for IPO With Backing From Nvidia, OpenAI -- Update - marketscreener.com",
+      "stage": "IPO filing: potential public-investor exposure",
+      "date": "Tue, 01 Sep 2026 12:02:50 GMT",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUW1wTS1rSGJZOGM0cDJGLWtmTWNPd2R5N28wdzZqWTh1WC00MVYxUlNmZ1FNaklDYVoxb1dGVXJJNlo3RTgtbzZjeFlUbTdjYk1HQVBfYzZZMWc0RkNBbFdHcEJmTklHdFczb0lGdTRvRTRXME1DZ0hKVGs1QVIzd2d1UnRTYS1KZF9UQWFNOWRmSVN0Qms5Y2QySWt3SUN1NDBSSHdHM1BIcEsyeDFiN1Vwc3B0UQ?oc=5",
+      "evidence": "SB Energy Files for IPO With Backing From Nvidia, OpenAI -- Update - marketscreener.com SB Energy Files for IPO With Backing From Nvidia, OpenAI -- Update marketscreener.com Google News"
+    },
+    {
+      "event_id": "2beb0ed8fdeb98b19dcd978653bf8c2182914aee257730b7ab0248aa4bbfe212",
+      "company": "OpenAI",
+      "title": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC",
+      "stage": "IPO filing: potential public-investor exposure",
+      "date": "Mon, 08 Jun 2026 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMVhyczJEUzJvM0ktd0k2RmJwZGY2YW1CRThUTTdLNERQY0ZXVXUyNjhHMklyRFVSdnRoTlc3dTFZd0NqNDd2TDJrYk43NTc4Y0Z5R0Qta08zLU5XdVVSd05LNF94WTlDS05xRklDYzluVnpWUjFqeHg2QWVZZWdSMkJHN0VVYWQtSU9BNVA3ejg2V3YyOHM3TkhsZFRtakxoRXY2WjZxWkdUZ9IBrwFBVV95cUxNYmdiVHBYUUVMODVqaDh4ZjJmV3RyXzNJa1BtblRDRWRFbEIzb2tQNURabU1hSmEtQkZCSDhva3JCVWFIYV9leDVYaVFxWXBQeTNpeHoxbVQzRk5vMVdsa1dpZW0tLXVNRXhuVzZtLVBCSTU2U0pBRDE2NzFKOFRqT041anVxS0RfamwtcEpqeHhiTnNxZ3ZIZWotSzZsSHQ5eTRJcW8xRGdMRkdjWmxF?oc=5",
+      "evidence": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut CNBC Google News"
+    },
+    {
+      "event_id": "7ea8a46ed6a9309e54c33b46e346ff7156b9754c95f392ff5c7f2b2d38937b4a",
+      "company": "SpaceX",
+      "title": "SpaceX completes initial public offering and begins trading as SPCX",
+      "stage": "Public trading: exposure available to public investors",
+      "date": "2026-06-12",
+      "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX_PricingAnnouncement.pdf?embed=true",
+      "evidence": "SpaceX announced that 555,555,555 Class A shares were priced at $135 per share and would begin trading on Nasdaq on June 12, 2026 under SPCX."
+    },
+    {
+      "event_id": "0f294dca585024522a8201e36d2078e8d9010da505b3ece08eb1cb1509c7d8c6",
+      "company": "SpaceX",
+      "title": "SpaceX joins the Nasdaq-100 Index",
+      "stage": "Index inclusion: potential distribution through tracking funds",
+      "date": "2026-07-07",
+      "url": "https://ir.nasdaq.com/news-releases/news-release-details/space-exploration-technologies-corporation-join-nasdaq-100",
+      "evidence": "Nasdaq announced that SpaceX (SPCX) would become a Nasdaq-100 component before market open on July 7, 2026. Nasdaq states that more than 200 investment products with over $800 billion in assets track the index."
     }
   ],
   "network": {
@@ -1813,6 +1864,12 @@
         "weight": 7
       },
       {
+        "id": "Microsoft",
+        "label": "Microsoft",
+        "kind": "company",
+        "weight": 6
+      },
+      {
         "id": "SpaceX",
         "label": "SpaceX",
         "kind": "company",
@@ -1827,12 +1884,6 @@
       {
         "id": "Zhipu AI",
         "label": "Zhipu AI",
-        "kind": "company",
-        "weight": 5
-      },
-      {
-        "id": "Microsoft",
-        "label": "Microsoft",
         "kind": "company",
         "weight": 5
       },
@@ -4801,6 +4852,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:f5c0baf3878324543d63f016c1a2d4fc379ac12bd2960ae0c4e36c7382283680",
+        "label": "OpenAI Vs Anthropic IPO: How They Compare And What We Know | September 2026 - Forbes",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Forbes",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUUt4VEJ2TW1WeWZaUlNIYWR4OE1xVUhQY0NDeVppOWNwVGF0TEpQdGUtT3JGT1hrMFJlcWJ6ck5TbllTdERMb2ZQamstcnZFVkFjTkxkbGQwZmM5Zmg1bnNaMlRZeWI2aEhraVFhX3MzRkRWdXQ5MHNJd3EtTlc0SU5IYk5DSTJGSU9tdWJ3?oc=5",
+        "date": "Thu, 09 Jul 2026 07:00:00 GMT",
+        "summary": "OpenAI Vs Anthropic IPO: How They Compare And What We Know | September 2026 Forbes",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3798ff105a0ff3891629a032a76049d755287281aff782e030b6a27e686e3a42",
+        "label": "Nvidia Puts $3B Into SB Energy, OpenAI Holds Nearly 4M Warrants In IPO - stocktwits.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "stocktwits.com",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNT191dk9aOWZEY1JoZk42ZDM4ZXNLb0J0MTc5bjk3YkdhS0xLUTRBREd6SG5TdTE2QkdhSExxRDRiTUNxcHV5UXdwMlVKTzFUYmtnaVFNVXNYaWlxYUxUcThPbkZoakJYOXJIdlNpc285N3FPVXJoOFRTT08wTWNUcThqWmlpdFk2SFhyUnBEekk2T3pGM0FyeTFTWGFScXRXdi04cWw0OGl3dnJkcEtHOW1zeUZjTUZCblRYbnNsaWRtTi1WRk5qLVZqRmd6cnNrYXc?oc=5",
+        "date": "Tue, 01 Sep 2026 12:27:00 GMT",
+        "summary": "Nvidia Puts $3B Into SB Energy, OpenAI Holds Nearly 4M Warrants In IPO stocktwits.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
         "id": "evidence:704b5f7f314632942e2303111252c892c9be36b8bef6e3a209930bf664d108b7",
         "label": "SB Energy heads for IPO after Nvidia backs $105 billion OpenAI data-centre project - TradingView",
         "kind": "evidence",
@@ -6406,6 +6481,18 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0bf3d75c239ee8713cad9a70ca7a2847af4e6e8b5c9d4e0002b521ae2ac436fc",
+        "label": "Sam Altman's OpenAI Just Completed a $7 Billion Share Sale as It Eyes a Trillion-Dollar IPO. What Would That Valuation Mean for Investors? - The Globe and Mail",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Globe and Mail",
+        "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxPbHNxeExVenJibU85SHNnMDhIc3E4NkNPRUU2QXN4TFZXalBpUjF2c3BPSFJXRkFtLTVRTG00clZxUUpaWXFTem55bmw3UlE1ZC1Qcm02Vnlobmt3TF9hYTJBaFBrRjZlV1paNVNTdWFQdnd6STQzVF83N05iUkxXRmo5Z3FiQVZOYi1EdlBUdGhkT3ZpMFZPYnVuLW5IUkE1eTFzWmo4bWZkYXUxSjFNR2h1N1hveC15b1o4bGd5UVJMTkRhNHAxUnRfd0otLVowV3ZaQWJxOGI1T2dseFRYNTdlTDN6TDdLb2Fkdld1b3NFSWx2cEI5cDllLVNPT0ItUl9uT2c2STcwczk5SE5fZm9UclNtU0RWaU5VcmtCRHo1M1ByM2xDY3FqSDduZ1dzRlZkSUpIam84dk9lZVh4Vw?oc=5",
+        "date": "Mon, 31 Aug 2026 17:52:14 GMT",
+        "summary": "Sam Altman's OpenAI Just Completed a $7 Billion Share Sale as It Eyes a Trillion-Dollar IPO. What Would That Valuation Mean for Investors? The Globe and Mail",
+        "score": 4,
         "weight": 1
       },
       {
@@ -9829,6 +9916,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:ef0846c8e48b094c1b2bc52dd6595135ebab3aa1c815b1a0f16236fad6796314",
+        "label": "Microsoft Stock Drops as $41 Billion Capex Meets 4.8% Yields - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxORGkzV21obDlVSUc5LW1DdFl1WFB6LTl5SUpDZ2EtQ0xQWkNQSzZETHVLWmY3N2RSQURpQmNUbWtsR0FxY0ZUaVM4cDJJWHhZd0w0eldzRXM0dVpWbWJwRDBuOG9qV0Jub3owemc0WHp3OWtrN0ZXLTJlM0ZIM056OXVzcmhnTmJWbFI1YlM5cjlZaEgwMHBWMjgteURBdw?oc=5",
+        "date": "Tue, 01 Sep 2026 17:44:47 GMT",
+        "summary": "Microsoft Stock Drops as $41 Billion Capex Meets 4.8% Yields Yahoo Finance",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:a3b94c5956fae401906aae47d49690a566f106692273ecd33e45c9a0467fedb1",
         "label": "Why Anthropic, OpenAI and SpaceX are all racing to go public now - news.northeastern.edu",
         "kind": "evidence",
@@ -10753,6 +10852,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:35ab636c0c6d1ff5504b310e670cb4f6f1970d89aac73e6ea83a8bebbf6962bf",
+        "label": "China\u2019s DeepSeek launches V4 Pro model, on par with Anthropic\u2019s Claude Fable 5 - globaltimes.cn",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "globaltimes.cn",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5LYlpSY18wMlhCT0F5VmRUQTVTR09BMk1JVC1CM0FXSUhidnFpQm1NSUJuT3ZmX3VIY1AtbG1fSmY5cmd5RUxkVXd3TmhlVlJWVHFPa1VCNFk5UldBT0JwemxR?oc=5",
+        "date": "Thu, 13 Aug 2026 07:00:00 GMT",
+        "summary": "China\u2019s DeepSeek launches V4 Pro model, on par with Anthropic\u2019s Claude Fable 5 globaltimes.cn",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ff64cf4aab8df81fc715e40e018a14ebf4647e6780152d8146d5eb2b6d7b28e2",
+        "label": "Kimi K3 vs Qwen 3.8: Which Open Weight Chinese AI is Better? - memeburn.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "memeburn.com",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ZVFhaZy15aUNMRmNEMnR2LXE0WmgzVG9sLXF0TWh6d05hY3lhQy01UnllZ0xiT1RHaE1YazlteVFNYnRHNFN2SENULWZDcTFKdVJJ?oc=5",
+        "date": "Sun, 09 Aug 2026 07:00:00 GMT",
+        "summary": "Kimi K3 vs Qwen 3.8: Which Open Weight Chinese AI is Better? memeburn.com",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3a295af097d8b61687d31319aa73d9879778ffbffe3e78e6cbb0f5e2f605133a",
+        "label": "Product Watch: Ex-Bytedance, DJI & Tencent Team-Backed Startup Enters AI Skiing Track, Secures Investment from Thick Snow Investment - 36\u6c2a",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "36\u6c2a",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vbFpEZ0FMZmNGVzJnbUJONDBqQTdCTWUwdUhOWEJfcWpkQzVTVW1yUXZXYTJtTEk1WWR1UURNTlJYUmJzdDRscGFmWDljd0kwS2Fj?oc=5",
+        "date": "Wed, 02 Sep 2026 02:22:12 GMT",
+        "summary": "Product Watch: Ex-Bytedance, DJI & Tencent Team-Backed Startup Enters AI Skiing Track, Secures Investment from Thick Snow Investment 36\u6c2a",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:6bcc847ca9057a0cdd02bad80855d5747df6289b0194c2577b8f8815a855b66c",
         "label": "Is Nvidia\u2019s $35 Billion Anthropic Pact the Ultimate Circular Financing Play? - Yahoo Finance",
         "kind": "evidence",
@@ -11457,90 +11592,6 @@
         "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcW84UFBoYmpFOVZtYWRraThiYnVjQ3FtNEZwUzJyZlhKbjQ2UEVUQVczUDJ3U0s4ZjZHWG9pT2JKMEtPZEE1WWhNR090Q0ZrWEdPRTZXZkFaSDlwZzRBLU5sNFF2aGtqT0FXbnp1NTVPNi1xTXYwREtCUG9EVXpCbFc2YURvdw?oc=5",
         "date": "Mon, 24 Aug 2026 00:00:00 GMT",
         "summary": "Watch Alibaba's $10B Share Sale Draws Investor Scrutiny | The China Show | 8/24/2026 Bloomberg",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d89062e29f7d05794f3e0b89158f6faba300a6c34868a206e93969c7f514ad07",
-        "label": "NVIDIA\u2019s Earnings Report Draws Intense Scrutiny: The Rubin Cycle, Rollover Financing, and Forward Market Share - Moomoo",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYTNpVEUxWDhoSk5lcFNKTURrcC1OS25Ual9sQnRNX0lyVHRTcHgyeS00enE1MWp1SGRjSHlvVzRLSXNUbmtMd1FtdVg1MjFkUlB6VHRyTXZtekZnSnNrVS1MLXAwUUkzOWd4Y193aFlrTGJDY21NVnY0cFhPcFdpS3A4WkdwWnBRX3Zrd1FlSDI0RGJFdUFiQnNzVWx1SVFXX2JhRFZvdHM?oc=5",
-        "date": "Sun, 23 Aug 2026 10:56:46 GMT",
-        "summary": "NVIDIA\u2019s Earnings Report Draws Intense Scrutiny: The Rubin Cycle, Rollover Financing, and Forward Market Share Moomoo",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:66713c04ecabae8b6eda94656d2f8ae5854b135b938ee009ff1bf8bf4c3fa09d",
-        "label": "Amazon-Backed Anthropic Needs $1.2 Trillion in Revenue to Justify $2 Trillion Valuation, 'Dean of Valuation' Says - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSy1GSHhzQ3RhZnNlUXRGdUU0UXAzYUdjNm5leHBlR2lsQmtMeFhhTl83Qy0zcThqSVBWRTl2REM1dDVHVUpaRG1heUNGRTNicmc3OHctX0pOSm4xTFNTRFpGU0VOTklnMUxMaVRFcWJqLUlsRy1aUmV5b1lfTmpVOUdqaS12Mzcxa3F6RlJFTVdWZDZ4MWZvZWl2VQ?oc=5",
-        "date": "Sun, 23 Aug 2026 03:30:00 GMT",
-        "summary": "Amazon-Backed Anthropic Needs $1.2 Trillion in Revenue to Justify $2 Trillion Valuation, 'Dean of Valuation' Says Yahoo Finance",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e30f064adeaa48cc92559414954cd69eab84946869e37599ceecdf7de550233e",
-        "label": "OpenAI-backed legal tech firm pivots to Chinese Kimi K3 open-weight model - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPemJYVXlXZ3R5TUJYbkRkV2NmaWN2cUJ5SGxtaHlsSTV1UFJwdVd5R3hKck9hZkY5aXgySVczWldwM1dpS0taOW03OHAxaDE2clF5ZEJ3LXJEX3ljUzhKQ2lOUExNclVSbG5FQ3VmMndsWTE3anpnaG9fX3IyRFlaRms3VXkzS21mb3JjMXFaTE5rQ1h1Z3VzNC02cTNOSFhabTdiQkg0R0Q1RUNUTmNUZEhRcmprTl9MNmEyUHUzTkVfd9IBwgFBVV95cUxPemJYVXlXZ3R5TUJYbkRkV2NmaWN2cUJ5SGxtaHlsSTV1UFJwdVd5R3hKck9hZkY5aXgySVczWldwM1dpS0taOW03OHAxaDE2clF5ZEJ3LXJEX3ljUzhKQ2lOUExNclVSbG5FQ3VmMndsWTE3anpnaG9fX3IyRFlaRms3VXkzS21mb3JjMXFaTE5rQ1h1Z3VzNC02cTNOSFhabTdiQkg0R0Q1RUNUTmNUZEhRcmprTl9MNmEyUHUzTkVfdw?oc=5",
-        "date": "Fri, 21 Aug 2026 14:00:10 GMT",
-        "summary": "OpenAI-backed legal tech firm pivots to Chinese Kimi K3 open-weight model South China Morning Post",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7a7dbdf3e38f72272590af81ac820abd846853c07aac41d01522493b369cda55",
-        "label": "OpenAI Is Adding Business Users Faster Than Anthropic. That May Matter More Than Valuation - inc.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "inc.com",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZ2hVS3doNVlVVGdCeEQ0UnM1R0dhTGdXX2hxZ2xodVdONkk1TXZCNXVUUF9TRER1MFQ5RERTd0JNbHc5cnVXZ0tOUWx2Nlo2Y0duOVJQRVQ3WkQzWHRLUFdBMDFMNm5zTkJWVGRsQjh6NlQwbXlTTkFvUU9ZcW5kOGRudDZRU3luUUdPR3BaREpaQ3oxZzFrZ3dJWF81NVRRWjNLekhoS2s0TmI5VWFMcnpCemJwRUdSSkozeVNpcF8xcmhsbXZvM2tlTQ?oc=5",
-        "date": "Sun, 23 Aug 2026 01:28:29 GMT",
-        "summary": "OpenAI Is Adding Business Users Faster Than Anthropic. That May Matter More Than Valuation inc.com",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:145d36eb7209460e3d9b1aa58389db495bf387b1938f24a584838a62e4c21582",
-        "label": "Is Anthropic-Driven Windfall Reshaping the Investment Case for Amazon.com (AMZN) and Its AI Ambitions? - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZWZaVk5WSzRzak9xa1JBOGNXY19NRVFxelBqMDcteEV1N3VRV0VGTDBvbV9WbTFQdzR3V0VBdXJGcDN3LWp0eXdnSjg4SDl1S01tLS1zdS0xa0lQNy1KR3dzcVN3WkNBLU1nYlZGVzVVcTNuSDRwcDNUY25FX1hhZk5sT1lUV0tVMmlyM3ZlX1M3S25BVmIwQUs1TDVXMl85Vm5JallaLWxvUjdKMmdFaDdMQXJVcEpMVTRmcUVNSUZmdGkzTXZxdU930gHKAUFVX3lxTE1lZlpWTlZLNHNqT3FrUkE4Y1djX01FUXF6UGowNy14RXU3dVFXRUZMMG9tX1ZtMVB3NHdXRUF1ckZwM3ctanR5d2dKODhIOXVLTW0tLXN1LTFrSVA3LUpHd3NxU3daQ0EtTWdiVkZXNVVxM25INHBwM1RjbkVfWGFmTmxPWVRXS1UyaXIzdmVfUzdLbkFWYjBBSzVMNVcyXzlWbklqWVotbG9SN0oyZ0VoN0xBclVwSkxVNGZxRU1JRmZ0aTNNdnF1T3c?oc=5",
-        "date": "Sat, 22 Aug 2026 16:24:09 GMT",
-        "summary": "Is Anthropic-Driven Windfall Reshaping the Investment Case for Amazon.com (AMZN) and Its AI Ambitions? simplywall.st",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e1470c3a5052f5faf3aa2f8b950c19f6fea2424f9f28c80e1a66e137ced6281c",
-        "label": "Is Anthropic-Driven Windfall Reshaping the Investment Case for Amazon.com (AMZN) and Its AI Ambitions? - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQcW9QcGZiX2NMeHZ6SVRjcjctTGZiNndHMVRCV1ZCc2dsM1djN1lUYTJyR0l6OXd3X1Y4ajN3clhFWDRUY1ZveHV5Z2R5Qkd6cVNVbThjMUZyWjlsTmdOdERrSnVFdTFqUkFHYXlzY3VWdHJDb3J6dlhrcExvR0FHVEJDQjB6V0l3WEZ0NTg4ZGJONmZwOWktSHA4Q25BVGVkVDQ1MS1sZVpXOXRvQ3JNdEFqYnhNWDNzNUd3YURWMjJOY1dz0gHKAUFVX3lxTE1lZlpWTlZLNHNqT3FrUkE4Y1djX01FUXF6UGowNy14RXU3dVFXRUZMMG9tX1ZtMVB3NHdXRUF1ckZwM3ctanR5d2dKODhIOXVLTW0tLXN1LTFrSVA3LUpHd3NxU3daQ0EtTWdiVkZXNVVxM25INHBwM1RjbkVfWGFmTmxPWVRXS1UyaXIzdmVfUzdLbkFWYjBBSzVMNVcyXzlWbklqWVotbG9SN0oyZ0VoN0xBclVwSkxVNGZxRU1JRmZ0aTNNdnF1T3c?oc=5",
-        "date": "Sat, 22 Aug 2026 16:24:08 GMT",
-        "summary": "Is Anthropic-Driven Windfall Reshaping the Investment Case for Amazon.com (AMZN) and Its AI Ambitions? simplywall.st",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:568369a03ee61cc9015906b8db57088aae3c0984a2c83cd0fb56de792794a048",
-        "label": "2Q26 Datacenter Supply/Demand: DeepSeek to Claude - CreditSights",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "CreditSights",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeUJaV3RwOU9ZQ1BIUDZrZm5jamk2LXNIRWQ5SnlZajhTQ3pHZWJZa0dWemt4MExEQjBrQnl6ZTFiOTlSWjF6aER2d3Z4MldJa0Q0YmtaaHEtMmZjbEpOWldaWTUtU3ZtaHk1R0Z4MkNxMlpDV0U3RXRxczFudWo0S2IyUGdqOFpPSEtXYjR5NDk0QQ?oc=5",
-        "date": "Thu, 20 Aug 2026 12:45:38 GMT",
-        "summary": "2Q26 Datacenter Supply/Demand: DeepSeek to Claude CreditSights",
         "score": 2,
         "weight": 1
       }
@@ -13843,6 +13894,34 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:f5c0baf3878324543d63f016c1a2d4fc379ac12bd2960ae0c4e36c7382283680",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:f5c0baf3878324543d63f016c1a2d4fc379ac12bd2960ae0c4e36c7382283680",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:3798ff105a0ff3891629a032a76049d755287281aff782e030b6a27e686e3a42",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:3798ff105a0ff3891629a032a76049d755287281aff782e030b6a27e686e3a42",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:704b5f7f314632942e2303111252c892c9be36b8bef6e3a209930bf664d108b7",
         "type": "EVIDENCE",
@@ -15357,6 +15436,13 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:0bf3d75c239ee8713cad9a70ca7a2847af4e6e8b5c9d4e0002b521ae2ac436fc",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17413,6 +17499,13 @@
         "mentions": 1
       },
       {
+        "source": "Microsoft",
+        "target": "evidence:ef0846c8e48b094c1b2bc52dd6595135ebab3aa1c815b1a0f16236fad6796314",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:a3b94c5956fae401906aae47d49690a566f106692273ecd33e45c9a0467fedb1",
         "type": "EVIDENCE",
@@ -18310,6 +18403,48 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:35ab636c0c6d1ff5504b310e670cb4f6f1970d89aac73e6ea83a8bebbf6962bf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:35ab636c0c6d1ff5504b310e670cb4f6f1970d89aac73e6ea83a8bebbf6962bf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:ff64cf4aab8df81fc715e40e018a14ebf4647e6780152d8146d5eb2b6d7b28e2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:ff64cf4aab8df81fc715e40e018a14ebf4647e6780152d8146d5eb2b6d7b28e2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:3a295af097d8b61687d31319aa73d9879778ffbffe3e78e6cbb0f5e2f605133a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:3a295af097d8b61687d31319aa73d9879778ffbffe3e78e6cbb0f5e2f605133a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:6bcc847ca9057a0cdd02bad80855d5747df6289b0194c2577b8f8815a855b66c",
         "type": "EVIDENCE",
         "weight": 1,
@@ -19130,104 +19265,6 @@
       {
         "source": "Alibaba",
         "target": "evidence:f9766fe24f6274263c91a3a0695c94650418008335f59028517e4328d6ab1e00",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:d89062e29f7d05794f3e0b89158f6faba300a6c34868a206e93969c7f514ad07",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:d89062e29f7d05794f3e0b89158f6faba300a6c34868a206e93969c7f514ad07",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:66713c04ecabae8b6eda94656d2f8ae5854b135b938ee009ff1bf8bf4c3fa09d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:66713c04ecabae8b6eda94656d2f8ae5854b135b938ee009ff1bf8bf4c3fa09d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:e30f064adeaa48cc92559414954cd69eab84946869e37599ceecdf7de550233e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:e30f064adeaa48cc92559414954cd69eab84946869e37599ceecdf7de550233e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:7a7dbdf3e38f72272590af81ac820abd846853c07aac41d01522493b369cda55",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:7a7dbdf3e38f72272590af81ac820abd846853c07aac41d01522493b369cda55",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:145d36eb7209460e3d9b1aa58389db495bf387b1938f24a584838a62e4c21582",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:145d36eb7209460e3d9b1aa58389db495bf387b1938f24a584838a62e4c21582",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:e1470c3a5052f5faf3aa2f8b950c19f6fea2424f9f28c80e1a66e137ced6281c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:e1470c3a5052f5faf3aa2f8b950c19f6fea2424f9f28c80e1a66e137ced6281c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:568369a03ee61cc9015906b8db57088aae3c0984a2c83cd0fb56de792794a048",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:568369a03ee61cc9015906b8db57088aae3c0984a2c83cd0fb56de792794a048",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33561,6 +33598,21 @@
       "source": "CNBC"
     },
     {
+      "date": "Tue, 01 Sep 2026 17:44:47 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Microsoft",
+      "target_entity": null,
+      "amount": 41000000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Microsoft Stock Drops as $41 Billion Capex Meets 4.8% Yields - Yahoo Finance Microsoft Stock Drops as $41 Billion Capex Meets 4.8% Yields Yahoo Finance Google News",
+      "title": "Microsoft Stock Drops as $41 Billion Capex Meets 4.8% Yields - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxORGkzV21obDlVSUc5LW1DdFl1WFB6LTl5SUpDZ2EtQ0xQWkNQSzZETHVLWmY3N2RSQURpQmNUbWtsR0FxY0ZUaVM4cDJJWHhZd0w0eldzRXM0dVpWbWJwRDBuOG9qV0Jub3owemc0WHp3OWtrN0ZXLTJlM0ZIM056OXVzcmhnTmJWbFI1YlM5cjlZaEgwMHBWMjgteURBdw?oc=5",
+      "source": "Yahoo Finance"
+    },
+    {
       "date": "Tue, 04 Aug 2026 07:00:00 GMT",
       "event_type": "BENCHMARK_GAIN",
       "source_entity": null,
@@ -34103,36 +34155,36 @@
   ],
   "collector_runs": [
     {
-      "id": 675,
+      "id": 679,
       "collector": "company-economic-news",
-      "started_at": "2026-09-02T01:32:43+00:00",
-      "completed_at": "2026-09-02T01:33:02+00:00",
+      "started_at": "2026-09-02T02:46:29+00:00",
+      "completed_at": "2026-09-02T02:46:47+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 13,
+      "items_new": 10,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "170d465c-3a81-45a7-a295-798ecff22add"
+      "collection_execution_id": "7c22c78e-7427-417f-ba8a-8e2eb1444ebf"
     },
     {
-      "id": 676,
+      "id": 680,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-09-02T01:33:02+00:00",
-      "completed_at": "2026-09-02T01:33:03+00:00",
+      "started_at": "2026-09-02T02:46:48+00:00",
+      "completed_at": "2026-09-02T02:46:49+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 1,
+      "items_new": 3,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "170d465c-3a81-45a7-a295-798ecff22add"
+      "collection_execution_id": "7c22c78e-7427-417f-ba8a-8e2eb1444ebf"
     },
     {
       "id": 56,
@@ -34151,26 +34203,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 674,
+      "id": 678,
       "collector": "google-news-rss",
-      "started_at": "2026-09-02T01:32:40+00:00",
-      "completed_at": "2026-09-02T01:32:43+00:00",
+      "started_at": "2026-09-02T02:46:27+00:00",
+      "completed_at": "2026-09-02T02:46:29+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 10,
+      "items_new": 5,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "170d465c-3a81-45a7-a295-798ecff22add"
+      "collection_execution_id": "7c22c78e-7427-417f-ba8a-8e2eb1444ebf"
     },
     {
-      "id": 677,
+      "id": 681,
       "collector": "sec-edgar",
-      "started_at": "2026-09-02T01:33:03+00:00",
-      "completed_at": "2026-09-02T01:33:05+00:00",
+      "started_at": "2026-09-02T02:46:50+00:00",
+      "completed_at": "2026-09-02T02:46:52+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -34180,7 +34232,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "170d465c-3a81-45a7-a295-798ecff22add"
+      "collection_execution_id": "7c22c78e-7427-417f-ba8a-8e2eb1444ebf"
     },
     {
       "id": 57,
@@ -34200,12 +34252,12 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 991,
-  "mention_count": 8316,
+  "event_count": 992,
+  "mention_count": 8317,
   "review_counts": {
     "provisional": 0,
     "confirmed": 286,
-    "flagged": 705,
+    "flagged": 706,
     "flagged_retry_pending": 0
   },
   "feature_family": [
@@ -37038,6 +37090,6 @@
     "claimed_tier": "heuristic",
     "statement": "This reading is placed against accepted historical episodes."
   },
-  "database_state_version": "v1-8c48cb4904dece3e",
-  "database_sha256": "8c48cb4904dece3e46986ed796ef3313de1bf8c90dcdf66506ea3fc780aa025d"
+  "database_state_version": "v1-8006e6540b285df9",
+  "database_sha256": "8006e6540b285df97baa886a0d1e22dd95e965919212f8cffafcbc078215cf57"
 }
