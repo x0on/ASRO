@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T03:00:56.966009+00:00",
+  "generated_at": "2026-09-02T03:15:18.062290+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -17,14 +17,14 @@
   },
   "dimensions": {
     "external_pressure": null,
-    "circularity": null,
-    "fragility": null,
-    "counter_evidence": null,
-    "stress": null,
-    "capital": 48.35840314496684,
     "transmission": 40.0,
+    "fragility": null,
+    "stress": null,
+    "monetization": null,
     "cannibalization": null,
-    "monetization": null
+    "counter_evidence": null,
+    "circularity": null,
+    "capital": 48.35840314496684
   },
   "dimension_evidence": {
     "capital": 5,
@@ -36,14 +36,14 @@
   },
   "dimension_basis": {
     "external_pressure": "directional_estimate",
-    "circularity": "directional_estimate",
-    "fragility": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "stress": "directional_estimate",
-    "capital": "aggregate",
     "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
+    "stress": "directional_estimate",
+    "monetization": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "monetization": "directional_estimate"
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
+    "capital": "aggregate"
   },
   "dimension_direction": {
     "monetization": {
@@ -536,6 +536,13 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-09-02T03:14:44+00:00",
+      "score": null,
+      "label": "INSUFFICIENT EVIDENCE",
+      "dimensions": "{\"fragility\": null, \"stress\": null, \"monetization\": null, \"capital\": 48.35840314496684, \"transmission\": 40.0, \"counter_evidence\": null, \"cannibalization\": null, \"external_pressure\": null, \"circularity\": null}",
+      "indicator_version": "numeric-evidence-v2"
+    },
     {
       "captured_at": "2026-09-02T03:00:23+00:00",
       "score": null,
@@ -1757,6 +1764,13 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-09-02T03:14:44+00:00",
+      "score": null,
+      "label": "INSUFFICIENT EVIDENCE",
+      "dimensions": "{\"fragility\": null, \"stress\": null, \"monetization\": null, \"capital\": 48.35840314496684, \"transmission\": 40.0, \"counter_evidence\": null, \"cannibalization\": null, \"external_pressure\": null, \"circularity\": null}",
+      "indicator_version": "numeric-evidence-v2"
+    },
+    {
       "captured_at": "2026-09-02T03:00:23+00:00",
       "score": null,
       "label": "INSUFFICIENT EVIDENCE",
@@ -1827,6 +1841,982 @@
       "evidence": "Nasdaq announced that SpaceX (SPCX) would become a Nasdaq-100 component before market open on July 7, 2026. Nasdaq states that more than 200 investment products with over $800 billion in assets track the index."
     }
   ],
+  "news_alerts": {
+    "rule_version": "news-alerts-v1",
+    "window_days": 90,
+    "as_of": "2026-09-02T03:15:18.064315+00:00",
+    "counts": {
+      "pressure": 37,
+      "public_exposure": 4,
+      "context": 7
+    },
+    "items": [
+      {
+        "fact_id": "ipo-filing:sb energy",
+        "event_id": "b562f249e843a9885d491e2323e9d667518cd0401e254de91b92bcc766126827",
+        "kind": "public_exposure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "A filing opens a potential route to public investors; trading has not been established.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "FILES_FOR_IPO",
+        "title": "Softbank's SB Energy files for IPO, says it's 'substantially dependent' on OpenAI - CNBC",
+        "evidence": "Softbank's SB Energy files for IPO, says it's 'substantially dependent' on OpenAI - CNBC Softbank's SB Energy files for IPO, says it's 'substantially dependent' on OpenAI CNBC Google News",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE02WjktbGRkY3BXT2x4TmhXWGRvcnVyZHcyaFl0X2pTOEp5ZjFoa1F5cGNGSEJUME13bDBPT3ZBdWhxR2dQNTJsTjdoNUFIa3dua241V2RIXzh6OWhET0ZOUGRMVWF4cDVvRThOZTNudVhKWHRkSFYxR2g2Sll0bzDSAYQBQVVfeXFMTmtTeUdFWGpBZWpZWnVYYWVTZkZfdnJreTBqQW1TQVc0ZlZkdDhtU20wWWU5VzFTbFZJNDhsMFMwcEhuemYyUm9JRmxGNnZiRVF1ekZLTEtTWExjQ3c2RTY1QVBNSG9iZXdFSnFrVEo4dTlKbzl6VXpTYVJwWVExdS1sNE9U?oc=5",
+        "date": "2026-09-01T15:32:36+00:00",
+        "reviewed_at": "2026-09-01T19:55:28.117705+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE02WjktbGRkY3BXT2x4TmhXWGRvcnVyZHcyaFl0X2pTOEp5ZjFoa1F5cGNGSEJUME13bDBPT3ZBdWhxR2dQNTJsTjdoNUFIa3dua241V2RIXzh6OWhET0ZOUGRMVWF4cDVvRThOZTNudVhKWHRkSFYxR2g2Sll0bzDSAYQBQVVfeXFMTmtTeUdFWGpBZWpZWnVYYWVTZkZfdnJreTBqQW1TQVc0ZlZkdDhtU20wWWU5VzFTbFZJNDhsMFMwcEhuemYyUm9JRmxGNnZiRVF1ekZLTEtTWExjQ3c2RTY1QVBNSG9iZXdFSnFrVEo4dTlKbzl6VXpTYVJwWVExdS1sNE9U?oc=5",
+          "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTWxJS01CY1A4VlhIWXgyNFNwQ296MDQtM3VkYTFpWEhacWtVRmhvUDE2RlFPX09HNXJCXzJIbVdzaU9OMmNQOGxNQ0pWLThIUkJoMlFPekVFZm1fLWxyLVlYMlRHQzB1SFJkYTBPTEJVd3o3clBQaEtiMjJBN0M0TzlyVHNyU20wU3VSeVZJbjF5YjR3?oc=5",
+          "https://news.google.com/rss/articles/CBMitgFBVV95cUxOUW1wTS1rSGJZOGM0cDJGLWtmTWNPd2R5N28wdzZqWTh1WC00MVYxUlNmZ1FNaklDYVoxb1dGVXJJNlo3RTgtbzZjeFlUbTdjYk1HQVBfYzZZMWc0RkNBbFdHcEJmTklHdFczb0lGdTRvRTRXME1DZ0hKVGs1QVIzd2d1UnRTYS1KZF9UQWFNOWRmSVN0Qms5Y2QySWt3SUN1NDBSSHdHM1BIcEsyeDFiN1Vwc3B0UQ?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "58b175a9cabe72319260a8b065ac35a75541459e93f6b7703bff935973db8075",
+          "c5c361da17516b70ad8c3fc68c19cc89045165b8bef723b88a56f98f7b6b6973",
+          "e726d31d549884c56986a8e7ba75397399453d3e6bd83068bac09f4bba170b4c"
+        ]
+      },
+      {
+        "fact_id": "a10f3e8dc38a2642a4389e1e5aef812114e651746cc72efa76b383a35e5bb681",
+        "event_id": "bbbf2c54438abc6f0ce8763af509fac73220636e66a8b55cb9b05b5273e1c8a5",
+        "kind": "context",
+        "causal_role": "VALIDATION",
+        "rationale": "Revenue provides demand evidence; a report alone establishes neither growth nor profit.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "REVENUE_REPORT",
+        "title": "China's Zhipu AI revenue quintuples in first half, loss narrows - ET Enterprise AI",
+        "evidence": "China's Zhipu AI revenue quintuples in first half, loss narrows - ET Enterprise AI China's Zhipu AI revenue quintuples in first half, loss narrows ET Enterprise AI Google News",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNOWM5aG0yUjkxU2EzSnNfS3VENV9FcVprM2NKZ25adEppNGhjeWw1U1o1d21tcUhwTUZLdGtyMmgzMlE3c2JSdUZTWWlJdWVkUDYxcVVpdldtWXlCaUlxSmZjdEdUSGVRVTlvOG1CelBrX3pxWTRRaFdLMmtZcE16SG9OWXROYjhoaE5mN2ZOS1RzLTUwRzZrRUdtaFpHRXp2VkZNSkN0NGZqLVJuN0ZXcFZiSDdnYmZ1VTl5b2lpTFBCc0JpZUp0dHV3T3JFTEd3aGdRT1NB0gHWAUFVX3lxTE05YzlobTJSOTFTYTNKc19LdUQ1X0VxWmszY0pnblp0Smk0aGN5bDVTWjV3bW1xSHBNRkt0a3IyaDMyUTdzYlJ1RlNZaUl1ZWRQNjFxVWl2V21ZeUJpSXFKZmN0R1RIZVFVOW84bUJ6UGtfenFZNFFoV0sya1lwTXpIb05ZdE5iOGhoTmY3Zk5LVHMtNTBHNmtFR21oWkdFenZWRk1KQ3Q0ZmotUm43RldwVmJIN2diZnVVOXlvaWlMUEJzQmllSnR0dXdPckVMR3doZ1FPU0E?oc=5",
+        "date": "2026-09-01T10:17:03+00:00",
+        "reviewed_at": "2026-09-01T14:52:55.549171+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNOWM5aG0yUjkxU2EzSnNfS3VENV9FcVprM2NKZ25adEppNGhjeWw1U1o1d21tcUhwTUZLdGtyMmgzMlE3c2JSdUZTWWlJdWVkUDYxcVVpdldtWXlCaUlxSmZjdEdUSGVRVTlvOG1CelBrX3pxWTRRaFdLMmtZcE16SG9OWXROYjhoaE5mN2ZOS1RzLTUwRzZrRUdtaFpHRXp2VkZNSkN0NGZqLVJuN0ZXcFZiSDdnYmZ1VTl5b2lpTFBCc0JpZUp0dHV3T3JFTEd3aGdRT1NB0gHWAUFVX3lxTE05YzlobTJSOTFTYTNKc19LdUQ1X0VxWmszY0pnblp0Smk0aGN5bDVTWjV3bW1xSHBNRkt0a3IyaDMyUTdzYlJ1RlNZaUl1ZWRQNjFxVWl2V21ZeUJpSXFKZmN0R1RIZVFVOW84bUJ6UGtfenFZNFFoV0sya1lwTXpIb05ZdE5iOGhoTmY3Zk5LVHMtNTBHNmtFR21oWkdFenZWRk1KQ3Q0ZmotUm43RldwVmJIN2diZnVVOXlvaWlMUEJzQmllSnR0dXdPckVMR3doZ1FPU0E?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "a10f3e8dc38a2642a4389e1e5aef812114e651746cc72efa76b383a35e5bb681"
+        ]
+      },
+      {
+        "fact_id": "7faf6dbbb9735fa8ccbe4cef7b3347eebc1ec890c95eaafd2ba778a582cf7f3d",
+        "event_id": "c75fad7045aada4d31777ec461e6302397e00a30e73203b1b45f703cce8baebe",
+        "kind": "context",
+        "causal_role": "VALIDATION",
+        "rationale": "Revenue provides demand evidence; a report alone establishes neither growth nor profit.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "REVENUE_REPORT",
+        "title": "China's Zhipu AI revenue quintuples in first half, loss narrows - Reuters",
+        "evidence": "China's Zhipu AI revenue quintuples in first half, loss narrows - Reuters China's Zhipu AI revenue quintuples in first half, loss narrows Reuters Google News",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNGVpZmlzQ09VYkdFQktNaG5fWmNRTlZiV1czLXREc3FWcEtINjg0RF9rM2RUcER4T05pSlVMUkYzejJKWFNuTFZHYzhnZXFoaktSeU5JUTlMRC1mT2pzdkNuT19mQ2NQbTNySllWZUdLa1RhUEpFWHpSOVFpalU3dDZBMjFVaERCckE5NVVHV2NOMm9TeEJEZEUxNWFjR1k?oc=5",
+        "date": "2026-08-31T11:56:22+00:00",
+        "reviewed_at": "2026-08-31T17:37:18.959009+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNGVpZmlzQ09VYkdFQktNaG5fWmNRTlZiV1czLXREc3FWcEtINjg0RF9rM2RUcER4T05pSlVMUkYzejJKWFNuTFZHYzhnZXFoaktSeU5JUTlMRC1mT2pzdkNuT19mQ2NQbTNySllWZUdLa1RhUEpFWHpSOVFpalU3dDZBMjFVaERCckE5NVVHV2NOMm9TeEJEZEUxNWFjR1k?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "7faf6dbbb9735fa8ccbe4cef7b3347eebc1ec890c95eaafd2ba778a582cf7f3d"
+        ]
+      },
+      {
+        "fact_id": "863af108c200dbbb46179819ac376c6e5b3b108bf65bc9478085d6ffa6262bd5",
+        "event_id": "0019e7a031efc3fa2a57694e509060854b6ac9b7b5b23539e3e960c002c4acdf",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+        "evidence": "17 NVIDIA Corporation and Subsidiaries Notes to Condensed Consolidated Financial Statements (Continued) (Unaudited) Future commitments by fiscal year as of July 26, 2026, were as follows: Remainder of 2027 2028 2029 2030 2031 2032 and thereafter Total (In billions) Supply and capacity $ 92 $ 87 $ 88 $ 6 $ 5 $ 1 $ 279 Cloud service agreements 3 8 7 6 4 1 29 Data center leases not commenced \u2014 1 1 2 1 20 25 Equity investments 18 3 2 2 \u2014 \u2014 25 Capital expenditures 7 1 \u2014 \u2014 \u2014 \u2014 8 Total $ 120 $ 100 $ 98 $ 16 $ 10 $ 22 $ 366 Supply and capacity \u2013 We have partnered with our extensive network to secure the necessary supply and critical components needed to meet demand for the next several years, increasing supply commitments from $ 119 billion last quarter to $ 279 billion as of July 26, 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "date": "2026-08-26T00:00:00+00:00",
+        "reviewed_at": "2026-08-27T14:48:25.613007+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        ],
+        "underlying_fact_ids": [
+          "863af108c200dbbb46179819ac376c6e5b3b108bf65bc9478085d6ffa6262bd5"
+        ]
+      },
+      {
+        "fact_id": "5e335dadbd20437c3aec68c39495ad7c161d153fa7dd4d6f7b2e4cd0293ed946",
+        "event_id": "ef35947d6b8bb598553af420dcd392223b7fa0a4fd3ccf2072269760a4b8303e",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+        "evidence": "Derivative Financial Instrument Notional Values The table below presents the notional values of our derivatives outstanding: Jul 26, 2026 Jan 25, 2026 (In millions) Foreign currency contracts designated as accounting hedges $ 2,162 $ 1,765 Not designated as accounting hedges: Foreign currency contracts $ 2,252 $ 2,332 Land, power, and shell guarantees for AI clouds (1) $ 3,529 $ 3,530 Public company warrants $ 4,800 $ \u2014 Equity forward contract $ 1,000 $ \u2014 (1) The maximum gross exposure under all agreements is reduced as the partners make payments to the lessors over terms ranging from five to seven years.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "date": "2026-08-26T00:00:00+00:00",
+        "reviewed_at": "2026-08-27T14:48:22.068694+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        ],
+        "underlying_fact_ids": [
+          "5e335dadbd20437c3aec68c39495ad7c161d153fa7dd4d6f7b2e4cd0293ed946"
+        ]
+      },
+      {
+        "fact_id": "374dbb2edbc650b85238ff35702bbede0c40ee82628369b548a41c2b3e15009a",
+        "event_id": "780c2e904542c7525f266ac509d664500e5d1b0d7e5f71e50e22c0b325f0f3b4",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+        "evidence": "nvda-20260726 0001045810 1/31 2027 Q2 FALSE P3Y P5Y P7Y http://fasb.org/us-gaap/2026#AccruedLiabilitiesCurrent 372 546 570 xbrli:shares iso4217:USD iso4217:USD xbrli:shares xbrli:pure utr:GW nvda:segment 0001045810 2026-01-26 2026-07-26 0001045810 2026-08-21 0001045810 2026-04-27 2026-07-26 0001045810 2025-04-28 2025-07-27 0001045810 2025-01-27 2025-07-27 0001045810 2026-07-26 0001045810 2026-01-25 0001045810 us-gaap:CommonStockMember 2026-04-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-04-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-04-26 0001045810 us-gaap:RetainedEarningsMember 2026-04-26 0001045810 2026-04-26 0001045810 us-gaap:RetainedEarningsMember 2026-04-27 2026-07-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-04-27 2026-07-26 0001045810 us-gaap:CommonStockMember 2026-04-27 2026-07-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-04-27 2026-07-26 0001045810 us-gaap:CommonStockMember 2026-07-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-07-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-07-26 0001045810 us-gaap:RetainedEarningsMember 2026-07-26 0001045810 us-gaap:CommonStockMember 2025-04-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-04-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-04-27 0001045810 us-gaap:RetainedEarningsMember 2025-04-27 0001045810 2025-04-27 0001045810 us-gaap:RetainedEarningsMember 2025-04-28 2025-07-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-04-28 2025-07-27 0001045810 us-gaap:CommonStockMember 2025-04-28 2025-07-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-04-28 2025-07-27 0001045810 us-gaap:CommonStockMember 2025-07-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-07-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-07-27 0001045810 us-gaap:RetainedEarningsMember 2025-07-27 0001045810 2025-07-27 0001045810 us-gaap:CommonStockMember 2026-01-25 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-01-25 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-01-25 0001045810 us-gaap:RetainedEarningsMember 2026-01-25 0001045810 us-gaap:RetainedEarningsMember 2026-01-26 2026-07-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-01-26 2026-07-26 0001045810 us-gaap:CommonStockMember 2026-01-26 2026-07-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-01-26 2026-07-26 0001045810 us-gaap:CommonStockMember 2025-01-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-01-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-01-26 0001045810 us-gaap:RetainedEarningsMember 2025-01-26 0001045810 2025-01-26 0001045810 us-gaap:RetainedEarningsMember 2025-01-27 2025-07-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-01-27 2025-07-27 0001045810 us-gaap:CommonStockMember 2025-01-27 2025-07-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-01-27 2025-07-27 0001045810 us-gaap:CostOfRevenue 2026-04-27 2026-07-26 0001045810 us-gaap:CostOfRevenue 2025-04-28 2025-07-27 0001045810 us-gaap:CostOfRevenue 2026-01-26 2026-07-26 0001045810 us-gaap:CostOfRevenue 2025-01-27 2025-07-27 0001045810 us-gaap:ResearchAndDevelopmentExpense 2026-04-27 2026-07-26 0001045810 us-gaap:ResearchAndDevelopmentExpense 2025-04-28 2025-07-27 0001045810 us-gaap:ResearchAndDevelopmentExpense 2026-01-26 2026-07-26 0001045810 us-gaap:ResearchAndDevelopmentExpense 2025-01-27 2025-07-27 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2026-04-27 2026-07-26 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2025-04-28 2025-07-27 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2026-01-26 2026-07-26 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2025-01-27 2025-07-27 0001045810 nvda:RSUsPSUsandMarketbasedPSUsMember 2026-01-25 0001045810 nvda:RSUsPSUsandMarketbasedPSUsMember 2026-01-26 2026-07-26 0001045810 nvda:RSUsPSUsandMarketbasedPSUsMember 2026-07-26 0001045810 us-gaap:EmployeeStockMember 2026-01-26 2026-07-26 0001045810 nvda:IntangibleAssetsArisingFromBusinessCombinationMember 2026-07-26 0001045810 nvda:IntangibleAssetsArisingFromBusinessCombinationMember 2026-01-25 0001045810 nvda:PatentsAndLicensedTechnologyMember 2026-07-26 0001045810 nvda:PatentsAndLicensedTechnologyMember 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:CashAndCashEquivalentsAtCarryingValue 2026-07-26 0001045810 us-gaap:DebtSecuritiesCurrent 2026-07-26 0001045810 us-gaap:EquitySecuritiesFvNi 2026-07-26 0001045810 us-gaap:OtherAssetsNoncurrent 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-04-27 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-01-26 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2025-04-28 2025-07-27 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2025-01-27 2025-07-27 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:CashAndCashEquivalentsAtCarryingValue 2026-01-25 0001045810 us-gaap:DebtSecuritiesCurrent 2026-01-25 0001045810 us-gaap:EquitySecuritiesFvNi 2026-01-25 0001045810 us-gaap:OtherAssetsNoncurrent 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-01-25 0001045810 us-gaap:EquitySecuritiesMember 2026-07-26 0001045810 nvda:CarryingValuesAndFutureCommittedAmountsMember 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerAMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerBMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerCMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerDMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerEMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerFMember us-gaap:AccountsReceivableMember 2025-01-27 2026-01-25 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerGMember us-gaap:AccountsReceivableMember 2025-01-27 2026-01-25 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerHMember us-gaap:AccountsReceivableMember 2025-01-27 2026-01-25 0001045810 nvda:InvestmentGradeCustomerMember srt:MinimumMember 2026-07-26 0001045810 nvda:InvestmentGradeCustomerMember srt:MaximumMember 2026-07-26 0001045810 nvda:NatureOfExpenseCustomerAdvancesAndDeferralsMember 2026-07-26 0001045810 nvda:NatureOfExpenseCustomerAdvancesAndDeferralsMember 2026-01-25 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2026-04-27 2026-07-26 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2025-04-28 2025-07-27 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2026-01-26 2026-07-26 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2025-01-27 2025-07-27 0001045810 2026-07-27 2026-07-26 0001045810 us-gaap:ForeignExchangeForwardMember 2026-01-26 2026-07-26 0001045810 nvda:PublicCompanyWarrantsMember srt:MinimumMember 2026-07-26 0001045810 nvda:PublicCompanyWarrantsMember srt:MaximumMember 2026-07-26 0001045810 us-gaap:NondesignatedMember nvda:PublicCompanyWarrantsMember 2026-07-26 0001045810 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:ForeignExchangeForwardMember 2026-07-26 0001045810 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:ForeignExchangeForwardMember 2026-01-25 0001045810 us-gaap:NondesignatedMember us-gaap:ForeignExchangeForwardMember 2026-07-26 0001045810 us-gaap:NondesignatedMember us-gaap:ForeignExchangeForwardMember 2026-01-25 0001045810 us-gaap:NondesignatedMember nvda:LandPowerAndShellGuaranteesForAICloudsMember 2026-07-26 0001045810 us-gaap:NondesignatedMember nvda:LandPowerAndShellGuaranteesForAICloudsMember 2026-01-25 0001045810 us-gaap:NondesignatedMember nvda:PublicCompanyWarrantsMember 2026-01-25 0001045810 us-gaap:NondesignatedMember nvda:EquityForwardContractMember 2026-07-26 0001045810 us-gaap:NondesignatedMember nvda:EquityForwardContractMember 2026-01-25 0001045810 nvda:LandPowerAndShellGuaranteesForAICloudsMember srt:MinimumMember 2026-01-26 2026-07-26 0001045810 nvda:LandPowerAndShellGuaranteesForAICloudsMember srt:MaximumMember 2026-01-26 2026-07-26 0001045810 nvda:LandPowerAndShellGuaranteesForAICloudsMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2026NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2026NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2026NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesOneMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesOneMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesOneMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesTwoMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesTwoMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesTwoMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2029NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2029NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2029NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2030NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2030NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2030NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesOneMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesOneMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesOneMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesTwoMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesTwoMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesTwoMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2033NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2033NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2033NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2036NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2036NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2036NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2040NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2040NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2040NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2046NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2046NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2046NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2050NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2050NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2050NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2056NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2056NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2056NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2060NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2060NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2060NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember 2026-06-30 0001045810 us-gaap:CommercialPaperMember nvda:CommercialPaperProgramMember 2026-07-26 0001045810 nvda:SupplyAndCapacityCommitmentsMember 2026-07-26 0001045810 nvda:CloudServiceAgreementCommitmentsMember 2026-07-26 0001045810 nvda:DataCenterLeaseNotYetCommencedMember 2026-07-26 0001045810 nvda:EquityInvestmentCommitmentsMember 2026-07-26 0001045810 nvda:CapitalExpenditureObligationsMember 2026-07-26 0001045810 nvda:FuturePurchaseAndOtherCommitmentsMember 2026-07-26 0001045810 nvda:SupplyAndCapacityCommitmentsMember 2026-04-26 0001045810 nvda:AICloudPartnershipCommitmentsMember 2026-07-26 0001045810 nvda:DataCenterForThirdPartyLeaseNotYetCommencedMember 2026-07-26 0001045810 nvda:FutureAdditionalCommitmentsMember 2026-07-26 0001045810 us-gaap:FinancialGuaranteeMember us-gaap:SubsequentEventMember nvda:SBEnergyCorp.Member 2026-08-31 0001045810 us-gaap:FinancialGuaranteeMember 2026-07-26 0001045810 2026-05-18 0001045810 2026-01-26 2026-04-26 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2026-04-27 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2026-04-27 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember 2026-04-27 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2025-04-28 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2025-04-28 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember 2025-04-28 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2026-01-26 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2026-01-26 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember 2026-01-26 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2025-01-27 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2025-01-27 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember 2025-01-27 2025-07-27 0001045810 nvda:ComputeAndNetworkingSegmentMember 2026-04-27 2026-07-26 0001045810 nvda:ComputeAndNetworkingSegmentMember 2025-04-28 2025-07-27 0001045810 nvda:ComputeAndNetworkingSegmentMember 2026-01-26 2026-07-26 0001045810 nvda:ComputeAndNetworkingSegmentMember 2025-01-27 2025-07-27 0001045810 nvda:GraphicsSegmentMember 2026-04-27 2026-07-26 0001045810 nvda:GraphicsSegmentMember 2025-04-28 2025-07-27 0001045810 nvda:GraphicsSegmentMember 2026-01-26 2026-07-26 0001045810 nvda:GraphicsSegmentMember 2025-01-27 2025-07-27 0001045810 us-gaap:CorporateNonSegmentMember 2026-04-27 2026-07-26 0001045810 us-gaap:CorporateNonSegmentMember 2025-04-28 2025-07-27 0001045810 us-gaap:CorporateNonSegmentMember 2026-01-26 2026-07-26 0001045810 us-gaap:CorporateNonSegmentMember 2025-01-27 2025-07-27 0001045810 country:US 2026-04-27 2026-07-26 0001045810 country:US 2025-04-28 2025-07-27 0001045810 country:US 2026-01-26 2026-07-26 0001045810 country:US 2025-01-27 2025-07-27 0001045810 country:TW 2026-04-27 2026-07-26 0001045810 country:TW 2025-04-28 2025-07-27 0001045810 country:TW 2026-01-26 2026-07-26 0001045810 country:TW 2025-01-27 2025-07-27 0001045810 nvda:ChinaIncludingHongKongMember 2026-04-27 2026-07-26 0001045810 nvda:ChinaIncludingHongKongMember 2025-04-28 2025-07-27 0001045810 nvda:ChinaIncludingHongKongMember 2026-01-26 2026-07-26 0001045810 nvda:ChinaIncludingHongKongMember 2025-01-27 2025-07-27 0001045810 nvda:OtherCountriesMember 2026-04-27 2026-07-26 0001045810 nvda:OtherCountriesMember 2025-04-28 2025-07-27 0001045810 nvda:OtherCountriesMember 2026-01-26 2026-07-26 0001045810 nvda:OtherCountriesMember 2025-01-27 2025-07-27 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2026-04-27 2026-07-26 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2026-01-26 2026-07-26 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2025-04-28 2025-07-27 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2025-01-27 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer1Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-04-27 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer2Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer3Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer4Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer5Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-04-28 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer6Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-04-28 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer7Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-01-27 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer8Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-01-27 2025-07-27 0001045810 nvda:DataCenterMember 2026-04-27 2026-07-26 0001045810 nvda:DataCenterMember 2025-04-28 2025-07-27 0001045810 nvda:DataCenterMember 2026-01-26 2026-07-26 0001045810 nvda:DataCenterMember 2025-01-27 2025-07-27 0001045810 nvda:HyperscaleMember 2026-04-27 2026-07-26 0001045810 nvda:HyperscaleMember 2025-04-28 2025-07-27 0001045810 nvda:HyperscaleMember 2026-01-26 2026-07-26 0001045810 nvda:HyperscaleMember 2025-01-27 2025-07-27 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2026-04-27 2026-07-26 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2025-04-28 2025-07-27 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2026-01-26 2026-07-26 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2025-01-27 2025-07-27 0001045810 nvda:EdgeComputingMember 2026-04-27 2026-07-26 0001045810 nvda:EdgeComputingMember 2025-04-28 2025-07-27 0001045810 nvda:EdgeComputingMember 2026-01-26 2026-07-26 0001045810 nvda:EdgeComputingMember 2025-01-27 2025-07-27 0001045810 nvda:AartiShahMember 2026-04-27 2026-07-26 0001045810 nvda:AartiShahMember 2026-07-26 0001045810 nvda:TimothyS.TeterMember 2026-04-27 2026-07-26 0001045810 nvda:TimothyS.TeterMember 2026-07-26 0001045810 nvda:ColetteM.KressMember 2026-04-27 2026-07-26 0001045810 nvda:ColetteM.KressMember 2026-07-26 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "date": "2026-08-26T00:00:00+00:00",
+        "reviewed_at": "2026-08-27T14:48:22.068694+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        ],
+        "underlying_fact_ids": [
+          "374dbb2edbc650b85238ff35702bbede0c40ee82628369b548a41c2b3e15009a"
+        ]
+      },
+      {
+        "fact_id": "2208ab933e7e82945b133ff1db15cd812ac3b0a08f10c50e56e5106731d0c655",
+        "event_id": "623b94d2b704654563d8dd6b42d4c7e4f7496c5cb5e647c034cb801ba51a5899",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+        "evidence": "guarantees 105.0 Total $ 108.5 Accrual for Product Warranty Liabilities The estimated product returns and product warranty activity consisted of the following: Three Months Ended Six Months Ended Jul 26, 2026 Jul 27, 2025 Jul 26, 2026 Jul 27, 2025 (In millions) Balance at beginning of period $ 2,948 $ 2,080 $ 2,807 $ 1,290 Additions 391 220 720 1,090 Utilization ( 401 ) ( 156 ) ( 589 ) ( 236 ) Balance at end of period $ 2,938 $ 2,144 $ 2,938 $ 2,144 For the second quarter and first half of fiscal years 2027 and 2026, the additions in product warranty liabilities primarily related to our Compute & Networking segment.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "date": "2026-08-26T00:00:00+00:00",
+        "reviewed_at": "2026-08-27T14:48:35.208948+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        ],
+        "underlying_fact_ids": [
+          "2208ab933e7e82945b133ff1db15cd812ac3b0a08f10c50e56e5106731d0c655"
+        ]
+      },
+      {
+        "fact_id": "1b759e406b40ac1ddfd154da0a7370cfe95b5b1ea69666ae8e99bf059efd7726",
+        "event_id": "a5e64148db71b4fdad21a9c37ada7bdfa2066d78eb22a41c03f309e56ec8108b",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+        "evidence": "The guarantees terminate upon certain events, including OpenAI achieving a satisfactory credit rating or after each respective lease term has completed.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "date": "2026-08-26T00:00:00+00:00",
+        "reviewed_at": "2026-08-27T14:48:22.068694+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        ],
+        "underlying_fact_ids": [
+          "1b759e406b40ac1ddfd154da0a7370cfe95b5b1ea69666ae8e99bf059efd7726"
+        ]
+      },
+      {
+        "fact_id": "3dce170c0ceee44f46ba100407a24527cd41803f5e5f5e4d79ca4baa13320620",
+        "event_id": "8a1b658ab235ef0bb9d6846e80bf11f6bbcdccec6a62260ff8856755aca15ca3",
+        "kind": "context",
+        "causal_role": "RESILIENCE",
+        "rationale": "Cash flow informs self-funding capacity; its sign and trend must be read from the source.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
+        "evidence": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%.",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
+        "date": "2026-08-23T14:21:29+00:00",
+        "reviewed_at": "2026-08-24T04:30:53.770156+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "3dce170c0ceee44f46ba100407a24527cd41803f5e5f5e4d79ca4baa13320620"
+        ]
+      },
+      {
+        "fact_id": "ea20cef94a0f8e4f2c9e9ed78cb4b3dbed35b5669bbd3c1e65c1beeb049a3ddf",
+        "event_id": "75e486f3c2b3ebd7a2480632593fbd0abb2bbc47d6164535934aa07d1df7200a",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView",
+        "evidence": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds TradingView Google News",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXl3SlNrdnVqZGdqS2QyOXpwREFKbUV6WEp1QXhNLU9rVkZkYTB0UmdaSFFVLU9nWUZsMTdSam5RcEE0RXNpdm4yd0V3T0ZIbnV6WUV4VTlwd2JfQmdFTUVCR0FEOHFBMmtVM3hKRndPOUVDLTl4dmxPenh4cHJ1QlZ3RGQ4cjFEVjQ5Q3psWnRuZDFBMjBndHBSNnMzM0l6czNkZTBLQmM1VmRRVWN3ZGlvODZFV1IwellmZUhHcHlMX1VSYjlFUWVVRk9SUTBlWEVaQg?oc=5",
+        "date": "2026-08-22T07:13:48+00:00",
+        "reviewed_at": "2026-08-24T04:30:43.438169+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXl3SlNrdnVqZGdqS2QyOXpwREFKbUV6WEp1QXhNLU9rVkZkYTB0UmdaSFFVLU9nWUZsMTdSam5RcEE0RXNpdm4yd0V3T0ZIbnV6WUV4VTlwd2JfQmdFTUVCR0FEOHFBMmtVM3hKRndPOUVDLTl4dmxPenh4cHJ1QlZ3RGQ4cjFEVjQ5Q3psWnRuZDFBMjBndHBSNnMzM0l6czNkZTBLQmM1VmRRVWN3ZGlvODZFV1IwellmZUhHcHlMX1VSYjlFUWVVRk9SUTBlWEVaQg?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "ea20cef94a0f8e4f2c9e9ed78cb4b3dbed35b5669bbd3c1e65c1beeb049a3ddf"
+        ]
+      },
+      {
+        "fact_id": "7f985fd4da0a724116b8402436f45b3a2d3cafdfd30316f8497908660aa73ad8",
+        "event_id": "0152cf2f7b96974851b80f4599a7ecf72e9fe088b77433e871e1d4228690f435",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Nvidia scales back financing guarantee for OpenAI data center - Network World",
+        "evidence": "Nvidia scales back financing guarantee for OpenAI data center - Network World Nvidia scales back financing guarantee for OpenAI data center Network World Google News",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNenFIcHVpc0dKamEyb01mdmNPY1RLSWZxNm1zUEtuUDdhRTBYa1lsOENRMUFjWHc4SHlnSkVCd2JSV25ZVjV2OFBCQmotYm1EODNrRzFGTDVDSnhrTFJaNW9EM1BLbXN5M3kteEkwYjdXa05XeWRVU3NxRldIYWVRVnlKRUZlWEQzMFlFcEtSV0ZWeFNOeWdaeDY3NnZCTGlwcHBGV1lnUFNnYjc5dVF3ZA?oc=5",
+        "date": "2026-08-21T16:14:10+00:00",
+        "reviewed_at": "2026-08-21T20:22:09.195798+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMisAFBVV95cUxNenFIcHVpc0dKamEyb01mdmNPY1RLSWZxNm1zUEtuUDdhRTBYa1lsOENRMUFjWHc4SHlnSkVCd2JSV25ZVjV2OFBCQmotYm1EODNrRzFGTDVDSnhrTFJaNW9EM1BLbXN5M3kteEkwYjdXa05XeWRVU3NxRldIYWVRVnlKRUZlWEQzMFlFcEtSV0ZWeFNOeWdaeDY3NnZCTGlwcHBGV1lnUFNnYjc5dVF3ZA?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "7f985fd4da0a724116b8402436f45b3a2d3cafdfd30316f8497908660aa73ad8"
+        ]
+      },
+      {
+        "fact_id": "770295c13012b49737d4634fa42c4fa67263695774c9dbd163407189d2fe14a5",
+        "event_id": "bb899c5eca88e8275c3054e46a04de93add1d1723ed706dee244c0fe16504295",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Will AWS\u2019s AI Surge and $220 Billion Capex Plan Change Amazon.com\u2019s (AMZN) Narrative - Yahoo Finance",
+        "evidence": "Will AWS\u2019s AI Surge and $220 Billion Capex Plan Change Amazon.com\u2019s (AMZN) Narrative - Yahoo Finance Will AWS\u2019s AI Surge and $220 Billion Capex Plan Change Amazon.com\u2019s (AMZN) Narrative Yahoo Finance Google News",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWGEzX2Jhdk4tcmx3NHBNUDk3YlZvOWw4UFZ6enUyZ3FTZ3BRTTRyU0p0b2tiNkRDYkZZNzY5TFNnc0tOVnI1cWNxTDdtaS1XT3JFemhERkJjam5FZDczUUdLcVFINFhsTGlEZ3BGalZuQkpGaF9SUjJOM3VFNWEyOTNuYXpSSHpTUkdacThKTUcyUQ?oc=5",
+        "date": "2026-08-19T23:16:35+00:00",
+        "reviewed_at": "2026-08-21T20:22:49.007822+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWGEzX2Jhdk4tcmx3NHBNUDk3YlZvOWw4UFZ6enUyZ3FTZ3BRTTRyU0p0b2tiNkRDYkZZNzY5TFNnc0tOVnI1cWNxTDdtaS1XT3JFemhERkJjam5FZDczUUdLcVFINFhsTGlEZ3BGalZuQkpGaF9SUjJOM3VFNWEyOTNuYXpSSHpTUkdacThKTUcyUQ?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "770295c13012b49737d4634fa42c4fa67263695774c9dbd163407189d2fe14a5"
+        ]
+      },
+      {
+        "fact_id": "c1ffbb3542e52e54450539960d1da98afd06c05b6d0b9883c29f147a42c2619d",
+        "event_id": "246715ee2cb49bdcdc0ef5e3b4267a8a85e42df51df7fa603ddf429bb16d0c63",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "NVIDIA SEC filing: 8-K (2026-08-17)",
+        "evidence": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
+        "date": "2026-08-17T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T22:05:04.473088+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+        ],
+        "underlying_fact_ids": [
+          "c1ffbb3542e52e54450539960d1da98afd06c05b6d0b9883c29f147a42c2619d"
+        ]
+      },
+      {
+        "fact_id": "ae2a813b1ede7391c261afdfb8fffd5af0f2b99f5ab214b473ea34599a59fcee",
+        "event_id": "84c75791d7d59141c66029f5e518480e09ba496f0ac6ee9cb0797c998f08f36d",
+        "kind": "context",
+        "causal_role": "VALIDATION",
+        "rationale": "Revenue provides demand evidence; a report alone establishes neither growth nor profit.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "REVENUE_REPORT",
+        "title": "OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO - New York Post",
+        "evidence": "OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO - New York Post OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO New York Post Google News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd25memJGdXMzVjI2QS1lT0ZsQ3luR0ZQU3FJTXlST1drQTRmdFB5RU5JZ0txOEo4TkI1TUJDWG8zc1NWMGRDdG5KbzZqdDBOeWs2V1UzNUFoWWtkd2NNcU1GXzdEYWxCMXYycVpzQWwwQ0E0QjJEX0U1YVBSSzFFcG9mYy1KYjloUHlNMUt6YkYzYXVDS3NoNXJKNjBoTkFLTHJUdEFn?oc=5",
+        "date": "2026-08-13T07:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:22:47.105137+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd25memJGdXMzVjI2QS1lT0ZsQ3luR0ZQU3FJTXlST1drQTRmdFB5RU5JZ0txOEo4TkI1TUJDWG8zc1NWMGRDdG5KbzZqdDBOeWs2V1UzNUFoWWtkd2NNcU1GXzdEYWxCMXYycVpzQWwwQ0E0QjJEX0U1YVBSSzFFcG9mYy1KYjloUHlNMUt6YkYzYXVDS3NoNXJKNjBoTkFLTHJUdEFn?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "ae2a813b1ede7391c261afdfb8fffd5af0f2b99f5ab214b473ea34599a59fcee"
+        ]
+      },
+      {
+        "fact_id": "fabd5e3669784947516164c4b68ebe1846e22e30a341576f35dbb1721f23856d",
+        "event_id": "cd6120296f4ed75f6d75b53fd8a99cbf6c9e6e249c7ad91d65a62170a316cfa0",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "An investment increases capital exposed to the business succeeding.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "INVESTS_IN",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
+        "evidence": "The carrying value of the Company's investment in the JV was $ 44 million and $ 51 million as of June 30, 2026 and December 31, 2025, respectively.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "date": "2026-08-12T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:50.957213+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "fabd5e3669784947516164c4b68ebe1846e22e30a341576f35dbb1721f23856d"
+        ]
+      },
+      {
+        "fact_id": "f9ad148b28655039bd481e3b0e3c79aab0b88d208fba0e1be64a143acc04849f",
+        "event_id": "79a5f7dad90ca7dc9c7bcd1ff85c8370316708e286abf1950fa48211a4cfce95",
+        "kind": "pressure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Lending connects the lender to the borrower's ability to repay.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "LENDS_TO",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
+        "evidence": "In August 2026, the Company made a $ 1.2 billion draw down on the Revolving Credit Facility.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "date": "2026-08-12T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:25:03.564984+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "f9ad148b28655039bd481e3b0e3c79aab0b88d208fba0e1be64a143acc04849f"
+        ]
+      },
+      {
+        "fact_id": "dcf27fa6934d09c202c61e3785400010fa6ee46ab140993d9c05e894a60b432a",
+        "event_id": "db702e4f016f6c68eef1ea33aec7b3efe7dc2245c42ff7e57b1479dd1688fffa",
+        "kind": "pressure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Lending connects the lender to the borrower's ability to repay.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "LENDS_TO",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
+        "evidence": "Revolving Credit Facility As of June 30, 2026 and December 31, 2025, the outstanding balances associated with letters of credit were $ 533 million and $ 294 million, respectively.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "date": "2026-08-12T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:57.101622+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "dcf27fa6934d09c202c61e3785400010fa6ee46ab140993d9c05e894a60b432a"
+        ]
+      },
+      {
+        "fact_id": "b64637a5163e5522623e0a6b1ec277b45e36253498256c0d46dddc8ea083d26b",
+        "event_id": "5f4432ee2ea9f45b50edf25be7ca6e1c7756c1b79cf9f93439d0bd181cbe9605",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
+        "evidence": "The Company's maximum exposure to loss with respect to the JV includes (i) the carrying value of the Company's investment, (ii) up to $ 95 million related to a guarantee for certain contingent consideration payable to a third-party by the JV upon the achievement of certain milestones, (iii) lease prepayment of $ 37 million, and (iv) potential requirements to fund the construction and development of the data center campus to the extent the JV is unable to secure third-party financing.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "date": "2026-08-12T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:57.101622+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "b64637a5163e5522623e0a6b1ec277b45e36253498256c0d46dddc8ea083d26b"
+        ]
+      },
+      {
+        "fact_id": "4ed7aca86ca794e27dbdccae0934e4a4adf79b02883fb90b378a6f5ffd300aa6",
+        "event_id": "a64d4614b5e1c2d35de121489652299a2686e13f5c042de3a7d6b95c46a2a783",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "An investment increases capital exposed to the business succeeding.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "INVESTS_IN",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
+        "evidence": "The carrying value of the Company's investment in these VIEs was $ 479 million as of June 30, 2026, of which $ 221 million is accounted for as an equity method investment and is included in other non-current assets on the condensed consolidated balance sheets.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "date": "2026-08-12T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:50.957213+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "4ed7aca86ca794e27dbdccae0934e4a4adf79b02883fb90b378a6f5ffd300aa6"
+        ]
+      },
+      {
+        "fact_id": "023e26db4528bb03e35ff68360d94db487b52c316b9113dd8cd6a930abe77fad",
+        "event_id": "ec39889404985814e489d2c86fde06ba5db172d840b2a26663e07c92513de028",
+        "kind": "pressure",
+        "causal_role": "STRESS",
+        "rationale": "An impairment recognizes a reduction in asset value.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "IMPAIRMENT",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
+        "evidence": "Goodwill and Intangible Assets Goodwill There were no additions or impairment charges recorded to goodwill for any of the periods presented.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "date": "2026-08-12T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:57.101622+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "023e26db4528bb03e35ff68360d94db487b52c316b9113dd8cd6a930abe77fad"
+        ]
+      },
+      {
+        "fact_id": "f6f961c63f339b36e0fa3e71a662c97044398bb12487f1a980622328dfd01f83",
+        "event_id": "fca46010a8e8f64273ccb0fa2a8c57e426f44e140f45c3b5480986db9da6b79c",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com",
+        "evidence": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" finance.biggo.com Google News",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tQ3M3Vk8tM1haT2Y0Y0dIU2VNOVRmQ2dVUkl1czcxYmFYcnlQQnQ2WmszSmJKNFhxdXp2OHFGZFluRVpJN1Z2TWgxaWk2TndIX0ZYZXY5OUxUVnBjMmpDN1BtYmlSZl94bGlYMHNJYTZndmFXdmc?oc=5",
+        "date": "2026-08-11T07:00:00+00:00",
+        "reviewed_at": "2026-08-21T20:22:22.159337+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tQ3M3Vk8tM1haT2Y0Y0dIU2VNOVRmQ2dVUkl1czcxYmFYcnlQQnQ2WmszSmJKNFhxdXp2OHFGZFluRVpJN1Z2TWgxaWk2TndIX0ZYZXY5OUxUVnBjMmpDN1BtYmlSZl94bGlYMHNJYTZndmFXdmc?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "f6f961c63f339b36e0fa3e71a662c97044398bb12487f1a980622328dfd01f83"
+        ]
+      },
+      {
+        "fact_id": "6870fbba409e47cc2e1c538f43aac0b9d90d4366186196196950d358337ec761",
+        "event_id": "d093a79dd6b9a698081125c1035960363c9459cbc6b5e68c3c67906467b0f0df",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' - Yahoo Finance",
+        "evidence": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' - Yahoo Finance Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' Yahoo Finance Google News",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMW12cVZQVTA4UGZWU1lWZ0tTODRDLXlaNllVd2dUYkRHR1VJUS11X181NXFvaGpxNklCNGxkaTZsemsxRFhDQ0NQek1BTk9YOFY0MmhmNmpCUUhrUGVvTjU1SGhlTHdOS2hqakVWN0Z3d2FPSjlILXgwYVB0N0lsbGhjYjJyV19GTURMNTN6cDFoMWFVc1Aw?oc=5",
+        "date": "2026-08-01T07:00:00+00:00",
+        "reviewed_at": "2026-08-21T20:22:22.159337+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMW12cVZQVTA4UGZWU1lWZ0tTODRDLXlaNllVd2dUYkRHR1VJUS11X181NXFvaGpxNklCNGxkaTZsemsxRFhDQ0NQek1BTk9YOFY0MmhmNmpCUUhrUGVvTjU1SGhlTHdOS2hqakVWN0Z3d2FPSjlILXgwYVB0N0lsbGhjYjJyV19GTURMNTN6cDFoMWFVc1Aw?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "6870fbba409e47cc2e1c538f43aac0b9d90d4366186196196950d358337ec761"
+        ]
+      },
+      {
+        "fact_id": "d91cec3cde6b19d7f7cacf38b450bed4c423f8f9ce2167bdf15cd982c8d8799c",
+        "event_id": "23233bb98737cbb495026d585b9a6b9a1d32d9b31304e413cee18ea837c33507",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "An investment increases capital exposed to the business succeeding.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "INVESTS_IN",
+        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
+        "evidence": "We invested $28.7 billion in OpenAI\u2019s Series C Preferred Stock for the six months ended June 30, 2026, including $13.7 billion invested in Q2 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "date": "2026-07-31T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:15.783077+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "d91cec3cde6b19d7f7cacf38b450bed4c423f8f9ce2167bdf15cd982c8d8799c"
+        ]
+      },
+      {
+        "fact_id": "8101c841326c3639ed510a3e61363d29992173d3f2f072287217d33b08dbc2d0",
+        "event_id": "3081d286e6639c0a570d019c4321243b3a58fa424bf1c6f1dd324fe38b435524",
+        "kind": "context",
+        "causal_role": "RESILIENCE",
+        "rationale": "Cash flow informs self-funding capacity; its sign and trend must be read from the source.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
+        "evidence": "Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended June 30, 2025 and 2026 (in millions): Twelve Months Ended June 30, 2025 2026 Net cash provided by (used in) operating activities $ 121,137 $ 161,403 Purchases of property and equipment, net of proceeds from sales and incentives (102,953) (169,007) Free cash flow $ 18,184 $ (7,604) Net cash provided by (used in) investing activities $ (123,569) $ (216,775) Net cash provided by (used in) financing activities $ (8,652) $ 75,160 Free cash flow has limitations as it omits certain components of the overall cash flow statement and does not represent the residual cash flow available for discretionary expenditures.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "date": "2026-07-31T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:29.736349+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "8101c841326c3639ed510a3e61363d29992173d3f2f072287217d33b08dbc2d0"
+        ]
+      },
+      {
+        "fact_id": "5b3b08032fefaa313305846597a2490a02e6a204a4f7b34f46c5b5295428d393",
+        "event_id": "5ae1e06488e415cb8f27a00e65ab0804201173fb4ccb0a50549720eb7b3c0f47",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
+        "evidence": "Cash capital expenditures were $31.4 billion and $53.1 billion during Q2 2025 and Q2 2026, and $55.6 billion and $96.3 billion for the six months ended June 30, 2025 and 2026, which primarily reflect investments in technology infrastructure (the majority of which is to support AWS business growth) and in additional capacity to support our fulfillment network, both of which we expect to increase in 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "date": "2026-07-31T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:15.783077+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "5b3b08032fefaa313305846597a2490a02e6a204a4f7b34f46c5b5295428d393"
+        ]
+      },
+      {
+        "fact_id": "53d18c4d90201743b9b9ddbb05bca18470fdc173de3ff1b089154b46532cb185",
+        "event_id": "c312b5f38153159a92bc9bd579c13577790563517208d570046da2d4a6419d5a",
+        "kind": "pressure",
+        "causal_role": "STRESS",
+        "rationale": "An impairment recognizes a reduction in asset value.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "IMPAIRMENT",
+        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
+        "evidence": "The inventory valuation allowance, representing a write-down of inventory, was $ 3.3 billion and $ 3.0 billion as of December 31, 2025 and June 30, 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "date": "2026-07-31T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:05.639780+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "53d18c4d90201743b9b9ddbb05bca18470fdc173de3ff1b089154b46532cb185"
+        ]
+      },
+      {
+        "fact_id": "21fca1d3f7476cdc33b3be04706ba98834972f6895548a8e6a0f1b68de49d5e2",
+        "event_id": "2bcb22c70b9a749483d922beed3393f38acc7145ab5a7d942350082e9eacf077",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "An investment increases capital exposed to the business succeeding.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "INVESTS_IN",
+        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
+        "evidence": "We account for our $ 28.7 billion investment in Series C Preferred Stock recorded on our consolidated balance sheet as of June 30, 2026, and the remaining Commitment Amount as a component of our equity investments in private companies not accounted for under the equity-method, with future adjustments for observable changes in prices or impairments representing Level 3 fair value measurements recognized in \u201cOther income (expense), net\u201d on our consolidated statements of operations.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "date": "2026-07-31T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:05.639780+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "21fca1d3f7476cdc33b3be04706ba98834972f6895548a8e6a0f1b68de49d5e2"
+        ]
+      },
+      {
+        "fact_id": "2387e4ddbe33414fc0d0999947b9ef698eaf954139204fdd2d7d66776f7d5faa",
+        "event_id": "5dab5a5496cf517028c5974e1392fa742356d0e3d990cb44c16e7ef8b1e50e1b",
+        "kind": "context",
+        "causal_role": "RESILIENCE",
+        "rationale": "Cash flow informs self-funding capacity; its sign and trend must be read from the source.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "AWS is \u2018booming,\u2019 but Amazon\u2019s free cash flow turns negative on record AI spending - GeekWire",
+        "evidence": "AWS is \u2018booming,\u2019 but Amazon\u2019s free cash flow turns negative on record AI spending - GeekWire AWS is \u2018booming,\u2019 but Amazon\u2019s free cash flow turns negative on record AI spending GeekWire Google News",
+        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWW5BZ3pMMDVlX1p5WVl4RW9scXZGdk90X3hLb01SdGZmTkNMaE5PV2syajJiZ0hfb1hUQjh4Q1lxQWdtRmtGS2lpT2ttOW9ZRjY2eWJQdWVrQzV0d0U2bG9wNU1aMmxwVjVWUjNGOTN6ZW1MSW4xTXVjeHJpWVBuWTRmTF9GeGVKbTB5WElQUmdCdkFzN3d5Q2RFbHAtajVuaWVtMjZRV1JUc3pfUnc?oc=5",
+        "date": "2026-07-30T07:00:00+00:00",
+        "reviewed_at": "2026-08-21T22:22:02.616989+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWW5BZ3pMMDVlX1p5WVl4RW9scXZGdk90X3hLb01SdGZmTkNMaE5PV2syajJiZ0hfb1hUQjh4Q1lxQWdtRmtGS2lpT2ttOW9ZRjY2eWJQdWVrQzV0d0U2bG9wNU1aMmxwVjVWUjNGOTN6ZW1MSW4xTXVjeHJpWVBuWTRmTF9GeGVKbTB5WElQUmdCdkFzN3d5Q2RFbHAtajVuaWVtMjZRV1JUc3pfUnc?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "2387e4ddbe33414fc0d0999947b9ef698eaf954139204fdd2d7d66776f7d5faa"
+        ]
+      },
+      {
+        "fact_id": "b97aa0a24790b6533986cefa5ef8bd2fb0781157db72c29b5baa15cc1056119f",
+        "event_id": "7c51992261f51d31dbb1af025a5288861e02888083a699d7dbb72a04306929c7",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "Lower prices can pressure margins; volume and cost effects need separate evidence.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "PRICE_CUT",
+        "title": "OpenAI cuts GPT-5.6 Luna and Terra API prices",
+        "evidence": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026.",
+        "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+        "date": "2026-07-30T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T20:39:49.582696+00:00",
+        "sources": [
+          "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/"
+        ],
+        "underlying_fact_ids": [
+          "b97aa0a24790b6533986cefa5ef8bd2fb0781157db72c29b5baa15cc1056119f"
+        ]
+      },
+      {
+        "fact_id": "83a51510342dae1bcc9dba56e6a8681a64aaed8270641c7a31f16771d2a40383",
+        "event_id": "3c6e9519d84bf54a83d8924ac6e2987b69509614db25045f65dd6e0bffdad3de",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Meta SEC filing: 10-Q (2026-07-30)",
+        "evidence": "We will also provide residual value guarantees with a maximum aggregate exposure of approximately $ 13 billion.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "date": "2026-07-30T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:39.458394+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "83a51510342dae1bcc9dba56e6a8681a64aaed8270641c7a31f16771d2a40383"
+        ]
+      },
+      {
+        "fact_id": "4f7e1f76c8bee9ed03bf106c1312ea6c4ce576dbc3ff313a11a5ef0345a75e03",
+        "event_id": "e9ed2718b6311bdfeb41d3251f866098a4474027469b7c1b6a640d311142561c",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Meta SEC filing: 10-Q (2026-07-30)",
+        "evidence": "In addition, we have provided residual value guarantees (RVG) with an aggregate threshold of approximately $ 28 billion that decreases over time.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "date": "2026-07-30T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:32.613682+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "4f7e1f76c8bee9ed03bf106c1312ea6c4ce576dbc3ff313a11a5ef0345a75e03"
+        ]
+      },
+      {
+        "fact_id": "49a8bcbb20732b7f8252924da6fef0068a32b0867246667221538b995cadb537",
+        "event_id": "31159c66556969094267f11d511a6b2bb5549813a71988b6272e44b793cae624",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Meta SEC filing: 10-Q (2026-07-30)",
+        "evidence": "\u2022 Capital expenditures, including principal payments on finance leases, were $31.08 billion for the three months ended June 30, 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "date": "2026-07-30T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:39.458394+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "49a8bcbb20732b7f8252924da6fef0068a32b0867246667221538b995cadb537"
+        ]
+      },
+      {
+        "fact_id": "22fc458969f8e651414e6c6655bc49f9886ef6075324bcd78398428110884f0f",
+        "event_id": "9b1aac30733bbfb2b842264ded5e90151db9d9164ffc721ac1b71e7b1f377d34",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "An investment increases capital exposed to the business succeeding.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "INVESTS_IN",
+        "title": "Meta SEC filing: 10-Q (2026-07-30)",
+        "evidence": "As of June 30, 2026 and December 31, 2025, the carrying value of our equity investment included within non-marketable equity investments on our condensed consolidated balance sheets was $ 2.92 billion and $ 1.83 billion, respectively, and our maximum exposure to loss related to the Venture was $ 46.03 billion and $ 45.95 billion, respectively, consisting of the carrying value of our equity investment, the lease commitments, our estimated future funding commitments, and the maximum RVG threshold.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "date": "2026-07-30T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:32.613682+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "22fc458969f8e651414e6c6655bc49f9886ef6075324bcd78398428110884f0f"
+        ]
+      },
+      {
+        "fact_id": "055ebb741503678e2f55bccd95e3dba1cc0d92da06b2a3548fc0f83c70ad3886",
+        "event_id": "bdbc6c97a9c74640704493f093531d9bdc2df9f4eff399e8c51c49975f7cd200",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Meta SEC filing: 10-Q (2026-07-30)",
+        "evidence": "These increases were partially offset by $50.92 billion of capital expenditures, which includes purchases of property and equipment and principal payments on finance leases; $8.70 billion of taxes paid related to net share settlement of employee restricted stock unit (RSU) awards; $2.70 billion of payments of dividends and dividend equivalents; and $2.29 billion of cash used in other financing activities.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "date": "2026-07-30T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:39.458394+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "055ebb741503678e2f55bccd95e3dba1cc0d92da06b2a3548fc0f83c70ad3886"
+        ]
+      },
+      {
+        "fact_id": "ca09a02fe12c2c8d820342e5b6ee438d6e6af344909bbbd732bb634fe9a8a262",
+        "event_id": "8d37eb83c6f0afffd7f4b8ac0a78e3b114ba4b7966bc024382fdd0d861e43c0b",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-07-23)",
+        "evidence": "We have also entered into an agreement to provide an estimated $24.1 billion of future backstops to support the build-out of data center and energy supply infrastructure, subject to finalization of terms with data center providers.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "date": "2026-07-23T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:48.614990+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "ca09a02fe12c2c8d820342e5b6ee438d6e6af344909bbbd732bb634fe9a8a262"
+        ]
+      },
+      {
+        "fact_id": "c3e20bd7a2a7d4b6ec423f93203aa478e40431b45834ca9a7d3bb25d27928542",
+        "event_id": "2274d819a23661ec09d4c38b27171492070424a6d56be22bcece30ee7d6fb933",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "An investment increases capital exposed to the business succeeding.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "INVESTS_IN",
+        "title": "Alphabet SEC filing: 10-Q (2026-07-23)",
+        "evidence": "The carrying values for non-marketable securities are summarized below (in millions): As of December 31, 2025 As of June 30, 2026 Non-marketable securities: Total initial cost of non-marketable equity securities accounted for under the measurement alternative $ 28,429 $ 47,642 Cumulative upward adjustments 44,485 85,732 Cumulative downward adjustments (including impairments) ( 8,820 ) ( 9,115 ) Carrying value of non-marketable equity securities accounted for under the measurement alternative (1) 64,094 124,259 Equity method investments and other 4,593 7,202 Total non-marketable securities $ 68,687 $ 131,461 (1) As of June 30, 2026, our investments in non-marketable securities accounted for under the measurement alternative primarily consist of our investment in a private company.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "date": "2026-07-23T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:29.736349+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "c3e20bd7a2a7d4b6ec423f93203aa478e40431b45834ca9a7d3bb25d27928542"
+        ]
+      },
+      {
+        "fact_id": "7c1bb43958a52a7d83a84ac681a6d3afad44b2b4f06cd59adf1e9c588059f1be",
+        "event_id": "fbcc70e726505295b02ccb4aefcffeffd71139b229f354e1b8efc343b18c95a0",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-07-23)",
+        "evidence": "We recognized a charge of $ 3.5 billion in the third quarter of 2025, and we placed bank guarantees in the fourth quarter of 2025 in lieu of cash payment.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "date": "2026-07-23T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:38.276858+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "7c1bb43958a52a7d83a84ac681a6d3afad44b2b4f06cd59adf1e9c588059f1be"
+        ]
+      },
+      {
+        "fact_id": "483289199e2712bc30feb71dd24b34e29cb0f2de59a070e4a83a3f6374c6fc2c",
+        "event_id": "cf6b359bfb5a4b33327c60326b780366909bfcb9d31dc2eb7a2aae03a67a0630",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-07-23)",
+        "evidence": "As of June 30, 2026, our maximum potential amount of future payments under these guarantees was $ 7.6 billion, upon which we may receive certain assets.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "date": "2026-07-23T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:38.276858+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "483289199e2712bc30feb71dd24b34e29cb0f2de59a070e4a83a3f6374c6fc2c"
+        ]
+      },
+      {
+        "fact_id": "47140192846c99e1651f341b8cfff6955a925937d6eb1d97b0f834e54e2f5f11",
+        "event_id": "59bd9dd94b30bcdda3e9a3667593bee7e25cb28cb9335738b218bb5022023d89",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Alphabet SEC filing: 10-Q (2026-07-23)",
+        "evidence": "\u2022 Capital expenditures, which primarily reflected investments in technical infrastructure, were $44.9 billion for the three months ended June 30, 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "date": "2026-07-23T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:38.276858+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "47140192846c99e1651f341b8cfff6955a925937d6eb1d97b0f834e54e2f5f11"
+        ]
+      },
+      {
+        "fact_id": "27e7a59d7576b1521f2e0961a0a8bf1799da5f9e60ed88ed99cf99aeddf75ba2",
+        "event_id": "52d38ed001cf49f1798a4930cec6ceda134db647fe209779c9438ee9bacfbd94",
+        "kind": "pressure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Lending connects the lender to the borrower's ability to repay.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "LENDS_TO",
+        "title": "Alphabet SEC filing: 10-Q (2026-07-23)",
+        "evidence": "Credit Facility As of June 30, 2026, we had $ 11.7 billion of credit facilities, expiring at various dates through April 2030, of which $ 1.3 billion was outstanding.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "date": "2026-07-23T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:23:29.736349+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm"
+        ],
+        "underlying_fact_ids": [
+          "27e7a59d7576b1521f2e0961a0a8bf1799da5f9e60ed88ed99cf99aeddf75ba2"
+        ]
+      },
+      {
+        "fact_id": "27e7dc60663eb7456d7c15b4d434361bfedd5d06ab8deb50cd6aa287fcd82206",
+        "event_id": "0f294dca585024522a8201e36d2078e8d9010da505b3ece08eb1cb1509c7d8c6",
+        "kind": "public_exposure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Index inclusion can distribute exposure through funds tracking that index.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "ENTERS_INDEX",
+        "title": "SpaceX joins the Nasdaq-100 Index",
+        "evidence": "Nasdaq announced that SpaceX (SPCX) would become a Nasdaq-100 component before market open on July 7, 2026. Nasdaq states that more than 200 investment products with over $800 billion in assets track the index.",
+        "url": "https://ir.nasdaq.com/news-releases/news-release-details/space-exploration-technologies-corporation-join-nasdaq-100",
+        "date": "2026-07-07T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T20:06:25.143782+00:00",
+        "sources": [
+          "https://ir.nasdaq.com/news-releases/news-release-details/space-exploration-technologies-corporation-join-nasdaq-100"
+        ],
+        "underlying_fact_ids": [
+          "27e7dc60663eb7456d7c15b4d434361bfedd5d06ab8deb50cd6aa287fcd82206"
+        ]
+      },
+      {
+        "fact_id": "fbd2b6b8a5daa2007682e77afc6f695401e6df53b15f556329ab5593b9282802",
+        "event_id": "e715ecc14128a6ac21a7e0c6fbe8349054e73469c3d06fecbec6a54d23a62dc8",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Oracle SEC filing: 10-K (2026-06-22)",
+        "evidence": "Liquidity and Capital Resources As of May 31, (Dollars in millions) 2026 Change 2025 Working capital $ 4,803 * $ (8,064 ) Cash, cash equivalents and marketable securities $ 31,894 185% $ 11,203 * Not meaningful Working capital : The increase in working capital as of May 31, 2026 in comparison to May 31, 2025 was primarily due to favorable impacts from net income; proceeds from the issuance of senior notes, net of issuance costs, of $42.7 billion during fiscal 2026; $5.0 billion of cash proceeds from the issuance of Mandatory Convertible Preferred Stock, net of issuance costs; $4.9 billion of cash proceeds from the sale of our investments, primarily in Ampere; and $1.3 billion of net cash proceeds from our employee stock programs, partially offset by $55.7 billion of cash used for capital expenditures; $5.8 billion of cash used to pay dividends to our preferred and common stockholders; $5.7 billion of long-term borrowings that were reclassified to current liabilities; $864 million of cash used for purchases of non-current investments; and $95 million of cash used for repurchases of our common stock, in each case during fiscal 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+        "date": "2026-06-22T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:02.236151+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+        ],
+        "underlying_fact_ids": [
+          "fbd2b6b8a5daa2007682e77afc6f695401e6df53b15f556329ab5593b9282802"
+        ]
+      },
+      {
+        "fact_id": "e3707cf09e376e1286bbae609fdb93c3363f95c9ee242b96452409e0e4bcdcdf",
+        "event_id": "172e19762c6dba127d25a80d7d6c5a0a086832aea9c8aa99ec8a3836f92c226d",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Oracle SEC filing: 10-K (2026-06-22)",
+        "evidence": "Capital Expenditures : Cash used for capital expenditures increased from $21.2 billion in fiscal 2025 to $55.7 billion in fiscal 2026 primarily due to the expansion of our data centers.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+        "date": "2026-06-22T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:22.237386+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+        ],
+        "underlying_fact_ids": [
+          "e3707cf09e376e1286bbae609fdb93c3363f95c9ee242b96452409e0e4bcdcdf"
+        ]
+      },
+      {
+        "fact_id": "a077ae9b05c76c8a2b20dbdc2c260fe174da05cfa7edd21ce39a0d6bc0d68ae0",
+        "event_id": "03f2371b234c31434b4f180d404233a50fce08fd91f9f2dac2b1342916e9fcd3",
+        "kind": "pressure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Lending connects the lender to the borrower's ability to repay.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "LENDS_TO",
+        "title": "Oracle SEC filing: 10-K (2026-06-22)",
+        "evidence": "On March 6, 2026, we entered into a new $ 10.0 billion, five-year revolving credit agreement (the Revolving Credit Agreement) among us, as borrower, Bank of America, N.A., as administrative agent, and the lenders and other agents named therein, which provides for an unsecured $ 10.0 billion, five-year revolving credit facility (the Revolving Facility) to us for working capital purposes and for other general corporate purposes.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+        "date": "2026-06-22T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:22.237386+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+        ],
+        "underlying_fact_ids": [
+          "a077ae9b05c76c8a2b20dbdc2c260fe174da05cfa7edd21ce39a0d6bc0d68ae0"
+        ]
+      },
+      {
+        "fact_id": "0be2197b629eded741b8fb1ba0c0317797f7c61cdc6e8a963d26e553e96f3b53",
+        "event_id": "f685d6f4b2e57fab874421c38dc0c2214ca4e6d07cf5b47f534807c99a3c6854",
+        "kind": "context",
+        "causal_role": "RESILIENCE",
+        "rationale": "Cash flow informs self-funding capacity; its sign and trend must be read from the source.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "Oracle SEC filing: 10-K (2026-06-22)",
+        "evidence": "We calculate free cash flow as follows: Year Ended May 31, (Dollars in millions) 2026 Change 2025 Net cash provided by operating activities $ 31,977 54% $ 20,821 Capital expenditures (55,663 ) 162% (21,215 ) Free cash flow $ (23,686 ) * $ (394 ) Net income $ 17,087 $ 12,443 Net cash provided by operating activities as a percent of net income 187% 167% Free cash flow as percent of net income -139% -3% * Not meaningful Recent Financing Activities : Revolving Credit Agreement : In March 2026, we terminated our existing $6.0 billion, five-year revolving credit agreement.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+        "date": "2026-06-22T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:24:13.322318+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm"
+        ],
+        "underlying_fact_ids": [
+          "0be2197b629eded741b8fb1ba0c0317797f7c61cdc6e8a963d26e553e96f3b53"
+        ]
+      },
+      {
+        "fact_id": "72aa3b632b8025c60b96ae3b0a4f8c86167b1ead050f6210f3f58e17fffd7de5",
+        "event_id": "7ea8a46ed6a9309e54c33b46e346ff7156b9754c95f392ff5c7f2b2d38937b4a",
+        "kind": "public_exposure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Public trading makes exposure available to public investors.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "COMPLETES_IPO",
+        "title": "SpaceX completes initial public offering and begins trading as SPCX",
+        "evidence": "SpaceX announced that 555,555,555 Class A shares were priced at $135 per share and would begin trading on Nasdaq on June 12, 2026 under SPCX.",
+        "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX_PricingAnnouncement.pdf?embed=true",
+        "date": "2026-06-12T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T20:06:25.143782+00:00",
+        "sources": [
+          "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX_PricingAnnouncement.pdf?embed=true"
+        ],
+        "underlying_fact_ids": [
+          "72aa3b632b8025c60b96ae3b0a4f8c86167b1ead050f6210f3f58e17fffd7de5"
+        ]
+      },
+      {
+        "fact_id": "ddd822a9938910578473b1b324f744b24b134853f10df80084ae445903c15890",
+        "event_id": "40e603bb152a12a8648c6687ce884096efe98b9404a1079549208fa27e102d9f",
+        "kind": "pressure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Lending connects the lender to the borrower's ability to repay.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "LENDS_TO",
+        "title": "Amazon SEC filing: 8-K (2026-06-10)",
+        "evidence": "The DDTL Credit Agreement provides the Company with a $17.5 billion senior unsecured delayed draw term loan credit facility (the \u201cDDTL Facility\u201d).",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926072140/tm2613616d4_8k.htm",
+        "date": "2026-06-10T00:00:00+00:00",
+        "reviewed_at": "2026-08-21T19:35:53.427300+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000110465926072140/tm2613616d4_8k.htm"
+        ],
+        "underlying_fact_ids": [
+          "ddd822a9938910578473b1b324f744b24b134853f10df80084ae445903c15890"
+        ]
+      },
+      {
+        "fact_id": "ipo-filing:openai",
+        "event_id": "2beb0ed8fdeb98b19dcd978653bf8c2182914aee257730b7ab0248aa4bbfe212",
+        "kind": "public_exposure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "A filing opens a potential route to public investors; trading has not been established.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "FILES_FOR_IPO",
+        "title": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC",
+        "evidence": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut CNBC Google News",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMVhyczJEUzJvM0ktd0k2RmJwZGY2YW1CRThUTTdLNERQY0ZXVXUyNjhHMklyRFVSdnRoTlc3dTFZd0NqNDd2TDJrYk43NTc4Y0Z5R0Qta08zLU5XdVVSd05LNF94WTlDS05xRklDYzluVnpWUjFqeHg2QWVZZWdSMkJHN0VVYWQtSU9BNVA3ejg2V3YyOHM3TkhsZFRtakxoRXY2WjZxWkdUZ9IBrwFBVV95cUxNYmdiVHBYUUVMODVqaDh4ZjJmV3RyXzNJa1BtblRDRWRFbEIzb2tQNURabU1hSmEtQkZCSDhva3JCVWFIYV9leDVYaVFxWXBQeTNpeHoxbVQzRk5vMVdsa1dpZW0tLXVNRXhuVzZtLVBCSTU2U0pBRDE2NzFKOFRqT041anVxS0RfamwtcEpqeHhiTnNxZ3ZIZWotSzZsSHQ5eTRJcW8xRGdMRkdjWmxF?oc=5",
+        "date": "2026-06-08T07:00:00+00:00",
+        "reviewed_at": "2026-08-22T04:18:13.561401+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMVhyczJEUzJvM0ktd0k2RmJwZGY2YW1CRThUTTdLNERQY0ZXVXUyNjhHMklyRFVSdnRoTlc3dTFZd0NqNDd2TDJrYk43NTc4Y0Z5R0Qta08zLU5XdVVSd05LNF94WTlDS05xRklDYzluVnpWUjFqeHg2QWVZZWdSMkJHN0VVYWQtSU9BNVA3ejg2V3YyOHM3TkhsZFRtakxoRXY2WjZxWkdUZ9IBrwFBVV95cUxNYmdiVHBYUUVMODVqaDh4ZjJmV3RyXzNJa1BtblRDRWRFbEIzb2tQNURabU1hSmEtQkZCSDhva3JCVWFIYV9leDVYaVFxWXBQeTNpeHoxbVQzRk5vMVdsa1dpZW0tLXVNRXhuVzZtLVBCSTU2U0pBRDE2NzFKOFRqT041anVxS0RfamwtcEpqeHhiTnNxZ3ZIZWotSzZsSHQ5eTRJcW8xRGdMRkdjWmxF?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "55f51433e391208936992c02c4a11c299d20c74ad0317cb15632a2bf519fca32"
+        ]
+      }
+    ]
+  },
   "network": {
     "nodes": [
       {
@@ -4494,6 +5484,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:c27e967d668fa04e84eeb32f76705c2d7acc3f033974d2f0b436c9907b730a55",
+        "label": "SpaceX IPO fallout and what OpenAI and Anthropic\u2019s debuts could mean for equity markets - investing.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "investing.com",
+        "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQdmM0Rng3UzN0bVB2aml1YVNxekNVZWxwdUFtSXlvUVdRS0dGeFRtU25UNHl6aE5DdF9QZVFseG16cTRKdEpMbi1xZTUzbGtKUXRxRnBiVEFGZFVsQ2IzeEU0ZTFUTHFWZ043ck5qSFFDakdTUWYxNVJXdllMM2xaTkxiQTE5dHNDNjBRVVNNTWVla1l4WGNaOHdncmV0eU5FWUZFLWI3ZWlvTVNCWmh2b09TbmxZQ09Fc291QTZtTnBwcmxRVXBFUjlfVEI0QXdGeWFmUFV4bVNXd1ZtNlMxVmRn?oc=5",
+        "date": "Wed, 05 Aug 2026 07:00:00 GMT",
+        "summary": "SpaceX IPO fallout and what OpenAI and Anthropic\u2019s debuts could mean for equity markets investing.com",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:0b894cc3832540e0fcc61771dc9fbedc322830d0a604cc5a1baf8744b5351da0",
         "label": "Nvidia\u2019s $3B Bet On SB Energy Anchors SoftBank Data-Center IPO Push \u2013 OpenAI Holds 3.9M Warrants - TradingView",
         "kind": "evidence",
@@ -4863,6 +5865,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2ebfe4eafbb9920e08f19b058dde7e4323c0cae4816f3262b68b9ad59ad0d183",
+        "label": "OpenAI, Anthropic artificial intelligence IPO boom set to transform San Francisco, starting with soaring real estate prices - abc7news.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "abc7news.com",
+        "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQb2pEWGQwOHBZc2J4MWZwenF3TVA1TWI3RjRTVXBjUkZFQ05LVXFuNUoyc0dRM3JwMlpoc1p1N0tQTTlnOEh2elhNdldtcmhWelR4amV4OGdKbW0wTnQ4NXEyTlJzSTZkRHNHU052aTZFUUhCVzlXclRiNDE1MVl0Ti1GWDRweHNfMTR2UXJ5bzhSN2ZLSjdjTzVEZGFzWGlVSVNKOFlPdDFGNnJPWkZOd2ZBemlld01uSTk4YVNucG1PQ2FKQW9ER2gtdTlOSEdEMndMaEl5cXZ6QWRzLXNWMHNoY9IB6AFBVV95cUxONTl1Z2Z6Sl9VcDVTVDF4NS1UZHFvV0IwYnJKQ2tsQVhLOXoxUmNhOHZKbnRKMFVoTE1FdnplekQ0RWhBWlRWTk9jZTRjZGJhLXVTR1BfWkRXS2VGalRuSGdWcHZSYVJ5VU9BZk5nU2tSb0tGZXdyQjVmVHJ3d0w3UXFKMG50QzZabV8tRTB6bWx1OFR1QmNScVRLakM2emMzaHZncTVnTkkyMUFiSVFmdmhLNFBXVS00R1J4M1Z4T0JDR0RLaVJuNU9hUzREVjVfNFlza1J2UVpiYTByTm5Md1FOWE5LTl80?oc=5",
+        "date": "Thu, 18 Jun 2026 07:00:00 GMT",
+        "summary": "OpenAI, Anthropic artificial intelligence IPO boom set to transform San Francisco, starting with soaring real estate prices abc7news.com",
+        "score": 5,
         "weight": 1
       },
       {
@@ -6507,6 +7521,42 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5c6a7231752d320d08b7b15f6de1ab2c2ff6d016b61ddfb9ce8e51d1c0fccec9",
+        "label": "How Anthropic Makes Money\u2014and What Investors Should Know Ahead of Its IPO Filing - morningstar.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "morningstar.com",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMGplUXM2N2dBWWdnYnlST1pEd0phVWRLczN2Rng5bW1CU0hQM0N4ampBNFFYQndSeGVULUR0aXdFb0F5TjZUaUpGTHdGbVJ4RUpWZmxTWHVhV3VIMkFVUFVMbzNPQWMwdU1WY3hidUdpNGhxdWFzVldGTGdRWXRhMkY0akVIX05QT2tkVEtkcXhXU1JCYm1QNEFUdmNsWTJLWXdTNVVOXzU1eTNhV2M1Zw?oc=5",
+        "date": "Tue, 01 Sep 2026 19:17:01 GMT",
+        "summary": "How Anthropic Makes Money\u2014and What Investors Should Know Ahead of Its IPO Filing morningstar.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:a22d312369d72fb60fc878d357eea9e7c0f5ed8097f4c6f08b9e6d6bc098f769",
+        "label": "What Happens if OpenAI Delays Its IPO to 2027? - morningstar.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "morningstar.com",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYmFlQkJGbE9qaVVYSm9RM2ZGaXNQbHlBdkNhWUhPVmJjbVhWOXhFSGpWM19zU3M5UGZOQVB1czBJR1BnTG84Qkc0ZVpvSW01T1pmdGNMekNkNU5NNDdGeG0zYllBOElSd3JldUFQdHhYNF9JZzZjMEtVdlRFY0ZSc1B2Zw?oc=5",
+        "date": "Wed, 08 Jul 2026 07:00:00 GMT",
+        "summary": "What Happens if OpenAI Delays Its IPO to 2027? morningstar.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:620d3a08a72c531cafd2081b31fbcc4c8d33b85dfdc729ded7454e2467b3f961",
+        "label": "What a Delayed OpenAI IPO Would Tell Investors - morningstar.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "morningstar.com",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQeTVtTWh2dUR3Y0VnYlp6X0RPX01ZdldzRWZOS3JuVUk2OFRfaGl2VjVyaDFPcVlPbzlpYXhzNWt4UGdGQTBSNlg5aW11VDR1UzlROTZDTVZGMmZQazBqbE5UdC1KOGtXbTgwbEZBdE5sNXRXMExYNnU0NVBNOWxSbzZjc3l0UQ?oc=5",
+        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
+        "summary": "What a Delayed OpenAI IPO Would Tell Investors morningstar.com",
+        "score": 4,
         "weight": 1
       },
       {
@@ -11548,66 +12598,6 @@
         "summary": "AI Weekly: Codex Growth Overtakes Claude Code; DeepSeek Quietly Launches Vision Model finance.biggo.com",
         "score": 2,
         "weight": 1
-      },
-      {
-        "id": "evidence:0b5183ff068fe3658fc3fb1fd406806c2781157774ea09be20f3e89fc9367bc9",
-        "label": "ByteDance challenges Tencent with new Doubao workplace AI agent - Free Malaysia Today",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Free Malaysia Today",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeFhncjFzOHlvaTN0OXBhMkhlZlJYR0tDVFlSVXZ2bUIyeWtKVHN3UkNhcFN6eURwajVfTW82d3hfcU5idmptUkZvYmNuekhBdUxPdEc1djBOMDJoVUtMamxaUW9kdFJDdXJFalpqSEJDb3pyUmNoR0VxN3hZd2lRVk1HNk91a3E0MnBPQ0x5Ny1JeTBkektvY0pCcklnZ1laRV8zNjZFS3kzVlByd0ZTTmdxWlJkcHJUNEloUWVpUnlCS2pL?oc=5",
-        "date": "Tue, 25 Aug 2026 05:54:00 GMT",
-        "summary": "ByteDance challenges Tencent with new Doubao workplace AI agent Free Malaysia Today",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9f53307c06c8bc60230d211cd899edd5f537f3667667f276d3d863ae929c428a",
-        "label": "We burned 11.7bn tokens to find the best cyber AI model | GLM5.3 and DeepSeek are now frontier - Aikido Security",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Aikido Security",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5TU2VXQjYyM0pEUWtQQ25HUnpoVGpJQmc0aU5Nd1hPTFE0eXkwMndsOXpsM1dsZ3JENG9NS2c3S0thRnVNb2lRVzh5NEdrV0JXWFR1QWVIRzZuVFhFNTE1a2ZyVjVHUzZuLXpv?oc=5",
-        "date": "Fri, 21 Aug 2026 09:15:23 GMT",
-        "summary": "We burned 11.7bn tokens to find the best cyber AI model | GLM5.3 and DeepSeek are now frontier Aikido Security",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a8ba75ac7904caa463dbe44ba1b9743b2c760e8d69225d287004dc92db9b4835",
-        "label": "Xpeng's Robotics Unit Raises $900 Million in Funding Round Backed by Tencent, Alibaba - Moomoo",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPZGZPanBVLTF3Wl9rZUpzSGF3dUtuYzdMZ1FqYXMzSzNOblhYeTF6eTdxQkVuM1JDSzFBWFFQRmpwZE1pZ09aVDZwOHNPb1BiM0xrV3BKdV9pVEY5dkRBT1dPVzMxbkFIZzVoUVlCVDNIV2RhSl9mRUJVVjY3MVdDdlFnZnJWNE9aVjhqb2NqTDRhLU5oU0hvWTRXZ20tYXBh?oc=5",
-        "date": "Tue, 25 Aug 2026 01:31:49 GMT",
-        "summary": "Xpeng's Robotics Unit Raises $900 Million in Funding Round Backed by Tencent, Alibaba Moomoo",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:917626ec9c3b28842451d34232220217a7bd5ba76c37698b556e0143f8c55a9e",
-        "label": "ByteDance folds AI tools into Doubao super-app to fight Tencent - The Edge Singapore",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Edge Singapore",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOc0VDWUtiV0VjTng4S2ZaS1hTM0FJeDh5dWVzd050YzZLVnQ0WGR2dV9la241LVdVVkdrdUJDWWsxazVhTnJFQ3hidzdpTU5oVzhRMlR6amM5TTRoQjFDRDE3cmN6dTdNQVA4ZmJLY1NVWnd5WGh6cmRJYjR4X2l5a1ktSm00Q0U4czRmcTJObjZ0NWRhT2YtV0RTd0cwY2puREFEMjJ30gGmAUFVX3lxTE5zRUNZS2JXRWNOeDhLZlpLWFMzQUl4OHl1ZXN3TnRjNktWdDRYZHZ1X2VrbjUtV1VWR2t1QkNZazFrNWFOckVDeGJ3N2lNTmhXOFEyVHpqYzlNNGhCMUNEMTdyY3p1N01BUDhmYktjU1Vad3lYaHpyZEliNHhfaXlrWS1KbTRDRThzNGZxMk5uNnQ1ZGFPZi1XRFN3RzBjam5EQUQyMnc?oc=5",
-        "date": "Mon, 24 Aug 2026 10:40:00 GMT",
-        "summary": "ByteDance folds AI tools into Doubao super-app to fight Tencent The Edge Singapore",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:86b801358449a1e6e8025ad234b06d07501a088deafdb8098a11103be6eb935d",
-        "label": "Weekly Recap: NVIDIA backs OpenAI Pike County lease and Q1 revenue surge - TradingView",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORWZ0UGFvUHJrTnZFRmZ2STBWYjVhdEJLLXFFTTI1MVhuVkphUzl0WGR3VV83QndJTGVLOGowbGp3SmUyY1o4UXNQWElaYXRjNThVcWY3bVF3RTB2Y0QyWDZkNFNMRVdoLU5IZlJzWFdJX2RtM0JFeWNWeFFVWmpNWDZRMXBQV2NDSnRzZllvM3JVQ3E1anN3OEI3aW1LenJXcGNRLXRvOS1RdFBKandZcExWSXcwel9lNkJLRkJTTjJjR1JOZE1XS0NCaUdMdw?oc=5",
-        "date": "Mon, 24 Aug 2026 11:21:57 GMT",
-        "summary": "Weekly Recap: NVIDIA backs OpenAI Pike County lease and Q1 revenue surge TradingView",
-        "score": 2,
-        "weight": 1
       }
     ],
     "edges": [
@@ -13488,6 +14478,27 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:c27e967d668fa04e84eeb32f76705c2d7acc3f033974d2f0b436c9907b730a55",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c27e967d668fa04e84eeb32f76705c2d7acc3f033974d2f0b436c9907b730a55",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:c27e967d668fa04e84eeb32f76705c2d7acc3f033974d2f0b436c9907b730a55",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Nvidia",
         "target": "evidence:0b894cc3832540e0fcc61771dc9fbedc322830d0a604cc5a1baf8744b5351da0",
         "type": "EVIDENCE",
@@ -13903,6 +14914,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:2ebfe4eafbb9920e08f19b058dde7e4323c0cae4816f3262b68b9ad59ad0d183",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:2ebfe4eafbb9920e08f19b058dde7e4323c0cae4816f3262b68b9ad59ad0d183",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15464,6 +16489,27 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:5c6a7231752d320d08b7b15f6de1ab2c2ff6d016b61ddfb9ce8e51d1c0fccec9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:a22d312369d72fb60fc878d357eea9e7c0f5ed8097f4c6f08b9e6d6bc098f769",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:620d3a08a72c531cafd2081b31fbcc4c8d33b85dfdc729ded7454e2467b3f961",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -19209,76 +20255,6 @@
       {
         "source": "DeepSeek",
         "target": "evidence:bad85a8b26532e94569dd9801b4d543e415be6875e32a6e1739e0eace6da7b67",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:0b5183ff068fe3658fc3fb1fd406806c2781157774ea09be20f3e89fc9367bc9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:0b5183ff068fe3658fc3fb1fd406806c2781157774ea09be20f3e89fc9367bc9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:9f53307c06c8bc60230d211cd899edd5f537f3667667f276d3d863ae929c428a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:9f53307c06c8bc60230d211cd899edd5f537f3667667f276d3d863ae929c428a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:a8ba75ac7904caa463dbe44ba1b9743b2c760e8d69225d287004dc92db9b4835",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:a8ba75ac7904caa463dbe44ba1b9743b2c760e8d69225d287004dc92db9b4835",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:917626ec9c3b28842451d34232220217a7bd5ba76c37698b556e0143f8c55a9e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:917626ec9c3b28842451d34232220217a7bd5ba76c37698b556e0143f8c55a9e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:86b801358449a1e6e8025ad234b06d07501a088deafdb8098a11103be6eb935d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:86b801358449a1e6e8025ad234b06d07501a088deafdb8098a11103be6eb935d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -34169,10 +35145,10 @@
   ],
   "collector_runs": [
     {
-      "id": 683,
+      "id": 687,
       "collector": "company-economic-news",
-      "started_at": "2026-09-02T03:00:06+00:00",
-      "completed_at": "2026-09-02T03:00:20+00:00",
+      "started_at": "2026-09-02T03:14:27+00:00",
+      "completed_at": "2026-09-02T03:14:41+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 2,
@@ -34182,23 +35158,23 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "20a21587-7f03-4b49-a057-685b8ae74189"
+      "collection_execution_id": "447934eb-05c0-4f73-a729-3fd2a16e7f3f"
     },
     {
-      "id": 684,
+      "id": 688,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-09-02T03:00:20+00:00",
-      "completed_at": "2026-09-02T03:00:21+00:00",
+      "started_at": "2026-09-02T03:14:42+00:00",
+      "completed_at": "2026-09-02T03:14:42+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 1,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "20a21587-7f03-4b49-a057-685b8ae74189"
+      "collection_execution_id": "447934eb-05c0-4f73-a729-3fd2a16e7f3f"
     },
     {
       "id": 56,
@@ -34217,26 +35193,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 682,
+      "id": 686,
       "collector": "google-news-rss",
-      "started_at": "2026-09-02T03:00:04+00:00",
-      "completed_at": "2026-09-02T03:00:05+00:00",
+      "started_at": "2026-09-02T03:14:25+00:00",
+      "completed_at": "2026-09-02T03:14:27+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 2,
+      "items_new": 6,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "20a21587-7f03-4b49-a057-685b8ae74189"
+      "collection_execution_id": "447934eb-05c0-4f73-a729-3fd2a16e7f3f"
     },
     {
-      "id": 685,
+      "id": 689,
       "collector": "sec-edgar",
-      "started_at": "2026-09-02T03:00:21+00:00",
-      "completed_at": "2026-09-02T03:00:23+00:00",
+      "started_at": "2026-09-02T03:14:42+00:00",
+      "completed_at": "2026-09-02T03:14:44+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -34246,7 +35222,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "20a21587-7f03-4b49-a057-685b8ae74189"
+      "collection_execution_id": "447934eb-05c0-4f73-a729-3fd2a16e7f3f"
     },
     {
       "id": 57,
@@ -37104,6 +38080,6 @@
     "claimed_tier": "heuristic",
     "statement": "This reading is placed against accepted historical episodes."
   },
-  "database_state_version": "v1-9799026787e50bd3",
-  "database_sha256": "9799026787e50bd357862272e469d515c42f0ea2b90982e5c851f11884bd42cf"
+  "database_state_version": "v1-19c86ca29cb8c951",
+  "database_sha256": "19c86ca29cb8c951f36c267f5bc0f29a2743b9a191323958b4b26ebb19ba2c81"
 }
