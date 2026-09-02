@@ -161,6 +161,83 @@ def test_measured_trend_reads_published_history(tmp_path: Path) -> None:
     assert json.loads(result.stdout) == [text for _, text in cases]
 
 
+def test_overview_disclaimer_spans_grid_and_unvalidated_score_stays_amber(tmp_path: Path) -> None:
+    template = Path("src/asro/templates/index.html").read_text()
+    assert ".overview-phrase>.calibration-banner{grid-column:1 / -1;" in template
+    assert ".overview-phrase>.overview-band{grid-column:1 / -1;" in template
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("node is not available")
+    source = next(
+        line for line in template.splitlines() if line.startswith("function renderCalibration(")
+    )
+    script = tmp_path / "calibration.mjs"
+    script.write_text(
+        "const banner={dataset:{}};const document={querySelectorAll(){return [banner]}};"
+        + source
+        + "renderCalibration({calibration_label:'HISTORICALLY CALIBRATED',"
+        "indicator_validation:'Revised indicator: not historically validated'});"
+        "console.log(JSON.stringify(banner));"
+    )
+    result = subprocess.run([node, str(script)], capture_output=True, text=True, check=True)  # noqa: S603
+    banner = json.loads(result.stdout)
+    assert banner["dataset"]["calibrated"] == "false"
+    assert "not historically validated" in banner["textContent"]
+
+
+def test_public_view_excludes_unsourced_and_missing_cards(tmp_path: Path) -> None:
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("node is not available")
+    template = Path("src/asro/templates/index.html").read_text()
+    source = next(
+        line for line in template.splitlines() if line.startswith("function sourceLinkedView(")
+    )
+    assert "data=sourceLinkedView(await res.json())" in template
+    assert "data=sourceLinkedView(next)" in template
+    script = tmp_path / "sources.mjs"
+    script.write_text(
+        source + "\nconst rows=[{value_numeric:0,url:'https://example.com/filing'},"
+        "{value_numeric:null,url:'https://example.com/filing'},"
+        "{value_numeric:5},{value_numeric:5,url:'javascript:alert(1)'}];"
+        "const original={feature_family:rows,fundamentals:rows,"
+        "timeline:rows,public_market_alerts:rows};"
+        "console.log(JSON.stringify({view:sourceLinkedView(original),original}));"
+    )
+    result = subprocess.run([node, str(script)], capture_output=True, text=True, check=True)  # noqa: S603
+    payload = json.loads(result.stdout)
+    for key in ("feature_family", "fundamentals"):
+        assert payload["view"][key] == [{"value_numeric": 0, "url": "https://example.com/filing"}]
+        assert len(payload["original"][key]) == 4
+    assert len(payload["view"]["timeline"]) == 2
+    assert len(payload["view"]["public_market_alerts"]) == 2
+
+
+def test_carried_measurements_group_without_merging_distinct_filings(tmp_path: Path) -> None:
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("node is not available")
+    template = Path("src/asro/templates/index.html").read_text()
+    source = next(
+        line for line in template.splitlines() if line.startswith("function groupedMeasurements(")
+    )
+    script = tmp_path / "grouped.mjs"
+    script.write_text(
+        source + "\nconst row={entity_id:'Meta',value_numeric:77.8,url:'https://example.com/a'};"
+        "console.log(JSON.stringify(groupedMeasurements(["
+        "{...row,period_start:'2025-01-01'}, {...row,period_start:'2025-02-01'},"
+        "{...row,period_start:'2025-03-01',url:'https://example.com/b'}])));"
+    )
+    result = subprocess.run([node, str(script)], capture_output=True, text=True, check=True)  # noqa: S603
+    groups = json.loads(result.stdout)
+    assert len(groups) == 2
+    assert groups[0]["display_months"] == "2025-01, 2025-02"
+    assert groups[1]["display_months"] == "2025-03"
+    assert "Methodology definitions, not measured evidence." in template
+    assert "src/asro/dictionary/registry.py#L" in template
+    assert "Definition ↗" in template
+
+
 def test_public_market_alert_renderer_is_independent_and_uses_text_nodes(tmp_path: Path) -> None:
     node = shutil.which("node")
     if node is None:
