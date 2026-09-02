@@ -1,4 +1,5 @@
 import json
+import re
 import shutil
 import subprocess
 from pathlib import Path
@@ -6,6 +7,16 @@ from pathlib import Path
 import pytest
 
 from asro.site import _build_network, build_static_site
+
+
+def test_entire_dashboard_script_parses(tmp_path: Path) -> None:
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("node is not available")
+    page = Path("src/asro/templates/index.html").read_text()
+    script = tmp_path / "dashboard.js"
+    script.write_text("\n".join(re.findall(r"<script[^>]*>(.*?)</script>", page, re.S)))
+    subprocess.run([node, "--check", str(script)], check=True, capture_output=True)  # noqa: S603
 
 
 def test_network_weights_distinct_facts_and_carries_mentions() -> None:

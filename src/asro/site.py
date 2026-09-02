@@ -10,6 +10,7 @@ from importlib.resources import files
 from pathlib import Path
 from typing import Any
 
+from asro.alerts import news_alerts
 from asro.benchmark import (
     OutputTier,
     assert_claim_supported,
@@ -346,6 +347,7 @@ def build_static_site(
         "history": history,
         "comparable_history": comparable_history(history, dimensions),
         "public_market_alerts": public_market_alerts(events),
+        "news_alerts": news_alerts(events, datetime.now(UTC)),
         "network": _build_network(events, items[:800]),
         "timeline": _build_timeline(events),
         "collector_runs": runs,
