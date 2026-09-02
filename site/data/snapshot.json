@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T20:05:47.734716+00:00",
+  "generated_at": "2026-09-02T01:33:28.303710+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -14,15 +14,15 @@
     "basis": "historically_calibrated"
   },
   "dimensions": {
-    "fragility": 61.1,
-    "counter_evidence": 42.9,
     "external_pressure": 16.12,
+    "counter_evidence": 42.9,
+    "circularity": 59.4,
     "cannibalization": 54.2,
-    "capital": 42.64073738140746,
-    "transmission": 39.6,
+    "fragility": 61.1,
     "monetization": 40.6,
     "stress": 57.1,
-    "circularity": 59.4
+    "transmission": 39.6,
+    "capital": 42.64073738140746
   },
   "dimension_evidence": {
     "external_pressure": 6,
@@ -33,15 +33,15 @@
     "fragility": 3
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
-    "counter_evidence": "directional_estimate",
     "external_pressure": "aggregate",
+    "counter_evidence": "directional_estimate",
+    "circularity": "directional_estimate",
     "cannibalization": "directional_estimate",
-    "capital": "aggregate",
-    "transmission": "confirmed_trigger",
+    "fragility": "directional_estimate",
     "monetization": "directional_estimate",
     "stress": "directional_estimate",
-    "circularity": "directional_estimate"
+    "transmission": "confirmed_trigger",
+    "capital": "aggregate"
   },
   "dimension_direction": {
     "external_pressure": {
@@ -729,6 +729,12 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-09-02T01:33:06+00:00",
+      "score": 44.6,
+      "label": "FORMING",
+      "dimensions": "{\"capital\": 42.64073738140746, \"counter_evidence\": 42.9, \"external_pressure\": 16.12, \"stress\": 57.1, \"circularity\": 59.4, \"transmission\": 39.6, \"fragility\": 61.1, \"monetization\": 40.6, \"cannibalization\": 54.2}"
+    },
     {
       "captured_at": "2026-09-01T20:05:12+00:00",
       "score": 44.6,
@@ -4423,6 +4429,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:0b894cc3832540e0fcc61771dc9fbedc322830d0a604cc5a1baf8744b5351da0",
+        "label": "Nvidia\u2019s $3B Bet On SB Energy Anchors SoftBank Data-Center IPO Push \u2013 OpenAI Holds 3.9M Warrants - TradingView",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOa1dvSnl6d1BsRUlzWHM3QWhDb01qRUwyaThfQ3QzNlBzTXlWVm1UYmZ6bVNxOUV0MDlQSEpZMExrN3UzUHplSVhJeDBsQTBiMmw1bTJWZ2hINV8xRUkwcUx6OWtLOFFmNloyX0x1Yi1sa2ZqazdteUlhWW1lclMwcXVLaUstaHhBY1BBdnFzNV9mck1VSnZTZ2g1aWFDdzdTbXdFX0JkdjE1cEpXU2E4RnFCTjlycnpOckM3ZlQ2NXBkRDVSY1ZwSUJFeG1VWnNRcHJNSTMta1UzTWpxRzIta016SmFERVpzblE?oc=5",
+        "date": "Tue, 01 Sep 2026 12:27:34 GMT",
+        "summary": "Nvidia\u2019s $3B Bet On SB Energy Anchors SoftBank Data-Center IPO Push \u2013 OpenAI Holds 3.9M Warrants TradingView",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:806e1d210e5aa5f2c33b516a92045d408b961b7131a74e26e1fdd397b82c7465",
         "label": "Nvidia\u2019s $3B Bet On SB Energy Anchors SoftBank Data-Center IPO Push \u2013 OpenAI Holds 3.9M Warrants - Yahoo Finance",
         "kind": "evidence",
@@ -4780,6 +4798,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:704b5f7f314632942e2303111252c892c9be36b8bef6e3a209930bf664d108b7",
+        "label": "SB Energy heads for IPO after Nvidia backs $105 billion OpenAI data-centre project - TradingView",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQQ1VWZkFWS0MzenBvTmw4VS1tMzBWaWVHd2pMdWx3eWc0WVN1YmthdzJROGNpRVdPdTJLdVJ1RXo0TGNtVlVSbmFPbHdGcmxPUDUzRk40cXZYcXZvcGdQUWVlSkIwcl8zUTdxa1BLTG9RbzNQZnJpeFl0Z2ktNWJWekJMS3R0NFJYRE9Vak4xQ3JVTzNhNXhNTERnVjRXLXQ1emliRXIxdDVWSWJla2xMU09Hb1YtUHFyNXVfMk9Ia0FsSjRHWDljNHdXYnpUMlppdVVpSA?oc=5",
+        "date": "Tue, 01 Sep 2026 21:04:24 GMT",
+        "summary": "SB Energy heads for IPO after Nvidia backs $105 billion OpenAI data-centre project TradingView",
+        "score": 5,
         "weight": 1
       },
       {
@@ -6376,6 +6406,42 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:884b55eb0cf6bce213b20895db982cb9ee97cc7ffd0c0e3edb886e945e92f339",
+        "label": "Sam Altman's OpenAI Just Completed a $7 Billion Share Sale as It Eyes a Trillion-Dollar IPO. What Would That Valuation Mean for Investors? - The Globe and Mail",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Globe and Mail",
+        "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxQU2o4UUVNY0QxdWpTWGlndkg2TWlSQW85SVV1Q2FGTFFRM3hPU3QtVGFfdlk4Y3FhaWV6TjhmVzljZ1NmMkQ4NXR0c0Nocng5WUxFTEs4V1pGLVZZVng2SlhidnRLcnhGSmpmeHFuOF9BZjcwc2p1TV9QVDM5ZUo0ZVhWVEsyMHZkcG40emMzbU5ZM3dnR2E2aU1QazBHRUtkX2cxQlBNTEJSdndpNFpPOTFJdVQ0VUh0VW8zWlRrbG1yZXdVUE1neG5XbjdVUzJtZ1U0SjV6WDB6bUJuLVRjTzN4SG9EbW94OFUwX0tuNy03TEc5VnM4T2FIY2FNYzJkT1c5ZVFTWXBVNjlJT1QzZk9hdmZzSWM4RXdNSGd4VWFyTW05T0xzcXlxX0tTX1NaZmJUWWJrTlZvZw?oc=5",
+        "date": "Mon, 31 Aug 2026 18:02:22 GMT",
+        "summary": "Sam Altman's OpenAI Just Completed a $7 Billion Share Sale as It Eyes a Trillion-Dollar IPO. What Would That Valuation Mean for Investors? The Globe and Mail",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ba2436d4aed4ffb2f7bf17d1235d90bc7e4635bf9ec65571782aa28d193e1e68",
+        "label": "Sam Altman's \u201cLast Resort\u201d Just Became a $1 Billion Business. What It Means for OpenAI's IPO. - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY1lXRnpPbUJaeDFVaTdsNFFfUldaUUdHUDBJdVlabTEyX2g0ZTRLbGNidHZJZmF1ZGJmbnVZNUR4RHhLaG9SdmhsUGRNLXQ5dWdLMGM3YmhCLUdDczg1LWlqbDZ3LThrYjFGRVhnWld6U01IUWltVFhfb0xFNjU0cXd3QXlrYWFMRXB1OVhBcFFfMnVibEZj?oc=5",
+        "date": "Tue, 01 Sep 2026 00:40:00 GMT",
+        "summary": "Sam Altman's \u201cLast Resort\u201d Just Became a $1 Billion Business. What It Means for OpenAI's IPO. Yahoo Finance",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0a9bc4e2e57a87bb95bfb893ea6b533b3de8dd98734a19aed3f730e9331a08d1",
+        "label": "You Can\u2019t Invest in OpenAI Stock but This IPO Might Be the Closest Thing - barrons.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "barrons.com",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBLOFNwSXRWY2VOenBzSk9lWEtMNmhlX0sxWWZ4bW1xenZEZUlzbUtLbXNRMENLOHFVVG5WaDFLQ2d1ZU9SakEzbEtheks1ZXFPZWtHYWE1VHhWNjVlakMtVUdiVFV1RWhIUTE3YzFPelhxeVdnRE9sM25R?oc=5",
+        "date": "Mon, 31 Aug 2026 16:38:00 GMT",
+        "summary": "You Can\u2019t Invest in OpenAI Stock but This IPO Might Be the Closest Thing barrons.com",
+        "score": 4,
         "weight": 1
       },
       {
@@ -9763,6 +9829,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:a3b94c5956fae401906aae47d49690a566f106692273ecd33e45c9a0467fedb1",
+        "label": "Why Anthropic, OpenAI and SpaceX are all racing to go public now - news.northeastern.edu",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "news.northeastern.edu",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA0UEwyVmJmTVR0NGtoNGNucUpyWDN4d0ZkNGRuR1p4dmFWa185OEMwU29Denc2REtYYlo1SGQxYUpncVd5eHIwNFVLTTIxOUxxMEZRanphT19BcDFaMXYxV0ZueG95Q3RwelZ2WHVaMWlKTGZoVFQwWXU2UHVEaTA?oc=5",
+        "date": "Mon, 08 Jun 2026 07:00:00 GMT",
+        "summary": "Why Anthropic, OpenAI and SpaceX are all racing to go public now news.northeastern.edu",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:608719e98fdac0c271554adbca9c042a5902fb6260430add347208e681556cea",
         "label": "Tech layoffs 2026: Tracking the job losses across TikTok, Apple, Meta, Microsoft, Oracle and others - tech.yahoo.com",
         "kind": "evidence",
@@ -10675,6 +10753,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:6bcc847ca9057a0cdd02bad80855d5747df6289b0194c2577b8f8815a855b66c",
+        "label": "Is Nvidia\u2019s $35 Billion Anthropic Pact the Ultimate Circular Financing Play? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVnZBQWhDXy1VMjVudkNLZjhvOUFUUUpqUkxoVHpzTW9fY2VuMGNtQkhEU3VDNG9SVlRIZXFoZi1GR3FBVWpWVXhHVVJ6Q0hJZmV0eWItTmRwWkFDWHdpbWVtZkxiUXhPdFNZRm8tQW1NUUJyWDdxNndfV3JUYUg0ekxUNlYwZThya09XQ2FOZmgwUms5cFJnTEhPQWE?oc=5",
+        "date": "Tue, 01 Sep 2026 17:12:40 GMT",
+        "summary": "Is Nvidia\u2019s $35 Billion Anthropic Pact the Ultimate Circular Financing Play? Yahoo Finance",
+        "score": 2,
+        "weight": 1
+      },
+      {
+        "id": "evidence:387e75c262be55333722c0976bf57cbb1447308fc420b2c5bbb9ead0f07d65ca",
+        "label": "If the markets reject OpenAI and Anthropic, the US should nationalize them | Bruce Schneier and Nathan E Sanders - The Guardian",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "The Guardian",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEtIeUhGRW5BN25TUG9kcWZaRnRhcUZQNHVMWVpFaUhGYXFQU2J5T2NZMkdZTFNQMk1mUWNRMWFSOVlUajk2cTIwYjk3WjdCSm91RTEyU3I4UzdtcWxqYkJDZ09fUjJwbHZHWkRNSkpjeklINGpDZGRDNVRiR0ZNaFJFS19FeE0?oc=5",
+        "date": "Wed, 12 Aug 2026 07:00:00 GMT",
+        "summary": "If the markets reject OpenAI and Anthropic, the US should nationalize them | Bruce Schneier and Nathan E Sanders The Guardian",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:a6725a7e065ceb64983ae5dc617127c65b80761d6bb788e44baad8f6d279d762",
         "label": "OpenAI-backed legal AI unicorn Harvey ditches GPT base, adopts Chinese open-source model Kimi K3 - finance.biggo.com",
         "kind": "evidence",
@@ -11439,102 +11541,6 @@
         "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeUJaV3RwOU9ZQ1BIUDZrZm5jamk2LXNIRWQ5SnlZajhTQ3pHZWJZa0dWemt4MExEQjBrQnl6ZTFiOTlSWjF6aER2d3Z4MldJa0Q0YmtaaHEtMmZjbEpOWldaWTUtU3ZtaHk1R0Z4MkNxMlpDV0U3RXRxczFudWo0S2IyUGdqOFpPSEtXYjR5NDk0QQ?oc=5",
         "date": "Thu, 20 Aug 2026 12:45:38 GMT",
         "summary": "2Q26 Datacenter Supply/Demand: DeepSeek to Claude CreditSights",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ac54671616d08714980543c04a35168b033bdf2735aaece78b8541141bc6fb0f",
-        "label": "Z.ai GLM-5.2 Brings Open-Weight Pressure to Anthropic Mythos Territory - Tech My Money",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Tech My Money",
-        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNFlIZjNDM28wU0lQNnJ5UE9mMTI5cGJjcnNUNE9kRmtOMGpxUFJlYnhuTGFvSVZjazduclpZWUExU2tvMzlEOXd0d2FNV0ZHdFo3QzRndWtab1IyOTlyZGp6dGRiM3pVZGxsTjhhbVdncjdKMXhpRnpvalVUU0VvemFTUdIBgwFBVV95cUxQNFlIZjNDM28wU0lQNnJ5UE9mMTI5cGJjcnNUNE9kRmtOMGpxUFJlYnhuTGFvSVZjazduclpZWUExU2tvMzlEOXd0d2FNV0ZHdFo3QzRndWtab1IyOTlyZGp6dGRiM3pVZGxsTjhhbVdncjdKMXhpRnpvalVUU0VvemFTUQ?oc=5",
-        "date": "Sun, 05 Jul 2026 07:00:00 GMT",
-        "summary": "Z.ai GLM-5.2 Brings Open-Weight Pressure to Anthropic Mythos Territory Tech My Money",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c9b085a4970a6f10d32f47c97b94dcf4be4ca7e2bbf2bdbbe6dae6091028c30d",
-        "label": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S. compute limits - Tom's Hardware",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Tom's Hardware",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNT25TNFlXeVFQMmVqWFYtSS1oSkpEUl9WeExTZUpmZEtFb1RpQ3dRbGxGV1hVWjNpMkRxTlpaQk5NSXNfdzlmYmg1cW5MUGlmR3FpeHV2bmpzMDBXQW1mV1B0N3QzUmZOOFU5T0w1QWFqYldjWnZER0t0UmNzcGZBQll1dWZBNEYyWTV3dnZvMkRzTkhqNHBDak5TTXd4b080eUJGbExOSUVCeU5Cd1ZmUWVXUG1SUQ?oc=5",
-        "date": "Fri, 17 Jul 2026 07:00:00 GMT",
-        "summary": "China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark\u2014 Moonshot AI delivers largest open-weight AI model ever, as China works around U.S. compute limits Tom's Hardware",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f7f08884adea6b114e485ebf93915fafc32439456012181bb7e5f83376126283",
-        "label": "Kimi K3 vs Qwen 3.8: Which Open Weight Chinese AI is Better? - Memeburn",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Memeburn",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ZVFhaZy15aUNMRmNEMnR2LXE0WmgzVG9sLXF0TWh6d05hY3lhQy01UnllZ0xiT1RHaE1YazlteVFNYnRHNFN2SENULWZDcTFKdVJJ?oc=5",
-        "date": "Sun, 09 Aug 2026 07:00:00 GMT",
-        "summary": "Kimi K3 vs Qwen 3.8: Which Open Weight Chinese AI is Better? Memeburn",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:cfcc3f49d7734c2118289b42e53060bf8edc8e831f62b4f37a85ee958a1b0bdc",
-        "label": "New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable - Yellow.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yellow.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41c1FiZnozQWlzSm5YWFRSdUphM0tQbkZRNFpSbHQ0YjFqdFIyVkt2dGZtejBPU2RDblpzUlBLdDdtcDlYd0FvY1RnUnpwTk9leFZqSjg0T3B4Yi1mRmN4SjZ0Z1hmZFRnWHYxS0hQQUxGa0d3bEE?oc=5",
-        "date": "Wed, 19 Aug 2026 18:06:09 GMT",
-        "summary": "New Chinese AI GLM-5.2 Beats Every ChatGPT Model, Trails Only Anthropic's Claude Fable Yellow.com",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a402de8798a46aa9b52094245b083be893cafd9dcfc87c6c0edca6159f57037b",
-        "label": "Tencent\u2019s New Nvidia H200 Access And ShopeePay Tie-Up Might Change The Case For Investing In Tencent Holdings (SEHK:700) - simplywall.st",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "simplywall.st",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPT3BOMzEySGs5WXZ1TF8xX3JUelkzNUZGZmlpVjJJMkpRZnh4akV4VGZOM3VZMnYzSjQxb2VmcjhyVjAxMDIxLVRfVHg0bWc5X0ZQcnE5a2kxeW41SmRiVHpWVXdrSk4xR29yeGhJTmRUS1c4eVBxY01xY0FFMHZfWGxIalctMk5QYUpaSmEzQXcxVlFqQWp6ZEVMOUR3bmhpbzZpOVlGWXcya05pMG9VZWVvbm9MQXRWZHlmZi10azhTd2ZRRE5wT0dlZERIV3lNNjhpR1Jn0gHWAUFVX3lxTE9PcE4zMTJIazlZdnVMXzFfclR6WTM1RkZmaWlWMkkySlFmeHhqRXhUZk4zdVkydjNKNDFvZWZyOHJWMDEwMjEtVF9UeDRtZzlfRlBycTlraTF5bjVKZGJUelZVd2tKTjFHb3J4aElOZFRLVzh5UHFjTXFjQUUwdl9YbEhqVy0yTlBhSlpKYTNBdzFWUWpBanpkRUw5RHduaGlvNmk5WUZZdzJrTmkwb1VlZW9ub0xBdFZkeWZmLXRrOFN3ZlFETnBPR2VkREhXeU02OGlHUmc?oc=5",
-        "date": "Fri, 21 Aug 2026 22:29:43 GMT",
-        "summary": "Tencent\u2019s New Nvidia H200 Access And ShopeePay Tie-Up Might Change The Case For Investing In Tencent Holdings (SEHK:700) simplywall.st",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:130b04a66671d7ad15da98d82c28d3423286c416a807cc2c429260469e0ce72b",
-        "label": "OpenAI CFO Sarah Friar to employees: Stop worrying about Anthropic; there is a chance they pull off the c - The Times of India",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Times of India",
-        "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPLUJYZkdOcTE4LVpLcDFUeWtfYzlONFpaSE1ZUnNQZDB5ZENCS1RXZ1F5WmV3Y0h1M2pTTXRLTzk0ZkpBU1pBTzl4RHh0TnpabmFYeEExTThlYXJWSzRlTW5LYkVWa0hiUE5sSVdGTWd6QjJaX3BiTzYzWXpHOTZtb29oUzVVUzExTzZpeFFhR1FHU2g2M09zWlJwUFR6MzJERWFreXpwU295SnRha3pxbVVVM3RFLXh3YjhsRlBSd01Xc1FIZ2VOSEhLN0c3WTFfd3lKeTVLWVY2Z3FuNXVlZWREVksyX0NjWU5KLWRmOVQtMW5qamprSk5pUHl0TXBDcWNuT2tqOWE3R0tEZ2tJLTRjWXhzWGJpWHhvUVdzUDExUdIBpwJBVV95cUxNTnB6bjVmYjFHQnFXTGpsbmVpNWQ2VVVKZUFaTFVwYVlkaWdELVozeGlVNHJicnFXUFRENEpGWDNKaThHVEdudXc1UXN2eHJQWDlseGxzVHVXYkFZNDRHd1cySjc1U3FoRXk3X1RqazVneVNyY29hWW8ydTZSaFRmWDExd1dUcEtVV2xsSVUzNHZieVJMeE9RQmtMTXNJQmo0NzM4alVNVDA4MXZUTmZPdGxxN1MwWkl5dy0wX2VEOERrRU1KbFVFMFh1RFJBcTdLZ0ZHdUdpZVFoZm4tYjAyRGxydUkwM0ZzT05ycndKcnRfZHRrMDNRQ1g0RlRCOXJwZmtxaHNrOWRYazR0NTE5M19UQUVfUWlueGdqcFNGLUR4N2p6NWsw?oc=5",
-        "date": "Thu, 20 Aug 2026 05:57:00 GMT",
-        "summary": "OpenAI CFO Sarah Friar to employees: Stop worrying about Anthropic; there is a chance they pull off the c The Times of India",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d36936bb573cb7b52057312d2408757b5523b432b882ef246fdc1d97731c11e2",
-        "label": "Anthropic Q2 revenue doubles to $12B, surpasses OpenAI for first time - TradingView",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSktNcl9zcTFjX2dBY1g5ZTRQZS0xdWVnQUxROFl0Q0VLRmhXOW1SOGR2WGE0RkhQRnpTXzVmanFIYW5IZEVoYW5uRnUzcWVPUHdrQ3N2UkFKSE1zWW5takMzekFqckJhTkFHOEtsRGpJZ1dlWFRuVUJicHRlclo3Q1JxTUZRRjFRY1VtLTN3RVZ1cTR1ZklGU3hUT0k2SmR5Qk9LZ0o3NUhpLTlaQUxsY1l1UlFMd3E0SVM1WFowYkVyNTNWazJPWlFtYWo?oc=5",
-        "date": "Wed, 19 Aug 2026 05:07:00 GMT",
-        "summary": "Anthropic Q2 revenue doubles to $12B, surpasses OpenAI for first time TradingView",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9ca6dd028903590c050666c2162f99f931bb0bb5c023eb8a88dd5beb9d631652",
-        "label": "OpenAI's New Revenue Officer Comes From Alphabet's Wiz 08/14/2026 - MediaPost",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "MediaPost",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRUFVNlpaMEtad1JYb25xUU11NjRqVmhWSXU4eFZNeGo3cmxmRUFqbHVyelJKM0phMFVrSHN3Z2p4YVhqTE5kYTIyS1FucTk2OXFxbllrNXNSaTlwcklZN3RSUUJQNm4zSklidWNYdDJ6b0dSci0xX3M5VG12VjQxa2otVUxOMW1lZDVLaFBMSFJUSmZzeU9FRXRpbEc0VzdiT2NjMmlrV1Y1dkU?oc=5",
-        "date": "Fri, 21 Aug 2026 17:16:55 GMT",
-        "summary": "OpenAI's New Revenue Officer Comes From Alphabet's Wiz 08/14/2026 MediaPost",
         "score": 2,
         "weight": 1
       }
@@ -13418,6 +13424,27 @@
       },
       {
         "source": "Nvidia",
+        "target": "evidence:0b894cc3832540e0fcc61771dc9fbedc322830d0a604cc5a1baf8744b5351da0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:0b894cc3832540e0fcc61771dc9fbedc322830d0a604cc5a1baf8744b5351da0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SoftBank",
+        "target": "evidence:0b894cc3832540e0fcc61771dc9fbedc322830d0a604cc5a1baf8744b5351da0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
         "target": "evidence:806e1d210e5aa5f2c33b516a92045d408b961b7131a74e26e1fdd397b82c7465",
         "type": "EVIDENCE",
         "weight": 1,
@@ -13811,6 +13838,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:704b5f7f314632942e2303111252c892c9be36b8bef6e3a209930bf664d108b7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:704b5f7f314632942e2303111252c892c9be36b8bef6e3a209930bf664d108b7",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15316,6 +15357,27 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:884b55eb0cf6bce213b20895db982cb9ee97cc7ffd0c0e3edb886e945e92f339",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:ba2436d4aed4ffb2f7bf17d1235d90bc7e4635bf9ec65571782aa28d193e1e68",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:0a9bc4e2e57a87bb95bfb893ea6b533b3de8dd98734a19aed3f730e9331a08d1",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17351,6 +17413,27 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:a3b94c5956fae401906aae47d49690a566f106692273ecd33e45c9a0467fedb1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:a3b94c5956fae401906aae47d49690a566f106692273ecd33e45c9a0467fedb1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:a3b94c5956fae401906aae47d49690a566f106692273ecd33e45c9a0467fedb1",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Meta",
         "target": "evidence:608719e98fdac0c271554adbca9c042a5902fb6260430add347208e681556cea",
         "type": "EVIDENCE",
@@ -18221,6 +18304,34 @@
       {
         "source": "OpenAI",
         "target": "evidence:06600c95c2f5d695294bccb3ff4287570861bf67cd81eb6bf97b9687a284e151",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:6bcc847ca9057a0cdd02bad80855d5747df6289b0194c2577b8f8815a855b66c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:6bcc847ca9057a0cdd02bad80855d5747df6289b0194c2577b8f8815a855b66c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:387e75c262be55333722c0976bf57cbb1447308fc420b2c5bbb9ead0f07d65ca",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:387e75c262be55333722c0976bf57cbb1447308fc420b2c5bbb9ead0f07d65ca",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -19117,118 +19228,6 @@
       {
         "source": "DeepSeek",
         "target": "evidence:568369a03ee61cc9015906b8db57088aae3c0984a2c83cd0fb56de792794a048",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:ac54671616d08714980543c04a35168b033bdf2735aaece78b8541141bc6fb0f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:ac54671616d08714980543c04a35168b033bdf2735aaece78b8541141bc6fb0f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:c9b085a4970a6f10d32f47c97b94dcf4be4ca7e2bbf2bdbbe6dae6091028c30d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:c9b085a4970a6f10d32f47c97b94dcf4be4ca7e2bbf2bdbbe6dae6091028c30d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:f7f08884adea6b114e485ebf93915fafc32439456012181bb7e5f83376126283",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:f7f08884adea6b114e485ebf93915fafc32439456012181bb7e5f83376126283",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:cfcc3f49d7734c2118289b42e53060bf8edc8e831f62b4f37a85ee958a1b0bdc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:cfcc3f49d7734c2118289b42e53060bf8edc8e831f62b4f37a85ee958a1b0bdc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:a402de8798a46aa9b52094245b083be893cafd9dcfc87c6c0edca6159f57037b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:a402de8798a46aa9b52094245b083be893cafd9dcfc87c6c0edca6159f57037b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:130b04a66671d7ad15da98d82c28d3423286c416a807cc2c429260469e0ce72b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:130b04a66671d7ad15da98d82c28d3423286c416a807cc2c429260469e0ce72b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:d36936bb573cb7b52057312d2408757b5523b432b882ef246fdc1d97731c11e2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:d36936bb573cb7b52057312d2408757b5523b432b882ef246fdc1d97731c11e2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:9ca6dd028903590c050666c2162f99f931bb0bb5c023eb8a88dd5beb9d631652",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:9ca6dd028903590c050666c2162f99f931bb0bb5c023eb8a88dd5beb9d631652",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -34104,36 +34103,36 @@
   ],
   "collector_runs": [
     {
-      "id": 671,
+      "id": 675,
       "collector": "company-economic-news",
-      "started_at": "2026-09-01T20:04:48+00:00",
-      "completed_at": "2026-09-01T20:05:06+00:00",
+      "started_at": "2026-09-02T01:32:43+00:00",
+      "completed_at": "2026-09-02T01:33:02+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 6,
+      "items_new": 13,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "326341fb-22bc-4c99-8f2a-47fd20e5f1ba"
+      "collection_execution_id": "170d465c-3a81-45a7-a295-798ecff22add"
     },
     {
-      "id": 672,
+      "id": 676,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-09-01T20:05:07+00:00",
-      "completed_at": "2026-09-01T20:05:08+00:00",
+      "started_at": "2026-09-02T01:33:02+00:00",
+      "completed_at": "2026-09-02T01:33:03+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 3,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "326341fb-22bc-4c99-8f2a-47fd20e5f1ba"
+      "collection_execution_id": "170d465c-3a81-45a7-a295-798ecff22add"
     },
     {
       "id": 56,
@@ -34152,26 +34151,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 670,
+      "id": 674,
       "collector": "google-news-rss",
-      "started_at": "2026-09-01T20:04:44+00:00",
-      "completed_at": "2026-09-01T20:04:48+00:00",
+      "started_at": "2026-09-02T01:32:40+00:00",
+      "completed_at": "2026-09-02T01:32:43+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 9,
+      "items_new": 10,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "326341fb-22bc-4c99-8f2a-47fd20e5f1ba"
+      "collection_execution_id": "170d465c-3a81-45a7-a295-798ecff22add"
     },
     {
-      "id": 673,
+      "id": 677,
       "collector": "sec-edgar",
-      "started_at": "2026-09-01T20:05:09+00:00",
-      "completed_at": "2026-09-01T20:05:11+00:00",
+      "started_at": "2026-09-02T01:33:03+00:00",
+      "completed_at": "2026-09-02T01:33:05+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -34181,7 +34180,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "326341fb-22bc-4c99-8f2a-47fd20e5f1ba"
+      "collection_execution_id": "170d465c-3a81-45a7-a295-798ecff22add"
     },
     {
       "id": 57,
@@ -37039,6 +37038,6 @@
     "claimed_tier": "heuristic",
     "statement": "This reading is placed against accepted historical episodes."
   },
-  "database_state_version": "v1-e8b94dc438594b47",
-  "database_sha256": "e8b94dc438594b47c30bb76a47ca6e7b420ac9eedd887a86d9caf754f07907da"
+  "database_state_version": "v1-8c48cb4904dece3e",
+  "database_sha256": "8c48cb4904dece3e46986ed796ef3313de1bf8c90dcdf66506ea3fc780aa025d"
 }
