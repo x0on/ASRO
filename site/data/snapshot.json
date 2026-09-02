@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T02:47:21.900088+00:00",
+  "generated_at": "2026-09-02T03:00:56.966009+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -16,15 +16,15 @@
     "basis": "historically_calibrated"
   },
   "dimensions": {
-    "counter_evidence": null,
-    "transmission": 40.0,
-    "monetization": null,
-    "capital": 48.35840314496684,
-    "fragility": null,
     "external_pressure": null,
-    "cannibalization": null,
+    "circularity": null,
+    "fragility": null,
+    "counter_evidence": null,
     "stress": null,
-    "circularity": null
+    "capital": 48.35840314496684,
+    "transmission": 40.0,
+    "cannibalization": null,
+    "monetization": null
   },
   "dimension_evidence": {
     "capital": 5,
@@ -35,15 +35,15 @@
     "stress": 1
   },
   "dimension_basis": {
-    "counter_evidence": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "monetization": "directional_estimate",
-    "capital": "aggregate",
-    "fragility": "directional_estimate",
     "external_pressure": "directional_estimate",
-    "cannibalization": "directional_estimate",
+    "circularity": "directional_estimate",
+    "fragility": "directional_estimate",
+    "counter_evidence": "directional_estimate",
     "stress": "directional_estimate",
-    "circularity": "directional_estimate"
+    "capital": "aggregate",
+    "transmission": "confirmed_trigger",
+    "cannibalization": "directional_estimate",
+    "monetization": "directional_estimate"
   },
   "dimension_direction": {
     "monetization": {
@@ -536,6 +536,13 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-09-02T03:00:23+00:00",
+      "score": null,
+      "label": "INSUFFICIENT EVIDENCE",
+      "dimensions": "{\"stress\": null, \"monetization\": null, \"capital\": 48.35840314496684, \"counter_evidence\": null, \"circularity\": null, \"cannibalization\": null, \"fragility\": null, \"external_pressure\": null, \"transmission\": 40.0}",
+      "indicator_version": "numeric-evidence-v2"
+    },
     {
       "captured_at": "2026-09-02T02:46:52+00:00",
       "score": null,
@@ -1749,6 +1756,13 @@
     }
   ],
   "comparable_history": [
+    {
+      "captured_at": "2026-09-02T03:00:23+00:00",
+      "score": null,
+      "label": "INSUFFICIENT EVIDENCE",
+      "dimensions": "{\"stress\": null, \"monetization\": null, \"capital\": 48.35840314496684, \"counter_evidence\": null, \"circularity\": null, \"cannibalization\": null, \"fragility\": null, \"external_pressure\": null, \"transmission\": 40.0}",
+      "indicator_version": "numeric-evidence-v2"
+    },
     {
       "captured_at": "2026-09-02T02:46:52+00:00",
       "score": null,
@@ -4849,6 +4863,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:746c0538a1429a597eea662f7343ffdd21659971b4573e3082c2f2904fd094f7",
+        "label": "AI IPO pipeline: Will OpenAI and Anthropic lead the next wave? - foxbusiness.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "foxbusiness.com",
+        "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9aQmstczdyTmhsd0xqSnlxT2dUbEdBaXE2NXNRS0dHYTdQZWRPSlBaYno4SWs4YVZibWE3c3NlSWd5Nkk4eFl0amhlUjdMYmNfcVRiZ1Y0aVA3V0k?oc=5",
+        "date": "Mon, 31 Aug 2026 22:21:07 GMT",
+        "summary": "AI IPO pipeline: Will OpenAI and Anthropic lead the next wave? foxbusiness.com",
+        "score": 5,
         "weight": 1
       },
       {
@@ -10852,6 +10878,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:fc0ed88f6a7a79df95949105c6f25614f77c6702462991d39405083e8d29b450",
+        "label": "If the markets reject OpenAI and Anthropic, the US should nationalize them | Bruce Schneier and Nathan E Sanders - theguardian.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "theguardian.com",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbEtIeUhGRW5BN25TUG9kcWZaRnRhcUZQNHVMWVpFaUhGYXFQU2J5T2NZMkdZTFNQMk1mUWNRMWFSOVlUajk2cTIwYjk3WjdCSm91RTEyU3I4UzdtcWxqYkJDZ09fUjJwbHZHWkRNSkpjeklINGpDZGRDNVRiR0ZNaFJFS19FeE0?oc=5",
+        "date": "Wed, 12 Aug 2026 07:00:00 GMT",
+        "summary": "If the markets reject OpenAI and Anthropic, the US should nationalize them | Bruce Schneier and Nathan E Sanders theguardian.com",
+        "score": 2,
+        "weight": 1
+      },
+      {
         "id": "evidence:35ab636c0c6d1ff5504b310e670cb4f6f1970d89aac73e6ea83a8bebbf6962bf",
         "label": "China\u2019s DeepSeek launches V4 Pro model, on par with Anthropic\u2019s Claude Fable 5 - globaltimes.cn",
         "kind": "evidence",
@@ -11568,30 +11606,6 @@
         "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxORWZ0UGFvUHJrTnZFRmZ2STBWYjVhdEJLLXFFTTI1MVhuVkphUzl0WGR3VV83QndJTGVLOGowbGp3SmUyY1o4UXNQWElaYXRjNThVcWY3bVF3RTB2Y0QyWDZkNFNMRVdoLU5IZlJzWFdJX2RtM0JFeWNWeFFVWmpNWDZRMXBQV2NDSnRzZllvM3JVQ3E1anN3OEI3aW1LenJXcGNRLXRvOS1RdFBKandZcExWSXcwel9lNkJLRkJTTjJjR1JOZE1XS0NCaUdMdw?oc=5",
         "date": "Mon, 24 Aug 2026 11:21:57 GMT",
         "summary": "Weekly Recap: NVIDIA backs OpenAI Pike County lease and Q1 revenue surge TradingView",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d95d242fe414d39d6f5a5931922dc5890ee8fa2f6584d27c398bc46841f0fbff",
-        "label": "ByteDance folds AI tools into Doubao super-app to fight Tencent - The Edge Malaysia",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Edge Malaysia",
-        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE45YUZyR2pSRW1sRXhXTlUyanlGNmRXVlBXaTNKU3o5UDFFMFJWc1FicEpMcHJDR19mOUE2Mm5xVkp1V1pJRHNEX011d3gzY0Zp?oc=5",
-        "date": "Mon, 24 Aug 2026 10:39:51 GMT",
-        "summary": "ByteDance folds AI tools into Doubao super-app to fight Tencent The Edge Malaysia",
-        "score": 2,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f9766fe24f6274263c91a3a0695c94650418008335f59028517e4328d6ab1e00",
-        "label": "Watch Alibaba's $10B Share Sale Draws Investor Scrutiny | The China Show | 8/24/2026 - Bloomberg",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcW84UFBoYmpFOVZtYWRraThiYnVjQ3FtNEZwUzJyZlhKbjQ2UEVUQVczUDJ3U0s4ZjZHWG9pT2JKMEtPZEE1WWhNR090Q0ZrWEdPRTZXZkFaSDlwZzRBLU5sNFF2aGtqT0FXbnp1NTVPNi1xTXYwREtCUG9EVXpCbFc2YURvdw?oc=5",
-        "date": "Mon, 24 Aug 2026 00:00:00 GMT",
-        "summary": "Watch Alibaba's $10B Share Sale Draws Investor Scrutiny | The China Show | 8/24/2026 Bloomberg",
         "score": 2,
         "weight": 1
       }
@@ -13889,6 +13903,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:746c0538a1429a597eea662f7343ffdd21659971b4573e3082c2f2904fd094f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:746c0538a1429a597eea662f7343ffdd21659971b4573e3082c2f2904fd094f7",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -18403,6 +18431,20 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:fc0ed88f6a7a79df95949105c6f25614f77c6702462991d39405083e8d29b450",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:fc0ed88f6a7a79df95949105c6f25614f77c6702462991d39405083e8d29b450",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:35ab636c0c6d1ff5504b310e670cb4f6f1970d89aac73e6ea83a8bebbf6962bf",
         "type": "EVIDENCE",
         "weight": 1,
@@ -19237,34 +19279,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:86b801358449a1e6e8025ad234b06d07501a088deafdb8098a11103be6eb935d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:d95d242fe414d39d6f5a5931922dc5890ee8fa2f6584d27c398bc46841f0fbff",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:d95d242fe414d39d6f5a5931922dc5890ee8fa2f6584d27c398bc46841f0fbff",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:f9766fe24f6274263c91a3a0695c94650418008335f59028517e4328d6ab1e00",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:f9766fe24f6274263c91a3a0695c94650418008335f59028517e4328d6ab1e00",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -34155,36 +34169,36 @@
   ],
   "collector_runs": [
     {
-      "id": 679,
+      "id": 683,
       "collector": "company-economic-news",
-      "started_at": "2026-09-02T02:46:29+00:00",
-      "completed_at": "2026-09-02T02:46:47+00:00",
+      "started_at": "2026-09-02T03:00:06+00:00",
+      "completed_at": "2026-09-02T03:00:20+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 10,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "7c22c78e-7427-417f-ba8a-8e2eb1444ebf"
+      "collection_execution_id": "20a21587-7f03-4b49-a057-685b8ae74189"
     },
     {
-      "id": 680,
+      "id": 684,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-09-02T02:46:48+00:00",
-      "completed_at": "2026-09-02T02:46:49+00:00",
+      "started_at": "2026-09-02T03:00:20+00:00",
+      "completed_at": "2026-09-02T03:00:21+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 3,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "7c22c78e-7427-417f-ba8a-8e2eb1444ebf"
+      "collection_execution_id": "20a21587-7f03-4b49-a057-685b8ae74189"
     },
     {
       "id": 56,
@@ -34203,26 +34217,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 678,
+      "id": 682,
       "collector": "google-news-rss",
-      "started_at": "2026-09-02T02:46:27+00:00",
-      "completed_at": "2026-09-02T02:46:29+00:00",
+      "started_at": "2026-09-02T03:00:04+00:00",
+      "completed_at": "2026-09-02T03:00:05+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 5,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "7c22c78e-7427-417f-ba8a-8e2eb1444ebf"
+      "collection_execution_id": "20a21587-7f03-4b49-a057-685b8ae74189"
     },
     {
-      "id": 681,
+      "id": 685,
       "collector": "sec-edgar",
-      "started_at": "2026-09-02T02:46:50+00:00",
-      "completed_at": "2026-09-02T02:46:52+00:00",
+      "started_at": "2026-09-02T03:00:21+00:00",
+      "completed_at": "2026-09-02T03:00:23+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -34232,7 +34246,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "7c22c78e-7427-417f-ba8a-8e2eb1444ebf"
+      "collection_execution_id": "20a21587-7f03-4b49-a057-685b8ae74189"
     },
     {
       "id": 57,
@@ -37090,6 +37104,6 @@
     "claimed_tier": "heuristic",
     "statement": "This reading is placed against accepted historical episodes."
   },
-  "database_state_version": "v1-8006e6540b285df9",
-  "database_sha256": "8006e6540b285df97baa886a0d1e22dd95e965919212f8cffafcbc078215cf57"
+  "database_state_version": "v1-9799026787e50bd3",
+  "database_sha256": "9799026787e50bd357862272e469d515c42f0ea2b90982e5c851f11884bd42cf"
 }
