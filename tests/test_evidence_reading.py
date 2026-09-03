@@ -95,7 +95,8 @@ def test_cash_burn_cannot_be_reassurance_even_in_legacy_rows():
 @pytest.mark.parametrize(
     "text",
     [
-        "Credit Facility: $11.7 billion of credit facilities, of which $1.3 billion was outstanding.",
+        "Credit Facility: $11.7 billion of credit facilities, "
+        "of which $1.3 billion was outstanding.",
         "Entered a $10 billion revolving credit agreement.",
         "Outstanding balances associated with letters of credit were $533 million.",
         "A $17.5 billion delayed draw term loan credit facility.",
