@@ -44,6 +44,8 @@ def event_to_observation(event: FinancialEvent) -> Observation | None:
     if not mapped:
         return None
     variable_key, fallback_value, polarity = mapped
+    if event.event_type.value == "FREE_CASH_FLOW" and event.amount is not None:
+        polarity = "risk" if event.amount < 0 else "safety"
     definition = VARIABLES[variable_key]
     value: float
     unit: str | None

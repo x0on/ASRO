@@ -112,6 +112,9 @@ jobs:
           ASRO_FRED_API_KEY: ${{ secrets.ASRO_FRED_API_KEY }}
         run: asro acquire-vintages --bootstrap
 
+      - name: Capture post-review reading
+        run: asro capture-reading
+
       - name: Package candidate immutable state
         env:
           GITHUB_SHA: ${{ github.sha }}

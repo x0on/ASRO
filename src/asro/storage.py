@@ -542,9 +542,10 @@ class SqliteRepository:
         return list(
             connection.execute(
                 """
-                SELECT o.*
+                SELECT o.*, i.url, i.companies AS source_companies, ec.reviewed_at
                 FROM observations o
                 JOIN economic_events ec ON ec.canonical_event_id = o.event_id
+                JOIN items i ON i.id = o.source_document_id
                 WHERE ec.review_status = 'confirmed'
                 ORDER BY o.observed_at DESC
                 LIMIT ?

@@ -19,6 +19,34 @@ def test_entire_dashboard_script_parses(tmp_path: Path) -> None:
     subprocess.run([node, "--check", str(script)], check=True, capture_output=True)  # noqa: S603
 
 
+def test_news_cards_group_same_source_and_headline_is_not_alert_count(tmp_path: Path) -> None:
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("node is not available")
+    page = Path("src/asro/templates/index.html").read_text()
+    source = next(
+        line for line in page.splitlines() if line.startswith("function renderNewsAlerts(")
+    )
+    script = tmp_path / "news.mjs"
+    script.write_text(
+        "const links=[];const make=()=>({append(){},appendChild(){},replaceChildren(){},"
+        "set href(value){links.push(value)}});"
+        "const document={getElementById:make,createElement:make};"
+        "const row={kind:'pressure',url:'https://example.com/filing',date:'2026-09-01',"
+        "title:'Filing',rationale:'Debt',causal_role:'VULNERABILITY'};"
+        "const data={news_alerts:{items:[row,{...row,rationale:'Guarantees'}]}};"
+        + source
+        + ";renderNewsAlerts();console.log(JSON.stringify(links));"
+    )
+    result = subprocess.run([node, str(script)], check=True, capture_output=True, text=True)  # noqa: S603
+    assert json.loads(result.stdout) == ["https://example.com/filing"]
+    hero = next(
+        line for line in page.splitlines() if line.startswith("function renderOverviewPhrase(")
+    )
+    assert "sig.score" in hero
+    assert "data.news_alerts" not in hero
+
+
 def test_network_weights_distinct_facts_and_carries_mentions() -> None:
     events = [
         {

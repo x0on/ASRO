@@ -1038,7 +1038,8 @@ def test_publishing_a_calibrated_claim_is_allowed_only_once_earned(
         tmp_path / "site", database, claimed_tier=OutputTier.HISTORICALLY_CALIBRATED
     )
     payload = json.loads((output / "data" / "snapshot.json").read_text(encoding="utf-8"))
-    assert payload["signal"]["calibration_label"] == "HISTORICALLY CALIBRATED"
+    assert payload["signal"]["benchmark_calibration_label"] == "HISTORICALLY CALIBRATED"
+    assert payload["signal"]["calibration_label"] == "NOT YET CALIBRATED"
     assert payload["calibration"]["claimed_tier"] == "historically_calibrated"
 
 
@@ -1106,7 +1107,8 @@ def test_an_earned_calibration_replaces_the_warning(
         tmp_path / "site", database, claimed_tier=OutputTier.HISTORICALLY_CALIBRATED
     )
     payload = json.loads((output / "data" / "snapshot.json").read_text(encoding="utf-8"))
-    assert payload["signal"]["calibration_label"] == "HISTORICALLY CALIBRATED"
+    assert payload["signal"]["benchmark_calibration_label"] == "HISTORICALLY CALIBRATED"
+    assert payload["signal"]["calibration_label"] == "NOT YET CALIBRATED"
     # The script swaps the banner text; the served default stays the cautious one.
     page = (output / "index.html").read_text(encoding="utf-8")
     assert "this reading is placed against accepted historical episodes" in page

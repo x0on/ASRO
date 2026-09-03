@@ -21,12 +21,8 @@ from asro.dictionary.registry import VARIABLES
 from asro.entities import canonicalize, canonicalize_many
 from asro.indicators import (
     INDICATOR_VERSION,
-    compute_convergence,
-    compute_dimension_scores,
-    dimension_directional_readings,
-    dimension_evidence_basis,
-    dimension_evidence_counts,
-    latest_observations,
+    _parse,
+    compute_evidence_reading,
     overall_evidence_direction,
 )
 from asro.measurement import filing_issuer_matches
@@ -225,7 +221,7 @@ def _build_dimension_evidence(
     """Expose the exact reviewed records eligible for each current dimension score."""
     event_by_id = {str(event.get("event_id")): event for event in events}
     result: dict[str, list[dict[str, Any]]] = {}
-    for observation in latest_observations(observations, datetime.now(UTC)):
+    for observation in observations:
         definition = VARIABLES.get(str(observation.get("variable_key")))
         if definition is None:
             continue
@@ -246,6 +242,7 @@ def _build_dimension_evidence(
                     else "lowers the warning"
                 ),
                 "confidence": observation.get("confidence"),
+                "support": observation.get("support"),
                 "date": event.get("effective_date") or event.get("published_at"),
                 "event_type": event.get("event_type"),
                 "title": event.get("title") or observation.get("evidence_text"),
@@ -286,7 +283,7 @@ def build_static_site(
         events = _safe_rows(repository.canonical_events(connection, limit=5000))
         mention_count = repository.event_count(connection)
         runs = _safe_rows(repository.latest_runs(connection))
-        observations = _safe_rows(repository.recent_observations(connection, limit=2000))
+        observations = _safe_rows(repository.recent_observations(connection, limit=5000))
         history = _safe_rows(repository.recent_snapshots(connection, limit=365))
         review_counts = repository.review_counts(connection)
         feature_family = _feature_family_rows(connection)
@@ -307,19 +304,40 @@ def build_static_site(
     data_dir = output_dir / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
 
-    dimensions = compute_dimension_scores(observations)
-    convergence = compute_convergence(dimensions)
-    dimension_evidence = dimension_evidence_counts(observations)
-    dimension_basis = dimension_evidence_basis(observations)
-    dimension_direction = dimension_directional_readings(observations)
+    moment = datetime.now(UTC)
+    if history and history[0].get("indicator_version") == INDICATOR_VERSION:
+        captured = _parse(history[0].get("captured_at"))
+        if captured is not None and captured <= moment:
+            moment = captured
+    dimensions, convergence, points = compute_evidence_reading(observations, moment)
+    dimension_evidence = dict(Counter(str(p["dimension"]) for p in points))
+    dimension_basis = {key: "reviewed_evidence" for key in dimension_evidence}
+    # Use the same selected support as the score; the legacy direction helper
+    # deduplicates opposing evidence and would silently change this evidence set.
+    dimension_direction = {
+        key: {
+            "direction": (
+                "higher_pressure" if value > 50 else "lower_pressure" if value < 50 else "mixed"
+            ),
+            "evidence_count": dimension_evidence[key],
+        }
+        for key, value in dimensions.items()
+        if value is not None
+    }
     signal = convergence.model_dump()
     signal["indicator_version"] = INDICATOR_VERSION
     signal["indicator_validation"] = "Revised indicator: not historically validated"
     signal["evidence_direction"] = overall_evidence_direction(dimension_direction)
-    signal["calibration_label"] = (
+    signal["benchmark_calibration_label"] = (
         "HISTORICALLY CALIBRATED" if readiness.historically_calibrated else "NOT YET CALIBRATED"
     )
-    signal["basis"] = readiness.output_tier.value
+    signal["calibration_label"] = "NOT YET CALIBRATED"
+    signal["basis"] = "reviewed_evidence_heuristic"
+    signal["reading_as_of"] = moment.isoformat()
+    signal["support_totals"] = {
+        side: sum(float(p["support"]) for p in points if p["polarity"] == side)
+        for side in ("risk", "safety")
+    }
 
     payload = {
         "generated_at": datetime.now(UTC).isoformat(),
@@ -330,7 +348,7 @@ def build_static_site(
         "dimension_evidence": dimension_evidence,
         "dimension_basis": dimension_basis,
         "dimension_direction": dimension_direction,
-        "dimension_evidence_items": _build_dimension_evidence(observations, events),
+        "dimension_evidence_items": _build_dimension_evidence(points, events),
         "tracked_entities": canonicalize_many(config["entities"]["companies"]),
         "measurements": [
             {
@@ -385,7 +403,8 @@ def build_static_site(
                 "This reading is a deterministic heuristic. It is not calibrated against "
                 "historical crisis or benign investment cycles."
                 if not readiness.historically_calibrated
-                else "This reading is placed against accepted historical episodes."
+                else "Historical benchmark evidence readiness passed; the revised reading "
+                "has not been historically validated."
             ),
         },
     }

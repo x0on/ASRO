@@ -38,6 +38,7 @@ from asro.features import (
     FeatureStoreBuilder,
 )
 from asro.features.quality import audit_finalized_build
+from asro.indicators import compute_evidence_reading
 from asro.operations import WorkflowRunRecord, record_window_repair, record_workflow_run
 from asro.release import validate_release, write_collection_proof
 from asro.reviewer import EvidenceReviewer
@@ -450,6 +451,21 @@ def rebuild_observations() -> None:
     """Recompute measurements after extraction or scoring-policy changes."""
     rebuilt = MonitorService(Settings()).rebuild_observations()
     typer.echo(f"Rebuilt {rebuilt} derived observations.")
+
+
+@app.command("capture-reading")
+def capture_reading() -> None:
+    """Save the post-review reading before immutable packaging and publication."""
+    repository = SqliteRepository(Settings().database_path)
+    moment = datetime.now(UTC)
+    with repository.connect() as connection:
+        rows = [dict(row) for row in repository.recent_observations(connection, limit=5000)]
+        dimensions, result, _ = compute_evidence_reading(rows, moment)
+        repository.insert_snapshot(
+            connection, moment.isoformat(), result.score, result.label, dimensions
+        )
+        connection.commit()
+    typer.echo(f"Captured {result.score}: {result.label}")
 
 
 @app.command()

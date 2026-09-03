@@ -1,15 +1,18 @@
 from __future__ import annotations
 
+import json
 from collections import defaultdict
 from collections.abc import Iterable
 from datetime import UTC, datetime, timedelta
 from email.utils import parsedate_to_datetime
 from math import isfinite
 from typing import Any, Literal
+from urllib.parse import urlsplit
 
 from pydantic import BaseModel
 
 from asro.dictionary.registry import VARIABLES
+from asro.entities import canonicalize
 
 
 def _normalize(value: float, scale: float) -> float:
@@ -27,7 +30,7 @@ MIN_DIRECTIONAL_POINTS = 1
 DIRECTIONAL_PRIOR_STRENGTH = 5
 DIRECTIONAL_MAX_DEVIATION = 25.0
 MAX_PLAUSIBLE_USD = 5_000_000_000_000.0
-INDICATOR_VERSION = "numeric-evidence-v2"
+INDICATOR_VERSION = "reviewed-evidence-v3"
 
 
 def _parse(ts: object) -> datetime | None:
@@ -311,3 +314,121 @@ def compute_convergence(dimensions: dict[str, float | None]) -> ConvergenceResul
         gate_passed=gate_passed,
         gate_reason=gate_reason,
     )
+
+
+def evidence_points(
+    observations: Iterable[dict[str, Any]], as_of: datetime
+) -> list[dict[str, Any]]:
+    """Strongest supported risk and counterpoint per variable/entity within 90 days.
+
+    Repeated reporting cannot add votes. A weaker additional risk point cannot
+    replace a stronger one. Opposing evidence remains a separate contribution.
+    """
+    selected: dict[tuple[str, str, str], dict[str, Any]] = {}
+    for row in observations:
+        entity = row.get("entity")
+        if not entity:
+            try:
+                companies = json.loads(str(row.get("source_companies") or "[]"))
+            except (ValueError, TypeError):
+                continue
+            if not isinstance(companies, list) or len(companies) != 1:
+                continue
+            entity = companies[0]
+        if not isinstance(entity, str) or not entity.strip():
+            continue
+        row = {**row, "entity": canonicalize(entity)}
+        # A qualitative cash-flow/revenue report alone is not reassuring evidence.
+        if row.get("polarity") == "safety" and row.get("unit") == "signal":
+            continue
+        if row.get("variable_key") == "free_cash_flow_strength":
+            try:
+                if float(row["value"]) < 0:
+                    row = {**row, "polarity": "risk"}
+            except (KeyError, TypeError, ValueError):
+                continue
+        definition = VARIABLES.get(str(row.get("variable_key")))
+        if definition is None or row.get("polarity") not in {"risk", "safety"}:
+            continue
+        try:
+            url = urlsplit(str(row.get("url") or ""))
+            confidence = float(row.get("confidence") or 0)
+        except (ValueError, TypeError):
+            continue
+        if url.scheme not in {"https", "http"} or not url.hostname:
+            continue
+        observed = _parse(row.get("observed_at"))
+        effective = _parse(row.get("effective_date"))
+        reviewed = _parse(row.get("reviewed_at"))
+        if any(moment is None or moment > as_of for moment in (observed, reviewed)):
+            continue
+        if effective is None or not as_of - timedelta(days=WINDOW_DAYS) <= effective <= as_of:
+            continue
+        if not isfinite(confidence) or not 0 < confidence <= 1:
+            continue
+        # Qualitative events support direction, not an invented dollar amount.
+        strength = 1.0
+        if row.get("unit") == "score":
+            try:
+                raw = float(row["value"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if not isfinite(raw) or not 0 <= raw <= 5:
+                continue
+            strength = raw / 5
+        if strength <= 0:
+            continue
+        key = (definition.key, str(row["entity"]), str(row["polarity"]))
+        point = {
+            **row,
+            "dimension": definition.dimension.value,
+            "support": confidence * strength * definition.weight,
+        }
+        previous = selected.get(key)
+        if previous is None or (point["support"], str(point.get("event_id"))) > (
+            previous["support"],
+            str(previous.get("event_id")),
+        ):
+            selected[key] = point
+    return [selected[key] for key in sorted(selected)]
+
+
+def compute_evidence_reading(
+    observations: Iterable[dict[str, Any]], as_of: datetime | None = None
+) -> tuple[dict[str, float | None], ConvergenceResult, list[dict[str, Any]]]:
+    """One signed-support estimator at every coverage level, with explicit unknowns.
+
+    50 + 50*(risk-support - counter-support)/(5 + total-support).
+    Confidence controls support, not an apparent discount to risk severity.
+    The same calculation supplies the headline and each dimension; it never
+    switches to a raw-value mean when a fifth point arrives.
+    """
+    points = evidence_points(observations, as_of or datetime.now(UTC))
+
+    def reading(rows: list[dict[str, Any]]) -> float | None:
+        if not rows:
+            return None
+        positive = sum(p["support"] for p in rows if p["polarity"] == "risk")
+        negative = sum(p["support"] for p in rows if p["polarity"] == "safety")
+        return round(float(50 + 50 * (positive - negative) / (5 + positive + negative)), 1)
+
+    dimensions = {
+        v.dimension.value: reading([p for p in points if p["dimension"] == v.dimension.value])
+        for v in VARIABLES.values()
+    }
+    result = compute_convergence(dimensions)
+    if result.known_dimensions >= MIN_KNOWN_DIMENSIONS:
+        result.score = reading(points)
+        assert result.score is not None
+        result.label = (
+            "DISPERSED"
+            if result.score < 25
+            else "FORMING"
+            if result.score < 45
+            else "BUILDING PRESSURE"
+            if result.score < 65
+            else "FRAGILE"
+            if result.score < 80 or not result.gate_passed
+            else "HIGH CONVERGENCE"
+        )
+    return dimensions, result, points

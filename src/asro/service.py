@@ -19,7 +19,7 @@ from asro.collectors.sec import HistoricalSecCollector, SecCollector
 from asro.dedupe import economic_fingerprint
 from asro.documents import DocumentFetcher
 from asro.extraction.deterministic import DeterministicEventExtractor
-from asro.indicators import compute_convergence, compute_dimension_scores
+from asro.indicators import compute_evidence_reading
 from asro.lineage import seed_verified_lineage
 from asro.measurement import event_to_observation
 from asro.models import FinancialEvent, ScoredItem
@@ -159,8 +159,7 @@ class MonitorService:
             observations = [
                 dict(r) for r in self._repository.recent_observations(connection, limit=5000)
             ]
-            dimensions = compute_dimension_scores(observations)
-            convergence = compute_convergence(dimensions)
+            dimensions, convergence, _ = compute_evidence_reading(observations)
             self._repository.insert_snapshot(
                 connection, _now(), convergence.score, convergence.label, dimensions
             )
