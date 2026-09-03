@@ -1,72 +1,71 @@
 {
-  "generated_at": "2026-09-03T14:35:32.134866+00:00",
+  "generated_at": "2026-09-03T14:47:50.969191+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": null,
-    "label": "INSUFFICIENT EVIDENCE",
+    "score": 83.6,
+    "label": "HIGH CONVERGENCE",
     "direction": "unknown",
-    "known_dimensions": 2,
-    "gate_passed": false,
-    "gate_reason": "2 of 3 required dimensions measured",
-    "indicator_version": "numeric-evidence-v2",
+    "known_dimensions": 7,
+    "gate_passed": true,
+    "gate_reason": "material evidence in fragility and capital",
+    "indicator_version": "reviewed-evidence-v3",
     "indicator_validation": "Revised indicator: not historically validated",
     "evidence_direction": "higher_pressure",
-    "calibration_label": "HISTORICALLY CALIBRATED",
-    "basis": "historically_calibrated"
+    "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
+    "calibration_label": "NOT YET CALIBRATED",
+    "basis": "reviewed_evidence_heuristic",
+    "reading_as_of": "2026-09-03T14:47:38.956695+00:00",
+    "support_totals": {
+      "risk": 22.434,
+      "safety": 2.4000000000000004
+    }
   },
   "dimensions": {
-    "fragility": null,
-    "external_pressure": null,
+    "capital": 80.1,
     "monetization": null,
-    "stress": null,
-    "counter_evidence": null,
-    "transmission": 40.0,
-    "circularity": null,
-    "cannibalization": null,
-    "capital": 48.35840314496684
+    "circularity": 77.6,
+    "fragility": 76.7,
+    "stress": 59.5,
+    "transmission": 54.4,
+    "cannibalization": 58.3,
+    "external_pressure": 53.0,
+    "counter_evidence": 33.8
   },
   "dimension_evidence": {
-    "fragility": 2,
-    "capital": 5,
-    "counter_evidence": 2,
+    "capital": 7,
+    "fragility": 5,
     "external_pressure": 2,
+    "counter_evidence": 2,
+    "cannibalization": 1,
     "transmission": 2,
-    "stress": 1
+    "stress": 2,
+    "circularity": 5
   },
   "dimension_basis": {
-    "fragility": "directional_estimate",
-    "external_pressure": "directional_estimate",
-    "monetization": "directional_estimate",
-    "stress": "directional_estimate",
-    "counter_evidence": "directional_estimate",
-    "transmission": "confirmed_trigger",
-    "circularity": "directional_estimate",
-    "cannibalization": "directional_estimate",
-    "capital": "aggregate"
+    "capital": "reviewed_evidence",
+    "fragility": "reviewed_evidence",
+    "external_pressure": "reviewed_evidence",
+    "counter_evidence": "reviewed_evidence",
+    "cannibalization": "reviewed_evidence",
+    "transmission": "reviewed_evidence",
+    "stress": "reviewed_evidence",
+    "circularity": "reviewed_evidence"
   },
   "dimension_direction": {
-    "fragility": {
+    "capital": {
       "direction": "higher_pressure",
-      "evidence_count": 2
-    },
-    "monetization": {
-      "direction": "lower_pressure",
-      "evidence_count": 2
+      "evidence_count": 7
     },
     "circularity": {
       "direction": "higher_pressure",
-      "evidence_count": 3
+      "evidence_count": 5
     },
-    "capital": {
+    "fragility": {
       "direction": "higher_pressure",
       "evidence_count": 5
     },
-    "counter_evidence": {
-      "direction": "lower_pressure",
-      "evidence_count": 2
-    },
-    "external_pressure": {
+    "stress": {
       "direction": "higher_pressure",
       "evidence_count": 2
     },
@@ -78,154 +77,17 @@
       "direction": "higher_pressure",
       "evidence_count": 1
     },
-    "stress": {
+    "external_pressure": {
       "direction": "higher_pressure",
-      "evidence_count": 1
+      "evidence_count": 2
+    },
+    "counter_evidence": {
+      "direction": "lower_pressure",
+      "evidence_count": 2
     }
   },
   "dimension_evidence_items": {
-    "fragility": [
-      {
-        "variable": "AI-related debt",
-        "entity": "Anthropic",
-        "value": 10000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.82,
-        "date": "Tue, 18 Aug 2026 07:00:00 GMT",
-        "event_type": "LENDS_TO",
-        "title": "Anthropic Pre-IPO Credit Facility Set to Climb Past $10 Billion - Bloomberg.com",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNU9mVXV0ZTMtd20xVkxqQXZwVF9rMTRQMmZJOGlZV0hvb1pGQUpRemRlZHYxUEJUbXFUQTBKWGNfSTg0TWxNbEJGb3JjWVdfSGVvOERjemJabTFmSFlHRlB5Mk1kbWE1c2dOQm92enZfVV9McTdDZmxRMDc1UmlHaDAyR3FJb3NVbE9NVmJaVVgyeTdTb1g4dnFCcXY1bXZTNV9MX0szN0FOblBmdmNHRm5Sdw?oc=5",
-        "evidence": "Anthropic Pre-IPO Credit Facility Set to Climb Past $10 Billion - Bloomberg.com Anthropic Pre-IPO Credit Facility Set to Climb Past $10 Billion Bloomberg.com Google News"
-      },
-      {
-        "variable": "AI-related debt",
-        "entity": null,
-        "value": 1200000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.82,
-        "date": "2026-08-12",
-        "event_type": "LENDS_TO",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "evidence": "In August 2026, the Company made a $ 1.2 billion draw down on the Revolving Credit Facility."
-      }
-    ],
-    "monetization": [
-      {
-        "variable": "External AI revenue",
-        "entity": "Zhipu AI",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "lowers the warning",
-        "confidence": 0.72,
-        "date": "Tue, 01 Sep 2026 10:17:03 GMT",
-        "event_type": "REVENUE_REPORT",
-        "title": "China's Zhipu AI revenue quintuples in first half, loss narrows - ET Enterprise AI",
-        "source": "ET Enterprise AI",
-        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNOWM5aG0yUjkxU2EzSnNfS3VENV9FcVprM2NKZ25adEppNGhjeWw1U1o1d21tcUhwTUZLdGtyMmgzMlE3c2JSdUZTWWlJdWVkUDYxcVVpdldtWXlCaUlxSmZjdEdUSGVRVTlvOG1CelBrX3pxWTRRaFdLMmtZcE16SG9OWXROYjhoaE5mN2ZOS1RzLTUwRzZrRUdtaFpHRXp2VkZNSkN0NGZqLVJuN0ZXcFZiSDdnYmZ1VTl5b2lpTFBCc0JpZUp0dHV3T3JFTEd3aGdRT1NB0gHWAUFVX3lxTE05YzlobTJSOTFTYTNKc19LdUQ1X0VxWmszY0pnblp0Smk0aGN5bDVTWjV3bW1xSHBNRkt0a3IyaDMyUTdzYlJ1RlNZaUl1ZWRQNjFxVWl2V21ZeUJpSXFKZmN0R1RIZVFVOW84bUJ6UGtfenFZNFFoV0sya1lwTXpIb05ZdE5iOGhoTmY3Zk5LVHMtNTBHNmtFR21oWkdFenZWRk1KQ3Q0ZmotUm43RldwVmJIN2diZnVVOXlvaWlMUEJzQmllSnR0dXdPckVMR3doZ1FPU0E?oc=5",
-        "evidence": "China's Zhipu AI revenue quintuples in first half, loss narrows - ET Enterprise AI China's Zhipu AI revenue quintuples in first half, loss narrows ET Enterprise AI Google News"
-      },
-      {
-        "variable": "External AI revenue",
-        "entity": "OpenAI",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "lowers the warning",
-        "confidence": 0.72,
-        "date": "Thu, 13 Aug 2026 07:00:00 GMT",
-        "event_type": "REVENUE_REPORT",
-        "title": "OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO - New York Post",
-        "source": "New York Post",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd25memJGdXMzVjI2QS1lT0ZsQ3luR0ZQU3FJTXlST1drQTRmdFB5RU5JZ0txOEo4TkI1TUJDWG8zc1NWMGRDdG5KbzZqdDBOeWs2V1UzNUFoWWtkd2NNcU1GXzdEYWxCMXYycVpzQWwwQ0E0QjJEX0U1YVBSSzFFcG9mYy1KYjloUHlNMUt6YkYzYXVDS3NoNXJKNjBoTkFLTHJUdEFn?oc=5",
-        "evidence": "OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO - New York Post OpenAI revenue chief Denise Dresser departs \u2013 latest high-level exit ahead of blockbuster IPO New York Post Google News"
-      }
-    ],
-    "circularity": [
-      {
-        "variable": "Vendor financing",
-        "entity": "Nvidia",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.88,
-        "date": "Fri, 21 Aug 2026 16:14:10 GMT",
-        "event_type": "GUARANTEES",
-        "title": "Nvidia scales back financing guarantee for OpenAI data center - Network World",
-        "source": "Network World",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNenFIcHVpc0dKamEyb01mdmNPY1RLSWZxNm1zUEtuUDdhRTBYa1lsOENRMUFjWHc4SHlnSkVCd2JSV25ZVjV2OFBCQmotYm1EODNrRzFGTDVDSnhrTFJaNW9EM1BLbXN5M3kteEkwYjdXa05XeWRVU3NxRldIYWVRVnlKRUZlWEQzMFlFcEtSV0ZWeFNOeWdaeDY3NnZCTGlwcHBGV1lnUFNnYjc5dVF3ZA?oc=5",
-        "evidence": "Nvidia scales back financing guarantee for OpenAI data center - Network World Nvidia scales back financing guarantee for OpenAI data center Network World Google News"
-      },
-      {
-        "variable": "Vendor financing",
-        "entity": null,
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.88,
-        "date": "2026-08-26",
-        "event_type": "GUARANTEES",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "evidence": "guarantees 105.0 Total $ 108.5 Accrual for Product Warranty Liabilities The estimated product returns and product warranty activity consisted of the following: Three Months Ended Six Months Ended Jul 26, 2026 Jul 27, 2025 Jul 26, 2026 Jul 27, 2025 (In millions) Balance at beginning of period $ 2,948 $ 2,080 $ 2,807 $ 1,290 Additions 391 220 720 1,090 Utilization ( 401 ) ( 156 ) ( 589 ) ( 236 ) Balance at end of period $ 2,938 $ 2,144 $ 2,938 $ 2,144 For the second quarter and first half of fiscal years 2027 and 2026, the additions in product warranty liabilities primarily related to our Compute & Networking segment."
-      },
-      {
-        "variable": "Vendor financing",
-        "entity": "OpenAI",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.88,
-        "date": "2026-08-26",
-        "event_type": "GUARANTEES",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "evidence": "The guarantees terminate upon certain events, including OpenAI achieving a satisfactory credit rating or after each respective lease term has completed."
-      }
-    ],
     "capital": [
-      {
-        "variable": "AI capital commitments",
-        "entity": "Alphabet",
-        "value": 745000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.76,
-        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tQ3M3Vk8tM1haT2Y0Y0dIU2VNOVRmQ2dVUkl1czcxYmFYcnlQQnQ2WmszSmJKNFhxdXp2OHFGZFluRVpJN1Z2TWgxaWk2TndIX0ZYZXY5OUxUVnBjMmpDN1BtYmlSZl94bGlYMHNJYTZndmFXdmc?oc=5",
-        "evidence": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" finance.biggo.com Google News"
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "Amazon",
-        "value": 25000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.76,
-        "date": "Sat, 22 Aug 2026 07:13:48 GMT",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXl3SlNrdnVqZGdqS2QyOXpwREFKbUV6WEp1QXhNLU9rVkZkYTB0UmdaSFFVLU9nWUZsMTdSam5RcEE0RXNpdm4yd0V3T0ZIbnV6WUV4VTlwd2JfQmdFTUVCR0FEOHFBMmtVM3hKRndPOUVDLTl4dmxPenh4cHJ1QlZ3RGQ4cjFEVjQ5Q3psWnRuZDFBMjBndHBSNnMzM0l6czNkZTBLQmM1VmRRVWN3ZGlvODZFV1IwellmZUhHcHlMX1VSYjlFUWVVRk9SUTBlWEVaQg?oc=5",
-        "evidence": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds TradingView Google News"
-      },
       {
         "variable": "AI capital commitments",
         "entity": "Nvidia",
@@ -234,6 +96,7 @@
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.76,
+        "support": 0.9880000000000001,
         "date": "2026-08-26",
         "event_type": "CAPEX_COMMITMENT",
         "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
@@ -243,12 +106,13 @@
       },
       {
         "variable": "AI capital commitments",
-        "entity": null,
+        "entity": "CoreWeave",
         "value": 44000000.0,
         "unit": "USD",
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.86,
+        "support": 1.118,
         "date": "2026-08-12",
         "event_type": "INVESTS_IN",
         "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
@@ -258,50 +122,165 @@
       },
       {
         "variable": "AI capital commitments",
+        "entity": "Amazon",
+        "value": 28700000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.86,
+        "support": 1.118,
+        "date": "2026-07-31",
+        "event_type": "INVESTS_IN",
+        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "evidence": "We account for our $ 28.7 billion investment in Series C Preferred Stock recorded on our consolidated balance sheet as of June 30, 2026, and the remaining Commitment Amount as a component of our equity investments in private companies not accounted for under the equity-method, with future adjustments for observable changes in prices or impairments representing Level 3 fair value measurements recognized in \u201cOther income (expense), net\u201d on our consolidated statements of operations."
+      },
+      {
+        "variable": "AI capital commitments",
         "entity": "OpenAI",
         "value": 28700000000.0,
         "unit": "USD",
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.86,
+        "support": 1.118,
         "date": "2026-07-31",
         "event_type": "INVESTS_IN",
         "title": "Amazon SEC filing: 10-Q (2026-07-31)",
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
         "evidence": "We invested $28.7 billion in OpenAI\u2019s Series C Preferred Stock for the six months ended June 30, 2026, including $13.7 billion invested in Q2 2026."
-      }
-    ],
-    "counter_evidence": [
-      {
-        "variable": "Free cash flow strength",
-        "entity": "Amazon",
-        "value": 7600000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "lowers the warning",
-        "confidence": 0.8,
-        "date": "Sun, 23 Aug 2026 14:21:29 GMT",
-        "event_type": "FREE_CASH_FLOW",
-        "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
-        "source": "The Motley Fool",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
-        "evidence": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%."
       },
       {
-        "variable": "Free cash flow strength",
-        "entity": null,
-        "value": 121.0,
+        "variable": "AI capital commitments",
+        "entity": "Meta",
+        "value": 2920000000.0,
         "unit": "USD",
         "role": "measured value",
-        "effect": "lowers the warning",
-        "confidence": 0.8,
-        "date": "2026-07-31",
-        "event_type": "FREE_CASH_FLOW",
-        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
+        "effect": "raises the warning",
+        "confidence": 0.86,
+        "support": 1.118,
+        "date": "2026-07-30",
+        "event_type": "INVESTS_IN",
+        "title": "Meta SEC filing: 10-Q (2026-07-30)",
         "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-        "evidence": "Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended June 30, 2025 and 2026 (in millions): Twelve Months Ended June 30, 2025 2026 Net cash provided by (used in) operating activities $ 121,137 $ 161,403 Purchases of property and equipment, net of proceeds from sales and incentives (102,953) (169,007) Free cash flow $ 18,184 $ (7,604) Net cash provided by (used in) investing activities $ (123,569) $ (216,775) Net cash provided by (used in) financing activities $ (8,652) $ 75,160 Free cash flow has limitations as it omits certain components of the overall cash flow statement and does not represent the residual cash flow available for discretionary expenditures."
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "evidence": "As of June 30, 2026 and December 31, 2025, the carrying value of our equity investment included within non-marketable equity investments on our condensed consolidated balance sheets was $ 2.92 billion and $ 1.83 billion, respectively, and our maximum exposure to loss related to the Venture was $ 46.03 billion and $ 45.95 billion, respectively, consisting of the carrying value of our equity investment, the lease commitments, our estimated future funding commitments, and the maximum RVG threshold."
+      },
+      {
+        "variable": "AI capital commitments",
+        "entity": "Alphabet",
+        "value": 28.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.86,
+        "support": 1.118,
+        "date": "2026-07-23",
+        "event_type": "INVESTS_IN",
+        "title": "Alphabet SEC filing: 10-Q (2026-07-23)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "evidence": "The carrying values for non-marketable securities are summarized below (in millions): As of December 31, 2025 As of June 30, 2026 Non-marketable securities: Total initial cost of non-marketable equity securities accounted for under the measurement alternative $ 28,429 $ 47,642 Cumulative upward adjustments 44,485 85,732 Cumulative downward adjustments (including impairments) ( 8,820 ) ( 9,115 ) Carrying value of non-marketable equity securities accounted for under the measurement alternative (1) 64,094 124,259 Equity method investments and other 4,593 7,202 Total non-marketable securities $ 68,687 $ 131,461 (1) As of June 30, 2026, our investments in non-marketable securities accounted for under the measurement alternative primarily consist of our investment in a private company."
+      },
+      {
+        "variable": "AI capital commitments",
+        "entity": "Oracle",
+        "value": 4.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.76,
+        "support": 0.9880000000000001,
+        "date": "2026-06-22",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Oracle SEC filing: 10-K (2026-06-22)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+        "evidence": "Liquidity and Capital Resources As of May 31, (Dollars in millions) 2026 Change 2025 Working capital $ 4,803 * $ (8,064 ) Cash, cash equivalents and marketable securities $ 31,894 185% $ 11,203 * Not meaningful Working capital : The increase in working capital as of May 31, 2026 in comparison to May 31, 2025 was primarily due to favorable impacts from net income; proceeds from the issuance of senior notes, net of issuance costs, of $42.7 billion during fiscal 2026; $5.0 billion of cash proceeds from the issuance of Mandatory Convertible Preferred Stock, net of issuance costs; $4.9 billion of cash proceeds from the sale of our investments, primarily in Ampere; and $1.3 billion of net cash proceeds from our employee stock programs, partially offset by $55.7 billion of cash used for capital expenditures; $5.8 billion of cash used to pay dividends to our preferred and common stockholders; $5.7 billion of long-term borrowings that were reclassified to current liabilities; $864 million of cash used for purchases of non-current investments; and $95 million of cash used for repurchases of our common stock, in each case during fiscal 2026."
+      }
+    ],
+    "fragility": [
+      {
+        "variable": "AI-related debt",
+        "entity": "Anthropic",
+        "value": 10000000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.82,
+        "support": 1.148,
+        "date": "Tue, 18 Aug 2026 07:00:00 GMT",
+        "event_type": "LENDS_TO",
+        "title": "Anthropic Pre-IPO Credit Facility Set to Climb Past $10 Billion - Bloomberg.com",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQNU9mVXV0ZTMtd20xVkxqQXZwVF9rMTRQMmZJOGlZV0hvb1pGQUpRemRlZHYxUEJUbXFUQTBKWGNfSTg0TWxNbEJGb3JjWVdfSGVvOERjemJabTFmSFlHRlB5Mk1kbWE1c2dOQm92enZfVV9McTdDZmxRMDc1UmlHaDAyR3FJb3NVbE9NVmJaVVgyeTdTb1g4dnFCcXY1bXZTNV9MX0szN0FOblBmdmNHRm5Sdw?oc=5",
+        "evidence": "Anthropic Pre-IPO Credit Facility Set to Climb Past $10 Billion - Bloomberg.com Anthropic Pre-IPO Credit Facility Set to Climb Past $10 Billion Bloomberg.com Google News"
+      },
+      {
+        "variable": "AI-related debt",
+        "entity": "CoreWeave",
+        "value": 533000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.82,
+        "support": 1.148,
+        "date": "2026-08-12",
+        "event_type": "LENDS_TO",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "evidence": "Revolving Credit Facility As of June 30, 2026 and December 31, 2025, the outstanding balances associated with letters of credit were $ 533 million and $ 294 million, respectively."
+      },
+      {
+        "variable": "AI-related debt",
+        "entity": "Alphabet",
+        "value": 11700000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.82,
+        "support": 1.148,
+        "date": "2026-07-23",
+        "event_type": "LENDS_TO",
+        "title": "Alphabet SEC filing: 10-Q (2026-07-23)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "evidence": "Credit Facility As of June 30, 2026, we had $ 11.7 billion of credit facilities, expiring at various dates through April 2030, of which $ 1.3 billion was outstanding."
+      },
+      {
+        "variable": "AI-related debt",
+        "entity": "Oracle",
+        "value": 10000000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.82,
+        "support": 1.148,
+        "date": "2026-06-22",
+        "event_type": "LENDS_TO",
+        "title": "Oracle SEC filing: 10-K (2026-06-22)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+        "evidence": "On March 6, 2026, we entered into a new $ 10.0 billion, five-year revolving credit agreement (the Revolving Credit Agreement) among us, as borrower, Bank of America, N.A., as administrative agent, and the lenders and other agents named therein, which provides for an unsecured $ 10.0 billion, five-year revolving credit facility (the Revolving Facility) to us for working capital purposes and for other general corporate purposes."
+      },
+      {
+        "variable": "AI-related debt",
+        "entity": "Amazon",
+        "value": 17500000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.82,
+        "support": 1.148,
+        "date": "2026-06-10",
+        "event_type": "LENDS_TO",
+        "title": "Amazon SEC filing: 8-K (2026-06-10)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926072140/tm2613616d4_8k.htm",
+        "evidence": "The DDTL Credit Agreement provides the Company with a $17.5 billion senior unsecured delayed draw term loan credit facility (the \u201cDDTL Facility\u201d)."
       }
     ],
     "external_pressure": [
@@ -313,6 +292,7 @@
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.62,
+        "support": 0.1612,
         "date": "Sun, 09 Aug 2026 07:00:00 GMT",
         "event_type": "BENCHMARK_GAIN",
         "title": "Moonshot AI's 2.8 Trillion Parameter Model Just Became the First From China to Top a Major Coding Benchmark - The Motley Fool",
@@ -328,12 +308,65 @@
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.62,
+        "support": 0.1612,
         "date": "Fri, 21 Aug 2026 13:30:17 GMT",
         "event_type": "BENCHMARK_GAIN",
         "title": "$500 Billion of Private Credit Announced for GPU Financing. The New Residual Benchmark From NVIDIA Is 25%. - MonitorDaily",
         "source": "MonitorDaily",
         "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOX0VRU3lkaXBHUFRIbFNXRmF5U1c3YTZKbFdBZlVlcnR6dVp4MGRFU2dqRTc5TFBjWV8xbms3UlcxMGRadXBWdWJTYkRfb01ZbFd1U2tMY1Jsb3NqU21QOThPYVZpNnkzN2hlZ0M1ZzYzdjM0TDlxaTBBRThrdGY2XzZ0ZExSeGJ4UEt2Zm1yZUozam1xUXZtbjN0dmRSSVdJNGN4M0txZFBDeUt3Z2JtejZGRUVoY2RxRnRSc0tKSUV0b0luYnpmelVXZ2lhVmVlNE9zTTJWcw?oc=5",
         "evidence": "The New Residual Benchmark From NVIDIA Is 25%."
+      }
+    ],
+    "counter_evidence": [
+      {
+        "variable": "Free cash flow strength",
+        "entity": "Amazon",
+        "value": 7600000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "lowers the warning",
+        "confidence": 0.8,
+        "support": 1.2000000000000002,
+        "date": "Sun, 23 Aug 2026 14:21:29 GMT",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
+        "evidence": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%."
+      },
+      {
+        "variable": "Free cash flow strength",
+        "entity": "Oracle",
+        "value": 31.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "lowers the warning",
+        "confidence": 0.8,
+        "support": 1.2000000000000002,
+        "date": "2026-06-22",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "Oracle SEC filing: 10-K (2026-06-22)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+        "evidence": "We calculate free cash flow as follows: Year Ended May 31, (Dollars in millions) 2026 Change 2025 Net cash provided by operating activities $ 31,977 54% $ 20,821 Capital expenditures (55,663 ) 162% (21,215 ) Free cash flow $ (23,686 ) * $ (394 ) Net income $ 17,087 $ 12,443 Net cash provided by operating activities as a percent of net income 187% 167% Free cash flow as percent of net income -139% -3% * Not meaningful Recent Financing Activities : Revolving Credit Agreement : In March 2026, we terminated our existing $6.0 billion, five-year revolving credit agreement."
+      }
+    ],
+    "cannibalization": [
+      {
+        "variable": "Model price pressure",
+        "entity": "OpenAI",
+        "value": 1.0,
+        "unit": "signal",
+        "role": "directional signal",
+        "effect": "raises the warning",
+        "confidence": 0.99,
+        "support": 0.99,
+        "date": "2026-07-30",
+        "event_type": "PRICE_CUT",
+        "title": "OpenAI cuts GPT-5.6 Luna and Terra API prices",
+        "source": "OpenAI pricing announcement",
+        "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+        "evidence": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026."
       }
     ],
     "transmission": [
@@ -345,6 +378,7 @@
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.9,
+        "support": 0.09000000000000001,
         "date": "Mon, 08 Jun 2026 07:00:00 GMT",
         "event_type": "FILES_FOR_IPO",
         "title": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC",
@@ -360,6 +394,7 @@
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.99,
+        "support": 0.396,
         "date": "2026-07-07",
         "event_type": "ENTERS_INDEX",
         "title": "SpaceX joins the Nasdaq-100 Index",
@@ -368,38 +403,120 @@
         "evidence": "Nasdaq announced that SpaceX (SPCX) would become a Nasdaq-100 component before market open on July 7, 2026. Nasdaq states that more than 200 investment products with over $800 billion in assets track the index."
       }
     ],
-    "cannibalization": [
-      {
-        "variable": "Model price pressure",
-        "entity": "OpenAI",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.99,
-        "date": "2026-07-30",
-        "event_type": "PRICE_CUT",
-        "title": "OpenAI cuts GPT-5.6 Luna and Terra API prices",
-        "source": "OpenAI pricing announcement",
-        "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-        "evidence": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026."
-      }
-    ],
     "stress": [
       {
         "variable": "Refinancing stress",
-        "entity": null,
+        "entity": "CoreWeave",
         "value": 2.0,
         "unit": "score",
         "role": "measured value",
         "effect": "raises the warning",
         "confidence": 0.86,
+        "support": 0.5848,
         "date": "2026-08-12",
         "event_type": "IMPAIRMENT",
         "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
         "evidence": "Goodwill and Intangible Assets Goodwill There were no additions or impairment charges recorded to goodwill for any of the periods presented."
+      },
+      {
+        "variable": "Refinancing stress",
+        "entity": "Amazon",
+        "value": 2.0,
+        "unit": "score",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.86,
+        "support": 0.5848,
+        "date": "2026-07-31",
+        "event_type": "IMPAIRMENT",
+        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+        "evidence": "The inventory valuation allowance, representing a write-down of inventory, was $ 3.3 billion and $ 3.0 billion as of December 31, 2025 and June 30, 2026."
+      }
+    ],
+    "circularity": [
+      {
+        "variable": "Vendor financing",
+        "entity": "Nvidia",
+        "value": 2.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.88,
+        "support": 1.232,
+        "date": "2026-08-26",
+        "event_type": "GUARANTEES",
+        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "evidence": "Derivative Financial Instrument Notional Values The table below presents the notional values of our derivatives outstanding: Jul 26, 2026 Jan 25, 2026 (In millions) Foreign currency contracts designated as accounting hedges $ 2,162 $ 1,765 Not designated as accounting hedges: Foreign currency contracts $ 2,252 $ 2,332 Land, power, and shell guarantees for AI clouds (1) $ 3,529 $ 3,530 Public company warrants $ 4,800 $ \u2014 Equity forward contract $ 1,000 $ \u2014 (1) The maximum gross exposure under all agreements is reduced as the partners make payments to the lessors over terms ranging from five to seven years."
+      },
+      {
+        "variable": "Vendor financing",
+        "entity": "OpenAI",
+        "value": 1.0,
+        "unit": "signal",
+        "role": "directional signal",
+        "effect": "raises the warning",
+        "confidence": 0.88,
+        "support": 1.232,
+        "date": "2026-08-26",
+        "event_type": "GUARANTEES",
+        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+        "evidence": "The guarantees terminate upon certain events, including OpenAI achieving a satisfactory credit rating or after each respective lease term has completed."
+      },
+      {
+        "variable": "Vendor financing",
+        "entity": "CoreWeave",
+        "value": 95000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.88,
+        "support": 1.232,
+        "date": "2026-08-12",
+        "event_type": "GUARANTEES",
+        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
+        "evidence": "The Company's maximum exposure to loss with respect to the JV includes (i) the carrying value of the Company's investment, (ii) up to $ 95 million related to a guarantee for certain contingent consideration payable to a third-party by the JV upon the achievement of certain milestones, (iii) lease prepayment of $ 37 million, and (iv) potential requirements to fund the construction and development of the data center campus to the extent the JV is unable to secure third-party financing."
+      },
+      {
+        "variable": "Vendor financing",
+        "entity": "Meta",
+        "value": 28000000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.88,
+        "support": 1.232,
+        "date": "2026-07-30",
+        "event_type": "GUARANTEES",
+        "title": "Meta SEC filing: 10-Q (2026-07-30)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
+        "evidence": "In addition, we have provided residual value guarantees (RVG) with an aggregate threshold of approximately $ 28 billion that decreases over time."
+      },
+      {
+        "variable": "Vendor financing",
+        "entity": "Alphabet",
+        "value": 3500000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.88,
+        "support": 1.232,
+        "date": "2026-07-23",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-07-23)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000071/goog-20260630.htm",
+        "evidence": "We recognized a charge of $ 3.5 billion in the third quarter of 2025, and we placed bank guarantees in the fourth quarter of 2025 in lieu of cash payment."
       }
     ]
   },
@@ -551,6 +668,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-09-03T14:47:38.956695+00:00",
+      "score": 83.6,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 76.7, \"stress\": 59.5, \"transmission\": 54.4, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-09-03T14:46:59+00:00",
+      "score": 83.6,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 76.7, \"stress\": 59.5, \"transmission\": 54.4, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-09-03T14:34:28+00:00",
       "score": null,
@@ -1793,42 +1924,57 @@
   ],
   "comparable_history": [
     {
-      "captured_at": "2026-09-03T14:34:28+00:00",
-      "score": null,
-      "label": "INSUFFICIENT EVIDENCE",
-      "dimensions": "{\"cannibalization\": null, \"fragility\": null, \"counter_evidence\": null, \"stress\": null, \"monetization\": null, \"transmission\": 40.0, \"external_pressure\": null, \"capital\": 48.35840314496684, \"circularity\": null}",
-      "indicator_version": "numeric-evidence-v2"
+      "captured_at": "2026-09-03T14:47:38.956695+00:00",
+      "score": 83.6,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 76.7, \"stress\": 59.5, \"transmission\": 54.4, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
     },
     {
-      "captured_at": "2026-09-02T14:28:39+00:00",
-      "score": null,
-      "label": "INSUFFICIENT EVIDENCE",
-      "dimensions": "{\"transmission\": 40.0, \"fragility\": null, \"counter_evidence\": null, \"cannibalization\": null, \"circularity\": null, \"capital\": 48.35840314496684, \"stress\": null, \"external_pressure\": null, \"monetization\": null}",
-      "indicator_version": "numeric-evidence-v2"
-    },
-    {
-      "captured_at": "2026-09-02T03:14:44+00:00",
-      "score": null,
-      "label": "INSUFFICIENT EVIDENCE",
-      "dimensions": "{\"fragility\": null, \"stress\": null, \"monetization\": null, \"capital\": 48.35840314496684, \"transmission\": 40.0, \"counter_evidence\": null, \"cannibalization\": null, \"external_pressure\": null, \"circularity\": null}",
-      "indicator_version": "numeric-evidence-v2"
-    },
-    {
-      "captured_at": "2026-09-02T03:00:23+00:00",
-      "score": null,
-      "label": "INSUFFICIENT EVIDENCE",
-      "dimensions": "{\"stress\": null, \"monetization\": null, \"capital\": 48.35840314496684, \"counter_evidence\": null, \"circularity\": null, \"cannibalization\": null, \"fragility\": null, \"external_pressure\": null, \"transmission\": 40.0}",
-      "indicator_version": "numeric-evidence-v2"
-    },
-    {
-      "captured_at": "2026-09-02T02:46:52+00:00",
-      "score": null,
-      "label": "INSUFFICIENT EVIDENCE",
-      "dimensions": "{\"monetization\": null, \"fragility\": null, \"circularity\": null, \"stress\": null, \"capital\": 48.35840314496684, \"external_pressure\": null, \"counter_evidence\": null, \"transmission\": 40.0, \"cannibalization\": null}",
-      "indicator_version": "numeric-evidence-v2"
+      "captured_at": "2026-09-03T14:46:59+00:00",
+      "score": 83.6,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 76.7, \"stress\": 59.5, \"transmission\": 54.4, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
     }
   ],
   "public_market_alerts": [
+    {
+      "event_id": "4d15b67cecd72775a10c09afb79d251e9843427869264adadca271528a377ce2",
+      "company": "SpaceX",
+      "title": "SpaceX joins the Nasdaq-100 on Tuesday. Crypto already owns the trade - Crypto News",
+      "stage": "Index inclusion: potential distribution through tracking funds",
+      "date": "Sat, 04 Jul 2026 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yYzFJMjhzbENXb2VNenVldFlSaTB6cEJTbURXX2h6QW1sZ1ZDQ215N2szLU1ha2hzaEJpTG5ucWFTa3NsalpieFZ4aUFlTk5VOHd6NWpqVGZoV3Y4QXhkeHFXTHk4alJtWUNBeUJFcFpVYUlEbWIwMFRhTnZ5THM?oc=5",
+      "evidence": "SpaceX joins the Nasdaq-100 on Tuesday."
+    },
+    {
+      "event_id": "43ffbd4f384338eaa8103f8a205b833a436135f15cabd8898bf3dbd499b1df65",
+      "company": "SpaceX",
+      "title": "SpaceX Joins the Nasdaq-100 on July 7. Here Is What This Means for QQQ and QQQM Investors. - theglobeandmail.com",
+      "stage": "Index inclusion: potential distribution through tracking funds",
+      "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaGlQZWtvWjFZemg3Nk51V0cwZEZ4UmJ4UTBWRWdoLXdHVUl5NDA4WE1kRWU0bUtlTUlkWjlFYmFJc3M2SUthbW0wdHI0UFl0UEVCa3ZRcTJmQVhWYlBrUHdhdXlPaEdLblNqZXdKYlhQWW9CU0Ewbm84MUJva0diaWgyNk8yWUpVSTQ1bWZLaGJULWpCb3NPZnduNGlOY3N2QUwzRTlhQjFmREc5YUVCTEdPMmFUamJBbm5tcnZRelhzdmhkMTh1ZDNvZnZBRWFpRVZjdWlEd1FJRkZfU3lMSnY5UXU5bWhwN1hOdVBzc1hab1hQcHRIQW83QQ?oc=5",
+      "evidence": "SpaceX Joins the Nasdaq-100 on July 7."
+    },
+    {
+      "event_id": "601920c50608c9e1068ea2b0e0e363b5fa0e45ad753d5736c29bff72b5158d65",
+      "company": "SpaceX",
+      "title": "SpaceX Joins the Nasdaq-100. Has the Index Become Too Risky to Track? - Yahoo Finance",
+      "stage": "Index inclusion: potential distribution through tracking funds",
+      "date": "Tue, 14 Jul 2026 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWkFkMVhadktDbVpqVDJienBCR01vOHRQWEtQcjRoRlJiQTlGa2hPejM3QkNrZlR4VUdFVlVRR2RmakhNRi1YbnBJUUtRZk5NTnZ4V2lTLUladmdTdkR5bjQxdnVDdmtZY0tyM240aXJkdkNOSUpISWNOZ0VyM0w4TVBCTVJNWk8tdDlDVzI1ZDJnVG92cWpSU3VB?oc=5",
+      "evidence": "SpaceX Joins the Nasdaq-100."
+    },
+    {
+      "event_id": "d371a9c52889a685338b7f3b0f8e03954ae3fe714415ffc340ea52b1729217e6",
+      "company": "SpaceX",
+      "title": "SpaceX Joins the Nasdaq-100 on July 7. Here Are the ETFs That Feel It Most. - ETF.com",
+      "stage": "Index inclusion: potential distribution through tracking funds",
+      "date": "Wed, 01 Jul 2026 07:00:00 GMT",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPM0cwZ29oSU1nV0R6bWdSU1E2RzNuT0JCMDZ4c3pyeXhpVE9NYmpnWl9FcWVncHhxNkpVOGdoWGVUZDhhMFBpQmMyZ1diUTUwSXQyZ3d1d2dBbHU4dE9zUkNfR1llVjljUlQ1dFd1RVhLak9SNzhiYXM3Uy1JMTdmQ2M0dy1jZ21XcDhzRnNIcXIzaE1uTmc?oc=5",
+      "evidence": "SpaceX Joins the Nasdaq-100 on July 7."
+    },
     {
       "event_id": "b562f249e843a9885d491e2323e9d667518cd0401e254de91b92bcc766126827",
       "company": "Issuer attribution unresolved",
@@ -1887,10 +2033,10 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-09-03T14:35:32.136796+00:00",
+    "as_of": "2026-09-03T14:47:50.970643+00:00",
     "counts": {
       "pressure": 38,
-      "public_exposure": 4,
+      "public_exposure": 8,
       "context": 7
     },
     "items": [
@@ -2719,6 +2865,26 @@
         ]
       },
       {
+        "fact_id": "4b792a7f5fec3cefffd96742de13cf8aeb7faa0bb5304492e47892db0c380d6a",
+        "event_id": "601920c50608c9e1068ea2b0e0e363b5fa0e45ad753d5736c29bff72b5158d65",
+        "kind": "public_exposure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Index inclusion can distribute exposure through funds tracking that index.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "ENTERS_INDEX",
+        "title": "SpaceX Joins the Nasdaq-100. Has the Index Become Too Risky to Track? - Yahoo Finance",
+        "evidence": "SpaceX Joins the Nasdaq-100.",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWkFkMVhadktDbVpqVDJienBCR01vOHRQWEtQcjRoRlJiQTlGa2hPejM3QkNrZlR4VUdFVlVRR2RmakhNRi1YbnBJUUtRZk5NTnZ4V2lTLUladmdTdkR5bjQxdnVDdmtZY0tyM240aXJkdkNOSUpISWNOZ0VyM0w4TVBCTVJNWk8tdDlDVzI1ZDJnVG92cWpSU3VB?oc=5",
+        "date": "2026-07-14T07:00:00+00:00",
+        "reviewed_at": "2026-09-03T14:47:13.072833+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWkFkMVhadktDbVpqVDJienBCR01vOHRQWEtQcjRoRlJiQTlGa2hPejM3QkNrZlR4VUdFVlVRR2RmakhNRi1YbnBJUUtRZk5NTnZ4V2lTLUladmdTdkR5bjQxdnVDdmtZY0tyM240aXJkdkNOSUpISWNOZ0VyM0w4TVBCTVJNWk8tdDlDVzI1ZDJnVG92cWpSU3VB?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "4b792a7f5fec3cefffd96742de13cf8aeb7faa0bb5304492e47892db0c380d6a"
+        ]
+      },
+      {
         "fact_id": "27e7dc60663eb7456d7c15b4d434361bfedd5d06ab8deb50cd6aa287fcd82206",
         "event_id": "0f294dca585024522a8201e36d2078e8d9010da505b3ece08eb1cb1509c7d8c6",
         "kind": "public_exposure",
@@ -2736,6 +2902,66 @@
         ],
         "underlying_fact_ids": [
           "27e7dc60663eb7456d7c15b4d434361bfedd5d06ab8deb50cd6aa287fcd82206"
+        ]
+      },
+      {
+        "fact_id": "af29ff348c996915b09a57c2b8a80b78040c7bc740ebc7c537bc2fb46a010b20",
+        "event_id": "43ffbd4f384338eaa8103f8a205b833a436135f15cabd8898bf3dbd499b1df65",
+        "kind": "public_exposure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Index inclusion can distribute exposure through funds tracking that index.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "ENTERS_INDEX",
+        "title": "SpaceX Joins the Nasdaq-100 on July 7. Here Is What This Means for QQQ and QQQM Investors. - theglobeandmail.com",
+        "evidence": "SpaceX Joins the Nasdaq-100 on July 7.",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaGlQZWtvWjFZemg3Nk51V0cwZEZ4UmJ4UTBWRWdoLXdHVUl5NDA4WE1kRWU0bUtlTUlkWjlFYmFJc3M2SUthbW0wdHI0UFl0UEVCa3ZRcTJmQVhWYlBrUHdhdXlPaEdLblNqZXdKYlhQWW9CU0Ewbm84MUJva0diaWgyNk8yWUpVSTQ1bWZLaGJULWpCb3NPZnduNGlOY3N2QUwzRTlhQjFmREc5YUVCTEdPMmFUamJBbm5tcnZRelhzdmhkMTh1ZDNvZnZBRWFpRVZjdWlEd1FJRkZfU3lMSnY5UXU5bWhwN1hOdVBzc1hab1hQcHRIQW83QQ?oc=5",
+        "date": "2026-07-06T07:00:00+00:00",
+        "reviewed_at": "2026-09-03T14:47:13.072833+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaGlQZWtvWjFZemg3Nk51V0cwZEZ4UmJ4UTBWRWdoLXdHVUl5NDA4WE1kRWU0bUtlTUlkWjlFYmFJc3M2SUthbW0wdHI0UFl0UEVCa3ZRcTJmQVhWYlBrUHdhdXlPaEdLblNqZXdKYlhQWW9CU0Ewbm84MUJva0diaWgyNk8yWUpVSTQ1bWZLaGJULWpCb3NPZnduNGlOY3N2QUwzRTlhQjFmREc5YUVCTEdPMmFUamJBbm5tcnZRelhzdmhkMTh1ZDNvZnZBRWFpRVZjdWlEd1FJRkZfU3lMSnY5UXU5bWhwN1hOdVBzc1hab1hQcHRIQW83QQ?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "af29ff348c996915b09a57c2b8a80b78040c7bc740ebc7c537bc2fb46a010b20"
+        ]
+      },
+      {
+        "fact_id": "2c021e16f4973c7ea9b4fb6c739e7228f2472990baf011761eb16bc3badfda7b",
+        "event_id": "4d15b67cecd72775a10c09afb79d251e9843427869264adadca271528a377ce2",
+        "kind": "public_exposure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Index inclusion can distribute exposure through funds tracking that index.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "ENTERS_INDEX",
+        "title": "SpaceX joins the Nasdaq-100 on Tuesday. Crypto already owns the trade - Crypto News",
+        "evidence": "SpaceX joins the Nasdaq-100 on Tuesday.",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yYzFJMjhzbENXb2VNenVldFlSaTB6cEJTbURXX2h6QW1sZ1ZDQ215N2szLU1ha2hzaEJpTG5ucWFTa3NsalpieFZ4aUFlTk5VOHd6NWpqVGZoV3Y4QXhkeHFXTHk4alJtWUNBeUJFcFpVYUlEbWIwMFRhTnZ5THM?oc=5",
+        "date": "2026-07-04T07:00:00+00:00",
+        "reviewed_at": "2026-09-03T14:47:20.863524+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yYzFJMjhzbENXb2VNenVldFlSaTB6cEJTbURXX2h6QW1sZ1ZDQ215N2szLU1ha2hzaEJpTG5ucWFTa3NsalpieFZ4aUFlTk5VOHd6NWpqVGZoV3Y4QXhkeHFXTHk4alJtWUNBeUJFcFpVYUlEbWIwMFRhTnZ5THM?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "2c021e16f4973c7ea9b4fb6c739e7228f2472990baf011761eb16bc3badfda7b"
+        ]
+      },
+      {
+        "fact_id": "c9043d734612bf2dd0bfea89184d12c4cb2182864c4933b23c1608f945787ab3",
+        "event_id": "d371a9c52889a685338b7f3b0f8e03954ae3fe714415ffc340ea52b1729217e6",
+        "kind": "public_exposure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Index inclusion can distribute exposure through funds tracking that index.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "ENTERS_INDEX",
+        "title": "SpaceX Joins the Nasdaq-100 on July 7. Here Are the ETFs That Feel It Most. - ETF.com",
+        "evidence": "SpaceX Joins the Nasdaq-100 on July 7.",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPM0cwZ29oSU1nV0R6bWdSU1E2RzNuT0JCMDZ4c3pyeXhpVE9NYmpnWl9FcWVncHhxNkpVOGdoWGVUZDhhMFBpQmMyZ1diUTUwSXQyZ3d1d2dBbHU4dE9zUkNfR1llVjljUlQ1dFd1RVhLak9SNzhiYXM3Uy1JMTdmQ2M0dy1jZ21XcDhzRnNIcXIzaE1uTmc?oc=5",
+        "date": "2026-07-01T07:00:00+00:00",
+        "reviewed_at": "2026-09-03T14:47:13.072833+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMilgFBVV95cUxPM0cwZ29oSU1nV0R6bWdSU1E2RzNuT0JCMDZ4c3pyeXhpVE9NYmpnWl9FcWVncHhxNkpVOGdoWGVUZDhhMFBpQmMyZ1diUTUwSXQyZ3d1d2dBbHU4dE9zUkNfR1llVjljUlQ1dFd1RVhLak9SNzhiYXM3Uy1JMTdmQ2M0dy1jZ21XcDhzRnNIcXIzaE1uTmc?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "c9043d734612bf2dd0bfea89184d12c4cb2182864c4933b23c1608f945787ab3"
         ]
       },
       {
@@ -2919,16 +3145,16 @@
         "weight": 15
       },
       {
+        "id": "SpaceX",
+        "label": "SpaceX",
+        "kind": "company",
+        "weight": 14
+      },
+      {
         "id": "CoreWeave",
         "label": "CoreWeave",
         "kind": "company",
         "weight": 10
-      },
-      {
-        "id": "SpaceX",
-        "label": "SpaceX",
-        "kind": "company",
-        "weight": 7
       },
       {
         "id": "Alibaba",
@@ -5355,6 +5581,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:a2291e2988d0bb127700fa4f7f960597d6cb741a735af2845f283c725fec8e8e",
+        "label": "SpaceX is joining the Nasdaq-100 index: Timeline, date, impact on QQQ, 401(k) plans, and more - fastcompany.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "fastcompany.com",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQY0l5WXhUeWp4eDR3a3lyc3Q0bWt0cElET1U0Y2pSQllFNmEzcGxkc0FSdHlHZHQ5TjJXV3VOdEQ4TXh6emxmYUl2alNuT1pSSXFqcHNvWEhmQ0VDcGIzdmNONXRqY2ZqOFFpaWNQUFZnYVc3NERUdkhRVmJ6cVdOdjRBeEdVMlVDbFFFS0RBVWdyeGhP?oc=5",
+        "date": "Mon, 29 Jun 2026 07:00:00 GMT",
+        "summary": "SpaceX is joining the Nasdaq-100 index: Timeline, date, impact on QQQ, 401(k) plans, and more fastcompany.com",
+        "score": 10,
+        "weight": 1
+      },
+      {
         "id": "evidence:c5e106008edcc2b97ab12e2bb15b7502f9993594f91e156565dbdbbda4c8d6b8",
         "label": "Morgan Stanley Downgrades Baidu as Ad Revenue Falls for 8th Straight Quarter and ERNIE Lags - Tech Times",
         "kind": "evidence",
@@ -5376,6 +5614,18 @@
         "date": "Fri, 10 Jul 2026 07:00:00 GMT",
         "summary": "SpaceX Joins Nasdaq-100, Giving Many 401(k)s Exposure 401k Specialist",
         "score": 10,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b6ac1e995805a8d2999f54a360c1b6bee93bc1b66d9e2dfcf4df003e8a660fbd",
+        "label": "The Nasdaq-100 has been far more volatile than the S&P 500. Now add SpaceX to the mix. - MarketWatch",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "MarketWatch",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPaDFVcXU5cWczZXJBQ09sbnNXYlllTGdCd0xHaFl0dWwzeURFbkVVQW52RFg0dTFKcFZ5aG1paWloSEhVU2pHT09fZlQ4dF9Tc0l2UHl2YzZsaGF6amhuTTNXZGxodEJLV2tVekZ2LVV1YWdCZU5yRFgtRXFSRkdISzZaMWxEQmNTOTBoaHRPaWMyTkRHRkVTdXQ1WWx4UmFUOEpBWF9HUmtubGJSYVdYRkpVWmlORVdPVUM2NVhZSUpYQjVvNGc?oc=5",
+        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "summary": "The Nasdaq-100 has been far more volatile than the S&P 500. Now add SpaceX to the mix. MarketWatch",
+        "score": 9,
         "weight": 1
       },
       {
@@ -5460,6 +5710,18 @@
         "date": "Fri, 12 Jun 2026 07:00:00 GMT",
         "summary": "IPOs: mega cap AI companies, ETFs, Index inclusion BlackRock",
         "score": 9,
+        "weight": 1
+      },
+      {
+        "id": "evidence:775e00df8392eb84ac6ec37d396b1c6ccfa5a9e5d6f8d4debbc23325b20b8106",
+        "label": "SpaceX Erases All Post-IPO Gains. Will Today\u2019s Nasdaq-100 Addition Help? - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNeVBxVFgyekl1NFNTUzdqcHVxcVB1aW5zTXlzeF9kSXhWSmdNb3BzQlRMZV9LeExZZ2dxOHY1SHhEcXJkNHJGV0hWTzFNeDdCS0kzRk9RTmZEXzJNdFlOeXNQVmtVTHY5b1RRZTZodVhjQ0NRWFVtTHQ2YnpLdDV1OVZqNVBQcHZkbGZRR19HR04wNFhZOWNtbmlicXU2TGNmTnN6UkFzdlJYNVVraHBxZHVRbw?oc=5",
+        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Erases All Post-IPO Gains. Will Today\u2019s Nasdaq-100 Addition Help? 24/7 Wall St.",
+        "score": 8,
         "weight": 1
       },
       {
@@ -5976,6 +6238,354 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d8b96427b68bfb154fdca6e6e5e1ae89a1b090d65069b84093cd36f6ecff6ab3",
+        "label": "SpaceX Cracked the Nasdaq-100 in Just 15 Days \u2014 the Fastest Ever. Is It Time to Buy? - fool.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "fool.com",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOY0x6NDZfcllELVVsYUtOM0EtQ0VUQW9yX1M3SVNzSjFNMmRSbmJHVmxfLWpJOU40dU9RLS1FRFVnU2dTQURqMzlqQjRtd1dRNlQtRTJFUVJKSG5acDJfZDNQdVgyNTk2SmFaQzQ0WDFXYVdiQnlKSTVTaGJhZDdablFIX3hwZkwzOV9qb2Q2bXRlNTk2YjZhMW5sN2hRaUc4WDV3VVZQQ29XNS1CNzBYMWc0a25WZnloTkxJNmR2Vi0?oc=5",
+        "date": "Mon, 29 Jun 2026 07:00:00 GMT",
+        "summary": "SpaceX Cracked the Nasdaq-100 in Just 15 Days \u2014 the Fastest Ever. Is It Time to Buy? fool.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ad2cc5b12f840a9d74e3344085c834692fec729e0e4aea1170e778812ccf3ee8",
+        "label": "SpaceX Stock Is Down 35% From Its High Just 1 Day After Joining the Nasdaq-100. Is the Dip a Buy? - fool.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "fool.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVVRQY0RQM1pSbFVDUjNlNWtjUmlSRHlWVzdVNjBlMnVEV2M1R3d1Wi1QRkpmZkptam96OVF5X21DQXQtUUhrXzVQZUJtN1JhSm01RXp4TFBhNmJPYmhLN1ZZSlVvU0UtVzdoZGcyeUdRLURoekt1NFd2OUNkZWoyRkc1WmV4UWdZYXc2Um5rNlBuaW5nZFRNMA?oc=5",
+        "date": "Wed, 08 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Stock Is Down 35% From Its High Just 1 Day After Joining the Nasdaq-100. Is the Dip a Buy? fool.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0c8e3db267b60126febebaf03a20da8e21507b1f58b7dd03c1f60f7378bf89e0",
+        "label": "SpaceX joins the Nasdaq-100 on Tuesday. Crypto already owns the trade - Crypto News",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Crypto News",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yYzFJMjhzbENXb2VNenVldFlSaTB6cEJTbURXX2h6QW1sZ1ZDQ215N2szLU1ha2hzaEJpTG5ucWFTa3NsalpieFZ4aUFlTk5VOHd6NWpqVGZoV3Y4QXhkeHFXTHk4alJtWUNBeUJFcFpVYUlEbWIwMFRhTnZ5THM?oc=5",
+        "date": "Sat, 04 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX joins the Nasdaq-100 on Tuesday. Crypto already owns the trade Crypto News",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:07fa289482c0b8375d03626524bb1fe8263a6e30e5ba899a40cc8a8b1af328f8",
+        "label": "SpaceX joins the Nasdaq-100 - Meer | English edition",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Meer | English edition",
+        "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XVDhOeVFYNldOZnBWUnI4VnB2dXFseUdQZ1NrMjRRMzFXTHFhTmVQU2Jsdy1pdzVrUjFxYW5MSDBQcEhibjZ2S2F2eXVValVUenhxVFZJVlItTFpvUWdYaEFHaTBXQnhuYWc?oc=5",
+        "date": "Mon, 13 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX joins the Nasdaq-100 Meer | English edition",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:fb8b5048c0053fea0257bd1cad9f5939ae0b56b7a6008d3ce94f9770368d3f82",
+        "label": "SpaceX Stock Outlook as SPCX Crashes Below Debut Price Despite Nasdaq-100 Inclusion - CoinGape",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "CoinGape",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOd2lYQi1SeG9FamJIUGJJTUkzdWQzWGdGNVBXeXFPMXRCQzF2aGFTeWNhMTNhZnJoVjZndWpqcEpwSkJWeTlvUy1kNVJmUmNGc3JwZEJ6X2ZBeFU4cHpzcGlkQVA0UmtxT3Y2Vk93RmVZS25OeVgyUTdfV2hCUnppUnM5TzM5VFJJWjB1UkJpa0N1VHM4dGYxalZWOA?oc=5",
+        "date": "Wed, 08 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Stock Outlook as SPCX Crashes Below Debut Price Despite Nasdaq-100 Inclusion CoinGape",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:4e71559098c2c7e41ab6befcdc5a0765eb38749619c20cd48d9151f1e13760e3",
+        "label": "SpaceX Joins the Nasdaq-100 on July 7. Here Is What This Means for QQQ and QQQM Investors. - theglobeandmail.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "theglobeandmail.com",
+        "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaGlQZWtvWjFZemg3Nk51V0cwZEZ4UmJ4UTBWRWdoLXdHVUl5NDA4WE1kRWU0bUtlTUlkWjlFYmFJc3M2SUthbW0wdHI0UFl0UEVCa3ZRcTJmQVhWYlBrUHdhdXlPaEdLblNqZXdKYlhQWW9CU0Ewbm84MUJva0diaWgyNk8yWUpVSTQ1bWZLaGJULWpCb3NPZnduNGlOY3N2QUwzRTlhQjFmREc5YUVCTEdPMmFUamJBbm5tcnZRelhzdmhkMTh1ZDNvZnZBRWFpRVZjdWlEd1FJRkZfU3lMSnY5UXU5bWhwN1hOdVBzc1hab1hQcHRIQW83QQ?oc=5",
+        "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Joins the Nasdaq-100 on July 7. Here Is What This Means for QQQ and QQQM Investors. theglobeandmail.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d2b0737531b6741b9a8b5487a8df1d1eb7bd673ca92addf374677bda683801d5",
+        "label": "Brokerages line up bullish calls as SpaceX enters Nasdaq-100 - The Mighty 790 KFGO",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "The Mighty 790 KFGO",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOb1BqQUxFTm82SVpDZ3E0VlZDeV9kR013YTZLSTFSY3ZjajRpOXhwUXNyVXVHM0x2MHVfTElwamR1VFFuQjhhbHdBa2pLSllyRVp4Ni1jN29JVnRlLUYzdkZ0akZBdVZnbmxTU3dNekVSUHpubXBhVklQdU1LWHNOWmxYNjMxSFVjY3dwSXl3dw?oc=5",
+        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "summary": "Brokerages line up bullish calls as SpaceX enters Nasdaq-100 The Mighty 790 KFGO",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d21b9c1cb44a2c2d33bce4fec4c5ed4f4fc56bc0e46f074adb33622a70b3c28b",
+        "label": "$1,000 invested in SpaceX stock after Nasdaq-100 index addition is now worth - Finbold",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Finbold",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOGRaTkNPbVo3OG5jaXRQXzhCV1N4a3FUSTFzNDlvdFZnenUxLUQ2UnA4eHFvWEJhbERtQWMyZHVCRHQtd1lSTm1scDA0SF8waG1KUFRDRzBqNkZyMGZrSUJyajlHdFZwdlFZeGpCMWluVFdRc2kxTFJVSWZvS1ZDVVQyTnUzQW0zeU5XYmVNNmxweGJYd1czaWtucw?oc=5",
+        "date": "Sat, 18 Jul 2026 07:00:00 GMT",
+        "summary": "$1,000 invested in SpaceX stock after Nasdaq-100 index addition is now worth Finbold",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5e239c8b8cee20776942d84271ab223db9f2d7905d1f5878cca3fc206b5d219d",
+        "label": "SpaceX Is About to Join the Nasdaq-100. Here's How Exposed You'll Be. -- WSJ - Moomoo",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPT0J4M1g5Q3ZsMFpPR1d6NmNjTXVvSjJndEl2b1dJQk5iajRPa0F1Y2NyTWFNVXFuTUhXOXo2X0VUTVBiMEx2R1JDYmI1VGdGTWF1SVFxVTJpa1E3VEtGRHVhTmtvMlJIQktzc18zcFM0STcwLWNOT2ktWEItbkc4Z3ZvVjRqeGdBTmdyQVdsc18?oc=5",
+        "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Is About to Join the Nasdaq-100. Here's How Exposed You'll Be. -- WSJ Moomoo",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9c7c81e855ac8d4113d1cc7af856c812c8cc57e8460bf649e8394aea23c08014",
+        "label": "SpaceX Sinks 35% Despite Nasdaq-100 Entry As Sellers Take Control - Yellow.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yellow.com",
+        "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13VXVRSEtReFNzYWRIa2NIaEFyX0RWUS1IX3RCRjdpdHh6aTJkTXd1WTdHXzZxLVdvVXN3SU85U3VNa1pwVTBtUjc5NGxiUkRLeVJGLXpTbWVCS0luTk9aczBPMS1FLV9mX2pLbw?oc=5",
+        "date": "Wed, 19 Aug 2026 17:10:55 GMT",
+        "summary": "SpaceX Sinks 35% Despite Nasdaq-100 Entry As Sellers Take Control Yellow.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9569a94b31dda532a6c11aa7e856b1d60cc26b85898f75ec836b3da8d081d9bf",
+        "label": "SpaceX Stock and the Nasdaq-100: What History Tells Us About Potential Returns After July 7 - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNN1hhN0JXY1FQZWxuNnNOZWZMaVpubExncnNhNE5IRWpvOUVuRlZvZzJQbGFVY3FIaXlhODRhOUFsNzZLd1J5dTFMZmtvWnNiQWNQbm5GR1ZyLXhBenUzTldaZ3Z6VXNKVXlURFJyeHg0bzJueXM4Q0drQnhKalRlbFY5cFV5M0VEWnIwalJtWHV0Qkg4SVdzc1BCdjE?oc=5",
+        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Stock and the Nasdaq-100: What History Tells Us About Potential Returns After July 7 Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e9dc55dd6392dd8aedc449f61ea2872aa7e19d2962b3f4459532342b5b87aa06",
+        "label": "How to Invest in SpaceX Stock After Its Nasdaq-100 Debut - theglobeandmail.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "theglobeandmail.com",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWU9tektTZV9ndnFUX1lmS3RYZktBYTdpaU4wV0tuT0VTZ05sTGJZSzFuR082SGh0ZGUxdDN2RlFWYk93TGlBd1JWYmJMbzRPaF9jU2k0TDJnSlY3azFabnM5aGlqYWRlZTBISF9CUUpDN0dIZ2Y2cVNzajR1WEljdU1JN2l6R0w1SW0zelJ1cDh1WmQtUnVPZmVqTFgwOFNjdWZJdGdUUFBSR256cEdVU3RPeDViTl9QQm9JbW1HTkZISXlBOWxkSEZ4V3JjU21m?oc=5",
+        "date": "Sun, 19 Jul 2026 07:00:00 GMT",
+        "summary": "How to Invest in SpaceX Stock After Its Nasdaq-100 Debut theglobeandmail.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:48939e69aac8b32bc0595daf6befca873e88bf99ad0cacc60a09d1af25cef36e",
+        "label": "SpaceX Officially Joined the Nasdaq-100 and Received a $300 Price Target From Wall Street. Here's Why the Stock Is Falling Anyway. - fool.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "fool.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQVHd0QWNpcmVyZERVanRYeElQR1MyOXVyT3JORDJfV2dMLWItZ0hOSGJDN0toN3J3VkYxZUd3NWxlNnJIN2NOekdFcC1MdThtSGEyMlVBY0FGNFdMS0NsZFRjU19hUFlQcEpEazBrdm54UVoydXdiT1VBbDlZUmVVX0UzSWdjU29iclZNd19KU1pOVDc4dGJaeg?oc=5",
+        "date": "Wed, 08 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Officially Joined the Nasdaq-100 and Received a $300 Price Target From Wall Street. Here's Why the Stock Is Falling Anyway. fool.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7bdc41176745ab11dd2c28056849dd0e3e8e52f05bc71cce89b85fa3133192a4",
+        "label": "SpaceX Just Joined the Nasdaq-100. Is It Time to Buy? - fool.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "fool.com",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONm9TVmNodHZrdmxnWHljZVpDbUNLcjUzR1Nma3VtS1ZlSy1qaWNzWDNMQUExVHdmOUh0blBtcGxzbVJJaTdOTkQ3LXZiMHBOSG1UZEIya3dNd25pTzhLelBGdXd2b2hSd1RUYmJvai1mVEpxaGktV1R0X091ejJYYmR6X2xuQVBlNkljY0FGMEVMTFlMYnlITQ?oc=5",
+        "date": "Sun, 12 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Just Joined the Nasdaq-100. Is It Time to Buy? fool.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:8093f5eee22abc4f0eb33ffc0c3ed59375b4e3ba19aa2b97ddb71dff4159e5a0",
+        "label": "SpaceX Joins the Nasdaq-100. Has the Index Become Too Risky to Track? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWkFkMVhadktDbVpqVDJienBCR01vOHRQWEtQcjRoRlJiQTlGa2hPejM3QkNrZlR4VUdFVlVRR2RmakhNRi1YbnBJUUtRZk5NTnZ4V2lTLUladmdTdkR5bjQxdnVDdmtZY0tyM240aXJkdkNOSUpISWNOZ0VyM0w4TVBCTVJNWk8tdDlDVzI1ZDJnVG92cWpSU3VB?oc=5",
+        "date": "Tue, 14 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Joins the Nasdaq-100. Has the Index Become Too Risky to Track? Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b527d389ce83205bdb12eedc977d17ffbae0757a3f4ca3061198b4726960a49a",
+        "label": "Chart alert: SpaceX (SPCX) Nasdaq-100 inclusion flashes a historical \u201csell-the-news\u201d warning - marketpulse.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "marketpulse.com",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT3Y3ZlItU19NRzNjOWxKRWVtenFzY2NySFJpM1RKVTVXaFBOTllud2pqQW80ZlM2TnVLcFhFMVQ5LV9HZUMtVk91ZUpFMlJicmdzU0pKbTBvZ1d4TVF6eDZidFZwakRGaXdDU3VUQURkeFNweEFHUW5ZeHl1amY2WTJBaDVVUkczSk9tRlFNOU9xcVJJR3JESUJIWGJRQUZ2cW5JYjZISHJPR0wzdVdlYV9IcjY1VTItZWNFazB5RG94QQ?oc=5",
+        "date": "Tue, 07 Jul 2026 07:00:00 GMT",
+        "summary": "Chart alert: SpaceX (SPCX) Nasdaq-100 inclusion flashes a historical \u201csell-the-news\u201d warning marketpulse.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:578da15b9e7e14b0945d1b81471384a044b7941473c63b3010390cfccd54d72c",
+        "label": "SpaceX Cracked the Nasdaq-100 in Just 15 Days \u2014 the Fastest Ever. Is It Time to Buy? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMk9VbmpNUXdQeTIweENkSnhUSFJjUVM2MlJxUXVpV3lnVG9tQVRtTWJqdmhjQnJ5a2VwQVhwNXJhZmZXWEJ3Rm1Wa050bjMySm9ORi1sRmJCc09TWVlqcUx5eXFRMzB3WlB2eldGRE51TUR6QVBMR2xfSGowQkNvMVNRRU9SRkt1amNnS2x6QVJFN2wtNkxXX0Qtbw?oc=5",
+        "date": "Mon, 29 Jun 2026 07:00:00 GMT",
+        "summary": "SpaceX Cracked the Nasdaq-100 in Just 15 Days \u2014 the Fastest Ever. Is It Time to Buy? Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0d82ba5a9dba99a80592534f4f3b56282b85d7c5279e44d0f0041aaf648e381a",
+        "label": "SpaceX set to join Nasdaq-100 today. Will index entry fuel its next rally? - The Economic Times",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "The Economic Times",
+        "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQbGhnV0tvMk5SeEg5cG1pQTFvNkdEN04wVmk4ZDVXVGk4X1hhZk1SUkl1a1huV3hPX0otQUZHenVtbDY5YnpIa1Fpa3JWejd4MDhYM2o5eUxnUkdicnlta2twQnluRUhqTnV4bUFtX1ZaZXB6MElOcjJON1ZQNTN5ZDJnam4yZ1VlcHpmcHo3cjJxWGp0RjBoVUMxeGtvMnIxVDVJcWJVWVpDMEpWOHNMMHZ4QWIxd0wwWmszZjN6a2dBejBCcDJaS1dPQkZtOXVCbHpBazhFM0oyVlFD0gHiAUFVX3lxTE5pdk9QRzU5OFF1bVlkS3VJNEVxUVk5ajN2Sl9JdU9PWjlzbjFRcTVJRUxmcldmTW80bDhSME5kTXBLV2dMV0kxRlUxYkNHQkJhcUhHRlU0QWZpbExRSlRzbUhmejE2eDVtQkxRckFFMlk3WGNObjNkSi1taWdpSlY5YkVBeVJfS0tubVVJaTh2R21GRUJiaE5RcjgyQzN0bjFMTEo2V0ZsUUs4WlRRWkpEX3ZtQ2ZwNEkzNWlidFFOM1RvOWJybmVxWmZiNUJ6ZC1uZTJzTnNsSGphTUdIV3JQeGc?oc=5",
+        "date": "Thu, 20 Aug 2026 07:00:00 GMT",
+        "summary": "SpaceX set to join Nasdaq-100 today. Will index entry fuel its next rally? The Economic Times",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:535c29a61f011ec12618f99c180b7add75af130e14218c7c9926e0f67639008e",
+        "label": "The Nasdaq gives a green light to SpaceX \u2019 s inclusion, but the S&P 500 keeps it out? \u2014 Unpacking the methodology behind index construction - odaily.news",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "odaily.news",
+        "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9mTG9QVWpRUVFwVGNma0RCSWNvRzh5VS1HWkUzZ3N2dHBKSkVmSWF2UjRoUmY5N1poSkJxTmFLOEJPVmxKaFljUy1mOS1WWDdy?oc=5",
+        "date": "Mon, 31 Aug 2026 09:18:30 GMT",
+        "summary": "The Nasdaq gives a green light to SpaceX \u2019 s inclusion, but the S&P 500 keeps it out? \u2014 Unpacking the methodology behind index construction odaily.news",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f231ed25a4512bae604f9c42c176740d2c7b17ce525ac356723aba4312bcdfd2",
+        "label": "If I Could Tell Every QQQ Investor 1 Thing About SpaceX's Nasdaq-100 Entry, It's This - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPUzFjOXBlUlBHbDdEaWVidjNESk9JajFQeVV1THVjWDYtRG9paGpPVkRVRWZySmgzYjFlVndsaGkxQTJ4WVM4eW93eWt3QURsZlJKQzBFUlp3WDEzREpRdkZmaUkzTjNITWllVTF2LTllUk5SNkh3RTFOOE5sd3AyWTg4S015b19UVGRWZExVNWJzQVJhODdmTUV3?oc=5",
+        "date": "Sun, 12 Jul 2026 07:00:00 GMT",
+        "summary": "If I Could Tell Every QQQ Investor 1 Thing About SpaceX's Nasdaq-100 Entry, It's This Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:da9042571fd703ba6e8aac52aa27f326123d9d7cebf2d975ccf8eb8441264660",
+        "label": "Is QQQ Worth Buying Now That SpaceX Has Joined the Nasdaq-100? Here's My Honest Take. - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZ2R3NkkzQnl4alNUeFVFbTN3Y1BtcXNTQ3JEa29KdDY2V3ZpQldNTDFZaTJuSDREOVIwME1Qd3VYa2dIODNLak96WFpvVXRNUTEtYVVxa0lOZXgyYlc5UFIwX3NxTVgwNTUtQmtnQ2FUTXJtUmdhMnU0MVB0RnVpeXY2X1FKYUhaOUVmcnNodFU1eG9WZzRZ?oc=5",
+        "date": "Mon, 03 Aug 2026 07:00:00 GMT",
+        "summary": "Is QQQ Worth Buying Now That SpaceX Has Joined the Nasdaq-100? Here's My Honest Take. Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9a428ec6867bc86689f9fdb5000ad6552c67b8313c84bb8460f7a20f70fa339d",
+        "label": "Forget SpaceX's Nasdaq-100 Inclusion: This Is a Much Bigger Catalyst for Shares on July 7 - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPZVd6MG1aeEVuX2lnU05ROXdzcHZQc1l4dnlJWEpCd0pqMHhCUG42cGNnSm95eWRETFM2cklwTzJTUm9Pc3owMnZObmR6T3U0QWFIT1dQc0doeGE2bkhQWFZVZGE3b1FkU1Z3b1VPWGdyRUR6c21kR3NubjVXLWloQ3pLRTZsdlM5WG9RNkd2QUI3cEExcjFqd2FIRFFnbmJKOEE?oc=5",
+        "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "summary": "Forget SpaceX's Nasdaq-100 Inclusion: This Is a Much Bigger Catalyst for Shares on July 7 Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:33ebca4935c3f39b87d1b5590afe57f6dee1587bb8a18a60dfe6c186e143f32a",
+        "label": "Should You Buy SpaceX Before It Joins the Nasdaq-100 On July 7? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVWRrdXFwNlVGLWI4STZlUUhNdlRzaGk2NmNaTjFXWFhlZV83MnVZejJ6cHI1d3JLSjVpd0szd09RQnVMeWJUUDh4akRfWVRBWHVqajJ5WU92a2pkVUpXMS04OEMwenRfR2FHYzNJUVdDYTBEWnF4dWRhczNpY1FRTUkwYURWTW9YXzZJZ0k4TXdYcUZ6VlJr?oc=5",
+        "date": "Wed, 01 Jul 2026 07:00:00 GMT",
+        "summary": "Should You Buy SpaceX Before It Joins the Nasdaq-100 On July 7? Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6cc2b32b1c8996c5a18d5f47e23b0c91603c0c18f57a40c0b8988178db8c20c9",
+        "label": "SpaceX Added to Nasdaq-100 and Could Trigger $4.3B in Forced Passive Buying - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTHIxV3ZPbUJJUk1aUUFaYkNKQkpFeU1PbDdqdm9EN184NnJzZ2g4cHRPVUFfZXpYSVdiVVAxSEdlcnF2aXR3TjNPdUJESFdfTlBQak9GWVR5UlVwSFRBcEpmMzlyRHRLTEk0T0tLdEliaXRYOXFrNGtsWTlXR01SUW80ZGJyOU0tOWJLRmpYczFIZDlqazA1cDlB?oc=5",
+        "date": "Thu, 09 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Added to Nasdaq-100 and Could Trigger $4.3B in Forced Passive Buying Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ee50d13d623f6d697c08804e399110a1922526bb547c20ce8a35a2634de939c6",
+        "label": "SpaceX Joins the Nasdaq-100 on July 7. Here Are the ETFs That Feel It Most. - ETF.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "ETF.com",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPM0cwZ29oSU1nV0R6bWdSU1E2RzNuT0JCMDZ4c3pyeXhpVE9NYmpnWl9FcWVncHhxNkpVOGdoWGVUZDhhMFBpQmMyZ1diUTUwSXQyZ3d1d2dBbHU4dE9zUkNfR1llVjljUlQ1dFd1RVhLak9SNzhiYXM3Uy1JMTdmQ2M0dy1jZ21XcDhzRnNIcXIzaE1uTmc?oc=5",
+        "date": "Wed, 01 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Joins the Nasdaq-100 on July 7. Here Are the ETFs That Feel It Most. ETF.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:55b4c88b69e50906942bfa7f640dc69260d64ed8943127374e38b5f87606fe51",
+        "label": "SpaceX Is Now a Member of the Nasdaq-100: Here's What History Says Happens Next - fool.com",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "fool.com",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQejdlZlIwZDlwS3Jta2lUN2xWT3c3OEdZVWNidHNxdlBJT2NMcXhRdUhMMk5sRUZ2elZhWWFULVF4WlJvLVpQZXdkcWV1ZWo2WVdYaDZkN01qVktFTHBMczA1aFlfUURaZXlSUEl6T0tJRURIUTJoUFU4V3dVT2hBMUdSWkphSGc?oc=5",
+        "date": "Tue, 14 Jul 2026 07:00:00 GMT",
+        "summary": "SpaceX Is Now a Member of the Nasdaq-100: Here's What History Says Happens Next fool.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:148e4d421dfcb04e884c2e44ff226a25fd01954ca5ca697439240b4052966269",
+        "label": "What SpaceX\u2019s Nasdaq 100 inclusion means for defined contribution plan investors - Pensions & Investments",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Pensions & Investments",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNN2JCNFZMU3hscHUzZlpCQTM1U3ZFLUEyQktueU9VcXNualZvT3NZOXVtMnAtMGJWUC0yQkhxT3BHLTdzZUttRWprWnV2dTFDUmxibk9EUkcyZ28wVlJxajN4dUJTdnRUU19NS2xTTldUM3JyUFRubDlBUmhGU1JGYnJhT2lUX3Z0aFhqb2FWdWc?oc=5",
+        "date": "Wed, 01 Jul 2026 07:00:00 GMT",
+        "summary": "What SpaceX\u2019s Nasdaq 100 inclusion means for defined contribution plan investors Pensions & Investments",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c2856378e93c8d1e5b175e4a523e288ba339561cb58582fa35bcbc062aabb7eb",
+        "label": "A $5,000 Investment in SpaceX at Its Nasdaq-100 Debut Would Be Worth This Much Today - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTDRVYlJOSDRCWlpYZUZSQVNKS1dQS21YUG8wOVBSeW0tZ3llT0xwMVdlN0dLYTJ2Qko2WHhySjNwdElwV2ZxVkhIY3NrbUdpNjFYTjU4bGFNbl8xb2l3MlY1azdVVTBIa2lFUm5tWE4ydFFuZVktYks2NWR4TEVQTEZ3STgxUlNYYkM5NFJwcnUxNHBiVnRGNEo5Yw?oc=5",
+        "date": "Fri, 24 Jul 2026 07:00:00 GMT",
+        "summary": "A $5,000 Investment in SpaceX at Its Nasdaq-100 Debut Would Be Worth This Much Today Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b5adbbfa8437400793ab2ef9a8d8152c4ed3385b69132e5c8fbb82740b479383",
+        "label": "SpaceX Enters a Defining Week as Nasdaq-100 Buying Nears \u2014 Can $163 Finally Break? - TradingKey",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "TradingKey",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQM2NOOWpOTFNSQkJhdE5FeW1TM1F1cHNSZmlWelVyd29OT1NsWnc5SEhQWGhtM3RzR3FmWEZRWFlqcjQ4X3JwMXB6emRUOFJEcElObktZT0JVdmV5MF9rb1VMVGpCd3Q0UkN2N2JFR2lYVDZ3MTJWX0FRd3N2YWpCY2lueDBTZlRJdHVFT3ZSUGZJZWJCRzQ2SUZ1OXRKVzBoNnFwbXQtc2wwLTZ6ZVNDbjln?oc=5",
+        "date": "Sun, 30 Aug 2026 17:02:01 GMT",
+        "summary": "SpaceX Enters a Defining Week as Nasdaq-100 Buying Nears \u2014 Can $163 Finally Break? TradingKey",
+        "score": 5,
         "weight": 1
       },
       {
@@ -7788,6 +8398,102 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f234eef9a7aba2be9048f305c11ab21b3bb2974ccb50a219be21a573ae614a78",
+        "label": "I Called SpaceX's IPO Pullback Correctly. I Still Missed It. Here's the Lesson. - The Motley Fool",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Motley Fool",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQU09JcHhteVFISDRXU3YwdEl1aW5qdGJLSG91RUpjVE9qT0xzMkJucG51TExDOGRxQmFRYlMtMXhfY0otYXB5LWs4cjI0U0QxeklBU2Vzb3Yybm9LMEhIVmVNV2h5NGNsdVAyMjB0Qi10TEpnVG05bE5oSk1POXBUSm5CNW4wSlY0SzlJTVZsVTBnQTNCdEFKRkdWdElTaFVBN0hJS2c1XzBraFdST3J5TVRpYTktdGZES0hF?oc=5",
+        "date": "Wed, 02 Sep 2026 19:45:00 GMT",
+        "summary": "I Called SpaceX's IPO Pullback Correctly. I Still Missed It. Here's the Lesson. The Motley Fool",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d4c9d7f91e70709f06487f5f60ab1b048d2cfc52b74baa03d3579bb4d49fed85",
+        "label": "SoftBank-backed SB Energy files for US IPO as AI turbocharges infrastructure demand - reuters.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "reuters.com",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPOWs5azJGWFlYTnJCV1FTak9LYXZtUkNYOGFaZzhNWkhHSEhLMkJMVVdYX2U1ek9mTmJoRFl0YUxoX2Njc0htbVhjcDU5bklsd0c4c29FeUxIdVFrd2pvak9ENTBHZV9CcXB5YVdudDdJV0IzWlU1c082SEJ4RF9yZFd0MVZHcUFIWGdQbXVSZ1FfSmxKQ1B2NFkxQktIR0kyRnlKNzVzdlNxcXZQOHZHRGhfRFhKLUVvbU9LRWctUWpmUQ?oc=5",
+        "date": "Tue, 01 Sep 2026 21:16:59 GMT",
+        "summary": "SoftBank-backed SB Energy files for US IPO as AI turbocharges infrastructure demand reuters.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b1d64969f38720018dc2bd0286bd0af16c81e204eea527e231db5b151219b08b",
+        "label": "Do Z.ai and MiniMax face different financial fates months after Hong Kong IPOs? - South China Morning Post",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcDhITU1ESG1UVlc5VE5JQTJBaDlBc2otaEZmN2dNdkxkdkFMNDN1R2NVV25rQzlmZHVGd2p4bFc5Yi1SN1NEamdLNWdTWm96Q1lFbmRnX2dBVF9SREYwcDZMYXFERkZ4WnF4aDJQa1RNYzBYRkpJbVVNMDZmYm5STFpDQjFyOXBDWDdtR094R2Zwd2xJRmNNV0ZaMkNVak13azU1cll4MmQtT0xMTHRuQ0NQZGNydHNBelJEUnpMaGUxV05ERG1GcTVacGxnZTU5dkF6S3Jn0gHWAUFVX3lxTE1INlZiWkJpbXBmVEdMZEthMG1tVDV2NkhVRExadEtzVWxHV1VCSzRYNjNxRGNJT01IbFQ5aU1hSzJfQTg1eVlMc2hoTC14VzU5T2Y5clhzSHo2R0FZVTAxVXNmYXNGTU9JQ19ZSlJCVnRsV21URC1EX21CeEdPZmJNbEJxQ0JPaG9GLU9rZmZpS0lTX3k1OVlvQktCT0t1X2hGdFVWdjRWYUlVd3Jyb19MSUI3T2FOc0JraWtmNk9uRUlucEFOTWlOZm1FektDa1F6aEY2UUE?oc=5",
+        "date": "Thu, 03 Sep 2026 10:38:59 GMT",
+        "summary": "Do Z.ai and MiniMax face different financial fates months after Hong Kong IPOs? South China Morning Post",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:72c3905dbe14af943af4005b0bbc333b15d52d4b3a8b3e775c68de02a756dbc7",
+        "label": "China's Moonshot AI is confidentially filing for a Hong Kong IPO targeting $3 billion - qz.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "qz.com",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9kd0plV3R2TEVfVkJIMXBwTEQxLTJUTEtVRHNSMnpHX1QzMER6bWpkZGxJUy1kdVd5aE41ZVBYMlNpUHFVTjFJUl9zMDFFWl9BcTNaNTBuQkxJWGZxNW13S0dqbnctbFhQRkJWWkN3aEtxUQ?oc=5",
+        "date": "Thu, 03 Sep 2026 12:42:30 GMT",
+        "summary": "China's Moonshot AI is confidentially filing for a Hong Kong IPO targeting $3 billion qz.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:a6d42c7fe4aee6d7fb9942df039a05aec3a3f01abe1ec5f733777017da48c4dc",
+        "label": "Anthropic\u2019s IPO Will Be Huge\u2014and Risky. Here Are the Challenges Investors Should Watch - morningstar.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "morningstar.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOV1V6REt4aTRyWEJHamhoRzZ5eDBJdDR1cnUzbDF3UVd2Z2tEMGxGM1NqUnA1UnhOa204SnNUS0RXVHNqMmx6VTAwamZvQUdzbG5xUGtnN0ZVYjhKczlINFZDWUhPaXpXcXVJckN3VUhzSTlyWDdhOVZrUGktb01wU1NxWDQyY25MNjI0cS12NlN1cjBmajVGT2tGQWJoemZQU1JvUjZuSFpqQ2lWaDdNQWpkQjM?oc=5",
+        "date": "Wed, 02 Sep 2026 19:55:27 GMT",
+        "summary": "Anthropic\u2019s IPO Will Be Huge\u2014and Risky. Here Are the Challenges Investors Should Watch morningstar.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2bb08348c5f4319ecbdc195b0fcbe3c1cb9db634c4664109727cf8597473edc5",
+        "label": "Famed investor Jeremy Grantham says history will end up laughing at SpaceX, the \u2018craziest IPO in the history of man\u2019 that just joined the Nasdaq 100 - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTUdwYy15d2JqRWw4LWtkdVFqSUhLbGNXcHA2WmdhZmpQYUZ6T2dGYUxnbnZWOXgtMk5ZVDhtME5BMExrcjZoMlN5cmFnRXRfbEh3VUFZT2pOWkUyR0JFNmdPaDBoWHowd2pPTVQtdENpUVNpczFPLU1ra3c4cFpaNHVGRTg3RlEydTdNRkxweFIwX0xkbjZsUVo5eFNOUDAyWmc?oc=5",
+        "date": "Wed, 08 Jul 2026 07:00:00 GMT",
+        "summary": "Famed investor Jeremy Grantham says history will end up laughing at SpaceX, the \u2018craziest IPO in the history of man\u2019 that just joined the Nasdaq 100 Yahoo Finance",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6b6962d9f858dbffd881d9d3efb272804bc321fa91c30f519f9329f5b0c9001e",
+        "label": "With the SpaceX IPO Reshaping the Nasdaq, Is QQQ Still a Smart Investment Right Now? - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOa04zS2tsYUx0VWtUS0d0VDJwdUZYRGtXOERaMkdDcWVmNlpIQW5qdmlrNl9uaUF2QWl6cVdkWklGbGdPdTVzbXR3VGU1ODZ0bE5UV1hWa2NuMnJCWWFuZHFfOU9DbVNMSzNjcFNSZTNkbC0tMDNNZWNzb0c5dy1VcTZ0dG94NEl2Mk9QR3NWN00ta1NaZnBRRVoyZmU?oc=5",
+        "date": "Thu, 02 Jul 2026 07:00:00 GMT",
+        "summary": "With the SpaceX IPO Reshaping the Nasdaq, Is QQQ Still a Smart Investment Right Now? Yahoo Finance",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6660dff524fd28fd4d61d809a894b720fd74ee22a3a4af26ea99ebe14d6a1cf2",
+        "label": "What Happens to Stocks After Joining the Nasdaq-100 (History Has a Clear Answer) - Yahoo Finance",
+        "kind": "evidence",
+        "category": "Risk distribution",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS2ZkMU1PcnlXSkxYXzN5Q280LU5BRW1IWllreEdIc1ZXYlZTeE9tU2VfZHBPWXpKTWxfdUZZWWJCakMyemhValRFejhqSE9EY1lLWmhmd3Y5d0haX3J0X3A1M0dUQmpuek5KaWNiVWVnSV80NTBzN3VLcUNhM244NlA3bG5rYXVzVEFERTBzZ2tsLXJ2M3F4eVVsdy1mOWc?oc=5",
+        "date": "Mon, 20 Jul 2026 07:00:00 GMT",
+        "summary": "What Happens to Stocks After Joining the Nasdaq-100 (History Has a Clear Answer) Yahoo Finance",
+        "score": 4,
         "weight": 1
       },
       {
@@ -11751,6 +12457,42 @@
         "weight": 1
       },
       {
+        "id": "evidence:fa16cb0df8f6015da022ab8df44bd82ce45eacc0322227dc46ef7abfaa11b327",
+        "label": "Tech layoffs 2026: Tracking the job losses across Uber, Apple, TikTok, Meta, Microsoft, Oracle and others - tech.yahoo.com",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "tech.yahoo.com",
+        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOVWo2SU1IWVhIRFJfM2hSd25aM1hLb0VDYmpxaUNCWS1iTzFHT0JwNC1QNWN4blI3TFhiZjVMeEFSUUpxcmpDdG42aEpINmlYOGF0Zmk2TnRCTGJoNnpnSnZPa1Z6U1ZqQlVsbUxFQ1JaZXBQT3ExNFFtVEJXRkttdnhyVlpHbzI4MEVCajBvc1ozWXhReVVfVHNnOTFQVkZoVXZIUzQ0bzQ2aVRxVWQzMU1feDNYWUlyazl4MFk2WGYxcTBPdThWU2xvX1RfVmZrVkxhVVpjVHlmU2FsQUh2MkdjZE1QS1Ny?oc=5",
+        "date": "Wed, 02 Sep 2026 13:42:07 GMT",
+        "summary": "Tech layoffs 2026: Tracking the job losses across Uber, Apple, TikTok, Meta, Microsoft, Oracle and others tech.yahoo.com",
+        "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:599882c62eebca019da09cbb51519cccedb947c513f761852fc29e79373b9d05",
+        "label": "Sundar Pichai's Alphabet Has Grown Google Cloud Revenue 82% Year Over Year. Here's Why That Growth Rate Justifies the Company's Capex Bet. - Yahoo Finance",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSFdSa1VLenR4SXEzeG9hQXF4UldpYXJnczRwaXBHTkJfRGVEZGhqLVVfNVoxZWxRQ0hzUGl6WFZPUG0wU21jemFCelN4WFBIMVZhc0dlMWp4WkloYjlBenhGTElfdVhlZjN6RmNZeFhJYmNvTUZ2d2tVZjlqSklyT1FGVDFOYmdLbVhjd19qTV82RmZyeFBKal9WMFRCUHE1aEZr?oc=5",
+        "date": "Thu, 03 Sep 2026 04:20:00 GMT",
+        "summary": "Sundar Pichai's Alphabet Has Grown Google Cloud Revenue 82% Year Over Year. Here's Why That Growth Rate Justifies the Company's Capex Bet. Yahoo Finance",
+        "score": 3,
+        "weight": 1
+      },
+      {
+        "id": "evidence:950b755a3f19a6c4768e872d9204d1d67a05f4418447b71463f3acd18c641bd0",
+        "label": "Chinese AI firm Moonshot files confidentially for Hong Kong IPO, sources say - KELO-AM",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "KELO-AM",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQjFQckRZeFNWak9LUmVIVlFVYWFwOEdMXzh1ME41bFVJZmc0Rmg1Z2J4NVVQeEt0N2ZvYjZ1cGFZQk81Mnc0cFY0NFRqcmJFd2dIQWJfUGVHZnc0RU1hMF91YW5vM0gzYkFHZGcwZGlWVjB1NVhyZElhNUJaQkRxNDY1ZTNvN2JRcW83NkdBcmhRc0l4SnhoOW8zdDFZc1VTWW13MDVWWQ?oc=5",
+        "date": "Thu, 03 Sep 2026 12:06:56 GMT",
+        "summary": "Chinese AI firm Moonshot files confidentially for Hong Kong IPO, sources say KELO-AM",
+        "score": 3,
+        "weight": 1
+      },
+      {
         "id": "evidence:7729c394a116341f801dd5a130de2eb2fa9162d32ff4d2f76aa77afa050a0f91",
         "label": "Meta's Muse Spark 1.1 API pricing squeezes OpenAI and Anthropic as the AI price war heats up - the-decoder.com",
         "kind": "evidence",
@@ -12131,522 +12873,6 @@
         "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9lQzM2c1E2WmpUV2VQbzAyMC1sUlhtckhIWDBvWTNXbXBJOURvNExaN2hfVWZVbU80dGpuZDBxLW1qaEx5TUxDVU1Wa2ZSbUh2WnFWTjczcTA?oc=5",
         "date": "Mon, 24 Aug 2026 02:02:37 GMT",
         "summary": "Shein seeks up to $1.8b in long-awaited Hong Kong IPO chinadailyasia.com",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:22b081476bc05e39cf170cb9051b8bbdba2831be4d8396f86fc5f0bf6956e8c8",
-        "label": "Nvidia Is Coming for OpenAI and DeepSeek With $6 Billion Poolside Deal to Build a Powerful Open-Weight AI - Benzinga",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Benzinga",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNLVNLVjRGZ3lWZnlMdG1XbkVNLTFCcDZQY1RxVGFxX0NGYmd1UXdtN2lQX0RJT0l5c216bjhuUTJReXpsMF90Nmx2bFZVNG1sT2JWNTh4bGs2ek5KR1Q3eFZRLXJEVzZCb19YV0dqSmhVb3c3MUNxcWMwS0c2SzRGM00wbExmcE5taTllWU1CUFl5bmlMLTBEcUZZXzVRNU1NeF9ETHV3?oc=5",
-        "date": "Mon, 24 Aug 2026 04:21:55 GMT",
-        "summary": "Nvidia Is Coming for OpenAI and DeepSeek With $6 Billion Poolside Deal to Build a Powerful Open-Weight AI Benzinga",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
-        "label": "WSJ: Nvidia to Invest $6 Billion to Compete with DeepSeek and Kimi K3 - ForkLog",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "ForkLog",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZmdjZDNfVjdoQ3VPajdtdU4zWlRLUUNEUVJWU0tJeFk4T3NnQk1xTGtOTU44cHZUSUVRQXQxYVpGcXZYclpwQmQyZlk2bmR2OFpLcGlzLVhuOXl2UExVX2hWRVZKUXBCVTloNEVPR3ctV1lFUHJqX01NcExIanNtdkRoQ1VCSnFEbWgwWDdOemIzZ0VPbGc?oc=5",
-        "date": "Sun, 23 Aug 2026 10:51:39 GMT",
-        "summary": "WSJ: Nvidia to Invest $6 Billion to Compete with DeepSeek and Kimi K3 ForkLog",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:bd743f3e8da2b21759de2d550890a7c0a9928e02287892a81007c0e11817985b",
-        "label": "Tech layoffs tracker 2026: All the job losses across Apple, TikTok, Meta, Microsoft, Oracle and others - Yahoo Tech",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Tech",
-        "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPM3E4cFQ4NjVxamx5czRPOTdCMWxJQjFtVUlFOGFtdW1qVHBiQTZWRjhralN6aVh6b0NsQ1VaTHFmZ0ZMcUNSTUJ1UTN1VE1fTmxRamdWYWJFMTRJbWRLMy1Pem9GaWVuZzZoMnlkcEVOY0w0TTFRLWFQRUZJakdYSm9GUkFpN3FkZWhKVVNpQXRLZnVWRjAwcElmUTMwc0VxVWxwVDNTWVh3ZWlhS1BGU0RGMXRIY1VJeUZrQkZXbmNkanZfS0U4ZXZRMDhSZzd5Y1RlTHM2TllBNkFoLUZGNXYteXRodw?oc=5",
-        "date": "Fri, 21 Aug 2026 20:25:10 GMT",
-        "summary": "Tech layoffs tracker 2026: All the job losses across Apple, TikTok, Meta, Microsoft, Oracle and others Yahoo Tech",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:10093fef0d0afd618e6daff9379cff31ce2c4fc0b29a62632cae6977884b6a6c",
-        "label": "This Week in AI (Aug 16-22): Mysterious Ox Alpha Model; Stripe Buys OpenRouter; YMTC's IPO - Smartkarma",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Smartkarma",
-        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPamFkWWctcHZHM0c0by1DdXZZMXgtUXhGMDFsTnpxaUF6NWFpSG4wZWJOdVdGMXdMQVdrUE5XRHRXdWRFaTlMdmhKZW5aOHZ4NG5LRmFmVWZIbGR6MjVTb3lTNnRobWpOR1IybzlYa3NLYmg5QkxsQ2VZRXlReHdQQloxUUtCX2JfQzByV3FHeE1IZUY5YmMxNzJCbG9aQUthSGoyU053QmlCU3V0aXhEVDRoTlZKeTFubGttWnVn?oc=5",
-        "date": "Sun, 23 Aug 2026 08:45:45 GMT",
-        "summary": "This Week in AI (Aug 16-22): Mysterious Ox Alpha Model; Stripe Buys OpenRouter; YMTC's IPO Smartkarma",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:870939f248c79bcddabf8ca6a61ba55c0e8b5d4bfb857145c9816d0331373670",
-        "label": "14 Trillion Valuation: Is the Largest IPO in History Making a Comeback? - 36Kr",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "36Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NdjFxd1BjZXUtRl9OczNxTnB3bHo4cUd5NnNpSTlmTzN2aUlqX2tNYll0YUljQTBvdUZ0a1NlalF4UXEzS3BFWVRYZFFkQURaZVRr?oc=5",
-        "date": "Sun, 23 Aug 2026 03:41:43 GMT",
-        "summary": "14 Trillion Valuation: Is the Largest IPO in History Making a Comeback? 36Kr",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e5157167938808c8ed1536e74512ba5cbcf0766a82b3f93622721ded35cfd208",
-        "label": "Nvidia Spends $7 Billion to Enter the Open-Weight Model Race, Taking Direct Aim at DeepSeek and OpenAI - finance.biggo.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5LNFJQNW5RbkFiQW1pcllJdXdOVkRPMmVxZW9QY0p3UUViYkdseXJNVVVCQlV0VjlkRnFMbW54dmdyLS1BNk42NDViV2wtUlo3TFd4UlR6OE9YS0FUZGVpMm01LU1BYzd5RnhrLVlzTHlYS2lmZlE?oc=5",
-        "date": "Sun, 23 Aug 2026 12:36:00 GMT",
-        "summary": "Nvidia Spends $7 Billion to Enter the Open-Weight Model Race, Taking Direct Aim at DeepSeek and OpenAI finance.biggo.com",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5c86bf96e6f74ada5f224c7004eb3d33055e66c58e956020a0e7a5e6176daf22",
-        "label": "Tech Brief (Aug. 21): Memory-Chip Maker YMTC Moves Closer to Shanghai IPO - inkl",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "inkl",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTHVQUjFWek81eWpPTXR2Zmx2bElYazFfczVGdGZ0Q21VR2p5ZjFGVUdURWM0MTkzSVhIS2RHVnRMMjZCUTFkR0YtclVxelRhcWgxbjRud0t4a0RBeF9GclZZOWRiS1djRDdXYUxnSmZNQk14TFZhZGRKSkw4UnAydE1ad2sxUlBCSG9Tb1pyY3FRbERITUJqaEQ2UQ?oc=5",
-        "date": "Fri, 21 Aug 2026 07:51:25 GMT",
-        "summary": "Tech Brief (Aug. 21): Memory-Chip Maker YMTC Moves Closer to Shanghai IPO inkl",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:150fe07f57db5ca82809ca016f0d61d1a9347252a3c08dfbfd12e60c6c16f8ae",
-        "label": "Future Bets: Mars, AI IPOs, Fusion - StartupHub.ai",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "StartupHub.ai",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOMkpnbUtSOUlmN1dNX2xwaVhRelplY3ZZeTFILTdLQ0h2aVZydE51VUVHbGhUX25YaUo3RDhTdDlwZF9UUkpRaHktelE1VzRIYTNiN25lQ3Y1M3IxcFlqSFkzN2ZZckFNekN2Rms5bUZlczlvS0E0Z29iWnBhbWpsWU5vdUdYN3BSN2tSY05ydEotSE0?oc=5",
-        "date": "Sun, 23 Aug 2026 00:03:48 GMT",
-        "summary": "Future Bets: Mars, AI IPOs, Fusion StartupHub.ai",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6528a3a90708055d463b7b4964a8cd79f06704d298f96b74c874cb9f45abc16e",
-        "label": "14 Trillion Valuation: Is the Largest IPO in History Making a Comeback? - 36 Kr",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "36 Kr",
-        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5NdjFxd1BjZXUtRl9OczNxTnB3bHo4cUd5NnNpSTlmTzN2aUlqX2tNYll0YUljQTBvdUZ0a1NlalF4UXEzS3BFWVRYZFFkQURaZVRr?oc=5",
-        "date": "Sun, 23 Aug 2026 03:41:48 GMT",
-        "summary": "14 Trillion Valuation: Is the Largest IPO in History Making a Comeback? 36 Kr",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8637abcee05a32f63a66c4ca1e2a80e29c0d6c2a57dd263fd721e1abd3808f9b",
-        "label": "China\u2019s AI Labs Caught Up by Giving Their Research Away. Four IPOs Will End That - Business Model Analyst",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Business Model Analyst",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB5MmdqWGhITy12WUI1UlRCTWtxdllZeWFzVHh5aW5ZUUduYlh6OVQxVDlFTlExZ2ZqaFdXVzBNYUMyVHV5SE9TX2I4dzhHeXo0WVhLQ3dCYUVRaVVfZTQ1eDlQbDQ2UlRfR1dwTEhpZG9lN1JUNmc?oc=5",
-        "date": "Fri, 21 Aug 2026 12:07:03 GMT",
-        "summary": "China\u2019s AI Labs Caught Up by Giving Their Research Away. Four IPOs Will End That Business Model Analyst",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
-        "label": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom\u2019s Hidden Ledger - Yahoo Finance",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTVhfOFVXUGRDVlZUajN1Tjk5V3lJMmJLSVpsR2J0b1JfbTduYXBLZlpDWUtjNjNKdXJwTTQtVUV3bG03UDdjX2xPc2ppT1llMXk4RG4yLWVEY1NLZTkydGl0SjZwZTVrSjc3OWNKYVVRbjJsR3VHcXp1VE1LVkdLTHBtbEpEOWs4QkxhSnIwZWFXN3N0c0hmLS1MRHdEZw?oc=5",
-        "date": "Sat, 22 Aug 2026 15:52:40 GMT",
-        "summary": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom\u2019s Hidden Ledger Yahoo Finance",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
-        "label": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom's Hidden Ledger - 24/7 Wall St.",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNXy1vOWNCV2ViRDdzMXRELS1kNWJzeTZVLWpDWDVmbjdqRUwtWTFEWkQxbTRyQjE3ejJfWVlQRUFrbTNTWmdQdVdMdU12VmdJZ0N3WmVRZVdpdHFfWHdNTEUzUjdLak94MlUxa1R4LTlFM042RER0NUhGS21TM1ltcGJsMHBWUTJiVkxrOWtLblJPRThtWjUzOVZYeXBFMHZfNjRFU3YtR0RLM3FlRXVYOTd6aDRRMzRtN0VuTkxsc1c0X3hUck44U3hQYw?oc=5",
-        "date": "Sat, 22 Aug 2026 15:52:40 GMT",
-        "summary": "Alphabet, Meta, and Microsoft Are Hiding $3 Trillion in Debt On the AI Boom's Hidden Ledger 24/7 Wall St.",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9fdcf5696b2268ac4344ef56ecb4c0768cffee1f45bb9aa6f64f6f6e71cb2d92",
-        "label": "Microsoft: Higher Revenue Visibility Met Measured Capex - Seeking Alpha",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Seeking Alpha",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNeUZOWS1uV1VWbjVFajNNZGVDU2FtTElpWW80UURZU1JIZ3diOV9lYUU3M3FINXBST1lTc3lkZjladVlFRDBPWmQwV1Z5VnlwdVprUUJSWEotLUJxdFBBOWZXMHA4SkxhdlZEUUVvV3lqM3lIU3RobVZUTHVXZXp6dlc1LUZCdDBvVnpXdjNjSzR5YlBDX25QQThGWQ?oc=5",
-        "date": "Sat, 22 Aug 2026 10:49:08 GMT",
-        "summary": "Microsoft: Higher Revenue Visibility Met Measured Capex Seeking Alpha",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:32aac18aece344fe366f54f9ab0b94bc180d460e12e5cea51051338824b38a7d",
-        "label": "GLM-5.2 vs DeepSeek V4 vs Kimi K2.6: 62% SWE Pro [2026] - tech-insider.org",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "tech-insider.org",
-        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE82T2xLQlpHLTJNUUhMZ3czM2VVc3VvUXRnY0hlalliWjRPb0JsbDJjQ3czb1lkNGsteFdUaVNKTVp4Rk1uLWt0Z3hYbFNtaGtZZ0pZdWp1dnEyYy16ZTQydUFLeGNYOW5qYnRhQTV6NmhtZw?oc=5",
-        "date": "Sun, 05 Jul 2026 07:00:00 GMT",
-        "summary": "GLM-5.2 vs DeepSeek V4 vs Kimi K2.6: 62% SWE Pro [2026] tech-insider.org",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c3c84e0ee6fdfcb18bcba2e38c4ef1ad9891659b6aaa88612fcca031b5bb423f",
-        "label": "Moonshot AI releases weights for Kimi-K3, firing a shot across the bow of OpenAI and Anthropic \u2014 open-weight model performs almost as well as frontier models while being 2-3x easier to run - Tom's Hardware",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Tom's Hardware",
-        "url": "https://news.google.com/rss/articles/CBMi7AJBVV95cUxQUXpwUEpYUTc0OHFCYVpwa182MWt5VFp1WTZfaVhGM2hnT1ctYTNuUDlYc2xqMGRmeElNRHJkWjBTNUNWUEQyR3l4WmN5dFc5ZjRSay03T2xVbDlGd1BDLVFCcUw1YUlWc3B1bE1TaGVxWnAxYUt6dXdlNGdaNkMxUnJmYzExdzBKbml5RElIcFlyQ29KOVVEdjcwYTRsakVBLTZ4c3oxdlZ6OWNieUt1ZExYekV1c2phWEk5SEpUWWVXekl0Q2ZwMGl2WTRfVkplSEx4YzFoZmlSemdHWFZ6bk9xNHhhTVVUd0hzQXRqeUM4cDFOQmZfSEd0NVduLVFiek5yVlJyVzN3SzQ2Z3B6eUR3UU9YbHFuQ2k4dDY1RDBoUTlzVHNWbjNmMkZ1UjBiUjlERWtpd3phN3NlUnFIME53Q1JzYW1CUU5FWDI5OW5OTnF2NFJJNHhFQkdHR0tmSGtrT1UtV01oMlcy?oc=5",
-        "date": "Mon, 27 Jul 2026 07:00:00 GMT",
-        "summary": "Moonshot AI releases weights for Kimi-K3, firing a shot across the bow of OpenAI and Anthropic \u2014 open-weight model performs almost as well as frontier models while being 2-3x easier to run Tom's Hardware",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6189801a864ca81224efa3049d6080c2edb1338c797aea310b04915341afbf7a",
-        "label": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds - TradingView",
-        "kind": "evidence",
-        "category": "Credit / infrastructure",
-        "source": "TradingView",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeXl3SlNrdnVqZGdqS2QyOXpwREFKbUV6WEp1QXhNLU9rVkZkYTB0UmdaSFFVLU9nWUZsMTdSam5RcEE0RXNpdm4yd0V3T0ZIbnV6WUV4VTlwd2JfQmdFTUVCR0FEOHFBMmtVM3hKRndPOUVDLTl4dmxPenh4cHJ1QlZ3RGQ4cjFEVjQ5Q3psWnRuZDFBMjBndHBSNnMzM0l6czNkZTBLQmM1VmRRVWN3ZGlvODZFV1IwellmZUhHcHlMX1VSYjlFUWVVRk9SUTBlWEVaQg?oc=5",
-        "date": "Sat, 22 Aug 2026 07:13:48 GMT",
-        "summary": "Key facts: Amazon (AMZN) raises AI data\u2011center capex; sells $25B long\u2011dated bonds TradingView",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d099ef6bb43dafb86878da9b874ba665201f799c7cafd86f4115ce897a4b5dca",
-        "label": "AI: Mega-IPO Preps, Stripe M&A, Open Source Steam, & More. AI-RTZ #1186 - AI: Reset to Zero",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "AI: Reset to Zero",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1xRUVla0RHaks5TmJLNVNzM25mSHlibXlZOVFUemgyQVdQZGZSVjdyYUNxaGFvUnJWbjJURklwS1Q2VFhHZXBHYVNQbFdKVVZkTUxKalYxUTZ4RUdueUVMTzRsZllOeFNEd3hBXzVoMkU4eUpGeTZwMw?oc=5",
-        "date": "Sat, 22 Aug 2026 05:02:36 GMT",
-        "summary": "AI: Mega-IPO Preps, Stripe M&A, Open Source Steam, & More. AI-RTZ #1186 AI: Reset to Zero",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:da1374711664339a172e87aa5a708cb04d8d90b5ce8354cdd13429a9e067a4dc",
-        "label": "AI IPOs and Mars Bets Dominate Prediction Markets - StartupHub.ai",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "StartupHub.ai",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOaTBaRzZndmlEbnh2clRrWEdmVlFMc1pOZHAyV3RadHpFTHlGUU9KS1BYMGZWRjhTZ1JuWTVFZS1Ba3F4RDhqMTVVMjVhRWZmT2JWUmNpSWJKTTlpMkFqd05OaTlHQzBZSV80SjBtekhsOTVvQWZxaVVFQ1NTYnhBTFF0SmVMTmszZVA5M2c5bGR5TXk1a0JyUHFXUDdvMHU0UTlJS21GdTlLcEk?oc=5",
-        "date": "Sat, 22 Aug 2026 00:05:15 GMT",
-        "summary": "AI IPOs and Mars Bets Dominate Prediction Markets StartupHub.ai",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ba161bf059915cd8b3e30de82b0dc26a7fc82b45fbd812feb5e84b0670a322b6",
-        "label": "SpaceXAI debuts Grok 4.6, overtaking Kimi K3's performance and vaulting to the world's fourth best on Artificial Analysis - VentureBeat",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "VentureBeat",
-        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNUWtpRDZFQVo3VzJ0OVNFZ0R6RE15ZURGaXV1cmJHYjdiSUhKQVpSWlNxaFdJYmxHeFNXNkVhRjlEZVdjX1Y4OVpwMXppSy15bElCOU1WX3FmdmtRZWJFZ2ViVkhraS1PLUNacWVGbXlPakxYSVRCLXVycnc5TnY3THQzWlNHeFF5aHdNRENVLW5EbExIRDdMTzcwaVU2OS16RWl5ZWJDMlMtcWtpWEVRNlUtNHFQOFRGMHBPZE1XM2ROU1F1bHp5NUxwVXppazFwQUVaMWhpV1Fyenk0M3hpeHc5TzRXWm1CZk41Rk5jQS1nVjA?oc=5",
-        "date": "Wed, 12 Aug 2026 07:00:00 GMT",
-        "summary": "SpaceXAI debuts Grok 4.6, overtaking Kimi K3's performance and vaulting to the world's fourth best on Artificial Analysis VentureBeat",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:81205d6f9f9ab0b63517611862a7fe136e4ff115eaa0a0bbd484b22ffbd9aa59",
-        "label": "\ud83d\udea8 BABA EARNINGS DIP VS. $50B MOONSHOT IPO: Short-Term Trap or the Catalyst for a Massive Tech Rerating? \ud83d\ude80\ud83d\udca5 - Moomoo",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSGpZVnFJQko0MVBxZ2hhOU92ZllHOTlmY2ptM2xqdExaOHdqMWQzQy1SdVpOYUJJdWl4MXZQYXo0OEJmZEMtSFlFZ25HbktEZ3VBNWhvM1hJVmpSQjdOOFZHQWJoWXRYUDJaY2I3YmNIUnV2a2I3d2xEU0x0X2tGMnRIVFBGaG14eGRleTRaYkkweFdhMHY0Q2F2QnIxUnpSaHFDaDhLTHQwYjQ?oc=5",
-        "date": "Fri, 21 Aug 2026 00:24:29 GMT",
-        "summary": "\ud83d\udea8 BABA EARNINGS DIP VS. $50B MOONSHOT IPO: Short-Term Trap or the Catalyst for a Massive Tech Rerating? \ud83d\ude80\ud83d\udca5 Moomoo",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:da7da7a8b577037b732e6db7a29bce8384899d919f4fdae09b652e8f61350bdf",
-        "label": "Chinese startup Z.ai seeks $560M raise in Hong Kong IPO listing - SiliconANGLE",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "SiliconANGLE",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYjRyRFR0cFdhVVZVVnc2dVFHaVg5UmQ3OWMyMnVNclFuc01OeUZQdkF0dGphNnBnc1FyT3NkQk1lQVlscnVYSGg3OGZNdXB0bHMxNlMyY1hXOUFBaktXXzlRRk5MTmpwRk1KZW9wMVRLcTdlRFVHTURWcUkwcWl2VXRjMzZvcG5MR1lvWVJ2WkZqcmpSbjlPRXFXOA?oc=5",
-        "date": "Tue, 30 Dec 2025 08:00:00 GMT",
-        "summary": "Chinese startup Z.ai seeks $560M raise in Hong Kong IPO listing SiliconANGLE",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2fc933bdbf71a74cd1af55bcc40bc92377bc64abcc97a85d29b4ff5539db4fa0",
-        "label": "Zhipu Grows Revenue and Users on Path to China\u2019s First AI IPO - Bloomberg.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNd09GVFZTTm5wOHVTMVpTLUZHQkNOb2RiN3FJV2w4bVYzT0FFTVAwTURxei01T0lxcWplZ0ZWV0pJSldIV2JRaVN0NUZrZTM5alFoOVBoMjZkcVFKS3NhelQ4RzBIMFZmTkhNUFZXcW5hc2JzeS1zQVZnLXhEa1ZobEVGRHcwUDdfVXV2bUxsQ2c4N0ctbXNWWkh6VlVsU3hDejhyaVhtc2FDcGVXX1ljaFZn?oc=5",
-        "date": "Mon, 01 Dec 2025 08:00:00 GMT",
-        "summary": "Zhipu Grows Revenue and Users on Path to China\u2019s First AI IPO Bloomberg.com",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1889a63fb9a6c98306e407011b8856141f3fe5b02020d7b738964976ee2d6dd9",
-        "label": "Kimi K3 shock: $392 billion now wiped from expected valuations of OpenAI and Anthropic - ig.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "ig.com",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPLWxYWUZqeFNIUWpIOUZ3WkFfdE05OGlXbXlPSC1idFNGcVVTREw2d0JIc3h6LWF1cEkydHQ5Y0tsc0dPX0JQSHhLb0k2SDlnVTJWaFFNNzZjRkQ1Q2NnNW9od1lwVFNyOXc0Rzc3Z2g1N01JUEEtelNMSC1pM2k3N3lFZnp2aDVIa3R6YmtZSXdDMkVTLVlWdkJUVy0wQU5KcF9NQnFGWDVWSWdVN0VDd3VqNWRiVElB?oc=5",
-        "date": "Mon, 20 Jul 2026 07:00:00 GMT",
-        "summary": "Kimi K3 shock: $392 billion now wiped from expected valuations of OpenAI and Anthropic ig.com",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:bc78bb7d003c1d7a892ea154dbc64462d5d7459d0c0de3008a6caf15fe4a1ddc",
-        "label": "China\u2019s Moonshot plans IPO in six months after AI breakthrough - The Japan Times",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Japan Times",
-        "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNODRYbW5PU2M2SF9iZ0ZXa0VrYXd0SlFYOTJCczVnYlVkbGduOGVQUnBycm9CeFU4SHRxaEZ4dlhiRFoyWm9nVFpFTE9qTG9sWnBDeVoyYlh6Q0MzZ1lqbk5NQkl3X0d6QmVUMWhYMFM0b2VJNEVNYjBVRU05QS02RWx3?oc=5",
-        "date": "Sun, 19 Jul 2026 07:00:00 GMT",
-        "summary": "China\u2019s Moonshot plans IPO in six months after AI breakthrough The Japan Times",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c113c13ef595f900879ab96632973663c6700684b97f2912a7b3c23c45451970",
-        "label": "Tencent joins China's AI spending race with 2025 capex boost - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNZ1ZkZVhsOHBBbDk2bEF5Q0RCSHlyOXB0aGtnaVh6NTBGRERhdm1VVWFUNFhtYmpnem5GVTZtUjQ5eTBrOTI4UlpVQThNaDdwMUJHbENvb3ZNUkw1TFZUOHlxRkxndDVGSlhxSDJOMWxxZWJqWUdXSi10SnFFNnBzU0xHVUQ4UlpPMnN1TTZjWHljX3ZoTE5OQ1NOWVNnbm12VnliQm1POGNRQQ?oc=5",
-        "date": "Wed, 19 Mar 2025 07:00:00 GMT",
-        "summary": "Tencent joins China's AI spending race with 2025 capex boost Reuters",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:facd4f6397db4a630c7346f483891067ee8718def4fff016c605cc73f71b4192",
-        "label": "Tencent capex jumps 176% on AI push as revenue beats estimates - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcDFUM3NNU2ZVTEMwUnNMUS1ROVRWZS1PMnFHdXo4R2VrRk1hUDJFWVFRbC10b0tQOXprdWNnWXZzcmFreGhzRXQ5R0ZwS2JCdkIyRFY1c1RKbWs2WUM5enNaQWxhaW5mQjU4Qk82b1FRaTZXeGZjTFVfR0loYkdBWjBrZHRXVVZrYlZNVUZUNklHbkJsZWRvLUFMOGxZNEpnYjZ5bXdjekMzZ9IBqgFBVV95cUxNbks1WEVzZHpINzZJRHd1bHZ3U0I1UlEwZ3g4T2VpSHpGb1U2U0F1NnNvdjA3LUM4SmxocVpEVWRfbTBxeHZZNWd1LWRtOWFWT2wzV2NQT2lHNXRJMkllM3VtbU13UzR2WUdFQTNTZ3FoOTBjOGtYLUllc1pvWjd4Zm85bUtYVTUtNDEtd0ZkdTZYb21lc1AxOGtWbUtVRFpRZ085Z2ZReHBDQQ?oc=5",
-        "date": "Wed, 12 Aug 2026 07:00:00 GMT",
-        "summary": "Tencent capex jumps 176% on AI push as revenue beats estimates South China Morning Post",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b5888308fb7a9c29b50cb310e924c6a425dff4f54508af8bc44921ed030b55c7",
-        "label": "Tencent pledges higher AI investment in 2026 after chip curbs hit capex plans - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOHI4MDJ5dGpiMmhkR2E5ejMwUndUNGRjWHhMdWNfWmhYZDVsVFVhME1DbERiVzc3X3Bicm82UnJYUU5ud25weFNhd0VPY0VqZ01nRUlUbVQ2TWxfeExZcTJLUUZXb01CRE1nTEp5UloxbnBwSXpRbF8yX2xBRGE3eE12eTlDMkhTS0tQV3RrSHNoU0syUF9Qa1V3cFg2QTVYV3hGX3o0YUlISlFtenJyLQ?oc=5",
-        "date": "Wed, 18 Mar 2026 07:00:00 GMT",
-        "summary": "Tencent pledges higher AI investment in 2026 after chip curbs hit capex plans Reuters",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:402bf926b5640033816772fb0f659aa12579da9ef89b1aa1ec4aba4c82e35a55",
-        "label": "ByteDance Weighs Capex of As Much As $70 Billion in AI Push - Bloomberg.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOW9URjlGR292S3RiM3lsWUhmWF9LcGgxMmluXzFabnQzdEpmaUZiME9hTGtmeXBwd2VWLTBMdUxaVGlHRm5sOE55SzFnZUZCY0VfR0JtUlJLVWZMdHhfZVhyb21yeDYwa2NIV3Z0RndnWGplOEdQV3FDcXE1dWZLNjRVSFdzVDdPSy1icTBrZ0R1QUY4YmtGWHY4UlhLN1dUR2NvR0RiU0VqdF9MV2c?oc=5",
-        "date": "Wed, 27 May 2026 07:00:00 GMT",
-        "summary": "ByteDance Weighs Capex of As Much As $70 Billion in AI Push Bloomberg.com",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:177360a6c5bccefbf6215c0d838b51f927ef1cca4f00466d398c5f2b1195cba1",
-        "label": "Alibaba Earnings Preview: Huge CapEx, Quick Commerce, and Qwen App - How Can the Three Major Cash Burners Be Filled? - Moomoo",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNYm1zYXZKcjloNF9QNmdWb3EtV21mV2xDWF9qYTdBd1R3SGxmWFc3R1BLNXJxaXg0dW5oYzlkeXh6MTJsSWxvN1J0NThYTTEtZHV1VVJwQlVMdEpYR29ZTmZxSWIydU1YMjNGdVp6QnBXRnFuaWhTdUpvQ2JaNGIxRDMwOWQ4bWVYZUFQQmY4b0tqMkJ6X09Vd3NYYTNueVFYbTZXVnlPOWZqZXhaZ3lIUlBYaFVGQU0?oc=5",
-        "date": "Tue, 17 Mar 2026 07:00:00 GMT",
-        "summary": "Alibaba Earnings Preview: Huge CapEx, Quick Commerce, and Qwen App - How Can the Three Major Cash Burners Be Filled? Moomoo",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8ae6ea6004187e1ff1313e8316feb04f119dc676890b38edfca3884d1780b440",
-        "label": "Alibaba CEO signals capex boost as China tech giant forges full-stack AI path - South China Morning Post",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTFJfYnI4YjBDU0NkcC1kLWhOS0YzNXBuLWJBaExKV05GalpTSXc2cWF6VllDVWxwRmJfVGVGSGk0M2xfTEhzMUxDdUFfbTZmVWhqQlNhaUZocU4zV0Vnb3Nqekt2MVBVVS1TbDlVdDFaRFhDdF9MeTVlY25aVDAxV2k0WlNkN3pBQlJWd3huTnp4VGZrVldYWW42cUlDNWhwMV9qMTFfWEV2RmZqVGdRQWl6OGtRNWo2LTZ3SnBSSDhwb0xBekNHUVVIV2nSAcwBQVVfeXFMTnpkLTVvdGpBX25iV2daUS1iZDlQdDlQSXBmVUd4NUxJbTFtNHhWcUtSMzBYX0traExRZDhjTmZqUEJCOEtaTHN4ZHkwdXhFU0dTSlNCazc5RGpUdGdRelJpQk5Wd0NPVDFDTnllUk5pWjJsY05iVk1WVkhrSUtGVTl6UzdtWDlJeFRsT0RCQ0VqRWdpQTE5RWs1TEx2ZkZoSUZsOHhMZmpNT0xoUzlfdl9BSVk2dkFHLW9sb191SWpLY0FQOGtweGJoWnAz?oc=5",
-        "date": "Wed, 13 May 2026 07:00:00 GMT",
-        "summary": "Alibaba CEO signals capex boost as China tech giant forges full-stack AI path South China Morning Post",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:da94ed82deb693b190849cf44a0c47d787ee63508ae34ac37255cfae6f206f7f",
-        "label": "Microsoft, NVIDIA and Anthropic announce strategic partnerships - The Official Microsoft Blog",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "The Official Microsoft Blog",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZmkzNHkzX2I0bUVXSlBoZU9Sa08tZHY2Y1pPVDRfeVdOYTZwOGI2allMX1BjMWlRNDlueHZVU2JlWjE3T0JxcmpZaU9rNTE3SjZ1OERYNWJRdnZmZlNMRFNHMlVDMlNUQTliZ0s5QTlCVm5DNWpyamdtXy1pT1BQaWFBbDNjaVZMckV1akduTHZFck9Sd3A0UWdMZUg1VzUtVlpxYzhCa2N1Wnc?oc=5",
-        "date": "Tue, 18 Nov 2025 08:00:00 GMT",
-        "summary": "Microsoft, NVIDIA and Anthropic announce strategic partnerships The Official Microsoft Blog",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e7081d52010a627559272a636ec2766ad74376a180060885e9f217a9f82d6110",
-        "label": "Yann LeCun Calls Elon Musk\u2019s xAI \u2018Kind Of A Failure\u2019 \u2013 Casts Doubt On Ability to Compete Against OpenAI, Anthropic - Stocktwits",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMThxaUdIUktLbHFnSFpua2NmeHNiNFhHQ1pEYlBEcmNrUEY0cHp0T2pUWWw3MFZROHVJRWpzcHp2TGhlTUFzRjZpb3VKaWwxZ1ZNdVBjUXBINUhSUmVYM2hKX3BQRmRDVmM1ajdxLThOdS1kb1ozdGJGNmlSd0I4bkpLMUowbGgwVTh5QXBlOFFybVdSNkVZTmNPVW1HZTFITElPMUVENi1tM1E?oc=5",
-        "date": "Thu, 20 Aug 2026 23:06:33 GMT",
-        "summary": "Yann LeCun Calls Elon Musk\u2019s xAI \u2018Kind Of A Failure\u2019 \u2013 Casts Doubt On Ability to Compete Against OpenAI, Anthropic Stocktwits",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:24985a1be1ff4b72a8e48cd51b19b3403dad1dd57fbc1e40264648fe155769a7",
-        "label": "OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites - OpenAI",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "OpenAI",
-        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9xOW5ZN2xtYU5kdkNYV2hRTjhKcGZPS2hFYTdlcUhOR1JyNmhWZU9iMnBrOE4tVXZnWmI2UzBhSzhLbVhKOHNTMlB5eWtkUnU2OS01czdCQ05WaWpGb2c?oc=5",
-        "date": "Tue, 23 Sep 2025 07:00:00 GMT",
-        "summary": "OpenAI, Oracle, and SoftBank expand Stargate with five new AI data center sites OpenAI",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1fc805e0d386563631a2fcc278091e4dd5092f6712f4e70e4d174bed69eae61f",
-        "label": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks - Apollo Global Management",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Apollo Global Management",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNU21aQlp0MzBBbVZuMVUzVFpRLVhGeUFzWG1vMkJUeHlCcENMSlVqNHJpZ0lFcXhFMjV2OGN3Y3NHajNXelBHRkVWQ0h2enV3TTB1SHlyeWYxUXZac2ZoaXRueXlwNE5IdHZQMFR5bFBkWVk1eVNiQkctYi10Z1lSLXk3R1hCbGxGZU5pdGVKRUZjeHNuNzd1Ny01RzJmUjhoQnVtTjB1U3MzcDFkSks1OTNPN1VmWTQ?oc=5",
-        "date": "Tue, 09 Jun 2026 07:00:00 GMT",
-        "summary": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks Apollo Global Management",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:54a74eed2afd60a0ea54af9ca1a918a5788615430e7b033e6fd88a05388bbba3",
-        "label": "CoreWeave signals higher capex as component costs rise, shares fall - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVVc2NWtWRTEtR190ejhQWDRWOWJqWVRtRXJ5bFo1SlIwcnpkVDgwdGtUbmQwX2N4LTB6LW1ZNzc2VDE0QTVOYVRGaXdwOUJ6aXJzSi03clZsZnNDMS1DLU12dlpFcnhpdzEwUjR1NUFXYkZpcEtQTW1mb0J5bWpwdmhoOGxTUWw0dE5VZkVrb2lHdmc?oc=5",
-        "date": "Thu, 07 May 2026 07:00:00 GMT",
-        "summary": "CoreWeave signals higher capex as component costs rise, shares fall Reuters",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6393536a7b3b884d80593cb4153c8864a75aabc29ed255daf2d5450934a06ad6",
-        "label": "Google increases capex forecast again after cloud-driven quarterly beat - Reuters",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNTZyTWZjRUFlVHJzZlUxbjIzNFI4OUt5WG1WR1ZtV0U0OHlBSVpJQm10VFJiYy1zcjhHUGpYTlVRWWduUjJHd19OYW1aaTZ4ZE81V3FOU1AwQVFmVzJaeEFHYkJJNUJxQzRVZFF1dDVjLTdpNjR2bTBIN1BrVTZXMUNUaWxBVkQ3VEZBNThMeWNxRnk1RnMtLTlUS0UtNGJNNkQ4?oc=5",
-        "date": "Wed, 22 Jul 2026 07:00:00 GMT",
-        "summary": "Google increases capex forecast again after cloud-driven quarterly beat Reuters",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:11f155fe00212aed3c02dc4cd90ace3b5933b08d82657508566f1766ac023567",
-        "label": "Google falls more than 6% on capex growth expectations despite earnings beat - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWEt0UXR4Vjl6UDN6YThSVC1nbE5KOFBHcUdjLW1mRVdmSEFOdi04WV9oSF9iVTJ3Y2F5YWNDM1FVWTM3eW5pX1Fjdi1mQXZ1b3hPQ0RnTnBkTUFkR1NsNUdMLWxqeENHYlFoTVJpemhIVVVLeVlPZDBIanFxdlc5RWdHZ00zd3Ytd2EzQmozczQ3eUFCbHc0TlBzZ05JM2JpNkV1RUtuRU9hVG8wZjNLN2RwTjJ6Y2stNlVJcmN1cmxnSmg2aVlISW1iVUZ2ZUd4?oc=5",
-        "date": "Thu, 23 Jul 2026 07:00:00 GMT",
-        "summary": "Google falls more than 6% on capex growth expectations despite earnings beat Yahoo Finance",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1d44447a71454b88d84761b581a7d81a72fdcf49776d4b5fbfd9862c6c5f3c52",
-        "label": "Amazon\u2019s AWS Earnings Preview: 5 Big AI Sales, Anthropic And Nova Things To Know - crn.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "crn.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbkVRQ2h3eE4xZk5PVUhvajVybUpkaVM0TlEzWEVLb1hrT0RQN0J3RXdhOWhNZnpFMG5iZExuX3l3SG9Ra3hmcmNySUdoaURWeUltcFRWaHFjVGpNSWJjRG41MkpuVjQtc1J3dGpwS0gzdUVkSzVRZEFUUnRPalc5RDg4TzgtOHpSalFMVFFRdDNoOFFZcHJSWktCQ25sWTRFbFNTTlhMNFF3QjV2Q2JZZjdseDQ?oc=5",
-        "date": "Wed, 29 Jul 2026 07:00:00 GMT",
-        "summary": "Amazon\u2019s AWS Earnings Preview: 5 Big AI Sales, Anthropic And Nova Things To Know crn.com",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a4f5bfa88a909c5885691375d47dce3f9df3b9e9a9b5aee4672d6f4e88f0b900",
-        "label": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMW12cVZQVTA4UGZWU1lWZ0tTODRDLXlaNllVd2dUYkRHR1VJUS11X181NXFvaGpxNklCNGxkaTZsemsxRFhDQ0NQek1BTk9YOFY0MmhmNmpCUUhrUGVvTjU1SGhlTHdOS2hqakVWN0Z3d2FPSjlILXgwYVB0N0lsbGhjYjJyV19GTURMNTN6cDFoMWFVc1Aw?oc=5",
-        "date": "Sat, 01 Aug 2026 07:00:00 GMT",
-        "summary": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' Yahoo Finance",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c11f7ded2dd3d5563b1285aae37b3d098ab39b3b098d81104d4514b0a0e06b66",
-        "label": "Anthropic And OpenAI Are So Desperate For Compute They Let Broadcom Finance Their Own Chips For Them - Benzinga",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Benzinga",
-        "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQaE5uTE9scEdkbk1zUW0tdXItMVh0aHVXZHFxN1BuQjBvRkNfVjJSWG53RWhCQkk1aURiNU5YcXZfemtjdEk5R1NkWlY4bW1Gc0tfOG9TSUZRYVhOTmxWX0VkVkVWczZzVHlDdW8wQnZDdWU2ZklyZFYzSzlGLWJlMnE2eXpuRE0wRmViak5ycnVTaXFGMGdhRlVIMERZalFyQlFDdlV5RXVPNVRWbG1lY0MtUlIzSVhuZ3FYLTFNUi1VZDM0cDBZZHpWeTJtckk2TmxpaXRuZ2lJRVM2VFNHeXkzZG9ucWFk?oc=5",
-        "date": "Thu, 04 Jun 2026 07:00:00 GMT",
-        "summary": "Anthropic And OpenAI Are So Desperate For Compute They Let Broadcom Finance Their Own Chips For Them Benzinga",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:22c08f08e69751b2cffc206b03dae1c1799352360adf986d3d5c2d385b47db6c",
-        "label": "Mega-IPOs 2026: what they mean for your portfolio - RankiaPro",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "RankiaPro",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQOGJERWZyWWtwYlBCN0RKWGpISDhUVTFaMjJITHJOQ2MtUFRRbG9VcEpyd2xNRU05NnlCdVBrVXktcU9XcGNYZWNnS3RTeWp1X1YxZWFDTlZuV2Q4X0tVOGNvVExsWElpbU9JZGxxZWliWndjNk9KQi1RX1ExWURBOUdyYlQtb1hfem9TcWpXYnE5SEc3ZDlrdXpPTDBZdzV1cjdsbVl3d1d6cVU?oc=5",
-        "date": "Fri, 05 Jun 2026 07:00:00 GMT",
-        "summary": "Mega-IPOs 2026: what they mean for your portfolio RankiaPro",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f2dbab3c3bf46ce9df62aa6dd056afbef165f29f6a4c1242fd636ce32a6d3fde",
-        "label": "Trillion-Dollar IPOs Are Coming \u2013 But the Rules Just Changed - InvestorPlace",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "InvestorPlace",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVl9GRGlQdDVIZHFYS29Ha3ZDNjlOelVqZHdDVHpXMDlodjllYWQzcGdsZlJpMTcyX2xqc1BHT05CbllVVE02UG82cW84UEwwcXVQZUJPVnZXMXc5VDZ3SXNYZlAxeGszWGIzaFA2c29MR0Nyckk4NUJEVmlsaElhaGNOOGtBZndWbDV0SjByaVpVZWtYX253ajF3M3BDY3I4a2hVNExIS2hqTUJ4dVRTSnZmUTg?oc=5",
-        "date": "Wed, 08 Apr 2026 07:00:00 GMT",
-        "summary": "Trillion-Dollar IPOs Are Coming \u2013 But the Rules Just Changed InvestorPlace",
-        "score": 3,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3f419bd9f14a9ef821390c336cf2469488c5ae917dbe026c873b55730a50ff33",
-        "label": "Tech and AI IPOs and their implications for index investors - Lombard Odier",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Lombard Odier",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNd0tpSzNjcmV4T1VrYmF3cHduM2JKQlhxMkhnYm92LWtVUUhNcnFFTmtDX1BZVVVVQXFlUG53MUhMNjhzT0xjOFBjTzhxZHBDbzNwZVNJa2hBOUxkZDEwT3prQnRFTmxGa3hxTlcxQTZnQVJQYmJWWVdqdWtIMFJzVzJ1Nmo?oc=5",
-        "date": "Wed, 10 Jun 2026 07:00:00 GMT",
-        "summary": "Tech and AI IPOs and their implications for index investors Lombard Odier",
         "score": 3,
         "weight": 1
       }
@@ -14361,6 +14587,13 @@
         "mentions": 1
       },
       {
+        "source": "SpaceX",
+        "target": "evidence:a2291e2988d0bb127700fa4f7f960597d6cb741a735af2845f283c725fec8e8e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Baidu",
         "target": "evidence:c5e106008edcc2b97ab12e2bb15b7502f9993594f91e156565dbdbbda4c8d6b8",
         "type": "EVIDENCE",
@@ -14375,8 +14608,22 @@
         "mentions": 1
       },
       {
+        "source": "SpaceX",
+        "target": "evidence:b6ac1e995805a8d2999f54a360c1b6bee93bc1b66d9e2dfcf4df003e8a660fbd",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "BlackRock",
         "target": "evidence:aa41ea7064e2a42230603e57a86acc7aadf7253ff975451167f9238be35bd6e6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:775e00df8392eb84ac6ec37d396b1c6ccfa5a9e5d6f8d4debbc23325b20b8106",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15049,6 +15296,209 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:d8b96427b68bfb154fdca6e6e5e1ae89a1b090d65069b84093cd36f6ecff6ab3",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:ad2cc5b12f840a9d74e3344085c834692fec729e0e4aea1170e778812ccf3ee8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:0c8e3db267b60126febebaf03a20da8e21507b1f58b7dd03c1f60f7378bf89e0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:07fa289482c0b8375d03626524bb1fe8263a6e30e5ba899a40cc8a8b1af328f8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:fb8b5048c0053fea0257bd1cad9f5939ae0b56b7a6008d3ce94f9770368d3f82",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:4e71559098c2c7e41ab6befcdc5a0765eb38749619c20cd48d9151f1e13760e3",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:d2b0737531b6741b9a8b5487a8df1d1eb7bd673ca92addf374677bda683801d5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:d21b9c1cb44a2c2d33bce4fec4c5ed4f4fc56bc0e46f074adb33622a70b3c28b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:5e239c8b8cee20776942d84271ab223db9f2d7905d1f5878cca3fc206b5d219d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:9c7c81e855ac8d4113d1cc7af856c812c8cc57e8460bf649e8394aea23c08014",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:9569a94b31dda532a6c11aa7e856b1d60cc26b85898f75ec836b3da8d081d9bf",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:e9dc55dd6392dd8aedc449f61ea2872aa7e19d2962b3f4459532342b5b87aa06",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:48939e69aac8b32bc0595daf6befca873e88bf99ad0cacc60a09d1af25cef36e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:7bdc41176745ab11dd2c28056849dd0e3e8e52f05bc71cce89b85fa3133192a4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:8093f5eee22abc4f0eb33ffc0c3ed59375b4e3ba19aa2b97ddb71dff4159e5a0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:b527d389ce83205bdb12eedc977d17ffbae0757a3f4ca3061198b4726960a49a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:578da15b9e7e14b0945d1b81471384a044b7941473c63b3010390cfccd54d72c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:0d82ba5a9dba99a80592534f4f3b56282b85d7c5279e44d0f0041aaf648e381a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:535c29a61f011ec12618f99c180b7add75af130e14218c7c9926e0f67639008e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:f231ed25a4512bae604f9c42c176740d2c7b17ce525ac356723aba4312bcdfd2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:da9042571fd703ba6e8aac52aa27f326123d9d7cebf2d975ccf8eb8441264660",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:9a428ec6867bc86689f9fdb5000ad6552c67b8313c84bb8460f7a20f70fa339d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:33ebca4935c3f39b87d1b5590afe57f6dee1587bb8a18a60dfe6c186e143f32a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:6cc2b32b1c8996c5a18d5f47e23b0c91603c0c18f57a40c0b8988178db8c20c9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:ee50d13d623f6d697c08804e399110a1922526bb547c20ce8a35a2634de939c6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:55b4c88b69e50906942bfa7f640dc69260d64ed8943127374e38b5f87606fe51",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:148e4d421dfcb04e884c2e44ff226a25fd01954ca5ca697439240b4052966269",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:c2856378e93c8d1e5b175e4a523e288ba339561cb58582fa35bcbc062aabb7eb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:b5adbbfa8437400793ab2ef9a8d8152c4ed3385b69132e5c8fbb82740b479383",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16806,6 +17256,55 @@
       {
         "source": "OpenAI",
         "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:f234eef9a7aba2be9048f305c11ab21b3bb2974ccb50a219be21a573ae614a78",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SoftBank",
+        "target": "evidence:d4c9d7f91e70709f06487f5f60ab1b048d2cfc52b74baa03d3579bb4d49fed85",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "MiniMax",
+        "target": "evidence:b1d64969f38720018dc2bd0286bd0af16c81e204eea527e231db5b151219b08b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Moonshot AI",
+        "target": "evidence:72c3905dbe14af943af4005b0bbc333b15d52d4b3a8b3e775c68de02a756dbc7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:a6d42c7fe4aee6d7fb9942df039a05aec3a3f01abe1ec5f733777017da48c4dc",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:2bb08348c5f4319ecbdc195b0fcbe3c1cb9db634c4664109727cf8597473edc5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:6b6962d9f858dbffd881d9d3efb272804bc321fa91c30f519f9329f5b0c9001e",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -19177,6 +19676,34 @@
         "mentions": 1
       },
       {
+        "source": "Meta",
+        "target": "evidence:fa16cb0df8f6015da022ab8df44bd82ce45eacc0322227dc46ef7abfaa11b327",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:fa16cb0df8f6015da022ab8df44bd82ce45eacc0322227dc46ef7abfaa11b327",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Oracle",
+        "target": "evidence:fa16cb0df8f6015da022ab8df44bd82ce45eacc0322227dc46ef7abfaa11b327",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:599882c62eebca019da09cbb51519cccedb947c513f761852fc29e79373b9d05",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:7729c394a116341f801dd5a130de2eb2fa9162d32ff4d2f76aa77afa050a0f91",
         "type": "EVIDENCE",
@@ -19641,419 +20168,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:b79cbf2064c8055e01c671b32261fa7da9db1232b64d80e2bd347b3dcfdd63bf",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:22b081476bc05e39cf170cb9051b8bbdba2831be4d8396f86fc5f0bf6956e8c8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:22b081476bc05e39cf170cb9051b8bbdba2831be4d8396f86fc5f0bf6956e8c8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:22b081476bc05e39cf170cb9051b8bbdba2831be4d8396f86fc5f0bf6956e8c8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:9fe92a550d06e82a12e211798fefa55f361583689ed4bcfe3df39ca6c224f5c0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Meta",
-        "target": "evidence:bd743f3e8da2b21759de2d550890a7c0a9928e02287892a81007c0e11817985b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:bd743f3e8da2b21759de2d550890a7c0a9928e02287892a81007c0e11817985b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:bd743f3e8da2b21759de2d550890a7c0a9928e02287892a81007c0e11817985b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:e5157167938808c8ed1536e74512ba5cbcf0766a82b3f93622721ded35cfd208",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:e5157167938808c8ed1536e74512ba5cbcf0766a82b3f93622721ded35cfd208",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:e5157167938808c8ed1536e74512ba5cbcf0766a82b3f93622721ded35cfd208",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Meta",
-        "target": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:f2f2839a90281371b486e43f794250038426d63963829af5e3ab06a045488df2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Meta",
-        "target": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:9c9d24152a382302b010314aa92d3a68e36e5dcd4e97d1a3cfc76858398107c1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:9fdcf5696b2268ac4344ef56ecb4c0768cffee1f45bb9aa6f64f6f6e71cb2d92",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:32aac18aece344fe366f54f9ab0b94bc180d460e12e5cea51051338824b38a7d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Zhipu AI",
-        "target": "evidence:32aac18aece344fe366f54f9ab0b94bc180d460e12e5cea51051338824b38a7d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:32aac18aece344fe366f54f9ab0b94bc180d460e12e5cea51051338824b38a7d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:c3c84e0ee6fdfcb18bcba2e38c4ef1ad9891659b6aaa88612fcca031b5bb423f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:c3c84e0ee6fdfcb18bcba2e38c4ef1ad9891659b6aaa88612fcca031b5bb423f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:c3c84e0ee6fdfcb18bcba2e38c4ef1ad9891659b6aaa88612fcca031b5bb423f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:6189801a864ca81224efa3049d6080c2edb1338c797aea310b04915341afbf7a",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:ba161bf059915cd8b3e30de82b0dc26a7fc82b45fbd812feb5e84b0670a322b6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:ba161bf059915cd8b3e30de82b0dc26a7fc82b45fbd812feb5e84b0670a322b6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:ba161bf059915cd8b3e30de82b0dc26a7fc82b45fbd812feb5e84b0670a322b6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:1889a63fb9a6c98306e407011b8856141f3fe5b02020d7b738964976ee2d6dd9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:1889a63fb9a6c98306e407011b8856141f3fe5b02020d7b738964976ee2d6dd9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:1889a63fb9a6c98306e407011b8856141f3fe5b02020d7b738964976ee2d6dd9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:c113c13ef595f900879ab96632973663c6700684b97f2912a7b3c23c45451970",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:facd4f6397db4a630c7346f483891067ee8718def4fff016c605cc73f71b4192",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:b5888308fb7a9c29b50cb310e924c6a425dff4f54508af8bc44921ed030b55c7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "ByteDance",
-        "target": "evidence:402bf926b5640033816772fb0f659aa12579da9ef89b1aa1ec4aba4c82e35a55",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:177360a6c5bccefbf6215c0d838b51f927ef1cca4f00466d398c5f2b1195cba1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:8ae6ea6004187e1ff1313e8316feb04f119dc676890b38edfca3884d1780b440",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:da94ed82deb693b190849cf44a0c47d787ee63508ae34ac37255cfae6f206f7f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Microsoft",
-        "target": "evidence:da94ed82deb693b190849cf44a0c47d787ee63508ae34ac37255cfae6f206f7f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:da94ed82deb693b190849cf44a0c47d787ee63508ae34ac37255cfae6f206f7f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:e7081d52010a627559272a636ec2766ad74376a180060885e9f217a9f82d6110",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:e7081d52010a627559272a636ec2766ad74376a180060885e9f217a9f82d6110",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "xAI",
-        "target": "evidence:e7081d52010a627559272a636ec2766ad74376a180060885e9f217a9f82d6110",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:24985a1be1ff4b72a8e48cd51b19b3403dad1dd57fbc1e40264648fe155769a7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Oracle",
-        "target": "evidence:24985a1be1ff4b72a8e48cd51b19b3403dad1dd57fbc1e40264648fe155769a7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SoftBank",
-        "target": "evidence:24985a1be1ff4b72a8e48cd51b19b3403dad1dd57fbc1e40264648fe155769a7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Apollo",
-        "target": "evidence:1fc805e0d386563631a2fcc278091e4dd5092f6712f4e70e4d174bed69eae61f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Blackstone",
-        "target": "evidence:1fc805e0d386563631a2fcc278091e4dd5092f6712f4e70e4d174bed69eae61f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:1fc805e0d386563631a2fcc278091e4dd5092f6712f4e70e4d174bed69eae61f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "CoreWeave",
-        "target": "evidence:54a74eed2afd60a0ea54af9ca1a918a5788615430e7b033e6fd88a05388bbba3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:6393536a7b3b884d80593cb4153c8864a75aabc29ed255daf2d5450934a06ad6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alphabet",
-        "target": "evidence:11f155fe00212aed3c02dc4cd90ace3b5933b08d82657508566f1766ac023567",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:1d44447a71454b88d84761b581a7d81a72fdcf49776d4b5fbfd9862c6c5f3c52",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:1d44447a71454b88d84761b581a7d81a72fdcf49776d4b5fbfd9862c6c5f3c52",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:a4f5bfa88a909c5885691375d47dce3f9df3b9e9a9b5aee4672d6f4e88f0b900",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:c11f7ded2dd3d5563b1285aae37b3d098ab39b3b098d81104d4514b0a0e06b66",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Broadcom",
-        "target": "evidence:c11f7ded2dd3d5563b1285aae37b3d098ab39b3b098d81104d4514b0a0e06b66",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:c11f7ded2dd3d5563b1285aae37b3d098ab39b3b098d81104d4514b0a0e06b66",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -33832,6 +33946,21 @@
       "source": "Startup Fortune"
     },
     {
+      "date": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": "SpaceX",
+      "target_entity": null,
+      "amount": 5.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "A $5,000 Investment in SpaceX at Its Nasdaq-100 Debut Would Be Worth This Much Today - Yahoo Finance A $5,000 Investment in SpaceX at Its Nasdaq-100 Debut Would Be Worth This Much Today Yahoo Finance Google News",
+      "title": "A $5,000 Investment in SpaceX at Its Nasdaq-100 Debut Would Be Worth This Much Today - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPTDRVYlJOSDRCWlpYZUZSQVNKS1dQS21YUG8wOVBSeW0tZ3llT0xwMVdlN0dLYTJ2Qko2WHhySjNwdElwV2ZxVkhIY3NrbUdpNjFYTjU4bGFNbl8xb2l3MlY1azdVVTBIa2lFUm5tWE4ydFFuZVktYks2NWR4TEVQTEZ3STgxUlNYYkM5NFJwcnUxNHBiVnRGNEo5Yw?oc=5",
+      "source": "Yahoo Finance"
+    },
+    {
       "date": "Fri, 26 Jun 2026 07:00:00 GMT",
       "event_type": "BENCHMARK_GAIN",
       "source_entity": null,
@@ -33907,6 +34036,21 @@
       "source": "Venturebeat"
     },
     {
+      "date": "Mon, 06 Jul 2026 07:00:00 GMT",
+      "event_type": "ENTERS_INDEX",
+      "source_entity": "SpaceX",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.92,
+      "mentions": 2,
+      "review_status": "confirmed",
+      "evidence_text": "SpaceX Joins the Nasdaq-100 on July 7.",
+      "title": "SpaceX Joins the Nasdaq-100 on July 7. Here Is What This Means for QQQ and QQQM Investors. - theglobeandmail.com",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQaGlQZWtvWjFZemg3Nk51V0cwZEZ4UmJ4UTBWRWdoLXdHVUl5NDA4WE1kRWU0bUtlTUlkWjlFYmFJc3M2SUthbW0wdHI0UFl0UEVCa3ZRcTJmQVhWYlBrUHdhdXlPaEdLblNqZXdKYlhQWW9CU0Ewbm84MUJva0diaWgyNk8yWUpVSTQ1bWZLaGJULWpCb3NPZnduNGlOY3N2QUwzRTlhQjFmREc5YUVCTEdPMmFUamJBbm5tcnZRelhzdmhkMTh1ZDNvZnZBRWFpRVZjdWlEd1FJRkZfU3lMSnY5UXU5bWhwN1hOdVBzc1hab1hQcHRIQW83QQ?oc=5",
+      "source": "theglobeandmail.com"
+    },
+    {
       "date": "Mon, 08 Jun 2026 07:00:00 GMT",
       "event_type": "FILES_FOR_IPO",
       "source_entity": "OpenAI",
@@ -33920,6 +34064,21 @@
       "title": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMVhyczJEUzJvM0ktd0k2RmJwZGY2YW1CRThUTTdLNERQY0ZXVXUyNjhHMklyRFVSdnRoTlc3dTFZd0NqNDd2TDJrYk43NTc4Y0Z5R0Qta08zLU5XdVVSd05LNF94WTlDS05xRklDYzluVnpWUjFqeHg2QWVZZWdSMkJHN0VVYWQtSU9BNVA3ejg2V3YyOHM3TkhsZFRtakxoRXY2WjZxWkdUZ9IBrwFBVV95cUxNYmdiVHBYUUVMODVqaDh4ZjJmV3RyXzNJa1BtblRDRWRFbEIzb2tQNURabU1hSmEtQkZCSDhva3JCVWFIYV9leDVYaVFxWXBQeTNpeHoxbVQzRk5vMVdsa1dpZW0tLXVNRXhuVzZtLVBCSTU2U0pBRDE2NzFKOFRqT041anVxS0RfamwtcEpqeHhiTnNxZ3ZIZWotSzZsSHQ5eTRJcW8xRGdMRkdjWmxF?oc=5",
       "source": "CNBC"
+    },
+    {
+      "date": "Mon, 13 Jul 2026 07:00:00 GMT",
+      "event_type": "ENTERS_INDEX",
+      "source_entity": "SpaceX",
+      "target_entity": null,
+      "amount": 100000000.0,
+      "currency": null,
+      "confidence": 0.92,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "SpaceX joins the Nasdaq-100 - Meer | English edition SpaceX joins the Nasdaq-100 Meer | English edition Google News",
+      "title": "SpaceX joins the Nasdaq-100 - Meer | English edition",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XVDhOeVFYNldOZnBWUnI4VnB2dXFseUdQZ1NrMjRRMzFXTHFhTmVQU2Jsdy1pdzVrUjFxYW5MSDBQcEhibjZ2S2F2eXVValVUenhxVFZJVlItTFpvUWdYaEFHaTBXQnhuYWc?oc=5",
+      "source": "Meer | English edition"
     },
     {
       "date": "Mon, 13 Jul 2026 07:00:00 GMT",
@@ -34102,6 +34261,36 @@
       "source": "Yahoo Finance"
     },
     {
+      "date": "Sat, 04 Jul 2026 07:00:00 GMT",
+      "event_type": "ENTERS_INDEX",
+      "source_entity": "SpaceX",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.92,
+      "mentions": 2,
+      "review_status": "confirmed",
+      "evidence_text": "SpaceX joins the Nasdaq-100 on Tuesday.",
+      "title": "SpaceX joins the Nasdaq-100 on Tuesday. Crypto already owns the trade - Crypto News",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yYzFJMjhzbENXb2VNenVldFlSaTB6cEJTbURXX2h6QW1sZ1ZDQ215N2szLU1ha2hzaEJpTG5ucWFTa3NsalpieFZ4aUFlTk5VOHd6NWpqVGZoV3Y4QXhkeHFXTHk4alJtWUNBeUJFcFpVYUlEbWIwMFRhTnZ5THM?oc=5",
+      "source": "Crypto News"
+    },
+    {
+      "date": "Sat, 18 Jul 2026 07:00:00 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": "SpaceX",
+      "target_entity": null,
+      "amount": 1.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "$1,000 invested in SpaceX stock after Nasdaq-100 index addition is now worth - Finbold $1,000 invested in SpaceX stock after Nasdaq-100 index addition is now worth Finbold Google News",
+      "title": "$1,000 invested in SpaceX stock after Nasdaq-100 index addition is now worth - Finbold",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQOGRaTkNPbVo3OG5jaXRQXzhCV1N4a3FUSTFzNDlvdFZnenUxLUQ2UnA4eHFvWEJhbERtQWMyZHVCRHQtd1lSTm1scDA0SF8waG1KUFRDRzBqNkZyMGZrSUJyajlHdFZwdlFZeGpCMWluVFdRc2kxTFJVSWZvS1ZDVVQyTnUzQW0zeU5XYmVNNmxweGJYd1czaWtucw?oc=5",
+      "source": "Finbold"
+    },
+    {
       "date": "Sat, 22 Aug 2026 07:13:48 GMT",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": "Amazon",
@@ -34220,6 +34409,21 @@
       "title": "Microsoft, Meta And Google Just Silenced AI Spending Critics In One Earnings Night As Big Tech Capex Swells To $725B - Stocktwits",
       "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNQ2ZDQkRWWGZaNVdBV1UwS0FEY0RvVVJqUFUxNXd2eHpWM1haeXltLUNpaXB2TW5kcHlJRFo0WFNOQWZFaGNDZ2p3WlcwZjhPVndrYkQwWVAxR0tVVnotaFdDNnZHT1IxZ1BJVHJXZXFpVG5ROUlMcGZoR29iczhkOGM4VG9UMEVWWHJoUEY5TlBCN0RiTEotLTFWNVdFZHZpUmVBOHBuYWVaN0xYMEJzSkgtSno4WHhuc2x4TmpMUkV5bHJDaTNqVHFKalBIMl9pZ01MSjF2a0hpczUtYjMxUHk1OGt0VUxxbHRuaHZ3Nkt4ekRLTl9YZzVQX04wYjFUS25wLUZwWUJwTFU?oc=5",
       "source": "Stocktwits"
+    },
+    {
+      "date": "Thu, 03 Sep 2026 04:20:00 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 2,
+      "review_status": "flagged",
+      "evidence_text": "Here's Why That Growth Rate Justifies the Company's Capex Bet.",
+      "title": "Sundar Pichai's Alphabet Has Grown Google Cloud Revenue 82% Year Over Year. Here's Why That Growth Rate Justifies the Company's Capex Bet. - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSFdSa1VLenR4SXEzeG9hQXF4UldpYXJnczRwaXBHTkJfRGVEZGhqLVVfNVoxZWxRQ0hzUGl6WFZPUG0wU21jemFCelN4WFBIMVZhc0dlMWp4WkloYjlBenhGTElfdVhlZjN6RmNZeFhJYmNvTUZ2d2tVZjlqSklyT1FGVDFOYmdLbVhjd19qTV82RmZyeFBKal9WMFRCUHE1aEZr?oc=5",
+      "source": "Yahoo Finance"
     },
     {
       "date": "Thu, 07 May 2026 07:00:00 GMT",
@@ -34597,6 +34801,21 @@
       "source": "finance.biggo.com"
     },
     {
+      "date": "Tue, 14 Jul 2026 07:00:00 GMT",
+      "event_type": "ENTERS_INDEX",
+      "source_entity": "SpaceX",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.92,
+      "mentions": 2,
+      "review_status": "confirmed",
+      "evidence_text": "SpaceX Joins the Nasdaq-100.",
+      "title": "SpaceX Joins the Nasdaq-100. Has the Index Become Too Risky to Track? - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWkFkMVhadktDbVpqVDJienBCR01vOHRQWEtQcjRoRlJiQTlGa2hPejM3QkNrZlR4VUdFVlVRR2RmakhNRi1YbnBJUUtRZk5NTnZ4V2lTLUladmdTdkR5bjQxdnVDdmtZY0tyM240aXJkdkNOSUpISWNOZ0VyM0w4TVBCTVJNWk8tdDlDVzI1ZDJnVG92cWpSU3VB?oc=5",
+      "source": "Yahoo Finance"
+    },
+    {
       "date": "Tue, 15 Jul 2025 07:00:00 GMT",
       "event_type": "INVESTS_IN",
       "source_entity": "Amazon",
@@ -34730,6 +34949,21 @@
       "title": "Zhipu AI revenue jumps 132% in first post-IPO report, missing estimates - South China Morning Post",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPR1dJSmJhZmxza1NWeEVyZXdKRnRvbHpoNFFfMUtaV1d0ck5Ea2psSWI3WDVSbDZXc2FOaEZzRWh2RzZzVGRGTU8xanQxbUt2MXlWeFY3VlRfNVFQNTRlUjBaT3FNbFI1c1RoTE1HX1czSGJqVWw2OFU2cFlYc1BBY1ZWVDZMVTdRQVh1dTdzeUhRN0hXb2lGeWgyYWNjcDIzZThKbDExN2RtNXo5WnpjaWt1MlZxOG84MURNLdIBvAFBVV95cUxPTHkySjJqMk8xVXdjelJkb2xkRnFncU5UYzlnc2x0dzlEaTM0WENXaWJtQU56T3liYldqdWR5R3JVaHFNSEVoXzdWVnl5YlM0aWFzQ1hiWGhiNDBrUkZPdThaTEZZR2M0WEpYWWxMQ0NaeV95amw5SWVYQmhjbkxIRnl5ZVJLU1ZMck5GTXVITzRGczdnZjhoVUpLbzlKRVRZRUZwbnJXd2p0VkotSWQtdm9YaXVCd1NuV05waQ?oc=5",
       "source": "South China Morning Post"
+    },
+    {
+      "date": "Wed, 01 Jul 2026 07:00:00 GMT",
+      "event_type": "ENTERS_INDEX",
+      "source_entity": "SpaceX",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.92,
+      "mentions": 4,
+      "review_status": "confirmed",
+      "evidence_text": "SpaceX Joins the Nasdaq-100 on July 7.",
+      "title": "SpaceX Joins the Nasdaq-100 on July 7. Here Are the ETFs That Feel It Most. - ETF.com",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPM0cwZ29oSU1nV0R6bWdSU1E2RzNuT0JCMDZ4c3pyeXhpVE9NYmpnWl9FcWVncHhxNkpVOGdoWGVUZDhhMFBpQmMyZ1diUTUwSXQyZ3d1d2dBbHU4dE9zUkNfR1llVjljUlQ1dFd1RVhLak9SNzhiYXM3Uy1JMTdmQ2M0dy1jZ21XcDhzRnNIcXIzaE1uTmc?oc=5",
+      "source": "ETF.com"
     },
     {
       "date": "Wed, 01 Jul 2026 07:00:00 GMT",
@@ -35034,36 +35268,36 @@
   ],
   "collector_runs": [
     {
-      "id": 695,
+      "id": 699,
       "collector": "company-economic-news",
-      "started_at": "2026-09-03T14:34:01+00:00",
-      "completed_at": "2026-09-03T14:34:21+00:00",
+      "started_at": "2026-09-03T14:46:13+00:00",
+      "completed_at": "2026-09-03T14:46:50+00:00",
       "status": "ok",
-      "items_seen": 20,
-      "items_new": 16,
+      "items_seen": 36,
+      "items_new": 26,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "39c01300-0124-4c2a-8f95-7c83a70cbbdd"
+      "collection_execution_id": "a76802f5-af48-41c7-b54c-8873227c410d"
     },
     {
-      "id": 696,
+      "id": 700,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-09-03T14:34:21+00:00",
-      "completed_at": "2026-09-03T14:34:25+00:00",
+      "started_at": "2026-09-03T14:46:50+00:00",
+      "completed_at": "2026-09-03T14:46:57+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 8,
+      "items_new": 6,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "39c01300-0124-4c2a-8f95-7c83a70cbbdd"
+      "collection_execution_id": "a76802f5-af48-41c7-b54c-8873227c410d"
     },
     {
       "id": 56,
@@ -35082,36 +35316,36 @@
       "collection_execution_id": null
     },
     {
-      "id": 694,
+      "id": 698,
       "collector": "google-news-rss",
-      "started_at": "2026-09-03T14:33:43+00:00",
-      "completed_at": "2026-09-03T14:34:01+00:00",
+      "started_at": "2026-09-03T14:45:14+00:00",
+      "completed_at": "2026-09-03T14:46:13+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 52,
+      "items_new": 57,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "39c01300-0124-4c2a-8f95-7c83a70cbbdd"
+      "collection_execution_id": "a76802f5-af48-41c7-b54c-8873227c410d"
     },
     {
-      "id": 697,
+      "id": 701,
       "collector": "sec-edgar",
-      "started_at": "2026-09-03T14:34:26+00:00",
-      "completed_at": "2026-09-03T14:34:27+00:00",
+      "started_at": "2026-09-03T14:46:57+00:00",
+      "completed_at": "2026-09-03T14:46:59+00:00",
       "status": "ok",
       "items_seen": 21,
-      "items_new": 2,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "39c01300-0124-4c2a-8f95-7c83a70cbbdd"
+      "collection_execution_id": "a76802f5-af48-41c7-b54c-8873227c410d"
     },
     {
       "id": 57,
@@ -35131,12 +35365,12 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 998,
-  "mention_count": 8328,
+  "event_count": 1006,
+  "mention_count": 8342,
   "review_counts": {
     "provisional": 0,
-    "confirmed": 287,
-    "flagged": 711,
+    "confirmed": 291,
+    "flagged": 715,
     "flagged_retry_pending": 0
   },
   "feature_family": [
@@ -37967,8 +38201,8 @@
     "revised_only_control_series": [],
     "blocking_reasons": [],
     "claimed_tier": "heuristic",
-    "statement": "This reading is placed against accepted historical episodes."
+    "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-cb444dac1dcdbeaf",
-  "database_sha256": "cb444dac1dcdbeafac38f99142da173b13b47f260fc83ab8922e256d0a67607f"
+  "database_state_version": "v1-77fc8d9392870c7a",
+  "database_sha256": "77fc8d9392870c7a0a21cc0b8c4300dfaeef3b860ebeb47cf80384470d5f9dba"
 }
