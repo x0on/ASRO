@@ -13,6 +13,10 @@ Entity aliases are normalized. If extraction omitted the entity, a single compan
 recorded on the source document can resolve it; ambiguous attribution is excluded.
 Multiple excerpts from one company's filing therefore cannot manufacture extra
 independent entities. The original observations are not rewritten.
+Credit-facility and letter-of-credit excerpts are excluded from the debt reading
+until facility capacity, drawn borrowing, and contingent exposure are separately
+extracted. Their first dollar amount must not be presented as outstanding debt;
+the original events and provenance remain available for review.
 
 With P = total pressure support and C = counter-support, both the headline and
 each category use `50 + 50*(P-C)/(5+P+C)`. Five is an explicit neutral prior, not

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from collections import defaultdict
 from collections.abc import Iterable
 from datetime import UTC, datetime, timedelta
@@ -349,6 +350,15 @@ def evidence_points(
                 continue
         definition = VARIABLES.get(str(row.get("variable_key")))
         if definition is None or row.get("polarity") not in {"risk", "safety"}:
+            continue
+        if definition.key == "ai_related_debt" and re.search(
+            r"\b(?:credit facilit(?:y|ies)|revolving credit|letters? of credit|delayed draw)\b",
+            str(row.get("evidence_text") or ""),
+            re.IGNORECASE,
+        ):
+            # Facility limits, drawn balances, and contingent letters of credit
+            # need separate extraction. Do not score the first amount as debt.
+            # Keep the original event and provenance available for review.
             continue
         try:
             url = urlsplit(str(row.get("url") or ""))

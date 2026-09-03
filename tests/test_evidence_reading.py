@@ -92,6 +92,22 @@ def test_cash_burn_cannot_be_reassurance_even_in_legacy_rows():
     assert compute_evidence_reading(rows + [burn], NOW)[1].score > before
 
 
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Credit Facility: $11.7 billion of credit facilities, of which $1.3 billion was outstanding.",
+        "Entered a $10 billion revolving credit agreement.",
+        "Outstanding balances associated with letters of credit were $533 million.",
+        "A $17.5 billion delayed draw term loan credit facility.",
+    ],
+)
+def test_borrowing_capacity_is_not_scored_as_outstanding_debt(text):
+    row = point(unit="USD", value=11.7e9, evidence_text=text)
+    assert not compute_evidence_reading([row], NOW)[2]
+    debt = point(unit="USD", value=1e9, evidence_text="Issued $1 billion in senior notes.")
+    assert len(compute_evidence_reading([debt], NOW)[2]) == 1
+
+
 def test_post_review_capture_and_site_share_cutoff(tmp_path, monkeypatch):
     import json
 
