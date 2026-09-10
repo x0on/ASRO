@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T14:36:18.362860+00:00",
+  "generated_at": "2026-09-10T14:26:44.502071+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -15,7 +15,7 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-09-09T14:35:58.216249+00:00",
+    "reading_as_of": "2026-09-10T14:26:25.735511+00:00",
     "support_totals": {
       "risk": 19.4984,
       "safety": 2.4000000000000004
@@ -620,6 +620,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-09-10T14:26:25.735511+00:00",
+      "score": 81.8,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 65.7, \"stress\": 63.1, \"transmission\": 53.7, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-09-10T14:26:05+00:00",
+      "score": 81.8,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 65.7, \"stress\": 63.1, \"transmission\": 53.7, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-09-09T14:35:58.216249+00:00",
       "score": 81.8,
@@ -1988,6 +2002,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-09-10T14:26:25.735511+00:00",
+      "score": 81.8,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 65.7, \"stress\": 63.1, \"transmission\": 53.7, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-09-10T14:26:05+00:00",
+      "score": 81.8,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 65.7, \"stress\": 63.1, \"transmission\": 53.7, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-09-09T14:35:58.216249+00:00",
       "score": 81.8,
       "label": "HIGH CONVERGENCE",
@@ -2219,10 +2247,10 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-09-09T14:36:18.364840+00:00",
+    "as_of": "2026-09-10T14:26:44.503787+00:00",
     "counts": {
       "pressure": 42,
-      "public_exposure": 11,
+      "public_exposure": 10,
       "context": 7
     },
     "items": [
@@ -3409,26 +3437,6 @@
         "underlying_fact_ids": [
           "0be2197b629eded741b8fb1ba0c0317797f7c61cdc6e8a963d26e553e96f3b53"
         ]
-      },
-      {
-        "fact_id": "72aa3b632b8025c60b96ae3b0a4f8c86167b1ead050f6210f3f58e17fffd7de5",
-        "event_id": "7ea8a46ed6a9309e54c33b46e346ff7156b9754c95f392ff5c7f2b2d38937b4a",
-        "kind": "public_exposure",
-        "causal_role": "TRANSMISSION",
-        "rationale": "Public trading makes exposure available to public investors.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "COMPLETES_IPO",
-        "title": "SpaceX completes initial public offering and begins trading as SPCX",
-        "evidence": "SpaceX announced that 555,555,555 Class A shares were priced at $135 per share and would begin trading on Nasdaq on June 12, 2026 under SPCX.",
-        "url": "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX_PricingAnnouncement.pdf?embed=true",
-        "date": "2026-06-12T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T20:06:25.143782+00:00",
-        "sources": [
-          "https://content.spacex.com/cms-assets/FINAL_Documents%20and%20Updates/SpaceX_PricingAnnouncement.pdf?embed=true"
-        ],
-        "underlying_fact_ids": [
-          "72aa3b632b8025c60b96ae3b0a4f8c86167b1ead050f6210f3f58e17fffd7de5"
-        ]
       }
     ]
   },
@@ -3708,6 +3716,18 @@
         "date": "2022-10-27",
         "summary": "Twitter reported that the merger was completed on October 27, 2022 and Twitter became a wholly owned subsidiary of X Holdings. The transaction valued Twitter at approximately $44 billion.",
         "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:a858e4326d67b36d1fd4512eff4c4ca394743c2d522e1af417ccb6f96e1dcdbd",
+        "label": "Amazon SEC filing: 8-K (2026-09-09)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000036/amzn-20260908.htm",
+        "date": "2026-09-09",
+        "summary": "SEC filing 8-K for Amazon. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
         "weight": 1
       },
       {
@@ -6063,6 +6083,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:e2d522433485b120a7bf47c2831b109ed4598ba23a31fd78fafe4955f6748e85",
+        "label": "Why Price Cuts May Rattle Anthropic's IPO Pitch - The Information",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Information",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWlJmZ295LW9UZlRIYW5PQTVBQXd6b19UR29sWC1XY1FYNHhoTzVrX0dHclpYVjFQNHpmbjJ0SjJZUEw0VVlsc3BHY3dxZVlpYS1mcG1McGpwYllSOTVjTF96S05xM1hFVkhKNjBKNXJ3SGxDQUwyZC1id1QxSmplb2VBbnQxV3VGSGtBVW9nMzlacEV0UFdCWDR6cFVmTjQ?oc=5",
+        "date": "Wed, 09 Sep 2026 00:00:00 GMT",
+        "summary": "Why Price Cuts May Rattle Anthropic's IPO Pitch The Information",
+        "score": 8,
+        "weight": 1
+      },
+      {
         "id": "evidence:223bed5d56513d8baee199935948af0e312114e267a5e08fb20d41813cf27e94",
         "label": "Why Price Cuts May Rattle Anthropic's IPO Pitch - theinformation.com",
         "kind": "evidence",
@@ -6732,6 +6764,42 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:bf92573bf4b64a2d80619c3801f00a53017882e49a095d18309739a32f76611f",
+        "label": "OKX Brings Pre-IPO Bets on OpenAI and Anthropic to Europe - trendingtopics.eu",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "trendingtopics.eu",
+        "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBMaDQ5YVg4d1ZBaV91VTZkYnh6SlVZT2RvMWQ1eGlqenVOVFBNV192OUVld0NmNlZBMnNoaHdfWkNwcHBtRXZvZ0JaTHo0WVhBbDZ4OU1ieUJ6Rm5PcC1yZGozeXpELUV6SzJSaUUzWm1kZw?oc=5",
+        "date": "Thu, 10 Sep 2026 08:35:28 GMT",
+        "summary": "OKX Brings Pre-IPO Bets on OpenAI and Anthropic to Europe trendingtopics.eu",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:14ac6f41c3b899b67a2f05ce1e2590f1dcd2ce6e435ad43f78678449fc80d02e",
+        "label": "Trustworthy AI: How Investors Should Assess Key Risks Around the Anthropic and OpenAI IPOs - Morningstar",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQUFCRElLWS1OaGNLZjVRUXJDRlE5RHdkbHFqMnhMNi1nSkVJaUtBcU9RSHhEbGFpWnQ1YTItMVJmXzI4UVJiclNqVGFVX2FhaHF2OG9LZlZrNnhPMFZRNlp1R1FUdm9Yc1lqcFZaWTlmbUVfSjVZcExsUFotb3VtLS0xQldfeGhtM1A1andvMVlQcnFBcVIwUUFrWUl5TC1TY19HWUw2SU5sT2FqeHNiWDc0QQ?oc=5",
+        "date": "Thu, 10 Sep 2026 10:07:30 GMT",
+        "summary": "Trustworthy AI: How Investors Should Assess Key Risks Around the Anthropic and OpenAI IPOs Morningstar",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:15563457a7e3da2f89fd7fcccedc31cb3745a1ae3826a318562767e8f59b7c79",
+        "label": "Seems like Anthropic will beat OpenAI to IPO, says FirstMark's Rick Heitzmann - CNBC",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRG1Kd1pMbklLVGdUdmJnTkxrZl9lMnlwVzVPLWx1bHJNTElmQW14M2haNlFWaklkd2VPbUFNd040cVlHS3ZrVHVlam9kVzVnR3ZmeS1sMlhqTTFZRG1BM1g1TmdZNXc4ZGNhVTlyMW0zb1h0cEFzRkpUdFpDOXlMQ2U4MWNKR29hUXBoaVVGelFvNVo4T2E5R0dybnd3cVN1N1NEckd5aEhBSms5YWd0cFNHRkRfdFBGREE?oc=5",
+        "date": "Wed, 09 Sep 2026 20:26:20 GMT",
+        "summary": "Seems like Anthropic will beat OpenAI to IPO, says FirstMark's Rick Heitzmann CNBC",
+        "score": 5,
         "weight": 1
       },
       {
@@ -9552,6 +9620,78 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b28228481e1dfee2570e4050eb54e2867f19860099891062206259804f5a46a8",
+        "label": "Domestic GPU Leader Enflame Technology Lists Tomorrow: 6.1B Yuan Raised, Tencent Holds 17% Post-IPO as Top Winner - 36 Kr",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPWXpEVjZwbFIwcmZMV1dFVXF2NVA3dF9jNG5WNW9qQnhENUlaSkNWNU45WVp5emwwUS12eElRbm9EbWczNVcxaElIVDJZQUZlSlU4?oc=5",
+        "date": "Thu, 10 Sep 2026 13:53:06 GMT",
+        "summary": "Domestic GPU Leader Enflame Technology Lists Tomorrow: 6.1B Yuan Raised, Tencent Holds 17% Post-IPO as Top Winner 36 Kr",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5bd5eb2949330a5c33d0f09b2550f2c8274e3fe0e52e5a32bc424e136cc68e98",
+        "label": "DeepSeek IPO: Everything You Need to Know About the Chinese AI firm - Investing.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Investing.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZWRheDF3QjNoT0MtUmZlR0hKcFA4R1VUUVZ3ZURweWt2VlJGV3RpVjItakFad0k0b3RGWW84NHdmSzFwX3VVS0s3MnV0ZDJQQ2tKcDQ1YUZOWDFzZHFUTkdRY2Z3X194ZUJRVVRQU2V1cEQ0NFk4dzJTUmJtTGg4TG1INlY2THpnbkxSTHllNG1sdWRtcFdNYnVlS0l5eE1ScW5GSV8tMmUyRG14aHBlV0ZoLTRxb2FibnR3?oc=5",
+        "date": "Thu, 10 Sep 2026 05:56:00 GMT",
+        "summary": "DeepSeek IPO: Everything You Need to Know About the Chinese AI firm Investing.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d2c9fccc951be3281be4bfa9fb458aacb9c86ca00d7f65b3450d6cdc08bf490b",
+        "label": "What to Know About Anthropic\u2019s Planned IPO - WSJ",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONnJKcDF6a1hkcmpscnNFcVZMd1BvamNUMDdXWThhQUxYaG1EdEt4X2FYXzJNbVk1T0NUc2dGM1FWYmpzalJsa1BvVG5zeXhRY0xmdnhPb1NwWnFhSU8tQVZCcEZScmUtRGp3U1dKRW5aTERJd2k4NVFpV2EzZ3R6Z29zaHl6TjNNallUWVNR?oc=5",
+        "date": "Thu, 10 Sep 2026 13:49:24 GMT",
+        "summary": "What to Know About Anthropic\u2019s Planned IPO WSJ",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:51cf84cdfe012a3f20f77a2ed417ecc56d640e6a8ace2a20b51fb1f8e64ea7b0",
+        "label": "The hyping of Anthropic\u2019s IPO - Marcus on AI",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Marcus on AI",
+        "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1xalAzMmNyWUxzTHBEMjZpMmtDUVJsN2l6NVpBNTlDbkJKQjlvLTZmN01ZZmtrQTdQV3FIMWtVMXQ1ZER6MHF5TXdxUWY3ZTMtQWJiaXlxeDBQSF9OcEFGWndmVEp6dmpISEh1cVdFaw?oc=5",
+        "date": "Sun, 16 Aug 2026 07:00:00 GMT",
+        "summary": "The hyping of Anthropic\u2019s IPO Marcus on AI",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6f47c411f7dcfa3f0383baa27ffb274dbf07d28db2675c21d170baec6c7fc223",
+        "label": "What Happens if OpenAI Delays Its IPO to 2027? - global.morningstar.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "global.morningstar.com",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOY1NzTGpoNGxFNW1QTFI5UmhSYVBaZE1NOHh0bXhmWXVCREpHWkd6T3VrLURSZW1TaHRnSC1JbzBHRTJRcWxxNktqOG9KN1BKSHFDRC1BQ3JPQTVEQWszM0Fld0I5ZWduWl95MUhGZWJPVEd3ZnFYZXRKSFBraEt2RXRJZ0NwUGIySF9uLV9sYTg?oc=5",
+        "date": "Sat, 11 Jul 2026 07:00:00 GMT",
+        "summary": "What Happens if OpenAI Delays Its IPO to 2027? global.morningstar.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:8cf765f94cbfec5742e014ef9afc5b788a116ff4dbebb667e89383062771b0a7",
+        "label": "OpenAI\u2019s maths achievement could prove pyrrhic victory in battle over IPO narrative - ION Analytics",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "ION Analytics",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQMnczMnVnWlRHMWU1ZTFMc1dhZEhMUEFYcXE1RE9pUmNzU05SdHNlX2lTdkNYZm9hZHBCTVB5MTQwNDVoSzI3bGRLR0xoYmduQ1VRdVU5a3FabWRDZFdCNHM1azYyVFI1a0pzZXpJelNqd2VUSjlWRWN4RFdPX1YwN3NzWWptNXJtaHZWQWVqRHBCU2l5ektIanF3S3NjQkhCY2F4eGFaS2tLQkdwQ1hfVGFtMzU1TFhxQTAwLWFTSHo5Mm9IMFUwRG5n?oc=5",
+        "date": "Thu, 10 Sep 2026 02:50:44 GMT",
+        "summary": "OpenAI\u2019s maths achievement could prove pyrrhic victory in battle over IPO narrative ION Analytics",
+        "score": 4,
         "weight": 1
       },
       {
@@ -13069,138 +13209,6 @@
         "summary": "OpenAI IPO Odds: AI Panel Vs Kalshi Timeline OddsShopper",
         "score": 4,
         "weight": 1
-      },
-      {
-        "id": "evidence:fd5da97a13ea8b1c52f25473a5ffa41d156e8ad57d5c65c9ac3145fa737223c0",
-        "label": "OpenAI said to target 2027 IPO, 'maybe sooner' - Breakingthenews.net",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Breakingthenews.net",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQdzNFQzBLSGlrU1FBM19jNGtRWHNScTV4VV9YQWNPM0xnLWpYWXNtYUpaeGdHU3Zvb2s0UE9vWmtrVGVtUkU5bFhISmNUTF9OT19ua1RkTThVcV9idW5QdG1kb2Q1S0p2RDBrZGRrZWVNUzNZZWM0VjlYRDFFZG8tYnNvc2J4c3V6b3RDR2tFZF9lWTZM?oc=5",
-        "date": "Wed, 19 Aug 2026 19:29:00 GMT",
-        "summary": "OpenAI said to target 2027 IPO, 'maybe sooner' Breakingthenews.net",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:260d8ae251c1e0a8041f3aa87f3703a60c14efa72025bd5f16b3ab757f73ebd9",
-        "label": "OpenAI lets employees cash out $7 billion as IPO plans remain uncertain - calcalistech.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "calcalistech.com",
-        "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBGWkVDdWxFd29uYk5QQ1N1Z2FZVXBEWWZyZHE5N0lxVUNfT1lJRUdTVVR1RTQ5M0Z0ckNZM2c2ZFJLWl9iMWJ4dnhFRmxXWWVfQ2dqdTkzeDB1b1FNQURnZjNWQnE4VVE?oc=5",
-        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
-        "summary": "OpenAI lets employees cash out $7 billion as IPO plans remain uncertain calcalistech.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:add41d0df38a287c23d56f100a6e0163c39240c1416cfe95f609dfc7f5fc397f",
-        "label": "Alibaba Sinks 7% as a 75% Capex Surge Swallows 45% Cloud Growth; Baidu Ticks Up - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRVprZUR6aGx3Uy1melVuOUJIOVFZWnJBZVIydzc4UnFsYm1sTy1OdTdybnJac1dOUkJQVlFGNzNKOW9WMUxZSVd1QWl5dDlEd0ZoWkViZFlyWi1MUkdXZGF2RkNrRDk2MEtOVk40RS1CM0FHYXF5LVB3X2YtbGNGbGtrc0dNd1I3RlpwS19DV2FXeDA?oc=5",
-        "date": "Fri, 21 Aug 2026 15:43:47 GMT",
-        "summary": "Alibaba Sinks 7% as a 75% Capex Surge Swallows 45% Cloud Growth; Baidu Ticks Up Yahoo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b2f8e306bd27927227219340339953ce494f6638ac2bba51ff7befa14a9594f1",
-        "label": "OpenAI completes $7 billion employee stock tender offer before IPO - qz.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "qz.com",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9mX2UtOThiNGxMZ2t5NzYzMlhQTlFYRkh5eGtQTnRRckNQWF9WVDI1X0VQVktoOVhiSFFiS3loT1ZRdVBJSDhOZGpUb3VyUktnRE1RU1lVZTd3ZW9sRWg5N3FjemM1UzUtREFub3p0dTQ0VkZETGp2ZV9n?oc=5",
-        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
-        "summary": "OpenAI completes $7 billion employee stock tender offer before IPO qz.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f5646e0d89536d5ace1ac0181e0cde201bae27797ef0f4d95e73758c86763a31",
-        "label": "Key Information You Need to Know About the OpenAI IPO - TradingKey",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "TradingKey",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPODZJLUZGUzIyN2c5R3dVMlFKcDVjbEU5endLV0NMaXBObnI4S0EyYllXbXowbHliSi1JVGhKLTdWeFd4cFFtOGJkNkxUdzZBTE4wWVNlZ0hYNTd3Qms1VHlqd2p3Snpnc01WWlNEREwwWDB6ZUZ2SUJKS3lleFhsc2JTRVlNV0o4aldmUnJhZl9YX3dvUS1lbFVCMzFhTU5QYkk1aQ?oc=5",
-        "date": "Sat, 22 Aug 2026 08:09:09 GMT",
-        "summary": "Key Information You Need to Know About the OpenAI IPO TradingKey",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:25c8c5e4acb6d6fae169ebe3288b195179060a64f323e08a4acb49beea839549",
-        "label": "OpenAI IPO: Sam Altman Reportedly Reveals Timeline, Hints At Major AI Upgrade - Stocktwits",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWUdTX1ZYX0k0eTRldC04NTdKTFVyaDRNblF4eDRSaDdEbXNXTkRBME1QWjQwRFZqX3RaM21SX1dENHp0eDY2ZjkxTVlFRkNOZXFzZ2NHc0NWZndQSXJaSlBkNDZlQkpOVi05dGVlVHhZWUU2TnJnU2J2Y0JwdUxydFZFS1JUbzJIZkNkd1F3dGxrdGhvNnJDVkhWa3hHLXVYYk12aUFGa3dYUHdvYW54NU9HTWozTmNfY0Q0MmQzRDgtY2doWHZpMUpPSk9YSXA4?oc=5",
-        "date": "Sat, 22 Aug 2026 07:18:06 GMT",
-        "summary": "OpenAI IPO: Sam Altman Reportedly Reveals Timeline, Hints At Major AI Upgrade Stocktwits",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1f454deb70ce3d791279d43bffaf40f625d7976bb39e4752356ef418222e9f0f",
-        "label": "OpenAI Confidentially Files For US IPO - Stocktwits",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSWdfYnIwY0ljSHZqd2xXeVNEWlpPMUZFZ3ItQVdyYll5N1p0cHJ0MGV4c0J4bDBnZENKY1JkQUtjSkI1R21seEJyRWhGelVrdWN4LWpJcEMyd282TnV0ZGxZQktDYTZkWUdQaGxKZG1SQUFkSkRUaW5QVUxZeFVIXzR2S0taYlFSMjBiNzdhUnFiT1lsYXlaQUZaZU9rYTlXOFFMSlln?oc=5",
-        "date": "Sat, 22 Aug 2026 08:20:16 GMT",
-        "summary": "OpenAI Confidentially Files For US IPO Stocktwits",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5f33867478f7a12001157df37a894d15191b0aa0c2b1f2803a00323c0c01369d",
-        "label": "Watch OpenAI on Track to Double Revenue Ahead of IPO - Bloomberg",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaTIxcHpHNnU5REVxeElwbEVHMmF6NHpQTWVEY3poMURDTDItUFdWcDJfVkItbjBPTjFKS3lyYmVfNjFkenA5Ukg1bENMc3lScGNGbGZBbVNrQnBGeFlPSlZJczliNWR1TjNTYzBxN2wyNkItWWJabFA1RE5EMnRRVTdrM212a2UyYkVXMWxhTjdfM05icUJfVVVzbFVoLWV5TUxv?oc=5",
-        "date": "Fri, 14 Aug 2026 00:00:00 GMT",
-        "summary": "Watch OpenAI on Track to Double Revenue Ahead of IPO Bloomberg",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:00732949b151f7b6c1e375b8300c5b4913810ed495adaf2d110806270141680c",
-        "label": "Watch OpenAI on Track to Double Revenue Ahead of IPO - Bloomberg.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaTIxcHpHNnU5REVxeElwbEVHMmF6NHpQTWVEY3poMURDTDItUFdWcDJfVkItbjBPTjFKS3lyYmVfNjFkenA5Ukg1bENMc3lScGNGbGZBbVNrQnBGeFlPSlZJczliNWR1TjNTYzBxN2wyNkItWWJabFA1RE5EMnRRVTdrM212a2UyYkVXMWxhTjdfM05icUJfVVVzbFVoLWV5TUxv?oc=5",
-        "date": "Fri, 14 Aug 2026 00:00:00 GMT",
-        "summary": "Watch OpenAI on Track to Double Revenue Ahead of IPO Bloomberg.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3ee882a15fcb301480a7093f23ecc90df831e867c29f3c838f82206757325d97",
-        "label": "OpenAI's CFO just said something IPO investors should hear - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSUhYNDNNeXJ1bnliM0EtMEMxZ2thdjZpdVlQdFVZSXBrSm9uMWZ6a1BMSHhiN1p1aUFnSWR6dmprUVRNVzJadHNpWnRkUnlLbDQ3YUFDZ1R2N3g3NnFDaENNblpvcUlmVjZaV0pxZHZXVlF0dEJRWklpVmFrdDdvRnVjdzJKaENocTVDdnJaaUI3aXVNbllXVzQzcGM?oc=5",
-        "date": "Sat, 22 Aug 2026 01:03:00 GMT",
-        "summary": "OpenAI's CFO just said something IPO investors should hear Yahoo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4782865686329761e91bae0fc973ab83f0bd9de01d58cb0553f3238f46bfe99f",
-        "label": "OpenAI hasn't held pre-IPO investor meetings or set timeline yet, sources say - CNBC",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE13OU9kQU9NcWpDYTV6Y3d1blJXa1ZiZkFxM1ZSUUlONi1taHNJLUxlMWpkNXJpd1AySUxxaHlIeklTNXllZHh3U1hSNHpFRGdCMFVLclVKTUVjbG9henhDX0pvZEdiMTVXbG1OSVU4TWFCVGZtWUHSAXtBVV95cUxQeTgwMGllYVY0ekdDYTJwdWQtRkVIOUs1MjVndGhtUnVpUUE5V1YweVhoc25zU09iemdSUmRuZjZ2NG8yRGd6dDFqWjgydXNTaUpTNjdFS0s1ak50U25Hcl84YnZDOVV6WUR5ckxfRXNhZ195Xzc4a0hib00?oc=5",
-        "date": "Fri, 26 Jun 2026 07:00:00 GMT",
-        "summary": "OpenAI hasn't held pre-IPO investor meetings or set timeline yet, sources say CNBC",
-        "score": 4,
-        "weight": 1
       }
     ],
     "edges": [
@@ -13627,6 +13635,13 @@
       {
         "source": "X (Twitter)",
         "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:a858e4326d67b36d1fd4512eff4c4ca394743c2d522e1af417ccb6f96e1dcdbd",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -14970,6 +14985,13 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:e2d522433485b120a7bf47c2831b109ed4598ba23a31fd78fafe4955f6748e85",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:223bed5d56513d8baee199935948af0e312114e267a5e08fb20d41813cf27e94",
         "type": "EVIDENCE",
         "weight": 1,
@@ -15867,6 +15889,48 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:bf92573bf4b64a2d80619c3801f00a53017882e49a095d18309739a32f76611f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:bf92573bf4b64a2d80619c3801f00a53017882e49a095d18309739a32f76611f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:14ac6f41c3b899b67a2f05ce1e2590f1dcd2ce6e435ad43f78678449fc80d02e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:14ac6f41c3b899b67a2f05ce1e2590f1dcd2ce6e435ad43f78678449fc80d02e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:15563457a7e3da2f89fd7fcccedc31cb3745a1ae3826a318562767e8f59b7c79",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:15563457a7e3da2f89fd7fcccedc31cb3745a1ae3826a318562767e8f59b7c79",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -18525,6 +18589,48 @@
         "mentions": 1
       },
       {
+        "source": "Tencent",
+        "target": "evidence:b28228481e1dfee2570e4050eb54e2867f19860099891062206259804f5a46a8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:5bd5eb2949330a5c33d0f09b2550f2c8274e3fe0e52e5a32bc424e136cc68e98",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:d2c9fccc951be3281be4bfa9fb458aacb9c86ca00d7f65b3450d6cdc08bf490b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:51cf84cdfe012a3f20f77a2ed417ecc56d640e6a8ace2a20b51fb1f8e64ea7b0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:6f47c411f7dcfa3f0383baa27ffb274dbf07d28db2675c21d170baec6c7fc223",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:8cf765f94cbfec5742e014ef9afc5b788a116ff4dbebb667e89383062771b0a7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "DeepSeek",
         "target": "evidence:8af92be530e4190008e0ec825de32149b33253e334f46e77887ea58739fe6892",
         "type": "EVIDENCE",
@@ -20760,90 +20866,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:7a311407af92e4da2b8ca1c69cf272468dd0056947fe79ca52ded5809f60c9d0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:fd5da97a13ea8b1c52f25473a5ffa41d156e8ad57d5c65c9ac3145fa737223c0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:260d8ae251c1e0a8041f3aa87f3703a60c14efa72025bd5f16b3ab757f73ebd9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Alibaba",
-        "target": "evidence:add41d0df38a287c23d56f100a6e0163c39240c1416cfe95f609dfc7f5fc397f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Baidu",
-        "target": "evidence:add41d0df38a287c23d56f100a6e0163c39240c1416cfe95f609dfc7f5fc397f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:b2f8e306bd27927227219340339953ce494f6638ac2bba51ff7befa14a9594f1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:f5646e0d89536d5ace1ac0181e0cde201bae27797ef0f4d95e73758c86763a31",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:25c8c5e4acb6d6fae169ebe3288b195179060a64f323e08a4acb49beea839549",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:1f454deb70ce3d791279d43bffaf40f625d7976bb39e4752356ef418222e9f0f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:5f33867478f7a12001157df37a894d15191b0aa0c2b1f2803a00323c0c01369d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:00732949b151f7b6c1e375b8300c5b4913810ed495adaf2d110806270141680c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:3ee882a15fcb301480a7093f23ecc90df831e867c29f3c838f82206757325d97",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:4782865686329761e91bae0fc973ab83f0bd9de01d58cb0553f3238f46bfe99f",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -34359,7 +34381,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.88,
-      "mentions": 2,
+      "mentions": 3,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-09-03)",
@@ -34374,7 +34396,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.82,
-      "mentions": 2,
+      "mentions": 3,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-09-03)",
@@ -34389,7 +34411,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 2,
+      "mentions": 3,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-09-03)",
@@ -35889,7 +35911,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.82,
-      "mentions": 1,
+      "mentions": 2,
       "review_status": "flagged",
       "evidence_text": "Why Price Cuts May Rattle Anthropic's IPO Pitch - theinformation.com Why Price Cuts May Rattle Anthropic's IPO Pitch theinformation.com Google News",
       "title": "Why Price Cuts May Rattle Anthropic's IPO Pitch - theinformation.com",
@@ -36229,36 +36251,36 @@
   ],
   "collector_runs": [
     {
-      "id": 731,
+      "id": 735,
       "collector": "company-economic-news",
-      "started_at": "2026-09-09T14:34:55+00:00",
-      "completed_at": "2026-09-09T14:35:17+00:00",
+      "started_at": "2026-09-10T14:25:33+00:00",
+      "completed_at": "2026-09-10T14:26:00+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 28,
+      "items_new": 30,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "da83df18-e183-4aa9-9cd0-93ba0c1d2551"
+      "collection_execution_id": "f8ad454d-874c-444e-b192-4ffc6cde1dec"
     },
     {
-      "id": 732,
+      "id": 736,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-09-09T14:35:17+00:00",
-      "completed_at": "2026-09-09T14:35:17+00:00",
+      "started_at": "2026-09-10T14:26:00+00:00",
+      "completed_at": "2026-09-10T14:26:02+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "da83df18-e183-4aa9-9cd0-93ba0c1d2551"
+      "collection_execution_id": "f8ad454d-874c-444e-b192-4ffc6cde1dec"
     },
     {
       "id": 56,
@@ -36277,36 +36299,36 @@
       "collection_execution_id": null
     },
     {
-      "id": 730,
+      "id": 734,
       "collector": "google-news-rss",
-      "started_at": "2026-09-09T14:34:53+00:00",
-      "completed_at": "2026-09-09T14:34:55+00:00",
+      "started_at": "2026-09-10T14:25:29+00:00",
+      "completed_at": "2026-09-10T14:25:33+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 10,
+      "items_new": 9,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "da83df18-e183-4aa9-9cd0-93ba0c1d2551"
+      "collection_execution_id": "f8ad454d-874c-444e-b192-4ffc6cde1dec"
     },
     {
-      "id": 733,
+      "id": 737,
       "collector": "sec-edgar",
-      "started_at": "2026-09-09T14:35:18+00:00",
-      "completed_at": "2026-09-09T14:35:20+00:00",
+      "started_at": "2026-09-10T14:26:02+00:00",
+      "completed_at": "2026-09-10T14:26:04+00:00",
       "status": "ok",
       "items_seen": 21,
-      "items_new": 0,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "da83df18-e183-4aa9-9cd0-93ba0c1d2551"
+      "collection_execution_id": "f8ad454d-874c-444e-b192-4ffc6cde1dec"
     },
     {
       "id": 57,
@@ -36327,7 +36349,7 @@
   ],
   "document_count": 1500,
   "event_count": 1025,
-  "mention_count": 8376,
+  "mention_count": 8380,
   "review_counts": {
     "provisional": 0,
     "confirmed": 301,
@@ -39164,6 +39186,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-ab88af055e95711d",
-  "database_sha256": "ab88af055e95711d96c050b3de80d7f616286dac3d44cf947142236e3746da45"
+  "database_state_version": "v1-59ca3f77aa8c2a3f",
+  "database_sha256": "59ca3f77aa8c2a3fc4c514f56f1f5205572bed81c6cc6b1d5c784bd66a899872"
 }
