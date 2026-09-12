@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T14:26:36.776908+00:00",
+  "generated_at": "2026-09-12T13:38:17.849430+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -15,7 +15,7 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-09-11T14:26:12.998995+00:00",
+    "reading_as_of": "2026-09-12T13:37:58.728427+00:00",
     "support_totals": {
       "risk": 19.4984,
       "safety": 2.4000000000000004
@@ -620,6 +620,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-09-12T13:37:58.728427+00:00",
+      "score": 81.8,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 65.7, \"stress\": 63.1, \"transmission\": 53.7, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-09-12T13:37:12+00:00",
+      "score": 81.8,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 65.7, \"stress\": 63.1, \"transmission\": 53.7, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-09-11T14:26:12.998995+00:00",
       "score": 81.8,
@@ -2016,6 +2030,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-09-12T13:37:58.728427+00:00",
+      "score": 81.8,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 65.7, \"stress\": 63.1, \"transmission\": 53.7, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-09-12T13:37:12+00:00",
+      "score": 81.8,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 80.1, \"monetization\": null, \"circularity\": 77.6, \"fragility\": 65.7, \"stress\": 63.1, \"transmission\": 53.7, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-09-11T14:26:12.998995+00:00",
       "score": 81.8,
       "label": "HIGH CONVERGENCE",
@@ -2275,13 +2303,73 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-09-11T14:26:36.778880+00:00",
+    "as_of": "2026-09-12T13:38:17.851010+00:00",
     "counts": {
-      "pressure": 42,
+      "pressure": 44,
       "public_exposure": 10,
-      "context": 7
+      "context": 8
     },
     "items": [
+      {
+        "fact_id": "d57925237e94dcc736b9cd11bcf72a707974bde27ad211f62958b99f691be996",
+        "event_id": "8ef3f7c2e94f5bbf1860a6ea0b778beb7988b3b97094e357f51b64b586de2172",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+        "evidence": "Capital Expenditures : Cash used for capital expenditures increased from $8.5 billion in the first quarter of fiscal 2026 to $28.5 billion in the first quarter of fiscal 2027 primarily due to the expansion of our data centers.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+        "date": "2026-09-11T00:00:00+00:00",
+        "reviewed_at": "2026-09-12T13:37:25.484851+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+        ],
+        "underlying_fact_ids": [
+          "d57925237e94dcc736b9cd11bcf72a707974bde27ad211f62958b99f691be996"
+        ]
+      },
+      {
+        "fact_id": "bbca6f2a86832e94e243566c40b768bdc0987565c5072725767738cd0703b892",
+        "event_id": "3a845a147f713639d4947fb2c03f117119ef063e38160dfd3e5d345e88238cd1",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+        "evidence": "4 Table of Contents ORACLE CORPORATION CONDENSED CONSOLIDATED S TATEMENTS OF CASH FLOWS For the Three Months Ended August 31, 2026 and 2025 (Unaudited) Three Months Ended August 31, (in millions) 2026 2025 Cash flows from operating activities: Net income $ 4,760 $ 2,927 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation 3,156 1,351 Amortization of intangible assets 202 420 Deferred income taxes ( 73 ) 515 Stock-based compensation 1,127 1,124 Other, net ( 4 ) 164 Changes in operating assets and liabilities: Increase in trade receivables, net ( 1,009 ) ( 245 ) Decrease in prepaid expenses and other assets 114 59 Decrease in accounts payable and other liabilities ( 1,076 ) ( 334 ) Increase (decrease) in income taxes payable 546 ( 391 ) Increase in deferred revenues from customer prepayments with significant financing component 11,363 \u2014 Increase in other deferred revenues 3,997 2,550 Net cash provided by operating activities 23,103 8,140 Cash flows from investing activities: Purchases of marketable securities and other investments ( 306 ) ( 471 ) Proceeds from sales and maturities of marketable securities and other investments 225 255 Capital expenditures ( 28,499 ) ( 8,502 ) Net cash used for investing activities ( 28,580 ) ( 8,718 ) Cash flows from financing activities: Proceeds from issuances of common stock via at-the-market program, net of issuance costs 19,909 \u2014 Net proceeds from employee stock programs 41 1,153 Payments of dividends to stockholders ( 1,565 ) ( 1,413 ) Repayments of commercial paper, net \u2014 ( 238 ) (Repayments of) proceeds from short-term financing related to capital expenditures, net ( 830 ) 1,958 Repayments of senior notes, term loan credit agreements and other borrowings ( 4,202 ) ( 1,052 ) Other financing activities, net ( 242 ) ( 198 ) Net cash provided by financing activities 13,111 210 Effect of exchange rate changes on cash, cash equivalents and restricted cash 11 27 Net increase (decrease) in cash, cash equivalents and restricted cash 7,645 ( 341 ) Cash, cash equivalents and restricted cash at beginning of period 31,289 10,786 Cash, cash equivalents and restricted cash at end of period $ 38,934 $ 10,445 Non-cash investing activities: Unpaid capital expenditures $ 6,247 $ 4,010 See notes to condensed consolidated financial statements.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+        "date": "2026-09-11T00:00:00+00:00",
+        "reviewed_at": "2026-09-12T13:37:25.484851+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+        ],
+        "underlying_fact_ids": [
+          "bbca6f2a86832e94e243566c40b768bdc0987565c5072725767738cd0703b892"
+        ]
+      },
+      {
+        "fact_id": "af5368654401d287c4566ce632ffe17158e4137806aca0ef729db7f86602052e",
+        "event_id": "6599adb9ad666336c4ac8a65ea7bb50a4a7c7692636c20004293b5776e330d67",
+        "kind": "context",
+        "causal_role": "RESILIENCE",
+        "rationale": "Cash flow informs self-funding capacity; its sign and trend must be read from the source.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+        "evidence": "We calculate free cash flow as follows: Three Months Ended August 31, (Dollars in millions) 2026 Change 2025 Net cash provided by operating activities $ 23,103 184% $ 8,140 Capital expenditures (28,499 ) 235% (8,502 ) Free cash flow $ (5,396 ) * $ (362 ) Net income $ 4,760 $ 2,927 Net cash provided by operating activities as a percent of net income 485% 278% * Not meaningful Recent Financing Activities : Common Stock : On February 2, 2026, we entered into an equity distribution agreement with certain sales agents party thereto, as amended on June 23, 2026, pursuant to which we may sell shares of our common stock having aggregate sales proceeds of up to $20 billion from time to time through an \u201cat-the-market\u201d offering program (the 34 Table of Contents ATM Program).",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+        "date": "2026-09-11T00:00:00+00:00",
+        "reviewed_at": "2026-09-12T13:37:25.484851+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm"
+        ],
+        "underlying_fact_ids": [
+          "af5368654401d287c4566ce632ffe17158e4137806aca0ef729db7f86602052e"
+        ]
+      },
       {
         "fact_id": "425741f48c3b24a9004c4bd236890ea167c0475a4806a6c91e91fdaee59446e1",
         "event_id": "b222c637f867a675e6e585a0cc37ddb49d730c2c4daf3d3393e5fea92c0ac693",
@@ -3483,28 +3571,28 @@
         "weight": 62
       },
       {
+        "id": "Oracle",
+        "label": "Oracle",
+        "kind": "company",
+        "weight": 29
+      },
+      {
+        "id": "Anthropic",
+        "label": "Anthropic",
+        "kind": "company",
+        "weight": 27
+      },
+      {
         "id": "OpenAI",
         "label": "OpenAI",
         "kind": "company",
         "weight": 27
       },
       {
-        "id": "Oracle",
-        "label": "Oracle",
-        "kind": "company",
-        "weight": 27
-      },
-      {
-        "id": "Anthropic",
-        "label": "Anthropic",
-        "kind": "company",
-        "weight": 26
-      },
-      {
         "id": "Nvidia",
         "label": "Nvidia",
         "kind": "company",
-        "weight": 17
+        "weight": 18
       },
       {
         "id": "SpaceX",
@@ -3738,6 +3826,18 @@
         "date": "2022-10-27",
         "summary": "Twitter reported that the merger was completed on October 27, 2022 and Twitter became a wholly owned subsidiary of X Holdings. The transaction valued Twitter at approximately $44 billion.",
         "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:aac7618f31751d09e61e69c11a2af73d1b224e625583210bc5928b580ebb15bb",
+        "label": "Oracle SEC filing: 10-Q (2026-09-11)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+        "date": "2026-09-11",
+        "summary": "SEC filing 10-Q for Oracle. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
         "weight": 1
       },
       {
@@ -6249,6 +6349,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:1d91175f9020f801ab7f78eb395682b7fba70424974d23c6c4d660b2babbd7df",
+        "label": "Nvidia Could Make Anthropic IPO Bigger than SpaceX With $10 Billion - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQV2l4VEx2TzVsTGRJbkRNUUdXVGVTVjY0M2FWSTc4LTRkSUhhd0tTZkZodzVaR1BpRlViOGdFMDdEVzV5RkZmdHFUN2poTXdvQWNoV3V2UDFrRjVmbkszV0lNdE5PWlBSODlJQ3FVanRsNXJFbUpvaWQtRGQ0NE9BUUt0Mmljei1mR3Q3VHlMczBEcENKZjNJSDlqa2ZwNVE?oc=5",
+        "date": "Sat, 12 Sep 2026 12:02:59 GMT",
+        "summary": "Nvidia Could Make Anthropic IPO Bigger than SpaceX With $10 Billion Yahoo Finance",
+        "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:4c753cbeb7ae699cba1cdc332dbff5cfc66af6b4adf982ca144648e30343fcb4",
+        "label": "OpenAI and Anthropic Want What SpaceX Got After Its IPO Despite Billions in Losses - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQUkx1LXBRUlBqRk5JR2ZORnFITFp4alMzc09mRTVsdzZMVnVDWGhrZjRaTHZIeHlxRzRoM1JZVzFMWHFEUFQ4Vnd1dUliY0tJdTVaU1NhWC1SbXlVc094SVhlNXBlY3BSR0xaN094VWhheDZkVktlU0tEbTFWVzFSVjNSV0tpYWhjc2w3WElOVFVjejgteFhyRGZWNnI?oc=5",
+        "date": "Tue, 08 Sep 2026 11:22:07 GMT",
+        "summary": "OpenAI and Anthropic Want What SpaceX Got After Its IPO Despite Billions in Losses Yahoo Finance",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:b9b3015b58832fb276d517bf2d1e61ea902b0b5719bfcfd798ada0960a0dc164",
         "label": "OpenAI and Anthropic Want What SpaceX Got After Its IPO Despite Billions in Losses - finance.yahoo.com",
         "kind": "evidence",
@@ -6810,6 +6934,90 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2938a0f221a458b565885239215dfec7e39e7dff479c2538ffc7d69557a6534a",
+        "label": "Nvidia Eyes Up To $10 Billion Investment in Anthropic IPO as Claude AI Maker Mulls Nearly $100 Billion Raise at $2 Trillion Valuation: Report - TradingView",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQQlBrLVEtcTlLOU56RVBmRmR1UE4wLVUxSHozekZJczRHMVVXcXNLQzJoNzl2NVpyMGoxc01WY25ZVXBBWkQ1Uk11UFJUbzllMDF4dFlBTGlnNy1ILWw1bWE5VC16bU94cGRtTkFMYUFQZHFoYnFLc0MtdlhjdkkwcUxtOWduUEJHNnd5d2M3czQ0NlVSb1RfZWVyVHZHV2ZpQlliYmpzLXNvNDB4azlIb0dIclI2Q0tIUjBwRUh3MFBEbkFwUjJUVUF4M0lackRMMmZIVVZjVnBpMnBTaWM5Q3ZRX1ZvRkNHaVYzLXRVeWhHRm1GV3B0RHIwajJuTFctWk51cVRjMlc3Y040VWYyOGpmRXFOb0xfcU9PckRIa3Fhdw?oc=5",
+        "date": "Sat, 12 Sep 2026 03:19:00 GMT",
+        "summary": "Nvidia Eyes Up To $10 Billion Investment in Anthropic IPO as Claude AI Maker Mulls Nearly $100 Billion Raise at $2 Trillion Valuation: Report TradingView",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:bc1dd1d4a75088e66d92396a682435a2dccc43feca51fc896ab61f33329fa0ba",
+        "label": "EXCLUSIVE: Nvidia in talks to invest in Anthropic\u2019s mega IPO, sources say - Reuters",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbmduYjZNYlh4TmVDd3dMTzZmU21ud1Q5WVVaYXBOM2hUQ201U2tjeDhoWHd6ZjhlQzdtUWxiNmFibkRpc2VlcmxjbWMzTWljZ0ZZSkF6VHFPWnJVUFQwc2g4RDNtb1FCWjN1R3BBcFRzUHkyTXJiRXZpa0NxV29IWFc1LV9lUXh0bXc3TWNrSHZhT0lPTVU2dEswYWhSVUw2SzFkRkVmSHU0S3c?oc=5",
+        "date": "Fri, 11 Sep 2026 23:01:00 GMT",
+        "summary": "EXCLUSIVE: Nvidia in talks to invest in Anthropic\u2019s mega IPO, sources say Reuters",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:20f7dc605d91327a194894e4c3e0eb236d2669028976efe71ea4283fd6cb9805",
+        "label": "China Could Absolutely Cripple Anthropic And OpenAI IPOs - AOL.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "AOL.com",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQTGZWQkRzREhkanB4M2t4REtwMlYxanpIVF95M202T1B4Rk4xbk1rZ1JHaHNyakVOZHdzNmtqQkFpc3J4NGNKRFVPbWx6RnBYemlDTnptQVU3VUxKRVVTVnRKN2lsWk5aYmQzM0F1UklmVWQ3MHg0ZFExME9UbjYxOUJUTHg2YmRLSUtnbw?oc=5",
+        "date": "Fri, 11 Sep 2026 17:09:09 GMT",
+        "summary": "China Could Absolutely Cripple Anthropic And OpenAI IPOs AOL.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:1729f78d0d5773edb0c1a6a9f360a08f3438427a7955977ca61c2c7d06ef221e",
+        "label": "OKX Lists OpenAI, Anthropic Pre-IPO Perps at 10x Leverage - FinanceFeeds",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "FinanceFeeds",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOM0NfdVpjRlU2bURRdjFMbzM0d3g3SllpWnJramsxMkh4ekJFWEk4UFk1N2pSNDIzaE52NDdnRk0teFMxa2hrREoxeG9nV0lyVmJZUC1DZGV0UlAzT0NYdVFETFl5Rmcxcm1hUTVlRXhUY21udGpkdkp2Z1VkQ2dicEtCdkNhT09qSVNyaA?oc=5",
+        "date": "Fri, 11 Sep 2026 18:31:46 GMT",
+        "summary": "OKX Lists OpenAI, Anthropic Pre-IPO Perps at 10x Leverage FinanceFeeds",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ed8aafd55fbefae3ead90a42a12485ff1c9443c22de7d776a66e8d8bb370435d",
+        "label": "OpenAI, Anthropic Researchers Urge AI Slowdown Ahead of Potential IPOs - tipranks.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "tipranks.com",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOYzhkSUNManZmWk9veGs1UHd1TURZM1JHMEpKOHFjUl9wQ19qWG56ZDhHR2tENkg4TUU4M2J4cmI5RXVJSDM4eXZ5U1hJWE0wRFlUZkJMUHhNeDg5UW8ybWw5dGJWZG1fdDBodEtDb3AxYVVXa1lQZ0FjX1p3VUEwNjdlbmwzNk5CTUZQTTN0V25HX0xBTXpOTmQzUXRESjVm?oc=5",
+        "date": "Thu, 10 Sep 2026 11:05:13 GMT",
+        "summary": "OpenAI, Anthropic Researchers Urge AI Slowdown Ahead of Potential IPOs tipranks.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:acb7a363cfa98172eeb65f2019e27715a1f23a2e6594fd8a2e9103f2aa08f649",
+        "label": "Compass CEO Robert Reffkin Says Upcoming OpenAI, Anthropic IPOs Are Already Boosting Luxury Housing Beyond San Francisco - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZnphTDlLVTNjVzNlNEFCeFd1SmlQZkp1MkJEX2p3YW15WnlUWlFTdW1uY2dJNm9tVW04VmJadlhQY21SbTBYcUZIMVJBOHdYSmZyMS0tYUxReWNyQXZydGgwYkp1b3czT29tNmY3bW8wNGZUN0sybmJ4SnV4VVBaRXpBVXUyeFNOU3RSVDhSVFJuZTBqNEx2Zw?oc=5",
+        "date": "Thu, 10 Sep 2026 17:16:46 GMT",
+        "summary": "Compass CEO Robert Reffkin Says Upcoming OpenAI, Anthropic IPOs Are Already Boosting Luxury Housing Beyond San Francisco Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e228945a769e0181a2afcc93cfd7d05e6f61eb0b4694871f98cc84bb99a1e76b",
+        "label": "China Could Absolutely Cripple Anthropic And OpenAI IPOs - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb2JjQU1GQlNYZWw5WU50dHVjaFpieEt6cHJPNjd4UmY5RWxFZUN0andQMzVzRGNYQ3k5UjdDcTJaclpZSi1qMURLTnZFLXI1TmxmNHVJTlQyekpqSG9GWXg2eUNQNWtwSno5SkNqRzJwR0djVVVvcGUtZTgxaGxfa3lQZ1NHRGVRMTFuUHJkeGFjNVJJWTM1Mi14Z0F1cmJLanc?oc=5",
+        "date": "Fri, 11 Sep 2026 17:09:00 GMT",
+        "summary": "China Could Absolutely Cripple Anthropic And OpenAI IPOs 24/7 Wall St.",
+        "score": 5,
         "weight": 1
       },
       {
@@ -9762,6 +9970,102 @@
         "date": "Wed, 19 Aug 2026 20:41:09 GMT",
         "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
         "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e528954f7dcc190cb11f718cec55d5aa8d4185600cc33806de5d1e98c7326853",
+        "label": "Tencent-Backed Chipmaker Enflame to Debut After $911 Million IPO - bloomberg.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTjFjX1RYTTlIeE9kVEw5bU9WbEFtaG5OamRCTXV1RlpDeWRicXpDOFZ4WDhuRW1jVFNPWFF0S1pOS0FlRk40Y2VWNUFuckk1bUt4WEk0YzJjUlFqMDl3dU1UakxibHdrdFMtcGZIZ2FQOE9GVkZ3YkxSSFE3M2thWVRNZnlkMk0tSnVPWkQ5RjI2RW5EOHFTRVJLSGpKWU5JRGk5Q2dnY1FJMGplamo5VWN2bUs?oc=5",
+        "date": "Fri, 11 Sep 2026 07:41:01 GMT",
+        "summary": "Tencent-Backed Chipmaker Enflame to Debut After $911 Million IPO bloomberg.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ac1e0ce7df47cbd84d109370d09203e568eee9e1c35e44b9ce9cd938abe9661a",
+        "label": "DeepSeek IPO: Dual Realities and One Core Goal \u2013 Key Insights for Investors - 36 Kr",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "36 Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5PU3VNdV9Cal9yNXhaRmZyODZhdnUxX0MwVHpsZVZWX1lldFRrdHUxVm5EcmVrMmh5MHRHWE5SX3pLc3hyVE1XWHozUWlOb1ZYd09V?oc=5",
+        "date": "Fri, 11 Sep 2026 16:10:28 GMT",
+        "summary": "DeepSeek IPO: Dual Realities and One Core Goal \u2013 Key Insights for Investors 36 Kr",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:8d011684a66adcebe799eb59c06b003e1d933bec7d902952cf65e67c0f0aeafb",
+        "label": "Polymarket Prices 80% Odds of OpenAI Reaching $1.5T at IPO by 2027 - bonus.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "bonus.com",
+        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUjRMV0hmZWRWQVZHY3ViZWtOSHBCUXZmUjZjQ1lqYi1jZjdleDBENE90cG4zc0FCMDFNQVNrYmtxa3FJQXdTVGR0VXkyRm1qeGRUb3hzVEFJSm5GdldWX3R5SEQ2bExIb2JKaFJ0aVRSWVRZNi0yZTdQa1hNcHhLQWpmdHVtNzdyS0tCdFpvRW1EbkUwNzVRTlJnTlQ2a2JFZ25acGVtNA?oc=5",
+        "date": "Fri, 11 Sep 2026 01:00:00 GMT",
+        "summary": "Polymarket Prices 80% Odds of OpenAI Reaching $1.5T at IPO by 2027 bonus.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:c7ce3efe31197b86c6460aa33b521a3c116065df7a2437cccda8a7b1fc4fd383",
+        "label": "OpenAI Stock IPO: Expected Valuation, Timeline and Investment Options - smartasset.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "smartasset.com",
+        "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE15OEdhUlNaM0Z5cjB2VFdVbU5kYlU1VXNKcGF6YXpBbVZvTEhSTnFNbWo1LUZPdkxmbG1FcGJSRTI0bkgwTWxLNERtVFQ2S1lvaXpqaC03RWVoa1FJN1E?oc=5",
+        "date": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "summary": "OpenAI Stock IPO: Expected Valuation, Timeline and Investment Options smartasset.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:81c330a9a1d29208317642e3e7fdb3b29556cf695099fbfe2a156b9234f8876a",
+        "label": "Former OpenAI exec Simo joins Nscale board ahead of IPO - Mobile World Live",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Mobile World Live",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQnU3YWtmdURoMkVnU1NMRWtOdHR6V3Y2ZVJhQjZGeGtzLVBuelcxZUpFOGpLQlhZYjM5d0s5M0Z2TXBmWHRhR3pELU5KYlZxNzRDa2NuOFBqSzg0ejlMZHVOcGVmWFRtSUdKTmtqZ0t6Q3ZBRmI0cTVzVF9BeklOZHhUN3lseFpSeVRXb1ltc2lyU0VuVDdQekxuZEZCUQ?oc=5",
+        "date": "Fri, 11 Sep 2026 15:29:05 GMT",
+        "summary": "Former OpenAI exec Simo joins Nscale board ahead of IPO Mobile World Live",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2769db9dda7e9dec92cd471727249b00592580ec2edcf0de626e020a7ea72b59",
+        "label": "Former OpenAI and Instacart Executive Fidji Simo Joins Nscale Board Before Planned IPO - Northeast Times",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Northeast Times",
+        "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVWEyekFQSGI1Vm9yMG1wY3J3akFrSEE3Wk55UFI4LVcwSGg1RHlMZzB2M24zajZOSHlkNFUyaHVNV2NGVk5SU3Y3VEJrd3lmbXhQTTNKWGpUMjNfRE90VEhfV1RNajRnSHVXNnNORkxFUmlzbzZGS2FEdVlEUGJkRlVRT2dyVWJhRUF0YmZMdkNhUGNSSHNVeV8tVGVMd0x4dkMxVVdKQ0c0Zw?oc=5",
+        "date": "Fri, 11 Sep 2026 17:01:31 GMT",
+        "summary": "Former OpenAI and Instacart Executive Fidji Simo Joins Nscale Board Before Planned IPO Northeast Times",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:764fd4506343cdd145f3ec53679d340f7cc1e2d93aa7c3b94dfaf0bfee64f744",
+        "label": "Anthropic researcher\u2019s resignation highlights governance concerns for AI firms\u2019 IPOs - ESG Dive",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "ESG Dive",
+        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbEhCZG1VUm1abnJFdHA1NUFUbE5od0c1akNXc01KTlNMQWRwblM4YjEwb0h3bUdFYUQwTlg5VDhnbkNuQk1va05zZjUtejA4NTZidThyc2huOUhfREtBYXE0QkZRQnN2ZV9OdGZxbnBfVzhiRXlnWFFONlgybnFVS2pEdDVfOE5mRjNkMnhnaENoVVVtWUlmTHdfa0FoMmJpczAzWWZ2UTRNMzVHNlpKMQ?oc=5",
+        "date": "Fri, 11 Sep 2026 17:16:10 GMT",
+        "summary": "Anthropic researcher\u2019s resignation highlights governance concerns for AI firms\u2019 IPOs ESG Dive",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:016a0eadf8ca9e1288c42fcd9df24c45a4d2656190d49d1f9631fcf478978999",
+        "label": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO - TechCrunch",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TechCrunch",
+        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORUh3OFBtWU9GUDhsQWF5UTJmREwxSldsNnk1Yl8ta0I4VWpVNEEyQV9RU3B3LTAwcDFGMUhyV09CYnhreF9kSFNHbzdmOFM3ZjV1VW1lMW5TS1RFTDM4OHJFdnVtLTJZekxHMnNsRG96V2ViTTdoZlBobS1lc1ZxNmtBaW85VlN3ejctNzNhOVNPb0tHdVRtUXYxR2g3NVJSbmZXdGluenR4ZGkzN2wyRURn?oc=5",
+        "date": "Fri, 11 Sep 2026 16:46:25 GMT",
+        "summary": "Nscale adds former OpenAI exec Fidji Simo to its board ahead of potential IPO TechCrunch",
+        "score": 4,
         "weight": 1
       },
       {
@@ -13015,225 +13319,16 @@
         "summary": "Anthropic Expands Enterprise AI Arsenal With Autonomous Tools Ahead Of Widely Expected IPO Stocktwits",
         "score": 4,
         "weight": 1
-      },
-      {
-        "id": "evidence:59739ebef88bbfabd173b79e90d869495faa23d8abbb18cc6fac74eb9f3ee19b",
-        "label": "Anthropic IPO: The Partner Stocks That Could Win Twice - Moomoo",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Moomoo",
-        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNY1M5X0JFd19GVDVPc1dmZExIXzZ4TzJtT0xFUkZqUnNtTTY3c3UxTFhnQUlzdjNiSFNUejJncmlZU0pFVVpaTlIzRFd6eDFHbzJCRm9DLXhLZHZDWXR2akY3dTBqOEY2WGE1eHBoM0tadFdVRUd3Qm1peGRKUS13bjdZUXppOGxJOFpuT2FKZXgwOHZjYXNzamJWSmlBSGFaMXVvUmFKRm1DcnM?oc=5",
-        "date": "Tue, 25 Aug 2026 10:05:08 GMT",
-        "summary": "Anthropic IPO: The Partner Stocks That Could Win Twice Moomoo",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d82aac28f7a755eb5d4c57873bd0131852930f2835d25c10feff0d22765e042d",
-        "label": "Citi, JPM Reportedly In Talks To Join OpenAI IPO Bank Lineup - Stocktwits",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVTV6X2FEbkUwSmM5VldPRndBVy1GMWwxcGY5Vll3RmpsUVcwc1dwRkU1c3dKc3owcTlHZ1dWcDVJV1pjSkZjVEIyTWRqc0NWZTcxQXNyRnNPSlZRaE5RTGlMOW9mOXlob1ExdVJJMXp2Sjl1U1ZFSHRsekNVaGtvdXZiZVBFVC15cUh2YTg4SHE3R0NQVmtSVWljRHlkS2N2LWZOb1BIWTl4TFU2bHl3WFlIYjc0dUltOUszbllYdEY2QUxKWnJaSE4taFg2VHVRV2VyaVpYSGd3MEhJQ2lR?oc=5",
-        "date": "Tue, 25 Aug 2026 02:45:05 GMT",
-        "summary": "Citi, JPM Reportedly In Talks To Join OpenAI IPO Bank Lineup Stocktwits",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d648e092dadbe63f4c7ac0b943969858268bd486e0c5849d9143dd48686796af",
-        "label": "OpenAI's IPO strategy: Why is it in no rush to go public? - The CFO",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The CFO",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVk1EMjBWdElMLXFpNjZUV2t0T0F5b2dlNEppcVNYeUROTlpiLWV0SFU1OEtXaDdGcjhrcGUzWVdhZW04N2k1Z0Y5Mm5RbHNiU2ZjaXhUS2xXbk0yckh2OTFFUzVMeFU3YnM1bWhabEFYdEg1d0NEMkRDWFBmdVFGekJPdTYtZUdhLTJ4TENR?oc=5",
-        "date": "Tue, 25 Aug 2026 07:27:02 GMT",
-        "summary": "OpenAI's IPO strategy: Why is it in no rush to go public? The CFO",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e696b5af85d8fcccf4ca6558396d2e702714ec345216ef9427a8aec88f2a86ad",
-        "label": "Tencent-backed AI chipmaker Enflame targets about $900M in Shanghai IPO - Seeking Alpha",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Seeking Alpha",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxORzNQaEVUM1VIZ05DT1BhUlBfLVR5RFp2VTU4TEVva3o1MHdsMWZZMFg3Zm5TNlJEVnBaVEhkMmdyQ2NyQWN2Q1NBRThPSnptaFVGcE1RbDZzaVZUMk5jSEFsOHZmRlFTajhqS0xFRFBMbWJHSGxkVHF6RjI2V2RvRHY1X0pwZldFU3ViWV9mR2dBUlVRb282cHdkTU9IOVNOeXFVc01sUHNxWXp3?oc=5",
-        "date": "Tue, 25 Aug 2026 06:07:41 GMT",
-        "summary": "Tencent-backed AI chipmaker Enflame targets about $900M in Shanghai IPO Seeking Alpha",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4fbbbfb1aa862dbfe3c83b6c114d0ef72ef419b679ea05efb19061d02683a057",
-        "label": "AI: OpenAI Consolidates under Brockman, pre-IPO. AI-RTZ #1189 - AI: Reset to Zero",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "AI: Reset to Zero",
-        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BS0VaR1VKVHhaRUVnWTZDaF9MWnFBQ2xUay14dEdaSnI2cXhZejFLVENfRlJOejdGMmZkSk5OZkJ6a0hJWnNzUmNLTVNWd2ZPSFNxZWtlQ0xlVGdQeW41V0N4bE91d05EdXM5clN3QnZ1YTdPeU1mR0N3T01oYk0?oc=5",
-        "date": "Tue, 25 Aug 2026 05:03:33 GMT",
-        "summary": "AI: OpenAI Consolidates under Brockman, pre-IPO. AI-RTZ #1189 AI: Reset to Zero",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:dfff0c98e213ca6c8d1eac2e6b4e47a1d882b4e1eeead93677a916cbe844a3c1",
-        "label": "Tencent-Backed Enflame Lines Up A STAR Market IPO - Finimize",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Finimize",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNY3Axa0V2TFFuek5zVUVOYU1EVWJMZE41UmNqMGlCMHc0RXV6VlllalRabjBHWG1fY3hkZ2NFQkxYbFJkQnBjYTVuci0zLUF1ZFpNMjFqMkxja1RoaW5VcVhPTkFhdmtIWnhKenUtSnlmdEhnSDJsemQycFhRV3k4MC1vSGs?oc=5",
-        "date": "Tue, 25 Aug 2026 00:15:29 GMT",
-        "summary": "Tencent-Backed Enflame Lines Up A STAR Market IPO Finimize",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f7b7142625936bb6f1c438b1b631c5c6ccb454bae6d0874cb7d8db302efa67cc",
-        "label": "Amazon\u2019s AWS Is Booming and Its Free Cash Flow Is Negative. Here\u2019s Where the Stock Could Go - TIKR.com",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "TIKR.com",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYWNnRWxYeUNTazIxSW5zS3Y1eUJ4R2dScWVSVGhlSUlia01oVnlhbmRVYy1PeEZWakp5RzhSSEhBMjZMcHFaeWZTYTczTkJ0N1AtQ2pZemtCMXZ0ZmMwa3g3b0pCNFNteEhEeVJkRVprc1NTX1h6a0hocTEwTno1N2w3OFplRFNkMjVMX0ZVdkVkakFKUUM2bkhRN3AxZlhsTmJsVFJwZWQ4N2Y4Tktuc1lXUGo?oc=5",
-        "date": "Tue, 25 Aug 2026 00:04:34 GMT",
-        "summary": "Amazon\u2019s AWS Is Booming and Its Free Cash Flow Is Negative. Here\u2019s Where the Stock Could Go TIKR.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:258533fd988ec6df79a2810e2203e0b35b293055c278f5cd3584b8ac068e3574",
-        "label": "OpenAI CFO Tells Staff IPO Is Coming in 2027 or Sooner, Framing Listing as 'Another Fundraise' - finance.biggo.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE05eWdrd1UtU2NXRUFWd0FGdHhtSFFzOVZCSU9iTTZYdk44V3J5N293NmhNZmV4TFhCazhFSVdPRzNvelhQN2FPR2lGTjc1MnU3bloyRTZ4QnJpWElIWVdlNmRyWkdmUjBnOHRtaDNJVDJ2ZjJiQ1E?oc=5",
-        "date": "Mon, 24 Aug 2026 18:45:00 GMT",
-        "summary": "OpenAI CFO Tells Staff IPO Is Coming in 2027 or Sooner, Framing Listing as 'Another Fundraise' finance.biggo.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d1e2a1ab6e70d42ff0dfb190464b4f5b7102f35882a6d3f1aec231878408301c",
-        "label": "OpenAI\u2019s CFO Just Told Employees the IPO Is Coming in 2027 or Sooner - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQczlocURWX2dnbHpHalZIOGtsT0RJdTBheThhWU5NQ1RGTXY1a3NOZ3lxeHl6UUdJSVhXWXAzQmNmMFhnYjNzbWlNT0pDYUxHNEpjaDVhYWtvSkJOcnd0Unl6SzJjWUtOMVRwSGZ5LTk4d2NWS2NqUmd3cWVxc1RNcVpkYjFRSjc3VG5FZTV2RUx5cWZ5QkczeDhB?oc=5",
-        "date": "Mon, 24 Aug 2026 13:50:36 GMT",
-        "summary": "OpenAI\u2019s CFO Just Told Employees the IPO Is Coming in 2027 or Sooner Yahoo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a40669d7824b0c3734829d1df67e92472f5bc4b08f9404407b6822e0aa97d45d",
-        "label": "Nvidia Fires a $7 Billion Warning Shot at OpenAI, DeepSeek and Kimi With Poolside Deal: Report (UPDATED) - Yahoo Finance",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdExyWEtybm9lYnpXNjlSQXlTOVZtLXFPRl83Y3lram02UlNmSGFrUlB2azJvUmp3Q1d3MU5QQTBUUHU1dGhkTzlhZjNHSGVycEZjRG1LYXlLMk1PSmpvbkhEZVdMTFlLQjNRa0lJcTg0Ymp6U0ZsQTlKOXJwQVJGaWUwYzZmRXo3TjN2b2FkWEtxQXdldkZ4MHpzVQ?oc=5",
-        "date": "Mon, 24 Aug 2026 13:17:18 GMT",
-        "summary": "Nvidia Fires a $7 Billion Warning Shot at OpenAI, DeepSeek and Kimi With Poolside Deal: Report (UPDATED) Yahoo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e2ffe7f04adb0aeb630736c4c2e2a0b4f9d89fb1e419d094539c24d37a8dce63",
-        "label": "Nvidia Fires a $7 Billion Warning Shot at OpenAI, DeepSeek and Kimi With Poolside Deal: Report (UPDATED) - Benzinga",
-        "kind": "evidence",
-        "category": "General AI capital",
-        "source": "Benzinga",
-        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNLVNLVjRGZ3lWZnlMdG1XbkVNLTFCcDZQY1RxVGFxX0NGYmd1UXdtN2lQX0RJT0l5c216bjhuUTJReXpsMF90Nmx2bFZVNG1sT2JWNTh4bGs2ek5KR1Q3eFZRLXJEVzZCb19YV0dqSmhVb3c3MUNxcWMwS0c2SzRGM00wbExmcE5taTllWU1CUFl5bmlMLTBEcUZZXzVRNU1NeF9ETHV3?oc=5",
-        "date": "Mon, 24 Aug 2026 13:17:00 GMT",
-        "summary": "Nvidia Fires a $7 Billion Warning Shot at OpenAI, DeepSeek and Kimi With Poolside Deal: Report (UPDATED) Benzinga",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:49f6a45b32e974102ecfbe0be78e3a89816c879234d2190848745ce9581fccc7",
-        "label": "Buying homes in Bay Area with pre-IPO OpenAI stock? New real estate trend going viral in San Francisco - ABC7 Bay Area",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "ABC7 Bay Area",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMkUtSlJWZk9lak9NMGgwT3huMUZlRDBXZU52VTEtU3VxQ0E4Y3VHWmlVT20tZWVTM2dvTVlfVE1NTmd6dnRNS09EbTdNXzdraVRUM3hHdUtWUWctVmtUM1Z3TjM4ZjBxZ0FZVHZVTFhsNTdwWFpkdkdFVzZZUkMyLTl6NWlWSE5TbG9ON1BlQXRwRG1XTkp4UWJMbzZRNy12SlNCU2U0aFFQUWRkMzhvaDF5TE80UVN1dURDVVd5M2RwenpD0gHKAUFVX3lxTE13RWRRWk90LTRtRE9nY2RDSEN3aWVfbE01YXpJUWhPa0FPUEJ6OGczNWhQb1BoOGlFdWNESnI0Y2dTajFOOXlJOVZYTHpGRTJLcmtScUhIS0g0X0txTTVFSFl5ajVzS0M4WmdaYnk1dlpIeE9PdVkwbGdRWjNVem9mYjE1WFVLZXBOanJtQm1rQ1AyM1N0QTBTQ1o4ZlVyamNYeUFqc2JQaXNhM3V6Z2NqdHd5a2RUMlFKYTdtQ2EyMG1Ielh6RFRmY0E?oc=5",
-        "date": "Fri, 03 Jul 2026 07:00:00 GMT",
-        "summary": "Buying homes in Bay Area with pre-IPO OpenAI stock? New real estate trend going viral in San Francisco ABC7 Bay Area",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:dc5c233d89429d4a8b366612dd258fb9063d3726fec23ef43f4d74447cfeb0b7",
-        "label": "Opening Day: Lyntris lags in debut, OpenAI reaffirms 2027 IPO plans - TipRanks",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "TipRanks",
-        "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNb3gxOE1CbDZ5bGFnZWFWUzVCQkFxRUF3N2NKMEwxV1dGTzc4bVgwTkJibms5blo0OEtwTmpLU0dUSUV0UWdXb2lxLTBXa01COUlZTkFvMk5DYmkzT3NFa1RyZ05GOU9pcXJ6aDFZZUU0TDYyeTJGTnN0dllhQnctejlBYnZZSFVMNlFmLW9XQlgzcnJ2SHJnalowMURtcVo3cXUzekhmbnE5T0pDc2lkT0JPTDJtRjdTZUd3YThfWTU3blZnMW9HcGRfZ1VzMW1zeTlOd25VdDhvVHY3UTVveFhHZ2FXdFhqNlVzTnF4YXFZZ3Et?oc=5",
-        "date": "Mon, 24 Aug 2026 15:59:49 GMT",
-        "summary": "Opening Day: Lyntris lags in debut, OpenAI reaffirms 2027 IPO plans TipRanks",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f9d5892a812c64fbbd50331370cd4103703ded8211035f9314c6a3f1568b0eae",
-        "label": "OpenAI IPO Wants $1 Trillion; Its CEO Just Admitted His Disruption Timeline Was Wrong - Tech Times",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Tech Times",
-        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPRndZanp3YmlxUEZLd1hXejBxSnMyNklMeU1fYWhzRVF3aEUtdnhwbm0wXzJ5T1hxTE05a1ZSdlZNd25LaUoxTWFwQkM1YjgyMTFJNHRWSlV5QzlVaUVkNkRJc3RTcUM2YUdEVm1CNVdKMnVLTkhKYklmMVg0eVJPSGZ4bkVEV0VKRnlTSFV2UW1jTlZyaTAwN0c4X3B6RmR3T0NrallEdHBaYkM0NGM3djZXR0ZiTGJCOFpOVkNneGVKbEJTU0daOHNPRUhEWXFxNFJTYQ?oc=5",
-        "date": "Mon, 24 Aug 2026 14:43:01 GMT",
-        "summary": "OpenAI IPO Wants $1 Trillion; Its CEO Just Admitted His Disruption Timeline Was Wrong Tech Times",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f7032f3185acc816cc05b826678adb1a4d4871164fc7222af9118ee5580047a8",
-        "label": "OpenAI\u2019s CFO Just Told Employees the IPO Is Coming in 2027 or Sooner - 24/7 Wall St.",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdERmeTlEelBRYmtIWDJtd0h0cm9heEZEZlJNNy1yaXVjb21tcjdud1dfUVdZSzR6azh3TWRxYUoxMkcwTjcxckxUM3JiTlhzOUxkZGMxNGQ3YWw4QVdLNHptcnROOVlUekNzYXlOWHRKaXVBQU9ZQjFCSDU1N3FLT045VkFCdk93M1VlZXVSbGdjQkZHTjRwcVh0UVgtd0hwQmd1VFJDM2pPT1lYRExObw?oc=5",
-        "date": "Mon, 24 Aug 2026 13:50:36 GMT",
-        "summary": "OpenAI\u2019s CFO Just Told Employees the IPO Is Coming in 2027 or Sooner 24/7 Wall St.",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c5f73d244b1227ebc72af40c0731cf4869fc824599ad9a3601fb25ad199284e8",
-        "label": "Anthropic Is Chasing a $2 Trillion IPO. Its Most Powerful AI Model Is Raising a Big Red Flag - 24/7 Wall St.",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "24/7 Wall St.",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPekVvOGdxRFdLb0JUYV9iQjNvMUJzVGRIQnhhRkNYZHRMNDJtaGVsM2hybWNmLThSV2hYeXBnbXFuRG5zV01nS3pQbXdLVWJaU1c1RmtLbzFxODJIMlVXb1VUeXlaWUc1WjJuNFhpRnA3UEg2eGc3aXhGMVI1ODJOYTh6V08zNzE0ZHZxT0EyRXIxOW0yZnNDZGtyN2dXeUNDeGgyQzhyNW5jUWJHX3Z2WDR6TzBLbmU3Tzk3WGoyclZyNTJIV0kzUW1USHBYcWM?oc=5",
-        "date": "Mon, 24 Aug 2026 12:47:09 GMT",
-        "summary": "Anthropic Is Chasing a $2 Trillion IPO. Its Most Powerful AI Model Is Raising a Big Red Flag 24/7 Wall St.",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0d3567cdeb08f9e73ff4023b6429d340380740774d97c5a3b0ef612ab069b0a1",
-        "label": "OpenAI's IPO Countdown Gets a $7 Billion Boost - cheddar.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "cheddar.com",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRDBtd09ZQ25XcVVEc0FTRnByME9LeXRzWV9wd25NWFJxRHpDTUU1cFQtSzhuaVBnTTREMU4xNTM1NmVqM1ZmblRjREdmQ1k4Z0gxbXFsaFdkeXNna2FnUlBpRno2OTlDLUJWbVhweFBUWXJoY1RmMml0M3k2OC1QYQ?oc=5",
-        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
-        "summary": "OpenAI's IPO Countdown Gets a $7 Billion Boost cheddar.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ed9de7dcbcc4bbeaa119b03947eca93a97c37895b0e6fa2bf4924259e32f50b0",
-        "label": "Anthropic Clears Major IPO Hurdle As US Lifts Export Controls On Claude AI Fable, Mythos Models - Stocktwits",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Stocktwits",
-        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOU1lBaE1vZ2ZYUExkM08zU2VHNFBGU1Zzc2UzblBvUktnX1MtZFgtM1lKcThYVnJVUEZWeHR4ZEJmcDFtN3ZLUTRtbGEtbDFrbDZ2cmh3NVBwMWY1YnVTMGhTUVI4cFBCUW5HMXlVV0twVHVfZGdtRmt3d3dneWRhcE9jQXYwUHVkamNxaFlkcTFaYjFXbU9nMzAwamZOU1pvLU95QWk2QUZpNzh1U3VfakwybDdNUEtqa1VtUDJPeEt1VTMwcGZjYzZqX3hvMlc0bUlDNkxha044eXY2YUdBai12MjdoS2Rtc3duSFJ1cw?oc=5",
-        "date": "Sun, 23 Aug 2026 15:09:07 GMT",
-        "summary": "Anthropic Clears Major IPO Hurdle As US Lifts Export Controls On Claude AI Fable, Mythos Models Stocktwits",
-        "score": 4,
-        "weight": 1
       }
     ],
     "edges": [
+      {
+        "source": "Nvidia",
+        "target": "Anthropic",
+        "type": "INVESTS_IN",
+        "weight": 1,
+        "mentions": 1
+      },
       {
         "source": "Alphabet",
         "target": "Amazon",
@@ -13657,6 +13752,13 @@
       {
         "source": "X (Twitter)",
         "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Oracle",
+        "target": "evidence:aac7618f31751d09e61e69c11a2af73d1b224e625583210bc5928b580ebb15bb",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -15203,6 +15305,48 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:1d91175f9020f801ab7f78eb395682b7fba70424974d23c6c4d660b2babbd7df",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:1d91175f9020f801ab7f78eb395682b7fba70424974d23c6c4d660b2babbd7df",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:1d91175f9020f801ab7f78eb395682b7fba70424974d23c6c4d660b2babbd7df",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:4c753cbeb7ae699cba1cdc332dbff5cfc66af6b4adf982ca144648e30343fcb4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:4c753cbeb7ae699cba1cdc332dbff5cfc66af6b4adf982ca144648e30343fcb4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:4c753cbeb7ae699cba1cdc332dbff5cfc66af6b4adf982ca144648e30343fcb4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:b9b3015b58832fb276d517bf2d1e61ea902b0b5719bfcfd798ada0960a0dc164",
         "type": "EVIDENCE",
         "weight": 1,
@@ -15939,6 +16083,104 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:2938a0f221a458b565885239215dfec7e39e7dff479c2538ffc7d69557a6534a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:2938a0f221a458b565885239215dfec7e39e7dff479c2538ffc7d69557a6534a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:bc1dd1d4a75088e66d92396a682435a2dccc43feca51fc896ab61f33329fa0ba",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:bc1dd1d4a75088e66d92396a682435a2dccc43feca51fc896ab61f33329fa0ba",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:20f7dc605d91327a194894e4c3e0eb236d2669028976efe71ea4283fd6cb9805",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:20f7dc605d91327a194894e4c3e0eb236d2669028976efe71ea4283fd6cb9805",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:1729f78d0d5773edb0c1a6a9f360a08f3438427a7955977ca61c2c7d06ef221e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:1729f78d0d5773edb0c1a6a9f360a08f3438427a7955977ca61c2c7d06ef221e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:ed8aafd55fbefae3ead90a42a12485ff1c9443c22de7d776a66e8d8bb370435d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:ed8aafd55fbefae3ead90a42a12485ff1c9443c22de7d776a66e8d8bb370435d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:acb7a363cfa98172eeb65f2019e27715a1f23a2e6594fd8a2e9103f2aa08f649",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:acb7a363cfa98172eeb65f2019e27715a1f23a2e6594fd8a2e9103f2aa08f649",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:e228945a769e0181a2afcc93cfd7d05e6f61eb0b4694871f98cc84bb99a1e76b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:e228945a769e0181a2afcc93cfd7d05e6f61eb0b4694871f98cc84bb99a1e76b",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -18751,6 +18993,62 @@
         "mentions": 1
       },
       {
+        "source": "Tencent",
+        "target": "evidence:e528954f7dcc190cb11f718cec55d5aa8d4185600cc33806de5d1e98c7326853",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:ac1e0ce7df47cbd84d109370d09203e568eee9e1c35e44b9ce9cd938abe9661a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:8d011684a66adcebe799eb59c06b003e1d933bec7d902952cf65e67c0f0aeafb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:c7ce3efe31197b86c6460aa33b521a3c116065df7a2437cccda8a7b1fc4fd383",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:81c330a9a1d29208317642e3e7fdb3b29556cf695099fbfe2a156b9234f8876a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:2769db9dda7e9dec92cd471727249b00592580ec2edcf0de626e020a7ea72b59",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:764fd4506343cdd145f3ec53679d340f7cc1e2d93aa7c3b94dfaf0bfee64f744",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:016a0eadf8ca9e1288c42fcd9df24c45a4d2656190d49d1f9631fcf478978999",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alphabet",
         "target": "evidence:8fbcf00385f24fda6f4ac7ecf37384fd38c0e44bf999ea46aae11005ac9148d1",
         "type": "EVIDENCE",
@@ -20776,174 +21074,6 @@
       {
         "source": "Anthropic",
         "target": "evidence:d524bf81bd866b1a2a877ace9bea8242bafb2b74b23f7ea1bd46d3cc15d1689f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:59739ebef88bbfabd173b79e90d869495faa23d8abbb18cc6fac74eb9f3ee19b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:d82aac28f7a755eb5d4c57873bd0131852930f2835d25c10feff0d22765e042d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:d648e092dadbe63f4c7ac0b943969858268bd486e0c5849d9143dd48686796af",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:e696b5af85d8fcccf4ca6558396d2e702714ec345216ef9427a8aec88f2a86ad",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:4fbbbfb1aa862dbfe3c83b6c114d0ef72ef419b679ea05efb19061d02683a057",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Tencent",
-        "target": "evidence:dfff0c98e213ca6c8d1eac2e6b4e47a1d882b4e1eeead93677a916cbe844a3c1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Amazon",
-        "target": "evidence:f7b7142625936bb6f1c438b1b631c5c6ccb454bae6d0874cb7d8db302efa67cc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:258533fd988ec6df79a2810e2203e0b35b293055c278f5cd3584b8ac068e3574",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:d1e2a1ab6e70d42ff0dfb190464b4f5b7102f35882a6d3f1aec231878408301c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:a40669d7824b0c3734829d1df67e92472f5bc4b08f9404407b6822e0aa97d45d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:a40669d7824b0c3734829d1df67e92472f5bc4b08f9404407b6822e0aa97d45d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:a40669d7824b0c3734829d1df67e92472f5bc4b08f9404407b6822e0aa97d45d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:a40669d7824b0c3734829d1df67e92472f5bc4b08f9404407b6822e0aa97d45d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:e2ffe7f04adb0aeb630736c4c2e2a0b4f9d89fb1e419d094539c24d37a8dce63",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Moonshot AI",
-        "target": "evidence:e2ffe7f04adb0aeb630736c4c2e2a0b4f9d89fb1e419d094539c24d37a8dce63",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:e2ffe7f04adb0aeb630736c4c2e2a0b4f9d89fb1e419d094539c24d37a8dce63",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:e2ffe7f04adb0aeb630736c4c2e2a0b4f9d89fb1e419d094539c24d37a8dce63",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:49f6a45b32e974102ecfbe0be78e3a89816c879234d2190848745ce9581fccc7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:dc5c233d89429d4a8b366612dd258fb9063d3726fec23ef43f4d74447cfeb0b7",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:f9d5892a812c64fbbd50331370cd4103703ded8211035f9314c6a3f1568b0eae",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:f7032f3185acc816cc05b826678adb1a4d4871164fc7222af9118ee5580047a8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:c5f73d244b1227ebc72af40c0731cf4869fc824599ad9a3601fb25ad199284e8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:0d3567cdeb08f9e73ff4023b6429d340380740774d97c5a3b0ef612ab069b0a1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:ed9de7dcbcc4bbeaa119b03947eca93a97c37895b0e6fa2bf4924259e32f50b0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -34459,7 +34589,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.88,
-      "mentions": 4,
+      "mentions": 5,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-09-03)",
@@ -34474,7 +34604,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.82,
-      "mentions": 4,
+      "mentions": 5,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-09-03)",
@@ -34489,7 +34619,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 4,
+      "mentions": 12,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "NVIDIA SEC filing: 8-K (2026-09-03)",
@@ -34509,6 +34639,156 @@
       "evidence_text": "These forward-looking statements are not guarantees of future performance and speak only as of the date hereof, and, except as required by law, NVIDIA disclaims any obligation to update these forward-looking statements to reflect future events or circumstances.",
       "title": "NVIDIA SEC filing: 8-K (2026-09-03)",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Oracle",
+      "target_entity": null,
+      "amount": 4000000000000.0,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "4 Table of Contents ORACLE CORPORATION CONDENSED CONSOLIDATED S TATEMENTS OF CASH FLOWS For the Three Months Ended August 31, 2026 and 2025 (Unaudited) Three Months Ended August 31, (in millions) 2026 2025 Cash flows from operating activities: Net income $ 4,760 $ 2,927 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation 3,156 1,351 Amortization of intangible assets 202 420 Deferred income taxes ( 73 ) 515 Stock-based compensation 1,127 1,124 Other, net ( 4 ) 164 Changes in operating assets and liabilities: Increase in trade receivables, net ( 1,009 ) ( 245 ) Decrease in prepaid expenses and other assets 114 59 Decrease in accounts payable and other liabilities ( 1,076 ) ( 334 ) Increase (decrease) in income taxes payable 546 ( 391 ) Increase in deferred revenues from customer prepayments with significant financing component 11,363 \u2014 Increase in other deferred revenues 3,997 2,550 Net cash provided by operating activities 23,103 8,140 Cash flows from investing activities: Purchases of marketable securities and other investments ( 306 ) ( 471 ) Proceeds from sales and maturities of marketable securities and other investments 225 255 Capital expenditures ( 28,499 ) ( 8,502 ) Net cash used for investing activities ( 28,580 ) ( 8,718 ) Cash flows from financing activities: Proceeds from issuances of common stock via at-the-market program, net of issuance costs 19,909 \u2014 Net proceeds from employee stock programs 41 1,153 Payments of dividends to stockholders ( 1,565 ) ( 1,413 ) Repayments of commercial paper, net \u2014 ( 238 ) (Repayments of) proceeds from short-term financing related to capital expenditures, net ( 830 ) 1,958 Repayments of senior notes, term loan credit agreements and other borrowings ( 4,202 ) ( 1,052 ) Other financing activities, net ( 242 ) ( 198 ) Net cash provided by financing activities 13,111 210 Effect of exchange rate changes on cash, cash equivalents and restricted cash 11 27 Net increase (decrease) in cash, cash equivalents and restricted cash 7,645 ( 341 ) Cash, cash equivalents and restricted cash at beginning of period 31,289 10,786 Cash, cash equivalents and restricted cash at end of period $ 38,934 $ 10,445 Non-cash investing activities: Unpaid capital expenditures $ 6,247 $ 4,010 See notes to condensed consolidated financial statements.",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Oracle",
+      "target_entity": null,
+      "amount": 13000000000000.0,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "The proceeds from offerings under the ATM Program will be used for general corporate purposes, which may include capital expenditures, repayment of 13 Table of Contents ORACLE CORPORATION NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS\u2014(Continued) August 31, 2026 (Unaudited) indebtedness, future investments or acquisitions and payment of cash dividends on or repurchases of our common stock.",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 8.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 2,
+      "review_status": "flagged",
+      "evidence_text": "Liquidity and Capital Resources (Dollars in millions) August 31, 2026 Change May 31, 2026 Working capital $ 8,116 69% $ 4,803 Cash, cash equivalents and marketable securities $ 37,077 16% $ 31,894 Working capital : The increase in working capital as of August 31, 2026 in comparison to May 31, 2026 was primarily due to favorable impacts from net income; $19.9 billion of cash proceeds from the issuance of common stock via the ATM Program (defined below under Recent Financing Activities), net of issuance costs; and $11.4 billion of customer prepayments with a significant financing component, partially offset by $28.5 billion of cash used for capital expenditures; $4.6 billion of long-term borrowings that were reclassified to current liabilities; and $1.6 billion of cash used to pay dividends to our preferred and common stockholders, in each case during the first quarter of fiscal 2027.",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 23100000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "The increase in cash, cash equivalents and marketable securities as of August 31, 2026 in comparison to May 31, 2026 was primarily due to $23.1 billion of cash inflows from our operations, which includes $11.4 billion of customer prepayments with a significant financing component; and $19.9 billion of cash proceeds from the issuance of common stock via the ATM Program, net of issuance costs, partially offset by $28.5 billion of cash used for capital expenditures; $3.1 billion of cash used for scheduled repayments of debt; $2.6 billion of restricted cash that was reclassed to prepaid expenses and other current assets; $1.6 billion of cash used to pay dividends to our common and preferred stockholders; $1.1 billion of cash used for repayment of commercial paper; $830 million of cash outflows for short-term financing related to capital expenditures, net; and $242 million of cash outflows for other financing activities, net, in each case during the first quarter of fiscal 2027.",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 19900000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Net cash used for investing activities increased by $19.9 billion in the first quarter of fiscal 2027, relative to the first quarter of fiscal 2026, primarily due to a $20.0 billion increase in capital expenditures.",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 12900000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Net cash provided by financing activities increased by $12.9 billion in the first quarter of fiscal 2027, relative to the first quarter of fiscal 2026, primarily due to net proceeds from the issuance of common stock via the ATM Program of $19.9 billion, partially offset by higher repayments of borrowings of $2.9 billion; higher net repayments of short-term financing related to capital expenditures of $2.8 billion; lower net cash proceeds from our employee stock programs of $1.1 billion; and higher dividend payments of $152 million.",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "FREE_CASH_FLOW",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.8,
+      "mentions": 3,
+      "review_status": "flagged",
+      "evidence_text": "Free cash flow : To supplement our statements of cash flows presented on a GAAP basis, we use non-GAAP measures of cash flows to analyze cash flows generated from our operations.",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "FREE_CASH_FLOW",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 23.0,
+      "currency": "USD",
+      "confidence": 0.8,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "We calculate free cash flow as follows: Three Months Ended August 31, (Dollars in millions) 2026 Change 2025 Net cash provided by operating activities $ 23,103 184% $ 8,140 Capital expenditures (28,499 ) 235% (8,502 ) Free cash flow $ (5,396 ) * $ (362 ) Net income $ 4,760 $ 2,927 Net cash provided by operating activities as a percent of net income 485% 278% * Not meaningful Recent Financing Activities : Common Stock : On February 2, 2026, we entered into an equity distribution agreement with certain sales agents party thereto, as amended on June 23, 2026, pursuant to which we may sell shares of our common stock having aggregate sales proceeds of up to $20 billion from time to time through an \u201cat-the-market\u201d offering program (the 34 Table of Contents ATM Program).",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 8500000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "Capital Expenditures : Cash used for capital expenditures increased from $8.5 billion in the first quarter of fiscal 2026 to $28.5 billion in the first quarter of fiscal 2027 primarily due to the expansion of our data centers.",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-09-11",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 2027000000000000.0,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "We expect our capital expenditures in fiscal 2027 to be higher than fiscal 2026 as we increase our existing data center capacity and establish data centers in new geographic locations in order to meet current and expected customer demand for our cloud offerings.",
+      "title": "Oracle SEC filing: 10-Q (2026-09-11)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
       "source": "SEC EDGAR"
     },
     {
@@ -35185,6 +35465,21 @@
       "title": "SpaceX joins the Nasdaq-100 on Tuesday. Crypto already owns the trade - Crypto News",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yYzFJMjhzbENXb2VNenVldFlSaTB6cEJTbURXX2h6QW1sZ1ZDQ215N2szLU1ha2hzaEJpTG5ucWFTa3NsalpieFZ4aUFlTk5VOHd6NWpqVGZoV3Y4QXhkeHFXTHk4alJtWUNBeUJFcFpVYUlEbWIwMFRhTnZ5THM?oc=5",
       "source": "Crypto News"
+    },
+    {
+      "date": "Sat, 12 Sep 2026 03:19:00 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": "Nvidia",
+      "target_entity": "Anthropic",
+      "amount": 10000000000.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Nvidia Eyes Up To $10 Billion Investment in Anthropic IPO as Claude AI Maker Mulls Nearly $100 Billion Raise at $2 Trillion Valuation: Report - TradingView Nvidia Eyes Up To $10 Billion Investment in Anthropic IPO as Claude AI Maker Mulls Nearly $100 Billion Raise at $2 Trillion Valuation: Report TradingView Google News",
+      "title": "Nvidia Eyes Up To $10 Billion Investment in Anthropic IPO as Claude AI Maker Mulls Nearly $100 Billion Raise at $2 Trillion Valuation: Report - TradingView",
+      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxQQlBrLVEtcTlLOU56RVBmRmR1UE4wLVUxSHozekZJczRHMVVXcXNLQzJoNzl2NVpyMGoxc01WY25ZVXBBWkQ1Uk11UFJUbzllMDF4dFlBTGlnNy1ILWw1bWE5VC16bU94cGRtTkFMYUFQZHFoYnFLc0MtdlhjdkkwcUxtOWduUEJHNnd5d2M3czQ0NlVSb1RfZWVyVHZHV2ZpQlliYmpzLXNvNDB4azlIb0dIclI2Q0tIUjBwRUh3MFBEbkFwUjJUVUF4M0lackRMMmZIVVZjVnBpMnBTaWM5Q3ZRX1ZvRkNHaVYzLXRVeWhHRm1GV3B0RHIwajJuTFctWk51cVRjMlc3Y040VWYyOGpmRXFOb0xfcU9PckRIa3Fhdw?oc=5",
+      "source": "TradingView"
     },
     {
       "date": "Sat, 18 Jul 2026 07:00:00 GMT",
@@ -36359,36 +36654,36 @@
   ],
   "collector_runs": [
     {
-      "id": 739,
+      "id": 743,
       "collector": "company-economic-news",
-      "started_at": "2026-09-11T14:25:07+00:00",
-      "completed_at": "2026-09-11T14:25:28+00:00",
+      "started_at": "2026-09-12T13:36:30+00:00",
+      "completed_at": "2026-09-12T13:37:08+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 27,
+      "items_new": 24,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1dddaf8e-ce18-48d9-a181-82571c1437a5"
+      "collection_execution_id": "a7a88045-9f77-4e08-996d-1cb1b56b3187"
     },
     {
-      "id": 740,
+      "id": 744,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-09-11T14:25:29+00:00",
-      "completed_at": "2026-09-11T14:25:29+00:00",
+      "started_at": "2026-09-12T13:37:08+00:00",
+      "completed_at": "2026-09-12T13:37:09+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 2,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1dddaf8e-ce18-48d9-a181-82571c1437a5"
+      "collection_execution_id": "a7a88045-9f77-4e08-996d-1cb1b56b3187"
     },
     {
       "id": 56,
@@ -36407,26 +36702,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 738,
+      "id": 742,
       "collector": "google-news-rss",
-      "started_at": "2026-09-11T14:25:03+00:00",
-      "completed_at": "2026-09-11T14:25:07+00:00",
+      "started_at": "2026-09-12T13:36:19+00:00",
+      "completed_at": "2026-09-12T13:36:30+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 16,
+      "items_new": 14,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1dddaf8e-ce18-48d9-a181-82571c1437a5"
+      "collection_execution_id": "a7a88045-9f77-4e08-996d-1cb1b56b3187"
     },
     {
-      "id": 741,
+      "id": 745,
       "collector": "sec-edgar",
-      "started_at": "2026-09-11T14:25:30+00:00",
-      "completed_at": "2026-09-11T14:25:32+00:00",
+      "started_at": "2026-09-12T13:37:09+00:00",
+      "completed_at": "2026-09-12T13:37:12+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 1,
@@ -36436,7 +36731,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1dddaf8e-ce18-48d9-a181-82571c1437a5"
+      "collection_execution_id": "a7a88045-9f77-4e08-996d-1cb1b56b3187"
     },
     {
       "id": 57,
@@ -36456,12 +36751,12 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1027,
-  "mention_count": 8385,
+  "event_count": 1038,
+  "mention_count": 8406,
   "review_counts": {
     "provisional": 0,
-    "confirmed": 301,
-    "flagged": 726,
+    "confirmed": 304,
+    "flagged": 734,
     "flagged_retry_pending": 0
   },
   "feature_family": [
@@ -39294,6 +39589,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-22ab2918ae1e914f",
-  "database_sha256": "22ab2918ae1e914f1744b00c70962178142841e5baa6ed857b307e87ec43210d"
+  "database_state_version": "v1-75cfd544eb4a20a1",
+  "database_sha256": "75cfd544eb4a20a1bed2ac8372dcf2b1a7652d7ff24531e39701582a6e3629a6"
 }
