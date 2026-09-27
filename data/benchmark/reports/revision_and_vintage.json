@@ -14,31 +14,31 @@
   "housing-credit": "2011-01-31"
  },
  "reported_run_ids": [
-  "5ec2479a8145609a804bda5b6a77a24f4ee150871c8b8f0b2a68ae158b5d051d",
-  "4a5d58e67608440f26578766cf995aa6aedbe94b3c94fe33211e4147a9143571",
-  "2402a7f0941d0921fc795f42477e1c0247351b8880312b7c2194cdf868250f53",
-  "1dfbf5c4724a26883a8cd6d2979762deb03c4476b5e53671dd8a8d0c91f8d15c",
-  "1863574ebc18bb27a02fe5409217de89b8296e275e47382f5232ee9668948348"
+  "f7703080d230d83610a25c5e2fc04b2a18a9d4be30f03866542d913bd17236fc",
+  "79731fd5c59fe0ad2160f6fbb88efb4cb63dab5e6544c221890126fb3a793561",
+  "6fcf549ad74dba1c7b18d5de683a29a9a0295b083c8cb4e566981bc2c078dec8",
+  "4f17b8b282531e36d46eb4d28e36a30b68cb5f5b62ba4c8856b6746dfed6c05b",
+  "5f0d0b8f25e10a2642638fd0fb16e23faa3d4d2aa6beeac77f8b89962c0d1a25"
  ],
  "accepted_run_ids": [
-  "4a5d58e67608440f26578766cf995aa6aedbe94b3c94fe33211e4147a9143571",
-  "2402a7f0941d0921fc795f42477e1c0247351b8880312b7c2194cdf868250f53",
-  "1dfbf5c4724a26883a8cd6d2979762deb03c4476b5e53671dd8a8d0c91f8d15c",
-  "1863574ebc18bb27a02fe5409217de89b8296e275e47382f5232ee9668948348"
+  "79731fd5c59fe0ad2160f6fbb88efb4cb63dab5e6544c221890126fb3a793561",
+  "6fcf549ad74dba1c7b18d5de683a29a9a0295b083c8cb4e566981bc2c078dec8",
+  "4f17b8b282531e36d46eb4d28e36a30b68cb5f5b62ba4c8856b6746dfed6c05b",
+  "5f0d0b8f25e10a2642638fd0fb16e23faa3d4d2aa6beeac77f8b89962c0d1a25"
  ],
  "control_series": {
   "commercial_industrial_loans": [
    {
     "vintage": "point_in_time:2017-01-31",
     "fred_series_id": "BUSLOANS",
-    "run_id": "5ec2479a8145609a804bda5b6a77a24f4ee150871c8b8f0b2a68ae158b5d051d",
+    "run_id": "f7703080d230d83610a25c5e2fc04b2a18a9d4be30f03866542d913bd17236fc",
     "in_accepted_run": false,
     "observations": 60
    },
    {
     "vintage": "point_in_time:2026-08-01",
     "fred_series_id": "BUSLOANS",
-    "run_id": "4a5d58e67608440f26578766cf995aa6aedbe94b3c94fe33211e4147a9143571",
+    "run_id": "79731fd5c59fe0ad2160f6fbb88efb4cb63dab5e6544c221890126fb3a793561",
     "in_accepted_run": true,
     "observations": 54
    }
@@ -47,23 +47,23 @@
    {
     "vintage": "as_published",
     "fred_series_id": "BAA10Y",
-    "run_id": "1863574ebc18bb27a02fe5409217de89b8296e275e47382f5232ee9668948348",
+    "run_id": "4f17b8b282531e36d46eb4d28e36a30b68cb5f5b62ba4c8856b6746dfed6c05b",
     "in_accepted_run": true,
-    "observations": 96
+    "observations": 27
    },
    {
     "vintage": "as_published",
     "fred_series_id": "BAA10Y",
-    "run_id": "1dfbf5c4724a26883a8cd6d2979762deb03c4476b5e53671dd8a8d0c91f8d15c",
+    "run_id": "5f0d0b8f25e10a2642638fd0fb16e23faa3d4d2aa6beeac77f8b89962c0d1a25",
     "in_accepted_run": true,
-    "observations": 27
+    "observations": 96
    }
   ],
   "electricity_price": [
    {
     "vintage": "as_published",
     "fred_series_id": "APU000072610",
-    "run_id": "4a5d58e67608440f26578766cf995aa6aedbe94b3c94fe33211e4147a9143571",
+    "run_id": "79731fd5c59fe0ad2160f6fbb88efb4cb63dab5e6544c221890126fb3a793561",
     "in_accepted_run": true,
     "observations": 53
    }
@@ -72,7 +72,7 @@
    {
     "vintage": "as_published",
     "fred_series_id": "WTISPLC",
-    "run_id": "1863574ebc18bb27a02fe5409217de89b8296e275e47382f5232ee9668948348",
+    "run_id": "5f0d0b8f25e10a2642638fd0fb16e23faa3d4d2aa6beeac77f8b89962c0d1a25",
     "in_accepted_run": true,
     "observations": 96
    }
@@ -81,35 +81,35 @@
    {
     "vintage": "as_published",
     "fred_series_id": "FEDFUNDS",
-    "run_id": "1863574ebc18bb27a02fe5409217de89b8296e275e47382f5232ee9668948348",
-    "in_accepted_run": true,
-    "observations": 96
-   },
-   {
-    "vintage": "as_published",
-    "fred_series_id": "FEDFUNDS",
-    "run_id": "1dfbf5c4724a26883a8cd6d2979762deb03c4476b5e53671dd8a8d0c91f8d15c",
+    "run_id": "4f17b8b282531e36d46eb4d28e36a30b68cb5f5b62ba4c8856b6746dfed6c05b",
     "in_accepted_run": true,
     "observations": 27
    },
    {
     "vintage": "as_published",
     "fred_series_id": "FEDFUNDS",
-    "run_id": "2402a7f0941d0921fc795f42477e1c0247351b8880312b7c2194cdf868250f53",
+    "run_id": "5f0d0b8f25e10a2642638fd0fb16e23faa3d4d2aa6beeac77f8b89962c0d1a25",
+    "in_accepted_run": true,
+    "observations": 96
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "6fcf549ad74dba1c7b18d5de683a29a9a0295b083c8cb4e566981bc2c078dec8",
     "in_accepted_run": true,
     "observations": 36
    },
    {
     "vintage": "as_published",
     "fred_series_id": "FEDFUNDS",
-    "run_id": "4a5d58e67608440f26578766cf995aa6aedbe94b3c94fe33211e4147a9143571",
+    "run_id": "79731fd5c59fe0ad2160f6fbb88efb4cb63dab5e6544c221890126fb3a793561",
     "in_accepted_run": true,
     "observations": 55
    },
    {
     "vintage": "as_published",
     "fred_series_id": "FEDFUNDS",
-    "run_id": "5ec2479a8145609a804bda5b6a77a24f4ee150871c8b8f0b2a68ae158b5d051d",
+    "run_id": "f7703080d230d83610a25c5e2fc04b2a18a9d4be30f03866542d913bd17236fc",
     "in_accepted_run": false,
     "observations": 60
    }
@@ -118,7 +118,7 @@
    {
     "vintage": "point_in_time:2017-01-31",
     "fred_series_id": "PNFI",
-    "run_id": "5ec2479a8145609a804bda5b6a77a24f4ee150871c8b8f0b2a68ae158b5d051d",
+    "run_id": "f7703080d230d83610a25c5e2fc04b2a18a9d4be30f03866542d913bd17236fc",
     "in_accepted_run": false,
     "observations": 60
    }
@@ -127,7 +127,7 @@
    {
     "vintage": "point_in_time:2023-01-31",
     "fred_series_id": "PCEC96",
-    "run_id": "2402a7f0941d0921fc795f42477e1c0247351b8880312b7c2194cdf868250f53",
+    "run_id": "6fcf549ad74dba1c7b18d5de683a29a9a0295b083c8cb4e566981bc2c078dec8",
     "in_accepted_run": true,
     "observations": 36
    }
@@ -136,7 +136,7 @@
    {
     "vintage": "as_published",
     "fred_series_id": "DGS10",
-    "run_id": "1dfbf5c4724a26883a8cd6d2979762deb03c4476b5e53671dd8a8d0c91f8d15c",
+    "run_id": "4f17b8b282531e36d46eb4d28e36a30b68cb5f5b62ba4c8856b6746dfed6c05b",
     "in_accepted_run": true,
     "observations": 27
    }
@@ -145,7 +145,7 @@
    {
     "vintage": "point_in_time:2023-01-31",
     "fred_series_id": "UNRATE",
-    "run_id": "2402a7f0941d0921fc795f42477e1c0247351b8880312b7c2194cdf868250f53",
+    "run_id": "6fcf549ad74dba1c7b18d5de683a29a9a0295b083c8cb4e566981bc2c078dec8",
     "in_accepted_run": true,
     "observations": 36
    }
