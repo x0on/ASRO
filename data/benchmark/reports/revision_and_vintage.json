@@ -14,31 +14,31 @@
   "housing-credit": "2011-01-31"
  },
  "reported_run_ids": [
-  "0eae9c6a4968066daa780044e328cd63b5f80483b28eaabd67b0923b357fce6a",
-  "0c55280f64406776d92b906101d9e5b118c0f875e7197c7ba896844fb66f489b",
-  "0cdb44fae94d3f553e811ccb61adfd213efa42326d2308f5b3d6269edb7a27fc",
-  "3fb08d295797ba50799ba1d8001b577186901298b2ab1627d762c5533d0b4735",
-  "2c3e957f669e685c119eadddcc76290fd4bb386fb96be9f31b219f9403d42ca5"
+  "dfe52982aa23355ce2c80e495d571dbb91b1bf1fdfe70401a67d2b5886a2157f",
+  "bf942aa3eb73a6f46373e27b8cad52f046d5b454e78d73c57ebf7a032a935314",
+  "1781550a506ef5dc9b3d74fbcb0f4f1668decbaf49dbcf4734a4512ec1eb210b",
+  "8480f1fe85c32a14567fe5b724acc5983664e76564fafbfe4cc2cd383e2fe529",
+  "bf559832b0e9ea35868a629c827cbf2702bf2ec9cc3a6bb647b5b5841e4e0000"
  ],
  "accepted_run_ids": [
-  "0c55280f64406776d92b906101d9e5b118c0f875e7197c7ba896844fb66f489b",
-  "0cdb44fae94d3f553e811ccb61adfd213efa42326d2308f5b3d6269edb7a27fc",
-  "3fb08d295797ba50799ba1d8001b577186901298b2ab1627d762c5533d0b4735",
-  "2c3e957f669e685c119eadddcc76290fd4bb386fb96be9f31b219f9403d42ca5"
+  "bf942aa3eb73a6f46373e27b8cad52f046d5b454e78d73c57ebf7a032a935314",
+  "1781550a506ef5dc9b3d74fbcb0f4f1668decbaf49dbcf4734a4512ec1eb210b",
+  "8480f1fe85c32a14567fe5b724acc5983664e76564fafbfe4cc2cd383e2fe529",
+  "bf559832b0e9ea35868a629c827cbf2702bf2ec9cc3a6bb647b5b5841e4e0000"
  ],
  "control_series": {
   "commercial_industrial_loans": [
    {
     "vintage": "point_in_time:2017-01-31",
     "fred_series_id": "BUSLOANS",
-    "run_id": "0eae9c6a4968066daa780044e328cd63b5f80483b28eaabd67b0923b357fce6a",
+    "run_id": "dfe52982aa23355ce2c80e495d571dbb91b1bf1fdfe70401a67d2b5886a2157f",
     "in_accepted_run": false,
     "observations": 60
    },
    {
     "vintage": "point_in_time:2026-08-01",
     "fred_series_id": "BUSLOANS",
-    "run_id": "0c55280f64406776d92b906101d9e5b118c0f875e7197c7ba896844fb66f489b",
+    "run_id": "bf942aa3eb73a6f46373e27b8cad52f046d5b454e78d73c57ebf7a032a935314",
     "in_accepted_run": true,
     "observations": 54
    }
@@ -47,23 +47,23 @@
    {
     "vintage": "as_published",
     "fred_series_id": "BAA10Y",
-    "run_id": "2c3e957f669e685c119eadddcc76290fd4bb386fb96be9f31b219f9403d42ca5",
+    "run_id": "8480f1fe85c32a14567fe5b724acc5983664e76564fafbfe4cc2cd383e2fe529",
     "in_accepted_run": true,
-    "observations": 96
+    "observations": 27
    },
    {
     "vintage": "as_published",
     "fred_series_id": "BAA10Y",
-    "run_id": "3fb08d295797ba50799ba1d8001b577186901298b2ab1627d762c5533d0b4735",
+    "run_id": "bf559832b0e9ea35868a629c827cbf2702bf2ec9cc3a6bb647b5b5841e4e0000",
     "in_accepted_run": true,
-    "observations": 27
+    "observations": 96
    }
   ],
   "electricity_price": [
    {
     "vintage": "as_published",
     "fred_series_id": "APU000072610",
-    "run_id": "0c55280f64406776d92b906101d9e5b118c0f875e7197c7ba896844fb66f489b",
+    "run_id": "bf942aa3eb73a6f46373e27b8cad52f046d5b454e78d73c57ebf7a032a935314",
     "in_accepted_run": true,
     "observations": 53
    }
@@ -72,7 +72,7 @@
    {
     "vintage": "as_published",
     "fred_series_id": "WTISPLC",
-    "run_id": "2c3e957f669e685c119eadddcc76290fd4bb386fb96be9f31b219f9403d42ca5",
+    "run_id": "bf559832b0e9ea35868a629c827cbf2702bf2ec9cc3a6bb647b5b5841e4e0000",
     "in_accepted_run": true,
     "observations": 96
    }
@@ -81,44 +81,44 @@
    {
     "vintage": "as_published",
     "fred_series_id": "FEDFUNDS",
-    "run_id": "0c55280f64406776d92b906101d9e5b118c0f875e7197c7ba896844fb66f489b",
-    "in_accepted_run": true,
-    "observations": 55
-   },
-   {
-    "vintage": "as_published",
-    "fred_series_id": "FEDFUNDS",
-    "run_id": "0cdb44fae94d3f553e811ccb61adfd213efa42326d2308f5b3d6269edb7a27fc",
+    "run_id": "1781550a506ef5dc9b3d74fbcb0f4f1668decbaf49dbcf4734a4512ec1eb210b",
     "in_accepted_run": true,
     "observations": 36
    },
    {
     "vintage": "as_published",
     "fred_series_id": "FEDFUNDS",
-    "run_id": "0eae9c6a4968066daa780044e328cd63b5f80483b28eaabd67b0923b357fce6a",
-    "in_accepted_run": false,
-    "observations": 60
+    "run_id": "8480f1fe85c32a14567fe5b724acc5983664e76564fafbfe4cc2cd383e2fe529",
+    "in_accepted_run": true,
+    "observations": 27
    },
    {
     "vintage": "as_published",
     "fred_series_id": "FEDFUNDS",
-    "run_id": "2c3e957f669e685c119eadddcc76290fd4bb386fb96be9f31b219f9403d42ca5",
+    "run_id": "bf559832b0e9ea35868a629c827cbf2702bf2ec9cc3a6bb647b5b5841e4e0000",
     "in_accepted_run": true,
     "observations": 96
    },
    {
     "vintage": "as_published",
     "fred_series_id": "FEDFUNDS",
-    "run_id": "3fb08d295797ba50799ba1d8001b577186901298b2ab1627d762c5533d0b4735",
+    "run_id": "bf942aa3eb73a6f46373e27b8cad52f046d5b454e78d73c57ebf7a032a935314",
     "in_accepted_run": true,
-    "observations": 27
+    "observations": 55
+   },
+   {
+    "vintage": "as_published",
+    "fred_series_id": "FEDFUNDS",
+    "run_id": "dfe52982aa23355ce2c80e495d571dbb91b1bf1fdfe70401a67d2b5886a2157f",
+    "in_accepted_run": false,
+    "observations": 60
    }
   ],
   "private_fixed_investment": [
    {
     "vintage": "point_in_time:2017-01-31",
     "fred_series_id": "PNFI",
-    "run_id": "0eae9c6a4968066daa780044e328cd63b5f80483b28eaabd67b0923b357fce6a",
+    "run_id": "dfe52982aa23355ce2c80e495d571dbb91b1bf1fdfe70401a67d2b5886a2157f",
     "in_accepted_run": false,
     "observations": 60
    }
@@ -127,7 +127,7 @@
    {
     "vintage": "point_in_time:2023-01-31",
     "fred_series_id": "PCEC96",
-    "run_id": "0cdb44fae94d3f553e811ccb61adfd213efa42326d2308f5b3d6269edb7a27fc",
+    "run_id": "1781550a506ef5dc9b3d74fbcb0f4f1668decbaf49dbcf4734a4512ec1eb210b",
     "in_accepted_run": true,
     "observations": 36
    }
@@ -136,7 +136,7 @@
    {
     "vintage": "as_published",
     "fred_series_id": "DGS10",
-    "run_id": "3fb08d295797ba50799ba1d8001b577186901298b2ab1627d762c5533d0b4735",
+    "run_id": "8480f1fe85c32a14567fe5b724acc5983664e76564fafbfe4cc2cd383e2fe529",
     "in_accepted_run": true,
     "observations": 27
    }
@@ -145,7 +145,7 @@
    {
     "vintage": "point_in_time:2023-01-31",
     "fred_series_id": "UNRATE",
-    "run_id": "0cdb44fae94d3f553e811ccb61adfd213efa42326d2308f5b3d6269edb7a27fc",
+    "run_id": "1781550a506ef5dc9b3d74fbcb0f4f1668decbaf49dbcf4734a4512ec1eb210b",
     "in_accepted_run": true,
     "observations": 36
    }
