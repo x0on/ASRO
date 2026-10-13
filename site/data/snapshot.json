@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T19:49:43.953675+00:00",
+  "generated_at": "2026-10-13T17:37:37.976536+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -15,7 +15,7 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-10-12T19:49:12.916802+00:00",
+    "reading_as_of": "2026-10-13T17:36:47.849601+00:00",
     "support_totals": {
       "risk": 22.1664,
       "safety": 3.4800000000000004
@@ -668,6 +668,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-10-13T17:36:47.849601+00:00",
+      "score": 80.5,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-10-13T17:36:12+00:00",
+      "score": 80.5,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-10-12T19:49:12.916802+00:00",
       "score": 80.5,
@@ -2484,6 +2498,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-10-13T17:36:47.849601+00:00",
+      "score": 80.5,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-10-13T17:36:12+00:00",
+      "score": 80.5,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-10-12T19:49:12.916802+00:00",
       "score": 80.5,
       "label": "HIGH CONVERGENCE",
@@ -2647,7 +2675,7 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-10-12T19:49:43.954959+00:00",
+    "as_of": "2026-10-13T17:37:37.978605+00:00",
     "counts": {
       "pressure": 46,
       "public_exposure": 5,
@@ -3886,7 +3914,7 @@
         "id": "Amazon",
         "label": "Amazon",
         "kind": "company",
-        "weight": 78
+        "weight": 80
       },
       {
         "id": "Alphabet",
@@ -3967,16 +3995,16 @@
         "weight": 7
       },
       {
-        "id": "ByteDance",
-        "label": "ByteDance",
+        "id": "Moonshot AI",
+        "label": "Moonshot AI",
         "kind": "company",
         "weight": 6
       },
       {
-        "id": "Moonshot AI",
-        "label": "Moonshot AI",
+        "id": "ByteDance",
+        "label": "ByteDance",
         "kind": "company",
-        "weight": 5
+        "weight": 6
       },
       {
         "id": "X (Twitter)",
@@ -6778,6 +6806,30 @@
         "date": "Wed, 07 Jan 2026 08:00:00 GMT",
         "summary": "Google's 'Cannibalization' Risk Vs Microsoft's Azure Growth: Expert Explains How AI Answers Could Slash GOOG's Ad Revenue Yahoo Finance",
         "score": 7,
+        "weight": 1
+      },
+      {
+        "id": "evidence:bdd5abd6b008b6852760fb4fab45f25831dd972af0573c69973d3fce552cd314",
+        "label": "As Anthropic and OpenAI are set for IPOs, Broadcom CEO has a message for AI investors: For now, it is sti - The Times of India",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Times of India",
+        "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPSWttb18yVDlOVE92TkY2eEhKQW1wdnRZc2hyUzR1d1QwQ0FYcTlVcHJ6dVdtdmdoRXFINDB5S051VlZDbWE4ZTlHaDg1UU1UeEhMX2RJTFhSOXBQUW9pZ1F5VlphcFdnNk0tUTlMcmZjTlVBeHlDLXlPZjlrbVdMaTl2cGllV3dOX1VKNVBDd1ZiZGFIUW9KZWJPN3Y1Rkt0azJ4SV9UWWgya09JMGhSZG96WDZKV21lMFZmLVJjSkdxeWdSNHZCVVJzS3k5aUVOODlwaGVYVzBReXRWNUsza3NYdXk5a0RBZHVLYnRpQzhaaGVaY052R1NzQTR5ZVVLRExoNEd6dEZIRW5ESGNBM2FDdXlUVVZ5SkpveVYxUlk0MDVkX21Z0gGsAkFVX3lxTE5OUWl3MDBjUmxGOWdrMS1JS0U4ZjBjQ2U5UXpGWHdGQnU3NXZBNjEyZm1BbnNSdmREdnlZb2hqTUVjRmhBcVFvNy1qX2Y2WnREelo4N2F3X0hXZ3VXR2Zhc3YyanFKSFV6NTVzSmx0enFnNmNHeWtIVkdGMFBFU0VuNmk4RGFPaXczNDl3OTJvN2NqVU5jQlN5dHFGclNRQUpjS2wxV3AyMnhULWFDbTRFU2ZjcGloYTYtSUxMNm0tM3JRMWIxdHhQYk94VE96NVlEVW16NFdMNUZKS0ctR3NwbGpfOXNBZDdsVUxnek9MWVJzN2JUZkRFTHE1RjFSbm9pQnpDakR0THlNeUlYRDBPUWVBamlNV2NWNEVCUDQ5cmFEUzI3c1lpbG9CbQ?oc=5",
+        "date": "Tue, 13 Oct 2026 03:33:00 GMT",
+        "summary": "As Anthropic and OpenAI are set for IPOs, Broadcom CEO has a message for AI investors: For now, it is sti The Times of India",
+        "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3c9eb48723c0c719341367d3dc3d09e29e304cde91af73266999f3ce9b596da3",
+        "label": "MegaETH-powered MNX goes live with pre-IPO futures for OpenAI, Anthropic and DeepSeek - CoinDesk",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "CoinDesk",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSnZjTmM5dmgyck1kVUY3X3pIQkVsN0h4aHhmV0pQVXBWQXBseXo0ZTdWX0pCSmtTeWtBd3dFc1UxYWdfUmpsMzlPVlNZSkhaMkdoenVUNm5reEh5TktEY1dlTk5mbldvREs4Wk9IdWNyUmdKcVc4Wnh5Qjc4RVM4eWVFbFp3TDc4bU1YZGNremRZNWxtMlktcDNHemNZY2RCT1FaVGlhOTlUbG9oMjZObGEwcVl3OHBnU0hr?oc=5",
+        "date": "Tue, 13 Oct 2026 15:52:09 GMT",
+        "summary": "MegaETH-powered MNX goes live with pre-IPO futures for OpenAI, Anthropic and DeepSeek CoinDesk",
+        "score": 6,
         "weight": 1
       },
       {
@@ -11965,6 +12017,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:792a75ed207b08496f022c6d8be716df0a07f7de009b54c84783c7d745e3a874",
+        "label": "Anthropic Opens Books to Investors as AI Lab IPO Buzz Builds - The Tech Buzz",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Tech Buzz",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMXRIRGpmNDBvQ2VfUGxmTjZRdXhTaU5GZUlRcnJxdUF6MW8xT1BBd2VMZGhrcy0yUmtCYW93TExaaTFaeWM5SEJMd1JteG96Ym5tVE40N2ltSVRYeHhXLVY0QnBlOTMtNDNMZ1RzS2EtM2NoUHNYTll3NmlpZDE2OXo2R01tbnVQRnkwWGdZQmFjeTdHVEdSSw?oc=5",
+        "date": "Tue, 13 Oct 2026 15:37:00 GMT",
+        "summary": "Anthropic Opens Books to Investors as AI Lab IPO Buzz Builds The Tech Buzz",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:2a84d024e211f6796eabbc6404bc6a78cb3fb55ffd2a68b3e04bdb687edb1acc",
         "label": "Alibaba Burned RMB 44.7 Billion of Free Cash Flow in the June Quarter. Here\u2019s Management\u2019s 33% Growth Math - TIKR.com",
         "kind": "evidence",
@@ -13605,42 +13669,6 @@
         "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSnUyZDR5aC1jZzRlamp6THZndUF4Q2ZxTXVid0x0WlBXNlFnTzBTLS1OZE9ndEdOelQ3ZXNUVm9pWWZ4ZzlIYm56YU16eEZ4SEs3cEtXU3ZVek9TRWdQaVVLb1l1Q25NSXRObFd2Q2NUbDQ4TkVBRXk0SVE1WkxVenJSNA?oc=5",
         "date": "Tue, 22 Sep 2026 12:13:00 GMT",
         "summary": "OpenAI\u2019s IPO Looks Like a 2027 Story actionnetwork.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:37569a928a7984f0a297764821f53864a46996c91c6b723678d37de418c2c9d4",
-        "label": "OpenAI IPO Collapse? - 247wallst.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "247wallst.com",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAyZ2VUOUIwbXV4WDl3RGczYk5oUGRNVHhXQ3ZqY3RpeUcxMHJrel9MRnNRa0Z6TVExZ3BhTUthc3haT3J1VktJa3ljTHNsOEVnbHRjYlUySVpLWTktTVdtODhkckRWZkJRNzVVTFNabUw?oc=5",
-        "date": "Wed, 23 Sep 2026 14:17:00 GMT",
-        "summary": "OpenAI IPO Collapse? 247wallst.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:707537e6f96b6c389f4efb72527d233f03cafbb1d369eeaa014649f1f1341bce",
-        "label": "OpenAI\u2019s Altman Says No IPO in 2026, Firm to Prioritize Safety - Bloomberg",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg",
-        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQZzhjTS1GNC1rcHlXYWQzQ2lZZ3RjWm16N25vNzZXTGZPZHRnM3Z2WndKb2Fsb1Q4VE9ENDdUamR0enFSeUdINWpabW93eDRueFlSYmkyWGtWaFRvVGs3UlR1MXpUWHhYdlFvdWNTTEhUZHRzRllyZ2hjQUFyNTV2eklxazV0dWNabXNtTURUU2tGVEJNTWdfTWRkRGE3MlpGanpqR2JqOHdXQThxRm9F?oc=5",
-        "date": "Sat, 12 Sep 2026 07:00:00 GMT",
-        "summary": "OpenAI\u2019s Altman Says No IPO in 2026, Firm to Prioritize Safety Bloomberg",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b90c9e1c6a91b9883f2e5b21b57b5b085e256f5db6882fa042a481caf59f3250",
-        "label": "OpenAI IPO: What happens next? - neoteo.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "neoteo.com",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOVTdoOEQ4QW9zRFExaUJMTF9YR2toM0haVWd3UWhtd19CRUNTaXVacGZpS0UzVUd6WEhnMUF3OG0xN0o5UmI0QkJrOTItMGZzM09iSVBWQTI3VkNlMm5Kbm84cVh0YTFUWG9heDdpQ1VNc092LXd1bVd5b3VqTEpDTjRncjA5dG4yd2kxcVo0UzdGNHZ6X3BZZXlB?oc=5",
-        "date": "Fri, 25 Sep 2026 17:51:08 GMT",
-        "summary": "OpenAI IPO: What happens next? neoteo.com",
         "score": 4,
         "weight": 1
       }
@@ -15728,6 +15756,48 @@
       {
         "source": "Microsoft",
         "target": "evidence:7e3204b9b49eb2feff33ce7cee1bd409b7e9308913b15e81b28aaf9a5cafa76a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:bdd5abd6b008b6852760fb4fab45f25831dd972af0573c69973d3fce552cd314",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:bdd5abd6b008b6852760fb4fab45f25831dd972af0573c69973d3fce552cd314",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:bdd5abd6b008b6852760fb4fab45f25831dd972af0573c69973d3fce552cd314",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:3c9eb48723c0c719341367d3dc3d09e29e304cde91af73266999f3ce9b596da3",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:3c9eb48723c0c719341367d3dc3d09e29e304cde91af73266999f3ce9b596da3",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:3c9eb48723c0c719341367d3dc3d09e29e304cde91af73266999f3ce9b596da3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -21326,6 +21396,13 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:792a75ed207b08496f022c6d8be716df0a07f7de009b54c84783c7d745e3a874",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alibaba",
         "target": "evidence:2a84d024e211f6796eabbc6404bc6a78cb3fb55ffd2a68b3e04bdb687edb1acc",
         "type": "EVIDENCE",
@@ -22308,27 +22385,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:cba4189d897dece2ebbd3c36878f0c716d63a41c896b342683ca5572fe5255f6",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:37569a928a7984f0a297764821f53864a46996c91c6b723678d37de418c2c9d4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:707537e6f96b6c389f4efb72527d233f03cafbb1d369eeaa014649f1f1341bce",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:b90c9e1c6a91b9883f2e5b21b57b5b085e256f5db6882fa042a481caf59f3250",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -37982,6 +38038,36 @@
       "source": "finance.biggo.com"
     },
     {
+      "date": "Tue, 13 Oct 2026 02:41:04 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": "Moonshot AI",
+      "target_entity": null,
+      "amount": 3000000000.0,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Kimi K3 Beats GPT-6.1 Sol by 61 Elo Points [2026] - shattered.io Kimi K3 Beats GPT-6.1 Sol by 61 Elo Points [2026] shattered.io Google News",
+      "title": "Kimi K3 Beats GPT-6.1 Sol by 61 Elo Points [2026] - shattered.io",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBRLVBkeDNOcjR0dWtWQThPQTUxTWYwMm1DYXNvcF9LN3NNbkJYY0RxN0prd3lEaGJOYmJZVFhKTERwQWp0ZzBfeEY3MUdzdktodzRiS0hyZEs0enlNajdtMVUzZw?oc=5",
+      "source": "shattered.io"
+    },
+    {
+      "date": "Tue, 13 Oct 2026 14:19:41 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Amazon",
+      "target_entity": "Amazon",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Amazon (AMZN): AWS AI Growth Keeps Capex Returns in Focus - AlphaStreet Amazon (AMZN): AWS AI Growth Keeps Capex Returns in Focus AlphaStreet Google News",
+      "title": "Amazon (AMZN): AWS AI Growth Keeps Capex Returns in Focus - AlphaStreet",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUW5GNElzanNTcmlPdW9KTFZWeGFlLUdadnZRTWN1X1hISUZ3RlRUS25fNlZ3b3hvekhMNTlLcVhvc3JWZ2R5dWJocGNWYjdwZXBYb3FNX01BU0ZBcWR4cGQtOXRCeEJpWEdhWDZ4MzF0cGRvSzR2QVc5M1dQcDRnLWttLXdiOWxvM1ozTNIBjAFBVV95cUxOUW5GNElzanNTcmlPdW9KTFZWeGFlLUdadnZRTWN1X1hISUZ3RlRUS25fNlZ3b3hvekhMNTlLcVhvc3JWZ2R5dWJocGNWYjdwZXBYb3FNX01BU0ZBcWR4cGQtOXRCeEJpWEdhWDZ4MzF0cGRvSzR2QVc5M1dQcDRnLWttLXdiOWxvM1ozTA?oc=5",
+      "source": "AlphaStreet"
+    },
+    {
       "date": "Tue, 14 Jul 2026 07:00:00 GMT",
       "event_type": "ENTERS_INDEX",
       "source_entity": "SpaceX",
@@ -38644,26 +38730,26 @@
   ],
   "collector_runs": [
     {
-      "id": 859,
+      "id": 863,
       "collector": "company-economic-news",
-      "started_at": "2026-10-12T19:48:23+00:00",
-      "completed_at": "2026-10-12T19:48:45+00:00",
+      "started_at": "2026-10-13T17:35:46+00:00",
+      "completed_at": "2026-10-13T17:36:08+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 32,
+      "items_new": 25,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "efe99834-06f4-4f0f-88e1-bed22fa977a9"
+      "collection_execution_id": "14763e9b-441d-4f06-86bc-b06782410582"
     },
     {
-      "id": 860,
+      "id": 864,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-10-12T19:48:45+00:00",
-      "completed_at": "2026-10-12T19:48:46+00:00",
+      "started_at": "2026-10-13T17:36:08+00:00",
+      "completed_at": "2026-10-13T17:36:09+00:00",
       "status": "ok",
       "items_seen": 40,
       "items_new": 2,
@@ -38673,7 +38759,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "efe99834-06f4-4f0f-88e1-bed22fa977a9"
+      "collection_execution_id": "14763e9b-441d-4f06-86bc-b06782410582"
     },
     {
       "id": 56,
@@ -38692,26 +38778,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 858,
+      "id": 862,
       "collector": "google-news-rss",
-      "started_at": "2026-10-12T19:48:22+00:00",
-      "completed_at": "2026-10-12T19:48:23+00:00",
+      "started_at": "2026-10-13T17:35:44+00:00",
+      "completed_at": "2026-10-13T17:35:46+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 2,
+      "items_new": 5,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "efe99834-06f4-4f0f-88e1-bed22fa977a9"
+      "collection_execution_id": "14763e9b-441d-4f06-86bc-b06782410582"
     },
     {
-      "id": 861,
+      "id": 865,
       "collector": "sec-edgar",
-      "started_at": "2026-10-12T19:48:47+00:00",
-      "completed_at": "2026-10-12T19:48:49+00:00",
+      "started_at": "2026-10-13T17:36:09+00:00",
+      "completed_at": "2026-10-13T17:36:11+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -38721,7 +38807,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "efe99834-06f4-4f0f-88e1-bed22fa977a9"
+      "collection_execution_id": "14763e9b-441d-4f06-86bc-b06782410582"
     },
     {
       "id": 57,
@@ -38741,12 +38827,12 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1087,
-  "mention_count": 8487,
+  "event_count": 1089,
+  "mention_count": 8489,
   "review_counts": {
     "provisional": 0,
     "confirmed": 314,
-    "flagged": 773,
+    "flagged": 775,
     "flagged_retry_pending": 0
   },
   "feature_family": [
@@ -41508,8 +41594,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "d29a519d9e5cb1df432582277f78b0c7096ef80519ddfb5333fa214cf41d7fc5",
-    "created_at": "2026-10-12T19:48:55+00:00",
+    "run_id": "5b7322188b1731e47f0308f8f514a77b2a6ddafb7be0070f65e45d5bef24c03e",
+    "created_at": "2026-10-13T17:36:20+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -41579,6 +41665,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-0dc00a21a119086a",
-  "database_sha256": "0dc00a21a119086a2fe8fc8274cb11dc1c65e29dab9014e951ea3435a2ec4777"
+  "database_state_version": "v1-f2556550c05366f9",
+  "database_sha256": "f2556550c05366f9353ba32cf9c300419ab128e5f507c175ebd0fa034e42beee"
 }
