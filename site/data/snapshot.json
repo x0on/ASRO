@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-27T15:54:31.091179+00:00",
+  "generated_at": "2026-10-28T16:40:59.090491+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 79.7,
+    "score": 78.9,
     "label": "FRAGILE",
     "direction": "unknown",
-    "known_dimensions": 7,
+    "known_dimensions": 6,
     "gate_passed": true,
     "gate_reason": "material evidence in fragility and capital",
     "indicator_version": "reviewed-evidence-v3",
@@ -15,20 +15,20 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-10-27T15:53:49.214083+00:00",
+    "reading_as_of": "2026-10-28T16:40:03.486000+00:00",
     "support_totals": {
-      "risk": 20.965600000000002,
+      "risk": 19.8456,
       "safety": 3.4800000000000004
     }
   },
   "dimensions": {
-    "capital": 85.0,
+    "capital": 84.9,
     "monetization": 41.1,
     "circularity": 74.8,
     "fragility": 59.3,
     "stress": 63.1,
     "transmission": null,
-    "cannibalization": 58.3,
+    "cannibalization": null,
     "external_pressure": 54.4,
     "counter_evidence": 33.8
   },
@@ -38,7 +38,6 @@
     "fragility": 1,
     "external_pressure": 3,
     "counter_evidence": 2,
-    "cannibalization": 1,
     "stress": 3,
     "circularity": 4
   },
@@ -48,7 +47,6 @@
     "fragility": "reviewed_evidence",
     "external_pressure": "reviewed_evidence",
     "counter_evidence": "reviewed_evidence",
-    "cannibalization": "reviewed_evidence",
     "stress": "reviewed_evidence",
     "circularity": "reviewed_evidence"
   },
@@ -72,10 +70,6 @@
     "stress": {
       "direction": "higher_pressure",
       "evidence_count": 3
-    },
-    "cannibalization": {
-      "direction": "higher_pressure",
-      "evidence_count": 1
     },
     "external_pressure": {
       "direction": "higher_pressure",
@@ -151,6 +145,22 @@
         "source": "TradingKey",
         "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPT2M0bHI1V2FiTVJMUTNtUHpkNFQ2a2RKUUtHSTZ3NnphY1lqLWU1MEJacTZKNW1XNXZMZlUyU24ydzZ1dUlJdUxzV3ZhNUdYamhib1pqTFJycnh3TDZSRUFHdVc2WXpPS2d4Q0xHYXYzMDVnZW1hWXRpUWc2aFpfYm44MkVCUHU2UjNXVVpZbGZ6SE0wUUJZdFVTNzZtX284OXRsd1FLY2FDYzRVbnNfU1I2ZHVHc3FOTmxxdU9hQTVTYzhJREdwM0ZMRlZGS0VP?oc=5",
         "evidence": "Microsoft (MSFT) Q4 FY2026 Earnings Preview: $87.7B Revenue, Azure 40%, FY2027 Capex $255-260B - TradingKey Microsoft (MSFT) Q4 FY2026 Earnings Preview: $87.7B Revenue, Azure 40%, FY2027 Capex $255-260B TradingKey Google News"
+      },
+      {
+        "variable": "AI capital commitments",
+        "entity": "Meta",
+        "value": 79000000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.76,
+        "support": 0.9880000000000001,
+        "date": "Mon, 19 Oct 2026 13:02:26 GMT",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Meta Must Spend $79B in Six Months to Hit Its Capex Guide - FourWeekMBA",
+        "source": "FourWeekMBA",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSnFPeHhNN1B4LVd0NkIzWVhvcVRHTGxqMGhzV1JWel9tUFk1MkVNUjVuYjdybENLekRNano4NDRQYV92X3VHdTZCNjFJSVZpTDVJd3V2cVBVY2lXd1N1M2Q5WW1YNHFEclVHck1PbmRwUWp3ZDFSdmVCY3ZFX20tX1pxWnN1QjhPRGtsUQ?oc=5",
+        "evidence": "Meta Must Spend $79B in Six Months to Hit Its Capex Guide - FourWeekMBA Meta Must Spend $79B in Six Months to Hit Its Capex Guide FourWeekMBA Google News"
       },
       {
         "variable": "AI capital commitments",
@@ -247,22 +257,6 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
         "evidence": "We invested $28.7 billion in OpenAI\u2019s Series C Preferred Stock for the six months ended June 30, 2026, including $13.7 billion invested in Q2 2026."
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "Meta",
-        "value": 2920000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.86,
-        "support": 1.118,
-        "date": "2026-07-30",
-        "event_type": "INVESTS_IN",
-        "title": "Meta SEC filing: 10-Q (2026-07-30)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
-        "evidence": "As of June 30, 2026 and December 31, 2025, the carrying value of our equity investment included within non-marketable equity investments on our condensed consolidated balance sheets was $ 2.92 billion and $ 1.83 billion, respectively, and our maximum exposure to loss related to the Venture was $ 46.03 billion and $ 45.95 billion, respectively, consisting of the carrying value of our equity investment, the lease commitments, our estimated future funding commitments, and the maximum RVG threshold."
       }
     ],
     "monetization": [
@@ -383,24 +377,6 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
         "evidence": "We calculate free cash flow as follows: Three Months Ended August 31, (Dollars in millions) 2026 Change 2025 Net cash provided by operating activities $ 23,103 184% $ 8,140 Capital expenditures (28,499 ) 235% (8,502 ) Free cash flow $ (5,396 ) * $ (362 ) Net income $ 4,760 $ 2,927 Net cash provided by operating activities as a percent of net income 485% 278% * Not meaningful Recent Financing Activities : Common Stock : On February 2, 2026, we entered into an equity distribution agreement with certain sales agents party thereto, as amended on June 23, 2026, pursuant to which we may sell shares of our common stock having aggregate sales proceeds of up to $20 billion from time to time through an \u201cat-the-market\u201d offering program (the 34 Table of Contents ATM Program)."
-      }
-    ],
-    "cannibalization": [
-      {
-        "variable": "Model price pressure",
-        "entity": "OpenAI",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.99,
-        "support": 0.99,
-        "date": "2026-07-30",
-        "event_type": "PRICE_CUT",
-        "title": "OpenAI cuts GPT-5.6 Luna and Terra API prices",
-        "source": "OpenAI pricing announcement",
-        "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-        "evidence": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026."
       }
     ],
     "stress": [
@@ -668,6 +644,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-10-28T16:40:03.486000+00:00",
+      "score": 78.9,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 84.9, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-10-28T16:39:23+00:00",
+      "score": 78.9,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 84.9, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-10-27T15:53:49.214083+00:00",
       "score": 79.7,
@@ -2694,227 +2684,17 @@
   ],
   "comparable_history": [
     {
-      "captured_at": "2026-10-27T15:53:49.214083+00:00",
-      "score": 79.7,
+      "captured_at": "2026-10-28T16:40:03.486000+00:00",
+      "score": 78.9,
       "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "dimensions": "{\"capital\": 84.9, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
       "indicator_version": "reviewed-evidence-v3"
     },
     {
-      "captured_at": "2026-10-27T15:53:29+00:00",
-      "score": 79.7,
+      "captured_at": "2026-10-28T16:39:23+00:00",
+      "score": 78.9,
       "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-26T16:49:06.930228+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-26T16:48:31+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-25T14:22:49.930168+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-25T14:22:18+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-24T14:01:31.732632+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-24T14:00:59+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-23T15:04:51.091025+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-23T15:04:17+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-22T15:17:23.762254+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-22T15:16:46+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-21T15:14:28.933220+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-21T15:14:08+00:00",
-      "score": 79.7,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-20T15:04:46.120056+00:00",
-      "score": 80.6,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-20T15:04:18+00:00",
-      "score": 80.6,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-19T17:00:07.080129+00:00",
-      "score": 80.6,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-19T16:59:37+00:00",
-      "score": 80.6,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-18T14:01:28.172007+00:00",
-      "score": 80.6,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-18T14:01:00+00:00",
-      "score": 80.6,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-17T13:43:47.997527+00:00",
-      "score": 80.6,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-17T13:43:25+00:00",
-      "score": 80.6,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-16T14:51:27.561449+00:00",
-      "score": 80.6,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-16T14:50:55+00:00",
-      "score": 80.5,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-15T15:01:22.956185+00:00",
-      "score": 80.5,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-15T15:00:48+00:00",
-      "score": 80.5,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-14T15:08:40.871789+00:00",
-      "score": 80.5,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-14T15:07:59+00:00",
-      "score": 80.5,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-13T17:36:47.849601+00:00",
-      "score": 80.5,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-13T17:36:12+00:00",
-      "score": 80.5,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-12T19:49:12.916802+00:00",
-      "score": 80.5,
-      "label": "HIGH CONVERGENCE",
-      "dimensions": "{\"capital\": 85.1, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
-      "indicator_version": "reviewed-evidence-v3"
-    },
-    {
-      "captured_at": "2026-10-12T19:48:49+00:00",
-      "score": 79.8,
-      "label": "FRAGILE",
-      "dimensions": "{\"capital\": 84.2, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": 58.3, \"external_pressure\": 53.0, \"counter_evidence\": 33.8}",
+      "dimensions": "{\"capital\": 84.9, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
       "indicator_version": "reviewed-evidence-v3"
     }
   ],
@@ -3067,11 +2847,11 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-10-27T15:54:31.092630+00:00",
+    "as_of": "2026-10-28T16:40:59.092163+00:00",
     "counts": {
-      "pressure": 45,
+      "pressure": 39,
       "public_exposure": 5,
-      "context": 10
+      "context": 9
     },
     "items": [
       {
@@ -4137,146 +3917,6 @@
         "underlying_fact_ids": [
           "21fca1d3f7476cdc33b3be04706ba98834972f6895548a8e6a0f1b68de49d5e2"
         ]
-      },
-      {
-        "fact_id": "2387e4ddbe33414fc0d0999947b9ef698eaf954139204fdd2d7d66776f7d5faa",
-        "event_id": "5dab5a5496cf517028c5974e1392fa742356d0e3d990cb44c16e7ef8b1e50e1b",
-        "kind": "context",
-        "causal_role": "RESILIENCE",
-        "rationale": "Cash flow informs self-funding capacity; its sign and trend must be read from the source.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "FREE_CASH_FLOW",
-        "title": "AWS is \u2018booming,\u2019 but Amazon\u2019s free cash flow turns negative on record AI spending - GeekWire",
-        "evidence": "AWS is \u2018booming,\u2019 but Amazon\u2019s free cash flow turns negative on record AI spending - GeekWire AWS is \u2018booming,\u2019 but Amazon\u2019s free cash flow turns negative on record AI spending GeekWire Google News",
-        "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWW5BZ3pMMDVlX1p5WVl4RW9scXZGdk90X3hLb01SdGZmTkNMaE5PV2syajJiZ0hfb1hUQjh4Q1lxQWdtRmtGS2lpT2ttOW9ZRjY2eWJQdWVrQzV0d0U2bG9wNU1aMmxwVjVWUjNGOTN6ZW1MSW4xTXVjeHJpWVBuWTRmTF9GeGVKbTB5WElQUmdCdkFzN3d5Q2RFbHAtajVuaWVtMjZRV1JUc3pfUnc?oc=5",
-        "date": "2026-07-30T07:00:00+00:00",
-        "reviewed_at": "2026-08-21T22:22:02.616989+00:00",
-        "sources": [
-          "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWW5BZ3pMMDVlX1p5WVl4RW9scXZGdk90X3hLb01SdGZmTkNMaE5PV2syajJiZ0hfb1hUQjh4Q1lxQWdtRmtGS2lpT2ttOW9ZRjY2eWJQdWVrQzV0d0U2bG9wNU1aMmxwVjVWUjNGOTN6ZW1MSW4xTXVjeHJpWVBuWTRmTF9GeGVKbTB5WElQUmdCdkFzN3d5Q2RFbHAtajVuaWVtMjZRV1JUc3pfUnc?oc=5"
-        ],
-        "underlying_fact_ids": [
-          "2387e4ddbe33414fc0d0999947b9ef698eaf954139204fdd2d7d66776f7d5faa"
-        ]
-      },
-      {
-        "fact_id": "b97aa0a24790b6533986cefa5ef8bd2fb0781157db72c29b5baa15cc1056119f",
-        "event_id": "7c51992261f51d31dbb1af025a5288861e02888083a699d7dbb72a04306929c7",
-        "kind": "pressure",
-        "causal_role": "VULNERABILITY",
-        "rationale": "Lower prices can pressure margins; volume and cost effects need separate evidence.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "PRICE_CUT",
-        "title": "OpenAI cuts GPT-5.6 Luna and Terra API prices",
-        "evidence": "OpenAI announced that GPT-5.6 Luna would cost 80 percent less and GPT-5.6 Terra would cost 20 percent less starting July 30, 2026.",
-        "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
-        "date": "2026-07-30T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T20:39:49.582696+00:00",
-        "sources": [
-          "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/"
-        ],
-        "underlying_fact_ids": [
-          "b97aa0a24790b6533986cefa5ef8bd2fb0781157db72c29b5baa15cc1056119f"
-        ]
-      },
-      {
-        "fact_id": "83a51510342dae1bcc9dba56e6a8681a64aaed8270641c7a31f16771d2a40383",
-        "event_id": "3c6e9519d84bf54a83d8924ac6e2987b69509614db25045f65dd6e0bffdad3de",
-        "kind": "pressure",
-        "causal_role": "VULNERABILITY",
-        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "GUARANTEES",
-        "title": "Meta SEC filing: 10-Q (2026-07-30)",
-        "evidence": "We will also provide residual value guarantees with a maximum aggregate exposure of approximately $ 13 billion.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
-        "date": "2026-07-30T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:39.458394+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "83a51510342dae1bcc9dba56e6a8681a64aaed8270641c7a31f16771d2a40383"
-        ]
-      },
-      {
-        "fact_id": "4f7e1f76c8bee9ed03bf106c1312ea6c4ce576dbc3ff313a11a5ef0345a75e03",
-        "event_id": "e9ed2718b6311bdfeb41d3251f866098a4474027469b7c1b6a640d311142561c",
-        "kind": "pressure",
-        "causal_role": "VULNERABILITY",
-        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "GUARANTEES",
-        "title": "Meta SEC filing: 10-Q (2026-07-30)",
-        "evidence": "In addition, we have provided residual value guarantees (RVG) with an aggregate threshold of approximately $ 28 billion that decreases over time.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
-        "date": "2026-07-30T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:32.613682+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "4f7e1f76c8bee9ed03bf106c1312ea6c4ce576dbc3ff313a11a5ef0345a75e03"
-        ]
-      },
-      {
-        "fact_id": "49a8bcbb20732b7f8252924da6fef0068a32b0867246667221538b995cadb537",
-        "event_id": "31159c66556969094267f11d511a6b2bb5549813a71988b6272e44b793cae624",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Meta SEC filing: 10-Q (2026-07-30)",
-        "evidence": "\u2022 Capital expenditures, including principal payments on finance leases, were $31.08 billion for the three months ended June 30, 2026.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
-        "date": "2026-07-30T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:39.458394+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "49a8bcbb20732b7f8252924da6fef0068a32b0867246667221538b995cadb537"
-        ]
-      },
-      {
-        "fact_id": "22fc458969f8e651414e6c6655bc49f9886ef6075324bcd78398428110884f0f",
-        "event_id": "9b1aac30733bbfb2b842264ded5e90151db9d9164ffc721ac1b71e7b1f377d34",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "An investment increases capital exposed to the business succeeding.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "INVESTS_IN",
-        "title": "Meta SEC filing: 10-Q (2026-07-30)",
-        "evidence": "As of June 30, 2026 and December 31, 2025, the carrying value of our equity investment included within non-marketable equity investments on our condensed consolidated balance sheets was $ 2.92 billion and $ 1.83 billion, respectively, and our maximum exposure to loss related to the Venture was $ 46.03 billion and $ 45.95 billion, respectively, consisting of the carrying value of our equity investment, the lease commitments, our estimated future funding commitments, and the maximum RVG threshold.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
-        "date": "2026-07-30T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:32.613682+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "22fc458969f8e651414e6c6655bc49f9886ef6075324bcd78398428110884f0f"
-        ]
-      },
-      {
-        "fact_id": "055ebb741503678e2f55bccd95e3dba1cc0d92da06b2a3548fc0f83c70ad3886",
-        "event_id": "bdbc6c97a9c74640704493f093531d9bdc2df9f4eff399e8c51c49975f7cd200",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Meta SEC filing: 10-Q (2026-07-30)",
-        "evidence": "These increases were partially offset by $50.92 billion of capital expenditures, which includes purchases of property and equipment and principal payments on finance leases; $8.70 billion of taxes paid related to net share settlement of employee restricted stock unit (RSU) awards; $2.70 billion of payments of dividends and dividend equivalents; and $2.29 billion of cash used in other financing activities.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm",
-        "date": "2026-07-30T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:39.458394+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "055ebb741503678e2f55bccd95e3dba1cc0d92da06b2a3548fc0f83c70ad3886"
-        ]
       }
     ]
   },
@@ -4358,7 +3998,7 @@
         "id": "Moonshot AI",
         "label": "Moonshot AI",
         "kind": "company",
-        "weight": 7
+        "weight": 8
       },
       {
         "id": "Tencent",
@@ -7145,6 +6785,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:f51c012a519d59d35182c21869baf4dacbc9486e8749238e89a4d86e56bcf7fe",
+        "label": "Anthropic's Record-Breaking Historic IPO: Tencent, Alibaba & ByteDance Join Top Chinese Tech Giants in All-In Global Computing Power Race - 36Kr",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "36Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE01YUlBN0ZKSm5FMG9kcmduaTg1aWdhNjdLZm1IZkVadWVfZjVWb3FxejdodUVZUXdlenhUeE9fTXNQRURvLVdPOHZFXzg1bmFYX2Rr?oc=5",
+        "date": "Wed, 28 Oct 2026 01:08:47 GMT",
+        "summary": "Anthropic's Record-Breaking Historic IPO: Tencent, Alibaba & ByteDance Join Top Chinese Tech Giants in All-In Global Computing Power Race 36Kr",
+        "score": 7,
+        "weight": 1
+      },
+      {
         "id": "evidence:a889883503eeb0e1ea71fc0d4662a8084542b724ead684f8bcc4ecde6f3fd57d",
         "label": "Sam Altman Is Pushing for a $1 Trillion IPO Valuation for OpenAI, Even as SoftBank Faces a $40 Billion Loan Deadline in 2027. Here's What That Tension Means for Microsoft and Nvidia Shareholders. - finance.yahoo.com",
         "kind": "evidence",
@@ -7226,6 +6878,18 @@
         "date": "Wed, 07 Jan 2026 08:00:00 GMT",
         "summary": "Google's 'Cannibalization' Risk Vs Microsoft's Azure Growth: Expert Explains How AI Answers Could Slash GOOG's Ad Revenue Yahoo Finance",
         "score": 7,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7b65f616e60d0586e28e82e7a7cecdae1d1d84f03fc611ae6d8e097122003701",
+        "label": "Jio valued at $108 billion in IPO, joins Meta, Alibaba and SpaceX club | All you need to know - TradingView",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQTUVaV3lsUDA4aGxNQlRRS080T2xyN3BBSmF6eFlCQzlDSHZQdFF0MERCZTkxUDl6eHZhVE9oZ3BUMEZ3Ml9RM3RBSjVoXzBTdGlvamJFQ044c3pTUi00R1FSOFd3RTRVTlFhWjdLNm5oSl9oR2plUDBUMmNxUWU5U0JacUhhQmdCVzdZbzhQMnlmR1d2UHpaS2piNk5MSlQ3c1NKU25wbDNxTEI5SktmbGx5RHV4MVJLSWU4eTlwTzdHcjBnZ2ZpQ0phekEwWFppa2MyZUFLTC1rSjJfZkE?oc=5",
+        "date": "Wed, 28 Oct 2026 11:34:55 GMT",
+        "summary": "Jio valued at $108 billion in IPO, joins Meta, Alibaba and SpaceX club | All you need to know TradingView",
+        "score": 6,
         "weight": 1
       },
       {
@@ -8078,6 +7742,102 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7694070523701662fdc70bdd2fdacb676c33025886255f3d35d6e264d97f2af2",
+        "label": "Anthropic's push for a trillion-dollar IPO triggers market resonance; Zhipu AI surges nearly 9%, leading the market. - Moomoo",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Moomoo",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNHZWcmpQcWFmSGoxZ2lMcVNFWXdLbGZoX1pUMjF2Rkg2MXFrU0RIMzVXby1wcmhJWlJBYjhVV3Z4UjJiWFZBTGtZUXpyS0ZsZjJrZGpGeHYtQllwT3RVRU5WckpGeFpCVG40M3VHbVJwaEpRTl8weVNaXzRYbV9fX1l5d2t4bDBMSVBaQjB1Vzd2V3VNdnh0aFhqZDU5OXpVcWtGVg?oc=5",
+        "date": "Tue, 27 Oct 2026 02:37:10 GMT",
+        "summary": "Anthropic's push for a trillion-dollar IPO triggers market resonance; Zhipu AI surges nearly 9%, leading the market. Moomoo",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0a30aa7ca1cdd8f04930f1e9f7b779e1c3b7faee0ee71ce52a93a4f1c90de394",
+        "label": "ThinkMarkets launches 24/7 pre-IPO markets on Anthropic and OpenAI - scanx.trade",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "scanx.trade",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMzVTYm01cDBtUzF4bHBfVmV2Y1dPSFNXRnUtazJDa2dlQVZ5bk5RdXBXX1dCemJobkpzUklLejBmcEp6SHJETjEzWGg5X0VCMGFPQV9TeFNfWVkzWFJKb2RtVTJjRGxOc0pmR1puY2xEUllCeGZvUVlVRHhPMWp1ald0amVLUjJKNHVPRDBoTEIwdTExUGIwT1l3aVNLcmsxd3UzLVF6TGdaNU1RUTYw?oc=5",
+        "date": "Wed, 28 Oct 2026 09:43:19 GMT",
+        "summary": "ThinkMarkets launches 24/7 pre-IPO markets on Anthropic and OpenAI scanx.trade",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3d9979e8ded1e57e93a8f6b1fc0f5c779946fa9ffe5e19f36d486302e7da164f",
+        "label": "ThinkMarkets launches 24/7 pre-IPO markets on Anthropic and OpenAI - FXStreet",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "FXStreet",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWjVPM3pYTkVGTDhrLXdZTkk2TkkzYnl3S0x6Z1N3RFFuaDMzZXhMeUxDR3F6MFhCUWJOWmtGUlBDeFo5bE1Sdl9rQzFhTkV2dHNEUFZDRlF6UmRXODB2Rk0zRE1lQkFMUzJ6Z2JMbENyQ1ZkWmY3OGlnd2phcGxldElLSURvaFhZLTBaOW9PQ0lUNG5zS041eUR2S0lJSWZKdUo3R3Q4aWxlWGNwTXAwNTlBQkc2dmNmd3Vv?oc=5",
+        "date": "Wed, 28 Oct 2026 09:12:03 GMT",
+        "summary": "ThinkMarkets launches 24/7 pre-IPO markets on Anthropic and OpenAI FXStreet",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6be92601f66cf6038bdd963d168c331c59a599031457f12e5247c304ba030565",
+        "label": "ThinkMarkets Launches 24/7 Pre-IPO Markets on Anthropic and OpenAI - marketscreener.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "marketscreener.com",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQYWhhTEJZeWhNang2RmVkdndsVmcwU0ptOHhqcGhUcHBhQzB2bElMZzlDcDNabXAzWUtUdWRla1Q3LU5tRUd3anV3UDRPZFFOMVNnZW9FMGlZMWxFYXJFRzFRM2hVVnJHaWtVMUlaTTRRTUg5bkE4a0plWHFvUklsZnIzRlVMWVJSMkExenJwV3JwYk5IV05wRWIxSjVLY0haM2JkQUF5MGZNQ2Fha08wb1c1eXQ4WE1xdExB?oc=5",
+        "date": "Wed, 28 Oct 2026 11:22:01 GMT",
+        "summary": "ThinkMarkets Launches 24/7 Pre-IPO Markets on Anthropic and OpenAI marketscreener.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:a3339d054a551abf480def9a655ced137ca16309fc715412a79d6f8de8e41d3e",
+        "label": "ThinkMarkets Opens Anthropic and OpenAI Pre-IPO Valuation CFDs - www.tokenpost.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "www.tokenpost.com",
+        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XVTZTTkQ2X24ycnRWaWN1WGhWMF9TdS1ueUlWelZBaldFN25IMnBxTnZvTGdBdW1mbVdTczd0eEYzb2VscjBwUUJscEppOXNhWFpfYTh3NGZUdw?oc=5",
+        "date": "Wed, 28 Oct 2026 09:13:08 GMT",
+        "summary": "ThinkMarkets Opens Anthropic and OpenAI Pre-IPO Valuation CFDs www.tokenpost.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:acab0b5f72490d597470c5b83e14ef0f3d62c4a89e2ad77b52518e0f6324a803",
+        "label": "ThinkMarkets Launches 24/7 Pre-IPO Markets on Anthropic, OpenAI - TradingView",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNd3hQejVNV2dqZTY0MVhVaVpyQVdIVk9Da3hpMHNIc29qRThxV2NKbjZjWVR5blFHTkpVSkYxaWVZQzd3bzFGbE1XcGlHb2RFQ2dtQU9NWkhpMnk4Z1FRTE5LNV9YenhmdENaRUFLMWVNQXlnb2tGZ3Q2bUJxcl9ZZXA0OFF4OTMxNmhOWkItT3NEWDV5MlZUVFlqaWlVSUp6LXZzLVJOaGZiUFB4bVNPWTRKaG9LMFEyODFfZzVkaXd1V3R4dUVN?oc=5",
+        "date": "Wed, 28 Oct 2026 09:00:55 GMT",
+        "summary": "ThinkMarkets Launches 24/7 Pre-IPO Markets on Anthropic, OpenAI TradingView",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:078bf8a81fa9972c5235423621fdff19512b6f81ccfdeec12091a25c868ed873",
+        "label": "ThinkMarkets launches 24/7 pre-IPO markets on Anthropic and OpenAI - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRU85S3BFLWdlMFNTOGdWNXlxQVJaa0RUUU1uQVVDMEJQY1cwMTB2cW5XZEVMdDV4dkRfOWIzUk5GVkxxR2RveFBFWnBPSUpRWnZPdXZSa1BiNHhFRUJYbWFFb2lKWGVRZFJhajQ5cy1uUjR6cVpGTXJNN3dJeVkwc2NrQVlfQWM0QzVIMHRNNTJ2OEF1TTBZTmRCZWk?oc=5",
+        "date": "Wed, 28 Oct 2026 09:00:00 GMT",
+        "summary": "ThinkMarkets launches 24/7 pre-IPO markets on Anthropic and OpenAI Yahoo Finance",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:dcb96b5c3e1dc912fbb47c7603930620f2cf26479439803be4474fe0b9ee4e3d",
+        "label": "Anthropic and OpenAI sketch plans to share their wealth ahead of IPOs - Fast Company",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Fast Company",
+        "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNMWNVYzZSaklvOGRrY2FzVDVpemExbXFYZ3AxbUV2Wmh3UWVuSExPNDMyN3BXYVpfRjM0NnYyT0JDdTJEb3V3aVM5aU1paGZNT0lTaHg5MUdsWG5wNXhqLURQb2xsN2N3Z2JFVFdrcXQwMWplUm1UN09udVhpQ1lsNnFBM0ZIc3p2T05JVFVsZDhJUXhYemFYT3JDamRxVHNBNWpQNk94QVJiV3JxOGhaeUo0dFI3NVdMVXBtQ3k4am9sNDEtY1pnMXdsQnl1ZjRNVFQ3QUZXckRzNzJLTGFlX3MxODM3cDlHWlhYT3pYN0p1elByNTlyWi12MUdRTkgtQnFlSklYa2I?oc=5",
+        "date": "Wed, 28 Oct 2026 12:22:35 GMT",
+        "summary": "Anthropic and OpenAI sketch plans to share their wealth ahead of IPOs Fast Company",
+        "score": 5,
         "weight": 1
       },
       {
@@ -13421,6 +13181,102 @@
         "weight": 1
       },
       {
+        "id": "evidence:968170efdcafe40db274eea9bfc8d322060218fa67e597e353c628bc220f00b9",
+        "label": "Why does Anthropic\u2019s IPO prospectus have so many China \u2018risk factor\u2019 warnings? - South China Morning Post",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "South China Morning Post",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdnFmbllwRXlHVkN0aEp5anNWYmZENVBVTWhZVk44cVFQX2pQVEwtMWE4NlF0LUdlOHRIQVp2ajBwR09sLXhadmpkYjNKM2tJR1BjbXFzRlI4UHhMSmJpOXJnNHBxcTdHUjhVT1Z2QXl1UDVnY1QySnFKZ25PT0xwRXhCYzQyMERldVVZV1BpeEtkX0k1ckFrc1h0bmFBUkhxNEljX2pIN1pqam5RSDVKY2lRSXVkQkVWR3l1c1hRTljSAcABQVVfeXFMUHhTLTNBd3BzVExuMTlFN0FXQ0o5bmstNWRQWFo0TUpGd3pkbnN2OElwNnhybzJoOG9BaTVVN0lWRExoZ0NKSnp3dWl3eHZuV1JXel8xekl6eWhuejQ5SjJPWk9tb3BHVHl5Q2Y0dnlPckFIUm5pN2J2Ym84Z1YxcEY3ZVVHS09wTUNvUUtVaDFQQkNJdkhOS3BPWFBxcXN5OGNESGNKb0dWZ3l4aVdFYnZ0OVhmZHZZallfdkVsUWpu?oc=5",
+        "date": "Tue, 27 Oct 2026 13:00:08 GMT",
+        "summary": "Why does Anthropic\u2019s IPO prospectus have so many China \u2018risk factor\u2019 warnings? South China Morning Post",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3baa6abc26128f334adc62e12adb81b99ef2af029f05e59672bac6d8b8efdb44",
+        "label": "Anthropic's record IPO faces some big questions - France 24",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "France 24",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYTd5akdVbzEwTTVZQTQyemtVWXEwWTMtdl9VRXcyUDlKTFpRQ0hOS2M0SGJmNHFBRF9jUzR5aTE0cmZnb21tVExCeDFhWHctN0JuY3M2V1pyYUlrTmc3R1BRYXkxMGl2Ulc0RnVFNFo5UVV2eFRJeFFuVy1vbHNDeGs0OTZkZGFMWkEwY0ZqLXNtc0FxRkQ0dGtR?oc=5",
+        "date": "Wed, 28 Oct 2026 01:44:36 GMT",
+        "summary": "Anthropic's record IPO faces some big questions France 24",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:006f1368b4b7961b1011dd8ec80305c73c63a1992c27ca532d3bc744b04dbf0e",
+        "label": "Anthropic's IPO filing is a safety memo and a sales pitch - Buttondown",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Buttondown",
+        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPcTJuLVlkZDAwSFFSVFk2MnBXaTVSbDNqbGRwd3IwNXZfOUpibTdybmVmTHFrMl9xVUlUaHRWS2I5c0hxel9Oa1hHcnFsSTdnNjMxd2tkXzBKZkVmbmtZbVVySlltZTRNQmZEN2tIMUpsamlIVXlSa1JKdEt2SVNad1FyMFhENW1LVUhQQkFR?oc=5",
+        "date": "Tue, 27 Oct 2026 23:04:16 GMT",
+        "summary": "Anthropic's IPO filing is a safety memo and a sales pitch Buttondown",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d520479e49c62087db58c137995471acb2526208a014702966abe83a5d344f3a",
+        "label": "Anthropic IPO filing flags legal risks as Claude advisor offering expands - InvestmentNews",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "InvestmentNews",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTzVySElSd1hrNEtaQUR3ZDR2YzJuU1NaS09BS28xN1VGWGk1WTVpV0FENzE3aTR1TU9qZ0dRaWVOTnBub1N4YjJSQTRUenBwbHM3cUp6NnBobUU1NThzTEhWZm9WelZaYXc4MmtxOHF0bHlUT29fd2NUV2xGWTlLcFltRW1fYWVGR3k5UVRKQTFadjlPenVGTERJN1Fzdjg0a2hNdDNfOElvcTFZbTlXUkR5VV9fYlBmZHlB?oc=5",
+        "date": "Wed, 28 Oct 2026 14:15:21 GMT",
+        "summary": "Anthropic IPO filing flags legal risks as Claude advisor offering expands InvestmentNews",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:aa2042ef1d853deccc9dfda088175ca3768cca4f827bb2c5ac24fd5ece89865a",
+        "label": "Anthropic's filing for blockbuster US IPO shows key executives and board - Reuters",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONVlWQUstQThaSGFMX1o0NmNNOWV3M1pSWlF6bmNINUJPaXB0T2RTQjBwNDhkaTdrSlNlRGJKWHc2R3RFaHFYMjNodDF4YUhTaGtZUTItbUE4VjVDVzVXRmFxMUxLRk1FRzQ5cldRSGlxc3dZVHlIYzNkcUJZZWxId2JYZXpZWnFKODFLenNVbjZuY1BYWDEtMlRmVjk?oc=5",
+        "date": "Mon, 26 Oct 2026 07:00:00 GMT",
+        "summary": "Anthropic's filing for blockbuster US IPO shows key executives and board Reuters",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ce2ca30415ee43025e055b6189614a769d51df3fc75fecb4d959b1a2b81740a5",
+        "label": "Anthropic Targets $2 Trillion Valuation in IPO - \uc870\uc120\uc77c\ubcf4",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "\uc870\uc120\uc77c\ubcf4",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOXRPX3VpR3dwNDhBOXVxRTRnUVluZHNTblZabGFWOTJWeUQ5QWlyVlZQM2xidnZtdWg2bV8xcnVIeWFwZEdBNzB1N1VoR1VBaGJYbjJIRXZYd0NaT3IzamZFcUFFNkRIbDJfTGtmektuOHBxdTJmUkV1SzRNY21UTG81V1BFMkFv?oc=5",
+        "date": "Wed, 28 Oct 2026 09:26:02 GMT",
+        "summary": "Anthropic Targets $2 Trillion Valuation in IPO \uc870\uc120\uc77c\ubcf4",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d3ca33fb6d6fc36333395d31928fcbacb5015503d26917567f5028dbf776c0ef",
+        "label": "What to Know About the Anthropic IPO - Bloomberg.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSW9pVkxrdnowelRJM2xkeUJMcC1DTXloVUVyUHlfU2ZQS09nX2ZWdTU1WlBvcHdhRFh3QnlOdjk4aThqQWlpSFFFNW9oeVBIS0JCRlluQjlJZG93R25mQzFfQ2FSNlFONUgwWnliZUdRcTFnQWJrQWZlRjhDRjl0NjdLYzdUVFFybkFWSGRGZ0trVEZyTjdhZTJwbDZqWkJIVTZ4QnlZek1RdFdlUUVWNDlUSUM?oc=5",
+        "date": "Mon, 26 Oct 2026 20:34:41 GMT",
+        "summary": "What to Know About the Anthropic IPO Bloomberg.com",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:4fd587334fbb016faf476357f8671d907281aeb32810bdbd474d1adf2183d632",
+        "label": "Valued at $2 trillion: Anthropic prepares for largest IPO in history - The Jerusalem Post",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Jerusalem Post",
+        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPVy1yazIzczVUekVsaTdaNWxCNGxOdjZ3Y0RzMHAtZFU3RVUyZ3hkX3RsQ3dPZmZucDlTZWFTWk9kU2dfQnJuWW5nU0V5Vk1kcTRDVnZuVHBGMkdoNVNaaE9DZ1F3bG1QVzNFbVNNcnI4SHdSMmRWVFFiS3pvWFU5NFJUcUR4dw?oc=5",
+        "date": "Wed, 28 Oct 2026 09:15:00 GMT",
+        "summary": "Valued at $2 trillion: Anthropic prepares for largest IPO in history The Jerusalem Post",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:b470681a0ea4c27a84fce2f8d0928b26bcd0123286e5f5691d6099a371883068",
         "label": "Why does Anthropic\u2019s IPO prospectus have so many China \u2018risk factor\u2019 warnings? - South China Morning Post",
         "kind": "evidence",
@@ -13825,222 +13681,6 @@
         "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd3NwdkZyVUhJdWpBVHNBenJhZkpqZDZmYXNONDYyOC15SVIwMi1SU0FLYjdiRkstQVJSeHhKVmtiVmo2ZXc3STdPeEx5LWhXLU9hY3ZyTVhxMF9nN2hSNnoxNnVzM2lYQ3FXN0xHWkl3OFZRaU9wQ2JySlBRV0p0TUh5aDY5NHNVZi1abWdTQ3dKMzN4OVNOZnFkc2hROGU3S2lnSEFQQW9fZU5xOU1XaQ?oc=5",
         "date": "Tue, 29 Sep 2026 07:00:00 GMT",
         "summary": "Altman Says OpenAI Investors Patient on IPO Amid Safety Focus Bloomberg",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3731d08c6f6ef818479bb8c40a63a96052010a7a92c11023c3f18d282a2392c4",
-        "label": "Sam Altman\u2019s OpenAI eyes $30B fundraising round ahead of looming IPO: report - New York Post",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "New York Post",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcWJ2bWgyRjlUSGh1YmN0TnVyZVRhZ0FpVWl0NHBNRWYwWGFta0lpN3VGZVFhSFhVY3RPWTJmaEtQMTQ2QU5CLWhBR182OTI0T2VrMHZ4ZG81by1nQWpGSkxrU0FSRUpkTjFqSWVzYWVtQlBLN25vWG5sajZBUl8zMktWNGNWaG8zdUVSTW8yZGVUUFpoQjh6cnIweVI0TExFQkRWaHBvZ08?oc=5",
-        "date": "Fri, 23 Oct 2026 16:16:00 GMT",
-        "summary": "Sam Altman\u2019s OpenAI eyes $30B fundraising round ahead of looming IPO: report New York Post",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:e4847529903f3f69b356feeab2c23d8d8ab3ab92fdf416ac2bd232a943f45035",
-        "label": "OpenAI Makes Stunning Financial Move Ahead of Potential IPO - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQjNWb1pNQUwwa19yaGkyME45U1ZxNXI2a3lSMzVSRXdPOTRkb01ZUmFjV1F2RE05d0o2VDE5d1hhaWQwalBuWXBSenRQSTlPM0R2SlRaM2U5blZBdHdURmZDN25sc3VkZjYtZUI5ZFBFN2s3bEl4dzNoVWtRbGgyZFpFOGM4dm90MnpTcXgwYUhDTXVidzZkd0RrNE9YNkhCWFE?oc=5",
-        "date": "Fri, 23 Oct 2026 15:59:54 GMT",
-        "summary": "OpenAI Makes Stunning Financial Move Ahead of Potential IPO Yahoo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:944c5170a5b67b18c8306c6ef09b18e09f8d0e30427a853a3c77f03e10da4c52",
-        "label": "OpenAI Nears $1.25 Trillion Valuation. What That Tells Investors Ahead of a Potential 2027 IPO. - AOL.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "AOL.com",
-        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5pZ2RFY2YzbU0xQWhDRDZKa3ZhMnpoaExmU1l2Qi1reF9MMm96XzhGLWpsSU9iNTViOHpxSWJCbHBBb1c3UW90Qnl1Z3JaT3dWT041blhtMExoSFpEUXdac1lYQXB4NzJkN3hoSUg0RUdYNU0zYjV0V2dR?oc=5",
-        "date": "Sat, 24 Oct 2026 05:58:00 GMT",
-        "summary": "OpenAI Nears $1.25 Trillion Valuation. What That Tells Investors Ahead of a Potential 2027 IPO. AOL.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1aa241d1d4676992ae9d5f1e65e79b58996c9368ca24e1013681d1339b3b4366",
-        "label": "MiniMax Shares Fall Below IPO Price Amid AI Sector Sell-Off - Caixin Global",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Caixin Global",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRjljRHppcGVFcS12YURKWHgtaWRMaFJ6OG5hREpGRVJyeXdKeERSUkd0Wkp5YzZGejlxUjVKU2pERnV1ZVFza3R0LXFtU0Fub2JfTjU3WW9ka2J1T3hGYTYxLXBRTDh1dDE1MzNFRGh2OTdsaEdrRVpabTdVWFdreFk2Q3h6THlYbjFjMXZCZFVyVmFQS0xqM2prYi1TaEE4dEVGdEdtRGxubUduSnR2ZF8xaS0?oc=5",
-        "date": "Thu, 22 Oct 2026 16:03:00 GMT",
-        "summary": "MiniMax Shares Fall Below IPO Price Amid AI Sector Sell-Off Caixin Global",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:fdfc16a5a0bf921d640a62616e89b5e38b7b5a30a244d910b9bd063687cfa524",
-        "label": "MiniMax shares fall below IPO price as AI competition grows - Tech in Asia",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Tech in Asia",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPeFNBamJzalo0S215MXc1dXJvcllfX0xtT29zdzB2VGJyTVc2cnVvNkZGT21LYWRGVjlJd2c1ZWktR1FOQmFkRkJRME5hc3pFQ19QZEhITndfYmkxaFNNWEhPYnR3VVRMTlgwNFIwVmNRTTR6TEE1RzhrTGpfWlFaT0RDbGRvQzlibzJoRVE3OWotbkJWSlE?oc=5",
-        "date": "Fri, 23 Oct 2026 03:22:00 GMT",
-        "summary": "MiniMax shares fall below IPO price as AI competition grows Tech in Asia",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:29190cfa630da59aa20c4fa337f241fbdc95aa41fa2a30a19524ae712022e68c",
-        "label": "MiniMax Falls Below IPO Price Nine Months After Listing; Founder Yan Junjie's Net Worth Down More Than HK$90 Billion From Peak - BigGo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "BigGo Finance",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBIb2d2QjNXYmdDZHpVOGU2T2dkcFpuNGd1Y0dnX3h4bnNCdUNDcXpQb1dqYzZEcWlnVVc5TzhtT1dNbVZQS1BoNTgtb2x6OVJ4Y0VkTFF1ZFhRcHNMV1NndmE2UmlnLXhOTjJ2U1FNemhOSm5Wdnc?oc=5",
-        "date": "Thu, 22 Oct 2026 15:35:00 GMT",
-        "summary": "MiniMax Falls Below IPO Price Nine Months After Listing; Founder Yan Junjie's Net Worth Down More Than HK$90 Billion From Peak BigGo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:1e96853d020ed6d6bf00b91964cc99193b7ab2abdd1d9fbd7a94b948e9c6cd35",
-        "label": "Anthropic IPO to Drive Blockbuster Gains for Iconiq, Spark, GIC - Bloomberg.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRWU0S2RSc3UweGd3OGdmMlF0VVNnQ3paTmp3SjhrT0hxMUU2eXdDRGp2cXl6S043dFJ0Z0Z6RnhQb3g0NjJTRWtDYWx1YzJJTFdkemRIbkFHY2Yybi1WUjc0Sk5aX1NEblZBUURoakwxUEFCdUVmRFRlbnF3blhpczNwLVlzZERvVnpZaVIxa2hCdk1za0VJTnFoQjZxc1BvZ1NWSElxWVlJUlpnalFrc1lB?oc=5",
-        "date": "Thu, 22 Oct 2026 19:34:03 GMT",
-        "summary": "Anthropic IPO to Drive Blockbuster Gains for Iconiq, Spark, GIC Bloomberg.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8fd7f51077fcab200951df06660e825b87db8bb3a3dbd18fe56c4bcb949d7ba5",
-        "label": "Why is OpenAI lowering its valuation to $1.25 trn ahead of potential IPO? - Business Standard",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Business Standard",
-        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNaXJKX0VKeUZUZTJTXzdWTHhRODhSZW52RUJHdk5sd1ZIbTBWbkdoZVpTSHpZYzdodlQ2LUVjd2tmVWxTejA1VnJpdEw2V25MOXNTa29yTU9DTzlNNGZKSmhONWRIcWJqS0JvN2o2MHNvR3dPX0tRZ0hpeG00VDlSaURSWXgyNUNQSkxWV2FwLWZvdmpMdzlmbUZMWmdPSmNYSnVUekJkSm9wVGJ2ajFuVVBsZjNDamxTNEN1VExtWmpUbU82U2tkM0tKbXE4OUlRcWVPNHZXSTBtQWdpaVF2aVBBel9pcVUwSzA2NW5Fdm1hZ9IB9wFBVV95cUxOb0ZQajNmaWhDN0lWcjdNX0Z5NlUxZ3ZUdm1sY1FrSXZRdVFwZlduZUpIcHZWY2laaFVfa1o1WkFhYWFoa2puaHhYMFZpa0ZjVjNBZVVVSjZUZWVSLXhNMlRmSTFFX3VBd0ZFSzc1bG5vdlQwMzROUDlNZXp4LTctUUQtMjVDbzRkdEZhc3dHQUZMVDYwT0ZsZmdidUZBRzEtdnh0QmMzQ3BEM0hyWXlIejlRbDFBUVA3dFNpbGpTdF9CMU1qcWRjM3RvQy1NSWt6cXF0cWhGV2tIbnRyYkJoSjhwS1V5SmZXVm5GNGVicnB2NDlhY29r?oc=5",
-        "date": "Fri, 23 Oct 2026 04:22:04 GMT",
-        "summary": "Why is OpenAI lowering its valuation to $1.25 trn ahead of potential IPO? Business Standard",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3a165d788c798ea0d8709bea5103dcf6ac8cd78716ef2b7177cd37837221edad",
-        "label": "OpenAI Reportedly Seeks $30B at $1.25T Valuation Ahead of IPO - AI Insider",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "AI Insider",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPM282Z0NuT2MzNEMzbjM5RF9DejhyZlgwblV6TjJQUF9mRDNhOWJydWlmN2llc0VGR3FGMjNsQ3lzMm5La1NiazN2Ti15RmFORDU3dzR4Sjk0UTYwUmJ1ZjZZWEVUSTg2bmNQNmRxdDVEa2dOY1dvMy1QTElhSFE1M00zTjZYMmkzTUNQS045dWNNeWZob0NZb1hwZGsxZw?oc=5",
-        "date": "Fri, 23 Oct 2026 13:05:02 GMT",
-        "summary": "OpenAI Reportedly Seeks $30B at $1.25T Valuation Ahead of IPO AI Insider",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:af65ed057178e0608da9a13e162172f3744d4df449254a95b7ebce3e1b2039ad",
-        "label": "Report: OpenAI closing on $30B \u2018bridge\u2019 funding round to tide it over before IPO - SiliconANGLE",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "SiliconANGLE",
-        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPek1YbllmZ0Z1bHZZM0VabjN4d1FBRXdVSXRxLXVLMzhHNDNaWXB1RzYyQURuS3lPQWZUdFVQZlBCczRvUFc1ejMtVHYtTEdjazNxOGdtY0hBRE9JR2VaV0cxcVFaQTM3YVpydkk1eklzbzcxZFVLeXpUdXBRXzVJUXR3d0MwTnZNd1FabzhIQ2NzZ3NpT29VOG8tU3J0T3pTR0w5WTBFRzBsa0REVjVZaHFGNA?oc=5",
-        "date": "Fri, 23 Oct 2026 00:47:00 GMT",
-        "summary": "Report: OpenAI closing on $30B \u2018bridge\u2019 funding round to tide it over before IPO SiliconANGLE",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:881357917af71220afa6ea038e80fa395e6a60aae0a2f5a4a157ba8ec5e6608f",
-        "label": "MiniMax Erases Post-IPO Gain as AI Model Rivalry Intensifies - Bloomberg.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdjJSc1V3UE9OZktaTFE0UExBTEl3VDE5RXMxQ2dBbnpXQW02c2RkanJhdE9TZzVyMTNEOHc4YkRFQVVESU9fVFZianpkWXRULWlTSXNhS28wRW1oSzdCZ2tscElPZURGekR5cVFUa1o4MVdpWEo0czFRQWxGcDY0T1llZW5LdWxvNVBmQm5RRGNNRjJlVVZZLUdOZ3p2UTM5LVAzUDYyaFhDQkJFWHFVTQ?oc=5",
-        "date": "Thu, 22 Oct 2026 02:27:00 GMT",
-        "summary": "MiniMax Erases Post-IPO Gain as AI Model Rivalry Intensifies Bloomberg.com",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c3eb5673f75ebe91e77703df824db542c3b0849f359ec1d96d76b85a5f143fbd",
-        "label": "Chinese AI Startup DeepSeek Raises $15 Billion Ahead of Potential IPO - WSJ",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOHIyeDY3eVpWMmZrYnhzZzNkTnpIN1N1OFhMQ1JVeGN1ejNxZlpPSmN0TTFRdzFLbTBvTlNpVDJvQUowcXB5a2VYYmZSZFJOMHBJYm9fVnBITk1YYWRrWkxXQXVDWkhfbng0eThneEF1MmEzMDhIY1kwTTdpRmtZTW85SVJJVjJZZVFlQURsdkZaT1pCVmlwUVd4V0d0a2pLLVk2NFByQ0c?oc=5",
-        "date": "Thu, 22 Oct 2026 10:28:00 GMT",
-        "summary": "Chinese AI Startup DeepSeek Raises $15 Billion Ahead of Potential IPO WSJ",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:00945b9d1126f1149b4627037e8efc3d7a0b83040bc8c6fc35060504c900b4c3",
-        "label": "Anthropic IPO: Here's What a $5,000 Investment Could Be Worth in 5 Years - The Motley Fool",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Motley Fool",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYlY0d1pBQzFONXMyMWtHWlh4MDF5Wm5aVURGRVBUd1IwT1NNMWl5NkxsajRNWXpzblZQRjNoX2RSbGxaUzJ5U2wycmwydmVyaEVEdFdNVUs1eWtKRkJoQm9IZkswb2gxZE1vdkczcERSVXpwa2kzMnNobVJXSkZSdUpHOVdsOTBSa0Q5OWJlanNnaFljTERYYQ?oc=5",
-        "date": "Thu, 22 Oct 2026 11:20:00 GMT",
-        "summary": "Anthropic IPO: Here's What a $5,000 Investment Could Be Worth in 5 Years The Motley Fool",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:bcab27bdf3a39b9dd11b50743ccf8dddaad0f37a68cbc84cc90eb447ef431298",
-        "label": "Anthropic IPO stands alone as AI market jitters sideline others - Reuters",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNX2RHNFI2M0VmLTVfUGwyWjBzTFZwcHBoNlFwZEttM3NHOHBVQzJmZmp0YV81V1lyX2VCWFZGMENVZzRhV3lPbVYzQWE1cHIwejVtbzlGR1hmMWpPTUlhM2pObDMyM1ZBMmEtbm14QXVnMUkzRnZvY25sTHlXM0hmTnNwbGx4SjNGaVhseGNHUVVQb0VzaVFVWTdVTUVMWkRVMS1JaFZWbDkzNmF5UEtWWWs2TEZxdjA?oc=5",
-        "date": "Thu, 22 Oct 2026 13:26:38 GMT",
-        "summary": "Anthropic IPO stands alone as AI market jitters sideline others Reuters",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c9e4356af386280e43cac72f1f96160bac4b0b8d464f0dd17960189b180c425e",
-        "label": "OpenAI Takes ChatGPT Ads to 89 Countries Ahead of Possible IPO - GuruFocus",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "GuruFocus",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcFRyVTNlU1hjZkpLaURuaThQWjJBR04tdzRKdnR5b3NhWWFfWjRKZDFRRk9jNkFtV1hjbGxuOTZRMmVsRURUWVZZbHRHNFBnUm1zWVVpRUstZWZ3N0lTQVdKakx6eDFGWFlkREt6YXJNYXdPY0ZSOG1jNGhxUVFxb3RocndLYnViWFZMcG9qNURDTmU5WEpnSUlYMnNZejN2Rndv?oc=5",
-        "date": "Wed, 21 Oct 2026 20:01:35 GMT",
-        "summary": "OpenAI Takes ChatGPT Ads to 89 Countries Ahead of Possible IPO GuruFocus",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9bf3815cd902ab61834efbf5ec86255c46ef1e7d168bb0e0cf563e7f093e69a2",
-        "label": "OpenAI Takes ChatGPT Ads to 89 Countries Ahead of Possible IPO - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVXM3LThwYWdDVkpnaXNpa2FDeDFKYzl0NHZJYXJjOUpTNURvd3ZlZVM1eE8zYVBGQXN6aDY4QS04eHIxQktFbEl2eU1wTS04ZDNUVV9UNkR3T0ZkU0NmZGlscG5NLTg4VFNIUEhOdXpxSW1TSmFiSXpRNndhNGlJVnFLclZvektqQUNLcUlDYXFNaVpycFE?oc=5",
-        "date": "Wed, 21 Oct 2026 20:32:55 GMT",
-        "summary": "OpenAI Takes ChatGPT Ads to 89 Countries Ahead of Possible IPO Yahoo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:28a13c8cfd2801d9e159710f11f07ecf8b89df46e26dd9b6c75faacb255dc660",
-        "label": "The AI IPO Wave Is The Dot-Com Bubble\u2019s Evil Twin. Anthropic\u2019s Delay Just Proved It. - Crunchbase News",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Crunchbase News",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdzMyV2lnYXdaNktkbUZRYml0bzdmU2ZEWTc5bG5QQkJVX1VETlRJOGVQX2JZU0w4YUQwN0RIUFVjNEFuNml1cV9Ebmh4N0RnMGRqSDJ5NXpCTDNuRjhRS0NDNy0tdWJwM05uY2JNREx1WjhHQWJSd1R6SVkxX3g2aUZNZDFzMElJRm83S3Jn?oc=5",
-        "date": "Thu, 22 Oct 2026 11:00:42 GMT",
-        "summary": "The AI IPO Wave Is The Dot-Com Bubble\u2019s Evil Twin. Anthropic\u2019s Delay Just Proved It. Crunchbase News",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:af7a52e7f4f3d1c9a6375ec7ec16aabdb73ae6f66c4327854e3dd39fc89b07e8",
-        "label": "Nvidia in talks to invest in Firmus Grid after scrapped IPO- The Information - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQVllMWGh1MWdWeGtyVnQ1NHpTRFVLSlpMS3owVG4zeHVnUmZOdDA4SUs2WDlJeVZFbGJPakFod0tBamRNRXpjQ1ppaENhak02N2xFeDF2VVJvZ25Xdk9NX3RnWHF4MnFxLU9QUVRfcmd5dG5vdFdLbWNrNkNRQXZOQ0p2QlNJamdiZGxJdV9XMWlGSGRmN01MZUFSMVI?oc=5",
-        "date": "Wed, 21 Oct 2026 05:18:00 GMT",
-        "summary": "Nvidia in talks to invest in Firmus Grid after scrapped IPO- The Information Yahoo Finance",
         "score": 4,
         "weight": 1
       }
@@ -15993,6 +15633,34 @@
         "mentions": 1
       },
       {
+        "source": "Alibaba",
+        "target": "evidence:f51c012a519d59d35182c21869baf4dacbc9486e8749238e89a4d86e56bcf7fe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:f51c012a519d59d35182c21869baf4dacbc9486e8749238e89a4d86e56bcf7fe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "ByteDance",
+        "target": "evidence:f51c012a519d59d35182c21869baf4dacbc9486e8749238e89a4d86e56bcf7fe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Tencent",
+        "target": "evidence:f51c012a519d59d35182c21869baf4dacbc9486e8749238e89a4d86e56bcf7fe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Microsoft",
         "target": "evidence:a889883503eeb0e1ea71fc0d4662a8084542b724ead684f8bcc4ecde6f3fd57d",
         "type": "EVIDENCE",
@@ -16149,6 +15817,27 @@
       {
         "source": "Microsoft",
         "target": "evidence:7e3204b9b49eb2feff33ce7cee1bd409b7e9308913b15e81b28aaf9a5cafa76a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:7b65f616e60d0586e28e82e7a7cecdae1d1d84f03fc611ae6d8e097122003701",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:7b65f616e60d0586e28e82e7a7cecdae1d1d84f03fc611ae6d8e097122003701",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:7b65f616e60d0586e28e82e7a7cecdae1d1d84f03fc611ae6d8e097122003701",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17395,6 +17084,118 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:7694070523701662fdc70bdd2fdacb676c33025886255f3d35d6e264d97f2af2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Zhipu AI",
+        "target": "evidence:7694070523701662fdc70bdd2fdacb676c33025886255f3d35d6e264d97f2af2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:0a30aa7ca1cdd8f04930f1e9f7b779e1c3b7faee0ee71ce52a93a4f1c90de394",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:0a30aa7ca1cdd8f04930f1e9f7b779e1c3b7faee0ee71ce52a93a4f1c90de394",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:3d9979e8ded1e57e93a8f6b1fc0f5c779946fa9ffe5e19f36d486302e7da164f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:3d9979e8ded1e57e93a8f6b1fc0f5c779946fa9ffe5e19f36d486302e7da164f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:6be92601f66cf6038bdd963d168c331c59a599031457f12e5247c304ba030565",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:6be92601f66cf6038bdd963d168c331c59a599031457f12e5247c304ba030565",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:a3339d054a551abf480def9a655ced137ca16309fc715412a79d6f8de8e41d3e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:a3339d054a551abf480def9a655ced137ca16309fc715412a79d6f8de8e41d3e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:acab0b5f72490d597470c5b83e14ef0f3d62c4a89e2ad77b52518e0f6324a803",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:acab0b5f72490d597470c5b83e14ef0f3d62c4a89e2ad77b52518e0f6324a803",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:078bf8a81fa9972c5235423621fdff19512b6f81ccfdeec12091a25c868ed873",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:078bf8a81fa9972c5235423621fdff19512b6f81ccfdeec12091a25c868ed873",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:dcb96b5c3e1dc912fbb47c7603930620f2cf26479439803be4474fe0b9ee4e3d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:dcb96b5c3e1dc912fbb47c7603930620f2cf26479439803be4474fe0b9ee4e3d",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -22959,6 +22760,62 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:968170efdcafe40db274eea9bfc8d322060218fa67e597e353c628bc220f00b9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:3baa6abc26128f334adc62e12adb81b99ef2af029f05e59672bac6d8b8efdb44",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:006f1368b4b7961b1011dd8ec80305c73c63a1992c27ca532d3bc744b04dbf0e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:d520479e49c62087db58c137995471acb2526208a014702966abe83a5d344f3a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:aa2042ef1d853deccc9dfda088175ca3768cca4f827bb2c5ac24fd5ece89865a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:ce2ca30415ee43025e055b6189614a769d51df3fc75fecb4d959b1a2b81740a5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:d3ca33fb6d6fc36333395d31928fcbacb5015503d26917567f5028dbf776c0ef",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:4fd587334fbb016faf476357f8671d907281aeb32810bdbd474d1adf2183d632",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:b470681a0ea4c27a84fce2f8d0928b26bcd0123286e5f5691d6099a371883068",
         "type": "EVIDENCE",
         "weight": 1,
@@ -23191,132 +23048,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:bc75c52af72dc182cb598d64a463225582cdb3d1468c1f47d894052f98dfb8a4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:3731d08c6f6ef818479bb8c40a63a96052010a7a92c11023c3f18d282a2392c4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:e4847529903f3f69b356feeab2c23d8d8ab3ab92fdf416ac2bd232a943f45035",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:944c5170a5b67b18c8306c6ef09b18e09f8d0e30427a853a3c77f03e10da4c52",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:1aa241d1d4676992ae9d5f1e65e79b58996c9368ca24e1013681d1339b3b4366",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:fdfc16a5a0bf921d640a62616e89b5e38b7b5a30a244d910b9bd063687cfa524",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:29190cfa630da59aa20c4fa337f241fbdc95aa41fa2a30a19524ae712022e68c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:1e96853d020ed6d6bf00b91964cc99193b7ab2abdd1d9fbd7a94b948e9c6cd35",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:8fd7f51077fcab200951df06660e825b87db8bb3a3dbd18fe56c4bcb949d7ba5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:3a165d788c798ea0d8709bea5103dcf6ac8cd78716ef2b7177cd37837221edad",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:af65ed057178e0608da9a13e162172f3744d4df449254a95b7ebce3e1b2039ad",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:881357917af71220afa6ea038e80fa395e6a60aae0a2f5a4a157ba8ec5e6608f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "DeepSeek",
-        "target": "evidence:c3eb5673f75ebe91e77703df824db542c3b0849f359ec1d96d76b85a5f143fbd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:00945b9d1126f1149b4627037e8efc3d7a0b83040bc8c6fc35060504c900b4c3",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:bcab27bdf3a39b9dd11b50743ccf8dddaad0f37a68cbc84cc90eb447ef431298",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:c9e4356af386280e43cac72f1f96160bac4b0b8d464f0dd17960189b180c425e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:9bf3815cd902ab61834efbf5ec86255c46ef1e7d168bb0e0cf563e7f093e69a2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:28a13c8cfd2801d9e159710f11f07ecf8b89df46e26dd9b6c75faacb255dc660",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:af7a52e7f4f3d1c9a6375ec7ec16aabdb73ae6f66c4327854e3dd39fc89b07e8",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -39990,6 +39721,36 @@
       "source": "Bloomberg.com"
     },
     {
+      "date": "Wed, 28 Oct 2026 01:47:00 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": "Moonshot AI",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Mercedes\u2019 investment in Kimi Antonelli paying off after Ferrari said no - The Japan Times Mercedes\u2019 investment in Kimi Antonelli paying off after Ferrari said no The Japan Times Google News",
+      "title": "Mercedes\u2019 investment in Kimi Antonelli paying off after Ferrari said no - The Japan Times",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQllvVkdSekc2UVcwOERISlFmYXNfSlZVcEVCbGtHVDZaTWtHbEVrUVdiQk5wZEptMXRXZFZkWVpmckgzc1JmRzZUaXc3VVhzMExGT0J3UEhEcDFoczY3cU1zaHlPZGlqMEl0Ql9MRHNvVmg2Rm9qU0swTjROOFZOZ3ZIaVk2NjdUQUNTOUFiUjZPcWZhTlE?oc=5",
+      "source": "The Japan Times"
+    },
+    {
+      "date": "Wed, 28 Oct 2026 11:58:30 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "AI benchmark rankings update push free models and Grok down - Cybernews AI benchmark rankings update push free models and Grok down Cybernews Google News",
+      "title": "AI benchmark rankings update push free models and Grok down - Cybernews",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNX3FTZC1CZDFCNzJqME9XbjVCU3RvUHJUZFFSSVNNRmpEZ2NOcDQzUDVkemItMy1uSmE2MkM0MFpDYXZCQ3ZyVzJKcm9yTk1BUE1xc2RGNVlfYWhQd0luYVFRSlNwN1lpZEl4SWlhWmtRaDY4UHR1cjhmMjNmS2djdkJIVWdqeEZIaW5JeFJMWk9IalVhM3plZXMyNWU?oc=5",
+      "source": "Cybernews"
+    },
+    {
       "date": "Wed, 30 Sep 2026 16:20:08 GMT",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": "Amazon",
@@ -40007,36 +39768,36 @@
   ],
   "collector_runs": [
     {
-      "id": 919,
+      "id": 923,
       "collector": "company-economic-news",
-      "started_at": "2026-10-27T15:53:02+00:00",
-      "completed_at": "2026-10-27T15:53:25+00:00",
+      "started_at": "2026-10-28T16:38:53+00:00",
+      "completed_at": "2026-10-28T16:39:18+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 30,
+      "items_new": 24,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "80a5a4cf-b14b-483a-a6d1-cc642b7756f9"
+      "collection_execution_id": "6cba033b-e8b3-4a4e-a5ad-c32aa0a9f7e9"
     },
     {
-      "id": 920,
+      "id": 924,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-10-27T15:53:26+00:00",
-      "completed_at": "2026-10-27T15:53:26+00:00",
+      "started_at": "2026-10-28T16:39:18+00:00",
+      "completed_at": "2026-10-28T16:39:21+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 4,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "80a5a4cf-b14b-483a-a6d1-cc642b7756f9"
+      "collection_execution_id": "6cba033b-e8b3-4a4e-a5ad-c32aa0a9f7e9"
     },
     {
       "id": 56,
@@ -40055,26 +39816,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 918,
+      "id": 922,
       "collector": "google-news-rss",
-      "started_at": "2026-10-27T15:52:55+00:00",
-      "completed_at": "2026-10-27T15:53:02+00:00",
+      "started_at": "2026-10-28T16:38:47+00:00",
+      "completed_at": "2026-10-28T16:38:52+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 23,
+      "items_new": 13,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "80a5a4cf-b14b-483a-a6d1-cc642b7756f9"
+      "collection_execution_id": "6cba033b-e8b3-4a4e-a5ad-c32aa0a9f7e9"
     },
     {
-      "id": 921,
+      "id": 925,
       "collector": "sec-edgar",
-      "started_at": "2026-10-27T15:53:27+00:00",
-      "completed_at": "2026-10-27T15:53:29+00:00",
+      "started_at": "2026-10-28T16:39:21+00:00",
+      "completed_at": "2026-10-28T16:39:23+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -40084,7 +39845,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "80a5a4cf-b14b-483a-a6d1-cc642b7756f9"
+      "collection_execution_id": "6cba033b-e8b3-4a4e-a5ad-c32aa0a9f7e9"
     },
     {
       "id": 57,
@@ -40104,12 +39865,12 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1112,
-  "mention_count": 8520,
+  "event_count": 1114,
+  "mention_count": 8522,
   "review_counts": {
     "provisional": 0,
     "confirmed": 320,
-    "flagged": 792,
+    "flagged": 794,
     "flagged_retry_pending": 0
   },
   "feature_family": [
@@ -42871,8 +42632,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "64c4eb718dbdcf92de189c1d2eea0ab392ef8555aa22aba662c5b4bc3eef2883",
-    "created_at": "2026-10-27T15:53:30+00:00",
+    "run_id": "54086629c88ce91e4902132634da60d5253f90c3add6652e8a391c8b4e1cee72",
+    "created_at": "2026-10-28T16:39:30+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -42942,6 +42703,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-850b97be78529cd2",
-  "database_sha256": "850b97be78529cd25ac8668583fd6496443d8bad1c1ebe82addb282772189298"
+  "database_state_version": "v1-39ba5859fc8866f9",
+  "database_sha256": "39ba5859fc8866f995b082f813b9980152f608aebdcbe557838c5665a51aabb8"
 }
