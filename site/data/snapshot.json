@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-28T16:40:59.090491+00:00",
+  "generated_at": "2026-10-29T16:57:40.743813+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 78.9,
+    "score": 79.4,
     "label": "FRAGILE",
     "direction": "unknown",
     "known_dimensions": 6,
@@ -15,31 +15,31 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-10-28T16:40:03.486000+00:00",
+    "reading_as_of": "2026-10-29T16:56:57.334700+00:00",
     "support_totals": {
-      "risk": 19.8456,
+      "risk": 20.6068,
       "safety": 3.4800000000000004
     }
   },
   "dimensions": {
-    "capital": 84.9,
+    "capital": 83.8,
     "monetization": 41.1,
-    "circularity": 74.8,
+    "circularity": 79.8,
     "fragility": 59.3,
-    "stress": 63.1,
+    "stress": 59.6,
     "transmission": null,
     "cannibalization": null,
     "external_pressure": 54.4,
     "counter_evidence": 33.8
   },
   "dimension_evidence": {
-    "capital": 11,
+    "capital": 10,
     "monetization": 1,
     "fragility": 1,
     "external_pressure": 3,
     "counter_evidence": 2,
-    "stress": 3,
-    "circularity": 4
+    "stress": 2,
+    "circularity": 6
   },
   "dimension_basis": {
     "capital": "reviewed_evidence",
@@ -53,7 +53,7 @@
   "dimension_direction": {
     "capital": {
       "direction": "higher_pressure",
-      "evidence_count": 11
+      "evidence_count": 10
     },
     "monetization": {
       "direction": "lower_pressure",
@@ -61,7 +61,7 @@
     },
     "circularity": {
       "direction": "higher_pressure",
-      "evidence_count": 4
+      "evidence_count": 6
     },
     "fragility": {
       "direction": "higher_pressure",
@@ -69,7 +69,7 @@
     },
     "stress": {
       "direction": "higher_pressure",
-      "evidence_count": 3
+      "evidence_count": 2
     },
     "external_pressure": {
       "direction": "higher_pressure",
@@ -97,22 +97,6 @@
         "source": "finance.biggo.com",
         "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBoQ3hhbm5ZYkdwSmlNdURJbUlFWHJUWHhqcUNkdlE1TktIWG0tLUF4dmRWQUNlcVJjVUdnLVVLamQ3eTBTX2RCV1F6RWNVOWJrR0RpZVAyWEUwWEZ0WmZjR2NhdjQ2VlM5YmVlbU1QN2tSWl80ekE?oc=5",
         "evidence": "ByteDance Completes Integration of Doubao, Feishu, and Volcano Engine; Liang Rubo Says Company Will Increase Investment in China's Enterprise Market - finance.biggo.com ByteDance Completes Integration of Doubao, Feishu, and Volcano Engine; Liang Rubo Says Company Will Increase Investment in China's Enterprise Market finance.biggo.com Google News"
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "Alphabet",
-        "value": 745000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.76,
-        "support": 0.9880000000000001,
-        "date": "Tue, 11 Aug 2026 07:00:00 GMT",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com",
-        "source": "finance.biggo.com",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tQ3M3Vk8tM1haT2Y0Y0dIU2VNOVRmQ2dVUkl1czcxYmFYcnlQQnQ2WmszSmJKNFhxdXp2OHFGZFluRVpJN1Z2TWgxaWk2TndIX0ZYZXY5OUxUVnBjMmpDN1BtYmlSZl94bGlYMHNJYTZndmFXdmc?oc=5",
-        "evidence": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" finance.biggo.com Google News"
       },
       {
         "variable": "AI capital commitments",
@@ -148,6 +132,22 @@
       },
       {
         "variable": "AI capital commitments",
+        "entity": "Amazon",
+        "value": 20000000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.76,
+        "support": 0.9880000000000001,
+        "date": "Sat, 01 Aug 2026 07:00:00 GMT",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' - Yahoo Finance",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMW12cVZQVTA4UGZWU1lWZ0tTODRDLXlaNllVd2dUYkRHR1VJUS11X181NXFvaGpxNklCNGxkaTZsemsxRFhDQ0NQek1BTk9YOFY0MmhmNmpCUUhrUGVvTjU1SGhlTHdOS2hqakVWN0Z3d2FPSjlILXgwYVB0N0lsbGhjYjJyV19GTURMNTN6cDFoMWFVc1Aw?oc=5",
+        "evidence": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' - Yahoo Finance Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' Yahoo Finance Google News"
+      },
+      {
+        "variable": "AI capital commitments",
         "entity": "Meta",
         "value": 79000000000.0,
         "unit": "USD",
@@ -177,6 +177,22 @@
         "source": "Bloomberg.com",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVjZhVmdVUEFRNjE0OHowdzNxZS1MTFBWMk44WWtvUzJlV0lBS1FINXF6cUNPQ0NnWlRPZ2tpaHR4cmJZS0ptckRRaTJwMmtLaTNrMFZYQXptNlBwOGRQZ0pmZ0VjWnlRNjV0VVhRNnNselZubTFXR1pkR1ZES2o1aHB6aGNiQmZLMmNQamFaY3dLa3JDQXk1dmJrcGg3MmplQ0R1bG5YbGJFOGQtcms1WWVRNA?oc=5",
         "evidence": "Tencent Tells Investors Its $5 Billion Bond Mainly for AI Capex - Bloomberg.com Tencent Tells Investors Its $5 Billion Bond Mainly for AI Capex Bloomberg.com Google News"
+      },
+      {
+        "variable": "AI capital commitments",
+        "entity": "Alphabet",
+        "value": 10000000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.86,
+        "support": 1.118,
+        "date": "2026-10-29",
+        "event_type": "INVESTS_IN",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "evidence": "Also, included in this amount is $ 10.0 billion of potential future data center and energy infrastructure backstops in support of our investment in the Crux AI joint venture."
       },
       {
         "variable": "AI capital commitments",
@@ -225,38 +241,6 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
         "evidence": "The carrying value of the Company's investment in the JV was $ 44 million and $ 51 million as of June 30, 2026 and December 31, 2025, respectively."
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "Amazon",
-        "value": 28700000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.86,
-        "support": 1.118,
-        "date": "2026-07-31",
-        "event_type": "INVESTS_IN",
-        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-        "evidence": "We account for our $ 28.7 billion investment in Series C Preferred Stock recorded on our consolidated balance sheet as of June 30, 2026, and the remaining Commitment Amount as a component of our equity investments in private companies not accounted for under the equity-method, with future adjustments for observable changes in prices or impairments representing Level 3 fair value measurements recognized in \u201cOther income (expense), net\u201d on our consolidated statements of operations."
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "OpenAI",
-        "value": 28700000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.86,
-        "support": 1.118,
-        "date": "2026-07-31",
-        "event_type": "INVESTS_IN",
-        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-        "evidence": "We invested $28.7 billion in OpenAI\u2019s Series C Preferred Stock for the six months ended June 30, 2026, including $13.7 billion invested in Q2 2026."
       }
     ],
     "monetization": [
@@ -411,25 +395,41 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
         "evidence": "Goodwill and Intangible Assets Goodwill There were no additions or impairment charges recorded to goodwill for any of the periods presented."
-      },
-      {
-        "variable": "Refinancing stress",
-        "entity": "Amazon",
-        "value": 2.0,
-        "unit": "score",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.86,
-        "support": 0.5848,
-        "date": "2026-07-31",
-        "event_type": "IMPAIRMENT",
-        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-        "evidence": "The inventory valuation allowance, representing a write-down of inventory, was $ 3.3 billion and $ 3.0 billion as of December 31, 2025 and June 30, 2026."
       }
     ],
     "circularity": [
+      {
+        "variable": "Vendor financing",
+        "entity": "Alphabet",
+        "value": 16200000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.88,
+        "support": 1.232,
+        "date": "2026-10-29",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "evidence": "As of September 30, 2026, our maximum potential future payments under these guarantees were $ 16.2 billion, upon which we may receive certain assets."
+      },
+      {
+        "variable": "Vendor financing",
+        "entity": "Blackstone",
+        "value": 5000000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.88,
+        "support": 1.232,
+        "date": "2026-10-29",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "evidence": "Under the agreement, Blackstone is committed to provide future capital contributions of up to $ 5.0 billion, and we are committed to provide future data center and energy infrastructure backstops in support of agreements the venture may enter into of up to $ 10.0 billion, subject to certain conditions."
+      },
       {
         "variable": "Vendor financing",
         "entity": "Meta",
@@ -644,6 +644,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-10-29T16:56:57.334700+00:00",
+      "score": 79.4,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.8, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-10-29T16:56:12+00:00",
+      "score": 77.4,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.6, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-10-28T16:40:03.486000+00:00",
       "score": 78.9,
@@ -2684,6 +2698,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-10-29T16:56:57.334700+00:00",
+      "score": 79.4,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.8, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-10-29T16:56:12+00:00",
+      "score": 77.4,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.6, \"monetization\": 41.1, \"circularity\": 74.8, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-10-28T16:40:03.486000+00:00",
       "score": 78.9,
       "label": "FRAGILE",
@@ -2847,13 +2875,253 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-10-28T16:40:59.092163+00:00",
+    "as_of": "2026-10-29T16:57:40.745216+00:00",
     "counts": {
-      "pressure": 39,
+      "pressure": 47,
       "public_exposure": 5,
-      "context": 9
+      "context": 8
     },
     "items": [
+      {
+        "fact_id": "f395fc43c5e2eac62b953e02f1f8f348235d99a5523cd9699f3385a9702c64a3",
+        "event_id": "143925f71dfb4b8ec23f6aac308fedb51bd26671d424ccdcf6e75c3d6856dfe4",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "57 \u2022 $22.8 billion of financial guarantees, primarily to support counterparty procurement of long-lead time equipment for our future power purchase and energy agreements.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "f395fc43c5e2eac62b953e02f1f8f348235d99a5523cd9699f3385a9702c64a3"
+        ]
+      },
+      {
+        "fact_id": "eaedaed28a00be768ea6b72ed416d02905ec7741c79173a48cc86014fd7267f4",
+        "event_id": "9ed44861187d0a0fe1d46e22324db83860f8c144ad6511136a598b37d217dbc4",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "During the nine months ended September 30, 2025 and 2026, we spent $63.6 billion and $132.0 billion on capital expenditures, respectively.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "eaedaed28a00be768ea6b72ed416d02905ec7741c79173a48cc86014fd7267f4"
+        ]
+      },
+      {
+        "fact_id": "e959e66afdc338a03a90e2230d05ae1078220a1b8c96622aae841996458ed5d1",
+        "event_id": "ceab1d8ba1b675026d1297b5bd901b8192d131a0819c3046f4321351364a1347",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "An investment increases capital exposed to the business succeeding.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "INVESTS_IN",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "Also, included in this amount is $ 10.0 billion of potential future data center and energy infrastructure backstops in support of our investment in the Crux AI joint venture.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:21.752969+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "e959e66afdc338a03a90e2230d05ae1078220a1b8c96622aae841996458ed5d1"
+        ]
+      },
+      {
+        "fact_id": "c395959085cdbbdaf86fcedb8d70a7af82e8548c98f10c55d7ab7b8c15bba6c1",
+        "event_id": "c61b6ef603c2f8ef20e9fcbe71d88049814b1cc835545fa087aabc145c333465",
+        "kind": "pressure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Lending connects the lender to the borrower's ability to repay.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "LENDS_TO",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "27 Credit Facility As of September 30, 2026, we had $ 10.0 billion of revolving credit facilities, of which $ 4.0 billion expires in April 2027 and $ 6.0 billion expires in April 2030.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "c395959085cdbbdaf86fcedb8d70a7af82e8548c98f10c55d7ab7b8c15bba6c1"
+        ]
+      },
+      {
+        "fact_id": "9b719380a87a7c2a55dcc0b1f073b80b694cd1ba0b38e81bebf14b939ba4fe75",
+        "event_id": "260d90f877495629e8e536fedae0ee516901d5ecf3fc7f0c85b94d923a030378",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "$27.7 billion represents our obligation to put in place future backstops to support data center and energy supply infrastructure, of which $10.0 billion is with Crux AI, a related party.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "9b719380a87a7c2a55dcc0b1f073b80b694cd1ba0b38e81bebf14b939ba4fe75"
+        ]
+      },
+      {
+        "fact_id": "8fe6bbbc344e266618778e2dbe32ae11faee20e8bfc31051785edbaac2072393",
+        "event_id": "b0aa06aec8c689df8ffe9220842cfa8d58d53530dce4b493e9f06b6650c917cf",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "As of September 30, 2026, our maximum potential future payments under these guarantees were $ 16.2 billion, upon which we may receive certain assets.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "8fe6bbbc344e266618778e2dbe32ae11faee20e8bfc31051785edbaac2072393"
+        ]
+      },
+      {
+        "fact_id": "827c2b895093c89ee4a7cb2309f9c461695d0c332a7b920eaa7e979004732278",
+        "event_id": "7de62d244f1f3219ab2f14007112891c13a4e24d931680d12230442b77809522",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "Under the agreement, Blackstone is committed to provide future capital contributions of up to $ 5.0 billion, and we are committed to provide future data center and energy infrastructure backstops in support of agreements the venture may enter into of up to $ 10.0 billion, subject to certain conditions.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:21.752969+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "827c2b895093c89ee4a7cb2309f9c461695d0c332a7b920eaa7e979004732278"
+        ]
+      },
+      {
+        "fact_id": "4634d2e974caf7a393e038910a4d56f6affc6b7aa88d3838a86bf8f2b086b3fb",
+        "event_id": "88adaf2bc0a03954fc8ba4dde7b9ef314aa8e9209bb734c2c1853743fcc8db18",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "\u2022 Capital expenditures, which primarily reflected investments in technical infrastructure, were $51.4 billion for the three months ended September 30, 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "4634d2e974caf7a393e038910a4d56f6affc6b7aa88d3838a86bf8f2b086b3fb"
+        ]
+      },
+      {
+        "fact_id": "147e052a7799db1b93a4b306cf61ea2f26ce6256f8d2e344ab54e36b2af1fad5",
+        "event_id": "5ddf9a755c3d05a773612e0efbfb2dee720581790c53be4014ae58342281fe7f",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "We recognized a charge of $ 3.5 billion in the third quarter of 2025, and we placed bank guarantees in the fourth quarter of 2025 in lieu of cash payment.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "147e052a7799db1b93a4b306cf61ea2f26ce6256f8d2e344ab54e36b2af1fad5"
+        ]
+      },
+      {
+        "fact_id": "12df4d4bad8af7e9963b7921bbb81d87890cfe4387a4125c8e927d61dbbcb13d",
+        "event_id": "5c1e38a8c531518c77df252a453cb79ef9eb8ce725a985eca466705e30645cb9",
+        "kind": "pressure",
+        "causal_role": "VULNERABILITY",
+        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "GUARANTEES",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "As of September 30, 2026, our maximum potential future payments under these guarantees were $ 6.6 billion, and the fair value of these obligations was not material.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "12df4d4bad8af7e9963b7921bbb81d87890cfe4387a4125c8e927d61dbbcb13d"
+        ]
+      },
+      {
+        "fact_id": "0cc164abb4e0e59ffa0a91d3bfa7e268c54350efc525b8c90e0575f82cbb4bef",
+        "event_id": "a01a0192c4d12d3f3c5af4d5fb3f226b0ac6618a304a710bfd2a57fd75e5f389",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "The net proceeds received by the company were $20.5 billion which will be used for general corporate purposes, including capital expenditures to scale AI infrastructure and global compute.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "0cc164abb4e0e59ffa0a91d3bfa7e268c54350efc525b8c90e0575f82cbb4bef"
+        ]
+      },
+      {
+        "fact_id": "07c7d0cf946cf97d9130c1a66f9f8ebe547fc142edf5a5677fbeb9b006c68759",
+        "event_id": "1184d9fd3b4f18c26fe234132e484333faaa110c79532fe3bc16f821b229fdf4",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "evidence": "Aggregate net proceeds were $ 19.0 billion which will be used for general corporate purposes, including capital expenditures to scale AI infrastructure and global compute.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29T00:00:00+00:00",
+        "reviewed_at": "2026-10-29T16:56:30.176733+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "07c7d0cf946cf97d9130c1a66f9f8ebe547fc142edf5a5677fbeb9b006c68759"
+        ]
+      },
       {
         "fact_id": "d9330b8e3a2b6b028601fa77fa5b58cc46fcaa179a2d511b2c17b2e43541e086",
         "event_id": "2fa70869a36245b820f004bb5bf315696bb89ae9124d0aa41efc7a37b52e50b2",
@@ -3817,106 +4085,6 @@
         "underlying_fact_ids": [
           "6870fbba409e47cc2e1c538f43aac0b9d90d4366186196196950d358337ec761"
         ]
-      },
-      {
-        "fact_id": "d91cec3cde6b19d7f7cacf38b450bed4c423f8f9ce2167bdf15cd982c8d8799c",
-        "event_id": "23233bb98737cbb495026d585b9a6b9a1d32d9b31304e413cee18ea837c33507",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "An investment increases capital exposed to the business succeeding.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "INVESTS_IN",
-        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
-        "evidence": "We invested $28.7 billion in OpenAI\u2019s Series C Preferred Stock for the six months ended June 30, 2026, including $13.7 billion invested in Q2 2026.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-        "date": "2026-07-31T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:23:15.783077+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "d91cec3cde6b19d7f7cacf38b450bed4c423f8f9ce2167bdf15cd982c8d8799c"
-        ]
-      },
-      {
-        "fact_id": "8101c841326c3639ed510a3e61363d29992173d3f2f072287217d33b08dbc2d0",
-        "event_id": "3081d286e6639c0a570d019c4321243b3a58fa424bf1c6f1dd324fe38b435524",
-        "kind": "context",
-        "causal_role": "RESILIENCE",
-        "rationale": "Cash flow informs self-funding capacity; its sign and trend must be read from the source.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "FREE_CASH_FLOW",
-        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
-        "evidence": "Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended June 30, 2025 and 2026 (in millions): Twelve Months Ended June 30, 2025 2026 Net cash provided by (used in) operating activities $ 121,137 $ 161,403 Purchases of property and equipment, net of proceeds from sales and incentives (102,953) (169,007) Free cash flow $ 18,184 $ (7,604) Net cash provided by (used in) investing activities $ (123,569) $ (216,775) Net cash provided by (used in) financing activities $ (8,652) $ 75,160 Free cash flow has limitations as it omits certain components of the overall cash flow statement and does not represent the residual cash flow available for discretionary expenditures.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-        "date": "2026-07-31T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:23:29.736349+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "8101c841326c3639ed510a3e61363d29992173d3f2f072287217d33b08dbc2d0"
-        ]
-      },
-      {
-        "fact_id": "5b3b08032fefaa313305846597a2490a02e6a204a4f7b34f46c5b5295428d393",
-        "event_id": "5ae1e06488e415cb8f27a00e65ab0804201173fb4ccb0a50549720eb7b3c0f47",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
-        "evidence": "Cash capital expenditures were $31.4 billion and $53.1 billion during Q2 2025 and Q2 2026, and $55.6 billion and $96.3 billion for the six months ended June 30, 2025 and 2026, which primarily reflect investments in technology infrastructure (the majority of which is to support AWS business growth) and in additional capacity to support our fulfillment network, both of which we expect to increase in 2026.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-        "date": "2026-07-31T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:23:15.783077+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "5b3b08032fefaa313305846597a2490a02e6a204a4f7b34f46c5b5295428d393"
-        ]
-      },
-      {
-        "fact_id": "53d18c4d90201743b9b9ddbb05bca18470fdc173de3ff1b089154b46532cb185",
-        "event_id": "c312b5f38153159a92bc9bd579c13577790563517208d570046da2d4a6419d5a",
-        "kind": "pressure",
-        "causal_role": "STRESS",
-        "rationale": "An impairment recognizes a reduction in asset value.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "IMPAIRMENT",
-        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
-        "evidence": "The inventory valuation allowance, representing a write-down of inventory, was $ 3.3 billion and $ 3.0 billion as of December 31, 2025 and June 30, 2026.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-        "date": "2026-07-31T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:23:05.639780+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "53d18c4d90201743b9b9ddbb05bca18470fdc173de3ff1b089154b46532cb185"
-        ]
-      },
-      {
-        "fact_id": "21fca1d3f7476cdc33b3be04706ba98834972f6895548a8e6a0f1b68de49d5e2",
-        "event_id": "2bcb22c70b9a749483d922beed3393f38acc7145ab5a7d942350082e9eacf077",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "An investment increases capital exposed to the business succeeding.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "INVESTS_IN",
-        "title": "Amazon SEC filing: 10-Q (2026-07-31)",
-        "evidence": "We account for our $ 28.7 billion investment in Series C Preferred Stock recorded on our consolidated balance sheet as of June 30, 2026, and the remaining Commitment Amount as a component of our equity investments in private companies not accounted for under the equity-method, with future adjustments for observable changes in prices or impairments representing Level 3 fair value measurements recognized in \u201cOther income (expense), net\u201d on our consolidated statements of operations.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
-        "date": "2026-07-31T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:23:05.639780+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "21fca1d3f7476cdc33b3be04706ba98834972f6895548a8e6a0f1b68de49d5e2"
-        ]
       }
     ]
   },
@@ -3932,13 +4100,13 @@
         "id": "Alphabet",
         "label": "Alphabet",
         "kind": "company",
-        "weight": 66
+        "weight": 67
       },
       {
         "id": "OpenAI",
         "label": "OpenAI",
         "kind": "company",
-        "weight": 36
+        "weight": 37
       },
       {
         "id": "Anthropic",
@@ -3974,7 +4142,7 @@
         "id": "Microsoft",
         "label": "Microsoft",
         "kind": "company",
-        "weight": 12
+        "weight": 13
       },
       {
         "id": "Baidu",
@@ -4037,6 +4205,12 @@
         "weight": 4
       },
       {
+        "id": "Blackstone",
+        "label": "Blackstone",
+        "kind": "company",
+        "weight": 3
+      },
+      {
         "id": "DeepSeek",
         "label": "DeepSeek",
         "kind": "company",
@@ -4047,12 +4221,6 @@
         "label": "MiniMax",
         "kind": "company",
         "weight": 3
-      },
-      {
-        "id": "Blackstone",
-        "label": "Blackstone",
-        "kind": "company",
-        "weight": 2
       },
       {
         "id": "Nasdaq",
@@ -4190,6 +4358,78 @@
         "date": "2022-10-27",
         "summary": "Twitter reported that the merger was completed on October 27, 2022 and Twitter became a wholly owned subsidiary of X Holdings. The transaction valued Twitter at approximately $44 billion.",
         "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5e42811b70149031a3a80d85d43bb21220ae9e187d93ed81480bd924dd078ae5",
+        "label": "Oracle SEC filing: 8-K (2026-10-28)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526435853/d75538d8k.htm",
+        "date": "2026-10-28",
+        "summary": "SEC filing 8-K for Oracle. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
+        "weight": 1
+      },
+      {
+        "id": "evidence:3a969df691b051fa532f5839c1bcf7f41edf38ee948c8247c73360482cc264b2",
+        "label": "Alphabet SEC filing: 8-K (2026-10-28)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/goog-20261028.htm",
+        "date": "2026-10-28",
+        "summary": "SEC filing 8-K for Alphabet. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
+        "weight": 1
+      },
+      {
+        "id": "evidence:a49042ab2b19a1d7ee1105ce4e5055472944e9dd0e8a3981e454c63190d8a83b",
+        "label": "Alphabet SEC filing: 10-Q (2026-10-29)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+        "date": "2026-10-29",
+        "summary": "SEC filing 10-Q for Alphabet. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
+        "weight": 1
+      },
+      {
+        "id": "evidence:18bfaf13cbd2df24a8705c7fcfa666dcfb7ed3ba4d59c598bb8e1b97bd8f82a4",
+        "label": "Microsoft SEC filing: 8-K (2026-10-28)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436122/msft-20261028.htm",
+        "date": "2026-10-28",
+        "summary": "SEC filing 8-K for Microsoft. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6abebabfc3d2c067edd4cef476b421ba77fe3ddd8f34f694e627f6e3ebea0ba6",
+        "label": "Microsoft SEC filing: 10-Q (2026-10-28)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+        "date": "2026-10-28",
+        "summary": "SEC filing 10-Q for Microsoft. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2975a6fb8a0daeea939d433dfba711a946fdef0f9f03f4a784c6911971076759",
+        "label": "Microsoft SEC filing: 8-K (2026-10-28)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436149/msft-20261028.htm",
+        "date": "2026-10-28",
+        "summary": "SEC filing 8-K for Microsoft. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
         "weight": 1
       },
       {
@@ -7742,6 +7982,54 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ae419a96703ec581ba967e1336ea57d7d72c3f35298af83baf10d45d53729af4",
+        "label": "Anthropic moves toward IPO, stepping up race with OpenAI - Reuters",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQQlMzZlRMZHRFRVJRSUNpZWJMTTkwdnhmeDZFRmtOUWFlamZOMy00ejR2ZS1aMlVROEVHZzlnX1UxVDBvQTBkOVpJTVh3MHFpRDJISV9TRlR5bWhQRWIxUzktRlp6d0dKcUYxeFlmc0dKYTRyQWQ0UDE2dHk1UnJ6d3NvWVZoUnJfdGFmSzh0QmFQbVE4eWc?oc=5",
+        "date": "Mon, 01 Jun 2026 07:00:00 GMT",
+        "summary": "Anthropic moves toward IPO, stepping up race with OpenAI Reuters",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:26f30b65d29ba9947587a7b93394d7a9265adfbcd27373e057f1b44657fe5f69",
+        "label": "Anthropic targets $2T IPO as seven OpenAI alums lock 50% control, pledge charity - Chosunbiz",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Chosunbiz",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9ZVGlLN0IwcmRjSF83SjBnVTR0Zko0dDVWVkYxbXliR05tM0JBYzdRSkVoNkQ5YncwWHN5ZTNqcnZCV1JxM0gwQ2xIcjFNNXpVRm55dFZXdEY2Q1l6QU1HbEoyaWt4bEt2bDNOdkJESng0WHlkeVRhTzd30gGOAUFVX3lxTE5zYkpTVzlhTTVKZUI0TzhGTlkwR3RPT1Z3UFYtQWlyWG9zSGtQVlN4T1AwaV9SdHAwcUUtTUpGUFpqd2dzOGdRQkhic1N5LXRnc3RCTWFzc2RlN0Q5RXpIUmV0cHJNWEFiSTd0SE9GUF83OWJPUktnek5lcWl4OE9qWXllN04wRE9OSm5uT1E?oc=5",
+        "date": "Wed, 28 Oct 2026 21:02:00 GMT",
+        "summary": "Anthropic targets $2T IPO as seven OpenAI alums lock 50% control, pledge charity Chosunbiz",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5111fbfaa6bf1dd927da70f820a98922c96506ede9fbc638e02b695bf44282a0",
+        "label": "ThinkMarkets Launches 24/7 Pre-IPO Markets on Anthropic, OpenAI - TradingView",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TradingView",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNekhOVG5mbVFZLXRoUVdyZTRpWjJINDh2US1nSldySGcxbVlsVnIxVWRLSUZLVU9wblZDYk8tLV9QdG1zM28wNnNiWHF5RUFQTEpwZ19HLWdDNldOZ2ZBeVhndlpaYmdsZm9lRnZhTzVURWtBSFlER2ZNNEhIa0ZUeV9jbFpiQ1BQMjJwXzJBelJZc2FNTnlaR1Zza0JEQlFMUTZHZ3V1MnVoNVJocHFkdTNjT1M2LUZ4ZFk0cS1tMmo2Zw?oc=5",
+        "date": "Wed, 28 Oct 2026 09:00:55 GMT",
+        "summary": "ThinkMarkets Launches 24/7 Pre-IPO Markets on Anthropic, OpenAI TradingView",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f856de35f643b8560e7001f35ee077ebf42c5345904e79f6f023888198d41313",
+        "label": "After waning wall street against OpenAI and Anthropic IPOs; America\u2019s biggest investor Michael Burry now - The Times of India",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "The Times of India",
+        "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxPbmtDd1h1ZnpmZ04wUTZRd21FOGd6TjFBeklpVlpkXzQ5LXpCSW8yQlAzRGZSUHRta1N4Qk02M0s2bEJfYi15YmhnZHkwRUlFS0pQLUMzNnZJUlB4dVFkZjhOOEMxYm5oa1JYT1BNMWp0X3N1QjFUSG9ReFZ2dkEyWm8yS2NpNHM4TmkzTnFXTUw2a0g4UzB6MTVVTkRnRThsMHBhQ1NpZDR4QkJmTzFka2E3WGhvVjJPQ0FoUTcyOGxYa2wzcU1vQUkwRjVkNmttTnpTOEc3X2F5bnJrRXlPMzhNcFBYMTdyS0JMX1NkaFVUYXdadTlwMlNsOURQdUZna2dlYVk1LUYta2Fpd2JHMml3NloxdjE5YVBJLU5lWDJLWkgzSXNaR3lOaVdNcFl0SXh4a3U0YmJCTmhmelEwSkxncnEwWW5SVWIxbDhsZmhLMlNzUDlZTnFmV3RJbzQzQ0pObWY0cG5kZlhsYlNOOXVnb3d6Z9IB-wJBVV95cUxQYzRPRXNTanpsbmZKektFc24xS3dQZV9CMHhSdW51RW1pcWdEZVJWYjRCTGE1dFQ2SkstbzdFU3NMTFRoMGZSUGtNQUl2UERFYmJJR2hvWnJYalZNdmpiR2lqZXFITG8xM2lMQkJZRV9qUFp5R3JpdkxOTDRGTVRsZ2xBd0FNNHpWZWFRMUlNajJWZGVNNGY5VDViRFhXdF93Qi1jZ29meTlONkdBSTVSd2J2dUlaQ0V4RzRwRGVBWkJYZ2lQd2hkUDNtYkJzNXkxQUNfZ3FtSmRlUldoVV9VSEN5N0x1SXA3Z3ZENTIxSWFzeEZCOUVOY1doZE9MMVdkUFE5bS1XT0xNcE1LQlprcjJ4QUhTVDRiM0g2WHdXSUhSSEFOeEktN3piNlJuTmxDYlVXMWxfTlJIS2E4a3ZPNWxVMGFDbmE5SGI4VU9NRjZ5dEd4V2JXbHd3SDJVRmNjUTQ1UVU5bFh2UnI5OUJBeTA4RlRsS2p3emJN?oc=5",
+        "date": "Thu, 29 Oct 2026 10:01:00 GMT",
+        "summary": "After waning wall street against OpenAI and Anthropic IPOs; America\u2019s biggest investor Michael Burry now The Times of India",
+        "score": 5,
         "weight": 1
       },
       {
@@ -13181,6 +13469,90 @@
         "weight": 1
       },
       {
+        "id": "evidence:f0b99bc90fce95fc05abef8792fe77e6ef4ae7091d111992f59adba222aacd73",
+        "label": "AI build-out hits snag as Google and Microsoft put off raising capex forecasts - CNBC",
+        "kind": "evidence",
+        "category": "General AI capital",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1pM0RNUDRnMFJXZkRoZG5ZdVVXRHozTUtidUxjMXdKbFBHVW9hTjg1NlFPcFcwLTZCQzM3cTRQYnpzRE1LQ3pNUkpxQmN1OEdnN25fZGhNUDlMZ0w0VW5kUGdoWWd4ZDFWNlZBTHFQaVpDd3B2M01UN3ZrcWzSAYIBQVVfeXFMUDhDNzNOa204RlZoNUNMTUZnWEVNY0RVbmtlNjQwc0N6YU0wWlhla29xRE5GRkhZbmwxRjEwNE9lZ2VoaG9mU0loVVJGaEprdmY2TkE3U1luNlE3Q2g2VmJVSlZkQ0RPYVdpSGYzV1lSMFZzZmRjU2lFanhOUThXUzZGZw?oc=5",
+        "date": "Thu, 29 Oct 2026 11:30:01 GMT",
+        "summary": "AI build-out hits snag as Google and Microsoft put off raising capex forecasts CNBC",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:79de7e3ccafe8fb0873fd5e86367787230068ad693498860fdda03a5b44ab652",
+        "label": "Is Anthropic Pursuing a Cash-Burning IPO? Key Insights for Domestic Large Language Models - 36Kr",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "36Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0wYTlZb1Uzd0VpTkZRdGhBeFVCUWZhS1ZRUkxyLWtqeWxTeXYtVVNIdDBXNVJ4YzlCOEM0aXlUcE8zRHBhNi05OEI0Sk1mSUg4Qy1R?oc=5",
+        "date": "Thu, 29 Oct 2026 00:00:31 GMT",
+        "summary": "Is Anthropic Pursuing a Cash-Burning IPO? Key Insights for Domestic Large Language Models 36Kr",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:acbd5b80fcdfe9c5f54fdf1b7238e28addc2fa0c30d0fe26fbb89d1bcddbb91b",
+        "label": "Anthropic is going public\u20141 number from its filing is an encouraging sign for investors, says IPO expert - CNBC",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Vc2N5SUR3WmY1a1l1cWJRbFM1RXVLakdBUGc1YWZ0dWRjLVhfN2ZZX2lHUG9pcU1HVno0cnMyY096UWp5b1lmYmlSRTN6SnI5ZFhGTGE2NGtUWkM0cUhCazlDM0l1LTh6ZkNYWFlwbGZuQ3pDdUZjLUc2bU9JZ9IBgwFBVV95cUxPbnp1REdiQWJ3c1Vic0N1cEtITFRkbDlraEY0VzJhTVhLdmd5RHYweHVCWllTNlJsajJ3d3gxa2RhV0ZWRjZJNkRZYjFjQm0zZWJkTTRPSlBrRjZnQmk1RFlsUXpjc3NiakxuVlZfckNxcC1lbHUwMTZNQnJOR2FNbzMyRQ?oc=5",
+        "date": "Wed, 28 Oct 2026 19:11:25 GMT",
+        "summary": "Anthropic is going public\u20141 number from its filing is an encouraging sign for investors, says IPO expert CNBC",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:80338567a0ec1690ed2b814df33e2b3f02f7bd92cd15b7deaf6043cac911ada7",
+        "label": "Anthropic IPO Disclosure of \u2018Existential\u2019 AI Risk Sets Standard - Bloomberg Law News",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Bloomberg Law News",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObXVNcHg4RlZVb1pMelhtUTNkaHBQLXJNeTVoVDFFWEFuZG5HMDVud1dDYzZOOUJlUXdIbWhrTHdRRWx3MTZzcDM4eWdZTFNHOF9QT2dpQWJLc0RRZFNabkVPb2FCbUdBYVJjb1k4MUlidDVEOEdKOGR2TlpTWHcxN3V2aTk5ckJmTGZpRjdZeEFCYWFGbUkwWWxKVzVrQ0VpLWxTSElpRWIxZzhOQWFzcjNpb3ZjUWtwbkMtX2Y2QUd5Nk50TmxCdEZn?oc=5",
+        "date": "Thu, 29 Oct 2026 14:17:00 GMT",
+        "summary": "Anthropic IPO Disclosure of \u2018Existential\u2019 AI Risk Sets Standard Bloomberg Law News",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e29be141ff63e1b81f2599d5f755c92cbf57ead45318654b13684212a3d0fe2e",
+        "label": "Anthropic Unveils Paperwork for Blockbuster IPO - WSJ",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbmI5VHgtQjFuck9nQkJ5Q0hCekJJT1YxVVR4MlFwcUNodk9hYzJPYWlaQ2JhYjVRcC1JYUFpZlRNNE5iZWJFMFZUQ0tyQ3VnempEZFJNcnhmalhDQWlpWjN5MkllV0p6cWtzd1lHWGZXZVdjcDVlREplX1JReV9fUUdSWjRqQUNr?oc=5",
+        "date": "Thu, 29 Oct 2026 15:31:04 GMT",
+        "summary": "Anthropic Unveils Paperwork for Blockbuster IPO WSJ",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:83e016bfd09fad6a706b2bcf0589ae2ddde732e3edf9bdd093bb2474677ba164",
+        "label": "What Happens if OpenAI Delays Its IPO to 2027? - Morningstar",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Morningstar",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQVhIRjdUQkxCbEM2WGZCNkhRQ2R4TXpDdVJ5Wm5YRDNhVE5XZmlNSDRsLUY3M2k5SThSblhGcGU2akZOdjJhV0dKX2ZPR0xVWXgxdlBhSVBnbXg2N0lpUTJtdVZYR0c1N1BsOVdMMFVaemdjNUlZY1l6UmxzQV9zNDRTOEwzMV9uNTdwY3VwVGc?oc=5",
+        "date": "Sat, 11 Jul 2026 07:00:00 GMT",
+        "summary": "What Happens if OpenAI Delays Its IPO to 2027? Morningstar",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:ece4691d3ef4dfdad9956c7fa0a57ed13056b74d04977503c452ff3361c166a2",
+        "label": "OpenAI aiming for speedy IPO, source says - Reuters",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMnZDYW4zd0pDVEQxVFRhNlozSDdMaTVma1FrQVhaZVZKd1lXTGtVdk9QUVVmN2pDbmc1SG8xVkRSTElVNThiZVlpV3dmLTZSVEdvaVhScGh3bm5oRk11WFZ6V05QbUk4a19ZcWlXRVVkeVUtRnZRYjFBQ0JUczRvNmJCam11YzN2U0NGeUlPUVA?oc=5",
+        "date": "Wed, 20 May 2026 07:00:00 GMT",
+        "summary": "OpenAI aiming for speedy IPO, source says Reuters",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:968170efdcafe40db274eea9bfc8d322060218fa67e597e353c628bc220f00b9",
         "label": "Why does Anthropic\u2019s IPO prospectus have so many China \u2018risk factor\u2019 warnings? - South China Morning Post",
         "kind": "evidence",
@@ -13479,213 +13851,16 @@
         "summary": "Sam Altman\u2019s OpenAI eyes $30B fundraising round ahead of looming IPO: report Yahoo Finance",
         "score": 4,
         "weight": 1
-      },
-      {
-        "id": "evidence:a47015ba4f90522680f6332af550250ceee420cbf828e09a16078bddf8d07df5",
-        "label": "Anthropic files for US IPO amid AI boom, rising costs and safety concerns - The Economic Times",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Economic Times",
-        "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPV0MzTGpNYlpndk51T0U2R3A3djhsY1RNWGRjR1dPY0UySk5oMVJCRFdxQ044SGNMa0szVUJuSHpmVXg2ZzdXYjhkRkVINmplSjJKQXU0b2RGSnlxQ3FOYVkwMjhsUnZwZ0lxVnpNTkpFX3VmZUdpX3d0UG9HMXh4UkJTNXFyTDNES2xvVG9IaXRkVUFrQTZ2eHMtaHdQdTdTMWdKVzhCZjBRLXY0X19QV2syeGZyTWNmYjVqdUFDYmRSVTVneWN3d0ZsNVRWU2Q0Umw1UGJ4RVVPWE9WMmktWjUwUUlKLW5nMmpEY9IB8gFBVV95cUxOMGVWVnZONzNYdVVaMTFVaU1ja1pSX2lIZ2VYVnhJZGFSbUNlVEN0WDBpNU1FUjhPZGJ2bG94LXBjN3hCWk9qcEZ6TkZ0SU9WaEx0WmZkMDJUdG1QdnVCWUkyaFc5XzJhcW82UW9JUkxxYVBVdWFHOU5jV29rcnJQeFZnSWVPWlhPblhfR3VxUm9hbWpvTjZZejY0VTFDNlJOTHRQZGdoSlhfOVpfZ2NsZGJ5c21IdmpIRTRaYmxheHVLZEpSVnNPbXpRWHZjakpjZy03S0NnZ1g0WThsUERqMjdWTDI5OVhlNnV5WERmM2tJUQ?oc=5",
-        "date": "Mon, 26 Oct 2026 13:22:34 GMT",
-        "summary": "Anthropic files for US IPO amid AI boom, rising costs and safety concerns The Economic Times",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:6c295515ce5b9a6e51f5778d113c0669de1803284de848323cbfc44a3b10aaa8",
-        "label": "As Anthropic files for its blockbuster IPO, a look at the biggest players tapping public markets - The Globe and Mail",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Globe and Mail",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQmNpeWw4TXN6dEpRNFUxUnR4R2Q4eG1xV29JNU5xOEtwZ3Q0d1JTMjdFX3VvWGNlR3BfaXVEYjFybVF2VXZjWGRIb0pIQUFEcHZxeDVUVjBjQ2pRMVFCekJiNHZkYy12X190TFB3WGVlVWdIb2pWTXVMZWxPZ2FWdg?oc=5",
-        "date": "Mon, 26 Oct 2026 15:23:57 GMT",
-        "summary": "As Anthropic files for its blockbuster IPO, a look at the biggest players tapping public markets The Globe and Mail",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0dc9fdd312a8e08045225a6ebe6f986876532fb1c99387ff37ecf983c34f9b5d",
-        "label": "OpenAI reportedly in talks for USD 30 bln raise ahead of IPO - The Paypers",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Paypers",
-        "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPOGpTcC1xLWFzMnZjbjhLTWE2cGhya0dtSzlOcmJFWmtueG5pNFJRMjdCWldFOHdvc2s3T1dsUGxWVVBQUmFLclJjSmFIaEphTVNGVXdaS1d5WmUxLUQtVWE5MW03QXdOcTdKelg3T1Q5OXd3RlNMak9ZRGI4Q0FqWHZTaThxS3NCZUFoTDRIZkkzaUphMmdQemR4VDExakpNMHVPYkdJYw?oc=5",
-        "date": "Mon, 26 Oct 2026 08:48:49 GMT",
-        "summary": "OpenAI reportedly in talks for USD 30 bln raise ahead of IPO The Paypers",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5b91e71543193a3d608589ba6214d45a08f9e0933ede21efbc38a0fb4e48fed8",
-        "label": "Anthropic files S-1 paperwork for proposed IPO - SiliconANGLE",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "SiliconANGLE",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNR0o4aE5maDNnNHRZLWY3bzBFR3JxQWlFTC1vTmI2SGsxU0c4Q1dTLVhpRjJ1clV4UnJOT3RCUlcxVUp3WC1EQ05pYko4VWFiSWhLVldtRGdnYXpHX0EySVRMc3VxaHgtTFoyRE1ETTJDTU9fMC1MZ2twQkFDUm5sYWx1ai13V3hjdEVN?oc=5",
-        "date": "Mon, 26 Oct 2026 15:50:00 GMT",
-        "summary": "Anthropic files S-1 paperwork for proposed IPO SiliconANGLE",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:64c85027b8d7cf5a6addd8ee6a4418ba2910f4b524ee474309554e08de263629",
-        "label": "Meet Anthropic\u2019s Seven Founders as the A.I. Firm Prepares for an IPO - The New York Times",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The New York Times",
-        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9PbzlzS0lIOG1uTVhFNkR2U2NzSTJwc0xWX0xLOVFIRkVyblRlenRncmVaOHVlLTd3TkRuRTJBNGNoM3g5YlBWZUt0ZGxsdExtMncxdkhNc0I1b2RjSW9ybFB5SVd3Y1I3REctdVhsQW1Uc2hOMUJrTg?oc=5",
-        "date": "Mon, 26 Oct 2026 15:24:56 GMT",
-        "summary": "Meet Anthropic\u2019s Seven Founders as the A.I. Firm Prepares for an IPO The New York Times",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4d7345e137b10aedd0f892a41c2636357a9abc2d44a3caa30a112e01b8d2fbb0",
-        "label": "AI giant Anthropic files for an IPO that could break records - NPR",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "NPR",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZWRLbnU1SW5mV0hFN0luc05jT3VYaU4yTEc2MVdvTGpZUnVkcXJsTElPZUNWNEM0TDZBalFMYWhEeHVNY2hUYjB2cUhBYUEtV3BCT1JLQjF0ZnBmNkJkY3FGamZBdlJmS2hVV21neFJHblpROHZYTVN2OFU3LTZ5Zy14ZGdQMjcz?oc=5",
-        "date": "Mon, 26 Oct 2026 14:16:23 GMT",
-        "summary": "AI giant Anthropic files for an IPO that could break records NPR",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:551ce9383e88e6605962aa8c5eed139b369b3a7e7122422fdd69504ed6f2f511",
-        "label": "The biggest AI IPO ever? Anthropic could debut at a staggering $2 trillion - Ynetnews",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Ynetnews",
-        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE55WmZ4T3NtV3dxZE9SUVBSQ09RcC01M0xRNXFLSlB6RngyOTVzYllYaUFvaHlaVk1XMjZSeVI0eEItRnVlMXA5ZlRxVTJ4c0hEMzV5MTRyM0pxSmptQTNWMDF3?oc=5",
-        "date": "Mon, 26 Oct 2026 13:40:50 GMT",
-        "summary": "The biggest AI IPO ever? Anthropic could debut at a staggering $2 trillion Ynetnews",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:79a5bc9535836e13ab07456778a0167ff96473be143d00e6f8d1f5bbc5be4b58",
-        "label": "Anthropic files for potentially the biggest IPO ever as CEO warns of AI's existential risk to humanity - PBS",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "PBS",
-        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOZVJ3UjVBc3k5bGw5NW91U01kWGFyd05kT1BRb3hIODdqLTRUdExySGhIQWdUdkxfU2Zmc0V1cVF4LWNFVjRqTU03VVM3cmozcTkxTXozX0ZuUWcxRlNIc3lVNW1tWDJTcnVLTXl5aDNyangxYmZFSGtIemFIbUg1Q2h2UmZfOGtISkxPM2hwc2lPek93cXhiTjlMZFk4S2F1Z0U3MVhqZkJFUDA5MkJkNVhUdWswbHJCWUE2MHktNlRMSUpIbFVtR1lIbUZ5LUFHQVE4?oc=5",
-        "date": "Mon, 26 Oct 2026 16:40:54 GMT",
-        "summary": "Anthropic files for potentially the biggest IPO ever as CEO warns of AI's existential risk to humanity PBS",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f295be86dbc7da05d230fe9bcbc3e81d50a28cd50fc783751d012b5904304c9d",
-        "label": "OpenAI Nears $1.25 Trillion Valuation. What That Tells Investors Ahead of a Potential 2027 IPO. - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWHUwZllOYVp1Z0ZEdUJsYllvSm9nVjVyVHRudGg5bDZIcGtkclhfRlFBMEhVdEhSaHVHR3lURnNvWXhZck5ja2dmcXhpZFh3a2lna2hrUXJkdzRFbDF5bVVUTDVGUVBXVTVIeWIteGE4SXl6Sk1ONFBhUy1UbVRTRDdtTXhKeklzMGVCNkxmWThkUl9x?oc=5",
-        "date": "Sat, 24 Oct 2026 05:58:00 GMT",
-        "summary": "OpenAI Nears $1.25 Trillion Valuation. What That Tells Investors Ahead of a Potential 2027 IPO. Yahoo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:faf919a2597e281043b279987257b4e03603e1ea17f7cc76368c9592c8c95f65",
-        "label": "OpenAI Nears $1.25 Trillion Valuation. What That Tells Investors Ahead of a Potential 2027 IPO. - The Motley Fool",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Motley Fool",
-        "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPRmxKd3dXUmU0Qmc3MnJRUjVxVHZVNHgzbGxGYV9GenE4TVNiVFFPOGlhVjd3blhSUHJlSEFVSEdPbC0wZi1fQjlwcDFxZTJUSDFPdkdUR0tMLVViNDNtRUJhOHgyV2dfMnJ1NFNzeXhMUzdTcjJ1b2tHTTVid1IwbWc4dHFURnRrSXZkaUs4MU5OMDh0YmMzT0FlSnlqd3VWeFBsTlJnZnNQZGY2SWtKOUpSU3Njei1ITGxKNjJWd2FDc2g1RXdMNFdDZXV2c00?oc=5",
-        "date": "Sat, 24 Oct 2026 06:38:00 GMT",
-        "summary": "OpenAI Nears $1.25 Trillion Valuation. What That Tells Investors Ahead of a Potential 2027 IPO. The Motley Fool",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:9829d8bb7081f788611221765ce16089f349dad57f4a111d6ecfb335917544bc",
-        "label": "Not Just OpenAI: There Are More Pre-IPO Names to Watch - The Daily Upside",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Daily Upside",
-        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWVJwYkUtNEJtVHdmQTQyandQZ1E4MlA0cGJWRVpTMmdFeHJ3ay1YY2N3Yl9sRThuVm1nLUROdmJ5VkxwSmw2NWdENk1tRVZTeGtpMGdGLVc2SVVfNVF4cXpRZmxjNDlkbmx6emZfb0h4TkYtTzNpN3g4azVqb2J1TEdCQXNrSzRmVnZManFQX3AyQ0h2azA2b1JZM0w2cG1oZTlKTFZRYkkxTDZWa21XN2lWbkY?oc=5",
-        "date": "Sun, 25 Oct 2026 12:00:00 GMT",
-        "summary": "Not Just OpenAI: There Are More Pre-IPO Names to Watch The Daily Upside",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:440845c6547a2d5089f40212920b0e24dc040cdd1a44078049967bd620757b83",
-        "label": "OpenAI Lowers Valuation to $1.25 Trillion Ahead of Potential IPO \u2014 Here\u2019s Why - TipRanks",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "TipRanks",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPczdPNUhEMXVlUU1pNWRhWUtHTGE0eVNBeW5pSnFPRkNTanpWWDdnaUh0NEM4OFlTNHV1UTRwN0g3SVRaNG1fUkllQk5rd215RUt1YnhTZVhRUFpsTGtrWFQ5VXpFVHM1aThTSmN0blR0NEk3cUNWb3ZWbVZyQWN4MDlwR1lpQVhTbDFGTThJLUtHYjhiOHVhdEExZ05yY2hsa3BjX2R1R0YtNF9RYXNJRFJR?oc=5",
-        "date": "Fri, 23 Oct 2026 06:56:20 GMT",
-        "summary": "OpenAI Lowers Valuation to $1.25 Trillion Ahead of Potential IPO \u2014 Here\u2019s Why TipRanks",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a5108198ac5757a3a2fffd5db9dc3b55269a35adf3accc014c6339ac045a8252",
-        "label": "MiniMax Shares Slip Below HK$165 IPO Price as Price War Erodes AI Premium - BigGo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "BigGo Finance",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBwamdSRVJJdTlfZkFxZTFRaGpLa2w4UDhOdnZ0ekthOHRlUWlnVHJXN1M4QUR3M0owYnZDZEpKdmtZelpIV3Rjdng2U3RTUTRicW56emNxb2JJTlRvdktReUJxb25Pd2YtNnktYWJpaUZBNXc4cHc?oc=5",
-        "date": "Fri, 23 Oct 2026 18:20:00 GMT",
-        "summary": "MiniMax Shares Slip Below HK$165 IPO Price as Price War Erodes AI Premium BigGo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:f580c472de87f9f0cd7090bac9249062eb438162ffb1436aa56681e31815d6a1",
-        "label": "Will Anthropic pull off a November IPO? Time is running out to file key paperwork. - MarketWatch",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "MarketWatch",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTFJNeGlNaWk2VGtvUkxlb243b1oxaWhVRXdnQjhHRVhrWmJjM1R5Vnpia1E4ZFlEQmtMY1ZVeTg4SzZ6YXFPOXNLdFU2cWd0UGZidFJnRGQ0TDBwOW9kVEUydUpmcGFKU3BhTFB3eTFmb1loLTlHLUhxU041ZXZVMEtPMTF4TnNrNHY4MEJlSzdTczQtUWh2aEF1c25fSDVCLWlKSVU5cEoxNXVoOGo3OU5wVmFlX0dmV3NfemVIXzM?oc=5",
-        "date": "Fri, 23 Oct 2026 22:00:00 GMT",
-        "summary": "Will Anthropic pull off a November IPO? Time is running out to file key paperwork. MarketWatch",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b7f9bd5b995af4c5e384d075a86af743c2f9d9ca1e00743b28718de1ad88ca07",
-        "label": "3 Things To Know As A Potential Anthropic IPO Nears - Forbes",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Forbes",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRWE3NTNacUp0ZW1XV3ZHZElTblBEWjB3TUVEMndYSEpvU1NuMUFrVXBDOGIyRGNjdV9RM3U1LS1qdE1ZcXpfVTBWSHN5Y1pBbEh2bGpvMkNfcEVKc2JfVzBWYV9DTHVyOVhKMkNNTFVXc1ZVcEJTUUNMMk5DY0VoZU1HbENYdw?oc=5",
-        "date": "Fri, 23 Oct 2026 21:31:34 GMT",
-        "summary": "3 Things To Know As A Potential Anthropic IPO Nears Forbes",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:205b6e74b20088f55ba64e45e76cb82abf993c6298dd17c882b13837287e29ce",
-        "label": "OpenAI IPO Date: What We Know and How to Invest - Acorns",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Acorns",
-        "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1penFlTnh6TDdyOUdjZDZaYk42ZWFxVUNvVDFoWEs1Wm5sMHo3OW93aU13WUduNDlPc25kaTA2Z3JaeFYwbW4xU2ozWVhQdXVwcmN3Z2plMWxlaWQ3WXZn?oc=5",
-        "date": "Wed, 21 Oct 2026 07:00:00 GMT",
-        "summary": "OpenAI IPO Date: What We Know and How to Invest Acorns",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:bc75c52af72dc182cb598d64a463225582cdb3d1468c1f47d894052f98dfb8a4",
-        "label": "Altman Says OpenAI Investors Patient on IPO Amid Safety Focus - Bloomberg",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg",
-        "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd3NwdkZyVUhJdWpBVHNBenJhZkpqZDZmYXNONDYyOC15SVIwMi1SU0FLYjdiRkstQVJSeHhKVmtiVmo2ZXc3STdPeEx5LWhXLU9hY3ZyTVhxMF9nN2hSNnoxNnVzM2lYQ3FXN0xHWkl3OFZRaU9wQ2JySlBRV0p0TUh5aDY5NHNVZi1abWdTQ3dKMzN4OVNOZnFkc2hROGU3S2lnSEFQQW9fZU5xOU1XaQ?oc=5",
-        "date": "Tue, 29 Sep 2026 07:00:00 GMT",
-        "summary": "Altman Says OpenAI Investors Patient on IPO Amid Safety Focus Bloomberg",
-        "score": 4,
-        "weight": 1
       }
     ],
     "edges": [
+      {
+        "source": "Alphabet",
+        "target": "Microsoft",
+        "type": "CAPEX_COMMITMENT",
+        "weight": 1,
+        "mentions": 1
+      },
       {
         "source": "Anthropic",
         "target": "OpenAI",
@@ -14165,6 +14340,48 @@
       {
         "source": "X (Twitter)",
         "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Oracle",
+        "target": "evidence:5e42811b70149031a3a80d85d43bb21220ae9e187d93ed81480bd924dd078ae5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:3a969df691b051fa532f5839c1bcf7f41edf38ee948c8247c73360482cc264b2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:a49042ab2b19a1d7ee1105ce4e5055472944e9dd0e8a3981e454c63190d8a83b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:18bfaf13cbd2df24a8705c7fcfa666dcfb7ed3ba4d59c598bb8e1b97bd8f82a4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:6abebabfc3d2c067edd4cef476b421ba77fe3ddd8f34f694e627f6e3ebea0ba6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:2975a6fb8a0daeea939d433dfba711a946fdef0f9f03f4a784c6911971076759",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -17084,6 +17301,62 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:ae419a96703ec581ba967e1336ea57d7d72c3f35298af83baf10d45d53729af4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:ae419a96703ec581ba967e1336ea57d7d72c3f35298af83baf10d45d53729af4",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:26f30b65d29ba9947587a7b93394d7a9265adfbcd27373e057f1b44657fe5f69",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:26f30b65d29ba9947587a7b93394d7a9265adfbcd27373e057f1b44657fe5f69",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:5111fbfaa6bf1dd927da70f820a98922c96506ede9fbc638e02b695bf44282a0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:5111fbfaa6bf1dd927da70f820a98922c96506ede9fbc638e02b695bf44282a0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:f856de35f643b8560e7001f35ee077ebf42c5345904e79f6f023888198d41313",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:f856de35f643b8560e7001f35ee077ebf42c5345904e79f6f023888198d41313",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -22759,6 +23032,62 @@
         "mentions": 1
       },
       {
+        "source": "Alphabet",
+        "target": "evidence:f0b99bc90fce95fc05abef8792fe77e6ef4ae7091d111992f59adba222aacd73",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:f0b99bc90fce95fc05abef8792fe77e6ef4ae7091d111992f59adba222aacd73",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:79de7e3ccafe8fb0873fd5e86367787230068ad693498860fdda03a5b44ab652",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:acbd5b80fcdfe9c5f54fdf1b7238e28addc2fa0c30d0fe26fbb89d1bcddbb91b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:80338567a0ec1690ed2b814df33e2b3f02f7bd92cd15b7deaf6043cac911ada7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:e29be141ff63e1b81f2599d5f755c92cbf57ead45318654b13684212a3d0fe2e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:83e016bfd09fad6a706b2bcf0589ae2ddde732e3edf9bdd093bb2474677ba164",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:ece4691d3ef4dfdad9956c7fa0a57ed13056b74d04977503c452ff3361c166a2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Anthropic",
         "target": "evidence:968170efdcafe40db274eea9bfc8d322060218fa67e597e353c628bc220f00b9",
         "type": "EVIDENCE",
@@ -22929,125 +23258,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:c5b39ff2b184074555da9486f08b5cc94df5b9bcfec1ef4774205251902a866e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:a47015ba4f90522680f6332af550250ceee420cbf828e09a16078bddf8d07df5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:6c295515ce5b9a6e51f5778d113c0669de1803284de848323cbfc44a3b10aaa8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:0dc9fdd312a8e08045225a6ebe6f986876532fb1c99387ff37ecf983c34f9b5d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:5b91e71543193a3d608589ba6214d45a08f9e0933ede21efbc38a0fb4e48fed8",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:64c85027b8d7cf5a6addd8ee6a4418ba2910f4b524ee474309554e08de263629",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:4d7345e137b10aedd0f892a41c2636357a9abc2d44a3caa30a112e01b8d2fbb0",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:551ce9383e88e6605962aa8c5eed139b369b3a7e7122422fdd69504ed6f2f511",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:79a5bc9535836e13ab07456778a0167ff96473be143d00e6f8d1f5bbc5be4b58",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:f295be86dbc7da05d230fe9bcbc3e81d50a28cd50fc783751d012b5904304c9d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:faf919a2597e281043b279987257b4e03603e1ea17f7cc76368c9592c8c95f65",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:9829d8bb7081f788611221765ce16089f349dad57f4a111d6ecfb335917544bc",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:440845c6547a2d5089f40212920b0e24dc040cdd1a44078049967bd620757b83",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "MiniMax",
-        "target": "evidence:a5108198ac5757a3a2fffd5db9dc3b55269a35adf3accc014c6339ac045a8252",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:f580c472de87f9f0cd7090bac9249062eb438162ffb1436aa56681e31815d6a1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:b7f9bd5b995af4c5e384d075a86af743c2f9d9ca1e00743b28718de1ad88ca07",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:205b6e74b20088f55ba64e45e76cb82abf993c6298dd17c882b13837287e29ce",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:bc75c52af72dc182cb598d64a463225582cdb3d1468c1f47d894052f98dfb8a4",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -36788,7 +36998,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.88,
-      "mentions": 3,
+      "mentions": 16,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Meta SEC filing: 10-Q (2026-10-22)",
@@ -36803,7 +37013,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.82,
-      "mentions": 2,
+      "mentions": 8,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Meta SEC filing: 10-Q (2026-10-22)",
@@ -36818,7 +37028,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 4,
+      "mentions": 17,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Meta SEC filing: 10-Q (2026-10-22)",
@@ -36893,7 +37103,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.86,
-      "mentions": 2,
+      "mentions": 10,
       "review_status": "flagged",
       "evidence_text": "Marketers will not continue to do business with us, or they will reduce the budgets they are willing to commit to us, if we do not deliver ads in an effective manner, if they do not believe that their investment in advertising with us will generate a competitive return relative to other alternatives, or if they are not satisfied for any other reason.",
       "title": "Meta SEC filing: 10-Q (2026-10-22)",
@@ -36913,6 +37123,276 @@
       "evidence_text": "Our financial results in any given quarter can be influenced by numerous factors, many of which we are unable to predict or are outside of our control, including: \u2022 our ability to maintain and grow our user base and user engagement, particularly for our products that deliver ad impressions; \u2022 our ability to attract and retain marketers in a particular period; \u2022 our ability to recognize revenue or collect payments from marketers or advertising agencies or resellers in a particular period; \u2022 fluctuations in spending by our marketers due to seasonality, such as historically strong spending in the fourth quarter of each year, episodic regional or global events, or other factors; \u2022 the frequency, prominence, size, format, and quality of ads shown to users; \u2022 the enforcement of our advertising policies, including the removal of ads and marketers from our platform; \u2022 the success of technologies designed to block the display of ads; \u2022 changes to the content or application of third-party policies that limit our ability to deliver, target, or measure the effectiveness of advertising, including changes by mobile operating system and browser providers such as Apple and Google; \u2022 the pricing of our ads and other products; \u2022 the diversification and growth of revenue sources beyond advertising on Facebook and Instagram; \u2022 our ability to generate revenue from paid messaging and subscriptions, or the sale of our consumer hardware products or other products we may introduce in the future; \u2022 changes to existing products or services or the development and introduction of new products or services by us or our competitors; \u2022 user behavior or product changes that may reduce traffic to features or products that we successfully monetize; \u2022 increases in marketing, sales, and other operating expenses, as well as capital expenditures, that we will incur to grow and expand our business and to remain competitive, including costs related to our data centers and technical infrastructure as well as other costs relating to our AI initiatives; \u2022 costs related to our privacy, safety, security, and content and advertising review and enforcement efforts, including as a result of implementing changes to our practices, whether voluntarily, in connection with laws, regulations, regulatory actions, or decisions or recommendations from the independent Oversight Board, or otherwise; \u2022 costs and expenses related to the development, manufacturing, and delivery of our consumer hardware products; \u2022 our ability to maintain gross margins and operating margins; \u2022 costs related to acquisitions or other strategic transactions, including costs associated with amortization and additional investments to develop acquired technologies; \u2022 charges associated with impairment or abandonment of any assets on our balance sheet, including as a result of changes to our real property lease arrangements and data center and infrastructure assets; \u2022 our ability to obtain equipment, components, and labor for our data centers and other technical infrastructure in a timely and cost-effective manner; \u2022 system failures or outages or government blocking that prevent us from serving ads for any period of time; 73 Table of Contents \u2022 breaches of security or privacy, and the costs associated with any such breaches and remediation; \u2022 changes in the manner in which we distribute our products or inaccessibility of our products due to third-party actions; \u2022 fees paid to third parties for content or the distribution of our products; \u2022 refunds or other concessions provided to advertisers; \u2022 share-based compensation expense, including acquisition-related expense; \u2022 adverse litigation judgments, settlements, or other litigation-related costs; \u2022 changes in the legislative or regulatory environment, including with respect to privacy, data protection, consumer protection, antitrust, content, or AI, or actions by governments or regulators, including fines, orders, or consent decrees; \u2022 the overall tax rate for our business, which is affected by the mix of income we earn in the U.S.",
       "title": "Meta SEC filing: 10-Q (2026-10-22)",
       "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-28",
+      "event_type": "IMPAIRMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 5,
+      "review_status": "flagged",
+      "evidence_text": "If we have plans to sell the security or it is more likely than not that we will be required to sell the security before recovery, then a decline in fair value below cost is recorded as an impairment charge in other income (expense), net and a new cost basis in the investment is established.",
+      "title": "Microsoft SEC filing: 10-Q (2026-10-28)",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-28",
+      "event_type": "ALLOCATES_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.8,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "A portion of amortization and depreciation is included with various other costs in an overhead allocation to each segment.",
+      "title": "Microsoft SEC filing: 10-Q (2026-10-28)",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-28",
+      "event_type": "SUPPLIES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.78,
+      "mentions": 4,
+      "review_status": "flagged",
+      "evidence_text": "Our datacenters depend on the availability of permitted and buildable land, predictable energy, networking supplies, and servers, including graphics processing units and other components.",
+      "title": "Microsoft SEC filing: 10-Q (2026-10-28)",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-28",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "OpenAI",
+      "target_entity": null,
+      "amount": 38.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "The following table reconciles our financial results reported in accordance with GAAP to non-GAAP financial results: (In millions, except percentages and per share amounts) Three Months Ended September 30, Percentage Change 2026 2025 Other income (expense), net $ 38 $ (3,660 ) 101% Net (gains) losses from investments in OpenAI (272 ) 4,061 (107)% Adjusted other income (expense), net (non-GAAP) $ (234 ) $ 401 (158)% Net income $ 36,629 $ 27,747 32% Net (gains) losses from investments in OpenAI, net of tax of $65 and $(975) (207 ) 3,086 (107)% Adjusted net income (non-GAAP) $ 36,422 $ 30,833 18% Diluted earnings per share $ 4.92 $ 3.72 32% Net (gains) losses from investments in OpenAI (0.03 ) 0.41 (107)% Adjusted diluted earnings per share (non-GAAP) $ 4.89 $ 4.13 18% 36 PART I Item 2 LIQUIDITY AND CAPITAL RESOURCES We expect existing cash, cash equivalents, short-term investments, cash flows from operations, and access to capital markets to continue to be sufficient to fund our operating activities and cash commitments for investing and financing activities, such as dividends, share repurchases, debt maturities, and material capital expenditures, for at least the next 12 months and thereafter for the foreseeable future.",
+      "title": "Microsoft SEC filing: 10-Q (2026-10-28)",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "GUARANTEES",
+      "source_entity": "Blackstone",
+      "target_entity": null,
+      "amount": 5000000000.0,
+      "currency": "USD",
+      "confidence": 0.88,
+      "mentions": 2,
+      "review_status": "confirmed",
+      "evidence_text": "Under the agreement, Blackstone is committed to provide future capital contributions of up to $ 5.0 billion, and we are committed to provide future data center and energy infrastructure backstops in support of agreements the venture may enter into of up to $ 10.0 billion, subject to certain conditions.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 28.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "The carrying values for non-marketable securities are summarized below (in millions): As of December 31, 2025 As of September 30, 2026 Non-marketable securities: Total initial cost of non-marketable equity securities accounted for under the measurement alternative $ 28,429 $ 48,595 Cumulative upward adjustments 44,485 88,784 Cumulative downward adjustments (including impairments) ( 8,820 ) ( 9,210 ) Carrying value of non-marketable equity securities accounted for under the measurement alternative (1) 64,094 128,169 Equity method investments and other 4,593 7,061 Total non-marketable securities $ 68,687 $ 135,230 (1) As of September 30, 2026, our investments in non-marketable securities accounted for under the measurement alternative primarily consist of our investment in one private company.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "We designate these swaps as fair value hedges to hedge against changes in the fair value of the fixed-rate debt attributable to changes in the benchmark interest rate.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 10000000000.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "Also, included in this amount is $ 10.0 billion of potential future data center and energy infrastructure backstops in support of our investment in the Crux AI joint venture.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 10000000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "27 Credit Facility As of September 30, 2026, we had $ 10.0 billion of revolving credit facilities, of which $ 4.0 billion expires in April 2027 and $ 6.0 billion expires in April 2030.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 16200000000.0,
+      "currency": "USD",
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "As of September 30, 2026, our maximum potential future payments under these guarantees were $ 16.2 billion, upon which we may receive certain assets.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 6600000000.0,
+      "currency": "USD",
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "As of September 30, 2026, our maximum potential future payments under these guarantees were $ 6.6 billion, and the fair value of these obligations was not material.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 3500000000.0,
+      "currency": "USD",
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "We recognized a charge of $ 3.5 billion in the third quarter of 2025, and we placed bank guarantees in the fourth quarter of 2025 in lieu of cash payment.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 19000000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 2,
+      "review_status": "confirmed",
+      "evidence_text": "Aggregate net proceeds were $ 19.0 billion which will be used for general corporate purposes, including capital expenditures to scale AI infrastructure and global compute.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 51400000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "\u2022 Capital expenditures, which primarily reflected investments in technical infrastructure, were $51.4 billion for the three months ended September 30, 2026.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 63600000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "During the nine months ended September 30, 2025 and 2026, we spent $63.6 billion and $132.0 billion on capital expenditures, respectively.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 20500000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "The net proceeds received by the company were $20.5 billion which will be used for general corporate purposes, including capital expenditures to scale AI infrastructure and global compute.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 27700000000.0,
+      "currency": "USD",
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "$27.7 billion represents our obligation to put in place future backstops to support data center and energy supply infrastructure, of which $10.0 billion is with Crux AI, a related party.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-29",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 22800000000.0,
+      "currency": "USD",
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "57 \u2022 $22.8 billion of financial guarantees, primarily to support counterparty procurement of long-lead time equipment for our future power purchase and energy agreements.",
+      "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
       "source": "SEC EDGAR"
     },
     {
@@ -38686,6 +39166,21 @@
       "source": "Latham & Watkins LLP"
     },
     {
+      "date": "Thu, 29 Oct 2026 11:30:01 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Alphabet",
+      "target_entity": "Microsoft",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "AI build-out hits snag as Google and Microsoft put off raising capex forecasts - CNBC AI build-out hits snag as Google and Microsoft put off raising capex forecasts CNBC Google News",
+      "title": "AI build-out hits snag as Google and Microsoft put off raising capex forecasts - CNBC",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1pM0RNUDRnMFJXZkRoZG5ZdVVXRHozTUtidUxjMXdKbFBHVW9hTjg1NlFPcFcwLTZCQzM3cTRQYnpzRE1LQ3pNUkpxQmN1OEdnN25fZGhNUDlMZ0w0VW5kUGdoWWd4ZDFWNlZBTHFQaVpDd3B2M01UN3ZrcWzSAYIBQVVfeXFMUDhDNzNOa204RlZoNUNMTUZnWEVNY0RVbmtlNjQwc0N6YU0wWlhla29xRE5GRkhZbmwxRjEwNE9lZ2VoaG9mU0loVVJGaEprdmY2TkE3U1luNlE3Q2g2VmJVSlZkQ0RPYVdpSGYzV1lSMFZzZmRjU2lFanhOUThXUzZGZw?oc=5",
+      "source": "CNBC"
+    },
+    {
       "date": "Thu, 30 Jul 2026 07:00:00 GMT",
       "event_type": "FREE_CASH_FLOW",
       "source_entity": "Amazon",
@@ -39768,36 +40263,36 @@
   ],
   "collector_runs": [
     {
-      "id": 923,
+      "id": 927,
       "collector": "company-economic-news",
-      "started_at": "2026-10-28T16:38:53+00:00",
-      "completed_at": "2026-10-28T16:39:18+00:00",
+      "started_at": "2026-10-29T16:55:44+00:00",
+      "completed_at": "2026-10-29T16:56:06+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 24,
+      "items_new": 28,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "6cba033b-e8b3-4a4e-a5ad-c32aa0a9f7e9"
+      "collection_execution_id": "54d48b7d-de86-48da-ab84-d633a7fc3d57"
     },
     {
-      "id": 924,
+      "id": 928,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-10-28T16:39:18+00:00",
-      "completed_at": "2026-10-28T16:39:21+00:00",
+      "started_at": "2026-10-29T16:56:06+00:00",
+      "completed_at": "2026-10-29T16:56:07+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 4,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "6cba033b-e8b3-4a4e-a5ad-c32aa0a9f7e9"
+      "collection_execution_id": "54d48b7d-de86-48da-ab84-d633a7fc3d57"
     },
     {
       "id": 56,
@@ -39816,36 +40311,36 @@
       "collection_execution_id": null
     },
     {
-      "id": 922,
+      "id": 926,
       "collector": "google-news-rss",
-      "started_at": "2026-10-28T16:38:47+00:00",
-      "completed_at": "2026-10-28T16:38:52+00:00",
+      "started_at": "2026-10-29T16:55:40+00:00",
+      "completed_at": "2026-10-29T16:55:44+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 13,
+      "items_new": 9,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "6cba033b-e8b3-4a4e-a5ad-c32aa0a9f7e9"
+      "collection_execution_id": "54d48b7d-de86-48da-ab84-d633a7fc3d57"
     },
     {
-      "id": 925,
+      "id": 929,
       "collector": "sec-edgar",
-      "started_at": "2026-10-28T16:39:21+00:00",
-      "completed_at": "2026-10-28T16:39:23+00:00",
+      "started_at": "2026-10-29T16:56:07+00:00",
+      "completed_at": "2026-10-29T16:56:11+00:00",
       "status": "ok",
       "items_seen": 21,
-      "items_new": 0,
+      "items_new": 6,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "6cba033b-e8b3-4a4e-a5ad-c32aa0a9f7e9"
+      "collection_execution_id": "54d48b7d-de86-48da-ab84-d633a7fc3d57"
     },
     {
       "id": 57,
@@ -39865,12 +40360,12 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1114,
-  "mention_count": 8522,
+  "event_count": 1133,
+  "mention_count": 8589,
   "review_counts": {
     "provisional": 0,
-    "confirmed": 320,
-    "flagged": 794,
+    "confirmed": 332,
+    "flagged": 801,
     "flagged_retry_pending": 0
   },
   "feature_family": [
@@ -42632,8 +43127,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "54086629c88ce91e4902132634da60d5253f90c3add6652e8a391c8b4e1cee72",
-    "created_at": "2026-10-28T16:39:30+00:00",
+    "run_id": "2b3bd38baf474138b7ba85367d9f9a44d34579843dedf1ec2dc85b28a2b1a708",
+    "created_at": "2026-10-29T16:56:38+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -42703,6 +43198,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-39ba5859fc8866f9",
-  "database_sha256": "39ba5859fc8866f995b082f813b9980152f608aebdcbe557838c5665a51aabb8"
+  "database_state_version": "v1-7efc880e60776208",
+  "database_sha256": "7efc880e60776208d76ea9c2413694fb0808ba6310b38e27ae257008a271b6df"
 }
