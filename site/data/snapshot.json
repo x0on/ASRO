@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-29T16:57:40.743813+00:00",
+  "generated_at": "2026-10-30T16:44:33.356502+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 79.4,
+    "score": 79.9,
     "label": "FRAGILE",
     "direction": "unknown",
     "known_dimensions": 6,
@@ -15,18 +15,18 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-10-29T16:56:57.334700+00:00",
+    "reading_as_of": "2026-10-30T16:43:29.901957+00:00",
     "support_totals": {
-      "risk": 20.6068,
+      "risk": 21.3216,
       "safety": 3.4800000000000004
     }
   },
   "dimensions": {
-    "capital": 83.8,
+    "capital": 83.9,
     "monetization": 41.1,
     "circularity": 79.8,
     "fragility": 59.3,
-    "stress": 59.6,
+    "stress": 63.1,
     "transmission": null,
     "cannibalization": null,
     "external_pressure": 54.4,
@@ -38,7 +38,7 @@
     "fragility": 1,
     "external_pressure": 3,
     "counter_evidence": 2,
-    "stress": 2,
+    "stress": 3,
     "circularity": 6
   },
   "dimension_basis": {
@@ -69,7 +69,7 @@
     },
     "stress": {
       "direction": "higher_pressure",
-      "evidence_count": 2
+      "evidence_count": 3
     },
     "external_pressure": {
       "direction": "higher_pressure",
@@ -132,22 +132,6 @@
       },
       {
         "variable": "AI capital commitments",
-        "entity": "Amazon",
-        "value": 20000000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.76,
-        "support": 0.9880000000000001,
-        "date": "Sat, 01 Aug 2026 07:00:00 GMT",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' - Yahoo Finance",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMW12cVZQVTA4UGZWU1lWZ0tTODRDLXlaNllVd2dUYkRHR1VJUS11X181NXFvaGpxNklCNGxkaTZsemsxRFhDQ0NQek1BTk9YOFY0MmhmNmpCUUhrUGVvTjU1SGhlTHdOS2hqakVWN0Z3d2FPSjlILXgwYVB0N0lsbGhjYjJyV19GTURMNTN6cDFoMWFVc1Aw?oc=5",
-        "evidence": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' - Yahoo Finance Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' Yahoo Finance Google News"
-      },
-      {
-        "variable": "AI capital commitments",
         "entity": "Meta",
         "value": 79000000000.0,
         "unit": "USD",
@@ -177,6 +161,22 @@
         "source": "Bloomberg.com",
         "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQVjZhVmdVUEFRNjE0OHowdzNxZS1MTFBWMk44WWtvUzJlV0lBS1FINXF6cUNPQ0NnWlRPZ2tpaHR4cmJZS0ptckRRaTJwMmtLaTNrMFZYQXptNlBwOGRQZ0pmZ0VjWnlRNjV0VVhRNnNselZubTFXR1pkR1ZES2o1aHB6aGNiQmZLMmNQamFaY3dLa3JDQXk1dmJrcGg3MmplQ0R1bG5YbGJFOGQtcms1WWVRNA?oc=5",
         "evidence": "Tencent Tells Investors Its $5 Billion Bond Mainly for AI Capex - Bloomberg.com Tencent Tells Investors Its $5 Billion Bond Mainly for AI Capex Bloomberg.com Google News"
+      },
+      {
+        "variable": "AI capital commitments",
+        "entity": "Amazon",
+        "value": 50000000000.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.86,
+        "support": 1.118,
+        "date": "2026-10-30",
+        "event_type": "INVESTS_IN",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "evidence": "We account for our $ 50.0 billion investment in Series C Preferred Stock recorded on our consolidated balance sheet as of September 30, 2026 as a component of our equity investments in private companies not accounted for under the equity-method, with future adjustments for observable changes in prices or impairments representing Level 3 fair value measurements recognized in \u201cOther income (expense), net\u201d on our consolidated statements of operations."
       },
       {
         "variable": "AI capital commitments",
@@ -333,18 +333,18 @@
       {
         "variable": "Free cash flow strength",
         "entity": "Amazon",
-        "value": 7600000000.0,
+        "value": 130.0,
         "unit": "USD",
         "role": "measured value",
         "effect": "lowers the warning",
         "confidence": 0.8,
         "support": 1.2000000000000002,
-        "date": "Sun, 23 Aug 2026 14:21:29 GMT",
+        "date": "2026-10-30",
         "event_type": "FREE_CASH_FLOW",
-        "title": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%. Here's the Gap AI Capex Is Actually Creating. - The Motley Fool",
-        "source": "The Motley Fool",
-        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYm5jakF6bVZpaEliMHN4dE5vVW1lU2NTQmRNV0RSeTllanZER1hkVUVaNmNON0pYVUYzOU14bTUzbkJseXBTWFBBNWVyU0NQbmxVcjhtU1piLXQtQ19sWFNubUkyaGhVdHNrNjFNQzRlNUtVOFRGUWh2ZFBsSU8zdnNmOGVuaTVzREE1ajlJejZnalZwRGxhbg?oc=5",
-        "evidence": "Amazon's Free Cash Flow Went Negative by $7.6 Billion Even as Operating Cash Flow Rose 33%."
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "evidence": "Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended September 30, 2025 and 2026 (in millions): Twelve Months Ended September 30, 2025 2026 Net cash provided by (used in) operating activities $ 130,691 $ 168,300 Purchases of property and equipment, net of proceeds from sales and incentives (115,903) (210,657) Free cash flow $ 14,788 $ (42,357) Net cash provided by (used in) investing activities $ (132,743) $ (304,344) Net cash provided by (used in) financing activities $ (5,938) $ 124,139 Free cash flow has limitations as it omits certain components of the overall cash flow statement and does not represent the residual cash flow available for discretionary expenditures."
       },
       {
         "variable": "Free cash flow strength",
@@ -379,6 +379,22 @@
         "source": "\u5bcc\u9014\u725b\u725b",
         "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNS1lmTnRGUGwxdFZ4dEVndU0tT2kyRmQ2TVVCMzl2VjNpUTFYRlRmaHpDeDIxMHFiZWhiR3NOeHFyRHNTeUxKUVVvTFN0MXk4bmFBZ3cwZ1gtS2RJUURvUG5Jdm1iRHNBZVNxalBKcVRLeXIxd3gxYWd0NXJhVm8wY194dFFFZ1lYNTNaMGtLUDQwU1VVSnRLOFFoTzFSVGk4Tlk2TjM3VzRYUDZESDA4UzJTeTBWU3poXzU4NTdYMzh4R2xidU9SODBOdHAzLXhqSG1JODBqWDROTzRMai1uUk9NWQ?oc=5",
         "evidence": "Zhipu AI's valuation midpoint was downgraded by institutions, leading to a simultaneous decline in the shares of the \"duo\" of Hong Kong-listed AI large-model companies."
+      },
+      {
+        "variable": "Refinancing stress",
+        "entity": "Amazon",
+        "value": 2.0,
+        "unit": "score",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.86,
+        "support": 0.5848,
+        "date": "2026-10-30",
+        "event_type": "IMPAIRMENT",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "evidence": "The inventory valuation allowance, representing a write-down of inventory, was $ 3.3 billion and $ 3.0 billion as of December 31, 2025 and September 30, 2026."
       },
       {
         "variable": "Refinancing stress",
@@ -644,6 +660,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-10-30T16:43:29.901957+00:00",
+      "score": 79.9,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-10-30T16:42:49+00:00",
+      "score": 79.4,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.8, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-10-29T16:56:57.334700+00:00",
       "score": 79.4,
@@ -2698,6 +2728,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-10-30T16:43:29.901957+00:00",
+      "score": 79.9,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-10-30T16:42:49+00:00",
+      "score": 79.4,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.8, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-10-29T16:56:57.334700+00:00",
       "score": 79.4,
       "label": "FRAGILE",
@@ -2875,13 +2919,173 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-10-29T16:57:40.745216+00:00",
+    "as_of": "2026-10-30T16:44:33.358407+00:00",
     "counts": {
-      "pressure": 47,
+      "pressure": 53,
       "public_exposure": 5,
-      "context": 8
+      "context": 9
     },
     "items": [
+      {
+        "fact_id": "fc48d723a4b14a813a2aceb9148000d820d3a5f35f69dd16070b1f21e6e9540b",
+        "event_id": "ae444e8db1de0b068f152f54f46e9d29a1563bd8934b2ed6301fe7abd76247ed",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "An investment increases capital exposed to the business succeeding.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "INVESTS_IN",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "evidence": "We account for our $ 50.0 billion investment in Series C Preferred Stock recorded on our consolidated balance sheet as of September 30, 2026 as a component of our equity investments in private companies not accounted for under the equity-method, with future adjustments for observable changes in prices or impairments representing Level 3 fair value measurements recognized in \u201cOther income (expense), net\u201d on our consolidated statements of operations.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "date": "2026-10-30T00:00:00+00:00",
+        "reviewed_at": "2026-10-30T16:42:58.399550+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "fc48d723a4b14a813a2aceb9148000d820d3a5f35f69dd16070b1f21e6e9540b"
+        ]
+      },
+      {
+        "fact_id": "f3d963bdee04fb678ff4ac5d52be8f8a4ded10fd9e92aa9d791000aafb33a99f",
+        "event_id": "b55413cee02abd7b11685679109e932db806dece4fd4e43dbdd636bbd5a4a4aa",
+        "kind": "context",
+        "causal_role": "RESILIENCE",
+        "rationale": "Cash flow informs self-funding capacity; its sign and trend must be read from the source.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "FREE_CASH_FLOW",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "evidence": "Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended September 30, 2025 and 2026 (in millions): Twelve Months Ended September 30, 2025 2026 Net cash provided by (used in) operating activities $ 130,691 $ 168,300 Purchases of property and equipment, net of proceeds from sales and incentives (115,903) (210,657) Free cash flow $ 14,788 $ (42,357) Net cash provided by (used in) investing activities $ (132,743) $ (304,344) Net cash provided by (used in) financing activities $ (5,938) $ 124,139 Free cash flow has limitations as it omits certain components of the overall cash flow statement and does not represent the residual cash flow available for discretionary expenditures.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "date": "2026-10-30T00:00:00+00:00",
+        "reviewed_at": "2026-10-30T16:42:58.399550+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "f3d963bdee04fb678ff4ac5d52be8f8a4ded10fd9e92aa9d791000aafb33a99f"
+        ]
+      },
+      {
+        "fact_id": "f261e1bec82b87e75a3d8c779024236ea198fe324f0c63abfcca822a1d804907",
+        "event_id": "08e574f1565e8dda56e169a60b9671a97e33fd096ecace898b8155f6daeb487c",
+        "kind": "pressure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Lending connects the lender to the borrower's ability to repay.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "LENDS_TO",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "evidence": "In October 2026, we also replaced the 2023 Credit Agreement with a new $ 15.0 billion unsecured revolving credit facility with a syndicate of lenders, which has a term that extends to October 2031 and may be extended for one or more additional one -year terms subject to approval by the lenders.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "date": "2026-10-30T00:00:00+00:00",
+        "reviewed_at": "2026-10-30T16:42:58.399550+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "f261e1bec82b87e75a3d8c779024236ea198fe324f0c63abfcca822a1d804907"
+        ]
+      },
+      {
+        "fact_id": "d61cd1ad898154a70418673ce44e8ea8d5d14ea582deabab2640c490c4366675",
+        "event_id": "be8a233be881563f2a931719f80d460467cbe012c4b6569ee1f4c63518dee159",
+        "kind": "pressure",
+        "causal_role": "STRESS",
+        "rationale": "An impairment recognizes a reduction in asset value.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "IMPAIRMENT",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "evidence": "The inventory valuation allowance, representing a write-down of inventory, was $ 3.3 billion and $ 3.0 billion as of December 31, 2025 and September 30, 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "date": "2026-10-30T00:00:00+00:00",
+        "reviewed_at": "2026-10-30T16:42:58.399550+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "d61cd1ad898154a70418673ce44e8ea8d5d14ea582deabab2640c490c4366675"
+        ]
+      },
+      {
+        "fact_id": "cb844201d4922dfab6222494583980a5f8b3b811e76ba76fc1b1777930364dda",
+        "event_id": "7a355bfbda24ca96867c5273b7c349295c9c2302a6ae3eec154448cac50cdfc8",
+        "kind": "pressure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Lending connects the lender to the borrower's ability to repay.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "LENDS_TO",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "evidence": "Also on October 27, 2026, the Company, Citibank, N.A., as administrative agent, and the lenders party thereto entered into a first amendment (the \u201cTerm Loan Amendment\u201d) to the term loan agreement entered into by the Company, Citibank, N.A., and other lenders on June 8, 2026 (the \u201cTerm Loan Agreement\u201d), which provided the Company with a $17.5 billion senior unsecured delayed draw term loan credit facility, of which $17.5 billion was drawn prior to the expiration of the commitments on September 30, 2026 and remains outstanding.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "date": "2026-10-30T00:00:00+00:00",
+        "reviewed_at": "2026-10-30T16:43:01.005849+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "cb844201d4922dfab6222494583980a5f8b3b811e76ba76fc1b1777930364dda"
+        ]
+      },
+      {
+        "fact_id": "a0056f22728a81cd2ed944717d630c771bf5a7f0bc96094eb78f4a4dc279e227",
+        "event_id": "089848f1fdd37238330470754b56c80a836f9aa1c724fd4feaa63701f6cc59d3",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "evidence": "Cash capital expenditures were $34.2 billion and $75.9 billion during Q3 2025 and Q3 2026, and $89.9 billion and $172.2 billion for the nine months ended September 30, 2025 and 2026, which primarily reflect investments in technology infrastructure (the majority of which is to support AWS business growth) and in additional capacity to support our fulfillment network, both of which we expect to increase in 2026.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "date": "2026-10-30T00:00:00+00:00",
+        "reviewed_at": "2026-10-30T16:42:58.399550+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "a0056f22728a81cd2ed944717d630c771bf5a7f0bc96094eb78f4a4dc279e227"
+        ]
+      },
+      {
+        "fact_id": "8bec9108c3926909830f424cb16bf9f7d67425c9b8153dee095e03f643a85669",
+        "event_id": "24f3477a3474ac2a5289c2407c63027a3591ad610e302be62b1ca9948c65e049",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "CAPEX_COMMITMENT",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "evidence": "\u2022 We continue to expect 2026 cash capital expenditures to be approximately $220 billion.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "date": "2026-10-30T00:00:00+00:00",
+        "reviewed_at": "2026-10-30T16:43:01.005849+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "8bec9108c3926909830f424cb16bf9f7d67425c9b8153dee095e03f643a85669"
+        ]
+      },
+      {
+        "fact_id": "74905e5ce69031dd0b0ba8416382c7a501209a1cec03e4e0a3a3dcf6386dad07",
+        "event_id": "b3e2f1c6ebe319265653ef55502e9e597df340e885068d1ec920051a8aa5bfa2",
+        "kind": "pressure",
+        "causal_role": "TRANSMISSION",
+        "rationale": "Lending connects the lender to the borrower's ability to repay.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "LENDS_TO",
+        "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "evidence": "In October 2026, we replaced the 2025 Short-Term Credit Agreement with a new $ 5.0 billion unsecured 364-day revolving credit facility with a syndicate of lenders, which matures in October 2027 and may be extended for one additional period of 364 days subject to approval by the lenders.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "date": "2026-10-30T00:00:00+00:00",
+        "reviewed_at": "2026-10-30T16:42:58.399550+00:00",
+        "sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm"
+        ],
+        "underlying_fact_ids": [
+          "74905e5ce69031dd0b0ba8416382c7a501209a1cec03e4e0a3a3dcf6386dad07"
+        ]
+      },
       {
         "fact_id": "f395fc43c5e2eac62b953e02f1f8f348235d99a5523cd9699f3385a9702c64a3",
         "event_id": "143925f71dfb4b8ec23f6aac308fedb51bd26671d424ccdcf6e75c3d6856dfe4",
@@ -4065,26 +4269,6 @@
         "underlying_fact_ids": [
           "f6f961c63f339b36e0fa3e71a662c97044398bb12487f1a980622328dfd01f83"
         ]
-      },
-      {
-        "fact_id": "6870fbba409e47cc2e1c538f43aac0b9d90d4366186196196950d358337ec761",
-        "event_id": "d093a79dd6b9a698081125c1035960363c9459cbc6b5e68c3c67906467b0f0df",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' - Yahoo Finance",
-        "evidence": "Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' - Yahoo Finance Amazon Raised 2026 CapEx by $20 Billion\u2014 but CEO Andy Jassy Won't Say How It's Paying for It: 'Nothing to Share...' Yahoo Finance Google News",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMW12cVZQVTA4UGZWU1lWZ0tTODRDLXlaNllVd2dUYkRHR1VJUS11X181NXFvaGpxNklCNGxkaTZsemsxRFhDQ0NQek1BTk9YOFY0MmhmNmpCUUhrUGVvTjU1SGhlTHdOS2hqakVWN0Z3d2FPSjlILXgwYVB0N0lsbGhjYjJyV19GTURMNTN6cDFoMWFVc1Aw?oc=5",
-        "date": "2026-08-01T07:00:00+00:00",
-        "reviewed_at": "2026-08-21T20:22:22.159337+00:00",
-        "sources": [
-          "https://news.google.com/rss/articles/CBMilwFBVV95cUxNMW12cVZQVTA4UGZWU1lWZ0tTODRDLXlaNllVd2dUYkRHR1VJUS11X181NXFvaGpxNklCNGxkaTZsemsxRFhDQ0NQek1BTk9YOFY0MmhmNmpCUUhrUGVvTjU1SGhlTHdOS2hqakVWN0Z3d2FPSjlILXgwYVB0N0lsbGhjYjJyV19GTURMNTN6cDFoMWFVc1Aw?oc=5"
-        ],
-        "underlying_fact_ids": [
-          "6870fbba409e47cc2e1c538f43aac0b9d90d4366186196196950d358337ec761"
-        ]
       }
     ]
   },
@@ -4094,7 +4278,7 @@
         "id": "Amazon",
         "label": "Amazon",
         "kind": "company",
-        "weight": 81
+        "weight": 83
       },
       {
         "id": "Alphabet",
@@ -4358,6 +4542,42 @@
         "date": "2022-10-27",
         "summary": "Twitter reported that the merger was completed on October 27, 2022 and Twitter became a wholly owned subsidiary of X Holdings. The transaction valued Twitter at approximately $44 billion.",
         "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0f2716872ca8a396d3a821271deeafebfb9e65f91fbac0a22dddeffdf7a30d5a",
+        "label": "Meta SEC filing: 8-K (2026-10-29)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526438017/d183592d8k.htm",
+        "date": "2026-10-29",
+        "summary": "SEC filing 8-K for Meta. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
+        "weight": 1
+      },
+      {
+        "id": "evidence:d8b26eafd5a94e5a4ddaec986d74c53393b6ae8756920f2ddb589d1106b791d2",
+        "label": "Amazon SEC filing: 8-K (2026-10-29)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20261029.htm",
+        "date": "2026-10-29",
+        "summary": "SEC filing 8-K for Amazon. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9fd94ab5105992fb878ca555b19a10c1d4a95bc435b79148c9169393cc36aa9c",
+        "label": "Amazon SEC filing: 10-Q (2026-10-30)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "date": "2026-10-30",
+        "summary": "SEC filing 10-Q for Amazon. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
         "weight": 1
       },
       {
@@ -7121,6 +7341,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:678447550f9ce52eded1b94fedc7015590d024e3ffd0d0c68ca5586b94daf3eb",
+        "label": "Broadcom Falls 5% Despite DA Davidson Upgrade on Anthropic and OpenAI IPO Hopes; Arm and Qualcomm Sink 10%, Marvell Drops 8% - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNak9IUVFxV2hIZjc4WDY4UkpCT0dienJvTXMySTBmeEh6Mk1HM0hwZG5tcTEtZ0VYRUZIc3RWQnRSSXJZREpiT2EyWW9HdVlkdld3Z2lNOS02UVNDUGQyTXVuc2JmajI1OGhhUmdYVVBhR0ZGSGFza0lSWnVCMVhLbzVkRmllSFZONElEUWxzWVItSTRRdmhV?oc=5",
+        "date": "Fri, 30 Oct 2026 14:56:49 GMT",
+        "summary": "Broadcom Falls 5% Despite DA Davidson Upgrade on Anthropic and OpenAI IPO Hopes; Arm and Qualcomm Sink 10%, Marvell Drops 8% Yahoo Finance",
+        "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:22372474d8d84d5a0f89024ce693f4280cef4badc3d0676f236301e357c143f9",
+        "label": "Broadcom Falls 5% Despite DA Davidson Upgrade on Anthropic and OpenAI IPO Hopes; Arm and Qualcomm Sink 10%, Marvell Drops 8% - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONDA3Z0RHYkNET1dzQXpxODIxanAyc2hqSU11VGhlZ3E5dUdwTTJrQzR3bl9sWXVPWGRGaWprVWZNdjJWS3d4SURzY0VzaXdZNnpkQTNRbThsYkpRVUZwQjlzOEZfcHFIdk9YUlpXeEd6aHljd21KQlo2amtsTmNyUFR4SDZsaTZMcjBjNkh5YXBrOHhtcnpBLW1UZkU1RnFHNHRza2MwMUNvT1hYZzZadkhuWHh0aXNmMV8wSi01RVVGZzUyM3E1S3llNlNnNG5lU2NDTldJUXAzUGNuT1RMOHA3aERBVXBnZHhNdm5DVEE5WEg4Rmc?oc=5",
+        "date": "Fri, 30 Oct 2026 14:58:11 GMT",
+        "summary": "Broadcom Falls 5% Despite DA Davidson Upgrade on Anthropic and OpenAI IPO Hopes; Arm and Qualcomm Sink 10%, Marvell Drops 8% 24/7 Wall St.",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:7b65f616e60d0586e28e82e7a7cecdae1d1d84f03fc611ae6d8e097122003701",
         "label": "Jio valued at $108 billion in IPO, joins Meta, Alibaba and SpaceX club | All you need to know - TradingView",
         "kind": "evidence",
@@ -7982,6 +8226,42 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:64a53210c0bf6780b1b653c2f8382e657a8e5a8980cbd8bd31f025bf01230229",
+        "label": "Anthropic, OpenAI eye IPOs amid soaring valuations - \u671d\u65e5\u65b0\u805e",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "\u671d\u65e5\u65b0\u805e",
+        "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1fT0lMWDFvWXl6by0tZDNfXzZHdGY2NmdRZkxobXNycko5dURqMTYyQUttTktMZGVOOFdqSlJYdGFtbWdOSjBUUmdvRV9zNkhkaWpuYXFn?oc=5",
+        "date": "Mon, 26 Oct 2026 21:55:00 GMT",
+        "summary": "Anthropic, OpenAI eye IPOs amid soaring valuations \u671d\u65e5\u65b0\u805e",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:5a5ed16914e52675ee52622113b854f0a7b8b61dd4e5e2ee0f6240de25886d6b",
+        "label": "Anthropic\u2019s Proposed ANT Nasdaq IPO Ticker and OpenAI\u2019s AI-assisted Scientific Discoveries. - Tekedia",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Tekedia",
+        "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQN2J5SklpQnF6YWZOOGxfNmdvMEJ3emtsNXNHY3VhSzl4Z0NrQVktWGpDdWlBbG5ZSXZMUThfSDJ5OEgxcV9qdHd2QzAwcUtGODdZaUtZZzdtSnE3a3h5RUI2RVBaN1RjQWlMSkQyZW9XVkp4ajhQVjdNWEd0MHVIMEFQN0V2TTZXWEQtUE5xNWxjdWRMVFIwTDhJa3duRF9CVFQtUlBIZUhiT3NYeVVpTVRCdw?oc=5",
+        "date": "Fri, 30 Oct 2026 11:12:41 GMT",
+        "summary": "Anthropic\u2019s Proposed ANT Nasdaq IPO Ticker and OpenAI\u2019s AI-assisted Scientific Discoveries. Tekedia",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:f1d6cd56148a36bec0cca3f0e684d265118f9d23194910713dcf1af7c31c8e5b",
+        "label": "How retail investors can gain exposure to Anthropic and OpenAI IPOs - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxON283REwzWjh1U1RnYk5Id0dfcHMtRWRSb2gyYXhzZFR0X01VMHRWb3NKYzVGN0NpSXVyWlFmZVl1OEFjWnF6Q2NndG5tdWV1U2VOZ3BKTEFiV1Q4Z0kyVU5WZ2tpbFZBZml6Y3RneGEwZ0dYXy1FQmxQcDNidlM4Q2pBRTgyLU0zWkh2MzkxRXVfQlNxRmcybm1iOFpldkpHeEsydHc4Y1l3TjEtYUNiei13Mzk?oc=5",
+        "date": "Wed, 28 Oct 2026 14:30:35 GMT",
+        "summary": "How retail investors can gain exposure to Anthropic and OpenAI IPOs Yahoo Finance",
+        "score": 5,
         "weight": 1
       },
       {
@@ -13469,6 +13749,66 @@
         "weight": 1
       },
       {
+        "id": "evidence:26eba5d8bb3249595bc0ad9bdac40f039a0fe0c3659da1b04728283f537b67ec",
+        "label": "Moonshot AI Eyes IPO as Kimi K3 Drives ARR to $300M - TechRepublic",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TechRepublic",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5RT2tDYU1XQk9RUHpwZUhxbUttN3Y4UnVaeC1IUkJkbkJSVVdFZXNiMnl4TVhtY3dDaE5wQ0psTWF0S2tqUU9iQnFpcVlzWGRaSmRwYWlIc3pVYk9uaUhoc3VZWGFrczdVV0hKUkh2a2JqSVpIRE45Qnlzak4?oc=5",
+        "date": "Thu, 29 Oct 2026 15:25:49 GMT",
+        "summary": "Moonshot AI Eyes IPO as Kimi K3 Drives ARR to $300M TechRepublic",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:cee6897492250680bbccf258008e8e9e03d5ff327fef585b5443a90819e11526",
+        "label": "What Will Anthropic\u2019s IPO Do for Venture? - WSJ",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNN0tjUWJhVFBwOFFEZUJ4RjRwdlJFajlyQjFUdGJaWnh5SEtyWkV3ZDBPXzV6dmZGMGZLeGFYcGZ3dC01QUhKRGg5cGlNRG03a0ZpQnpfcUtXOXM1S1llbTVfLTQ3ZTJzTDVWRk15bHg2WWtvTkROYnR1bXRRaHg1LWViUnhjVFBMeWlUWTZYRUw1QQ?oc=5",
+        "date": "Fri, 30 Oct 2026 12:57:32 GMT",
+        "summary": "What Will Anthropic\u2019s IPO Do for Venture? WSJ",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:a762deebd473b0409cacd195df72767d2cb99ff7c0d58f45eb7093b264a32237",
+        "label": "The big questions remaining after Anthropic\u2019s blockbuster IPO prospectus - CNBC",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VYXRVZG52ZU8wZ183VXZkS192WXFoWm5uRm0wNE1PZFZBblEyTklTWnZodHhNVUIyZlNaZGI1Y2xRaGJqZ3FTSVplcjNaM2tZVzF6UlNpRTd4S0dlQzVrak5jOHFQN2tfdkpMalkzWXlvVjl5T0hpb9IBfkFVX3lxTFBsbUVyNW9GLVlJZ3dpSHl2MXVZa0pxdDRiN2FnakZCa3lwVDJFOXdiSW9iYTh3UnhOZ0xhYklQSnJXVmoxaGpwckIyNzkzWm9hTVhVOFBrZTFHbnV5LWVBcFdiRGFqMXUyRXZXNjM5Z1ZNVXdiR1E3eFlzLU04Zw?oc=5",
+        "date": "Fri, 30 Oct 2026 12:26:03 GMT",
+        "summary": "The big questions remaining after Anthropic\u2019s blockbuster IPO prospectus CNBC",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7c861ea91c738f0a79539905e7eda2a20f67abdd0d8f44348f4b6559c978656e",
+        "label": "OpenAI leans toward waiting until next year for IPO, NYT reports - Reuters",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRkNFVmI0YkkxNUpIT2Zjc1ZjVGthLTViVlk0NG5kSzZMeEllaDBVcmlaUEczS25qMjR6VGg4MVpvVUM0M2sxOURZb1lhUWdSRHdUZHVLN0ZVZjBFQXRRX2N1NlI4bGJxc29GZEtiUnRNNElMbFRCZnNZV0pfbXpTOE8xbVZ3THpfY3Z1OXh2SXpEVWkzQWgxcDBURWloa05VVlVTZXFVWTViSXJiMVlNU0pIMkIzejhSOGFYNnliWVY?oc=5",
+        "date": "Thu, 25 Jun 2026 07:00:00 GMT",
+        "summary": "OpenAI leans toward waiting until next year for IPO, NYT reports Reuters",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0094e7f2f8c0862d31d4d06b3fcc9604f6bfe687e1f063ea7cedd3f6c9db915c",
+        "label": "Here\u2019s when top Wall Street executives expect OpenAI will launch its blockbuster IPO - New York Post",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "New York Post",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbFpjcThnRVFQUUswdEQ3M3BEM0lMakpRZFBKakF0QkkwNHlTTWIyRkZyU0xwYnZTRjBmd1FwbUR3WUJ2X0VDLUFuRm5CbjZObGV4OEI2ZTdoVFlmYkhyTEF4ajZzV1l6ODNLM3N3eGp6M0dicGhVbFhncy1XckNLc0ZCQ09JQnk4QmVXbWVyZUxzSVdiQy1XdHd4Y0N4Y3RkWG5pNEJjNlJ3Y3JvbVZYeFNCeFZzd3NYaVJVdHN2UWc?oc=5",
+        "date": "Fri, 30 Oct 2026 11:00:00 GMT",
+        "summary": "Here\u2019s when top Wall Street executives expect OpenAI will launch its blockbuster IPO New York Post",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:f0b99bc90fce95fc05abef8792fe77e6ef4ae7091d111992f59adba222aacd73",
         "label": "AI build-out hits snag as Google and Microsoft put off raising capex forecasts - CNBC",
         "kind": "evidence",
@@ -13693,162 +14033,6 @@
         "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSXJNX21Bb3dOOFlfdlNBeVI4ZXB5QzhHakcxbEt6RWlMcG9pNFg3X2x3OFY4NGpIbThXR3JUX0h1bkpBWktJVHBLVlhkWVdkNXplVUgxY3VJUXd1QjJpQ29GemowOWVzaUJwOUV2dDhrQUVSYjcyb1ktT096Ny03bnF4SVhualhQaFBJaHFJM0F0SVRmTzdiX1JmWkRaRkNL?oc=5",
         "date": "Mon, 26 Oct 2026 23:37:07 GMT",
         "summary": "AI Company Anthropic Files Its IPO in Hopes of Raising $100 Billion Tempo.co English",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:5a3152f3e12111f20d774d43667c4559a09decbed63b1c757de494954f99597f",
-        "label": "ONDO Price Jumps as Ondo Finance Unveils Exclusive OpenAI Pre-IPO Offering - CoinGape",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "CoinGape",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOQnZXVGIzVDlPZDM4ekRySlFFYmFmOVV6dXhMOGo5MHNxdUZwY1NCcURfLUFKd0pxNTJ0UDlkVnc0QUxuU2Z3NXNXemI1Um1yVTlYSUFhN1hVbC1QWm9uc1R4ekF0cXNyRHBFa2JkbFJaNC05djJNWF9iR1R5RlVPUjhRdE5OM2owVVZ0Y3E0S0w1OVc5amo3ay0teUI?oc=5",
-        "date": "Mon, 26 Oct 2026 18:32:15 GMT",
-        "summary": "ONDO Price Jumps as Ondo Finance Unveils Exclusive OpenAI Pre-IPO Offering CoinGape",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d0705b3d07271d64675d60ec1574d218ce0e0e526ecc881ffdb88882cbc4eb95",
-        "label": "Its Crunch Time For The Upcoming Anthropic IPO and Open AI's IPO Too Amidst A Looming Tech Wreck - Stocks Down Under",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Stocks Down Under",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObTFWcVFYeG1WSU5KSnM3eVRJTDNBbGRhSWo4WDZvY2hEYWZWS01PS3hHOFR1aWJxZW9LUnc2Yk5Ed0luVXpjS0pNSDFUWUNLQ3JzT016SU9IcEQzZkw2eUxLYkc0TkNuNVQwbVdfU0h4a1R5aXE1U3ljUjczSDJFUQ?oc=5",
-        "date": "Mon, 26 Oct 2026 18:30:25 GMT",
-        "summary": "Its Crunch Time For The Upcoming Anthropic IPO and Open AI's IPO Too Amidst A Looming Tech Wreck Stocks Down Under",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:83bf152f3cf67c463f631b1a2b86ae7d54f16025866f4d86c2c7f622c20d10dd",
-        "label": "Why AI stocks rallied after Anthropic\u2019s IPO filing - The Economic Times",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Economic Times",
-        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNQ0RpblA1MGUwVHdxaWhKYUxfaS1LblMxVE1LdG9QQXhTT0QyYVFIcXVGMWJQWElUc2hZdXplMTRXenNCLUlXZ0dpWHpZdlVBaWtLSnVOSzBvRUsxTWt3MlhUWUo5ckRlcEZrcXJiZHlVUklSbjBVYm5QRmdEbjNERkZLb0NOZ2luMWlnR2dfSGFEdzlHbEdnZl9UVFhkaXNpbnh0SGdMeElxUkRVWnVQWFhWekJBX1Q0ZGdYcW9KYThHQklfaDlBdktibWgzYTVibEIxNmR4SkhlaDAyNkV1NEZqVnNyZHhBN2fSAe8BQVVfeXFMTW96MktydXpVVkNUU3BPdHA4dzBEMEs5Smxpd1ZYRWRPSEdscXBqeURIbEhLVTlWeFJKWjRhWkk0b2hYQVMxN0F2N2h3SlpIdEFTelM4LWZtV2JSa204bVZMaDFfVy1teTg2NWdUWFZWaTB0TjJ6eDF3UkY4eExteW1YRzBmRE1NOGNUSmhhcy1heEs3YmJzYUlhTjVyNmNwVFpRN2s0d3BhbTFkc0lFa1FBRGVnMlZFeWZlenUzMGxtdzRRbWV4WDBody1QUU54aTd5cGZpbnhlUUp4STZDU2IzN2tpZHNRMWcyOEdfY1E?oc=5",
-        "date": "Tue, 27 Oct 2026 05:45:30 GMT",
-        "summary": "Why AI stocks rallied after Anthropic\u2019s IPO filing The Economic Times",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:27f3c43b63d94bb11913541ce3f1a57642347c0dbaafd96765996529d1effb6c",
-        "label": "ONDO Price Jumps as Ondo Finance Unveils Exclusive OpenAI Pre-IPO Offering - Cryptonews.net",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Cryptonews.net",
-        "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE82RDRfWFk3ZThPd25UQmpBRHA2NXg3bEo3WlhWcXVkWVFJUUJZMEZ4NzlxX2Zjd1dTZ21GWGJ5eUV5THJWaGtrMjJHYkg2VnZ5MVkyTE1rY2VvUQ?oc=5",
-        "date": "Mon, 26 Oct 2026 22:14:29 GMT",
-        "summary": "ONDO Price Jumps as Ondo Finance Unveils Exclusive OpenAI Pre-IPO Offering Cryptonews.net",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:819a8e444c70a670178bf03dcff71ac3aaf548733e5f6527faa393030d805d73",
-        "label": "Anthropic files S-1 paperwork for blockbuster AI IPO - SiliconANGLE",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "SiliconANGLE",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQUHZTNjNpSzl1Y2JlYjhiRUJDU0lyQkY2T3ZxSk1qbWNOdG5saTJaM3JfV2RBME5NM2lZbGQwbHpzWkk3Yl80RTN6bHlaWTBLR0NWdFM3aXdPMDNyQXFPQW40MzJIdzhZLXk5Mi14bzhUUUZjaTJDN21Hek1lRk9LR0g5ZnhnOGdPNW1oWmRJQlo2Y3c?oc=5",
-        "date": "Mon, 26 Oct 2026 15:50:00 GMT",
-        "summary": "Anthropic files S-1 paperwork for blockbuster AI IPO SiliconANGLE",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:4e0ffc69138535dbb960d7cb41c285a0d3076f9a3f508d0e28652f7c410c1c60",
-        "label": "Anthropic targets $2 trillion valuation in IPO - \uc870\uc120\uc77c\ubcf4",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "\uc870\uc120\uc77c\ubcf4",
-        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOXRPX3VpR3dwNDhBOXVxRTRnUVluZHNTblZabGFWOTJWeUQ5QWlyVlZQM2xidnZtdWg2bV8xcnVIeWFwZEdBNzB1N1VoR1VBaGJYbjJIRXZYd0NaT3IzamZFcUFFNkRIbDJfTGtmektuOHBxdTJmUkV1SzRNY21UTG81V1BFMkFv?oc=5",
-        "date": "Tue, 27 Oct 2026 15:50:30 GMT",
-        "summary": "Anthropic targets $2 trillion valuation in IPO \uc870\uc120\uc77c\ubcf4",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:b305649973edac85b83c5a1160ad00448496139fdd77c7e19aa249accf54190d",
-        "label": "What to Know Ahead of Anthropic\u2019s IPO (NASDAQ: ANT) - NerdWallet",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "NerdWallet",
-        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFNBR2Q0SFRtdTdYRW90WUJnX0dDSGhEVHhlSTdRSjBVX3JzQ1ltbEtFb3VuakNSY0dLSlJrei1iS3dPTm1ZWGk2M0hKTHJvdC1PbmhPZFE3dDZNcE1CU252cG0tWUtNdXkyc05OazVkbXFxM01LSldyc1B3MjJlQ0hDSi1MNTQ?oc=5",
-        "date": "Mon, 26 Oct 2026 07:00:00 GMT",
-        "summary": "What to Know Ahead of Anthropic\u2019s IPO (NASDAQ: ANT) NerdWallet",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:7324844c5f809633d7a23d8321db27bcdfc9c53a077d13dfca774c10494596a5",
-        "label": "Claude says Anthropic's IPO is a buy. ChatGPT disagrees - Axios",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Axios",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOQkpIcTdUQTA1ZWJqVUh5Z3gxZ0NYVmMweHhFX3paZm1KWDJNblhKVEozTmIxZTdMX3YwLVNxUklhekF4ZENmY08xNk5zYmhDeTFxUWk1aVNWWWlnM0tMU0pscXhzeFpGZG9ZTERWZWs?oc=5",
-        "date": "Mon, 26 Oct 2026 14:51:13 GMT",
-        "summary": "Claude says Anthropic's IPO is a buy. ChatGPT disagrees Axios",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:a00cb9008a324169eb6fecd0a0ccd839a4e617e1572dfa593072f3fefe0c9250",
-        "label": "Anthropic IPO: What investors should know about buying in - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVENSY1FhaHZibXRsdmE4cU00ZllHSFp3UkRwNHFfUDFKdVlfMmRMd2U1SzJnQlNENkFRSnlLUHk1VHVMNktHMGYyOGVPT29ycTQxQXZFMmZWXzNhdTEyOExfY0l2NDdPMFI5T25idHVvYjFsYTFkczk2a2FiaVpfelVrbVJFczZFRXRHSnQ4elp4cUliR3o4VW9xMUpmdUVLZDNBb3RURndMWFExdlJnTTdsN3VOUjZGc29vbzY4bkxOVlV4WlVwVEJrZ3I?oc=5",
-        "date": "Mon, 26 Oct 2026 15:58:52 GMT",
-        "summary": "Anthropic IPO: What investors should know about buying in Yahoo Finance",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c8689d49cd8a353b0e76b1f258065a51111e22820ec18b96b529ac53d0e45a67",
-        "label": "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect' - CNBC",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPYllMbFRuTjU1YW5QWWRQd3JFZ0VkRk52dTl6RG04VEFZZC1HalMxaE9Iem01ZlN4MW5udlBWdUtvVU93U1BETlFVamk5SlNCam1XVVRzWExBemxDSC1yM0pDSHlkR1ZHNlpSNG02OTZCcVlEMGZiUXVBUkRWaWRQYVhkLUNrUmwwZEZ0YXZ6a29pemJHZGNaU2hpVUbSAaIBQVVfeXFMTmt4Q1hTcjFXT0kwZGNHeVE2bU9GaFUxeTVKTmx5bjhmMGFOOTI2R1N1ellVLWQtYzFSZWJBVzU3WDVILWRMR05LSEFnVFNTd1lLNGJyc3k5VjBLWUI1T3lfMmtXcFBENEJQZ3ZVTktfTjJpRFRYS0ktb0tOZkxCSzlPWmM4TXlPTC1zemFtZmpzUUNQQ1RuaEg1MGtKUEgzaU93?oc=5",
-        "date": "Mon, 26 Oct 2026 22:50:07 GMT",
-        "summary": "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect' CNBC",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:24488eaa3a5a41b26c36da6394970b56c5b9753a3595ed44b9e8aa1b789ca831",
-        "label": "As Anthropic files for its blockbuster IPO, a look at the biggest AI players tapping public markets - The Globe and Mail",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "The Globe and Mail",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQmNpeWw4TXN6dEpRNFUxUnR4R2Q4eG1xV29JNU5xOEtwZ3Q0d1JTMjdFX3VvWGNlR3BfaXVEYjFybVF2VXZjWGRIb0pIQUFEcHZxeDVUVjBjQ2pRMVFCekJiNHZkYy12X190TFB3WGVlVWdIb2pWTXVMZWxPZ2FWdg?oc=5",
-        "date": "Mon, 26 Oct 2026 15:23:57 GMT",
-        "summary": "As Anthropic files for its blockbuster IPO, a look at the biggest AI players tapping public markets The Globe and Mail",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0308ee67f9b46dfa634dee4f231dfed16678b61bbd272f0852a329f8675b002e",
-        "label": "Anthropic IPO filing reveals AI security breaches, training halt - Fox News",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Fox News",
-        "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQLTlKRElSWm9qYTIzblVBRG1Bbm5Idk1mYW9HZ2c0bFY3cGw1MlpsT1k2NlRIRlVNOHA2Y2pvWGJqVGk5U2JLcjVONWRTdU9VMWtiS3Q3alNPanBMbHM0dHFPZ2ZESEJwZHdLVllxQmVvcEdBUzlQVGNzeUlFUnI4eHBWeGxFdno1YWc?oc=5",
-        "date": "Tue, 27 Oct 2026 13:37:46 GMT",
-        "summary": "Anthropic IPO filing reveals AI security breaches, training halt Fox News",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:c5b39ff2b184074555da9486f08b5cc94df5b9bcfec1ef4774205251902a866e",
-        "label": "Sam Altman\u2019s OpenAI eyes $30B fundraising round ahead of looming IPO: report - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQU1BWZm5iWmlpV2xTYVNVRFNxZmhFS2lLUVZxMzVfSkFfajR3SDhqLXpNZWF5OW9aSmpFQTVuSjRyVXFhWTFzb0tYbTRoMHR5dlJ6NlpuTFU5T3QtLWZtMkZtNTdtdGFFRko5aU5GX0F2cmlzaWZLOGJuYmNWNkhTQ1JMQndTX1RDcHBmS1Q5ZGI2aVh0?oc=5",
-        "date": "Fri, 23 Oct 2026 16:16:55 GMT",
-        "summary": "Sam Altman\u2019s OpenAI eyes $30B fundraising round ahead of looming IPO: report Yahoo Finance",
         "score": 4,
         "weight": 1
       }
@@ -14340,6 +14524,27 @@
       {
         "source": "X (Twitter)",
         "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:0f2716872ca8a396d3a821271deeafebfb9e65f91fbac0a22dddeffdf7a30d5a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:d8b26eafd5a94e5a4ddaec986d74c53393b6ae8756920f2ddb589d1106b791d2",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Amazon",
+        "target": "evidence:9fd94ab5105992fb878ca555b19a10c1d4a95bc435b79148c9169393cc36aa9c",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16039,6 +16244,48 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:678447550f9ce52eded1b94fedc7015590d024e3ffd0d0c68ca5586b94daf3eb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:678447550f9ce52eded1b94fedc7015590d024e3ffd0d0c68ca5586b94daf3eb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:678447550f9ce52eded1b94fedc7015590d024e3ffd0d0c68ca5586b94daf3eb",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:22372474d8d84d5a0f89024ce693f4280cef4badc3d0676f236301e357c143f9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Broadcom",
+        "target": "evidence:22372474d8d84d5a0f89024ce693f4280cef4badc3d0676f236301e357c143f9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:22372474d8d84d5a0f89024ce693f4280cef4badc3d0676f236301e357c143f9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alibaba",
         "target": "evidence:7b65f616e60d0586e28e82e7a7cecdae1d1d84f03fc611ae6d8e097122003701",
         "type": "EVIDENCE",
@@ -17301,6 +17548,48 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:64a53210c0bf6780b1b653c2f8382e657a8e5a8980cbd8bd31f025bf01230229",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:64a53210c0bf6780b1b653c2f8382e657a8e5a8980cbd8bd31f025bf01230229",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:5a5ed16914e52675ee52622113b854f0a7b8b61dd4e5e2ee0f6240de25886d6b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:5a5ed16914e52675ee52622113b854f0a7b8b61dd4e5e2ee0f6240de25886d6b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:f1d6cd56148a36bec0cca3f0e684d265118f9d23194910713dcf1af7c31c8e5b",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:f1d6cd56148a36bec0cca3f0e684d265118f9d23194910713dcf1af7c31c8e5b",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -23032,6 +23321,41 @@
         "mentions": 1
       },
       {
+        "source": "Moonshot AI",
+        "target": "evidence:26eba5d8bb3249595bc0ad9bdac40f039a0fe0c3659da1b04728283f537b67ec",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:cee6897492250680bbccf258008e8e9e03d5ff327fef585b5443a90819e11526",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:a762deebd473b0409cacd195df72767d2cb99ff7c0d58f45eb7093b264a32237",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:7c861ea91c738f0a79539905e7eda2a20f67abdd0d8f44348f4b6559c978656e",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:0094e7f2f8c0862d31d4d06b3fcc9604f6bfe687e1f063ea7cedd3f6c9db915c",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Alphabet",
         "target": "evidence:f0b99bc90fce95fc05abef8792fe77e6ef4ae7091d111992f59adba222aacd73",
         "type": "EVIDENCE",
@@ -23167,97 +23491,6 @@
       {
         "source": "Anthropic",
         "target": "evidence:41b7e8fc23c8dad18d87b9ac475eb5d04578efe5c4df950c4f48cd1347f4c07b",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:5a3152f3e12111f20d774d43667c4559a09decbed63b1c757de494954f99597f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:d0705b3d07271d64675d60ec1574d218ce0e0e526ecc881ffdb88882cbc4eb95",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:83bf152f3cf67c463f631b1a2b86ae7d54f16025866f4d86c2c7f622c20d10dd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:27f3c43b63d94bb11913541ce3f1a57642347c0dbaafd96765996529d1effb6c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:819a8e444c70a670178bf03dcff71ac3aaf548733e5f6527faa393030d805d73",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:4e0ffc69138535dbb960d7cb41c285a0d3076f9a3f508d0e28652f7c410c1c60",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:b305649973edac85b83c5a1160ad00448496139fdd77c7e19aa249accf54190d",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:7324844c5f809633d7a23d8321db27bcdfc9c53a077d13dfca774c10494596a5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:a00cb9008a324169eb6fecd0a0ccd839a4e617e1572dfa593072f3fefe0c9250",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:c8689d49cd8a353b0e76b1f258065a51111e22820ec18b96b529ac53d0e45a67",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:24488eaa3a5a41b26c36da6394970b56c5b9753a3595ed44b9e8aa1b789ca831",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:0308ee67f9b46dfa634dee4f231dfed16678b61bbd272f0852a329f8675b002e",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:c5b39ff2b184074555da9486f08b5cc94df5b9bcfec1ef4774205251902a866e",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -36998,7 +37231,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.88,
-      "mentions": 16,
+      "mentions": 20,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Meta SEC filing: 10-Q (2026-10-22)",
@@ -37013,7 +37246,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.82,
-      "mentions": 8,
+      "mentions": 11,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Meta SEC filing: 10-Q (2026-10-22)",
@@ -37028,7 +37261,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 17,
+      "mentions": 24,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Meta SEC filing: 10-Q (2026-10-22)",
@@ -37103,7 +37336,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.86,
-      "mentions": 10,
+      "mentions": 13,
       "review_status": "flagged",
       "evidence_text": "Marketers will not continue to do business with us, or they will reduce the budgets they are willing to commit to us, if we do not deliver ads in an effective manner, if they do not believe that their investment in advertising with us will generate a competitive return relative to other alternatives, or if they are not satisfied for any other reason.",
       "title": "Meta SEC filing: 10-Q (2026-10-22)",
@@ -37133,7 +37366,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.86,
-      "mentions": 5,
+      "mentions": 7,
       "review_status": "flagged",
       "evidence_text": "If we have plans to sell the security or it is more likely than not that we will be required to sell the security before recovery, then a decline in fair value below cost is recorded as an impairment charge in other income (expense), net and a new cost basis in the investment is established.",
       "title": "Microsoft SEC filing: 10-Q (2026-10-28)",
@@ -37223,7 +37456,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.62,
-      "mentions": 1,
+      "mentions": 3,
       "review_status": "flagged",
       "evidence_text": "We designate these swaps as fair value hedges to hedge against changes in the fair value of the fixed-rate debt attributable to changes in the benchmark interest rate.",
       "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
@@ -37393,6 +37626,186 @@
       "evidence_text": "57 \u2022 $22.8 billion of financial guarantees, primarily to support counterparty procurement of long-lead time equipment for our future power purchase and energy agreements.",
       "title": "Alphabet SEC filing: 10-Q (2026-10-29)",
       "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "IMPAIRMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 3300000000.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "The inventory valuation allowance, representing a write-down of inventory, was $ 3.3 billion and $ 3.0 billion as of December 31, 2025 and September 30, 2026.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 50000000000.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 2,
+      "review_status": "confirmed",
+      "evidence_text": "We account for our $ 50.0 billion investment in Series C Preferred Stock recorded on our consolidated balance sheet as of September 30, 2026 as a component of our equity investments in private companies not accounted for under the equity-method, with future adjustments for observable changes in prices or impairments representing Level 3 fair value measurements recognized in \u201cOther income (expense), net\u201d on our consolidated statements of operations.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.82,
+      "mentions": 2,
+      "review_status": "flagged",
+      "evidence_text": "The interest rate applicable to outstanding balances under the 2023 Credit Agreement was the applicable benchmark rate specified in the 2023 Credit Agreement plus 0.45 %, with a commitment fee of 0.03 % on the undrawn portion of the credit facility.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 5000000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 2,
+      "review_status": "confirmed",
+      "evidence_text": "In October 2026, we replaced the 2025 Short-Term Credit Agreement with a new $ 5.0 billion unsecured 364-day revolving credit facility with a syndicate of lenders, which matures in October 2027 and may be extended for one additional period of 364 days subject to approval by the lenders.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 15000000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 2,
+      "review_status": "confirmed",
+      "evidence_text": "In October 2026, we also replaced the 2023 Credit Agreement with a new $ 15.0 billion unsecured revolving credit facility with a syndicate of lenders, which has a term that extends to October 2031 and may be extended for one or more additional one -year terms subject to approval by the lenders.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "INVESTS_IN",
+      "source_entity": "Amazon",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 2,
+      "review_status": "flagged",
+      "evidence_text": "Actual results and outcomes could differ materially for a variety of reasons, including, among others, fluctuations in foreign exchange rates and energy prices, changes in global economic conditions, tariff and trade policies, resource and supply volatility, including for memory chips, and customer demand and spending, inflation, interest rates, regional labor market constraints, world events, the rate of growth of the internet, online commerce, cloud services, and new and emerging technologies, the amount that Amazon.com invests in new business opportunities and the timing of those investments, the mix of products and services sold to customers, the mix of net sales derived from products as compared with services, the extent to which we owe income or other taxes, competition, management of growth, potential fluctuations in operating results, international growth and expansion, the outcomes of claims, litigation, government investigations, and other proceedings, fulfillment, sortation, delivery, and data center optimization, risks of inventory management, variability in demand, the degree to which we enter into, maintain, and develop commercial agreements, proposed and completed acquisitions and strategic transactions, payments risks, and risks of fulfillment throughput and productivity.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Amazon",
+      "target_entity": null,
+      "amount": 34200000000.000004,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "Cash capital expenditures were $34.2 billion and $75.9 billion during Q3 2025 and Q3 2026, and $89.9 billion and $172.2 billion for the nine months ended September 30, 2025 and 2026, which primarily reflect investments in technology infrastructure (the majority of which is to support AWS business growth) and in additional capacity to support our fulfillment network, both of which we expect to increase in 2026.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "FREE_CASH_FLOW",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.8,
+      "mentions": 5,
+      "review_status": "flagged",
+      "evidence_text": "Free cash flow and the effect of foreign exchange rates on our consolidated statements of operations meet the definition of non-GAAP financial measures.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "FREE_CASH_FLOW",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 130.0,
+      "currency": "USD",
+      "confidence": 0.8,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended September 30, 2025 and 2026 (in millions): Twelve Months Ended September 30, 2025 2026 Net cash provided by (used in) operating activities $ 130,691 $ 168,300 Purchases of property and equipment, net of proceeds from sales and incentives (115,903) (210,657) Free cash flow $ 14,788 $ (42,357) Net cash provided by (used in) investing activities $ (132,743) $ (304,344) Net cash provided by (used in) financing activities $ (5,938) $ 124,139 Free cash flow has limitations as it omits certain components of the overall cash flow statement and does not represent the residual cash flow available for discretionary expenditures.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 220000000000.0,
+      "currency": "USD",
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "\u2022 We continue to expect 2026 cash capital expenditures to be approximately $220 billion.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "SUPPLIES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 42000000000000.0,
+      "currency": null,
+      "confidence": 0.78,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Our sales and operating results will also fluctuate for many other reasons, including due to factors described elsewhere in this section and the following: \u2022 our ability to retain and increase sales to existing customers, attract new customers, and satisfy our customers\u2019 demands; \u2022 our ability to retain and expand our network of sellers; \u2022 our ability to offer products on favorable terms, manage inventory, and fulfill orders; \u2022 the introduction of competitive stores, websites, products, services, price decreases, or improvements; 42 Table of Contents \u2022 changes in usage or adoption rates of the internet, e-commerce, electronic devices, web services, satellite communications services, and artificial intelligence and machine learning technologies, products, and services, including outside the U.S.; \u2022 timing, effectiveness, and costs of expansion and upgrades of our systems and infrastructure; \u2022 the success of our geographic, service, and product line expansions; \u2022 the extent to which we finance, and the terms of any such financing for, our current operations and future growth; \u2022 the outcomes of legal proceedings and claims, which may include significant monetary damages or injunctive relief and could have a material adverse impact on our operating results; \u2022 variations in the mix of products and services we sell; \u2022 variations in our level of merchandise and vendor returns; \u2022 the extent to which we offer fast and free delivery, continue to reduce prices worldwide, and provide additional benefits to our customers; \u2022 factors affecting our reputation or brand image (including any actual or perceived inability to achieve our goals or commitments, whether related to sustainability, customers, employees, or other topics), and public perceptions regarding our positions on social or ethical issues and our development and use of artificial intelligence, machine learning, and automation technologies, products, and services; \u2022 the extent to which we invest in technology and infrastructure, fulfillment, and other expense categories; \u2022 availability of and increases in the prices of transportation (including fuel), resources such as land, water, and energy, commodities like paper and packing supplies and hardware products, and technology infrastructure products, including as a result of inflationary pressures; \u2022 constrained labor markets, which increase our payroll costs; \u2022 the extent to which operators of networks, systems, and services between us and customers successfully divert customers from or charge fees to access our stores and service offerings; \u2022 our ability to collect amounts owed to us when they become due; \u2022 the extent to which new and existing technologies, or industry trends, restrict online advertising or affect our ability to customize advertising or otherwise tailor our product and service offerings; \u2022 the extent to which use of our services is affected by spyware, viruses, phishing and other spam emails, denial of service attacks, data theft, computer intrusions, outages, and similar events; \u2022 the extent to which we fail to maintain our unique culture of innovation, customer obsession, and long-term thinking, which has been critical to our growth and success; \u2022 disruptions from natural or human-caused disasters (including public health crises) or extreme weather (including as a result of climate change), geopolitical events and security issues (including terrorist attacks, armed hostilities, and political conflicts, including those involving China), labor or trade disputes (including restrictive governmental actions impacting us, our customers, and our third-party sellers and suppliers in China or other foreign countries), tariff policy changes (such as tariffs proposed or implemented by the U.S.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-10-30",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 17500000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "Also on October 27, 2026, the Company, Citibank, N.A., as administrative agent, and the lenders party thereto entered into a first amendment (the \u201cTerm Loan Amendment\u201d) to the term loan agreement entered into by the Company, Citibank, N.A., and other lenders on June 8, 2026 (the \u201cTerm Loan Agreement\u201d), which provided the Company with a $17.5 billion senior unsecured delayed draw term loan credit facility, of which $17.5 billion was drawn prior to the expiration of the commitments on September 30, 2026 and remains outstanding.",
+      "title": "Amazon SEC filing: 10-Q (2026-10-30)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
       "source": "SEC EDGAR"
     },
     {
@@ -40263,36 +40676,36 @@
   ],
   "collector_runs": [
     {
-      "id": 927,
+      "id": 931,
       "collector": "company-economic-news",
-      "started_at": "2026-10-29T16:55:44+00:00",
-      "completed_at": "2026-10-29T16:56:06+00:00",
+      "started_at": "2026-10-30T16:42:18+00:00",
+      "completed_at": "2026-10-30T16:42:43+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 28,
+      "items_new": 29,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "54d48b7d-de86-48da-ab84-d633a7fc3d57"
+      "collection_execution_id": "66a5ea82-8312-434f-9ab3-bc2e55818cc2"
     },
     {
-      "id": 928,
+      "id": 932,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-10-29T16:56:06+00:00",
-      "completed_at": "2026-10-29T16:56:07+00:00",
+      "started_at": "2026-10-30T16:42:43+00:00",
+      "completed_at": "2026-10-30T16:42:45+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "54d48b7d-de86-48da-ab84-d633a7fc3d57"
+      "collection_execution_id": "66a5ea82-8312-434f-9ab3-bc2e55818cc2"
     },
     {
       "id": 56,
@@ -40311,28 +40724,12 @@
       "collection_execution_id": null
     },
     {
-      "id": 926,
+      "id": 930,
       "collector": "google-news-rss",
-      "started_at": "2026-10-29T16:55:40+00:00",
-      "completed_at": "2026-10-29T16:55:44+00:00",
+      "started_at": "2026-10-30T16:42:16+00:00",
+      "completed_at": "2026-10-30T16:42:18+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 9,
-      "error": null,
-      "repair_execution_id": null,
-      "target_window_start": null,
-      "target_window_end": null,
-      "acquisition_start": null,
-      "acquisition_end": null,
-      "collection_execution_id": "54d48b7d-de86-48da-ab84-d633a7fc3d57"
-    },
-    {
-      "id": 929,
-      "collector": "sec-edgar",
-      "started_at": "2026-10-29T16:56:07+00:00",
-      "completed_at": "2026-10-29T16:56:11+00:00",
-      "status": "ok",
-      "items_seen": 21,
       "items_new": 6,
       "error": null,
       "repair_execution_id": null,
@@ -40340,7 +40737,23 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "54d48b7d-de86-48da-ab84-d633a7fc3d57"
+      "collection_execution_id": "66a5ea82-8312-434f-9ab3-bc2e55818cc2"
+    },
+    {
+      "id": 933,
+      "collector": "sec-edgar",
+      "started_at": "2026-10-30T16:42:45+00:00",
+      "completed_at": "2026-10-30T16:42:48+00:00",
+      "status": "ok",
+      "items_seen": 21,
+      "items_new": 3,
+      "error": null,
+      "repair_execution_id": null,
+      "target_window_start": null,
+      "target_window_end": null,
+      "acquisition_start": null,
+      "acquisition_end": null,
+      "collection_execution_id": "66a5ea82-8312-434f-9ab3-bc2e55818cc2"
     },
     {
       "id": 57,
@@ -40360,12 +40773,12 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1133,
-  "mention_count": 8589,
+  "event_count": 1145,
+  "mention_count": 8631,
   "review_counts": {
     "provisional": 0,
-    "confirmed": 332,
-    "flagged": 801,
+    "confirmed": 340,
+    "flagged": 805,
     "flagged_retry_pending": 0
   },
   "feature_family": [
@@ -43127,8 +43540,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "2b3bd38baf474138b7ba85367d9f9a44d34579843dedf1ec2dc85b28a2b1a708",
-    "created_at": "2026-10-29T16:56:38+00:00",
+    "run_id": "230da5a183053bb97f9a107a5a3b70018314621723c055719780bcd2758a661e",
+    "created_at": "2026-10-30T16:43:05+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -43198,6 +43611,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-7efc880e60776208",
-  "database_sha256": "7efc880e60776208d76ea9c2413694fb0808ba6310b38e27ae257008a271b6df"
+  "database_state_version": "v1-60ea640d64cbdada",
+  "database_sha256": "60ea640d64cbdadac5fa1d8393afcd6b4b01b93e7fb29db4ec1f8fe46b29d4ce"
 }
