@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-31T15:46:10.313809+00:00",
+  "generated_at": "2026-11-01T16:50:53.379135+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 79.9,
-    "label": "FRAGILE",
+    "score": 80.7,
+    "label": "HIGH CONVERGENCE",
     "direction": "unknown",
     "known_dimensions": 6,
     "gate_passed": true,
@@ -15,14 +15,14 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-10-31T15:45:02.411134+00:00",
+    "reading_as_of": "2026-11-01T16:49:55.197940+00:00",
     "support_totals": {
-      "risk": 21.3216,
+      "risk": 22.439600000000002,
       "safety": 3.4800000000000004
     }
   },
   "dimensions": {
-    "capital": 83.9,
+    "capital": 85.0,
     "monetization": 41.1,
     "circularity": 79.8,
     "fragility": 59.3,
@@ -33,7 +33,7 @@
     "counter_evidence": 33.8
   },
   "dimension_evidence": {
-    "capital": 10,
+    "capital": 11,
     "monetization": 1,
     "fragility": 1,
     "external_pressure": 3,
@@ -53,7 +53,7 @@
   "dimension_direction": {
     "capital": {
       "direction": "higher_pressure",
-      "evidence_count": 10
+      "evidence_count": 11
     },
     "monetization": {
       "direction": "lower_pressure",
@@ -113,6 +113,22 @@
         "source": "reuters.com",
         "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ0ZDMDNNS0hZT0xNc01aV0RzMkxtS2lLaUZ6cnlZX19DQS1LajRmSHdrSzVoZ3J4bGNfYmFPbXJCTTBRX1dydEpYTlgxWXVRSmJOMHZ3VERsSVV4aGRYZS1oclNzQUVzb0ZxU2dtOWpNMGI2NHpQdkE5MUZ4TlhnbUoxRDQ1UGJmbHd4Y0MzOEZZTWxaQlprekZ3ZnJRNnJZdjJ2NV9OYjRhUEhpT0VUUlc1U0tldw?oc=5",
         "evidence": "SoftBank completes final phase of $30 billion investment in OpenAI - reuters.com SoftBank completes final phase of $30 billion investment in OpenAI reuters.com Google News"
+      },
+      {
+        "variable": "AI capital commitments",
+        "entity": "Alibaba",
+        "value": 567.0,
+        "unit": "USD",
+        "role": "measured value",
+        "effect": "raises the warning",
+        "confidence": 0.86,
+        "support": 1.118,
+        "date": "Sun, 01 Nov 2026 10:47:55 GMT",
+        "event_type": "INVESTS_IN",
+        "title": "Partners Wealth Management LLC Makes New $567,000 Investment in Alibaba Group Holding Limited $BABA - MarketBeat",
+        "source": "MarketBeat",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNOWE3SXhFcnFJeU5HVk9VNWJKNWNRY0kxQW0zZWtsOXpaVXNVT2E0N05nVXl5Zjl3TU8tZ2ZQT1B0V3NEV0xrbWZST3N5enhtNXMwNldEMGFhR3lfaXZaOXVjVWNUTnYtSThvU0NRS083eDJRdDZTdFlUcy0xOGNNSGIzZTE5R1A3R1gzeGpEekUyRGZfamV3NmlsTHR0SzhCWDNWRVhtRElBZUJlUTlDUWplcmxQcFlSWUZpRlF3V2liRVJldDdSaUVQLURyS3o4R1BFV3gwT1NYUU1SY0pLYW9WeUtiQ3ZRNXV3OUxB?oc=5",
+        "evidence": "Partners Wealth Management LLC Makes New $567,000 Investment in Alibaba Group Holding Limited $BABA - MarketBeat Partners Wealth Management LLC Makes New $567,000 Investment in Alibaba Group Holding Limited $BABA MarketBeat Google News"
       },
       {
         "variable": "AI capital commitments",
@@ -321,12 +337,12 @@
         "effect": "raises the warning",
         "confidence": 0.62,
         "support": 0.1612,
-        "date": "Fri, 21 Aug 2026 13:30:17 GMT",
+        "date": "Sun, 01 Nov 2026 07:44:37 GMT",
         "event_type": "BENCHMARK_GAIN",
-        "title": "$500 Billion of Private Credit Announced for GPU Financing. The New Residual Benchmark From NVIDIA Is 25%. - MonitorDaily",
-        "source": "MonitorDaily",
-        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOX0VRU3lkaXBHUFRIbFNXRmF5U1c3YTZKbFdBZlVlcnR6dVp4MGRFU2dqRTc5TFBjWV8xbms3UlcxMGRadXBWdWJTYkRfb01ZbFd1U2tMY1Jsb3NqU21QOThPYVZpNnkzN2hlZ0M1ZzYzdjM0TDlxaTBBRThrdGY2XzZ0ZExSeGJ4UEt2Zm1yZUozam1xUXZtbjN0dmRSSVdJNGN4M0txZFBDeUt3Z2JtejZGRUVoY2RxRnRSc0tKSUV0b0luYnpmelVXZ2lhVmVlNE9zTTJWcw?oc=5",
-        "evidence": "The New Residual Benchmark From NVIDIA Is 25%."
+        "title": "Nvidia revenue soars 106%, beats expectations as AI chips stay in high demand - ABC News - Breaking News, Latest News and Videos",
+        "source": "ABC News - Breaking News, Latest News and Videos",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVTdlSVdfanZLZVB3elBDNkpjOXRrVEtqODlaaVJEakxvWUhTLU9zNEpkUkUzbUpGWVhDNEQtc2JNSEpwRFlTQUpnNkw4eU5xakpQd09OaXAzQUw2ZEJaVHRlb1N5cU1rcFZ3XzYxMl9RNWx0dGwzMGtvb1dORHNqbUVmdmd1RDZXdEFIcXc4Vmp2MEFmc1hmYXpzONIBoAFBVV95cUxQbExCZEYxVi1YOTlRaVdpZVlpb1NSZVZUWExBazBJSVBhUlZtOUM3YzhpUG1EZGE0WGZ5VkNoNDM4LTBqTG82bXktaGdzb2tmcFY5dVV3VEpseDZhNXc5SGVjOTZIWFNscmRFNDJkd0IzdHJCYkZHSUFHZG1KcVdldGdOYkd4b3NnYVFMRnB0NW9lRkxIdVhRRjFHZ0lsVm92?oc=5",
+        "evidence": "Nvidia revenue soars 106%, beats expectations as AI chips stay in high demand - ABC News - Breaking News, Latest News and Videos Nvidia revenue soars 106%, beats expectations as AI chips stay in high demand ABC News - Breaking News, Latest News and Videos Google News"
       }
     ],
     "counter_evidence": [
@@ -660,6 +676,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-11-01T16:49:55.197940+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-01T16:49:24+00:00",
+      "score": 79.9,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-10-31T15:45:02.411134+00:00",
       "score": 79.9,
@@ -2742,6 +2772,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-11-01T16:49:55.197940+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-01T16:49:24+00:00",
+      "score": 79.9,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-10-31T15:45:02.411134+00:00",
       "score": 79.9,
       "label": "FRAGILE",
@@ -2947,13 +2991,33 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-10-31T15:46:10.315896+00:00",
+    "as_of": "2026-11-01T16:50:53.380812+00:00",
     "counts": {
-      "pressure": 54,
+      "pressure": 55,
       "public_exposure": 5,
       "context": 10
     },
     "items": [
+      {
+        "fact_id": "31071276481a875d69296870abeb6f123fc788cc5ac90371d5f041a9290cf4fc",
+        "event_id": "241b0053e631d0e126f74f6496e7ceaa6e0f8ec80b6451b054f19e047bad126a",
+        "kind": "pressure",
+        "causal_role": "BOOM",
+        "rationale": "An investment increases capital exposed to the business succeeding.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "INVESTS_IN",
+        "title": "Partners Wealth Management LLC Makes New $567,000 Investment in Alibaba Group Holding Limited $BABA - MarketBeat",
+        "evidence": "Partners Wealth Management LLC Makes New $567,000 Investment in Alibaba Group Holding Limited $BABA - MarketBeat Partners Wealth Management LLC Makes New $567,000 Investment in Alibaba Group Holding Limited $BABA MarketBeat Google News",
+        "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNOWE3SXhFcnFJeU5HVk9VNWJKNWNRY0kxQW0zZWtsOXpaVXNVT2E0N05nVXl5Zjl3TU8tZ2ZQT1B0V3NEV0xrbWZST3N5enhtNXMwNldEMGFhR3lfaXZaOXVjVWNUTnYtSThvU0NRS083eDJRdDZTdFlUcy0xOGNNSGIzZTE5R1A3R1gzeGpEekUyRGZfamV3NmlsTHR0SzhCWDNWRVhtRElBZUJlUTlDUWplcmxQcFlSWUZpRlF3V2liRVJldDdSaUVQLURyS3o4R1BFV3gwT1NYUU1SY0pLYW9WeUtiQ3ZRNXV3OUxB?oc=5",
+        "date": "2026-11-01T10:47:55+00:00",
+        "reviewed_at": "2026-11-01T16:49:28.627818+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNOWE3SXhFcnFJeU5HVk9VNWJKNWNRY0kxQW0zZWtsOXpaVXNVT2E0N05nVXl5Zjl3TU8tZ2ZQT1B0V3NEV0xrbWZST3N5enhtNXMwNldEMGFhR3lfaXZaOXVjVWNUTnYtSThvU0NRS083eDJRdDZTdFlUcy0xOGNNSGIzZTE5R1A3R1gzeGpEekUyRGZfamV3NmlsTHR0SzhCWDNWRVhtRElBZUJlUTlDUWplcmxQcFlSWUZpRlF3V2liRVJldDdSaUVQLURyS3o4R1BFV3gwT1NYUU1SY0pLYW9WeUtiQ3ZRNXV3OUxB?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "31071276481a875d69296870abeb6f123fc788cc5ac90371d5f041a9290cf4fc"
+        ]
+      },
       {
         "fact_id": "fc48d723a4b14a813a2aceb9148000d820d3a5f35f69dd16070b1f21e6e9540b",
         "event_id": "ae444e8db1de0b068f152f54f46e9d29a1563bd8934b2ed6301fe7abd76247ed",
@@ -4376,13 +4440,13 @@
         "id": "Nvidia",
         "label": "Nvidia",
         "kind": "company",
-        "weight": 23
+        "weight": 24
       },
       {
         "id": "Alibaba",
         "label": "Alibaba",
         "kind": "company",
-        "weight": 15
+        "weight": 16
       },
       {
         "id": "SpaceX",
@@ -8306,6 +8370,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:afab97565653fc71b5b2fae33a85022990ff4cf2a52264680bbd267b71c090f5",
+        "label": "Weeks Ahead Of Expected Anthropic IPO, DeepSeek Launches Autonomous Coding Agent To Take On Claude Code - Stocktwits",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Stocktwits",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaXBscHNvYmNNV2RfZTJ0ZXlEanNzeUx6bVU1RW1UOThQcjhkRVdOMVl4bHlLZ3dDaUZFc3RiWE0xWHd0Y3RDU2ZUTVprR09fZHhheGg1Vm55NnFKYjZxeXItR2s1LVZWWVM0akEtbmNvSU9fYl9PVFpXWDc0b2o0SlkyVTd6MGRwTTd4S2RZb1loNkFuNnlUS0VDaUhtenU0R2V1cmVtUWFfbWFBem9VVmllMUxrNGlOdTMxaGs4dw?oc=5",
+        "date": "Sun, 01 Nov 2026 08:49:53 GMT",
+        "summary": "Weeks Ahead Of Expected Anthropic IPO, DeepSeek Launches Autonomous Coding Agent To Take On Claude Code Stocktwits",
+        "score": 5,
         "weight": 1
       },
       {
@@ -13841,6 +13917,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:51b949f437842c9a85af768a3bc3f79335d8840ebddd1a8d2d613c405fea0138",
+        "label": "Anthropic IPO could turn millionaires into billionaires. Would it boost the Prop 40 tax haul? - San Francisco Chronicle",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "San Francisco Chronicle",
+        "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPRGFHUXQydFNwOWVUSTRyVDBhWmdKdFJPdVhtUmpINFNYOERodU4tTEhZY2NfUzJ5LTV1VUk2SkJtdENkY3MzelNFYTVvdVAwVnZ2aTE2OEQ2QmVha0FUQm9GWDlOZ0pVRzJoNG9JVVdoUGpycWhCS05fZDFyckxGNncxMDhzSlMySUlKTUdKM3NHSm5HNVRObEkyUU5NVUox?oc=5",
+        "date": "Sun, 01 Nov 2026 12:01:10 GMT",
+        "summary": "Anthropic IPO could turn millionaires into billionaires. Would it boost the Prop 40 tax haul? San Francisco Chronicle",
+        "score": 4,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2595c0d7d90541ec90d4fd7eb89f2a23e5322dbd61a9ba9a4aaf8a2566d15e09",
+        "label": "5 Huge Winners From Anthropic's IPO - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOb3dXbG5qMWIzb2VHcnFGODNpZDlGaFQzNjRhYS03N0JvTDRhZHZ4RlJ6eHQzM1plNGRmM1ItdGpnazk5VkpkRmstdjYzazBmc0xILUZQYXBnVzdUbVZwY0hwd1NMSS1MUW4yOXNkSFZnMTRJSzV6WTNxdF9DZ001ekFjcU13UWJJaThOTkxobS1SbkRONDdBRTNR?oc=5",
+        "date": "Sun, 01 Nov 2026 16:24:00 GMT",
+        "summary": "5 Huge Winners From Anthropic's IPO Yahoo Finance",
+        "score": 4,
+        "weight": 1
+      },
+      {
         "id": "evidence:d966837118ea0b60cb31b5f787c457db826f540cc88614b1203ec0dba1b407b0",
         "label": "Anthropic\u2019s historic IPO; Akeso\u2019s big clinical showing - Pharma Voice",
         "kind": "evidence",
@@ -14065,42 +14165,6 @@
         "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQVhIRjdUQkxCbEM2WGZCNkhRQ2R4TXpDdVJ5Wm5YRDNhVE5XZmlNSDRsLUY3M2k5SThSblhGcGU2akZOdjJhV0dKX2ZPR0xVWXgxdlBhSVBnbXg2N0lpUTJtdVZYR0c1N1BsOVdMMFVaemdjNUlZY1l6UmxzQV9zNDRTOEwzMV9uNTdwY3VwVGc?oc=5",
         "date": "Sat, 11 Jul 2026 07:00:00 GMT",
         "summary": "What Happens if OpenAI Delays Its IPO to 2027? Morningstar",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ece4691d3ef4dfdad9956c7fa0a57ed13056b74d04977503c452ff3361c166a2",
-        "label": "OpenAI aiming for speedy IPO, source says - Reuters",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Reuters",
-        "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMnZDYW4zd0pDVEQxVFRhNlozSDdMaTVma1FrQVhaZVZKd1lXTGtVdk9QUVVmN2pDbmc1SG8xVkRSTElVNThiZVlpV3dmLTZSVEdvaVhScGh3bm5oRk11WFZ6V05QbUk4a19ZcWlXRVVkeVUtRnZRYjFBQ0JUczRvNmJCam11YzN2U0NGeUlPUVA?oc=5",
-        "date": "Wed, 20 May 2026 07:00:00 GMT",
-        "summary": "OpenAI aiming for speedy IPO, source says Reuters",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:968170efdcafe40db274eea9bfc8d322060218fa67e597e353c628bc220f00b9",
-        "label": "Why does Anthropic\u2019s IPO prospectus have so many China \u2018risk factor\u2019 warnings? - South China Morning Post",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "South China Morning Post",
-        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdnFmbllwRXlHVkN0aEp5anNWYmZENVBVTWhZVk44cVFQX2pQVEwtMWE4NlF0LUdlOHRIQVp2ajBwR09sLXhadmpkYjNKM2tJR1BjbXFzRlI4UHhMSmJpOXJnNHBxcTdHUjhVT1Z2QXl1UDVnY1QySnFKZ25PT0xwRXhCYzQyMERldVVZV1BpeEtkX0k1ckFrc1h0bmFBUkhxNEljX2pIN1pqam5RSDVKY2lRSXVkQkVWR3l1c1hRTljSAcABQVVfeXFMUHhTLTNBd3BzVExuMTlFN0FXQ0o5bmstNWRQWFo0TUpGd3pkbnN2OElwNnhybzJoOG9BaTVVN0lWRExoZ0NKSnp3dWl3eHZuV1JXel8xekl6eWhuejQ5SjJPWk9tb3BHVHl5Q2Y0dnlPckFIUm5pN2J2Ym84Z1YxcEY3ZVVHS09wTUNvUUtVaDFQQkNJdkhOS3BPWFBxcXN5OGNESGNKb0dWZ3l4aVdFYnZ0OVhmZHZZallfdkVsUWpu?oc=5",
-        "date": "Tue, 27 Oct 2026 13:00:08 GMT",
-        "summary": "Why does Anthropic\u2019s IPO prospectus have so many China \u2018risk factor\u2019 warnings? South China Morning Post",
-        "score": 4,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3baa6abc26128f334adc62e12adb81b99ef2af029f05e59672bac6d8b8efdb44",
-        "label": "Anthropic's record IPO faces some big questions - France 24",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "France 24",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQYTd5akdVbzEwTTVZQTQyemtVWXEwWTMtdl9VRXcyUDlKTFpRQ0hOS2M0SGJmNHFBRF9jUzR5aTE0cmZnb21tVExCeDFhWHctN0JuY3M2V1pyYUlrTmc3R1BRYXkxMGl2Ulc0RnVFNFo5UVV2eFRJeFFuVy1vbHNDeGs0OTZkZGFMWkEwY0ZqLXNtc0FxRkQ0dGtR?oc=5",
-        "date": "Wed, 28 Oct 2026 01:44:36 GMT",
-        "summary": "Anthropic's record IPO faces some big questions France 24",
         "score": 4,
         "weight": 1
       }
@@ -17623,6 +17687,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:afab97565653fc71b5b2fae33a85022990ff4cf2a52264680bbd267b71c090f5",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "DeepSeek",
+        "target": "evidence:afab97565653fc71b5b2fae33a85022990ff4cf2a52264680bbd267b71c090f5",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -23411,6 +23489,20 @@
       },
       {
         "source": "Anthropic",
+        "target": "evidence:51b949f437842c9a85af768a3bc3f79335d8840ebddd1a8d2d613c405fea0138",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:2595c0d7d90541ec90d4fd7eb89f2a23e5322dbd61a9ba9a4aaf8a2566d15e09",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
         "target": "evidence:d966837118ea0b60cb31b5f787c457db826f540cc88614b1203ec0dba1b407b0",
         "type": "EVIDENCE",
         "weight": 1,
@@ -23545,27 +23637,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:83e016bfd09fad6a706b2bcf0589ae2ddde732e3edf9bdd093bb2474677ba164",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:ece4691d3ef4dfdad9956c7fa0a57ed13056b74d04977503c452ff3361c166a2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:968170efdcafe40db274eea9bfc8d322060218fa67e597e353c628bc220f00b9",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:3baa6abc26128f334adc62e12adb81b99ef2af029f05e59672bac6d8b8efdb44",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -38994,6 +39065,36 @@
       "source": "Kingy AI"
     },
     {
+      "date": "Sun, 01 Nov 2026 07:44:37 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": "Nvidia",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "Nvidia revenue soars 106%, beats expectations as AI chips stay in high demand - ABC News - Breaking News, Latest News and Videos Nvidia revenue soars 106%, beats expectations as AI chips stay in high demand ABC News - Breaking News, Latest News and Videos Google News",
+      "title": "Nvidia revenue soars 106%, beats expectations as AI chips stay in high demand - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVTdlSVdfanZLZVB3elBDNkpjOXRrVEtqODlaaVJEakxvWUhTLU9zNEpkUkUzbUpGWVhDNEQtc2JNSEpwRFlTQUpnNkw4eU5xakpQd09OaXAzQUw2ZEJaVHRlb1N5cU1rcFZ3XzYxMl9RNWx0dGwzMGtvb1dORHNqbUVmdmd1RDZXdEFIcXc4Vmp2MEFmc1hmYXpzONIBoAFBVV95cUxQbExCZEYxVi1YOTlRaVdpZVlpb1NSZVZUWExBazBJSVBhUlZtOUM3YzhpUG1EZGE0WGZ5VkNoNDM4LTBqTG82bXktaGdzb2tmcFY5dVV3VEpseDZhNXc5SGVjOTZIWFNscmRFNDJkd0IzdHJCYkZHSUFHZG1KcVdldGdOYkd4b3NnYVFMRnB0NW9lRkxIdVhRRjFHZ0lsVm92?oc=5",
+      "source": "ABC News - Breaking News, Latest News and Videos"
+    },
+    {
+      "date": "Sun, 01 Nov 2026 10:47:55 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": "Alibaba",
+      "target_entity": null,
+      "amount": 567.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "Partners Wealth Management LLC Makes New $567,000 Investment in Alibaba Group Holding Limited $BABA - MarketBeat Partners Wealth Management LLC Makes New $567,000 Investment in Alibaba Group Holding Limited $BABA MarketBeat Google News",
+      "title": "Partners Wealth Management LLC Makes New $567,000 Investment in Alibaba Group Holding Limited $BABA - MarketBeat",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNOWE3SXhFcnFJeU5HVk9VNWJKNWNRY0kxQW0zZWtsOXpaVXNVT2E0N05nVXl5Zjl3TU8tZ2ZQT1B0V3NEV0xrbWZST3N5enhtNXMwNldEMGFhR3lfaXZaOXVjVWNUTnYtSThvU0NRS083eDJRdDZTdFlUcy0xOGNNSGIzZTE5R1A3R1gzeGpEekUyRGZfamV3NmlsTHR0SzhCWDNWRVhtRElBZUJlUTlDUWplcmxQcFlSWUZpRlF3V2liRVJldDdSaUVQLURyS3o4R1BFV3gwT1NYUU1SY0pLYW9WeUtiQ3ZRNXV3OUxB?oc=5",
+      "source": "MarketBeat"
+    },
+    {
       "date": "Sun, 04 Oct 2026 01:23:29 GMT",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": "Alphabet",
@@ -40781,36 +40882,36 @@
   ],
   "collector_runs": [
     {
-      "id": 935,
+      "id": 939,
       "collector": "company-economic-news",
-      "started_at": "2026-10-31T15:44:05+00:00",
-      "completed_at": "2026-10-31T15:44:24+00:00",
+      "started_at": "2026-11-01T16:48:58+00:00",
+      "completed_at": "2026-11-01T16:49:20+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 24,
+      "items_new": 23,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "37b19469-0edc-4e8a-a3b9-df821c5c377d"
+      "collection_execution_id": "cc9102ac-0189-4119-9201-791bde089564"
     },
     {
-      "id": 936,
+      "id": 940,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-10-31T15:44:24+00:00",
-      "completed_at": "2026-10-31T15:44:26+00:00",
+      "started_at": "2026-11-01T16:49:20+00:00",
+      "completed_at": "2026-11-01T16:49:21+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 3,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "37b19469-0edc-4e8a-a3b9-df821c5c377d"
+      "collection_execution_id": "cc9102ac-0189-4119-9201-791bde089564"
     },
     {
       "id": 56,
@@ -40829,26 +40930,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 934,
+      "id": 938,
       "collector": "google-news-rss",
-      "started_at": "2026-10-31T15:44:02+00:00",
-      "completed_at": "2026-10-31T15:44:04+00:00",
+      "started_at": "2026-11-01T16:48:56+00:00",
+      "completed_at": "2026-11-01T16:48:57+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 9,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "37b19469-0edc-4e8a-a3b9-df821c5c377d"
+      "collection_execution_id": "cc9102ac-0189-4119-9201-791bde089564"
     },
     {
-      "id": 937,
+      "id": 941,
       "collector": "sec-edgar",
-      "started_at": "2026-10-31T15:44:26+00:00",
-      "completed_at": "2026-10-31T15:44:28+00:00",
+      "started_at": "2026-11-01T16:49:22+00:00",
+      "completed_at": "2026-11-01T16:49:24+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -40858,7 +40959,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "37b19469-0edc-4e8a-a3b9-df821c5c377d"
+      "collection_execution_id": "cc9102ac-0189-4119-9201-791bde089564"
     },
     {
       "id": 57,
@@ -40878,11 +40979,11 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1147,
-  "mention_count": 8635,
+  "event_count": 1149,
+  "mention_count": 8637,
   "review_counts": {
     "provisional": 0,
-    "confirmed": 342,
+    "confirmed": 344,
     "flagged": 805,
     "flagged_retry_pending": 0
   },
@@ -43645,8 +43746,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "f187ac5084f456e8742db045bc20fc3de68d5e005a3bee3b406eb1c2bf24cf41",
-    "created_at": "2026-10-31T15:44:33+00:00",
+    "run_id": "2fd3507889bbd24c43a4c4cdac66a648de56b877cf3c990b5fe5dc7c58ea3061",
+    "created_at": "2026-11-01T16:49:29+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -43716,6 +43817,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-9b2d5b1ff6a5a8fb",
-  "database_sha256": "9b2d5b1ff6a5a8fbdd3fd0f6eb6905bcee6baa5f0f9bb08965c9ffadd1f6130d"
+  "database_state_version": "v1-ccbcf4f278dfed06",
+  "database_sha256": "ccbcf4f278dfed0615a02bc5f65941fc9f410afa8555b4ee49ad1b23e444d9b5"
 }
