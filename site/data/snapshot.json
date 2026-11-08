@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T16:27:00.550843+00:00",
+  "generated_at": "2026-11-08T16:41:49.111002+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -15,7 +15,7 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-11-07T16:25:58.354108+00:00",
+    "reading_as_of": "2026-11-08T16:40:45.196368+00:00",
     "support_totals": {
       "risk": 22.439600000000002,
       "safety": 3.4800000000000004
@@ -676,6 +676,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-11-08T16:40:45.196368+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-08T16:40:20+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-11-07T16:25:58.354108+00:00",
       "score": 80.7,
@@ -2856,6 +2870,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-11-08T16:40:45.196368+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-08T16:40:20+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-11-07T16:25:58.354108+00:00",
       "score": 80.7,
       "label": "HIGH CONVERGENCE",
@@ -3159,7 +3187,7 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-11-07T16:27:00.552541+00:00",
+    "as_of": "2026-11-08T16:41:49.112809+00:00",
     "counts": {
       "pressure": 55,
       "public_exposure": 5,
@@ -8610,6 +8638,30 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:493d7af02d6f0c5ca55cdca83ca890c0caee5d0472179588ce51a6417834d83d",
+        "label": "Cat Wu Joins OpenAI: Anthropic Faces Sudden Wave of Core Employee Departures Ahead of IPO - 36Kr",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "36Kr",
+        "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1CQXMwZjBNV0dPUGVqaU9Wa3JvU0Q0d0t3SWo5cEh2WUZBSkEyWVVzRkdSNUhobFNhSjRXVjNXd2lhVGpId3VwNkd2WUFxeEQ1T29j?oc=5",
+        "date": "Thu, 05 Nov 2026 08:20:36 GMT",
+        "summary": "Cat Wu Joins OpenAI: Anthropic Faces Sudden Wave of Core Employee Departures Ahead of IPO 36Kr",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:b1b23ca5e56f9d0482aba6ad75546e3a75fe40744b37862d06d23b2539a68d47",
+        "label": "OpenAI Valued at $1.25 Trillion, Anthropic Prepares for IPO - Brief IA",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Brief IA",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYVI0elcxUWk3aVk0NGFLenljNXlXaGhCTXotNklqZkJTQUJGTjJLZTV0MzNnQjZPWnRtNU9MbXdsUU41bWEwQVN2RDJtNG84WkIwRHg4aUtHUmJwYkpTMGNiZzcyYnFvcUl2endzaHpjOUR2d0F1Z3RuM1p6SkdVVGV3SW5jMXlfTVowTFBwNmhtYkJvVHc?oc=5",
+        "date": "Sat, 07 Nov 2026 00:05:00 GMT",
+        "summary": "OpenAI Valued at $1.25 Trillion, Anthropic Prepares for IPO Brief IA",
+        "score": 5,
         "weight": 1
       },
       {
@@ -14311,30 +14363,6 @@
         "summary": "Watch Open Machine CEO on Anthropic, OpenAI IPO Potential Bloomberg.com",
         "score": 5,
         "weight": 1
-      },
-      {
-        "id": "evidence:815f763f878ba2b46cdac14347ddf994393058717ee7c396d8639536c4651531",
-        "label": "Anthropic to file for IPO that could top SpaceX record - Proactive financial news",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Proactive financial news",
-        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxORjBkMVJlZm96c3c4NGhDM2hZMWFPQWRCUURyV3lIbHVKM3JFZ1QxdnNoTzAwd0pVd0tUbGNONkIxc1RSeE5rNnNsUFlmU3B5YzdxbE1acjB1TWtpWjZ6RjRuVEk0eDQ3Y3RzUjlyS2M0dHhoVl9DQ2N1eFQ0WE1yQjN1aDktZHdqdW51U0FhaGZlaXJWaWdBb1FOV2JDQmlBUTBMOEZ4N0NNYTV1WmZHVGVjR1hnRlM0My1FTkFsS2pCUzQ?oc=5",
-        "date": "Fri, 21 Aug 2026 06:40:22 GMT",
-        "summary": "Anthropic to file for IPO that could top SpaceX record Proactive financial news",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
-        "label": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTklyTzRDdzJzX2RvU3FtZUFCcThTN0dmaERRa1RydmM4UGJFeGgzMEIwVmVqZl9BRzl5WTMtdXVRODVJeHlheWJndWdqRGJiU05DZFpPdjREbkRnekNwVC1PQ0lGNmFZejZNYW5rN0E2SG5jM3VqdGNlbW1QdmtVNU5VeTRFNE5pNGI5dFpucVc4SGw1ejYwblgtOUlvLW9qbHc?oc=5",
-        "date": "Wed, 19 Aug 2026 20:41:09 GMT",
-        "summary": "Why I Wouldn't Bother With the Anthropic or OpenAI IPOs Yahoo Finance",
-        "score": 5,
-        "weight": 1
       }
     ],
     "edges": [
@@ -17904,6 +17932,34 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:493d7af02d6f0c5ca55cdca83ca890c0caee5d0472179588ce51a6417834d83d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:493d7af02d6f0c5ca55cdca83ca890c0caee5d0472179588ce51a6417834d83d",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:b1b23ca5e56f9d0482aba6ad75546e3a75fe40744b37862d06d23b2539a68d47",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:b1b23ca5e56f9d0482aba6ad75546e3a75fe40744b37862d06d23b2539a68d47",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -23882,34 +23938,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:04a7cd362e02247604af57c655eae756a83ebf985d49e4b9f34e7b29b0bd4990",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:815f763f878ba2b46cdac14347ddf994393058717ee7c396d8639536c4651531",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:815f763f878ba2b46cdac14347ddf994393058717ee7c396d8639536c4651531",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:10f676f0898b0b41a2b6593f01563abb2dd38c73fe7267c9ab6a051607e6b2b4",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -41260,36 +41288,36 @@
   ],
   "collector_runs": [
     {
-      "id": 963,
+      "id": 967,
       "collector": "company-economic-news",
-      "started_at": "2026-11-07T16:25:08+00:00",
-      "completed_at": "2026-11-07T16:25:27+00:00",
+      "started_at": "2026-11-08T16:40:00+00:00",
+      "completed_at": "2026-11-08T16:40:17+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 24,
+      "items_new": 15,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "ab73fad1-575b-4ffa-ab65-25ea36609a7f"
+      "collection_execution_id": "1cf46ee2-4b37-4158-8325-a3aa320d0efa"
     },
     {
-      "id": 964,
+      "id": 968,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-11-07T16:25:27+00:00",
-      "completed_at": "2026-11-07T16:25:28+00:00",
+      "started_at": "2026-11-08T16:40:17+00:00",
+      "completed_at": "2026-11-08T16:40:18+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 2,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "ab73fad1-575b-4ffa-ab65-25ea36609a7f"
+      "collection_execution_id": "1cf46ee2-4b37-4158-8325-a3aa320d0efa"
     },
     {
       "id": 56,
@@ -41308,26 +41336,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 962,
+      "id": 966,
       "collector": "google-news-rss",
-      "started_at": "2026-11-07T16:25:05+00:00",
-      "completed_at": "2026-11-07T16:25:08+00:00",
+      "started_at": "2026-11-08T16:39:58+00:00",
+      "completed_at": "2026-11-08T16:39:59+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 11,
+      "items_new": 4,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "ab73fad1-575b-4ffa-ab65-25ea36609a7f"
+      "collection_execution_id": "1cf46ee2-4b37-4158-8325-a3aa320d0efa"
     },
     {
-      "id": 965,
+      "id": 969,
       "collector": "sec-edgar",
-      "started_at": "2026-11-07T16:25:29+00:00",
-      "completed_at": "2026-11-07T16:25:30+00:00",
+      "started_at": "2026-11-08T16:40:18+00:00",
+      "completed_at": "2026-11-08T16:40:20+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -41337,7 +41365,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "ab73fad1-575b-4ffa-ab65-25ea36609a7f"
+      "collection_execution_id": "1cf46ee2-4b37-4158-8325-a3aa320d0efa"
     },
     {
       "id": 57,
@@ -44124,8 +44152,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "3e76a02a8019896c06d136870e697d37a7de2998baf08123c4254650871c99f1",
-    "created_at": "2026-11-07T16:25:32+00:00",
+    "run_id": "d9e89b9a72aa5303ef25bb855ff1f141ab9182f47fe22dd85816cfe0929f63f9",
+    "created_at": "2026-11-08T16:40:22+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -44195,6 +44223,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-a3983cce320929a9",
-  "database_sha256": "a3983cce320929a91ba9fcf79454676abdadcbe663f9c47942cbe37d8127f05a"
+  "database_state_version": "v1-8eb4179c04197c3f",
+  "database_sha256": "8eb4179c04197c3f6dea394958b0d8714e4e321b363a866f2b5b93d7e3e205da"
 }
