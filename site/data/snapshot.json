@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T16:41:49.111002+00:00",
+  "generated_at": "2026-11-09T20:44:57.782949+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -15,7 +15,7 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-11-08T16:40:45.196368+00:00",
+    "reading_as_of": "2026-11-09T20:43:43.281555+00:00",
     "support_totals": {
       "risk": 22.439600000000002,
       "safety": 3.4800000000000004
@@ -676,6 +676,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-11-09T20:43:43.281555+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-09T20:43:10+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-11-08T16:40:45.196368+00:00",
       "score": 80.7,
@@ -2870,6 +2884,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-11-09T20:43:43.281555+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-09T20:43:10+00:00",
+      "score": 80.7,
+      "label": "HIGH CONVERGENCE",
+      "dimensions": "{\"capital\": 85.0, \"monetization\": 41.1, \"circularity\": 79.8, \"fragility\": 59.3, \"stress\": 63.1, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-11-08T16:40:45.196368+00:00",
       "score": 80.7,
       "label": "HIGH CONVERGENCE",
@@ -3187,13 +3215,33 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-11-08T16:41:49.112809+00:00",
+    "as_of": "2026-11-09T20:44:57.785096+00:00",
     "counts": {
-      "pressure": 55,
+      "pressure": 54,
       "public_exposure": 5,
-      "context": 10
+      "context": 11
     },
     "items": [
+      {
+        "fact_id": "ee7af7a48e59cefaa789c762e51ec8b41c66017af9edd4ca1213fb2733e708c4",
+        "event_id": "9c6f5abf3a51604c65cca2dc72b36227ace4735d31c5eb4d3b73a86b0d554dca",
+        "kind": "context",
+        "causal_role": "VALIDATION",
+        "rationale": "Revenue provides demand evidence; a report alone establishes neither growth nor profit.",
+        "rule_version": "news-alerts-v1",
+        "event_type": "REVENUE_REPORT",
+        "title": "OpenAI Revenue Grew 70% in Third Quarter, CFO Sarah Friar Says - www.tokenpost.com",
+        "evidence": "OpenAI Revenue Grew 70% in Third Quarter, CFO Sarah Friar Says - www.tokenpost.com OpenAI Revenue Grew 70% in Third Quarter, CFO Sarah Friar Says www.tokenpost.com Google News",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE82cmNOMXZXd0NZSnRQLVRITkRULUh1R1UwcFJLS1FMd3ZMQTczSXMwNmxDelUxdjNqMFlhbU1nTHVJcFJoU1Y2N24wQkZkNnVoa0J3aEZLejY?oc=5",
+        "date": "2026-11-09T03:22:00+00:00",
+        "reviewed_at": "2026-11-09T20:43:13.766395+00:00",
+        "sources": [
+          "https://news.google.com/rss/articles/CBMiWEFVX3lxTE82cmNOMXZXd0NZSnRQLVRITkRULUh1R1UwcFJLS1FMd3ZMQTczSXMwNmxDelUxdjNqMFlhbU1nTHVJcFJoU1Y2N24wQkZkNnVoa0J3aEZLejY?oc=5"
+        ],
+        "underlying_fact_ids": [
+          "ee7af7a48e59cefaa789c762e51ec8b41c66017af9edd4ca1213fb2733e708c4"
+        ]
+      },
       {
         "fact_id": "31071276481a875d69296870abeb6f123fc788cc5ac90371d5f041a9290cf4fc",
         "event_id": "241b0053e631d0e126f74f6496e7ceaa6e0f8ec80b6451b054f19e047bad126a",
@@ -4577,26 +4625,6 @@
         "underlying_fact_ids": [
           "023e26db4528bb03e35ff68360d94db487b52c316b9113dd8cd6a930abe77fad"
         ]
-      },
-      {
-        "fact_id": "f6f961c63f339b36e0fa3e71a662c97044398bb12487f1a980622328dfd01f83",
-        "event_id": "fca46010a8e8f64273ccb0fa2a8c57e426f44e140f45c3b5480986db9da6b79c",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com",
-        "evidence": "Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" - finance.biggo.com Big Four Tech Giants Raise AI Capex Target to $745 Billion, Calling It \"Still Early Innings\" finance.biggo.com Google News",
-        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tQ3M3Vk8tM1haT2Y0Y0dIU2VNOVRmQ2dVUkl1czcxYmFYcnlQQnQ2WmszSmJKNFhxdXp2OHFGZFluRVpJN1Z2TWgxaWk2TndIX0ZYZXY5OUxUVnBjMmpDN1BtYmlSZl94bGlYMHNJYTZndmFXdmc?oc=5",
-        "date": "2026-08-11T07:00:00+00:00",
-        "reviewed_at": "2026-08-21T20:22:22.159337+00:00",
-        "sources": [
-          "https://news.google.com/rss/articles/CBMidkFVX3lxTE9tQ3M3Vk8tM1haT2Y0Y0dIU2VNOVRmQ2dVUkl1czcxYmFYcnlQQnQ2WmszSmJKNFhxdXp2OHFGZFluRVpJN1Z2TWgxaWk2TndIX0ZYZXY5OUxUVnBjMmpDN1BtYmlSZl94bGlYMHNJYTZndmFXdmc?oc=5"
-        ],
-        "underlying_fact_ids": [
-          "f6f961c63f339b36e0fa3e71a662c97044398bb12487f1a980622328dfd01f83"
-        ]
       }
     ]
   },
@@ -4618,7 +4646,7 @@
         "id": "OpenAI",
         "label": "OpenAI",
         "kind": "company",
-        "weight": 38
+        "weight": 39
       },
       {
         "id": "Anthropic",
@@ -8638,6 +8666,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:34409db0e87165061c3f7f20274e06fa019dc6d1a0025aa536d6b0f36ae8c995",
+        "label": "OpenAI CEO Sam Altman lands $1.25 trillion price as Anthropic IPO buyers eye $1.1 trillion - Martin Cid Magazine",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Martin Cid Magazine",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMGw0NDFOV1dNMXRqVVA5dkR5aEwxM1VROGYzMHJCMmdnSVRZeFRpaFFqOFU3MllyTmxZSEpXMVRhSTZpbkhENTNOcC1wTVNTdzduZmxzQ09DMFNMejMzZHRLQzRWejZNYnRmb2xHT05NVzB0VHNNVGxjd3V2SUxOUzhFUm9DSXFjRzV5dDQxZjFBb1dLSGc?oc=5",
+        "date": "Sun, 08 Nov 2026 17:42:12 GMT",
+        "summary": "OpenAI CEO Sam Altman lands $1.25 trillion price as Anthropic IPO buyers eye $1.1 trillion Martin Cid Magazine",
+        "score": 5,
         "weight": 1
       },
       {
@@ -14351,18 +14391,6 @@
         "summary": "Tech stocks today: Anthropic's IPO plans come into focus, Nvidia earnings provide next test for AI trade Yahoo Finance",
         "score": 5,
         "weight": 1
-      },
-      {
-        "id": "evidence:04a7cd362e02247604af57c655eae756a83ebf985d49e4b9f34e7b29b0bd4990",
-        "label": "Watch Open Machine CEO on Anthropic, OpenAI IPO Potential - Bloomberg.com",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWDVfd1FtbllVTWE3ZnZEVEdVY2FvZDlyaGFhRmNWMnhJVTVFWE4wdW9UTklURi04ZElScXFJWnpPay1ETHlybVVpS3BuVGs5ajkwZjRweEFfN3lDNXVHcFd6NzFLdjJHcF9DYWs4WnpVU0pzZndULWY5SU5nWmZhVzk5Y2VHYlMydUdFNC1QdjdOWVFxVy1CTm9PNm50V2RVdTQxS2tCRk8?oc=5",
-        "date": "Thu, 20 Aug 2026 00:00:00 GMT",
-        "summary": "Watch Open Machine CEO on Anthropic, OpenAI IPO Potential Bloomberg.com",
-        "score": 5,
-        "weight": 1
       }
     ],
     "edges": [
@@ -17932,6 +17960,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:34409db0e87165061c3f7f20274e06fa019dc6d1a0025aa536d6b0f36ae8c995",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:34409db0e87165061c3f7f20274e06fa019dc6d1a0025aa536d6b0f36ae8c995",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -23924,20 +23966,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:3b7814fba802a11e222cadd0575cfbbadb5004079b27a0b2c4785899350e55e5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:04a7cd362e02247604af57c655eae756a83ebf985d49e4b9f34e7b29b0bd4990",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:04a7cd362e02247604af57c655eae756a83ebf985d49e4b9f34e7b29b0bd4990",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -38916,6 +38944,21 @@
       "source": "CNBC"
     },
     {
+      "date": "Mon, 09 Nov 2026 03:22:00 GMT",
+      "event_type": "REVENUE_REPORT",
+      "source_entity": "OpenAI",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.72,
+      "mentions": 1,
+      "review_status": "confirmed",
+      "evidence_text": "OpenAI Revenue Grew 70% in Third Quarter, CFO Sarah Friar Says - www.tokenpost.com OpenAI Revenue Grew 70% in Third Quarter, CFO Sarah Friar Says www.tokenpost.com Google News",
+      "title": "OpenAI Revenue Grew 70% in Third Quarter, CFO Sarah Friar Says - www.tokenpost.com",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE82cmNOMXZXd0NZSnRQLVRITkRULUh1R1UwcFJLS1FMd3ZMQTczSXMwNmxDelUxdjNqMFlhbU1nTHVJcFJoU1Y2N24wQkZkNnVoa0J3aEZLejY?oc=5",
+      "source": "www.tokenpost.com"
+    },
+    {
       "date": "Mon, 12 Oct 2026 07:43:05 GMT",
       "event_type": "CAPEX_COMMITMENT",
       "source_entity": "Tencent",
@@ -41288,36 +41331,36 @@
   ],
   "collector_runs": [
     {
-      "id": 967,
+      "id": 971,
       "collector": "company-economic-news",
-      "started_at": "2026-11-08T16:40:00+00:00",
-      "completed_at": "2026-11-08T16:40:17+00:00",
+      "started_at": "2026-11-09T20:42:47+00:00",
+      "completed_at": "2026-11-09T20:43:06+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 15,
+      "items_new": 30,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1cf46ee2-4b37-4158-8325-a3aa320d0efa"
+      "collection_execution_id": "8049ca85-56af-4289-a031-e7f2780aba55"
     },
     {
-      "id": 968,
+      "id": 972,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-11-08T16:40:17+00:00",
-      "completed_at": "2026-11-08T16:40:18+00:00",
+      "started_at": "2026-11-09T20:43:07+00:00",
+      "completed_at": "2026-11-09T20:43:08+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1cf46ee2-4b37-4158-8325-a3aa320d0efa"
+      "collection_execution_id": "8049ca85-56af-4289-a031-e7f2780aba55"
     },
     {
       "id": 56,
@@ -41336,26 +41379,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 966,
+      "id": 970,
       "collector": "google-news-rss",
-      "started_at": "2026-11-08T16:39:58+00:00",
-      "completed_at": "2026-11-08T16:39:59+00:00",
+      "started_at": "2026-11-09T20:42:45+00:00",
+      "completed_at": "2026-11-09T20:42:47+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 4,
+      "items_new": 8,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1cf46ee2-4b37-4158-8325-a3aa320d0efa"
+      "collection_execution_id": "8049ca85-56af-4289-a031-e7f2780aba55"
     },
     {
-      "id": 969,
+      "id": 973,
       "collector": "sec-edgar",
-      "started_at": "2026-11-08T16:40:18+00:00",
-      "completed_at": "2026-11-08T16:40:20+00:00",
+      "started_at": "2026-11-09T20:43:08+00:00",
+      "completed_at": "2026-11-09T20:43:10+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -41365,7 +41408,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1cf46ee2-4b37-4158-8325-a3aa320d0efa"
+      "collection_execution_id": "8049ca85-56af-4289-a031-e7f2780aba55"
     },
     {
       "id": 57,
@@ -41385,11 +41428,11 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1156,
-  "mention_count": 8658,
+  "event_count": 1157,
+  "mention_count": 8659,
   "review_counts": {
     "provisional": 0,
-    "confirmed": 346,
+    "confirmed": 347,
     "flagged": 810,
     "flagged_retry_pending": 0
   },
@@ -44152,8 +44195,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "d9e89b9a72aa5303ef25bb855ff1f141ab9182f47fe22dd85816cfe0929f63f9",
-    "created_at": "2026-11-08T16:40:22+00:00",
+    "run_id": "2c45c94bda6e240567ffaa3967e0d2f3f72398e4cc3751883677b01ed4376b8b",
+    "created_at": "2026-11-09T20:43:14+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -44223,6 +44266,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-8eb4179c04197c3f",
-  "database_sha256": "8eb4179c04197c3f6dea394958b0d8714e4e321b363a866f2b5b93d7e3e205da"
+  "database_state_version": "v1-79e5a827ceb7f51f",
+  "database_sha256": "79e5a827ceb7f51f985b58552f9af97c39bdf928faafa02197f339a9c8616d36"
 }
