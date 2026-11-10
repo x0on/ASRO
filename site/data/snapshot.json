@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-09T20:44:57.782949+00:00",
+  "generated_at": "2026-11-10T17:49:52.903934+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 80.7,
-    "label": "HIGH CONVERGENCE",
+    "score": 78.6,
+    "label": "FRAGILE",
     "direction": "unknown",
     "known_dimensions": 6,
     "gate_passed": true,
@@ -15,31 +15,31 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-11-09T20:43:43.281555+00:00",
+    "reading_as_of": "2026-11-10T17:49:04.444224+00:00",
     "support_totals": {
-      "risk": 22.439600000000002,
+      "risk": 19.5048,
       "safety": 3.4800000000000004
     }
   },
   "dimensions": {
-    "capital": 85.0,
+    "capital": 83.9,
     "monetization": 41.1,
-    "circularity": 79.8,
+    "circularity": 77.6,
     "fragility": 59.3,
-    "stress": 63.1,
+    "stress": 59.6,
     "transmission": null,
     "cannibalization": null,
     "external_pressure": 54.4,
     "counter_evidence": 33.8
   },
   "dimension_evidence": {
-    "capital": 11,
+    "capital": 10,
     "monetization": 1,
     "fragility": 1,
     "external_pressure": 3,
     "counter_evidence": 2,
-    "stress": 3,
-    "circularity": 6
+    "stress": 2,
+    "circularity": 5
   },
   "dimension_basis": {
     "capital": "reviewed_evidence",
@@ -53,7 +53,7 @@
   "dimension_direction": {
     "capital": {
       "direction": "higher_pressure",
-      "evidence_count": 11
+      "evidence_count": 10
     },
     "monetization": {
       "direction": "lower_pressure",
@@ -61,7 +61,7 @@
     },
     "circularity": {
       "direction": "higher_pressure",
-      "evidence_count": 6
+      "evidence_count": 5
     },
     "fragility": {
       "direction": "higher_pressure",
@@ -69,7 +69,7 @@
     },
     "stress": {
       "direction": "higher_pressure",
-      "evidence_count": 3
+      "evidence_count": 2
     },
     "external_pressure": {
       "direction": "higher_pressure",
@@ -241,22 +241,6 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
         "evidence": "17 NVIDIA Corporation and Subsidiaries Notes to Condensed Consolidated Financial Statements (Continued) (Unaudited) Future commitments by fiscal year as of July 26, 2026, were as follows: Remainder of 2027 2028 2029 2030 2031 2032 and thereafter Total (In billions) Supply and capacity $ 92 $ 87 $ 88 $ 6 $ 5 $ 1 $ 279 Cloud service agreements 3 8 7 6 4 1 29 Data center leases not commenced \u2014 1 1 2 1 20 25 Equity investments 18 3 2 2 \u2014 \u2014 25 Capital expenditures 7 1 \u2014 \u2014 \u2014 \u2014 8 Total $ 120 $ 100 $ 98 $ 16 $ 10 $ 22 $ 366 Supply and capacity \u2013 We have partnered with our extensive network to secure the necessary supply and critical components needed to meet demand for the next several years, increasing supply commitments from $ 119 billion last quarter to $ 279 billion as of July 26, 2026."
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "CoreWeave",
-        "value": 44000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.86,
-        "support": 1.118,
-        "date": "2026-08-12",
-        "event_type": "INVESTS_IN",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "evidence": "The carrying value of the Company's investment in the JV was $ 44 million and $ 51 million as of June 30, 2026 and December 31, 2025, respectively."
       }
     ],
     "monetization": [
@@ -411,22 +395,6 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
         "evidence": "The inventory valuation allowance, representing a write-down of inventory, was $ 3.3 billion and $ 3.0 billion as of December 31, 2025 and September 30, 2026."
-      },
-      {
-        "variable": "Refinancing stress",
-        "entity": "CoreWeave",
-        "value": 2.0,
-        "unit": "score",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.86,
-        "support": 0.5848,
-        "date": "2026-08-12",
-        "event_type": "IMPAIRMENT",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "evidence": "Goodwill and Intangible Assets Goodwill There were no additions or impairment charges recorded to goodwill for any of the periods presented."
       }
     ],
     "circularity": [
@@ -509,22 +477,6 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
         "evidence": "The guarantees terminate upon certain events, including OpenAI achieving a satisfactory credit rating or after each respective lease term has completed."
-      },
-      {
-        "variable": "Vendor financing",
-        "entity": "CoreWeave",
-        "value": 95000000.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.88,
-        "support": 1.232,
-        "date": "2026-08-12",
-        "event_type": "GUARANTEES",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "evidence": "The Company's maximum exposure to loss with respect to the JV includes (i) the carrying value of the Company's investment, (ii) up to $ 95 million related to a guarantee for certain contingent consideration payable to a third-party by the JV upon the achievement of certain milestones, (iii) lease prepayment of $ 37 million, and (iv) potential requirements to fund the construction and development of the data center campus to the extent the JV is unable to secure third-party financing."
       }
     ]
   },
@@ -676,6 +628,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-11-10T17:49:04.444224+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-10T17:48:45+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-11-09T20:43:43.281555+00:00",
       "score": 80.7,
@@ -2884,6 +2850,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-11-10T17:49:04.444224+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-10T17:48:45+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-11-09T20:43:43.281555+00:00",
       "score": 80.7,
       "label": "HIGH CONVERGENCE",
@@ -3215,9 +3195,9 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-11-09T20:44:57.785096+00:00",
+    "as_of": "2026-11-10T17:49:52.905332+00:00",
     "counts": {
-      "pressure": 54,
+      "pressure": 48,
       "public_exposure": 5,
       "context": 11
     },
@@ -4504,126 +4484,6 @@
         ],
         "underlying_fact_ids": [
           "ae2a813b1ede7391c261afdfb8fffd5af0f2b99f5ab214b473ea34599a59fcee"
-        ]
-      },
-      {
-        "fact_id": "fabd5e3669784947516164c4b68ebe1846e22e30a341576f35dbb1721f23856d",
-        "event_id": "cd6120296f4ed75f6d75b53fd8a99cbf6c9e6e249c7ad91d65a62170a316cfa0",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "An investment increases capital exposed to the business succeeding.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "INVESTS_IN",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "evidence": "The carrying value of the Company's investment in the JV was $ 44 million and $ 51 million as of June 30, 2026 and December 31, 2025, respectively.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "date": "2026-08-12T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:50.957213+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "fabd5e3669784947516164c4b68ebe1846e22e30a341576f35dbb1721f23856d"
-        ]
-      },
-      {
-        "fact_id": "f9ad148b28655039bd481e3b0e3c79aab0b88d208fba0e1be64a143acc04849f",
-        "event_id": "79a5f7dad90ca7dc9c7bcd1ff85c8370316708e286abf1950fa48211a4cfce95",
-        "kind": "pressure",
-        "causal_role": "TRANSMISSION",
-        "rationale": "Lending connects the lender to the borrower's ability to repay.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "LENDS_TO",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "evidence": "In August 2026, the Company made a $ 1.2 billion draw down on the Revolving Credit Facility.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "date": "2026-08-12T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:25:03.564984+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "f9ad148b28655039bd481e3b0e3c79aab0b88d208fba0e1be64a143acc04849f"
-        ]
-      },
-      {
-        "fact_id": "dcf27fa6934d09c202c61e3785400010fa6ee46ab140993d9c05e894a60b432a",
-        "event_id": "db702e4f016f6c68eef1ea33aec7b3efe7dc2245c42ff7e57b1479dd1688fffa",
-        "kind": "pressure",
-        "causal_role": "TRANSMISSION",
-        "rationale": "Lending connects the lender to the borrower's ability to repay.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "LENDS_TO",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "evidence": "Revolving Credit Facility As of June 30, 2026 and December 31, 2025, the outstanding balances associated with letters of credit were $ 533 million and $ 294 million, respectively.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "date": "2026-08-12T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:57.101622+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "dcf27fa6934d09c202c61e3785400010fa6ee46ab140993d9c05e894a60b432a"
-        ]
-      },
-      {
-        "fact_id": "b64637a5163e5522623e0a6b1ec277b45e36253498256c0d46dddc8ea083d26b",
-        "event_id": "5f4432ee2ea9f45b50edf25be7ca6e1c7756c1b79cf9f93439d0bd181cbe9605",
-        "kind": "pressure",
-        "causal_role": "VULNERABILITY",
-        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "GUARANTEES",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "evidence": "The Company's maximum exposure to loss with respect to the JV includes (i) the carrying value of the Company's investment, (ii) up to $ 95 million related to a guarantee for certain contingent consideration payable to a third-party by the JV upon the achievement of certain milestones, (iii) lease prepayment of $ 37 million, and (iv) potential requirements to fund the construction and development of the data center campus to the extent the JV is unable to secure third-party financing.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "date": "2026-08-12T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:57.101622+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "b64637a5163e5522623e0a6b1ec277b45e36253498256c0d46dddc8ea083d26b"
-        ]
-      },
-      {
-        "fact_id": "4ed7aca86ca794e27dbdccae0934e4a4adf79b02883fb90b378a6f5ffd300aa6",
-        "event_id": "a64d4614b5e1c2d35de121489652299a2686e13f5c042de3a7d6b95c46a2a783",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "An investment increases capital exposed to the business succeeding.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "INVESTS_IN",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "evidence": "The carrying value of the Company's investment in these VIEs was $ 479 million as of June 30, 2026, of which $ 221 million is accounted for as an equity method investment and is included in other non-current assets on the condensed consolidated balance sheets.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "date": "2026-08-12T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:50.957213+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "4ed7aca86ca794e27dbdccae0934e4a4adf79b02883fb90b378a6f5ffd300aa6"
-        ]
-      },
-      {
-        "fact_id": "023e26db4528bb03e35ff68360d94db487b52c316b9113dd8cd6a930abe77fad",
-        "event_id": "ec39889404985814e489d2c86fde06ba5db172d840b2a26663e07c92513de028",
-        "kind": "pressure",
-        "causal_role": "STRESS",
-        "rationale": "An impairment recognizes a reduction in asset value.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "IMPAIRMENT",
-        "title": "CoreWeave SEC filing: 10-Q (2026-08-12)",
-        "evidence": "Goodwill and Intangible Assets Goodwill There were no additions or impairment charges recorded to goodwill for any of the periods presented.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm",
-        "date": "2026-08-12T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T19:24:57.101622+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000366/crwv-20260630.htm"
-        ],
-        "underlying_fact_ids": [
-          "023e26db4528bb03e35ff68360d94db487b52c316b9113dd8cd6a930abe77fad"
         ]
       }
     ]
@@ -7769,6 +7629,30 @@
         "weight": 1
       },
       {
+        "id": "evidence:d60577a9b51784d649e9a1089d8fff4cf61e33b22b6fe0c4a31a61518ebf7619",
+        "label": "Anthropic unveils faster, cheaper Claude models, claims lead over OpenAI and Google ahead of IPO - Chosunbiz",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Chosunbiz",
+        "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1SdWtIbTktN2FmTEtRSkZfVWlNUjVUcHZjOUN4Z1oweXV5bzAxVE9kbmFSZEFqSHVzZHlqYTY1WHR1UTloQjJPM0lkYm9SdG1zOEdyRERMTktWMVU4bnNZYXZrQlZqMnhjSXFja05uYmZmQTBiLWs2X0FR0gGOAUFVX3lxTE53WjlTSDVvb19TdHFqdFlCdG42ZW16WmFMdHoxdzcwUzloUUFpREVkN21aRzd1T290R2x2dEY0R3pTYkppcnZidXJMV01rTmNocVJHUnJ6WE82MDlwcjdmRXB3TjF3RjE3Wl9Na0p6eTZJYUV1UHk5S2l1dDF3cTlZZWs0YTQ0dFMwendjNGc?oc=5",
+        "date": "Tue, 10 Nov 2026 06:04:00 GMT",
+        "summary": "Anthropic unveils faster, cheaper Claude models, claims lead over OpenAI and Google ahead of IPO Chosunbiz",
+        "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:a081ee5771d747de624d637ff43a08a461f146c48af5823a5bf673859b0deef9",
+        "label": "SpaceX, Anthropic and OpenAI: 3 giant IPOs and only 1 has sold shares - qz.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "qz.com",
+        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1FUHdyZFBOZi1YTVlKTnNjaUdRS1lNS2E4Uk9tZjNQMldhZ0MxdWg3LWJMdWNKbnF2MmZscjNlNVRLemlqSW5WV2xfclVkMm4yejgwTi1RbzZ0UFlOUzdtc2RpX0c1RlJEM05j?oc=5",
+        "date": "Tue, 10 Nov 2026 15:36:09 GMT",
+        "summary": "SpaceX, Anthropic and OpenAI: 3 giant IPOs and only 1 has sold shares qz.com",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:d555bf2a065505c3eb128e7c137d3c5f5824073d38afba54cf5ea3d5b7c8173a",
         "label": "Amazon posts negative free cash flow of $42.4 billion, holds 2026 capex unchanged - CNBC",
         "kind": "evidence",
@@ -8666,6 +8550,42 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:e390866660a10eb2422abbbd3c2b8f146bd5191b8348341f3348b1563b0fbf49",
+        "label": "Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft - Bloomberg.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZlMwX3dzdHpVbEFBcTlGVWlibGtMcDBYOGJwbVJaaWs5X2xiVWM3ZUVDZHBoM1dyM0t1NjNYdVpzTHlYVHhKYTRHbXJTSmpRSFRLZ3FENE9kcXRFcHZVVTloYVJybUJaWWJ0a0ZGcVZpWXA1U2dZNmp1ZjRtbEJWSEtSc1RRbXdsSnh3bjV2WE90SHpBeGJkQ1hfUUtnZV9ldW14RUJoRVFMMFZmVGxBemNXSlM?oc=5",
+        "date": "Tue, 10 Nov 2026 17:21:08 GMT",
+        "summary": "Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft Bloomberg.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:710508187187cb97f08001548817cb1b6916e1f9d7ae829305c5270ccf675a84",
+        "label": "Anthropic IPO Meets Nvidia Scandal. Hold On to Your Hats. - Barron's",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Barron's",
+        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbUJSMlJidTFiNExXLThiNlp6TTBTTEpoVHFRSFdYSXRxYVFvUFJ2dnc3QjBtZGd4c0FaM2hrc3JiRUV4TGhFU2pRblJDb05KbnAzVUxKeGhkWEV0RnpJcV82dVhsNUJITEVIYjFDRGhFb3UwTHYwSE9UY1pKSF92NA?oc=5",
+        "date": "Tue, 10 Nov 2026 15:49:00 GMT",
+        "summary": "Anthropic IPO Meets Nvidia Scandal. Hold On to Your Hats. Barron's",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:bc35eaaa249260b728847f73f8dc0aafbce4804c5746ce32e48a26a05b04208f",
+        "label": "Anthropic unveils new Fable, Mythos models as rival OpenAI amps up competition ahead of IPO - ThePrint",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "ThePrint",
+        "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNVXMydjNJMHJrazFOLTBBZTdMQUJrbHBqTmNfQkpGTXlMdTc0YkwxNklmY2FYbktxcUdkekVEa1lMYlU0QmFseldlRVMwZ3BVWFE3emFETGU1b25CZFg2OHJtVmlRY1FfbW9xYlM1aDlJdGV6R0JMZG93anVhb0JYNWxJRkdob2dZOW9qT0JKaktRZ1JCdFVEQ0w0RXE0OFJnSWxfalppWXVSYmdIM0phV01XSkpOa3haSllISWRFTzVjd9IBxwFBVV95cUxNWHlEaFlYcU94UFFiNUotUEUzSmREaE5nQzFwb2hJYld1MlI2Z01fcFdQOW1aaE5wODYwOGxBcHFzczluLVYweDViSWJ0SHZIUWhmWDltbjVLeVREMzc4TVlIMTJXem9oa1Z4djhaNWZwdkt0OVljN1g0aFEyd2tyTmhmNWlpVjFBS1pxZ245LS0wR1NUR1NsV0VkdVJCSGZBd0l6RVRvbEJyQkFDTU1oWkJuaFJhV1VHeUVULTlmTUNFRnBueW00?oc=5",
+        "date": "Tue, 10 Nov 2026 05:31:58 GMT",
+        "summary": "Anthropic unveils new Fable, Mythos models as rival OpenAI amps up competition ahead of IPO ThePrint",
+        "score": 5,
         "weight": 1
       },
       {
@@ -14331,66 +14251,6 @@
         "summary": "SpaceX shares slide as it joins the tech-heavy Nasdaq-100 Al Jazeera",
         "score": 5,
         "weight": 1
-      },
-      {
-        "id": "evidence:be641d3594320e8a2c411d9898143c358745e79de6dcc8935e058df2ec838bf4",
-        "label": "SpaceX to join the Nasdaq-100 in a fast-tracked process that will drive huge ETF buying demand - CNBC",
-        "kind": "evidence",
-        "category": "Risk distribution",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBuWkNhSWlFM1lDY2NKX1F6ZmhlU09ZVmluR1NOWlBtZDh3cDZzQmhodEV5dXozUDZRMjFPaVFfM1FobFBPUEZFRjl1ZEpDQktnREdoVXVXU0I3MjJ5TGJ2MTNITzk3elZpX0t4cGt1czXSAXZBVV95cUxQdlQ1ZzllZnhjZl84NHhxZnFYV1NpNGgxTUtndm80ejFYcmFoUmt6bDNGVG1Gb0Y1TldLYnJtSjNlWEI1ajlVTWI4LVY0QkhrWGxxRTJrODlLc1ppeTF5aUJXY1oza256aVROTkZ5NzhtUzVQRHB3?oc=5",
-        "date": "Fri, 26 Jun 2026 07:00:00 GMT",
-        "summary": "SpaceX to join the Nasdaq-100 in a fast-tracked process that will drive huge ETF buying demand CNBC",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d0da86d10fa36298dc62b764102a5289e5960fafb0c02a1b95c744bb6db176d2",
-        "label": "Better IPO Stock: Anthropic vs. OpenAI - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOd2RSdXpkX09qekJtRm9BRHdCNzFRWWZObVh6Ynlfb1JUU2o2YktEVDdtN0w3YllKT295Nk9BT2tvanBSWXV5eUlyRTdrWDd6NjRpUmkxLWlBaFQtd0w2YVg5ZU85MG5ya18zVTRjNnNnZnFnU0hYdzdVVGdCckxIeHktNGZ0RG9hWFJhQ2JSZU9TdklpRDNGUmV3?oc=5",
-        "date": "Fri, 24 Jul 2026 07:00:00 GMT",
-        "summary": "Better IPO Stock: Anthropic vs. OpenAI Yahoo Finance",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:157d5b96e59f3a64821b27a93bf39d6b26c2244c8ad94722ad28a286cdb55f94",
-        "label": "OpenAI Vs Anthropic IPO: How They Compare And What We Know - Forbes",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Forbes",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUUt4VEJ2TW1WeWZaUlNIYWR4OE1xVUhQY0NDeVppOWNwVGF0TEpQdGUtT3JGT1hrMFJlcWJ6ck5TbllTdERMb2ZQamstcnZFVkFjTkxkbGQwZmM5Zmg1bnNaMlRZeWI2aEhraVFhX3MzRkRWdXQ5MHNJd3EtTlc0SU5IYk5DSTJGSU9tdWJ3?oc=5",
-        "date": "Thu, 09 Jul 2026 07:00:00 GMT",
-        "summary": "OpenAI Vs Anthropic IPO: How They Compare And What We Know Forbes",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:8d4f37f9e2a6b64bb88d894b2904d212f99e1b7970a821d0a2ce896114fd0f9f",
-        "label": "Anthropic Just Doubled OpenAI\u2019s Revenue. Is Its $2 Trillion IPO Getting Too Much Hype? - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNOWx4NTFRb1E2SlptblVXMzFkWllwdWNvUEMxTGxqcmZfTUtzUnRralo2aFVLdHd4V1h1bGZYLTJEX0Y4bTd0SFU0M0xaMVJBd01qejlHY0oxMmNkOGk1ejFMUTNxTGZWb1RSeVM2aTVqYTNqWjRlNHN5b3hyX2JYajFGdmJkbEZlQlpfc3BoZFZuVWg4akR3UDhpNVN4anZWOTZv?oc=5",
-        "date": "Wed, 19 Aug 2026 14:00:52 GMT",
-        "summary": "Anthropic Just Doubled OpenAI\u2019s Revenue. Is Its $2 Trillion IPO Getting Too Much Hype? Yahoo Finance",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:3b7814fba802a11e222cadd0575cfbbadb5004079b27a0b2c4785899350e55e5",
-        "label": "Tech stocks today: Anthropic's IPO plans come into focus, Nvidia earnings provide next test for AI trade - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOendXdVhVeHJBdXRSdG5vUnJxSmxjekF6QWtTMDJjTFRNY19tbGtndmxXNXlXZzVlNENIb2xTRlRXOWRsNXZ6X3Z0X2hodEZFMjNGbTlsRVo2bU4xeGJWRmh0U1NzZklqS1VWcEpscENRdTVZZmJna2pBbVZFVk5DWG1lRWlMTndQenBmMml6Zk5IUmNMTkpaU1djR1BLS2hSbzVkVWE0Wnp5aDBxY3BzOTZmQlNkWnc4dkRoR0tPN3YxaWI2aVEteFlkaE1HVTFwRFdlTnRfNzc0cjN4X2ZCbXg3YkpKQmhsQ1hWekxqOA?oc=5",
-        "date": "Thu, 20 Aug 2026 20:27:31 GMT",
-        "summary": "Tech stocks today: Anthropic's IPO plans come into focus, Nvidia earnings provide next test for AI trade Yahoo Finance",
-        "score": 5,
-        "weight": 1
       }
     ],
     "edges": [
@@ -16649,6 +16509,48 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:d60577a9b51784d649e9a1089d8fff4cf61e33b22b6fe0c4a31a61518ebf7619",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:d60577a9b51784d649e9a1089d8fff4cf61e33b22b6fe0c4a31a61518ebf7619",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:d60577a9b51784d649e9a1089d8fff4cf61e33b22b6fe0c4a31a61518ebf7619",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:a081ee5771d747de624d637ff43a08a461f146c48af5823a5bf673859b0deef9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:a081ee5771d747de624d637ff43a08a461f146c48af5823a5bf673859b0deef9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:a081ee5771d747de624d637ff43a08a461f146c48af5823a5bf673859b0deef9",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:d555bf2a065505c3eb128e7c137d3c5f5824073d38afba54cf5ea3d5b7c8173a",
         "type": "EVIDENCE",
@@ -17960,6 +17862,48 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:e390866660a10eb2422abbbd3c2b8f146bd5191b8348341f3348b1563b0fbf49",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Microsoft",
+        "target": "evidence:e390866660a10eb2422abbbd3c2b8f146bd5191b8348341f3348b1563b0fbf49",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:710508187187cb97f08001548817cb1b6916e1f9d7ae829305c5270ccf675a84",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:710508187187cb97f08001548817cb1b6916e1f9d7ae829305c5270ccf675a84",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:bc35eaaa249260b728847f73f8dc0aafbce4804c5746ce32e48a26a05b04208f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:bc35eaaa249260b728847f73f8dc0aafbce4804c5746ce32e48a26a05b04208f",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -23903,69 +23847,6 @@
       {
         "source": "SpaceX",
         "target": "evidence:910416f4c16a741c537b7859838ef14b1b94a16818ab71df3c360564ce332a20",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:be641d3594320e8a2c411d9898143c358745e79de6dcc8935e058df2ec838bf4",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:d0da86d10fa36298dc62b764102a5289e5960fafb0c02a1b95c744bb6db176d2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:d0da86d10fa36298dc62b764102a5289e5960fafb0c02a1b95c744bb6db176d2",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:157d5b96e59f3a64821b27a93bf39d6b26c2244c8ad94722ad28a286cdb55f94",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:157d5b96e59f3a64821b27a93bf39d6b26c2244c8ad94722ad28a286cdb55f94",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:8d4f37f9e2a6b64bb88d894b2904d212f99e1b7970a821d0a2ce896114fd0f9f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:8d4f37f9e2a6b64bb88d894b2904d212f99e1b7970a821d0a2ce896114fd0f9f",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:3b7814fba802a11e222cadd0575cfbbadb5004079b27a0b2c4785899350e55e5",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Nvidia",
-        "target": "evidence:3b7814fba802a11e222cadd0575cfbbadb5004079b27a0b2c4785899350e55e5",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -41331,10 +41212,10 @@
   ],
   "collector_runs": [
     {
-      "id": 971,
+      "id": 975,
       "collector": "company-economic-news",
-      "started_at": "2026-11-09T20:42:47+00:00",
-      "completed_at": "2026-11-09T20:43:06+00:00",
+      "started_at": "2026-11-10T17:48:24+00:00",
+      "completed_at": "2026-11-10T17:48:41+00:00",
       "status": "ok",
       "items_seen": 36,
       "items_new": 30,
@@ -41344,23 +41225,23 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "8049ca85-56af-4289-a031-e7f2780aba55"
+      "collection_execution_id": "8ce6b34c-f75d-4469-a042-73968152f348"
     },
     {
-      "id": 972,
+      "id": 976,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-11-09T20:43:07+00:00",
-      "completed_at": "2026-11-09T20:43:08+00:00",
+      "started_at": "2026-11-10T17:48:41+00:00",
+      "completed_at": "2026-11-10T17:48:42+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 1,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "8049ca85-56af-4289-a031-e7f2780aba55"
+      "collection_execution_id": "8ce6b34c-f75d-4469-a042-73968152f348"
     },
     {
       "id": 56,
@@ -41379,26 +41260,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 970,
+      "id": 974,
       "collector": "google-news-rss",
-      "started_at": "2026-11-09T20:42:45+00:00",
-      "completed_at": "2026-11-09T20:42:47+00:00",
+      "started_at": "2026-11-10T17:48:20+00:00",
+      "completed_at": "2026-11-10T17:48:23+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 8,
+      "items_new": 13,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "8049ca85-56af-4289-a031-e7f2780aba55"
+      "collection_execution_id": "8ce6b34c-f75d-4469-a042-73968152f348"
     },
     {
-      "id": 973,
+      "id": 977,
       "collector": "sec-edgar",
-      "started_at": "2026-11-09T20:43:08+00:00",
-      "completed_at": "2026-11-09T20:43:10+00:00",
+      "started_at": "2026-11-10T17:48:42+00:00",
+      "completed_at": "2026-11-10T17:48:45+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -41408,7 +41289,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "8049ca85-56af-4289-a031-e7f2780aba55"
+      "collection_execution_id": "8ce6b34c-f75d-4469-a042-73968152f348"
     },
     {
       "id": 57,
@@ -44195,8 +44076,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "2c45c94bda6e240567ffaa3967e0d2f3f72398e4cc3751883677b01ed4376b8b",
-    "created_at": "2026-11-09T20:43:14+00:00",
+    "run_id": "6f38bd40bfff0a00ebbfeb1dad7bd3c6d8267456cf062a59634f6eafa82b7b90",
+    "created_at": "2026-11-10T17:48:46+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -44266,6 +44147,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-79e5a827ceb7f51f",
-  "database_sha256": "79e5a827ceb7f51f985b58552f9af97c39bdf928faafa02197f339a9c8616d36"
+  "database_state_version": "v1-9b10459d6065bca6",
+  "database_sha256": "9b10459d6065bca670a46e031909c768e22fe2da8708a27a8eba07523fe33567"
 }
