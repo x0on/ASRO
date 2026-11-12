@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T17:56:13.917261+00:00",
+  "generated_at": "2026-11-12T18:19:24.284562+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -15,7 +15,7 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-11-11T17:54:56.967568+00:00",
+    "reading_as_of": "2026-11-12T18:18:25.675269+00:00",
     "support_totals": {
       "risk": 19.5048,
       "safety": 3.4800000000000004
@@ -628,6 +628,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-11-12T18:18:25.675269+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-12T18:17:59+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-11-11T17:54:56.967568+00:00",
       "score": 78.6,
@@ -2864,6 +2878,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-11-12T18:18:25.675269+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-12T18:17:59+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-11-11T17:54:56.967568+00:00",
       "score": 78.6,
       "label": "FRAGILE",
@@ -3223,7 +3251,7 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-11-11T17:56:13.919417+00:00",
+    "as_of": "2026-11-12T18:19:24.285988+00:00",
     "counts": {
       "pressure": 48,
       "public_exposure": 5,
@@ -4514,13 +4542,13 @@
         "id": "OpenAI",
         "label": "OpenAI",
         "kind": "company",
-        "weight": 40
+        "weight": 41
       },
       {
         "id": "Anthropic",
         "label": "Anthropic",
         "kind": "company",
-        "weight": 32
+        "weight": 33
       },
       {
         "id": "Oracle",
@@ -4532,13 +4560,13 @@
         "id": "Nvidia",
         "label": "Nvidia",
         "kind": "company",
-        "weight": 24
+        "weight": 25
       },
       {
         "id": "Alibaba",
         "label": "Alibaba",
         "kind": "company",
-        "weight": 17
+        "weight": 19
       },
       {
         "id": "SpaceX",
@@ -4553,14 +4581,14 @@
         "weight": 14
       },
       {
-        "id": "Baidu",
-        "label": "Baidu",
-        "kind": "company",
-        "weight": 11
-      },
-      {
         "id": "CoreWeave",
         "label": "CoreWeave",
+        "kind": "company",
+        "weight": 12
+      },
+      {
+        "id": "Baidu",
+        "label": "Baidu",
         "kind": "company",
         "weight": 11
       },
@@ -4601,6 +4629,12 @@
         "weight": 5
       },
       {
+        "id": "DeepSeek",
+        "label": "DeepSeek",
+        "kind": "company",
+        "weight": 4
+      },
+      {
         "id": "Meta",
         "label": "Meta",
         "kind": "company",
@@ -4615,12 +4649,6 @@
       {
         "id": "Blackstone",
         "label": "Blackstone",
-        "kind": "company",
-        "weight": 3
-      },
-      {
-        "id": "DeepSeek",
-        "label": "DeepSeek",
         "kind": "company",
         "weight": 3
       },
@@ -4766,6 +4794,30 @@
         "date": "2022-10-27",
         "summary": "Twitter reported that the merger was completed on October 27, 2022 and Twitter became a wholly owned subsidiary of X Holdings. The transaction valued Twitter at approximately $44 billion.",
         "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:9e06c0f07a01685bf08be2341d3b63fec290c4c53e0d4c4448b1e5a9c87ee0f3",
+        "label": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+        "date": "2026-11-12",
+        "summary": "SEC filing 10-Q for CoreWeave. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
+        "weight": 1
+      },
+      {
+        "id": "evidence:0cd5ddf907ccca16fadaf6dda559ec6c113042f07174fa0de77f59281f170d98",
+        "label": "NVIDIA SEC filing: 8-K (2026-11-12)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+        "date": "2026-11-12",
+        "summary": "SEC filing 8-K for NVIDIA. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
         "weight": 1
       },
       {
@@ -7649,6 +7701,18 @@
         "weight": 1
       },
       {
+        "id": "evidence:48c9c843221007339e853e40047b9ae0212e12c66b3325ace581008e838ddbbe",
+        "label": "'Much more bullish' on Anthropic IPO than SpaceX or OpenAI, says Paul Meeks - CNBC",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "CNBC",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQR3QyUmI4bkRzVk83NnltTkItT29zSHhCRmNTVDd4NTJVSE55eDBGVVZieHozWFlfcGx0TjlKbVFsd0xTWUh2RUJGUkdQNnowcjlZYWlFaTVxdDV1Wm9YZ0VJZzRpSDY5MGhPNEZRUGthb3kzUC14bjNLWWtpRGJJOHU3TnRLcy11MGVfa1l1bXBOWXBQQWVKcmtfT05IT2lIYURBcHRKS25KUllfVlpZ?oc=5",
+        "date": "Wed, 11 Nov 2026 01:28:00 GMT",
+        "summary": "'Much more bullish' on Anthropic IPO than SpaceX or OpenAI, says Paul Meeks CNBC",
+        "score": 6,
+        "weight": 1
+      },
+      {
         "id": "evidence:f398becd3c3a6f7345fada98932e8b8425f16a4829b066479f38bdf69785c551",
         "label": "Amazon and Google Will See Big Paydays from Anthropic IPO - The New York Times",
         "kind": "evidence",
@@ -8582,6 +8646,54 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2e766f834b5211b3471210566832c2cd881aba826d2515097c98c68c408b65b6",
+        "label": "Alibaba Is Spinning Off Its Nvidia Rival in a Hong Kong IPO - 24/7 Wall St.",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "24/7 Wall St.",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQLVJUNDdyb3lsVkpyRld6Mk5fNDlndlJwb3hLVWh1eno1aVREWEdFOWh0SFhGLTl6ekROeGdRWVpBOHZoUVI0TXpfLUhMNjRtTjJYbTRQbDNzZ0NyNFJJbkc0QWFjMXBYVDMxYWkzRXVRRWVBXzlNdmV2QkZuR2YzRENJM0E0Mlg0R3pVeDFpa0dLRVNya3NYd1Zmb1A0S0Z0WlFlelBn?oc=5",
+        "date": "Thu, 12 Nov 2026 14:12:00 GMT",
+        "summary": "Alibaba Is Spinning Off Its Nvidia Rival in a Hong Kong IPO 24/7 Wall St.",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:6861cefa2dbf7caafa612c27018f468a31efee2d38b7dd526d025e9a3c21580a",
+        "label": "Nvidia\u2019s $10 Billion Anthropic IPO Pledge in Focus With CEO Exit - Bloomberg.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Bloomberg.com",
+        "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMmswNUFEV3ZLRWJCVzZCQ244VzJlYVpUS3VTc29EVTNhckRQOUdTRWJaRHE0VkNDNkt1aGNoQ09STFhxUlV3YWxHNVJCWkhQRURFLW5FWkp6NjlYN1dWa0hnZ0hwZXZtOGJtUDZLMFdKWmhVMll1SnVTSjF0TF90a1h5S09QczhPV3lIX285ZUdHOXRYMnU5OHVrbjV2TS1pTVgxd0hZOUlwZ3JSclhDTzdUV28?oc=5",
+        "date": "Thu, 12 Nov 2026 16:19:44 GMT",
+        "summary": "Nvidia\u2019s $10 Billion Anthropic IPO Pledge in Focus With CEO Exit Bloomberg.com",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:2bdf046747d8c09b6ccfeb02a5e0c008002e7c0a1f896aa322b0e8d5b6881052",
+        "label": "OpenAI Secures $15B Funding at $1.25T Valuation Amid Anthropic IPO Buzz - CoinGape",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "CoinGape",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNNzUwNVVMMGxYS2xlYjlVQkhrVkVNSjhGRjI0emowSjdaWkx2bldqYVdNX1ZVRWdFdTZCX3ROaW5DTXVURW91clFLeEpFdExqaHV5S3RjWS0zcXdSOEF1S0MtaUh6Z3dnZmc2X1pyeEU2OWRjQk41VUN0UF8yZHhqclFXVGRNcE1WSUlaMlRqZUJ4dHFnd2c?oc=5",
+        "date": "Thu, 12 Nov 2026 16:04:19 GMT",
+        "summary": "OpenAI Secures $15B Funding at $1.25T Valuation Amid Anthropic IPO Buzz CoinGape",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:98d1403642c7552f02ecd143244beecbcdd4f50ab767c689d059183c911e53e0",
+        "label": "Why Anthropic\u2019s IPO could put OpenAI at a disadvantage - Fast Company",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Fast Company",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOHVXWDVZQjItWDNRQmJuM0JYVl9kMnJ6Q3l6ZDdqY1RVaDlyRzkybnFSZlpVZGlDQWhTOGp2UUZsTlRvUjVxbDBFZkozNVBuUWVqQUFERGhISXoxUmNVaUx1eFVVTzRnQ2hRaXdhZ2ZJbWRtRU1hU1NKbTJoVERGT2VtVC1Na0YxajFWZENMZXJhUGdh?oc=5",
+        "date": "Thu, 12 Nov 2026 17:13:06 GMT",
+        "summary": "Why Anthropic\u2019s IPO could put OpenAI at a disadvantage Fast Company",
+        "score": 5,
         "weight": 1
       },
       {
@@ -14175,93 +14287,23 @@
         "summary": "AI is cannibalizing itself. And creating more AI. The Week",
         "score": 5,
         "weight": 1
-      },
-      {
-        "id": "evidence:1c8a89b52b3b1e7814b6983539f0c63da3c088cb5dfb10344acd4cf070f4f150",
-        "label": "BlackRock CEO Larry Fink Proposed Using Americans\u2019 Pension Savings to Build Data Centers and AI Infrastructure - SFG Media",
-        "kind": "evidence",
-        "category": "Risk distribution",
-        "source": "SFG Media",
-        "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5qUVMyWmlVdnA0Q19wSDBablNtU1FhTFRUb1NwSnFNeVZubmlYeGtBTGpvbHcxeWNnWFk3VmdQWEl1UERYVzBjUVJab3IwXzcwcHpLR2pVTW1BQkZYQ3R5cklHTFF4dW5WYnI2dGJVb00wdEo0RjQ4?oc=5",
-        "date": "Mon, 25 May 2026 07:00:00 GMT",
-        "summary": "BlackRock CEO Larry Fink Proposed Using Americans\u2019 Pension Savings to Build Data Centers and AI Infrastructure SFG Media",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:d20655d502459abfa29fd2de4ab82a0fa89475336c2e434c88c703cd06df9785",
-        "label": "BlackRock\u2019s Key Retirement Funds to Get Private Assets in 2026 - AdvisorHub",
-        "kind": "evidence",
-        "category": "Risk distribution",
-        "source": "AdvisorHub",
-        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNN1lid1VCSDRDV2IyRnE1eVhSRGlteC1FM2FmN2x3REdUdFJ1dzhHby1QVlc0SExlakZQalh2U0pYV2oyRjJMTU5lcjlKZnQ0dW14LXFRN3Voa0E1cHI5N2NPMUhZeTRSRmFuUUxpRG5TOXVSRl9acDhrQTdYM1FqQjlGY20yVzRzQ3BzOXlfOVhNeU0?oc=5",
-        "date": "Tue, 15 Jul 2025 07:00:00 GMT",
-        "summary": "BlackRock\u2019s Key Retirement Funds to Get Private Assets in 2026 AdvisorHub",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:2ca1d617ffe0115983eee8eb09154b92ff538b256094c5ab7981c9ff43ff7eba",
-        "label": "Trump Signs Executive Order on Private Equity in 401(k) Plans - planadviser",
-        "kind": "evidence",
-        "category": "Risk distribution",
-        "source": "planadviser",
-        "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWkl6YXkxbE5LcjhmMVZYWWpmX096OFFWakxuQVpVamItOHhYdUM4Z0trcFdyYXRqVGQ2Qy1IQ3NnbTZMMzdzb2szUHpQQV94UlpURkNrZlNGOC1XR1JmRWQ1emt2QjRVb0s0V0g0ZDB2dUw3ZnhMcFNhUmNULVJqXzE3ekJyc0VVYzluTkNQNTdmQQ?oc=5",
-        "date": "Thu, 07 Aug 2025 07:00:00 GMT",
-        "summary": "Trump Signs Executive Order on Private Equity in 401(k) Plans planadviser",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0297583716230954a0b422fca51d8941182688ed7b1a81212b26a299603c6347",
-        "label": "Private Equity Wants Government Help for a Final Push Into 401(k) Plans - WSJ",
-        "kind": "evidence",
-        "category": "Risk distribution",
-        "source": "WSJ",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdzlvQlpvSHZyUVJtT04zMkU3YzFSN3AySlMyR3Qtck9FbjlMUGMzRVNpUE1ldXhfMXFKVkZ0LVVmMi0tSFVBR2VhWXBLZmJia0pLcDhId2NzWnhUVjI4Zks0dUVoWnVPcXhKTzY3RlpFU0tCdVZ1bnZMUEI3ZWtQYkdXRm11ckFrU0hvbGVHWUkyX1ZyajEwYTNOMmVFRzB6cTJNUXhWYXN6YlpX?oc=5",
-        "date": "Wed, 09 Jul 2025 07:00:00 GMT",
-        "summary": "Private Equity Wants Government Help for a Final Push Into 401(k) Plans WSJ",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:946e62f2f1997be60ac26856dc5362985ffa3b7d8558e2f6e99d114871c9ae4f",
-        "label": "Trump Signs Order Easing Path for Private Assets in 401(k)s - Bloomberg.com",
-        "kind": "evidence",
-        "category": "Risk distribution",
-        "source": "Bloomberg.com",
-        "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNTlFUVdoSkFHU1hoVm5yYUk4T3ZWdDZSTjhKMVpqQ0NwTERRWnA2dlJyLVR0V1MwN2x3QjRWMkJhVS03OGNOMTdscjkxZUUzUjd4dDgzckRwXzZTZ21BNzhGMnY3TGd5UlVNNlFhcnpCNHZ6a1REenBaMGgxMG8tNWVqTEswdVB2V3NWYWNSNVlmVGV2dDVaZVFQODA4OGM2MEp4eDc1UlVSX3hRckl0bDVn?oc=5",
-        "date": "Thu, 07 Aug 2025 07:00:00 GMT",
-        "summary": "Trump Signs Order Easing Path for Private Assets in 401(k)s Bloomberg.com",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:dd42a9133756106634f4bb0851fcdffe25dcdda272efe544f99552c843fca5e6",
-        "label": "Private Equity Wants Your 401(k). What Are the Pros and Cons? - Knowledge at Wharton",
-        "kind": "evidence",
-        "category": "Risk distribution",
-        "source": "Knowledge at Wharton",
-        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYnA4eEtRekY2dTJSZGU3ZmRXTDkwV1RSbTR6R214ODE0MnpNcEF6Q3dZVXpic1dReldsVVdVYnQ2SklQWFFEQmJOck1vcXZiTzN3cV9kdEpGUldKczdLMXhsZi1qQlJtbXNWUUgyQzBDakNLeGQwMEtkRlhrenloQ1BGajRTdnRkbXhzSUtueFRUTm01RGtyZ1RVV2VEbGJkaTVHUg?oc=5",
-        "date": "Wed, 13 Aug 2025 07:00:00 GMT",
-        "summary": "Private Equity Wants Your 401(k). What Are the Pros and Cons? Knowledge at Wharton",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:26a5dfa88ddc0cd49e12abf5e50156c231c74376f5c09d0a400ff3d71d39cbb1",
-        "label": "Expect a 5-to-10-year wait for 401(k) plans to enter private markets - Top1000funds.com",
-        "kind": "evidence",
-        "category": "Risk distribution",
-        "source": "Top1000funds.com",
-        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOdnZnRkRCYzJFakIybmp1Z3k0OVQtWFRpemtDdlRySF91Tnhvbkt1c1o4a1lhV25mUFFBM00tTnJhdDJELWdDS2hHaDl1NzhsTURZX0ktbnM5Z2JDZ3dYWUdKeWZWemRaMzk3VHVVMXhxTVpBZGJBaVNXaWJFZjBqRG9wdHJqMmhhMUV6NUhNeEpNam9fLUpsREMwSFlKanZMNEluWW1PY3FNZDN5X2hlSUxueklneUhmUm5iYlRFaVpTTFROWXhnTEZBaw?oc=5",
-        "date": "Thu, 06 Nov 2025 08:00:00 GMT",
-        "summary": "Expect a 5-to-10-year wait for 401(k) plans to enter private markets Top1000funds.com",
-        "score": 5,
-        "weight": 1
       }
     ],
     "edges": [
+      {
+        "source": "DeepSeek",
+        "target": "Nvidia",
+        "type": "INVESTS_IN",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "OpenAI",
+        "type": "INVESTS_IN",
+        "weight": 1,
+        "mentions": 1
+      },
       {
         "source": "Alphabet",
         "target": "Anthropic",
@@ -14755,6 +14797,20 @@
       {
         "source": "X (Twitter)",
         "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "CoreWeave",
+        "target": "evidence:9e06c0f07a01685bf08be2341d3b63fec290c4c53e0d4c4448b1e5a9c87ee0f3",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:0cd5ddf907ccca16fadaf6dda559ec6c113042f07174fa0de77f59281f170d98",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -16524,6 +16580,27 @@
         "mentions": 1
       },
       {
+        "source": "Anthropic",
+        "target": "evidence:48c9c843221007339e853e40047b9ae0212e12c66b3325ace581008e838ddbbe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:48c9c843221007339e853e40047b9ae0212e12c66b3325ace581008e838ddbbe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "SpaceX",
+        "target": "evidence:48c9c843221007339e853e40047b9ae0212e12c66b3325ace581008e838ddbbe",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
         "source": "Amazon",
         "target": "evidence:f398becd3c3a6f7345fada98932e8b8425f16a4829b066479f38bdf69785c551",
         "type": "EVIDENCE",
@@ -17898,6 +17975,62 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alibaba",
+        "target": "evidence:2e766f834b5211b3471210566832c2cd881aba826d2515097c98c68c408b65b6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:2e766f834b5211b3471210566832c2cd881aba826d2515097c98c68c408b65b6",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:6861cefa2dbf7caafa612c27018f468a31efee2d38b7dd526d025e9a3c21580a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:6861cefa2dbf7caafa612c27018f468a31efee2d38b7dd526d025e9a3c21580a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:2bdf046747d8c09b6ccfeb02a5e0c008002e7c0a1f896aa322b0e8d5b6881052",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:2bdf046747d8c09b6ccfeb02a5e0c008002e7c0a1f896aa322b0e8d5b6881052",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:98d1403642c7552f02ecd143244beecbcdd4f50ab767c689d059183c911e53e0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:98d1403642c7552f02ecd143244beecbcdd4f50ab767c689d059183c911e53e0",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -23862,20 +23995,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:b1e77981e1578684da3b031046774440298912e3dfdc572043f9b175564b7d06",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "BlackRock",
-        "target": "evidence:1c8a89b52b3b1e7814b6983539f0c63da3c088cb5dfb10344acd4cf070f4f150",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "BlackRock",
-        "target": "evidence:d20655d502459abfa29fd2de4ab82a0fa89475336c2e434c88c703cd06df9785",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -38201,7 +38320,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.88,
-      "mentions": 6,
+      "mentions": 13,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Microsoft SEC filing: 8-K (2026-11-05)",
@@ -38216,7 +38335,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.82,
-      "mentions": 6,
+      "mentions": 9,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Microsoft SEC filing: 8-K (2026-11-05)",
@@ -38231,11 +38350,446 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 7,
+      "mentions": 17,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Microsoft SEC filing: 8-K (2026-11-05)",
       "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 1000000.0,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "crwv-20260930 12/31 false 2026 Q3 0001769628 48 P1Y P3Y P2Y P7Y 0.0083612 0.0102194 132 132 137 364 xbrli:shares iso4217:USD iso4217:USD xbrli:shares xbrli:pure crwv:segment iso4217:EUR utr:MW crwv:action crwv:tradingDay crwv:consecutiveTradingDay utr:D crwv:voting_right 0001769628 2026-01-01 2026-09-30 0001769628 us-gaap:CommonClassAMember 2026-10-30 0001769628 us-gaap:CommonClassBMember 2026-10-30 0001769628 us-gaap:CommonClassCMember 2026-10-30 0001769628 2026-09-30 0001769628 2025-12-31 0001769628 us-gaap:CommonClassAMember 2026-09-30 0001769628 us-gaap:CommonClassAMember 2025-12-31 0001769628 us-gaap:CommonClassBMember 2026-09-30 0001769628 us-gaap:CommonClassBMember 2025-12-31 0001769628 us-gaap:CommonClassCMember 2025-12-31 0001769628 us-gaap:CommonClassCMember 2026-09-30 0001769628 2026-07-01 2026-09-30 0001769628 2025-07-01 2025-09-30 0001769628 2025-01-01 2025-09-30 0001769628 us-gaap:CommonStockMember 2025-12-31 0001769628 us-gaap:TreasuryStockCommonMember 2025-12-31 0001769628 us-gaap:AdditionalPaidInCapitalMember 2025-12-31 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-12-31 0001769628 us-gaap:RetainedEarningsMember 2025-12-31 0001769628 us-gaap:PrivatePlacementMember us-gaap:CommonStockMember 2026-01-01 2026-03-31 0001769628 us-gaap:PrivatePlacementMember us-gaap:AdditionalPaidInCapitalMember 2026-01-01 2026-03-31 0001769628 us-gaap:PrivatePlacementMember 2026-01-01 2026-03-31 0001769628 us-gaap:CommonStockMember 2026-01-01 2026-03-31 0001769628 us-gaap:AdditionalPaidInCapitalMember 2026-01-01 2026-03-31 0001769628 2026-01-01 2026-03-31 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-01-01 2026-03-31 0001769628 us-gaap:RetainedEarningsMember 2026-01-01 2026-03-31 0001769628 us-gaap:CommonStockMember 2026-03-31 0001769628 us-gaap:TreasuryStockCommonMember 2026-03-31 0001769628 us-gaap:AdditionalPaidInCapitalMember 2026-03-31 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-03-31 0001769628 us-gaap:RetainedEarningsMember 2026-03-31 0001769628 2026-03-31 0001769628 us-gaap:PrivatePlacementMember us-gaap:CommonStockMember 2026-04-01 2026-06-30 0001769628 us-gaap:PrivatePlacementMember us-gaap:AdditionalPaidInCapitalMember 2026-04-01 2026-06-30 0001769628 us-gaap:PrivatePlacementMember 2026-04-01 2026-06-30 0001769628 us-gaap:CommonStockMember 2026-04-01 2026-06-30 0001769628 us-gaap:AdditionalPaidInCapitalMember 2026-04-01 2026-06-30 0001769628 2026-04-01 2026-06-30 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-04-01 2026-06-30 0001769628 us-gaap:RetainedEarningsMember 2026-04-01 2026-06-30 0001769628 us-gaap:CommonStockMember 2026-06-30 0001769628 us-gaap:TreasuryStockCommonMember 2026-06-30 0001769628 us-gaap:AdditionalPaidInCapitalMember 2026-06-30 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-06-30 0001769628 us-gaap:RetainedEarningsMember 2026-06-30 0001769628 2026-06-30 0001769628 us-gaap:CommonStockMember 2026-07-01 2026-09-30 0001769628 us-gaap:AdditionalPaidInCapitalMember 2026-07-01 2026-09-30 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-07-01 2026-09-30 0001769628 us-gaap:RetainedEarningsMember 2026-07-01 2026-09-30 0001769628 us-gaap:CommonStockMember 2026-09-30 0001769628 us-gaap:TreasuryStockCommonMember 2026-09-30 0001769628 us-gaap:AdditionalPaidInCapitalMember 2026-09-30 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-09-30 0001769628 us-gaap:RetainedEarningsMember 2026-09-30 0001769628 us-gaap:RedeemableConvertiblePreferredStockMember 2024-12-31 0001769628 crwv:RedeemableClassACommonStockMember 2024-12-31 0001769628 us-gaap:CommonStockMember 2024-12-31 0001769628 us-gaap:TreasuryStockCommonMember 2024-12-31 0001769628 us-gaap:AdditionalPaidInCapitalMember 2024-12-31 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2024-12-31 0001769628 us-gaap:RetainedEarningsMember 2024-12-31 0001769628 2024-12-31 0001769628 us-gaap:AdditionalPaidInCapitalMember 2025-01-01 2025-03-31 0001769628 2025-01-01 2025-03-31 0001769628 us-gaap:IPOMember us-gaap:CommonStockMember 2025-01-01 2025-03-31 0001769628 us-gaap:IPOMember us-gaap:AdditionalPaidInCapitalMember 2025-01-01 2025-03-31 0001769628 us-gaap:IPOMember 2025-01-01 2025-03-31 0001769628 us-gaap:RedeemableConvertiblePreferredStockMember 2025-01-01 2025-03-31 0001769628 crwv:RedeemableClassACommonStockMember 2025-01-01 2025-03-31 0001769628 us-gaap:CommonStockMember 2025-01-01 2025-03-31 0001769628 us-gaap:RetainedEarningsMember 2025-01-01 2025-03-31 0001769628 us-gaap:RedeemableConvertiblePreferredStockMember 2025-03-31 0001769628 crwv:RedeemableClassACommonStockMember 2025-03-31 0001769628 us-gaap:CommonStockMember 2025-03-31 0001769628 us-gaap:TreasuryStockCommonMember 2025-03-31 0001769628 us-gaap:AdditionalPaidInCapitalMember 2025-03-31 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-03-31 0001769628 us-gaap:RetainedEarningsMember 2025-03-31 0001769628 2025-03-31 0001769628 us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001769628 us-gaap:AdditionalPaidInCapitalMember 2025-04-01 2025-06-30 0001769628 2025-04-01 2025-06-30 0001769628 us-gaap:RetainedEarningsMember 2025-04-01 2025-06-30 0001769628 us-gaap:RedeemableConvertiblePreferredStockMember 2025-06-30 0001769628 crwv:RedeemableClassACommonStockMember 2025-06-30 0001769628 us-gaap:CommonStockMember 2025-06-30 0001769628 us-gaap:TreasuryStockCommonMember 2025-06-30 0001769628 us-gaap:AdditionalPaidInCapitalMember 2025-06-30 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-06-30 0001769628 us-gaap:RetainedEarningsMember 2025-06-30 0001769628 2025-06-30 0001769628 us-gaap:AdditionalPaidInCapitalMember 2025-07-01 2025-09-30 0001769628 us-gaap:CommonStockMember 2025-07-01 2025-09-30 0001769628 crwv:RedeemableClassACommonStockMember 2025-07-01 2025-09-30 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-07-01 2025-09-30 0001769628 us-gaap:RetainedEarningsMember 2025-07-01 2025-09-30 0001769628 us-gaap:RedeemableConvertiblePreferredStockMember 2025-09-30 0001769628 crwv:RedeemableClassACommonStockMember 2025-09-30 0001769628 us-gaap:CommonStockMember 2025-09-30 0001769628 us-gaap:TreasuryStockCommonMember 2025-09-30 0001769628 us-gaap:AdditionalPaidInCapitalMember 2025-09-30 0001769628 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-09-30 0001769628 us-gaap:RetainedEarningsMember 2025-09-30 0001769628 2025-09-30 0001769628 us-gaap:CommonClassAMember us-gaap:IPOMember 2025-03-01 2025-03-31 0001769628 us-gaap:CommonClassAMember us-gaap:IPOMember 2025-03-31 0001769628 us-gaap:CommonClassAMember us-gaap:OverAllotmentOptionMember 2025-04-01 2025-04-30 0001769628 crwv:RedeemableClassACommonStockMember us-gaap:IPOMember 2025-03-01 2025-03-31 0001769628 us-gaap:IPOMember 2025-03-01 2025-03-31 0001769628 crwv:AIInfrastructureServicesMember 2025-03-01 2025-03-31 0001769628 us-gaap:CommonClassAMember 2025-03-31 2025-03-31 0001769628 us-gaap:IPOMember 2026-09-30 0001769628 2025-03-01 2025-03-31 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerAMember us-gaap:RevenueFromContractWithCustomerMember 2026-07-01 2026-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerAMember us-gaap:RevenueFromContractWithCustomerMember 2025-07-01 2025-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerAMember us-gaap:RevenueFromContractWithCustomerMember 2026-01-01 2026-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerAMember us-gaap:RevenueFromContractWithCustomerMember 2025-01-01 2025-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerBMember us-gaap:RevenueFromContractWithCustomerMember 2026-07-01 2026-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerBMember us-gaap:RevenueFromContractWithCustomerMember 2026-01-01 2026-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerAMember us-gaap:AccountsReceivableMember 2026-01-01 2026-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerBMember us-gaap:AccountsReceivableMember 2026-01-01 2026-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerCMember us-gaap:AccountsReceivableMember 2026-01-01 2026-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerDMember us-gaap:AccountsReceivableMember 2026-01-01 2026-09-30 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerAMember us-gaap:AccountsReceivableMember 2025-01-01 2025-12-31 0001769628 us-gaap:CustomerConcentrationRiskMember crwv:CustomerDMember us-gaap:AccountsReceivableMember 2025-01-01 2025-12-31 0001769628 2026-10-01 2026-09-30 0001769628 2028-10-01 2026-09-30 0001769628 us-gaap:EquityMethodInvestmentNonconsolidatedInvesteeOrGroupOfInvesteesMember crwv:JointVentureMember 2026-09-30 0001769628 us-gaap:EquityMethodInvestmentNonconsolidatedInvesteeOrGroupOfInvesteesMember crwv:JointVentureMember 2026-07-01 2026-09-30 0001769628 us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMember us-gaap:EquityMethodInvestmentNonconsolidatedInvesteeOrGroupOfInvesteesMember 2026-09-30 0001769628 us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMember 2026-09-30 0001769628 crwv:DeveloperMember crwv:UnconsolidatedJointVentureMember 2025-06-30 0001769628 crwv:UnconsolidatedJointVentureMember 2025-06-30 0001769628 us-gaap:EquityMethodInvestmentNonconsolidatedInvesteeOrGroupOfInvesteesMember crwv:UnconsolidatedJointVentureMember 2025-06-01 2025-06-30 0001769628 crwv:UnconsolidatedJointVentureMember 2026-09-30 0001769628 crwv:UnconsolidatedJointVentureMember 2026-01-01 2026-09-30 0001769628 crwv:UnconsolidatedJointVentureMember 2025-12-31 0001769628 us-gaap:ConstructionMember crwv:UnconsolidatedJointVentureMember 2026-09-30 0001769628 us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2026-09-30 0001769628 us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2025-12-31 0001769628 us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:CommercialPaperMember us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:CommercialPaperMember us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:USGovernmentCorporationsAndAgenciesSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:USGovernmentCorporationsAndAgenciesSecuritiesMember us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:RestrictedCashAndCashEquivalentsNoncurrent us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2026-09-30 0001769628 us-gaap:RestrictedCashAndCashEquivalentsNoncurrent us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2025-12-31 0001769628 us-gaap:CommercialPaperMember us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:CommercialPaperMember us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:CorporateBondSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:CorporateBondSecuritiesMember us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:EquitySecuritiesMember us-gaap:FairValueInputsLevel1Member 2026-09-30 0001769628 us-gaap:EquitySecuritiesMember us-gaap:FairValueInputsLevel1Member 2025-12-31 0001769628 us-gaap:ForeignExchangeForwardMember us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:ForeignExchangeForwardMember us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:InterestRateSwapMember us-gaap:PrepaidExpenseAndOtherAssetsCurrent us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:InterestRateSwapMember us-gaap:PrepaidExpenseAndOtherAssetsCurrent us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 crwv:PowerSwapMember us-gaap:PrepaidExpenseAndOtherAssetsCurrent us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 crwv:PowerSwapMember us-gaap:PrepaidExpenseAndOtherAssetsCurrent us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:InterestRateSwapMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:InterestRateSwapMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 crwv:PowerSwapMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 crwv:PowerSwapMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:WarrantMember us-gaap:FairValueInputsLevel3Member 2026-09-30 0001769628 us-gaap:WarrantMember us-gaap:FairValueInputsLevel3Member 2025-12-31 0001769628 crwv:PowerPurchaseAgreementsMember us-gaap:FairValueInputsLevel3Member 2026-09-30 0001769628 crwv:PowerPurchaseAgreementsMember us-gaap:FairValueInputsLevel3Member 2025-12-31 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:OtherLiabilitiesCurrent us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:OtherLiabilitiesCurrent us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 crwv:PowerSwapMember us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 crwv:PowerSwapMember us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:InterestRateSwapMember us-gaap:OtherLiabilitiesCurrent us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:InterestRateSwapMember us-gaap:OtherLiabilitiesCurrent us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 crwv:ContingentConsiderationMember us-gaap:FairValueInputsLevel3Member 2026-09-30 0001769628 crwv:ContingentConsiderationMember us-gaap:FairValueInputsLevel3Member 2025-12-31 0001769628 us-gaap:InterestRateSwapMember us-gaap:OtherLiabilitiesNoncurrent us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:InterestRateSwapMember us-gaap:OtherLiabilitiesNoncurrent us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:OtherLiabilitiesNoncurrent us-gaap:FairValueInputsLevel2Member 2026-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:OtherLiabilitiesNoncurrent us-gaap:FairValueInputsLevel2Member 2025-12-31 0001769628 us-gaap:EquityMethodInvestmentNonconsolidatedInvesteeOrGroupOfInvesteesMember crwv:UnconsolidatedJointVentureMember 2026-09-30 0001769628 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:InterestRateSwapMember 2026-09-30 0001769628 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:InterestRateSwapMember 2025-12-31 0001769628 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:CrossCurrencyInterestRateContractMember 2026-09-30 0001769628 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:CrossCurrencyInterestRateContractMember 2025-12-31 0001769628 us-gaap:DesignatedAsHedgingInstrumentMember 2026-09-30 0001769628 us-gaap:DesignatedAsHedgingInstrumentMember 2025-12-31 0001769628 us-gaap:NondesignatedMember us-gaap:ForeignExchangeForwardMember 2026-09-30 0001769628 us-gaap:NondesignatedMember us-gaap:ForeignExchangeForwardMember 2025-12-31 0001769628 us-gaap:NondesignatedMember crwv:PowerSwapMember 2026-09-30 0001769628 us-gaap:NondesignatedMember crwv:PowerSwapMember 2025-12-31 0001769628 us-gaap:NondesignatedMember 2026-09-30 0001769628 us-gaap:NondesignatedMember 2025-12-31 0001769628 us-gaap:InterestRateSwapMember us-gaap:CashFlowHedgingMember 2026-07-01 2026-09-30 0001769628 us-gaap:InterestRateSwapMember us-gaap:CashFlowHedgingMember 2025-07-01 2025-09-30 0001769628 us-gaap:InterestRateSwapMember us-gaap:CashFlowHedgingMember 2026-01-01 2026-09-30 0001769628 us-gaap:InterestRateSwapMember us-gaap:CashFlowHedgingMember 2025-01-01 2025-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:CashFlowHedgingMember 2026-07-01 2026-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:CashFlowHedgingMember 2025-07-01 2025-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:CashFlowHedgingMember 2026-01-01 2026-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:CashFlowHedgingMember 2025-01-01 2025-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:OtherNonoperatingIncomeExpense 2026-07-01 2026-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:OtherNonoperatingIncomeExpense 2025-07-01 2025-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:OtherNonoperatingIncomeExpense 2026-01-01 2026-09-30 0001769628 us-gaap:CrossCurrencyInterestRateContractMember us-gaap:OtherNonoperatingIncomeExpense 2025-01-01 2025-09-30 0001769628 us-gaap:ForeignExchangeForwardMember us-gaap:OtherNonoperatingIncomeExpense 2026-07-01 2026-09-30 0001769628 us-gaap:ForeignExchangeForwardMember us-gaap:OtherNonoperatingIncomeExpense 2025-07-01 2025-09-30 0001769628 us-gaap:ForeignExchangeForwardMember us-gaap:OtherNonoperatingIncomeExpense 2026-01-01 2026-09-30 0001769628 us-gaap:ForeignExchangeForwardMember us-gaap:OtherNonoperatingIncomeExpense 2025-01-01 2025-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A2032EURSeniorNotesMember 2026-06-30 0001769628 us-gaap:MeasurementInputSharePriceMember us-gaap:FairValueInputsLevel3Member 2025-03-21 0001769628 us-gaap:MeasurementInputPriceVolatilityMember us-gaap:FairValueInputsLevel3Member 2025-03-21 0001769628 us-gaap:MeasurementInputRiskFreeInterestRateMember us-gaap:FairValueInputsLevel3Member 2025-03-21 0001769628 us-gaap:MeasurementInputExpectedDividendRateMember us-gaap:FairValueInputsLevel3Member 2025-03-21 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2025-12-31 0001769628 crwv:ContingentConsiderationAssetsMember 2025-12-31 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2026-01-01 2026-03-31 0001769628 crwv:ContingentConsiderationAssetsMember 2026-01-01 2026-03-31 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2026-03-31 0001769628 crwv:ContingentConsiderationAssetsMember 2026-03-31 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2026-04-01 2026-06-30 0001769628 crwv:ContingentConsiderationAssetsMember 2026-04-01 2026-06-30 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2026-06-30 0001769628 crwv:ContingentConsiderationAssetsMember 2026-06-30 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2026-07-01 2026-09-30 0001769628 crwv:ContingentConsiderationAssetsMember 2026-07-01 2026-09-30 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2026-09-30 0001769628 crwv:ContingentConsiderationAssetsMember 2026-09-30 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2024-12-31 0001769628 us-gaap:WarrantMember 2024-12-31 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2025-01-01 2025-03-31 0001769628 us-gaap:WarrantMember 2025-01-01 2025-03-31 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2025-03-31 0001769628 us-gaap:WarrantMember 2025-03-31 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2025-04-01 2025-06-30 0001769628 us-gaap:WarrantMember 2025-04-01 2025-06-30 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2025-06-30 0001769628 us-gaap:WarrantMember 2025-06-30 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2025-07-01 2025-09-30 0001769628 us-gaap:WarrantMember 2025-07-01 2025-09-30 0001769628 us-gaap:DerivativeFinancialInstrumentsAssetsMember 2025-09-30 0001769628 us-gaap:WarrantMember 2025-09-30 0001769628 crwv:WeightsAndBiasesInc.Member 2025-05-05 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member us-gaap:CommonStockMember 2025-05-05 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member us-gaap:RestrictedStockUnitsRSUMember 2025-05-05 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member 2026-01-01 2026-09-30 0001769628 crwv:WeightsAndBiasesInc.Member 2025-01-01 2025-12-31 0001769628 crwv:WeightsAndBiasesInc.Member us-gaap:CustomerRelationshipsMember 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member us-gaap:CustomerRelationshipsMember 2025-05-05 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member us-gaap:DevelopedTechnologyRightsMember 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member srt:MinimumMember us-gaap:DevelopedTechnologyRightsMember 2025-05-05 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member srt:MaximumMember us-gaap:DevelopedTechnologyRightsMember 2025-05-05 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member us-gaap:TradeNamesMember 2025-05-05 0001769628 crwv:WeightsAndBiasesInc.Member us-gaap:TradeNamesMember 2025-05-05 2025-05-05 0001769628 us-gaap:TechnologyEquipmentMember 2026-09-30 0001769628 us-gaap:TechnologyEquipmentMember 2025-12-31 0001769628 us-gaap:SoftwareAndSoftwareDevelopmentCostsMember 2026-09-30 0001769628 us-gaap:SoftwareAndSoftwareDevelopmentCostsMember 2025-12-31 0001769628 crwv:DataCenterEquipmentAndLeaseholdImprovementsMember 2026-09-30 0001769628 crwv:DataCenterEquipmentAndLeaseholdImprovementsMember 2025-12-31 0001769628 us-gaap:LandMember 2026-09-30 0001769628 us-gaap:LandMember 2025-12-31 0001769628 us-gaap:FurnitureAndFixturesMember 2026-09-30 0001769628 us-gaap:FurnitureAndFixturesMember 2025-12-31 0001769628 us-gaap:ConstructionInProgressMember 2026-09-30 0001769628 us-gaap:ConstructionInProgressMember 2025-12-31 0001769628 us-gaap:VariableInterestEntityPrimaryBeneficiaryMember us-gaap:LandMember 2026-09-30 0001769628 us-gaap:VariableInterestEntityPrimaryBeneficiaryMember us-gaap:ConstructionInProgressMember 2026-09-30 0001769628 us-gaap:VariableInterestEntityPrimaryBeneficiaryMember 2026-09-30 0001769628 2025-01-01 2025-12-31 0001769628 us-gaap:TechnologyBasedIntangibleAssetsMember 2026-01-01 2026-09-30 0001769628 us-gaap:TechnologyBasedIntangibleAssetsMember 2026-09-30 0001769628 us-gaap:TechnologyBasedIntangibleAssetsMember 2025-12-31 0001769628 us-gaap:OtherIntangibleAssetsMember 2026-01-01 2026-09-30 0001769628 us-gaap:OtherIntangibleAssetsMember 2026-09-30 0001769628 us-gaap:OtherIntangibleAssetsMember 2025-12-31 0001769628 srt:MinimumMember srt:OfficeBuildingMember 2026-09-30 0001769628 srt:MaximumMember srt:OfficeBuildingMember 2026-09-30 0001769628 srt:MinimumMember crwv:DataCenterMember 2026-09-30 0001769628 srt:MaximumMember crwv:DataCenterMember 2026-09-30 0001769628 crwv:DataCenterMember 2026-09-30 0001769628 srt:MinimumMember us-gaap:EquipmentMember 2026-09-30 0001769628 srt:MaximumMember us-gaap:EquipmentMember 2026-09-30 0001769628 crwv:DataCenterAndOfficeBuildingsMember 2026-09-30 0001769628 srt:MinimumMember crwv:DataCenterAndOfficeBuildingsMember 2026-09-30 0001769628 srt:MaximumMember crwv:DataCenterAndOfficeBuildingsMember 2026-09-30 0001769628 crwv:SingleSiteDataCenterMember 2026-09-30 0001769628 srt:MaximumMember crwv:SingleSiteDataCenterMember 2026-09-30 0001769628 us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMember crwv:LeaseAgreementsDataCentersMember 2026-09-30 0001769628 us-gaap:VariableInterestEntityNotPrimaryBeneficiaryMember crwv:EquipmentLeaseMember 2026-09-30 0001769628 2026-02-10 2026-02-10 0001769628 us-gaap:SuretyBondMember 2026-08-31 0001769628 us-gaap:SuretyBondMember 2026-08-01 2026-08-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL1.0FacilityMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:DDTL1.0FacilityMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL2.0FacilityMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:DDTL2.0FacilityMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL2.1FacilityMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:DDTL2.1FacilityMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL3.0FacilityMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:DDTL3.0FacilityMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL5.0FacilityMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:DDTL5.0FacilityMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL5.5FacilityMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:DDTL5.5FacilityMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:SeniorNotesMember crwv:A2030SeniorNotesMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A2030SeniorNotesMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:SeniorNotesMember crwv:A20319.00SeniorNotesMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A20319.00SeniorNotesMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:SeniorNotesMember crwv:A20319.75SeniorNotesMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A20319.75SeniorNotesMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:SeniorNotesMember crwv:A20329.625SeniorNotesMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A20329.625SeniorNotesMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:SeniorNotesMember crwv:A2032EURSeniorNotesMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A2032EURSeniorNotesMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:ConvertibleDebtMember crwv:A2031ConvertibleSeniorNotesMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:ConvertibleDebtMember crwv:A2031ConvertibleSeniorNotesMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:ConvertibleDebtMember crwv:A2032ConvertibleSeniorNotesMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:ConvertibleDebtMember crwv:A2032ConvertibleSeniorNotesMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:ConvertibleDebtMember crwv:A2033ConvertibleSeniorNotesMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:ConvertibleDebtMember crwv:A2033ConvertibleSeniorNotesMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:ConvertibleDebtMember crwv:ConvertiblePromissoryNotesMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:ConvertibleDebtMember crwv:ConvertiblePromissoryNotesMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:LineOfCreditMember us-gaap:RevolvingCreditFacilityMember us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember us-gaap:RevolvingCreditFacilityMember us-gaap:RecourseMember 2025-12-31 0001769628 crwv:OEMFinancingArrangementsMember us-gaap:RecourseMember 2026-09-30 0001769628 crwv:OEMFinancingArrangementsMember us-gaap:RecourseMember 2025-12-31 0001769628 crwv:MagnetarLoanMember us-gaap:RecourseMember 2026-09-30 0001769628 crwv:MagnetarLoanMember us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:RecourseMember 2026-09-30 0001769628 us-gaap:RecourseMember 2025-12-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL4.0FacilityMember us-gaap:NonrecourseMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:DDTL4.0FacilityMember us-gaap:NonrecourseMember 2025-12-31 0001769628 crwv:OEMFinancingArrangementsMember us-gaap:NonrecourseMember 2026-09-30 0001769628 crwv:OEMFinancingArrangementsMember us-gaap:NonrecourseMember 2025-12-31 0001769628 us-gaap:NonrecourseMember 2026-09-30 0001769628 us-gaap:NonrecourseMember 2025-12-31 0001769628 crwv:A20312032And2033ConvertibleSeniorNotesMember 2026-09-30 0001769628 crwv:A20312032And2033ConvertibleSeniorNotesMember 2025-12-31 0001769628 us-gaap:ShortTermDebtMember 2026-09-30 0001769628 us-gaap:SecuredOvernightFinancingRateSofrMember crwv:DDTL4.0FacilityMember 2026-09-30 0001769628 crwv:TreasuryRateMember crwv:DDTL4.0FacilityMember 2026-09-30 0001769628 crwv:DDTL4.0FacilityMember 2026-09-30 0001769628 crwv:DDTL5.0FacilityMember 2026-09-30 0001769628 crwv:DDTL5.5FacilityMember 2026-09-30 0001769628 crwv:A20319.75SeniorNotesMember 2026-09-30 0001769628 crwv:A20329.625SeniorNotesMember 2026-09-30 0001769628 crwv:A2032EURSeniorNotesMember 2026-09-30 0001769628 crwv:A2032ConvertibleSeniorNotesMember 2026-09-30 0001769628 crwv:A2033ConvertibleSeniorNotesMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:DDTL4.0FacilityMember 2026-03-31 0001769628 us-gaap:LineOfCreditMember crwv:FloatingRateCommitmentsMember crwv:DDTL4.0FacilityMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:FixedRateCommitmentsMember crwv:DDTL4.0FacilityMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember us-gaap:SecuredOvernightFinancingRateSofrMember crwv:DDTL4.0FacilityMember 2026-03-01 2026-03-31 0001769628 us-gaap:LineOfCreditMember us-gaap:BaseRateMember crwv:DDTL4.0FacilityMember 2026-03-01 2026-03-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL4.0FacilityMember 2026-03-01 2026-03-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL4.0FacilityMember us-gaap:AssetPledgedAsCollateralMember 2026-09-30 0001769628 us-gaap:LineOfCreditMember crwv:DDTL5.0FacilityMember 2026-05-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL5.0FacilityMember 2026-05-01 2026-05-31 0001769628 crwv:DDTL5.0FacilityMember 2026-05-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL5.5FacilityMember 2026-08-31 0001769628 us-gaap:LineOfCreditMember crwv:DDTL5.5FacilityMember 2026-08-01 2026-08-31 0001769628 us-gaap:VariableInterestEntityPrimaryBeneficiaryMember 2025-12-31 0001769628 us-gaap:RevolvingCreditFacilityMember 2026-09-30 0001769628 us-gaap:RevolvingCreditFacilityMember 2025-12-31 0001769628 us-gaap:RevolvingCreditFacilityMember 2026-01-01 2026-09-30 0001769628 crwv:OEMFinancingArrangementsMember 2026-09-30 0001769628 crwv:OEMFinancingArrangementsMember 2025-12-31 0001769628 crwv:SoftwareLicenseFinancingArrangementsMember 2026-09-30 0001769628 crwv:SoftwareLicenseFinancingArrangementsMember 2025-12-31 0001769628 us-gaap:SeniorNotesMember crwv:A2032ConvertibleSeniorNotesMember 2026-04-30 0001769628 crwv:A2032ConvertibleSeniorNotesMember 2026-04-01 2026-04-30 0001769628 us-gaap:SeniorNotesMember crwv:A2033ConvertibleSeniorNotesMember 2026-09-30 0001769628 crwv:A2033ConvertibleSeniorNotesMember 2026-09-01 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A2031ConvertibleSeniorNotesMember 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A2032ConvertibleSeniorNotesMember 2026-09-30 0001769628 crwv:A2032ConvertibleSeniorNotesMember 2026-01-01 2026-09-30 0001769628 crwv:A2033ConvertibleSeniorNotesMember 2026-01-01 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A20319.75SeniorNotesMember 2026-04-30 0001769628 us-gaap:SeniorNotesMember crwv:A20329.625SeniorNotesMember 2026-06-30 0001769628 us-gaap:SeniorNotesMember crwv:A20319.75SeniorNotesMember 2026-06-30 0001769628 us-gaap:SeniorNotesMember crwv:A20319.00SeniorNotesMember 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A20319.75SeniorNotesMember 2026-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A20329.625SeniorNotesMember 2026-09-30 0001769628 crwv:MagnetarLoanMember 2026-06-01 2026-06-30 0001769628 crwv:MagnetarLoanMember 2026-09-30 0001769628 crwv:ConvertiblePromissoryNotesMember 2025-12-31 0001769628 crwv:ConvertiblePromissoryNotesMember 2026-04-30 0001769628 2023-06-30 0001769628 crwv:CriticalInfrastructureAssetsMember 2024-12-31 0001769628 crwv:DCSPNoteReceivableMember us-gaap:UnfundedLoanCommitmentMember 2024-10-31 0001769628 crwv:DCSPNoteReceivableMember 2024-10-31 0001769628 crwv:DCSPFinancingObligationMember 2024-10-31 0001769628 crwv:DCSPFinancingObligationMember 2025-04-30 0001769628 crwv:DCSPFinancingObligationMember 2026-09-30 0001769628 crwv:DCSPFinancingLeasesMember 2026-09-30 0001769628 crwv:DCSPNoteReceivableMember 2026-09-30 0001769628 crwv:DCSPNoteReceivableMember crwv:DCSPFinancingObligationMember 2026-09-30 0001769628 crwv:DCSPNoteReceivableMember 2025-12-31 0001769628 crwv:DCSPNoteReceivableMember crwv:DCSPFinancingObligationMember 2025-12-31 0001769628 crwv:DCSPFinancingObligationMember 2026-01-01 2026-09-30 0001769628 crwv:DCSPFinancingObligationMember 2025-01-01 2025-09-30 0001769628 us-gaap:SeniorNotesMember crwv:A2032ConvertibleSeniorNotesMember 2026-04-01 2026-04-30 0001769628 us-gaap:SeniorNotesMember crwv:A2033ConvertibleSeniorNotesMember 2026-09-01 2026-09-30 0001769628 us-gaap:SeriesCPreferredStockMember us-gaap:IPOMember 2025-03-31 0001769628 us-gaap:SeriesCPreferredStockMember 2026-09-30 0001769628 us-gaap:SeriesCPreferredStockMember 2026-01-01 2026-09-30 0001769628 crwv:RedeemableClassACommonStockMember 2026-07-01 2026-09-30 0001769628 crwv:RedeemableClassACommonStockMember 2026-01-01 2026-09-30 0001769628 crwv:RedeemableClassACommonStockMember 2025-01-01 2025-09-30 0001769628 us-gaap:PrivatePlacementMember 2026-01-01 2026-01-31 0001769628 us-gaap:PrivatePlacementMember 2026-01-31 0001769628 us-gaap:PrivatePlacementMember 2026-04-01 2026-04-30 0001769628 us-gaap:PrivatePlacementMember 2026-04-30 0001769628 2026-09-17 0001769628 crwv:ATMProgramMember 2026-09-17 2026-09-17 0001769628 crwv:ATMProgramMember 2026-07-01 2026-09-30 0001769628 crwv:ATMProgramMember 2026-01-01 2026-09-30 0001769628 crwv:ATMProgramMember 2026-09-30 0001769628 2025-03-21 0001769628 us-gaap:EmployeeStockOptionMember crwv:A2025PlanMember 2025-12-31 0001769628 us-gaap:EmployeeStockOptionMember crwv:A2025PlanMember 2026-09-30 0001769628 us-gaap:EmployeeStockOptionMember crwv:A2019And2025PlansMember srt:MinimumMember 2026-01-01 2026-09-30 0001769628 us-gaap:EmployeeStockOptionMember crwv:A2019And2025PlansMember srt:MaximumMember 2026-01-01 2026-09-30 0001769628 us-gaap:RelatedPartyMember 2026-09-30 0001769628 us-gaap:EmployeeStockMember crwv:A2025EmployeeStockPurchasePlanMember 2026-09-30 0001769628 us-gaap:EmployeeStockMember crwv:A2025EmployeeStockPurchasePlanMember 2026-01-01 2026-09-30 0001769628 us-gaap:EmployeeStockMember crwv:A2025EmployeeStockPurchasePlanMember 2025-07-01 2025-09-30 0001769628 us-gaap:EmployeeStockMember crwv:A2025EmployeeStockPurchasePlanMember 2026-07-01 2026-09-30 0001769628 us-gaap:EmployeeStockMember crwv:A2025EmployeeStockPurchasePlanMember 2025-09-30 0001769628 us-gaap:EmployeeStockMember crwv:A2025EmployeeStockPurchasePlanMember 2025-01-01 2025-09-30 0001769628 us-gaap:RestrictedStockUnitsRSUMember 2026-01-01 2026-09-30 0001769628 us-gaap:RestrictedStockUnitsRSUMember 2025-12-31 0001769628 us-gaap:RestrictedStockUnitsRSUMember 2026-09-30 0001769628 us-gaap:RestrictedStockMember 2026-01-01 2026-09-30 0001769628 us-gaap:RestrictedStockMember 2025-01-01 2025-09-30 0001769628 us-gaap:RestrictedStockMember 2026-09-30 0001769628 us-gaap:RestrictedStockMember 2025-12-31 0001769628 us-gaap:EmployeeStockOptionMember 2026-01-01 2026-09-30 0001769628 crwv:RestrictedStockUnitsRSUsAndRestrictedStockAwardsRSAsMember 2026-09-30 0001769628 crwv:RestrictedStockUnitsRSUsAndRestrictedStockAwardsRSAsMember 2026-01-01 2026-09-30 0001769628 us-gaap:CostOfGoodsAndServicesSold 2026-07-01 2026-09-30 0001769628 us-gaap:CostOfGoodsAndServicesSold 2025-07-01 2025-09-30 0001769628 us-gaap:CostOfGoodsAndServicesSold 2026-01-01 2026-09-30 0001769628 us-gaap:CostOfGoodsAndServicesSold 2025-01-01 2025-09-30 0001769628 crwv:TechnologyAndInfrastructure 2026-07-01 2026-09-30 0001769628 crwv:TechnologyAndInfrastructure 2025-07-01 2025-09-30 0001769628 crwv:TechnologyAndInfrastructure 2026-01-01 2026-09-30 0001769628 crwv:TechnologyAndInfrastructure 2025-01-01 2025-09-30 0001769628 us-gaap:SellingAndMarketingExpense 2026-07-01 2026-09-30 0001769628 us-gaap:SellingAndMarketingExpense 2025-07-01 2025-09-30 0001769628 us-gaap:SellingAndMarketingExpense 2026-01-01 2026-09-30 0001769628 us-gaap:SellingAndMarketingExpense 2025-01-01 2025-09-30 0001769628 us-gaap:GeneralAndAdministrativeExpense 2026-07-01 2026-09-30 0001769628 us-gaap:GeneralAndAdministrativeExpense 2025-07-01 2025-09-30 0001769628 us-gaap:GeneralAndAdministrativeExpense 2026-01-01 2026-09-30 0001769628 us-gaap:GeneralAndAdministrativeExpense 2025-01-01 2025-09-30 0001769628 us-gaap:SoftwareAndSoftwareDevelopmentCostsMember 2025-01-01 2025-09-30 0001769628 us-gaap:ConvertibleNotesPayableMember 2026-01-01 2026-09-30 0001769628 us-gaap:ConvertibleNotesPayableMember 2025-01-01 2025-09-30 0001769628 us-gaap:EmployeeStockOptionMember 2026-01-01 2026-09-30 0001769628 us-gaap:EmployeeStockOptionMember 2025-01-01 2025-09-30 0001769628 crwv:RestrictedStockUnitsRSUsAndRestrictedStockAwardsRSAsMember 2026-01-01 2026-09-30 0001769628 crwv:RestrictedStockUnitsRSUsAndRestrictedStockAwardsRSAsMember 2025-01-01 2025-09-30 0001769628 us-gaap:WarrantMember 2026-01-01 2026-09-30 0001769628 us-gaap:WarrantMember 2025-01-01 2025-09-30 0001769628 crwv:SeniorSecuredNotesInvolvingMagnetarMember crwv:A2021ConvertibleSeniorSecuredNotesMember us-gaap:CommonClassAMember us-gaap:RelatedPartyMember 2021-10-31 0001769628 crwv:SeniorSecuredNotesInvolvingMagnetarMember crwv:A2021ConvertibleSeniorSecuredNotesMember us-gaap:RelatedPartyMember 2026-01-01 2026-09-30 0001769628 crwv:UnconsolidatedJointVentureMember 2026-01-01 2026-09-30 0001769628 country:US 2026-07-01 2026-09-30 0001769628 country:US 2025-07-01 2025-09-30 0001769628 country:US 2026-01-01 2026-09-30 0001769628 country:US 2025-01-01 2025-09-30 0001769628 us-gaap:NonUsMember 2026-07-01 2026-09-30 0001769628 us-gaap:NonUsMember 2025-07-01 2025-09-30 0001769628 us-gaap:NonUsMember 2026-01-01 2026-09-30 0001769628 us-gaap:NonUsMember 2025-01-01 2025-09-30 0001769628 us-gaap:GeographicConcentrationRiskMember crwv:LongLivedAssetsBenchmarkMember country:US 2026-01-01 2026-09-30 0001769628 us-gaap:GeographicConcentrationRiskMember crwv:LongLivedAssetsBenchmarkMember country:US 2025-01-01 2025-12-31 0001769628 crwv:BranninMcBeeMember 2026-07-01 2026-09-30 0001769628 crwv:BranninMcBeeRuleTradingArrangementClassACommonStockDirectlyHeldByMr.McBeeMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:ClassACommonStockIssuableUponTheConversionOfSharesOfOurClassBCommonStockMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:BranninMcBeeRuleTradingArrangementClassACommonStockDirectlyHeldByMr.McBeesSpouseMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:BranninMcBeeRuleTradingArrangementCommonStock2022IrrevocableTrustMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:BranninMcBeeRuleTradingArrangementCommonStockCanisMajor2024IrrevocableTrustMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:BranninMcBeeRuleTradingArrangementCommonStockCanisMajorSMTrustMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:BranninMcBeeRuleTradingArrangementCommonStockCanisMajor2025FamilyTrustLLCMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:BranninMcBeeRuleTradingArrangementCommonStockCanisMinor2025FamilyTrustLLCMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:BranninMcBeeRuleTradingArrangementCommonStockCanisMajor2025GRATMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:BranninMcBeeRuleTradingArrangementCommonStockCanisMinor2025GRATMember crwv:BranninMcBeeMember 2026-09-30 0001769628 crwv:Mr.McBeeMember 2026-07-01 2026-09-30 0001769628 crwv:Mr.McBeeRuleTradingArrangementClassACommonStockDirectlyHeldByMr.McBeeMember crwv:Mr.McBeeMember 2026-09-30 0001769628 crwv:Mr.McBeeRuleTradingArrangementClassACommonStockIssuableUponTheConversionOfSharesOfOurClassBCommonMember crwv:Mr.McBeeMember 2026-09-30 0001769628 crwv:ClassACommonStockIssuableUponConversionOfSharesOfOurClassBCommonStockDirectlyHeldByMr.McBeesSpouseMember crwv:Mr.McBeeMember 2026-09-30 0001769628 crwv:DirectlyHeldByTheBranninJ.McBee2022IrrevocableTrustMember crwv:Mr.McBeeMember 2026-09-30 0001769628 crwv:Mr.McBeeRuleTradingArrangementCommonStockCanisMajor2024IrrevocableTrustMember crwv:Mr.McBeeMember 2026-09-30 0001769628 crwv:Mr.McBeeRuleTradingArrangementCommonStockCanisMajor2025FamilyTrustLLCMember crwv:Mr.McBeeMember 2026-09-30 0001769628 crwv:Mr.McBeeRuleTradingArrangementCommonStockCanisMinor2025FamilyTrustLLCMember crwv:Mr.McBeeMember 2026-09-30 0001769628 crwv:Mr.McBeeRuleTradingArrangementCommonStockCanisMajor2026GRATMember crwv:Mr.McBeeMember 2026-09-30 0001769628 crwv:Mr.McBeeRuleTradingArrangementCommonStockCanisMinor2026GRATMember crwv:Mr.McBeeMember 2026-09-30 0001769628 crwv:MichaelIntratorMember 2026-07-01 2026-09-30 0001769628 crwv:SachinJainMember 2026-07-01 2026-09-30 0001769628 crwv:AggregateMaximumAmountOfSharesMember crwv:SachinJainMember 2026-09-30 0001769628 crwv:SharesHeldByMr.JainAsOfTheDateOfAdoptionMember crwv:SachinJainMember 2026-09-30 Table of Content s UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 859000000.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "The carrying value of the Company's investment in these VIEs was $ 859 million as of September 30, 2026, of which $ 326 million is accounted for as equity method investments.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 7,
+      "review_status": "provisional",
+      "evidence_text": "The carrying value of the Company's investment in these VIEs is included in prepaid expenses and other current assets and other non-current assets on the condensed consolidated balance sheets.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 57000000.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "The carrying value of the Company's investment in the JV was $ 57 million and $ 51 million as of September 30, 2026 and December 31, 2025, respectively.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "LEASES_FROM",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.8,
+      "mentions": 3,
+      "review_status": "provisional",
+      "evidence_text": "Additionally, in November 2025, the Company entered into a ground lease with the unconsolidated joint venture covering a separate parcel for a potential future development.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "GUARANTEES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 95000000.0,
+      "currency": "USD",
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "The Company's maximum exposure to loss with respect to the JV includes (i) the carrying value of the Company's investment, (ii) up to $ 95 million related to a guarantee for certain contingent consideration payable to a third-party by the JV upon the achievement of certain milestones, (iii) lease prepayment of $ 48 million, and (iv) potential requirements to fund the construction and development of the data center campus to the extent the JV is unable to secure third-party financing.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "IMPAIRMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "There were no impairment charges recorded to goodwill during the three and nine months ended September 30, 2026 and 2025.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 1.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "Debt The total debt obligations are as follows (dollars in millions): Maturities Effective Interest Rates September 30, 2026 December 31, 2025 Recourse debt: DDTL 1.0 Facility Mar 2028 15 % $ 1,139 $ 1,553 DDTL 2.0 Facility Aug 2030 11 % 2,796 5,037 DDTL 2.1 Facility Mar 2031 9 % 2,494 2,741 DDTL 3.0 Facility Aug 2030 9 % 2,323 340 DDTL 5.0 Facility Nov 2031 9 % 2,749 \u2014 DDTL 5.5 Facility Sep 2031 11 % 1,555 \u2014 2030 Senior Notes Jun 2030 10 % 2,000 2,000 2031 9.00 % Senior Notes Feb 2031 10 % 1,750 1,750 2031 9.75 % Senior Notes Oct 2031 10 % 2,750 \u2014 2032 9.625 % Senior Notes Jul 2032 10 % 1,250 \u2014 2032 EUR Senior Notes (1) Jul 2032 9 % 2,272 \u2014 2031 Convertible Senior Notes Dec 2031 2 % 2,588 2,588 2032 Convertible Senior Notes Oct 2032 2 % 4,000 \u2014 2033 Convertible Senior Notes Apr 2033 3 % 4,200 \u2014 Convertible Promissory Notes Apr 2026 7 % \u2014 168 Revolving Credit Facility Nov 2029 7 % 1,200 1,000 OEM and Software License Financing Arrangements Dec 2026 - Jul 2030 10 % 6,891 3,518 Magnetar Loan Jan 2029 12 % 195 273 Less: Unamortized discount and issuance costs (2) ( 552 ) ( 242 ) Total recourse debt, net of unamortized discount and issuance costs 41,600 20,726 Less: Recourse debt, current ( 9,183 ) ( 6,118 ) Total recourse debt, non-current $ 32,417 $ 14,608 Non-recourse debt: DDTL 4.0 Facility Mar 2032 7 % 4,583 \u2014 OEM and Software License Financing Arrangements Oct 2026 - Aug 2028 9 % 770 647 Less: Unamortized discount and issuance costs ( 80 ) \u2014 Total non-recourse debt, net of unamortized discount and issuance costs $ 5,273 $ 647 Less: Non-recourse debt, current $ ( 1,389 ) $ ( 590 ) Total non-recourse debt, non-current $ 3,884 $ 57 (1) In June 2026, the Company entered into cross currency interest rate swaps designated as a fair value hedge, to hedge changes in the fair value on the 2032 EUR Senior Notes, attributable to changes in foreign currency exchange rate.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "GUARANTEES",
+      "source_entity": "CoreWeave",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.88,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "CoreWeave, Inc., the ultimate parent company, is not otherwise liable for such debt, except in cases where the Company provides limited guarantees under which recourse may arise only upon specified events, such as actual fraud, willful misconduct, misappropriation of collateral, certain voluntary or consented bankruptcy actions, or other customary non-recourse carve-out obligations.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 546000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Revolving Credit Facility As of September 30, 2026 and December 31, 2025, the outstanding balances associated with letters of credit were $ 546 million and $ 294 million, respectively.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.82,
+      "mentions": 5,
+      "review_status": "provisional",
+      "evidence_text": "These letters of credit remain outstanding, continue to secure the related lease obligations, and reduce availability under the senior secured revolving credit facility (as amended, the \"Revolving Credit Facility\"), with no change to the underlying lease terms or obligations.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 1200000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "As of September 30, 2026, the Company had $ 1.2 billion borrowings outstanding under the Revolving Credit Facility and had $ 754 million of remaining capacity.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 1000000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "As of December 31, 2025, the Company had drawn $ 1.0 billion and had $ 1.2 billion of remaining capacity under the Revolving Credit Facility.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 25000000.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "This change was primarily attributable to a loss of approximately $25 million on an equity method investment reflecting our allocated share of losses on the investments in our unconsolidated joint venture and unfavorable foreign exchange losses of $18 million, partially offset by an increase of interest and investment income of $22 million.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 108000000.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "This change was primarily attributable to net realized and unrealized gains on fair value adjustments related to our strategic investments of $108 million, an increase of interest and investment income of $69 million, and favorable foreign exchange gains of approximately $34 million, partially offset by a loss of approximately $77 million on an equity method investment reflecting our allocated share of losses on the investments in our unconsolidated joint venture.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 754000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Additionally, we had $754 million of available capacity under our $2.5 billion Revolving Credit Facility as of September 30, 2026.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 61000000000000.0,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "61 Table of Content s Our operations require substantial and growing capital expenditures, and we will require additional capital to fund our business and support our growth, and any inability to generate or obtain such capital on acceptable terms, if at all, or to lower our total cost of capital, may adversely affect our business, operating results, financial condition, and prospects.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "SUPPLIES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.78,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "The trading prices of recently-public companies have been highly volatile as a result of multiple factors including, interest rate volatility, the conflicts in the Middle East and Ukraine, tensions between China and Taiwan, inflation and stagflation, domestic and foreign regulatory uncertainty, disruption of global energy supplies and increases in global energy prices, changes in trade policies, including the imposition of tariffs, trade controls and other trade barriers, changing appetites for risk by investors, actual or perceived instability in the banking system, and market downturns, which may reduce our ability to access capital on favorable terms or at all.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "SUPPLIES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 64000000000000.0,
+      "currency": null,
+      "confidence": 0.78,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "In addition, changes in the macroeconomic environment, 64 Table of Content s including actual or perceived global banking and finance related issues, domestic and foreign regulatory uncertainty, changes in trade policies (including the imposition of tariffs, trade controls and other trade barriers or retaliation for those measures by other governments), labor shortages, disruption of global energy supplies and increases in global energy prices, supply chain disruptions, inflation, stagflation, spending environments, geopolitical instability, warfare and uncertainty, including the effects of the conflicts in the Middle East and Ukraine, tensions between China and Taiwan, weak economic conditions in certain regions, or a reduction in AI spending regardless of macroeconomic conditions may impact our growth.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 65000000000000.0,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "However, we may not be able to maintain or increase revenue from our top customers for a variety of reasons, including the following: \u2022 customers may develop their own services that may compete with our services; \u2022 some of our customers may redesign their systems to require fewer of our services with limited notice to us and may choose not to renew or increase their purchases of our platform, solutions, and services; 65 Table of Content s \u2022 our customers may have pre-existing or concurrent relationships with, or may be, current or potential competitors that may affect such customers' decisions to purchase our platform, solutions, and services; and \u2022 we may not be able to obtain financing on terms that are acceptable to us or at all sufficient to support the significant future capital expenditures that may be necessary to meet contractual obligations to such customers.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 67000000000000.0,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "In addition, we must also continue to effectively manage our capital expenditures by maintaining and expanding our data center capacity, servers and equipment, grow in geographies where we currently have limited or no presence, and 67 Table of Content s ensure that the performance, features, and reliability of our services and our customer service remain competitive in a rapidly changing technological environment.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "SUPPLIES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 69000000000000.0,
+      "currency": null,
+      "confidence": 0.78,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Our quarterly financial results may fluctuate as a result of a number of factors, many of which are outside of our control and may be difficult to predict, including, without limitation: \u2022 the amount and timing of operating costs and capital expenditures related to the expansion of our business; \u2022 any power outages, shortages, supply chain issues, capacity constraints, or significant decreases in the availability of power or increases in the cost of securing power; \u2022 general global macroeconomic and political conditions, both domestically and in our foreign markets that could impact some or all regions where we operate, including higher interest rates, global economic slowdowns, domestic and foreign regulatory uncertainty, changes in trade policies, including the imposition of tariffs, trade controls and other trade barriers, actual or perceived global banking and finance related issues, disruption of global energy supplies and increases in global energy prices, increased risk of inflation, stagflation, potential uncertainty with respect to the federal debt ceiling and budget and potential government shutdowns related thereto, such as the United States government shutdown in October and November of 2025, supply chain disruptions, labor shortages, increases in energy costs and potential global recession; \u2022 the impact of natural or man-made global events on our business, including wars and other armed conflict, such as the conflicts in the Middle East and Ukraine, and tensions between China and Taiwan; \u2022 changes in our and our customers' legal or regulatory environments, including developments in regulations relating to AI and high performance computing; \u2022 our ability to attract new and retain existing customers, increase sales of our platform, or sell additional solutions and services to existing customers; \u2022 the budgeting cycles, seasonal buying patterns, and purchasing practices of customers; \u2022 the timing and length of our sales cycles; \u2022 changes in customer requirements or market needs; \u2022 changes in the growth rate of the cloud infrastructure market generally; 69 Table of Content s \u2022 the timing and success of new solution and service introductions by us or our competitors or any other competitive developments, including consolidation among our customers or competitors; \u2022 any disruption in our strategic relationships; \u2022 our ability to successfully expand our business domestically and internationally; \u2022 equity or debt financings and the capital markets environment, including interest rate changes; \u2022 our ability to reduce our cost of capital over time; \u2022 decisions by organizations to purchase specialized AI cloud infrastructure from larger, more established vendors; \u2022 our ability to successfully and timely deliver our solutions and services to customers under our committed contracts, including due to data center lead times; \u2022 our ability to successfully and timely deploy launches of additional data centers; \u2022 the timing and success of the integration of new infrastructure, including new GPU generations, into our platform; \u2022 changes in our pricing policies or those of our competitors; \u2022 insolvency or credit difficulties confronting our customers, including bankruptcy or liquidation, due to individual, macroeconomic, and regulatory factors, including those specifically impacting early-stage AI ventures, affecting their ability to purchase or pay for our platform; \u2022 significant security breaches of, technical difficulties with, or interruptions to, the use of our platform or other cybersecurity incidents; \u2022 extraordinary expenses such as litigation or other dispute-related settlement payments or outcomes, taxes, regulatory fines or penalties; \u2022 the timing of revenue recognition and revenue deferrals; \u2022 future accounting pronouncements or changes in our accounting policies or practices; \u2022 negative media coverage or publicity; and \u2022 increases or decreases in our expenses caused by fluctuations in foreign currency exchange rates.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 69000000000000.0,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Our quarterly financial results may fluctuate as a result of a number of factors, many of which are outside of our control and may be difficult to predict, including, without limitation: \u2022 the amount and timing of operating costs and capital expenditures related to the expansion of our business; \u2022 any power outages, shortages, supply chain issues, capacity constraints, or significant decreases in the availability of power or increases in the cost of securing power; \u2022 general global macroeconomic and political conditions, both domestically and in our foreign markets that could impact some or all regions where we operate, including higher interest rates, global economic slowdowns, domestic and foreign regulatory uncertainty, changes in trade policies, including the imposition of tariffs, trade controls and other trade barriers, actual or perceived global banking and finance related issues, disruption of global energy supplies and increases in global energy prices, increased risk of inflation, stagflation, potential uncertainty with respect to the federal debt ceiling and budget and potential government shutdowns related thereto, such as the United States government shutdown in October and November of 2025, supply chain disruptions, labor shortages, increases in energy costs and potential global recession; \u2022 the impact of natural or man-made global events on our business, including wars and other armed conflict, such as the conflicts in the Middle East and Ukraine, and tensions between China and Taiwan; \u2022 changes in our and our customers' legal or regulatory environments, including developments in regulations relating to AI and high performance computing; \u2022 our ability to attract new and retain existing customers, increase sales of our platform, or sell additional solutions and services to existing customers; \u2022 the budgeting cycles, seasonal buying patterns, and purchasing practices of customers; \u2022 the timing and length of our sales cycles; \u2022 changes in customer requirements or market needs; \u2022 changes in the growth rate of the cloud infrastructure market generally; 69 Table of Content s \u2022 the timing and success of new solution and service introductions by us or our competitors or any other competitive developments, including consolidation among our customers or competitors; \u2022 any disruption in our strategic relationships; \u2022 our ability to successfully expand our business domestically and internationally; \u2022 equity or debt financings and the capital markets environment, including interest rate changes; \u2022 our ability to reduce our cost of capital over time; \u2022 decisions by organizations to purchase specialized AI cloud infrastructure from larger, more established vendors; \u2022 our ability to successfully and timely deliver our solutions and services to customers under our committed contracts, including due to data center lead times; \u2022 our ability to successfully and timely deploy launches of additional data centers; \u2022 the timing and success of the integration of new infrastructure, including new GPU generations, into our platform; \u2022 changes in our pricing policies or those of our competitors; \u2022 insolvency or credit difficulties confronting our customers, including bankruptcy or liquidation, due to individual, macroeconomic, and regulatory factors, including those specifically impacting early-stage AI ventures, affecting their ability to purchase or pay for our platform; \u2022 significant security breaches of, technical difficulties with, or interruptions to, the use of our platform or other cybersecurity incidents; \u2022 extraordinary expenses such as litigation or other dispute-related settlement payments or outcomes, taxes, regulatory fines or penalties; \u2022 the timing of revenue recognition and revenue deferrals; \u2022 future accounting pronouncements or changes in our accounting policies or practices; \u2022 negative media coverage or publicity; and \u2022 increases or decreases in our expenses caused by fluctuations in foreign currency exchange rates.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "SUPPLIES",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 70000000000000.0,
+      "currency": null,
+      "confidence": 0.78,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "Our ability to compete effectively depends upon numerous factors, many of which are beyond our control, including, but not limited to: \u2022 any power outages, shortages, supply chain issues, capacity constraints, or significant increases in the cost of securing power or decreases in the availability of power; \u2022 our ability to finance additional data center capacity while competing with companies in our industry that have stronger ratings from credit agencies or who have the financial support of partners with stronger ratings from credit agencies; 70 Table of Content s \u2022 general global macroeconomic and political conditions, both domestically and in our foreign markets that could impact some or all regions where we operate, including higher interest rates, global economic slowdowns, domestic and foreign regulatory uncertainty, changes in trade policies, including the imposition of tariffs, trade controls and other trade barriers, actual or perceived global banking and finance related issues, increased risk of inflation, stagflation, disruption of global energy supplies and increases in global energy prices, potential uncertainty with respect to the federal debt ceiling and budget and potential government shutdowns related thereto, such as the United States government shutdown in October and November of 2025, supply chain disruptions, labor shortages, and potential global recessions; \u2022 rumors and market speculation involving us or other companies in our industry; \u2022 changes in customer or market needs, requirements, and preferences and our ability to fulfill those needs, requirements, and preferences; \u2022 our ability to expand and augment our platform, including through infrastructure and new technologies, or increase sales of our platform; \u2022 our ability to attract, train, retain, and motivate talented employees; \u2022 our ability to retain existing customers and increase sales to existing customers, as well as attract and retain new customers; \u2022 the budgeting cycles, seasonal buying patterns, and purchasing practices of our customers, including any slowdown in technology spending due to changing commercial priorities or U.S.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "PURCHASES_FROM",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.78,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "and general global macroeconomic conditions; \u2022 price competition; \u2022 stagnation in the adoption rate or changes in the growth rate of AI and AI cloud infrastructure sectors, including due to emerging AI technologies, which may lead to further compute efficiencies; \u2022 the timing and success of new solution and service introductions by us or our competitors, including new competing technologies that may displace cloud infrastructure, or any other change in the competitive landscape of our industry, including consolidation among our competitors or customers and strategic partnerships entered into by and between our competitors; \u2022 changes in our mix of solution and services sold, including changes in the average contracted usage of our platform; \u2022 our ability to successfully and continuously expand our business domestically and internationally; \u2022 our ability to secure necessary financing to support our business on terms acceptable to us or at all; \u2022 deferral of orders from customers in anticipation of new or enhanced solutions and services announced by us or our competitors; \u2022 significant security breaches of, technical difficulties with, or interruptions to the use of our platform, including data security; \u2022 the timing and costs related to the development or acquisition of technologies or businesses or entry into strategic partnerships; \u2022 our ability to execute, complete, or efficiently integrate any acquisitions that we may undertake; \u2022 increased expenses, unforeseen liabilities, or write-downs and any impact on our operating results from any acquisitions we pursue or consummate; \u2022 our ability to increase the size, productivity, and coordination of our sales teams; \u2022 decisions by potential customers to purchase cloud infrastructure and associated services from larger, more established technology companies or new market entrants; \u2022 insolvency or credit difficulties confronting our customers, which could increase due to U.S.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "INVESTS_IN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 76000000000000.0,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "flagged",
+      "evidence_text": "76 Table of Content s We have a limited history selling access to our platform under our current business model and are continuing to scale our operations and evolve our go-to-market strategy, which may make it difficult to evaluate our business and prospects and increase the risks associated with an investment in our Class A common stock.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Further, industry standards continue to evolve and there is no consensus around performance benchmarks applied to us and our competitors, which may impact our ability to promote our platform and our brand.",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 47500000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "As of September 30, 2026, our total indebtedness was $47.5 billion and we had $5.7 billion of undrawn availability under our Revolving Credit Facility, DDTL 4.0 Facility (as defined below), and DDTL 5.5 Facility (as defined below).",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
+      "source": "SEC EDGAR"
+    },
+    {
+      "date": "2026-11-12",
+      "event_type": "LENDS_TO",
+      "source_entity": null,
+      "target_entity": null,
+      "amount": 2500000000.0,
+      "currency": "USD",
+      "confidence": 0.82,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "In November 2025, we amended our Revolving Credit Facility to increase its capacity to $2.5 billion, to modify certain covenant metrics, and to extend its maturity to November 2029 (together with the DDTL Facilities, the \"Credit Facilities\").",
+      "title": "CoreWeave SEC filing: 10-Q (2026-11-12)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000465/crwv-20260930.htm",
       "source": "SEC EDGAR"
     },
     {
@@ -38846,7 +39400,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.9,
-      "mentions": 4,
+      "mentions": 5,
       "review_status": "confirmed",
       "evidence_text": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut CNBC Google News",
       "title": "OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut - CNBC",
@@ -39842,6 +40396,36 @@
       "title": "AI Capex 2026: The $690B Infrastructure Sprint - The Futurum Group",
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdGRGVnNsZk5JbzE4OGItMmEtSGkzX0ttS0Vud25lbkl6NUpwLWRQYmk5V2Q4SlR2MlNuaDc0YzluSThiVHBrc1pnb1M4aTlCMnQ1U2dTcEpuazV4eTh5NF9KZ3pabzRma2FLYVhIcVUyd2dwYVZqc2lkN0VIOVlrTnZBdUhnQQ?oc=5",
       "source": "The Futurum Group"
+    },
+    {
+      "date": "Thu, 12 Nov 2026 07:00:21 GMT",
+      "event_type": "BENCHMARK_GAIN",
+      "source_entity": "Alibaba",
+      "target_entity": "Alibaba",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.62,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Alibaba Qwen4-Max-Preview Retires November 25 With No Benchmarks, Model Card or Price - Tech Times Alibaba Qwen4-Max-Preview Retires November 25 With No Benchmarks, Model Card or Price Tech Times Google News",
+      "title": "Alibaba Qwen4-Max-Preview Retires November 25 With No Benchmarks, Model Card or Price - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZXFTN01ObWlhVk1leDIyVEtab2I3WGRZZ29qYjN2Wk4xMHkwbkItbHU5N2huSmNkVF9JaE5WT0ZVY19yQ0VXdDFXV0gyS0I2aG4yM2JEZks1Y2poVjlmUE1GVGs2ZVFtbENKY2hBOGhMQTVlMnhxdlQ3LUNTWEk4VnNNakc5aC1sb09JVzAxZEROWkJtdUhCMUJDUUhEX2tfUVUzZHZiVjhTajV1b3M3aW1pMXNDQnBKc04zVUl0WnV1dDNQZW5XZUR1aw?oc=5",
+      "source": "Tech Times"
+    },
+    {
+      "date": "Thu, 12 Nov 2026 15:00:00 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": "DeepSeek",
+      "target_entity": "Nvidia",
+      "amount": null,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Alice Huang\u2019s Companies Invested in DeepSeek, Promising Nvidia Chips - The Information Alice Huang\u2019s Companies Invested in DeepSeek, Promising Nvidia Chips The Information Google News",
+      "title": "Alice Huang\u2019s Companies Invested in DeepSeek, Promising Nvidia Chips - The Information",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPU0I5U0RkdzVQajJOaFZYNmtVRWlkcVFtcWZtUGxHWVJmMllka0FIbjBYclNGRm42Zl9nOTlHUm90SVRQR2JMa0JObV85WmMybHltQXZWdU55a0l2Z041SEhyQWdrU2JSSGQ2bDhPMGh4c2hJdVRwajFJNml1dmFhV3VJMTIxN3V4WnRDdTVXaGZuS1JOOThpRnl1VWRSQmYwRkVvaE5B?oc=5",
+      "source": "The Information"
     },
     {
       "date": "Thu, 13 Aug 2026 07:00:00 GMT",
@@ -40909,6 +41493,21 @@
       "source": "Forbes"
     },
     {
+      "date": "Wed, 11 Nov 2026 16:08:32 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": "Anthropic",
+      "target_entity": "OpenAI",
+      "amount": 1000000000.0,
+      "currency": "USD",
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "TSMC Approves Up to $1 Billion Investment in Anthropic and OpenAI - Indian Startup Times TSMC Approves Up to $1 Billion Investment in Anthropic and OpenAI Indian Startup Times Google News",
+      "title": "TSMC Approves Up to $1 Billion Investment in Anthropic and OpenAI - Indian Startup Times",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPci1EN2F4N2ZqRDRuOXMteDlzYllQWVVzbWdtLVQ5aGJLb01WVmZqV1ZCV3NWWGd0VE9SQzNxcG0zU2xqV2pqV0dEYXBBdkFKZHdhTXpyX1lxbk9saXJPYy1PWU8xQlh1UUNWSHRNZ0taeEtWczFlQkFaWmdzSl9BM25PYk95aGpzajJPXzU5OWJBRWhUZi1fTmZlVm9wOXdYMDZiVGRNRGM?oc=5",
+      "source": "Indian Startup Times"
+    },
+    {
       "date": "Wed, 12 Aug 2026 07:00:00 GMT",
       "event_type": "BENCHMARK_GAIN",
       "source_entity": "Tencent",
@@ -41271,36 +41870,36 @@
   ],
   "collector_runs": [
     {
-      "id": 979,
+      "id": 983,
       "collector": "company-economic-news",
-      "started_at": "2026-11-11T17:53:58+00:00",
-      "completed_at": "2026-11-11T17:54:16+00:00",
+      "started_at": "2026-11-12T18:17:35+00:00",
+      "completed_at": "2026-11-12T18:17:54+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 24,
+      "items_new": 27,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "0eb5b059-5541-4763-8edd-7edf38ecedc0"
+      "collection_execution_id": "8694614d-5449-4d79-990c-738781db8cb4"
     },
     {
-      "id": 980,
+      "id": 984,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-11-11T17:54:16+00:00",
-      "completed_at": "2026-11-11T17:54:17+00:00",
+      "started_at": "2026-11-12T18:17:54+00:00",
+      "completed_at": "2026-11-12T18:17:55+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 0,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "0eb5b059-5541-4763-8edd-7edf38ecedc0"
+      "collection_execution_id": "8694614d-5449-4d79-990c-738781db8cb4"
     },
     {
       "id": 56,
@@ -41319,36 +41918,36 @@
       "collection_execution_id": null
     },
     {
-      "id": 978,
+      "id": 982,
       "collector": "google-news-rss",
-      "started_at": "2026-11-11T17:53:55+00:00",
-      "completed_at": "2026-11-11T17:53:58+00:00",
+      "started_at": "2026-11-12T18:17:32+00:00",
+      "completed_at": "2026-11-12T18:17:35+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 16,
+      "items_new": 14,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "0eb5b059-5541-4763-8edd-7edf38ecedc0"
+      "collection_execution_id": "8694614d-5449-4d79-990c-738781db8cb4"
     },
     {
-      "id": 981,
+      "id": 985,
       "collector": "sec-edgar",
-      "started_at": "2026-11-11T17:54:17+00:00",
-      "completed_at": "2026-11-11T17:54:19+00:00",
+      "started_at": "2026-11-12T18:17:56+00:00",
+      "completed_at": "2026-11-12T18:17:59+00:00",
       "status": "ok",
       "items_seen": 21,
-      "items_new": 1,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "0eb5b059-5541-4763-8edd-7edf38ecedc0"
+      "collection_execution_id": "8694614d-5449-4d79-990c-738781db8cb4"
     },
     {
       "id": 57,
@@ -41368,13 +41967,13 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1159,
-  "mention_count": 8667,
+  "event_count": 1191,
+  "mention_count": 8734,
   "review_counts": {
-    "provisional": 2,
+    "provisional": 26,
     "confirmed": 347,
-    "flagged": 810,
-    "flagged_retry_pending": 0
+    "flagged": 818,
+    "flagged_retry_pending": 8
   },
   "feature_family": [
     {
@@ -44135,8 +44734,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "49bfd6ac8bd4cebcbe0926585483b7ba857360c9e688dab9c9cbb6283d556dfb",
-    "created_at": "2026-11-11T17:54:27+00:00",
+    "run_id": "7136c58ea90b426c29d7be6855a815d8456ccd16245009810021626b72bba7c5",
+    "created_at": "2026-11-12T18:18:08+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -44206,6 +44805,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-a8e9814280622bfa",
-  "database_sha256": "a8e9814280622bfa0847afe6fa12afe6991e98007e694b2b8ed51e61d1519f6c"
+  "database_state_version": "v1-78d05e19613c67fe",
+  "database_sha256": "78d05e19613c67fe4a858c1d2d489f8f804a307712dcd2294f59f5d2ac73ca3b"
 }
