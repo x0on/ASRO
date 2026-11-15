@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T16:38:42.973871+00:00",
+  "generated_at": "2026-11-15T17:07:59.742506+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -15,7 +15,7 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-11-14T16:37:23.753440+00:00",
+    "reading_as_of": "2026-11-15T17:07:07.853255+00:00",
     "support_totals": {
       "risk": 19.5048,
       "safety": 3.4800000000000004
@@ -628,6 +628,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-11-15T17:07:07.853255+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-15T17:06:41+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-11-14T16:37:23.753440+00:00",
       "score": 78.6,
@@ -2906,6 +2920,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-11-15T17:07:07.853255+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-15T17:06:41+00:00",
+      "score": 78.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 83.9, \"monetization\": 41.1, \"circularity\": 77.6, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-11-14T16:37:23.753440+00:00",
       "score": 78.6,
       "label": "FRAGILE",
@@ -3307,9 +3335,9 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-11-14T16:38:42.975994+00:00",
+    "as_of": "2026-11-15T17:07:59.744023+00:00",
     "counts": {
-      "pressure": 48,
+      "pressure": 47,
       "public_exposure": 5,
       "context": 10
     },
@@ -4556,26 +4584,6 @@
         ],
         "underlying_fact_ids": [
           "ae557a26b8925d9f35e665e4250eef6f5cddc18b6f3f0462774ca6b4278f07ba"
-        ]
-      },
-      {
-        "fact_id": "c1ffbb3542e52e54450539960d1da98afd06c05b6d0b9883c29f147a42c2619d",
-        "event_id": "246715ee2cb49bdcdc0ef5e3b4267a8a85e42df51df7fa603ddf429bb16d0c63",
-        "kind": "pressure",
-        "causal_role": "VULNERABILITY",
-        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "GUARANTEES",
-        "title": "NVIDIA SEC filing: 8-K (2026-08-17)",
-        "evidence": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm",
-        "date": "2026-08-17T00:00:00+00:00",
-        "reviewed_at": "2026-08-21T22:05:04.473088+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
-        ],
-        "underlying_fact_ids": [
-          "c1ffbb3542e52e54450539960d1da98afd06c05b6d0b9883c29f147a42c2619d"
         ]
       }
     ]
@@ -42041,36 +42049,36 @@
   ],
   "collector_runs": [
     {
-      "id": 991,
+      "id": 995,
       "collector": "company-economic-news",
-      "started_at": "2026-11-14T16:36:25+00:00",
-      "completed_at": "2026-11-14T16:36:42+00:00",
+      "started_at": "2026-11-15T17:06:20+00:00",
+      "completed_at": "2026-11-15T17:06:37+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 24,
+      "items_new": 18,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "3f35f499-a36c-4622-b685-3b1e69e54928"
+      "collection_execution_id": "7c6d4693-f0e0-41af-bd68-e30a59cfbfdc"
     },
     {
-      "id": 992,
+      "id": 996,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-11-14T16:36:42+00:00",
-      "completed_at": "2026-11-14T16:36:43+00:00",
+      "started_at": "2026-11-15T17:06:37+00:00",
+      "completed_at": "2026-11-15T17:06:38+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 1,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "3f35f499-a36c-4622-b685-3b1e69e54928"
+      "collection_execution_id": "7c6d4693-f0e0-41af-bd68-e30a59cfbfdc"
     },
     {
       "id": 56,
@@ -42089,26 +42097,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 990,
+      "id": 994,
       "collector": "google-news-rss",
-      "started_at": "2026-11-14T16:36:23+00:00",
-      "completed_at": "2026-11-14T16:36:25+00:00",
+      "started_at": "2026-11-15T17:06:18+00:00",
+      "completed_at": "2026-11-15T17:06:19+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 5,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "3f35f499-a36c-4622-b685-3b1e69e54928"
+      "collection_execution_id": "7c6d4693-f0e0-41af-bd68-e30a59cfbfdc"
     },
     {
-      "id": 993,
+      "id": 997,
       "collector": "sec-edgar",
-      "started_at": "2026-11-14T16:36:44+00:00",
-      "completed_at": "2026-11-14T16:36:46+00:00",
+      "started_at": "2026-11-15T17:06:38+00:00",
+      "completed_at": "2026-11-15T17:06:40+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -42118,7 +42126,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "3f35f499-a36c-4622-b685-3b1e69e54928"
+      "collection_execution_id": "7c6d4693-f0e0-41af-bd68-e30a59cfbfdc"
     },
     {
       "id": 57,
@@ -44905,8 +44913,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "821a47a842df56ed3b8c56a74295627252db76449c21374cf681caf142d26a36",
-    "created_at": "2026-11-14T16:36:54+00:00",
+    "run_id": "c8883806bcf5abebf2be16ae7cd18a94939ea8824af9dc5a0590922427960eba",
+    "created_at": "2026-11-15T17:06:48+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -44976,6 +44984,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-b213e56ae34ad97e",
-  "database_sha256": "b213e56ae34ad97e452e6dce58cccfa5f82b3694096738388d2ce3088061aa66"
+  "database_state_version": "v1-58bfd8aa34e3002d",
+  "database_sha256": "58bfd8aa34e3002d592610a2205cad96bbc1e31ba78e8859dadcebd01c64df68"
 }
