@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-23T22:05:10.057776+00:00",
+  "generated_at": "2026-11-24T20:41:39.185727+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
-    "score": 78.6,
+    "score": 75.6,
     "label": "FRAGILE",
     "direction": "unknown",
     "known_dimensions": 6,
@@ -15,16 +15,16 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-11-23T22:03:42.754907+00:00",
+    "reading_as_of": "2026-11-24T20:40:33.168986+00:00",
     "support_totals": {
-      "risk": 19.5048,
+      "risk": 16.0528,
       "safety": 3.4800000000000004
     }
   },
   "dimensions": {
-    "capital": 83.9,
+    "capital": 82.8,
     "monetization": 41.1,
-    "circularity": 77.6,
+    "circularity": 71.3,
     "fragility": 59.3,
     "stress": 59.6,
     "transmission": null,
@@ -33,13 +33,13 @@
     "counter_evidence": 33.8
   },
   "dimension_evidence": {
-    "capital": 10,
+    "capital": 9,
     "monetization": 1,
     "fragility": 1,
     "external_pressure": 3,
     "counter_evidence": 2,
     "stress": 2,
-    "circularity": 5
+    "circularity": 3
   },
   "dimension_basis": {
     "capital": "reviewed_evidence",
@@ -53,7 +53,7 @@
   "dimension_direction": {
     "capital": {
       "direction": "higher_pressure",
-      "evidence_count": 10
+      "evidence_count": 9
     },
     "monetization": {
       "direction": "lower_pressure",
@@ -61,7 +61,7 @@
     },
     "circularity": {
       "direction": "higher_pressure",
-      "evidence_count": 5
+      "evidence_count": 3
     },
     "fragility": {
       "direction": "higher_pressure",
@@ -225,22 +225,6 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526389274/orcl-20260831.htm",
         "evidence": "Capital Expenditures : Cash used for capital expenditures increased from $8.5 billion in the first quarter of fiscal 2026 to $28.5 billion in the first quarter of fiscal 2027 primarily due to the expansion of our data centers."
-      },
-      {
-        "variable": "AI capital commitments",
-        "entity": "Nvidia",
-        "value": 92.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.76,
-        "support": 0.9880000000000001,
-        "date": "2026-08-26",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "evidence": "17 NVIDIA Corporation and Subsidiaries Notes to Condensed Consolidated Financial Statements (Continued) (Unaudited) Future commitments by fiscal year as of July 26, 2026, were as follows: Remainder of 2027 2028 2029 2030 2031 2032 and thereafter Total (In billions) Supply and capacity $ 92 $ 87 $ 88 $ 6 $ 5 $ 1 $ 279 Cloud service agreements 3 8 7 6 4 1 29 Data center leases not commenced \u2014 1 1 2 1 20 25 Equity investments 18 3 2 2 \u2014 \u2014 25 Capital expenditures 7 1 \u2014 \u2014 \u2014 \u2014 8 Total $ 120 $ 100 $ 98 $ 16 $ 10 $ 22 $ 366 Supply and capacity \u2013 We have partnered with our extensive network to secure the necessary supply and critical components needed to meet demand for the next several years, increasing supply commitments from $ 119 billion last quarter to $ 279 billion as of July 26, 2026."
       }
     ],
     "monetization": [
@@ -445,38 +429,6 @@
         "source": "SEC EDGAR",
         "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm",
         "evidence": "The following table summarizes our maximum exposure to loss in the unconsolidated data center ventures (in millions): September 30, 2026 December 31, 2025 Carrying value of equity investments $ 4,732 $ 1,826 Lease commitments 18,476 12,311 Future funding commitments 3,703 3,724 Maximum residual value guarantees 41,493 28,091 Total $ 68,404 $ 45,952 Other In addition, we have other types of unconsolidated VIEs of which we are not the primary beneficiary."
-      },
-      {
-        "variable": "Vendor financing",
-        "entity": "Nvidia",
-        "value": 2.0,
-        "unit": "USD",
-        "role": "measured value",
-        "effect": "raises the warning",
-        "confidence": 0.88,
-        "support": 1.232,
-        "date": "2026-08-26",
-        "event_type": "GUARANTEES",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "evidence": "Derivative Financial Instrument Notional Values The table below presents the notional values of our derivatives outstanding: Jul 26, 2026 Jan 25, 2026 (In millions) Foreign currency contracts designated as accounting hedges $ 2,162 $ 1,765 Not designated as accounting hedges: Foreign currency contracts $ 2,252 $ 2,332 Land, power, and shell guarantees for AI clouds (1) $ 3,529 $ 3,530 Public company warrants $ 4,800 $ \u2014 Equity forward contract $ 1,000 $ \u2014 (1) The maximum gross exposure under all agreements is reduced as the partners make payments to the lessors over terms ranging from five to seven years."
-      },
-      {
-        "variable": "Vendor financing",
-        "entity": "OpenAI",
-        "value": 1.0,
-        "unit": "signal",
-        "role": "directional signal",
-        "effect": "raises the warning",
-        "confidence": 0.88,
-        "support": 1.232,
-        "date": "2026-08-26",
-        "event_type": "GUARANTEES",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "source": "SEC EDGAR",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "evidence": "The guarantees terminate upon certain events, including OpenAI achieving a satisfactory credit rating or after each respective lease term has completed."
       }
     ]
   },
@@ -628,6 +580,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-11-24T20:40:33.168986+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-24T20:40:08+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-11-23T22:03:42.754907+00:00",
       "score": 78.6,
@@ -3018,6 +2984,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-11-24T20:40:33.168986+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-24T20:40:08+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-11-23T22:03:42.754907+00:00",
       "score": 78.6,
       "label": "FRAGILE",
@@ -3531,9 +3511,9 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-11-23T22:05:10.059979+00:00",
+    "as_of": "2026-11-24T20:41:39.187219+00:00",
     "counts": {
-      "pressure": 43,
+      "pressure": 38,
       "public_exposure": 5,
       "context": 9
     },
@@ -4581,106 +4561,6 @@
         "underlying_fact_ids": [
           "7faf6dbbb9735fa8ccbe4cef7b3347eebc1ec890c95eaafd2ba778a582cf7f3d"
         ]
-      },
-      {
-        "fact_id": "863af108c200dbbb46179819ac376c6e5b3b108bf65bc9478085d6ffa6262bd5",
-        "event_id": "0019e7a031efc3fa2a57694e509060854b6ac9b7b5b23539e3e960c002c4acdf",
-        "kind": "pressure",
-        "causal_role": "BOOM",
-        "rationale": "Spending commitments increase capital dependent on future demand, not proof of distress.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "CAPEX_COMMITMENT",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "evidence": "17 NVIDIA Corporation and Subsidiaries Notes to Condensed Consolidated Financial Statements (Continued) (Unaudited) Future commitments by fiscal year as of July 26, 2026, were as follows: Remainder of 2027 2028 2029 2030 2031 2032 and thereafter Total (In billions) Supply and capacity $ 92 $ 87 $ 88 $ 6 $ 5 $ 1 $ 279 Cloud service agreements 3 8 7 6 4 1 29 Data center leases not commenced \u2014 1 1 2 1 20 25 Equity investments 18 3 2 2 \u2014 \u2014 25 Capital expenditures 7 1 \u2014 \u2014 \u2014 \u2014 8 Total $ 120 $ 100 $ 98 $ 16 $ 10 $ 22 $ 366 Supply and capacity \u2013 We have partnered with our extensive network to secure the necessary supply and critical components needed to meet demand for the next several years, increasing supply commitments from $ 119 billion last quarter to $ 279 billion as of July 26, 2026.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "date": "2026-08-26T00:00:00+00:00",
-        "reviewed_at": "2026-08-27T14:48:25.613007+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
-        ],
-        "underlying_fact_ids": [
-          "863af108c200dbbb46179819ac376c6e5b3b108bf65bc9478085d6ffa6262bd5"
-        ]
-      },
-      {
-        "fact_id": "5e335dadbd20437c3aec68c39495ad7c161d153fa7dd4d6f7b2e4cd0293ed946",
-        "event_id": "ef35947d6b8bb598553af420dcd392223b7fa0a4fd3ccf2072269760a4b8303e",
-        "kind": "pressure",
-        "causal_role": "VULNERABILITY",
-        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "GUARANTEES",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "evidence": "Derivative Financial Instrument Notional Values The table below presents the notional values of our derivatives outstanding: Jul 26, 2026 Jan 25, 2026 (In millions) Foreign currency contracts designated as accounting hedges $ 2,162 $ 1,765 Not designated as accounting hedges: Foreign currency contracts $ 2,252 $ 2,332 Land, power, and shell guarantees for AI clouds (1) $ 3,529 $ 3,530 Public company warrants $ 4,800 $ \u2014 Equity forward contract $ 1,000 $ \u2014 (1) The maximum gross exposure under all agreements is reduced as the partners make payments to the lessors over terms ranging from five to seven years.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "date": "2026-08-26T00:00:00+00:00",
-        "reviewed_at": "2026-08-27T14:48:22.068694+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
-        ],
-        "underlying_fact_ids": [
-          "5e335dadbd20437c3aec68c39495ad7c161d153fa7dd4d6f7b2e4cd0293ed946"
-        ]
-      },
-      {
-        "fact_id": "374dbb2edbc650b85238ff35702bbede0c40ee82628369b548a41c2b3e15009a",
-        "event_id": "780c2e904542c7525f266ac509d664500e5d1b0d7e5f71e50e22c0b325f0f3b4",
-        "kind": "pressure",
-        "causal_role": "VULNERABILITY",
-        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "GUARANTEES",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "evidence": "nvda-20260726 0001045810 1/31 2027 Q2 FALSE P3Y P5Y P7Y http://fasb.org/us-gaap/2026#AccruedLiabilitiesCurrent 372 546 570 xbrli:shares iso4217:USD iso4217:USD xbrli:shares xbrli:pure utr:GW nvda:segment 0001045810 2026-01-26 2026-07-26 0001045810 2026-08-21 0001045810 2026-04-27 2026-07-26 0001045810 2025-04-28 2025-07-27 0001045810 2025-01-27 2025-07-27 0001045810 2026-07-26 0001045810 2026-01-25 0001045810 us-gaap:CommonStockMember 2026-04-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-04-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-04-26 0001045810 us-gaap:RetainedEarningsMember 2026-04-26 0001045810 2026-04-26 0001045810 us-gaap:RetainedEarningsMember 2026-04-27 2026-07-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-04-27 2026-07-26 0001045810 us-gaap:CommonStockMember 2026-04-27 2026-07-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-04-27 2026-07-26 0001045810 us-gaap:CommonStockMember 2026-07-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-07-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-07-26 0001045810 us-gaap:RetainedEarningsMember 2026-07-26 0001045810 us-gaap:CommonStockMember 2025-04-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-04-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-04-27 0001045810 us-gaap:RetainedEarningsMember 2025-04-27 0001045810 2025-04-27 0001045810 us-gaap:RetainedEarningsMember 2025-04-28 2025-07-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-04-28 2025-07-27 0001045810 us-gaap:CommonStockMember 2025-04-28 2025-07-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-04-28 2025-07-27 0001045810 us-gaap:CommonStockMember 2025-07-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-07-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-07-27 0001045810 us-gaap:RetainedEarningsMember 2025-07-27 0001045810 2025-07-27 0001045810 us-gaap:CommonStockMember 2026-01-25 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-01-25 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-01-25 0001045810 us-gaap:RetainedEarningsMember 2026-01-25 0001045810 us-gaap:RetainedEarningsMember 2026-01-26 2026-07-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2026-01-26 2026-07-26 0001045810 us-gaap:CommonStockMember 2026-01-26 2026-07-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2026-01-26 2026-07-26 0001045810 us-gaap:CommonStockMember 2025-01-26 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-01-26 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-01-26 0001045810 us-gaap:RetainedEarningsMember 2025-01-26 0001045810 2025-01-26 0001045810 us-gaap:RetainedEarningsMember 2025-01-27 2025-07-27 0001045810 us-gaap:AccumulatedOtherComprehensiveIncomeMember 2025-01-27 2025-07-27 0001045810 us-gaap:CommonStockMember 2025-01-27 2025-07-27 0001045810 us-gaap:AdditionalPaidInCapitalMember 2025-01-27 2025-07-27 0001045810 us-gaap:CostOfRevenue 2026-04-27 2026-07-26 0001045810 us-gaap:CostOfRevenue 2025-04-28 2025-07-27 0001045810 us-gaap:CostOfRevenue 2026-01-26 2026-07-26 0001045810 us-gaap:CostOfRevenue 2025-01-27 2025-07-27 0001045810 us-gaap:ResearchAndDevelopmentExpense 2026-04-27 2026-07-26 0001045810 us-gaap:ResearchAndDevelopmentExpense 2025-04-28 2025-07-27 0001045810 us-gaap:ResearchAndDevelopmentExpense 2026-01-26 2026-07-26 0001045810 us-gaap:ResearchAndDevelopmentExpense 2025-01-27 2025-07-27 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2026-04-27 2026-07-26 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2025-04-28 2025-07-27 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2026-01-26 2026-07-26 0001045810 us-gaap:SellingGeneralAndAdministrativeExpense 2025-01-27 2025-07-27 0001045810 nvda:RSUsPSUsandMarketbasedPSUsMember 2026-01-25 0001045810 nvda:RSUsPSUsandMarketbasedPSUsMember 2026-01-26 2026-07-26 0001045810 nvda:RSUsPSUsandMarketbasedPSUsMember 2026-07-26 0001045810 us-gaap:EmployeeStockMember 2026-01-26 2026-07-26 0001045810 nvda:IntangibleAssetsArisingFromBusinessCombinationMember 2026-07-26 0001045810 nvda:IntangibleAssetsArisingFromBusinessCombinationMember 2026-01-25 0001045810 nvda:PatentsAndLicensedTechnologyMember 2026-07-26 0001045810 nvda:PatentsAndLicensedTechnologyMember 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-07-26 0001045810 us-gaap:CashAndCashEquivalentsAtCarryingValue 2026-07-26 0001045810 us-gaap:DebtSecuritiesCurrent 2026-07-26 0001045810 us-gaap:EquitySecuritiesFvNi 2026-07-26 0001045810 us-gaap:OtherAssetsNoncurrent 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-04-27 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-01-26 2026-07-26 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2025-04-28 2025-07-27 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2025-01-27 2025-07-27 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USTreasurySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CorporateDebtSecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:USGovernmentAgenciesDebtSecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:CertificatesOfDepositMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:ForeignGovernmentDebtMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel2Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:MoneyMarketFundsMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:CashAndCashEquivalentsAtCarryingValue us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:DebtSecuritiesCurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:EquitySecuritiesFvNi us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember us-gaap:OtherAssetsNoncurrent us-gaap:FairValueInputsLevel1Member 2026-01-25 0001045810 us-gaap:CashAndCashEquivalentsAtCarryingValue 2026-01-25 0001045810 us-gaap:DebtSecuritiesCurrent 2026-01-25 0001045810 us-gaap:EquitySecuritiesFvNi 2026-01-25 0001045810 us-gaap:OtherAssetsNoncurrent 2026-01-25 0001045810 nvda:PubliclyHeldEquitySecuritiesMember 2026-01-25 0001045810 us-gaap:EquitySecuritiesMember 2026-07-26 0001045810 nvda:CarryingValuesAndFutureCommittedAmountsMember 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerAMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerBMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerCMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerDMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerEMember us-gaap:AccountsReceivableMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerFMember us-gaap:AccountsReceivableMember 2025-01-27 2026-01-25 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerGMember us-gaap:AccountsReceivableMember 2025-01-27 2026-01-25 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:AccountsReceivableCustomerHMember us-gaap:AccountsReceivableMember 2025-01-27 2026-01-25 0001045810 nvda:InvestmentGradeCustomerMember srt:MinimumMember 2026-07-26 0001045810 nvda:InvestmentGradeCustomerMember srt:MaximumMember 2026-07-26 0001045810 nvda:NatureOfExpenseCustomerAdvancesAndDeferralsMember 2026-07-26 0001045810 nvda:NatureOfExpenseCustomerAdvancesAndDeferralsMember 2026-01-25 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2026-04-27 2026-07-26 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2025-04-28 2025-07-27 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2026-01-26 2026-07-26 0001045810 nvda:InventoryPurchaseObligationsInExcessOfProjectionsMember 2025-01-27 2025-07-27 0001045810 2026-07-27 2026-07-26 0001045810 us-gaap:ForeignExchangeForwardMember 2026-01-26 2026-07-26 0001045810 nvda:PublicCompanyWarrantsMember srt:MinimumMember 2026-07-26 0001045810 nvda:PublicCompanyWarrantsMember srt:MaximumMember 2026-07-26 0001045810 us-gaap:NondesignatedMember nvda:PublicCompanyWarrantsMember 2026-07-26 0001045810 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:ForeignExchangeForwardMember 2026-07-26 0001045810 us-gaap:DesignatedAsHedgingInstrumentMember us-gaap:ForeignExchangeForwardMember 2026-01-25 0001045810 us-gaap:NondesignatedMember us-gaap:ForeignExchangeForwardMember 2026-07-26 0001045810 us-gaap:NondesignatedMember us-gaap:ForeignExchangeForwardMember 2026-01-25 0001045810 us-gaap:NondesignatedMember nvda:LandPowerAndShellGuaranteesForAICloudsMember 2026-07-26 0001045810 us-gaap:NondesignatedMember nvda:LandPowerAndShellGuaranteesForAICloudsMember 2026-01-25 0001045810 us-gaap:NondesignatedMember nvda:PublicCompanyWarrantsMember 2026-01-25 0001045810 us-gaap:NondesignatedMember nvda:EquityForwardContractMember 2026-07-26 0001045810 us-gaap:NondesignatedMember nvda:EquityForwardContractMember 2026-01-25 0001045810 nvda:LandPowerAndShellGuaranteesForAICloudsMember srt:MinimumMember 2026-01-26 2026-07-26 0001045810 nvda:LandPowerAndShellGuaranteesForAICloudsMember srt:MaximumMember 2026-01-26 2026-07-26 0001045810 nvda:LandPowerAndShellGuaranteesForAICloudsMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2026NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2026NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2026NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesOneMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesOneMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesOneMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesTwoMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesTwoMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2028NotesTwoMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2029NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2029NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2029NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2030NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2030NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2030NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesOneMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesOneMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesOneMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesTwoMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesTwoMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2031NotesTwoMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2033NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2033NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2033NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2036NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2036NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2036NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2040NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2040NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2040NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2046NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2046NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2046NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2050NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2050NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2050NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2056NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2056NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2056NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2060NotesMember 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2060NotesMember 2026-01-26 2026-07-26 0001045810 us-gaap:NotesPayableOtherPayablesMember nvda:A2060NotesMember 2026-01-25 0001045810 us-gaap:NotesPayableOtherPayablesMember 2026-06-30 0001045810 us-gaap:CommercialPaperMember nvda:CommercialPaperProgramMember 2026-07-26 0001045810 nvda:SupplyAndCapacityCommitmentsMember 2026-07-26 0001045810 nvda:CloudServiceAgreementCommitmentsMember 2026-07-26 0001045810 nvda:DataCenterLeaseNotYetCommencedMember 2026-07-26 0001045810 nvda:EquityInvestmentCommitmentsMember 2026-07-26 0001045810 nvda:CapitalExpenditureObligationsMember 2026-07-26 0001045810 nvda:FuturePurchaseAndOtherCommitmentsMember 2026-07-26 0001045810 nvda:SupplyAndCapacityCommitmentsMember 2026-04-26 0001045810 nvda:AICloudPartnershipCommitmentsMember 2026-07-26 0001045810 nvda:DataCenterForThirdPartyLeaseNotYetCommencedMember 2026-07-26 0001045810 nvda:FutureAdditionalCommitmentsMember 2026-07-26 0001045810 us-gaap:FinancialGuaranteeMember us-gaap:SubsequentEventMember nvda:SBEnergyCorp.Member 2026-08-31 0001045810 us-gaap:FinancialGuaranteeMember 2026-07-26 0001045810 2026-05-18 0001045810 2026-01-26 2026-04-26 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2026-04-27 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2026-04-27 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember 2026-04-27 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2025-04-28 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2025-04-28 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember 2025-04-28 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2026-01-26 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2026-01-26 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember 2026-01-26 2026-07-26 0001045810 us-gaap:OperatingSegmentsMember nvda:ComputeAndNetworkingSegmentMember 2025-01-27 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember nvda:GraphicsSegmentMember 2025-01-27 2025-07-27 0001045810 us-gaap:OperatingSegmentsMember 2025-01-27 2025-07-27 0001045810 nvda:ComputeAndNetworkingSegmentMember 2026-04-27 2026-07-26 0001045810 nvda:ComputeAndNetworkingSegmentMember 2025-04-28 2025-07-27 0001045810 nvda:ComputeAndNetworkingSegmentMember 2026-01-26 2026-07-26 0001045810 nvda:ComputeAndNetworkingSegmentMember 2025-01-27 2025-07-27 0001045810 nvda:GraphicsSegmentMember 2026-04-27 2026-07-26 0001045810 nvda:GraphicsSegmentMember 2025-04-28 2025-07-27 0001045810 nvda:GraphicsSegmentMember 2026-01-26 2026-07-26 0001045810 nvda:GraphicsSegmentMember 2025-01-27 2025-07-27 0001045810 us-gaap:CorporateNonSegmentMember 2026-04-27 2026-07-26 0001045810 us-gaap:CorporateNonSegmentMember 2025-04-28 2025-07-27 0001045810 us-gaap:CorporateNonSegmentMember 2026-01-26 2026-07-26 0001045810 us-gaap:CorporateNonSegmentMember 2025-01-27 2025-07-27 0001045810 country:US 2026-04-27 2026-07-26 0001045810 country:US 2025-04-28 2025-07-27 0001045810 country:US 2026-01-26 2026-07-26 0001045810 country:US 2025-01-27 2025-07-27 0001045810 country:TW 2026-04-27 2026-07-26 0001045810 country:TW 2025-04-28 2025-07-27 0001045810 country:TW 2026-01-26 2026-07-26 0001045810 country:TW 2025-01-27 2025-07-27 0001045810 nvda:ChinaIncludingHongKongMember 2026-04-27 2026-07-26 0001045810 nvda:ChinaIncludingHongKongMember 2025-04-28 2025-07-27 0001045810 nvda:ChinaIncludingHongKongMember 2026-01-26 2026-07-26 0001045810 nvda:ChinaIncludingHongKongMember 2025-01-27 2025-07-27 0001045810 nvda:OtherCountriesMember 2026-04-27 2026-07-26 0001045810 nvda:OtherCountriesMember 2025-04-28 2025-07-27 0001045810 nvda:OtherCountriesMember 2026-01-26 2026-07-26 0001045810 nvda:OtherCountriesMember 2025-01-27 2025-07-27 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2026-04-27 2026-07-26 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2026-01-26 2026-07-26 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2025-04-28 2025-07-27 0001045810 us-gaap:NonUsMember us-gaap:CustomerConcentrationRiskMember us-gaap:SalesRevenueNetMember 2025-01-27 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer1Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-04-27 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer2Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer3Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer4Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2026-01-26 2026-07-26 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer5Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-04-28 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer6Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-04-28 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer7Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-01-27 2025-07-27 0001045810 us-gaap:CustomerConcentrationRiskMember nvda:RevenueCustomer8Member us-gaap:SalesRevenueNetMember nvda:ComputeAndNetworkingMember 2025-01-27 2025-07-27 0001045810 nvda:DataCenterMember 2026-04-27 2026-07-26 0001045810 nvda:DataCenterMember 2025-04-28 2025-07-27 0001045810 nvda:DataCenterMember 2026-01-26 2026-07-26 0001045810 nvda:DataCenterMember 2025-01-27 2025-07-27 0001045810 nvda:HyperscaleMember 2026-04-27 2026-07-26 0001045810 nvda:HyperscaleMember 2025-04-28 2025-07-27 0001045810 nvda:HyperscaleMember 2026-01-26 2026-07-26 0001045810 nvda:HyperscaleMember 2025-01-27 2025-07-27 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2026-04-27 2026-07-26 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2025-04-28 2025-07-27 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2026-01-26 2026-07-26 0001045810 nvda:AICloudsIndustrialEnterpriseMember 2025-01-27 2025-07-27 0001045810 nvda:EdgeComputingMember 2026-04-27 2026-07-26 0001045810 nvda:EdgeComputingMember 2025-04-28 2025-07-27 0001045810 nvda:EdgeComputingMember 2026-01-26 2026-07-26 0001045810 nvda:EdgeComputingMember 2025-01-27 2025-07-27 0001045810 nvda:AartiShahMember 2026-04-27 2026-07-26 0001045810 nvda:AartiShahMember 2026-07-26 0001045810 nvda:TimothyS.TeterMember 2026-04-27 2026-07-26 0001045810 nvda:TimothyS.TeterMember 2026-07-26 0001045810 nvda:ColetteM.KressMember 2026-04-27 2026-07-26 0001045810 nvda:ColetteM.KressMember 2026-07-26 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "date": "2026-08-26T00:00:00+00:00",
-        "reviewed_at": "2026-08-27T14:48:22.068694+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
-        ],
-        "underlying_fact_ids": [
-          "374dbb2edbc650b85238ff35702bbede0c40ee82628369b548a41c2b3e15009a"
-        ]
-      },
-      {
-        "fact_id": "2208ab933e7e82945b133ff1db15cd812ac3b0a08f10c50e56e5106731d0c655",
-        "event_id": "623b94d2b704654563d8dd6b42d4c7e4f7496c5cb5e647c034cb801ba51a5899",
-        "kind": "pressure",
-        "causal_role": "VULNERABILITY",
-        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "GUARANTEES",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "evidence": "guarantees 105.0 Total $ 108.5 Accrual for Product Warranty Liabilities The estimated product returns and product warranty activity consisted of the following: Three Months Ended Six Months Ended Jul 26, 2026 Jul 27, 2025 Jul 26, 2026 Jul 27, 2025 (In millions) Balance at beginning of period $ 2,948 $ 2,080 $ 2,807 $ 1,290 Additions 391 220 720 1,090 Utilization ( 401 ) ( 156 ) ( 589 ) ( 236 ) Balance at end of period $ 2,938 $ 2,144 $ 2,938 $ 2,144 For the second quarter and first half of fiscal years 2027 and 2026, the additions in product warranty liabilities primarily related to our Compute & Networking segment.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "date": "2026-08-26T00:00:00+00:00",
-        "reviewed_at": "2026-08-27T14:48:35.208948+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
-        ],
-        "underlying_fact_ids": [
-          "2208ab933e7e82945b133ff1db15cd812ac3b0a08f10c50e56e5106731d0c655"
-        ]
-      },
-      {
-        "fact_id": "1b759e406b40ac1ddfd154da0a7370cfe95b5b1ea69666ae8e99bf059efd7726",
-        "event_id": "a5e64148db71b4fdad21a9c37ada7bdfa2066d78eb22a41c03f309e56ec8108b",
-        "kind": "pressure",
-        "causal_role": "VULNERABILITY",
-        "rationale": "A guarantee can transfer another company's losses to the guarantor.",
-        "rule_version": "news-alerts-v1",
-        "event_type": "GUARANTEES",
-        "title": "NVIDIA SEC filing: 10-Q (2026-08-26)",
-        "evidence": "The guarantees terminate upon certain events, including OpenAI achieving a satisfactory credit rating or after each respective lease term has completed.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
-        "date": "2026-08-26T00:00:00+00:00",
-        "reviewed_at": "2026-08-27T14:48:22.068694+00:00",
-        "sources": [
-          "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
-        ],
-        "underlying_fact_ids": [
-          "1b759e406b40ac1ddfd154da0a7370cfe95b5b1ea69666ae8e99bf059efd7726"
-        ]
       }
     ]
   },
@@ -4765,16 +4645,16 @@
         "weight": 10
       },
       {
-        "id": "Moonshot AI",
-        "label": "Moonshot AI",
+        "id": "DeepSeek",
+        "label": "DeepSeek",
         "kind": "company",
         "weight": 8
       },
       {
-        "id": "DeepSeek",
-        "label": "DeepSeek",
+        "id": "Moonshot AI",
+        "label": "Moonshot AI",
         "kind": "company",
-        "weight": 7
+        "weight": 8
       },
       {
         "id": "SoftBank",
@@ -7972,6 +7852,30 @@
         "date": "Wed, 07 Jan 2026 08:00:00 GMT",
         "summary": "Google's 'Cannibalization' Risk Vs Microsoft's Azure Growth: Expert Explains How AI Answers Could Slash GOOG's Ad Revenue Yahoo Finance",
         "score": 7,
+        "weight": 1
+      },
+      {
+        "id": "evidence:35d38caf08778737b870dd8c539417519195e7bf97e386fb3674fc8e361f46b0",
+        "label": "Anthropic\u2019s IPO Slide Is Bad News for Oracle, Which Is \u201cDependent on OpenAI\u201d - TIKR.com",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "TIKR.com",
+        "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNdGFNWHUyNTlLX2FzUWRiYUI5RFdsbUkyU2dJN21XQklMbkptWVJYQ0pqSWNmRVlmbDdFV1pGZVAxa3NVQl9Hal9zMGFBQ2xEVzNXWEk2U3haT0hMR0FJWmN3dzU4ZWlnMWh3aWZzQnkzY3dMNWU2QmVpcGVZQS13dG1yUkpNRkw3c3Q5bmU5NjI5MEN4M3NvSFh6MDlsbk5Qb0hJUWRkelVfZGR1TVpMTFFvNjI2Y1VlVUtDQUtXcHd6N1RmVk5Ob2VJY2g4RGJaVW1vSXJR?oc=5",
+        "date": "Tue, 24 Nov 2026 12:16:39 GMT",
+        "summary": "Anthropic\u2019s IPO Slide Is Bad News for Oracle, Which Is \u201cDependent on OpenAI\u201d TIKR.com",
+        "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:bbec7d05bdde6226ceafcf43e1122d1196916d005009d5db0dfc468d3971b665",
+        "label": "After Blockbuster Anthropic IPO, OpenAI Wants AI Rivals To Agree On Development \u2018Limits\u2019, While Meta Calls For Controlled Approach - Yahoo Finance",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Yahoo Finance",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaXZRS2dTVkZ5UVNWRGZtOHBqU25Qc3Fqb2lTbjRSMDFWTVVFM2NNZVVPNll3TlUzdzNZeFJfRXFRWFVzTkQtektkdENjUWtqZkUyblhuLVJpRkhJOEc4V3pUZEdlcjN0alRMMGlWUFF4NDNwTTJnSjJXbE9lWXE2YkhVaWc0Mk05dUxyVXVSMUZZTllMZW5BaFB1RkFzNDhpNjBudw?oc=5",
+        "date": "Mon, 23 Nov 2026 03:15:00 GMT",
+        "summary": "After Blockbuster Anthropic IPO, OpenAI Wants AI Rivals To Agree On Development \u2018Limits\u2019, While Meta Calls For Controlled Approach Yahoo Finance",
+        "score": 6,
         "weight": 1
       },
       {
@@ -14429,30 +14333,6 @@
         "summary": "Anthropic's IPO could come sooner than you think \u2014 likely beating OpenAI to the punch Yahoo Finance",
         "score": 5,
         "weight": 1
-      },
-      {
-        "id": "evidence:8ef93dd4174ac96f19b5aea124fa9f2314d39e17a7ac21a95d11939072941ec1",
-        "label": "Anthropic Emerges as IPO Frontrunner as OpenAI Stalls [Global Morning Briefing] - Seoul Economic Daily",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Seoul Economic Daily",
-        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNNmdBUDg1MFVQd3dCQmlxX2hhVUtmQmpuRjlKdnNkUnNwc3VncXRwTUFhVlR2b3EybmNiSUdBelliUFZkVFAxYktYQmtQMy1DUWxROWtUdHAwdk8ybEg4bExoWjJ6ZnFXczVpN3owTjZQY2VkLWh3bW9JOFJsd280VTlOTExMR3dLdTBzd0Q2d2xfcjdfMjF1U3RkN0Z1N25BYlVz?oc=5",
-        "date": "Fri, 21 Aug 2026 20:30:05 GMT",
-        "summary": "Anthropic Emerges as IPO Frontrunner as OpenAI Stalls [Global Morning Briefing] Seoul Economic Daily",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:ef879942acf0c37ff9e7e361e4a622ef14fd4f0a707ee086d62120a2911c8766",
-        "label": "Cheap AI could derail OpenAI and Anthropic's IPOs - CNBC",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "CNBC",
-        "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOekJtc1JqLXF1WHcxb3RSc2Q0QjRvZEoyeVdILVVjcmhCck5pd19wcFZNTkZnSEJWY1V0Zk50S2htWEJzRXU2eXp0akgyQzgyVWhfWFU5dzFOVlpLR2RTaTNLNlExcENLNThDTUUyVHZuWHhOUHhrVlR3a0pyc3ByX0FRZVptZGdWSW0za2hB0gGTAUFVX3lxTE45NDQ2anpvc01lU0NwMDRzX3UwZVFMWXlFaTB2cWM2NEpoNUVOU0lLMmN6ME5WQVFLVXNQaFprWXVfWnpCWXpiY0lMWjFUdl9DakQtRGV3enRBdXU0d2FNUXVIb1NVdExFV1owbDZfS3pHajdGNzdKeXFMcENiYmZ5VmJUbkx5NDlXSmZ3dkItRldXOA?oc=5",
-        "date": "Wed, 20 May 2026 07:00:00 GMT",
-        "summary": "Cheap AI could derail OpenAI and Anthropic's IPOs CNBC",
-        "score": 5,
-        "weight": 1
       }
     ],
     "edges": [
@@ -16874,6 +16754,48 @@
       {
         "source": "Microsoft",
         "target": "evidence:7e3204b9b49eb2feff33ce7cee1bd409b7e9308913b15e81b28aaf9a5cafa76a",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:35d38caf08778737b870dd8c539417519195e7bf97e386fb3674fc8e361f46b0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:35d38caf08778737b870dd8c539417519195e7bf97e386fb3674fc8e361f46b0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Oracle",
+        "target": "evidence:35d38caf08778737b870dd8c539417519195e7bf97e386fb3674fc8e361f46b0",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:bbec7d05bdde6226ceafcf43e1122d1196916d005009d5db0dfc468d3971b665",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Meta",
+        "target": "evidence:bbec7d05bdde6226ceafcf43e1122d1196916d005009d5db0dfc468d3971b665",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:bbec7d05bdde6226ceafcf43e1122d1196916d005009d5db0dfc468d3971b665",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -24434,34 +24356,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:0f5826fff3454c3b4bb094aed4d0ea7938a498ef5f75f95538cfe0a86b531dbd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:8ef93dd4174ac96f19b5aea124fa9f2314d39e17a7ac21a95d11939072941ec1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:8ef93dd4174ac96f19b5aea124fa9f2314d39e17a7ac21a95d11939072941ec1",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:ef879942acf0c37ff9e7e361e4a622ef14fd4f0a707ee086d62120a2911c8766",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:ef879942acf0c37ff9e7e361e4a622ef14fd4f0a707ee086d62120a2911c8766",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -41885,6 +41779,21 @@
       "source": "China Daily Global Edition"
     },
     {
+      "date": "Tue, 24 Nov 2026 06:10:34 GMT",
+      "event_type": "INVESTS_IN",
+      "source_entity": "DeepSeek",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.86,
+      "mentions": 1,
+      "review_status": "provisional",
+      "evidence_text": "Zhihu discloses indirect investment in DeepSeek through fund - TechNode Zhihu discloses indirect investment in DeepSeek through fund TechNode Google News",
+      "title": "Zhihu discloses indirect investment in DeepSeek through fund - TechNode",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVmNmZUtxazdjSmNSZEtBRUhQdUExOUxMWjVlNmJYcWptdXFTNUNySFd6Sjc2UnNFQm1IbFlxb2Q2cEloNHAtd0JjN0JtTGhnYnJCRktQTmJleWNwQ2RrMWRudE1GTGFOZDFsRDExalVnY0piNjUwYWppdE1CLU1iUWE4S0hGcUFjTHh5bFZBc01Jam5ISEc4eA?oc=5",
+      "source": "TechNode"
+    },
+    {
       "date": "Tue, 25 Aug 2026 00:04:34 GMT",
       "event_type": "FREE_CASH_FLOW",
       "source_entity": "Amazon",
@@ -42547,36 +42456,36 @@
   ],
   "collector_runs": [
     {
-      "id": 1023,
+      "id": 1027,
       "collector": "company-economic-news",
-      "started_at": "2026-11-23T22:02:40+00:00",
-      "completed_at": "2026-11-23T22:03:00+00:00",
+      "started_at": "2026-11-24T20:39:45+00:00",
+      "completed_at": "2026-11-24T20:40:03+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 30,
+      "items_new": 24,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "8c00f435-2762-41a0-abed-ce8081694c1b"
+      "collection_execution_id": "a037b3f7-7d7f-4a11-bb0f-5a094715925d"
     },
     {
-      "id": 1024,
+      "id": 1028,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-11-23T22:03:01+00:00",
-      "completed_at": "2026-11-23T22:03:02+00:00",
+      "started_at": "2026-11-24T20:40:03+00:00",
+      "completed_at": "2026-11-24T20:40:04+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 4,
+      "items_new": 3,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "8c00f435-2762-41a0-abed-ce8081694c1b"
+      "collection_execution_id": "a037b3f7-7d7f-4a11-bb0f-5a094715925d"
     },
     {
       "id": 56,
@@ -42595,10 +42504,10 @@
       "collection_execution_id": null
     },
     {
-      "id": 1022,
+      "id": 1026,
       "collector": "google-news-rss",
-      "started_at": "2026-11-23T22:02:39+00:00",
-      "completed_at": "2026-11-23T22:02:40+00:00",
+      "started_at": "2026-11-24T20:39:43+00:00",
+      "completed_at": "2026-11-24T20:39:45+00:00",
       "status": "ok",
       "items_seen": 62,
       "items_new": 6,
@@ -42608,23 +42517,23 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "8c00f435-2762-41a0-abed-ce8081694c1b"
+      "collection_execution_id": "a037b3f7-7d7f-4a11-bb0f-5a094715925d"
     },
     {
-      "id": 1025,
+      "id": 1029,
       "collector": "sec-edgar",
-      "started_at": "2026-11-23T22:03:02+00:00",
-      "completed_at": "2026-11-23T22:03:04+00:00",
+      "started_at": "2026-11-24T20:40:05+00:00",
+      "completed_at": "2026-11-24T20:40:07+00:00",
       "status": "ok",
       "items_seen": 21,
-      "items_new": 2,
+      "items_new": 0,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "8c00f435-2762-41a0-abed-ce8081694c1b"
+      "collection_execution_id": "a037b3f7-7d7f-4a11-bb0f-5a094715925d"
     },
     {
       "id": 57,
@@ -42644,10 +42553,10 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1205,
-  "mention_count": 8765,
+  "event_count": 1206,
+  "mention_count": 8766,
   "review_counts": {
-    "provisional": 40,
+    "provisional": 41,
     "confirmed": 347,
     "flagged": 818,
     "flagged_retry_pending": 8
@@ -45411,8 +45320,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "c2d60743590a1cbc7bce60d3babcb132d6e89100ae9f293fc94ccd9310ddd01b",
-    "created_at": "2026-11-23T22:03:13+00:00",
+    "run_id": "f38597cfc2a9c4bb5b77b1032164ce990802772078a30a5af0113a81b2f5820e",
+    "created_at": "2026-11-24T20:40:15+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -45482,6 +45391,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-5383be7dd21cfac8",
-  "database_sha256": "5383be7dd21cfac8da17c166b99fb1e8a0206982922af4f3b0c857925764c113"
+  "database_state_version": "v1-1a8a520e2301112a",
+  "database_sha256": "1a8a520e2301112a45238e897dd99fbab3d138eb12aa85c5c07c7f5ffc1061b3"
 }
