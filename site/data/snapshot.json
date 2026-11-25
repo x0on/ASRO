@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T20:41:39.185727+00:00",
+  "generated_at": "2026-11-25T19:58:21.099698+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -15,7 +15,7 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-11-24T20:40:33.168986+00:00",
+    "reading_as_of": "2026-11-25T19:57:21.708590+00:00",
     "support_totals": {
       "risk": 16.0528,
       "safety": 3.4800000000000004
@@ -580,6 +580,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-11-25T19:57:21.708590+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-25T19:56:55+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-11-24T20:40:33.168986+00:00",
       "score": 75.6,
@@ -2984,6 +2998,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-11-25T19:57:21.708590+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-25T19:56:55+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-11-24T20:40:33.168986+00:00",
       "score": 75.6,
       "label": "FRAGILE",
@@ -3511,7 +3539,7 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-11-24T20:41:39.187219+00:00",
+    "as_of": "2026-11-25T19:58:21.101241+00:00",
     "counts": {
       "pressure": 38,
       "public_exposure": 5,
@@ -4840,6 +4868,18 @@
         "date": "2022-10-27",
         "summary": "Twitter reported that the merger was completed on October 27, 2022 and Twitter became a wholly owned subsidiary of X Holdings. The transaction valued Twitter at approximately $44 billion.",
         "score": 20,
+        "weight": 1
+      },
+      {
+        "id": "evidence:dab5179ff915cb0f8ec26bdb86240184ef5d929133dc15d277a9bdee17a2e1d3",
+        "label": "Alphabet SEC filing: 8-K (2026-11-24)",
+        "kind": "evidence",
+        "category": "Credit / infrastructure",
+        "source": "SEC EDGAR",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000119312526475973/d91615d8k.htm",
+        "date": "2026-11-24",
+        "summary": "SEC filing 8-K for Alphabet. Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
+        "score": 13,
         "weight": 1
       },
       {
@@ -8932,6 +8972,30 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:02028d6794a08f489bde72a7ef864f72f59da9020290061747a5fd976e585594",
+        "label": "U.S. Stocks Mixed, Nvidia Down Again Ahead of Anthropic IPO - WSJ",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "WSJ",
+        "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZXo2WlZpcTltVUpERGFLMVFlbzk3NkhYcVJsSGFCRk1ZeEV3eTBTa2ZhbEx5dHVpZTAxTFFXc1o1Mzc2WHJ1cHFFZWFGVS1GUGxyaGJfOU9KdHF3ZWxaQmZHTWh6bDB0N0JUOVNpbzdpTDZRWGZnY2p0d3lEcXVJcERPZEVwM01QdUdLRWkwN0M2YnNzMk1QbjdlckU?oc=5",
+        "date": "Wed, 25 Nov 2026 10:31:00 GMT",
+        "summary": "U.S. Stocks Mixed, Nvidia Down Again Ahead of Anthropic IPO WSJ",
+        "score": 5,
+        "weight": 1
+      },
+      {
+        "id": "evidence:44ece0bcaf2efb25719613fb52e2fc8ea33c21764da085684020cc5604442cf3",
+        "label": "After Anthropic's IPO Disappoints, Will OpenAI's Be Delayed Further? Kalshi Says 'Not Until the Second Half of Next Year' - \ud30c\uc774\ub0b8\uc15c\ub274\uc2a4",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "\ud30c\uc774\ub0b8\uc15c\ub274\uc2a4",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1EZEVfZHhIWjNpdzNodlEtYXhnQU04SFB4bzVzeF8tZEwxQXFGVUZqa0p5OThRWDBOZnhkcUptWGg0dnY1Vno2TnpkREpXdlBqczRlVkNzMmg?oc=5",
+        "date": "Wed, 25 Nov 2026 18:05:34 GMT",
+        "summary": "After Anthropic's IPO Disappoints, Will OpenAI's Be Delayed Further? Kalshi Says 'Not Until the Second Half of Next Year' \ud30c\uc774\ub0b8\uc15c\ub274\uc2a4",
+        "score": 5,
         "weight": 1
       },
       {
@@ -14297,42 +14361,6 @@
         "summary": "Tech stocks today: Nvidia earnings on the horizon, as Anthropic prepares IPO plans Yahoo Finance",
         "score": 5,
         "weight": 1
-      },
-      {
-        "id": "evidence:70446dd256c4ff09adc8be564d150a8d656b9b75cabe5b53fce35e81a91a4e29",
-        "label": "Anthropic Aims for SpaceX\u2019s IPO Record - Bloomberg",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZkhNQk9nWkkzOHB2bzFsMzdneDJ1Y1ZjRUFpM3gtTzdVZGFMOEhhTlpSS0VKQWpvREdrT01NUVl2ZXYwQ19aa0JkWVdhOFNncTc3RHR4bE1URGRESWEyXzZuLVNPbWYxb0dhRkpRU0t4MlJuUXFfZ2VteHpUZ0E3Y3pCdmNSVlpnYkpiUUZ3UjNfNzM0OXlj?oc=5",
-        "date": "Fri, 21 Aug 2026 21:34:46 GMT",
-        "summary": "Anthropic Aims for SpaceX\u2019s IPO Record Bloomberg",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:48185ae335bb0dfb7d7319119fef2de1026b99551382528203e6d44510e3b33c",
-        "label": "Watch Open Machine CEO on Anthropic, OpenAI IPO Potential - Bloomberg",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Bloomberg",
-        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWDVfd1FtbllVTWE3ZnZEVEdVY2FvZDlyaGFhRmNWMnhJVTVFWE4wdW9UTklURi04ZElScXFJWnpPay1ETHlybVVpS3BuVGs5ajkwZjRweEFfN3lDNXVHcFd6NzFLdjJHcF9DYWs4WnpVU0pzZndULWY5SU5nWmZhVzk5Y2VHYlMydUdFNC1QdjdOWVFxVy1CTm9PNm50V2RVdTQxS2tCRk8?oc=5",
-        "date": "Thu, 20 Aug 2026 00:00:00 GMT",
-        "summary": "Watch Open Machine CEO on Anthropic, OpenAI IPO Potential Bloomberg",
-        "score": 5,
-        "weight": 1
-      },
-      {
-        "id": "evidence:0f5826fff3454c3b4bb094aed4d0ea7938a498ef5f75f95538cfe0a86b531dbd",
-        "label": "Anthropic's IPO could come sooner than you think \u2014 likely beating OpenAI to the punch - Yahoo Finance",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance",
-        "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNQ2MzTTlXQnRNTDcyekp5VDREUVJkcnZ3ZWJ2RVN3aENpZ2YxZFlhTnUzNy1EbllvM25xcUsxaWZ0YTN4MmFvZVZqbk1UZ1B5M2g3OTc4Z200bElvajlERlZfdmFzdkcxa3ZrRm4zWkp2QXg4MWVtUVF4V3Yzd0lRZjRCdTYtdw?oc=5",
-        "date": "Fri, 21 Aug 2026 19:51:10 GMT",
-        "summary": "Anthropic's IPO could come sooner than you think \u2014 likely beating OpenAI to the punch Yahoo Finance",
-        "score": 5,
-        "weight": 1
       }
     ],
     "edges": [
@@ -14850,6 +14878,13 @@
       {
         "source": "X (Twitter)",
         "target": "evidence:6a27a4cc2e6f4dea1a06476b1361bdf37345d2fbf54a866b0395f0fa80b167f7",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Alphabet",
+        "target": "evidence:dab5179ff915cb0f8ec26bdb86240184ef5d929133dc15d277a9bdee17a2e1d3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -18385,6 +18420,34 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:02028d6794a08f489bde72a7ef864f72f59da9020290061747a5fd976e585594",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Nvidia",
+        "target": "evidence:02028d6794a08f489bde72a7ef864f72f59da9020290061747a5fd976e585594",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:44ece0bcaf2efb25719613fb52e2fc8ea33c21764da085684020cc5604442cf3",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:44ece0bcaf2efb25719613fb52e2fc8ea33c21764da085684020cc5604442cf3",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -24314,48 +24377,6 @@
       {
         "source": "Nvidia",
         "target": "evidence:123775f1cf076f7e92e4f36976e28cc1d1b8d9a7e0fd5004197a9f55b10638af",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:70446dd256c4ff09adc8be564d150a8d656b9b75cabe5b53fce35e81a91a4e29",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:70446dd256c4ff09adc8be564d150a8d656b9b75cabe5b53fce35e81a91a4e29",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:48185ae335bb0dfb7d7319119fef2de1026b99551382528203e6d44510e3b33c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:48185ae335bb0dfb7d7319119fef2de1026b99551382528203e6d44510e3b33c",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:0f5826fff3454c3b4bb094aed4d0ea7938a498ef5f75f95538cfe0a86b531dbd",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "OpenAI",
-        "target": "evidence:0f5826fff3454c3b4bb094aed4d0ea7938a498ef5f75f95538cfe0a86b531dbd",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -38681,7 +38702,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.88,
-      "mentions": 18,
+      "mentions": 19,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Microsoft SEC filing: 8-K (2026-11-05)",
@@ -38696,7 +38717,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.82,
-      "mentions": 14,
+      "mentions": 15,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Microsoft SEC filing: 8-K (2026-11-05)",
@@ -38711,7 +38732,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 22,
+      "mentions": 23,
       "review_status": "flagged",
       "evidence_text": "Review for debt, guarantees, capital expenditure, customer concentration, refinancing, AI infrastructure commitments, or IPO information.",
       "title": "Microsoft SEC filing: 8-K (2026-11-05)",
@@ -40046,7 +40067,7 @@
       "amount": null,
       "currency": null,
       "confidence": 0.76,
-      "mentions": 1,
+      "mentions": 2,
       "review_status": "provisional",
       "evidence_text": "Tencent AI investments surge, capital expenditure up 226% in Q3 2026 - KuCoin Tencent AI investments surge, capital expenditure up 226% in Q3 2026 KuCoin Google News",
       "title": "Tencent AI investments surge, capital expenditure up 226% in Q3 2026 - KuCoin",
@@ -42456,36 +42477,36 @@
   ],
   "collector_runs": [
     {
-      "id": 1027,
+      "id": 1031,
       "collector": "company-economic-news",
-      "started_at": "2026-11-24T20:39:45+00:00",
-      "completed_at": "2026-11-24T20:40:03+00:00",
+      "started_at": "2026-11-25T19:56:29+00:00",
+      "completed_at": "2026-11-25T19:56:50+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 24,
+      "items_new": 26,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "a037b3f7-7d7f-4a11-bb0f-5a094715925d"
+      "collection_execution_id": "b64ad0c0-5fbc-4614-aec6-869cedf12f6e"
     },
     {
-      "id": 1028,
+      "id": 1032,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-11-24T20:40:03+00:00",
-      "completed_at": "2026-11-24T20:40:04+00:00",
+      "started_at": "2026-11-25T19:56:51+00:00",
+      "completed_at": "2026-11-25T19:56:51+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 3,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "a037b3f7-7d7f-4a11-bb0f-5a094715925d"
+      "collection_execution_id": "b64ad0c0-5fbc-4614-aec6-869cedf12f6e"
     },
     {
       "id": 56,
@@ -42504,36 +42525,36 @@
       "collection_execution_id": null
     },
     {
-      "id": 1026,
+      "id": 1030,
       "collector": "google-news-rss",
-      "started_at": "2026-11-24T20:39:43+00:00",
-      "completed_at": "2026-11-24T20:39:45+00:00",
+      "started_at": "2026-11-25T19:56:27+00:00",
+      "completed_at": "2026-11-25T19:56:29+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 6,
+      "items_new": 7,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "a037b3f7-7d7f-4a11-bb0f-5a094715925d"
+      "collection_execution_id": "b64ad0c0-5fbc-4614-aec6-869cedf12f6e"
     },
     {
-      "id": 1029,
+      "id": 1033,
       "collector": "sec-edgar",
-      "started_at": "2026-11-24T20:40:05+00:00",
-      "completed_at": "2026-11-24T20:40:07+00:00",
+      "started_at": "2026-11-25T19:56:52+00:00",
+      "completed_at": "2026-11-25T19:56:54+00:00",
       "status": "ok",
       "items_seen": 21,
-      "items_new": 0,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "a037b3f7-7d7f-4a11-bb0f-5a094715925d"
+      "collection_execution_id": "b64ad0c0-5fbc-4614-aec6-869cedf12f6e"
     },
     {
       "id": 57,
@@ -42554,7 +42575,7 @@
   ],
   "document_count": 1500,
   "event_count": 1206,
-  "mention_count": 8766,
+  "mention_count": 8770,
   "review_counts": {
     "provisional": 41,
     "confirmed": 347,
@@ -45320,8 +45341,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "f38597cfc2a9c4bb5b77b1032164ce990802772078a30a5af0113a81b2f5820e",
-    "created_at": "2026-11-24T20:40:15+00:00",
+    "run_id": "97a686d56679629480d6b6dba2f0a859dda2fa33d5f6f63908a19656ca517875",
+    "created_at": "2026-11-25T19:57:03+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -45391,6 +45412,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-1a8a520e2301112a",
-  "database_sha256": "1a8a520e2301112a45238e897dd99fbab3d138eb12aa85c5c07c7f5ffc1061b3"
+  "database_state_version": "v1-410e9b47d197e7e5",
+  "database_sha256": "410e9b47d197e7e5eb6c9d89dab57235282f5b7f4e7138b0bbd6aa0049e59ca0"
 }
