@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T19:31:03.190883+00:00",
+  "generated_at": "2026-11-28T18:16:49.337887+00:00",
   "thesis": "What if the AI boom isn\u2019t a bubble\u2014but the construction of a financial system that could make the next collapse everyone\u2019s problem?",
   "thesis_explanation": "ASRO is an open-source experiment built to test a hypothesis: that unprecedented AI spending, circular investment, debt, guarantees, infrastructure commitments and increasingly concentrated valuations could create a deeply interconnected financial system\u2014and that, as these companies enter public markets and major indexes, some of that risk could gradually migrate into funds, pensions and ordinary retirement savings. ASRO does not assume this collapse will happen. It continuously collects evidence to determine whether the conditions that could produce it are actually forming\u2014or whether the hypothesis is wrong.",
   "signal": {
@@ -15,7 +15,7 @@
     "benchmark_calibration_label": "HISTORICALLY CALIBRATED",
     "calibration_label": "NOT YET CALIBRATED",
     "basis": "reviewed_evidence_heuristic",
-    "reading_as_of": "2026-11-27T19:29:33.642568+00:00",
+    "reading_as_of": "2026-11-28T18:15:30.150023+00:00",
     "support_totals": {
       "risk": 16.0528,
       "safety": 3.4800000000000004
@@ -580,6 +580,20 @@
     }
   ],
   "history": [
+    {
+      "captured_at": "2026-11-28T18:15:30.150023+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-28T18:14:59+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
     {
       "captured_at": "2026-11-27T19:29:33.642568+00:00",
       "score": 75.6,
@@ -3026,6 +3040,20 @@
   ],
   "comparable_history": [
     {
+      "captured_at": "2026-11-28T18:15:30.150023+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
+      "captured_at": "2026-11-28T18:14:59+00:00",
+      "score": 75.6,
+      "label": "FRAGILE",
+      "dimensions": "{\"capital\": 82.8, \"monetization\": 41.1, \"circularity\": 71.3, \"fragility\": 59.3, \"stress\": 59.6, \"transmission\": null, \"cannibalization\": null, \"external_pressure\": 54.4, \"counter_evidence\": 33.8}",
+      "indicator_version": "reviewed-evidence-v3"
+    },
+    {
       "captured_at": "2026-11-27T19:29:33.642568+00:00",
       "score": 75.6,
       "label": "FRAGILE",
@@ -3595,7 +3623,7 @@
   "news_alerts": {
     "rule_version": "news-alerts-v1",
     "window_days": 90,
-    "as_of": "2026-11-27T19:31:03.193097+00:00",
+    "as_of": "2026-11-28T18:16:49.339857+00:00",
     "counts": {
       "pressure": 38,
       "public_exposure": 5,
@@ -4690,7 +4718,7 @@
         "id": "Alibaba",
         "label": "Alibaba",
         "kind": "company",
-        "weight": 21
+        "weight": 22
       },
       {
         "id": "Microsoft",
@@ -9040,6 +9068,18 @@
         "date": "Wed, 05 Nov 2025 08:00:00 GMT",
         "summary": "Nvidia Deals: Round Tripping Or Vendor Financing? - RIA Real Investment Advice",
         "score": 6,
+        "weight": 1
+      },
+      {
+        "id": "evidence:7eb7f37ee7578cc2ab053eed6bf9def09c099e8e966f06709e002c4491af2e4f",
+        "label": "Kalshi reports pre-IPO Claude traffic high; Techmeme cites Dario Amodei's reported OpenAI-era comment on immersive games - Digg",
+        "kind": "evidence",
+        "category": "IPO / public markets",
+        "source": "Digg",
+        "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5IWHlGbWtRcV9reURqbjVaLWNMMjNaMDZPS1RzSkxidkJFSHFTN1lsTDA4bnQ5aWg1Ni1MSWdJY2ZRQVdK?oc=5",
+        "date": "Sat, 28 Nov 2026 06:05:28 GMT",
+        "summary": "Kalshi reports pre-IPO Claude traffic high; Techmeme cites Dario Amodei's reported OpenAI-era comment on immersive games Digg",
+        "score": 5,
         "weight": 1
       },
       {
@@ -14405,18 +14445,6 @@
         "summary": "OpenAI, Anthropic artificial intelligence IPO boom set to transform San Francisco, starting with soaring real estate prices ABC7 Bay Area",
         "score": 5,
         "weight": 1
-      },
-      {
-        "id": "evidence:dc9b2de1eee6823e79a207bf57ecb522eb7a05439d230d87b2e3ea5251ef5e36",
-        "label": "Anthropic market debut could break SpaceX IPO record: media - Yahoo Finance Singapore",
-        "kind": "evidence",
-        "category": "IPO / public markets",
-        "source": "Yahoo Finance Singapore",
-        "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMHhyV0Q2MFJnay12aVdieTlpS0JJU2xzMWY2U0ZUdTFoV1RzZ2VJWGxmR05URUhtOEZLSVFqNjFKd0pSeXVyd0xUazdmZHgxb1RhdFdocEQtd1dvbDlpY0RwVzNLd015MkpHWnd1MVRWb0pHRzFOSDZCODBpQkRWR1NISE1kZV9WYU5F?oc=5",
-        "date": "Sat, 22 Aug 2026 12:47:22 GMT",
-        "summary": "Anthropic market debut could break SpaceX IPO record: media Yahoo Finance Singapore",
-        "score": 5,
-        "weight": 1
       }
     ],
     "edges": [
@@ -18497,6 +18525,20 @@
       {
         "source": "Nvidia",
         "target": "evidence:b51bb2cfaf218284903bded9ab0c27b690904ffe4a8d18b0e57bef59b94882e8",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "Anthropic",
+        "target": "evidence:7eb7f37ee7578cc2ab053eed6bf9def09c099e8e966f06709e002c4491af2e4f",
+        "type": "EVIDENCE",
+        "weight": 1,
+        "mentions": 1
+      },
+      {
+        "source": "OpenAI",
+        "target": "evidence:7eb7f37ee7578cc2ab053eed6bf9def09c099e8e966f06709e002c4491af2e4f",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -24426,20 +24468,6 @@
       {
         "source": "OpenAI",
         "target": "evidence:cda89fe6d75d9b580dc1d56fc89aa3d0f30a940db790dcdcafa03c167b373e65",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "Anthropic",
-        "target": "evidence:dc9b2de1eee6823e79a207bf57ecb522eb7a05439d230d87b2e3ea5251ef5e36",
-        "type": "EVIDENCE",
-        "weight": 1,
-        "mentions": 1
-      },
-      {
-        "source": "SpaceX",
-        "target": "evidence:dc9b2de1eee6823e79a207bf57ecb522eb7a05439d230d87b2e3ea5251ef5e36",
         "type": "EVIDENCE",
         "weight": 1,
         "mentions": 1
@@ -40558,6 +40586,21 @@
       "source": "Kingy AI"
     },
     {
+      "date": "Sat, 28 Nov 2026 02:46:53 GMT",
+      "event_type": "CAPEX_COMMITMENT",
+      "source_entity": "Alibaba",
+      "target_entity": null,
+      "amount": null,
+      "currency": null,
+      "confidence": 0.76,
+      "mentions": 2,
+      "review_status": "provisional",
+      "evidence_text": "How Does Capex-Led Margin Pressure Shape Alibaba Group Stock's Future?",
+      "title": "How Does Capex-Led Margin Pressure Shape Alibaba Group Stock's Future? - The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQSFNiYm96SEsyWkhHdE5JTXNWcU5lYkdaVUg2X1Z2cjFrMGh6VnFlTEpReFpjRXBNcEVLbDlkbXMxYkZhM3VWT2RpaW8xNlVJdGV1ZHVfVTdlQkp6NHVGN01SZXFCTU5fRmg5ZDdveWZSTmR2alFrZlBwcmVQMVh6WlloNE12RXk0ZlBad2hLZG5hNFQwMVhON3FodXNsU2dRTVVJQVpKTVp4S3pncGZwcW0yc3VGbVNHUGFhRHBnX0JFWDg5a0tob1AtdWd5RW9fRF9jT2VYUXRDQUVTblNvOXlxYkhEVE9oaDVyMA?oc=5",
+      "source": "The Globe and Mail"
+    },
+    {
       "date": "Sun, 01 Nov 2026 07:44:37 GMT",
       "event_type": "BENCHMARK_GAIN",
       "source_entity": "Nvidia",
@@ -42600,36 +42643,36 @@
   ],
   "collector_runs": [
     {
-      "id": 1039,
+      "id": 1043,
       "collector": "company-economic-news",
-      "started_at": "2026-11-27T19:28:35+00:00",
-      "completed_at": "2026-11-27T19:28:53+00:00",
+      "started_at": "2026-11-28T18:14:38+00:00",
+      "completed_at": "2026-11-28T18:14:54+00:00",
       "status": "ok",
       "items_seen": 36,
-      "items_new": 26,
+      "items_new": 23,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1063f792-de17-48f6-9393-1f41103b1cdc"
+      "collection_execution_id": "c563bb91-5b1e-4e62-ac95-659cb7505e0a"
     },
     {
-      "id": 1040,
+      "id": 1044,
       "collector": "external-competitive-pressure",
-      "started_at": "2026-11-27T19:28:53+00:00",
-      "completed_at": "2026-11-27T19:28:55+00:00",
+      "started_at": "2026-11-28T18:14:55+00:00",
+      "completed_at": "2026-11-28T18:14:56+00:00",
       "status": "ok",
       "items_seen": 40,
-      "items_new": 4,
+      "items_new": 1,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1063f792-de17-48f6-9393-1f41103b1cdc"
+      "collection_execution_id": "c563bb91-5b1e-4e62-ac95-659cb7505e0a"
     },
     {
       "id": 56,
@@ -42648,26 +42691,26 @@
       "collection_execution_id": null
     },
     {
-      "id": 1038,
+      "id": 1042,
       "collector": "google-news-rss",
-      "started_at": "2026-11-27T19:28:33+00:00",
-      "completed_at": "2026-11-27T19:28:35+00:00",
+      "started_at": "2026-11-28T18:14:37+00:00",
+      "completed_at": "2026-11-28T18:14:38+00:00",
       "status": "ok",
       "items_seen": 62,
-      "items_new": 5,
+      "items_new": 2,
       "error": null,
       "repair_execution_id": null,
       "target_window_start": null,
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1063f792-de17-48f6-9393-1f41103b1cdc"
+      "collection_execution_id": "c563bb91-5b1e-4e62-ac95-659cb7505e0a"
     },
     {
-      "id": 1041,
+      "id": 1045,
       "collector": "sec-edgar",
-      "started_at": "2026-11-27T19:28:55+00:00",
-      "completed_at": "2026-11-27T19:28:57+00:00",
+      "started_at": "2026-11-28T18:14:56+00:00",
+      "completed_at": "2026-11-28T18:14:59+00:00",
       "status": "ok",
       "items_seen": 21,
       "items_new": 0,
@@ -42677,7 +42720,7 @@
       "target_window_end": null,
       "acquisition_start": null,
       "acquisition_end": null,
-      "collection_execution_id": "1063f792-de17-48f6-9393-1f41103b1cdc"
+      "collection_execution_id": "c563bb91-5b1e-4e62-ac95-659cb7505e0a"
     },
     {
       "id": 57,
@@ -42697,10 +42740,10 @@
     }
   ],
   "document_count": 1500,
-  "event_count": 1210,
-  "mention_count": 8776,
+  "event_count": 1211,
+  "mention_count": 8778,
   "review_counts": {
-    "provisional": 45,
+    "provisional": 46,
     "confirmed": 347,
     "flagged": 818,
     "flagged_retry_pending": 8
@@ -45464,8 +45507,8 @@
     "modeling_allowed": false
   },
   "acceptance_queue": {
-    "run_id": "302ea1e7483c95fbc3fb782f1e3a59e2611788623da7f75c80f541075014f97d",
-    "created_at": "2026-11-27T19:29:05+00:00",
+    "run_id": "298576d8e23f1f6b2ad387d53223f0b0e87843a25ca43acd74035f4c10eac921",
+    "created_at": "2026-11-28T18:15:06+00:00",
     "item_count": 1,
     "pending_review": 0,
     "duplicate_fact": 1,
@@ -45535,6 +45578,6 @@
     "claimed_tier": "heuristic",
     "statement": "Historical benchmark evidence readiness passed; the revised reading has not been historically validated."
   },
-  "database_state_version": "v1-a30b37a82e57ac9d",
-  "database_sha256": "a30b37a82e57ac9df975e47a068e719b72f01c7c8b5b8c7bb6bd57f3e179ee8a"
+  "database_state_version": "v1-58c82e41a2f56823",
+  "database_sha256": "58c82e41a2f56823b9eb12411484bf44e29f8a8907ad9d13fb91757c98845db5"
 }
